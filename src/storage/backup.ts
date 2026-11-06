@@ -1,5 +1,6 @@
 import { z } from 'zod'
-import { DND5E_RULESETS, ABILITIES, SKILLS } from '../domain/rules'
+import { DND5E_RULESETS } from '../domain/rules'
+import { ABILITIES } from '../domain/character'
 import type { StoredCharacter } from './database'
 import { getCharacters, replaceCharacters } from './database'
 
@@ -14,7 +15,7 @@ const characterSchema = z.object({
   level: z.number().int().min(1).max(20), speciesId: z.string().optional(),
   backgroundId: z.string().optional(), createdAt: z.string().datetime(), updatedAt: z.string().datetime(),
   abilities: abilitySchema.optional(), savingThrowProficiencies: z.array(z.enum(ABILITIES)).optional(),
-  skillProficiencies: z.record(z.enum(SKILLS.map(s => s.id) as [string, ...string[]]), z.enum(['none','proficient','expertise'])).optional(),
+  skillProficiencies: z.record(z.string(), z.enum(['none','proficient','expertise'])).optional(),
   armorClass: z.number().int().min(0).max(100).optional(), hitPointsMax: z.number().int().min(0).max(10000).optional(),
   hitPointsCurrent: z.number().int().min(0).max(10000).optional(), temporaryHitPoints: z.number().int().min(0).max(10000).optional(),
   speed: z.number().int().min(0).max(1000).optional(), initiativeBonus: z.number().int().min(-20).max(20).optional(),
