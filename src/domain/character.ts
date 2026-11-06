@@ -75,8 +75,6 @@ export interface InventoryItem {
   unitValueGp: number
   weightLb?: number
   description?: string
-  higherLevel?: string
-  higherLevel?: string
   equipped?: boolean
 }
 
@@ -102,6 +100,7 @@ export interface KnownSpell {
   concentration?: boolean
   ritual?: boolean
   description?: string
+  higherLevel?: string
 }
 
 export interface CharacterSpellbook {
