@@ -7,7 +7,8 @@ export interface StoredCharacter {
 }
 
 const DATABASE_NAME = 'adventura'
-const DATABASE_VERSION = 1
+const DATABASE_VERSION = 2
+const PARTY_STORE = 'partyInventory'
 const CHARACTER_STORE = 'characters'
 
 function openDatabase(): Promise<IDBDatabase> {
@@ -16,6 +17,7 @@ function openDatabase(): Promise<IDBDatabase> {
 
     request.onupgradeneeded = () => {
       const database = request.result
+      if (!database.objectStoreNames.contains(PARTY_STORE)) database.createObjectStore(PARTY_STORE, { keyPath: 'id' })
       if (!database.objectStoreNames.contains(CHARACTER_STORE)) {
         const store = database.createObjectStore(CHARACTER_STORE, { keyPath: 'character.id' })
         store.createIndex('updatedAt', 'character.updatedAt')
@@ -95,4 +97,26 @@ export function replaceCharacters(characters: StoredCharacter[]): Promise<void> 
       resolve(undefined)
     }
   })
+}
+
+export function getPartyInventory(): Promise<import('../domain/character').InventoryItem[]> {
+  return openDatabase().then(database => new Promise((resolve, reject) => {
+    const transaction = database.transaction(PARTY_STORE, 'readonly')
+    const request = transaction.objectStore(PARTY_STORE).get('shared')
+    let items: import('../domain/character').InventoryItem[] = []
+    request.onsuccess = () => { items = (request.result?.items ?? []) as import('../domain/character').InventoryItem[] }
+    request.onerror = () => reject(request.error ?? new Error('Gruppeninventar konnte nicht geladen werden.'))
+    transaction.oncomplete = () => { database.close(); resolve(items) }
+    transaction.onerror = () => { database.close(); reject(transaction.error ?? new Error('Gruppeninventar konnte nicht geladen werden.')) }
+  }))
+}
+
+export function savePartyInventory(items: import('../domain/character').InventoryItem[]): Promise<void> {
+  return openDatabase().then(database => new Promise((resolve, reject) => {
+    const transaction = database.transaction(PARTY_STORE, 'readwrite')
+    transaction.objectStore(PARTY_STORE).put({ id: 'shared', items })
+    transaction.oncomplete = () => { database.close(); resolve() }
+    transaction.onerror = () => { database.close(); reject(transaction.error ?? new Error('Gruppeninventar konnte nicht gespeichert werden.')) }
+    transaction.onabort = () => { database.close(); reject(transaction.error ?? new Error('Gruppeninventar wurde nicht gespeichert.')) }
+  }))
 }
