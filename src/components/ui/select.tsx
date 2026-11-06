@@ -7,17 +7,13 @@ export function Select({ value, defaultValue, onValueChange, children, ariaLabel
   defaultValue?: string
   onValueChange?: (value: string) => void
   children: ReactNode
-  ariaLabel?: string
   disabled?: boolean
 }) {
-  return <SelectPrimitive.Root value={value} defaultValue={defaultValue} onValueChange={onValueChange} disabled={disabled}>
-    {children}
-    <span className="sr-only" aria-live="polite">{ariaLabel}</span>
-  </SelectPrimitive.Root>
+  return <SelectPrimitive.Root value={value} defaultValue={defaultValue} onValueChange={onValueChange} disabled={disabled}>{children}</SelectPrimitive.Root>
 }
 
-export function SelectTrigger({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <SelectPrimitive.Trigger className={`ui-select-trigger ${className}`} aria-label="Auswahl öffnen">
+export function SelectTrigger({ children, className = '', ariaLabel }: { children: ReactNode; className?: string; ariaLabel?: string }) {
+  return <SelectPrimitive.Trigger className={`ui-select-trigger ${className}`} aria-label={ariaLabel}>
     {children}<SelectPrimitive.Icon asChild><ChevronDown size={14} className="ui-select-chevron" /></SelectPrimitive.Icon>
   </SelectPrimitive.Trigger>
 }
