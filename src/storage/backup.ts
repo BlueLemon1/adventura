@@ -1,85 +1,66 @@
 import { z } from 'zod'
-import { DND5E_RULESETS } from '../domain/rules'
+import { DND5E_RULESETS, ABILITIES, SKILLS } from '../domain/rules'
 import type { StoredCharacter } from './database'
 import { getCharacters, replaceCharacters } from './database'
 
+const abilitySchema = z.object({
+  str: z.number().int().min(1).max(30), dex: z.number().int().min(1).max(30),
+  con: z.number().int().min(1).max(30), int: z.number().int().min(1).max(30),
+  wis: z.number().int().min(1).max(30), cha: z.number().int().min(1).max(30),
+})
 const characterSchema = z.object({
-  id: z.string().min(1),
-  name: z.string().min(1),
-  ruleset: z.enum(DND5E_RULESETS),
-  classId: z.string().min(1),
-  subclassId: z.string().optional(),
-  level: z.number().int().min(1).max(20),
-  speciesId: z.string().optional(),
-  backgroundId: z.string().optional(),
-  createdAt: z.string().datetime(),
-  updatedAt: z.string().datetime(),
+  id: z.string().min(1), name: z.string().min(1), ruleset: z.enum(DND5E_RULESETS),
+  classId: z.string().min(1), subclassId: z.string().optional(),
+  level: z.number().int().min(1).max(20), speciesId: z.string().optional(),
+  backgroundId: z.string().optional(), createdAt: z.string().datetime(), updatedAt: z.string().datetime(),
+  abilities: abilitySchema.optional(), savingThrowProficiencies: z.array(z.enum(ABILITIES)).optional(),
+  skillProficiencies: z.record(z.enum(SKILLS.map(s => s.id) as [string, ...string[]]), z.enum(['none','proficient','expertise'])).optional(),
+  armorClass: z.number().int().min(0).max(100).optional(), hitPointsMax: z.number().int().min(0).max(10000).optional(),
+  hitPointsCurrent: z.number().int().min(0).max(10000).optional(), temporaryHitPoints: z.number().int().min(0).max(10000).optional(),
+  speed: z.number().int().min(0).max(1000).optional(), initiativeBonus: z.number().int().min(-20).max(20).optional(),
+  hitDice: z.string().optional(), experiencePoints: z.number().int().min(0).optional(), inspiration: z.boolean().optional(),
+  deathSaves: z.object({successes:z.number().int().min(0).max(3),failures:z.number().int().min(0).max(3)}).optional(),
+  alignment:z.string().optional(),background:z.string().optional(),playerName:z.string().optional(),
+  personalityTraits:z.string().optional(),ideals:z.string().optional(),bonds:z.string().optional(),flaws:z.string().optional(),
+  features:z.string().optional(),notes:z.string().optional(),
 })
-
 const itemSchema = z.object({
-  id: z.string().min(1),
-  name: z.string().min(1),
-  quantity: z.number().finite().min(0),
-  unitValueGp: z.number().finite().min(0),
-  weightLb: z.number().finite().min(0).optional(),
-  description: z.string().optional(),
-  equipped: z.boolean().optional(),
+  id:z.string().min(1),name:z.string().min(1),quantity:z.number().finite().min(0),
+  unitValueGp:z.number().finite().min(0),weightLb:z.number().finite().min(0).optional(),
+  description:z.string().optional(),equipped:z.boolean().optional(),
 })
-
+const spellSchema = z.object({
+  spellId:z.string().min(1),learnedAtLevel:z.number().int().min(1).max(20),prepared:z.boolean(),
+  alwaysPrepared:z.boolean().optional(),notes:z.string().optional(),name:z.string().optional(),
+  spellLevel:z.number().int().min(0).max(9).optional(),school:z.string().optional(),
+  castingTime:z.string().optional(),range:z.string().optional(),components:z.string().optional(),
+  duration:z.string().optional(),concentration:z.boolean().optional(),ritual:z.boolean().optional(),description:z.string().optional(),
+})
 const storedCharacterSchema = z.object({
-  character: characterSchema,
-  inventory: z.object({
-    personal: z.array(itemSchema),
-    party: z.array(itemSchema),
-  }),
-  spellbook: z.object({
-    knownSpells: z.array(z.object({
-      spellId: z.string().min(1),
-      learnedAtLevel: z.number().int().min(1).max(20),
-      prepared: z.boolean(),
-      alwaysPrepared: z.boolean().optional(),
-      notes: z.string().optional(),
-    })),
-  }),
+  character:characterSchema,
+  inventory:z.object({personal:z.array(itemSchema),party:z.array(itemSchema),currency:z.object({
+    cp:z.number().min(0),sp:z.number().min(0),gp:z.number().min(0),ep:z.number().min(0),pp:z.number().min(0),
+  }).optional()}),
+  spellbook:z.object({knownSpells:z.array(spellSchema)}),
 })
-
-const backupSchema = z.object({
-  app: z.literal('adventura'),
-  formatVersion: z.literal(1),
-  exportedAt: z.string().datetime(),
-  characters: z.array(storedCharacterSchema),
-})
-
-export type AdventuraBackup = z.infer<typeof backupSchema>
-
-export async function createBackup(): Promise<AdventuraBackup> {
-  return {
-    app: 'adventura',
-    formatVersion: 1,
-    exportedAt: new Date().toISOString(),
-    characters: await getCharacters(),
-  }
+const backupSchema=z.object({app:z.literal('adventura'),formatVersion:z.literal(1),exportedAt:z.string().datetime(),characters:z.array(storedCharacterSchema)})
+export type AdventuraBackup=z.infer<typeof backupSchema>
+export async function createBackup():Promise<AdventuraBackup>{return{app:'adventura',formatVersion:1,exportedAt:new Date().toISOString(),characters:await getCharacters()}}
+export function parseBackup(json:string):AdventuraBackup{return backupSchema.parse(JSON.parse(json) as unknown)}
+export async function importBackup(json:string):Promise<StoredCharacter[]>{
+  const backup=parseBackup(json)
+  const normalized=backup.characters.map(item=>({
+    ...item,
+    inventory:{...item.inventory,currency:item.inventory.currency??{cp:0,sp:0,gp:0,ep:0,pp:0}},
+    character:{...item.character,abilities:item.character.abilities??{str:10,dex:10,con:10,int:10,wis:10,cha:10}},
+  }))
+  await replaceCharacters(normalized)
+  return normalized
 }
-
-/** Parse and validate the entire backup before touching the local database. */
-export function parseBackup(json: string): AdventuraBackup {
-  const parsed: unknown = JSON.parse(json)
-  return backupSchema.parse(parsed)
-}
-
-export async function importBackup(json: string): Promise<StoredCharacter[]> {
-  const backup = parseBackup(json)
-  await replaceCharacters(backup.characters)
-  return backup.characters
-}
-
-export async function downloadBackup(): Promise<void> {
-  const backup = await createBackup()
-  const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' })
-  const url = URL.createObjectURL(blob)
-  const anchor = document.createElement('a')
-  anchor.href = url
-  anchor.download = `adventura-backup-${new Date().toISOString().slice(0, 10)}.json`
-  anchor.click()
-  URL.revokeObjectURL(url)
+export async function downloadBackup():Promise<void>{
+  const backup=await createBackup()
+  const blob=new Blob([JSON.stringify(backup,null,2)],{type:'application/json'})
+  const url=URL.createObjectURL(blob);const anchor=document.createElement('a')
+  anchor.href=url;anchor.download=`adventura-backup-${new Date().toISOString().slice(0,10)}.json`
+  anchor.click();URL.revokeObjectURL(url)
 }
