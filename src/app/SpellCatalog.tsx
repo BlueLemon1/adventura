@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Plus, Search, BookOpen, Check } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
 import { getSpellcastingProgression } from '../domain/spellcasting'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 
@@ -49,7 +50,7 @@ export function SpellCatalog({character,knownSpells,onAdd}:{character:Character;
     <div className="panel-heading"><div><h2>SRD-Zauberkatalog</h2><p className="muted-paragraph">Offizielle SRD-Zauber passend zu deinem Regelwerk.</p></div><span>{catalog.length} ZAUBER</span></div>
     <div className="catalog-filters">
       <label className="catalog-search"><Search size={16}/><input value={query} onChange={event=>setQuery(event.target.value)} placeholder="Zauber suchen …"/></label>
-      <label className="field-label">Grad<select value={levelFilter} onChange={event=>setLevelFilter(event.target.value)}><option value="all">Alle Grade</option>{Array.from({length:10},(_,i)=><option key={i} value={i}>{i===0?'Zaubertricks':'Grad '+i}</option>)}</select></label>
+      <label className="field-label">Grad<Select value={levelFilter} onValueChange={setLevelFilter}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="all">Alle Grade</SelectItem>{Array.from({length:10},(_,i)=><SelectItem key={i} value={String(i)}>{i===0?'Zaubertricks':'Grad '+i}</SelectItem>)}</SelectContent></Select></label>
       <label className="catalog-eligible"><input type="checkbox" checked={eligibleOnly} onChange={event=>setEligibleOnly(event.target.checked)}/> Nur für meine Klasse und Stufe</label>
     </div>
     <div className="catalog-count">{results.length} Treffer · {character.ruleset==='2014'?'SRD 5.1':'SRD 5.2 (2024)'} · {eligibleOnly?'Klassen-/Gradfilter aktiv':'vollständiger Katalog'}</div>

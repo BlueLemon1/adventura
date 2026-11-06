@@ -20,7 +20,8 @@
     "react-i18next": "latest",
     "react-router-dom": "latest",
     "tailwind-merge": "latest",
-    "zod": "latest"
+    "zod": "latest",
+    "@radix-ui/react-select": "latest"
   },
   "devDependencies": {
     "@tailwindcss/vite": "latest",
