@@ -19,6 +19,18 @@ export const SKILLS = [
 export type SkillId = (typeof SKILLS)[number]['id']
 export type ProficiencyLevel = 'none' | 'proficient' | 'expertise'
 
+export interface SpellSlot {
+  spellLevel: number
+  max: number
+  current: number
+}
+
+export interface PactMagic {
+  spellLevel: number
+  max: number
+  current: number
+}
+
 export interface Character {
   id: string
   name: string
@@ -40,6 +52,8 @@ export interface Character {
   speed?: number
   initiativeBonus?: number
   hitDice?: string
+  spellSlots?: SpellSlot[]
+  pactMagic?: PactMagic
   experiencePoints?: number
   inspiration?: boolean
   deathSaves?: { successes: number; failures: number }
