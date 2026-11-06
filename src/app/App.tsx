@@ -5,7 +5,7 @@ import type { StoredCharacter } from '../storage/database'
 import { ABILITIES, SKILLS } from '../domain/character'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { RULESET_LABELS } from '../domain/rules'
-import { deleteCharacter, getCharacters, saveCharacter } from '../storage/database'
+import { deleteCharacter, getCharacters, getPartyInventory, saveCharacter, savePartyInventory } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
@@ -21,6 +21,7 @@ const newId = () => crypto.randomUUID()
 
 export default function App() {
   const [characters,setCharacters]=useState<StoredCharacter[]>([])
+  const [partyItems,setPartyItems]=useState<InventoryItem[]>([])
   const [selectedId,setSelectedId]=useState<string|null>(null)
   const [page,setPage]=useState<Page>('overview')
   const [loading,setLoading]=useState(true)
@@ -50,7 +51,7 @@ export default function App() {
   const fileInput=useRef<HTMLInputElement>(null)
   const selected=characters.find(entry=>entry.character.id===selectedId)??null
 
-  useEffect(()=>{getCharacters().then(setCharacters).catch((reason:unknown)=>setError(reason instanceof Error?reason.message:'Daten konnten nicht geladen werden.')).finally(()=>setLoading(false))},[])
+  useEffect(()=>{Promise.all([getCharacters(),getPartyInventory()]).then(([stored,party])=>{setCharacters(stored);setPartyItems(party)}).catch((reason:unknown)=>setError(reason instanceof Error?reason.message:'Daten konnten nicht geladen werden.')).finally(()=>setLoading(false))},[])
   async function persist(next:StoredCharacter) {
     const updated={...next,character:{...next.character,updatedAt:new Date().toISOString()}}
     setCharacters(current=>current.map(entry=>entry.character.id===updated.character.id?updated:entry))
@@ -85,7 +86,7 @@ export default function App() {
   function addItem(event:FormEvent<HTMLFormElement>){
     event.preventDefault();if(!selected||!itemName.trim())return
     const item:InventoryItem={id:newId(),name:itemName.trim(),quantity:itemQuantity,unitValueGp:itemValue,...(itemWeight?{weightLb:Number(itemWeight)}:{}),...(itemDescription?{description:itemDescription}:{})}
-    updateInventory({...selected.inventory,[itemGroup]:[...selected.inventory[itemGroup],item]})
+    if(itemGroup==='party'){const next=[...partyItems,item];setPartyItems(next);void savePartyInventory(next)}else{updateInventory({personal:[...selected.inventory.personal,item]})}
     setItemName('');setItemQuantity(1);setItemValue(0);setItemWeight('');setItemDescription('')
   }
   function addSpell(event:FormEvent<HTMLFormElement>){
@@ -94,7 +95,7 @@ export default function App() {
     updateSpellbook([...selected.spellbook.knownSpells,spell])
     setSpellName('');setSpellLevel(0);setSpellSchool('');setSpellRange('');setSpellComponents('');setSpellDescription('');setSpellConcentration(false);setSpellRitual(false)
   }
-  const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length+entry.inventory.party.length,0)
+  const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length,0)+partyItems.length
   const totalSpells=characters.reduce((sum,entry)=>sum+entry.spellbook.knownSpells.length,0)
   const currentAbilities=selected?.character.abilities??abilityDefaults
   const prof=selected?proficiencyBonus(selected.character.level):2
@@ -128,7 +129,7 @@ export default function App() {
         {page==='inventory'&&selected&&<><section className="page-intro"><div><span className="eyebrow">AUSRÜSTUNG</span><h1>Inventar</h1><p className="intro">Persönliche Gegenstände und gemeinsamer Gruppenbesitz.</p></div></section>
           <section className="panel currency-panel"><div className="panel-heading"><h2>Währungen</h2><span>GELDBEUTEL</span></div><div className="currency-grid">{(['cp','sp','ep','gp','pp'] as const).map(coin=><label key={coin}><span>{coin.toUpperCase()}</span><input type="number" min="0" value={selected.inventory.currency?.[coin]??0} onChange={e=>updateInventory({currency:{...currencyDefaults,...selected.inventory.currency,[coin]:Math.max(0,Number(e.target.value)||0)}})}/></label>)}</div></section>
           <section className="panel"><div className="panel-heading"><h2>Gegenstand hinzufügen</h2></div><form onSubmit={addItem}><div className="form-grid item-form"><Field label="Name" value={itemName} onChange={setItemName} required/><label className="field-label">Besitz<select value={itemGroup} onChange={e=>setItemGroup(e.target.value as 'personal'|'party')}><option value="personal">Persönlich</option><option value="party">Gruppeninventar</option></select></label><Field label="Anzahl" type="number" value={String(itemQuantity)} onChange={v=>setItemQuantity(Math.max(1,Number(v)||1))}/><Field label="Wert (GM)" type="number" value={String(itemValue)} onChange={v=>setItemValue(Math.max(0,Number(v)||0))}/><Field label="Gewicht (Pfund)" type="number" value={itemWeight} onChange={setItemWeight}/><Field label="Beschreibung" value={itemDescription} onChange={setItemDescription}/></div><button className="primary-button form-submit" type="submit"><Plus size={15}/> Gegenstand hinzufügen</button></form></section>
-          {(['personal','party'] as const).map(group=><section className="panel" key={group}><div className="panel-heading"><h2>{group==='personal'?'Persönliches Inventar':'Gruppeninventar'}</h2><span>{selected.inventory[group].length} GEGENSTÄNDE</span></div>{selected.inventory[group].length===0?<p className="muted-paragraph">Noch keine Gegenstände vorhanden.</p>:<div className="inventory-list">{selected.inventory[group].map(item=><div className="inventory-row" key={item.id}><div className="inventory-main"><strong>{item.name}</strong><small>{item.description||'Keine Beschreibung'}{item.weightLb!==undefined?' · '+item.weightLb+' Pfd.':''}</small></div><span>× {item.quantity}</span><span>{item.unitValueGp} GM</span><label className="equipped-toggle"><input type="checkbox" checked={item.equipped??false} onChange={e=>updateInventory({[group]:selected.inventory[group].map(entry=>entry.id===item.id?{...entry,equipped:e.target.checked}:entry)})}/> Ausgerüstet</label><button className="icon-button delete-button" aria-label={item.name+' entfernen'} onClick={()=>updateInventory({[group]:selected.inventory[group].filter(entry=>entry.id!==item.id)})}><Trash2 size={15}/></button></div>)}</div>}</section>)}
+          {(['personal','party'] as const).map(group=>{const items=group==='party'?partyItems:selected.inventory.personal;const updateItems=(next:InventoryItem[])=>{if(group==='party'){setPartyItems(next);void savePartyInventory(next)}else updateInventory({personal:next})};return <section className="panel" key={group}><div className="panel-heading"><h2>{group==='personal'?'Persönliches Inventar':'Gruppeninventar'}</h2><span>{items.length} GEGENSTÄNDE</span></div>{items.length===0?<p className="muted-paragraph">Noch keine Gegenstände vorhanden.</p>:<div className="inventory-list">{items.map(item=><div className="inventory-row" key={item.id}><div className="inventory-main"><strong>{item.name}</strong><small>{item.description||'Keine Beschreibung'}{item.weightLb!==undefined?' · '+item.weightLb+' Pfd.':''}</small></div><span>× {item.quantity}</span><span>{item.unitValueGp} GM</span><label className="equipped-toggle"><input type="checkbox" checked={item.equipped??false} onChange={e=>updateItems(items.map(entry=>entry.id===item.id?{...entry,equipped:e.target.checked}:entry))}/> Ausgerüstet</label><button className="icon-button delete-button" aria-label={item.name+' entfernen'} onClick={()=>updateItems(items.filter(entry=>entry.id!==item.id))}><Trash2 size={15}/></button></div>)}</div>}</section>})}
         </>}
         {page==='spells'&&selected&&<><section className="page-intro"><div><span className="eyebrow">MAGIE & ZAUBER</span><h1>Zauberbuch</h1><p className="intro">Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.</p></div></section>
           <section className="panel"><div className="panel-heading"><h2>Zauber hinzufügen</h2><span>MANUELLE ERFASSUNG</span></div><form onSubmit={addSpell}><div className="form-grid spell-form"><Field label="Zaubername" value={spellName} onChange={setSpellName} required/><label className="field-label">Zaubergrad<select value={spellLevel} onChange={e=>setSpellLevel(Number(e.target.value))}>{Array.from({length:10},(_,i)=><option key={i} value={i}>{i===0?'Zaubertrick':'Grad '+i}</option>)}</select></label><Field label="Schule" value={spellSchool} onChange={setSpellSchool}/><Field label="Zauberzeit" value={spellTime} onChange={setSpellTime}/><Field label="Reichweite" value={spellRange} onChange={setSpellRange}/><Field label="Komponenten (V/S/M)" value={spellComponents} onChange={setSpellComponents}/><Field label="Wirkungsdauer" value={spellDuration} onChange={setSpellDuration}/></div><div className="spell-flags"><label><input type="checkbox" checked={spellConcentration} onChange={e=>setSpellConcentration(e.target.checked)}/> Konzentration</label><label><input type="checkbox" checked={spellRitual} onChange={e=>setSpellRitual(e.target.checked)}/> Ritual</label></div><TextField label="Beschreibung / Effekt" value={spellDescription} onChange={setSpellDescription}/><button className="primary-button form-submit" type="submit"><Plus size={15}/> Zauber hinzufügen</button></form></section>
