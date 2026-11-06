@@ -2,7 +2,7 @@ import * as SelectPrimitive from '@radix-ui/react-select'
 import { Check, ChevronDown, ChevronUp } from 'lucide-react'
 import type { ReactNode } from 'react'
 
-export function Select({ value, defaultValue, onValueChange, children, ariaLabel, disabled }: {
+export function Select({ value, defaultValue, onValueChange, children, disabled }: {
   value?: string
   defaultValue?: string
   onValueChange?: (value: string) => void
