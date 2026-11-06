@@ -56,6 +56,7 @@ export async function importBackup(json:string):Promise<StoredCharacter[]>{
     character:{...item.character,abilities:item.character.abilities??{str:10,dex:10,con:10,int:10,wis:10,cha:10}},
   }))
   await replaceCharacters(normalized)
+  await savePartyInventory(backup.partyInventory??[])
   return normalized
 }
 export async function downloadBackup():Promise<void>{
