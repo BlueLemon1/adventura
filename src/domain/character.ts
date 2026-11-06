@@ -75,6 +75,7 @@ export interface InventoryItem {
   unitValueGp: number
   weightLb?: number
   description?: string
+  higherLevel?: string
   equipped?: boolean
 }
 
