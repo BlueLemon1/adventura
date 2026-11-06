@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from 'react'
 import { BookOpen, Boxes, Compass, Download, Languages, Moon, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X } from 'lucide-react'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { RULESET_LABELS } from '../domain/rules'
@@ -41,7 +41,7 @@ export default function App() {
       .finally(() => setLoading(false))
   }, [])
 
-  async function handleCreate(event: React.FormEvent<HTMLFormElement>) {
+  async function handleCreate(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!name.trim() || !classId.trim()) return
     setBusy(true)
@@ -85,7 +85,7 @@ export default function App() {
     }
   }
 
-  async function handleImport(event: React.ChangeEvent<HTMLInputElement>) {
+  async function handleImport(event: ChangeEvent<HTMLInputElement>) {
     const file = event.target.files?.[0]
     event.target.value = ''
     if (!file) return
@@ -151,10 +151,10 @@ export default function App() {
         </section>
         <section className="section-heading"><div><span className="eyebrow">DEINE HELDEN</span><h2>Deine Charaktere</h2></div><span className="muted-label">{characters.length} GESPEICHERT</span></section>
         {loading ? <section className="empty-state"><p>Charaktere werden geladen …</p></section> : characters.length ? <section className="character-grid">
-          {characters.map(({character})=><article className="character-card" key={character.id}>
-            <div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><button className="icon-button delete-button" aria-label={`${character.name} löschen`} onClick={()=>void handleDelete({character,inventory:characters.find(x=>x.character.id===character.id)!.inventory,spellbook:characters.find(x=>x.character.id===character.id)!.spellbook})}><Trash2 size={15}/></button></div>
-            <h3>{character.name}</h3><p>{character.classId} · Level {character.level}</p>
-            <span className="ruleset-pill">{RULESET_LABELS[character.ruleset]}</span>
+          {characters.map((stored)=><article className="character-card" key={stored.character.id}>
+            <div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><button className="icon-button delete-button" aria-label={`${stored.character.name} löschen`} onClick={()=>void handleDelete(stored)}><Trash2 size={15}/></button></div>
+            <h3>{stored.character.name}</h3><p>{stored.character.classId} · Level {stored.character.level}</p>
+            <span className="ruleset-pill">{RULESET_LABELS[stored.character.ruleset]}</span>
           </article>)}
         </section> : <section className="empty-state"><div className="empty-art"><div className="art-ring"/><ScrollText size={42}/><Sparkles className="art-sparkle" size={17}/></div><h3>Dein Charakter wartet auf seinen ersten Auftritt.</h3><p>Erstelle deinen D&D-Charakter, verwalte persönliche und gemeinsame Ausrüstung und behalte deine Zauber samt vollständigen Details griffbereit.</p><button className="secondary-button" onClick={()=>setShowCreate(true)}><Shield size={16}/> Ersten Charakter erstellen</button></section>}
         <footer className="footer-note"><BookOpen size={14}/> Dein Begleiter am Spieltisch. <span>ADVENTURA · D&D 5E 2014 / 2024</span></footer>
