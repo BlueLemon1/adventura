@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Plus, Search, BookOpen, Check } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
-import type { Dnd5eRuleset } from '../domain/rules'
 import { getSpellcastingProgression } from '../domain/spellcasting'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
@@ -53,11 +52,11 @@ export function SpellCatalog({character,knownSpells,onAdd}:{character:Character;
       <label className="field-label">Grad<select value={levelFilter} onChange={event=>setLevelFilter(event.target.value)}><option value="all">Alle Grade</option>{Array.from({length:10},(_,i)=><option key={i} value={i}>{i===0?'Zaubertricks':'Grad '+i}</option>)}</select></label>
       <label className="catalog-eligible"><input type="checkbox" checked={eligibleOnly} onChange={event=>setEligibleOnly(event.target.checked)}/> Nur für meine Klasse und Stufe</label>
     </div>
-    <div className="catalog-count">{results.length} Treffer · {character.ruleset==='2014'?'SRD 5.1':'SRD 5.2.1'} · {eligibleOnly?'Klassen-/Gradfilter aktiv':'vollständiger Katalog'}</div>
+    <div className="catalog-count">{results.length} Treffer · {character.ruleset==='2014'?'SRD 5.1':'SRD 5.2 (2024)'} · {eligibleOnly?'Klassen-/Gradfilter aktiv':'vollständiger Katalog'}</div>
     <div className="catalog-results">{results.slice(0,100).map(spell=>{
       const added=learned.has(spell.id)
       return <details className="catalog-spell" key={spell.id}><summary><span className="catalog-spell-level">{spell.level===0?'TRICK':'GRAD '+spell.level}</span><span className="catalog-spell-name"><strong>{spell.name}</strong><small>{schoolLabel(spell.school)} · {spell.castingTime} · {spell.range}</small></span><span className="catalog-spell-action">{added?<span className="already-added"><Check size={14}/> Im Buch</span>:<button type="button" className="secondary-button" onClick={event=>{event.preventDefault();add(spell)}}><Plus size={14}/> Hinzufügen</button>}</span></summary><div className="catalog-spell-detail"><div>{spell.components}{spell.material?' ('+spell.material+')':''} · {spell.duration}{spell.concentration?' · Konzentration':''}{spell.ritual?' · Ritual':''}</div><p>{spell.description}</p>{spell.higherLevel&&<p><strong>Auf höheren Graden:</strong> {spell.higherLevel}</p>}<small>Klassen: {spell.classes.join(', ')}</small></div></details>
     })}{results.length===0&&<p className="muted-paragraph">Keine passenden Zauber gefunden. Prüfe den Klassenfilter oder passe deine Suche an.</p>}{results.length>100&&<p className="muted-paragraph">Es werden die ersten 100 Treffer angezeigt. Verfeinere deine Suche für weitere Ergebnisse.</p>}</div>
-    <p className="catalog-attribution"><BookOpen size={13}/> SRD 5.1 / SRD 5.2.1 von Wizards of the Coast LLC, CC BY 4.0. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">Lizenz</a></p>
+    <p className="catalog-attribution"><BookOpen size={13}/> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0. <a href="https://github.com/BlueLemon1/adventura/blob/main/src/data/ATTRIBUTION.md" target="_blank" rel="noreferrer">Quellen & Lizenz</a></p>
   </section>
 }
