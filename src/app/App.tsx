@@ -1,179 +1,152 @@
 import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from 'react'
-import { BookOpen, Boxes, Compass, Download, Languages, Moon, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X } from 'lucide-react'
+import { BookOpen, Boxes, Compass, Download, Languages, Moon, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, Heart, Save, ChevronRight } from 'lucide-react'
+import type { Ability, Character, InventoryItem, KnownSpell, ProficiencyLevel, SkillId, StoredCharacter } from '../domain/character'
+import { ABILITIES, SKILLS } from '../domain/character'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { RULESET_LABELS } from '../domain/rules'
-import type { Character } from '../domain/character'
-import { deleteCharacter, getCharacters, saveCharacter, type StoredCharacter } from '../storage/database'
+import { deleteCharacter, getCharacters, saveCharacter } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 
-const navigation = [
-  { label: 'Übersicht', icon: Compass, active: true },
-  { label: 'Charakter', icon: Shield },
-  { label: 'Inventar', icon: Boxes },
-  { label: 'Zauberbuch', icon: BookOpen },
-  { label: 'Level-up', icon: WandSparkles },
-]
-
-function createId(): string {
-  return crypto.randomUUID()
-}
+type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
+const abilityNames: Record<Ability,string> = {str:'Stärke',dex:'Geschicklichkeit',con:'Konstitution',int:'Intelligenz',wis:'Weisheit',cha:'Charisma'}
+const skillNames: Record<SkillId,string> = {acrobatics:'Akrobatik',animalHandling:'Mit Tieren umgehen',arcana:'Arkane Kunde',athletics:'Athletik',deception:'Täuschen',history:'Geschichte',insight:'Motiv erkennen',intimidation:'Einschüchtern',investigation:'Nachforschungen',medicine:'Heilkunde',nature:'Naturkunde',perception:'Wahrnehmung',performance:'Auftreten',persuasion:'Überzeugen',religion:'Religion',sleightOfHand:'Fingerfertigkeit',stealth:'Heimlichkeit',survival:'Überlebenskunst'}
+const abilityDefaults = {str:10,dex:10,con:10,int:10,wis:10,cha:10}
+const currencyDefaults = {cp:0,sp:0,gp:0,ep:0,pp:0}
+const navItems = [{id:'overview' as const,label:'Übersicht',icon:Compass},{id:'sheet' as const,label:'Charakterbogen',icon:Shield},{id:'inventory' as const,label:'Inventar',icon:Boxes},{id:'spells' as const,label:'Zauberbuch',icon:BookOpen},{id:'levelup' as const,label:'Level-up',icon:WandSparkles}]
+const modifier = (score:number) => Math.floor((score-10)/2)
+const signed = (value:number) => value>=0?'+ '+value:'− '+Math.abs(value)
+const proficiencyBonus = (level:number) => Math.ceil(level/4)+1
+const newId = () => crypto.randomUUID()
 
 export default function App() {
-  const [characters, setCharacters] = useState<StoredCharacter[]>([])
-  const [loading, setLoading] = useState(true)
-  const [showCreate, setShowCreate] = useState(false)
-  const [name, setName] = useState('')
-  const [classId, setClassId] = useState('')
-  const [ruleset, setRuleset] = useState<Dnd5eRuleset>('2024')
-  const [level, setLevel] = useState(1)
-  const [error, setError] = useState('')
-  const [busy, setBusy] = useState(false)
-  const fileInput = useRef<HTMLInputElement>(null)
+  const [characters,setCharacters]=useState<StoredCharacter[]>([])
+  const [selectedId,setSelectedId]=useState<string|null>(null)
+  const [page,setPage]=useState<Page>('overview')
+  const [loading,setLoading]=useState(true)
+  const [showCreate,setShowCreate]=useState(false)
+  const [name,setName]=useState('')
+  const [classId,setClassId]=useState('')
+  const [ruleset,setRuleset]=useState<Dnd5eRuleset>('2024')
+  const [level,setLevel]=useState(1)
+  const [error,setError]=useState('')
+  const [busy,setBusy]=useState(false)
+  const [itemName,setItemName]=useState('')
+  const [itemQuantity,setItemQuantity]=useState(1)
+  const [itemValue,setItemValue]=useState(0)
+  const [itemWeight,setItemWeight]=useState('')
+  const [itemDescription,setItemDescription]=useState('')
+  const [itemGroup,setItemGroup]=useState<'personal'|'party'>('personal')
+  const [spellName,setSpellName]=useState('')
+  const [spellLevel,setSpellLevel]=useState(0)
+  const [spellSchool,setSpellSchool]=useState('')
+  const [spellTime,setSpellTime]=useState('1 Aktion')
+  const [spellRange,setSpellRange]=useState('')
+  const [spellComponents,setSpellComponents]=useState('')
+  const [spellDuration,setSpellDuration]=useState('Sofort')
+  const [spellDescription,setSpellDescription]=useState('')
+  const [spellConcentration,setSpellConcentration]=useState(false)
+  const [spellRitual,setSpellRitual]=useState(false)
+  const fileInput=useRef<HTMLInputElement>(null)
+  const selected=characters.find(entry=>entry.character.id===selectedId)??null
 
-  async function refreshCharacters() {
-    setCharacters(await getCharacters())
+  useEffect(()=>{getCharacters().then(setCharacters).catch((reason:unknown)=>setError(reason instanceof Error?reason.message:'Daten konnten nicht geladen werden.')).finally(()=>setLoading(false))},[])
+  async function persist(next:StoredCharacter) {
+    const updated={...next,character:{...next.character,updatedAt:new Date().toISOString()}}
+    setCharacters(current=>current.map(entry=>entry.character.id===updated.character.id?updated:entry))
+    try {await saveCharacter(updated)} catch(reason) {setError(reason instanceof Error?reason.message:'Änderungen konnten nicht gespeichert werden.')}
   }
+  function updateCharacter(patch:Partial<Character>) {if(selected)void persist({...selected,character:{...selected.character,...patch}})}
+  function updateInventory(patch:Partial<StoredCharacter['inventory']>) {if(selected)void persist({...selected,inventory:{...selected.inventory,...patch}})}
+  function updateSpellbook(knownSpells:KnownSpell[]) {if(selected)void persist({...selected,spellbook:{knownSpells}})}
 
-  useEffect(() => {
-    getCharacters()
-      .then(setCharacters)
-      .catch((reason: unknown) => setError(reason instanceof Error ? reason.message : 'Daten konnten nicht geladen werden.'))
-      .finally(() => setLoading(false))
-  }, [])
-
-  async function handleCreate(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    if (!name.trim() || !classId.trim()) return
-    setBusy(true)
-    setError('')
-    const now = new Date().toISOString()
-    const character: Character = {
-      id: createId(),
-      name: name.trim(),
-      ruleset,
-      classId: classId.trim().toLowerCase(),
-      level,
-      createdAt: now,
-      updatedAt: now,
-    }
-    const stored: StoredCharacter = {
-      character,
-      inventory: { personal: [], party: [] },
-      spellbook: { knownSpells: [] },
-    }
-    try {
-      await saveCharacter(stored)
-      await refreshCharacters()
-      setShowCreate(false)
-      setName('')
-      setClassId('')
-      setLevel(1)
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : 'Charakter konnte nicht gespeichert werden.')
-    } finally {
-      setBusy(false)
-    }
+  async function createCharacter(event:FormEvent<HTMLFormElement>) {
+    event.preventDefault();if(!name.trim()||!classId.trim())return
+    setBusy(true);setError('')
+    const now=new Date().toISOString()
+    const character:Character={id:newId(),name:name.trim(),ruleset,classId:classId.trim().toLowerCase(),level,createdAt:now,updatedAt:now,abilities:{...abilityDefaults},savingThrowProficiencies:[],skillProficiencies:{},armorClass:10,hitPointsMax:10,hitPointsCurrent:10,temporaryHitPoints:0,speed:30,initiativeBonus:0,hitDice:'1d8',experiencePoints:0,inspiration:false,deathSaves:{successes:0,failures:0}}
+    const stored:StoredCharacter={character,inventory:{personal:[],party:[],currency:{...currencyDefaults}},spellbook:{knownSpells:[]}}
+    try {await saveCharacter(stored);setCharacters(current=>[...current,stored]);setSelectedId(character.id);setPage('sheet');setShowCreate(false);setName('');setClassId('');setLevel(1)}
+    catch(reason){setError(reason instanceof Error?reason.message:'Charakter konnte nicht angelegt werden.')}finally{setBusy(false)}
   }
-
-  async function handleDelete(item: StoredCharacter) {
-    if (!window.confirm(`„${item.character.name}“ wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.`)) return
-    try {
-      await deleteCharacter(item.character.id)
-      await refreshCharacters()
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : 'Charakter konnte nicht gelöscht werden.')
-    }
+  async function removeCharacter(entry:StoredCharacter) {
+    if(!window.confirm('„'+entry.character.name+'“ wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.'))return
+    try {await deleteCharacter(entry.character.id);setCharacters(current=>current.filter(item=>item.character.id!==entry.character.id));if(selectedId===entry.character.id){setSelectedId(null);setPage('overview')}}
+    catch(reason){setError(reason instanceof Error?reason.message:'Charakter konnte nicht gelöscht werden.')}
   }
-
-  async function handleImport(event: ChangeEvent<HTMLInputElement>) {
-    const file = event.target.files?.[0]
-    event.target.value = ''
-    if (!file) return
-    if (!window.confirm('Der Import ersetzt alle aktuell gespeicherten Charaktere. Hast du vorher ein Backup erstellt?')) return
-    setBusy(true)
-    setError('')
-    try {
-      await importBackup(await file.text())
-      await refreshCharacters()
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : 'Die Backup-Datei konnte nicht importiert werden.')
-    } finally {
-      setBusy(false)
-    }
+  async function exportData(){setBusy(true);try{await downloadBackup()}catch(reason){setError(reason instanceof Error?reason.message:'Backup fehlgeschlagen.')}finally{setBusy(false)}}
+  async function importData(event:ChangeEvent<HTMLInputElement>){
+    const file=event.target.files?.[0];event.target.value='';if(!file)return
+    if(!window.confirm('Der Import ersetzt alle aktuell gespeicherten Charaktere. Möchtest du fortfahren?'))return
+    setBusy(true);setError('')
+    try{const imported=await importBackup(await file.text());setCharacters(imported);setSelectedId(null);setPage('overview')}
+    catch(reason){setError(reason instanceof Error?reason.message:'Backup konnte nicht importiert werden.')}finally{setBusy(false)}
   }
-
-  async function handleExport() {
-    setBusy(true)
-    setError('')
-    try {
-      await downloadBackup()
-    } catch (reason) {
-      setError(reason instanceof Error ? reason.message : 'Backup konnte nicht erstellt werden.')
-    } finally {
-      setBusy(false)
-    }
+  function addItem(event:FormEvent<HTMLFormElement>){
+    event.preventDefault();if(!selected||!itemName.trim())return
+    const item:InventoryItem={id:newId(),name:itemName.trim(),quantity:itemQuantity,unitValueGp:itemValue,...(itemWeight?{weightLb:Number(itemWeight)}:{}),...(itemDescription?{description:itemDescription}:{})}
+    updateInventory({...selected.inventory,[itemGroup]:[...selected.inventory[itemGroup],item]})
+    setItemName('');setItemQuantity(1);setItemValue(0);setItemWeight('');setItemDescription('')
   }
-
-  const itemCount = characters.reduce((sum, item) => sum + item.inventory.personal.length + item.inventory.party.length, 0)
-  const spellCount = characters.reduce((sum, item) => sum + item.spellbook.knownSpells.length, 0)
+  function addSpell(event:FormEvent<HTMLFormElement>){
+    event.preventDefault();if(!selected||!spellName.trim())return
+    const spell:KnownSpell={spellId:newId(),name:spellName.trim(),learnedAtLevel:selected.character.level,prepared:false,spellLevel,school:spellSchool,castingTime:spellTime,range:spellRange,components:spellComponents,duration:spellDuration,concentration:spellConcentration,ritual:spellRitual,description:spellDescription}
+    updateSpellbook([...selected.spellbook.knownSpells,spell])
+    setSpellName('');setSpellLevel(0);setSpellSchool('');setSpellRange('');setSpellComponents('');setSpellDescription('');setSpellConcentration(false);setSpellRitual(false)
+  }
+  const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length+entry.inventory.party.length,0)
+  const totalSpells=characters.reduce((sum,entry)=>sum+entry.spellbook.knownSpells.length,0)
+  const currentAbilities=selected?.character.abilities??abilityDefaults
+  const prof=selected?proficiencyBonus(selected.character.level):2
 
   return <div className="app-shell min-h-screen">
     <aside className="sidebar">
-      <a className="brand" href="#"><span className="brand-mark"><Sparkles size={19}/></span><span><strong>adventura</strong><small>YOUR ADVENTURE COMPANION</small></span></a>
+      <a className="brand" href="#" onClick={event=>{event.preventDefault();setPage('overview');setSelectedId(null)}}><span className="brand-mark"><Sparkles size={19}/></span><span><strong>adventura</strong><small>YOUR ADVENTURE COMPANION</small></span></a>
       <div className="workspace-label">CHARAKTERBOGEN</div>
-      <nav className="nav-list" aria-label="Hauptnavigation">
-        {navigation.map(({label,icon:Icon,active})=><a key={label} href="#" className={active?'nav-link active':'nav-link'}><Icon size={18}/><span>{label}</span></a>)}
-      </nav>
-      <div className="sidebar-bottom">
-        <div className="campaign-card"><ScrollText size={17}/><div><strong>Am Spieltisch</strong><span>Alles für deinen Charakter an einem Ort.</span></div></div>
-        <div className="profile-row"><div className="avatar">A</div><div className="profile-copy"><strong>Abenteurer</strong><span>Lokale Speicherung</span></div><span className="status-dot"/></div>
-      </div>
+      <nav className="nav-list" aria-label="Hauptnavigation">{navItems.map(({id,label,icon:Icon})=><button key={id} onClick={()=>{if(id!=='overview'&&!selected){setError('Wähle zuerst einen Charakter aus.');return}setPage(id)}} className={page===id?'nav-link active':'nav-link'}><Icon size={18}/><span>{label}</span></button>)}</nav>
+      <div className="sidebar-bottom"><div className="campaign-card"><ScrollText size={17}/><div><strong>Am Spieltisch</strong><span>Dein digitaler Charakterbegleiter.</span></div></div><div className="profile-row"><div className="avatar">A</div><div className="profile-copy"><strong>{selected?.character.name??'Abenteurer'}</strong><span>Lokale Speicherung</span></div><span className="status-dot"/></div></div>
     </aside>
     <main className="main-area">
-      <header className="topbar">
-        <div className="breadcrumb">ADVENTURA <span>/</span> ÜBERSICHT</div>
-        <div className="top-actions">
-          <button className="icon-button" aria-label="Sprache"><Languages size={17}/></button>
-          <button className="icon-button" aria-label="Farbschema"><Moon size={17}/></button>
-          <button className="icon-button" aria-label="Backup exportieren" title="Backup exportieren" onClick={handleExport} disabled={busy}><Download size={16}/></button>
-          <button className="icon-button" aria-label="Backup importieren" title="Backup importieren" onClick={()=>fileInput.current?.click()} disabled={busy}><Upload size={16}/></button>
-          <input ref={fileInput} type="file" accept="application/json,.json" hidden onChange={handleImport}/>
-          <button className="avatar small-avatar" aria-label="Profil">A</button>
-        </div>
-      </header>
+      <header className="topbar"><div className="breadcrumb">ADVENTURA <span>/</span> {page.toUpperCase()} {selected&&page!=='overview'&&<><span>/</span> {selected.character.name.toUpperCase()}</>}</div><div className="top-actions">
+        {selected&&<select className="character-switcher" value={selectedId??''} onChange={event=>setSelectedId(event.target.value)} aria-label="Charakter auswählen">{characters.map(entry=><option key={entry.character.id} value={entry.character.id}>{entry.character.name}</option>)}</select>}
+        <button className="icon-button" aria-label="Sprache"><Languages size={17}/></button><button className="icon-button" aria-label="Farbschema"><Moon size={17}/></button>
+        <button className="icon-button" aria-label="Backup exportieren" onClick={()=>void exportData()} disabled={busy}><Download size={16}/></button><button className="icon-button" aria-label="Backup importieren" onClick={()=>fileInput.current?.click()} disabled={busy}><Upload size={16}/></button><input ref={fileInput} type="file" accept="application/json,.json" hidden onChange={event=>void importData(event)}/>
+      </div></header>
       <div className="content">
-        <section className="welcome-row"><div><div className="eyebrow"><Sparkles size={13}/> DEIN CHARAKTER IM MITTELPUNKT</div><h1>Willkommen, <em>Abenteurer.</em></h1><p className="intro">Dein digitaler Charakterbogen – bereit für den nächsten Spieleabend.</p></div><button className="primary-button" onClick={()=>setShowCreate(true)}><span>+</span> Charakter erstellen</button></section>
-        {error && <div className="error-banner" role="alert">{error}<button onClick={()=>setError('')} aria-label="Fehlermeldung schließen"><X size={15}/></button></div>}
-        <section className="stats-grid" aria-label="Zusammenfassung">
-          <article className="stat-card"><span>CHARAKTERE</span><strong>{loading?'–':characters.length}</strong><small>{characters.length===0?'Noch kein Charakter erstellt':'In deiner Sammlung'}</small><Shield className="stat-icon"/></article>
-          <article className="stat-card"><span>GEGENSTÄNDE</span><strong>{itemCount}</strong><small>Persönlich & gemeinsam</small><Boxes className="stat-icon"/></article>
-          <article className="stat-card"><span>GELERNTE ZAUBER</span><strong>{spellCount}</strong><small>Dein persönliches Zauberbuch</small><BookOpen className="stat-icon"/></article>
-        </section>
-        <section className="section-heading"><div><span className="eyebrow">DEINE HELDEN</span><h2>Deine Charaktere</h2></div><span className="muted-label">{characters.length} GESPEICHERT</span></section>
-        {loading ? <section className="empty-state"><p>Charaktere werden geladen …</p></section> : characters.length ? <section className="character-grid">
-          {characters.map((stored)=><article className="character-card" key={stored.character.id}>
-            <div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><button className="icon-button delete-button" aria-label={`${stored.character.name} löschen`} onClick={()=>void handleDelete(stored)}><Trash2 size={15}/></button></div>
-            <h3>{stored.character.name}</h3><p>{stored.character.classId} · Level {stored.character.level}</p>
-            <span className="ruleset-pill">{RULESET_LABELS[stored.character.ruleset]}</span>
-          </article>)}
-        </section> : <section className="empty-state"><div className="empty-art"><div className="art-ring"/><ScrollText size={42}/><Sparkles className="art-sparkle" size={17}/></div><h3>Dein Charakter wartet auf seinen ersten Auftritt.</h3><p>Erstelle deinen D&D-Charakter, verwalte persönliche und gemeinsame Ausrüstung und behalte deine Zauber samt vollständigen Details griffbereit.</p><button className="secondary-button" onClick={()=>setShowCreate(true)}><Shield size={16}/> Ersten Charakter erstellen</button></section>}
+        {error&&<div className="error-banner" role="alert">{error}<button onClick={()=>setError('')} aria-label="Fehler schließen"><X size={15}/></button></div>}
+        {page==='overview'&&<><section className="welcome-row"><div><div className="eyebrow"><Sparkles size={13}/> DEIN CHARAKTER IM MITTELPUNKT</div><h1>Willkommen, <em>Abenteurer.</em></h1><p className="intro">Dein digitaler Charakterbogen – bereit für den nächsten Spieleabend.</p></div><button className="primary-button" onClick={()=>setShowCreate(true)}><Plus size={16}/> Charakter erstellen</button></section>
+          <section className="stats-grid"><article className="stat-card"><span>CHARAKTERE</span><strong>{loading?'–':characters.length}</strong><small>In deiner Sammlung</small><Shield className="stat-icon"/></article><article className="stat-card"><span>GEGENSTÄNDE</span><strong>{totalItems}</strong><small>Persönlich & gemeinsam</small><Boxes className="stat-icon"/></article><article className="stat-card"><span>GELERNTE ZAUBER</span><strong>{totalSpells}</strong><small>Dein persönliches Zauberbuch</small><BookOpen className="stat-icon"/></article></section>
+          <section className="section-heading"><div><span className="eyebrow">DEINE HELDEN</span><h2>Deine Charaktere</h2></div><span className="muted-label">{characters.length} GESPEICHERT</span></section>
+          {loading?<section className="empty-state"><p>Charaktere werden geladen …</p></section>:characters.length?<section className="character-grid">{characters.map(entry=><article className="character-card" key={entry.character.id}><div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><button className="icon-button delete-button" onClick={()=>void removeCharacter(entry)} aria-label="Charakter löschen"><Trash2 size={15}/></button></div><h3>{entry.character.name}</h3><p>{entry.character.classId} · Level {entry.character.level}</p><span className="ruleset-pill">{RULESET_LABELS[entry.character.ruleset]}</span><button className="open-character" onClick={()=>{setSelectedId(entry.character.id);setPage('sheet')}}>Charakter öffnen <ChevronRight size={14}/></button></article>)}</section>:<section className="empty-state"><div className="empty-art"><div className="art-ring"/><ScrollText size={42}/><Sparkles className="art-sparkle" size={17}/></div><h3>Dein Charakter wartet auf seinen ersten Auftritt.</h3><p>Erstelle deinen D&D-Charakter und verwalte Werte, Ausrüstung und Zauber an einem Ort.</p><button className="secondary-button" onClick={()=>setShowCreate(true)}><Shield size={16}/> Ersten Charakter erstellen</button></section>}</>}
+        {page!=='overview'&&!selected&&<section className="empty-state"><h3>Wähle zuerst einen Charakter aus.</h3><button className="secondary-button" onClick={()=>setPage('overview')}>Zur Übersicht</button></section>}
+        {page==='sheet'&&selected&&<><section className="page-intro"><div><span className="eyebrow">CHARAKTERBOGEN · {RULESET_LABELS[selected.character.ruleset]}</span><h1>{selected.character.name}</h1><p className="intro">{selected.character.classId} · Stufe {selected.character.level} · Übungsbonus +{prof}</p></div><span className="saved-indicator"><Save size={13}/> Automatisch gespeichert</span></section>
+          <section className="combat-grid"><article className="combat-card"><Heart/><span>LEBENSPUNKTE</span><div className="hp-values"><input aria-label="Aktuelle Trefferpunkte" type="number" min="0" value={selected.character.hitPointsCurrent??0} onChange={e=>updateCharacter({hitPointsCurrent:Math.max(0,Number(e.target.value))})}/><b>/</b><input aria-label="Maximale Trefferpunkte" type="number" min="0" value={selected.character.hitPointsMax??0} onChange={e=>updateCharacter({hitPointsMax:Math.max(0,Number(e.target.value))})}/></div><small>Aktuell / Maximum</small></article><article className="combat-card"><Shield/><span>RÜSTUNGSKLASSE</span><input className="combat-number" type="number" value={selected.character.armorClass??10} onChange={e=>updateCharacter({armorClass:Number(e.target.value)})}/><small>RK</small></article><article className="combat-card"><Compass/><span>INITIATIVE</span><input className="combat-number" type="number" value={selected.character.initiativeBonus??modifier(currentAbilities.dex)} onChange={e=>updateCharacter({initiativeBonus:Number(e.target.value)})}/><small>Bonus</small></article><article className="combat-card"><ChevronRight/><span>BEWEGUNG</span><input className="combat-number" type="number" value={selected.character.speed??30} onChange={e=>updateCharacter({speed:Number(e.target.value)})}/><small>Fuß</small></article></section>
+          <div className="two-column"><section className="panel"><div className="panel-heading"><h2>Attribute</h2><span>MODIFIKATOR</span></div><div className="ability-grid">{ABILITIES.map(ability=><label className="ability-card" key={ability}><span>{abilityNames[ability]}</span><input type="number" min="1" max="30" value={currentAbilities[ability]} onChange={e=>updateCharacter({abilities:{...currentAbilities,[ability]:Math.min(30,Math.max(1,Number(e.target.value)||1))}})}/><strong>{signed(modifier(currentAbilities[ability]))}</strong></label>)}</div></section>
+          <section className="panel"><div className="panel-heading"><h2>Rettungswürfe</h2><span>ÜBUNGSBONUS +{prof}</span></div><div className="proficiency-list">{ABILITIES.map(ability=>{const trained=selected.character.savingThrowProficiencies??[];const bonus=modifier(currentAbilities[ability])+(trained.includes(ability)?prof:0);return <label className="proficiency-row" key={ability}><input type="checkbox" checked={trained.includes(ability)} onChange={e=>updateCharacter({savingThrowProficiencies:e.target.checked?[...trained,ability]:trained.filter(value=>value!==ability)})}/><span>{abilityNames[ability]}</span><strong>{signed(bonus)}</strong></label>})}</div></section></div>
+          <section className="panel"><div className="panel-heading"><h2>Fertigkeiten</h2><span>KEINE · GEÜBT · EXPERTISE</span></div><div className="skills-grid">{SKILLS.map(skill=>{const training=selected.character.skillProficiencies??{};const value=training[skill.id]??'none';const bonus=modifier(currentAbilities[skill.ability])+(value==='expertise'?prof*2:value==='proficient'?prof:0);return <div className="skill-row" key={skill.id}><span className="skill-ability">{skill.ability.toUpperCase()}</span><span>{skillNames[skill.id]}</span><strong>{signed(bonus)}</strong><select aria-label={skillNames[skill.id]+' Übungsgrad'} value={value} onChange={e=>updateCharacter({skillProficiencies:{...training,[skill.id]:e.target.value as ProficiencyLevel}})}><option value="none">–</option><option value="proficient">Geübt</option><option value="expertise">Expertise</option></select></div>})}</div></section>
+          <section className="panel"><div className="panel-heading"><h2>Weitere Angaben</h2></div><div className="form-grid"><Field label="Spezies" value={selected.character.speciesId??''} onChange={value=>updateCharacter({speciesId:value})}/><Field label="Hintergrund" value={selected.character.background??''} onChange={value=>updateCharacter({background:value})}/><Field label="Unterklasse" value={selected.character.subclassId??''} onChange={value=>updateCharacter({subclassId:value})}/><Field label="Gesinnung" value={selected.character.alignment??''} onChange={value=>updateCharacter({alignment:value})}/><Field label="Spielername" value={selected.character.playerName??''} onChange={value=>updateCharacter({playerName:value})}/><Field label="Erfahrungspunkte" type="number" value={String(selected.character.experiencePoints??0)} onChange={value=>updateCharacter({experiencePoints:Math.max(0,Number(value)||0)})}/><Field label="Trefferwürfel" value={selected.character.hitDice??''} onChange={value=>updateCharacter({hitDice:value})}/></div><div className="form-grid textareas"><TextField label="Persönlichkeitsmerkmale" value={selected.character.personalityTraits??''} onChange={value=>updateCharacter({personalityTraits:value})}/><TextField label="Ideale" value={selected.character.ideals??''} onChange={value=>updateCharacter({ideals:value})}/><TextField label="Bindungen" value={selected.character.bonds??''} onChange={value=>updateCharacter({bonds:value})}/><TextField label="Makel" value={selected.character.flaws??''} onChange={value=>updateCharacter({flaws:value})}/><TextField label="Merkmale & Fähigkeiten" value={selected.character.features??''} onChange={value=>updateCharacter({features:value})}/><TextField label="Notizen" value={selected.character.notes??''} onChange={value=>updateCharacter({notes:value})}/></div></section></>}
+        {page==='inventory'&&selected&&<><section className="page-intro"><div><span className="eyebrow">AUSRÜSTUNG</span><h1>Inventar</h1><p className="intro">Persönliche Gegenstände und gemeinsamer Gruppenbesitz.</p></div></section>
+          <section className="panel currency-panel"><div className="panel-heading"><h2>Währungen</h2><span>GELDBEUTEL</span></div><div className="currency-grid">{(['cp','sp','ep','gp','pp'] as const).map(coin=><label key={coin}><span>{coin.toUpperCase()}</span><input type="number" min="0" value={selected.inventory.currency?.[coin]??0} onChange={e=>updateInventory({currency:{...currencyDefaults,...selected.inventory.currency,[coin]:Math.max(0,Number(e.target.value)||0)}})}/></label>)}</div></section>
+          <section className="panel"><div className="panel-heading"><h2>Gegenstand hinzufügen</h2></div><form onSubmit={addItem}><div className="form-grid item-form"><Field label="Name" value={itemName} onChange={setItemName} required/><label className="field-label">Besitz<select value={itemGroup} onChange={e=>setItemGroup(e.target.value as 'personal'|'party')}><option value="personal">Persönlich</option><option value="party">Gruppeninventar</option></select></label><Field label="Anzahl" type="number" value={String(itemQuantity)} onChange={v=>setItemQuantity(Math.max(1,Number(v)||1))}/><Field label="Wert (GM)" type="number" value={String(itemValue)} onChange={v=>setItemValue(Math.max(0,Number(v)||0))}/><Field label="Gewicht (Pfund)" type="number" value={itemWeight} onChange={setItemWeight}/><Field label="Beschreibung" value={itemDescription} onChange={setItemDescription}/></div><button className="primary-button form-submit" type="submit"><Plus size={15}/> Gegenstand hinzufügen</button></form></section>
+          {(['personal','party'] as const).map(group=><section className="panel" key={group}><div className="panel-heading"><h2>{group==='personal'?'Persönliches Inventar':'Gruppeninventar'}</h2><span>{selected.inventory[group].length} GEGENSTÄNDE</span></div>{selected.inventory[group].length===0?<p className="muted-paragraph">Noch keine Gegenstände vorhanden.</p>:<div className="inventory-list">{selected.inventory[group].map(item=><div className="inventory-row" key={item.id}><div className="inventory-main"><strong>{item.name}</strong><small>{item.description||'Keine Beschreibung'}{item.weightLb!==undefined?' · '+item.weightLb+' Pfd.':''}</small></div><span>× {item.quantity}</span><span>{item.unitValueGp} GM</span><label className="equipped-toggle"><input type="checkbox" checked={item.equipped??false} onChange={e=>updateInventory({[group]:selected.inventory[group].map(entry=>entry.id===item.id?{...entry,equipped:e.target.checked}:entry)})}/> Ausgerüstet</label><button className="icon-button delete-button" aria-label={item.name+' entfernen'} onClick={()=>updateInventory({[group]:selected.inventory[group].filter(entry=>entry.id!==item.id)})}><Trash2 size={15}/></button></div>)}</div>}</section>)}
+        </>}
+        {page==='spells'&&selected&&<><section className="page-intro"><div><span className="eyebrow">MAGIE & ZAUBER</span><h1>Zauberbuch</h1><p className="intro">Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.</p></div></section>
+          <section className="panel"><div className="panel-heading"><h2>Zauber hinzufügen</h2><span>MANUELLE ERFASSUNG</span></div><form onSubmit={addSpell}><div className="form-grid spell-form"><Field label="Zaubername" value={spellName} onChange={setSpellName} required/><label className="field-label">Zaubergrad<select value={spellLevel} onChange={e=>setSpellLevel(Number(e.target.value))}>{Array.from({length:10},(_,i)=><option key={i} value={i}>{i===0?'Zaubertrick':'Grad '+i}</option>)}</select></label><Field label="Schule" value={spellSchool} onChange={setSpellSchool}/><Field label="Zauberzeit" value={spellTime} onChange={setSpellTime}/><Field label="Reichweite" value={spellRange} onChange={setSpellRange}/><Field label="Komponenten (V/S/M)" value={spellComponents} onChange={setSpellComponents}/><Field label="Wirkungsdauer" value={spellDuration} onChange={setSpellDuration}/></div><div className="spell-flags"><label><input type="checkbox" checked={spellConcentration} onChange={e=>setSpellConcentration(e.target.checked)}/> Konzentration</label><label><input type="checkbox" checked={spellRitual} onChange={e=>setSpellRitual(e.target.checked)}/> Ritual</label></div><TextField label="Beschreibung / Effekt" value={spellDescription} onChange={setSpellDescription}/><button className="primary-button form-submit" type="submit"><Plus size={15}/> Zauber hinzufügen</button></form></section>
+          <section className="panel"><div className="panel-heading"><h2>Deine Zauber</h2><span>{selected.spellbook.knownSpells.length} GESPEICHERT</span></div>{selected.spellbook.knownSpells.length===0?<p className="muted-paragraph">Noch keine Zauber eingetragen. Du kannst sie oben hinzufügen.</p>:<div className="spell-list">{selected.spellbook.knownSpells.map(spell=><article className="spell-card" key={spell.spellId}><div className="spell-card-heading"><div><span className="spell-level">{spell.spellLevel===0?'ZAUBERTRICK':'GRAD '+(spell.spellLevel??0)}</span><h3>{spell.name??spell.spellId}</h3></div><button className="icon-button delete-button" onClick={()=>updateSpellbook(selected.spellbook.knownSpells.filter(item=>item.spellId!==spell.spellId))} aria-label="Zauber entfernen"><Trash2 size={15}/></button></div><div className="spell-meta">{[spell.school,spell.castingTime,spell.range,spell.components,spell.duration,spell.concentration?'Konzentration':null,spell.ritual?'Ritual':null].filter(Boolean).join(' · ')}</div>{spell.description&&<p>{spell.description}</p>}<label className="prepared-toggle"><input type="checkbox" checked={spell.prepared} onChange={e=>updateSpellbook(selected.spellbook.knownSpells.map(item=>item.spellId===spell.spellId?{...item,prepared:e.target.checked}:item))}/> Vorbereitet</label></article>)}</div>}</section>
+        </>}
+        {page==='levelup'&&selected&&<><section className="page-intro"><div><span className="eyebrow">FORTSCHRITT</span><h1>Level-up</h1><p className="intro">Entwickle deinen Charakter weiter. Regelwerk: {RULESET_LABELS[selected.character.ruleset]}.</p></div></section>
+          <section className="levelup-card"><div className="level-number"><span>AKTUELLE STUFE</span><strong>{selected.character.level}</strong></div><div className="level-arrow"><ChevronRight size={25}/></div><div className="level-number next"><span>NÄCHSTE STUFE</span><strong>{Math.min(20,selected.character.level+1)}</strong></div><button className="primary-button" disabled={selected.character.level>=20} onClick={()=>{if(window.confirm('Charakter auf Stufe '+(selected.character.level+1)+' erhöhen?'))updateCharacter({level:Math.min(20,selected.character.level+1)})}}>Stufe erhöhen <ChevronRight size={15}/></button></section>
+          <section className="panel"><div className="panel-heading"><h2>Regelhinweis</h2></div><p className="muted-paragraph">Der Übungsbonus und die angezeigten Fertigkeits- und Rettungswurfboni werden automatisch aus der neuen Stufe berechnet. Trefferpunkte, Klassenmerkmale, Unterklassenmerkmale und Zauber müssen derzeit anhand deiner Klasse und des gewählten Regelwerks ergänzt werden.</p><p className="muted-paragraph">Das Level-up erhöht aktuell nur die Stufe. Es vergibt bewusst keine automatischen Klassenmerkmale oder Zauber, solange keine vollständigen, lizenzierten Progressionsdaten hinterlegt sind.</p></section>
+        </>}
         <footer className="footer-note"><BookOpen size={14}/> Dein Begleiter am Spieltisch. <span>ADVENTURA · D&D 5E 2014 / 2024</span></footer>
       </div>
     </main>
-    {showCreate && <div className="modal-backdrop" role="presentation" onMouseDown={(event)=>{if(event.target===event.currentTarget)setShowCreate(false)}}>
-      <section className="create-modal" role="dialog" aria-modal="true" aria-labelledby="create-title">
-        <div className="modal-heading"><div><span className="eyebrow">NEUES ABENTEUER</span><h2 id="create-title">Charakter erstellen</h2></div><button className="icon-button" onClick={()=>setShowCreate(false)} aria-label="Schließen"><X size={17}/></button></div>
-        <form onSubmit={handleCreate}>
-          <label className="field-label">Charaktername<input autoFocus value={name} onChange={event=>setName(event.target.value)} placeholder="z. B. Elara Lichtbringer" required maxLength={60}/></label>
-          <label className="field-label">Klasse<input value={classId} onChange={event=>setClassId(event.target.value)} placeholder="z. B. Paladin, Magier, Schurke" required maxLength={40}/></label>
-          <div className="form-row">
-            <label className="field-label">Regelwerk<select value={ruleset} onChange={event=>setRuleset(event.target.value as Dnd5eRuleset)}><option value="2014">D&D 5e (2014)</option><option value="2024">D&D 5e (2024)</option></select></label>
-            <label className="field-label">Level<input type="number" min={1} max={20} value={level} onChange={event=>setLevel(Math.min(20,Math.max(1,Number(event.target.value)||1)))}/></label>
-          </div>
-          <p className="modal-hint">Du kannst weitere Eigenschaften später im Charakterbogen ergänzen.</p>
-          <div className="modal-actions"><button type="button" className="secondary-button" onClick={()=>setShowCreate(false)}>Abbrechen</button><button type="submit" className="primary-button" disabled={busy}>{busy?'Speichert …':'Charakter speichern'}</button></div>
-        </form>
-      </section>
-    </div>}
+    {showCreate&&<div className="modal-backdrop" role="presentation" onMouseDown={e=>{if(e.target===e.currentTarget)setShowCreate(false)}}><section className="create-modal" role="dialog" aria-modal="true" aria-labelledby="create-title"><div className="modal-heading"><div><span className="eyebrow">NEUES ABENTEUER</span><h2 id="create-title">Charakter erstellen</h2></div><button className="icon-button" onClick={()=>setShowCreate(false)} aria-label="Schließen"><X size={17}/></button></div><form onSubmit={createCharacter}><Field label="Charaktername" value={name} onChange={setName} required/><Field label="Klasse" value={classId} onChange={setClassId} required/><div className="form-row"><label className="field-label">Regelwerk<select value={ruleset} onChange={e=>setRuleset(e.target.value as Dnd5eRuleset)}><option value="2014">D&D 5e (2014)</option><option value="2024">D&D 5e (2024)</option></select></label><Field label="Level" type="number" value={String(level)} onChange={v=>setLevel(Math.min(20,Math.max(1,Number(v)||1)))}/></div><p className="modal-hint">Du kannst Attribute und weitere Eigenschaften direkt im Charakterbogen ergänzen.</p><div className="modal-actions"><button type="button" className="secondary-button" onClick={()=>setShowCreate(false)}>Abbrechen</button><button type="submit" className="primary-button" disabled={busy}>{busy?'Speichert …':'Charakter speichern'}</button></div></form></section></div>}
   </div>
+}
+
+function Field({label,value,onChange,type='text',required=false}:{label:string;value:string;onChange:(value:string)=>void;type?:string;required?:boolean}) {
+  return <label className="field-label">{label}<input type={type} value={value} onChange={event=>onChange(event.target.value)} required={required}/></label>
+}
+function TextField({label,value,onChange}:{label:string;value:string;onChange:(value:string)=>void}) {
+  return <label className="field-label">{label}<textarea rows={3} value={value} onChange={event=>onChange(event.target.value)}/></label>
 }
