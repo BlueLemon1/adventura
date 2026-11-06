@@ -1,5 +1,4 @@
 import type { Character } from './character'
-import type { Dnd5eRuleset } from './rules'
 
 export interface SpellSlot {
   spellLevel: number
@@ -23,11 +22,6 @@ const FULL: number[][] = [
   [4,3,3,3,2,1,1], [4,3,3,3,2,1,1,1], [4,3,3,3,2,1,1,1],
   [4,3,3,3,2,1,1,1,1], [4,3,3,3,3,1,1,1,1], [4,3,3,3,3,2,1,1,1],
   [4,3,3,3,3,2,2,1,1],
-]
-const HALF: number[][] = [
-  [], [], [2], [3], [3], [4,2], [4,2], [4,3], [4,3], [4,3,2], [4,3,2],
-  [4,3,3], [4,3,3], [4,3,3,1], [4,3,3,1], [4,3,3,2], [4,3,3,2],
-  [4,3,3,3,1], [4,3,3,3,1], [4,3,3,3,2], [4,3,3,3,2],
 ]
 const PACT: Array<{ spellLevel: number; max: number }> = [
   {spellLevel:0,max:0},{spellLevel:1,max:1},{spellLevel:1,max:2},{spellLevel:2,max:2},
@@ -55,7 +49,7 @@ export function getSpellcastingProgression(character: Pick<Character,'ruleset'|'
   if (!kind) return null
   if (kind === 'warlock') return {kind,slots:[],pactMagic:PACT[character.level]}
   const casterLevel = kind === 'full' ? character.level : kind === 'half' ? Math.floor((character.level + 1) / 2) : Math.floor(character.level / 3)
-  const slots = kind === 'half' ? HALF[casterLevel] ?? [] : FULL[casterLevel] ?? []
+  const slots = FULL[casterLevel] ?? []
   return {kind,slots}
 }
 export function createSpellSlots(character: Pick<Character,'ruleset'|'classId'|'subclassId'|'level'>): SpellSlot[] {
