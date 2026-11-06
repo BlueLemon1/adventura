@@ -5,8 +5,6 @@
   "type": "module",
   "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview", "typecheck": "tsc -b --pretty" },
   "dependencies": {
-    "@supabase/supabase-js": "latest",
-    "@tanstack/react-query": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "i18next": "latest",
