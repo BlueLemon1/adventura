@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { DND5E_RULESETS } from '../domain/rules'
 import { ABILITIES } from '../domain/character'
 import type { StoredCharacter } from './database'
-import { getCharacters, replaceCharacters } from './database'
+import { getCharacters, getPartyInventory, replaceCharacters, savePartyInventory } from './database'
 
 const abilitySchema = z.object({
   str: z.number().int().min(1).max(30), dex: z.number().int().min(1).max(30),
@@ -44,9 +44,9 @@ const storedCharacterSchema = z.object({
   }).optional()}),
   spellbook:z.object({knownSpells:z.array(spellSchema)}),
 })
-const backupSchema=z.object({app:z.literal('adventura'),formatVersion:z.literal(1),exportedAt:z.string().datetime(),characters:z.array(storedCharacterSchema)})
+const backupSchema=z.object({app:z.literal('adventura'),formatVersion:z.literal(1),exportedAt:z.string().datetime(),characters:z.array(storedCharacterSchema),partyInventory:z.array(itemSchema).optional()})
 export type AdventuraBackup=z.infer<typeof backupSchema>
-export async function createBackup():Promise<AdventuraBackup>{return{app:'adventura',formatVersion:1,exportedAt:new Date().toISOString(),characters:await getCharacters()}}
+export async function createBackup():Promise<AdventuraBackup>{return{app:'adventura',formatVersion:1,exportedAt:new Date().toISOString(),characters:await getCharacters(),partyInventory:await getPartyInventory()}}
 export function parseBackup(json:string):AdventuraBackup{return backupSchema.parse(JSON.parse(json) as unknown)}
 export async function importBackup(json:string):Promise<StoredCharacter[]>{
   const backup=parseBackup(json)
