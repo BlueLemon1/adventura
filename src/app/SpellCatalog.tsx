@@ -27,7 +27,7 @@ export function SpellCatalog({character,knownSpells,onAdd}:{character:Character;
   const classId=classKey(character.classId)
   const subclass=normalize(character.subclassId??'')
   const spellcasting=getSpellcastingProgression(character)
-  const maxSpellLevel=spellcasting?.kind==='warlock'?(spellcasting.pactMagic?.spellLevel??0):Math.max(0,...(spellcasting?.slots.map(slot=>slot.spellLevel)??[]))
+  const maxSpellLevel=spellcasting?.kind==='warlock'?(spellcasting.pactMagic?.spellLevel??0):(spellcasting?.slots.length??0)
   const allowedClasses=classId==='fighter'&&subclass.includes('eldritchknight')?['wizard']:classId==='rogue'&&subclass.includes('arcanetrickster')?['wizard']:[classId]
   const results=useMemo(()=>{
     const needle=normalize(query)

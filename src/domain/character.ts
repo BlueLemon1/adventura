@@ -76,6 +76,7 @@ export interface InventoryItem {
   weightLb?: number
   description?: string
   higherLevel?: string
+  higherLevel?: string
   equipped?: boolean
 }
 
