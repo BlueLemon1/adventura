@@ -39,7 +39,7 @@ function runTransaction<T>(
   return openDatabase().then((database) => new Promise<T>((resolve, reject) => {
     const transaction = database.transaction(CHARACTER_STORE, mode)
     const store = transaction.objectStore(CHARACTER_STORE)
-    let result: T
+    let result!: T
 
     operation(store, (value) => { result = value }, reject)
 
