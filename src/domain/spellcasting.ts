@@ -23,6 +23,12 @@ const FULL: number[][] = [
   [4,3,3,3,2,1,1,1,1], [4,3,3,3,3,1,1,1,1], [4,3,3,3,3,2,1,1,1],
   [4,3,3,3,3,2,2,1,1],
 ]
+const THIRD_2014: number[][] = [
+  [],[],[],[2],[3],[3],[3],[4,2],[4,2],[4,2],[4,3],[4,3],[4,3],[4,3,2],[4,3,2],[4,3,2],[4,3,3],[4,3,3],[4,3,3],[4,3,3,1],[4,3,3,1],
+]
+const THIRD_2024: number[][] = [
+  [],[],[],[2],[3],[3],[3],[4,2],[4,2],[4,2],[4,3],[4,3],[4,3],[4,3,2],[4,3,2],[4,3,2],[4,3,3],[4,3,3],[4,3,3],[4,3,3],[4,3,3],
+]
 const PACT: Array<{ spellLevel: number; max: number }> = [
   {spellLevel:0,max:0},{spellLevel:1,max:1},{spellLevel:1,max:2},{spellLevel:2,max:2},
   {spellLevel:2,max:2},{spellLevel:3,max:2},{spellLevel:3,max:2},{spellLevel:4,max:2},
@@ -50,7 +56,7 @@ export function getSpellcastingProgression(character: Pick<Character,'ruleset'|'
   if (kind === 'warlock') return {kind,slots:[],pactMagic:PACT[character.level]}
   if (kind === 'half' && character.ruleset === '2014' && character.level < 2) return null
   const casterLevel = kind === 'full' ? character.level : kind === 'half' ? Math.ceil(character.level / 2) : Math.floor(character.level / 3)
-  const slots = FULL[casterLevel] ?? []
+  const slots = kind === 'third' ? (character.ruleset === '2014' ? THIRD_2014[character.level] : THIRD_2024[character.level]) ?? [] : FULL[casterLevel] ?? []
   return {kind,slots}
 }
 export function createSpellSlots(character: Pick<Character,'ruleset'|'classId'|'subclassId'|'level'>): SpellSlot[] {
