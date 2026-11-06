@@ -48,7 +48,8 @@ export function getSpellcastingProgression(character: Pick<Character,'ruleset'|'
   const kind = casterKind(character)
   if (!kind) return null
   if (kind === 'warlock') return {kind,slots:[],pactMagic:PACT[character.level]}
-  const casterLevel = kind === 'full' ? character.level : kind === 'half' ? Math.floor((character.level + 1) / 2) : Math.floor(character.level / 3)
+  if (kind === 'half' && character.ruleset === '2014' && character.level < 2) return null
+  const casterLevel = kind === 'full' ? character.level : kind === 'half' ? Math.ceil(character.level / 2) : Math.floor(character.level / 3)
   const slots = FULL[casterLevel] ?? []
   return {kind,slots}
 }
