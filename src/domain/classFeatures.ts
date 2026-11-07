@@ -1,4 +1,5 @@
 import type { Character } from './character'
+import classFeatures2014 from '../data/class-features-2014.json'
 import classFeatures2024 from '../data/class-features-2024.json'
 import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
@@ -2446,15 +2447,14 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
     }))
 }
 
-export function getAutomaticClassFeatures(
+function getImportedClassFeatures(
   character: Character,
-  locale: ContentLocale = 'de',
+  locale: ContentLocale,
+  catalog: ClassFeatureRecord[],
 ): AutomaticClassFeature[] {
-  if (character.ruleset !== '2024') return getLegacyAutomaticClassFeatures(character)
-
   const selectedSubclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
-  const catalog = classFeatures2024 as unknown as ClassFeatureRecord[]
   const legacyMetadata = getLegacyAutomaticClassFeatures(character)
+  const normalizeName = (value: string) => value.toLowerCase().replace(/[^a-z0-9]/g, '')
 
   return catalog
     .filter(
@@ -2467,7 +2467,7 @@ export function getAutomaticClassFeatures(
       const text = resolveClassFeatureText(feature, locale)
       const metadata = legacyMetadata.find(
         (entry) =>
-          entry.name === feature.names.en &&
+          normalizeName(entry.name) === normalizeName(feature.names.en ?? '') &&
           entry.level === feature.level &&
           entry.source === feature.featureType,
       )
@@ -2491,6 +2491,16 @@ export function getAutomaticClassFeatures(
       }
     })
     .sort((left, right) => left.level - right.level || left.name.localeCompare(right.name))
+}
+
+export function getAutomaticClassFeatures(
+  character: Character,
+  locale: ContentLocale = 'de',
+): AutomaticClassFeature[] {
+  const catalog = (character.ruleset === '2014'
+    ? classFeatures2014
+    : classFeatures2024) as unknown as ClassFeatureRecord[]
+  return getImportedClassFeatures(character, locale, catalog)
 }
 
 export function getSpellbookFeatureSpells(
