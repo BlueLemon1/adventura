@@ -176,7 +176,6 @@ const ACTIVE_FEATURES: Record<
     activation: 'bonusAction',
     description:
       'Du kannst Schritt des Windes einsetzen, nachdem du in diesem Zug bereits eine andere Bonusaktion verwendet hast.',
-    resourceId: 'focus-points',
   },
   'Zitternde Handfläche': {
     activation: 'action',
@@ -278,34 +277,28 @@ const ACTIVE_FEATURES: Record<
   },
   'Rücksichtsloser Angriff': {
     activation: 'special',
-    description:
-      'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.',
+    description: 'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.',
   },
   'Betäubender Schlag': {
     activation: 'special',
-    description:
-      'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.',
+    description: 'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.',
     resourceId: 'ki-points',
   },
   'Geschosse abwehren': {
     activation: 'reaction',
-    description:
-      'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.',
+    description: 'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.',
   },
   'Angriffe abwehren': {
     activation: 'reaction',
-    description:
-      'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.',
+    description: 'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.',
   },
   'Langsamer Fall': {
     activation: 'reaction',
-    description:
-      'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.',
+    description: 'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.',
   },
   'Göttliches Niederstrecken': {
     activation: 'special',
-    description:
-      'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.',
+    description: 'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.',
   },
 }
 
@@ -1185,18 +1178,9 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
       resourceId = 'paladin-channel-divinity'
     if (feature.name === 'Tiergestalt')
-      return {
-        ...feature,
-        ...active,
-        activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
-        resourceId,
-      }
+      return { ...feature, ...active, activation: character.ruleset === '2014' ? 'action' : 'bonusAction', resourceId }
     if (feature.name === 'Betäubender Schlag')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
-      }
+      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points' }
     if (feature.name === 'Handauflegen')
       return {
         ...feature,

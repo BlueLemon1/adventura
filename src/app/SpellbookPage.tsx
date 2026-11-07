@@ -45,7 +45,7 @@ export function SpellbookPage({
   const t = (value: string) => translate(language, value)
   const activeFeatures = getActiveClassFeatures(character)
   const classResources = getClassResources(character)
-  const activeFeatureEntries: KnownSpell[] = activeFeatures.map((feature) => {
+  const activeFeatureEntries: KnownSpell[] = activeFeatures.map((feature): KnownSpell => {
     const resource = feature.resourceId
       ? classResources.find((entry) => entry.id === feature.resourceId)
       : undefined
