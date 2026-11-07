@@ -380,7 +380,10 @@ Object.assign(en, {
 })
 
 Object.assign(en, {
-  'Im Regelwerk 2014 beginnt die Zauberprogression für Paladine und Waldläufer ab Stufe 2.': 'In the 2014 ruleset, paladins and rangers begin spellcasting progression at level 2.',
-  'Im Regelwerk 2024 beginnt die Zauberprogression für Paladine und Waldläufer bereits ab Stufe 1.': 'In the 2024 ruleset, paladins and rangers begin spellcasting progression at level 1.',
-  'Für SRD 5.1 sind Zaubernamen und Grunddaten teilweise lokalisiert. Die Beschreibungen bleiben vorerst im Originaltext, damit keine Regeltexte aus SRD 5.2.1 mit den 2014-Regeln vermischt werden.': 'For SRD 5.1, spell names and metadata are partially localized. Descriptions remain in the original text for now to avoid mixing SRD 5.2.1 rules text with the 2014 rules.',
+  'Im Regelwerk 2014 beginnt die Zauberprogression für Paladine und Waldläufer ab Stufe 2.':
+    'In the 2014 ruleset, paladins and rangers begin spellcasting progression at level 2.',
+  'Im Regelwerk 2024 beginnt die Zauberprogression für Paladine und Waldläufer bereits ab Stufe 1.':
+    'In the 2024 ruleset, paladins and rangers begin spellcasting progression at level 1.',
+  'Für SRD 5.1 sind Zaubernamen und Grunddaten teilweise lokalisiert. Die Beschreibungen bleiben vorerst im Originaltext, damit keine Regeltexte aus SRD 5.2.1 mit den 2014-Regeln vermischt werden.':
+    'For SRD 5.1, spell names and metadata are partially localized. Descriptions remain in the original text for now to avoid mixing SRD 5.2.1 rules text with the 2014 rules.',
 })

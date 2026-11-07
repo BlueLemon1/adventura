@@ -110,7 +110,15 @@ const spellSchema = z.object({
   ritual: z.boolean().optional(),
   description: z.string().optional(),
   higherLevel: z.string().optional(),
-  damage: z.array(z.object({ dice: z.string(), average: z.number().finite().min(0), type: z.string().optional() })).optional(),
+  damage: z
+    .array(
+      z.object({
+        dice: z.string(),
+        average: z.number().finite().min(0),
+        type: z.string().optional(),
+      }),
+    )
+    .optional(),
   source: z.enum(['class', 'story', 'item', 'feat', 'other']).optional(),
   sourceName: z.string().optional(),
   usageLimit: z.number().int().min(0).max(1000).optional(),

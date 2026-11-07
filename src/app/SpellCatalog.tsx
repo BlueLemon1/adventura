@@ -438,8 +438,12 @@ export function SpellCatalog({
         {spellcasting?.kind === 'half' && (
           <p>
             {character.ruleset === '2014'
-              ? t('Im Regelwerk 2014 beginnt die Zauberprogression für Paladine und Waldläufer ab Stufe 2.')
-              : t('Im Regelwerk 2024 beginnt die Zauberprogression für Paladine und Waldläufer bereits ab Stufe 1.')}
+              ? t(
+                  'Im Regelwerk 2014 beginnt die Zauberprogression für Paladine und Waldläufer ab Stufe 2.',
+                )
+              : t(
+                  'Im Regelwerk 2024 beginnt die Zauberprogression für Paladine und Waldläufer bereits ab Stufe 1.',
+                )}
           </p>
         )}
       </div>
