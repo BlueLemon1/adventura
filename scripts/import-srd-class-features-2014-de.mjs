@@ -30,8 +30,10 @@ for (const feature of records) {
     const description = features[source.slug + '.desc']
     if (name) feature.names.de = name
     if (description) feature.descriptions.de = description
-    imported += 1
-    continue
+    if (feature.names.en !== 'Spellcasting' && feature.names.en !== 'Pact Magic') {
+      imported += 1
+      continue
+    }
   }
 
   if (feature.names.en === 'Spellcasting' || feature.names.en === 'Pact Magic') {
