@@ -144,9 +144,9 @@ function SpellCard({
         </div>
         <div className="spellbook-card-actions">
           <span className={`spell-source source-${source}`}>
-            {translateText(SOURCE_LABELS[source])}
+            {translateText(isFeature ? (spell.sourceName ?? 'Klassenmerkmal') : SOURCE_LABELS[source])}
           </span>
-          {spell.alwaysPrepared && (
+          {!isFeature && spell.alwaysPrepared && (
             <span className="always-prepared">
               <Check size={12} />
               {translateText('Immer vorbereitet')}
@@ -164,7 +164,7 @@ function SpellCard({
         </div>
       </div>
 
-      {spell.sourceName && (
+      {spell.sourceName && !isFeature && (
         <p className="spell-origin-note">
           {translateText('Quelle')}: {spell.sourceName}
         </p>
@@ -312,7 +312,7 @@ export function SpellbookList({
         meta={
           <span className="spellbook-count">
             <BookOpen size={14} />
-            {spells.length}
+            {actualSpells.length}
           </span>
         }
       />
