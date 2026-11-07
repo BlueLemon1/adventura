@@ -1,20 +1,379 @@
-import {useMemo,useState} from 'react'
-import {BookOpen,Search,Trash2,Sparkles,Check,RotateCcw,Zap,Clock3} from 'lucide-react'
-import type {Character,KnownSpell,SpellSlot,PactMagic} from '../domain/character'
-import {getSpellCapacity} from '../domain/spellLimits'
-import {translate,useLanguage} from './i18n'
-type Filter='all'|'prepared'|'unprepared'
-const sourceLabel:Record<string,string>={class:'Klasse',story:'Story',item:'Gegenstand',feat:'Talent',other:'Sonstiges'}
-const resetLabel:Record<string,string>={shortRest:'kurze Rast',longRest:'lange Rast',dawn:'Morgengrauen',none:'manuell'}
-export function SpellbookList({spells,character,spellSlots,pactMagic,onTogglePrepared,onRemove,onUse,onReset}:{spells:KnownSpell[];character:Character;spellSlots:SpellSlot[];pactMagic?:PactMagic;onTogglePrepared:(id:string,value:boolean)=>void;onRemove:(id:string)=>void;onUse:(id:string)=>void;onReset:(id:string)=>void}){
- const language=useLanguage(),t=(v:string)=>translate(language,v),[query,setQuery]=useState(''),[filter,setFilter]=useState<Filter>('all')
- const visible=useMemo(()=>{const q=query.trim().toLocaleLowerCase();return spells.filter(s=>{const text=[s.name,s.school,s.description,s.notes,s.sourceName].filter(Boolean).join(' ').toLocaleLowerCase();return(!q||text.includes(q))&&(filter==='all'||(filter==='prepared'?s.prepared||s.alwaysPrepared:!s.prepared&&!s.alwaysPrepared))}).sort((a,b)=>(a.spellLevel??0)-(b.spellLevel??0)||(a.name??a.spellId).localeCompare(b.name??b.spellId))},[spells,query,filter])
- const levels=[...new Set(visible.map(s=>s.spellLevel??0))],prepared=spells.filter(s=>s.prepared||s.alwaysPrepared).length
- const slotAt=(level:number)=>spellSlots.find(s=>s.spellLevel===level)
- const capacity=getSpellCapacity(character,spells)
- return <section className="panel spellbook-panel"><div className="panel-heading spellbook-heading"><div><h2>{t('Deine Zauber')}</h2><p className="muted-paragraph">{spells.length} {t('Zauber im Buch')} · {prepared} {t('vorbereitet')}</p></div><span className="spellbook-count"><BookOpen size={14}/>{spells.length}</span></div>
- <div className="spell-capacity-grid">{Array.from({length:10},(_,level)=>{const known=spells.filter(s=>(s.spellLevel??0)===level).length;const slot=slotAt(level);const isPact=!!pactMagic&&pactMagic.spellLevel===level;const capacity=isPact?pactMagic!.max:slot?.max??0;const remaining=isPact?pactMagic!.current:slot?.current??0;return <div className="spell-capacity" key={level}><span>{level===0?t('Zaubertricks'):t('Grad')+' '+level}</span><strong>{known}</strong><small>{t('im Buch')}</small>{level>0&&<div className="spell-slot-line"><Zap size={11}/><b>{capacity}</b><span>{t('Plätze')}</span><small>{remaining}/{capacity} {t('übrig')}</small></div>}</div>})}</div>
- <div className="class-spell-capacity"><div><span>{t(capacity.label)}</span><strong>{capacity.current}{capacity.maximum!==undefined?' / '+capacity.maximum:''}</strong><small>{capacity.mode==='known'?t('Bekannte Klassenzauber'):capacity.mode==='prepared'?t('Vorbereitete Klassenzauber'):t('Regelgrenze noch offen')}</small></div><p>{t(capacity.note)}</p></div><p className="spell-capacity-note">{t('Zauber im Buch und Zauberplätze sind getrennt: Zauberplätze geben an, wie oft du Zauber des jeweiligen Grades wirken kannst. Zusätzliche Story- und Gegenstandszauber zählen nicht als Klassenfortschritt.')}</p>
- <div className="spellbook-toolbar"><label className="spellbook-search"><Search size={15}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder={t('Suche Zauber in deinem Buch …')}/></label><div className="spellbook-filters" role="group" aria-label={t('Zauber filtern')}>{(['all','prepared','unprepared'] as const).map(f=><button type="button" key={f} className={filter===f?'active':''} onClick={()=>setFilter(f)}>{t(f==='all'?'Alle Zauber':f==='prepared'?'Vorbereitet':'Nicht vorbereitet')}</button>)}</div></div>
- {visible.length===0?<div className="spellbook-empty"><Sparkles size={22}/><p>{spells.length===0?t('Deine Zauber sind noch leer.'):t('Keine Zauber entsprechen diesem Filter.')}</p></div>:<div className="spellbook-groups">{levels.map(level=>{const group=visible.filter(s=>(s.spellLevel??0)===level);return <section className="spellbook-level-group" key={level}><div className="spellbook-level-heading"><span>{level===0?t('Zaubertricks'):t('Grad')+' '+level}</span><small>{group.length} {t('Zauber')}</small></div><div className="spellbook-cards">{group.map(spell=><article className="spellbook-card" key={spell.spellId}><div className="spellbook-card-top"><div className="spellbook-card-title"><span className="spell-level">{level===0?t('ZAUBERTRICK'):t('GRAD')+' '+level}</span><h3>{spell.name??spell.spellId}</h3></div><div className="spellbook-card-actions"><span className={'spell-source source-'+(spell.source??'class')}>{t(sourceLabel[spell.source??'class'])}</span>{spell.alwaysPrepared&&<span className="always-prepared"><Check size={12}/>{t('Immer vorbereitet')}</span>}<button className="icon-button delete-button" type="button" onClick={()=>onRemove(spell.spellId)} aria-label={t('Zauber entfernen')+': '+(spell.name??spell.spellId)}><Trash2 size={14}/></button></div></div>{spell.sourceName&&<p className="spell-origin-note">{t('Quelle')}: {spell.sourceName}</p>}<div className="spellbook-meta">{[spell.school,spell.castingTime,spell.range,spell.components,spell.duration].filter(Boolean).map((v,i)=><span key={i}>{v}</span>)}{spell.concentration&&<span>{t('Konzentration')}</span>}{spell.ritual&&<span>{t('Ritual')}</span>}</div>{spell.description&&<details className="spellbook-details"><summary>{t('Zauberbeschreibung')}</summary><p>{spell.description}</p>{spell.higherLevel&&<p><strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}</p>}</details>}<div className="spellbook-card-footer"><small>{t('Gelernt auf Stufe')} {spell.learnedAtLevel}</small><div className="spell-card-controls">{spell.usageLimit&&spell.usageLimit>0?<span className="spell-uses"><Clock3 size={12}/>{spell.usageRemaining??spell.usageLimit}/{spell.usageLimit} · {t(resetLabel[spell.usageReset??'longRest'])}</span>:<label className="prepared-toggle"><input type="checkbox" checked={spell.prepared||spell.alwaysPrepared===true} disabled={spell.alwaysPrepared===true} onChange={e=>onTogglePrepared(spell.spellId,e.target.checked)}/>{t('Vorbereitet')}</label>}{spell.usageLimit&&spell.usageLimit>0&&<><button className="spell-use-button" type="button" disabled={(spell.usageRemaining??spell.usageLimit)<=0} onClick={()=>onUse(spell.spellId)}>{t('Nutzen')}</button><button className="icon-button" type="button" onClick={()=>onReset(spell.spellId)} title={t('Nutzungen zurücksetzen')}><RotateCcw size={13}/></button></>}</div></div></article>)}</div></section>})}</div>}</section>
+import { useMemo, useState } from 'react'
+import {
+  BookOpen,
+  Check,
+  Clock3,
+  RotateCcw,
+  Search,
+  Sparkles,
+  Trash2,
+  Zap,
+} from 'lucide-react'
+import type { Character, KnownSpell, PactMagic, SpellSlot } from '../domain/character'
+import { getSpellCapacity } from '../domain/spellLimits'
+import { normalizeKey } from '../domain/text'
+import { IconButton } from '../components/ui/button'
+import { SearchField } from '../components/ui/field'
+import { PanelHeader } from '../components/ui/panel-header'
+import { translate, useLanguage } from './i18n'
+
+type SpellFilter = 'all' | 'prepared' | 'unprepared'
+
+interface SpellbookListProps {
+  spells: KnownSpell[]
+  character: Character
+  spellSlots: SpellSlot[]
+  pactMagic?: PactMagic
+  onTogglePrepared: (id: string, value: boolean) => void
+  onRemove: (id: string) => void
+  onUse: (id: string) => void
+  onReset: (id: string) => void
+}
+
+const SOURCE_LABELS: Record<NonNullable<KnownSpell['source']>, string> = {
+  class: 'Klasse',
+  story: 'Story',
+  item: 'Gegenstand',
+  feat: 'Talent',
+  other: 'Sonstiges',
+}
+
+const RESET_LABELS: Record<NonNullable<KnownSpell['usageReset']>, string> = {
+  shortRest: 'kurze Rast',
+  longRest: 'lange Rast',
+  dawn: 'Morgengrauen',
+  none: 'manuell',
+}
+
+const FILTER_LABELS: Record<SpellFilter, string> = {
+  all: 'Alle Zauber',
+  prepared: 'Vorbereitet',
+  unprepared: 'Nicht vorbereitet',
+}
+
+function isPrepared(spell: KnownSpell): boolean {
+  return spell.prepared || spell.alwaysPrepared === true
+}
+
+function matchesFilter(spell: KnownSpell, filter: SpellFilter): boolean {
+  if (filter === 'all') return true
+  return filter === 'prepared' ? isPrepared(spell) : !isPrepared(spell)
+}
+
+function sortSpells(left: KnownSpell, right: KnownSpell): number {
+  return (left.spellLevel ?? 0) - (right.spellLevel ?? 0)
+    || (left.name ?? left.spellId).localeCompare(right.name ?? right.spellId)
+}
+
+function getSpellSearchText(spell: KnownSpell): string {
+  return normalizeKey([
+    spell.name,
+    spell.school,
+    spell.description,
+    spell.notes,
+    spell.sourceName,
+  ].filter(Boolean).join(' '))
+}
+
+function SpellCapacityGrid({
+  spells,
+  spellSlots,
+  pactMagic,
+  translateText,
+}: {
+  spells: KnownSpell[]
+  spellSlots: SpellSlot[]
+  pactMagic?: PactMagic
+  translateText: (value: string) => string
+}) {
+  const levels = Array.from({ length: 10 }, (_, level) => level)
+
+  return (
+    <div className="spell-capacity-grid">
+      {levels.map((level) => {
+        const known = spells.filter((spell) => (spell.spellLevel ?? 0) === level).length
+        const slot = spellSlots.find((item) => item.spellLevel === level)
+        const isPactLevel = pactMagic?.spellLevel === level
+        const maximum = isPactLevel ? pactMagic.max : slot?.max ?? 0
+        const remaining = isPactLevel ? pactMagic.current : slot?.current ?? 0
+
+        return (
+          <div className="spell-capacity" key={level}>
+            <span>{level === 0 ? translateText('Zaubertricks') : `${translateText('Grad')} ${level}`}</span>
+            <strong>{known}</strong>
+            <small>{translateText('im Buch')}</small>
+            {level > 0 && (
+              <div className="spell-slot-line">
+                <Zap size={11} />
+                <b>{maximum}</b>
+                <span>{translateText('Plätze')}</span>
+                <small>{remaining}/{maximum} {translateText('übrig')}</small>
+              </div>
+            )}
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
+function SpellCapacitySummary({
+  character,
+  spells,
+  translateText,
+}: {
+  character: Character
+  spells: KnownSpell[]
+  translateText: (value: string) => string
+}) {
+  const capacity = getSpellCapacity(character, spells)
+  const description = capacity.mode === 'known'
+    ? 'Bekannte Klassenzauber'
+    : capacity.mode === 'prepared'
+      ? 'Vorbereitete Klassenzauber'
+      : 'Regelgrenze noch offen'
+
+  return (
+    <>
+      <div className="class-spell-capacity">
+        <div>
+          <span>{translateText(capacity.label)}</span>
+          <strong>
+            {capacity.current}
+            {capacity.maximum !== undefined ? ` / ${capacity.maximum}` : ''}
+          </strong>
+          <small>{translateText(description)}</small>
+        </div>
+        <p>{translateText(capacity.note)}</p>
+      </div>
+      <p className="spell-capacity-note">
+        {translateText('Zauber im Buch und Zauberplätze sind getrennt: Zauberplätze geben an, wie oft du Zauber des jeweiligen Grades wirken kannst. Zusätzliche Story- und Gegenstandszauber zählen nicht als Klassenfortschritt.')}
+      </p>
+    </>
+  )
+}
+
+function SpellCard({
+  spell,
+  translateText,
+  onTogglePrepared,
+  onRemove,
+  onUse,
+  onReset,
+}: {
+  spell: KnownSpell
+  translateText: (value: string) => string
+  onTogglePrepared: SpellbookListProps['onTogglePrepared']
+  onRemove: SpellbookListProps['onRemove']
+  onUse: SpellbookListProps['onUse']
+  onReset: SpellbookListProps['onReset']
+}) {
+  const level = spell.spellLevel ?? 0
+  const name = spell.name ?? spell.spellId
+  const hasLimitedUses = (spell.usageLimit ?? 0) > 0
+  const remainingUses = spell.usageRemaining ?? spell.usageLimit ?? 0
+  const source = spell.source ?? 'class'
+
+  return (
+    <article className="spellbook-card">
+      <div className="spellbook-card-top">
+        <div className="spellbook-card-title">
+          <span className="spell-level">
+            {level === 0 ? translateText('ZAUBERTRICK') : `${translateText('GRAD')} ${level}`}
+          </span>
+          <h3>{name}</h3>
+        </div>
+        <div className="spellbook-card-actions">
+          <span className={`spell-source source-${source}`}>
+            {translateText(SOURCE_LABELS[source])}
+          </span>
+          {spell.alwaysPrepared && (
+            <span className="always-prepared">
+              <Check size={12} />{translateText('Immer vorbereitet')}
+            </span>
+          )}
+          <IconButton
+            className="delete-button"
+            label={`${translateText('Zauber entfernen')}: ${name}`}
+            onClick={() => onRemove(spell.spellId)}
+          >
+            <Trash2 size={14} />
+          </IconButton>
+        </div>
+      </div>
+
+      {spell.sourceName && (
+        <p className="spell-origin-note">{translateText('Quelle')}: {spell.sourceName}</p>
+      )}
+
+      <div className="spellbook-meta">
+        {[spell.school, spell.castingTime, spell.range, spell.components, spell.duration]
+          .filter(Boolean)
+          .map((value) => <span key={value}>{value}</span>)}
+        {spell.concentration && <span>{translateText('Konzentration')}</span>}
+        {spell.ritual && <span>{translateText('Ritual')}</span>}
+      </div>
+
+      {spell.description && (
+        <details className="spellbook-details">
+          <summary>{translateText('Zauberbeschreibung')}</summary>
+          <p>{spell.description}</p>
+          {spell.higherLevel && (
+            <p><strong>{translateText('Auf höheren Graden:')}</strong> {spell.higherLevel}</p>
+          )}
+        </details>
+      )}
+
+      <div className="spellbook-card-footer">
+        <small>{translateText('Gelernt auf Stufe')} {spell.learnedAtLevel}</small>
+        <div className="spell-card-controls">
+          {hasLimitedUses ? (
+            <span className="spell-uses">
+              <Clock3 size={12} />
+              {remainingUses}/{spell.usageLimit} · {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}
+            </span>
+          ) : (
+            <label className="prepared-toggle">
+              <input
+                type="checkbox"
+                checked={isPrepared(spell)}
+                disabled={spell.alwaysPrepared === true}
+                onChange={(event) => onTogglePrepared(spell.spellId, event.target.checked)}
+              />
+              {translateText('Vorbereitet')}
+            </label>
+          )}
+
+          {hasLimitedUses && (
+            <>
+              <button
+                className="spell-use-button"
+                type="button"
+                disabled={remainingUses <= 0}
+                onClick={() => onUse(spell.spellId)}
+              >
+                {translateText('Nutzen')}
+              </button>
+              <IconButton
+                label={translateText('Nutzungen zurücksetzen')}
+                onClick={() => onReset(spell.spellId)}
+              >
+                <RotateCcw size={13} />
+              </IconButton>
+            </>
+          )}
+        </div>
+      </div>
+    </article>
+  )
+}
+
+export function SpellbookList({
+  spells,
+  character,
+  spellSlots,
+  pactMagic,
+  onTogglePrepared,
+  onRemove,
+  onUse,
+  onReset,
+}: SpellbookListProps) {
+  const language = useLanguage()
+  const t = (value: string) => translate(language, value)
+  const [query, setQuery] = useState('')
+  const [filter, setFilter] = useState<SpellFilter>('all')
+
+  const visibleSpells = useMemo(() => {
+    const search = normalizeKey(query)
+    return spells
+      .filter((spell) => {
+        const matchesSearch = !search || getSpellSearchText(spell).includes(search)
+        return matchesSearch && matchesFilter(spell, filter)
+      })
+      .sort(sortSpells)
+  }, [spells, query, filter])
+
+  const spellGroups = useMemo(() => {
+    const groups = new Map<number, KnownSpell[]>()
+    for (const spell of visibleSpells) {
+      const level = spell.spellLevel ?? 0
+      groups.set(level, [...(groups.get(level) ?? []), spell])
+    }
+    return [...groups.entries()]
+  }, [visibleSpells])
+
+  const preparedCount = spells.filter(isPrepared).length
+
+  return (
+    <section className="panel spellbook-panel">
+      <PanelHeader
+        className="spellbook-heading"
+        title={t('Deine Zauber')}
+        description={`${spells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')}`}
+        meta={<span className="spellbook-count"><BookOpen size={14} />{spells.length}</span>}
+      />
+
+      <SpellCapacityGrid
+        spells={spells}
+        spellSlots={spellSlots}
+        pactMagic={pactMagic}
+        translateText={t}
+      />
+      <SpellCapacitySummary character={character} spells={spells} translateText={t} />
+
+      <div className="spellbook-toolbar">
+        <SearchField
+          className="spellbook-search"
+          icon={<Search size={15} />}
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder={t('Suche Zauber in deinem Buch …')}
+          aria-label={t('Suche Zauber in deinem Buch …')}
+        />
+        <div className="spellbook-filters" role="group" aria-label={t('Zauber filtern')}>
+          {(Object.keys(FILTER_LABELS) as SpellFilter[]).map((value) => (
+            <button
+              type="button"
+              key={value}
+              className={filter === value ? 'active' : ''}
+              onClick={() => setFilter(value)}
+            >
+              {t(FILTER_LABELS[value])}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {visibleSpells.length === 0 ? (
+        <div className="spellbook-empty">
+          <Sparkles size={22} />
+          <p>{t(spells.length === 0 ? 'Deine Zauber sind noch leer.' : 'Keine Zauber entsprechen diesem Filter.')}</p>
+        </div>
+      ) : (
+        <div className="spellbook-groups">
+          {spellGroups.map(([level, group]) => (
+            <section className="spellbook-level-group" key={level}>
+              <div className="spellbook-level-heading">
+                <span>{level === 0 ? t('Zaubertricks') : `${t('Grad')} ${level}`}</span>
+                <small>{group.length} {t('Zauber')}</small>
+              </div>
+              <div className="spellbook-cards">
+                {group.map((spell) => (
+                  <SpellCard
+                    key={spell.spellId}
+                    spell={spell}
+                    translateText={t}
+                    onTogglePrepared={onTogglePrepared}
+                    onRemove={onRemove}
+                    onUse={onUse}
+                    onReset={onReset}
+                  />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      )}
+    </section>
+  )
 }

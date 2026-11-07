@@ -1,7 +1,11 @@
 import { useMemo, useState } from 'react'
 import { BookOpen, Check, Plus, Search } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
+import { normalizeKey } from '../domain/text'
 import { getSpellcastingProgression } from '../domain/spellcasting'
+import { Button } from '../components/ui/button'
+import { PanelHeader } from '../components/ui/panel-header'
+import { Field, SearchField } from '../components/ui/field'
 import {
   Select,
   SelectContent,
@@ -34,10 +38,12 @@ interface CatalogSpell {
 type SpellSource = NonNullable<KnownSpell['source']>
 type UsageReset = NonNullable<KnownSpell['usageReset']>
 
-const catalog2014 = spells2014 as CatalogSpell[]
-const catalog2024 = spells2024 as CatalogSpell[]
+const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
+  '2014': spells2014 as CatalogSpell[],
+  '2024': spells2024 as CatalogSpell[],
+}
 
-const classAliases: Record<string, string> = {
+const CLASS_ALIASES: Record<string, string> = {
   barde: 'bard',
   kleriker: 'cleric',
   druide: 'druid',
@@ -50,7 +56,7 @@ const classAliases: Record<string, string> = {
   schurke: 'rogue',
 }
 
-const schools: Record<Language, Record<string, string>> = {
+const SCHOOLS: Record<Language, Record<string, string>> = {
   de: {
     abjuration: 'Bannmagie',
     conjuration: 'Beschwörung',
@@ -73,7 +79,7 @@ const schools: Record<Language, Record<string, string>> = {
   },
 }
 
-const sourceOptions: { value: SpellSource; label: string }[] = [
+const SOURCE_OPTIONS: Array<{ value: SpellSource; label: string }> = [
   { value: 'class', label: 'Klasse' },
   { value: 'story', label: 'Story / Belohnung' },
   { value: 'item', label: 'Gegenstand' },
@@ -81,31 +87,136 @@ const sourceOptions: { value: SpellSource; label: string }[] = [
   { value: 'other', label: 'Sonstiges' },
 ]
 
-const resetOptions: { value: UsageReset; label: string }[] = [
+const RESET_OPTIONS: Array<{ value: UsageReset; label: string }> = [
   { value: 'shortRest', label: 'Kurze Rast' },
   { value: 'longRest', label: 'Lange Rast' },
   { value: 'dawn', label: 'Morgengrauen' },
   { value: 'none', label: 'Manuell / nie' },
 ]
 
-function normalize(value: string) {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/[ä]/g, 'ae')
-    .replace(/[ö]/g, 'oe')
-    .replace(/[ü]/g, 'ue')
-    .replace(/ß/g, 'ss')
-    .replace(/[^a-z]/g, '')
+function getClassId(value: string): string {
+  const key = normalizeKey(value)
+  return CLASS_ALIASES[key] ?? key
 }
 
-function classKey(value: string) {
-  const key = normalize(value)
-  return classAliases[key] ?? key
+function getSchoolLabel(value: string, language: Language): string {
+  return SCHOOLS[language][normalizeKey(value)] ?? value
 }
 
-function schoolLabel(value: string, language: Language) {
-  return schools[language][normalize(value)] ?? value
+function getAllowedClasses(character: Character): string[] {
+  const classId = getClassId(character.classId)
+  const subclass = normalizeKey(character.subclassId)
+
+  if (classId === 'fighter' && subclass.includes('eldritchknight')) return ['wizard']
+  if (classId === 'rogue' && subclass.includes('arcanetrickster')) return ['wizard']
+  return [classId]
+}
+
+function matchesSpell(
+  spell: CatalogSpell,
+  options: {
+    search: string
+    levelFilter: string
+    eligibleOnly: boolean
+    allowedClasses: string[]
+    maxSpellLevel: number
+  },
+): boolean {
+  const matchesSearch = !options.search
+    || normalizeKey(`${spell.name} ${spell.school} ${spell.description}`).includes(options.search)
+  const matchesLevel = options.levelFilter === 'all'
+    || spell.level === Number(options.levelFilter)
+  const matchesClass = !options.eligibleOnly
+    || spell.classes.some((item) => options.allowedClasses.includes(getClassId(item)))
+  const matchesSpellLevel = !options.eligibleOnly
+    || spell.level === 0
+    || spell.level <= options.maxSpellLevel
+
+  return matchesSearch && matchesLevel && matchesClass && matchesSpellLevel
+}
+
+interface SpellSourceEditorProps {
+  translateText: (value: string) => string
+  source: SpellSource
+  sourceName: string
+  usageLimit: number
+  usageReset: UsageReset
+  onSourceChange: (value: SpellSource) => void
+  onSourceNameChange: (value: string) => void
+  onUsageLimitChange: (value: number) => void
+  onUsageResetChange: (value: UsageReset) => void
+  onConfirm: () => void
+}
+
+function SpellSourceEditor({
+  translateText: t,
+  source,
+  sourceName,
+  usageLimit,
+  usageReset,
+  onSourceChange,
+  onSourceNameChange,
+  onUsageLimitChange,
+  onUsageResetChange,
+  onConfirm,
+}: SpellSourceEditorProps) {
+  return (
+    <div className="catalog-source-editor">
+      <strong>{t('Herkunft für diesen Zauber')}</strong>
+      <div className="catalog-source-fields">
+        <Field label={t('Herkunft')}>
+          <Select value={source} onValueChange={(value) => onSourceChange(value as SpellSource)}>
+            <SelectTrigger><SelectValue /></SelectTrigger>
+            <SelectContent>
+              {SOURCE_OPTIONS.map((option) => (
+                <SelectItem key={option.value} value={option.value}>
+                  {t(option.label)}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </Field>
+
+        <Field label={t('Quelle / Gegenstand / Notiz')}>
+          <input
+            value={sourceName}
+            onChange={(event) => onSourceNameChange(event.target.value)}
+            placeholder={t('z. B. Ring der Zauberei')}
+          />
+        </Field>
+
+        <Field label={t('Nutzungen (0 = unbegrenzt)')}>
+          <input
+            type="number"
+            min="0"
+            max="1000"
+            value={usageLimit}
+            onChange={(event) => onUsageLimitChange(
+              Math.max(0, Math.min(1000, Number(event.target.value) || 0)),
+            )}
+          />
+        </Field>
+
+        {usageLimit > 0 && (
+          <Field label={t('Erneuerung')}>
+            <Select value={usageReset} onValueChange={(value) => onUsageResetChange(value as UsageReset)}>
+              <SelectTrigger><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {RESET_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {t(option.label)}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </Field>
+        )}
+      </div>
+      <Button variant="primary" onClick={onConfirm}>
+        <Plus size={14} /> {t('Zauber mit diesen Angaben übernehmen')}
+      </Button>
+    </div>
+  )
 }
 
 export function SpellCatalog({
@@ -130,38 +241,19 @@ export function SpellCatalog({
   const [usageLimit, setUsageLimit] = useState(0)
   const [usageReset, setUsageReset] = useState<UsageReset>('longRest')
 
-  const catalog = character.ruleset === '2014' ? catalog2014 : catalog2024
-  const classId = classKey(character.classId)
-  const subclass = normalize(character.subclassId ?? '')
+  const catalog = CATALOGS[character.ruleset]
   const spellcasting = getSpellcastingProgression(character)
-  const maxSpellLevel =
-    spellcasting?.kind === 'warlock'
-      ? spellcasting.pactMagic?.spellLevel ?? 0
-      : spellcasting?.slots.length ?? 0
-
-  const allowedClasses =
-    classId === 'fighter' && subclass.includes('eldritchknight')
-      ? ['wizard']
-      : classId === 'rogue' && subclass.includes('arcanetrickster')
-        ? ['wizard']
-        : [classId]
+  const maxSpellLevel = spellcasting?.kind === 'warlock'
+    ? spellcasting.pactMagic?.spellLevel ?? 0
+    : spellcasting?.slots.length ?? 0
+  const allowedClasses = getAllowedClasses(character)
 
   const results = useMemo(() => {
-    const needle = normalize(query)
-
+    const search = normalizeKey(query)
+    const options = { search, levelFilter, eligibleOnly, allowedClasses, maxSpellLevel }
     return catalog
-      .filter((spell) => {
-        const matchesText =
-          !needle ||
-          normalize(`${spell.name} ${spell.school} ${spell.description}`).includes(needle)
-        const matchesLevel = levelFilter === 'all' || spell.level === Number(levelFilter)
-        const matchesClass =
-          !eligibleOnly || spell.classes.some((item) => allowedClasses.includes(classKey(item)))
-        const matchesLevelAccess = !eligibleOnly || spell.level === 0 || spell.level <= maxSpellLevel
-
-        return matchesText && matchesLevel && matchesClass && matchesLevelAccess
-      })
-      .sort((a, b) => a.level - b.level || a.name.localeCompare(b.name))
+      .filter((spell) => matchesSpell(spell, options))
+      .sort((left, right) => left.level - right.level || left.name.localeCompare(right.name))
   }, [catalog, query, levelFilter, eligibleOnly, allowedClasses.join(','), maxSpellLevel])
 
   const learnedSpellIds = useMemo(
@@ -188,7 +280,7 @@ export function SpellCatalog({
       prepared: false,
       name: spell.name,
       spellLevel: spell.level,
-      school: schoolLabel(spell.school, language),
+      school: getSchoolLabel(spell.school, language),
       castingTime: spell.castingTime,
       range: spell.range,
       components,
@@ -207,43 +299,62 @@ export function SpellCatalog({
     resetSourceEditor()
   }
 
+  function toggleEditor(spellId: string) {
+    if (configSpellId === spellId) {
+      setConfigSpellId(null)
+      setExpandedSpellIds((current) => {
+        const next = new Set(current)
+        next.delete(spellId)
+        return next
+      })
+      return
+    }
+
+    setConfigSpellId(spellId)
+    setExpandedSpellIds((current) => new Set(current).add(spellId))
+  }
+
+  function toggleExpanded(spellId: string, isOpen: boolean) {
+    setExpandedSpellIds((current) => {
+      const next = new Set(current)
+      if (isOpen) next.add(spellId)
+      else next.delete(spellId)
+      return next
+    })
+    if (!isOpen && configSpellId === spellId) setConfigSpellId(null)
+  }
+
   return (
     <section className="panel spell-catalog">
-      <div className="panel-heading">
-        <div>
-          <h2>{t('SRD-Zauberkatalog')}</h2>
-          <p className="muted-paragraph">{t('Offizielle SRD-Zauber passend zu deinem Regelwerk.')}</p>
-        </div>
-        <span>{catalog.length} ZAUBER</span>
-      </div>
+      <PanelHeader
+        title={t('SRD-Zauberkatalog')}
+        description={t('Offizielle SRD-Zauber passend zu deinem Regelwerk.')}
+        meta={`${catalog.length} ZAUBER`}
+      />
 
       <div className="catalog-filters">
-        <label className="catalog-search">
-          <Search size={16} />
-          <input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder={t('Zauber suchen …')}
-            aria-label={t('Zauber suchen …')}
-          />
-        </label>
+        <SearchField
+          className="catalog-search"
+          icon={<Search size={16} />}
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder={t('Zauber suchen …')}
+          aria-label={t('Zauber suchen …')}
+        />
 
-        <label className="field-label">
-          {t('Zaubergrad')}
+        <Field label={t('Zaubergrad')}>
           <Select value={levelFilter} onValueChange={setLevelFilter}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
+            <SelectTrigger><SelectValue /></SelectTrigger>
             <SelectContent>
               <SelectItem value="all">{t('Alle Grade')}</SelectItem>
               {Array.from({ length: 10 }, (_, index) => (
                 <SelectItem key={index} value={String(index)}>
-                  {index === 0 ? t('Zaubertricks') : t('Grad ') + index}
+                  {index === 0 ? t('Zaubertricks') : `${t('Grad ')}${index}`}
                 </SelectItem>
               ))}
             </SelectContent>
           </Select>
-        </label>
+        </Field>
 
         <label className="catalog-eligible">
           <input
@@ -270,147 +381,58 @@ export function SpellCatalog({
               className="catalog-spell"
               key={spell.id}
               open={expandedSpellIds.has(spell.id)}
-              onToggle={(event) => {
-                const isOpen = event.currentTarget.open
-                setExpandedSpellIds((current) => {
-                  const next = new Set(current)
-                  if (isOpen) next.add(spell.id)
-                  else next.delete(spell.id)
-                  return next
-                })
-                if (!isOpen && editorOpen) setConfigSpellId(null)
-              }}
+              onToggle={(event) => toggleExpanded(spell.id, event.currentTarget.open)}
             >
               <summary>
                 <span className="catalog-spell-level">
-                  {spell.level === 0 ? t('ZAUBERTRICK') : t('GRAD ') + spell.level}
+                  {spell.level === 0 ? t('ZAUBERTRICK') : `${t('GRAD ')}${spell.level}`}
                 </span>
                 <span className="catalog-spell-name">
                   <strong>{spell.name}</strong>
-                  <small>
-                    {schoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}
-                  </small>
+                  <small>{getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}</small>
                 </span>
                 <span className="catalog-spell-action">
                   {added ? (
-                    <span className="already-added">
-                      <Check size={14} /> {t('Im Buch')}
-                    </span>
+                    <span className="already-added"><Check size={14} /> {t('Im Buch')}</span>
                   ) : (
-                    <button
-                      type="button"
-                      className="secondary-button"
+                    <Button
                       onClick={(event) => {
                         event.preventDefault()
-                        if (editorOpen) {
-                          setConfigSpellId(null)
-                          setExpandedSpellIds((current) => {
-                            const next = new Set(current)
-                            next.delete(spell.id)
-                            return next
-                          })
-                        } else {
-                          setConfigSpellId(spell.id)
-                          setExpandedSpellIds((current) => new Set(current).add(spell.id))
-                        }
+                        toggleEditor(spell.id)
                       }}
                       aria-expanded={editorOpen}
                     >
                       <Plus size={14} /> {t('Hinzufügen')}
-                    </button>
+                    </Button>
                   )}
                 </span>
               </summary>
 
               <div className="catalog-spell-detail">
                 <div>
-                  {spell.components}
-                  {spell.material ? ` (${spell.material})` : ''} · {spell.duration}
+                  {spell.components}{spell.material ? ` (${spell.material})` : ''} · {spell.duration}
                   {spell.concentration ? ' · Konzentration' : ''}
                   {spell.ritual ? ' · Ritual' : ''}
                 </div>
                 <p>{spell.description}</p>
                 {spell.higherLevel && (
-                  <p>
-                    <strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}
-                  </p>
+                  <p><strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}</p>
                 )}
-                <small>
-                  {t('Klassen:')} {spell.classes.join(', ')}
-                </small>
+                <small>{t('Klassen:')} {spell.classes.join(', ')}</small>
 
                 {!added && editorOpen && (
-                  <div className="catalog-source-editor">
-                    <strong>{t('Herkunft für diesen Zauber')}</strong>
-
-                    <div className="catalog-source-fields">
-                      <label>
-                        {t('Herkunft')}
-                        <Select
-                          value={source}
-                          onValueChange={(value) => setSource(value as SpellSource)}
-                        >
-                          <SelectTrigger>
-                            <SelectValue />
-                          </SelectTrigger>
-                          <SelectContent>
-                            {sourceOptions.map((option) => (
-                              <SelectItem key={option.value} value={option.value}>
-                                {t(option.label)}
-                              </SelectItem>
-                            ))}
-                          </SelectContent>
-                        </Select>
-                      </label>
-
-                      <label>
-                        {t('Quelle / Gegenstand / Notiz')}
-                        <input
-                          value={sourceName}
-                          onChange={(event) => setSourceName(event.target.value)}
-                          placeholder={t('z. B. Ring der Zauberei')}
-                        />
-                      </label>
-
-                      <label>
-                        {t('Nutzungen (0 = unbegrenzt)')}
-                        <input
-                          type="number"
-                          min="0"
-                          max="1000"
-                          value={usageLimit}
-                          onChange={(event) =>
-                            setUsageLimit(Math.max(0, Math.min(1000, Number(event.target.value) || 0)))
-                          }
-                        />
-                      </label>
-
-                      {usageLimit > 0 && (
-                        <label>
-                          {t('Erneuerung')}
-                          <Select
-                            value={usageReset}
-                            onValueChange={(value) => setUsageReset(value as UsageReset)}
-                          >
-                            <SelectTrigger>
-                              <SelectValue />
-                            </SelectTrigger>
-                            <SelectContent>
-                              {resetOptions.map((option) => (
-                                <SelectItem key={option.value} value={option.value}>
-                                  {t(option.label)}
-                                </SelectItem>
-                              ))}
-                            </SelectContent>
-                          </Select>
-                        </label>
-                      )}
-                    </div>
-
-                    <button type="button" className="primary-button" onClick={() => addSpell(spell)}>
-                      <Plus size={14} /> {t('Zauber mit diesen Angaben übernehmen')}
-                    </button>
-                  </div>
+                  <SpellSourceEditor
+                    translateText={t}
+                    source={source}
+                    sourceName={sourceName}
+                    usageLimit={usageLimit}
+                    usageReset={usageReset}
+                    onSourceChange={setSource}
+                    onSourceNameChange={setSourceName}
+                    onUsageLimitChange={setUsageLimit}
+                    onUsageResetChange={setUsageReset}
+                    onConfirm={() => addSpell(spell)}
+                  />
                 )}
               </div>
             </details>
