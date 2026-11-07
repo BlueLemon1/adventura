@@ -126,7 +126,9 @@ const spellSchema = z.object({
   sourceName: z.string().optional(),
   usageLimit: z.number().int().min(0).max(1000).optional(),
   usageRemaining: z.number().int().min(0).max(1000).optional(),
-  usageReset: z.enum(['shortRest', 'longRest', 'dawn', 'none', 'shortOneOrLong', 'shortOrLong']).optional(),
+  usageReset: z
+    .enum(['shortRest', 'longRest', 'dawn', 'none', 'shortOneOrLong', 'shortOrLong'])
+    .optional(),
 })
 
 const currencySchema = z.object({
