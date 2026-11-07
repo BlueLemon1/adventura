@@ -54,7 +54,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
   if (classId === 'cleric' && level >= 2) {
     const maximum =
       level >= 18 ? (ruleset === '2024' ? 4 : 3) : level >= 6 ? 2 : ruleset === '2024' ? 2 : 1
-    add('channel-divinity', 'Kanal göttlicher Energie', maximum, 'short-or-long')
+    add('channel-divinity', 'Kanal göttlicher Energie', maximum, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
   }
   if (classId === 'druid' && level >= 2)
     add(
@@ -81,22 +81,31 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level,
       'short-or-long',
     )
-  if (classId === 'paladin')
+  if (classId === 'paladin') {
+    add('lay-on-hands', 'Handauflegen', 5 * level, 'long')
+    if (ruleset === '2014')
+      add(
+        'divine-sense',
+        'Göttlicher Sinn',
+        Math.max(1, abilityModifier(character.abilities?.cha) + 1),
+        'long',
+      )
+    if (ruleset === '2014' && level >= 3 && character.subclassId)
+      add('paladin-channel-divinity', 'Kanal göttlicher Energie', 1, 'short-or-long')
+  }
+  if (classId === 'paladin' && ruleset === '2024' && level >= 3)
+    add('channel-divinity-paladin', 'Kanal göttlicher Energie', level >= 11 ? 3 : 2, 'short-one-or-long')
+  if (classId === 'ranger' && ruleset === '2024')
     add(
-      'divine-sense',
-      'Göttlicher Sinn',
-      ruleset === '2024'
-        ? Math.ceil(level / 4) + 1
-        : Math.max(1, abilityModifier(character.abilities?.cha) + 1),
+      'favored-enemy',
+      'Bevorzugter Feind',
+      level >= 17 ? 6 : level >= 13 ? 5 : level >= 9 ? 4 : level >= 5 ? 3 : 2,
       'long',
     )
-  if (classId === 'paladin' && ruleset === '2024' && level >= 3)
-    add(
-      'channel-divinity-paladin',
-      'Kanal göttlicher Energie',
-      level >= 11 ? 3 : 2,
-      'short-or-long',
-    )
+  if (classId === 'warlock' && ruleset === '2024' && level >= 2)
+    add('magical-cunning', 'Magische List', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024')
+    add('innate-sorcery', 'Angeborene Magie', 2, 'long')
   if (classId === 'sorcerer' && level >= 2) add('sorcery-points', 'Zauberpunkte', level, 'long')
   if (classId === 'wizard' && level >= 1) add('arcane-recovery', 'Arkane Erholung', 1, 'long')
   return resources
