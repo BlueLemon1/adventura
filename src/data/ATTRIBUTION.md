@@ -53,6 +53,15 @@ German class and subclass feature names and descriptions are taken from the offi
 
 The English class and subclass feature text is sourced from the SRD 5.2.1 class section published by Wizards of the Coast LLC under CC BY 4.0. The source snapshot is a Markdown extraction from the public repository `downfallx/dnd-5e-srd-markdown`, file `classes.md` (upstream commit `c8c4a583afa446f38b5dc43548025bd4b37ce2da`): https://github.com/downfallx/dnd-5e-srd-markdown/blob/c8c4a583afa446f38b5dc43548025bd4b37ce2da/classes.md. The source repository identifies its content as the official SRD 5.2.1 and links the official document at https://www.dndbeyond.com/srd. Adventura retains this snapshot as an import source and normalizes the class/subclass feature headings, levels, and text. The snapshot is English only; the app uses the explicit English fallback label when a German field is unavailable.
 
+## SRD 5.1 German class and subclass features
+
+German class and subclass feature text is sourced from the official German SRD 5.1 translation, released by Wizards of the Coast under CC BY 4.0. The localized source dictionaries below were imported from the Heroquill project, whose class importer documents extraction from the official SRD translation PDF. Only SRD 5.1 classes and the SRD subclasses used by Adventura are mapped into the application dataset.
+
+- Official source: https://media.dndbeyond.com/compendium-images/srd/5.1/SRD_CC_v5.1_DE.pdf
+- Structured translation source: https://github.com/Mystikal91/heroquill (locales/de/srd51)
+- Source import implementation: https://github.com/Mystikal91/heroquill/blob/main/scripts/srd-translations/import_classes.py
+- License: CC BY 4.0 (Wizards of the Coast LLC)
+
 ## SRD 5.1 English class and subclass features
 
 The English class and subclass feature text is sourced from the official SRD 5.1 (2014 rules), distributed by Wizards of the Coast LLC under CC BY 4.0. The source snapshot is a combined Markdown extraction from the public repository `your5e/5e-srd-markdown`, under `dnd/51/markdown/Classes/`. The upstream README states that the SRD text was reformatted into Markdown with conversion changes documented there, and provides the required Wizards of the Coast attribution. The exact upstream file revisions used by Adventura are: Barbarian `ba4bddcdf085b9a5839933ae23bbbafebaf0a02d`; Bard `3022c83b76ae05205361f1749174fd371cba5964`; Cleric `8e6824ab89ca005ffac370a39ea952f98e83351e`; Druid `fb597138c90449fc2e92cc36abb49067f915df64`; Fighter `5b8e18f69570b65921cb30f6ef53c7730e3395e6`; Monk `b451ab30292c868e4c594dc2227efd34f8f65ca9`; Paladin `0c325271c79bbc5143655e9eefb3b8f864d59785`; Ranger `51c1e71daa0398223874d5fd0c37a3c4c5cb03f2`; Rogue `c861c6ff9b0e879f30f69b47746a1211e100a052`; Sorcerer `9805eb7831a5a746339eb3bb7169ce831bf1e4f7`; Warlock `57577bfa8280e511434bc52f7ab4f21eacd6fbb8`; Wizard `4885e9b8249d7d328417fcd6d897948dd13d7e43`. Official SRD page: https://dnd.wizards.com/resources/systems-reference-document. Adventura normalizes class progression levels, feature headings, and subclass IDs; the English source text remains unchanged.
