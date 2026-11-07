@@ -58,9 +58,6 @@ const en: Record<string, string> = {
   'Göttliches Niederstrecken': 'Divine Smite',
   'Zweites Aufatmen': 'Second Wind',
   'Arkane Erholung': 'Arcane Recovery',
-  'Erholung bei kurzer oder langer Rast': 'Recharges on a short or long rest',
-  'Erholung bei langer Rast': 'Recharges on a long rest',
-  'Erholung bei kurzer Rast': 'Recharges on a short rest',
   Stufe: 'Level',
   Klasse: 'Class',
 
@@ -153,7 +150,6 @@ const en: Record<string, string> = {
   'Weitere Angaben': 'Additional details',
   Spezies: 'Species',
   Hintergrund: 'Background',
-  Unterklasse: 'Subclass',
   Gesinnung: 'Alignment',
   Spielername: 'Player name',
   Erfahrungspunkte: 'Experience points',
@@ -222,7 +218,6 @@ const en: Record<string, string> = {
   Schließen: 'Close',
   'NEUES ABENTEUER': 'NEW ADVENTURE',
   Charaktername: 'Character name',
-  Klasse: 'Class',
   Regelwerk: 'Ruleset',
   'Du kannst Attribute und weitere Eigenschaften direkt im Charakterbogen ergänzen.':
     'You can add stats and details in the character sheet.',
