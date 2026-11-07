@@ -117,16 +117,10 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       )}
       <section className="panel">
         <PanelHeader
-          title={t('Automatische Klassenmerkmale')}
+          title={t('Automatische Klassen- und Unterklassenmerkmale')}
           meta={features.length + ' ' + t('FREIGESCHALTET')}
         />
-        {character.ruleset === '2024' ? (
-          <p className="muted-paragraph">
-            {t(
-              'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.',
-            )}
-          </p>
-        ) : features.length > 0 ? (
+        {features.length > 0 ? (
           <div className="automatic-feature-list">
             {features.map((feature) => (
               <article className="automatic-feature-row" key={feature.id}>
@@ -151,6 +145,13 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
             'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.',
           )}
         </p>
+        {character.ruleset === '2024' && (
+          <p className="muted-paragraph">
+            {t(
+              'Bei 2024-Unterklassen zeigen die Einträge derzeit die korrekten Freischaltungsstufen. Die konkreten Namen und Beschreibungen der Unterklassenmerkmale folgen noch; 2014-Regeltexte werden nicht übernommen.',
+            )}
+          </p>
+        )}
       </section>
     </>
   )

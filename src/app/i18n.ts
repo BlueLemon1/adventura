@@ -446,3 +446,13 @@ Object.assign(en, {
   'Für SRD 5.1 sind Zaubernamen und Grunddaten teilweise lokalisiert. Die Beschreibungen bleiben vorerst im Originaltext, damit keine Regeltexte aus SRD 5.2.1 mit den 2014-Regeln vermischt werden.':
     'For SRD 5.1, spell names and metadata are partially localized. Descriptions remain in the original text for now to avoid mixing SRD 5.2.1 rules text with the 2014 rules.',
 })
+
+Object.assign(en, {
+  'Automatische Klassen- und Unterklassenmerkmale': 'Automatic class and subclass features',
+  'Bei 2024-Unterklassen zeigen die Einträge derzeit die korrekten Freischaltungsstufen. Die konkreten Namen und Beschreibungen der Unterklassenmerkmale folgen noch; 2014-Regeltexte werden nicht übernommen.':
+    'For 2024 subclasses, entries currently show the correct unlock levels. Exact feature names and descriptions will follow; 2014 rules text is not reused.',
+  'Präziser Jäger': 'Precise Hunter',
+  'Listige Schläge': 'Devious Strikes',
+  'Schlauer Geist': 'Slippery Mind',
+  'Patron kontaktieren': 'Contact Patron',
+})
