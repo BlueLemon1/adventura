@@ -253,7 +253,7 @@ function SpellCard({
               <button
                 className="spell-use-button"
                 type="button"
-                disabled={remainingUses <= 0}
+                disabled={remainingUses < (isFeature ? (spell.resourceCost ?? 1) : 1)}
                 onClick={() => onUse(spell.spellId)}
               >
                 {translateText(isFeature ? 'Aktivieren' : 'Nutzen')}
