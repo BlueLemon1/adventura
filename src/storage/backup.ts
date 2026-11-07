@@ -38,7 +38,7 @@ const spellSchema = z.object({
   alwaysPrepared:z.boolean().optional(),notes:z.string().optional(),name:z.string().optional(),
   spellLevel:z.number().int().min(0).max(9).optional(),school:z.string().optional(),
   castingTime:z.string().optional(),range:z.string().optional(),components:z.string().optional(),
-  duration:z.string().optional(),concentration:z.boolean().optional(),ritual:z.boolean().optional(),description:z.string().optional(),higherLevel:z.string().optional(),
+  duration:z.string().optional(),concentration:z.boolean().optional(),ritual:z.boolean().optional(),description:z.string().optional(),higherLevel:z.string().optional(),source:z.enum(['class','story','item','feat','other']).optional(),sourceName:z.string().optional(),usageLimit:z.number().int().min(0).max(1000).optional(),usageRemaining:z.number().int().min(0).max(1000).optional(),usageReset:z.enum(['shortRest','longRest','dawn','none']).optional(),
 })
 const storedCharacterSchema = z.object({
   character:characterSchema,

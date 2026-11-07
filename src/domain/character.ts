@@ -101,6 +101,11 @@ export interface KnownSpell {
   ritual?: boolean
   description?: string
   higherLevel?: string
+  source?: 'class' | 'story' | 'item' | 'feat' | 'other'
+  sourceName?: string
+  usageLimit?: number
+  usageRemaining?: number
+  usageReset?: 'shortRest' | 'longRest' | 'dawn' | 'none'
 }
 
 export interface CharacterSpellbook {

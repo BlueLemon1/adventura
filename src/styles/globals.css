@@ -165,3 +165,20 @@
 .spellbook-card-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding-top:9px;border-top:1px solid var(--line)}
 .spellbook-card-footer small{color:#819087;font-size:8px}.spellbook-empty{display:grid;justify-items:center;gap:9px;padding:38px 16px;color:var(--muted);text-align:center}.spellbook-empty p{margin:0;font-size:11px}
 @media(max-width:620px){.spellbook-toolbar{align-items:stretch}.spellbook-filters{justify-content:space-between}.spellbook-filters button{flex:1;padding:7px 6px;font-size:8px}.spellbook-cards{grid-template-columns:1fr}}
+
+/* Spellbook capacity, origin and limited-use polish */
+.spell-capacity-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:4px 0 12px}
+.spell-capacity{min-width:0;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:rgba(255,255,255,.018)}
+.spell-capacity>span,.spell-capacity>small{display:block;color:var(--muted);font-size:9px}
+.spell-capacity>strong{display:inline-block;margin:5px 5px 1px 0;font:24px Georgia,serif;color:#e9eee9}
+.spell-slot-line{display:flex;align-items:center;gap:5px;flex-wrap:wrap;margin-top:7px;padding-top:7px;border-top:1px solid var(--line);color:var(--gold);font-size:9px}
+.spell-slot-line b{font-size:12px}.spell-slot-line span,.spell-slot-line small{color:var(--muted);font-size:8px}.spell-slot-line small{margin-left:auto}
+.spell-capacity-note{color:var(--muted);font-size:10px;line-height:1.6;margin:0 0 18px}
+.spell-source{display:inline-flex;align-items:center;padding:4px 7px;border-radius:5px;background:rgba(141,188,169,.09);color:var(--teal);font-size:9px;white-space:nowrap}
+.source-story{background:rgba(214,180,119,.12);color:var(--gold)}.source-item{background:rgba(141,163,211,.12);color:#a9bee9}.source-feat{background:rgba(176,145,205,.13);color:#c6a8e0}.source-other{background:rgba(255,255,255,.07);color:var(--muted)}
+.spell-origin-note{margin:7px 0;color:var(--muted);font-size:10px}
+.spell-card-controls{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.spell-uses{display:inline-flex;align-items:center;gap:5px;color:var(--gold);font-size:9px}
+.spell-use-button{padding:6px 9px;border:1px solid rgba(214,180,119,.3);border-radius:6px;background:rgba(214,180,119,.08);color:#e8d5ad;font-size:9px}
+.spell-use-button:disabled{opacity:.4;cursor:not-allowed}.spell-origin-form{margin-top:2px}
+@media(max-width:900px){.spell-capacity-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:520px){.spell-capacity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.spellbook-card-footer{align-items:flex-start;gap:9px;flex-direction:column}}
