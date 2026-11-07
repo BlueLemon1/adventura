@@ -11,6 +11,7 @@ export interface AutomaticClassFeature {
   name: string
   level: number
   source: 'class' | 'subclass'
+  description?: string
 }
 
 function abilityModifier(score = 10) {
@@ -521,19 +522,89 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [20, 'Signaturzauber'],
   ],
 }
-const SUBCLASS_FEATURE_LEVELS_2024: Record<string, number[]> = {
-  barbarian: [3, 6, 10, 14],
-  bard: [3, 6, 14],
-  cleric: [3, 6, 17],
-  druid: [3, 6, 10, 14],
-  fighter: [3, 7, 10, 15, 18],
-  monk: [3, 6, 11, 17],
-  paladin: [3, 7, 15, 20],
-  ranger: [3, 7, 11, 15],
-  rogue: [3, 9, 13, 17],
-  sorcerer: [3, 6, 14, 18],
-  warlock: [3, 6, 10, 14],
-  wizard: [3, 6, 10, 14],
+const SUBCLASS_FEATURES_2024: Record<string, Array<[number, string, string]>> = {
+  barbarian: [
+    [3, 'Raserei', 'Wenn du während deines Kampfrauschs Rücksichtsloser Angriff nutzt, verursacht dein erster Treffer mit einem Stärke-Angriff zusätzlichen Schaden.'],
+    [6, 'Geisteslose Wut', 'Während des Kampfrauschs bist du immun gegen Bezaubert und Verängstigt; bestehende Zustände enden beim Beginn des Kampfrauschs.'],
+    [10, 'Vergeltung', 'Wenn dich eine Kreatur innerhalb von 1,5 Metern verletzt, kannst du als Reaktion einen Nahkampfangriff ausführen.'],
+    [14, 'Einschüchternde Präsenz', 'Du kannst Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht testen lassen.'],
+  ],
+  bard: [
+    [3, 'Zusätzliche Fertigkeiten', 'Du erhältst Übung in drei Fertigkeiten deiner Wahl.'],
+    [3, 'Schneidende Worte', 'Du kannst eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um einen Wurf oder Schadenswurf eines sichtbaren Wesens zu verringern.'],
+    [6, 'Magische Entdeckungen', 'Du lernst zwei zusätzliche Zauber von der Kleriker-, Druiden- oder Magier-Zauberliste.'],
+    [14, 'Unvergleichliche Fertigkeit', 'Wenn du einen Attributswurf ablegst, kannst du eine Nutzung deiner Bardeninspiration einsetzen und den Würfel zum Ergebnis addieren.'],
+  ],
+  cleric: [
+    [3, 'Jünger des Lebens', 'Heilzauber, die du mit einem Zauberplatz wirkst, stellen zusätzliche Trefferpunkte in Höhe von 2 plus Zauberplatzgrad wieder her.'],
+    [3, 'Zauber der Lebensdomäne', 'Die Zauber deiner Domäne sind abhängig von deiner Klerikerstufe stets vorbereitet.'],
+    [3, 'Leben bewahren', 'Du kannst Kanal göttlicher Energie einsetzen, um Trefferpunkte auf verwundete Kreaturen in deiner Nähe zu verteilen.'],
+    [6, 'Gesegneter Heiler', 'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.'],
+    [17, 'Überragende Heilung', 'Bei Heilwürfeln deiner Zauber verwendest du statt des Würfelwurfs den höchstmöglichen Wert.'],
+  ],
+  druid: [
+    [3, 'Zauber des Landzirkels', 'Nach einer langen Rast wählst du eine Landschaft und hast deren passende Zirkelzauber vorbereitet.'],
+    [3, 'Hilfe des Landes', 'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um in einem Bereich nekrotischen Schaden zu verursachen und eine Kreatur zu heilen.'],
+    [6, 'Natürliche Erholung', 'Du kannst nach einer kurzen Rast Zauberplätze zurückgewinnen und erhältst zusätzliche Vorteile für deine Landzauber.'],
+    [10, 'Schutz der Natur', 'Du bist gegen bestimmte Zustände und Umwelteinflüsse geschützt, abhängig von deiner gewählten Landschaft.'],
+    [14, 'Naturheiligtum', 'Natürliche Kreaturen können dich nicht ohne Weiteres angreifen oder sich dir feindlich nähern.'],
+  ],
+  fighter: [
+    [3, 'Verbesserter kritischer Treffer', 'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.'],
+    [3, 'Bemerkenswerter Athlet', 'Du erhältst Vorteile auf bestimmte Initiative- und körperliche Attributswürfe.'],
+    [7, 'Zusätzlicher Kampfstil', 'Du erhältst ein weiteres Talent für Kampfstil.'],
+    [10, 'Heroischer Krieger', 'Zu Beginn deines Zuges kannst du Heldenmut erhalten, wenn du keinen hast.'],
+    [15, 'Überlegener kritischer Treffer', 'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.'],
+    [18, 'Überlebenskünstler', 'Zu Beginn deines Zuges kannst du Trefferpunkte zurückgewinnen, wenn du angeschlagen bist.'],
+  ],
+  monk: [
+    [3, 'Technik der offenen Hand', 'Treffer aus Hagel der Schläge können Gelegenheitsangriffe verhindern, Ziele wegstoßen oder zu Fall bringen.'],
+    [6, 'Ganzheit des Körpers', 'Du kannst als Bonusaktion Trefferpunkte in Höhe deines Kampfkunstwürfels plus Weisheitsmodifikator zurückgewinnen.'],
+    [11, 'Fließender Schritt', 'Nach einer anderen Bonusaktion kannst du zusätzlich Schritt des Windes einsetzen.'],
+    [17, 'Zitternde Handfläche', 'Du kannst Fokus-Punkte einsetzen, um tödliche Schwingungen in einem getroffenen Ziel zu hinterlassen.'],
+  ],
+  paladin: [
+    [3, 'Zauber des Schwurs der Hingabe', 'Die Zauber deines Schwurs sind abhängig von deiner Paladinstufe stets vorbereitet.'],
+    [3, 'Heilige Waffe', 'Du kannst Kanal göttlicher Energie einsetzen, um eine Nahkampfwaffe vorübergehend magisch zu stärken.'],
+    [7, 'Aura der Hingabe', 'Du und Verbündete in deiner Schutzaura seid gegen den Zustand Bezaubert immun.'],
+    [15, 'Schützendes Niederstrecken', 'Dein Göttliches Niederstrecken gewährt dir und Verbündeten in deiner Aura vorübergehend halbe Deckung.'],
+    [20, 'Heiliger Nimbus', 'Du strahlst eine heilige Aura aus, die Licht spendet und Feinde in deiner Nähe schwächt.'],
+  ],
+  ranger: [
+    [3, 'Jägerkunde', 'Während ein Ziel von deinem Mal des Jägers betroffen ist, erkennst du seine Schadensimmunitäten, Resistenzen und Anfälligkeiten.'],
+    [3, 'Jägerbeute', 'Du wählst eine Jagdtechnik, etwa zusätzlichen Schaden gegen bereits verwundete Ziele.'],
+    [7, 'Defensive Taktiken', 'Du erhältst eine defensive Jagdtechnik gegen Angriffe oder Flächengefahren.'],
+    [11, 'Überlegene Jägerbeute', 'Deine Jagdtechnik wird verbessert und kann zusätzliche Ziele oder Effekte betreffen.'],
+    [15, 'Überlegene Verteidigung', 'Du erhältst eine weitere defensive Jagdtechnik.'],
+  ],
+  rogue: [
+    [3, 'Schnelle Hände', 'Du kannst zusätzlich bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.'],
+    [3, 'Arbeit in luftiger Höhe', 'Klettern kostet dich keine zusätzliche Bewegung und Sprünge profitieren von deiner Geschicklichkeit.'],
+    [9, 'Meisterlicher Schleicher', 'Du kannst dich unter bestimmten Bedingungen mit einer Bonusaktion verstecken.'],
+    [13, 'Magische Gegenstände benutzen', 'Du kannst Schriftrollen und magische Gegenstände vielseitiger einsetzen.'],
+    [17, 'Diebesreflexe', 'Du erhältst zu Beginn eines Kampfes einen zusätzlichen Zug unter bestimmten Voraussetzungen.'],
+  ],
+  sorcerer: [
+    [3, 'Drakonische Widerstandskraft', 'Dein Trefferpunktemaximum steigt; ohne Rüstung berechnet sich deine Grund-Rüstungsklasse aus Geschicklichkeit und Charisma.'],
+    [3, 'Drakonische Zauber', 'Die Zauber deiner drakonischen Abstammung sind abhängig von deiner Zaubererstufe stets vorbereitet.'],
+    [6, 'Elementare Affinität', 'Du erhältst Resistenz gegen einen gewählten Drachenschadenstyp und kannst passenden Zauberschaden verstärken.'],
+    [14, 'Drachenflügel', 'Du kannst für eine begrenzte Zeit Flügel manifestieren und eine Flugbewegungsrate erhalten.'],
+    [18, 'Drachengefährte', 'Du kannst einen drakonischen Geist als Gefährten beschwören.'],
+  ],
+  warlock: [
+    [3, 'Segnung des Dunklen', 'Wenn ein Feind in deiner Nähe auf 0 Trefferpunkte sinkt, erhältst du temporäre Trefferpunkte.'],
+    [3, 'Zauber des Unholds', 'Die Zauber deines Patrons sind abhängig von deiner Hexenmeisterstufe stets vorbereitet.'],
+    [6, 'Dunkler eigener Glücksfall', 'Du kannst einen Attributswurf oder Rettungswurf mit einem zusätzlichen W10 verbessern.'],
+    [10, 'Unholdresilienz', 'Nach einer Rast wählst du einen Schadensarttyp, gegen den du resistent bist.'],
+    [14, 'Durch die Hölle schicken', 'Einmal pro Zug kannst du ein getroffenes Ziel in die Unteren Ebenen schleudern und ihm psychischen Schaden zufügen.'],
+  ],
+  wizard: [
+    [3, 'Hervorrufungsexperte', 'Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.'],
+    [3, 'Kraftvoller Zaubertrick', 'Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.'],
+    [6, 'Zauber formen', 'Du kannst sichere Bereiche für Verbündete in deinen Hervorrufungszaubern schaffen.'],
+    [10, 'Ermächtigte Hervorrufung', 'Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.'],
+    [14, 'Überladung', 'Du kannst einen Zauber verstärken, um maximalen Schaden zu verursachen, riskierst dabei aber Rückschlag.'],
+  ],
 }
 
 export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
@@ -550,11 +621,12 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
   const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
   if (is2024) {
     result.push(
-      ...(character.subclassId ? (SUBCLASS_FEATURE_LEVELS_2024[character.classId] ?? []) : [])
-        .filter((level) => level <= character.level)
-        .map((level, index) => ({
+      ...(character.subclassId ? (SUBCLASS_FEATURES_2024[character.classId] ?? []) : [])
+        .filter(([level]) => level <= character.level)
+        .map(([level, name, description], index) => ({
           id: `subclass-2024-${subclass}-${index}`,
-          name: 'Unterklassenmerkmal',
+          name,
+          description,
           level,
           source: 'subclass' as const,
         })),

@@ -130,6 +130,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                     {t('Stufe')} {feature.level} ·{' '}
                     {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
                   </small>
+                  {feature.description && <p className="muted-paragraph">{t(feature.description)}</p>}
                 </div>
                 <span className="automatic-feature-badge">{t('Automatisch')}</span>
               </article>
@@ -145,13 +146,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
             'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.',
           )}
         </p>
-        {character.ruleset === '2024' && (
-          <p className="muted-paragraph">
-            {t(
-              'Bei 2024-Unterklassen zeigen die Einträge derzeit die korrekten Freischaltungsstufen. Die konkreten Namen und Beschreibungen der Unterklassenmerkmale folgen noch; 2014-Regeltexte werden nicht übernommen.',
-            )}
-          </p>
-        )}
+
       </section>
     </>
   )
