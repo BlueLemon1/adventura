@@ -1,8 +1,9 @@
 import { useState, type FormEvent } from 'react'
-import { Plus } from 'lucide-react'
+import { Plus, Sparkles } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
+import { SegmentedTabs } from '../components/ui/segmented-tabs'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
@@ -25,6 +26,7 @@ interface SpellbookPageProps {
   character: Character
   knownSpells: KnownSpell[]
   view: 'character' | 'catalog'
+  onViewChange: (view: 'character' | 'catalog') => void
   language: Language
   onUpdateCharacter: (patch: Partial<Character>) => void
   onUpdateSpells: (spells: KnownSpell[]) => void
@@ -34,6 +36,7 @@ export function SpellbookPage({
   character,
   knownSpells,
   view,
+  onViewChange,
   language,
   onUpdateCharacter,
   onUpdateSpells,
@@ -108,6 +111,15 @@ export function SpellbookPage({
         eyebrow={t('MAGIE & ZAUBER')}
         title={t('Zauberbuch')}
         description={t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
+      />
+      <SegmentedTabs
+        value={view}
+        onChange={onViewChange}
+        ariaLabel={t('Zauberbuchansichten')}
+        items={[
+          { value: 'character', label: t('Meine Zauber'), icon: <Plus size={15} />, count: knownSpells.length },
+          { value: 'catalog', label: t('SRD & hinzufügen'), icon: <Sparkles size={15} /> },
+        ]}
       />
 
       {view === 'character' ? (

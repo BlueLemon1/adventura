@@ -477,6 +477,7 @@ export default function App() {
               <InventoryPage
                 inventory={selected.inventory}
                 view={inventoryView}
+                onViewChange={setInventoryView}
                 partyItems={partyItems}
                 onUpdateInventory={updateInventory}
                 onSavePartyItems={persistPartyItems}
@@ -487,6 +488,7 @@ export default function App() {
                 character={selected.character}
                 knownSpells={selected.spellbook.knownSpells}
                 view={spellbookView}
+                onViewChange={setSpellbookView}
                 language={language}
                 onUpdateCharacter={updateCharacter}
                 onUpdateSpells={updateSpellbook}
