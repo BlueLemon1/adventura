@@ -826,7 +826,6 @@ Object.assign(en, {
     'You expend Channel Divinity to force chosen nearby creatures to make a Wisdom saving throw or become Frightened and Incapacitated.',
 })
 
-
 Object.assign(en, {
   'Diese Ressource speist deine Kanal-göttlicher-Energie-Effekte. Wähle im Zauberbuch den konkreten Effekt, etwa Untote vertreiben, Leben bewahren, Heilige Waffe oder Abwehrzauber.':
     'This resource powers your Channel Divinity effects. Choose the specific effect in the spellbook, such as Turn Undead, Preserve Life, Sacred Weapon, or Abjure Foes.',
@@ -841,7 +840,6 @@ Object.assign(en, {
   'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.':
     'You manifest wings for one hour and gain a Fly Speed. After using this feature, you must finish a Long Rest or spend three Sorcery Points to restore its use.',
 })
-
 
 Object.assign(en, {
   'Göttlicher Funke': 'Divine Spark',
@@ -863,19 +861,16 @@ Object.assign(en, {
     'As a Bonus Action, you open your awareness for 10 minutes to detect Celestials, Fiends, and Undead, as well as consecrated or desecrated places and objects nearby.',
 })
 
-
 Object.assign(en, {
   'Unheilige vertreiben': 'Turn the Unholy',
   'Du präsentierst dein heiliges Symbol und zwingst Unholde und Untote in deiner Nähe zu einem Weisheitsrettungswurf. Bei Misslingen werden sie für bis zu eine Minute vertrieben.':
     'You present your holy symbol and force Fiends and Undead nearby to make a Wisdom saving throw. On a failure, they are turned for up to one minute.',
 })
 
-
 Object.assign(en, {
   'Du verbringst eine Minute damit, natürliche Materialien zu sammeln und dich zu tarnen. Solange du dich nicht bewegst, bist du unter passenden natürlichen Bedingungen schwer zu entdecken.':
     'You spend one minute gathering natural materials to camouflage yourself. While you remain still in suitable natural surroundings, you are difficult to detect.',
 })
-
 
 Object.assign(en, {
   Kampfrausch: 'Rage',
@@ -960,7 +955,7 @@ Object.assign(en, {
   'Brutaler Schlag': 'Brutal Strike',
   'Wilde Erneuerung': 'Wild Resurgence',
   'Berührende Reinigung': 'Restoring Touch',
-  'Drachengefährte': 'Dragon Companion',
+  Drachengefährte: 'Dragon Companion',
   'Göttlicher Funke': 'Divine Spark',
   'Reinigende Berührung': 'Cleansing Touch',
   'Zauberhafte Erneuerung': 'Sorcerous Restoration',
@@ -1023,7 +1018,6 @@ Object.assign(en, {
     'When an attack misses you or you fail an ability check, you can turn the result into a hit or a 20 on the d20.',
 })
 
-
 Object.assign(en, {
   'Mystischer Meister': 'Eldritch Master',
   'Du führst eine einminütige Zwiesprache mit deinem Patron und stellst alle verbrauchten Zauberplätze deiner Paktmagie wieder her. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.':
@@ -1033,6 +1027,5 @@ Object.assign(en, {
   'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken. Den Rettungswurf des Zaubers bestehst du automatisch.':
     'You perform a one-minute ritual to contact your patron and cast Contact Other Plane without expending a spell slot. You automatically succeed on the spell’s saving throw.',
 })
-
 
 Object.assign(en, { 'Zauberer-Inkarnation': 'Sorcery Incarnate' })

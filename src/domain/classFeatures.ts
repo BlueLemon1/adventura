@@ -302,7 +302,7 @@ const ACTIVE_FEATURES: Record<
     resourceId: 'lay-on-hands',
     resourceCost: 5,
   },
-  'Drachengefährte': {
+  Drachengefährte: {
     activation: 'action',
     description:
       'Du beschwörst einmal nach einer langen Rast einen drakonischen Geist als Gefährten, indem du den Zauber Drachen beschwören ohne Zauberplatz und Materialkomponenten wirkst.',
@@ -505,8 +505,7 @@ const ACTIVE_FEATURES: Record<
   },
   Verschwinden: {
     activation: 'bonusAction',
-    description:
-      'Du kannst die Verstecken-Aktion als Bonusaktion ausführen.',
+    description: 'Du kannst die Verstecken-Aktion als Bonusaktion ausführen.',
   },
   'Heiliger Nimbus': {
     activation: 'action',
@@ -526,7 +525,7 @@ const ACTIVE_FEATURES: Record<
       'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken. Den Rettungswurf des Zaubers bestehst du automatisch.',
     resourceId: 'contact-patron',
   },
-  'Glückstreffer': {
+  Glückstreffer: {
     activation: 'special',
     description:
       'Wenn ein Angriff dich verfehlt oder ein Attributswurf misslingt, kannst du das Ergebnis in einen Treffer oder einen W20-Wert von 20 verwandeln.',
@@ -681,7 +680,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
   if (classId === 'sorcerer' && ruleset === '2024' && level >= 5)
     add('sorcerous-restoration', 'Zauberhafte Erneuerung', 1, 'long')
   if (classId === 'paladin' && ruleset === '2014' && level >= 14)
-    add('cleansing-touch', 'Reinigende Berührung', Math.max(1, abilityModifier(character.abilities?.cha)), 'long')
+    add(
+      'cleansing-touch',
+      'Reinigende Berührung',
+      Math.max(1, abilityModifier(character.abilities?.cha)),
+      'long',
+    )
   if (classId === 'wizard' && level >= 1) add('arcane-recovery', 'Arkane Erholung', 1, 'long')
   if (classId === 'rogue' && subclass === 'arcanetrickster' && level >= 17)
     add('spell-thief', 'Zauberdieb', 1, 'long')
@@ -690,8 +694,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
     add('strength-of-grave', 'Stärke des Grabes', 1, 'long')
   if (classId === 'warlock' && subclass === 'fiend' && level >= 14)
     add('hurl-through-hell', 'Durch die Hölle schicken', 1, 'long')
-  if (classId === 'warlock' && level >= 20)
-    add('eldritch-master', 'Mystischer Meister', 1, 'long')
+  if (classId === 'warlock' && level >= 20) add('eldritch-master', 'Mystischer Meister', 1, 'long')
   return resources
 }
 
@@ -1441,7 +1444,8 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     result.push(
       ...(subclass === supportedSubclass[character.classId]
         ? (SUBCLASS_FEATURES_2024[character.classId] ?? [])
-        : [])
+        : []
+      )
         .filter(([level]) => level <= character.level)
         .map(([level, name, description], index) => ({
           id: `subclass-2024-${subclass}-${index}`,
@@ -1503,7 +1507,11 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
             ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion zu sprinten oder dich zurückzuziehen; deine Sprungweite verdoppelt sich für den Zug.'
             : 'Du kannst als Bonusaktion sprinten oder dich zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du beides tun und deine Sprungweite verdoppeln.',
       }
-    if (feature.name === 'Göttlicher Sinn' && character.classId === 'paladin' && character.ruleset === '2024')
+    if (
+      feature.name === 'Göttlicher Sinn' &&
+      character.classId === 'paladin' &&
+      character.ruleset === '2024'
+    )
       return {
         ...feature,
         ...active,
