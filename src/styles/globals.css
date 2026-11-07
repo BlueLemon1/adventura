@@ -3412,3 +3412,27 @@ textarea {
     padding-left: 8px;
   }
 }
+
+
+/* Mobile navigation: keep only primary destinations; page tabs handle sub-navigation. */
+@media (max-width: 640px) {
+  .nav-list > .nav-link,
+  .nav-list > .nav-group {
+    flex: 1 1 calc(50% - 8px);
+    min-width: 0;
+  }
+
+  .nav-group {
+    gap: 0;
+  }
+
+  .nav-subitems,
+  .nav-chevron {
+    display: none !important;
+  }
+
+  .nav-group > .nav-link {
+    width: 100%;
+    min-width: 0;
+  }
+}

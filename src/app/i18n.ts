@@ -359,6 +359,7 @@ Object.assign(en, {
   'Andere / eigene Klasse': 'Other / custom class',
   'Arkaner Ritter': 'Eldritch Knight',
   'Arkaner Gauner': 'Arcane Trickster',
+  Schattenmagie: 'Shadow Magic',
   Keine: 'None',
   Schaden: 'damage',
   'Zauberwirker-Typ': 'Spellcasting type',

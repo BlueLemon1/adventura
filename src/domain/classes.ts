@@ -21,6 +21,7 @@ export const CLASS_OPTIONS: ClassOption[] = [
 export const SPELLCASTING_SUBCLASSES: Record<string, ClassOption[]> = {
   fighter: [{ value: 'eldritchknight', label: 'Arkaner Ritter' }],
   rogue: [{ value: 'arcanetrickster', label: 'Arkaner Gauner' }],
+  sorcerer: [{ value: 'shadowmagic', label: 'Schattenmagie' }],
 }
 export function getClassLabel(classId: string): string {
   return CLASS_OPTIONS.find((item) => item.value === classId)?.label ?? classId
