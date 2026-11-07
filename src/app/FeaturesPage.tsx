@@ -142,7 +142,9 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                     <span className={`automatic-feature-source is-${feature.source}`}>
                       {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
                     </span>
-                    <span>{t('Stufe')} {feature.level}</span>
+                    <span>
+                      {t('Stufe')} {feature.level}
+                    </span>
                     {feature.activation && (
                       <span className="automatic-feature-activation">
                         {t(activationLabels[feature.activation])}

@@ -73,7 +73,9 @@ export function SpellbookPage({
   const t = (value: string) => translate(language, value)
   const featureSpells = getSpellbookFeatureSpells(character)
   const classResources = getClassResources(character)
-  const spellCatalog = (character.ruleset === '2014' ? spells2014 : spells2024) as unknown as FeatureSpellCatalogEntry[]
+  const spellCatalog = (character.ruleset === '2014'
+    ? spells2014
+    : spells2024) as unknown as FeatureSpellCatalogEntry[]
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
@@ -104,9 +106,9 @@ export function SpellbookPage({
       components:
         feature.spellbookSpellId === 'srd-2024-find-familiar' ||
         feature.spellbookSpellId === 'srd-2024-summon-dragon'
-          ? localizedSpell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '') ??
-            spell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '')
-          : localizedSpell?.components ?? spell?.components,
+          ? (localizedSpell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '') ??
+            spell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, ''))
+          : (localizedSpell?.components ?? spell?.components),
       duration: localizedSpell?.duration ?? spell?.duration,
       concentration: spell?.concentration,
       ritual: spell?.ritual,

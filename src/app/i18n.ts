@@ -1092,7 +1092,6 @@ Object.assign(en, {
     'You choose one additional Metamagic option to alter the effects of your spells.',
 })
 
-
 Object.assign(en, {
   'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.':
     'Your weapon attacks deal additional Radiant damage.',
@@ -1306,8 +1305,7 @@ Object.assign(en, {
     'You can cast Hunter’s Mark without a spell slot and gain additional free uses.',
   'Du erhältst zusätzliche Bewegungs- und Erkundungsvorteile.':
     'You gain additional movement and exploration benefits.',
-  'Du erhältst Expertise in weiteren Fertigkeiten.':
-    'You gain Expertise in additional skills.',
+  'Du erhältst Expertise in weiteren Fertigkeiten.': 'You gain Expertise in additional skills.',
   'Du erhältst eine zusätzliche defensive oder offensive Verbesserung deiner Jagdfähigkeiten.':
     'You gain an additional defensive or offensive improvement to your hunting abilities.',
   'Du kannst dich als Bonusaktion verstecken und bist schwerer aufzuspüren.':
@@ -1362,8 +1360,7 @@ Object.assign(en, {
     'Natural creatures cannot easily attack you.',
   'Du verbesserst deine körperlichen Fähigkeiten und bestimmte Initiativewürfe.':
     'You improve your physical abilities and certain Initiative checks.',
-  'Du wählst einen weiteren Kampfstil.':
-    'You choose an additional Fighting Style.',
+  'Du wählst einen weiteren Kampfstil.': 'You choose an additional Fighting Style.',
   'Deine Treffer mit Hagel der Schläge können Ziele zu Fall bringen, wegstoßen oder ihre Reaktionen verhindern.':
     'Your Flurry of Blows hits can knock targets prone, push them away, or prevent their Reactions.',
   'Du kannst dich durch Meditation schützen und nach einer Rast temporäre Trefferpunkte erhalten.':
@@ -1420,26 +1417,24 @@ Object.assign(en, {
   'Alle Klassen- und Unterklassenmerkmale': 'All class and subclass features',
   'Alle Klassen- und Unterklassenmerkmale deines Regelwerks – aktive, passive und zukünftige.':
     'All active, passive, and upcoming class and subclass features for your ruleset.',
-  'Merkmalszauber': 'Feature-granted spells',
-  'MERKMALSZAUBER': 'FEATURE SPELL',
+  Merkmalszauber: 'Feature-granted spells',
+  MERKMALSZAUBER: 'FEATURE SPELL',
   'Ermöglicht durch': 'Granted by',
-  'Aktion': 'Action',
-  'Bonusaktion': 'Bonus Action',
-  'Reaktion': 'Reaction',
-  'Spezial': 'Special',
-  'Klassenmerkmal': 'Class feature',
-  'Unterklassenmerkmal': 'Subclass feature',
+  Aktion: 'Action',
+  Bonusaktion: 'Bonus Action',
+  Reaktion: 'Reaction',
+  Spezial: 'Special',
+  Klassenmerkmal: 'Class feature',
+  Unterklassenmerkmal: 'Subclass feature',
   'Zauber & Merkmalszauber': 'Spells & feature-granted spells',
   'Verwalte deine Zauber und zusätzliche Zauber, die dir Klassenmerkmale gewähren.':
     'Manage your spells and additional spells granted by class features.',
 })
 
-
 Object.assign(en, {
   'Deine Waffenangriffe verursachen zusätzlich gleißenden Schaden.':
     'Your weapon attacks deal additional Radiant damage.',
 })
-
 
 Object.assign(en, {
   'Wenn du dich in deinem Zug höchstens mit halber Bewegungsrate bewegst, hast du Vorteil auf Geschicklichkeitswürfe (Heimlichkeit).':
@@ -1450,7 +1445,6 @@ Object.assign(en, {
     'When you make an ability check or saving throw, you can add a d10 to the roll. You can use this feature once per Short or Long Rest.',
 })
 
-
 Object.assign(en, {
   'Du hast stets bestimmte Lebensdomänenzauber vorbereitet, die mit deiner Klerikerstufe wachsen. Sie zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.':
     'You always have certain Life Domain spells prepared as you reach the specified Cleric levels. They do not count against the number of spells you can prepare.',
@@ -1459,7 +1453,6 @@ Object.assign(en, {
   'Die Zauberliste des Hexenmeisters wird um bestimmte Zauber erweitert, die du bei der Auswahl deiner bekannten Zauber berücksichtigen kannst.':
     'The Warlock spell list is expanded with specific spells that you can choose when learning Warlock spells.',
 })
-
 
 Object.assign(en, {
   'Du erhältst weitere mystische Anrufungen deiner Wahl. Die Gesamtzahl richtet sich nach deiner Hexenmeisterstufe.':
@@ -1470,12 +1463,10 @@ Object.assign(en, {
     'You can now use Action Surge twice between Short or Long Rests.',
 })
 
-
 Object.assign(en, {
   'Der Radius deiner Aura des Schutzes steigt von 3 auf 9 Meter.':
     'The radius of your Aura of Protection increases from 10 feet to 30 feet.',
 })
-
 
 Object.assign(en, {
   'Paladins Niederstrecken': 'Paladin’s Smite',
