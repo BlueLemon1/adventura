@@ -5,7 +5,6 @@ import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
-import { SegmentedTabs } from '../components/ui/segmented-tabs'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import {
   Select,
@@ -21,11 +20,12 @@ import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
 type UsageReset = NonNullable<KnownSpell['usageReset']>
-type SpellbookView = 'character' | 'catalog'
 
 interface SpellbookPageProps {
   character: Character
   knownSpells: KnownSpell[]
+  view: 'character' | 'catalog'
+  onViewChange: (view: 'character' | 'catalog') => void
   language: Language
   onUpdateCharacter: (patch: Partial<Character>) => void
   onUpdateSpells: (spells: KnownSpell[]) => void
@@ -34,12 +34,13 @@ interface SpellbookPageProps {
 export function SpellbookPage({
   character,
   knownSpells,
+  view,
+  onViewChange,
   language,
   onUpdateCharacter,
   onUpdateSpells,
 }: SpellbookPageProps) {
   const t = (value: string) => translate(language, value)
-  const [view, setView] = useState<SpellbookView>('character')
   const [spellName, setSpellName] = useState('')
   const [spellLevel, setSpellLevel] = useState(0)
   const [spellSchool, setSpellSchool] = useState('')
@@ -109,25 +110,6 @@ export function SpellbookPage({
         eyebrow={t('MAGIE & ZAUBER')}
         title={t('Zauberbuch')}
         description={t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
-      />
-
-      <SegmentedTabs
-        ariaLabel={t('Zauberbuchansicht')}
-        value={view}
-        onChange={setView}
-        items={[
-          {
-            value: 'character',
-            label: t('Meine Zauber'),
-            icon: <WandSparkles size={16} />,
-            count: knownSpells.length,
-          },
-          {
-            value: 'catalog',
-            label: t('SRD & hinzufügen'),
-            icon: <Plus size={16} />,
-          },
-        ]}
       />
 
       {view === 'character' ? (

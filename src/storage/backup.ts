@@ -75,6 +75,7 @@ const itemSchema = z.object({
   weightLb: z.number().finite().min(0).optional(),
   description: z.string().optional(),
   equipped: z.boolean().optional(),
+  equippedSlot: z.enum(['head', 'neck', 'cloak', 'armor', 'mainHand', 'offHand', 'hands', 'waist', 'feet', 'ring1', 'ring2', 'other']).optional(),
 })
 
 const spellSchema = z.object({

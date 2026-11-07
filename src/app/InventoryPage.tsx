@@ -1,11 +1,10 @@
 import { useMemo, useState, type FormEvent } from 'react'
-import { Backpack, Coins, Plus, ShieldCheck, Trash2 } from 'lucide-react'
-import type { CharacterInventory, InventoryItem } from '../domain/character'
+import { Backpack, CircleDot, Coins, Crown, Footprints, Gem, Hand, Plus, Shield, ShieldCheck, Shirt, Sparkles, Sword, Trash2 } from 'lucide-react'
+import type { CharacterInventory, EquipmentSlot, InventoryItem } from '../domain/character'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
-import { SegmentedTabs } from '../components/ui/segmented-tabs'
 import {
   Select,
   SelectContent,
@@ -16,12 +15,13 @@ import {
 import { translate, useLanguage } from './i18n'
 
 type InventoryGroup = 'personal' | 'party'
-type InventoryView = 'inventory' | 'equipped'
 
 const DEFAULT_CURRENCY = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
 
 interface InventoryPageProps {
   inventory: CharacterInventory
+  view: 'inventory' | 'equipped'
+  onViewChange: (view: 'inventory' | 'equipped') => void
   partyItems: InventoryItem[]
   onUpdateInventory: (patch: Partial<CharacterInventory>) => void
   onSavePartyItems: (items: InventoryItem[]) => void
@@ -30,64 +30,16 @@ interface InventoryPageProps {
 interface InventoryItemListProps {
   items: InventoryItem[]
   emptyLabel: string
-  showEquipped: boolean
-  variant?: 'list' | 'equipment'
-  onToggleEquipped?: (item: InventoryItem, equipped: boolean) => void
   onRemove: (item: InventoryItem) => void
 }
 
 function InventoryItemList({
   items,
   emptyLabel,
-  showEquipped,
-  variant = 'list',
-  onToggleEquipped,
   onRemove,
 }: InventoryItemListProps) {
   if (items.length === 0) {
     return <p className="muted-paragraph">{emptyLabel}</p>
-  }
-
-  if (variant === 'equipment') {
-    return (
-      <div className="equipped-gear-grid">
-        {items.map((item) => (
-          <article className="equipped-gear-card" key={item.id}>
-            <div className="equipped-gear-card-heading">
-              <span className="equipped-gear-icon">
-                <ShieldCheck size={19} />
-              </span>
-              <div className="equipped-gear-title">
-                <strong>{item.name}</strong>
-                <small>{item.description || 'Keine Beschreibung'}</small>
-              </div>
-              <IconButton
-                className="delete-button"
-                label={item.name + ' entfernen'}
-                onClick={() => onRemove(item)}
-              >
-                <Trash2 size={15} />
-              </IconButton>
-            </div>
-            <div className="equipped-gear-meta">
-              <span>× {item.quantity}</span>
-              <span>{item.unitValueGp} GM</span>
-              {item.weightLb !== undefined && <span>{item.weightLb} Pfd.</span>}
-            </div>
-            {showEquipped && onToggleEquipped && (
-              <label className="equipped-toggle">
-                <input
-                  type="checkbox"
-                  checked={item.equipped ?? false}
-                  onChange={(event) => onToggleEquipped(item, event.target.checked)}
-                />
-                Ausgerüstet
-              </label>
-            )}
-          </article>
-        ))}
-      </div>
-    )
   }
 
   return (
@@ -103,16 +55,6 @@ function InventoryItemList({
           </div>
           <span>× {item.quantity}</span>
           <span>{item.unitValueGp} GM</span>
-          {showEquipped && onToggleEquipped && (
-            <label className="equipped-toggle">
-              <input
-                type="checkbox"
-                checked={item.equipped ?? false}
-                onChange={(event) => onToggleEquipped(item, event.target.checked)}
-              />
-              Ausgerüstet
-            </label>
-          )}
           <IconButton
             className="delete-button"
             label={item.name + ' entfernen'}
@@ -126,15 +68,89 @@ function InventoryItemList({
   )
 }
 
+
+const EQUIPMENT_SLOTS: { id: EquipmentSlot; label: string; icon: typeof Shield }[] = [
+  { id: 'head', label: 'Kopf', icon: Crown },
+  { id: 'neck', label: 'Hals', icon: Gem },
+  { id: 'cloak', label: 'Umhang', icon: Shirt },
+  { id: 'armor', label: 'Rüstung', icon: Shield },
+  { id: 'mainHand', label: 'Haupthand', icon: Sword },
+  { id: 'offHand', label: 'Nebenhand', icon: ShieldCheck },
+  { id: 'hands', label: 'Hände', icon: Hand },
+  { id: 'waist', label: 'Gürtel', icon: CircleDot },
+  { id: 'feet', label: 'Füße', icon: Footprints },
+  { id: 'ring1', label: 'Ring 1', icon: Gem },
+  { id: 'ring2', label: 'Ring 2', icon: Gem },
+  { id: 'other', label: 'Sonstiges', icon: Sparkles },
+]
+
+interface EquipmentLoadoutProps {
+  items: InventoryItem[]
+  inventoryItems: InventoryItem[]
+  onEquip: (slot: EquipmentSlot, itemId: string) => void
+  onUnequip: (item: InventoryItem) => void
+  onRemove: (item: InventoryItem) => void
+}
+
+function EquipmentLoadout({ items, inventoryItems, onEquip, onUnequip, onRemove }: EquipmentLoadoutProps) {
+  const language = useLanguage()
+  const t = (value: string) => translate(language, value)
+  return (
+    <div className="equipment-layout">
+      <div className="equipment-slot-grid">
+        {EQUIPMENT_SLOTS.map(({ id, label, icon: Icon }) => {
+          const item = items.find((entry) => (entry.equippedSlot ?? (entry.equipped ? 'other' : undefined)) === id)
+          return (
+            <article className={item ? 'equipment-slot filled' : 'equipment-slot'} key={id}>
+              <div className="equipment-slot-top">
+                <span className="equipment-slot-icon"><Icon size={20} /></span>
+                <div className="equipment-slot-copy">
+                  <strong>{t(label)}</strong>
+                  <small>{item ? t('Belegt') : t('Freier Slot')}</small>
+                </div>
+              </div>
+              {item ? (
+                <div className="equipment-slot-item">
+                  <strong>{item.name}</strong>
+                  <small>{item.quantity > 1 ? `× ${item.quantity} · ` : ''}{item.description || t('Keine Beschreibung')}</small>
+                  <div className="equipment-slot-actions">
+                    <button type="button" className="secondary-button" onClick={() => onUnequip(item)}>{t('Ablegen')}</button>
+                    <button type="button" className="delete-button" aria-label={t('Gegenstand entfernen')} onClick={() => onRemove(item)}><Trash2 size={14} /></button>
+                  </div>
+                </div>
+              ) : (
+                <Select value="" onValueChange={(value) => onEquip(id, value)}>
+                  <SelectTrigger className="equipment-slot-select"><SelectValue placeholder={t('Gegenstand anlegen')} /></SelectTrigger>
+                  <SelectContent>
+                    {inventoryItems.map((candidate) => (
+                      <SelectItem key={candidate.id} value={candidate.id}>
+                        {candidate.name}{candidate.quantity > 1 ? ` × ${candidate.quantity}` : ''}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              )}
+            </article>
+          )
+        })}
+      </div>
+      {inventoryItems.length === 0 && items.length === 0 && (
+        <p className="muted-paragraph">{t('Füge zuerst Gegenstände zum persönlichen Inventar hinzu.')}</p>
+      )}
+    </div>
+  )
+}
+
 export function InventoryPage({
   inventory,
   partyItems,
   onUpdateInventory,
   onSavePartyItems,
+  view,
+  onViewChange,
 }: InventoryPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
-  const [view, setView] = useState<InventoryView>('inventory')
   const [itemName, setItemName] = useState('')
   const [itemQuantity, setItemQuantity] = useState(1)
   const [itemValue, setItemValue] = useState(0)
@@ -143,7 +159,11 @@ export function InventoryPage({
   const [itemGroup, setItemGroup] = useState<InventoryGroup>('personal')
 
   const equippedItems = useMemo(
-    () => inventory.personal.filter((item) => item.equipped),
+    () => inventory.personal.filter((item) => item.equippedSlot || item.equipped),
+    [inventory.personal],
+  )
+  const carriedItems = useMemo(
+    () => inventory.personal.filter((item) => !item.equippedSlot && !item.equipped),
     [inventory.personal],
   )
 
@@ -195,21 +215,6 @@ export function InventoryPage({
         description={t('Persönliche Gegenstände und gemeinsamer Gruppenbesitz.')}
       />
 
-      <SegmentedTabs
-        ariaLabel={t('Inventaransicht')}
-        value={view}
-        onChange={setView}
-        items={[
-          { value: 'inventory', label: t('Inventar'), icon: <Backpack size={16} /> },
-          {
-            value: 'equipped',
-            label: t('Angelegt'),
-            icon: <ShieldCheck size={16} />,
-            count: equippedItems.length,
-          },
-        ]}
-      />
-
       {view === 'equipped' ? (
         <section className="panel equipped-gear-panel">
           <PanelHeader
@@ -217,20 +222,24 @@ export function InventoryPage({
             meta={`${equippedItems.length} ${t('ANGELEGT')}`}
           />
           <p className="muted-paragraph">
-            {t(
-              'Hier siehst du nur die Gegenstände, die dein Charakter aktuell trägt oder verwendet.',
-            )}
+            {t('Jeder Slot kann genau einen Gegenstand aufnehmen. Beim Anlegen wird er aus deinem Inventar verschoben.')}
           </p>
-          <InventoryItemList
+          <EquipmentLoadout
             items={equippedItems}
-            emptyLabel={t(
-              'Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.',
-            )}
-            showEquipped
-            variant="equipment"
-            onToggleEquipped={(item, equipped) =>
-              updateItem(item.id, (current) => ({ ...current, equipped }))
-            }
+            inventoryItems={carriedItems}
+            onEquip={(slot, itemId) => {
+              const currentSlotItem = equippedItems.find((item) => (item.equippedSlot ?? (item.equipped ? 'other' : undefined)) === slot)
+              const selectedItem = carriedItems.find((item) => item.id === itemId)
+              if (!selectedItem) return
+              onUpdateInventory({
+                personal: inventory.personal.map((item) => {
+                  if (currentSlotItem?.id === item.id) return { ...item, equipped: false, equippedSlot: undefined }
+                  if (selectedItem.id === item.id) return { ...item, equipped: undefined, equippedSlot: slot }
+                  return item
+                }),
+              })
+            }}
+            onUnequip={(item) => updateItem(item.id, (current) => ({ ...current, equipped: false, equippedSlot: undefined }))}
             onRemove={removePersonalItem}
           />
         </section>
@@ -321,15 +330,11 @@ export function InventoryPage({
           <section className="panel">
             <PanelHeader
               title={t('Persönliches Inventar')}
-              meta={`${inventory.personal.length} ${t('GEGENSTÄNDE')}`}
+              meta={`${carriedItems.length} ${t('GEGENSTÄNDE')}`}
             />
             <InventoryItemList
-              items={inventory.personal}
+              items={carriedItems}
               emptyLabel={t('Noch keine Gegenstände vorhanden.')}
-              showEquipped
-              onToggleEquipped={(item, equipped) =>
-                updateItem(item.id, (current) => ({ ...current, equipped }))
-              }
               onRemove={removePersonalItem}
             />
           </section>
@@ -342,7 +347,6 @@ export function InventoryPage({
             <InventoryItemList
               items={partyItems}
               emptyLabel={t('Noch keine Gegenstände vorhanden.')}
-              showEquipped={false}
               onRemove={removePartyItem}
             />
           </section>

@@ -77,6 +77,10 @@ export interface Character {
   notes?: string
 }
 
+export type EquipmentSlot =
+  | 'head' | 'neck' | 'cloak' | 'armor' | 'mainHand' | 'offHand'
+  | 'hands' | 'waist' | 'feet' | 'ring1' | 'ring2' | 'other'
+
 export interface InventoryItem {
   id: string
   name: string
@@ -84,6 +88,9 @@ export interface InventoryItem {
   unitValueGp: number
   weightLb?: number
   description?: string
+  /** Occupied equipment slot; undefined means the item is in the inventory. */
+  equippedSlot?: EquipmentSlot
+  /** Legacy flag retained for importing older backups. */
   equipped?: boolean
 }
 

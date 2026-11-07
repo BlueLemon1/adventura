@@ -1,5 +1,6 @@
 import { useRef, useState, type ChangeEvent } from 'react'
 import {
+  Backpack,
   BookOpen,
   Boxes,
   Compass,
@@ -8,6 +9,7 @@ import {
   Sun,
   ScrollText,
   Shield,
+  ShieldCheck,
   Sparkles,
   Upload,
   WandSparkles,
@@ -39,15 +41,11 @@ import { CreateCharacterDialog } from './CreateCharacterDialog'
 import { InstallAppButton } from './InstallAppButton'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
+type InventoryView = 'inventory' | 'equipped'
+type SpellbookView = 'character' | 'catalog'
+type ExpandedNav = 'inventory' | 'spells' | null
 const abilityDefaults = { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 }
 const currencyDefaults = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
-const navItems = [
-  { id: 'overview' as const, label: 'Übersicht', icon: Compass },
-  { id: 'sheet' as const, label: 'Charakterbogen', icon: Shield },
-  { id: 'inventory' as const, label: 'Inventar', icon: Boxes },
-  { id: 'spells' as const, label: 'Zauberbuch', icon: BookOpen },
-  { id: 'levelup' as const, label: 'Level-up', icon: WandSparkles },
-]
 const newId = () => crypto.randomUUID()
 
 export default function App() {
@@ -70,6 +68,9 @@ export default function App() {
     persistPartyItems,
   } = useCharacterCollection()
   const [page, setPage] = useState<Page>('overview')
+  const [expandedNav, setExpandedNav] = useState<ExpandedNav>(null)
+  const [inventoryView, setInventoryView] = useState<InventoryView>('inventory')
+  const [spellbookView, setSpellbookView] = useState<SpellbookView>('character')
   const [showCreate, setShowCreate] = useState(false)
   const [busy, setBusy] = useState(false)
   const fileInput = useRef<HTMLInputElement>(null)
@@ -215,22 +216,31 @@ export default function App() {
           </a>
           <div className="workspace-label">{t('CHARAKTERBOGEN')}</div>
           <nav className="nav-list" aria-label="Hauptnavigation">
-            {navItems.map(({ id, label, icon: Icon }) => (
-              <button
-                key={id}
-                onClick={() => {
-                  if (id !== 'overview' && !selected) {
-                    setError('Wähle zuerst einen Charakter aus.')
-                    return
-                  }
-                  setPage(id)
-                }}
-                className={page === id ? 'nav-link active' : 'nav-link'}
-              >
-                <Icon size={18} />
-                <span>{t(label)}</span>
+            <button className={page === 'overview' ? 'nav-link active' : 'nav-link'} onClick={() => setPage('overview')}>
+              <Compass size={18} /><span>{t('Übersicht')}</span>
+            </button>
+            <button className={page === 'sheet' ? 'nav-link active' : 'nav-link'} onClick={() => { if (!selected) { setError('Wähle zuerst einen Charakter aus.'); return } setPage('sheet') }}>
+              <Shield size={18} /><span>{t('Charakterbogen')}</span>
+            </button>
+            <div className="nav-group">
+              <button className={page === 'inventory' ? 'nav-link nav-parent active' : 'nav-link nav-parent'} aria-expanded={expandedNav === 'inventory'} onClick={() => { if (!selected) { setError('Wähle zuerst einen Charakter aus.'); return } setPage('inventory'); setExpandedNav((current) => current === 'inventory' ? null : 'inventory') }}>
+                <Boxes size={18} /><span>{t('Inventar')}</span><span className="nav-chevron">{expandedNav === 'inventory' ? '−' : '+'}</span>
               </button>
-            ))}
+              {expandedNav === 'inventory' && <div className="nav-subitems">
+                <button className={page === 'inventory' && inventoryView === 'inventory' ? 'nav-sublink active' : 'nav-sublink'} onClick={() => { setPage('inventory'); setInventoryView('inventory') }}><Backpack size={15} /><span>{t('Inventar')}</span></button>
+                <button className={page === 'inventory' && inventoryView === 'equipped' ? 'nav-sublink active' : 'nav-sublink'} onClick={() => { setPage('inventory'); setInventoryView('equipped') }}><ShieldCheck size={15} /><span>{t('Angelegt')}</span></button>
+              </div>}
+            </div>
+            <div className="nav-group">
+              <button className={page === 'spells' ? 'nav-link nav-parent active' : 'nav-link nav-parent'} aria-expanded={expandedNav === 'spells'} onClick={() => { if (!selected) { setError('Wähle zuerst einen Charakter aus.'); return } setPage('spells'); setExpandedNav((current) => current === 'spells' ? null : 'spells') }}>
+                <BookOpen size={18} /><span>{t('Zauberbuch')}</span><span className="nav-chevron">{expandedNav === 'spells' ? '−' : '+'}</span>
+              </button>
+              {expandedNav === 'spells' && <div className="nav-subitems">
+                <button className={page === 'spells' && spellbookView === 'character' ? 'nav-sublink active' : 'nav-sublink'} onClick={() => { setPage('spells'); setSpellbookView('character') }}><WandSparkles size={15} /><span>{t('Meine Zauber')}</span></button>
+                <button className={page === 'spells' && spellbookView === 'catalog' ? 'nav-sublink active' : 'nav-sublink'} onClick={() => { setPage('spells'); setSpellbookView('catalog') }}><Sparkles size={15} /><span>{t('SRD & hinzufügen')}</span></button>
+              </div>}
+            </div>
+            <button className={page === 'levelup' ? 'nav-link active' : 'nav-link'} onClick={() => { if (!selected) { setError('Wähle zuerst einen Charakter aus.'); return } setPage('levelup') }}><WandSparkles size={18} /><span>{t('Level-up')}</span></button>
           </nav>
           <div className="sidebar-bottom">
             <div className="campaign-card">
@@ -356,6 +366,8 @@ export default function App() {
             {page === 'inventory' && selected && (
               <InventoryPage
                 inventory={selected.inventory}
+                view={inventoryView}
+                onViewChange={setInventoryView}
                 partyItems={partyItems}
                 onUpdateInventory={updateInventory}
                 onSavePartyItems={persistPartyItems}
@@ -365,6 +377,8 @@ export default function App() {
               <SpellbookPage
                 character={selected.character}
                 knownSpells={selected.spellbook.knownSpells}
+                view={spellbookView}
+                onViewChange={setSpellbookView}
                 language={language}
                 onUpdateCharacter={updateCharacter}
                 onUpdateSpells={updateSpellbook}
