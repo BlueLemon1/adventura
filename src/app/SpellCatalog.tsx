@@ -35,16 +35,17 @@ interface CatalogSpell {
   description: string
   higherLevel?: string
   localized?: {
-    name: string
-    school: string
-    classes: string[]
-    castingTime: string
-    range: string
-    components: string
-    duration: string
+    name?: string
+    school?: string
+    classes?: string[]
+    castingTime?: string
+    range?: string
+    components?: string
+    duration?: string
     description?: string
     higherLevel?: string
   }
+  usedEnglishFallback?: boolean
   damage?: Array<{ dice: string; average: number; type?: string }>
 }
 
@@ -265,19 +266,31 @@ export function SpellCatalog({
 
   const catalog = CATALOGS[character.ruleset].map((spell) => {
     if (language !== 'de' || !spell.localized) return spell
+    const localized = spell.localized
+    const usedEnglishFallback = [
+      localized?.name,
+      localized?.school,
+      localized?.castingTime,
+      localized?.range,
+      localized?.components,
+      localized?.duration,
+      localized?.description,
+    ].some((value) => !value)
+
     return {
       ...spell,
       englishName: spell.name,
-      name: spell.localized.name,
-      school: spell.localized.school,
-      classes: spell.localized.classes,
-      castingTime: spell.localized.castingTime,
-      range: spell.localized.range,
-      components: spell.localized.components,
-      duration: spell.localized.duration,
-      material: '',
-      description: spell.localized.description ?? '',
-      higherLevel: spell.localized.higherLevel ?? '',
+      name: localized?.name ?? spell.name,
+      school: localized?.school ?? spell.school,
+      classes: localized?.classes ?? spell.classes,
+      castingTime: localized?.castingTime ?? spell.castingTime,
+      range: localized?.range ?? spell.range,
+      components: localized?.components ?? spell.components,
+      duration: localized?.duration ?? spell.duration,
+      material: localized?.components ? '' : spell.material,
+      description: localized?.description ?? spell.description,
+      higherLevel: localized?.higherLevel ?? spell.higherLevel,
+      usedEnglishFallback,
     }
   })
   const spellcasting = getSpellcastingProgression(character)
@@ -325,6 +338,7 @@ export function SpellCatalog({
       concentration: spell.concentration,
       ritual: spell.ritual,
       description: spell.description,
+      languageFallback: spell.usedEnglishFallback,
       higherLevel: spell.higherLevel,
       damage: spell.damage,
       source,
@@ -471,6 +485,9 @@ export function SpellCatalog({
                   <strong>{spell.name}</strong>
                   <small>
                     {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}
+                    {spell.usedEnglishFallback && (
+                      <em className="language-fallback">{t('EN – englischer Ersatztext')}</em>
+                    )}
                   </small>
                 </span>
                 <span className="catalog-spell-action">
