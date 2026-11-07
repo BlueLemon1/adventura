@@ -309,7 +309,7 @@ export function SpellbookList({
     <section className="panel spellbook-panel">
       <PanelHeader
         className="spellbook-heading"
-        title={t('Deine Zauber')}
+        title={t('Zauber & aktive Merkmale')}
         description={`${actualSpells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')} · ${spells.length - actualSpells.length} ${t('aktive Merkmale')}`}
         meta={
           <span className="spellbook-count">

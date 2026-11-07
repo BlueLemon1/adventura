@@ -465,7 +465,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
   lore: [
     [3, 'Zusätzliche Fertigkeiten'],
-    [3, 'Worte der Schreckens'],
+    [3, 'Schneidende Worte'],
     [6, 'Zusätzliche magische Geheimnisse'],
     [14, 'Unvergleichliche Fertigkeiten'],
   ],

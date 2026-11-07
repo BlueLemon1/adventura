@@ -165,7 +165,7 @@ export function SpellbookPage({
       <PageIntro
         eyebrow={t('MAGIE & ZAUBER')}
         title={t('Zauberbuch')}
-        description={t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
+        description={t('Verwalte Zauber und aktive Klassenfähigkeiten mit ihren wichtigsten Details.')}
       />
       <SegmentedTabs
         value={view}
