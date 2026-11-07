@@ -5,10 +5,8 @@ import { RULESET_LABELS } from '../domain/rules'
 import {
   CLASS_OPTIONS,
   getClassLabel,
-  SPELLCASTING_SUBCLASSES,
   SUBCLASS_OPTIONS,
 } from '../domain/classes'
-import { getClassResources, getAutomaticClassFeatures } from '../domain/classFeatures'
 import {
   Select,
   SelectContent,
@@ -75,14 +73,6 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
   const t = (value: string) => translate(language, value)
   const currentAbilities = character.abilities ?? DEFAULT_ABILITIES
   const prof = getProficiencyBonus(character.level)
-  const classResources = getClassResources(character)
-  const automaticFeatures = getAutomaticClassFeatures(character)
-  const storedResources = character.classResources ?? []
-  function updateResource(id: string, current: number) {
-    onUpdate({
-      classResources: [...storedResources.filter((item) => item.id !== id), { id, current }],
-    })
-  }
 
   return (
     <>
@@ -157,85 +147,6 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
           <small>Fuß</small>
         </article>
       </section>
-      {(classResources.length > 0 || automaticFeatures.length > 0) && (
-        <div className="two-column class-feature-grid">
-          {classResources.length > 0 && (
-            <section className="panel">
-              <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
-              <div className="class-resource-list">
-                {classResources.map((resource) => {
-                  const saved = storedResources.find((item) => item.id === resource.id)
-                  const current = Math.min(
-                    resource.maximum,
-                    Math.max(0, saved?.current ?? resource.maximum),
-                  )
-                  return (
-                    <div className="class-resource-row" key={resource.id}>
-                      <div>
-                        <strong>{t(resource.label)}</strong>
-                        <small>{t(resource.recovery)}</small>
-                      </div>
-                      <div className="resource-counter">
-                        <button
-                          type="button"
-                          aria-label={t('Ressource verringern')}
-                          disabled={current <= 0}
-                          onClick={() => updateResource(resource.id, current - 1)}
-                        >
-                          −
-                        </button>
-                        <strong>
-                          {current} / {resource.maximum}
-                        </strong>
-                        <button
-                          type="button"
-                          aria-label={t('Ressource erhöhen')}
-                          disabled={current >= resource.maximum}
-                          onClick={() => updateResource(resource.id, current + 1)}
-                        >
-                          +
-                        </button>
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-              <p className="muted-paragraph">
-                {t(
-                  'Die Höchstwerte richten sich nach Klasse, Stufe und gewähltem Regelwerk. Der aktuelle Verbrauch wird separat gespeichert.',
-                )}
-              </p>
-            </section>
-          )}
-          {automaticFeatures.length > 0 && (
-            <section className="panel">
-              <PanelHeader
-                title={t('Automatische Klassenmerkmale')}
-                meta={t('DURCH KLASSE / UNTERKLASSE')}
-              />
-              <div className="automatic-feature-list">
-                {automaticFeatures.map((feature) => (
-                  <div className="automatic-feature-row" key={feature.id}>
-                    <div>
-                      <strong>{t(feature.name)}</strong>
-                      <small>
-                        {t('Stufe')} {feature.level} ·{' '}
-                        {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
-                      </small>
-                    </div>
-                    <span className="automatic-feature-badge">{t('Automatisch')}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="muted-paragraph">
-                {t(
-                  'Diese Merkmale werden aus Klasse, Unterklasse und Stufe abgeleitet. Sie müssen nicht manuell eingetragen werden.',
-                )}
-              </p>
-            </section>
-          )}
-        </div>
-      )}
       <div className="two-column">
         <section className="panel">
           <PanelHeader title={t('Attribute')} meta={t('MODIFIKATOR')} />

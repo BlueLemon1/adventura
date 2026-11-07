@@ -3497,3 +3497,7 @@ textarea {
   font-weight: 700;
   white-space: nowrap;
 }
+
+.rest-actions { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:8px; margin:0 0 14px; }
+.rest-actions > span { color:var(--muted); font-size:11px; margin-right:auto; }
+.rest-actions .secondary-button { padding:8px 12px; font-size:11px; }

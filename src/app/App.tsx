@@ -33,6 +33,7 @@ import { IconButton } from '../components/ui/button'
 import { useAppPreferences } from './useAppPreferences'
 import { useCharacterCollection } from './useCharacterCollection'
 import { CharacterSheet } from './CharacterSheet'
+import { FeaturesPage } from './FeaturesPage'
 import { InventoryPage } from './InventoryPage'
 import { SpellbookPage } from './SpellbookPage'
 import { OverviewPage } from './OverviewPage'
@@ -40,7 +41,7 @@ import { LevelUpPage } from './LevelUpPage'
 import { CreateCharacterDialog } from './CreateCharacterDialog'
 import { InstallAppButton } from './InstallAppButton'
 
-type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
+type Page = 'overview' | 'sheet' | 'features' | 'inventory' | 'spells' | 'levelup'
 type InventoryView = 'inventory' | 'equipped'
 type SpellbookView = 'character' | 'catalog'
 type ExpandedNav = 'inventory' | 'spells' | null
@@ -235,6 +236,19 @@ export default function App() {
             >
               <Shield size={18} />
               <span>{t('Charakterbogen')}</span>
+            </button>
+            <button
+              className={page === 'features' ? 'nav-link active' : 'nav-link'}
+              onClick={() => {
+                if (!selected) {
+                  setError('Wähle zuerst einen Charakter aus.')
+                  return
+                }
+                setPage('features')
+              }}
+            >
+              <Sparkles size={18} />
+              <span>{t('Merkmale & Ressourcen')}</span>
             </button>
             <div className="nav-group">
               <button
@@ -472,6 +486,9 @@ export default function App() {
             )}
             {page === 'sheet' && selected && (
               <CharacterSheet character={selected.character} onUpdate={updateCharacter} />
+            )}
+            {page === 'features' && selected && (
+              <FeaturesPage character={selected.character} onUpdate={updateCharacter} />
             )}
             {page === 'inventory' && selected && (
               <InventoryPage

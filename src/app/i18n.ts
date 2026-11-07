@@ -3,6 +3,19 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'Merkmale & Ressourcen': 'Features & resources',
+  'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.': 'Class and subclass abilities, automatically unlocked based on your level.',
+  'Rast verwalten': 'Manage rests',
+  'Kurze Rast': 'Short rest',
+  'Lange Rast': 'Long rest',
+  'Erholung bei langer Rast': 'Recharges on a long rest',
+  'Erholung bei kurzer Rast': 'Recharges on a short rest',
+  'Erholung bei kurzer oder langer Rast': 'Recharges on a short or long rest',
+  'Der Verbrauch wird gespeichert. Rast-Aktionen stellen die Ressourcen gemäß ihrer Erholung wieder her.': 'Usage is saved. Rest actions restore resources according to their recovery rules.',
+  'FREIGESCHALTET': 'UNLOCKED',
+  'Für diese Klasse und dieses Regelwerk sind noch keine Merkmalsdaten hinterlegt.': 'No feature data is available yet for this class and ruleset.',
+  'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.': 'Unlocks are based on class, subclass and level. Mechanical effects and full descriptions will be added incrementally.',
+
   Klassenressourcen: 'Class resources',
   'AUTOMATISCH BERECHNET': 'CALCULATED AUTOMATICALLY',
   'Ressource verringern': 'Decrease resource',

@@ -4,7 +4,7 @@ export interface ClassResourceDefinition {
   id: string
   label: string
   maximum: number
-  recovery: string
+  recovery: 'short' | 'long' | 'short-or-long'
 }
 export interface AutomaticClassFeature {
   id: string
@@ -20,7 +20,7 @@ function abilityModifier(score = 10) {
 export function getClassResources(character: Character): ClassResourceDefinition[] {
   const { classId, level, ruleset } = character
   const resources: ClassResourceDefinition[] = []
-  const add = (id: string, label: string, maximum: number, recovery: string) => {
+  const add = (id: string, label: string, maximum: number, recovery: ClassResourceDefinition['recovery']) => {
     if (maximum > 0) resources.push({ id, label, maximum, recovery })
   }
   if (classId === 'barbarian') {
@@ -30,7 +30,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'rage',
       'Kampfrausch',
       maximum,
-      ruleset === '2014' ? 'Erholung bei langer Rast' : 'Erholung bei langer Rast',
+      ruleset === '2014' ? 'long' : 'short-or-long',
     )
   }
   if (classId === 'bard') {
@@ -38,7 +38,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'bardic-inspiration',
       'Bardeninspiration',
       Math.max(1, abilityModifier(character.abilities?.cha)),
-      level >= 5 ? 'Erholung bei kurzer oder langer Rast' : 'Erholung bei langer Rast',
+      level >= 5 ? 'short-or-long' : 'long',
     )
   }
   if (classId === 'cleric' && level >= 2) {
@@ -48,36 +48,36 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'channel-divinity',
       'Kanal göttlicher Energie',
       maximum,
-      'Erholung bei kurzer oder langer Rast',
+      'short-or-long',
     )
   }
   if (classId === 'druid' && level >= 2)
-    add('wild-shape', 'Tiergestalt', 2, 'Erholung bei kurzer oder langer Rast')
+    add('wild-shape', 'Tiergestalt', 2, 'short-or-long')
   if (classId === 'fighter' && level >= 1)
     add(
       'second-wind',
       'Zweites Aufatmen',
-      ruleset === '2024' ? (level >= 4 ? 3 : 2) : 1,
-      'Erholung bei kurzer oder langer Rast',
+      ruleset === '2024' ? (level >= 10 ? 4 : level >= 4 ? 3 : 2) : 1,
+      'short-or-long',
     )
   if (classId === 'monk' && level >= 2)
     add(
       ruleset === '2024' ? 'focus-points' : 'ki-points',
       ruleset === '2024' ? 'Fokus-Punkte' : 'Ki-Punkte',
       level,
-      'Erholung bei kurzer oder langer Rast',
+      'short-or-long',
     )
   if (classId === 'paladin' && ruleset === '2024' && level >= 3)
     add(
       'channel-divinity-paladin',
       'Kanal göttlicher Energie',
       level >= 11 ? 3 : 2,
-      'Erholung bei kurzer oder langer Rast',
+      'short-or-long',
     )
   if (classId === 'sorcerer' && level >= 2)
-    add('sorcery-points', 'Zauberpunkte', level, 'Erholung bei langer Rast')
+    add('sorcery-points', 'Zauberpunkte', level, 'long')
   if (classId === 'wizard' && level >= 1)
-    add('arcane-recovery', 'Arkane Erholung', Math.ceil(level / 2), 'Erholung bei langer Rast')
+    add('arcane-recovery', 'Arkane Erholung', 1, 'long')
   return resources
 }
 
