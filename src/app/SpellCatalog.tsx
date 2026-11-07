@@ -124,6 +124,7 @@ export function SpellCatalog({
   const [levelFilter, setLevelFilter] = useState('all')
   const [eligibleOnly, setEligibleOnly] = useState(true)
   const [configSpellId, setConfigSpellId] = useState<string | null>(null)
+  const [expandedSpellIds, setExpandedSpellIds] = useState<Set<string>>(() => new Set())
   const [source, setSource] = useState<SpellSource>('class')
   const [sourceName, setSourceName] = useState('')
   const [usageLimit, setUsageLimit] = useState(0)
@@ -265,7 +266,21 @@ export function SpellCatalog({
           const editorOpen = configSpellId === spell.id
 
           return (
-            <details className="catalog-spell" key={spell.id}>
+            <details
+              className="catalog-spell"
+              key={spell.id}
+              open={expandedSpellIds.has(spell.id)}
+              onToggle={(event) => {
+                const isOpen = event.currentTarget.open
+                setExpandedSpellIds((current) => {
+                  const next = new Set(current)
+                  if (isOpen) next.add(spell.id)
+                  else next.delete(spell.id)
+                  return next
+                })
+                if (!isOpen && editorOpen) setConfigSpellId(null)
+              }}
+            >
               <summary>
                 <span className="catalog-spell-level">
                   {spell.level === 0 ? t('ZAUBERTRICK') : t('GRAD ') + spell.level}
@@ -287,7 +302,17 @@ export function SpellCatalog({
                       className="secondary-button"
                       onClick={(event) => {
                         event.preventDefault()
-                        setConfigSpellId(editorOpen ? null : spell.id)
+                        if (editorOpen) {
+                          setConfigSpellId(null)
+                          setExpandedSpellIds((current) => {
+                            const next = new Set(current)
+                            next.delete(spell.id)
+                            return next
+                          })
+                        } else {
+                          setConfigSpellId(spell.id)
+                          setExpandedSpellIds((current) => new Set(current).add(spell.id))
+                        }
                       }}
                       aria-expanded={editorOpen}
                     >
