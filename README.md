@@ -16,7 +16,7 @@ Rules-dependent character progression, spell access, preparation rules, and spel
 - React + TypeScript + Vite
 - Tailwind CSS v4
 - React Router
-- IndexedDB for local persistence (planned implementation)
+- IndexedDB for local persistence
 - Versioned JSON import/export
 - Zod, i18next, Lucide
 
@@ -43,3 +43,13 @@ npm run dev
 ## Deployment
 
 GitHub Actions builds and deploys the static frontend to GitHub Pages. The app has no paid runtime service dependency.
+
+## Install as an app
+
+Adventura is a Progressive Web App (PWA) and can be installed from its HTTPS GitHub Pages address.
+
+- **Chrome / Edge on Windows:** Open Adventura, then use the install icon in the address bar or the browser menu and choose **Install Adventura**.
+- **Android:** Open Adventura in Chrome, open the browser menu, and choose **Install app** or **Add to Home screen**.
+- **iPhone / iPad:** Open Adventura in Safari, tap **Share**, then choose **Add to Home Screen**.
+
+After the first successful visit, the service worker caches the app shell and previously loaded app resources for offline use. Character data remains stored locally in the browser; use JSON export/import to move it between devices.
