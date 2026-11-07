@@ -113,6 +113,10 @@ export function SpellbookPage({
       concentration: spell?.concentration,
       ritual: spell?.ritual,
       description: localizedSpell?.description ?? spell?.description ?? feature.description ?? '',
+      languageFallback:
+        language === 'de' &&
+        Boolean(spell) &&
+        (!localizedSpell?.name || !localizedSpell?.description),
       higherLevel: localizedSpell?.higherLevel ?? spell?.higherLevel,
       damage: spell?.damage,
       notes: featureName,
