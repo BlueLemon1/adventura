@@ -83,15 +83,14 @@ export function SpellbookPage({
     const localized = language === 'de' ? spell.localized : undefined
     const usedEnglishFallback =
       language === 'de' &&
-      [
-        localized?.name,
-        localized?.school,
-        localized?.castingTime,
-        localized?.range,
-        localized?.components,
-        localized?.duration,
-        localized?.description,
-      ].some((value) => !value)
+      (Boolean(spell.name && !localized?.name) ||
+        Boolean(spell.school && !localized?.school) ||
+        Boolean(spell.castingTime && !localized?.castingTime) ||
+        Boolean(spell.range && !localized?.range) ||
+        Boolean(spell.components && !localized?.components) ||
+        Boolean(spell.duration && !localized?.duration) ||
+        Boolean(spell.description && !localized?.description) ||
+        Boolean(spell.higherLevel && !localized?.higherLevel))
 
     return {
       ...knownSpell,
@@ -147,7 +146,14 @@ export function SpellbookPage({
       languageFallback:
         language === 'de' &&
         Boolean(spell) &&
-        (!localizedSpell?.name || !localizedSpell?.description),
+        (Boolean(spell?.name && !localizedSpell?.name) ||
+          Boolean(spell?.school && !localizedSpell?.school) ||
+          Boolean(spell?.castingTime && !localizedSpell?.castingTime) ||
+          Boolean(spell?.range && !localizedSpell?.range) ||
+          Boolean(spell?.components && !localizedSpell?.components) ||
+          Boolean(spell?.duration && !localizedSpell?.duration) ||
+          Boolean(spell?.description && !localizedSpell?.description) ||
+          Boolean(spell?.higherLevel && !localizedSpell?.higherLevel)),
       higherLevel: localizedSpell?.higherLevel ?? spell?.higherLevel,
       damage: spell?.damage,
       notes: featureName,
