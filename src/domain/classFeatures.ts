@@ -52,13 +52,12 @@ const ACTIVE_FEATURES: Record<
   Gegenzauber: {
     activation: 'action',
     description:
-      'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.',
+      'Du beginnst eine inspirierende Aufführung, die Verbündeten in deiner Nähe Vorteil auf Rettungswürfe gegen Bezauberung und Furcht gewährt.',
   },
   'Kanal göttlicher Energie': {
-    activation: 'action',
+    activation: 'special',
     description:
-      'Du setzt deine göttliche Energie frei und wählst einen verfügbaren Effekt deiner Klasse oder Unterklasse.',
-    resourceId: 'channel-divinity',
+      'Diese Ressource speist deine Kanal-göttlicher-Energie-Effekte. Wähle im Zauberbuch den konkreten Effekt, etwa Untote vertreiben, Leben bewahren, Heilige Waffe oder Abwehrzauber.',
   },
   'Untote vertreiben': {
     activation: 'action',
@@ -111,14 +110,12 @@ const ACTIVE_FEATURES: Record<
   Ki: {
     activation: 'special',
     description:
-      'Du setzt Ki-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.',
-    resourceId: 'ki-points',
+      'Ki-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung, Schritt des Windes und Leerer Körper.',
   },
   'Fokus des Mönchs': {
     activation: 'special',
     description:
-      'Du setzt Fokus-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.',
-    resourceId: 'focus-points',
+      'Fokus-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung und Schritt des Windes.',
   },
   Handauflegen: {
     activation: 'bonusAction',
@@ -131,6 +128,12 @@ const ACTIVE_FEATURES: Record<
     description:
       'Bis zum Ende deines nächsten Zuges nimmst du bestimmte himmlische, untote und dämonische Präsenzen in deiner Nähe wahr.',
     resourceId: 'divine-sense',
+  },
+  'Unheilige vertreiben': {
+    activation: 'action',
+    description:
+      'Du präsentierst dein heiliges Symbol und zwingst Unholde und Untote in deiner Nähe zu einem Weisheitsrettungswurf. Bei Misslingen werden sie für bis zu eine Minute vertrieben.',
+    resourceId: 'paladin-channel-divinity',
   },
   'Heilige Waffe': {
     activation: 'action',
@@ -225,7 +228,7 @@ const ACTIVE_FEATURES: Record<
   Raserei: {
     activation: 'bonusAction',
     description:
-      'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.',
+      'Während deines Kampfrauschs kannst du in jedem deiner Züge einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen. Wenn der Kampfrausch endet, erhältst du eine Erschöpfungsstufe.',
   },
   'Bewahrung des Lebens': {
     activation: 'action',
@@ -274,6 +277,64 @@ const ACTIVE_FEATURES: Record<
     description:
       'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
     resourceId: 'dark-ones-own-luck',
+  },
+  'Leerer Körper': {
+    activation: 'action',
+    description:
+      'Du gibst vier Ki-Punkte aus, um für eine Minute unsichtbar zu werden und gegen alle Schadensarten außer Energieschaden resistent zu sein.',
+    resourceId: 'ki-points',
+    resourceCost: 4,
+  },
+  'Brutaler Schlag': {
+    activation: 'special',
+    description:
+      'Wenn du während deines Kampfrauschs mit einem Stärke-Angriff triffst, kannst du einen zusätzlichen Effekt deines Brutalen Schlags wählen, etwa das Ziel wegzustoßen oder zusätzlichen Schaden zu verursachen.',
+  },
+  'Wilde Erneuerung': {
+    activation: 'special',
+    description:
+      'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um einen Zauberplatz des 1. Grades wiederherzustellen, oder einen Zauberplatz ausgeben, um eine Nutzung deiner Tiergestalt zurückzugewinnen.',
+  },
+  'Berührende Reinigung': {
+    activation: 'special',
+    description:
+      'Wenn du Handauflegen einsetzt, kannst du zusätzlich Zustände vom Ziel entfernen. Jeder entfernte Zustand kostet fünf Trefferpunkte aus deinem Heilungsvorrat.',
+    resourceId: 'lay-on-hands',
+    resourceCost: 5,
+  },
+  'Drachengefährte': {
+    activation: 'action',
+    description:
+      'Du beschwörst einmal nach einer langen Rast einen drakonischen Geist als Gefährten, indem du den Zauber Drachen beschwören ohne Zauberplatz und Materialkomponenten wirkst.',
+    resourceId: 'dragon-companion',
+  },
+  'Göttlicher Funke': {
+    activation: 'action',
+    description:
+      'Du richtest göttliche Energie auf eine Kreatur in bis zu 9 Metern Entfernung. Du heilst sie um 1W8 plus deinen Weisheitsmodifikator oder zwingst sie zu einem Konstitutionsrettungswurf gegen gleißenden oder nekrotischen Schaden. Der Würfel steigt auf 2W8 ab Stufe 7, 3W8 ab Stufe 13 und 4W8 ab Stufe 18.',
+    resourceId: 'channel-divinity',
+  },
+  'Reinigende Berührung': {
+    activation: 'action',
+    description:
+      'Du berührst dich selbst oder eine bereitwillige Kreatur und beendest einen Zauber, der auf ihr liegt.',
+    resourceId: 'cleansing-touch',
+  },
+  'Zauberhafte Erneuerung': {
+    activation: 'special',
+    description:
+      'Nach einer kurzen Rast kannst du Zauberpunkte in Höhe von höchstens der Hälfte deiner Zaubererstufe zurückgewinnen. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.',
+    resourceId: 'sorcerous-restoration',
+  },
+  'Listiger Schlag': {
+    activation: 'special',
+    description:
+      'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du einen oder mehrere Schadenswürfel aufgeben, um einen Listigen-Schlag-Effekt wie Vergiften, Zu-Fall-Bringen oder Zurückziehen auszulösen.',
+  },
+  'Listige Schläge': {
+    activation: 'special',
+    description:
+      'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du zusätzliche Schadenswürfel aufgeben, um weitere Listige-Schläge-Effekte wie Benommenheit, Bewusstlosigkeit oder Blindheit auszulösen.',
   },
   'Rücksichtsloser Angriff': {
     activation: 'special',
@@ -335,6 +396,136 @@ const ACTIVE_FEATURES: Record<
       'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.',
     resourceId: 'channel-divinity-paladin',
   },
+  'Unvergleichliche Fertigkeiten': {
+    activation: 'special',
+    description:
+      'Wenn du einen Attributswurf ablegst, kannst du einen Inspirationswürfel ausgeben und sein Ergebnis zum Wurf addieren.',
+    resourceId: 'bardic-inspiration',
+  },
+  'Unvergleichliche Fertigkeit': {
+    activation: 'special',
+    description:
+      'Wenn du einen Attributswurf ablegst, kannst du einen Inspirationswürfel ausgeben und sein Ergebnis zum Wurf addieren.',
+    resourceId: 'bardic-inspiration',
+  },
+  Mehrfachangriff: {
+    activation: 'action',
+    description:
+      'Du führst eine deiner gewählten Mehrfachangriffstechniken aus: einen Angriff gegen mehrere Ziele mit Fernkampfwaffen oder mehrere Nahkampfangriffe gegen Kreaturen in deiner Reichweite.',
+  },
+  'Magische Hand-Tricks': {
+    activation: 'bonusAction',
+    description:
+      'Du kannst deine Magische Hand mit einer Bonusaktion kontrollieren und mit ihr Taschendiebstahl, das Entschärfen von Fallen oder andere geschickte Manipulationen ausführen.',
+  },
+  'Vielseitiger Betrüger': {
+    activation: 'bonusAction',
+    description:
+      'Du lenkst mit deiner Magischen Hand einen Gegner ab und verschaffst dir dadurch Vorteil auf deinen nächsten Angriff gegen ihn.',
+  },
+  Zauberdieb: {
+    activation: 'reaction',
+    description:
+      'Wenn eine Kreatur einen Zauber auf dich wirkt, kannst du versuchen, den Zauber mit deiner Reaktion zu vereiteln und seine Magie für dich zu beanspruchen.',
+    resourceId: 'spell-thief',
+  },
+  Kriegsmagie: {
+    activation: 'special',
+    description:
+      'Nachdem du mit deiner Aktion einen Zaubertrick gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.',
+  },
+  'Verbesserte Kriegsmagie': {
+    activation: 'special',
+    description:
+      'Nachdem du mit deiner Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.',
+  },
+  'Arkane Aufladung': {
+    activation: 'special',
+    description:
+      'Wenn du Aktionsschub einsetzt, kannst du dich vor, nach oder zwischen den Aktionen bis zu 9 Meter weit teleportieren.',
+    resourceId: 'action-surge',
+  },
+  'Augen der Dunkelheit': {
+    activation: 'special',
+    description:
+      'Du kannst Dunkelheit mit Zauberpunkten wirken und durch die von dir erzeugte magische Dunkelheit sehen.',
+    resourceId: 'sorcery-points',
+    resourceCost: 2,
+  },
+  'Stärke des Grabes': {
+    activation: 'reaction',
+    description:
+      'Wenn Schaden dich auf 0 Trefferpunkte reduzieren würde, kannst du mit einem Charisma-Rettungswurf versuchen, stattdessen mit 1 Trefferpunkt stehen zu bleiben.',
+    resourceId: 'strength-of-grave',
+  },
+  Schattenwandlung: {
+    activation: 'bonusAction',
+    description:
+      'Du teleportierst dich von einem Bereich mit dämmrigem Licht oder Dunkelheit zu einem freien Ort mit dämmrigem Licht oder Dunkelheit in deiner Sichtweite.',
+  },
+  Schattenform: {
+    activation: 'action',
+    description:
+      'Du gibst sechs Zauberpunkte aus, um für bis zu eine Minute eine schattenhafte Gestalt anzunehmen, die sich durch feste Gegenstände bewegen kann.',
+    resourceId: 'sorcery-points',
+    resourceCost: 6,
+  },
+  'Treues Ross': {
+    activation: 'special',
+    description:
+      'Du wirkst Find Steed, ohne einen Zauberplatz auszugeben. Das beschworene Reittier folgt den Regeln des Zaubers.',
+    resourceId: 'faithful-steed',
+  },
+  'Taktischer Verstand': {
+    activation: 'special',
+    description:
+      'Wenn dir ein Attributswurf misslingt, kannst du eine Nutzung von Zweites Aufatmen ausgeben und den Wurf um einen W10 erhöhen.',
+    resourceId: 'second-wind',
+  },
+  Selbstheilung: {
+    activation: 'special',
+    description:
+      'Am Ende deines Zuges kannst du einen der Zustände Bezaubert, Verängstigt oder Vergiftet beenden. Alternativ kannst du einen Fokus-Punkt ausgeben, um einen solchen Zustand sofort zu beenden.',
+  },
+  'Abgelenkte Energie': {
+    activation: 'reaction',
+    description:
+      'Wenn du mit deiner Reaktion Energieschaden abwehrst, kannst du einen Teil davon auf ein Ziel in Reichweite umlenken.',
+  },
+  'Großes Göttliches Eingreifen': {
+    activation: 'action',
+    description:
+      'Du kannst die mächtigste Form deines Göttlichen Eingreifens erbitten und den dadurch gewährten göttlichen Effekt wirken.',
+    resourceId: 'divine-intervention',
+  },
+  'Tarnung in der Wildnis': {
+    activation: 'special',
+    description:
+      'Du verbringst eine Minute damit, natürliche Materialien zu sammeln und dich zu tarnen. Solange du dich nicht bewegst, bist du unter passenden natürlichen Bedingungen schwer zu entdecken.',
+  },
+  Verschwinden: {
+    activation: 'bonusAction',
+    description:
+      'Du kannst die Verstecken-Aktion als Bonusaktion ausführen.',
+  },
+  'Heiliger Nimbus': {
+    activation: 'action',
+    description:
+      'Du entfesselst eine heilige Aura, die helles Licht ausstrahlt und feindliche Kreaturen in deiner Nähe beeinträchtigt.',
+    resourceId: 'holy-nimbus',
+  },
+  'Patron kontaktieren': {
+    activation: 'special',
+    description:
+      'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und den Zauber Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken.',
+    resourceId: 'contact-patron',
+  },
+  'Glückstreffer': {
+    activation: 'special',
+    description:
+      'Wenn ein Angriff dich verfehlt oder ein Attributswurf misslingt, kannst du das Ergebnis in einen Treffer oder einen W20-Wert von 20 verwandeln.',
+    resourceId: 'stroke-of-luck',
+  },
 }
 
 function abilityModifier(score = 10) {
@@ -384,7 +575,17 @@ export function getClassResources(character: Character): ClassResourceDefinition
   }
   if (classId === 'cleric' && level >= 2) {
     const maximum =
-      level >= 18 ? 4 : level >= 6 ? (ruleset === '2024' ? 3 : 2) : ruleset === '2024' ? 2 : 1
+      ruleset === '2024'
+        ? level >= 18
+          ? 4
+          : level >= 6
+            ? 3
+            : 2
+        : level >= 18
+          ? 3
+          : level >= 6
+            ? 2
+            : 1
     add(
       'channel-divinity',
       'Kanal göttlicher Energie',
@@ -399,7 +600,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
       ruleset === '2024' ? (level >= 17 ? 4 : level >= 6 ? 3 : 2) : 2,
       ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
     )
-  if (classId === 'druid' && subclass === 'land' && level >= 2)
+  if (classId === 'druid' && subclass === 'land' && level >= (ruleset === '2024' ? 6 : 2))
     add('natural-recovery', 'Natürliche Erholung', 1, 'long')
   if (classId === 'cleric' && level >= 10)
     add('divine-intervention', 'Göttliches Eingreifen', 1, 'long')
@@ -449,6 +650,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level >= 11 ? 3 : 2,
       'short-one-or-long',
     )
+  if (classId === 'paladin' && ruleset === '2024' && level >= 5)
+    add('faithful-steed', 'Treues Ross', 1, 'long')
+  if (classId === 'paladin' && subclass === 'devotion' && level >= 20)
+    add('holy-nimbus', 'Heiliger Nimbus', 1, 'long')
+  if (classId === 'warlock' && ruleset === '2024' && level >= 9)
+    add('contact-patron', 'Patron kontaktieren', 1, 'long')
   if (classId === 'ranger' && ruleset === '2024')
     add(
       'favored-enemy',
@@ -461,7 +668,22 @@ export function getClassResources(character: Character): ClassResourceDefinition
   if (classId === 'sorcerer' && ruleset === '2024')
     add('innate-sorcery', 'Angeborene Magie', 2, 'long')
   if (classId === 'sorcerer' && level >= 2) add('sorcery-points', 'Zauberpunkte', level, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && subclass === 'draconic' && level >= 18)
+    add('dragon-companion', 'Drachengefährte', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && subclass === 'draconic' && level >= 14)
+    add('dragon-wings', 'Drachenflügel', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && level >= 5)
+    add('sorcerous-restoration', 'Zauberhafte Erneuerung', 1, 'long')
+  if (classId === 'paladin' && ruleset === '2014' && level >= 14)
+    add('cleansing-touch', 'Reinigende Berührung', Math.max(1, abilityModifier(character.abilities?.cha)), 'long')
   if (classId === 'wizard' && level >= 1) add('arcane-recovery', 'Arkane Erholung', 1, 'long')
+  if (classId === 'rogue' && subclass === 'arcanetrickster' && level >= 17)
+    add('spell-thief', 'Zauberdieb', 1, 'long')
+  if (classId === 'rogue' && level >= 20) add('stroke-of-luck', 'Glückstreffer', 1, 'short-or-long')
+  if (classId === 'sorcerer' && subclass === 'shadowmagic' && level >= 1)
+    add('strength-of-grave', 'Stärke des Grabes', 1, 'long')
+  if (classId === 'warlock' && subclass === 'fiend' && level >= 14)
+    add('hurl-through-hell', 'Durch die Hölle schicken', 1, 'long')
   return resources
 }
 
@@ -544,6 +766,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [6, 'Aura des Schutzes'],
     [10, 'Aura des Mutes'],
     [11, 'Verbesserter göttlicher Schlag'],
+    [14, 'Reinigende Berührung'],
   ],
   ranger: [
     [1, 'Bevorzugter Feind'],
@@ -636,6 +859,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
   devotion: [
     [3, 'Heilige Waffe'],
+    [3, 'Unheilige vertreiben'],
     [3, 'Untadeliger Geist'],
     [7, 'Aura der Hingabe'],
     [15, 'Reinheit des Geistes'],
@@ -733,6 +957,8 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [1, 'Zauberwirken'],
     [1, 'Göttliche Ordnung'],
     [2, 'Kanal göttlicher Energie'],
+    [2, 'Göttlicher Funke'],
+    [2, 'Untote vertreiben'],
     [4, 'Attributswerterhöhung'],
     [5, 'Untote zerstören'],
     [7, 'Gesegnete Schläge'],
@@ -798,6 +1024,7 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [1, 'Waffenmeisterschaft'],
     [2, 'Kampfstil'],
     [3, 'Kanal göttlicher Energie'],
+    [3, 'Göttlicher Sinn'],
     [4, 'Attributswerterhöhung'],
     [5, 'Zusätzlicher Angriff'],
     [5, 'Treues Ross'],
@@ -1188,8 +1415,24 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     }))
   const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
   if (is2024) {
+    const supportedSubclass: Record<string, string> = {
+      barbarian: 'berserker',
+      bard: 'lore',
+      cleric: 'life',
+      druid: 'land',
+      fighter: 'champion',
+      monk: 'openhand',
+      paladin: 'devotion',
+      ranger: 'hunter',
+      rogue: 'thief',
+      sorcerer: 'draconic',
+      warlock: 'fiend',
+      wizard: 'evocation',
+    }
     result.push(
-      ...(character.subclassId ? (SUBCLASS_FEATURES_2024[character.classId] ?? []) : [])
+      ...(subclass === supportedSubclass[character.classId]
+        ? (SUBCLASS_FEATURES_2024[character.classId] ?? [])
+        : [])
         .filter(([level]) => level <= character.level)
         .map(([level, name, description], index) => ({
           id: `subclass-2024-${subclass}-${index}`,
@@ -1224,6 +1467,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     }
     if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
       resourceId = 'paladin-channel-divinity'
+    if (feature.name === 'Unheilige vertreiben') resourceId = 'paladin-channel-divinity'
     if (feature.name === 'Hagel der Schläge')
       return {
         ...feature,
@@ -1248,8 +1492,36 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
         description:
           character.ruleset === '2014'
             ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion zu sprinten oder dich zurückzuziehen; deine Sprungweite verdoppelt sich für den Zug.'
-            : 'Du kannst als Bonusaktion sprinten. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich zurückziehen und deine Sprungweite verdoppeln.',
+            : 'Du kannst als Bonusaktion sprinten oder dich zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du beides tun und deine Sprungweite verdoppeln.',
       }
+    if (feature.name === 'Göttlicher Sinn' && character.classId === 'paladin' && character.ruleset === '2024')
+      return {
+        ...feature,
+        ...active,
+        activation: 'bonusAction',
+        resourceId: 'channel-divinity-paladin',
+        description:
+          'Du öffnest als Bonusaktion deine Sinne und erkennst für zehn Minuten Celestials, Fiends und Untote sowie geweihte oder entweihte Orte und Gegenstände in deiner Nähe.',
+      }
+    if (feature.name === 'Drachenflügel')
+      return {
+        ...feature,
+        ...active,
+        resourceId: character.ruleset === '2024' ? 'dragon-wings' : undefined,
+        description:
+          character.ruleset === '2024'
+            ? 'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.'
+            : 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.',
+      }
+    if (feature.name === 'Heiliger Nimbus')
+      return {
+        ...feature,
+        ...active,
+        activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
+        resourceId: 'holy-nimbus',
+      }
+    if (feature.name === 'Treues Ross')
+      return { ...feature, ...active, activation: 'action', resourceId: 'faithful-steed' }
     if (feature.name === 'Tiergestalt')
       return {
         ...feature,
@@ -1289,5 +1561,8 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
 }
 
 export function getActiveClassFeatures(character: Character): AutomaticClassFeature[] {
-  return getAutomaticClassFeatures(character).filter((feature) => feature.activation)
+  const resourceFeatures = new Set(['Kanal göttlicher Energie', 'Ki', 'Fokus des Mönchs'])
+  return getAutomaticClassFeatures(character).filter(
+    (feature) => feature.activation && !resourceFeatures.has(feature.name),
+  )
 }

@@ -825,3 +825,53 @@ Object.assign(en, {
   'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.':
     'You expend Channel Divinity to force chosen nearby creatures to make a Wisdom saving throw or become Frightened and Incapacitated.',
 })
+
+
+Object.assign(en, {
+  'Diese Ressource speist deine Kanal-göttlicher-Energie-Effekte. Wähle im Zauberbuch den konkreten Effekt, etwa Untote vertreiben, Leben bewahren, Heilige Waffe oder Abwehrzauber.':
+    'This resource powers your Channel Divinity effects. Choose the specific effect in the spellbook, such as Turn Undead, Preserve Life, Sacred Weapon, or Abjure Foes.',
+  'Ki-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung, Schritt des Windes und Leerer Körper.':
+    'Ki Points fuel special Monk techniques such as Flurry of Blows, Patient Defense, Step of the Wind, and Empty Body.',
+  'Fokus-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung und Schritt des Windes.':
+    'Focus Points fuel special Monk techniques such as Flurry of Blows, Patient Defense, and Step of the Wind.',
+  'Wenn du keine Nutzungen von Tiergestalt mehr hast, kannst du eine Nutzung durch Ausgeben eines Zauberplatzes zurückgewinnen. Außerdem kannst du einmal pro langer Rast eine Nutzung von Tiergestalt ausgeben, um einen Zauberplatz des 1. Grades zu erhalten.':
+    'If you have no uses of Wild Shape left, you can regain one by expending a spell slot. In addition, once per Long Rest, you can expend one use of Wild Shape to regain a level 1 spell slot.',
+  'Wenn du Handauflegen einsetzt, kannst du zusätzlich Zustände vom Ziel entfernen. Jeder entfernte Zustand kostet fünf Trefferpunkte aus deinem Heilungsvorrat.':
+    'When you use Lay on Hands, you can also remove conditions from the target. Each condition removed costs five Hit Points from your healing pool.',
+  'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.':
+    'You manifest wings for one hour and gain a Fly Speed. After using this feature, you must finish a Long Rest or spend three Sorcery Points to restore its use.',
+})
+
+
+Object.assign(en, {
+  'Göttlicher Funke': 'Divine Spark',
+  'Reinigende Berührung': 'Cleansing Touch',
+  'Zauberhafte Erneuerung': 'Sorcerous Restoration',
+  'Listiger Schlag': 'Cunning Strike',
+  'Listige Schläge': 'Devious Strikes',
+  'Du richtest göttliche Energie auf eine Kreatur in bis zu 9 Metern Entfernung. Du heilst sie um 1W8 plus deinen Weisheitsmodifikator oder zwingst sie zu einem Konstitutionsrettungswurf gegen gleißenden oder nekrotischen Schaden. Der Würfel steigt auf 2W8 ab Stufe 7, 3W8 ab Stufe 13 und 4W8 ab Stufe 18.':
+    'You direct divine energy at a creature within 30 feet. You either heal it for 1d8 plus your Wisdom modifier or force it to make a Constitution saving throw against Radiant or Necrotic damage. The dice increase to 2d8 at level 7, 3d8 at level 13, and 4d8 at level 18.',
+  'Du berührst dich selbst oder eine bereitwillige Kreatur und beendest einen Zauber, der auf ihr liegt.':
+    'You touch yourself or a willing creature and end one spell affecting it.',
+  'Nach einer kurzen Rast kannst du Zauberpunkte in Höhe von höchstens der Hälfte deiner Zaubererstufe zurückgewinnen. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.':
+    'When you finish a Short Rest, you can regain expended Sorcery Points up to half your Sorcerer level. Once used, you must finish a Long Rest before using this feature again.',
+  'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du einen oder mehrere Schadenswürfel aufgeben, um einen Listigen-Schlag-Effekt wie Vergiften, Zu-Fall-Bringen oder Zurückziehen auszulösen.':
+    'When you deal Sneak Attack damage, you can forgo one or more damage dice to add a Cunning Strike effect, such as Poison, Trip, or Withdraw.',
+  'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du zusätzliche Schadenswürfel aufgeben, um weitere Listige-Schläge-Effekte wie Benommenheit, Bewusstlosigkeit oder Blindheit auszulösen.':
+    'When you deal Sneak Attack damage, you can forgo additional damage dice to add Devious Strike effects such as Daze, Knock Out, or Obscure.',
+  'Du öffnest als Bonusaktion deine Sinne und erkennst für zehn Minuten Celestials, Fiends und Untote sowie geweihte oder entweihte Orte und Gegenstände in deiner Nähe.':
+    'As a Bonus Action, you open your awareness for 10 minutes to detect Celestials, Fiends, and Undead, as well as consecrated or desecrated places and objects nearby.',
+})
+
+
+Object.assign(en, {
+  'Unheilige vertreiben': 'Turn the Unholy',
+  'Du präsentierst dein heiliges Symbol und zwingst Unholde und Untote in deiner Nähe zu einem Weisheitsrettungswurf. Bei Misslingen werden sie für bis zu eine Minute vertrieben.':
+    'You present your holy symbol and force Fiends and Undead nearby to make a Wisdom saving throw. On a failure, they are turned for up to one minute.',
+})
+
+
+Object.assign(en, {
+  'Du verbringst eine Minute damit, natürliche Materialien zu sammeln und dich zu tarnen. Solange du dich nicht bewegst, bist du unter passenden natürlichen Bedingungen schwer zu entdecken.':
+    'You spend one minute gathering natural materials to camouflage yourself. While you remain still in suitable natural surroundings, you are difficult to detect.',
+})
