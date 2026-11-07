@@ -57,7 +57,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
     add('channel-divinity', 'Kanal göttlicher Energie', maximum, 'short-or-long')
   }
   if (classId === 'druid' && level >= 2)
-    add('wild-shape', 'Tiergestalt', 2, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
+    add('wild-shape', 'Tiergestalt', ruleset === '2024' ? (level >= 17 ? 4 : level >= 6 ? 3 : 2) : 2, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
   if (classId === 'fighter' && level >= 1)
     add(
       'second-wind',
@@ -72,6 +72,8 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level,
       'short-or-long',
     )
+  if (classId === 'paladin')
+    add('divine-sense', 'Göttlicher Sinn', ruleset === '2024' ? Math.ceil(level / 4) + 1 : Math.max(1, abilityModifier(character.abilities?.cha) + 1), 'long')
   if (classId === 'paladin' && ruleset === '2024' && level >= 3)
     add(
       'channel-divinity-paladin',
