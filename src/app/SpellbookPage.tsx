@@ -173,7 +173,7 @@ export function SpellbookPage({
             value: 'character',
             label: t('Meine Zauber'),
             icon: <Plus size={15} />,
-            count: knownSpells.length,
+            count: knownSpells.length + activeFeatureEntries.length,
           },
           { value: 'catalog', label: t('SRD & hinzufügen'), icon: <Sparkles size={15} /> },
         ]}

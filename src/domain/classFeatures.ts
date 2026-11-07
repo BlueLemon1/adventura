@@ -355,7 +355,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
   }
   if (classId === 'cleric' && level >= 2) {
     const maximum =
-      level >= 18 ? (ruleset === '2024' ? 4 : 3) : level >= 6 ? 2 : ruleset === '2024' ? 2 : 1
+      level >= 18 ? 4 : level >= 6 ? (ruleset === '2024' ? 3 : 2) : ruleset === '2024' ? 2 : 1
     add(
       'channel-divinity',
       'Kanal göttlicher Energie',
