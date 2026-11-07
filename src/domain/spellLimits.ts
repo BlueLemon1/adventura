@@ -15,7 +15,8 @@ const RANGER_2014=[0,0,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11]
 function normalize(value:string){return value.toLowerCase().trim().replace(/[ä]/g,'ae').replace(/[ö]/g,'oe').replace(/[ü]/g,'ue').replace(/ß/g,'ss').replace(/[^a-z]/g,'')}
 function mod(score:number|undefined){return Math.floor(((score??10)-10)/2)}
 function classId(value:string){const key=normalize(value);const aliases:Record<string,string>={barde:'bard',kleriker:'cleric',druide:'druid',zauberer:'sorcerer',magier:'wizard',hexenmeister:'warlock',waldlaeufer:'ranger'};return aliases[key]??key}
-// Capacity is a class-progression guide, not a hard validation gate. Non-class sources are deliberately excluded.\nexport function getSpellCapacity(character:Character,spells:KnownSpell[]):SpellCapacity{
+// Capacity is a class-progression guide, not a hard validation gate. Non-class sources are deliberately excluded.
+export function getSpellCapacity(character:Character,spells:KnownSpell[]):SpellCapacity{
  const cls=classId(character.classId),level=character.level,rules=character.ruleset
  const classSpells=spells.filter(s=>(s.source??'class')==='class'&&(s.spellLevel??0)>0)
  const known=classSpells.length,prepared=classSpells.filter(s=>s.prepared||s.alwaysPrepared).length
