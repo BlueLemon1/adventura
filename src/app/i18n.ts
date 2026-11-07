@@ -56,6 +56,5 @@ Object.assign(en,{
 'Noch keine Gegenstände vorhanden.':'No items yet.','Noch keine Zauber eingetragen. Du kannst sie oben hinzufügen.':'No spells added yet. Add them above.',
 'Charaktere werden geladen …':'Loading characters …','Wähle zuerst einen Charakter aus.':'Select a character first.',
 'Du kannst Attribute und weitere Eigenschaften direkt im Charakterbogen ergänzen.':'You can add stats and details in the character sheet.',
-'Abenteurer.':'adventurer.'
 })
 export const translate=(language:Language,value:string)=>language==='de'?value:(en[value]??value)
