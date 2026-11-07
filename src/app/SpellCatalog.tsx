@@ -520,7 +520,9 @@ export function SpellCatalog({
                   <p>{spell.description}</p>
                 ) : language === 'de' && character.ruleset === '2014' ? (
                   <p className="muted-paragraph">
-                    {t('Die deutsche Beschreibung aus dem SRD 5.1 wird ergänzt. Es wird kein Text aus dem SRD 5.2.1 oder eine automatische Übersetzung verwendet.')}
+                    {t(
+                      'Die deutsche Beschreibung aus dem SRD 5.1 wird ergänzt. Es wird kein Text aus dem SRD 5.2.1 oder eine automatische Übersetzung verwendet.',
+                    )}
                   </p>
                 ) : null}
                 {spell.higherLevel && (
