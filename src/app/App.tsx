@@ -1,5 +1,5 @@
 import { useRef, useState, type ChangeEvent } from 'react'
-import { BookOpen, Boxes, Compass, Download, Moon, Sun, Shield, Upload, WandSparkles, X } from 'lucide-react'
+import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Upload, WandSparkles, X } from 'lucide-react'
 import type { Character } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
