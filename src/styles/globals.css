@@ -182,3 +182,11 @@
 .spell-use-button:disabled{opacity:.4;cursor:not-allowed}.spell-origin-form{margin-top:2px}
 @media(max-width:900px){.spell-capacity-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:520px){.spell-capacity-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.spellbook-card-footer{align-items:flex-start;gap:9px;flex-direction:column}}
+
+.catalog-source-editor{margin-top:14px;padding:13px;border:1px solid var(--line);border-radius:9px;background:rgba(120,140,125,.045);display:grid;gap:10px}
+.catalog-source-editor>strong{font-size:11px;color:var(--gold)}
+.catalog-source-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.catalog-source-fields label{display:grid;gap:5px;color:var(--muted);font-size:9px}
+.catalog-source-fields input,.catalog-source-fields select{width:100%;min-width:0;padding:8px 9px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--text);font:inherit;font-size:10px}
+.catalog-source-editor .primary-button{justify-self:start}
+@media(max-width:560px){.catalog-source-fields{grid-template-columns:1fr}}
