@@ -25,7 +25,6 @@ interface SpellbookPageProps {
   character: Character
   knownSpells: KnownSpell[]
   view: 'character' | 'catalog'
-  onViewChange: (view: 'character' | 'catalog') => void
   language: Language
   onUpdateCharacter: (patch: Partial<Character>) => void
   onUpdateSpells: (spells: KnownSpell[]) => void
@@ -35,7 +34,6 @@ export function SpellbookPage({
   character,
   knownSpells,
   view,
-  onViewChange,
   language,
   onUpdateCharacter,
   onUpdateSpells,

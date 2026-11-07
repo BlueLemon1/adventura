@@ -1,6 +1,5 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import {
-  Backpack,
   CircleDot,
   Coins,
   Crown,
@@ -36,7 +35,6 @@ const DEFAULT_CURRENCY = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
 interface InventoryPageProps {
   inventory: CharacterInventory
   view: 'inventory' | 'equipped'
-  onViewChange: (view: 'inventory' | 'equipped') => void
   partyItems: InventoryItem[]
   onUpdateInventory: (patch: Partial<CharacterInventory>) => void
   onSavePartyItems: (items: InventoryItem[]) => void
@@ -188,7 +186,6 @@ export function InventoryPage({
   onUpdateInventory,
   onSavePartyItems,
   view,
-  onViewChange,
 }: InventoryPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
