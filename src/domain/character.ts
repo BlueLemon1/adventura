@@ -123,6 +123,11 @@ export interface SpellDamage {
 }
 
 export interface KnownSpell {
+  /** Derived active-feature entries; these are not persisted as spells. */
+  entryType?: 'spell' | 'feature'
+  actionType?: 'action' | 'bonusAction' | 'reaction' | 'special'
+  resourceId?: string
+  resourceCost?: number
   spellId: string
   learnedAtLevel: number
   prepared: boolean

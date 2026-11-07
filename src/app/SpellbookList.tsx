@@ -8,7 +8,7 @@ import { SearchField } from '../components/ui/field'
 import { PanelHeader } from '../components/ui/panel-header'
 import { translate, useLanguage } from './i18n'
 
-type SpellFilter = 'all' | 'prepared' | 'unprepared'
+type SpellFilter = 'all' | 'prepared' | 'unprepared' | 'features'
 
 interface SpellbookListProps {
   spells: KnownSpell[]
@@ -38,14 +38,17 @@ const FILTER_LABELS: Record<SpellFilter, string> = {
   all: 'Alle Zauber',
   prepared: 'Vorbereitet',
   unprepared: 'Nicht vorbereitet',
+  features: 'Aktive Merkmale',
 }
 
 function isPrepared(spell: KnownSpell): boolean {
-  return spell.prepared || spell.alwaysPrepared === true
+  return spell.entryType !== 'feature' && (spell.prepared || spell.alwaysPrepared === true)
 }
 
 function matchesFilter(spell: KnownSpell, filter: SpellFilter): boolean {
   if (filter === 'all') return true
+  if (filter === 'features') return spell.entryType === 'feature'
+  if (spell.entryType === 'feature') return false
   return filter === 'prepared' ? isPrepared(spell) : !isPrepared(spell)
 }
 
@@ -73,7 +76,8 @@ function SpellCapacitySummary({
   spells: KnownSpell[]
   translateText: (value: string) => string
 }) {
-  const capacity = getSpellCapacity(character, spells)
+  const actualSpells = spells.filter((spell) => spell.entryType !== 'feature')
+  const capacity = getSpellCapacity(character, actualSpells)
   const description =
     capacity.mode === 'known'
       ? 'Bekannte Klassenzauber'
@@ -118,6 +122,7 @@ function SpellCard({
   onUse: SpellbookListProps['onUse']
   onReset: SpellbookListProps['onReset']
 }) {
+  const isFeature = spell.entryType === 'feature'
   const level = spell.spellLevel ?? 0
   const name = spell.name ?? spell.spellId
   const hasLimitedUses = (spell.usageLimit ?? 0) > 0
@@ -129,7 +134,7 @@ function SpellCard({
       <div className="spellbook-card-top">
         <div className="spellbook-card-title">
           <span className="spell-level">
-            {level === 0 ? translateText('ZAUBERTRICK') : `${translateText('GRAD')} ${level}`}
+            {isFeature ? translateText('AKTIVES MERKMAL') : level === 0 ? translateText('ZAUBERTRICK') : `${translateText('GRAD')} ${level}`}
           </span>
           <h3>{name}</h3>
         </div>
@@ -143,13 +148,15 @@ function SpellCard({
               {translateText('Immer vorbereitet')}
             </span>
           )}
-          <IconButton
-            className="delete-button"
-            label={`${translateText('Zauber entfernen')}: ${name}`}
-            onClick={() => onRemove(spell.spellId)}
-          >
-            <Trash2 size={14} />
-          </IconButton>
+          {!isFeature && (
+            <IconButton
+              className="delete-button"
+              label={`${translateText('Zauber entfernen')}: ${name}`}
+              onClick={() => onRemove(spell.spellId)}
+            >
+              <Trash2 size={14} />
+            </IconButton>
+          )}
         </div>
       </div>
 
@@ -200,10 +207,14 @@ function SpellCard({
 
       <div className="spellbook-card-footer">
         <small>
-          {translateText('Gelernt auf Stufe')} {spell.learnedAtLevel}
+          {translateText(isFeature ? 'Freigeschaltet auf Stufe' : 'Gelernt auf Stufe')} {spell.learnedAtLevel}
         </small>
         <div className="spell-card-controls">
-          {hasLimitedUses ? (
+          {isFeature ? (
+            spell.resourceId && hasLimitedUses ? (
+              <span className="spell-uses"><Clock3 size={12} /> {remainingUses}/{spell.usageLimit} · {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}</span>
+            ) : <span className="spell-uses">{translateText('Keine begrenzten Nutzungen')}</span>
+          ) : hasLimitedUses ? (
             <span className="spell-uses">
               <Clock3 size={12} />
               {remainingUses}/{spell.usageLimit} ·{' '}
@@ -231,12 +242,14 @@ function SpellCard({
               >
                 {translateText('Nutzen')}
               </button>
-              <IconButton
-                label={translateText('Nutzungen zurücksetzen')}
-                onClick={() => onReset(spell.spellId)}
-              >
-                <RotateCcw size={13} />
-              </IconButton>
+              {!isFeature && (
+                <IconButton
+                  label={translateText('Nutzungen zurücksetzen')}
+                  onClick={() => onReset(spell.spellId)}
+                >
+                  <RotateCcw size={13} />
+                </IconButton>
+              )}
             </>
           )}
         </div>
@@ -277,14 +290,15 @@ export function SpellbookList({
     return [...groups.entries()]
   }, [visibleSpells])
 
-  const preparedCount = spells.filter(isPrepared).length
+  const actualSpells = spells.filter((spell) => spell.entryType !== 'feature')
+  const preparedCount = actualSpells.filter(isPrepared).length
 
   return (
     <section className="panel spellbook-panel">
       <PanelHeader
         className="spellbook-heading"
         title={t('Deine Zauber')}
-        description={`${spells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')}`}
+        description={`${actualSpells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')} · ${spells.length - actualSpells.length} ${t('aktive Merkmale')}`}
         meta={
           <span className="spellbook-count">
             <BookOpen size={14} />
@@ -334,9 +348,9 @@ export function SpellbookList({
           {spellGroups.map(([level, group]) => (
             <section className="spellbook-level-group" key={level}>
               <div className="spellbook-level-heading">
-                <span>{level === 0 ? t('Zaubertricks') : `${t('Grad')} ${level}`}</span>
+                <span>{level < 0 ? t('Aktive Klassen- und Unterklassenmerkmale') : level === 0 ? t('Zaubertricks') : `${t('Grad')} ${level}`}</span>
                 <small>
-                  {group.length} {t('Zauber')}
+                  {group.length} {level < 0 ? t('Merkmale') : t('Zauber')}
                 </small>
               </div>
               <div className="spellbook-cards">

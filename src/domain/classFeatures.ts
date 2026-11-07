@@ -12,7 +12,48 @@ export interface AutomaticClassFeature {
   level: number
   source: 'class' | 'subclass'
   description?: string
+  activation?: 'action' | 'bonusAction' | 'reaction' | 'special'
+  resourceId?: string
+  resourceCost?: number
 }
+
+const ACTIVE_FEATURES: Record<string, { activation: NonNullable<AutomaticClassFeature['activation']>; description: string; resourceId?: string; resourceCost?: number }> = {
+  Kampfrausch: { activation: 'bonusAction', description: 'Du verfällst in einen Kampfrausch. Er hält bis zu 10 Minuten an und endet vorzeitig unter den im Regelwerk genannten Bedingungen.', resourceId: 'rage' },
+  Bardeninspiration: { activation: 'bonusAction', description: 'Eine Kreatur deiner Wahl in Reichweite erhält einen Inspirationswürfel, den sie innerhalb der nächsten 10 Minuten zu einem passenden W20-Wurf addieren kann.', resourceId: 'bardic-inspiration' },
+  'Schneidende Worte': { activation: 'reaction', description: 'Wenn eine Kreatur in deiner Nähe einen Wurf ablegt, kannst du eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um das Ergebnis zu verringern.', resourceId: 'bardic-inspiration' },
+  'Gegenzauberische Melodie': { activation: 'action', description: 'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.' },
+  Gegenzauber: { activation: 'action', description: 'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.' },
+  'Kanal göttlicher Energie': { activation: 'action', description: 'Du setzt deine göttliche Energie frei und wählst einen verfügbaren Effekt deiner Klasse oder Unterklasse.', resourceId: 'channel-divinity' },
+  'Untote vertreiben': { activation: 'action', description: 'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf; bei Misslingen werden sie vertrieben.', resourceId: 'channel-divinity' },
+  'Leben bewahren': { activation: 'action', description: 'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.', resourceId: 'channel-divinity' },
+  Tiergestalt: { activation: 'bonusAction', description: 'Du verwandelst dich in eine zulässige Tiergestalt. Die Verwandlung hält bis zu deiner Rückverwandlung oder bis zum Ablauf der Dauer an.', resourceId: 'wild-shape' },
+  'Wilder Gefährte': { activation: 'action', description: 'Du gibst eine Nutzung deiner Tiergestalt aus, um Vertrauten finden ohne Materialkomponenten zu wirken.', resourceId: 'wild-shape' },
+  'Hilfe des Landes': { activation: 'action', description: 'Du gibst eine Nutzung deiner Tiergestalt aus, um einen Bereich mit nekrotischer Energie zu erfüllen und eine Kreatur zu heilen.', resourceId: 'wild-shape' },
+  'Zweites Aufatmen': { activation: 'bonusAction', description: 'Du gewinnst Trefferpunkte zurück. Die Höhe richtet sich nach deiner Kämpferstufe.', resourceId: 'second-wind' },
+  Aktionsschub: { activation: 'special', description: 'Du kannst in diesem Zug zusätzlich zu deiner normalen Aktion eine weitere Aktion ausführen.', resourceId: 'action-surge' },
+  Unbeugsam: { activation: 'special', description: 'Wenn dir ein Rettungswurf misslingt, kannst du ihn wiederholen und musst das neue Ergebnis verwenden.', resourceId: 'indomitable' },
+  Ki: { activation: 'special', description: 'Du setzt Ki-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.', resourceId: 'ki-points' },
+  'Fokus des Mönchs': { activation: 'special', description: 'Du setzt Fokus-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.', resourceId: 'focus-points' },
+  Handauflegen: { activation: 'bonusAction', description: 'Du berührst eine Kreatur und stellst Trefferpunkte aus deinem Heilungsvorrat wieder her oder neutralisierst eine Krankheit bzw. ein Gift, sofern die Regeln dies erlauben.', resourceId: 'lay-on-hands' },
+  'Göttlicher Sinn': { activation: 'action', description: 'Bis zum Ende deines nächsten Zuges nimmst du bestimmte himmlische, untote und dämonische Präsenzen in deiner Nähe wahr.', resourceId: 'divine-sense' },
+  'Heilige Waffe': { activation: 'action', description: 'Du setzt Kanal göttlicher Energie ein, um eine gehaltene Waffe vorübergehend mit heiliger Macht zu erfüllen.', resourceId: 'channel-divinity-paladin' },
+  'Angeborene Magie': { activation: 'bonusAction', description: 'Du entfesselst deine angeborene Magie für 1 Minute und erhältst die im Merkmal beschriebenen Vorteile.', resourceId: 'innate-sorcery' },
+  'Magische List': { activation: 'action', description: 'Du führst ein kurzes Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.', resourceId: 'magical-cunning' },
+  'Arkane Erholung': { activation: 'special', description: 'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.', resourceId: 'arcane-recovery' },
+  'Natürliche Erholung': { activation: 'special', description: 'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.' },
+  'Einschüchternde Präsenz': { activation: 'action', description: 'Du erschreckst Kreaturen in deiner Nähe mit deiner bedrohlichen Präsenz; sie müssen einen Weisheitsrettungswurf bestehen.' },
+  Vergeltung: { activation: 'reaction', description: 'Wenn dich eine Kreatur in deiner Nähe verletzt, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.' },
+  'Fließender Schritt': { activation: 'bonusAction', description: 'Du kannst Schritt des Windes einsetzen, nachdem du in diesem Zug bereits eine andere Bonusaktion verwendet hast.', resourceId: 'focus-points' },
+  'Zitternde Handfläche': { activation: 'action', description: 'Du setzt Fokus-Punkte ein, um einem getroffenen Ziel tödliche Schwingungen einzuprägen und diese später auszulösen.', resourceId: 'focus-points' },
+  'Diebesreflexe': { activation: 'special', description: 'Du kannst zu Beginn des ersten Kampfzugs unter den im Merkmal genannten Voraussetzungen einen zusätzlichen Zug erhalten.' },
+  'Schnelle Hände': { activation: 'bonusAction', description: 'Du kannst bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.' },
+  'Unheimliches Ausweichen': { activation: 'reaction', description: 'Wenn dich ein sichtbarer Angreifer trifft, kannst du deine Reaktion einsetzen, um den Angriffsschaden zu halbieren.' },
+  'Listige Aktion': { activation: 'bonusAction', description: 'Du nutzt deine Schnelligkeit, um als Bonusaktion zu sprinten, dich zurückzuziehen oder dich zu verstecken.' },
+  'Sicheres Zielen': { activation: 'bonusAction', description: 'Du gibst deine Bewegung für diesen Zug auf, um bei deinem nächsten Angriff im selben Zug Vorteil zu erhalten.' },
+  'Drachenflügel': { activation: 'bonusAction', description: 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.' },
+  'Durch die Hölle schicken': { activation: 'special', description: 'Wenn du eine Kreatur triffst, kannst du sie einmal pro Zug durch die Unteren Ebenen schleudern und ihr zusätzlichen Schaden zufügen.' },
+  Überladung: { activation: 'special', description: 'Du kannst einen Magierzauber verstärken, um maximalen Schaden zu verursachen; die Anwendung birgt das im Merkmal beschriebene Risiko.' },
+};
 
 function abilityModifier(score = 10) {
   return Math.floor((score - 10) / 2)
@@ -859,5 +900,16 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
         })),
     )
   }
-  return result
+  return result.map((feature) => {
+    const active = ACTIVE_FEATURES[feature.name]
+    let resourceId = active?.resourceId
+    if (feature.name === 'Kanal göttlicher Energie' && character.classId === 'paladin') {
+      resourceId = character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
+    }
+    return active ? { ...feature, ...active, resourceId } : feature
+  })
+}
+
+export function getActiveClassFeatures(character: Character): AutomaticClassFeature[] {
+  return getAutomaticClassFeatures(character).filter((feature) => feature.activation)
 }
