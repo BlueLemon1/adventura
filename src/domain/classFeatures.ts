@@ -324,10 +324,16 @@ export function getClassResources(character: Character): ClassResourceDefinition
   ) => {
     if (maximum > 0) resources.push({ id, label, maximum, recovery })
   }
-  if (classId === 'barbarian') {
+  if (classId === 'barbarian' && !(ruleset === '2014' && level >= 20)) {
     const maximum =
-      ruleset === '2014' && level >= 20
-        ? 99
+      ruleset === '2014'
+        ? level >= 12
+          ? 5
+          : level >= 6
+            ? 4
+            : level >= 3
+              ? 3
+              : 2
         : level >= 17
           ? 6
           : level >= 12
