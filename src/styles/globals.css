@@ -2615,3 +2615,272 @@ body {
     grid-column: 1/-1;
   }
 }
+
+
+/* Equipment loadout, legible type scale and touch-friendly spell slots */
+body {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.workspace-label,
+.eyebrow,
+.breadcrumb,
+.muted-label,
+.panel-heading > span {
+  font-size: 11px;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.intro {
+  font-size: 15px;
+}
+
+.saved-indicator,
+.character-card p,
+.ruleset-pill,
+.muted-paragraph,
+.field-label,
+.equipped-toggle,
+.proficiency-row,
+.skill-row,
+.spell-flags label,
+.prepared-toggle,
+.catalog-eligible,
+.catalog-count {
+  font-size: 13px;
+}
+
+.field-label input,
+.field-label textarea,
+.catalog-source-fields input,
+.catalog-source-fields select,
+.currency-grid input,
+.character-switcher {
+  font-size: 15px;
+}
+
+.inventory-row,
+.inventory-main strong {
+  font-size: 14px;
+}
+
+.inventory-main small,
+.spellbook-card-footer small,
+.spell-capacity > span,
+.spell-capacity > small,
+.spell-slot-line span,
+.spell-slot-line small,
+.class-spell-capacity small,
+.class-spell-capacity p {
+  font-size: 12px;
+}
+
+.spellbook-meta span,
+.spell-source,
+.spell-uses,
+.spell-use-button,
+.spell-level {
+  font-size: 12px;
+}
+
+.spellbook-details summary,
+.spellbook-details p,
+.spellbook-empty p,
+.spell-capacity-note,
+.catalog-source-editor > strong,
+.catalog-source-fields label {
+  font-size: 13px;
+}
+
+.spellbook-details p {
+  line-height: 1.75;
+}
+
+.equipped-gear-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  gap: 12px;
+}
+
+.equipped-gear-card {
+  display: grid;
+  gap: 13px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid rgba(141, 188, 169, 0.2);
+  border-radius: 11px;
+  background:
+    radial-gradient(ellipse at 0 0, rgba(141, 188, 169, 0.1), transparent 70%),
+    rgba(255, 255, 255, 0.018);
+}
+
+.equipped-gear-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.equipped-gear-icon {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  place-items: center;
+  border: 1px solid rgba(141, 188, 169, 0.25);
+  border-radius: 9px;
+  background: rgba(141, 188, 169, 0.1);
+  color: var(--teal);
+}
+
+.equipped-gear-title {
+  display: grid;
+  gap: 4px;
+  flex: 1;
+  min-width: 0;
+}
+
+.equipped-gear-title strong {
+  color: var(--text);
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.equipped-gear-title small {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.equipped-gear-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.equipped-gear-meta span {
+  padding: 5px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.equipped-gear-card .equipped-toggle {
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.slot-track {
+  padding: 16px;
+  border-radius: 11px;
+}
+
+.slot-pips {
+  gap: 8px;
+}
+
+.slot-pip {
+  position: relative;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  place-items: center;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  clip-path: none;
+}
+
+.slot-pip::before {
+  content: '';
+  position: absolute;
+  inset: 7px;
+  border: 1px solid color-mix(in srgb, var(--slot-color, #d6b477) 65%, transparent);
+  border-radius: 8px;
+  background: rgba(8, 13, 10, 0.8);
+  clip-path: polygon(50% 0, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
+  transition: transform 0.16s ease, filter 0.16s ease, background 0.16s ease;
+}
+
+.slot-pip::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), transparent 55%);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+.slot-pip.is-available::before {
+  border-color: color-mix(in srgb, var(--slot-color, #d6b477) 90%, white);
+  background: linear-gradient(145deg, var(--slot-color, #d6b477), color-mix(in srgb, var(--slot-color, #d6b477) 60%, #101714));
+  box-shadow: 0 0 14px var(--slot-glow, rgba(214, 180, 119, 0.35));
+}
+
+.slot-pip.is-spent::before {
+  background: rgba(8, 13, 10, 0.9);
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.slot-pip:hover::before,
+.slot-pip:focus-visible::before {
+  transform: scale(1.12);
+  filter: brightness(1.25);
+}
+
+.slot-pip:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+button,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+
+  .panel {
+    padding: 17px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+
+  .segmented-tabs button {
+    min-height: 44px;
+    font-size: 13px;
+  }
+
+  .slot-track {
+    padding: 14px;
+  }
+
+  .slot-pips {
+    gap: 5px;
+  }
+
+  .slot-pip {
+    width: 40px;
+    height: 42px;
+    flex-basis: 40px;
+  }
+
+  .equipped-gear-card {
+    padding: 14px;
+  }
+}

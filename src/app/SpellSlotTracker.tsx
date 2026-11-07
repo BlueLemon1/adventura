@@ -4,11 +4,23 @@ import type { Character, SpellSlot } from '../domain/character'
 import { createPactMagic, getSpellcastingProgression } from '../domain/spellcasting'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
+import { translate, useLanguage } from './i18n'
 
 interface SpellSlotTrackerProps {
   character: Character
   onUpdate: (patch: Partial<Character>) => void
 }
+
+type SlotTone =
+  | 'amber'
+  | 'emerald'
+  | 'azure'
+  | 'violet'
+  | 'rose'
+  | 'cyan'
+  | 'gold'
+  | 'silver'
+  | 'crimson'
 
 const CASTER_LABELS = {
   warlock: 'PACT-MAGIE',
@@ -17,7 +29,7 @@ const CASTER_LABELS = {
   third: 'DRITTEL-ZAUBERWIRKER',
 } as const
 
-const SLOT_TONES = [
+const SLOT_TONES: SlotTone[] = [
   'amber',
   'emerald',
   'azure',
@@ -29,39 +41,53 @@ const SLOT_TONES = [
   'crimson',
 ]
 
+interface SlotTrackProps {
+  label: ReactNode
+  labelText: string
+  current: number
+  maximum: number
+  tone: SlotTone
+  translateText: (value: string) => string
+  onChange: (change: -1 | 1) => void
+}
+
 function SlotTrack({
   label,
+  labelText,
   current,
   maximum,
   tone,
+  translateText,
   onChange,
-}: {
-  label: ReactNode
-  current: number
-  maximum: number
-  tone: string
-  onChange: (change: -1 | 1) => void
-}) {
+}: SlotTrackProps) {
   return (
     <div className="slot-track">
       <div className="slot-track-heading">
         <strong>{label}</strong>
-        <span>
+        <span aria-live="polite">
           {current}
           <small> / {maximum}</small>
         </span>
       </div>
-      <div className="slot-pips" aria-label={`${current} von ${maximum} Zauberplätzen verfügbar`}>
+
+      <div
+        className="slot-pips"
+        role="group"
+        aria-label={`${labelText}: ${current} ${translateText('von')} ${maximum} ${translateText('Zauberplätze verfügbar')}`}
+      >
         {Array.from({ length: maximum }, (_, index) => {
           const available = index < current
+          const action = available ? 'Zauberplatz verbrauchen' : 'Zauberplatz wiederherstellen'
+
           return (
             <button
               key={index}
               type="button"
               className={`slot-pip ${available ? 'is-available' : 'is-spent'}`}
               data-tone={tone}
-              aria-label={`${label}: ${available ? 'Zauberplatz verbrauchen' : 'Zauberplatz wiederherstellen'}`}
-              title={available ? 'Zauberplatz verbrauchen' : 'Zauberplatz wiederherstellen'}
+              aria-label={`${labelText}: ${translateText(action)}`}
+              aria-pressed={!available}
+              title={translateText(action)}
               onClick={() => onChange(available ? -1 : 1)}
             />
           )
@@ -75,15 +101,20 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const progression = getSpellcastingProgression(character)
+
   if (!progression) return null
 
   const slots = progression.slots
     .map((maximum, index) => {
       const spellLevel = index + 1
       const stored = character.spellSlots?.find((slot) => slot.spellLevel === spellLevel)
-      return stored ?? { spellLevel, max: maximum, current: maximum }
+
+      return stored
+        ? { ...stored, max: maximum, current: Math.min(stored.current, maximum) }
+        : { spellLevel, max: maximum, current: maximum }
     })
     .filter((slot) => slot.max > 0)
+
   const pactMagic = character.pactMagic ?? createPactMagic(character)
 
   function updateSlot(spellLevel: number, change: -1 | 1) {
@@ -98,6 +129,7 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
 
   function updatePactMagic(change: -1 | 1) {
     if (!pactMagic) return
+
     onUpdate({
       pactMagic: {
         ...pactMagic,
@@ -114,8 +146,9 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
   }
 
   function restorePactSlots() {
-    const next = pactMagic ?? createPactMagic(character)
-    if (next) onUpdate({ pactMagic: { ...next, current: next.max } })
+    if (pactMagic) {
+      onUpdate({ pactMagic: { ...pactMagic, current: pactMagic.max } })
+    }
   }
 
   return (
@@ -127,6 +160,7 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
           'Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.',
         )}
       />
+
       {progression.kind === 'warlock' && pactMagic ? (
         <SlotTrack
           label={
@@ -134,9 +168,11 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
               {t('Paktmagie')} · {t('Grad')} {pactMagic.spellLevel}
             </>
           }
+          labelText={`${t('Paktmagie')} · ${t('Grad')} ${pactMagic.spellLevel}`}
           current={pactMagic.current}
           maximum={pactMagic.max}
           tone={SLOT_TONES[Math.max(0, pactMagic.spellLevel - 1)]}
+          translateText={t}
           onChange={updatePactMagic}
         />
       ) : (
@@ -149,21 +185,24 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
                   {t('Grad')} {slot.spellLevel}
                 </>
               }
+              labelText={`${t('Grad')} ${slot.spellLevel}`}
               current={slot.current}
               maximum={slot.max}
               tone={SLOT_TONES[slot.spellLevel - 1] ?? 'amber'}
+              translateText={t}
               onChange={(change) => updateSlot(slot.spellLevel, change)}
             />
           ))}
         </div>
       )}
+
       <div className="rest-actions">
         <Button variant="secondary" onClick={restoreAllSlots}>
-          <Moon size={14} /> {t('Lange Rast · alle Plätze auffüllen')}
+          <Moon size={15} /> {t('Lange Rast · alle Plätze auffüllen')}
         </Button>
         {progression.kind === 'warlock' && (
           <Button variant="secondary" onClick={restorePactSlots}>
-            <Sparkles size={14} /> {t('Kurze Rast · Paktplätze auffüllen')}
+            <Sparkles size={15} /> {t('Kurze Rast · Paktplätze auffüllen')}
           </Button>
         )}
       </div>

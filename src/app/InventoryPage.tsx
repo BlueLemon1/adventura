@@ -31,6 +31,7 @@ interface InventoryItemListProps {
   items: InventoryItem[]
   emptyLabel: string
   showEquipped: boolean
+  variant?: 'list' | 'equipment'
   onToggleEquipped?: (item: InventoryItem, equipped: boolean) => void
   onRemove: (item: InventoryItem) => void
 }
@@ -39,11 +40,54 @@ function InventoryItemList({
   items,
   emptyLabel,
   showEquipped,
+  variant = 'list',
   onToggleEquipped,
   onRemove,
 }: InventoryItemListProps) {
   if (items.length === 0) {
     return <p className="muted-paragraph">{emptyLabel}</p>
+  }
+
+  if (variant === 'equipment') {
+    return (
+      <div className="equipped-gear-grid">
+        {items.map((item) => (
+          <article className="equipped-gear-card" key={item.id}>
+            <div className="equipped-gear-card-heading">
+              <span className="equipped-gear-icon">
+                <ShieldCheck size={19} />
+              </span>
+              <div className="equipped-gear-title">
+                <strong>{item.name}</strong>
+                <small>{item.description || 'Keine Beschreibung'}</small>
+              </div>
+              <IconButton
+                className="delete-button"
+                label={item.name + ' entfernen'}
+                onClick={() => onRemove(item)}
+              >
+                <Trash2 size={15} />
+              </IconButton>
+            </div>
+            <div className="equipped-gear-meta">
+              <span>× {item.quantity}</span>
+              <span>{item.unitValueGp} GM</span>
+              {item.weightLb !== undefined && <span>{item.weightLb} Pfd.</span>}
+            </div>
+            {showEquipped && onToggleEquipped && (
+              <label className="equipped-toggle">
+                <input
+                  type="checkbox"
+                  checked={item.equipped ?? false}
+                  onChange={(event) => onToggleEquipped(item, event.target.checked)}
+                />
+                Ausgerüstet
+              </label>
+            )}
+          </article>
+        ))}
+      </div>
+    )
   }
 
   return (
@@ -183,6 +227,7 @@ export function InventoryPage({
               'Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.',
             )}
             showEquipped
+            variant="equipment"
             onToggleEquipped={(item, equipped) =>
               updateItem(item.id, (current) => ({ ...current, equipped }))
             }

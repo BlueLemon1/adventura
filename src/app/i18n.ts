@@ -3,6 +3,12 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  "Installation: Öffne das Browsermenü. In Chrome oder Edge wählst du „App installieren“ oder „Seite als App installieren“. Auf iPhone/iPad: Teilen → Zum Home-Bildschirm.": "Install: Open your browser menu. In Chrome or Edge, choose “Install app” or “Install this site as an app”. On iPhone/iPad: Share → Add to Home Screen.",
+  "Adventura als App installieren": "Install Adventura as an app",
+  "Zauberplatz wiederherstellen": "Restore spell slot",
+  "Zauberplatz verbrauchen": "Spend spell slot",
+  "Zauberplätze verfügbar": "spell slots available",
+  "von": "of",
   Übersicht: 'Overview',
   Angelegt: 'Equipped',
   'Angelegte Ausrüstung': 'Equipped gear',
