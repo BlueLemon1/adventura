@@ -800,3 +800,6 @@ Object.assign(en, {
   'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.':
     'When you hit a creature with a melee weapon, you can expend a spell slot to deal extra Radiant damage.',
 })
+
+
+Object.assign(en, { Merkmalsbeschreibung: 'Feature description' });
