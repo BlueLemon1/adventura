@@ -306,6 +306,30 @@ const ACTIVE_FEATURES: Record<
     description:
       'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.',
   },
+  'Hagel der Schläge': {
+    activation: 'bonusAction',
+    description: 'Nach der Angriffsaktion kannst du einen Ki- oder Fokus-Punkt ausgeben, um zwei zusätzliche unbewaffnete Schläge als Bonusaktion auszuführen.',
+    resourceId: 'ki-points',
+  },
+  'Geduldige Verteidigung': {
+    activation: 'bonusAction',
+    description: 'Du nutzt deine Bonusaktion zur Verteidigung. Im Regelwerk 2024 kannst du dich kostenlos zurückziehen oder mit einem Fokus-Punkt zusätzlich ausweichen; 2014 kostet die Ausweichaktion einen Ki-Punkt.',
+    resourceId: 'ki-points',
+  },
+  'Schritt des Windes': {
+    activation: 'bonusAction',
+    description: 'Du nutzt deine Bonusaktion für Sprinten oder Zurückziehen und kannst deine Sprungweite erhöhen. Die genauen Kosten unterscheiden sich zwischen 2014 und 2024.',
+    resourceId: 'ki-points',
+  },
+  'Quelle der Magie': {
+    activation: 'special',
+    description: 'Du wandelst Zauberplätze in Zauberpunkte um oder gibst Zauberpunkte aus, um Zauberplätze zu erschaffen.',
+  },
+  Abwehrzauber: {
+    activation: 'action',
+    description: 'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.',
+    resourceId: 'channel-divinity-paladin',
+  },
 }
 
 function abilityModifier(score = 10) {
@@ -489,6 +513,9 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [1, 'Kampfkünste'],
     [1, 'Ungepanzerte Verteidigung'],
     [2, 'Ki'],
+    [2, 'Hagel der Schläge'],
+    [2, 'Geduldige Verteidigung'],
+    [2, 'Schritt des Windes'],
     [2, 'Ungepanzerte Bewegung'],
     [3, 'Geschosse abwehren'],
     [5, 'Zusätzlicher Angriff'],
@@ -741,6 +768,9 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [1, 'Kampfkünste'],
     [1, 'Ungepanzerte Verteidigung'],
     [2, 'Fokus des Mönchs'],
+    [2, 'Hagel der Schläge'],
+    [2, 'Geduldige Verteidigung'],
+    [2, 'Schritt des Windes'],
     [2, 'Ungepanzerte Bewegung'],
     [2, 'Unheimlicher Stoffwechsel'],
     [3, 'Angriffe abwehren'],
@@ -1189,6 +1219,28 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     }
     if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
       resourceId = 'paladin-channel-divinity'
+    if (feature.name === 'Hagel der Schläge')
+      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points' }
+    if (feature.name === 'Geduldige Verteidigung')
+      return {
+        ...feature,
+        ...active,
+        resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
+        description:
+          character.ruleset === '2014'
+            ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion die Ausweichen-Aktion auszuführen.'
+            : 'Du kannst dich als Bonusaktion zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich ausweichen.',
+      }
+    if (feature.name === 'Schritt des Windes')
+      return {
+        ...feature,
+        ...active,
+        resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
+        description:
+          character.ruleset === '2014'
+            ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion zu sprinten oder dich zurückzuziehen; deine Sprungweite verdoppelt sich für den Zug.'
+            : 'Du kannst als Bonusaktion sprinten. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich zurückziehen und deine Sprungweite verdoppeln.',
+      }
     if (feature.name === 'Tiergestalt')
       return {
         ...feature,

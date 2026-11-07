@@ -807,3 +807,17 @@ Object.assign(en, {
   'kurze Rast (+1) / lange Rast (alle)': 'Short Rest (+1) / Long Rest (all)',
   'kurze oder lange Rast': 'Short or Long Rest',
 })
+
+
+Object.assign(en, {
+  'Hagel der Schläge': 'Flurry of Blows',
+  'Geduldige Verteidigung': 'Patient Defense',
+  'Schritt des Windes': 'Step of the Wind',
+  'Quelle der Magie': 'Font of Magic',
+  Abwehrzauber: 'Abjure Foes',
+  'Nach der Angriffsaktion kannst du einen Ki- oder Fokus-Punkt ausgeben, um zwei zusätzliche unbewaffnete Schläge als Bonusaktion auszuführen.': 'After taking the Attack action, you can expend a Ki or Focus Point to make two additional Unarmed Strikes as a Bonus Action.',
+  'Du nutzt deine Bonusaktion zur Verteidigung. Im Regelwerk 2024 kannst du dich kostenlos zurückziehen oder mit einem Fokus-Punkt zusätzlich ausweichen; 2014 kostet die Ausweichaktion einen Ki-Punkt.': 'You use your Bonus Action defensively. In the 2024 rules, you can Disengage for free or also Dodge by spending a Focus Point; in 2014, Dodging as a Bonus Action costs a Ki Point.',
+  'Du nutzt deine Bonusaktion für Sprinten oder Zurückziehen und kannst deine Sprungweite erhöhen. Die genauen Kosten unterscheiden sich zwischen 2014 und 2024.': 'You use your Bonus Action to Dash or Disengage and can increase your jump distance. The exact costs differ between the 2014 and 2024 rules.',
+  'Du wandelst Zauberplätze in Zauberpunkte um oder gibst Zauberpunkte aus, um Zauberplätze zu erschaffen.': 'You convert spell slots into Sorcery Points or expend Sorcery Points to create spell slots.',
+  'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.': 'You expend Channel Divinity to force chosen nearby creatures to make a Wisdom saving throw or become Frightened and Incapacitated.',
+});
