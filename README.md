@@ -29,9 +29,28 @@ Rules-dependent character progression, spell access, preparation rules, and spel
 - Do not store character data in GitHub Pages or commit it to this repository.
 - Future synchronization may be added behind the storage abstraction, but it is not part of the initial product.
 
-## Rules content and licensing
+## Rules content, localization, and licensing
 
-Rules and spell data must come from sources that Adventura is permitted to redistribute, such as the applicable System Reference Document under its license. Do not copy non-open content from paid sourcebooks. Include required attribution and license notices alongside bundled rules data.
+The System Reference Documents (SRDs) are the source of truth for all official rules content. Adventura must not invent, paraphrase, or machine-translate SRD rules text.
+
+### Canonical data model
+
+- Source code, identifiers, domain models, keys, and normalized data fields use English.
+- Every ruleset is an independent dataset. SRD 5.1 (2014) and SRD 5.2.1 (2024) must never be merged implicitly.
+- Every content record has a stable English canonical ID and source provenance.
+- Localized names are aliases of the same canonical record, not separate spells or features.
+- English and German names and descriptions are imported from their respective SRD language editions. A missing translation stays explicitly unavailable; it must never silently fall back to a hand-written translation or to another ruleset.
+- Display labels may be localized as application UI. Rules text and game data may not be authored in the UI translation dictionary.
+
+### Data ingestion
+
+- Keep source snapshots separate from normalized application data.
+- Normalize source data through repeatable scripts; do not hand-edit generated SRD datasets.
+- Preserve source document, version, language, license, source URL, and import date in the data manifest.
+- Validate canonical IDs, duplicate records, cross-language aliases, ruleset boundaries, and required fields during import/build.
+- Character-specific, campaign, item-granted, and homebrew content must remain distinguishable from SRD records.
+
+Do not copy non-open content from paid sourcebooks. Include the exact required attribution and license notices for every bundled SRD dataset. See [src/data/ATTRIBUTION.md](src/data/ATTRIBUTION.md).
 
 ## Development
 
