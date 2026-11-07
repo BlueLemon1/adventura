@@ -2166,7 +2166,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
   }
   return result
     .sort((left, right) => left.level - right.level)
-    .map((feature) => {
+    .map((feature): AutomaticClassFeature => {
       const germanName = FEATURE_LABELS_DE[feature.name] ?? feature.name
       const active =
         (germanName === 'Raserei' && character.ruleset === '2024') ||
