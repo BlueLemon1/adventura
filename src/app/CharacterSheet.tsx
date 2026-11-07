@@ -11,6 +11,7 @@ import {
 } from '../components/ui/select'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import { PanelHeader } from '../components/ui/panel-header'
+import { PageIntro } from '../components/ui/page-intro'
 import { translate, useLanguage } from './i18n'
 
 const ABILITY_LABELS: Record<Ability, string> = {
@@ -70,18 +71,16 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
 
   return (
     <>
-      <section className="page-intro">
-        <div>
-          <span className="eyebrow">CHARAKTERBOGEN · {RULESET_LABELS[character.ruleset]}</span>
-          <h1>{character.name}</h1>
-          <p className="intro">
-            {character.classId} · Stufe {character.level} · Übungsbonus +{prof}
-          </p>
-        </div>
-        <span className="saved-indicator">
-          <Save size={13} /> {t('Automatisch gespeichert')}
-        </span>
-      </section>
+      <PageIntro
+        eyebrow={<>CHARAKTERBOGEN · {RULESET_LABELS[character.ruleset]}</>}
+        title={character.name}
+        description={<>{character.classId} · Stufe {character.level} · Übungsbonus +{prof}</>}
+        trailing={
+          <span className="saved-indicator">
+            <Save size={13} /> {t('Automatisch gespeichert')}
+          </span>
+        }
+      />
       <section className="combat-grid">
         <article className="combat-card">
           <Heart />

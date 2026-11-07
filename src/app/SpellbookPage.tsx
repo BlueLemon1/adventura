@@ -4,6 +4,7 @@ import type { Character, KnownSpell } from '../domain/character'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
+import { PageIntro } from '../components/ui/page-intro'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import {
   Select,
@@ -103,15 +104,11 @@ export function SpellbookPage({
     <>
       <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
 
-      <section className="page-intro">
-        <div>
-          <span className="eyebrow">{t('MAGIE & ZAUBER')}</span>
-          <h1>{t('Zauberbuch')}</h1>
-          <p className="intro">
-            {t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={t('MAGIE & ZAUBER')}
+        title={t('Zauberbuch')}
+        description={t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
+      />
 
       <SpellCatalog
         character={character}

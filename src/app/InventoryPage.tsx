@@ -4,6 +4,7 @@ import type { CharacterInventory, InventoryItem } from '../domain/character'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
 import { PanelHeader } from '../components/ui/panel-header'
+import { PageIntro } from '../components/ui/page-intro'
 import {
   Select,
   SelectContent,
@@ -67,13 +68,11 @@ export function InventoryPage({
 
   return (
     <>
-      <section className="page-intro">
-        <div>
-          <span className="eyebrow">{t('AUSRÜSTUNG')}</span>
-          <h1>{t('Inventar')}</h1>
-          <p className="intro">{t('Persönliche Gegenstände und gemeinsamer Gruppenbesitz.')}</p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={t('AUSRÜSTUNG')}
+        title={t('Inventar')}
+        description={t('Persönliche Gegenstände und gemeinsamer Gruppenbesitz.')}
+      />
       <section className="panel currency-panel">
         <PanelHeader title={t('Währungen')} meta="GELDBEUTEL" />
         <div className="currency-grid">

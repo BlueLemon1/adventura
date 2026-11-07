@@ -4,6 +4,7 @@ import { updatePactMagic, updateSpellSlots } from '../domain/spellcasting'
 import { RULESET_LABELS } from '../domain/rules'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
+import { PageIntro } from '../components/ui/page-intro'
 import { translate, useLanguage } from './i18n'
 
 interface LevelUpPageProps {
@@ -26,16 +27,15 @@ export function LevelUpPage({ character, onUpdate }: LevelUpPageProps) {
 
   return (
     <>
-      <section className="page-intro">
-        <div>
-          <span className="eyebrow">{t('FORTSCHRITT')}</span>
-          <h1>{t('Level-up')}</h1>
-          <p className="intro">
-            {t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}
-            .
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow={t('FORTSCHRITT')}
+        title={t('Level-up')}
+        description={
+          <>
+            {t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}.
+          </>
+        }
+      />
       <section className="levelup-card">
         <div className="level-number">
           <span>{t('AKTUELLE STUFE')}</span>
