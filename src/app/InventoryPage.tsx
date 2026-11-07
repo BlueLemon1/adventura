@@ -173,11 +173,15 @@ export function InventoryPage({
             meta={`${equippedItems.length} ${t('ANGELEGT')}`}
           />
           <p className="muted-paragraph">
-            {t('Hier siehst du nur die Gegenstände, die dein Charakter aktuell trägt oder verwendet.')}
+            {t(
+              'Hier siehst du nur die Gegenstände, die dein Charakter aktuell trägt oder verwendet.',
+            )}
           </p>
           <InventoryItemList
             items={equippedItems}
-            emptyLabel={t('Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.')}
+            emptyLabel={t(
+              'Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.',
+            )}
             showEquipped
             onToggleEquipped={(item, equipped) =>
               updateItem(item.id, (current) => ({ ...current, equipped }))
@@ -188,7 +192,14 @@ export function InventoryPage({
       ) : (
         <>
           <section className="panel currency-panel">
-            <PanelHeader title={t('Währungen')} meta={<><Coins size={14} /> {t('GELDBEUTEL')}</>} />
+            <PanelHeader
+              title={t('Währungen')}
+              meta={
+                <>
+                  <Coins size={14} /> {t('GELDBEUTEL')}
+                </>
+              }
+            />
             <div className="currency-grid">
               {(['cp', 'sp', 'ep', 'gp', 'pp'] as const).map((coin) => (
                 <label key={coin}>
@@ -223,7 +234,9 @@ export function InventoryPage({
                     value={itemGroup}
                     onValueChange={(next) => setItemGroup(next as InventoryGroup)}
                   >
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="personal">{t('Persönlich')}</SelectItem>
                       <SelectItem value="party">{t('Gruppeninventar')}</SelectItem>

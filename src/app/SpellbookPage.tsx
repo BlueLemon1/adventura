@@ -168,10 +168,7 @@ export function SpellbookPage({
           />
 
           <section className="panel">
-            <PanelHeader
-              title={t('Eigene Zauber hinzufügen')}
-              meta={t('MANUELLE ERFASSUNG')}
-            />
+            <PanelHeader title={t('Eigene Zauber hinzufügen')} meta={t('MANUELLE ERFASSUNG')} />
             <form onSubmit={addCustomSpell}>
               <div className="form-grid spell-form">
                 <TextInputField
@@ -186,7 +183,9 @@ export function SpellbookPage({
                     value={String(spellLevel)}
                     onValueChange={(value) => setSpellLevel(Number(value))}
                   >
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
                     <SelectContent>
                       {Array.from({ length: 10 }, (_, index) => (
                         <SelectItem key={index} value={String(index)}>
@@ -218,7 +217,9 @@ export function SpellbookPage({
                     value={spellSource ?? 'other'}
                     onValueChange={(value) => setSpellSource(value as SpellSource)}
                   >
-                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="class">{t('Klassenzauber')}</SelectItem>
                       <SelectItem value="story">{t('Story / Belohnung')}</SelectItem>
@@ -248,7 +249,9 @@ export function SpellbookPage({
                       value={spellUsageReset}
                       onValueChange={(value) => setSpellUsageReset(value as UsageReset)}
                     >
-                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectTrigger>
+                        <SelectValue />
+                      </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="shortRest">{t('Kurze Rast')}</SelectItem>
                         <SelectItem value="longRest">{t('Lange Rast')}</SelectItem>

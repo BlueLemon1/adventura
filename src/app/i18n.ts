@@ -8,12 +8,15 @@ const en: Record<string, string> = {
   'Angelegte Ausrüstung': 'Equipped gear',
   ANGELEGT: 'EQUIPPED',
   Inventaransicht: 'Inventory view',
-  'Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.': 'You have not equipped any items yet. Mark gear as equipped in your inventory.',
-  'Hier siehst du nur die Gegenstände, die dein Charakter aktuell trägt oder verwendet.': 'Only items your character currently wears or uses are shown here.',
+  'Du hast noch keine Gegenstände angelegt. Markiere Ausrüstung im Inventar als angelegt.':
+    'You have not equipped any items yet. Mark gear as equipped in your inventory.',
+  'Hier siehst du nur die Gegenstände, die dein Charakter aktuell trägt oder verwendet.':
+    'Only items your character currently wears or uses are shown here.',
   Zauberbuchansicht: 'Spellbook view',
   'Meine Zauber': 'My spells',
   'SRD & hinzufügen': 'SRD & add spells',
-  'Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.': 'Tap a gem to spend or restore a spell slot.',
+  'Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.':
+    'Tap a gem to spend or restore a spell slot.',
   Paktmagie: 'Pact Magic',
   'Lange Rast · alle Plätze auffüllen': 'Long rest · restore all slots',
   'Kurze Rast · Paktplätze auffüllen': 'Short rest · restore pact slots',

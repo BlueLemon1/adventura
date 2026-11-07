@@ -1,10 +1,7 @@
 import { Moon, Sparkles } from 'lucide-react'
 import type { ReactNode } from 'react'
 import type { Character, SpellSlot } from '../domain/character'
-import {
-  createPactMagic,
-  getSpellcastingProgression,
-} from '../domain/spellcasting'
+import { createPactMagic, getSpellcastingProgression } from '../domain/spellcasting'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
 
@@ -20,7 +17,17 @@ const CASTER_LABELS = {
   third: 'DRITTEL-ZAUBERWIRKER',
 } as const
 
-const SLOT_TONES = ['amber', 'emerald', 'azure', 'violet', 'rose', 'cyan', 'gold', 'silver', 'crimson']
+const SLOT_TONES = [
+  'amber',
+  'emerald',
+  'azure',
+  'violet',
+  'rose',
+  'cyan',
+  'gold',
+  'silver',
+  'crimson',
+]
 
 function SlotTrack({
   label,
@@ -39,7 +46,10 @@ function SlotTrack({
     <div className="slot-track">
       <div className="slot-track-heading">
         <strong>{label}</strong>
-        <span>{current}<small> / {maximum}</small></span>
+        <span>
+          {current}
+          <small> / {maximum}</small>
+        </span>
       </div>
       <div className="slot-pips" aria-label={`${current} von ${maximum} Zauberplätzen verfügbar`}>
         {Array.from({ length: maximum }, (_, index) => {
@@ -113,11 +123,17 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
       <PanelHeader
         title={t('Zauberplätze')}
         meta={t(CASTER_LABELS[progression.kind])}
-        description={t('Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.')}
+        description={t(
+          'Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.',
+        )}
       />
       {progression.kind === 'warlock' && pactMagic ? (
         <SlotTrack
-          label={<>{t('Paktmagie')} · {t('Grad')} {pactMagic.spellLevel}</>}
+          label={
+            <>
+              {t('Paktmagie')} · {t('Grad')} {pactMagic.spellLevel}
+            </>
+          }
           current={pactMagic.current}
           maximum={pactMagic.max}
           tone={SLOT_TONES[Math.max(0, pactMagic.spellLevel - 1)]}
@@ -128,7 +144,11 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
           {slots.map((slot: SpellSlot) => (
             <SlotTrack
               key={slot.spellLevel}
-              label={<>{t('Grad')} {slot.spellLevel}</>}
+              label={
+                <>
+                  {t('Grad')} {slot.spellLevel}
+                </>
+              }
               current={slot.current}
               maximum={slot.max}
               tone={SLOT_TONES[slot.spellLevel - 1] ?? 'amber'}
