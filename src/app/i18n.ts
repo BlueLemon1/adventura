@@ -40,4 +40,22 @@ const en:Record<string,string>={
 'Deine Zauber sind noch leer.':'Your spellbook is empty.','Gelernt auf Stufe':'Learned at level','Immer vorbereitet':'Always prepared','Zauber':'spells','Grad ':'Level ',
 'Zauberbeschreibung':'Spell description','Zauber filtern':'Filter spells'
 }
+Object.assign(en,{
+'Willkommen,':'Welcome,','Abenteurer.':'adventurer.','Stärke':'Strength','Geschicklichkeit':'Dexterity','Konstitution':'Constitution','Intelligenz':'Intelligence','Weisheit':'Wisdom','Charisma':'Charisma',
+'Akrobatik':'Acrobatics','Mit Tieren umgehen':'Animal Handling','Arkane Kunde':'Arcana','Athletik':'Athletics','Täuschen':'Deception','Geschichte':'History','Motiv erkennen':'Insight','Einschüchtern':'Intimidation','Nachforschungen':'Investigation','Heilkunde':'Medicine','Naturkunde':'Nature','Wahrnehmung':'Perception','Auftreten':'Performance','Überzeugen':'Persuasion','Religion':'Religion','Fingerfertigkeit':'Sleight of Hand','Heimlichkeit':'Stealth','Überlebenskunst':'Survival',
+'CHARAKTERBOGEN · ':'CHARACTER SHEET · ','Stufe ':'Level ','Übungsbonus':'Proficiency bonus','MODIFIKATOR':'MODIFIER','ÜBUNGSBONUS +':'PROFICIENCY BONUS +','KEINE · GEÜBT · EXPERTISE':'NONE · PROFICIENT · EXPERTISE',
+'WÄHRUNGEN':'CURRENCY','GELDBEUTEL':'PURSE','AUSRÜSTUNG':'EQUIPMENT','Inventar':'Inventory','Währungen':'Currency','Gegenstand hinzufügen':'Add item','Persönlicher Gegenstand':'Personal item','Gruppeninventar':'Party inventory',
+'ZAUBERBUCH':'SPELLBOOK','MAGIE & ZAUBER':'MAGIC & SPELLS','Zauberbuch':'Spellbook','Eigene Zauber hinzufügen':'Add custom spell','MANUELLE ERFASSUNG':'MANUAL ENTRY','Zaubergrad':'Spell level','Zauberzeit':'Casting time','Reichweite':'Range','Wirkungsdauer':'Duration',
+'FORTSCHRITT':'PROGRESSION','Level-up':'Level up','Entwickle deinen Charakter weiter. Regelwerk:':'Advance your character. Ruleset:','Regelbasierte Progression':'Rules-based progression','Stufe erhöhen':'Level up',
+'Dein Begleiter am Spieltisch.':'Your companion at the table.','NEUES ABENTEUER':'NEW ADVENTURE','Charakter erstellen':'Create character','Charaktername':'Character name','Klasse':'Class','Regelwerk':'Ruleset','Abbrechen':'Cancel','Charakter speichern':'Save character',
+'Spielername':'Player name','Trefferwürfel':'Hit dice','Gesinnung':'Alignment','Spezies':'Species','Unterklasse':'Subclass','Hintergrund':'Background','Erfahrungspunkte':'Experience points',
+'Persönlichkeitsmerkmale':'Personality traits','Ideale':'Ideals','Bindungen':'Bonds','Makel':'Flaws','Merkmale & Fähigkeiten':'Features & traits','Notizen':'Notes',
+'Zaubertrick':'Cantrip','Zaubertricks':'Cantrips','Alle Grade':'All levels','Ritual':'Ritual','Konzentration':'Concentration','Ausgerüstet':'Equipped',
+'Besitz':'Owner','Anzahl':'Quantity','Wert (GM)':'Value (GP)','Gewicht (Pfund)':'Weight (lb)','Beschreibung':'Description',
+'Charakter öffnen':'Open character','Zur Übersicht':'Back to overview','Ersten Charakter erstellen':'Create your first character','Automatisch gespeichert':'Saved automatically',
+'Noch keine Gegenstände vorhanden.':'No items yet.','Noch keine Zauber eingetragen. Du kannst sie oben hinzufügen.':'No spells added yet. Add them above.',
+'Charaktere werden geladen …':'Loading characters …','Wähle zuerst einen Charakter aus.':'Select a character first.',
+'Du kannst Attribute und weitere Eigenschaften direkt im Charakterbogen ergänzen.':'You can add stats and details in the character sheet.',
+'Abenteurer.':'adventurer.'
+})
 export const translate=(language:Language,value:string)=>language==='de'?value:(en[value]??value)
