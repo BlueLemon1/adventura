@@ -2616,7 +2616,6 @@ body {
   }
 }
 
-
 /* Equipment loadout, legible type scale and touch-friendly spell slots */
 body {
   font-size: 15px;
@@ -2806,7 +2805,10 @@ body {
   border-radius: 8px;
   background: rgba(8, 13, 10, 0.8);
   clip-path: polygon(50% 0, 92% 25%, 92% 75%, 50% 100%, 8% 75%, 8% 25%);
-  transition: transform 0.16s ease, filter 0.16s ease, background 0.16s ease;
+  transition:
+    transform 0.16s ease,
+    filter 0.16s ease,
+    background 0.16s ease;
 }
 
 .slot-pip::after {
@@ -2820,7 +2822,11 @@ body {
 
 .slot-pip.is-available::before {
   border-color: color-mix(in srgb, var(--slot-color, #d6b477) 90%, white);
-  background: linear-gradient(145deg, var(--slot-color, #d6b477), color-mix(in srgb, var(--slot-color, #d6b477) 60%, #101714));
+  background: linear-gradient(
+    145deg,
+    var(--slot-color, #d6b477),
+    color-mix(in srgb, var(--slot-color, #d6b477) 60%, #101714)
+  );
   box-shadow: 0 0 14px var(--slot-glow, rgba(214, 180, 119, 0.35));
 }
 
