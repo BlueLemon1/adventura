@@ -458,120 +458,177 @@ Object.assign(en, {
 })
 
 Object.assign(en, {
-  "Raserei": "Frenzy",
-  "Geisteslose Wut": "Mindless Rage",
-  "Vergeltung": "Retaliation",
-  "Einschüchternde Präsenz": "Intimidating Presence",
-  "Zusätzliche Fertigkeiten": "Bonus Proficiencies",
-  "Schneidende Worte": "Cutting Words",
-  "Magische Entdeckungen": "Magical Discoveries",
-  "Unvergleichliche Fertigkeit": "Peerless Skill",
-  "Jünger des Lebens": "Disciple of Life",
-  "Zauber der Lebensdomäne": "Life Domain Spells",
-  "Leben bewahren": "Preserve Life",
-  "Gesegneter Heiler": "Blessed Healer",
-  "Überragende Heilung": "Supreme Healing",
-  "Zauber des Landzirkels": "Circle of the Land Spells",
-  "Hilfe des Landes": "Land’s Aid",
-  "Natürliche Erholung": "Natural Recovery",
-  "Schutz der Natur": "Nature’s Ward",
-  "Naturheiligtum": "Nature’s Sanctuary",
-  "Verbesserter kritischer Treffer": "Improved Critical",
-  "Bemerkenswerter Athlet": "Remarkable Athlete",
-  "Zusätzlicher Kampfstil": "Additional Fighting Style",
-  "Heroischer Krieger": "Heroic Warrior",
-  "Überlegener kritischer Treffer": "Superior Critical",
-  "Überlebenskünstler": "Survivor",
-  "Technik der offenen Hand": "Open Hand Technique",
-  "Ganzheit des Körpers": "Wholeness of Body",
-  "Fließender Schritt": "Fleet Step",
-  "Zitternde Handfläche": "Quivering Palm",
-  "Zauber des Schwurs der Hingabe": "Oath of Devotion Spells",
-  "Heilige Waffe": "Sacred Weapon",
-  "Aura der Hingabe": "Aura of Devotion",
-  "Schützendes Niederstrecken": "Smite of Protection",
-  "Heiliger Nimbus": "Holy Nimbus",
-  "Jägerkunde": "Hunter’s Lore",
-  "Jägerbeute": "Hunter’s Prey",
-  "Defensive Taktiken": "Defensive Tactics",
-  "Überlegene Jägerbeute": "Superior Hunter’s Prey",
-  "Überlegene Verteidigung": "Superior Hunter’s Defense",
-  "Schnelle Hände": "Fast Hands",
-  "Arbeit in luftiger Höhe": "Second-Story Work",
-  "Meisterlicher Schleicher": "Supreme Sneak",
-  "Magische Gegenstände benutzen": "Use Magic Device",
-  "Diebesreflexe": "Thief’s Reflexes",
-  "Drakonische Widerstandskraft": "Draconic Resilience",
-  "Drakonische Zauber": "Draconic Spells",
-  "Elementare Affinität": "Elemental Affinity",
-  "Drachenflügel": "Dragon Wings",
-  "Drachengefährte": "Dragon Companion",
-  "Segnung des Dunklen": "Dark One’s Blessing",
-  "Zauber des Unholds": "Fiend Spells",
-  "Dunkler eigener Glücksfall": "Dark One’s Own Luck",
-  "Unholdresilienz": "Fiendish Resilience",
-  "Durch die Hölle schicken": "Hurl Through Hell",
-  "Hervorrufungsexperte": "Evocation Savant",
-  "Kraftvoller Zaubertrick": "Potent Cantrip",
-  "Zauber formen": "Sculpt Spells",
-  "Ermächtigte Hervorrufung": "Empowered Evocation",
-  "Überladung": "Overchannel",
-  "Wenn du während deines Kampfrauschs Rücksichtsloser Angriff nutzt, verursacht dein erster Treffer mit einem Stärke-Angriff zusätzlichen Schaden.": "While raging, using Reckless Attack lets your first hit with a Strength-based attack deal extra damage.",
-  "Während des Kampfrauschs bist du immun gegen Bezaubert und Verängstigt; bestehende Zustände enden beim Beginn des Kampfrauschs.": "While raging, you are immune to Charmed and Frightened; either condition ends when you enter your Rage.",
-  "Wenn dich eine Kreatur innerhalb von 1,5 Metern verletzt, kannst du als Reaktion einen Nahkampfangriff ausführen.": "When a creature within 5 feet damages you, you can use your Reaction to make a melee attack.",
-  "Du kannst Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht testen lassen.": "You can force nearby creatures to make a Wisdom save or become Frightened.",
-  "Du erhältst Übung in drei Fertigkeiten deiner Wahl.": "You gain proficiency in three skills of your choice.",
-  "Du kannst eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um einen Wurf oder Schadenswurf eines sichtbaren Wesens zu verringern.": "You can spend a Reaction and Bardic Inspiration to reduce a visible creature’s roll or damage roll.",
-  "Du lernst zwei zusätzliche Zauber von der Kleriker-, Druiden- oder Magier-Zauberliste.": "You learn two additional spells from the Cleric, Druid, or Wizard spell list.",
-  "Wenn du einen Attributswurf ablegst, kannst du eine Nutzung deiner Bardeninspiration einsetzen und den Würfel zum Ergebnis addieren.": "When you make an ability check, you can expend Bardic Inspiration and add the die to the result.",
-  "Heilzauber, die du mit einem Zauberplatz wirkst, stellen zusätzliche Trefferpunkte in Höhe von 2 plus Zauberplatzgrad wieder her.": "When a spell slot restores Hit Points, the target regains extra Hit Points equal to 2 plus the slot’s level.",
-  "Die Zauber deiner Domäne sind abhängig von deiner Klerikerstufe stets vorbereitet.": "You always have your domain spells prepared at the listed Cleric levels.",
-  "Du kannst Kanal göttlicher Energie einsetzen, um Trefferpunkte auf verwundete Kreaturen in deiner Nähe zu verteilen.": "You can expend Channel Divinity to distribute healing among nearby Bloodied creatures.",
-  "Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.": "When you heal others with a spell, you also regain Hit Points.",
-  "Bei Heilwürfeln deiner Zauber verwendest du statt des Würfelwurfs den höchstmöglichen Wert.": "For your spell’s healing dice, use the maximum result instead of rolling.",
-  "Nach einer langen Rast wählst du eine Landschaft und hast deren passende Zirkelzauber vorbereitet.": "After a Long Rest, choose a land type and prepare its Circle spells.",
-  "Du kannst eine Nutzung deiner Tiergestalt ausgeben, um in einem Bereich nekrotischen Schaden zu verursachen und eine Kreatur zu heilen.": "You can expend Wild Shape to deal Necrotic damage in an area and heal one creature.",
-  "Du kannst nach einer kurzen Rast Zauberplätze zurückgewinnen und erhältst zusätzliche Vorteile für deine Landzauber.": "You regain spell slots after a Short Rest and gain additional benefits for your land spells.",
-  "Du bist gegen bestimmte Zustände und Umwelteinflüsse geschützt, abhängig von deiner gewählten Landschaft.": "Your chosen land grants protection against certain conditions and environmental effects.",
-  "Natürliche Kreaturen können dich nicht ohne Weiteres angreifen oder sich dir feindlich nähern.": "Natural creatures are hindered from attacking or approaching you hostilely.",
-  "Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.": "Your weapon attacks score a Critical Hit on a d20 roll of 19 or 20.",
-  "Du erhältst Vorteile auf bestimmte Initiative- und körperliche Attributswürfe.": "You gain benefits to certain Initiative and physical ability checks.",
-  "Du erhältst ein weiteres Talent für Kampfstil.": "You gain another Fighting Style feat.",
-  "Zu Beginn deines Zuges kannst du Heldenmut erhalten, wenn du keinen hast.": "At the start of your turn, you can gain Heroic Inspiration if you don’t have it.",
-  "Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.": "Your weapon attacks score a Critical Hit on a d20 roll of 18 to 20.",
-  "Zu Beginn deines Zuges kannst du Trefferpunkte zurückgewinnen, wenn du angeschlagen bist.": "At the start of your turn, you can regain Hit Points if you are Bloodied.",
-  "Treffer aus Hagel der Schläge können Gelegenheitsangriffe verhindern, Ziele wegstoßen oder zu Fall bringen.": "Flurry of Blows hits can prevent Opportunity Attacks, push targets, or knock them Prone.",
-  "Du kannst als Bonusaktion Trefferpunkte in Höhe deines Kampfkunstwürfels plus Weisheitsmodifikator zurückgewinnen.": "As a Bonus Action, regain Hit Points equal to your Martial Arts die plus your Wisdom modifier.",
-  "Nach einer anderen Bonusaktion kannst du zusätzlich Schritt des Windes einsetzen.": "After another Bonus Action, you can also use Step of the Wind.",
-  "Du kannst Fokus-Punkte einsetzen, um tödliche Schwingungen in einem getroffenen Ziel zu hinterlassen.": "You can spend Focus Points to set up lethal vibrations in a creature you hit.",
-  "Die Zauber deines Schwurs sind abhängig von deiner Paladinstufe stets vorbereitet.": "You always have your Oath spells prepared at the listed Paladin levels.",
-  "Du kannst Kanal göttlicher Energie einsetzen, um eine Nahkampfwaffe vorübergehend magisch zu stärken.": "You can expend Channel Divinity to temporarily empower a melee weapon.",
-  "Du und Verbündete in deiner Schutzaura seid gegen den Zustand Bezaubert immun.": "You and allies in your Aura of Protection are immune to Charmed.",
-  "Dein Göttliches Niederstrecken gewährt dir und Verbündeten in deiner Aura vorübergehend halbe Deckung.": "Your Divine Smite grants you and allies in your aura Half Cover until your next turn.",
-  "Du strahlst eine heilige Aura aus, die Licht spendet und Feinde in deiner Nähe schwächt.": "You radiate a holy aura that sheds light and weakens nearby foes.",
-  "Während ein Ziel von deinem Mal des Jägers betroffen ist, erkennst du seine Schadensimmunitäten, Resistenzen und Anfälligkeiten.": "While a creature is marked by Hunter’s Mark, you learn its damage Immunities, Resistances, and Vulnerabilities.",
-  "Du wählst eine Jagdtechnik, etwa zusätzlichen Schaden gegen bereits verwundete Ziele.": "Choose a hunting technique, such as extra damage against already wounded targets.",
-  "Du erhältst eine defensive Jagdtechnik gegen Angriffe oder Flächengefahren.": "You gain a defensive hunting technique against attacks or area effects.",
-  "Deine Jagdtechnik wird verbessert und kann zusätzliche Ziele oder Effekte betreffen.": "Your Hunter’s Prey technique improves with additional effects.",
-  "Du erhältst eine weitere defensive Jagdtechnik.": "You gain another defensive hunting technique.",
-  "Du kannst zusätzlich bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.": "You can take certain object and skill actions as a Bonus Action.",
-  "Klettern kostet dich keine zusätzliche Bewegung und Sprünge profitieren von deiner Geschicklichkeit.": "Climbing costs no extra movement, and your jumps benefit from Dexterity.",
-  "Du kannst dich unter bestimmten Bedingungen mit einer Bonusaktion verstecken.": "You can Hide as a Bonus Action under certain conditions.",
-  "Du kannst Schriftrollen und magische Gegenstände vielseitiger einsetzen.": "You can use spell scrolls and magic items more flexibly.",
-  "Du erhältst zu Beginn eines Kampfes einen zusätzlichen Zug unter bestimmten Voraussetzungen.": "You can take an additional turn at the start of combat under certain conditions.",
-  "Dein Trefferpunktemaximum steigt; ohne Rüstung berechnet sich deine Grund-Rüstungsklasse aus Geschicklichkeit und Charisma.": "Your Hit Point maximum increases; while unarmored, your base AC equals 10 plus Dexterity and Charisma modifiers.",
-  "Die Zauber deiner drakonischen Abstammung sind abhängig von deiner Zaubererstufe stets vorbereitet.": "You always have your Draconic spells prepared at the listed Sorcerer levels.",
-  "Du erhältst Resistenz gegen einen gewählten Drachenschadenstyp und kannst passenden Zauberschaden verstärken.": "Gain Resistance to a chosen dragon damage type and add Charisma to a matching spell damage roll.",
-  "Du kannst für eine begrenzte Zeit Flügel manifestieren und eine Flugbewegungsrate erhalten.": "Manifest wings for a limited time and gain a Fly Speed.",
-  "Du kannst einen drakonischen Geist als Gefährten beschwören.": "You can summon a Draconic spirit as a companion.",
-  "Wenn ein Feind in deiner Nähe auf 0 Trefferpunkte sinkt, erhältst du temporäre Trefferpunkte.": "When an enemy nearby drops to 0 Hit Points, you gain Temporary Hit Points.",
-  "Die Zauber deines Patrons sind abhängig von deiner Hexenmeisterstufe stets vorbereitet.": "You always have your Patron spells prepared at the listed Warlock levels.",
-  "Du kannst einen Attributswurf oder Rettungswurf mit einem zusätzlichen W10 verbessern.": "You can add a d10 to an ability check or saving throw.",
-  "Nach einer Rast wählst du einen Schadensarttyp, gegen den du resistent bist.": "After a rest, choose a damage type against which you have Resistance.",
-  "Einmal pro Zug kannst du ein getroffenes Ziel in die Unteren Ebenen schleudern und ihm psychischen Schaden zufügen.": "Once per turn, you can send a creature you hit through the Lower Planes and deal Psychic damage.",
-  "Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.": "Copying Evocation spells into your spellbook takes less time and gold.",
-  "Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.": "Your damaging cantrips still deal damage on a successful saving throw.",
-  "Du kannst sichere Bereiche für Verbündete in deinen Hervorrufungszaubern schaffen.": "You can create safe spaces for allies in your Evocation spells.",
-  "Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.": "You add your Intelligence modifier to one damage roll of your Evocation spells.",
-  "Du kannst einen Zauber verstärken, um maximalen Schaden zu verursachen, riskierst dabei aber Rückschlag.": "You can overchannel a spell for maximum damage, risking a harmful backlash.",
+  Raserei: 'Frenzy',
+  'Geisteslose Wut': 'Mindless Rage',
+  Vergeltung: 'Retaliation',
+  'Einschüchternde Präsenz': 'Intimidating Presence',
+  'Zusätzliche Fertigkeiten': 'Bonus Proficiencies',
+  'Schneidende Worte': 'Cutting Words',
+  'Magische Entdeckungen': 'Magical Discoveries',
+  'Unvergleichliche Fertigkeit': 'Peerless Skill',
+  'Jünger des Lebens': 'Disciple of Life',
+  'Zauber der Lebensdomäne': 'Life Domain Spells',
+  'Leben bewahren': 'Preserve Life',
+  'Gesegneter Heiler': 'Blessed Healer',
+  'Überragende Heilung': 'Supreme Healing',
+  'Zauber des Landzirkels': 'Circle of the Land Spells',
+  'Hilfe des Landes': 'Land’s Aid',
+  'Natürliche Erholung': 'Natural Recovery',
+  'Schutz der Natur': 'Nature’s Ward',
+  Naturheiligtum: 'Nature’s Sanctuary',
+  'Verbesserter kritischer Treffer': 'Improved Critical',
+  'Bemerkenswerter Athlet': 'Remarkable Athlete',
+  'Zusätzlicher Kampfstil': 'Additional Fighting Style',
+  'Heroischer Krieger': 'Heroic Warrior',
+  'Überlegener kritischer Treffer': 'Superior Critical',
+  Überlebenskünstler: 'Survivor',
+  'Technik der offenen Hand': 'Open Hand Technique',
+  'Ganzheit des Körpers': 'Wholeness of Body',
+  'Fließender Schritt': 'Fleet Step',
+  'Zitternde Handfläche': 'Quivering Palm',
+  'Zauber des Schwurs der Hingabe': 'Oath of Devotion Spells',
+  'Heilige Waffe': 'Sacred Weapon',
+  'Aura der Hingabe': 'Aura of Devotion',
+  'Schützendes Niederstrecken': 'Smite of Protection',
+  'Heiliger Nimbus': 'Holy Nimbus',
+  Jägerkunde: 'Hunter’s Lore',
+  Jägerbeute: 'Hunter’s Prey',
+  'Defensive Taktiken': 'Defensive Tactics',
+  'Überlegene Jägerbeute': 'Superior Hunter’s Prey',
+  'Überlegene Verteidigung': 'Superior Hunter’s Defense',
+  'Schnelle Hände': 'Fast Hands',
+  'Arbeit in luftiger Höhe': 'Second-Story Work',
+  'Meisterlicher Schleicher': 'Supreme Sneak',
+  'Magische Gegenstände benutzen': 'Use Magic Device',
+  Diebesreflexe: 'Thief’s Reflexes',
+  'Drakonische Widerstandskraft': 'Draconic Resilience',
+  'Drakonische Zauber': 'Draconic Spells',
+  'Elementare Affinität': 'Elemental Affinity',
+  Drachenflügel: 'Dragon Wings',
+  Drachengefährte: 'Dragon Companion',
+  'Segnung des Dunklen': 'Dark One’s Blessing',
+  'Zauber des Unholds': 'Fiend Spells',
+  'Dunkler eigener Glücksfall': 'Dark One’s Own Luck',
+  Unholdresilienz: 'Fiendish Resilience',
+  'Durch die Hölle schicken': 'Hurl Through Hell',
+  Hervorrufungsexperte: 'Evocation Savant',
+  'Kraftvoller Zaubertrick': 'Potent Cantrip',
+  'Zauber formen': 'Sculpt Spells',
+  'Ermächtigte Hervorrufung': 'Empowered Evocation',
+  Überladung: 'Overchannel',
+  'Wenn du während deines Kampfrauschs Rücksichtsloser Angriff nutzt, verursacht dein erster Treffer mit einem Stärke-Angriff zusätzlichen Schaden.':
+    'While raging, using Reckless Attack lets your first hit with a Strength-based attack deal extra damage.',
+  'Während des Kampfrauschs bist du immun gegen Bezaubert und Verängstigt; bestehende Zustände enden beim Beginn des Kampfrauschs.':
+    'While raging, you are immune to Charmed and Frightened; either condition ends when you enter your Rage.',
+  'Wenn dich eine Kreatur innerhalb von 1,5 Metern verletzt, kannst du als Reaktion einen Nahkampfangriff ausführen.':
+    'When a creature within 5 feet damages you, you can use your Reaction to make a melee attack.',
+  'Du kannst Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht testen lassen.':
+    'You can force nearby creatures to make a Wisdom save or become Frightened.',
+  'Du erhältst Übung in drei Fertigkeiten deiner Wahl.':
+    'You gain proficiency in three skills of your choice.',
+  'Du kannst eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um einen Wurf oder Schadenswurf eines sichtbaren Wesens zu verringern.':
+    'You can spend a Reaction and Bardic Inspiration to reduce a visible creature’s roll or damage roll.',
+  'Du lernst zwei zusätzliche Zauber von der Kleriker-, Druiden- oder Magier-Zauberliste.':
+    'You learn two additional spells from the Cleric, Druid, or Wizard spell list.',
+  'Wenn du einen Attributswurf ablegst, kannst du eine Nutzung deiner Bardeninspiration einsetzen und den Würfel zum Ergebnis addieren.':
+    'When you make an ability check, you can expend Bardic Inspiration and add the die to the result.',
+  'Heilzauber, die du mit einem Zauberplatz wirkst, stellen zusätzliche Trefferpunkte in Höhe von 2 plus Zauberplatzgrad wieder her.':
+    'When a spell slot restores Hit Points, the target regains extra Hit Points equal to 2 plus the slot’s level.',
+  'Die Zauber deiner Domäne sind abhängig von deiner Klerikerstufe stets vorbereitet.':
+    'You always have your domain spells prepared at the listed Cleric levels.',
+  'Du kannst Kanal göttlicher Energie einsetzen, um Trefferpunkte auf verwundete Kreaturen in deiner Nähe zu verteilen.':
+    'You can expend Channel Divinity to distribute healing among nearby Bloodied creatures.',
+  'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.':
+    'When you heal others with a spell, you also regain Hit Points.',
+  'Bei Heilwürfeln deiner Zauber verwendest du statt des Würfelwurfs den höchstmöglichen Wert.':
+    'For your spell’s healing dice, use the maximum result instead of rolling.',
+  'Nach einer langen Rast wählst du eine Landschaft und hast deren passende Zirkelzauber vorbereitet.':
+    'After a Long Rest, choose a land type and prepare its Circle spells.',
+  'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um in einem Bereich nekrotischen Schaden zu verursachen und eine Kreatur zu heilen.':
+    'You can expend Wild Shape to deal Necrotic damage in an area and heal one creature.',
+  'Du kannst nach einer kurzen Rast Zauberplätze zurückgewinnen und erhältst zusätzliche Vorteile für deine Landzauber.':
+    'You regain spell slots after a Short Rest and gain additional benefits for your land spells.',
+  'Du bist gegen bestimmte Zustände und Umwelteinflüsse geschützt, abhängig von deiner gewählten Landschaft.':
+    'Your chosen land grants protection against certain conditions and environmental effects.',
+  'Natürliche Kreaturen können dich nicht ohne Weiteres angreifen oder sich dir feindlich nähern.':
+    'Natural creatures are hindered from attacking or approaching you hostilely.',
+  'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.':
+    'Your weapon attacks score a Critical Hit on a d20 roll of 19 or 20.',
+  'Du erhältst Vorteile auf bestimmte Initiative- und körperliche Attributswürfe.':
+    'You gain benefits to certain Initiative and physical ability checks.',
+  'Du erhältst ein weiteres Talent für Kampfstil.': 'You gain another Fighting Style feat.',
+  'Zu Beginn deines Zuges kannst du Heldenmut erhalten, wenn du keinen hast.':
+    'At the start of your turn, you can gain Heroic Inspiration if you don’t have it.',
+  'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.':
+    'Your weapon attacks score a Critical Hit on a d20 roll of 18 to 20.',
+  'Zu Beginn deines Zuges kannst du Trefferpunkte zurückgewinnen, wenn du angeschlagen bist.':
+    'At the start of your turn, you can regain Hit Points if you are Bloodied.',
+  'Treffer aus Hagel der Schläge können Gelegenheitsangriffe verhindern, Ziele wegstoßen oder zu Fall bringen.':
+    'Flurry of Blows hits can prevent Opportunity Attacks, push targets, or knock them Prone.',
+  'Du kannst als Bonusaktion Trefferpunkte in Höhe deines Kampfkunstwürfels plus Weisheitsmodifikator zurückgewinnen.':
+    'As a Bonus Action, regain Hit Points equal to your Martial Arts die plus your Wisdom modifier.',
+  'Nach einer anderen Bonusaktion kannst du zusätzlich Schritt des Windes einsetzen.':
+    'After another Bonus Action, you can also use Step of the Wind.',
+  'Du kannst Fokus-Punkte einsetzen, um tödliche Schwingungen in einem getroffenen Ziel zu hinterlassen.':
+    'You can spend Focus Points to set up lethal vibrations in a creature you hit.',
+  'Die Zauber deines Schwurs sind abhängig von deiner Paladinstufe stets vorbereitet.':
+    'You always have your Oath spells prepared at the listed Paladin levels.',
+  'Du kannst Kanal göttlicher Energie einsetzen, um eine Nahkampfwaffe vorübergehend magisch zu stärken.':
+    'You can expend Channel Divinity to temporarily empower a melee weapon.',
+  'Du und Verbündete in deiner Schutzaura seid gegen den Zustand Bezaubert immun.':
+    'You and allies in your Aura of Protection are immune to Charmed.',
+  'Dein Göttliches Niederstrecken gewährt dir und Verbündeten in deiner Aura vorübergehend halbe Deckung.':
+    'Your Divine Smite grants you and allies in your aura Half Cover until your next turn.',
+  'Du strahlst eine heilige Aura aus, die Licht spendet und Feinde in deiner Nähe schwächt.':
+    'You radiate a holy aura that sheds light and weakens nearby foes.',
+  'Während ein Ziel von deinem Mal des Jägers betroffen ist, erkennst du seine Schadensimmunitäten, Resistenzen und Anfälligkeiten.':
+    'While a creature is marked by Hunter’s Mark, you learn its damage Immunities, Resistances, and Vulnerabilities.',
+  'Du wählst eine Jagdtechnik, etwa zusätzlichen Schaden gegen bereits verwundete Ziele.':
+    'Choose a hunting technique, such as extra damage against already wounded targets.',
+  'Du erhältst eine defensive Jagdtechnik gegen Angriffe oder Flächengefahren.':
+    'You gain a defensive hunting technique against attacks or area effects.',
+  'Deine Jagdtechnik wird verbessert und kann zusätzliche Ziele oder Effekte betreffen.':
+    'Your Hunter’s Prey technique improves with additional effects.',
+  'Du erhältst eine weitere defensive Jagdtechnik.':
+    'You gain another defensive hunting technique.',
+  'Du kannst zusätzlich bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.':
+    'You can take certain object and skill actions as a Bonus Action.',
+  'Klettern kostet dich keine zusätzliche Bewegung und Sprünge profitieren von deiner Geschicklichkeit.':
+    'Climbing costs no extra movement, and your jumps benefit from Dexterity.',
+  'Du kannst dich unter bestimmten Bedingungen mit einer Bonusaktion verstecken.':
+    'You can Hide as a Bonus Action under certain conditions.',
+  'Du kannst Schriftrollen und magische Gegenstände vielseitiger einsetzen.':
+    'You can use spell scrolls and magic items more flexibly.',
+  'Du erhältst zu Beginn eines Kampfes einen zusätzlichen Zug unter bestimmten Voraussetzungen.':
+    'You can take an additional turn at the start of combat under certain conditions.',
+  'Dein Trefferpunktemaximum steigt; ohne Rüstung berechnet sich deine Grund-Rüstungsklasse aus Geschicklichkeit und Charisma.':
+    'Your Hit Point maximum increases; while unarmored, your base AC equals 10 plus Dexterity and Charisma modifiers.',
+  'Die Zauber deiner drakonischen Abstammung sind abhängig von deiner Zaubererstufe stets vorbereitet.':
+    'You always have your Draconic spells prepared at the listed Sorcerer levels.',
+  'Du erhältst Resistenz gegen einen gewählten Drachenschadenstyp und kannst passenden Zauberschaden verstärken.':
+    'Gain Resistance to a chosen dragon damage type and add Charisma to a matching spell damage roll.',
+  'Du kannst für eine begrenzte Zeit Flügel manifestieren und eine Flugbewegungsrate erhalten.':
+    'Manifest wings for a limited time and gain a Fly Speed.',
+  'Du kannst einen drakonischen Geist als Gefährten beschwören.':
+    'You can summon a Draconic spirit as a companion.',
+  'Wenn ein Feind in deiner Nähe auf 0 Trefferpunkte sinkt, erhältst du temporäre Trefferpunkte.':
+    'When an enemy nearby drops to 0 Hit Points, you gain Temporary Hit Points.',
+  'Die Zauber deines Patrons sind abhängig von deiner Hexenmeisterstufe stets vorbereitet.':
+    'You always have your Patron spells prepared at the listed Warlock levels.',
+  'Du kannst einen Attributswurf oder Rettungswurf mit einem zusätzlichen W10 verbessern.':
+    'You can add a d10 to an ability check or saving throw.',
+  'Nach einer Rast wählst du einen Schadensarttyp, gegen den du resistent bist.':
+    'After a rest, choose a damage type against which you have Resistance.',
+  'Einmal pro Zug kannst du ein getroffenes Ziel in die Unteren Ebenen schleudern und ihm psychischen Schaden zufügen.':
+    'Once per turn, you can send a creature you hit through the Lower Planes and deal Psychic damage.',
+  'Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.':
+    'Copying Evocation spells into your spellbook takes less time and gold.',
+  'Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.':
+    'Your damaging cantrips still deal damage on a successful saving throw.',
+  'Du kannst sichere Bereiche für Verbündete in deinen Hervorrufungszaubern schaffen.':
+    'You can create safe spaces for allies in your Evocation spells.',
+  'Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.':
+    'You add your Intelligence modifier to one damage roll of your Evocation spells.',
+  'Du kannst einen Zauber verstärken, um maximalen Schaden zu verursachen, riskierst dabei aber Rückschlag.':
+    'You can overchannel a spell for maximum damage, risking a harmful backlash.',
 })
