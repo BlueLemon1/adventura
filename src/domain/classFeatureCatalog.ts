@@ -1,7 +1,6 @@
 import type {
   ContentLocale,
   ContentProvenance,
-  LocalizedContentText,
 } from './contentSources'
 import type { Dnd5eRuleset } from './rules'
 
