@@ -25,6 +25,7 @@ export interface AutomaticClassFeature {
   resourceId?: string
   resourceCost?: number
   spellbookSpellId?: string
+  spellbookSpellIds?: string[]
   unlocked: boolean
 }
 
@@ -2315,12 +2316,13 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
       })),
     )
   }
-  const FEATURE_SPELLS_IN_SPELLBOOK: Record<string, string> = {
-    'Wild Companion': 'srd-2024-find-familiar',
-    'Faithful Steed': 'srd-2024-find-steed',
-    "Paladin's Smite": 'srd-2024-divine-smite',
-    'Dragon Companion': 'srd-2024-summon-dragon',
-    'Favored Enemy': 'srd-2024-hunters-mark',
+  const FEATURE_SPELLS_IN_SPELLBOOK: Record<string, string[]> = {
+    'Wild Companion': ['srd-2024-find-familiar'],
+    'Faithful Steed': ['srd-2024-find-steed'],
+    "Paladin's Smite": ['srd-2024-divine-smite'],
+    'Dragon Companion': ['srd-2024-summon-dragon'],
+    'Favored Enemy': ['srd-2024-hunters-mark'],
+    'Words of Creation': ['srd-2024-power-word-heal', 'srd-2024-power-word-kill'],
   }
   return result
     .sort((left, right) => left.level - right.level)
@@ -2443,7 +2445,7 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
       ...feature,
       localizedName: FEATURE_LABELS_DE[feature.name] ?? feature.name,
       name: feature.name,
-      spellbookSpellId: is2024 ? FEATURE_SPELLS_IN_SPELLBOOK[feature.name] : undefined,
+      spellbookSpellIds: is2024 ? FEATURE_SPELLS_IN_SPELLBOOK[feature.name] : undefined,
     }))
 }
 
@@ -2487,6 +2489,7 @@ function getImportedClassFeatures(
         resourceId: metadata?.resourceId,
         resourceCost: metadata?.resourceCost,
         spellbookSpellId: metadata?.spellbookSpellId,
+        spellbookSpellIds: metadata?.spellbookSpellIds,
         unlocked: feature.level <= character.level,
       }
     })
@@ -2507,7 +2510,13 @@ export function getSpellbookFeatureSpells(
   character: Character,
   locale: ContentLocale = 'de',
 ): AutomaticClassFeature[] {
-  return getAutomaticClassFeatures(character, locale).filter(
-    (feature) => feature.unlocked && feature.spellbookSpellId,
-  )
+  return getAutomaticClassFeatures(character, locale).flatMap((feature) => {
+    if (!feature.unlocked) return []
+    const spellIds = feature.spellbookSpellIds ?? (feature.spellbookSpellId ? [feature.spellbookSpellId] : [])
+    return spellIds.map((spellbookSpellId) => ({
+      ...feature,
+      id: `${feature.id}-${spellbookSpellId}`,
+      spellbookSpellId,
+    }))
+  })
 }
