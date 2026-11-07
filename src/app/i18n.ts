@@ -1476,7 +1476,6 @@ Object.assign(en, {
     'You always have Divine Smite prepared and can cast it once without expending a spell slot. You regain this ability after a Long Rest.',
 })
 
-
 Object.assign(en, {
   'Du kannst Tiergestalt unbegrenzt einsetzen und bestimmte Komponenten deiner Druidenzauber auch in Tiergestalt ignorieren.':
     'You can use Wild Shape an unlimited number of times and ignore certain components of your Druid spells while in Beast form.',
@@ -1484,10 +1483,8 @@ Object.assign(en, {
     'You can expend 3 Focus Points to gain Resistance to almost all damage types for 1 minute.',
   'Deine Geschicklichkeit und Weisheit steigen jeweils um 4 bis zu einem Maximum von 25.':
     'Your Dexterity and Wisdom scores each increase by 4, to a maximum of 25.',
-  'Du bist immun gegen Krankheiten und Gifte.':
-    'You are immune to disease and poison.',
-  'Du bist immun gegen Krankheiten.':
-    'You are immune to disease.',
+  'Du bist immun gegen Krankheiten und Gifte.': 'You are immune to disease and poison.',
+  'Du bist immun gegen Krankheiten.': 'You are immune to disease.',
   'Du kannst die Anwesenheit von Kreaturen wahrnehmen, auch wenn du sie nicht sehen kannst.':
     'You can sense the presence of creatures even when you cannot see them.',
   'Du kennst eine geheime Mischung aus Dialekt, Code und Zeichen, mit der sich Schurken austauschen.':
@@ -1520,4 +1517,4 @@ Object.assign(en, {
     'You reduce the damage of an attack with your Reaction and can potentially redirect it.',
   'Du kannst einen getroffenen Gegner mit einem Fokus- oder Ki-Punkt zu einem Konstitutionsrettungswurf zwingen.':
     'When you hit a creature, you can expend a Focus or Ki Point to force it to make a Constitution saving throw.',
-});
+})
