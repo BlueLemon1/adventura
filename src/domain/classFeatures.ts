@@ -225,27 +225,32 @@ const ACTIVE_FEATURES: Record<
   },
   Raserei: {
     activation: 'bonusAction',
-    description: 'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.',
+    description:
+      'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.',
   },
   'Bewahrung des Lebens': {
     activation: 'action',
-    description: 'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.',
+    description:
+      'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.',
     resourceId: 'channel-divinity',
   },
   'Ganzheit des Körpers': {
     activation: 'action',
-    description: 'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.',
+    description:
+      'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.',
     resourceId: 'wholeness-of-body',
   },
   'Hund des Unheils': {
     activation: 'bonusAction',
-    description: 'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.',
+    description:
+      'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.',
     resourceId: 'sorcery-points',
     resourceCost: 3,
   },
   Drachenpräsenz: {
     activation: 'action',
-    description: 'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.',
+    description:
+      'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.',
     resourceId: 'sorcery-points',
     resourceCost: 5,
   },
@@ -255,17 +260,20 @@ const ACTIVE_FEATURES: Record<
   },
   'Göttliches Eingreifen': {
     activation: 'action',
-    description: 'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.',
+    description:
+      'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.',
     resourceId: 'divine-intervention',
   },
   'Bevorzugter Feind': {
     activation: 'bonusAction',
-    description: 'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.',
+    description:
+      'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.',
     resourceId: 'favored-enemy',
   },
   'Dunkler eigener Glücksfall': {
     activation: 'special',
-    description: 'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
+    description:
+      'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
     resourceId: 'dark-ones-own-luck',
   },
 }
@@ -351,7 +359,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'short-or-long',
     )
   if (classId === 'monk' && level >= 6 && subclass === 'openhand')
-    add('wholeness-of-body', 'Ganzheit des Körpers', ruleset === '2024' ? Math.max(1, abilityModifier(character.abilities?.wis)) : 1, 'long')
+    add(
+      'wholeness-of-body',
+      'Ganzheit des Körpers',
+      ruleset === '2024' ? Math.max(1, abilityModifier(character.abilities?.wis)) : 1,
+      'long',
+    )
   if (classId === 'paladin') {
     add('lay-on-hands', 'Handauflegen', 5 * level, 'long')
     if (ruleset === '2014')
@@ -1135,7 +1148,8 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       resourceId =
         character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
     }
-    if (feature.name === 'Heilige Waffe' && character.ruleset === '2014') resourceId = 'paladin-channel-divinity'
+    if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
+      resourceId = 'paladin-channel-divinity'
     if (feature.name === 'Handauflegen')
       return {
         ...feature,
@@ -1144,9 +1158,19 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
         resourceId,
       }
     if (feature.name === 'Ganzheit des Körpers')
-      return { ...feature, ...active, activation: character.ruleset === '2024' ? 'bonusAction' : 'action', resourceId: 'wholeness-of-body' }
+      return {
+        ...feature,
+        ...active,
+        activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
+        resourceId: 'wholeness-of-body',
+      }
     if (feature.name === 'Zitternde Handfläche')
-      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points', resourceCost: character.ruleset === '2024' ? 4 : 3 }
+      return {
+        ...feature,
+        ...active,
+        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+        resourceCost: character.ruleset === '2024' ? 4 : 3,
+      }
     return active ? { ...feature, ...active, resourceId } : feature
   })
 }

@@ -772,9 +772,11 @@ Object.assign(en, {
     'When you make an ability check or saving throw, you can add an additional d10 to the result.',
 })
 
-
 Object.assign(en, {
-  'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.': 'While raging, you can make one additional melee attack as a Bonus Action.',
-  'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.': 'As an Action, you regain Hit Points equal to three times your Monk level.',
-  'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.': 'You expend Channel Divinity to distribute healing among nearby wounded creatures.',
-});
+  'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.':
+    'While raging, you can make one additional melee attack as a Bonus Action.',
+  'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.':
+    'As an Action, you regain Hit Points equal to three times your Monk level.',
+  'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.':
+    'You expend Channel Divinity to distribute healing among nearby wounded creatures.',
+})
