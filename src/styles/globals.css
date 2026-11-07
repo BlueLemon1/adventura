@@ -3413,7 +3413,6 @@ textarea {
   }
 }
 
-
 /* Mobile navigation: keep only primary destinations; page tabs handle sub-navigation. */
 @media (max-width: 640px) {
   .nav-list > .nav-link,
