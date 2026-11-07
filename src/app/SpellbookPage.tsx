@@ -117,7 +117,12 @@ export function SpellbookPage({
         onChange={onViewChange}
         ariaLabel={t('Zauberbuchansichten')}
         items={[
-          { value: 'character', label: t('Meine Zauber'), icon: <Plus size={15} />, count: knownSpells.length },
+          {
+            value: 'character',
+            label: t('Meine Zauber'),
+            icon: <Plus size={15} />,
+            count: knownSpells.length,
+          },
           { value: 'catalog', label: t('SRD & hinzufügen'), icon: <Sparkles size={15} /> },
         ]}
       />
