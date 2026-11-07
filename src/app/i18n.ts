@@ -3,6 +3,33 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'Klassenressourcen': 'Class resources',
+  'AUTOMATISCH BERECHNET': 'CALCULATED AUTOMATICALLY',
+  'Ressource verringern': 'Decrease resource',
+  'Ressource erhöhen': 'Increase resource',
+  'Die Höchstwerte richten sich nach Klasse, Stufe und gewähltem Regelwerk. Der aktuelle Verbrauch wird separat gespeichert.': 'Maximum values depend on class, level and selected ruleset. Current usage is saved separately.',
+  'Automatische Klassenmerkmale': 'Automatic class features',
+  'DURCH KLASSE / UNTERKLASSE': 'FROM CLASS / SUBCLASS',
+  'Unterklasse': 'Subclass',
+  'Automatisch': 'Automatic',
+  'Diese Merkmale werden aus Klasse, Unterklasse und Stufe abgeleitet. Sie müssen nicht manuell eingetragen werden.': 'These features are derived from class, subclass and level. You do not need to enter them manually.',
+  'Kampfrausch': 'Rage',
+  'Bardeninspiration': 'Bardic Inspiration',
+  'Kanal göttlicher Energie': 'Channel Divinity',
+  'Tiergestalt': 'Wild Shape',
+  'Ki-Punkte': 'Ki Points',
+  'Fokus-Punkte': 'Focus Points',
+  'Metamagische Optionen': 'Sorcery Points',
+  'Zauberpunkte': 'Sorcery Points',
+  'Göttliches Niederstrecken': 'Divine Smite',
+  'Zweites Aufatmen': 'Second Wind',
+  'Arkane Erholung': 'Arcane Recovery',
+  'Erholung bei kurzer oder langer Rast': 'Recharges on a short or long rest',
+  'Erholung bei langer Rast': 'Recharges on a long rest',
+  'Erholung bei kurzer Rast': 'Recharges on a short rest',
+  'Stufe': 'Level',
+  'Klasse': 'Class',
+
   'Die deutsche Beschreibung aus dem SRD 5.1 wird ergänzt. Es wird kein Text aus dem SRD 5.2.1 oder eine automatische Übersetzung verwendet.':
     'The German SRD 5.1 description is being added. No text from SRD 5.2.1 or machine translation is used.',
   'Installation: Öffne das Browsermenü. In Chrome oder Edge wählst du „App installieren“ oder „Seite als App installieren“. Auf iPhone/iPad: Teilen → Zum Home-Bildschirm.':

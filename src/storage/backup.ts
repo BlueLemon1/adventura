@@ -48,6 +48,7 @@ const characterSchema = z.object({
       current: z.number().int().min(0).max(4),
     })
     .optional(),
+  classResources: z.array(z.object({ id: z.string().min(1), current: z.number().int().min(0).max(1000) })).optional(),
   experiencePoints: z.number().int().min(0).optional(),
   inspiration: z.boolean().optional(),
   deathSaves: z

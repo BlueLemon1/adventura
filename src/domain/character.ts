@@ -40,6 +40,11 @@ export interface PactMagic {
   current: number
 }
 
+export interface ClassResource {
+  id: string
+  current: number
+}
+
 export interface Character {
   id: string
   name: string
@@ -63,6 +68,7 @@ export interface Character {
   hitDice?: string
   spellSlots?: SpellSlot[]
   pactMagic?: PactMagic
+  classResources?: ClassResource[]
   experiencePoints?: number
   inspiration?: boolean
   deathSaves?: { successes: number; failures: number }
