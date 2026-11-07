@@ -51,6 +51,8 @@ The System Reference Documents (SRDs) are the source of truth for all official r
 
 - The source registry and provenance types live in `src/domain/contentSources.ts`. It currently registers only the two official SRD releases; additional sources are added only after their provenance and usage rights have been checked.
 
+- Normalized class-feature records are modeled in `src/domain/classFeatureCatalog.ts`. Each record carries its ruleset, exact content source, class/subclass origin, unlock level, canonical localized names and descriptions, and any explicitly granted spell IDs. The shared validator rejects duplicate IDs, cross-ruleset/source contamination, invalid levels, and incomplete origin metadata. Missing locale text remains missing rather than falling back to another language.
+
 - Keep source snapshots separate from normalized application data.
 - Normalize source data through repeatable scripts; do not hand-edit generated SRD datasets.
 - Preserve source document, version, language, license, source URL, and import date in the data manifest.
