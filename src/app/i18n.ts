@@ -803,8 +803,7 @@ Object.assign(en, {
 
 Object.assign(en, { Merkmalsbeschreibung: 'Feature description' })
 
-
 Object.assign(en, {
   'kurze Rast (+1) / lange Rast (alle)': 'Short Rest (+1) / Long Rest (all)',
   'kurze oder lange Rast': 'Short or Long Rest',
-});
+})
