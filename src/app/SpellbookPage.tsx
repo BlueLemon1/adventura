@@ -1,10 +1,11 @@
 import { useState, type FormEvent } from 'react'
-import { Plus } from 'lucide-react'
+import { Plus, WandSparkles } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
+import { SegmentedTabs } from '../components/ui/segmented-tabs'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import {
   Select,
@@ -20,6 +21,7 @@ import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
 type UsageReset = NonNullable<KnownSpell['usageReset']>
+type SpellbookView = 'character' | 'catalog'
 
 interface SpellbookPageProps {
   character: Character
@@ -37,6 +39,7 @@ export function SpellbookPage({
   onUpdateSpells,
 }: SpellbookPageProps) {
   const t = (value: string) => translate(language, value)
+  const [view, setView] = useState<SpellbookView>('character')
   const [spellName, setSpellName] = useState('')
   const [spellLevel, setSpellLevel] = useState(0)
   const [spellSchool, setSpellSchool] = useState('')
@@ -102,169 +105,192 @@ export function SpellbookPage({
 
   return (
     <>
-      <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
-
       <PageIntro
         eyebrow={t('MAGIE & ZAUBER')}
         title={t('Zauberbuch')}
         description={t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}
       />
 
-      <SpellCatalog
-        character={character}
-        knownSpells={knownSpells}
-        language={language}
-        onAdd={(spell) => onUpdateSpells([...knownSpells, spell])}
+      <SegmentedTabs
+        ariaLabel={t('Zauberbuchansicht')}
+        value={view}
+        onChange={setView}
+        items={[
+          {
+            value: 'character',
+            label: t('Meine Zauber'),
+            icon: <WandSparkles size={16} />,
+            count: knownSpells.length,
+          },
+          {
+            value: 'catalog',
+            label: t('SRD & hinzufügen'),
+            icon: <Plus size={16} />,
+          },
+        ]}
       />
 
-      <section className="panel">
-        <PanelHeader title={t('Eigene Zauber hinzufügen')} meta="MANUELLE ERFASSUNG" />
-        <form onSubmit={addCustomSpell}>
-          <div className="form-grid spell-form">
-            <TextInputField label="Zaubername" value={spellName} onChange={setSpellName} required />
-            <label className="field-label">
-              {t('Zaubergrad')}
-              <Select
-                value={String(spellLevel)}
-                onValueChange={(value) => setSpellLevel(Number(value))}
-              >
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  {Array.from({ length: 10 }, (_, index) => (
-                    <SelectItem key={index} value={String(index)}>
-                      {index === 0 ? t('Zaubertrick') : `${t('Grad ')}${index}`}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-            </label>
-            <TextInputField label="Schule" value={spellSchool} onChange={setSpellSchool} />
-            <TextInputField label="Zauberzeit" value={spellTime} onChange={setSpellTime} />
-            <TextInputField label="Reichweite" value={spellRange} onChange={setSpellRange} />
-            <TextInputField
-              label="Komponenten (V/S/M)"
-              value={spellComponents}
-              onChange={setSpellComponents}
-            />
-            <TextInputField
-              label="Wirkungsdauer"
-              value={spellDuration}
-              onChange={setSpellDuration}
-            />
-          </div>
-
-          <div className="form-grid spell-origin-form">
-            <label className="field-label">
-              {t('Herkunft')}
-              <Select
-                value={spellSource ?? 'other'}
-                onValueChange={(value) => setSpellSource(value as SpellSource)}
-              >
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="class">Klassenzauber</SelectItem>
-                  <SelectItem value="story">Story / Belohnung</SelectItem>
-                  <SelectItem value="item">Gegenstand</SelectItem>
-                  <SelectItem value="feat">Talent / Fähigkeit</SelectItem>
-                  <SelectItem value="other">Sonstiges</SelectItem>
-                </SelectContent>
-              </Select>
-            </label>
-            <TextInputField
-              label="Quelle / Gegenstand / Notiz"
-              value={spellSourceName}
-              onChange={setSpellSourceName}
-            />
-            <TextInputField
-              label="Nutzungen (0 = unbegrenzt)"
-              type="number"
-              value={String(spellUsageLimit)}
-              onChange={(value) =>
-                setSpellUsageLimit(Math.max(0, Math.min(1000, Number(value) || 0)))
-              }
-            />
-            {spellUsageLimit > 0 && (
-              <label className="field-label">
-                {t('Erneuerung')}
-                <Select
-                  value={spellUsageReset}
-                  onValueChange={(value) => setSpellUsageReset(value as UsageReset)}
-                >
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="shortRest">Kurze Rast</SelectItem>
-                    <SelectItem value="longRest">Lange Rast</SelectItem>
-                    <SelectItem value="dawn">Morgengrauen</SelectItem>
-                    <SelectItem value="none">Manuell / nie</SelectItem>
-                  </SelectContent>
-                </Select>
-              </label>
-            )}
-          </div>
-
-          <div className="spell-flags">
-            <label>
-              <input
-                type="checkbox"
-                checked={spellConcentration}
-                onChange={(event) => setSpellConcentration(event.target.checked)}
-              />
-              Konzentration
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={spellRitual}
-                onChange={(event) => setSpellRitual(event.target.checked)}
-              />
-              Ritual
-            </label>
-          </div>
-
-          <TextAreaField
-            label="Beschreibung / Effekt"
-            value={spellDescription}
-            onChange={setSpellDescription}
+      {view === 'character' ? (
+        <>
+          <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
+          <SpellbookList
+            spells={knownSpells}
+            character={character}
+            spellSlots={character.spellSlots ?? []}
+            pactMagic={character.pactMagic}
+            onUse={(spellId) =>
+              updateSpell(spellId, (spell) => ({
+                ...spell,
+                usageRemaining: Math.max(0, (spell.usageRemaining ?? spell.usageLimit ?? 0) - 1),
+              }))
+            }
+            onReset={(spellId) =>
+              updateSpell(spellId, (spell) => ({
+                ...spell,
+                usageRemaining: spell.usageLimit,
+              }))
+            }
+            onTogglePrepared={(spellId, prepared) =>
+              updateSpell(spellId, (spell) => ({ ...spell, prepared }))
+            }
+            onRemove={(spellId) =>
+              onUpdateSpells(knownSpells.filter((spell) => spell.spellId !== spellId))
+            }
           />
-          <Button variant="primary" className="form-submit" type="submit">
-            <Plus size={15} /> Zauber hinzufügen
-          </Button>
-        </form>
-      </section>
+        </>
+      ) : (
+        <>
+          <SpellCatalog
+            character={character}
+            knownSpells={knownSpells}
+            language={language}
+            onAdd={(spell) => onUpdateSpells([...knownSpells, spell])}
+          />
 
-      <SpellbookList
-        spells={knownSpells}
-        character={character}
-        spellSlots={character.spellSlots ?? []}
-        pactMagic={character.pactMagic}
-        onUse={(spellId) =>
-          updateSpell(spellId, (spell) => ({
-            ...spell,
-            usageRemaining: Math.max(0, (spell.usageRemaining ?? spell.usageLimit ?? 0) - 1),
-          }))
-        }
-        onReset={(spellId) =>
-          updateSpell(spellId, (spell) => ({
-            ...spell,
-            usageRemaining: spell.usageLimit,
-          }))
-        }
-        onTogglePrepared={(spellId, prepared) =>
-          updateSpell(spellId, (spell) => ({
-            ...spell,
-            prepared,
-          }))
-        }
-        onRemove={(spellId) =>
-          onUpdateSpells(knownSpells.filter((spell) => spell.spellId !== spellId))
-        }
-      />
+          <section className="panel">
+            <PanelHeader
+              title={t('Eigene Zauber hinzufügen')}
+              meta={t('MANUELLE ERFASSUNG')}
+            />
+            <form onSubmit={addCustomSpell}>
+              <div className="form-grid spell-form">
+                <TextInputField
+                  label="Zaubername"
+                  value={spellName}
+                  onChange={setSpellName}
+                  required
+                />
+                <label className="field-label">
+                  {t('Zaubergrad')}
+                  <Select
+                    value={String(spellLevel)}
+                    onValueChange={(value) => setSpellLevel(Number(value))}
+                  >
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      {Array.from({ length: 10 }, (_, index) => (
+                        <SelectItem key={index} value={String(index)}>
+                          {index === 0 ? t('Zaubertrick') : `${t('Grad ')}${index}`}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </label>
+                <TextInputField label="Schule" value={spellSchool} onChange={setSpellSchool} />
+                <TextInputField label="Zauberzeit" value={spellTime} onChange={setSpellTime} />
+                <TextInputField label="Reichweite" value={spellRange} onChange={setSpellRange} />
+                <TextInputField
+                  label="Komponenten (V/S/M)"
+                  value={spellComponents}
+                  onChange={setSpellComponents}
+                />
+                <TextInputField
+                  label="Wirkungsdauer"
+                  value={spellDuration}
+                  onChange={setSpellDuration}
+                />
+              </div>
+
+              <div className="form-grid spell-origin-form">
+                <label className="field-label">
+                  {t('Herkunft')}
+                  <Select
+                    value={spellSource ?? 'other'}
+                    onValueChange={(value) => setSpellSource(value as SpellSource)}
+                  >
+                    <SelectTrigger><SelectValue /></SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="class">{t('Klassenzauber')}</SelectItem>
+                      <SelectItem value="story">{t('Story / Belohnung')}</SelectItem>
+                      <SelectItem value="item">{t('Gegenstand')}</SelectItem>
+                      <SelectItem value="feat">{t('Talent / Fähigkeit')}</SelectItem>
+                      <SelectItem value="other">{t('Sonstiges')}</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </label>
+                <TextInputField
+                  label="Quelle / Gegenstand / Notiz"
+                  value={spellSourceName}
+                  onChange={setSpellSourceName}
+                />
+                <TextInputField
+                  label="Nutzungen (0 = unbegrenzt)"
+                  type="number"
+                  value={String(spellUsageLimit)}
+                  onChange={(value) =>
+                    setSpellUsageLimit(Math.max(0, Math.min(1000, Number(value) || 0)))
+                  }
+                />
+                {spellUsageLimit > 0 && (
+                  <label className="field-label">
+                    {t('Erneuerung')}
+                    <Select
+                      value={spellUsageReset}
+                      onValueChange={(value) => setSpellUsageReset(value as UsageReset)}
+                    >
+                      <SelectTrigger><SelectValue /></SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="shortRest">{t('Kurze Rast')}</SelectItem>
+                        <SelectItem value="longRest">{t('Lange Rast')}</SelectItem>
+                        <SelectItem value="dawn">{t('Morgengrauen')}</SelectItem>
+                        <SelectItem value="none">{t('Manuell / nie')}</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </label>
+                )}
+              </div>
+
+              <div className="spell-flags">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={spellConcentration}
+                    onChange={(event) => setSpellConcentration(event.target.checked)}
+                  />
+                  {t('Konzentration')}
+                </label>
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={spellRitual}
+                    onChange={(event) => setSpellRitual(event.target.checked)}
+                  />
+                  {t('Ritual')}
+                </label>
+              </div>
+
+              <TextAreaField
+                label="Beschreibung / Effekt"
+                value={spellDescription}
+                onChange={setSpellDescription}
+              />
+              <Button variant="primary" className="form-submit" type="submit">
+                <Plus size={15} /> {t('Zauber hinzufügen')}
+              </Button>
+            </form>
+          </section>
+        </>
+      )}
     </>
   )
 }

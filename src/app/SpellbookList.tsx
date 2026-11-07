@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2, Zap } from 'lucide-react'
-import type { Character, KnownSpell, PactMagic, SpellSlot } from '../domain/character'
+import type { Character, KnownSpell } from '../domain/character'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { normalizeKey } from '../domain/text'
 import { IconButton } from '../components/ui/button'
@@ -13,8 +13,6 @@ type SpellFilter = 'all' | 'prepared' | 'unprepared'
 interface SpellbookListProps {
   spells: KnownSpell[]
   character: Character
-  spellSlots: SpellSlot[]
-  pactMagic?: PactMagic
   onTogglePrepared: (id: string, value: boolean) => void
   onRemove: (id: string) => void
   onUse: (id: string) => void
@@ -63,52 +61,6 @@ function getSpellSearchText(spell: KnownSpell): string {
     [spell.name, spell.school, spell.description, spell.notes, spell.sourceName]
       .filter(Boolean)
       .join(' '),
-  )
-}
-
-function SpellCapacityGrid({
-  spells,
-  spellSlots,
-  pactMagic,
-  translateText,
-}: {
-  spells: KnownSpell[]
-  spellSlots: SpellSlot[]
-  pactMagic?: PactMagic
-  translateText: (value: string) => string
-}) {
-  const levels = Array.from({ length: 10 }, (_, level) => level)
-
-  return (
-    <div className="spell-capacity-grid">
-      {levels.map((level) => {
-        const known = spells.filter((spell) => (spell.spellLevel ?? 0) === level).length
-        const slot = spellSlots.find((item) => item.spellLevel === level)
-        const isPactLevel = pactMagic?.spellLevel === level
-        const maximum = isPactLevel ? pactMagic.max : (slot?.max ?? 0)
-        const remaining = isPactLevel ? pactMagic.current : (slot?.current ?? 0)
-
-        return (
-          <div className="spell-capacity" key={level}>
-            <span>
-              {level === 0 ? translateText('Zaubertricks') : `${translateText('Grad')} ${level}`}
-            </span>
-            <strong>{known}</strong>
-            <small>{translateText('im Buch')}</small>
-            {level > 0 && (
-              <div className="spell-slot-line">
-                <Zap size={11} />
-                <b>{maximum}</b>
-                <span>{translateText('Plätze')}</span>
-                <small>
-                  {remaining}/{maximum} {translateText('übrig')}
-                </small>
-              </div>
-            )}
-          </div>
-        )
-      })}
-    </div>
   )
 }
 
@@ -279,8 +231,6 @@ function SpellCard({
 export function SpellbookList({
   spells,
   character,
-  spellSlots,
-  pactMagic,
   onTogglePrepared,
   onRemove,
   onUse,
@@ -326,12 +276,6 @@ export function SpellbookList({
         }
       />
 
-      <SpellCapacityGrid
-        spells={spells}
-        spellSlots={spellSlots}
-        pactMagic={pactMagic}
-        translateText={t}
-      />
       <SpellCapacitySummary character={character} spells={spells} translateText={t} />
 
       <div className="spellbook-toolbar">
