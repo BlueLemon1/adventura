@@ -22,11 +22,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   return (
-    <button
-      type={type}
-      className={`${variantClasses[variant]} ${className}`.trim()}
-      {...props}
-    >
+    <button type={type} className={`${variantClasses[variant]} ${className}`.trim()} {...props}>
       {children}
     </button>
   )
@@ -38,15 +34,15 @@ interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 /** Icon-only actions always get an accessible name. */
-export function IconButton({ label, className = '', children, type = 'button', ...props }: IconButtonProps) {
+export function IconButton({
+  label,
+  className = '',
+  children,
+  type = 'button',
+  ...props
+}: IconButtonProps) {
   return (
-    <Button
-      {...props}
-      type={type}
-      variant="icon"
-      className={className}
-      aria-label={label}
-    >
+    <Button {...props} type={type} variant="icon" className={className} aria-label={label}>
       {children}
     </Button>
   )

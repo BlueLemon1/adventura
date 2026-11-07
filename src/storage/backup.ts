@@ -2,12 +2,7 @@ import { z } from 'zod'
 import { ABILITIES } from '../domain/character'
 import { DND5E_RULESETS } from '../domain/rules'
 import type { StoredCharacter } from './database'
-import {
-  getCharacters,
-  getPartyInventory,
-  replaceCharacters,
-  savePartyInventory,
-} from './database'
+import { getCharacters, getPartyInventory, replaceCharacters, savePartyInventory } from './database'
 
 const abilitySchema = z.object({
   str: z.number().int().min(1).max(30),
@@ -46,17 +41,21 @@ const characterSchema = z.object({
   initiativeBonus: z.number().int().min(-20).max(20).optional(),
   hitDice: z.string().optional(),
   spellSlots: z.array(spellSlotSchema).optional(),
-  pactMagic: z.object({
-    spellLevel: z.number().int().min(1).max(5),
-    max: z.number().int().min(1).max(4),
-    current: z.number().int().min(0).max(4),
-  }).optional(),
+  pactMagic: z
+    .object({
+      spellLevel: z.number().int().min(1).max(5),
+      max: z.number().int().min(1).max(4),
+      current: z.number().int().min(0).max(4),
+    })
+    .optional(),
   experiencePoints: z.number().int().min(0).optional(),
   inspiration: z.boolean().optional(),
-  deathSaves: z.object({
-    successes: z.number().int().min(0).max(3),
-    failures: z.number().int().min(0).max(3),
-  }).optional(),
+  deathSaves: z
+    .object({
+      successes: z.number().int().min(0).max(3),
+      failures: z.number().int().min(0).max(3),
+    })
+    .optional(),
   alignment: z.string().optional(),
   background: z.string().optional(),
   playerName: z.string().optional(),
@@ -144,10 +143,7 @@ const DEFAULT_CURRENCY = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
 export type AdventuraBackup = z.infer<typeof backupSchema>
 
 export async function createBackup(): Promise<AdventuraBackup> {
-  const [characters, partyInventory] = await Promise.all([
-    getCharacters(),
-    getPartyInventory(),
-  ])
+  const [characters, partyInventory] = await Promise.all([getCharacters(), getPartyInventory()])
 
   return {
     app: 'adventura',

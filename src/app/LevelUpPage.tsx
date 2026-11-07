@@ -26,9 +26,52 @@ export function LevelUpPage({ character, onUpdate }: LevelUpPageProps) {
 
   return (
     <>
-<section className="page-intro"><div><span className="eyebrow">{t('FORTSCHRITT')}</span><h1>{t('Level-up')}</h1><p className="intro">{t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}.</p></div></section>
-          <section className="levelup-card"><div className="level-number"><span>{t('AKTUELLE STUFE')}</span><strong>{character.level}</strong></div><div className="level-arrow"><ChevronRight size={25}/></div><div className="level-number next"><span>{t('NÄCHSTE STUFE')}</span><strong>{Math.min(20,character.level+1)}</strong></div><Button variant="primary" disabled={character.level>=20} onClick={()=>{if(window.confirm('Charakter auf Stufe '+(character.level+1)+' erhöhen?'))levelUp(Math.min(20,character.level+1))}}>Stufe erhöhen <ChevronRight size={15}/></Button></section>
-          <section className="panel"><PanelHeader title={t('Regelbasierte Progression')} /><p className="muted-paragraph">{t('Übungsbonus und Zauberplätze werden anhand von Klasse, Unterklasse und Stufe berechnet. Bereits verbrauchte Plätze bleiben beim Stufenaufstieg verbraucht; neu hinzugewonnene Plätze stehen zur Verfügung.')}</p><p className="muted-paragraph">{t('Trefferpunkte, Klassen- und Unterklassenmerkmale, ASI/Talente sowie konkrete Zauberauswahl benötigen weitere Charakterentscheidungen und werden deshalb noch nicht automatisch vergeben.')}</p></section>
+      <section className="page-intro">
+        <div>
+          <span className="eyebrow">{t('FORTSCHRITT')}</span>
+          <h1>{t('Level-up')}</h1>
+          <p className="intro">
+            {t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}
+            .
+          </p>
+        </div>
+      </section>
+      <section className="levelup-card">
+        <div className="level-number">
+          <span>{t('AKTUELLE STUFE')}</span>
+          <strong>{character.level}</strong>
+        </div>
+        <div className="level-arrow">
+          <ChevronRight size={25} />
+        </div>
+        <div className="level-number next">
+          <span>{t('NÄCHSTE STUFE')}</span>
+          <strong>{Math.min(20, character.level + 1)}</strong>
+        </div>
+        <Button
+          variant="primary"
+          disabled={character.level >= 20}
+          onClick={() => {
+            if (window.confirm('Charakter auf Stufe ' + (character.level + 1) + ' erhöhen?'))
+              levelUp(Math.min(20, character.level + 1))
+          }}
+        >
+          Stufe erhöhen <ChevronRight size={15} />
+        </Button>
+      </section>
+      <section className="panel">
+        <PanelHeader title={t('Regelbasierte Progression')} />
+        <p className="muted-paragraph">
+          {t(
+            'Übungsbonus und Zauberplätze werden anhand von Klasse, Unterklasse und Stufe berechnet. Bereits verbrauchte Plätze bleiben beim Stufenaufstieg verbraucht; neu hinzugewonnene Plätze stehen zur Verfügung.',
+          )}
+        </p>
+        <p className="muted-paragraph">
+          {t(
+            'Trefferpunkte, Klassen- und Unterklassenmerkmale, ASI/Talente sowie konkrete Zauberauswahl benötigen weitere Charakterentscheidungen und werden deshalb noch nicht automatisch vergeben.',
+          )}
+        </p>
+      </section>
     </>
   )
 }

@@ -44,15 +44,51 @@ const FULL_CASTER_SLOTS: number[][] = [
 ]
 
 const THIRD_CASTER_SLOTS_2014: number[][] = [
-  [], [], [], [2], [3], [3], [3], [4, 2], [4, 2], [4, 2],
-  [4, 3], [4, 3], [4, 3], [4, 3, 2], [4, 3, 2], [4, 3, 2],
-  [4, 3, 3], [4, 3, 3], [4, 3, 3], [4, 3, 3, 1], [4, 3, 3, 1],
+  [],
+  [],
+  [],
+  [2],
+  [3],
+  [3],
+  [3],
+  [4, 2],
+  [4, 2],
+  [4, 2],
+  [4, 3],
+  [4, 3],
+  [4, 3],
+  [4, 3, 2],
+  [4, 3, 2],
+  [4, 3, 2],
+  [4, 3, 3],
+  [4, 3, 3],
+  [4, 3, 3],
+  [4, 3, 3, 1],
+  [4, 3, 3, 1],
 ]
 
 const THIRD_CASTER_SLOTS_2024: number[][] = [
-  [], [], [], [2], [3], [3], [3], [4, 2], [4, 2], [4, 2],
-  [4, 3], [4, 3], [4, 3], [4, 3, 2], [4, 3, 2], [4, 3, 2],
-  [4, 3, 3], [4, 3, 3], [4, 3, 3], [4, 3, 3], [4, 3, 3],
+  [],
+  [],
+  [],
+  [2],
+  [3],
+  [3],
+  [3],
+  [4, 2],
+  [4, 2],
+  [4, 2],
+  [4, 3],
+  [4, 3],
+  [4, 3],
+  [4, 3, 2],
+  [4, 3, 2],
+  [4, 3, 2],
+  [4, 3, 3],
+  [4, 3, 3],
+  [4, 3, 3],
+  [4, 3, 3],
+  [4, 3, 3],
 ]
 
 const WARLOCK_PACT_MAGIC: Array<{ spellLevel: number; max: number }> = [
@@ -86,21 +122,44 @@ function getCasterKind(character: CasterCharacter): SpellcastingProgression['kin
   const subclass = normalizeKey(character.subclassId)
 
   if (['warlock', 'hexenmeister'].includes(classId)) return 'warlock'
-  if (['bard', 'barde', 'cleric', 'kleriker', 'druid', 'druide', 'sorcerer', 'zauberer', 'wizard', 'magier'].includes(classId)) {
+  if (
+    [
+      'bard',
+      'barde',
+      'cleric',
+      'kleriker',
+      'druid',
+      'druide',
+      'sorcerer',
+      'zauberer',
+      'wizard',
+      'magier',
+    ].includes(classId)
+  ) {
     return 'full'
   }
   if (['paladin', 'ranger', 'waldlaeufer'].includes(classId)) return 'half'
-  if (['fighter', 'kaempfer'].includes(classId) && ['eldritchknight', 'arkaeneritter'].includes(subclass) && character.level >= 3) {
+  if (
+    ['fighter', 'kaempfer'].includes(classId) &&
+    ['eldritchknight', 'arkaeneritter'].includes(subclass) &&
+    character.level >= 3
+  ) {
     return 'third'
   }
-  if (['rogue', 'schurke'].includes(classId) && ['arcanetrickster', 'arkanergauner'].includes(subclass) && character.level >= 3) {
+  if (
+    ['rogue', 'schurke'].includes(classId) &&
+    ['arcanetrickster', 'arkanergauner'].includes(subclass) &&
+    character.level >= 3
+  ) {
     return 'third'
   }
 
   return null
 }
 
-export function getSpellcastingProgression(character: CasterCharacter): SpellcastingProgression | null {
+export function getSpellcastingProgression(
+  character: CasterCharacter,
+): SpellcastingProgression | null {
   const kind = getCasterKind(character)
   if (!kind) return null
 
@@ -112,28 +171,37 @@ export function getSpellcastingProgression(character: CasterCharacter): Spellcas
     return null
   }
 
-  const casterLevel = kind === 'full'
-    ? character.level
-    : kind === 'half'
-      ? Math.ceil(character.level / 2)
-      : Math.floor(character.level / 3)
+  const casterLevel =
+    kind === 'full'
+      ? character.level
+      : kind === 'half'
+        ? Math.ceil(character.level / 2)
+        : Math.floor(character.level / 3)
 
-  const slots = kind === 'third'
-    ? (character.ruleset === '2014' ? THIRD_CASTER_SLOTS_2014 : THIRD_CASTER_SLOTS_2024)[character.level] ?? []
-    : FULL_CASTER_SLOTS[casterLevel] ?? []
+  const slots =
+    kind === 'third'
+      ? ((character.ruleset === '2014' ? THIRD_CASTER_SLOTS_2014 : THIRD_CASTER_SLOTS_2024)[
+          character.level
+        ] ?? [])
+      : (FULL_CASTER_SLOTS[casterLevel] ?? [])
 
   return { kind, slots }
 }
 
 export function createSpellSlots(character: CasterCharacter): SpellSlot[] {
-  return getSpellcastingProgression(character)?.slots.map((maximum, index) => ({
-    spellLevel: index + 1,
-    max: maximum,
-    current: maximum,
-  })) ?? []
+  return (
+    getSpellcastingProgression(character)?.slots.map((maximum, index) => ({
+      spellLevel: index + 1,
+      max: maximum,
+      current: maximum,
+    })) ?? []
+  )
 }
 
-export function updateSpellSlots(character: CasterCharacter, previous: SpellSlot[] = []): SpellSlot[] {
+export function updateSpellSlots(
+  character: CasterCharacter,
+  previous: SpellSlot[] = [],
+): SpellSlot[] {
   return createSpellSlots(character).map((slot) => {
     const previousSlot = previous.find((item) => item.spellLevel === slot.spellLevel)
     const spent = previousSlot ? previousSlot.max - previousSlot.current : 0
@@ -146,7 +214,10 @@ export function createPactMagic(character: CasterCharacter): PactMagic | undefin
   return pactMagic ? { ...pactMagic, current: pactMagic.max } : undefined
 }
 
-export function updatePactMagic(character: CasterCharacter, previous?: PactMagic): PactMagic | undefined {
+export function updatePactMagic(
+  character: CasterCharacter,
+  previous?: PactMagic,
+): PactMagic | undefined {
   const next = createPactMagic(character)
   if (!next) return undefined
 

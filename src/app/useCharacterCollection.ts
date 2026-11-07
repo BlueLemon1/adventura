@@ -41,9 +41,9 @@ export function useCharacterCollection() {
       },
     }
 
-    setCharacters((current) => current.map((entry) =>
-      entry.character.id === updated.character.id ? updated : entry,
-    ))
+    setCharacters((current) =>
+      current.map((entry) => (entry.character.id === updated.character.id ? updated : entry)),
+    )
 
     try {
       await saveCharacter(updated)

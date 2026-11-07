@@ -3,7 +3,13 @@ import { X } from 'lucide-react'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '../components/ui/select'
 import { translate, useLanguage } from './i18n'
 
 export interface CreateCharacterInput {
@@ -71,7 +77,9 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
             <label className="field-label">
               {t('Regelwerk')}
               <Select value={ruleset} onValueChange={(value) => setRuleset(value as Dnd5eRuleset)}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="2014">D&D 5e (2014)</SelectItem>
                   <SelectItem value="2024">D&D 5e (2024)</SelectItem>

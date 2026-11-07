@@ -1,6 +1,10 @@
 import { Plus } from 'lucide-react'
 import type { Character } from '../domain/character'
-import { createPactMagic, createSpellSlots, getSpellcastingProgression } from '../domain/spellcasting'
+import {
+  createPactMagic,
+  createSpellSlots,
+  getSpellcastingProgression,
+} from '../domain/spellcasting'
 import { Button, IconButton } from '../components/ui/button'
 import { PanelHeader } from '../components/ui/panel-header'
 
@@ -42,9 +46,11 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
 
   function updateSlot(spellLevel: number, change: -1 | 1) {
     onUpdate({
-      spellSlots: slots.map((slot) => slot.spellLevel === spellLevel
-        ? { ...slot, current: Math.max(0, Math.min(slot.max, slot.current + change)) }
-        : slot),
+      spellSlots: slots.map((slot) =>
+        slot.spellLevel === spellLevel
+          ? { ...slot, current: Math.max(0, Math.min(slot.max, slot.current + change)) }
+          : slot,
+      ),
     })
   }
 
@@ -55,11 +61,10 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
       {progression.kind === 'warlock' && pactMagic ? (
         <div className="slot-row">
           <strong>Paktplatz · Grad {pactMagic.spellLevel}</strong>
-          <span>{pactMagic.current} / {pactMagic.max}</span>
-          <Button
-            disabled={pactMagic.current <= 0}
-            onClick={spendPactSlot}
-          >
+          <span>
+            {pactMagic.current} / {pactMagic.max}
+          </span>
+          <Button disabled={pactMagic.current <= 0} onClick={spendPactSlot}>
             Verbrauchen
           </Button>
         </div>
@@ -67,13 +72,18 @@ export function SpellSlotTracker({ character, onUpdate }: SpellSlotTrackerProps)
         <div className="slot-list">
           {progression.slots.map((maximum, index) => {
             const spellLevel = index + 1
-            const slot = slots.find((item) => item.spellLevel === spellLevel)
-              ?? { spellLevel, max: maximum, current: maximum }
+            const slot = slots.find((item) => item.spellLevel === spellLevel) ?? {
+              spellLevel,
+              max: maximum,
+              current: maximum,
+            }
 
             return (
               <div className="slot-row" key={spellLevel}>
                 <strong>Grad {spellLevel}</strong>
-                <span>{slot.current} / {slot.max}</span>
+                <span>
+                  {slot.current} / {slot.max}
+                </span>
                 <Button disabled={slot.current <= 0} onClick={() => updateSlot(spellLevel, -1)}>
                   Verbrauchen
                 </Button>

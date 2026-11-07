@@ -5,15 +5,24 @@ export type Ability = (typeof ABILITIES)[number]
 export type AbilityScores = Record<Ability, number>
 
 export const SKILLS = [
-  { id: 'acrobatics', ability: 'dex' }, { id: 'animalHandling', ability: 'wis' },
-  { id: 'arcana', ability: 'int' }, { id: 'athletics', ability: 'str' },
-  { id: 'deception', ability: 'cha' }, { id: 'history', ability: 'int' },
-  { id: 'insight', ability: 'wis' }, { id: 'intimidation', ability: 'cha' },
-  { id: 'investigation', ability: 'int' }, { id: 'medicine', ability: 'wis' },
-  { id: 'nature', ability: 'int' }, { id: 'perception', ability: 'wis' },
-  { id: 'performance', ability: 'cha' }, { id: 'persuasion', ability: 'cha' },
-  { id: 'religion', ability: 'int' }, { id: 'sleightOfHand', ability: 'dex' },
-  { id: 'stealth', ability: 'dex' }, { id: 'survival', ability: 'wis' },
+  { id: 'acrobatics', ability: 'dex' },
+  { id: 'animalHandling', ability: 'wis' },
+  { id: 'arcana', ability: 'int' },
+  { id: 'athletics', ability: 'str' },
+  { id: 'deception', ability: 'cha' },
+  { id: 'history', ability: 'int' },
+  { id: 'insight', ability: 'wis' },
+  { id: 'intimidation', ability: 'cha' },
+  { id: 'investigation', ability: 'int' },
+  { id: 'medicine', ability: 'wis' },
+  { id: 'nature', ability: 'int' },
+  { id: 'perception', ability: 'wis' },
+  { id: 'performance', ability: 'cha' },
+  { id: 'persuasion', ability: 'cha' },
+  { id: 'religion', ability: 'int' },
+  { id: 'sleightOfHand', ability: 'dex' },
+  { id: 'stealth', ability: 'dex' },
+  { id: 'survival', ability: 'wis' },
 ] as const
 
 export type SkillId = (typeof SKILLS)[number]['id']

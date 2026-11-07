@@ -36,14 +36,9 @@ function getAbilityModifier(score: number | undefined): number {
 function getPreparedSpellMaximum(character: Character, classId: string): number {
   const level = character.level
   const abilities = character.abilities
-  const abilityScore = classId === 'wizard'
-    ? abilities?.int
-    : classId === 'paladin'
-      ? abilities?.cha
-      : abilities?.wis
-  const casterLevel = classId === 'paladin' || classId === 'ranger'
-    ? Math.floor(level / 2)
-    : level
+  const abilityScore =
+    classId === 'wizard' ? abilities?.int : classId === 'paladin' ? abilities?.cha : abilities?.wis
+  const casterLevel = classId === 'paladin' || classId === 'ranger' ? Math.floor(level / 2) : level
 
   return Math.max(1, casterLevel + getAbilityModifier(abilityScore))
 }
@@ -51,8 +46,8 @@ function getPreparedSpellMaximum(character: Character, classId: string): number 
 // Capacity is guidance, not a hard validation gate. Non-class sources are excluded.
 export function getSpellCapacity(character: Character, spells: KnownSpell[]): SpellCapacity {
   const classId = getClassId(character.classId)
-  const classSpells = spells.filter((spell) =>
-    (spell.source ?? 'class') === 'class' && (spell.spellLevel ?? 0) > 0,
+  const classSpells = spells.filter(
+    (spell) => (spell.source ?? 'class') === 'class' && (spell.spellLevel ?? 0) > 0,
   )
   const known = classSpells.length
   const prepared = classSpells.filter((spell) => spell.prepared || spell.alwaysPrepared).length
@@ -86,8 +81,10 @@ export function getSpellCapacity(character: Character, spells: KnownSpell[]): Sp
     }
   }
 
-  if (character.ruleset === '2024'
-    && ['cleric', 'druid', 'wizard', 'paladin', 'ranger'].includes(classId)) {
+  if (
+    character.ruleset === '2024' &&
+    ['cleric', 'druid', 'wizard', 'paladin', 'ranger'].includes(classId)
+  ) {
     return {
       mode: 'prepared',
       maximum: getPreparedSpellMaximum(character, classId),

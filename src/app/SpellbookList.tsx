@@ -1,14 +1,5 @@
 import { useMemo, useState } from 'react'
-import {
-  BookOpen,
-  Check,
-  Clock3,
-  RotateCcw,
-  Search,
-  Sparkles,
-  Trash2,
-  Zap,
-} from 'lucide-react'
+import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2, Zap } from 'lucide-react'
 import type { Character, KnownSpell, PactMagic, SpellSlot } from '../domain/character'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { normalizeKey } from '../domain/text'
@@ -61,18 +52,18 @@ function matchesFilter(spell: KnownSpell, filter: SpellFilter): boolean {
 }
 
 function sortSpells(left: KnownSpell, right: KnownSpell): number {
-  return (left.spellLevel ?? 0) - (right.spellLevel ?? 0)
-    || (left.name ?? left.spellId).localeCompare(right.name ?? right.spellId)
+  return (
+    (left.spellLevel ?? 0) - (right.spellLevel ?? 0) ||
+    (left.name ?? left.spellId).localeCompare(right.name ?? right.spellId)
+  )
 }
 
 function getSpellSearchText(spell: KnownSpell): string {
-  return normalizeKey([
-    spell.name,
-    spell.school,
-    spell.description,
-    spell.notes,
-    spell.sourceName,
-  ].filter(Boolean).join(' '))
+  return normalizeKey(
+    [spell.name, spell.school, spell.description, spell.notes, spell.sourceName]
+      .filter(Boolean)
+      .join(' '),
+  )
 }
 
 function SpellCapacityGrid({
@@ -94,12 +85,14 @@ function SpellCapacityGrid({
         const known = spells.filter((spell) => (spell.spellLevel ?? 0) === level).length
         const slot = spellSlots.find((item) => item.spellLevel === level)
         const isPactLevel = pactMagic?.spellLevel === level
-        const maximum = isPactLevel ? pactMagic.max : slot?.max ?? 0
-        const remaining = isPactLevel ? pactMagic.current : slot?.current ?? 0
+        const maximum = isPactLevel ? pactMagic.max : (slot?.max ?? 0)
+        const remaining = isPactLevel ? pactMagic.current : (slot?.current ?? 0)
 
         return (
           <div className="spell-capacity" key={level}>
-            <span>{level === 0 ? translateText('Zaubertricks') : `${translateText('Grad')} ${level}`}</span>
+            <span>
+              {level === 0 ? translateText('Zaubertricks') : `${translateText('Grad')} ${level}`}
+            </span>
             <strong>{known}</strong>
             <small>{translateText('im Buch')}</small>
             {level > 0 && (
@@ -107,7 +100,9 @@ function SpellCapacityGrid({
                 <Zap size={11} />
                 <b>{maximum}</b>
                 <span>{translateText('Plätze')}</span>
-                <small>{remaining}/{maximum} {translateText('übrig')}</small>
+                <small>
+                  {remaining}/{maximum} {translateText('übrig')}
+                </small>
               </div>
             )}
           </div>
@@ -127,11 +122,12 @@ function SpellCapacitySummary({
   translateText: (value: string) => string
 }) {
   const capacity = getSpellCapacity(character, spells)
-  const description = capacity.mode === 'known'
-    ? 'Bekannte Klassenzauber'
-    : capacity.mode === 'prepared'
-      ? 'Vorbereitete Klassenzauber'
-      : 'Regelgrenze noch offen'
+  const description =
+    capacity.mode === 'known'
+      ? 'Bekannte Klassenzauber'
+      : capacity.mode === 'prepared'
+        ? 'Vorbereitete Klassenzauber'
+        : 'Regelgrenze noch offen'
 
   return (
     <>
@@ -147,7 +143,9 @@ function SpellCapacitySummary({
         <p>{translateText(capacity.note)}</p>
       </div>
       <p className="spell-capacity-note">
-        {translateText('Zauber im Buch und Zauberplätze sind getrennt: Zauberplätze geben an, wie oft du Zauber des jeweiligen Grades wirken kannst. Zusätzliche Story- und Gegenstandszauber zählen nicht als Klassenfortschritt.')}
+        {translateText(
+          'Zauber im Buch und Zauberplätze sind getrennt: Zauberplätze geben an, wie oft du Zauber des jeweiligen Grades wirken kannst. Zusätzliche Story- und Gegenstandszauber zählen nicht als Klassenfortschritt.',
+        )}
       </p>
     </>
   )
@@ -189,7 +187,8 @@ function SpellCard({
           </span>
           {spell.alwaysPrepared && (
             <span className="always-prepared">
-              <Check size={12} />{translateText('Immer vorbereitet')}
+              <Check size={12} />
+              {translateText('Immer vorbereitet')}
             </span>
           )}
           <IconButton
@@ -203,13 +202,17 @@ function SpellCard({
       </div>
 
       {spell.sourceName && (
-        <p className="spell-origin-note">{translateText('Quelle')}: {spell.sourceName}</p>
+        <p className="spell-origin-note">
+          {translateText('Quelle')}: {spell.sourceName}
+        </p>
       )}
 
       <div className="spellbook-meta">
         {[spell.school, spell.castingTime, spell.range, spell.components, spell.duration]
           .filter(Boolean)
-          .map((value) => <span key={value}>{value}</span>)}
+          .map((value) => (
+            <span key={value}>{value}</span>
+          ))}
         {spell.concentration && <span>{translateText('Konzentration')}</span>}
         {spell.ritual && <span>{translateText('Ritual')}</span>}
       </div>
@@ -219,18 +222,23 @@ function SpellCard({
           <summary>{translateText('Zauberbeschreibung')}</summary>
           <p>{spell.description}</p>
           {spell.higherLevel && (
-            <p><strong>{translateText('Auf höheren Graden:')}</strong> {spell.higherLevel}</p>
+            <p>
+              <strong>{translateText('Auf höheren Graden:')}</strong> {spell.higherLevel}
+            </p>
           )}
         </details>
       )}
 
       <div className="spellbook-card-footer">
-        <small>{translateText('Gelernt auf Stufe')} {spell.learnedAtLevel}</small>
+        <small>
+          {translateText('Gelernt auf Stufe')} {spell.learnedAtLevel}
+        </small>
         <div className="spell-card-controls">
           {hasLimitedUses ? (
             <span className="spell-uses">
               <Clock3 size={12} />
-              {remainingUses}/{spell.usageLimit} · {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}
+              {remainingUses}/{spell.usageLimit} ·{' '}
+              {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}
             </span>
           ) : (
             <label className="prepared-toggle">
@@ -310,7 +318,12 @@ export function SpellbookList({
         className="spellbook-heading"
         title={t('Deine Zauber')}
         description={`${spells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')}`}
-        meta={<span className="spellbook-count"><BookOpen size={14} />{spells.length}</span>}
+        meta={
+          <span className="spellbook-count">
+            <BookOpen size={14} />
+            {spells.length}
+          </span>
+        }
       />
 
       <SpellCapacityGrid
@@ -347,7 +360,13 @@ export function SpellbookList({
       {visibleSpells.length === 0 ? (
         <div className="spellbook-empty">
           <Sparkles size={22} />
-          <p>{t(spells.length === 0 ? 'Deine Zauber sind noch leer.' : 'Keine Zauber entsprechen diesem Filter.')}</p>
+          <p>
+            {t(
+              spells.length === 0
+                ? 'Deine Zauber sind noch leer.'
+                : 'Keine Zauber entsprechen diesem Filter.',
+            )}
+          </p>
         </div>
       ) : (
         <div className="spellbook-groups">
@@ -355,7 +374,9 @@ export function SpellbookList({
             <section className="spellbook-level-group" key={level}>
               <div className="spellbook-level-heading">
                 <span>{level === 0 ? t('Zaubertricks') : `${t('Grad')} ${level}`}</span>
-                <small>{group.length} {t('Zauber')}</small>
+                <small>
+                  {group.length} {t('Zauber')}
+                </small>
               </div>
               <div className="spellbook-cards">
                 {group.map((spell) => (

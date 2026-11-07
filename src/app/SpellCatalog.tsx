@@ -122,15 +122,15 @@ function matchesSpell(
     maxSpellLevel: number
   },
 ): boolean {
-  const matchesSearch = !options.search
-    || normalizeKey(`${spell.name} ${spell.school} ${spell.description}`).includes(options.search)
-  const matchesLevel = options.levelFilter === 'all'
-    || spell.level === Number(options.levelFilter)
-  const matchesClass = !options.eligibleOnly
-    || spell.classes.some((item) => options.allowedClasses.includes(getClassId(item)))
-  const matchesSpellLevel = !options.eligibleOnly
-    || spell.level === 0
-    || spell.level <= options.maxSpellLevel
+  const matchesSearch =
+    !options.search ||
+    normalizeKey(`${spell.name} ${spell.school} ${spell.description}`).includes(options.search)
+  const matchesLevel = options.levelFilter === 'all' || spell.level === Number(options.levelFilter)
+  const matchesClass =
+    !options.eligibleOnly ||
+    spell.classes.some((item) => options.allowedClasses.includes(getClassId(item)))
+  const matchesSpellLevel =
+    !options.eligibleOnly || spell.level === 0 || spell.level <= options.maxSpellLevel
 
   return matchesSearch && matchesLevel && matchesClass && matchesSpellLevel
 }
@@ -166,7 +166,9 @@ function SpellSourceEditor({
       <div className="catalog-source-fields">
         <Field label={t('Herkunft')}>
           <Select value={source} onValueChange={(value) => onSourceChange(value as SpellSource)}>
-            <SelectTrigger><SelectValue /></SelectTrigger>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
             <SelectContent>
               {SOURCE_OPTIONS.map((option) => (
                 <SelectItem key={option.value} value={option.value}>
@@ -191,16 +193,21 @@ function SpellSourceEditor({
             min="0"
             max="1000"
             value={usageLimit}
-            onChange={(event) => onUsageLimitChange(
-              Math.max(0, Math.min(1000, Number(event.target.value) || 0)),
-            )}
+            onChange={(event) =>
+              onUsageLimitChange(Math.max(0, Math.min(1000, Number(event.target.value) || 0)))
+            }
           />
         </Field>
 
         {usageLimit > 0 && (
           <Field label={t('Erneuerung')}>
-            <Select value={usageReset} onValueChange={(value) => onUsageResetChange(value as UsageReset)}>
-              <SelectTrigger><SelectValue /></SelectTrigger>
+            <Select
+              value={usageReset}
+              onValueChange={(value) => onUsageResetChange(value as UsageReset)}
+            >
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
               <SelectContent>
                 {RESET_OPTIONS.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
@@ -243,9 +250,10 @@ export function SpellCatalog({
 
   const catalog = CATALOGS[character.ruleset]
   const spellcasting = getSpellcastingProgression(character)
-  const maxSpellLevel = spellcasting?.kind === 'warlock'
-    ? spellcasting.pactMagic?.spellLevel ?? 0
-    : spellcasting?.slots.length ?? 0
+  const maxSpellLevel =
+    spellcasting?.kind === 'warlock'
+      ? (spellcasting.pactMagic?.spellLevel ?? 0)
+      : (spellcasting?.slots.length ?? 0)
   const allowedClasses = getAllowedClasses(character)
 
   const results = useMemo(() => {
@@ -270,9 +278,7 @@ export function SpellCatalog({
   }
 
   function addSpell(spell: CatalogSpell) {
-    const components = spell.material
-      ? `${spell.components} (${spell.material})`
-      : spell.components
+    const components = spell.material ? `${spell.components} (${spell.material})` : spell.components
 
     onAdd({
       spellId: spell.id,
@@ -291,9 +297,7 @@ export function SpellCatalog({
       higherLevel: spell.higherLevel,
       source,
       sourceName: sourceName.trim() || undefined,
-      ...(usageLimit > 0
-        ? { usageLimit, usageRemaining: usageLimit, usageReset }
-        : {}),
+      ...(usageLimit > 0 ? { usageLimit, usageRemaining: usageLimit, usageReset } : {}),
     })
 
     resetSourceEditor()
@@ -344,7 +348,9 @@ export function SpellCatalog({
 
         <Field label={t('Zaubergrad')}>
           <Select value={levelFilter} onValueChange={setLevelFilter}>
-            <SelectTrigger><SelectValue /></SelectTrigger>
+            <SelectTrigger>
+              <SelectValue />
+            </SelectTrigger>
             <SelectContent>
               <SelectItem value="all">{t('Alle Grade')}</SelectItem>
               {Array.from({ length: 10 }, (_, index) => (
@@ -367,7 +373,8 @@ export function SpellCatalog({
       </div>
 
       <div className="catalog-count">
-        {results.length} {t('Treffer')} · {character.ruleset === '2014' ? 'SRD 5.1' : 'SRD 5.2 (2024)'} ·{' '}
+        {results.length} {t('Treffer')} ·{' '}
+        {character.ruleset === '2014' ? 'SRD 5.1' : 'SRD 5.2 (2024)'} ·{' '}
         {eligibleOnly ? t('Klassen-/Gradfilter aktiv') : t('vollständiger Katalog')}
       </div>
 
@@ -389,11 +396,15 @@ export function SpellCatalog({
                 </span>
                 <span className="catalog-spell-name">
                   <strong>{spell.name}</strong>
-                  <small>{getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}</small>
+                  <small>
+                    {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}
+                  </small>
                 </span>
                 <span className="catalog-spell-action">
                   {added ? (
-                    <span className="already-added"><Check size={14} /> {t('Im Buch')}</span>
+                    <span className="already-added">
+                      <Check size={14} /> {t('Im Buch')}
+                    </span>
                   ) : (
                     <Button
                       onClick={(event) => {
@@ -410,15 +421,20 @@ export function SpellCatalog({
 
               <div className="catalog-spell-detail">
                 <div>
-                  {spell.components}{spell.material ? ` (${spell.material})` : ''} · {spell.duration}
+                  {spell.components}
+                  {spell.material ? ` (${spell.material})` : ''} · {spell.duration}
                   {spell.concentration ? ' · Konzentration' : ''}
                   {spell.ritual ? ' · Ritual' : ''}
                 </div>
                 <p>{spell.description}</p>
                 {spell.higherLevel && (
-                  <p><strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}</p>
+                  <p>
+                    <strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}
+                  </p>
                 )}
-                <small>{t('Klassen:')} {spell.classes.join(', ')}</small>
+                <small>
+                  {t('Klassen:')} {spell.classes.join(', ')}
+                </small>
 
                 {!added && editorOpen && (
                   <SpellSourceEditor
@@ -441,12 +457,15 @@ export function SpellCatalog({
 
         {results.length === 0 && (
           <p className="muted-paragraph">
-            {t('Keine passenden Zauber gefunden. Prüfe den Klassenfilter oder passe deine Suche an.')}
+            {t(
+              'Keine passenden Zauber gefunden. Prüfe den Klassenfilter oder passe deine Suche an.',
+            )}
           </p>
         )}
         {results.length > 100 && (
           <p className="muted-paragraph">
-            Es werden die ersten 100 Treffer angezeigt. Verfeinere deine Suche für weitere Ergebnisse.
+            Es werden die ersten 100 Treffer angezeigt. Verfeinere deine Suche für weitere
+            Ergebnisse.
           </p>
         )}
       </div>
