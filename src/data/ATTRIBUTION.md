@@ -37,6 +37,10 @@ This work includes material from the System Reference Document 5.2.1 (“SRD 5.2
 
 Changes: Adventura uses the official German SRD fields, normalizes their structured data, and derives damage-dice and average-damage summaries. These additions are modifications of the source material.
 
+## Explicit spell grants from class features
+
+Adventura keeps spell grants separate from general class spell lists. In SRD 5.2.1, the Bard's Words of Creation feature grants Power Word Heal and Power Word Kill; these are linked to their canonical 2024 spell records in the spellbook. Other one-spell feature grants are likewise linked by canonical spell ID. This does not automatically add a class's full spell list or optional subclass-list choices to a character.
+
 ## SRD 5.2.1 English class and subclass features
 
 The English class and subclass feature text is sourced from the SRD 5.2.1 class section published by Wizards of the Coast LLC under CC BY 4.0. The source snapshot is a Markdown extraction from the public repository `downfallx/dnd-5e-srd-markdown`, file `classes.md` (upstream commit `c8c4a583afa446f38b5dc43548025bd4b37ce2da`): https://github.com/downfallx/dnd-5e-srd-markdown/blob/c8c4a583afa446f38b5dc43548025bd4b37ce2da/classes.md. The source repository identifies its content as the official SRD 5.2.1 and links the official document at https://www.dndbeyond.com/srd. Adventura retains this snapshot as an import source and normalizes the class/subclass feature headings, levels, and text. The snapshot is English only; the app uses the explicit English fallback label when a German field is unavailable.
