@@ -123,7 +123,7 @@ export interface SpellDamage {
 }
 
 export interface KnownSpell {
-  /** Derived active-feature entries; these are not persisted as spells. */
+  /** Derived spell entries granted by class or subclass features; not persisted as spells. */
   entryType?: 'spell' | 'feature'
   actionType?: 'action' | 'bonusAction' | 'reaction' | 'special'
   resourceId?: string

@@ -1091,3 +1091,396 @@ Object.assign(en, {
   'Du wählst eine weitere Metamagie-Option, mit der du die Wirkung deiner Zauber verändern kannst.':
     'You choose one additional Metamagic option to alter the effects of your spells.',
 })
+
+
+Object.assign(en, {
+  'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.':
+    'Your weapon attacks deal additional Radiant damage.',
+  'Du wählst einen Pfad, der deine Kampfrausch-Fähigkeiten erweitert und dir auf höheren Stufen weitere Unterklassenmerkmale gewährt.':
+    'You choose a path that enhances your Rage and grants additional subclass features at higher levels.',
+  'Du wählst ein Bardenkolleg, das deine Aufführungen und magischen Fähigkeiten spezialisiert.':
+    'You choose a Bard College that specializes your performances and magical abilities.',
+  'Du wählst eine Domäne, die deine göttlichen Fähigkeiten und deine Domänenzauber bestimmt.':
+    'You choose a domain that defines your divine abilities and Domain Spells.',
+  'Du trittst einem Druidenzirkel bei, der deine Verbindung zur Natur und deine Tiergestalt prägt.':
+    'You join a Druid Circle that shapes your bond with nature and your Wild Shape.',
+  'Du wählst einen Archetyp, der deinen Kampfstil und deine besonderen Techniken prägt.':
+    'You choose an archetype that shapes your fighting style and special techniques.',
+  'Du wählst eine Tradition, die deine Kampfkunst und deinen Umgang mit Fokus spezialisiert.':
+    'You choose a tradition that specializes your martial arts and use of Focus.',
+  'Du legst einen Schwur ab, der deine heiligen Fähigkeiten und Schwurzauber bestimmt.':
+    'You swear an oath that defines your sacred abilities and Oath Spells.',
+  'Du wählst einen Archetyp, der deine Jagd- und Überlebensfähigkeiten spezialisiert.':
+    'You choose an archetype that specializes your hunting and survival abilities.',
+  'Du wählst einen Archetyp, der deine besonderen Fertigkeiten und Tricks erweitert.':
+    'You choose an archetype that expands your specialized skills and tricks.',
+  'Du wählst eine magische Herkunft, die deine angeborenen Zauberkräfte prägt.':
+    'You choose a magical origin that shapes your innate spellcasting.',
+  'Du schließt einen Pakt mit einem übernatürlichen Patron, der dir zusätzliche Kräfte verleiht.':
+    'You make a pact with a supernatural patron who grants you additional powers.',
+  'Du wählst eine Magierschule, die deine arkane Spezialisierung bestimmt.':
+    'You choose a Wizard subclass that defines your arcane specialization.',
+  'Du lernst einen zusätzlichen Druidenzaubertrick deiner Wahl.':
+    'You learn one additional Druid cantrip of your choice.',
+  'Du erhältst zusätzliche Zauber passend zu deiner gewählten Landschaft. Diese Zauber sind immer vorbereitet und zählen nicht gegen die Zahl deiner vorbereiteten Zauber.':
+    'You gain additional spells associated with your chosen land. These spells are always prepared and do not count against the number of spells you can prepare.',
+  'Du bewegst dich ohne zusätzliche Bewegung durch nichtmagisches schwieriges Gelände. Pflanzen mit Dornen oder Stacheln verursachen dir dabei keinen Schaden.':
+    'Moving through nonmagical difficult terrain costs you no extra movement. Plants with thorns or spines do not damage you when you move through them.',
+  'Wenn du fällst, kannst du als Reaktion den Fallschaden um das Fünffache deiner Mönchsstufe reduzieren.':
+    'When you fall, you can use your Reaction to reduce the falling damage by an amount equal to five times your Monk level.',
+  'Wenn du Untote vertreibst, erleiden Untote, die ihren Rettungswurf nicht bestehen, zusätzlich gleißenden Schaden.':
+    'When you Turn Undead, Undead that fail their saving throw also take Radiant damage.',
+  'Der zusätzliche Schaden deiner Gesegneten Schläge steigt auf 2W8.':
+    'The extra damage from your Blessed Strikes increases to 2d8.',
+  'Wenn du mit einer Waffe angreifst, deren Meisterschaft du beherrschst, kannst du deren Meisterschaftseigenschaft durch Drücken, Schwächen oder Verlangsamen ersetzen.':
+    'When you attack with a weapon whose Mastery property you can use, you can replace that property with Push, Sap, or Slow for that attack.',
+  'Wenn du eine Kreatur mit einem Angriff verfehlst, erhältst du Vorteil auf deinen nächsten Angriff gegen sie vor Ende deines nächsten Zuges.':
+    'If you miss a creature with an attack roll, you have Advantage on your next attack roll against it before the end of your next turn.',
+  'Du kannst dich während deines Zuges an vertikalen Flächen und über Flüssigkeiten bewegen, ohne zu fallen, sofern du keine Rüstung oder keinen Schild trägst.':
+    'While you are not wearing armor or wielding a Shield, you can move along vertical surfaces and across liquids on your turn without falling.',
+  'Deine Fokusmanöver werden stärker: Hagel der Schläge, Geduldige Verteidigung und Schritt des Windes erhalten zusätzliche Vorteile.':
+    'Your Focus techniques improve, granting additional benefits to Flurry of Blows, Patient Defense, and Step of the Wind.',
+  'Du erhältst Übung in allen Rettungswürfen. Wenn dir ein Rettungswurf misslingt, kannst du einen Fokus-Punkt ausgeben, um ihn zu wiederholen.':
+    'You gain proficiency in all saving throws. When you fail a saving throw, you can spend a Focus Point to reroll it.',
+  'Wenn du Initiative würfelst und Unheimlicher Stoffwechsel nicht einsetzt, kannst du verbrauchte Fokus-Punkte bis auf vier zurückgewinnen.':
+    'When you roll Initiative and do not use Uncanny Metabolism, you can regain expended Focus Points until you have four.',
+  'Du erhältst Übung und Expertise in einer Fertigkeit deiner Wahl und lernst zusätzliche Sprachen.':
+    'You gain proficiency and Expertise in one skill of your choice and learn additional languages.',
+  'Du kannst dich als Bonusaktion unsichtbar machen, bis du angreifst oder ein Zauber endet. Die Nutzung kehrt nach einer langen Rast zurück.':
+    'You can take a Bonus Action to become Invisible until you attack or a spell ends. You regain this use after a Long Rest.',
+  'Du erreichst die höchste Stufe deiner angeborenen Magie und kannst den Zauber Wunsch ohne Materialkomponenten wirken.':
+    'You reach the pinnacle of your innate magic and can cast Wish without Material components.',
+  'Du wählst einen Pfad, der deine Kampfrausch-Fähigkeiten erweitert und dir weitere Merkmale auf höheren Stufen gewährt.':
+    'You choose a path that enhances your Rage and grants further features at higher levels.',
+  'Du wählst eine Mönchstradition, die deine Kampfkunst und deinen Umgang mit Ki spezialisiert.':
+    'You choose a Monastic Tradition that specializes your martial arts and use of Ki.',
+  'Du schließt einen Pakt mit einem übernatürlichen Wesen, das dir Magie und weitere Klassenmerkmale verleiht.':
+    'You make a pact with a supernatural being that grants you magic and additional class features.',
+  'Deine Rüstungsklasse berechnet sich ohne Rüstung aus 10 plus deinen relevanten Attributsmodifikatoren.':
+    'While unarmored, your Armor Class equals 10 plus the relevant ability modifiers.',
+  'Du erkennst Gefahren früh und hast unter den Regelbedingungen Vorteil auf bestimmte Geschicklichkeitsrettungswürfe.':
+    'You sense danger early and have Advantage on certain Dexterity saving throws under the conditions described by the rules.',
+  'Wenn du die Angriffsaktion ausführst, kannst du mehr als einmal angreifen. Die genaue Anzahl hängt von deiner Klasse und Stufe ab.':
+    'When you take the Attack action, you can attack more than once. The number of attacks depends on your class and level.',
+  'Deine Bewegungsrate erhöht sich, solange du keine schwere Rüstung trägst.':
+    'Your Speed increases while you are not wearing Heavy armor.',
+  'Du erhältst Vorteile auf Initiativewürfe und kannst zu Kampfbeginn schneller reagieren.':
+    'You gain benefits to Initiative rolls and can react more quickly when combat begins.',
+  'Bei einem kritischen Treffer würfelst du zusätzliche Schadenswürfel für deine Nahkampfwaffenangriffe.':
+    'When you score a Critical Hit, you roll additional damage dice for your melee weapon attacks.',
+  'Du kannst einen misslungenen Rettungswurf während deines Kampfrauschs wiederholen.':
+    'You can reroll a failed saving throw while your Rage is active.',
+  'Dein Kampfrausch endet nicht mehr vorzeitig unter den üblichen Bedingungen.':
+    'Your Rage no longer ends early under the usual conditions.',
+  'Wenn dein Stärkewurf niedriger als dein Stärkewert ist, kannst du stattdessen deinen Stärkewert verwenden.':
+    'If your Strength check total is lower than your Strength score, you can use your Strength score instead.',
+  'Deine Stärke und dein Konstitutionswert steigen, ebenso ihre jeweiligen Höchstwerte.':
+    'Your Strength and Constitution scores increase, as do their maximums.',
+  'Du addierst die Hälfte deines Übungsbonus auf Attributswürfe, bei denen du deinen Übungsbonus nicht bereits verwendest.':
+    'You add half your Proficiency Bonus to ability checks that do not already include it.',
+  'Verbündete können während einer kurzen Rast zusätzliche Trefferpunkte zurückgewinnen, wenn du sie mit Musik oder einer Aufführung begleitest.':
+    'During a Short Rest, allies can regain additional Hit Points when you accompany them with music or a performance.',
+  'Du erhältst verbrauchte Anwendungen deiner Bardeninspiration nach einer kurzen oder langen Rast zurück.':
+    'You regain expended uses of Bardic Inspiration when you finish a Short or Long Rest.',
+  'Du nutzt eine Aufführung, um Verbündete gegen Bezauberungs- und Furchteffekte zu stärken.':
+    'You perform to strengthen allies against Charmed and Frightened effects.',
+  'Du lernst zusätzliche Zauber, die normalerweise nicht auf der Bardenzauberliste stehen.':
+    'You learn additional spells that are not normally on the Bard spell list.',
+  'Du wählst eine Domäne, die dir zusätzliche Merkmale und Domänenzauber gewährt.':
+    'You choose a Domain that grants additional features and Domain Spells.',
+  'Untote mit einem bestimmten Herausforderungsgrad oder niedriger werden durch dein Untote-Vertreiben-Merkmal zerstört.':
+    'Undead of a specified Challenge Rating or lower are destroyed by your Turn Undead feature.',
+  'Einmal pro Zug verursachst du bei einem Treffer zusätzlichen Schaden mit deiner Waffe oder deinen Zaubern.':
+    'Once per turn, you deal extra damage when you hit with a weapon or spell attack.',
+  'Die Magie der Natur verlangsamt deine körperliche Alterung.':
+    'The magic of nature slows your physical aging.',
+  'Du kannst bestimmte Zauber wirken, während du Tiergestalt verwendest.':
+    'You can cast certain spells while using Wild Shape.',
+  'Du spezialisierst dich auf eine bestimmte Kampfweise und erhältst einen entsprechenden regeltechnischen Vorteil.':
+    'You specialize in a particular fighting style and gain the corresponding rules benefit.',
+  'Du wählst eine Kämpfer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.':
+    'You choose a Fighter subclass that grants additional features at specific levels.',
+  'Du erhältst Vorteile für unbewaffnete Angriffe und Mönchswaffen; deine Kampfkunst bestimmt unter anderem deinen Schadenswürfel.':
+    'You gain benefits for Unarmed Strikes and Monk weapons; your Martial Arts die determines your damage die and other benefits.',
+  'Du erhältst Ki-Punkte, mit denen du besondere Mönchsmerkmale einsetzt. Die Punkte kehren nach einer kurzen oder langen Rast zurück.':
+    'You gain Ki Points to fuel special Monk features. You regain the points when you finish a Short or Long Rest.',
+  'Deine Bewegungsrate steigt, solange du keine Rüstung und keinen Schild trägst.':
+    'Your Speed increases while you are not wearing armor or a Shield.',
+  'Du kannst den Schaden eines Fernkampfangriffs mit deiner Reaktion reduzieren und das Geschoss gegebenenfalls zurückwerfen.':
+    'You can use your Reaction to reduce the damage from a ranged weapon attack and potentially catch and throw the projectile.',
+  'Deine unbewaffneten Angriffe gelten als magisch, um Resistenzen und Immunitäten zu überwinden.':
+    'Your Unarmed Strikes count as magical for overcoming resistances and immunities.',
+  'Bei bestimmten Flächengefahren erleidest du bei einem erfolgreichen Geschicklichkeitsrettungswurf keinen Schaden und bei einem misslungenen nur halben.':
+    'Against certain area effects, you take no damage on a successful Dexterity saving throw and only half damage on a failure.',
+  'Du erhältst Übung in allen Rettungswürfen und kannst Ki einsetzen, um einen misslungenen Rettungswurf zu wiederholen.':
+    'You gain proficiency in all saving throws and can spend Ki to reroll a failed saving throw.',
+  'Wenn du zu Beginn eines Kampfes keine Ki-Punkte mehr hast, erhältst du einen Teil davon zurück.':
+    'When you roll Initiative with no Ki Points remaining, you regain some of them.',
+  'Du wählst einen Paladin-Schwur, der dir zusätzliche Merkmale und Schwurzauber gewährt.':
+    'You choose a Paladin Oath that grants additional features and Oath Spells.',
+  'Du und Verbündete in deiner Nähe addieren deinen Charismamodifikator auf Rettungswürfe.':
+    'You and nearby allies add your Charisma modifier to saving throws.',
+  'Du und Verbündete in deiner Nähe können nicht verängstigt werden, solange du bei Bewusstsein bist.':
+    'You and nearby allies cannot be Frightened while you are conscious.',
+  'Deine Nahkampfwaffenangriffe verursachen zusätzlich gleißenden Schaden.':
+    'Your melee weapon attacks deal additional Radiant damage.',
+  'Du erhältst Expertise in ausgewählten Fertigkeiten und zusätzliche Vorteile beim Erkunden.':
+    'You gain Expertise in selected skills and additional exploration benefits.',
+  'Du wählst eine Waldläufer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.':
+    'You choose a Ranger subclass that grants additional features at specific levels.',
+  'Du bewegst dich leichter durch schwieriges natürliches Gelände und widerstehst bestimmten pflanzlichen Gefahren.':
+    'You move more easily through difficult natural terrain and resist certain plant-based hazards.',
+  'Du addierst deinen Weisheitsmodifikator zu bestimmten Angriffswürfen oder Schadenswürfen gegen deine bevorzugten Feinde.':
+    'You add your Wisdom modifier to certain attack or damage rolls against your favored enemies.',
+  'Einmal pro Zug verursachst du zusätzlichen Schaden, wenn du unter den festgelegten Bedingungen mit einem passenden Angriff triffst.':
+    'Once per turn, you deal extra damage when you hit with a qualifying attack under the feature’s conditions.',
+  'Du wählst eine Schurken-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.':
+    'You choose a Rogue subclass that grants additional features at specific levels.',
+  'Bei Fertigkeits- und Werkzeugwürfen mit Übung zählt ein niedriger W20-Wurf mindestens als 10.':
+    'When you make an ability check using a skill or tool proficiency, a low d20 roll counts as at least 10.',
+  'Du bemerkst die Position verborgener oder unsichtbarer Kreaturen in deiner Nähe, sofern sie nicht vollständig verborgen sind.':
+    'You sense the location of hidden or invisible creatures nearby unless they are completely concealed.',
+  'Angriffe gegen dich können keinen Vorteil erhalten, solange du nicht kampfunfähig bist.':
+    'Attack rolls against you cannot have Advantage while you are not Incapacitated.',
+  'Du bist außergewöhnlich schwer zu treffen und kannst Angriffen geschickt ausweichen.':
+    'You are exceptionally difficult to hit and can deftly evade attacks.',
+  'Du wählst die magische Herkunft deiner Zauberkräfte und erhältst passende Unterklassenmerkmale.':
+    'You choose the magical origin of your powers and gain the corresponding subclass features.',
+  'Du veränderst die Wirkung deiner Zauber, indem du Zauberpunkte für Metamagie-Optionen ausgibst.':
+    'You alter the effects of your spells by spending Sorcery Points on Metamagic options.',
+  'Du kannst deine Zauberkräfte kurzzeitig erneuern und erhältst einen letzten Vorteil deiner Klasse.':
+    'You can briefly renew your magical power and gain a final class benefit.',
+  'Du wirkst Zauber mit Paktmagie-Zauberplätzen, die nach einer kurzen oder langen Rast zurückkehren.':
+    'You cast spells using Pact Magic slots, which return when you finish a Short or Long Rest.',
+  'Du erhältst übernatürliche Fähigkeiten durch Anrufungen, die du aus einer Liste auswählst.':
+    'You gain supernatural abilities by choosing Eldritch Invocations from a list.',
+  'Dein Patron gewährt dir eine Paktgabe, die deine Spielweise und weitere Optionen prägt.':
+    'Your patron grants you a Pact Boon that shapes your playstyle and additional options.',
+  'Du erhältst jeweils einen besonders mächtigen Zauber eines höheren Grades, den du einmal pro langer Rast wirken kannst.':
+    'You gain a particularly powerful spell of a higher level that you can cast once per Long Rest.',
+  'Du wählst eine Magierschule, die dir zusätzliche Merkmale auf bestimmten Stufen gewährt.':
+    'You choose a Wizard school that grants additional features at specific levels.',
+  'Du kannst ausgewählte Zauber niedriger Grade ohne Zauberplatz wirken.':
+    'You can cast selected low-level spells without expending a spell slot.',
+  'Du wählst zwei Zauber, die du jeweils einmal ohne Zauberplatz wirken kannst und nach einer kurzen oder langen Rast zurückerhältst.':
+    'You choose two spells that you can each cast once without a spell slot, regaining the ability after a Short or Long Rest.',
+  'Du nutzt die Meisterschaftseigenschaften deiner geübten Waffen.':
+    'You use the Mastery properties of weapons with which you have proficiency.',
+  'Wenn du Zweites Aufatmen einsetzt, kannst du dich zusätzlich bewegen, ohne Gelegenheitsangriffe auszulösen.':
+    'When you use Second Wind, you can also move without provoking Opportunity Attacks.',
+  'Du erhöhst einen oder mehrere Attributswerte oder wählst stattdessen ein zulässiges Talent.':
+    'You increase one or more ability scores or choose an eligible feat instead.',
+  'Du erhältst ein Talent des Epischen Segens oder ein anderes Talent, für das du die Voraussetzungen erfüllst.':
+    'You gain an Epic Boon feat or another feat for which you qualify.',
+  'Du verdoppelst deinen Übungsbonus für ausgewählte Fertigkeiten oder Werkzeuge.':
+    'You double your Proficiency Bonus for selected skills or tools.',
+  'Du erhältst die Fähigkeit, Zauber deiner Klasse vorzubereiten oder zu kennen und mit den Klassenregeln zu wirken.':
+    'You gain the ability to prepare or know spells from your class and cast them using its spellcasting rules.',
+  'Du wählst eine göttliche Ausrichtung, die dir zusätzliche Fertigkeits- oder Zauberoptionen gewährt.':
+    'You choose a divine order that grants additional skill or spell options.',
+  'Du verstärkst deine Zaubertricks oder Waffenangriffe mit göttlicher Energie.':
+    'You empower your cantrips or weapon attacks with divine energy.',
+  'Dein Göttliches Eingreifen wird zuverlässiger und kann mächtigere Effekte hervorbringen.':
+    'Your Divine Intervention becomes more reliable and can produce more powerful effects.',
+  'Du kannst ein besonders mächtiges göttliches Eingreifen erbitten.':
+    'You can call upon an especially powerful form of Divine Intervention.',
+  'Du wählst eine Ausrichtung, die dir zusätzliche druidische Fertigkeiten gewährt.':
+    'You choose an order that grants additional Druidic abilities.',
+  'Du verstärkst deine Tiergestalt mit elementarer Macht und verursachst zusätzlichen Schaden.':
+    'You empower your Wild Shape with elemental force and deal additional damage.',
+  'Deine elementaren Angriffe in Tiergestalt werden mächtiger.':
+    'Your elemental attacks while using Wild Shape become more powerful.',
+  'Du kannst Fokus-Punkte zurückgewinnen, wenn du eine kurze Rast beendest.':
+    'You can regain Focus Points when you finish a Short Rest.',
+  'Deine fokussierten Mönchsangriffe verursachen zusätzlichen Schaden.':
+    'Your Focus-enhanced Monk attacks deal additional damage.',
+  'Du kannst deinen Körper von bestimmten Zuständen und Effekten befreien.':
+    'You can free your body from certain conditions and effects.',
+  'Du kannst deinen Geist und Körper durch Fokus-Punkte vor bestimmten Zuständen schützen.':
+    'You can use Focus Points to protect your mind and body from certain conditions.',
+  'Du erhältst eine starke defensive Fähigkeit, die Fokus-Punkte nutzt.':
+    'You gain a powerful defensive ability that uses Focus Points.',
+  'Du kannst mit Handauflegen bestimmte Zustände bei einer Kreatur beenden.':
+    'You can use Lay on Hands to end certain conditions affecting a creature.',
+  'Du kannst Mal des Jägers ohne Zauberplatz wirken und hast zusätzliche Anwendungen.':
+    'You can cast Hunter’s Mark without a spell slot and gain additional free uses.',
+  'Du erhältst zusätzliche Bewegungs- und Erkundungsvorteile.':
+    'You gain additional movement and exploration benefits.',
+  'Du erhältst Expertise in weiteren Fertigkeiten.':
+    'You gain Expertise in additional skills.',
+  'Du erhältst eine zusätzliche defensive oder offensive Verbesserung deiner Jagdfähigkeiten.':
+    'You gain an additional defensive or offensive improvement to your hunting abilities.',
+  'Du kannst dich als Bonusaktion verstecken und bist schwerer aufzuspüren.':
+    'You can take the Hide action as a Bonus Action and are harder to detect.',
+  'Deine Angriffe gegen markierte Ziele werden zuverlässiger.':
+    'Your attacks against marked targets become more reliable.',
+  'Du kannst als Bonusaktion sprinten, dich zurückziehen oder verstecken.':
+    'You can Dash, Disengage, or Hide as a Bonus Action.',
+  'Du verzichtest auf Bewegung, um bei deinem nächsten Angriff in diesem Zug Vorteil zu erhalten.':
+    'You forgo your movement to gain Advantage on your next attack this turn.',
+  'Du kannst bei einem Hinterhältigen Angriff Schadenswürfel gegen zusätzliche Effekte eintauschen.':
+    'When you deal Sneak Attack damage, you can trade damage dice for additional effects.',
+  'Du erhältst zusätzliche Optionen für deine Listigen Schläge.':
+    'You gain additional options for your Cunning Strikes.',
+  'Du kannst weitere Effekte auslösen, indem du zusätzliche Hinterhältige-Angriff-Würfel aufgibst.':
+    'You can trigger further effects by forgoing additional Sneak Attack dice.',
+  'Du erhältst Übung in Weisheitsrettungswürfen oder kannst dich mental besser verteidigen.':
+    'You gain proficiency in Wisdom saving throws or improve your mental defenses.',
+  'Du kannst Zauberpunkte ausgeben, um deine Metamagie zu verstärken und Zauber trotz fehlender Komponenten zu wirken.':
+    'You can spend Sorcery Points to enhance Metamagic and cast spells despite missing components.',
+  'Du führst ein Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.':
+    'You perform a ritual to regain some of your expended Pact Magic spell slots.',
+  'Du kannst mit deinem Patron kommunizieren und einen passenden mächtigen Zauber ohne Zauberplatz wirken.':
+    'You can contact your patron and cast an appropriate powerful spell without a spell slot.',
+  'Du kannst Rituale aus deinem Zauberbuch wirken und zusätzliche Rituale erlernen.':
+    'You can cast rituals from your spellbook and learn additional rituals.',
+  'Du erhältst Expertise in einer Fertigkeit, die mit deinem magischen Studium verbunden ist.':
+    'You gain Expertise in a skill connected to your magical studies.',
+  'Du kannst einen Zauber nach einer kurzen Rast in dein Zauberbuch einprägen und ihn einmal ohne Zauberplatz wirken.':
+    'After a Short Rest, you can memorize a spell in your spellbook and cast it once without a spell slot.',
+  'Du bündelst göttliche Kraft und nutzt sie für besondere Klassen- oder Unterklasseneffekte.':
+    'You channel divine power to fuel special class or subclass effects.',
+  'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf.':
+    'You present your holy symbol and force nearby Undead to make a Wisdom saving throw.',
+  'Du verteilst einen Heilvorrat auf Kreaturen in deiner Nähe, die weniger als die Hälfte ihrer Trefferpunkte besitzen.':
+    'You distribute a pool of healing among nearby creatures that have less than half their Hit Points remaining.',
+  'Du erhältst Übung in zusätzlichen Fertigkeiten oder mit zusätzlicher Ausrüstung.':
+    'You gain proficiency in additional skills or equipment.',
+  'Deine Heilzauber stellen zusätzliche Trefferpunkte wieder her.':
+    'Your healing spells restore additional Hit Points.',
+  'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst Trefferpunkte zurück.':
+    'When you heal others with a spell, you regain Hit Points yourself.',
+  'Deine Heilzauber verwenden bei Heilwürfeln den höchstmöglichen Wert.':
+    'Your healing spells use the highest possible result for their healing dice.',
+  'Du erhältst zusätzliche Zauber, die mit deiner gewählten Landschaft verbunden sind.':
+    'You gain additional spells associated with your chosen land.',
+  'Du bewegst dich leichter durch natürliche Landschaften.':
+    'You move more easily through natural environments.',
+  'Du bist gegen bestimmte natürliche Gefahren und Zustände geschützt.':
+    'You are protected against certain natural hazards and conditions.',
+  'Natürliche Kreaturen können dich nicht ohne Weiteres angreifen.':
+    'Natural creatures cannot easily attack you.',
+  'Du verbesserst deine körperlichen Fähigkeiten und bestimmte Initiativewürfe.':
+    'You improve your physical abilities and certain Initiative checks.',
+  'Du wählst einen weiteren Kampfstil.':
+    'You choose an additional Fighting Style.',
+  'Deine Treffer mit Hagel der Schläge können Ziele zu Fall bringen, wegstoßen oder ihre Reaktionen verhindern.':
+    'Your Flurry of Blows hits can knock targets prone, push them away, or prevent their Reactions.',
+  'Du kannst dich durch Meditation schützen und nach einer Rast temporäre Trefferpunkte erhalten.':
+    'You can protect yourself through meditation and gain Temporary Hit Points after a rest.',
+  'Du erhältst zusätzliche Schwurzauber, die stets vorbereitet sind.':
+    'You gain additional Oath Spells that are always prepared.',
+  'Du und Verbündete in deiner Aura sind gegen Bezauberung immun.':
+    'You and allies in your Aura are immune to being Charmed.',
+  'Dein Göttliches Niederstrecken schützt dich und Verbündete in deiner Aura.':
+    'Your Divine Smite protects you and allies within your Aura.',
+  'Du erkennst die Resistenzen, Immunitäten und Anfälligkeiten deiner markierten Beute.':
+    'You learn the resistances, immunities, and vulnerabilities of your marked quarry.',
+  'Du wählst eine Jagdtechnik, die deine Angriffe gegen Beute verbessert.':
+    'You choose a hunting technique that improves your attacks against prey.',
+  'Du wählst eine defensive Technik gegen Angriffe oder Flächengefahren.':
+    'You choose a defensive technique against attacks or area hazards.',
+  'Deine Jagdtechnik wird verbessert und erhält zusätzliche Effekte.':
+    'Your hunting technique improves and gains additional effects.',
+  'Du erhältst eine Kletterbewegungsrate und kannst aus großer Höhe besser springen.':
+    'You gain a climbing speed and can jump more effectively from high places.',
+  'Du kannst magische Gegenstände unabhängig von üblichen Klassenbeschränkungen verwenden.':
+    'You can use magic items regardless of their usual class restrictions.',
+  'Du erhältst zu Beginn eines Kampfes unter bestimmten Bedingungen einen zusätzlichen Zug.':
+    'You can gain an additional turn at the start of combat under certain conditions.',
+  'Kreaturen haben einen Nachteil auf Rettungswürfe gegen deine Zauber, wenn du aus dem Versteck wirkst.':
+    'Creatures have Disadvantage on saving throws against your spells when you cast from hiding.',
+  'Deine Waffenangriffe erschweren getroffenen Kreaturen bestimmte Rettungswürfe gegen deine Zauber.':
+    'Your weapon attacks hinder hit creatures’ saving throws against certain spells you cast.',
+  'Du sprichst Drakonisch und wählst einen Drachentyp, der deine drakonische Magie prägt.':
+    'You speak Draconic and choose a dragon type that shapes your draconic magic.',
+  'Du erhältst Resistenz gegen deinen Drachenschadenstyp und kannst passenden Zauberschaden verstärken.':
+    'You gain Resistance to your dragon’s damage type and can empower matching spell damage.',
+  'Du erhältst Dunkelsicht und kannst Dunkelheit mit Zauberpunkten wirken.':
+    'You gain Darkvision and can cast Darkness by spending Sorcery Points.',
+  'Nach einer kurzen oder langen Rast wählst du eine Schadensart, gegen die du resistent bist.':
+    'After a Short or Long Rest, you choose a damage type against which you have Resistance.',
+  'Wenn du eine Kreatur auf 0 Trefferpunkte reduzierst, erhältst du temporäre Trefferpunkte.':
+    'When you reduce a creature to 0 Hit Points, you gain Temporary Hit Points.',
+  'Du kannst in deinen Hervorrufungszaubern sichere Bereiche für Verbündete schaffen.':
+    'You can create safe areas for allies within your Evocation spells.',
+  'Du lernst zwei mächtige Zauber, die deine Worte der Schöpfung verkörpern.':
+    'You learn two powerful spells that embody your Words of Creation.',
+  'Du kannst Zauberplätze und Anwendungen deiner Tiergestalt unter den festgelegten Bedingungen austauschen.':
+    'You can exchange spell slots and uses of Wild Shape under the feature’s specified conditions.',
+  'Du verwandelst dich in eine Tiergestalt, deren Stärke und Dauer von deiner Stufe abhängen.':
+    'You transform into a Beast form whose strength and duration depend on your level.',
+  'Du gibst eine Nutzung deiner Tiergestalt aus, um Gegner zu schädigen und eine Kreatur zu heilen.':
+    'You expend a use of Wild Shape to damage enemies and heal a creature.',
+  'Du nutzt Fokus-Punkte, um besondere Mönchsmanöver einzusetzen.':
+    'You use Focus Points to fuel special Monk techniques.',
+  'Noch nicht freigeschaltet': 'Not unlocked yet',
+  Freigeschaltet: 'Unlocked',
+  'Ab Stufe': 'At level',
+  'Alle Klassen- und Unterklassenmerkmale': 'All class and subclass features',
+  'Alle Klassen- und Unterklassenmerkmale deines Regelwerks – aktive, passive und zukünftige.':
+    'All active, passive, and upcoming class and subclass features for your ruleset.',
+  'Merkmalszauber': 'Feature-granted spells',
+  'MERKMALSZAUBER': 'FEATURE SPELL',
+  'Ermöglicht durch': 'Granted by',
+  'Aktion': 'Action',
+  'Bonusaktion': 'Bonus Action',
+  'Reaktion': 'Reaction',
+  'Spezial': 'Special',
+  'Klassenmerkmal': 'Class feature',
+  'Unterklassenmerkmal': 'Subclass feature',
+  'Zauber & Merkmalszauber': 'Spells & feature-granted spells',
+  'Verwalte deine Zauber und zusätzliche Zauber, die dir Klassenmerkmale gewähren.':
+    'Manage your spells and additional spells granted by class features.',
+})
+
+
+Object.assign(en, {
+  'Deine Waffenangriffe verursachen zusätzlich gleißenden Schaden.':
+    'Your weapon attacks deal additional Radiant damage.',
+})
+
+
+Object.assign(en, {
+  'Wenn du dich in deinem Zug höchstens mit halber Bewegungsrate bewegst, hast du Vorteil auf Geschicklichkeitswürfe (Heimlichkeit).':
+    'If you move no more than half your Speed on your turn, you have Advantage on Dexterity (Stealth) checks.',
+  'Deine Trefferpunkte steigen bei jedem Zaubererlevel um 1. Ohne Rüstung beträgt deine Rüstungsklasse 13 plus Geschicklichkeitsmodifikator.':
+    'Your Hit Point maximum increases by 1 for each Sorcerer level. While you are not wearing armor, your AC equals 13 plus your Dexterity modifier.',
+  'Wenn du einen Attributswurf oder Rettungswurf ausführst, kannst du einen W10 addieren. Du kannst dies einmal pro kurzer oder langer Rast einsetzen.':
+    'When you make an ability check or saving throw, you can add a d10 to the roll. You can use this feature once per Short or Long Rest.',
+})
+
+
+Object.assign(en, {
+  'Du hast stets bestimmte Lebensdomänenzauber vorbereitet, die mit deiner Klerikerstufe wachsen. Sie zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.':
+    'You always have certain Life Domain spells prepared as you reach the specified Cleric levels. They do not count against the number of spells you can prepare.',
+  'Du hast zusätzliche Schwurzauber auf bestimmten Paladinstufen stets vorbereitet.':
+    'You always have additional Oath Spells prepared at the specified Paladin levels.',
+  'Die Zauberliste des Hexenmeisters wird um bestimmte Zauber erweitert, die du bei der Auswahl deiner bekannten Zauber berücksichtigen kannst.':
+    'The Warlock spell list is expanded with specific spells that you can choose when learning Warlock spells.',
+})
+
+
+Object.assign(en, {
+  'Du erhältst weitere mystische Anrufungen deiner Wahl. Die Gesamtzahl richtet sich nach deiner Hexenmeisterstufe.':
+    'You gain additional Eldritch Invocations of your choice. The total number is determined by your Warlock level.',
+  'Die Reichweite deiner Aura des Schutzes und deiner Aura des Mutes steigt von 3 auf 9 Meter.':
+    'The range of your Aura of Protection and Aura of Courage increases from 10 feet to 30 feet.',
+  'Du kannst Aktionsschub nun zweimal zwischen kurzen oder langen Rasten einsetzen.':
+    'You can now use Action Surge twice between Short or Long Rests.',
+})
+
+
+Object.assign(en, {
+  'Der Radius deiner Aura des Schutzes steigt von 3 auf 9 Meter.':
+    'The radius of your Aura of Protection increases from 10 feet to 30 feet.',
+})
+
+
+Object.assign(en, {
+  'Paladins Niederstrecken': 'Paladin’s Smite',
+  'Du hast den Zauber Göttliches Niederstrecken stets vorbereitet und kannst ihn einmal pro langer Rast ohne Zauberplatz wirken.':
+    'You always have Divine Smite prepared and can cast it once without expending a spell slot. You regain this ability after a Long Rest.',
+  'Du hast Göttliches Niederstrecken stets vorbereitet und kannst es einmal pro langer Rast ohne Zauberplatz wirken.':
+    'You always have Divine Smite prepared and can cast it once without expending a spell slot. You regain this ability after a Long Rest.',
+})

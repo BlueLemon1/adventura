@@ -14,9 +14,15 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const resources = getClassResources(character)
-  const features = getAutomaticClassFeatures(character).filter((feature) => !feature.activation)
+  const features = getAutomaticClassFeatures(character)
   const unlockedCount = features.filter((feature) => feature.unlocked).length
   const saved = character.classResources ?? []
+  const activationLabels = {
+    action: 'Aktion',
+    bonusAction: 'Bonusaktion',
+    reaction: 'Reaktion',
+    special: 'Spezial',
+  } as const
 
   function setResource(id: string, current: number) {
     onUpdate({ classResources: [...saved.filter((entry) => entry.id !== id), { id, current }] })
@@ -44,7 +50,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
         eyebrow={RULESET_LABELS[character.ruleset]}
         title={t('Merkmale & Ressourcen')}
         description={t(
-          'Alle passiven Klassen- und Unterklassenmerkmale deines Regelwerks – inklusive kommender Freischaltungen.',
+          'Alle Klassen- und Unterklassenmerkmale deines Regelwerks – aktive, passive und zukünftige.',
         )}
       />
       <div className="rest-actions">
@@ -118,7 +124,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       )}
       <section className="panel">
         <PanelHeader
-          title={t('Passive Klassen- und Unterklassenmerkmale')}
+          title={t('Alle Klassen- und Unterklassenmerkmale')}
           meta={`${unlockedCount} / ${features.length} ${t('FREIGESCHALTET')}`}
         />
         {features.length > 0 ? (
@@ -132,10 +138,16 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                   <strong>
                     {language === 'de' ? (feature.localizedName ?? feature.name) : feature.name}
                   </strong>
-                  <small>
-                    {t('Stufe')} {feature.level} ·{' '}
-                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')} ·{' '}
-                    {t(feature.unlocked ? 'Freigeschaltet' : 'Noch nicht freigeschaltet')}
+                  <small className="automatic-feature-meta">
+                    <span className={`automatic-feature-source is-${feature.source}`}>
+                      {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
+                    </span>
+                    <span>{t('Stufe')} {feature.level}</span>
+                    {feature.activation && (
+                      <span className="automatic-feature-activation">
+                        {t(activationLabels[feature.activation])}
+                      </span>
+                    )}
                   </small>
                   {feature.description && (
                     <p className="muted-paragraph">{t(feature.description)}</p>

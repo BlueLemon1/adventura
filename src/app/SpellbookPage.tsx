@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Plus, Sparkles } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
-import { getActiveClassFeatures, getClassResources } from '../domain/classFeatures'
+import { getSpellbookFeatureSpells, getClassResources } from '../domain/classFeatures'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
 import { SegmentedTabs } from '../components/ui/segmented-tabs'
@@ -18,10 +18,38 @@ import {
 import { SpellCatalog } from './SpellCatalog'
 import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
+import spells2014 from '../data/spells-2014.json'
+import spells2024 from '../data/spells-2024.json'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
 type UsageReset = NonNullable<KnownSpell['usageReset']>
+
+interface FeatureSpellCatalogEntry {
+  id: string
+  name: string
+  level: number
+  school?: string
+  castingTime?: string
+  range?: string
+  components?: string
+  duration?: string
+  concentration?: boolean
+  ritual?: boolean
+  description?: string
+  higherLevel?: string
+  damage?: { dice: string; average: number; type?: string }[]
+  localized?: {
+    name?: string
+    school?: string
+    castingTime?: string
+    range?: string
+    components?: string
+    duration?: string
+    description?: string
+    higherLevel?: string
+  }
+}
 
 interface SpellbookPageProps {
   character: Character
@@ -43,9 +71,14 @@ export function SpellbookPage({
   onUpdateSpells,
 }: SpellbookPageProps) {
   const t = (value: string) => translate(language, value)
-  const activeFeatures = getActiveClassFeatures(character)
+  const featureSpells = getSpellbookFeatureSpells(character)
   const classResources = getClassResources(character)
-  const activeFeatureEntries: KnownSpell[] = activeFeatures.map((feature): KnownSpell => {
+  const spellCatalog = (character.ruleset === '2014' ? spells2014 : spells2024) as unknown as FeatureSpellCatalogEntry[]
+  const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
+    const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
+    const localizedSpell = language === 'de' ? spell?.localized : undefined
+    const spellName = localizedSpell?.name ?? spell?.name ?? feature.name
+    const featureName = language === 'de' ? (feature.localizedName ?? feature.name) : feature.name
     const resource = feature.resourceId
       ? classResources.find((entry) => entry.id === feature.resourceId)
       : undefined
@@ -61,23 +94,26 @@ export function SpellbookPage({
       resourceId: feature.resourceId,
       resourceCost: feature.resourceCost ?? 1,
       spellId: feature.id,
-      name: language === 'de' ? (feature.localizedName ?? feature.name) : feature.name,
+      name: spellName,
       learnedAtLevel: feature.level,
       prepared: true,
-      spellLevel: -1,
-      castingTime:
-        feature.activation === 'bonusAction'
-          ? t('Bonusaktion')
-          : feature.activation === 'reaction'
-            ? t('Reaktion')
-            : feature.activation === 'special'
-              ? t('Spezial')
-              : t('Aktion'),
-      description: feature.description
-        ? language === 'en' && t(feature.description) === feature.description
-          ? t('Short rules summary available in German only for now.')
-          : t(feature.description)
-        : '',
+      spellLevel: spell?.level ?? 0,
+      school: localizedSpell?.school ?? spell?.school,
+      castingTime: localizedSpell?.castingTime ?? spell?.castingTime ?? t('Aktion'),
+      range: localizedSpell?.range ?? spell?.range,
+      components:
+        feature.spellbookSpellId === 'srd-2024-find-familiar' ||
+        feature.spellbookSpellId === 'srd-2024-summon-dragon'
+          ? localizedSpell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '') ??
+            spell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '')
+          : localizedSpell?.components ?? spell?.components,
+      duration: localizedSpell?.duration ?? spell?.duration,
+      concentration: spell?.concentration,
+      ritual: spell?.ritual,
+      description: localizedSpell?.description ?? spell?.description ?? feature.description ?? '',
+      higherLevel: localizedSpell?.higherLevel ?? spell?.higherLevel,
+      damage: spell?.damage,
+      notes: featureName,
       source: 'class',
       sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
       ...(resource && current !== undefined
@@ -167,7 +203,7 @@ export function SpellbookPage({
         eyebrow={t('MAGIE & ZAUBER')}
         title={t('Zauberbuch')}
         description={t(
-          'Verwalte Zauber und aktive Klassenfähigkeiten mit ihren wichtigsten Details.',
+          'Verwalte deine Zauber und zusätzliche Zauber, die dir Klassenmerkmale gewähren.',
         )}
       />
       <SegmentedTabs
@@ -179,7 +215,7 @@ export function SpellbookPage({
             value: 'character',
             label: t('Meine Zauber'),
             icon: <Plus size={15} />,
-            count: knownSpells.length + activeFeatureEntries.length,
+            count: knownSpells.length + featureSpellEntries.length,
           },
           { value: 'catalog', label: t('SRD & hinzufügen'), icon: <Sparkles size={15} /> },
         ]}
@@ -189,10 +225,10 @@ export function SpellbookPage({
         <>
           <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
           <SpellbookList
-            spells={[...knownSpells, ...activeFeatureEntries]}
+            spells={[...knownSpells, ...featureSpellEntries]}
             character={character}
             onUse={(spellId) => {
-              const feature = activeFeatureEntries.find((entry) => entry.spellId === spellId)
+              const feature = featureSpellEntries.find((entry) => entry.spellId === spellId)
               if (feature?.resourceId) {
                 const resource = classResources.find((entry) => entry.id === feature.resourceId)
                 if (!resource) return

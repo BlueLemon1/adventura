@@ -40,7 +40,7 @@ const FILTER_LABELS: Record<SpellFilter, string> = {
   all: 'Alle Zauber',
   prepared: 'Vorbereitet',
   unprepared: 'Nicht vorbereitet',
-  features: 'Aktive Merkmale',
+  features: 'Merkmalszauber',
 }
 
 function isPrepared(spell: KnownSpell): boolean {
@@ -137,7 +137,7 @@ function SpellCard({
         <div className="spellbook-card-title">
           <span className="spell-level">
             {isFeature
-              ? translateText('AKTIVES MERKMAL')
+              ? translateText('MERKMALSZAUBER')
               : level === 0
                 ? translateText('ZAUBERTRICK')
                 : `${translateText('GRAD')} ${level}`}
@@ -174,6 +174,12 @@ function SpellCard({
         </p>
       )}
 
+      {isFeature && spell.notes && (
+        <p className="spell-origin-note">
+          {translateText('Ermöglicht durch')}: {spell.notes}
+        </p>
+      )}
+
       {spell.damage && spell.damage.length > 0 && (
         <div className="spell-damage-summary">
           <strong>{spell.damage.map((part) => part.dice).join(' + ')}</strong>
@@ -204,7 +210,7 @@ function SpellCard({
       {spell.description && (
         <details className="spellbook-details" open={isFeature}>
           <summary>
-            {translateText(isFeature ? 'Merkmalsbeschreibung' : 'Zauberbeschreibung')}
+            {translateText('Zauberbeschreibung')}
           </summary>
           <p>{spell.description}</p>
           {spell.higherLevel && (
@@ -313,8 +319,8 @@ export function SpellbookList({
     <section className="panel spellbook-panel">
       <PanelHeader
         className="spellbook-heading"
-        title={t('Zauber & aktive Merkmale')}
-        description={`${actualSpells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')} · ${spells.length - actualSpells.length} ${t('aktive Merkmale')}`}
+        title={t('Zauber & Merkmalszauber')}
+        description={`${actualSpells.length} ${t('Zauber im Buch')} · ${preparedCount} ${t('vorbereitet')} · ${spells.length - actualSpells.length} ${t('Merkmalszauber')}`}
         meta={
           <span className="spellbook-count">
             <BookOpen size={14} />

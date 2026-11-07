@@ -16,6 +16,7 @@ export interface AutomaticClassFeature {
   activation?: 'action' | 'bonusAction' | 'reaction' | 'special'
   resourceId?: string
   resourceCost?: number
+  spellbookSpellId?: string
   unlocked: boolean
 }
 
@@ -28,510 +29,580 @@ const ACTIVE_FEATURES: Record<
     resourceCost?: number
   }
 > = {
-  Kampfrausch: {
+  "Rage": {
     activation: 'bonusAction',
     description:
       'Du verfällst in einen Kampfrausch. Er hält bis zu 10 Minuten an und endet vorzeitig unter den im Regelwerk genannten Bedingungen.',
     resourceId: 'rage',
+
   },
-  Bardeninspiration: {
+  "Bardic Inspiration": {
     activation: 'bonusAction',
     description:
       'Eine Kreatur deiner Wahl in Reichweite erhält einen Inspirationswürfel, den sie innerhalb der nächsten 10 Minuten zu einem passenden W20-Wurf addieren kann.',
     resourceId: 'bardic-inspiration',
+
   },
-  'Schneidende Worte': {
+  "Cutting Words": {
     activation: 'reaction',
     description:
       'Wenn eine Kreatur in deiner Nähe einen Wurf ablegt, kannst du eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um das Ergebnis zu verringern.',
     resourceId: 'bardic-inspiration',
+
   },
-  'Gegenzauberische Melodie': {
-    activation: 'action',
+  "Paladin's Smite": {
+    activation: 'bonusAction',
     description:
-      'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.',
+      'Du hast Göttliches Niederstrecken stets vorbereitet und kannst es einmal pro langer Rast ohne Zauberplatz wirken.',
+    resourceId: 'paladin-smite',
   },
-  Gegenzauber: {
+  "Countercharm": {
     activation: 'action',
     description:
       'Du beginnst eine inspirierende Aufführung, die Verbündeten in deiner Nähe Vorteil auf Rettungswürfe gegen Bezauberung und Furcht gewährt.',
+
   },
-  'Kanal göttlicher Energie': {
+  "Channel Divinity": {
     activation: 'special',
     description:
       'Diese Ressource speist deine Kanal-göttlicher-Energie-Effekte. Wähle im Zauberbuch den konkreten Effekt, etwa Untote vertreiben, Leben bewahren, Heilige Waffe oder Abwehrzauber.',
+
   },
-  'Untote vertreiben': {
+  "Turn Undead": {
     activation: 'action',
     description:
       'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf; bei Misslingen werden sie vertrieben.',
     resourceId: 'channel-divinity',
+
   },
-  'Leben bewahren': {
+  "Preserve Life": {
     activation: 'action',
     description:
       'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.',
     resourceId: 'channel-divinity',
+
   },
-  Tiergestalt: {
+  "Wild Shape": {
     activation: 'bonusAction',
     description:
       'Du verwandelst dich in eine zulässige Tiergestalt. Die Verwandlung hält bis zu deiner Rückverwandlung oder bis zum Ablauf der Dauer an.',
     resourceId: 'wild-shape',
+
   },
-  'Wilder Gefährte': {
+  "Wild Companion": {
     activation: 'action',
     description:
       'Du gibst eine Nutzung deiner Tiergestalt aus, um Vertrauten finden ohne Materialkomponenten zu wirken.',
     resourceId: 'wild-shape',
+
   },
-  'Hilfe des Landes': {
+  "Land's Aid": {
     activation: 'action',
     description:
       'Du gibst eine Nutzung deiner Tiergestalt aus, um einen Bereich mit nekrotischer Energie zu erfüllen und eine Kreatur zu heilen.',
     resourceId: 'wild-shape',
+
   },
-  'Zweites Aufatmen': {
+  "Second Wind": {
     activation: 'bonusAction',
     description:
       'Du gewinnst Trefferpunkte zurück. Die Höhe richtet sich nach deiner Kämpferstufe.',
     resourceId: 'second-wind',
+
   },
-  Aktionsschub: {
+  "Action Surge": {
     activation: 'special',
     description:
       'Du kannst in diesem Zug zusätzlich zu deiner normalen Aktion eine weitere Aktion ausführen.',
     resourceId: 'action-surge',
+
   },
-  Unbeugsam: {
+  "Indomitable": {
     activation: 'special',
     description:
       'Wenn dir ein Rettungswurf misslingt, kannst du ihn wiederholen und musst das neue Ergebnis verwenden.',
     resourceId: 'indomitable',
+
   },
-  Ki: {
+  "Ki": {
     activation: 'special',
     description:
       'Ki-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung, Schritt des Windes und Leerer Körper.',
+
   },
-  'Fokus des Mönchs': {
+  "Monk’s Focus": {
     activation: 'special',
     description:
       'Fokus-Punkte sind die Ressource für besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung und Schritt des Windes.',
+
   },
-  Handauflegen: {
+  "Lay on Hands": {
     activation: 'bonusAction',
     description:
       'Du berührst eine Kreatur und stellst Trefferpunkte aus deinem Heilungsvorrat wieder her oder neutralisierst eine Krankheit bzw. ein Gift, sofern die Regeln dies erlauben.',
     resourceId: 'lay-on-hands',
+
   },
-  'Göttlicher Sinn': {
+  "Divine Sense": {
     activation: 'action',
     description:
       'Bis zum Ende deines nächsten Zuges nimmst du bestimmte himmlische, untote und dämonische Präsenzen in deiner Nähe wahr.',
     resourceId: 'divine-sense',
+
   },
-  'Unheilige vertreiben': {
+  "Turn the Unholy": {
     activation: 'action',
     description:
       'Du präsentierst dein heiliges Symbol und zwingst Unholde und Untote in deiner Nähe zu einem Weisheitsrettungswurf. Bei Misslingen werden sie für bis zu eine Minute vertrieben.',
     resourceId: 'paladin-channel-divinity',
+
   },
-  'Heilige Waffe': {
+  "Sacred Weapon": {
     activation: 'action',
     description:
       'Du setzt Kanal göttlicher Energie ein, um eine gehaltene Waffe vorübergehend mit heiliger Macht zu erfüllen.',
     resourceId: 'channel-divinity-paladin',
+
   },
-  'Angeborene Magie': {
+  "Innate Sorcery": {
     activation: 'bonusAction',
     description:
       'Du entfesselst deine angeborene Magie für 1 Minute und erhältst die im Merkmal beschriebenen Vorteile.',
     resourceId: 'innate-sorcery',
+
   },
-  'Magische List': {
+  "Magical Cunning": {
     activation: 'action',
     description:
       'Du führst ein kurzes Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.',
     resourceId: 'magical-cunning',
+
   },
-  'Arkane Erholung': {
+  "Arcane Recovery": {
     activation: 'special',
     description:
       'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.',
     resourceId: 'arcane-recovery',
+
   },
-  'Natürliche Erholung': {
+  "Natural Recovery": {
     activation: 'special',
     description:
       'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.',
     resourceId: 'natural-recovery',
+
   },
-  'Einschüchternde Präsenz': {
+  "Intimidating Presence": {
     activation: 'action',
     description:
       'Du erschreckst Kreaturen in deiner Nähe mit deiner bedrohlichen Präsenz; sie müssen einen Weisheitsrettungswurf bestehen.',
+
   },
-  Vergeltung: {
+  "Retaliation": {
     activation: 'reaction',
     description:
       'Wenn dich eine Kreatur in deiner Nähe verletzt, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.',
+
   },
-  'Fließender Schritt': {
+  "Fleet Step": {
     activation: 'bonusAction',
     description:
       'Du kannst Schritt des Windes einsetzen, nachdem du in diesem Zug bereits eine andere Bonusaktion verwendet hast.',
+
   },
-  'Zitternde Handfläche': {
+  "Quivering Palm": {
     activation: 'action',
     description:
       'Du setzt Fokus-Punkte ein, um einem getroffenen Ziel tödliche Schwingungen einzuprägen und diese später auszulösen.',
     resourceId: 'focus-points',
+
   },
-  Diebesreflexe: {
+  "Thief's Reflexes": {
     activation: 'special',
     description:
       'Du kannst zu Beginn des ersten Kampfzugs unter den im Merkmal genannten Voraussetzungen einen zusätzlichen Zug erhalten.',
+
   },
-  'Schnelle Hände': {
+  "Fast Hands": {
     activation: 'bonusAction',
     description:
       'Du kannst bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.',
+
   },
-  'Unheimliches Ausweichen': {
+  "Uncanny Dodge": {
     activation: 'reaction',
     description:
       'Wenn dich ein sichtbarer Angreifer trifft, kannst du deine Reaktion einsetzen, um den Angriffsschaden zu halbieren.',
+
   },
-  'Listige Aktion': {
+  "Cunning Action": {
     activation: 'bonusAction',
     description:
       'Du nutzt deine Schnelligkeit, um als Bonusaktion zu sprinten, dich zurückzuziehen oder dich zu verstecken.',
+
   },
-  'Sicheres Zielen': {
-    activation: 'bonusAction',
-    description:
-      'Du gibst deine Bewegung für diesen Zug auf, um bei deinem nächsten Angriff im selben Zug Vorteil zu erhalten.',
-  },
-  Drachenflügel: {
+  "Dragon Wings": {
     activation: 'bonusAction',
     description: 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.',
+
   },
-  'Durch die Hölle schicken': {
+  "Hurl Through Hell": {
     activation: 'special',
     description:
       'Wenn du eine Kreatur triffst, kannst du sie einmal pro Zug durch die Unteren Ebenen schleudern und ihr zusätzlichen Schaden zufügen.',
+
   },
-  Überladung: {
+  "Overchannel": {
     activation: 'special',
     description:
       'Du kannst einen Magierzauber verstärken, um maximalen Schaden zu verursachen; die Anwendung birgt das im Merkmal beschriebene Risiko.',
+
   },
-  Raserei: {
+  "Frenzy": {
     activation: 'bonusAction',
     description:
       'Während deines Kampfrauschs kannst du in jedem deiner Züge einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen. Wenn der Kampfrausch endet, erhältst du eine Erschöpfungsstufe.',
+
   },
-  'Bewahrung des Lebens': {
-    activation: 'action',
-    description:
-      'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.',
-    resourceId: 'channel-divinity',
-  },
-  'Ganzheit des Körpers': {
+  "Wholeness of Body": {
     activation: 'action',
     description:
       'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.',
     resourceId: 'wholeness-of-body',
+
   },
-  'Hund des Unheils': {
+  "Hound of Ill Omen": {
     activation: 'bonusAction',
     description:
       'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.',
     resourceId: 'sorcery-points',
     resourceCost: 3,
+
   },
-  Drachenpräsenz: {
+  "Draconic Presence": {
     activation: 'action',
     description:
       'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.',
     resourceId: 'sorcery-points',
     resourceCost: 5,
+
   },
-  Waffenbindung: {
+  "Weapon Bond": {
     activation: 'bonusAction',
     description: 'Du kannst eine gebundene Waffe in deine Hand teleportieren.',
+
   },
-  'Göttliches Eingreifen': {
+  "Divine Intervention": {
     activation: 'action',
     description:
       'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.',
     resourceId: 'divine-intervention',
+
   },
-  'Bevorzugter Feind': {
+  "Favored Enemy": {
     activation: 'bonusAction',
     description:
       'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.',
     resourceId: 'favored-enemy',
+
   },
-  'Dunkler eigener Glücksfall': {
+  "Dark One's Own Luck": {
     activation: 'special',
     description:
       'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
     resourceId: 'dark-ones-own-luck',
+
   },
-  'Leerer Körper': {
+  "Empty Body": {
     activation: 'action',
     description:
       'Du gibst vier Ki-Punkte aus, um für eine Minute unsichtbar zu werden und gegen alle Schadensarten außer Energieschaden resistent zu sein.',
     resourceId: 'ki-points',
     resourceCost: 4,
+
   },
-  'Brutaler Schlag': {
+  "Brutal Strike": {
     activation: 'special',
     description:
       'Wenn du während deines Kampfrauschs mit einem Stärke-Angriff triffst, kannst du einen zusätzlichen Effekt deines Brutalen Schlags wählen, etwa das Ziel wegzustoßen oder zusätzlichen Schaden zu verursachen.',
+
   },
-  'Wilde Erneuerung': {
+  "Wild Resurgence": {
     activation: 'special',
     description:
       'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um einen Zauberplatz des 1. Grades wiederherzustellen, oder einen Zauberplatz ausgeben, um eine Nutzung deiner Tiergestalt zurückzugewinnen.',
+
   },
-  'Berührende Reinigung': {
+  "Restoring Touch": {
     activation: 'special',
     description:
       'Wenn du Handauflegen einsetzt, kannst du zusätzlich Zustände vom Ziel entfernen. Jeder entfernte Zustand kostet fünf Trefferpunkte aus deinem Heilungsvorrat.',
     resourceId: 'lay-on-hands',
     resourceCost: 5,
+
   },
-  Drachengefährte: {
+  "Dragon Companion": {
     activation: 'action',
     description:
       'Du beschwörst einmal nach einer langen Rast einen drakonischen Geist als Gefährten, indem du den Zauber Drachen beschwören ohne Zauberplatz und Materialkomponenten wirkst.',
     resourceId: 'dragon-companion',
+
   },
-  'Göttlicher Funke': {
+  "Divine Spark": {
     activation: 'action',
     description:
       'Du richtest göttliche Energie auf eine Kreatur in bis zu 9 Metern Entfernung. Du heilst sie um 1W8 plus deinen Weisheitsmodifikator oder zwingst sie zu einem Konstitutionsrettungswurf gegen gleißenden oder nekrotischen Schaden. Der Würfel steigt auf 2W8 ab Stufe 7, 3W8 ab Stufe 13 und 4W8 ab Stufe 18.',
     resourceId: 'channel-divinity',
+
   },
-  'Reinigende Berührung': {
+  "Cleansing Touch": {
     activation: 'action',
     description:
       'Du berührst dich selbst oder eine bereitwillige Kreatur und beendest einen Zauber, der auf ihr liegt.',
     resourceId: 'cleansing-touch',
+
   },
-  'Zauberhafte Erneuerung': {
+  "Sorcerous Restoration": {
     activation: 'special',
     description:
       'Nach einer kurzen Rast kannst du Zauberpunkte in Höhe von höchstens der Hälfte deiner Zaubererstufe zurückgewinnen. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.',
     resourceId: 'sorcerous-restoration',
+
   },
-  'Listiger Schlag': {
+  "Cunning Strike": {
     activation: 'special',
     description:
       'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du einen oder mehrere Schadenswürfel aufgeben, um einen Listigen-Schlag-Effekt wie Vergiften, Zu-Fall-Bringen oder Zurückziehen auszulösen.',
+
   },
-  'Listige Schläge': {
+  "Devious Strikes": {
     activation: 'special',
     description:
       'Wenn du Hinterhältigen Angriffsschaden verursachst, kannst du zusätzliche Schadenswürfel aufgeben, um weitere Listige-Schläge-Effekte wie Benommenheit, Bewusstlosigkeit oder Blindheit auszulösen.',
+
   },
-  'Rücksichtsloser Angriff': {
+  "Reckless Attack": {
     activation: 'special',
     description:
       'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.',
+
   },
-  'Betäubender Schlag': {
+  "Stunning Strike": {
     activation: 'special',
     description:
       'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.',
     resourceId: 'ki-points',
+
   },
-  'Geschosse abwehren': {
+  "Deflect Missiles": {
     activation: 'reaction',
     description:
       'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.',
+
   },
-  'Angriffe abwehren': {
+  "Deflect Attacks": {
     activation: 'reaction',
     description:
       'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.',
+
   },
-  'Langsamer Fall': {
+  "Slow Fall": {
     activation: 'reaction',
     description:
       'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.',
+
   },
-  'Göttliches Niederstrecken': {
+  "Divine Smite": {
     activation: 'special',
     description:
       'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.',
+
   },
-  'Hagel der Schläge': {
+  "Flurry of Blows": {
     activation: 'bonusAction',
     description:
       'Nach der Angriffsaktion kannst du einen Ki- oder Fokus-Punkt ausgeben, um zwei zusätzliche unbewaffnete Schläge als Bonusaktion auszuführen.',
     resourceId: 'ki-points',
+
   },
-  'Geduldige Verteidigung': {
+  "Patient Defense": {
     activation: 'bonusAction',
     description:
       'Du nutzt deine Bonusaktion zur Verteidigung. Im Regelwerk 2024 kannst du dich kostenlos zurückziehen oder mit einem Fokus-Punkt zusätzlich ausweichen; 2014 kostet die Ausweichaktion einen Ki-Punkt.',
     resourceId: 'ki-points',
+
   },
-  'Schritt des Windes': {
+  "Step of the Wind": {
     activation: 'bonusAction',
     description:
       'Du nutzt deine Bonusaktion für Sprinten oder Zurückziehen und kannst deine Sprungweite erhöhen. Die genauen Kosten unterscheiden sich zwischen 2014 und 2024.',
     resourceId: 'ki-points',
+
   },
-  'Quelle der Magie': {
+  "Font of Magic": {
     activation: 'special',
     description:
       'Du wandelst Zauberplätze in Zauberpunkte um oder gibst Zauberpunkte aus, um Zauberplätze zu erschaffen.',
+
   },
-  Abwehrzauber: {
+  "Abjure Foes": {
     activation: 'action',
     description:
       'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.',
     resourceId: 'channel-divinity-paladin',
+
   },
-  'Unvergleichliche Fertigkeiten': {
+  "Peerless Skill": {
     activation: 'special',
     description:
       'Wenn du einen Attributswurf ablegst, kannst du einen Inspirationswürfel ausgeben und sein Ergebnis zum Wurf addieren.',
     resourceId: 'bardic-inspiration',
+
   },
-  'Unvergleichliche Fertigkeit': {
-    activation: 'special',
-    description:
-      'Wenn du einen Attributswurf ablegst, kannst du einen Inspirationswürfel ausgeben und sein Ergebnis zum Wurf addieren.',
-    resourceId: 'bardic-inspiration',
-  },
-  Mehrfachangriff: {
+  "Multiattack": {
     activation: 'action',
     description:
       'Du führst eine deiner gewählten Mehrfachangriffstechniken aus: einen Angriff gegen mehrere Ziele mit Fernkampfwaffen oder mehrere Nahkampfangriffe gegen Kreaturen in deiner Reichweite.',
+
   },
-  'Magische Hand-Tricks': {
+  "Mage Hand Legerdemain": {
     activation: 'bonusAction',
     description:
       'Du kannst deine Magische Hand mit einer Bonusaktion kontrollieren und mit ihr Taschendiebstahl, das Entschärfen von Fallen oder andere geschickte Manipulationen ausführen.',
+
   },
-  'Vielseitiger Betrüger': {
+  "Versatile Trickster": {
     activation: 'bonusAction',
     description:
       'Du lenkst mit deiner Magischen Hand einen Gegner ab und erhältst bis zum Ende deines Zuges Vorteil auf deine Angriffswürfe gegen ihn.',
+
   },
-  Zauberdieb: {
+  "Spell Thief": {
     activation: 'reaction',
     description:
       'Wenn eine Kreatur einen Zauber auf dich wirkt, kannst du versuchen, den Zauber mit deiner Reaktion zu vereiteln und seine Magie für dich zu beanspruchen.',
     resourceId: 'spell-thief',
+
   },
-  Kriegsmagie: {
+  "War Magic": {
     activation: 'special',
     description:
       'Nachdem du mit deiner Aktion einen Zaubertrick gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.',
+
   },
-  'Verbesserte Kriegsmagie': {
+  "Improved War Magic": {
     activation: 'special',
     description:
       'Nachdem du mit deiner Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.',
+
   },
-  'Arkane Aufladung': {
+  "Arcane Charge": {
     activation: 'special',
     description:
       'Wenn du Aktionsschub einsetzt, kannst du dich vor, nach oder zwischen den Aktionen bis zu 9 Meter weit teleportieren.',
     resourceId: 'action-surge',
+
   },
-  'Augen der Dunkelheit': {
+  "Eyes of the Dark": {
     activation: 'special',
     description:
       'Du kannst Dunkelheit mit Zauberpunkten wirken und durch die von dir erzeugte magische Dunkelheit sehen.',
     resourceId: 'sorcery-points',
     resourceCost: 2,
+
   },
-  'Stärke des Grabes': {
+  "Strength of the Grave": {
     activation: 'reaction',
     description:
       'Wenn Schaden dich auf 0 Trefferpunkte reduzieren würde, kannst du mit einem Charisma-Rettungswurf versuchen, stattdessen mit 1 Trefferpunkt stehen zu bleiben.',
     resourceId: 'strength-of-grave',
+
   },
-  Schattenwandlung: {
+  "Shadow Walk": {
     activation: 'bonusAction',
     description:
       'Du teleportierst dich von einem Bereich mit dämmrigem Licht oder Dunkelheit zu einem freien Ort mit dämmrigem Licht oder Dunkelheit in deiner Sichtweite.',
+
   },
-  Schattenform: {
+  "Umbral Form": {
     activation: 'action',
     description:
       'Du gibst sechs Zauberpunkte aus, um für bis zu eine Minute eine schattenhafte Gestalt anzunehmen, die sich durch feste Gegenstände bewegen kann.',
     resourceId: 'sorcery-points',
     resourceCost: 6,
+
   },
-  'Treues Ross': {
+  "Faithful Steed": {
     activation: 'special',
     description:
       'Du wirkst Find Steed, ohne einen Zauberplatz auszugeben. Das beschworene Reittier folgt den Regeln des Zaubers.',
     resourceId: 'faithful-steed',
+
   },
-  'Taktischer Verstand': {
+  "Tactical Mind": {
     activation: 'special',
     description:
       'Wenn dir ein Attributswurf misslingt, kannst du eine Nutzung von Zweites Aufatmen ausgeben und den Wurf um einen W10 erhöhen.',
     resourceId: 'second-wind',
+
   },
-  Selbstheilung: {
+  "Self-Restoration": {
     activation: 'special',
     description:
       'Am Ende deines Zuges kannst du einen der Zustände Bezaubert, Verängstigt oder Vergiftet beenden. Alternativ kannst du einen Fokus-Punkt ausgeben, um einen solchen Zustand sofort zu beenden.',
+
   },
-  'Abgelenkte Energie': {
+  "Deflect Energy": {
     activation: 'reaction',
     description:
       'Wenn du mit deiner Reaktion Energieschaden abwehrst, kannst du einen Teil davon auf ein Ziel in Reichweite umlenken.',
+
   },
-  'Großes Göttliches Eingreifen': {
+  "Greater Divine Intervention": {
     activation: 'action',
     description:
       'Du kannst die mächtigste Form deines Göttlichen Eingreifens erbitten und den dadurch gewährten göttlichen Effekt wirken.',
     resourceId: 'divine-intervention',
+
   },
-  'Tarnung in der Wildnis': {
+  "Hide in Plain Sight": {
     activation: 'special',
     description:
       'Du verbringst eine Minute damit, natürliche Materialien zu sammeln und dich zu tarnen. Solange du dich nicht bewegst, bist du unter passenden natürlichen Bedingungen schwer zu entdecken.',
+
   },
-  Verschwinden: {
+  "Vanish": {
     activation: 'bonusAction',
     description: 'Du kannst die Verstecken-Aktion als Bonusaktion ausführen.',
+
   },
-  'Heiliger Nimbus': {
+  "Holy Nimbus": {
     activation: 'action',
     description:
       'Du entfesselst eine heilige Aura, die helles Licht ausstrahlt und feindliche Kreaturen in deiner Nähe beeinträchtigt.',
     resourceId: 'holy-nimbus',
+
   },
-  'Mystischer Meister': {
+  "Eldritch Master": {
     activation: 'special',
     description:
       'Du führst eine einminütige Zwiesprache mit deinem Patron und stellst alle verbrauchten Zauberplätze deiner Paktmagie wieder her. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.',
     resourceId: 'eldritch-master',
+
   },
-  'Patron kontaktieren': {
+  "Contact Patron": {
     activation: 'special',
     description:
       'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken. Den Rettungswurf des Zaubers bestehst du automatisch.',
     resourceId: 'contact-patron',
+
   },
-  Glückstreffer: {
+  "Stroke of Luck": {
     activation: 'special',
     description:
       'Wenn ein Angriff dich verfehlt oder ein Attributswurf misslingt, kannst du das Ergebnis in einen Treffer oder einen W20-Wert von 20 verwandeln.',
     resourceId: 'stroke-of-luck',
+
   },
 }
 
@@ -657,6 +728,8 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level >= 11 ? 3 : 2,
       'short-one-or-long',
     )
+  if (classId === 'paladin' && ruleset === '2024' && level >= 2)
+    add('paladin-smite', 'Paladins Niederstrecken', 1, 'long')
   if (classId === 'paladin' && ruleset === '2024' && level >= 5)
     add('faithful-steed', 'Treues Ross', 1, 'long')
   if (classId === 'paladin' && subclass === 'devotion' && level >= 20)
@@ -737,6 +810,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [12, 'Ability Score Improvement'],
     [16, 'Ability Score Improvement'],
     [19, 'Ability Score Improvement'],
+    [10, 'Expertise'],
     [10, 'Magical Secrets'],
     [14, 'Magical Secrets'],
     [18, 'Magical Secrets'],
@@ -751,8 +825,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [8, 'Destroy Undead'],
     [11, 'Destroy Undead'],
     [14, 'Destroy Undead'],
-    [8, 'Divine Strike'],
-    [14, 'Divine Strike'],
+    [17, 'Destroy Undead'],
     [10, 'Divine Intervention'],
     [20, 'Divine Intervention'],
     [4, 'Ability Score Improvement'],
@@ -773,11 +846,13 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [19, 'Ability Score Improvement'],
     [18, 'Timeless Body'],
     [18, 'Beast Spells'],
+    [20, 'Archdruid'],
   ],
   fighter: [
     [1, 'Fighting Style'],
     [1, 'Second Wind'],
     [2, 'Action Surge'],
+    [17, 'Additional Action Surge Use'],
     [3, 'Martial Archetype'],
     [5, 'Extra Attack'],
     [11, 'Extra Attack'],
@@ -803,6 +878,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [2, 'Step of the Wind'],
     [2, 'Unarmored Movement'],
     [3, 'Deflect Missiles'],
+    [4, 'Slow Fall'],
     [5, 'Extra Attack'],
     [5, 'Stunning Strike'],
     [6, 'Ki-Empowered Strikes'],
@@ -831,9 +907,9 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [5, 'Extra Attack'],
     [6, 'Aura of Protection'],
     [10, 'Aura of Courage'],
+    [18, 'Aura Improvements'],
     [11, 'Improved Divine Smite'],
     [14, 'Cleansing Touch'],
-    [18, 'Aura of Protection'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
     [12, 'Ability Score Improvement'],
@@ -861,6 +937,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
   rogue: [
     [1, 'Expertise'],
+    [6, 'Expertise'],
     [1, 'Sneak Attack'],
     [1, 'Thieves’ Cant'],
     [2, 'Cunning Action'],
@@ -895,6 +972,12 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [1, 'Otherworldly Patron'],
     [1, 'Pact Magic'],
     [2, 'Eldritch Invocations'],
+    [5, 'Additional Eldritch Invocations'],
+    [7, 'Additional Eldritch Invocations'],
+    [9, 'Additional Eldritch Invocations'],
+    [12, 'Additional Eldritch Invocations'],
+    [15, 'Additional Eldritch Invocations'],
+    [18, 'Additional Eldritch Invocations'],
     [3, 'Pact Boon'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
@@ -924,8 +1007,8 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   berserker: [
     [3, 'Frenzy'],
     [6, 'Mindless Rage'],
-    [10, 'Retaliation'],
-    [14, 'Intimidating Presence'],
+    [10, 'Intimidating Presence'],
+    [14, 'Retaliation'],
   ],
   lore: [
     [3, 'Bonus Proficiencies'],
@@ -935,15 +1018,17 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
   life: [
     [1, 'Bonus Proficiency'],
+    [1, 'Life Domain Spells'],
     [1, 'Disciple of Life'],
     [2, 'Preserve Life'],
     [6, 'Blessed Healer'],
     [8, 'Divine Strike'],
   ],
   land: [
-    [2, 'Bonus Spells'],
+    [2, 'Bonus Cantrip'],
     [2, 'Natural Recovery'],
-    [6, 'Natural Recovery'],
+    [2, 'Circle Spells'],
+    [6, 'Land’s Stride'],
     [10, 'Nature’s Ward'],
     [14, 'Nature’s Sanctuary'],
   ],
@@ -961,6 +1046,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [17, 'Quivering Palm'],
   ],
   devotion: [
+    [3, 'Oath Spells'],
     [3, 'Sacred Weapon'],
     [3, 'Turn the Unholy'],
     [7, 'Aura of Devotion'],
@@ -976,7 +1062,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   thief: [
     [3, 'Fast Hands'],
     [3, 'Second-Story Work'],
-    [9, 'Stealth'],
+    [9, 'Supreme Sneak'],
     [13, 'Use Magic Device'],
     [17, 'Thief’s Reflexes'],
   ],
@@ -997,6 +1083,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
   draconic: [
     [1, 'Dragon Ancestor'],
+    [1, 'Draconic Resilience'],
     [6, 'Elemental Affinity'],
     [14, 'Dragon Wings'],
     [18, 'Draconic Presence'],
@@ -1009,8 +1096,9 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [18, 'Umbral Form'],
   ],
   fiend: [
+    [1, 'Expanded Spell List'],
     [1, 'Dark One’s Blessing'],
-    [6, 'Dark One’s Own Luck'],
+    [6, "Dark One's Own Luck"],
     [10, 'Fiendish Resilience'],
     [14, 'Hurl Through Hell'],
   ],
@@ -1026,6 +1114,7 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
 const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
   barbarian: [
     [1, 'Rage'],
+    [3, 'Barbarian Subclass'],
     [1, 'Unarmored Defense'],
     [1, 'Weapon Mastery'],
     [2, 'Danger Sense'],
@@ -1049,8 +1138,10 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
   ],
   bard: [
     [1, 'Bardic Inspiration'],
+    [3, 'Bard Subclass'],
     [1, 'Spellcasting'],
     [2, 'Expertise'],
+    [9, 'Expertise'],
     [2, 'Jack of All Trades'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
@@ -1067,21 +1158,23 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [1, 'Spellcasting'],
     [1, 'Divine Order'],
     [2, 'Channel Divinity'],
+    [3, 'Cleric Subclass'],
     [2, 'Divine Spark'],
     [2, 'Turn Undead'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
     [12, 'Ability Score Improvement'],
     [16, 'Ability Score Improvement'],
-    [5, 'Destroy Undead'],
+    [5, 'Sear Undead'],
     [7, 'Blessed Strikes'],
     [10, 'Divine Intervention'],
-    [14, 'Improved Divine Intervention'],
+    [14, 'Improved Blessed Strikes'],
     [19, 'Epic Boon'],
     [20, 'Greater Divine Intervention'],
   ],
   druid: [
     [1, 'Spellcasting'],
+    [3, 'Druid Subclass'],
     [1, 'Druidic'],
     [1, 'Primal Order'],
     [2, 'Wild Shape'],
@@ -1099,6 +1192,7 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
   ],
   fighter: [
     [1, 'Fighting Style'],
+    [3, 'Fighter Subclass'],
     [1, 'Second Wind'],
     [1, 'Weapon Mastery'],
     [2, 'Action Surge'],
@@ -1112,12 +1206,18 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [5, 'Extra Attack'],
     [5, 'Tactical Shift'],
     [9, 'Indomitable'],
+    [9, 'Tactical Master'],
     [11, 'Two Extra Attacks'],
+    [13, 'Indomitable'],
+    [13, 'Studied Attacks'],
+    [17, 'Indomitable'],
+    [17, 'Additional Action Surge Use'],
     [19, 'Epic Boon'],
     [20, 'Three Extra Attacks'],
   ],
   monk: [
     [1, 'Martial Arts'],
+    [3, 'Monk Subclass'],
     [1, 'Unarmored Defense'],
     [2, 'Monk’s Focus'],
     [2, 'Flurry of Blows'],
@@ -1135,18 +1235,23 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [5, 'Stunning Strike'],
     [6, 'Empowered Strikes'],
     [7, 'Evasion'],
+    [9, 'Acrobatic Movement'],
+    [10, 'Heightened Focus'],
     [10, 'Self-Restoration'],
     [13, 'Deflect Energy'],
-    [14, 'Discipline'],
-    [18, 'Superior Hunter’s Defense'],
+    [14, 'Disciplined Survivor'],
+    [15, 'Perfect Focus'],
+    [18, 'Superior Defense'],
     [19, 'Epic Boon'],
-    [20, 'Perfect Self'],
+    [20, 'Body and Mind'],
   ],
   paladin: [
     [1, 'Lay on Hands'],
+    [3, 'Paladin Subclass'],
     [1, 'Spellcasting'],
     [1, 'Weapon Mastery'],
     [2, 'Fighting Style'],
+    [2, "Paladin's Smite"],
     [3, 'Channel Divinity'],
     [3, 'Divine Sense'],
     [4, 'Ability Score Improvement'],
@@ -1160,13 +1265,15 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [10, 'Aura of Courage'],
     [11, 'Radiant Strikes'],
     [14, 'Restoring Touch'],
+    [18, 'Aura Expansion'],
     [19, 'Epic Boon'],
   ],
   ranger: [
     [1, 'Spellcasting'],
+    [3, 'Ranger Subclass'],
     [1, 'Favored Enemy'],
     [1, 'Weapon Mastery'],
-    [2, 'Natural Explorer'],
+    [2, 'Deft Explorer'],
     [2, 'Fighting Style'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
@@ -1177,18 +1284,19 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [9, 'Expertise'],
     [10, 'Tireless'],
     [13, 'Relentless Hunter'],
-    [14, 'Vanish'],
+    [14, 'Nature’s Veil'],
     [17, 'Precise Hunter'],
     [19, 'Epic Boon'],
     [20, 'Foe Slayer'],
   ],
   rogue: [
     [1, 'Expertise'],
+    [3, 'Rogue Subclass'],
+    [6, 'Expertise'],
     [1, 'Sneak Attack'],
     [1, 'Thieves’ Cant'],
     [1, 'Weapon Mastery'],
     [2, 'Cunning Action'],
-    [3, 'Steady Aim'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
     [10, 'Ability Score Improvement'],
@@ -1207,20 +1315,31 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
   ],
   sorcerer: [
     [1, 'Spellcasting'],
+    [3, 'Sorcerer Subclass'],
     [1, 'Innate Sorcery'],
     [2, 'Font of Magic'],
-    [3, 'Metamagic'],
+    [2, 'Metamagic'],
     [4, 'Ability Score Improvement'],
     [8, 'Ability Score Improvement'],
     [12, 'Ability Score Improvement'],
     [16, 'Ability Score Improvement'],
     [5, 'Sorcerous Restoration'],
     [7, 'Sorcery Incarnate'],
+    [19, 'Epic Boon'],
     [10, 'Metamagic Option'],
-    [20, 'Sorcerous Restoration'],
+    [17, 'Metamagic Option'],
+    [20, 'Arcane Apotheosis'],
   ],
   warlock: [
     [1, 'Eldritch Invocations'],
+    [2, 'Additional Eldritch Invocations'],
+    [5, 'Additional Eldritch Invocations'],
+    [7, 'Additional Eldritch Invocations'],
+    [9, 'Additional Eldritch Invocations'],
+    [12, 'Additional Eldritch Invocations'],
+    [15, 'Additional Eldritch Invocations'],
+    [18, 'Additional Eldritch Invocations'],
+    [3, 'Otherworldly Patron'],
     [1, 'Pact Magic'],
     [2, 'Magical Cunning'],
     [4, 'Ability Score Improvement'],
@@ -1234,6 +1353,7 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
   ],
   wizard: [
     [1, 'Spellcasting'],
+    [3, 'Wizard Subclass'],
     [1, 'Ritual Adept'],
     [1, 'Arcane Recovery'],
     [2, 'Scholar'],
@@ -1308,6 +1428,16 @@ const SUBCLASS_FEATURES_2024: Record<string, Array<[number, string, string]>> = 
       6,
       'Blessed Healer',
       'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.',
+    ],
+    [
+      8,
+      'Divine Strike',
+      'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.',
+    ],
+    [
+      8,
+      'Divine Strike',
+      'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.',
     ],
     [
       17,
@@ -1789,9 +1919,99 @@ const FEATURE_LABELS_DE: Record<string, string> = {
   'Druid Circle': 'Druidenzirkel',
   'Monastic Tradition': 'Mönchstradition',
   'Otherworldly Patron': 'Andersweltlicher Schutzherr',
+  'Life Domain Spells': 'Zauber der Lebensdomäne',
+  'Oath Spells': 'Schwurzauber',
+  'Expanded Spell List': 'Erweiterte Zauberliste',
+  'Additional Eldritch Invocations': 'Zusätzliche mystische Anrufungen',
+  'Aura Improvements': 'Aura-Verbesserungen',
+  'Aura Expansion': 'Aura-Ausdehnung',
+  "Paladin's Smite": 'Paladins Niederstrecken',
+  'Additional Action Surge Use': 'Zusätzliche Aktionsschub-Anwendung',
+  "Land's Aid": 'Hilfe des Landes',
+  "Nature's Ward": 'Schutz der Natur',
+  "Nature's Sanctuary": 'Naturheiligtum',
+  "Hunter's Lore": 'Jägerkunde',
+  "Hunter's Prey": 'Jägerbeute',
+  "Superior Hunter's Prey": 'Überlegene Jägerbeute',
+  "Thief's Reflexes": 'Diebesreflexe',
+  "Dark One's Blessing": 'Segnung des Dunklen',
+  "Dark One's Own Luck": 'Dunkler eigener Glücksfall',
+  'Barbarian Subclass': 'Barbaren-Unterklasse',
+  'Bard Subclass': 'Barden-Unterklasse',
+  'Cleric Subclass': 'Kleriker-Unterklasse',
+  'Druid Subclass': 'Druiden-Unterklasse',
+  'Fighter Subclass': 'Kämpfer-Unterklasse',
+  'Monk Subclass': 'Mönchs-Unterklasse',
+  'Paladin Subclass': 'Paladin-Unterklasse',
+  'Ranger Subclass': 'Waldläufer-Unterklasse',
+  'Rogue Subclass': 'Schurken-Unterklasse',
+  'Sorcerer Subclass': 'Zauberer-Unterklasse',
+  'Warlock Subclass': 'Hexenmeister-Unterklasse',
+  'Wizard Subclass': 'Magier-Unterklasse',
+  'Bonus Cantrip': 'Bonus-Zaubertrick',
+  'Circle Spells': 'Zirkelzauber',
+  'Land’s Stride': 'Landgang',
+  Archdruid: 'Erzdruide',
+  'Slow Fall': 'Langsamer Fall',
+  'Sear Undead': 'Untote versengen',
+  'Improved Blessed Strikes': 'Verbesserte Gesegnete Schläge',
+  'Tactical Master': 'Taktischer Meister',
+  'Studied Attacks': 'Studierte Angriffe',
+  'Acrobatic Movement': 'Akrobatische Bewegung',
+  'Heightened Focus': 'Erhöhter Fokus',
+  'Disciplined Survivor': 'Disziplinierter Überlebender',
+  'Perfect Focus': 'Perfekter Fokus',
+  'Superior Defense': 'Überlegene Verteidigung',
+  'Body and Mind': 'Körper und Geist',
+  'Deft Explorer': 'Gewandter Entdecker',
+  'Nature’s Veil': 'Schleier der Natur',
+  'Arcane Apotheosis': 'Arkane Apotheose',
 }
 
 const FEATURE_DESCRIPTIONS_DE: Record<string, string> = {
+  'Zauber der Lebensdomäne': 'Du hast stets bestimmte Lebensdomänenzauber vorbereitet, die mit deiner Klerikerstufe wachsen. Sie zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.',
+  Schwurzauber: 'Du hast zusätzliche Schwurzauber auf bestimmten Paladinstufen stets vorbereitet.',
+  'Erweiterte Zauberliste': 'Die Zauberliste des Hexenmeisters wird um bestimmte Zauber erweitert, die du bei der Auswahl deiner bekannten Zauber berücksichtigen kannst.',
+  'Zusätzliche mystische Anrufungen': 'Du erhältst weitere mystische Anrufungen deiner Wahl. Die Gesamtzahl richtet sich nach deiner Hexenmeisterstufe.',
+  'Aura-Verbesserungen': 'Die Reichweite deiner Aura des Schutzes und deiner Aura des Mutes steigt von 3 auf 9 Meter.',
+  'Aura-Ausdehnung': 'Der Radius deiner Aura des Schutzes steigt von 3 auf 9 Meter.',
+  'Paladins Niederstrecken': 'Du hast den Zauber Göttliches Niederstrecken stets vorbereitet und kannst ihn einmal pro langer Rast ohne Zauberplatz wirken.',
+  'Zusätzliche Aktionsschub-Anwendung': 'Du kannst Aktionsschub nun zweimal zwischen kurzen oder langen Rasten einsetzen.',
+  'Meisterlicher Schleicher': 'Wenn du dich in deinem Zug höchstens mit halber Bewegungsrate bewegst, hast du Vorteil auf Geschicklichkeitswürfe (Heimlichkeit).',
+  'Drakonische Widerstandskraft': 'Deine Trefferpunkte steigen bei jedem Zaubererlevel um 1. Ohne Rüstung beträgt deine Rüstungsklasse 13 plus Geschicklichkeitsmodifikator.',
+  'Dunkler eigener Glücksfall': 'Wenn du einen Attributswurf oder Rettungswurf ausführst, kannst du einen W10 addieren. Du kannst dies einmal pro kurzer oder langer Rast einsetzen.',
+
+  'Barbaren-Unterklasse': 'Du wählst einen Pfad, der deine Kampfrausch-Fähigkeiten erweitert und dir auf höheren Stufen weitere Unterklassenmerkmale gewährt.',
+  'Barden-Unterklasse': 'Du wählst ein Bardenkolleg, das deine Aufführungen und magischen Fähigkeiten spezialisiert.',
+  'Kleriker-Unterklasse': 'Du wählst eine Domäne, die deine göttlichen Fähigkeiten und deine Domänenzauber bestimmt.',
+  'Druiden-Unterklasse': 'Du trittst einem Druidenzirkel bei, der deine Verbindung zur Natur und deine Tiergestalt prägt.',
+  'Kämpfer-Unterklasse': 'Du wählst einen Archetyp, der deinen Kampfstil und deine besonderen Techniken prägt.',
+  'Mönchs-Unterklasse': 'Du wählst eine Tradition, die deine Kampfkunst und deinen Umgang mit Fokus spezialisiert.',
+  'Paladin-Unterklasse': 'Du legst einen Schwur ab, der deine heiligen Fähigkeiten und Schwurzauber bestimmt.',
+  'Waldläufer-Unterklasse': 'Du wählst einen Archetyp, der deine Jagd- und Überlebensfähigkeiten spezialisiert.',
+  'Schurken-Unterklasse': 'Du wählst einen Archetyp, der deine besonderen Fertigkeiten und Tricks erweitert.',
+  'Zauberer-Unterklasse': 'Du wählst eine magische Herkunft, die deine angeborenen Zauberkräfte prägt.',
+  'Hexenmeister-Unterklasse': 'Du schließt einen Pakt mit einem übernatürlichen Patron, der dir zusätzliche Kräfte verleiht.',
+  'Magier-Unterklasse': 'Du wählst eine Magierschule, die deine arkane Spezialisierung bestimmt.',
+  'Bonus-Zaubertrick': 'Du lernst einen zusätzlichen Druidenzaubertrick deiner Wahl.',
+  Zirkelzauber: 'Du erhältst zusätzliche Zauber passend zu deiner gewählten Landschaft. Diese Zauber sind immer vorbereitet und zählen nicht gegen die Zahl deiner vorbereiteten Zauber.',
+  Landgang: 'Du bewegst dich ohne zusätzliche Bewegung durch nichtmagisches schwieriges Gelände. Pflanzen mit Dornen oder Stacheln verursachen dir dabei keinen Schaden.',
+  Erzdruide: 'Du kannst Tiergestalt unbegrenzt einsetzen und bestimmte Komponenten deiner Druidenzauber auch in Tiergestalt ignorieren.',
+  'Langsamer Fall': 'Wenn du fällst, kannst du als Reaktion den Fallschaden um das Fünffache deiner Mönchsstufe reduzieren.',
+  'Untote versengen': 'Wenn du Untote vertreibst, erleiden Untote, die ihren Rettungswurf nicht bestehen, zusätzlich gleißenden Schaden.',
+  'Verbesserte Gesegnete Schläge': 'Der zusätzliche Schaden deiner Gesegneten Schläge steigt auf 2W8.',
+  'Taktischer Meister': 'Wenn du mit einer Waffe angreifst, deren Meisterschaft du beherrschst, kannst du deren Meisterschaftseigenschaft durch Drücken, Schwächen oder Verlangsamen ersetzen.',
+  'Studierte Angriffe': 'Wenn du eine Kreatur mit einem Angriff verfehlst, erhältst du Vorteil auf deinen nächsten Angriff gegen sie vor Ende deines nächsten Zuges.',
+  'Akrobatische Bewegung': 'Du kannst dich während deines Zuges an vertikalen Flächen und über Flüssigkeiten bewegen, ohne zu fallen, sofern du keine Rüstung oder keinen Schild trägst.',
+  'Erhöhter Fokus': 'Deine Fokusmanöver werden stärker: Hagel der Schläge, Geduldige Verteidigung und Schritt des Windes erhalten zusätzliche Vorteile.',
+  'Disziplinierter Überlebender': 'Du erhältst Übung in allen Rettungswürfen. Wenn dir ein Rettungswurf misslingt, kannst du einen Fokus-Punkt ausgeben, um ihn zu wiederholen.',
+  'Perfekter Fokus': 'Wenn du Initiative würfelst und Unheimlicher Stoffwechsel nicht einsetzt, kannst du verbrauchte Fokus-Punkte bis auf vier zurückgewinnen.',
+  'Überlegene Verteidigung': 'Du kannst drei Fokus-Punkte ausgeben, um eine Minute lang gegen nahezu alle Schadensarten resistent zu sein.',
+  'Körper und Geist': 'Deine Geschicklichkeit und Weisheit steigen jeweils um 4 bis zu einem Maximum von 25.',
+  'Gewandter Entdecker': 'Du erhältst Übung und Expertise in einer Fertigkeit deiner Wahl und lernst zusätzliche Sprachen.',
+  'Schleier der Natur': 'Du kannst dich als Bonusaktion unsichtbar machen, bis du angreifst oder ein Zauber endet. Die Nutzung kehrt nach einer langen Rast zurück.',
+  'Arkane Apotheose': 'Du erreichst die höchste Stufe deiner angeborenen Magie und kannst den Zauber Wunsch ohne Materialkomponenten wirken.',
+
   Urwissen:
     'Während deines Kampfrauschs kannst du Stärke statt eines anderen Attributs für bestimmte Fertigkeitswürfe verwenden.',
   'Instinktiver Sprung':
@@ -2164,30 +2384,36 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       })),
     )
   }
+  const FEATURE_SPELLS_IN_SPELLBOOK: Record<string, string> = {
+    'Wild Companion': 'srd-2024-find-familiar',
+    'Faithful Steed': 'srd-2024-find-steed',
+    "Paladin's Smite": 'srd-2024-divine-smite',
+    'Dragon Companion': 'srd-2024-summon-dragon',
+    'Favored Enemy': 'srd-2024-hunters-mark',
+  }
   return result
     .sort((left, right) => left.level - right.level)
     .map((feature): AutomaticClassFeature => {
-      const germanName = FEATURE_LABELS_DE[feature.name] ?? feature.name
       const active =
-        (germanName === 'Raserei' && character.ruleset === '2024') ||
-        (germanName === 'Bevorzugter Feind' && character.ruleset === '2014')
+        (feature.name === 'Frenzy' && character.ruleset === '2024') ||
+        (feature.name === 'Favored Enemy' && character.ruleset === '2014')
           ? undefined
-          : ACTIVE_FEATURES[germanName]
+          : ACTIVE_FEATURES[feature.name]
       let resourceId = active?.resourceId
-      if (germanName === 'Kanal göttlicher Energie' && character.classId === 'paladin') {
+      if (feature.name === 'Channel Divinity' && character.classId === 'paladin') {
         resourceId =
           character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
       }
-      if (germanName === 'Heilige Waffe' && character.ruleset === '2014')
+      if (feature.name === 'Sacred Weapon' && character.ruleset === '2014')
         resourceId = 'paladin-channel-divinity'
-      if (germanName === 'Unheilige vertreiben') resourceId = 'paladin-channel-divinity'
-      if (germanName === 'Hagel der Schläge')
+      if (feature.name === 'Turn the Unholy') resourceId = 'paladin-channel-divinity'
+      if (feature.name === 'Flurry of Blows')
         return {
           ...feature,
           ...active,
           resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
         }
-      if (germanName === 'Geduldige Verteidigung')
+      if (feature.name === 'Patient Defense')
         return {
           ...feature,
           ...active,
@@ -2197,7 +2423,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
               ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion die Ausweichen-Aktion auszuführen.'
               : 'Du kannst dich als Bonusaktion zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich ausweichen.',
         }
-      if (germanName === 'Schritt des Windes')
+      if (feature.name === 'Step of the Wind')
         return {
           ...feature,
           ...active,
@@ -2208,7 +2434,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
               : 'Du kannst als Bonusaktion sprinten oder dich zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du beides tun und deine Sprungweite verdoppeln.',
         }
       if (
-        germanName === 'Göttlicher Sinn' &&
+        feature.name === 'Divine Sense' &&
         character.classId === 'paladin' &&
         character.ruleset === '2024'
       )
@@ -2220,7 +2446,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
           description:
             'Du öffnest als Bonusaktion deine Sinne und erkennst für zehn Minuten Celestials, Fiends und Untote sowie geweihte oder entweihte Orte und Gegenstände in deiner Nähe.',
         }
-      if (germanName === 'Drachenflügel')
+      if (feature.name === 'Dragon Wings')
         return {
           ...feature,
           ...active,
@@ -2230,43 +2456,49 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
               ? 'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.'
               : 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.',
         }
-      if (germanName === 'Heiliger Nimbus')
+      if (feature.name === 'Holy Nimbus')
         return {
           ...feature,
           ...active,
           activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
           resourceId: 'holy-nimbus',
         }
-      if (germanName === 'Treues Ross')
-        return { ...feature, ...active, activation: 'action', resourceId: 'faithful-steed' }
-      if (germanName === 'Tiergestalt')
+      if (feature.name === 'Faithful Steed')
+        return {
+          ...feature,
+          ...active,
+          activation: 'action',
+          resourceId: 'faithful-steed',
+          description: 'Du wirkst Reittier finden ohne Zauberplatz und beschwörst ein treues außerweltliches Reittier.',
+        }
+      if (feature.name === 'Wild Shape')
         return {
           ...feature,
           ...active,
           activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
           resourceId,
         }
-      if (germanName === 'Betäubender Schlag')
+      if (feature.name === 'Stunning Strike')
         return {
           ...feature,
           ...active,
           resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
         }
-      if (germanName === 'Handauflegen')
+      if (feature.name === 'Lay on Hands')
         return {
           ...feature,
           ...active,
           activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
           resourceId,
         }
-      if (germanName === 'Ganzheit des Körpers')
+      if (feature.name === 'Wholeness of Body')
         return {
           ...feature,
           ...active,
           activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
           resourceId: 'wholeness-of-body',
         }
-      if (germanName === 'Zitternde Handfläche')
+      if (feature.name === 'Quivering Palm')
         return {
           ...feature,
           ...active,
@@ -2279,15 +2511,12 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       ...feature,
       localizedName: FEATURE_LABELS_DE[feature.name] ?? feature.name,
       name: feature.name,
+      spellbookSpellId: is2024 ? FEATURE_SPELLS_IN_SPELLBOOK[feature.name] : undefined,
     }))
 }
 
-export function getActiveClassFeatures(character: Character): AutomaticClassFeature[] {
-  const resourceFeatures = new Set(['Kanal göttlicher Energie', 'Ki', 'Fokus des Mönchs'])
+export function getSpellbookFeatureSpells(character: Character): AutomaticClassFeature[] {
   return getAutomaticClassFeatures(character).filter(
-    (feature) =>
-      feature.unlocked &&
-      feature.activation &&
-      !resourceFeatures.has(feature.localizedName ?? feature.name),
+    (feature) => feature.unlocked && feature.spellbookSpellId,
   )
 }
