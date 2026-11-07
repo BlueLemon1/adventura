@@ -30,7 +30,17 @@ export function getClassResources(character: Character): ClassResourceDefinition
   }
   if (classId === 'barbarian') {
     const maximum =
-      level >= 20 ? 99 : level >= 17 ? 6 : level >= 12 ? 5 : level >= 6 ? 4 : level >= 3 ? 3 : 2
+      ruleset === '2014' && level >= 20
+        ? 99
+        : level >= 17
+          ? 6
+          : level >= 12
+            ? 5
+            : level >= 6
+              ? 4
+              : level >= 3
+                ? 3
+                : 2
     add('rage', 'Kampfrausch', maximum, ruleset === '2014' ? 'long' : 'short-one-or-long')
   }
   if (classId === 'bard') {
@@ -53,7 +63,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'second-wind',
       'Zweites Aufatmen',
       ruleset === '2024' ? (level >= 10 ? 4 : level >= 4 ? 3 : 2) : 1,
-      'short-or-long',
+      ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
     )
   if (classId === 'monk' && level >= 2)
     add(
