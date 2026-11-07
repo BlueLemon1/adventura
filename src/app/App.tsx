@@ -1,27 +1,26 @@
 import { useRef, useState, type ChangeEvent, type FormEvent } from 'react'
 import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, ChevronRight } from 'lucide-react'
-import type { Character, KnownSpell } from '../domain/character'
+import type { Character } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { RULESET_LABELS } from '../domain/rules'
 import { createPactMagic, createSpellSlots, updatePactMagic, updateSpellSlots } from '../domain/spellcasting'
-import { SpellSlotTracker } from './SpellSlotTracker'
-import { SpellCatalog } from './SpellCatalog'
-import { SpellbookList } from './SpellbookList'
 import { LanguageContext, translate } from './i18n'
 import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
 import { IconButton } from '../components/ui/button'
-import { TextAreaField, TextInputField } from '../components/ui/form-field'
+import { TextInputField } from '../components/ui/form-field'
 import { useAppPreferences } from './useAppPreferences'
 import { useCharacterCollection } from './useCharacterCollection'
 import { PanelHeader } from '../components/ui/panel-header'
 import { CharacterSheet } from './CharacterSheet'
 import { InventoryPage } from './InventoryPage'
+import { SpellbookPage } from './SpellbookPage'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
 const abilityDefaults = {str:10,dex:10,con:10,int:10,wis:10,cha:10}
+const currencyDefaults = {cp:0,sp:0,gp:0,ep:0,pp:0}
 const navItems = [{id:'overview' as const,label:'Übersicht',icon:Compass},{id:'sheet' as const,label:'Charakterbogen',icon:Shield},{id:'inventory' as const,label:'Inventar',icon:Boxes},{id:'spells' as const,label:'Zauberbuch',icon:BookOpen},{id:'levelup' as const,label:'Level-up',icon:WandSparkles}]
 const newId = () => crypto.randomUUID()
 
@@ -51,20 +50,6 @@ export default function App() {
   const [ruleset,setRuleset]=useState<Dnd5eRuleset>('2024')
   const [level,setLevel]=useState(1)
   const [busy,setBusy]=useState(false)
-  const [spellName,setSpellName]=useState('')
-  const [spellLevel,setSpellLevel]=useState(0)
-  const [spellSchool,setSpellSchool]=useState('')
-  const [spellTime,setSpellTime]=useState('1 Aktion')
-  const [spellRange,setSpellRange]=useState('')
-  const [spellComponents,setSpellComponents]=useState('')
-  const [spellDuration,setSpellDuration]=useState('Sofort')
-  const [spellDescription,setSpellDescription]=useState('')
-  const [spellConcentration,setSpellConcentration]=useState(false)
-  const [spellRitual,setSpellRitual]=useState(false)
-  const [spellSource,setSpellSource]=useState<KnownSpell['source']>('class')
-  const [spellSourceName,setSpellSourceName]=useState('')
-  const [spellUsageLimit,setSpellUsageLimit]=useState(0)
-  const [spellUsageReset,setSpellUsageReset]=useState<NonNullable<KnownSpell['usageReset']>>('longRest')
   const fileInput=useRef<HTMLInputElement>(null)
 
   async function createCharacter(event:FormEvent<HTMLFormElement>) {
@@ -88,12 +73,6 @@ export default function App() {
     setBusy(true);setError('')
     try{const imported=await importBackup(await file.text());setCharacters(imported);setPartyItems(await getPartyInventory());setSelectedId(null);setPage('overview')}
     catch(reason){setError(reason instanceof Error?reason.message:'Backup konnte nicht importiert werden.')}finally{setBusy(false)}
-  }
-  function addSpell(event:FormEvent<HTMLFormElement>){
-    event.preventDefault();if(!selected||!spellName.trim())return
-    const spell:KnownSpell={spellId:newId(),name:spellName.trim(),learnedAtLevel:selected.character.level,prepared:false,spellLevel,school:spellSchool,castingTime:spellTime,range:spellRange,components:spellComponents,duration:spellDuration,concentration:spellConcentration,ritual:spellRitual,description:spellDescription,source:spellSource,sourceName:spellSourceName.trim()||undefined,...(spellUsageLimit>0?{usageLimit:spellUsageLimit,usageRemaining:spellUsageLimit,usageReset:spellUsageReset}:{})}
-    updateSpellbook([...selected.spellbook.knownSpells,spell])
-    setSpellName('');setSpellLevel(0);setSpellSchool('');setSpellRange('');setSpellComponents('');setSpellDescription('');setSpellConcentration(false);setSpellRitual(false);setSpellSource('class');setSpellSourceName('');setSpellUsageLimit(0);setSpellUsageReset('longRest')
   }
   const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length,0)+partyItems.length
   const totalSpells=characters.reduce((sum,entry)=>sum+entry.spellbook.knownSpells.length,0)
@@ -125,11 +104,7 @@ export default function App() {
         {page!=='overview'&&!selected&&<section className="empty-state"><h3>{t('Wähle zuerst einen Charakter aus.')}</h3><button className="secondary-button" onClick={()=>setPage('overview')}>{t('Zur Übersicht')}</button></section>}
         {page==='sheet'&&selected&&<CharacterSheet character={selected.character} onUpdate={updateCharacter}/>}
         {page==='inventory'&&selected&&<InventoryPage inventory={selected.inventory} partyItems={partyItems} onUpdateInventory={updateInventory} onSavePartyItems={persistPartyItems}/>}
-        {page==='spells'&&selected&&<>
-          <SpellSlotTracker character={selected.character} onUpdate={updateCharacter}/><section className="page-intro"><div><span className="eyebrow">{t('MAGIE & ZAUBER')}</span><h1>{t('Zauberbuch')}</h1><p className="intro">{t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}</p></div></section>
-          <SpellCatalog character={selected.character} knownSpells={selected.spellbook.knownSpells} language={language} onAdd={spell=>updateSpellbook([...selected.spellbook.knownSpells,spell])}/><section className="panel"><PanelHeader title={t('Eigene Zauber hinzufügen')} meta="MANUELLE ERFASSUNG" /><form onSubmit={addSpell}><div className="form-grid spell-form"><TextInputField label="Zaubername" value={spellName} onChange={setSpellName} required/><label className="field-label">Zaubergrad<Select value={String(spellLevel)} onValueChange={next=>setSpellLevel(Number(next))}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Array.from({length:10},(_,i)=><SelectItem key={i} value={String(i)}>{i===0?'Zaubertrick':'Grad '+i}</SelectItem>)}</SelectContent></Select></label><TextInputField label="Schule" value={spellSchool} onChange={setSpellSchool}/><TextInputField label="Zauberzeit" value={spellTime} onChange={setSpellTime}/><TextInputField label="Reichweite" value={spellRange} onChange={setSpellRange}/><TextInputField label="Komponenten (V/S/M)" value={spellComponents} onChange={setSpellComponents}/><TextInputField label="Wirkungsdauer" value={spellDuration} onChange={setSpellDuration}/></div><div className="form-grid spell-origin-form"><label className="field-label">Herkunft<Select value={spellSource??'other'} onValueChange={next=>setSpellSource(next as KnownSpell['source'])}><SelectTrigger><SelectValue/></SelectTrigger><SelectContent><SelectItem value="class">Klassenzauber</SelectItem><SelectItem value="story">Story / Belohnung</SelectItem><SelectItem value="item">Gegenstand</SelectItem><SelectItem value="feat">Talent / Fähigkeit</SelectItem><SelectItem value="other">Sonstiges</SelectItem></SelectContent></Select></label><TextInputField label="Quelle / Gegenstand / Notiz" value={spellSourceName} onChange={setSpellSourceName}/><TextInputField label="Nutzungen (0 = unbegrenzt)" type="number" value={String(spellUsageLimit)} onChange={value=>setSpellUsageLimit(Math.max(0,Math.min(1000,Number(value)||0)))}/>{spellUsageLimit>0&&<label className="field-label">Erneuerung<Select value={spellUsageReset} onValueChange={next=>setSpellUsageReset(next as NonNullable<KnownSpell['usageReset']>)}><SelectTrigger><SelectValue/></SelectTrigger><SelectContent><SelectItem value="shortRest">Kurze Rast</SelectItem><SelectItem value="longRest">Lange Rast</SelectItem><SelectItem value="dawn">Morgengrauen</SelectItem><SelectItem value="none">Manuell / nie</SelectItem></SelectContent></Select></label>}</div><div className="spell-flags"><label><input type="checkbox" checked={spellConcentration} onChange={e=>setSpellConcentration(e.target.checked)}/> Konzentration</label><label><input type="checkbox" checked={spellRitual} onChange={e=>setSpellRitual(e.target.checked)}/> Ritual</label></div><TextAreaField label="Beschreibung / Effekt" value={spellDescription} onChange={setSpellDescription}/><button className="primary-button form-submit" type="submit"><Plus size={15}/> Zauber hinzufügen</button></form></section>
-          <SpellbookList spells={selected.spellbook.knownSpells} character={selected.character} spellSlots={selected.character.spellSlots??[]} pactMagic={selected.character.pactMagic} onUse={id=>updateSpellbook(selected.spellbook.knownSpells.map(item=>item.spellId===id?{...item,usageRemaining:Math.max(0,(item.usageRemaining??item.usageLimit??0)-1)}:item))} onReset={id=>updateSpellbook(selected.spellbook.knownSpells.map(item=>item.spellId===id?{...item,usageRemaining:item.usageLimit}:item))} onTogglePrepared={(spellId,prepared)=>updateSpellbook(selected.spellbook.knownSpells.map(item=>item.spellId===spellId?{...item,prepared}:item))} onRemove={spellId=>updateSpellbook(selected.spellbook.knownSpells.filter(item=>item.spellId!==spellId))}/>
-        </>}
+        {page==='spells'&&selected&&<SpellbookPage character={selected.character} knownSpells={selected.spellbook.knownSpells} language={language} onUpdateCharacter={updateCharacter} onUpdateSpells={updateSpellbook}/>}
         {page==='levelup'&&selected&&<><section className="page-intro"><div><span className="eyebrow">{t('FORTSCHRITT')}</span><h1>{t('Level-up')}</h1><p className="intro">{t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[selected.character.ruleset]}.</p></div></section>
           <section className="levelup-card"><div className="level-number"><span>{t('AKTUELLE STUFE')}</span><strong>{selected.character.level}</strong></div><div className="level-arrow"><ChevronRight size={25}/></div><div className="level-number next"><span>{t('NÄCHSTE STUFE')}</span><strong>{Math.min(20,selected.character.level+1)}</strong></div><button className="primary-button" disabled={selected.character.level>=20} onClick={()=>{if(window.confirm('Charakter auf Stufe '+(selected.character.level+1)+' erhöhen?'))changeLevel(Math.min(20,selected.character.level+1))}}>Stufe erhöhen <ChevronRight size={15}/></button></section>
           <section className="panel"><PanelHeader title={t('Regelbasierte Progression')} /><p className="muted-paragraph">{t('Übungsbonus und Zauberplätze werden anhand von Klasse, Unterklasse und Stufe berechnet. Bereits verbrauchte Plätze bleiben beim Stufenaufstieg verbraucht; neu hinzugewonnene Plätze stehen zur Verfügung.')}</p><p className="muted-paragraph">{t('Trefferpunkte, Klassen- und Unterklassenmerkmale, ASI/Talente sowie konkrete Zauberauswahl benötigen weitere Charakterentscheidungen und werden deshalb noch nicht automatisch vergeben.')}</p></section>

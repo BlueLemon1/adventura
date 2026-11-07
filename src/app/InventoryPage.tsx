@@ -59,14 +59,6 @@ export function InventoryPage({
     setItemDescription('')
   }
 
-  function updateItems(group: InventoryGroup, items: InventoryItem[]) {
-    if (group === 'party') {
-      onSavePartyItems(items)
-    } else {
-      onUpdateInventory({ personal: items })
-    }
-  }
-
   return (
     <>
 <section className="page-intro"><div><span className="eyebrow">{t('AUSRÜSTUNG')}</span><h1>{t('Inventar')}</h1><p className="intro">{t('Persönliche Gegenstände und gemeinsamer Gruppenbesitz.')}</p></div></section>
