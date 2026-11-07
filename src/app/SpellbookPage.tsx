@@ -76,6 +76,37 @@ export function SpellbookPage({
   const spellCatalog = (character.ruleset === '2014'
     ? spells2014
     : spells2024) as unknown as FeatureSpellCatalogEntry[]
+  const localizedKnownSpells = knownSpells.map((knownSpell) => {
+    const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
+    if (!spell) return knownSpell
+
+    const localized = language === 'de' ? spell.localized : undefined
+    const usedEnglishFallback =
+      language === 'de' &&
+      [
+        localized?.name,
+        localized?.school,
+        localized?.castingTime,
+        localized?.range,
+        localized?.components,
+        localized?.duration,
+        localized?.description,
+      ].some((value) => !value)
+
+    return {
+      ...knownSpell,
+      name: localized?.name ?? spell.name,
+      spellLevel: spell.level,
+      school: localized?.school ?? spell.school,
+      castingTime: localized?.castingTime ?? spell.castingTime,
+      range: localized?.range ?? spell.range,
+      components: localized?.components ?? spell.components,
+      duration: localized?.duration ?? spell.duration,
+      description: localized?.description ?? spell.description,
+      higherLevel: localized?.higherLevel ?? spell.higherLevel,
+      languageFallback: usedEnglishFallback,
+    }
+  })
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
@@ -231,7 +262,7 @@ export function SpellbookPage({
         <>
           <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
           <SpellbookList
-            spells={[...knownSpells, ...featureSpellEntries]}
+            spells={[...localizedKnownSpells, ...featureSpellEntries]}
             character={character}
             onUse={(spellId) => {
               const feature = featureSpellEntries.find((entry) => entry.spellId === spellId)
