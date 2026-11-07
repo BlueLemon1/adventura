@@ -223,6 +223,51 @@ const ACTIVE_FEATURES: Record<
     description:
       'Du kannst einen Magierzauber verstärken, um maximalen Schaden zu verursachen; die Anwendung birgt das im Merkmal beschriebene Risiko.',
   },
+  Raserei: {
+    activation: 'bonusAction',
+    description: 'Während deines Kampfrauschs kannst du einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen.',
+  },
+  'Bewahrung des Lebens': {
+    activation: 'action',
+    description: 'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.',
+    resourceId: 'channel-divinity',
+  },
+  'Ganzheit des Körpers': {
+    activation: 'action',
+    description: 'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.',
+    resourceId: 'wholeness-of-body',
+  },
+  'Hund des Unheils': {
+    activation: 'bonusAction',
+    description: 'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.',
+    resourceId: 'sorcery-points',
+    resourceCost: 3,
+  },
+  Drachenpräsenz: {
+    activation: 'action',
+    description: 'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.',
+    resourceId: 'sorcery-points',
+    resourceCost: 5,
+  },
+  Waffenbindung: {
+    activation: 'bonusAction',
+    description: 'Du kannst eine gebundene Waffe in deine Hand teleportieren.',
+  },
+  'Göttliches Eingreifen': {
+    activation: 'action',
+    description: 'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.',
+    resourceId: 'divine-intervention',
+  },
+  'Bevorzugter Feind': {
+    activation: 'bonusAction',
+    description: 'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.',
+    resourceId: 'favored-enemy',
+  },
+  'Dunkler eigener Glücksfall': {
+    activation: 'special',
+    description: 'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
+    resourceId: 'dark-ones-own-luck',
+  },
 }
 
 function abilityModifier(score = 10) {
@@ -305,6 +350,8 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level,
       'short-or-long',
     )
+  if (classId === 'monk' && level >= 6 && subclass === 'openhand')
+    add('wholeness-of-body', 'Ganzheit des Körpers', ruleset === '2024' ? Math.max(1, abilityModifier(character.abilities?.wis)) : 1, 'long')
   if (classId === 'paladin') {
     add('lay-on-hands', 'Handauflegen', 5 * level, 'long')
     if (ruleset === '2014')
@@ -1079,7 +1126,8 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
   }
   return result.map((feature) => {
     const active =
-      feature.name === 'Raserei' && character.ruleset === '2024'
+      (feature.name === 'Raserei' && character.ruleset === '2024') ||
+      (feature.name === 'Bevorzugter Feind' && character.ruleset === '2014')
         ? undefined
         : ACTIVE_FEATURES[feature.name]
     let resourceId = active?.resourceId
@@ -1087,6 +1135,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       resourceId =
         character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
     }
+    if (feature.name === 'Heilige Waffe' && character.ruleset === '2014') resourceId = 'paladin-channel-divinity'
     if (feature.name === 'Handauflegen')
       return {
         ...feature,
@@ -1094,8 +1143,10 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
         activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
         resourceId,
       }
-    if (feature.name === 'Ganzheit des Körpers' && character.ruleset === '2024')
-      return { ...feature, ...active, activation: 'bonusAction', resourceId: 'focus-points' }
+    if (feature.name === 'Ganzheit des Körpers')
+      return { ...feature, ...active, activation: character.ruleset === '2024' ? 'bonusAction' : 'action', resourceId: 'wholeness-of-body' }
+    if (feature.name === 'Zitternde Handfläche')
+      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points', resourceCost: character.ruleset === '2024' ? 4 : 3 }
     return active ? { ...feature, ...active, resourceId } : feature
   })
 }
