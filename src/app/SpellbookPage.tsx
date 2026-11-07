@@ -63,10 +63,7 @@ export function SpellbookPage({
       spellId: feature.id,
       name: feature.name,
       learnedAtLevel: feature.level,
-      prepared: true,
-      alwaysPrepared: true,
       spellLevel: -1,
-      school: feature.source === 'subclass' ? t('Unterklasse') : t('Klasse'),
       castingTime:
         feature.activation === 'bonusAction'
           ? t('Bonusaktion')
@@ -75,8 +72,6 @@ export function SpellbookPage({
             : feature.activation === 'special'
               ? t('Spezial')
               : t('Aktion'),
-      range: t('Siehe Beschreibung'),
-      duration: t('Siehe Beschreibung'),
       description: feature.description,
       source: 'class',
       sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
