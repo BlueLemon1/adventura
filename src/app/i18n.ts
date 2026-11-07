@@ -750,17 +750,24 @@ Object.assign(en, {
     'When you make an ability check or saving throw, you can add an additional d10 to the result.',
 })
 
-
 Object.assign(en, {
   Aktivieren: 'Activate',
   'Aktive Klassen- und Unterklassenmerkmale': 'Active class and subclass features',
   'Dunkler eigener Glücksfall': 'Dark One’s Own Luck',
-  'Du flüsterst einer Kreatur magisch Worte zu, die sie verunsichern und für eine begrenzte Zeit verängstigen können.': 'You magically whisper words to a creature that unsettle and frighten it for a limited time.',
-  'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.': 'As an Action, you regain Hit Points equal to three times your Monk level.',
-  'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.': 'You expend three Sorcery Points to summon a shadow hound that hunts and harasses a target.',
-  'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.': 'You expend five Sorcery Points to unleash your draconic presence and charm or frighten nearby creatures.',
-  'Du kannst eine gebundene Waffe in deine Hand teleportieren.': 'You can teleport a bonded weapon into your hand.',
-  'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.': 'You call on your deity for direct aid and produce the effect granted by this feature.',
-  'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.': 'You cast Hunter’s Mark without a spell slot, expending one available use of this feature.',
-  'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.': 'When you make an ability check or saving throw, you can add an additional d10 to the result.',
-});
+  'Du flüsterst einer Kreatur magisch Worte zu, die sie verunsichern und für eine begrenzte Zeit verängstigen können.':
+    'You magically whisper words to a creature that unsettle and frighten it for a limited time.',
+  'Du stellst als Aktion Trefferpunkte in Höhe des Dreifachen deiner Mönchsstufe wieder her.':
+    'As an Action, you regain Hit Points equal to three times your Monk level.',
+  'Du gibst drei Zauberpunkte aus, um einen Schattenhund zu beschwören, der ein Ziel jagt und bedrängt.':
+    'You expend three Sorcery Points to summon a shadow hound that hunts and harasses a target.',
+  'Du gibst fünf Zauberpunkte aus, um deine drakonische Präsenz zu entfalten und Kreaturen in deiner Nähe zu bezaubern oder zu verängstigen.':
+    'You expend five Sorcery Points to unleash your draconic presence and charm or frighten nearby creatures.',
+  'Du kannst eine gebundene Waffe in deine Hand teleportieren.':
+    'You can teleport a bonded weapon into your hand.',
+  'Du bittest deine Gottheit um direkte Hilfe und wirkst den durch das Merkmal gewährten Effekt.':
+    'You call on your deity for direct aid and produce the effect granted by this feature.',
+  'Du wirkst Mal des Jägers ohne Zauberplatz und nutzt dafür eine verfügbare Anwendung dieses Merkmals.':
+    'You cast Hunter’s Mark without a spell slot, expending one available use of this feature.',
+  'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.':
+    'When you make an ability check or saving throw, you can add an additional d10 to the result.',
+})
