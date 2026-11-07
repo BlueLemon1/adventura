@@ -32,7 +32,8 @@ export function LevelUpPage({ character, onUpdate }: LevelUpPageProps) {
         title={t('Level-up')}
         description={
           <>
-            {t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}.
+            {t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[character.ruleset]}
+            .
           </>
         }
       />

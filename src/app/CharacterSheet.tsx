@@ -74,7 +74,11 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
       <PageIntro
         eyebrow={<>CHARAKTERBOGEN · {RULESET_LABELS[character.ruleset]}</>}
         title={character.name}
-        description={<>{character.classId} · Stufe {character.level} · Übungsbonus +{prof}</>}
+        description={
+          <>
+            {character.classId} · Stufe {character.level} · Übungsbonus +{prof}
+          </>
+        }
         trailing={
           <span className="saved-indicator">
             <Save size={13} /> {t('Automatisch gespeichert')}
