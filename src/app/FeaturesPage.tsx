@@ -14,7 +14,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const resources = getClassResources(character)
-  const features = getAutomaticClassFeatures(character)
+  const features = getAutomaticClassFeatures(character, language)
   const unlockedCount = features.filter((feature) => feature.unlocked).length
   const saved = character.classResources ?? []
   const activationLabels = {
