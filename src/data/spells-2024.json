@@ -2096,7 +2096,7 @@
       {
         "dice": "6W12",
         "average": 39,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -3404,7 +3404,7 @@
       {
         "dice": "1W4",
         "average": 2.5,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -3442,7 +3442,7 @@
       {
         "dice": "2W8",
         "average": 9,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -4748,7 +4748,7 @@
       {
         "dice": "5W6",
         "average": 17.5,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -5690,7 +5690,7 @@
       {
         "dice": "4W6",
         "average": 14,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -8181,7 +8181,7 @@
       {
         "dice": "2W10",
         "average": 11,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -9765,7 +9765,7 @@
       {
         "dice": "1W8",
         "average": 4.5,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -10301,7 +10301,7 @@
       {
         "dice": "2W6",
         "average": 7,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -10848,7 +10848,7 @@
       {
         "dice": "3W8",
         "average": 13.5,
-        "type": "gleißenden"
+        "type": "Strahlend"
       },
       {
         "dice": "3W8",
@@ -10925,7 +10925,7 @@
       {
         "dice": "1W8",
         "average": 4.5,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -11207,7 +11207,7 @@
       {
         "dice": "6W8",
         "average": 27,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },
@@ -11251,7 +11251,7 @@
       {
         "dice": "12W6",
         "average": 42,
-        "type": "gleißenden"
+        "type": "Strahlend"
       }
     ]
   },

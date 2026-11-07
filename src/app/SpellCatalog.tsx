@@ -496,6 +496,17 @@ export function SpellCatalog({
                   {spell.concentration ? ' · Konzentration' : ''}
                   {spell.ritual ? ' · Ritual' : ''}
                 </div>
+                {spell.damage && spell.damage.length > 0 && (
+                  <div className="spell-damage-summary">
+                    <strong>{spell.damage.map((part) => part.dice).join(' + ')}</strong>
+                    <span>
+                      Ø {spell.damage.reduce((sum, part) => sum + part.average, 0).toLocaleString('de-DE', { maximumFractionDigits: 1 })} {t('Schaden')}
+                    </span>
+                    {spell.damage.some((part) => part.type) && (
+                      <small>{[...new Set(spell.damage.map((part) => part.type).filter(Boolean))].join(', ')}</small>
+                    )}
+                  </div>
+                )}
                 <p>{spell.description}</p>
                 {spell.higherLevel && (
                   <p>
