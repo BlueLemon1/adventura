@@ -826,6 +826,7 @@ Object.assign(en, {
     'You expend Channel Divinity to force chosen nearby creatures to make a Wisdom saving throw or become Frightened and Incapacitated.',
 })
 
+
 Object.assign(en, {
   'Diese Ressource speist deine Kanal-göttlicher-Energie-Effekte. Wähle im Zauberbuch den konkreten Effekt, etwa Untote vertreiben, Leben bewahren, Heilige Waffe oder Abwehrzauber.':
     'This resource powers your Channel Divinity effects. Choose the specific effect in the spellbook, such as Turn Undead, Preserve Life, Sacred Weapon, or Abjure Foes.',
@@ -840,6 +841,7 @@ Object.assign(en, {
   'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.':
     'You manifest wings for one hour and gain a Fly Speed. After using this feature, you must finish a Long Rest or spend three Sorcery Points to restore its use.',
 })
+
 
 Object.assign(en, {
   'Göttlicher Funke': 'Divine Spark',
@@ -861,13 +863,176 @@ Object.assign(en, {
     'As a Bonus Action, you open your awareness for 10 minutes to detect Celestials, Fiends, and Undead, as well as consecrated or desecrated places and objects nearby.',
 })
 
+
 Object.assign(en, {
   'Unheilige vertreiben': 'Turn the Unholy',
   'Du präsentierst dein heiliges Symbol und zwingst Unholde und Untote in deiner Nähe zu einem Weisheitsrettungswurf. Bei Misslingen werden sie für bis zu eine Minute vertrieben.':
     'You present your holy symbol and force Fiends and Undead nearby to make a Wisdom saving throw. On a failure, they are turned for up to one minute.',
 })
 
+
 Object.assign(en, {
   'Du verbringst eine Minute damit, natürliche Materialien zu sammeln und dich zu tarnen. Solange du dich nicht bewegst, bist du unter passenden natürlichen Bedingungen schwer zu entdecken.':
     'You spend one minute gathering natural materials to camouflage yourself. While you remain still in suitable natural surroundings, you are difficult to detect.',
 })
+
+
+Object.assign(en, {
+  Kampfrausch: 'Rage',
+  Bardeninspiration: 'Bardic Inspiration',
+  'Schneidende Worte': 'Cutting Words',
+  'Gegenzauberische Melodie': 'Countercharm',
+  Gegenzauber: 'Countercharm',
+  'Kanal göttlicher Energie': 'Channel Divinity',
+  'Untote vertreiben': 'Turn Undead',
+  'Leben bewahren': 'Preserve Life',
+  'Bewahrung des Lebens': 'Preserve Life',
+  Tiergestalt: 'Wild Shape',
+  'Wilder Gefährte': 'Wild Companion',
+  'Hilfe des Landes': "Land's Aid",
+  'Zweites Aufatmen': 'Second Wind',
+  Aktionsschub: 'Action Surge',
+  Unbeugsam: 'Indomitable',
+  Ki: 'Ki',
+  'Fokus des Mönchs': "Monk's Focus",
+  Handauflegen: 'Lay on Hands',
+  'Göttlicher Sinn': 'Divine Sense',
+  'Heilige Waffe': 'Sacred Weapon',
+  'Angeborene Magie': 'Innate Sorcery',
+  'Magische List': 'Magical Cunning',
+  'Arkane Erholung': 'Arcane Recovery',
+  'Natürliche Erholung': 'Natural Recovery',
+  'Einschüchternde Präsenz': 'Intimidating Presence',
+  Vergeltung: 'Retaliation',
+  'Fließender Schritt': 'Fleet Step',
+  'Zitternde Handfläche': 'Quivering Palm',
+  Diebesreflexe: "Thief's Reflexes",
+  'Schnelle Hände': 'Fast Hands',
+  'Unheimliches Ausweichen': 'Uncanny Dodge',
+  'Listige Aktion': 'Cunning Action',
+  'Sicheres Zielen': 'Steady Aim',
+  Drachenflügel: 'Dragon Wings',
+  'Durch die Hölle schicken': 'Hurl Through Hell',
+  Überladung: 'Overchannel',
+  Raserei: 'Frenzy',
+  'Ganzheit des Körpers': 'Wholeness of Body',
+  'Hund des Unheils': 'Hound of Ill Omen',
+  Drachenpräsenz: 'Draconic Presence',
+  Waffenbindung: 'Weapon Bond',
+  'Göttliches Eingreifen': 'Divine Intervention',
+  'Bevorzugter Feind': 'Favored Enemy',
+  'Dunkler eigener Glücksfall': "Dark One's Own Luck",
+  'Rücksichtsloser Angriff': 'Reckless Attack',
+  'Betäubender Schlag': 'Stunning Strike',
+  'Geschosse abwehren': 'Deflect Missiles',
+  'Angriffe abwehren': 'Deflect Attacks',
+  'Langsamer Fall': 'Slow Fall',
+  'Göttliches Niederstrecken': 'Divine Smite',
+  'Hagel der Schläge': 'Flurry of Blows',
+  'Geduldige Verteidigung': 'Patient Defense',
+  'Schritt des Windes': 'Step of the Wind',
+  'Quelle der Magie': 'Font of Magic',
+  Abwehrzauber: 'Abjure Foes',
+  'Unvergleichliche Fertigkeiten': 'Peerless Skill',
+  'Unvergleichliche Fertigkeit': 'Peerless Skill',
+  Mehrfachangriff: 'Multiattack',
+  'Magische Hand-Tricks': 'Mage Hand Legerdemain',
+  'Vielseitiger Betrüger': 'Versatile Trickster',
+  Zauberdieb: 'Spell Thief',
+  Kriegsmagie: 'War Magic',
+  'Verbesserte Kriegsmagie': 'Improved War Magic',
+  'Arkane Aufladung': 'Arcane Charge',
+  'Augen der Dunkelheit': 'Eyes of the Dark',
+  'Stärke des Grabes': 'Strength of the Grave',
+  Schattenwandlung: 'Shadow Walk',
+  Schattenform: 'Umbral Form',
+  'Treues Ross': 'Faithful Steed',
+  'Taktischer Verstand': 'Tactical Mind',
+  Selbstheilung: 'Self-Restoration',
+  'Abgelenkte Energie': 'Deflect Energy',
+  'Großes Göttliches Eingreifen': 'Greater Divine Intervention',
+  'Tarnung in der Wildnis': 'Hide in Plain Sight',
+  Verschwinden: 'Vanish',
+  'Heiliger Nimbus': 'Holy Nimbus',
+  'Patron kontaktieren': 'Contact Patron',
+  Glückstreffer: 'Stroke of Luck',
+  'Leerer Körper': 'Empty Body',
+  'Brutaler Schlag': 'Brutal Strike',
+  'Wilde Erneuerung': 'Wild Resurgence',
+  'Berührende Reinigung': 'Restoring Touch',
+  'Drachengefährte': 'Dragon Companion',
+  'Göttlicher Funke': 'Divine Spark',
+  'Reinigende Berührung': 'Cleansing Touch',
+  'Zauberhafte Erneuerung': 'Sorcerous Restoration',
+  'Listiger Schlag': 'Cunning Strike',
+  'Listige Schläge': 'Devious Strikes',
+  'Unheilige vertreiben': 'Turn the Unholy',
+  'Du beginnst eine inspirierende Aufführung, die Verbündeten in deiner Nähe Vorteil auf Rettungswürfe gegen Bezauberung und Furcht gewährt.':
+    'You perform an inspiring tune that grants nearby allies Advantage on saving throws against being Charmed or Frightened.',
+  'Während deines Kampfrauschs kannst du in jedem deiner Züge einen zusätzlichen Nahkampfangriff als Bonusaktion ausführen. Wenn der Kampfrausch endet, erhältst du eine Erschöpfungsstufe.':
+    'While raging, you can make one additional melee attack as a Bonus Action on each of your turns. When the Rage ends, you gain one level of Exhaustion.',
+  'Du gibst vier Ki-Punkte aus, um für eine Minute unsichtbar zu werden und gegen alle Schadensarten außer Energieschaden resistent zu sein.':
+    'You spend four Ki Points to become Invisible for one minute and gain Resistance to all damage except Force damage.',
+  'Wenn du während deines Kampfrauschs mit einem Stärke-Angriff triffst, kannst du einen zusätzlichen Effekt deines Brutalen Schlags wählen, etwa das Ziel wegzustoßen oder zusätzlichen Schaden zu verursachen.':
+    'When you hit with a Strength-based attack while raging, you can choose an additional Brutal Strike effect, such as pushing the target or dealing extra damage.',
+  'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um einen Zauberplatz des 1. Grades wiederherzustellen, oder einen Zauberplatz ausgeben, um eine Nutzung deiner Tiergestalt zurückzugewinnen.':
+    'You can expend a use of Wild Shape to regain a 1st-level spell slot, or expend a spell slot to regain one use of Wild Shape.',
+  'Du beschwörst einmal nach einer langen Rast einen drakonischen Geist als Gefährten, indem du den Zauber Drachen beschwören ohne Zauberplatz und Materialkomponenten wirkst.':
+    'Once per Long Rest, you summon a draconic spirit companion by casting Summon Dragon without expending a spell slot or Material components.',
+  'Wenn du einen Attributswurf ablegst, kannst du einen Inspirationswürfel ausgeben und sein Ergebnis zum Wurf addieren.':
+    'When you make an ability check, you can expend a Bardic Inspiration die and add its result to the check.',
+  'Du führst eine deiner gewählten Mehrfachangriffstechniken aus: einen Angriff gegen mehrere Ziele mit Fernkampfwaffen oder mehrere Nahkampfangriffe gegen Kreaturen in deiner Reichweite.':
+    'You use one of your chosen Multiattack options: make a ranged attack against multiple targets or make melee attacks against creatures within your reach.',
+  'Du kannst deine Magische Hand mit einer Bonusaktion kontrollieren und mit ihr Taschendiebstahl, das Entschärfen von Fallen oder andere geschickte Manipulationen ausführen.':
+    'You can control your Mage Hand as a Bonus Action to pick pockets, disarm traps, or perform other delicate tasks.',
+  'Du lenkst mit deiner Magischen Hand einen Gegner ab und verschaffst dir dadurch Vorteil auf deinen nächsten Angriff gegen ihn.':
+    'You distract a creature with your Mage Hand, giving yourself Advantage on attack rolls against it until the end of the turn.',
+  'Wenn eine Kreatur einen Zauber auf dich wirkt, kannst du versuchen, den Zauber mit deiner Reaktion zu vereiteln und seine Magie für dich zu beanspruchen.':
+    'When a creature casts a spell on you, you can use your Reaction to try to foil the spell and claim its magic for yourself.',
+  'Nachdem du mit deiner Aktion einen Zaubertrick gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.':
+    'After you use your action to cast a cantrip, you can make one weapon attack as a Bonus Action.',
+  'Nachdem du mit deiner Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen.':
+    'After you use your action to cast a spell, you can make one weapon attack as a Bonus Action.',
+  'Wenn du Aktionsschub einsetzt, kannst du dich vor, nach oder zwischen den Aktionen bis zu 9 Meter weit teleportieren.':
+    'When you use Action Surge, you can teleport up to 30 feet to an unoccupied space you can see before, after, or between your actions.',
+  'Du kannst Dunkelheit mit Zauberpunkten wirken und durch die von dir erzeugte magische Dunkelheit sehen.':
+    'You can cast Darkness by spending Sorcery Points and see through the magical darkness you create.',
+  'Wenn Schaden dich auf 0 Trefferpunkte reduzieren würde, kannst du mit einem Charisma-Rettungswurf versuchen, stattdessen mit 1 Trefferpunkt stehen zu bleiben.':
+    'When damage would reduce you to 0 Hit Points, you can make a Charisma saving throw to drop to 1 Hit Point instead.',
+  'Du teleportierst dich von einem Bereich mit dämmrigem Licht oder Dunkelheit zu einem freien Ort mit dämmrigem Licht oder Dunkelheit in deiner Sichtweite.':
+    'You teleport from an area of dim light or darkness to an unoccupied space you can see that is also in dim light or darkness.',
+  'Du gibst sechs Zauberpunkte aus, um für bis zu eine Minute eine schattenhafte Gestalt anzunehmen, die sich durch feste Gegenstände bewegen kann.':
+    'You spend six Sorcery Points to take a shadowy form for up to one minute, allowing you to move through solid objects.',
+  'Du wirkst Find Steed, ohne einen Zauberplatz auszugeben. Das beschworene Reittier folgt den Regeln des Zaubers.':
+    'You cast Find Steed without expending a spell slot. The summoned mount follows the spell’s rules.',
+  'Wenn dir ein Attributswurf misslingt, kannst du eine Nutzung von Zweites Aufatmen ausgeben und den Wurf um einen W10 erhöhen.':
+    'When you fail an ability check, you can expend a use of Second Wind to add 1d10 to the check.',
+  'Am Ende deines Zuges kannst du einen der Zustände Bezaubert, Verängstigt oder Vergiftet beenden. Alternativ kannst du einen Fokus-Punkt ausgeben, um einen solchen Zustand sofort zu beenden.':
+    'At the end of your turn, you can end the Charmed, Frightened, or Poisoned condition on yourself. Alternatively, you can spend a Focus Point to end one of those conditions immediately.',
+  'Wenn du mit deiner Reaktion Energieschaden abwehrst, kannst du einen Teil davon auf ein Ziel in Reichweite umlenken.':
+    'When you deflect damage with your Reaction, you can spend a Focus Point to redirect some of that damage to a target within range.',
+  'Du kannst die mächtigste Form deines Göttlichen Eingreifens erbitten und den dadurch gewährten göttlichen Effekt wirken.':
+    'You can invoke the mightiest form of Divine Intervention and produce the divine effect it grants.',
+  'Du kannst die Verstecken-Aktion als Bonusaktion ausführen.':
+    'You can take the Hide action as a Bonus Action.',
+  'Du entfesselst eine heilige Aura, die helles Licht ausstrahlt und feindliche Kreaturen in deiner Nähe beeinträchtigt.':
+    'You unleash a holy aura that sheds bright light and hinders hostile creatures nearby.',
+  'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und den Zauber Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken.':
+    'You perform a one-minute ritual to contact your patron and cast Contact Other Plane without expending a spell slot.',
+  'Wenn ein Angriff dich verfehlt oder ein Attributswurf misslingt, kannst du das Ergebnis in einen Treffer oder einen W20-Wert von 20 verwandeln.':
+    'When an attack misses you or you fail an ability check, you can turn the result into a hit or a 20 on the d20.',
+})
+
+
+Object.assign(en, {
+  'Mystischer Meister': 'Eldritch Master',
+  'Du führst eine einminütige Zwiesprache mit deinem Patron und stellst alle verbrauchten Zauberplätze deiner Paktmagie wieder her. Nach der Nutzung musst du eine lange Rast beenden, bevor du das Merkmal erneut einsetzen kannst.':
+    'You spend one minute communing with your patron to regain all expended Pact Magic spell slots. Once used, you must finish a Long Rest before using this feature again.',
+  'Du lenkst mit deiner Magischen Hand einen Gegner ab und erhältst bis zum Ende deines Zuges Vorteil auf deine Angriffswürfe gegen ihn.':
+    'You distract a creature with your Mage Hand, giving yourself Advantage on attack rolls against it until the end of your turn.',
+  'Du führst ein einminütiges Ritual aus, um mit deinem Patron Kontakt aufzunehmen und Kontakt zu einer anderen Ebene ohne Zauberplatz zu wirken. Den Rettungswurf des Zaubers bestehst du automatisch.':
+    'You perform a one-minute ritual to contact your patron and cast Contact Other Plane without expending a spell slot. You automatically succeed on the spell’s saving throw.',
+})
+
+
+Object.assign(en, { 'Zauberer-Inkarnation': 'Sorcery Incarnate' })
