@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from 'react'
-import { BookOpen, Boxes, Compass, Download, Languages, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, Heart, Save, ChevronRight } from 'lucide-react'
+import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, Heart, Save, ChevronRight } from 'lucide-react'
 import type { Ability, Character, InventoryItem, KnownSpell, ProficiencyLevel, SkillId } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import { ABILITIES, SKILLS } from '../domain/character'
