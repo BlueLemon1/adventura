@@ -1,10 +1,9 @@
 import { useRef, useState, type ChangeEvent, type FormEvent } from 'react'
-import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, ChevronRight } from 'lucide-react'
+import { BookOpen, Boxes, Compass, Download, Moon, Sun, Shield, Upload, WandSparkles, X } from 'lucide-react'
 import type { Character } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
-import { RULESET_LABELS } from '../domain/rules'
-import { createPactMagic, createSpellSlots, updatePactMagic, updateSpellSlots } from '../domain/spellcasting'
+import { createPactMagic, createSpellSlots } from '../domain/spellcasting'
 import { LanguageContext, translate } from './i18n'
 import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
@@ -13,10 +12,11 @@ import { IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
 import { useAppPreferences } from './useAppPreferences'
 import { useCharacterCollection } from './useCharacterCollection'
-import { PanelHeader } from '../components/ui/panel-header'
 import { CharacterSheet } from './CharacterSheet'
 import { InventoryPage } from './InventoryPage'
 import { SpellbookPage } from './SpellbookPage'
+import { OverviewPage } from './OverviewPage'
+import { LevelUpPage } from './LevelUpPage'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
 const abilityDefaults = {str:10,dex:10,con:10,int:10,wis:10,cha:10}
@@ -74,14 +74,6 @@ export default function App() {
     try{const imported=await importBackup(await file.text());setCharacters(imported);setPartyItems(await getPartyInventory());setSelectedId(null);setPage('overview')}
     catch(reason){setError(reason instanceof Error?reason.message:'Backup konnte nicht importiert werden.')}finally{setBusy(false)}
   }
-  const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length,0)+partyItems.length
-  const totalSpells=characters.reduce((sum,entry)=>sum+entry.spellbook.knownSpells.length,0)
-  function changeLevel(nextLevel:number) {
-    if(!selected)return
-    const nextCharacter={...selected.character,level:nextLevel}
-    updateCharacter({level:nextLevel,spellSlots:updateSpellSlots(nextCharacter,selected.character.spellSlots),pactMagic:updatePactMagic(nextCharacter,selected.character.pactMagic)})
-  }
-
   return <LanguageContext.Provider value={language}><div className="app-shell min-h-screen">
     <aside className="sidebar">
       <a className="brand" href="#" onClick={event=>{event.preventDefault();setPage('overview');setSelectedId(null)}}><span className="brand-mark"><Sparkles size={19}/></span><span><strong>adventura</strong><small>YOUR ADVENTURE COMPANION</small></span></a>
@@ -97,18 +89,12 @@ export default function App() {
       </div></header>
       <div className="content">
         {error&&<div className="error-banner" role="alert">{error}<button onClick={()=>setError('')} aria-label="Fehler schließen"><X size={15}/></button></div>}
-        {page==='overview'&&<><section className="welcome-row"><div><div className="eyebrow"><Sparkles size={13}/> {t('DEIN CHARAKTER IM MITTELPUNKT')}</div><h1>{t('Willkommen,')} <em>{t('Abenteurer.')}</em></h1><p className="intro">{t('Dein digitaler Charakterbogen – bereit für den nächsten Spieleabend.')}</p></div><button className="primary-button" onClick={()=>setShowCreate(true)}><Plus size={16}/> {t('Charakter erstellen')}</button></section>
-          <section className="stats-grid"><article className="stat-card"><span>{t('CHARAKTERE')}</span><strong>{loading?'–':characters.length}</strong><small>{t('In deiner Sammlung')}</small><Shield className="stat-icon"/></article><article className="stat-card"><span>{t('GEGENSTÄNDE')}</span><strong>{totalItems}</strong><small>{t('Persönlich & gemeinsam')}</small><Boxes className="stat-icon"/></article><article className="stat-card"><span>{t('GELERNTE ZAUBER')}</span><strong>{totalSpells}</strong><small>{t('Dein persönliches Zauberbuch')}</small><BookOpen className="stat-icon"/></article></section>
-          <section className="section-heading"><div><span className="eyebrow">{t('DEINE HELDEN')}</span><h2>{t('Deine Charaktere')}</h2></div><span className="muted-label">{characters.length} GESPEICHERT</span></section>
-          {loading?<section className="empty-state"><p>{t('Charaktere werden geladen …')}</p></section>:characters.length?<section className="character-grid">{characters.map(entry=><article className="character-card" key={entry.character.id}><div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><IconButton className="delete-button" onClick={()=>void removeCharacter(entry)} label="Charakter löschen"><Trash2 size={15}/></IconButton></div><h3>{entry.character.name}</h3><p>{entry.character.classId} · Level {entry.character.level}</p><span className="ruleset-pill">{RULESET_LABELS[entry.character.ruleset]}</span><button className="open-character" onClick={()=>{setSelectedId(entry.character.id);setPage('sheet')}}>{t('Charakter öffnen')} <ChevronRight size={14}/></button></article>)}</section>:<section className="empty-state"><div className="empty-art"><div className="art-ring"/><ScrollText size={42}/><Sparkles className="art-sparkle" size={17}/></div><h3>{t('Dein Charakter wartet auf seinen ersten Auftritt.')}</h3><p>{t('Erstelle deinen D&D-Charakter und verwalte Werte, Ausrüstung und Zauber an einem Ort.')}</p><button className="secondary-button" onClick={()=>setShowCreate(true)}><Shield size={16}/> {t('Ersten Charakter erstellen')}</button></section>}</>}
+        {page==='overview'&&<OverviewPage characters={characters} partyItems={partyItems} loading={loading} onCreate={()=>setShowCreate(true)} onRemove={(entry)=>void removeCharacter(entry)} onOpen={(id)=>{setSelectedId(id);setPage('sheet')}}/>}
         {page!=='overview'&&!selected&&<section className="empty-state"><h3>{t('Wähle zuerst einen Charakter aus.')}</h3><button className="secondary-button" onClick={()=>setPage('overview')}>{t('Zur Übersicht')}</button></section>}
         {page==='sheet'&&selected&&<CharacterSheet character={selected.character} onUpdate={updateCharacter}/>}
         {page==='inventory'&&selected&&<InventoryPage inventory={selected.inventory} partyItems={partyItems} onUpdateInventory={updateInventory} onSavePartyItems={persistPartyItems}/>}
         {page==='spells'&&selected&&<SpellbookPage character={selected.character} knownSpells={selected.spellbook.knownSpells} language={language} onUpdateCharacter={updateCharacter} onUpdateSpells={updateSpellbook}/>}
-        {page==='levelup'&&selected&&<><section className="page-intro"><div><span className="eyebrow">{t('FORTSCHRITT')}</span><h1>{t('Level-up')}</h1><p className="intro">{t('Entwickle deinen Charakter weiter. Regelwerk:')} {RULESET_LABELS[selected.character.ruleset]}.</p></div></section>
-          <section className="levelup-card"><div className="level-number"><span>{t('AKTUELLE STUFE')}</span><strong>{selected.character.level}</strong></div><div className="level-arrow"><ChevronRight size={25}/></div><div className="level-number next"><span>{t('NÄCHSTE STUFE')}</span><strong>{Math.min(20,selected.character.level+1)}</strong></div><button className="primary-button" disabled={selected.character.level>=20} onClick={()=>{if(window.confirm('Charakter auf Stufe '+(selected.character.level+1)+' erhöhen?'))changeLevel(Math.min(20,selected.character.level+1))}}>Stufe erhöhen <ChevronRight size={15}/></button></section>
-          <section className="panel"><PanelHeader title={t('Regelbasierte Progression')} /><p className="muted-paragraph">{t('Übungsbonus und Zauberplätze werden anhand von Klasse, Unterklasse und Stufe berechnet. Bereits verbrauchte Plätze bleiben beim Stufenaufstieg verbraucht; neu hinzugewonnene Plätze stehen zur Verfügung.')}</p><p className="muted-paragraph">{t('Trefferpunkte, Klassen- und Unterklassenmerkmale, ASI/Talente sowie konkrete Zauberauswahl benötigen weitere Charakterentscheidungen und werden deshalb noch nicht automatisch vergeben.')}</p></section>
-        </>}
+        {page==='levelup'&&selected&&<LevelUpPage character={selected.character} onUpdate={updateCharacter}/>}
         <footer className="footer-note"><BookOpen size={14}/> {t('Dein Begleiter am Spieltisch.')} <span>ADVENTURA · D&D 5E 2014 / 2024</span></footer>
       </div>
     </main>
