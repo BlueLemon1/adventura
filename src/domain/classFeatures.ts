@@ -308,26 +308,31 @@ const ACTIVE_FEATURES: Record<
   },
   'Hagel der Schläge': {
     activation: 'bonusAction',
-    description: 'Nach der Angriffsaktion kannst du einen Ki- oder Fokus-Punkt ausgeben, um zwei zusätzliche unbewaffnete Schläge als Bonusaktion auszuführen.',
+    description:
+      'Nach der Angriffsaktion kannst du einen Ki- oder Fokus-Punkt ausgeben, um zwei zusätzliche unbewaffnete Schläge als Bonusaktion auszuführen.',
     resourceId: 'ki-points',
   },
   'Geduldige Verteidigung': {
     activation: 'bonusAction',
-    description: 'Du nutzt deine Bonusaktion zur Verteidigung. Im Regelwerk 2024 kannst du dich kostenlos zurückziehen oder mit einem Fokus-Punkt zusätzlich ausweichen; 2014 kostet die Ausweichaktion einen Ki-Punkt.',
+    description:
+      'Du nutzt deine Bonusaktion zur Verteidigung. Im Regelwerk 2024 kannst du dich kostenlos zurückziehen oder mit einem Fokus-Punkt zusätzlich ausweichen; 2014 kostet die Ausweichaktion einen Ki-Punkt.',
     resourceId: 'ki-points',
   },
   'Schritt des Windes': {
     activation: 'bonusAction',
-    description: 'Du nutzt deine Bonusaktion für Sprinten oder Zurückziehen und kannst deine Sprungweite erhöhen. Die genauen Kosten unterscheiden sich zwischen 2014 und 2024.',
+    description:
+      'Du nutzt deine Bonusaktion für Sprinten oder Zurückziehen und kannst deine Sprungweite erhöhen. Die genauen Kosten unterscheiden sich zwischen 2014 und 2024.',
     resourceId: 'ki-points',
   },
   'Quelle der Magie': {
     activation: 'special',
-    description: 'Du wandelst Zauberplätze in Zauberpunkte um oder gibst Zauberpunkte aus, um Zauberplätze zu erschaffen.',
+    description:
+      'Du wandelst Zauberplätze in Zauberpunkte um oder gibst Zauberpunkte aus, um Zauberplätze zu erschaffen.',
   },
   Abwehrzauber: {
     activation: 'action',
-    description: 'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.',
+    description:
+      'Du setzt Kanal göttlicher Energie ein, um ausgewählte Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht und Handlungsunfähigkeit zu belegen.',
     resourceId: 'channel-divinity-paladin',
   },
 }
@@ -1220,7 +1225,11 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
       resourceId = 'paladin-channel-divinity'
     if (feature.name === 'Hagel der Schläge')
-      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points' }
+      return {
+        ...feature,
+        ...active,
+        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+      }
     if (feature.name === 'Geduldige Verteidigung')
       return {
         ...feature,
