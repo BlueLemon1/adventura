@@ -1,4 +1,6 @@
 import type { Character } from './character'
+import classFeatures2024 from '../data/class-features-2024.json'
+import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
 
 export interface ClassResourceDefinition {
   id: string
@@ -13,6 +15,10 @@ export interface AutomaticClassFeature {
   level: number
   source: 'class' | 'subclass'
   description?: string
+  nameIsFallback?: boolean
+  descriptionIsFallback?: boolean
+  usedFallback?: boolean
+  contentSourceId?: string
   activation?: 'action' | 'bonusAction' | 'reaction' | 'special'
   resourceId?: string
   resourceCost?: number
@@ -2249,7 +2255,7 @@ const FEATURE_DESCRIPTIONS_DE: Record<string, string> = {
     'Du kannst einen getroffenen Gegner mit einem Fokus- oder Ki-Punkt zu einem Konstitutionsrettungswurf zwingen.',
 }
 
-export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
+function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
   const is2024 = character.ruleset === '2024'
   const catalogue = is2024 ? CLASS_FEATURES_2024 : CLASS_FEATURES
   const result: AutomaticClassFeature[] = (catalogue[character.classId] ?? []).map(
@@ -2437,6 +2443,50 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       name: feature.name,
       spellbookSpellId: is2024 ? FEATURE_SPELLS_IN_SPELLBOOK[feature.name] : undefined,
     }))
+}
+
+export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
+  if (character.ruleset !== '2024') return getLegacyAutomaticClassFeatures(character)
+
+  const selectedSubclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
+  const catalog = classFeatures2024 as ClassFeatureRecord[]
+  const legacyMetadata = getLegacyAutomaticClassFeatures(character)
+
+  return catalog
+    .filter(
+      (feature) =>
+        feature.classId === character.classId &&
+        (feature.featureType === 'class' ||
+          (Boolean(selectedSubclass) && feature.subclassId === selectedSubclass)),
+    )
+    .map((feature): AutomaticClassFeature => {
+      const text = resolveClassFeatureText(feature, 'de')
+      const metadata = legacyMetadata.find(
+        (entry) =>
+          entry.name === feature.names.en &&
+          entry.level === feature.level &&
+          entry.source === feature.featureType,
+      )
+
+      return {
+        id: feature.id,
+        name: feature.names.en ?? feature.id,
+        localizedName: text.name,
+        level: feature.level,
+        source: feature.featureType,
+        description: text.description,
+        nameIsFallback: text.nameIsFallback,
+        descriptionIsFallback: text.descriptionIsFallback,
+        usedFallback: text.usedFallback,
+        contentSourceId: feature.contentSourceId,
+        activation: metadata?.activation,
+        resourceId: metadata?.resourceId,
+        resourceCost: metadata?.resourceCost,
+        spellbookSpellId: metadata?.spellbookSpellId,
+        unlocked: feature.level <= character.level,
+      }
+    })
+    .sort((left, right) => left.level - right.level || left.name.localeCompare(right.name))
 }
 
 export function getSpellbookFeatureSpells(character: Character): AutomaticClassFeature[] {
