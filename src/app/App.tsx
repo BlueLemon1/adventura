@@ -1,4 +1,4 @@
-import { useRef, useState, type ChangeEvent, type FormEvent } from 'react'
+import { useRef, useState, type ChangeEvent } from 'react'
 import { BookOpen, Boxes, Compass, Download, Moon, Sun, Shield, Upload, WandSparkles, X } from 'lucide-react'
 import type { Character } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
@@ -9,7 +9,6 @@ import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/da
 import { downloadBackup, importBackup } from '../storage/backup'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
 import { IconButton } from '../components/ui/button'
-import { TextInputField } from '../components/ui/form-field'
 import { useAppPreferences } from './useAppPreferences'
 import { useCharacterCollection } from './useCharacterCollection'
 import { CharacterSheet } from './CharacterSheet'
@@ -17,6 +16,7 @@ import { InventoryPage } from './InventoryPage'
 import { SpellbookPage } from './SpellbookPage'
 import { OverviewPage } from './OverviewPage'
 import { LevelUpPage } from './LevelUpPage'
+import { CreateCharacterDialog } from './CreateCharacterDialog'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
 const abilityDefaults = {str:10,dex:10,con:10,int:10,wis:10,cha:10}
@@ -45,21 +45,72 @@ export default function App() {
   } = useCharacterCollection()
   const [page,setPage]=useState<Page>('overview')
   const [showCreate,setShowCreate]=useState(false)
-  const [name,setName]=useState('')
-  const [classId,setClassId]=useState('')
-  const [ruleset,setRuleset]=useState<Dnd5eRuleset>('2024')
-  const [level,setLevel]=useState(1)
   const [busy,setBusy]=useState(false)
   const fileInput=useRef<HTMLInputElement>(null)
 
-  async function createCharacter(event:FormEvent<HTMLFormElement>) {
-    event.preventDefault();if(!name.trim()||!classId.trim())return
-    setBusy(true);setError('')
-    const now=new Date().toISOString()
-    const character:Character={id:newId(),name:name.trim(),ruleset,classId:classId.trim().toLowerCase(),level,createdAt:now,updatedAt:now,abilities:{...abilityDefaults},savingThrowProficiencies:[],skillProficiencies:{},armorClass:10,hitPointsMax:10,hitPointsCurrent:10,temporaryHitPoints:0,speed:30,initiativeBonus:0,hitDice:'1d8',spellSlots:createSpellSlots({ruleset,classId:classId.trim().toLowerCase(),level}),pactMagic:createPactMagic({ruleset,classId:classId.trim().toLowerCase(),level}),experiencePoints:0,inspiration:false,deathSaves:{successes:0,failures:0}}
-    const stored:StoredCharacter={character,inventory:{personal:[],party:[],currency:{...currencyDefaults}},spellbook:{knownSpells:[]}}
-    try {await saveCharacter(stored);setCharacters(current=>[...current,stored]);setSelectedId(character.id);setPage('sheet');setShowCreate(false);setName('');setClassId('');setLevel(1)}
-    catch(reason){setError(reason instanceof Error?reason.message:'Charakter konnte nicht angelegt werden.')}finally{setBusy(false)}
+  async function createCharacter(input: {
+    name: string
+    classId: string
+    ruleset: Dnd5eRuleset
+    level: number
+  }) {
+    setBusy(true)
+    setError('')
+
+    const now = new Date().toISOString()
+    const character: Character = {
+      id: newId(),
+      name: input.name,
+      ruleset: input.ruleset,
+      classId: input.classId,
+      level: input.level,
+      createdAt: now,
+      updatedAt: now,
+      abilities: { ...abilityDefaults },
+      savingThrowProficiencies: [],
+      skillProficiencies: {},
+      armorClass: 10,
+      hitPointsMax: 10,
+      hitPointsCurrent: 10,
+      temporaryHitPoints: 0,
+      speed: 30,
+      initiativeBonus: 0,
+      hitDice: '1d8',
+      spellSlots: createSpellSlots({
+        ruleset: input.ruleset,
+        classId: input.classId,
+        level: input.level,
+      }),
+      pactMagic: createPactMagic({
+        ruleset: input.ruleset,
+        classId: input.classId,
+        level: input.level,
+      }),
+      experiencePoints: 0,
+      inspiration: false,
+      deathSaves: { successes: 0, failures: 0 },
+    }
+    const stored: StoredCharacter = {
+      character,
+      inventory: {
+        personal: [],
+        party: [],
+        currency: { ...currencyDefaults },
+      },
+      spellbook: { knownSpells: [] },
+    }
+
+    try {
+      await saveCharacter(stored)
+      setCharacters((current) => [...current, stored])
+      setSelectedId(character.id)
+      setPage('sheet')
+      setShowCreate(false)
+    } catch (reason) {
+      setError(reason instanceof Error ? reason.message : 'Charakter konnte nicht angelegt werden.')
+    } finally {
+      setBusy(false)
+    }
   }
   async function removeCharacter(entry:StoredCharacter) {
     if(!window.confirm('„'+entry.character.name+'“ wirklich löschen? Diese Aktion kann nicht rückgängig gemacht werden.'))return
@@ -98,7 +149,7 @@ export default function App() {
         <footer className="footer-note"><BookOpen size={14}/> {t('Dein Begleiter am Spieltisch.')} <span>ADVENTURA · D&D 5E 2014 / 2024</span></footer>
       </div>
     </main>
-    {showCreate&&<div className="modal-backdrop" role="presentation" onMouseDown={e=>{if(e.target===e.currentTarget)setShowCreate(false)}}><section className="create-modal" role="dialog" aria-modal="true" aria-labelledby="create-title"><div className="modal-heading"><div><span className="eyebrow">{t('NEUES ABENTEUER')}</span><h2 id="create-title">{t('Charakter erstellen')}</h2></div><IconButton label="Schließen" onClick={()=>setShowCreate(false)}><X size={17}/></IconButton></div><form onSubmit={createCharacter}><TextInputField label="Charaktername" value={name} onChange={setName} required/><TextInputField label="Klasse" value={classId} onChange={setClassId} required/><div className="form-row"><label className="field-label">Regelwerk<Select value={ruleset} onValueChange={next=>setRuleset(next as Dnd5eRuleset)}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="2014">D&D 5e (2014)</SelectItem><SelectItem value="2024">D&D 5e (2024)</SelectItem></SelectContent></Select></label><TextInputField label="Level" type="number" value={String(level)} onChange={v=>setLevel(Math.min(20,Math.max(1,Number(v)||1)))}/></div><p className="modal-hint">{t('Du kannst Attribute und weitere Eigenschaften direkt im Charakterbogen ergänzen.')}</p><div className="modal-actions"><button type="button" className="secondary-button" onClick={()=>setShowCreate(false)}>{t('Abbrechen')}</button><button type="submit" className="primary-button" disabled={busy}>{busy?t('Speichert …'):t('Charakter speichern')}</button></div></form></section></div>}
+    {showCreate&&<CreateCharacterDialog busy={busy} onClose={()=>setShowCreate(false)} onCreate={createCharacter}/>}
   </div></LanguageContext.Provider>
 }
 
