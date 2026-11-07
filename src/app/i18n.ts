@@ -28,8 +28,10 @@ const en: Record<string, string> = {
   'Gegenstand anlegen': 'Equip item',
   Ablegen: 'Unequip',
   'Gegenstand entfernen': 'Remove item',
-  'Füge zuerst Gegenstände zum persönlichen Inventar hinzu.': 'Add items to your personal inventory first.',
-  'Jeder Slot kann genau einen Gegenstand aufnehmen. Beim Anlegen wird er aus deinem Inventar verschoben.': 'Each slot can hold exactly one item. Equipping an item moves it out of your inventory.',
+  'Füge zuerst Gegenstände zum persönlichen Inventar hinzu.':
+    'Add items to your personal inventory first.',
+  'Jeder Slot kann genau einen Gegenstand aufnehmen. Beim Anlegen wird er aus deinem Inventar verschoben.':
+    'Each slot can hold exactly one item. Equipping an item moves it out of your inventory.',
   'Keine Beschreibung': 'No description',
   Angelegt: 'Equipped',
   'Angelegte Ausrüstung': 'Equipped gear',

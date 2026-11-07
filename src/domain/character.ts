@@ -78,8 +78,18 @@ export interface Character {
 }
 
 export type EquipmentSlot =
-  | 'head' | 'neck' | 'cloak' | 'armor' | 'mainHand' | 'offHand'
-  | 'hands' | 'waist' | 'feet' | 'ring1' | 'ring2' | 'other'
+  | 'head'
+  | 'neck'
+  | 'cloak'
+  | 'armor'
+  | 'mainHand'
+  | 'offHand'
+  | 'hands'
+  | 'waist'
+  | 'feet'
+  | 'ring1'
+  | 'ring2'
+  | 'other'
 
 export interface InventoryItem {
   id: string

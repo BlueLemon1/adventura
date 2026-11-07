@@ -1,5 +1,20 @@
 import { useMemo, useState, type FormEvent } from 'react'
-import { Backpack, CircleDot, Coins, Crown, Footprints, Gem, Hand, Plus, Shield, ShieldCheck, Shirt, Sparkles, Sword, Trash2 } from 'lucide-react'
+import {
+  Backpack,
+  CircleDot,
+  Coins,
+  Crown,
+  Footprints,
+  Gem,
+  Hand,
+  Plus,
+  Shield,
+  ShieldCheck,
+  Shirt,
+  Sparkles,
+  Sword,
+  Trash2,
+} from 'lucide-react'
 import type { CharacterInventory, EquipmentSlot, InventoryItem } from '../domain/character'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
@@ -33,11 +48,7 @@ interface InventoryItemListProps {
   onRemove: (item: InventoryItem) => void
 }
 
-function InventoryItemList({
-  items,
-  emptyLabel,
-  onRemove,
-}: InventoryItemListProps) {
+function InventoryItemList({ items, emptyLabel, onRemove }: InventoryItemListProps) {
   if (items.length === 0) {
     return <p className="muted-paragraph">{emptyLabel}</p>
   }
@@ -68,7 +79,6 @@ function InventoryItemList({
   )
 }
 
-
 const EQUIPMENT_SLOTS: { id: EquipmentSlot; label: string; icon: typeof Shield }[] = [
   { id: 'head', label: 'Kopf', icon: Crown },
   { id: 'neck', label: 'Hals', icon: Gem },
@@ -92,18 +102,28 @@ interface EquipmentLoadoutProps {
   onRemove: (item: InventoryItem) => void
 }
 
-function EquipmentLoadout({ items, inventoryItems, onEquip, onUnequip, onRemove }: EquipmentLoadoutProps) {
+function EquipmentLoadout({
+  items,
+  inventoryItems,
+  onEquip,
+  onUnequip,
+  onRemove,
+}: EquipmentLoadoutProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   return (
     <div className="equipment-layout">
       <div className="equipment-slot-grid">
         {EQUIPMENT_SLOTS.map(({ id, label, icon: Icon }) => {
-          const item = items.find((entry) => (entry.equippedSlot ?? (entry.equipped ? 'other' : undefined)) === id)
+          const item = items.find(
+            (entry) => (entry.equippedSlot ?? (entry.equipped ? 'other' : undefined)) === id,
+          )
           return (
             <article className={item ? 'equipment-slot filled' : 'equipment-slot'} key={id}>
               <div className="equipment-slot-top">
-                <span className="equipment-slot-icon"><Icon size={20} /></span>
+                <span className="equipment-slot-icon">
+                  <Icon size={20} />
+                </span>
                 <div className="equipment-slot-copy">
                   <strong>{t(label)}</strong>
                   <small>{item ? t('Belegt') : t('Freier Slot')}</small>
@@ -112,19 +132,38 @@ function EquipmentLoadout({ items, inventoryItems, onEquip, onUnequip, onRemove 
               {item ? (
                 <div className="equipment-slot-item">
                   <strong>{item.name}</strong>
-                  <small>{item.quantity > 1 ? `× ${item.quantity} · ` : ''}{item.description || t('Keine Beschreibung')}</small>
+                  <small>
+                    {item.quantity > 1 ? `× ${item.quantity} · ` : ''}
+                    {item.description || t('Keine Beschreibung')}
+                  </small>
                   <div className="equipment-slot-actions">
-                    <button type="button" className="secondary-button" onClick={() => onUnequip(item)}>{t('Ablegen')}</button>
-                    <button type="button" className="delete-button" aria-label={t('Gegenstand entfernen')} onClick={() => onRemove(item)}><Trash2 size={14} /></button>
+                    <button
+                      type="button"
+                      className="secondary-button"
+                      onClick={() => onUnequip(item)}
+                    >
+                      {t('Ablegen')}
+                    </button>
+                    <button
+                      type="button"
+                      className="delete-button"
+                      aria-label={t('Gegenstand entfernen')}
+                      onClick={() => onRemove(item)}
+                    >
+                      <Trash2 size={14} />
+                    </button>
                   </div>
                 </div>
               ) : (
                 <Select value="" onValueChange={(value) => onEquip(id, value)}>
-                  <SelectTrigger className="equipment-slot-select"><SelectValue placeholder={t('Gegenstand anlegen')} /></SelectTrigger>
+                  <SelectTrigger className="equipment-slot-select">
+                    <SelectValue placeholder={t('Gegenstand anlegen')} />
+                  </SelectTrigger>
                   <SelectContent>
                     {inventoryItems.map((candidate) => (
                       <SelectItem key={candidate.id} value={candidate.id}>
-                        {candidate.name}{candidate.quantity > 1 ? ` × ${candidate.quantity}` : ''}
+                        {candidate.name}
+                        {candidate.quantity > 1 ? ` × ${candidate.quantity}` : ''}
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -135,7 +174,9 @@ function EquipmentLoadout({ items, inventoryItems, onEquip, onUnequip, onRemove 
         })}
       </div>
       {inventoryItems.length === 0 && items.length === 0 && (
-        <p className="muted-paragraph">{t('Füge zuerst Gegenstände zum persönlichen Inventar hinzu.')}</p>
+        <p className="muted-paragraph">
+          {t('Füge zuerst Gegenstände zum persönlichen Inventar hinzu.')}
+        </p>
       )}
     </div>
   )
@@ -222,24 +263,36 @@ export function InventoryPage({
             meta={`${equippedItems.length} ${t('ANGELEGT')}`}
           />
           <p className="muted-paragraph">
-            {t('Jeder Slot kann genau einen Gegenstand aufnehmen. Beim Anlegen wird er aus deinem Inventar verschoben.')}
+            {t(
+              'Jeder Slot kann genau einen Gegenstand aufnehmen. Beim Anlegen wird er aus deinem Inventar verschoben.',
+            )}
           </p>
           <EquipmentLoadout
             items={equippedItems}
             inventoryItems={carriedItems}
             onEquip={(slot, itemId) => {
-              const currentSlotItem = equippedItems.find((item) => (item.equippedSlot ?? (item.equipped ? 'other' : undefined)) === slot)
+              const currentSlotItem = equippedItems.find(
+                (item) => (item.equippedSlot ?? (item.equipped ? 'other' : undefined)) === slot,
+              )
               const selectedItem = carriedItems.find((item) => item.id === itemId)
               if (!selectedItem) return
               onUpdateInventory({
                 personal: inventory.personal.map((item) => {
-                  if (currentSlotItem?.id === item.id) return { ...item, equipped: false, equippedSlot: undefined }
-                  if (selectedItem.id === item.id) return { ...item, equipped: undefined, equippedSlot: slot }
+                  if (currentSlotItem?.id === item.id)
+                    return { ...item, equipped: false, equippedSlot: undefined }
+                  if (selectedItem.id === item.id)
+                    return { ...item, equipped: undefined, equippedSlot: slot }
                   return item
                 }),
               })
             }}
-            onUnequip={(item) => updateItem(item.id, (current) => ({ ...current, equipped: false, equippedSlot: undefined }))}
+            onUnequip={(item) =>
+              updateItem(item.id, (current) => ({
+                ...current,
+                equipped: false,
+                equippedSlot: undefined,
+              }))
+            }
             onRemove={removePersonalItem}
           />
         </section>
