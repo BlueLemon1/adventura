@@ -201,7 +201,9 @@ function SpellCard({
 
       {spell.description && (
         <details className="spellbook-details" open={isFeature}>
-          <summary>{translateText(isFeature ? 'Merkmalsbeschreibung' : 'Zauberbeschreibung')}</summary>
+          <summary>
+            {translateText(isFeature ? 'Merkmalsbeschreibung' : 'Zauberbeschreibung')}
+          </summary>
           <p>{spell.description}</p>
           {spell.higherLevel && (
             <p>

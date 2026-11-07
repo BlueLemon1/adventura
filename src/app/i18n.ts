@@ -801,5 +801,4 @@ Object.assign(en, {
     'When you hit a creature with a melee weapon, you can expend a spell slot to deal extra Radiant damage.',
 })
 
-
-Object.assign(en, { Merkmalsbeschreibung: 'Feature description' });
+Object.assign(en, { Merkmalsbeschreibung: 'Feature description' })
