@@ -63,6 +63,7 @@ export function SpellbookPage({
       spellId: feature.id,
       name: feature.name,
       learnedAtLevel: feature.level,
+      prepared: true,
       spellLevel: -1,
       castingTime:
         feature.activation === 'bonusAction'
