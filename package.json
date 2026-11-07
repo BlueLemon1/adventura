@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "import:srd:2024:features": "node scripts/import-srd-class-features.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "latest",
