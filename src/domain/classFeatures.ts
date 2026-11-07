@@ -54,7 +54,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
   if (classId === 'cleric' && level >= 2) {
     const maximum =
       level >= 18 ? (ruleset === '2024' ? 4 : 3) : level >= 6 ? 2 : ruleset === '2024' ? 2 : 1
-    add('channel-divinity', 'Kanal göttlicher Energie', maximum, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
+    add(
+      'channel-divinity',
+      'Kanal göttlicher Energie',
+      maximum,
+      ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
+    )
   }
   if (classId === 'druid' && level >= 2)
     add(
@@ -94,7 +99,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
       add('paladin-channel-divinity', 'Kanal göttlicher Energie', 1, 'short-or-long')
   }
   if (classId === 'paladin' && ruleset === '2024' && level >= 3)
-    add('channel-divinity-paladin', 'Kanal göttlicher Energie', level >= 11 ? 3 : 2, 'short-one-or-long')
+    add(
+      'channel-divinity-paladin',
+      'Kanal göttlicher Energie',
+      level >= 11 ? 3 : 2,
+      'short-one-or-long',
+    )
   if (classId === 'ranger' && ruleset === '2024')
     add(
       'favored-enemy',
