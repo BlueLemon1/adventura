@@ -1030,7 +1030,6 @@ Object.assign(en, {
 
 Object.assign(en, { 'Zauberer-Inkarnation': 'Sorcery Incarnate' })
 
-
 Object.assign(en, {
   'Noch nicht freigeschaltet': 'Not unlocked yet',
   Freigeschaltet: 'Unlocked',
@@ -1045,18 +1044,15 @@ Object.assign(en, {
     'This subclass feature grants an additional benefit. Its full rules depend on the selected ruleset.',
 })
 
-
 Object.assign(en, {
   Geistesruhe: 'Stillness of Mind',
   'Uraltes Bewusstsein': 'Primeval Awareness',
 })
 
-
 Object.assign(en, {
   'Short rules summary available in German only for now.':
     'Short rules summary available in German only for now.',
 })
-
 
 Object.assign(en, {
   'Wenn du zu Beginn eines Kampfes keine Anwendungen deiner Bardeninspiration mehr hast, erhältst du eine Anwendung zurück.':
@@ -1084,7 +1080,6 @@ Object.assign(en, {
   'Wenn eine Kreatur einen deiner Schadenszaubertricks mit einem erfolgreichen Rettungswurf abwehrt, erleidet sie trotzdem einen Teil des Schadens.':
     'When a creature succeeds on a saving throw against one of your damaging cantrips, it still takes part of the damage.',
 })
-
 
 Object.assign(en, {
   'Während deines Kampfrauschs kannst du Stärke statt eines anderen Attributs für bestimmte Fertigkeitswürfe verwenden.':

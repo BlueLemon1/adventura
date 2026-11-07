@@ -61,7 +61,7 @@ export function SpellbookPage({
       resourceId: feature.resourceId,
       resourceCost: feature.resourceCost ?? 1,
       spellId: feature.id,
-      name: language === 'de' ? feature.localizedName ?? feature.name : feature.name,
+      name: language === 'de' ? (feature.localizedName ?? feature.name) : feature.name,
       learnedAtLevel: feature.level,
       prepared: true,
       spellLevel: -1,

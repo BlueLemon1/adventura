@@ -124,18 +124,26 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
         {features.length > 0 ? (
           <div className="automatic-feature-list">
             {features.map((feature) => (
-              <article className={`automatic-feature-row${feature.unlocked ? '' : ' is-locked'}`} key={feature.id}>
+              <article
+                className={`automatic-feature-row${feature.unlocked ? '' : ' is-locked'}`}
+                key={feature.id}
+              >
                 <div>
-                  <strong>{language === 'de' ? feature.localizedName ?? feature.name : feature.name}</strong>
+                  <strong>
+                    {language === 'de' ? (feature.localizedName ?? feature.name) : feature.name}
+                  </strong>
                   <small>
                     {t('Stufe')} {feature.level} ·{' '}
-                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')} · {t(feature.unlocked ? 'Freigeschaltet' : 'Noch nicht freigeschaltet')}
+                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')} ·{' '}
+                    {t(feature.unlocked ? 'Freigeschaltet' : 'Noch nicht freigeschaltet')}
                   </small>
                   {feature.description && (
                     <p className="muted-paragraph">{t(feature.description)}</p>
                   )}
                 </div>
-                <span className={`automatic-feature-badge${feature.unlocked ? '' : ' is-locked'}`}>{feature.unlocked ? t('Freigeschaltet') : `${t('Ab Stufe')} ${feature.level}`}</span>
+                <span className={`automatic-feature-badge${feature.unlocked ? '' : ' is-locked'}`}>
+                  {feature.unlocked ? t('Freigeschaltet') : `${t('Ab Stufe')} ${feature.level}`}
+                </span>
               </article>
             ))}
           </div>

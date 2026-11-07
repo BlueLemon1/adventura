@@ -1249,634 +1249,878 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
 }
 const SUBCLASS_FEATURES_2024: Record<string, Array<[number, string, string]>> = {
   barbarian: [
-    [3, 'Frenzy',
+    [
+      3,
+      'Frenzy',
       'Wenn du während deines Kampfrauschs Rücksichtsloser Angriff nutzt, verursacht dein erster Treffer mit einem Stärke-Angriff zusätzlichen Schaden.',
     ],
-    [6, 'Mindless Rage',
+    [
+      6,
+      'Mindless Rage',
       'Während des Kampfrauschs bist du immun gegen Bezaubert und Verängstigt; bestehende Zustände enden beim Beginn des Kampfrauschs.',
     ],
-    [10, 'Retaliation',
+    [
+      10,
+      'Retaliation',
       'Wenn dich eine Kreatur innerhalb von 1,5 Metern verletzt, kannst du als Reaktion einen Nahkampfangriff ausführen.',
     ],
-    [14, 'Intimidating Presence',
+    [
+      14,
+      'Intimidating Presence',
       'Du kannst Kreaturen in deiner Nähe mit einem Weisheitsrettungswurf gegen Furcht testen lassen.',
     ],
   ],
   bard: [
     [3, 'Bonus Proficiencies', 'Du erhältst Übung in drei Fertigkeiten deiner Wahl.'],
-    [3, 'Cutting Words',
+    [
+      3,
+      'Cutting Words',
       'Du kannst eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um einen Wurf oder Schadenswurf eines sichtbaren Wesens zu verringern.',
     ],
-    [6, 'Magical Discoveries',
+    [
+      6,
+      'Magical Discoveries',
       'Du lernst zwei zusätzliche Zauber von der Kleriker-, Druiden- oder Magier-Zauberliste.',
     ],
-    [14, 'Peerless Skill',
+    [
+      14,
+      'Peerless Skill',
       'Wenn du einen Attributswurf ablegst, kannst du eine Nutzung deiner Bardeninspiration einsetzen und den Würfel zum Ergebnis addieren.',
     ],
   ],
   cleric: [
-    [3, 'Disciple of Life',
+    [
+      3,
+      'Disciple of Life',
       'Heilzauber, die du mit einem Zauberplatz wirkst, stellen zusätzliche Trefferpunkte in Höhe von 2 plus Zauberplatzgrad wieder her.',
     ],
-    [3, 'Life Domain Spells',
+    [
+      3,
+      'Life Domain Spells',
       'Die Zauber deiner Domäne sind abhängig von deiner Klerikerstufe stets vorbereitet.',
     ],
-    [3, 'Preserve Life',
+    [
+      3,
+      'Preserve Life',
       'Du kannst Kanal göttlicher Energie einsetzen, um Trefferpunkte auf verwundete Kreaturen in deiner Nähe zu verteilen.',
     ],
-    [6, 'Blessed Healer',
+    [
+      6,
+      'Blessed Healer',
       'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.',
     ],
-    [17, 'Supreme Healing',
+    [
+      17,
+      'Supreme Healing',
       'Bei Heilwürfeln deiner Zauber verwendest du statt des Würfelwurfs den höchstmöglichen Wert.',
     ],
   ],
   druid: [
-    [3, 'Circle of the Land Spells',
+    [
+      3,
+      'Circle of the Land Spells',
       'Nach einer langen Rast wählst du eine Landschaft und hast deren passende Zirkelzauber vorbereitet.',
     ],
-    [3, "Land's Aid",
+    [
+      3,
+      "Land's Aid",
       'Du kannst eine Nutzung deiner Tiergestalt ausgeben, um in einem Bereich nekrotischen Schaden zu verursachen und eine Kreatur zu heilen.',
     ],
-    [6, 'Natural Recovery',
+    [
+      6,
+      'Natural Recovery',
       'Du kannst nach einer kurzen Rast Zauberplätze zurückgewinnen und erhältst zusätzliche Vorteile für deine Landzauber.',
     ],
-    [10, "Nature's Ward",
+    [
+      10,
+      "Nature's Ward",
       'Du bist gegen bestimmte Zustände und Umwelteinflüsse geschützt, abhängig von deiner gewählten Landschaft.',
     ],
-    [14, "Nature's Sanctuary",
+    [
+      14,
+      "Nature's Sanctuary",
       'Natürliche Kreaturen können dich nicht ohne Weiteres angreifen oder sich dir feindlich nähern.',
     ],
   ],
   fighter: [
-    [3, 'Improved Critical',
+    [
+      3,
+      'Improved Critical',
       'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.',
     ],
-    [3, 'Remarkable Athlete',
+    [
+      3,
+      'Remarkable Athlete',
       'Du erhältst Vorteile auf bestimmte Initiative- und körperliche Attributswürfe.',
     ],
     [7, 'Additional Fighting Style', 'Du erhältst ein weiteres Talent für Kampfstil.'],
-    [10, 'Heroic Warrior',
+    [
+      10,
+      'Heroic Warrior',
       'Zu Beginn deines Zuges kannst du Heldenmut erhalten, wenn du keinen hast.',
     ],
-    [15, 'Superior Critical',
+    [
+      15,
+      'Superior Critical',
       'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.',
     ],
-    [18, 'Survivor',
+    [
+      18,
+      'Survivor',
       'Zu Beginn deines Zuges kannst du Trefferpunkte zurückgewinnen, wenn du angeschlagen bist.',
     ],
   ],
   monk: [
-    [3, 'Open Hand Technique',
+    [
+      3,
+      'Open Hand Technique',
       'Treffer aus Hagel der Schläge können Gelegenheitsangriffe verhindern, Ziele wegstoßen oder zu Fall bringen.',
     ],
-    [6, 'Wholeness of Body',
+    [
+      6,
+      'Wholeness of Body',
       'Du kannst als Bonusaktion Trefferpunkte in Höhe deines Kampfkunstwürfels plus Weisheitsmodifikator zurückgewinnen.',
     ],
-    [11, 'Fleet Step',
+    [
+      11,
+      'Fleet Step',
       'Nach einer anderen Bonusaktion kannst du zusätzlich Schritt des Windes einsetzen.',
     ],
-    [17, 'Quivering Palm',
+    [
+      17,
+      'Quivering Palm',
       'Du kannst Fokus-Punkte einsetzen, um tödliche Schwingungen in einem getroffenen Ziel zu hinterlassen.',
     ],
   ],
   paladin: [
-    [3, 'Oath of Devotion Spells',
+    [
+      3,
+      'Oath of Devotion Spells',
       'Die Zauber deines Schwurs sind abhängig von deiner Paladinstufe stets vorbereitet.',
     ],
-    [3, 'Sacred Weapon',
+    [
+      3,
+      'Sacred Weapon',
       'Du kannst Kanal göttlicher Energie einsetzen, um eine Nahkampfwaffe vorübergehend magisch zu stärken.',
     ],
-    [7, 'Aura of Devotion',
+    [
+      7,
+      'Aura of Devotion',
       'Du und Verbündete in deiner Schutzaura seid gegen den Zustand Bezaubert immun.',
     ],
-    [15, 'Smite of Protection',
+    [
+      15,
+      'Smite of Protection',
       'Dein Göttliches Niederstrecken gewährt dir und Verbündeten in deiner Aura vorübergehend halbe Deckung.',
     ],
-    [20, 'Holy Nimbus',
+    [
+      20,
+      'Holy Nimbus',
       'Du strahlst eine heilige Aura aus, die Licht spendet und Feinde in deiner Nähe schwächt.',
     ],
   ],
   ranger: [
-    [3, "Hunter's Lore",
+    [
+      3,
+      "Hunter's Lore",
       'Während ein Ziel von deinem Mal des Jägers betroffen ist, erkennst du seine Schadensimmunitäten, Resistenzen und Anfälligkeiten.',
     ],
-    [3, "Hunter's Prey",
+    [
+      3,
+      "Hunter's Prey",
       'Du wählst eine Jagdtechnik, etwa zusätzlichen Schaden gegen bereits verwundete Ziele.',
     ],
-    [7, 'Defensive Tactics',
+    [
+      7,
+      'Defensive Tactics',
       'Du erhältst eine defensive Jagdtechnik gegen Angriffe oder Flächengefahren.',
     ],
-    [11, "Superior Hunter's Prey",
+    [
+      11,
+      "Superior Hunter's Prey",
       'Deine Jagdtechnik wird verbessert und kann zusätzliche Ziele oder Effekte betreffen.',
     ],
     [15, 'Superior Hunter’s Defense', 'Du erhältst eine weitere defensive Jagdtechnik.'],
   ],
   rogue: [
-    [3, 'Fast Hands',
+    [
+      3,
+      'Fast Hands',
       'Du kannst zusätzlich bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.',
     ],
-    [3, 'Second-Story Work',
+    [
+      3,
+      'Second-Story Work',
       'Klettern kostet dich keine zusätzliche Bewegung und Sprünge profitieren von deiner Geschicklichkeit.',
     ],
-    [9, 'Supreme Sneak',
+    [
+      9,
+      'Supreme Sneak',
       'Du kannst dich unter bestimmten Bedingungen mit einer Bonusaktion verstecken.',
     ],
-    [13, 'Use Magic Device',
+    [
+      13,
+      'Use Magic Device',
       'Du kannst Schriftrollen und magische Gegenstände vielseitiger einsetzen.',
     ],
-    [17, "Thief's Reflexes",
+    [
+      17,
+      "Thief's Reflexes",
       'Du erhältst zu Beginn eines Kampfes einen zusätzlichen Zug unter bestimmten Voraussetzungen.',
     ],
   ],
   sorcerer: [
-    [3, 'Draconic Resilience',
+    [
+      3,
+      'Draconic Resilience',
       'Dein Trefferpunktemaximum steigt; ohne Rüstung berechnet sich deine Grund-Rüstungsklasse aus Geschicklichkeit und Charisma.',
     ],
-    [3, 'Draconic Spells',
+    [
+      3,
+      'Draconic Spells',
       'Die Zauber deiner drakonischen Abstammung sind abhängig von deiner Zaubererstufe stets vorbereitet.',
     ],
-    [6, 'Elemental Affinity',
+    [
+      6,
+      'Elemental Affinity',
       'Du erhältst Resistenz gegen einen gewählten Drachenschadenstyp und kannst passenden Zauberschaden verstärken.',
     ],
-    [14, 'Dragon Wings',
+    [
+      14,
+      'Dragon Wings',
       'Du kannst für eine begrenzte Zeit Flügel manifestieren und eine Flugbewegungsrate erhalten.',
     ],
     [18, 'Dragon Companion', 'Du kannst einen drakonischen Geist als Gefährten beschwören.'],
   ],
   warlock: [
-    [3, "Dark One's Blessing",
+    [
+      3,
+      "Dark One's Blessing",
       'Wenn ein Feind in deiner Nähe auf 0 Trefferpunkte sinkt, erhältst du temporäre Trefferpunkte.',
     ],
-    [3, 'Fiend Spells',
+    [
+      3,
+      'Fiend Spells',
       'Die Zauber deines Patrons sind abhängig von deiner Hexenmeisterstufe stets vorbereitet.',
     ],
-    [6, "Dark One's Own Luck",
+    [
+      6,
+      "Dark One's Own Luck",
       'Du kannst einen Attributswurf oder Rettungswurf mit einem zusätzlichen W10 verbessern.',
     ],
-    [10, 'Fiendish Resilience',
+    [
+      10,
+      'Fiendish Resilience',
       'Nach einer Rast wählst du einen Schadensarttyp, gegen den du resistent bist.',
     ],
-    [14, 'Hurl Through Hell',
+    [
+      14,
+      'Hurl Through Hell',
       'Einmal pro Zug kannst du ein getroffenes Ziel in die Unteren Ebenen schleudern und ihm psychischen Schaden zufügen.',
     ],
   ],
   wizard: [
-    [3, 'Evocation Savant',
+    [
+      3,
+      'Evocation Savant',
       'Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.',
     ],
-    [3, 'Potent Cantrip',
+    [
+      3,
+      'Potent Cantrip',
       'Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.',
     ],
-    [6, 'Sculpt Spells',
+    [
+      6,
+      'Sculpt Spells',
       'Du kannst sichere Bereiche für Verbündete in deinen Hervorrufungszaubern schaffen.',
     ],
-    [10, 'Empowered Evocation',
+    [
+      10,
+      'Empowered Evocation',
       'Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.',
     ],
-    [14, 'Overchannel',
+    [
+      14,
+      'Overchannel',
       'Du kannst einen Zauber verstärken, um maximalen Schaden zu verursachen, riskierst dabei aber Rückschlag.',
     ],
   ],
 }
 
 const FEATURE_LABELS_DE: Record<string, string> = {
-  "Rage": "Kampfrausch",
-  "Unarmored Defense": "Ungepanzerte Verteidigung",
-  "Danger Sense": "Gefahrensinn",
-  "Reckless Attack": "Rücksichtsloser Angriff",
-  "Extra Attack": "Zusätzlicher Angriff",
-  "Fast Movement": "Schnelle Bewegung",
-  "Feral Instinct": "Wilder Instinkt",
-  "Brutal Critical": "Brutaler kritischer Treffer",
-  "Relentless Rage": "Unermüdlicher Kampfrausch",
-  "Persistent Rage": "Anhaltender Kampfrausch",
-  "Indomitable Might": "Unbezwingbare Stärke",
-  "Primal Champion": "Ursprünglicher Champion",
-  "Spellcasting": "Zauberwirken",
-  "Bardic Inspiration": "Bardeninspiration",
-  "Jack of All Trades": "Alles-Könner",
-  "Song of Rest": "Lied der Rast",
-  "Expertise": "Experte",
-  "Font of Inspiration": "Quelle der Inspiration",
-  "Countercharm": "Gegenzauber",
-  "Magical Secrets": "Magische Geheimnisse",
-  "Divine Domain": "Göttliche Domäne",
-  "Channel Divinity": "Kanal göttlicher Energie",
-  "Turn Undead": "Untote vertreiben",
-  "Destroy Undead": "Untote zerstören",
-  "Divine Strike": "Göttlicher Schlag",
-  "Divine Intervention": "Göttliches Eingreifen",
-  "Druidic": "Druidisch",
-  "Wild Shape": "Tiergestalt",
-  "Timeless Body": "Zeitloser Körper",
-  "Beast Spells": "Tierzauber",
-  "Fighting Style": "Kampfstil",
-  "Second Wind": "Zweites Aufatmen",
-  "Action Surge": "Aktionsschub",
-  "Martial Archetype": "Kampf-Archetyp",
-  "Indomitable": "Unbeugsam",
-  "Martial Arts": "Kampfkünste",
-  "Ki": "Ki",
-  "Flurry of Blows": "Hagel der Schläge",
-  "Patient Defense": "Geduldige Verteidigung",
-  "Step of the Wind": "Schritt des Windes",
-  "Unarmored Movement": "Ungepanzerte Bewegung",
-  "Deflect Missiles": "Geschosse abwehren",
-  "Stunning Strike": "Betäubender Schlag",
-  "Ki-Empowered Strikes": "Ki-verbesserte Schläge",
-  "Evasion": "Entrinnen",
-  "Purity of Body": "Reinheit des Körpers",
-  "Diamond Soul": "Diamantseele",
-  "Empty Body": "Leerer Körper",
-  "Perfect Self": "Perfektes Selbst",
-  "Divine Sense": "Göttlicher Sinn",
-  "Lay on Hands": "Handauflegen",
-  "Divine Smite": "Göttliches Niederstrecken",
-  "Divine Health": "Göttliche Gesundheit",
-  "Sacred Oath": "Heiliger Schwur",
-  "Aura of Protection": "Aura des Schutzes",
-  "Aura of Courage": "Aura des Mutes",
-  "Improved Divine Smite": "Verbesserter göttlicher Schlag",
-  "Cleansing Touch": "Reinigende Berührung",
-  "Favored Enemy": "Bevorzugter Feind",
-  "Natural Explorer": "Erfahrener Entdecker",
-  "Ranger Archetype": "Waldläufer-Archetyp",
-  "Land’s Stride": "Landgang",
-  "Hide in Plain Sight": "Tarnung in der Wildnis",
-  "Vanish": "Verschwinden",
-  "Feral Senses": "Wilde Sinne",
-  "Foe Slayer": "Feindetöter",
-  "Sneak Attack": "Hinterhältiger Angriff",
-  "Thieves’ Cant": "Diebesjargon",
-  "Cunning Action": "Listige Aktion",
-  "Roguish Archetype": "Schurken-Archetyp",
-  "Uncanny Dodge": "Unheimliches Ausweichen",
-  "Reliable Talent": "Zuverlässiges Talent",
-  "Blindsense": "Blindgespür",
-  "Slippery Mind": "Schlauer Geist",
-  "Elusive": "Unfassbar",
-  "Stroke of Luck": "Glückstreffer",
-  "Sorcerous Origin": "Zauberer-Abstammung",
-  "Font of Magic": "Quelle der Magie",
-  "Metamagic": "Metamagie",
-  "Sorcerous Restoration": "Zauberhafte Erneuerung",
-  "Pact Magic": "Paktmagie",
-  "Eldritch Invocations": "Unheimliche Anrufungen",
-  "Pact Boon": "Paktgabe",
-  "Mystic Arcanum": "Mystisches Arkanum",
-  "Eldritch Master": "Mystischer Meister",
-  "Arcane Recovery": "Arkane Erholung",
-  "Arcane Tradition": "Arkane Tradition",
-  "Spell Mastery": "Zaubermeisterschaft",
-  "Signature Spells": "Signaturzauber",
-  "Frenzy": "Raserei",
-  "Mindless Rage": "Geisteslose Wut",
-  "Retaliation": "Vergeltung",
-  "Intimidating Presence": "Einschüchternde Präsenz",
-  "Bonus Proficiencies": "Zusätzliche Fertigkeiten",
-  "Cutting Words": "Schneidende Worte",
-  "Additional Magical Secrets": "Zusätzliche magische Geheimnisse",
-  "Peerless Skill": "Unvergleichliche Fertigkeit",
-  "Bonus Proficiency": "Bonus-Ausbildung",
-  "Disciple of Life": "Jünger des Lebens",
-  "Preserve Life": "Leben bewahren",
-  "Blessed Healer": "Gesegneter Heiler",
-  "Bonus Spells": "Bonus-Zauber",
-  "Natural Recovery": "Natürliche Erholung",
-  "Nature's Ward": "Schutz der Natur",
-  "Nature's Sanctuary": "Naturheiligtum",
-  "Improved Critical": "Verbesserter kritischer Treffer",
-  "Remarkable Athlete": "Bemerkenswerter Athlet",
-  "Additional Fighting Style": "Zusätzlicher Kampfstil",
-  "Superior Critical": "Überlegener kritischer Treffer",
-  "Survivor": "Überlebenskünstler",
-  "Open Hand Technique": "Technik der offenen Hand",
-  "Wholeness of Body": "Ganzheit des Körpers",
-  "Tranquility": "Gelassenheit",
-  "Quivering Palm": "Zitternde Handfläche",
-  "Sacred Weapon": "Heilige Waffe",
-  "Turn the Unholy": "Unheilige vertreiben",
-  "Divine Allegiance": "Untadeliger Geist",
-  "Aura of Devotion": "Aura der Hingabe",
-  "Purity of Spirit": "Reinheit des Geistes",
-  "Holy Nimbus": "Heiliger Nimbus",
-  "Hunter's Prey": "Jägerbeute",
-  "Defensive Tactics": "Defensive Taktiken",
-  "Multiattack": "Mehrfachangriff",
-  "Superior Hunter's Defense": "Überlegene Verteidigung",
-  "Fast Hands": "Schnelle Hände",
-  "Second-Story Work": "Arbeit in luftiger Höhe",
-  "Stealth": "Heimlichkeit",
-  "Use Magic Device": "Magische Gegenstände benutzen",
-  "Thief's Reflexes": "Diebesreflexe",
-  "Mage Hand Legerdemain": "Magische Hand-Tricks",
-  "Magical Ambush": "Magischer Hinterhalt",
-  "Versatile Trickster": "Vielseitiger Betrüger",
-  "Spell Thief": "Zauberdieb",
-  "Weapon Bond": "Waffenbindung",
-  "War Magic": "Kriegsmagie",
-  "Eldritch Strike": "Eldritch Strike",
-  "Arcane Charge": "Arkane Aufladung",
-  "Improved War Magic": "Verbesserte Kriegsmagie",
-  "Dragon Ancestor": "Drachenahne",
-  "Elemental Affinity": "Elementare Affinität",
-  "Dragon Wings": "Drachenflügel",
-  "Draconic Presence": "Drachenpräsenz",
-  "Eyes of the Dark": "Augen der Dunkelheit",
-  "Strength of the Grave": "Stärke des Grabes",
-  "Hound of Ill Omen": "Hund des Unheils",
-  "Shadow Walk": "Schattenwandlung",
-  "Umbral Form": "Schattenform",
-  "Dark One's Blessing": "Segnung des Dunklen",
-  "Dark One's Own Luck": "Dunkler eigener Glücksfall",
-  "Fiendish Resilience": "Unholdresilienz",
-  "Hurl Through Hell": "Durch die Hölle schicken",
-  "Evocation Savant": "Hervorrufungsexperte",
-  "Sculpt Spells": "Zauber formen",
-  "Potent Cantrip": "Kraftvoller Zaubertrick",
-  "Empowered Evocation": "Ermächtigte Hervorrufung",
-  "Overchannel": "Überladung",
-  "Weapon Mastery": "Waffenmeisterschaft",
-  "Primal Knowledge": "Urwissen",
-  "Instinctive Pounce": "Instinktiver Sprung",
-  "Brutal Strike": "Brutaler Schlag",
-  "Improved Brutal Strike": "Verbesserter brutaler Schlag",
-  "Epic Boon": "Epischer Segen",
-  "Superior Inspiration": "Überlegene Inspiration",
-  "Words of Creation": "Worte der Schöpfung",
-  "Divine Order": "Göttliche Ordnung",
-  "Divine Spark": "Göttlicher Funke",
-  "Ability Score Improvement": "Attributswerterhöhung",
-  "Blessed Strikes": "Gesegnete Schläge",
-  "Improved Divine Intervention": "Verbessertes Göttliches Eingreifen",
-  "Greater Divine Intervention": "Großes Göttliches Eingreifen",
-  "Primal Order": "Ursprüngliche Ordnung",
-  "Wild Companion": "Wilder Gefährte",
-  "Wild Resurgence": "Wilde Erneuerung",
-  "Elemental Fury": "Elementare Wut",
-  "Improved Elemental Fury": "Verbesserte Elementare Wut",
-  "Archdruid": "Erzdruide",
-  "Tactical Mind": "Taktischer Verstand",
-  "Tactical Shift": "Taktische Bewegung",
-  "Two Extra Attacks": "Zwei zusätzliche Angriffe",
-  "Three Extra Attacks": "Drei zusätzliche Angriffe",
-  "Monk’s Focus": "Fokus des Mönchs",
-  "Uncanny Metabolism": "Unheimlicher Stoffwechsel",
-  "Deflect Attacks": "Angriffe abwehren",
-  "Slow Fall": "Langsamer Fall",
-  "Empowered Strikes": "Verbesserte fokussierte Schläge",
-  "Self-Restoration": "Selbstheilung",
-  "Deflect Energy": "Abgelenkte Energie",
-  "Discipline": "Disziplin",
-  "Faithful Steed": "Treues Ross",
-  "Abjure Foes": "Abwehrzauber",
-  "Radiant Strikes": "Strahlende Schläge",
-  "Restoring Touch": "Berührende Reinigung",
-  "Roving": "Wanderer",
-  "Tireless": "Zäher Jäger",
-  "Relentless Hunter": "Unermüdlicher Jäger",
-  "Precise Hunter": "Präziser Jäger",
-  "Steady Aim": "Sicheres Zielen",
-  "Cunning Strike": "Listiger Schlag",
-  "Improved Cunning Strike": "Verbesserte Listige Schläge",
-  "Devious Strikes": "Listige Schläge",
-  "Innate Sorcery": "Angeborene Magie",
-  "Sorcery Incarnate": "Zauberer-Inkarnation",
-  "Metamagic Option": "Metamagie-Option",
-  "Magical Cunning": "Magische List",
-  "Contact Patron": "Patron kontaktieren",
-  "Ritual Adept": "Ritualgelehrter",
-  "Scholar": "Gelehrter",
-  "Memorize Spell": "Zauber einprägen",
-  "Magical Discoveries": "Magische Entdeckungen",
-  "Life Domain Spells": "Zauber der Lebensdomäne",
-  "Supreme Healing": "Überragende Heilung",
-  "Circle of the Land Spells": "Zauber des Landzirkels",
-  "Land's Aid": "Hilfe des Landes",
-  "Heroic Warrior": "Heroischer Krieger",
-  "Fleet Step": "Fließender Schritt",
-  "Oath of Devotion Spells": "Zauber des Schwurs der Hingabe",
-  "Smite of Protection": "Schützendes Niederstrecken",
-  "Hunter's Lore": "Jägerkunde",
-  "Superior Hunter's Prey": "Überlegene Jägerbeute",
-  "Supreme Sneak": "Meisterlicher Schleicher",
-  "Draconic Resilience": "Drakonische Widerstandskraft",
-  "Draconic Spells": "Drakonische Zauber",
-  "Dragon Companion": "Drachengefährte",
-  "Fiend Spells": "Zauber des Unholds",
-  "Stillness of Mind": "Geistesruhe",
-  "Primeval Awareness": "Uraltes Bewusstsein",
-  "Tongue of the Sun and Moon": "Zunge von Sonne und Mond",
-  "Nature’s Ward": "Schutz der Natur",
-  "Nature’s Sanctuary": "Naturheiligtum",
-  "Hunter’s Prey": "Jägerbeute",
-  "Superior Hunter’s Defense": "Überlegene Verteidigung",
-  "Thief’s Reflexes": "Diebesreflexe",
-  "Dark One’s Blessing": "Segnung des Dunklen",
-  "Dark One’s Own Luck": "Dunkler eigener Glücksfall",
-  "Tongue of the Sun and the Moon": "Zunge von Sonne und Mond",
-  "Primal Path": "Pfad der Wildnis",
-  "Bard College": "Bardenkolleg",
-  "Druid Circle": "Druidenzirkel",
-  "Monastic Tradition": "Mönchstradition",
-  "Otherworldly Patron": "Andersweltlicher Schutzherr"
+  Rage: 'Kampfrausch',
+  'Unarmored Defense': 'Ungepanzerte Verteidigung',
+  'Danger Sense': 'Gefahrensinn',
+  'Reckless Attack': 'Rücksichtsloser Angriff',
+  'Extra Attack': 'Zusätzlicher Angriff',
+  'Fast Movement': 'Schnelle Bewegung',
+  'Feral Instinct': 'Wilder Instinkt',
+  'Brutal Critical': 'Brutaler kritischer Treffer',
+  'Relentless Rage': 'Unermüdlicher Kampfrausch',
+  'Persistent Rage': 'Anhaltender Kampfrausch',
+  'Indomitable Might': 'Unbezwingbare Stärke',
+  'Primal Champion': 'Ursprünglicher Champion',
+  Spellcasting: 'Zauberwirken',
+  'Bardic Inspiration': 'Bardeninspiration',
+  'Jack of All Trades': 'Alles-Könner',
+  'Song of Rest': 'Lied der Rast',
+  Expertise: 'Experte',
+  'Font of Inspiration': 'Quelle der Inspiration',
+  Countercharm: 'Gegenzauber',
+  'Magical Secrets': 'Magische Geheimnisse',
+  'Divine Domain': 'Göttliche Domäne',
+  'Channel Divinity': 'Kanal göttlicher Energie',
+  'Turn Undead': 'Untote vertreiben',
+  'Destroy Undead': 'Untote zerstören',
+  'Divine Strike': 'Göttlicher Schlag',
+  'Divine Intervention': 'Göttliches Eingreifen',
+  Druidic: 'Druidisch',
+  'Wild Shape': 'Tiergestalt',
+  'Timeless Body': 'Zeitloser Körper',
+  'Beast Spells': 'Tierzauber',
+  'Fighting Style': 'Kampfstil',
+  'Second Wind': 'Zweites Aufatmen',
+  'Action Surge': 'Aktionsschub',
+  'Martial Archetype': 'Kampf-Archetyp',
+  Indomitable: 'Unbeugsam',
+  'Martial Arts': 'Kampfkünste',
+  Ki: 'Ki',
+  'Flurry of Blows': 'Hagel der Schläge',
+  'Patient Defense': 'Geduldige Verteidigung',
+  'Step of the Wind': 'Schritt des Windes',
+  'Unarmored Movement': 'Ungepanzerte Bewegung',
+  'Deflect Missiles': 'Geschosse abwehren',
+  'Stunning Strike': 'Betäubender Schlag',
+  'Ki-Empowered Strikes': 'Ki-verbesserte Schläge',
+  Evasion: 'Entrinnen',
+  'Purity of Body': 'Reinheit des Körpers',
+  'Diamond Soul': 'Diamantseele',
+  'Empty Body': 'Leerer Körper',
+  'Perfect Self': 'Perfektes Selbst',
+  'Divine Sense': 'Göttlicher Sinn',
+  'Lay on Hands': 'Handauflegen',
+  'Divine Smite': 'Göttliches Niederstrecken',
+  'Divine Health': 'Göttliche Gesundheit',
+  'Sacred Oath': 'Heiliger Schwur',
+  'Aura of Protection': 'Aura des Schutzes',
+  'Aura of Courage': 'Aura des Mutes',
+  'Improved Divine Smite': 'Verbesserter göttlicher Schlag',
+  'Cleansing Touch': 'Reinigende Berührung',
+  'Favored Enemy': 'Bevorzugter Feind',
+  'Natural Explorer': 'Erfahrener Entdecker',
+  'Ranger Archetype': 'Waldläufer-Archetyp',
+  'Land’s Stride': 'Landgang',
+  'Hide in Plain Sight': 'Tarnung in der Wildnis',
+  Vanish: 'Verschwinden',
+  'Feral Senses': 'Wilde Sinne',
+  'Foe Slayer': 'Feindetöter',
+  'Sneak Attack': 'Hinterhältiger Angriff',
+  'Thieves’ Cant': 'Diebesjargon',
+  'Cunning Action': 'Listige Aktion',
+  'Roguish Archetype': 'Schurken-Archetyp',
+  'Uncanny Dodge': 'Unheimliches Ausweichen',
+  'Reliable Talent': 'Zuverlässiges Talent',
+  Blindsense: 'Blindgespür',
+  'Slippery Mind': 'Schlauer Geist',
+  Elusive: 'Unfassbar',
+  'Stroke of Luck': 'Glückstreffer',
+  'Sorcerous Origin': 'Zauberer-Abstammung',
+  'Font of Magic': 'Quelle der Magie',
+  Metamagic: 'Metamagie',
+  'Sorcerous Restoration': 'Zauberhafte Erneuerung',
+  'Pact Magic': 'Paktmagie',
+  'Eldritch Invocations': 'Unheimliche Anrufungen',
+  'Pact Boon': 'Paktgabe',
+  'Mystic Arcanum': 'Mystisches Arkanum',
+  'Eldritch Master': 'Mystischer Meister',
+  'Arcane Recovery': 'Arkane Erholung',
+  'Arcane Tradition': 'Arkane Tradition',
+  'Spell Mastery': 'Zaubermeisterschaft',
+  'Signature Spells': 'Signaturzauber',
+  Frenzy: 'Raserei',
+  'Mindless Rage': 'Geisteslose Wut',
+  Retaliation: 'Vergeltung',
+  'Intimidating Presence': 'Einschüchternde Präsenz',
+  'Bonus Proficiencies': 'Zusätzliche Fertigkeiten',
+  'Cutting Words': 'Schneidende Worte',
+  'Additional Magical Secrets': 'Zusätzliche magische Geheimnisse',
+  'Peerless Skill': 'Unvergleichliche Fertigkeit',
+  'Bonus Proficiency': 'Bonus-Ausbildung',
+  'Disciple of Life': 'Jünger des Lebens',
+  'Preserve Life': 'Leben bewahren',
+  'Blessed Healer': 'Gesegneter Heiler',
+  'Bonus Spells': 'Bonus-Zauber',
+  'Natural Recovery': 'Natürliche Erholung',
+  "Nature's Ward": 'Schutz der Natur',
+  "Nature's Sanctuary": 'Naturheiligtum',
+  'Improved Critical': 'Verbesserter kritischer Treffer',
+  'Remarkable Athlete': 'Bemerkenswerter Athlet',
+  'Additional Fighting Style': 'Zusätzlicher Kampfstil',
+  'Superior Critical': 'Überlegener kritischer Treffer',
+  Survivor: 'Überlebenskünstler',
+  'Open Hand Technique': 'Technik der offenen Hand',
+  'Wholeness of Body': 'Ganzheit des Körpers',
+  Tranquility: 'Gelassenheit',
+  'Quivering Palm': 'Zitternde Handfläche',
+  'Sacred Weapon': 'Heilige Waffe',
+  'Turn the Unholy': 'Unheilige vertreiben',
+  'Divine Allegiance': 'Untadeliger Geist',
+  'Aura of Devotion': 'Aura der Hingabe',
+  'Purity of Spirit': 'Reinheit des Geistes',
+  'Holy Nimbus': 'Heiliger Nimbus',
+  "Hunter's Prey": 'Jägerbeute',
+  'Defensive Tactics': 'Defensive Taktiken',
+  Multiattack: 'Mehrfachangriff',
+  "Superior Hunter's Defense": 'Überlegene Verteidigung',
+  'Fast Hands': 'Schnelle Hände',
+  'Second-Story Work': 'Arbeit in luftiger Höhe',
+  Stealth: 'Heimlichkeit',
+  'Use Magic Device': 'Magische Gegenstände benutzen',
+  "Thief's Reflexes": 'Diebesreflexe',
+  'Mage Hand Legerdemain': 'Magische Hand-Tricks',
+  'Magical Ambush': 'Magischer Hinterhalt',
+  'Versatile Trickster': 'Vielseitiger Betrüger',
+  'Spell Thief': 'Zauberdieb',
+  'Weapon Bond': 'Waffenbindung',
+  'War Magic': 'Kriegsmagie',
+  'Eldritch Strike': 'Eldritch Strike',
+  'Arcane Charge': 'Arkane Aufladung',
+  'Improved War Magic': 'Verbesserte Kriegsmagie',
+  'Dragon Ancestor': 'Drachenahne',
+  'Elemental Affinity': 'Elementare Affinität',
+  'Dragon Wings': 'Drachenflügel',
+  'Draconic Presence': 'Drachenpräsenz',
+  'Eyes of the Dark': 'Augen der Dunkelheit',
+  'Strength of the Grave': 'Stärke des Grabes',
+  'Hound of Ill Omen': 'Hund des Unheils',
+  'Shadow Walk': 'Schattenwandlung',
+  'Umbral Form': 'Schattenform',
+  "Dark One's Blessing": 'Segnung des Dunklen',
+  "Dark One's Own Luck": 'Dunkler eigener Glücksfall',
+  'Fiendish Resilience': 'Unholdresilienz',
+  'Hurl Through Hell': 'Durch die Hölle schicken',
+  'Evocation Savant': 'Hervorrufungsexperte',
+  'Sculpt Spells': 'Zauber formen',
+  'Potent Cantrip': 'Kraftvoller Zaubertrick',
+  'Empowered Evocation': 'Ermächtigte Hervorrufung',
+  Overchannel: 'Überladung',
+  'Weapon Mastery': 'Waffenmeisterschaft',
+  'Primal Knowledge': 'Urwissen',
+  'Instinctive Pounce': 'Instinktiver Sprung',
+  'Brutal Strike': 'Brutaler Schlag',
+  'Improved Brutal Strike': 'Verbesserter brutaler Schlag',
+  'Epic Boon': 'Epischer Segen',
+  'Superior Inspiration': 'Überlegene Inspiration',
+  'Words of Creation': 'Worte der Schöpfung',
+  'Divine Order': 'Göttliche Ordnung',
+  'Divine Spark': 'Göttlicher Funke',
+  'Ability Score Improvement': 'Attributswerterhöhung',
+  'Blessed Strikes': 'Gesegnete Schläge',
+  'Improved Divine Intervention': 'Verbessertes Göttliches Eingreifen',
+  'Greater Divine Intervention': 'Großes Göttliches Eingreifen',
+  'Primal Order': 'Ursprüngliche Ordnung',
+  'Wild Companion': 'Wilder Gefährte',
+  'Wild Resurgence': 'Wilde Erneuerung',
+  'Elemental Fury': 'Elementare Wut',
+  'Improved Elemental Fury': 'Verbesserte Elementare Wut',
+  Archdruid: 'Erzdruide',
+  'Tactical Mind': 'Taktischer Verstand',
+  'Tactical Shift': 'Taktische Bewegung',
+  'Two Extra Attacks': 'Zwei zusätzliche Angriffe',
+  'Three Extra Attacks': 'Drei zusätzliche Angriffe',
+  'Monk’s Focus': 'Fokus des Mönchs',
+  'Uncanny Metabolism': 'Unheimlicher Stoffwechsel',
+  'Deflect Attacks': 'Angriffe abwehren',
+  'Slow Fall': 'Langsamer Fall',
+  'Empowered Strikes': 'Verbesserte fokussierte Schläge',
+  'Self-Restoration': 'Selbstheilung',
+  'Deflect Energy': 'Abgelenkte Energie',
+  Discipline: 'Disziplin',
+  'Faithful Steed': 'Treues Ross',
+  'Abjure Foes': 'Abwehrzauber',
+  'Radiant Strikes': 'Strahlende Schläge',
+  'Restoring Touch': 'Berührende Reinigung',
+  Roving: 'Wanderer',
+  Tireless: 'Zäher Jäger',
+  'Relentless Hunter': 'Unermüdlicher Jäger',
+  'Precise Hunter': 'Präziser Jäger',
+  'Steady Aim': 'Sicheres Zielen',
+  'Cunning Strike': 'Listiger Schlag',
+  'Improved Cunning Strike': 'Verbesserte Listige Schläge',
+  'Devious Strikes': 'Listige Schläge',
+  'Innate Sorcery': 'Angeborene Magie',
+  'Sorcery Incarnate': 'Zauberer-Inkarnation',
+  'Metamagic Option': 'Metamagie-Option',
+  'Magical Cunning': 'Magische List',
+  'Contact Patron': 'Patron kontaktieren',
+  'Ritual Adept': 'Ritualgelehrter',
+  Scholar: 'Gelehrter',
+  'Memorize Spell': 'Zauber einprägen',
+  'Magical Discoveries': 'Magische Entdeckungen',
+  'Life Domain Spells': 'Zauber der Lebensdomäne',
+  'Supreme Healing': 'Überragende Heilung',
+  'Circle of the Land Spells': 'Zauber des Landzirkels',
+  "Land's Aid": 'Hilfe des Landes',
+  'Heroic Warrior': 'Heroischer Krieger',
+  'Fleet Step': 'Fließender Schritt',
+  'Oath of Devotion Spells': 'Zauber des Schwurs der Hingabe',
+  'Smite of Protection': 'Schützendes Niederstrecken',
+  "Hunter's Lore": 'Jägerkunde',
+  "Superior Hunter's Prey": 'Überlegene Jägerbeute',
+  'Supreme Sneak': 'Meisterlicher Schleicher',
+  'Draconic Resilience': 'Drakonische Widerstandskraft',
+  'Draconic Spells': 'Drakonische Zauber',
+  'Dragon Companion': 'Drachengefährte',
+  'Fiend Spells': 'Zauber des Unholds',
+  'Stillness of Mind': 'Geistesruhe',
+  'Primeval Awareness': 'Uraltes Bewusstsein',
+  'Tongue of the Sun and Moon': 'Zunge von Sonne und Mond',
+  'Nature’s Ward': 'Schutz der Natur',
+  'Nature’s Sanctuary': 'Naturheiligtum',
+  'Hunter’s Prey': 'Jägerbeute',
+  'Superior Hunter’s Defense': 'Überlegene Verteidigung',
+  'Thief’s Reflexes': 'Diebesreflexe',
+  'Dark One’s Blessing': 'Segnung des Dunklen',
+  'Dark One’s Own Luck': 'Dunkler eigener Glücksfall',
+  'Tongue of the Sun and the Moon': 'Zunge von Sonne und Mond',
+  'Primal Path': 'Pfad der Wildnis',
+  'Bard College': 'Bardenkolleg',
+  'Druid Circle': 'Druidenzirkel',
+  'Monastic Tradition': 'Mönchstradition',
+  'Otherworldly Patron': 'Andersweltlicher Schutzherr',
 }
 
 const FEATURE_DESCRIPTIONS_DE: Record<string, string> = {
-  Urwissen: 'Während deines Kampfrauschs kannst du Stärke statt eines anderen Attributs für bestimmte Fertigkeitswürfe verwenden.',
-  'Instinktiver Sprung': 'Wenn du deinen Kampfrausch als Bonusaktion beginnst, kannst du dich gleichzeitig bis zur Hälfte deiner Bewegungsrate bewegen.',
-  'Verbesserter brutaler Schlag': 'Deine Brutalen Schläge erhalten zusätzliche taktische Effekte, mit denen du Gegner weiter schwächen oder kontrollieren kannst.',
-  'Metamagie-Option': 'Du wählst eine weitere Metamagie-Option, mit der du die Wirkung deiner Zauber verändern kannst.',
+  Urwissen:
+    'Während deines Kampfrauschs kannst du Stärke statt eines anderen Attributs für bestimmte Fertigkeitswürfe verwenden.',
+  'Instinktiver Sprung':
+    'Wenn du deinen Kampfrausch als Bonusaktion beginnst, kannst du dich gleichzeitig bis zur Hälfte deiner Bewegungsrate bewegen.',
+  'Verbesserter brutaler Schlag':
+    'Deine Brutalen Schläge erhalten zusätzliche taktische Effekte, mit denen du Gegner weiter schwächen oder kontrollieren kannst.',
+  'Metamagie-Option':
+    'Du wählst eine weitere Metamagie-Option, mit der du die Wirkung deiner Zauber verändern kannst.',
 
-  'Überlegene Inspiration': 'Wenn du zu Beginn eines Kampfes keine Anwendungen deiner Bardeninspiration mehr hast, erhältst du eine Anwendung zurück.',
-  Geistesruhe: 'Du kannst deine Aktion einsetzen, um einen Bezauberungs- oder Furchteffekt auf dir zu beenden.',
-  'Zunge von Sonne und Mond': 'Du verstehst alle gesprochenen Sprachen. Kreaturen, die mindestens eine Sprache verstehen, können auch dich verstehen.',
-  'Uraltes Bewusstsein': 'Du kannst einen Zauberplatz ausgeben, um bestimmte Kreaturenarten in deiner Nähe für kurze Zeit wahrzunehmen.',
-  'Geisteslose Wut': 'Während deines Kampfrauschs kannst du nicht bezaubert oder verängstigt werden. Bestehende Effekte werden währenddessen unterdrückt.',
+  'Überlegene Inspiration':
+    'Wenn du zu Beginn eines Kampfes keine Anwendungen deiner Bardeninspiration mehr hast, erhältst du eine Anwendung zurück.',
+  Geistesruhe:
+    'Du kannst deine Aktion einsetzen, um einen Bezauberungs- oder Furchteffekt auf dir zu beenden.',
+  'Zunge von Sonne und Mond':
+    'Du verstehst alle gesprochenen Sprachen. Kreaturen, die mindestens eine Sprache verstehen, können auch dich verstehen.',
+  'Uraltes Bewusstsein':
+    'Du kannst einen Zauberplatz ausgeben, um bestimmte Kreaturenarten in deiner Nähe für kurze Zeit wahrzunehmen.',
+  'Geisteslose Wut':
+    'Während deines Kampfrauschs kannst du nicht bezaubert oder verängstigt werden. Bestehende Effekte werden währenddessen unterdrückt.',
   'Zusätzliche Fertigkeiten': 'Du erhältst Übung in drei Fertigkeiten deiner Wahl.',
-  'Zusätzliche magische Geheimnisse': 'Du lernst zwei zusätzliche Zauber von beliebigen Klassenlisten, die du wirken kannst.',
-  'Bemerkenswerter Athlet': 'Du addierst einen Teil deines Übungsbonus auf bestimmte körperliche Attributswürfe und springst weiter.',
-  'Reinheit des Geistes': 'Du stehst dauerhaft unter dem Schutz des Zaubers Schutz vor Gut und Böse.',
-  'Arbeit in luftiger Höhe': 'Klettern kostet dich keine zusätzliche Bewegung. Außerdem erhöht sich deine Sprungweite um deinen Geschicklichkeitsmodifikator.',
-  'Zauber formen': 'Wenn du einen Hervorrufungszauber wirkst, kannst du geschützte Bereiche für Verbündete bestimmen, die dadurch keinen Schaden erleiden.',
-  'Kraftvoller Zaubertrick': 'Wenn eine Kreatur einen deiner Schadenszaubertricks mit einem erfolgreichen Rettungswurf abwehrt, erleidet sie trotzdem einen Teil des Schadens.',
+  'Zusätzliche magische Geheimnisse':
+    'Du lernst zwei zusätzliche Zauber von beliebigen Klassenlisten, die du wirken kannst.',
+  'Bemerkenswerter Athlet':
+    'Du addierst einen Teil deines Übungsbonus auf bestimmte körperliche Attributswürfe und springst weiter.',
+  'Reinheit des Geistes':
+    'Du stehst dauerhaft unter dem Schutz des Zaubers Schutz vor Gut und Böse.',
+  'Arbeit in luftiger Höhe':
+    'Klettern kostet dich keine zusätzliche Bewegung. Außerdem erhöht sich deine Sprungweite um deinen Geschicklichkeitsmodifikator.',
+  'Zauber formen':
+    'Wenn du einen Hervorrufungszauber wirkst, kannst du geschützte Bereiche für Verbündete bestimmen, die dadurch keinen Schaden erleiden.',
+  'Kraftvoller Zaubertrick':
+    'Wenn eine Kreatur einen deiner Schadenszaubertricks mit einem erfolgreichen Rettungswurf abwehrt, erleidet sie trotzdem einen Teil des Schadens.',
 
-  'Pfad der Wildnis': 'Du wählst einen Pfad, der deine Kampfrausch-Fähigkeiten erweitert und dir weitere Merkmale auf höheren Stufen gewährt.',
-  Bardenkolleg: 'Du wählst ein Bardenkolleg, das deine Aufführungen und magischen Fähigkeiten spezialisiert.',
-  Druidenzirkel: 'Du trittst einem Druidenzirkel bei, der deine Verbindung zur Natur und deine Tiergestalt prägt.',
-  Mönchstradition: 'Du wählst eine Mönchstradition, die deine Kampfkunst und deinen Umgang mit Ki spezialisiert.',
-  'Andersweltlicher Schutzherr': 'Du schließt einen Pakt mit einem übernatürlichen Wesen, das dir Magie und weitere Klassenmerkmale verleiht.',
+  'Pfad der Wildnis':
+    'Du wählst einen Pfad, der deine Kampfrausch-Fähigkeiten erweitert und dir weitere Merkmale auf höheren Stufen gewährt.',
+  Bardenkolleg:
+    'Du wählst ein Bardenkolleg, das deine Aufführungen und magischen Fähigkeiten spezialisiert.',
+  Druidenzirkel:
+    'Du trittst einem Druidenzirkel bei, der deine Verbindung zur Natur und deine Tiergestalt prägt.',
+  Mönchstradition:
+    'Du wählst eine Mönchstradition, die deine Kampfkunst und deinen Umgang mit Ki spezialisiert.',
+  'Andersweltlicher Schutzherr':
+    'Du schließt einen Pakt mit einem übernatürlichen Wesen, das dir Magie und weitere Klassenmerkmale verleiht.',
 
-  'Ungepanzerte Verteidigung': 'Deine Rüstungsklasse berechnet sich ohne Rüstung aus 10 plus deinen relevanten Attributsmodifikatoren.',
-  Gefahrensinn: 'Du erkennst Gefahren früh und hast unter den Regelbedingungen Vorteil auf bestimmte Geschicklichkeitsrettungswürfe.',
-  'Zusätzlicher Angriff': 'Wenn du die Angriffsaktion ausführst, kannst du mehr als einmal angreifen. Die genaue Anzahl hängt von deiner Klasse und Stufe ab.',
+  'Ungepanzerte Verteidigung':
+    'Deine Rüstungsklasse berechnet sich ohne Rüstung aus 10 plus deinen relevanten Attributsmodifikatoren.',
+  Gefahrensinn:
+    'Du erkennst Gefahren früh und hast unter den Regelbedingungen Vorteil auf bestimmte Geschicklichkeitsrettungswürfe.',
+  'Zusätzlicher Angriff':
+    'Wenn du die Angriffsaktion ausführst, kannst du mehr als einmal angreifen. Die genaue Anzahl hängt von deiner Klasse und Stufe ab.',
   'Schnelle Bewegung': 'Deine Bewegungsrate erhöht sich, solange du keine schwere Rüstung trägst.',
-  'Wilder Instinkt': 'Du erhältst Vorteile auf Initiativewürfe und kannst zu Kampfbeginn schneller reagieren.',
-  'Brutaler kritischer Treffer': 'Bei einem kritischen Treffer würfelst du zusätzliche Schadenswürfel für deine Nahkampfwaffenangriffe.',
-  'Unermüdlicher Kampfrausch': 'Du kannst einen misslungenen Rettungswurf während deines Kampfrauschs wiederholen.',
-  'Anhaltender Kampfrausch': 'Dein Kampfrausch endet nicht mehr vorzeitig unter den üblichen Bedingungen.',
-  'Unbezwingbare Stärke': 'Wenn dein Stärkewurf niedriger als dein Stärkewert ist, kannst du stattdessen deinen Stärkewert verwenden.',
-  'Ursprünglicher Champion': 'Deine Stärke und dein Konstitutionswert steigen, ebenso ihre jeweiligen Höchstwerte.',
-  'Alles-Könner': 'Du addierst die Hälfte deines Übungsbonus auf Attributswürfe, bei denen du deinen Übungsbonus nicht bereits verwendest.',
-  'Lied der Rast': 'Verbündete können während einer kurzen Rast zusätzliche Trefferpunkte zurückgewinnen, wenn du sie mit Musik oder einer Aufführung begleitest.',
-  'Quelle der Inspiration': 'Du erhältst verbrauchte Anwendungen deiner Bardeninspiration nach einer kurzen oder langen Rast zurück.',
-  'Gegenzauberische Melodie': 'Du nutzt eine Aufführung, um Verbündete gegen Bezauberungs- und Furchteffekte zu stärken.',
-  'Magische Geheimnisse': 'Du lernst zusätzliche Zauber, die normalerweise nicht auf der Bardenzauberliste stehen.',
-  'Göttliche Domäne': 'Du wählst eine Domäne, die dir zusätzliche Merkmale und Domänenzauber gewährt.',
-  'Untote zerstören': 'Untote mit einem bestimmten Herausforderungsgrad oder niedriger werden durch dein Untote-Vertreiben-Merkmal zerstört.',
-  'Göttlicher Schlag': 'Einmal pro Zug verursachst du bei einem Treffer zusätzlichen Schaden mit deiner Waffe oder deinen Zaubern.',
+  'Wilder Instinkt':
+    'Du erhältst Vorteile auf Initiativewürfe und kannst zu Kampfbeginn schneller reagieren.',
+  'Brutaler kritischer Treffer':
+    'Bei einem kritischen Treffer würfelst du zusätzliche Schadenswürfel für deine Nahkampfwaffenangriffe.',
+  'Unermüdlicher Kampfrausch':
+    'Du kannst einen misslungenen Rettungswurf während deines Kampfrauschs wiederholen.',
+  'Anhaltender Kampfrausch':
+    'Dein Kampfrausch endet nicht mehr vorzeitig unter den üblichen Bedingungen.',
+  'Unbezwingbare Stärke':
+    'Wenn dein Stärkewurf niedriger als dein Stärkewert ist, kannst du stattdessen deinen Stärkewert verwenden.',
+  'Ursprünglicher Champion':
+    'Deine Stärke und dein Konstitutionswert steigen, ebenso ihre jeweiligen Höchstwerte.',
+  'Alles-Könner':
+    'Du addierst die Hälfte deines Übungsbonus auf Attributswürfe, bei denen du deinen Übungsbonus nicht bereits verwendest.',
+  'Lied der Rast':
+    'Verbündete können während einer kurzen Rast zusätzliche Trefferpunkte zurückgewinnen, wenn du sie mit Musik oder einer Aufführung begleitest.',
+  'Quelle der Inspiration':
+    'Du erhältst verbrauchte Anwendungen deiner Bardeninspiration nach einer kurzen oder langen Rast zurück.',
+  'Gegenzauberische Melodie':
+    'Du nutzt eine Aufführung, um Verbündete gegen Bezauberungs- und Furchteffekte zu stärken.',
+  'Magische Geheimnisse':
+    'Du lernst zusätzliche Zauber, die normalerweise nicht auf der Bardenzauberliste stehen.',
+  'Göttliche Domäne':
+    'Du wählst eine Domäne, die dir zusätzliche Merkmale und Domänenzauber gewährt.',
+  'Untote zerstören':
+    'Untote mit einem bestimmten Herausforderungsgrad oder niedriger werden durch dein Untote-Vertreiben-Merkmal zerstört.',
+  'Göttlicher Schlag':
+    'Einmal pro Zug verursachst du bei einem Treffer zusätzlichen Schaden mit deiner Waffe oder deinen Zaubern.',
   'Zeitloser Körper': 'Die Magie der Natur verlangsamt deine körperliche Alterung.',
-  'Tierzauber': 'Du kannst bestimmte Zauber wirken, während du Tiergestalt verwendest.',
-  'Kampfstil': 'Du spezialisierst dich auf eine bestimmte Kampfweise und erhältst einen entsprechenden regeltechnischen Vorteil.',
-  'Kampf-Archetyp': 'Du wählst eine Kämpfer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
-  'Kampfkünste': 'Du erhältst Vorteile für unbewaffnete Angriffe und Mönchswaffen; deine Kampfkunst bestimmt unter anderem deinen Schadenswürfel.',
+  Tierzauber: 'Du kannst bestimmte Zauber wirken, während du Tiergestalt verwendest.',
+  Kampfstil:
+    'Du spezialisierst dich auf eine bestimmte Kampfweise und erhältst einen entsprechenden regeltechnischen Vorteil.',
+  'Kampf-Archetyp':
+    'Du wählst eine Kämpfer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
+  Kampfkünste:
+    'Du erhältst Vorteile für unbewaffnete Angriffe und Mönchswaffen; deine Kampfkunst bestimmt unter anderem deinen Schadenswürfel.',
   Ki: 'Du erhältst Ki-Punkte, mit denen du besondere Mönchsmerkmale einsetzt. Die Punkte kehren nach einer kurzen oder langen Rast zurück.',
-  'Ungepanzerte Bewegung': 'Deine Bewegungsrate steigt, solange du keine Rüstung und keinen Schild trägst.',
-  'Geschosse abwehren': 'Du kannst den Schaden eines Fernkampfangriffs mit deiner Reaktion reduzieren und das Geschoss gegebenenfalls zurückwerfen.',
-  'Ki-verbesserte Schläge': 'Deine unbewaffneten Angriffe gelten als magisch, um Resistenzen und Immunitäten zu überwinden.',
-  Entrinnen: 'Bei bestimmten Flächengefahren erleidest du bei einem erfolgreichen Geschicklichkeitsrettungswurf keinen Schaden und bei einem misslungenen nur halben.',
+  'Ungepanzerte Bewegung':
+    'Deine Bewegungsrate steigt, solange du keine Rüstung und keinen Schild trägst.',
+  'Geschosse abwehren':
+    'Du kannst den Schaden eines Fernkampfangriffs mit deiner Reaktion reduzieren und das Geschoss gegebenenfalls zurückwerfen.',
+  'Ki-verbesserte Schläge':
+    'Deine unbewaffneten Angriffe gelten als magisch, um Resistenzen und Immunitäten zu überwinden.',
+  Entrinnen:
+    'Bei bestimmten Flächengefahren erleidest du bei einem erfolgreichen Geschicklichkeitsrettungswurf keinen Schaden und bei einem misslungenen nur halben.',
   'Reinheit des Körpers': 'Du bist immun gegen Krankheiten und Gifte.',
-  Diamantseele: 'Du erhältst Übung in allen Rettungswürfen und kannst Ki einsetzen, um einen misslungenen Rettungswurf zu wiederholen.',
-  'Perfektes Selbst': 'Wenn du zu Beginn eines Kampfes keine Ki-Punkte mehr hast, erhältst du einen Teil davon zurück.',
+  Diamantseele:
+    'Du erhältst Übung in allen Rettungswürfen und kannst Ki einsetzen, um einen misslungenen Rettungswurf zu wiederholen.',
+  'Perfektes Selbst':
+    'Wenn du zu Beginn eines Kampfes keine Ki-Punkte mehr hast, erhältst du einen Teil davon zurück.',
   'Göttliche Gesundheit': 'Du bist immun gegen Krankheiten.',
-  'Heiliger Schwur': 'Du wählst einen Paladin-Schwur, der dir zusätzliche Merkmale und Schwurzauber gewährt.',
-  'Aura des Schutzes': 'Du und Verbündete in deiner Nähe addieren deinen Charismamodifikator auf Rettungswürfe.',
-  'Aura des Mutes': 'Du und Verbündete in deiner Nähe können nicht verängstigt werden, solange du bei Bewusstsein bist.',
-  'Verbesserter göttlicher Schlag': 'Deine Nahkampfwaffenangriffe verursachen zusätzlich gleißenden Schaden.',
-  'Erfahrener Entdecker': 'Du erhältst Expertise in ausgewählten Fertigkeiten und zusätzliche Vorteile beim Erkunden.',
-  'Waldläufer-Archetyp': 'Du wählst eine Waldläufer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
-  Landgang: 'Du bewegst dich leichter durch schwieriges natürliches Gelände und widerstehst bestimmten pflanzlichen Gefahren.',
-  'Wilde Sinne': 'Du kannst die Anwesenheit von Kreaturen wahrnehmen, auch wenn du sie nicht sehen kannst.',
-  Feindetöter: 'Du addierst deinen Weisheitsmodifikator zu bestimmten Angriffswürfen oder Schadenswürfen gegen deine bevorzugten Feinde.',
-  'Hinterhältiger Angriff': 'Einmal pro Zug verursachst du zusätzlichen Schaden, wenn du unter den festgelegten Bedingungen mit einem passenden Angriff triffst.',
-  Diebesjargon: 'Du kennst eine geheime Mischung aus Dialekt, Code und Zeichen, mit der sich Schurken austauschen.',
-  'Schurken-Archetyp': 'Du wählst eine Schurken-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
-  'Zuverlässiges Talent': 'Bei Fertigkeits- und Werkzeugwürfen mit Übung zählt ein niedriger W20-Wurf mindestens als 10.',
-  Blindgespür: 'Du bemerkst die Position verborgener oder unsichtbarer Kreaturen in deiner Nähe, sofern sie nicht vollständig verborgen sind.',
-  Entschlüpfen: 'Angriffe gegen dich können keinen Vorteil erhalten, solange du nicht kampfunfähig bist.',
+  'Heiliger Schwur':
+    'Du wählst einen Paladin-Schwur, der dir zusätzliche Merkmale und Schwurzauber gewährt.',
+  'Aura des Schutzes':
+    'Du und Verbündete in deiner Nähe addieren deinen Charismamodifikator auf Rettungswürfe.',
+  'Aura des Mutes':
+    'Du und Verbündete in deiner Nähe können nicht verängstigt werden, solange du bei Bewusstsein bist.',
+  'Verbesserter göttlicher Schlag':
+    'Deine Nahkampfwaffenangriffe verursachen zusätzlich gleißenden Schaden.',
+  'Erfahrener Entdecker':
+    'Du erhältst Expertise in ausgewählten Fertigkeiten und zusätzliche Vorteile beim Erkunden.',
+  'Waldläufer-Archetyp':
+    'Du wählst eine Waldläufer-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
+  Landgang:
+    'Du bewegst dich leichter durch schwieriges natürliches Gelände und widerstehst bestimmten pflanzlichen Gefahren.',
+  'Wilde Sinne':
+    'Du kannst die Anwesenheit von Kreaturen wahrnehmen, auch wenn du sie nicht sehen kannst.',
+  Feindetöter:
+    'Du addierst deinen Weisheitsmodifikator zu bestimmten Angriffswürfen oder Schadenswürfen gegen deine bevorzugten Feinde.',
+  'Hinterhältiger Angriff':
+    'Einmal pro Zug verursachst du zusätzlichen Schaden, wenn du unter den festgelegten Bedingungen mit einem passenden Angriff triffst.',
+  Diebesjargon:
+    'Du kennst eine geheime Mischung aus Dialekt, Code und Zeichen, mit der sich Schurken austauschen.',
+  'Schurken-Archetyp':
+    'Du wählst eine Schurken-Unterklasse, die dir weitere Merkmale auf bestimmten Stufen gewährt.',
+  'Zuverlässiges Talent':
+    'Bei Fertigkeits- und Werkzeugwürfen mit Übung zählt ein niedriger W20-Wurf mindestens als 10.',
+  Blindgespür:
+    'Du bemerkst die Position verborgener oder unsichtbarer Kreaturen in deiner Nähe, sofern sie nicht vollständig verborgen sind.',
+  Entschlüpfen:
+    'Angriffe gegen dich können keinen Vorteil erhalten, solange du nicht kampfunfähig bist.',
   Unfassbar: 'Du bist außergewöhnlich schwer zu treffen und kannst Angriffen geschickt ausweichen.',
-  'Zauberer-Abstammung': 'Du wählst die magische Herkunft deiner Zauberkräfte und erhältst passende Unterklassenmerkmale.',
-  Metamagie: 'Du veränderst die Wirkung deiner Zauber, indem du Zauberpunkte für Metamagie-Optionen ausgibst.',
-  'Zauberer-Apotheose': 'Du kannst deine Zauberkräfte kurzzeitig erneuern und erhältst einen letzten Vorteil deiner Klasse.',
-  Paktmagie: 'Du wirkst Zauber mit Paktmagie-Zauberplätzen, die nach einer kurzen oder langen Rast zurückkehren.',
-  'Unheimliche Anrufungen': 'Du erhältst übernatürliche Fähigkeiten durch Anrufungen, die du aus einer Liste auswählst.',
-  Paktgabe: 'Dein Patron gewährt dir eine Paktgabe, die deine Spielweise und weitere Optionen prägt.',
-  'Mystisches Arkanum': 'Du erhältst jeweils einen besonders mächtigen Zauber eines höheren Grades, den du einmal pro langer Rast wirken kannst.',
-  'Arkane Tradition': 'Du wählst eine Magierschule, die dir zusätzliche Merkmale auf bestimmten Stufen gewährt.',
+  'Zauberer-Abstammung':
+    'Du wählst die magische Herkunft deiner Zauberkräfte und erhältst passende Unterklassenmerkmale.',
+  Metamagie:
+    'Du veränderst die Wirkung deiner Zauber, indem du Zauberpunkte für Metamagie-Optionen ausgibst.',
+  'Zauberer-Apotheose':
+    'Du kannst deine Zauberkräfte kurzzeitig erneuern und erhältst einen letzten Vorteil deiner Klasse.',
+  Paktmagie:
+    'Du wirkst Zauber mit Paktmagie-Zauberplätzen, die nach einer kurzen oder langen Rast zurückkehren.',
+  'Unheimliche Anrufungen':
+    'Du erhältst übernatürliche Fähigkeiten durch Anrufungen, die du aus einer Liste auswählst.',
+  Paktgabe:
+    'Dein Patron gewährt dir eine Paktgabe, die deine Spielweise und weitere Optionen prägt.',
+  'Mystisches Arkanum':
+    'Du erhältst jeweils einen besonders mächtigen Zauber eines höheren Grades, den du einmal pro langer Rast wirken kannst.',
+  'Arkane Tradition':
+    'Du wählst eine Magierschule, die dir zusätzliche Merkmale auf bestimmten Stufen gewährt.',
   Zaubermeisterschaft: 'Du kannst ausgewählte Zauber niedriger Grade ohne Zauberplatz wirken.',
-  Signaturzauber: 'Du wählst zwei Zauber, die du jeweils einmal ohne Zauberplatz wirken kannst und nach einer kurzen oder langen Rast zurückerhältst.',
-  'Waffenmeisterschaft': 'Du nutzt die Meisterschaftseigenschaften deiner geübten Waffen.',
-  'Taktischer Verstand': 'Du kannst eine Nutzung von Zweites Aufatmen einsetzen, um einen misslungenen Attributswurf zu verbessern.',
-  'Taktische Bewegung': 'Wenn du Zweites Aufatmen einsetzt, kannst du dich zusätzlich bewegen, ohne Gelegenheitsangriffe auszulösen.',
+  Signaturzauber:
+    'Du wählst zwei Zauber, die du jeweils einmal ohne Zauberplatz wirken kannst und nach einer kurzen oder langen Rast zurückerhältst.',
+  Waffenmeisterschaft: 'Du nutzt die Meisterschaftseigenschaften deiner geübten Waffen.',
+  'Taktischer Verstand':
+    'Du kannst eine Nutzung von Zweites Aufatmen einsetzen, um einen misslungenen Attributswurf zu verbessern.',
+  'Taktische Bewegung':
+    'Wenn du Zweites Aufatmen einsetzt, kannst du dich zusätzlich bewegen, ohne Gelegenheitsangriffe auszulösen.',
   'Zwei zusätzliche Angriffe': 'Du kannst bei der Angriffsaktion dreimal statt einmal angreifen.',
   'Drei zusätzliche Angriffe': 'Du kannst bei der Angriffsaktion viermal statt einmal angreifen.',
-  'Attributswerterhöhung': 'Du erhöhst einen oder mehrere Attributswerte oder wählst stattdessen ein zulässiges Talent.',
-  'Epischer Segen': 'Du erhältst ein Talent des Epischen Segens oder ein anderes Talent, für das du die Voraussetzungen erfüllst.',
+  Attributswerterhöhung:
+    'Du erhöhst einen oder mehrere Attributswerte oder wählst stattdessen ein zulässiges Talent.',
+  'Epischer Segen':
+    'Du erhältst ein Talent des Epischen Segens oder ein anderes Talent, für das du die Voraussetzungen erfüllst.',
   Expertise: 'Du verdoppelst deinen Übungsbonus für ausgewählte Fertigkeiten oder Werkzeuge.',
-  Zauberwirken: 'Du erhältst die Fähigkeit, Zauber deiner Klasse vorzubereiten oder zu kennen und mit den Klassenregeln zu wirken.',
-  'Göttliche Ordnung': 'Du wählst eine göttliche Ausrichtung, die dir zusätzliche Fertigkeits- oder Zauberoptionen gewährt.',
-  'Gesegnete Schläge': 'Du verstärkst deine Zaubertricks oder Waffenangriffe mit göttlicher Energie.',
-  'Verbessertes Göttliches Eingreifen': 'Dein Göttliches Eingreifen wird zuverlässiger und kann mächtigere Effekte hervorbringen.',
-  'Großes Göttliches Eingreifen': 'Du kannst ein besonders mächtiges göttliches Eingreifen erbitten.',
+  Zauberwirken:
+    'Du erhältst die Fähigkeit, Zauber deiner Klasse vorzubereiten oder zu kennen und mit den Klassenregeln zu wirken.',
+  'Göttliche Ordnung':
+    'Du wählst eine göttliche Ausrichtung, die dir zusätzliche Fertigkeits- oder Zauberoptionen gewährt.',
+  'Gesegnete Schläge':
+    'Du verstärkst deine Zaubertricks oder Waffenangriffe mit göttlicher Energie.',
+  'Verbessertes Göttliches Eingreifen':
+    'Dein Göttliches Eingreifen wird zuverlässiger und kann mächtigere Effekte hervorbringen.',
+  'Großes Göttliches Eingreifen':
+    'Du kannst ein besonders mächtiges göttliches Eingreifen erbitten.',
   Druidisch: 'Du sprichst die geheime Sprache der Druiden und erkennst ihre Zeichen.',
-  'Ursprüngliche Ordnung': 'Du wählst eine Ausrichtung, die dir zusätzliche druidische Fertigkeiten gewährt.',
-  'Elementare Wut': 'Du verstärkst deine Tiergestalt mit elementarer Macht und verursachst zusätzlichen Schaden.',
+  'Ursprüngliche Ordnung':
+    'Du wählst eine Ausrichtung, die dir zusätzliche druidische Fertigkeiten gewährt.',
+  'Elementare Wut':
+    'Du verstärkst deine Tiergestalt mit elementarer Macht und verursachst zusätzlichen Schaden.',
   'Verbesserte Elementare Wut': 'Deine elementaren Angriffe in Tiergestalt werden mächtiger.',
-  Erzdruide: 'Du kannst Tiergestalt unbegrenzt einsetzen und deine druidische Magie weiter meistern.',
-  'Unheimlicher Stoffwechsel': 'Du kannst Fokus-Punkte zurückgewinnen, wenn du eine kurze Rast beendest.',
-  'Verbesserte fokussierte Schläge': 'Deine fokussierten Mönchsangriffe verursachen zusätzlichen Schaden.',
+  Erzdruide:
+    'Du kannst Tiergestalt unbegrenzt einsetzen und deine druidische Magie weiter meistern.',
+  'Unheimlicher Stoffwechsel':
+    'Du kannst Fokus-Punkte zurückgewinnen, wenn du eine kurze Rast beendest.',
+  'Verbesserte fokussierte Schläge':
+    'Deine fokussierten Mönchsangriffe verursachen zusätzlichen Schaden.',
   Selbstheilung: 'Du kannst deinen Körper von bestimmten Zuständen und Effekten befreien.',
-  'Abgelenkte Energie': 'Du kannst abgewehrte Energie umlenken und gegen einen anderen Gegner einsetzen.',
-  Disziplin: 'Du kannst deinen Geist und Körper durch Fokus-Punkte vor bestimmten Zuständen schützen.',
+  'Abgelenkte Energie':
+    'Du kannst abgewehrte Energie umlenken und gegen einen anderen Gegner einsetzen.',
+  Disziplin:
+    'Du kannst deinen Geist und Körper durch Fokus-Punkte vor bestimmten Zuständen schützen.',
   'Überlegene Verteidigung': 'Du erhältst eine starke defensive Fähigkeit, die Fokus-Punkte nutzt.',
   'Strahlende Schläge': 'Deine Waffenangriffe verursachen zusätzlich gleißenden Schaden.',
-  'Berührende Reinigung': 'Du kannst mit Handauflegen bestimmte Zustände bei einer Kreatur beenden.',
-  'Bevorzugter Feind': 'Du kannst Mal des Jägers ohne Zauberplatz wirken und hast zusätzliche Anwendungen.',
-  'Wanderer': 'Du erhältst zusätzliche Bewegungs- und Erkundungsvorteile.',
+  'Berührende Reinigung':
+    'Du kannst mit Handauflegen bestimmte Zustände bei einer Kreatur beenden.',
+  'Bevorzugter Feind':
+    'Du kannst Mal des Jägers ohne Zauberplatz wirken und hast zusätzliche Anwendungen.',
+  Wanderer: 'Du erhältst zusätzliche Bewegungs- und Erkundungsvorteile.',
   Experte: 'Du erhältst Expertise in weiteren Fertigkeiten.',
-  'Zäher Jäger': 'Du erhältst eine zusätzliche defensive oder offensive Verbesserung deiner Jagdfähigkeiten.',
+  'Zäher Jäger':
+    'Du erhältst eine zusätzliche defensive oder offensive Verbesserung deiner Jagdfähigkeiten.',
   'Unermüdlicher Jäger': 'Du kannst dich besser gegen die Angriffe deiner Beute behaupten.',
   Verschwinden: 'Du kannst dich als Bonusaktion verstecken und bist schwerer aufzuspüren.',
   'Präziser Jäger': 'Deine Angriffe gegen markierte Ziele werden zuverlässiger.',
   'Listige Aktion': 'Du kannst als Bonusaktion sprinten, dich zurückziehen oder verstecken.',
-  'Sicheres Zielen': 'Du verzichtest auf Bewegung, um bei deinem nächsten Angriff in diesem Zug Vorteil zu erhalten.',
-  'Listiger Schlag': 'Du kannst bei einem Hinterhältigen Angriff Schadenswürfel gegen zusätzliche Effekte eintauschen.',
+  'Sicheres Zielen':
+    'Du verzichtest auf Bewegung, um bei deinem nächsten Angriff in diesem Zug Vorteil zu erhalten.',
+  'Listiger Schlag':
+    'Du kannst bei einem Hinterhältigen Angriff Schadenswürfel gegen zusätzliche Effekte eintauschen.',
   'Verbesserte Listige Schläge': 'Du erhältst zusätzliche Optionen für deine Listigen Schläge.',
-  'Listige Schläge': 'Du kannst weitere Effekte auslösen, indem du zusätzliche Hinterhältige-Angriff-Würfel aufgibst.',
-  'Schlauer Geist': 'Du erhältst Übung in Weisheitsrettungswürfen oder kannst dich mental besser verteidigen.',
-  'Zauberer-Inkarnation': 'Du kannst Zauberpunkte ausgeben, um deine Metamagie zu verstärken und Zauber trotz fehlender Komponenten zu wirken.',
-  'Magische List': 'Du führst ein Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.',
-  'Patron kontaktieren': 'Du kannst mit deinem Patron kommunizieren und einen passenden mächtigen Zauber ohne Zauberplatz wirken.',
-  'Ritualgelehrter': 'Du kannst Rituale aus deinem Zauberbuch wirken und zusätzliche Rituale erlernen.',
-  Gelehrter: 'Du erhältst Expertise in einer Fertigkeit, die mit deinem magischen Studium verbunden ist.',
-  'Zauber einprägen': 'Du kannst einen Zauber nach einer kurzen Rast in dein Zauberbuch einprägen und ihn einmal ohne Zauberplatz wirken.',
+  'Listige Schläge':
+    'Du kannst weitere Effekte auslösen, indem du zusätzliche Hinterhältige-Angriff-Würfel aufgibst.',
+  'Schlauer Geist':
+    'Du erhältst Übung in Weisheitsrettungswürfen oder kannst dich mental besser verteidigen.',
+  'Zauberer-Inkarnation':
+    'Du kannst Zauberpunkte ausgeben, um deine Metamagie zu verstärken und Zauber trotz fehlender Komponenten zu wirken.',
+  'Magische List':
+    'Du führst ein Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.',
+  'Patron kontaktieren':
+    'Du kannst mit deinem Patron kommunizieren und einen passenden mächtigen Zauber ohne Zauberplatz wirken.',
+  Ritualgelehrter:
+    'Du kannst Rituale aus deinem Zauberbuch wirken und zusätzliche Rituale erlernen.',
+  Gelehrter:
+    'Du erhältst Expertise in einer Fertigkeit, die mit deinem magischen Studium verbunden ist.',
+  'Zauber einprägen':
+    'Du kannst einen Zauber nach einer kurzen Rast in dein Zauberbuch einprägen und ihn einmal ohne Zauberplatz wirken.',
   'Treues Ross': 'Du kannst das Reittier aus dem Zauber Treues Ross herbeirufen.',
-  'Kanal göttlicher Energie': 'Du bündelst göttliche Kraft und nutzt sie für besondere Klassen- oder Unterklasseneffekte.',
-  'Untote vertreiben': 'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf.',
-  'Leben bewahren': 'Du verteilst einen Heilvorrat auf Kreaturen in deiner Nähe, die weniger als die Hälfte ihrer Trefferpunkte besitzen.',
-  'Bonus-Ausbildung': 'Du erhältst Übung in zusätzlichen Fertigkeiten oder mit zusätzlicher Ausrüstung.',
+  'Kanal göttlicher Energie':
+    'Du bündelst göttliche Kraft und nutzt sie für besondere Klassen- oder Unterklasseneffekte.',
+  'Untote vertreiben':
+    'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf.',
+  'Leben bewahren':
+    'Du verteilst einen Heilvorrat auf Kreaturen in deiner Nähe, die weniger als die Hälfte ihrer Trefferpunkte besitzen.',
+  'Bonus-Ausbildung':
+    'Du erhältst Übung in zusätzlichen Fertigkeiten oder mit zusätzlicher Ausrüstung.',
   'Jünger des Lebens': 'Deine Heilzauber stellen zusätzliche Trefferpunkte wieder her.',
-  'Gesegneter Heiler': 'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst Trefferpunkte zurück.',
+  'Gesegneter Heiler':
+    'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst Trefferpunkte zurück.',
   'Überragende Heilung': 'Deine Heilzauber verwenden bei Heilwürfeln den höchstmöglichen Wert.',
-  'Bonus-Zauber': 'Du erhältst zusätzliche Zauber, die mit deiner gewählten Landschaft verbunden sind.',
+  'Bonus-Zauber':
+    'Du erhältst zusätzliche Zauber, die mit deiner gewählten Landschaft verbunden sind.',
   'Zusätzliche Landbewegung': 'Du bewegst dich leichter durch natürliche Landschaften.',
   'Schutz der Natur': 'Du bist gegen bestimmte natürliche Gefahren und Zustände geschützt.',
   Naturheiligtum: 'Natürliche Kreaturen können dich nicht ohne Weiteres angreifen.',
   Athlet: 'Du verbesserst deine körperlichen Fähigkeiten und bestimmte Initiativewürfe.',
   'Zusätzlicher Kampfstil': 'Du wählst einen weiteren Kampfstil.',
   'Heroischer Krieger': 'Du kannst zu Beginn deines Zuges Heldenmut erhalten, wenn du keinen hast.',
-  Überlebenskünstler: 'Du regenerierst Trefferpunkte, wenn du zu Beginn deines Zuges angeschlagen bist.',
-  'Technik der offenen Hand': 'Deine Treffer mit Hagel der Schläge können Ziele zu Fall bringen, wegstoßen oder ihre Reaktionen verhindern.',
-  Gelassenheit: 'Du kannst dich durch Meditation schützen und nach einer Rast temporäre Trefferpunkte erhalten.',
-  'Zauber des Schwurs der Hingabe': 'Du erhältst zusätzliche Schwurzauber, die stets vorbereitet sind.',
+  Überlebenskünstler:
+    'Du regenerierst Trefferpunkte, wenn du zu Beginn deines Zuges angeschlagen bist.',
+  'Technik der offenen Hand':
+    'Deine Treffer mit Hagel der Schläge können Ziele zu Fall bringen, wegstoßen oder ihre Reaktionen verhindern.',
+  Gelassenheit:
+    'Du kannst dich durch Meditation schützen und nach einer Rast temporäre Trefferpunkte erhalten.',
+  'Zauber des Schwurs der Hingabe':
+    'Du erhältst zusätzliche Schwurzauber, die stets vorbereitet sind.',
   'Aura der Hingabe': 'Du und Verbündete in deiner Aura sind gegen Bezauberung immun.',
-  'Schützendes Niederstrecken': 'Dein Göttliches Niederstrecken schützt dich und Verbündete in deiner Aura.',
-  'Jägerkunde': 'Du erkennst die Resistenzen, Immunitäten und Anfälligkeiten deiner markierten Beute.',
-  'Jägerbeute': 'Du wählst eine Jagdtechnik, die deine Angriffe gegen Beute verbessert.',
+  'Schützendes Niederstrecken':
+    'Dein Göttliches Niederstrecken schützt dich und Verbündete in deiner Aura.',
+  Jägerkunde:
+    'Du erkennst die Resistenzen, Immunitäten und Anfälligkeiten deiner markierten Beute.',
+  Jägerbeute: 'Du wählst eine Jagdtechnik, die deine Angriffe gegen Beute verbessert.',
   'Defensive Taktiken': 'Du wählst eine defensive Technik gegen Angriffe oder Flächengefahren.',
   'Überlegene Jägerbeute': 'Deine Jagdtechnik wird verbessert und erhält zusätzliche Effekte.',
-  'Kletternder Meister': 'Du erhältst eine Kletterbewegungsrate und kannst aus großer Höhe besser springen.',
+  'Kletternder Meister':
+    'Du erhältst eine Kletterbewegungsrate und kannst aus großer Höhe besser springen.',
   Heimlichkeit: 'Du kannst dich leichter verstecken und bist schwerer zu entdecken.',
-  'Magische Gegenstände benutzen': 'Du kannst magische Gegenstände unabhängig von üblichen Klassenbeschränkungen verwenden.',
-  'Diebesreflexe': 'Du erhältst zu Beginn eines Kampfes unter bestimmten Bedingungen einen zusätzlichen Zug.',
-  'Magischer Hinterhalt': 'Kreaturen haben einen Nachteil auf Rettungswürfe gegen deine Zauber, wenn du aus dem Versteck wirkst.',
-  'Waffenbindung': 'Du bindest eine Waffe an dich und kannst sie herbeirufen.',
-  'Eldritch Strike': 'Deine Waffenangriffe erschweren getroffenen Kreaturen bestimmte Rettungswürfe gegen deine Zauber.',
-  'Drachenahne': 'Du sprichst Drakonisch und wählst einen Drachentyp, der deine drakonische Magie prägt.',
-  'Elementare Affinität': 'Du erhältst Resistenz gegen deinen Drachenschadenstyp und kannst passenden Zauberschaden verstärken.',
+  'Magische Gegenstände benutzen':
+    'Du kannst magische Gegenstände unabhängig von üblichen Klassenbeschränkungen verwenden.',
+  Diebesreflexe:
+    'Du erhältst zu Beginn eines Kampfes unter bestimmten Bedingungen einen zusätzlichen Zug.',
+  'Magischer Hinterhalt':
+    'Kreaturen haben einen Nachteil auf Rettungswürfe gegen deine Zauber, wenn du aus dem Versteck wirkst.',
+  Waffenbindung: 'Du bindest eine Waffe an dich und kannst sie herbeirufen.',
+  'Eldritch Strike':
+    'Deine Waffenangriffe erschweren getroffenen Kreaturen bestimmte Rettungswürfe gegen deine Zauber.',
+  Drachenahne:
+    'Du sprichst Drakonisch und wählst einen Drachentyp, der deine drakonische Magie prägt.',
+  'Elementare Affinität':
+    'Du erhältst Resistenz gegen deinen Drachenschadenstyp und kannst passenden Zauberschaden verstärken.',
   'Augen der Dunkelheit': 'Du erhältst Dunkelsicht und kannst Dunkelheit mit Zauberpunkten wirken.',
-  'Stärke des Grabes': 'Du kannst mit einer Reaktion verhindern, dass Schaden dich auf 0 Trefferpunkte reduziert.',
-  'Unholdresilienz': 'Nach einer kurzen oder langen Rast wählst du eine Schadensart, gegen die du resistent bist.',
-  'Segnung des Dunklen': 'Wenn du eine Kreatur auf 0 Trefferpunkte reduzierst, erhältst du temporäre Trefferpunkte.',
-  'Hervorrufungsexperte': 'Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.',
-  'Skulptur der Zauber': 'Du kannst in deinen Hervorrufungszaubern sichere Bereiche für Verbündete schaffen.',
-  'Mächtiger Zaubertrick': 'Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.',
-  'Ermächtigte Hervorrufung': 'Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.',
-  'Verbesserter kritischer Treffer': 'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.',
-  'Überlegener kritischer Treffer': 'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.',
-  'Worte der Schöpfung': 'Du lernst zwei mächtige Zauber, die deine Worte der Schöpfung verkörpern.',
-  'Wilde Erneuerung': 'Du kannst Zauberplätze und Anwendungen deiner Tiergestalt unter den festgelegten Bedingungen austauschen.',
-  'Tiergestalt': 'Du verwandelst dich in eine Tiergestalt, deren Stärke und Dauer von deiner Stufe abhängen.',
-  'Hilfe des Landes': 'Du gibst eine Nutzung deiner Tiergestalt aus, um Gegner zu schädigen und eine Kreatur zu heilen.',
+  'Stärke des Grabes':
+    'Du kannst mit einer Reaktion verhindern, dass Schaden dich auf 0 Trefferpunkte reduziert.',
+  Unholdresilienz:
+    'Nach einer kurzen oder langen Rast wählst du eine Schadensart, gegen die du resistent bist.',
+  'Segnung des Dunklen':
+    'Wenn du eine Kreatur auf 0 Trefferpunkte reduzierst, erhältst du temporäre Trefferpunkte.',
+  Hervorrufungsexperte:
+    'Das Kopieren von Hervorrufungszaubern in dein Zauberbuch kostet weniger Zeit und Gold.',
+  'Skulptur der Zauber':
+    'Du kannst in deinen Hervorrufungszaubern sichere Bereiche für Verbündete schaffen.',
+  'Mächtiger Zaubertrick':
+    'Deine Schadenszaubertricks verursachen auch bei erfolgreichen Rettungswürfen Schaden.',
+  'Ermächtigte Hervorrufung':
+    'Du addierst deinen Intelligenzmodifikator zu einem Schadenswurf deiner Hervorrufungszauber.',
+  'Verbesserter kritischer Treffer':
+    'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 19 oder 20 einen kritischen Treffer.',
+  'Überlegener kritischer Treffer':
+    'Deine Waffenangriffe erzielen bereits bei einem W20-Ergebnis von 18 bis 20 einen kritischen Treffer.',
+  'Worte der Schöpfung':
+    'Du lernst zwei mächtige Zauber, die deine Worte der Schöpfung verkörpern.',
+  'Wilde Erneuerung':
+    'Du kannst Zauberplätze und Anwendungen deiner Tiergestalt unter den festgelegten Bedingungen austauschen.',
+  Tiergestalt:
+    'Du verwandelst dich in eine Tiergestalt, deren Stärke und Dauer von deiner Stufe abhängen.',
+  'Hilfe des Landes':
+    'Du gibst eine Nutzung deiner Tiergestalt aus, um Gegner zu schädigen und eine Kreatur zu heilen.',
   'Fokus des Mönchs': 'Du nutzt Fokus-Punkte, um besondere Mönchsmanöver einzusetzen.',
-  'Angriffe abwehren': 'Du reduzierst mit deiner Reaktion den Schaden eines Angriffs und kannst ihn gegebenenfalls umlenken.',
+  'Angriffe abwehren':
+    'Du reduzierst mit deiner Reaktion den Schaden eines Angriffs und kannst ihn gegebenenfalls umlenken.',
   'Langsamer Fall': 'Du reduzierst Fallschaden mit deiner Reaktion.',
-  'Betäubender Schlag': 'Du kannst einen getroffenen Gegner mit einem Fokus- oder Ki-Punkt zu einem Konstitutionsrettungswurf zwingen.',
+  'Betäubender Schlag':
+    'Du kannst einen getroffenen Gegner mit einem Fokus- oder Ki-Punkt zu einem Konstitutionsrettungswurf zwingen.',
 }
 
 export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
   const is2024 = character.ruleset === '2024'
   const catalogue = is2024 ? CLASS_FEATURES_2024 : CLASS_FEATURES
-  const result: AutomaticClassFeature[] = (catalogue[character.classId] ?? [])
-    .map(([level, name], index) => ({
+  const result: AutomaticClassFeature[] = (catalogue[character.classId] ?? []).map(
+    ([level, name], index) => ({
       id: `class-${character.ruleset}-${character.classId}-${index}`,
       name,
       level,
       source: 'class',
-      description: FEATURE_DESCRIPTIONS_DE[FEATURE_LABELS_DE[name] ?? name] ?? 'Dieses Merkmal gewährt dir einen klassenabhängigen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.',
+      description:
+        FEATURE_DESCRIPTIONS_DE[FEATURE_LABELS_DE[name] ?? name] ??
+        'Dieses Merkmal gewährt dir einen klassenabhängigen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.',
       unlocked: level <= character.level,
-    }))
+    }),
+  )
   const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
   if (is2024) {
     const supportedSubclass: Record<string, string> = {
@@ -1897,147 +2141,153 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
       ...(subclass === supportedSubclass[character.classId]
         ? (SUBCLASS_FEATURES_2024[character.classId] ?? [])
         : []
-      )
-        .map(([level, name, description], index) => ({
-          id: `subclass-2024-${subclass}-${index}`,
-          name,
-          description,
-          level,
-          source: 'subclass' as const,
-          unlocked: level <= character.level,
-        })),
+      ).map(([level, name, description], index) => ({
+        id: `subclass-2024-${subclass}-${index}`,
+        name,
+        description,
+        level,
+        source: 'subclass' as const,
+        unlocked: level <= character.level,
+      })),
     )
   } else {
     result.push(
-      ...(SUBCLASS_FEATURES[subclass] ?? [])
-        .map(([level, name], index) => ({
-          id: `subclass-2014-${subclass}-${index}`,
-          name,
-          level,
-          source: 'subclass' as const,
-          description: FEATURE_DESCRIPTIONS_DE[FEATURE_LABELS_DE[name] ?? name] ?? 'Dieses Unterklassenmerkmal gewährt dir einen zusätzlichen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.',
-          unlocked: level <= character.level,
-        })),
+      ...(SUBCLASS_FEATURES[subclass] ?? []).map(([level, name], index) => ({
+        id: `subclass-2014-${subclass}-${index}`,
+        name,
+        level,
+        source: 'subclass' as const,
+        description:
+          FEATURE_DESCRIPTIONS_DE[FEATURE_LABELS_DE[name] ?? name] ??
+          'Dieses Unterklassenmerkmal gewährt dir einen zusätzlichen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.',
+        unlocked: level <= character.level,
+      })),
     )
   }
-  return result.sort((left, right) => left.level - right.level).map((feature) => {
-    const germanName = FEATURE_LABELS_DE[feature.name] ?? feature.name
-    const active =
-      (germanName === 'Raserei' && character.ruleset === '2024') ||
-      (germanName === 'Bevorzugter Feind' && character.ruleset === '2014')
-        ? undefined
-        : ACTIVE_FEATURES[germanName]
-    let resourceId = active?.resourceId
-    if (germanName === 'Kanal göttlicher Energie' && character.classId === 'paladin') {
-      resourceId =
-        character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
-    }
-    if (germanName === 'Heilige Waffe' && character.ruleset === '2014')
-      resourceId = 'paladin-channel-divinity'
-    if (germanName === 'Unheilige vertreiben') resourceId = 'paladin-channel-divinity'
-    if (germanName === 'Hagel der Schläge')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+  return result
+    .sort((left, right) => left.level - right.level)
+    .map((feature) => {
+      const germanName = FEATURE_LABELS_DE[feature.name] ?? feature.name
+      const active =
+        (germanName === 'Raserei' && character.ruleset === '2024') ||
+        (germanName === 'Bevorzugter Feind' && character.ruleset === '2014')
+          ? undefined
+          : ACTIVE_FEATURES[germanName]
+      let resourceId = active?.resourceId
+      if (germanName === 'Kanal göttlicher Energie' && character.classId === 'paladin') {
+        resourceId =
+          character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
       }
-    if (germanName === 'Geduldige Verteidigung')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
-        description:
-          character.ruleset === '2014'
-            ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion die Ausweichen-Aktion auszuführen.'
-            : 'Du kannst dich als Bonusaktion zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich ausweichen.',
-      }
-    if (germanName === 'Schritt des Windes')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
-        description:
-          character.ruleset === '2014'
-            ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion zu sprinten oder dich zurückzuziehen; deine Sprungweite verdoppelt sich für den Zug.'
-            : 'Du kannst als Bonusaktion sprinten oder dich zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du beides tun und deine Sprungweite verdoppeln.',
-      }
-    if (
-      germanName === 'Göttlicher Sinn' &&
-      character.classId === 'paladin' &&
-      character.ruleset === '2024'
-    )
-      return {
-        ...feature,
-        ...active,
-        activation: 'bonusAction',
-        resourceId: 'channel-divinity-paladin',
-        description:
-          'Du öffnest als Bonusaktion deine Sinne und erkennst für zehn Minuten Celestials, Fiends und Untote sowie geweihte oder entweihte Orte und Gegenstände in deiner Nähe.',
-      }
-    if (germanName === 'Drachenflügel')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2024' ? 'dragon-wings' : undefined,
-        description:
-          character.ruleset === '2024'
-            ? 'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.'
-            : 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.',
-      }
-    if (germanName === 'Heiliger Nimbus')
-      return {
-        ...feature,
-        ...active,
-        activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
-        resourceId: 'holy-nimbus',
-      }
-    if (germanName === 'Treues Ross')
-      return { ...feature, ...active, activation: 'action', resourceId: 'faithful-steed' }
-    if (germanName === 'Tiergestalt')
-      return {
-        ...feature,
-        ...active,
-        activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
-        resourceId,
-      }
-    if (germanName === 'Betäubender Schlag')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
-      }
-    if (germanName === 'Handauflegen')
-      return {
-        ...feature,
-        ...active,
-        activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
-        resourceId,
-      }
-    if (germanName === 'Ganzheit des Körpers')
-      return {
-        ...feature,
-        ...active,
-        activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
-        resourceId: 'wholeness-of-body',
-      }
-    if (germanName === 'Zitternde Handfläche')
-      return {
-        ...feature,
-        ...active,
-        resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
-        resourceCost: character.ruleset === '2024' ? 4 : 3,
-      }
-    return active ? { ...feature, ...active, resourceId } : feature
-  }).map((feature) => ({
-    ...feature,
-    localizedName: FEATURE_LABELS_DE[feature.name] ?? feature.name,
-    name: feature.name,
-  }))
+      if (germanName === 'Heilige Waffe' && character.ruleset === '2014')
+        resourceId = 'paladin-channel-divinity'
+      if (germanName === 'Unheilige vertreiben') resourceId = 'paladin-channel-divinity'
+      if (germanName === 'Hagel der Schläge')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+        }
+      if (germanName === 'Geduldige Verteidigung')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
+          description:
+            character.ruleset === '2014'
+              ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion die Ausweichen-Aktion auszuführen.'
+              : 'Du kannst dich als Bonusaktion zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du zusätzlich ausweichen.',
+        }
+      if (germanName === 'Schritt des Windes')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2014' ? 'ki-points' : undefined,
+          description:
+            character.ruleset === '2014'
+              ? 'Du gibst einen Ki-Punkt aus, um als Bonusaktion zu sprinten oder dich zurückzuziehen; deine Sprungweite verdoppelt sich für den Zug.'
+              : 'Du kannst als Bonusaktion sprinten oder dich zurückziehen. Wenn du einen Fokus-Punkt ausgibst, kannst du beides tun und deine Sprungweite verdoppeln.',
+        }
+      if (
+        germanName === 'Göttlicher Sinn' &&
+        character.classId === 'paladin' &&
+        character.ruleset === '2024'
+      )
+        return {
+          ...feature,
+          ...active,
+          activation: 'bonusAction',
+          resourceId: 'channel-divinity-paladin',
+          description:
+            'Du öffnest als Bonusaktion deine Sinne und erkennst für zehn Minuten Celestials, Fiends und Untote sowie geweihte oder entweihte Orte und Gegenstände in deiner Nähe.',
+        }
+      if (germanName === 'Drachenflügel')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2024' ? 'dragon-wings' : undefined,
+          description:
+            character.ruleset === '2024'
+              ? 'Du manifestierst für eine Stunde Flügel und erhältst Flugbewegungsrate. Nach der Nutzung musst du lange rasten oder drei Zauberpunkte ausgeben, um die Nutzung wiederherzustellen.'
+              : 'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.',
+        }
+      if (germanName === 'Heiliger Nimbus')
+        return {
+          ...feature,
+          ...active,
+          activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
+          resourceId: 'holy-nimbus',
+        }
+      if (germanName === 'Treues Ross')
+        return { ...feature, ...active, activation: 'action', resourceId: 'faithful-steed' }
+      if (germanName === 'Tiergestalt')
+        return {
+          ...feature,
+          ...active,
+          activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
+          resourceId,
+        }
+      if (germanName === 'Betäubender Schlag')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+        }
+      if (germanName === 'Handauflegen')
+        return {
+          ...feature,
+          ...active,
+          activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
+          resourceId,
+        }
+      if (germanName === 'Ganzheit des Körpers')
+        return {
+          ...feature,
+          ...active,
+          activation: character.ruleset === '2024' ? 'bonusAction' : 'action',
+          resourceId: 'wholeness-of-body',
+        }
+      if (germanName === 'Zitternde Handfläche')
+        return {
+          ...feature,
+          ...active,
+          resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points',
+          resourceCost: character.ruleset === '2024' ? 4 : 3,
+        }
+      return active ? { ...feature, ...active, resourceId } : feature
+    })
+    .map((feature) => ({
+      ...feature,
+      localizedName: FEATURE_LABELS_DE[feature.name] ?? feature.name,
+      name: feature.name,
+    }))
 }
 
 export function getActiveClassFeatures(character: Character): AutomaticClassFeature[] {
   const resourceFeatures = new Set(['Kanal göttlicher Energie', 'Ki', 'Fokus des Mönchs'])
   return getAutomaticClassFeatures(character).filter(
-    (feature) => feature.unlocked && feature.activation && !resourceFeatures.has(feature.localizedName ?? feature.name),
+    (feature) =>
+      feature.unlocked &&
+      feature.activation &&
+      !resourceFeatures.has(feature.localizedName ?? feature.name),
   )
 }
