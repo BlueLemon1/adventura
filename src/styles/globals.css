@@ -190,3 +190,11 @@
 .catalog-source-fields input,.catalog-source-fields select{width:100%;min-width:0;padding:8px 9px;border:1px solid var(--line);border-radius:6px;background:var(--surface);color:var(--text);font:inherit;font-size:10px}
 .catalog-source-editor .primary-button{justify-self:start}
 @media(max-width:560px){.catalog-source-fields{grid-template-columns:1fr}}
+
+.class-spell-capacity{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:12px 0;padding:14px 16px;border:1px solid rgba(214,180,119,.22);border-radius:9px;background:rgba(214,180,119,.055)}
+.class-spell-capacity>div{display:grid;gap:3px;min-width:155px}
+.class-spell-capacity span{color:var(--gold);font-size:9px;letter-spacing:.06em;text-transform:uppercase}
+.class-spell-capacity strong{font:25px Georgia,serif;color:var(--text)}
+.class-spell-capacity small,.class-spell-capacity p{color:var(--muted);font-size:9px;line-height:1.55}
+.class-spell-capacity p{margin:0;max-width:520px}
+@media(max-width:560px){.class-spell-capacity{align-items:flex-start;flex-direction:column;gap:8px}}
