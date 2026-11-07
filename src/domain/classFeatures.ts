@@ -348,27 +348,61 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
   ],
 }
 
+const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
+  barbarian: [[1,'Kampfrausch'],[1,'Ungepanzerte Verteidigung'],[1,'Waffenmeisterschaft'],[2,'Gefahrensinn'],[2,'Rücksichtsloser Angriff'],[3,'Urwissen'],[5,'Zusätzlicher Angriff'],[5,'Schnelle Bewegung'],[7,'Wilder Instinkt'],[7,'Instinktiver Sprung'],[9,'Brutaler Schlag'],[11,'Unermüdlicher Kampfrausch'],[13,'Verbesserter brutaler Schlag'],[15,'Anhaltender Kampfrausch'],[18,'Unbezwingbare Stärke'],[19,'Epischer Segen'],[20,'Ursprünglicher Champion']],
+  bard: [[1,'Bardeninspiration'],[1,'Zauberwirken'],[2,'Expertise'],[2,'Alles-Könner'],[5,'Quelle der Inspiration'],[7,'Gegenzauber'],[10,'Magische Geheimnisse'],[18,'Überlegene Inspiration'],[19,'Epischer Segen'],[20,'Worte der Schöpfung']],
+  cleric: [[1,'Zauberwirken'],[1,'Göttliche Ordnung'],[2,'Kanal göttlicher Energie'],[4,'Attributswerterhöhung'],[5,'Untote zerstören'],[7,'Gesegnete Schläge'],[10,'Göttliches Eingreifen'],[14,'Verbessertes Göttliches Eingreifen'],[19,'Epischer Segen'],[20,'Großes Göttliches Eingreifen']],
+  druid: [[1,'Zauberwirken'],[1,'Druidisch'],[1,'Ursprüngliche Ordnung'],[2,'Tiergestalt'],[2,'Wilder Gefährte'],[4,'Attributswerterhöhung'],[5,'Wilde Erneuerung'],[7,'Elementare Wut'],[15,'Verbesserte Elementare Wut'],[18,'Tierzauber'],[19,'Epischer Segen'],[20,'Erzdruide']],
+  fighter: [[1,'Kampfstil'],[1,'Zweites Aufatmen'],[1,'Waffenmeisterschaft'],[2,'Aktionsschub'],[2,'Taktischer Verstand'],[4,'Attributswerterhöhung'],[5,'Zusätzlicher Angriff'],[5,'Taktische Bewegung'],[9,'Unbeugsam'],[11,'Zwei zusätzliche Angriffe'],[19,'Epischer Segen'],[20,'Drei zusätzliche Angriffe']],
+  monk: [[1,'Kampfkünste'],[1,'Ungepanzerte Verteidigung'],[2,'Fokus des Mönchs'],[2,'Ungepanzerte Bewegung'],[2,'Unheimlicher Stoffwechsel'],[3,'Angriffe abwehren'],[4,'Attributswerterhöhung'],[4,'Langsamer Fall'],[5,'Zusätzlicher Angriff'],[6,'Verbesserte fokussierte Schläge'],[7,'Entrinnen'],[10,'Selbstheilung'],[13,'Abgelenkte Energie'],[14,'Disziplin'],[18,'Überlegene Verteidigung'],[19,'Epischer Segen'],[20,'Perfektes Selbst']],
+  paladin: [[1,'Handauflegen'],[1,'Zauberwirken'],[1,'Waffenmeisterschaft'],[2,'Kampfstil'],[3,'Kanal göttlicher Energie'],[4,'Attributswerterhöhung'],[5,'Zusätzlicher Angriff'],[5,'Treues Ross'],[6,'Aura des Schutzes'],[9,'Abwehrzauber'],[10,'Aura des Mutes'],[11,'Strahlende Schläge'],[14,'Berührende Reinigung'],[19,'Epischer Segen']],
+  ranger: [[1,'Zauberwirken'],[1,'Bevorzugter Feind'],[1,'Waffenmeisterschaft'],[2,'Erfahrener Entdecker'],[2,'Kampfstil'],[4,'Attributswerterhöhung'],[5,'Zusätzlicher Angriff'],[6,'Wanderer'],[9,'Experte'],[10,'Zäher Jäger'],[13,'Unermüdlicher Jäger'],[14,'Verschwinden'],[17,'Präziser Jäger'],[19,'Epischer Segen'],[20,'Feindetöter']],
+  rogue: [[1,'Expertise'],[1,'Hinterhältiger Angriff'],[1,'Diebesjargon'],[1,'Waffenmeisterschaft'],[2,'Listige Aktion'],[3,'Sicheres Zielen'],[5,'Listiger Schlag'],[5,'Unheimliches Ausweichen'],[7,'Entrinnen'],[7,'Zuverlässiges Talent'],[11,'Verbesserte Listige Schläge'],[14,'Listige Schläge'],[15,'Schlauer Geist'],[18,'Unfassbar'],[19,'Epischer Segen'],[20,'Glückstreffer']],
+  sorcerer: [[1,'Zauberwirken'],[1,'Angeborene Magie'],[2,'Quelle der Magie'],[3,'Metamagie'],[5,'Zauberhafte Erneuerung'],[10,'Metamagie-Option'],[20,'Zauberer-Apotheose']],
+  warlock: [[1,'Unheimliche Anrufungen'],[1,'Paktmagie'],[2,'Magische List'],[4,'Attributswerterhöhung'],[9,'Patron kontaktieren'],[11,'Mystisches Arkanum'],[19,'Epischer Segen'],[20,'Mystischer Meister']],
+  wizard: [[1,'Zauberwirken'],[1,'Ritualgelehrter'],[1,'Arkane Erholung'],[2,'Gelehrter'],[4,'Attributswerterhöhung'],[5,'Zauber einprägen'],[18,'Zaubermeisterschaft'],[19,'Epischer Segen'],[20,'Signaturzauber']],
+}
+const SUBCLASS_FEATURE_LEVELS_2024: Record<string, number[]> = {
+  barbarian:[3,6,10,14], bard:[3,6,14], cleric:[3,6,17], druid:[3,6,10,14],
+  fighter:[3,7,10,15,18], monk:[3,6,11,17], paladin:[3,7,15,20],
+  ranger:[3,7,11,15], rogue:[3,9,13,17], sorcerer:[3,6,14,18],
+  warlock:[3,6,10,14], wizard:[3,6,10,14],
+}
+
 export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
-  // This initial catalogue is explicitly SRD 5.1 / 2014 data. Never show it for 2024 characters.
-  if (character.ruleset !== '2014') return []
-  const result: AutomaticClassFeature[] = (CLASS_FEATURES[character.classId] ?? [])
+  const is2024 = character.ruleset === '2024'
+  const catalogue = is2024 ? CLASS_FEATURES_2024 : CLASS_FEATURES
+  const result: AutomaticClassFeature[] = (catalogue[character.classId] ?? [])
     .filter(([level]) => level <= character.level)
     .map(([level, name], index) => ({
-      id: `class-${character.classId}-${index}`,
+      id: `class-${character.ruleset}-${character.classId}-${index}`,
       name,
       level,
       source: 'class',
     }))
   const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
-  result.push(
-    ...(SUBCLASS_FEATURES[subclass] ?? [])
-      .filter(([level]) => level <= character.level)
-      .map(([level, name], index) => ({
-        id: `subclass-${subclass}-${index}`,
-        name,
-        level,
-        source: 'subclass' as const,
-      })),
-  )
+  if (is2024) {
+    result.push(
+      ...(character.subclassId ? (SUBCLASS_FEATURE_LEVELS_2024[character.classId] ?? []) : [])
+        .filter((level) => level <= character.level)
+        .map((level, index) => ({
+          id: `subclass-2024-${subclass}-${index}`,
+          name: 'Unterklassenmerkmal',
+          level,
+          source: 'subclass' as const,
+        })),
+    )
+  } else {
+    result.push(
+      ...(SUBCLASS_FEATURES[subclass] ?? [])
+        .filter(([level]) => level <= character.level)
+        .map(([level, name], index) => ({
+          id: `subclass-2014-${subclass}-${index}`,
+          name,
+          level,
+          source: 'subclass' as const,
+        })),
+    )
+  }
   return result
 }
