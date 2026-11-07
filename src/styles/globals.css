@@ -2890,3 +2890,134 @@ textarea {
     padding: 14px;
   }
 }
+
+/* Minimum readable sizes for secondary labels and compact controls */
+.brand small,
+.workspace-label,
+.eyebrow,
+.breadcrumb,
+.campaign-card strong,
+.campaign-card span,
+.profile-copy strong,
+.profile-copy span,
+.stat-card > span,
+.stat-card small,
+.muted-label,
+.footer-note,
+.footer-note span,
+.ruleset-pill,
+.modal-hint,
+.combat-card > span,
+.combat-card small,
+.ability-card span,
+.proficiency-row,
+.skill-row,
+.skill-ability,
+.currency-grid label span,
+.muted-paragraph,
+.inventory-main small,
+.equipped-toggle,
+.spell-level,
+.spell-meta,
+.spell-card p,
+.level-number span,
+.slot-row,
+.spell-catalog .panel-heading .muted-paragraph,
+.catalog-eligible,
+.catalog-count,
+.catalog-spell-level,
+.catalog-spell-name small,
+.already-added,
+.catalog-spell-detail,
+.catalog-attribution,
+.spellbook-count,
+.spellbook-level-heading,
+.spellbook-level-heading small,
+.always-prepared,
+.spellbook-meta span,
+.spellbook-details summary,
+.spellbook-details p,
+.spellbook-card-footer small,
+.spellbook-empty p,
+.spell-capacity > span,
+.spell-capacity > small,
+.spell-slot-line,
+.spell-slot-line span,
+.spell-slot-line small,
+.spell-capacity-note,
+.spell-source,
+.spell-origin-note,
+.spell-uses,
+.catalog-source-editor > strong,
+.class-spell-capacity span,
+.class-spell-capacity small,
+.class-spell-capacity p,
+.segmented-tabs button small {
+  font-size: 12px;
+}
+
+.primary-button,
+.secondary-button,
+.open-character,
+.skill-row select,
+.field-label select,
+.spellbook-filters button,
+.spell-use-button,
+.catalog-spell-action .secondary-button,
+.ui-select-trigger,
+.ui-select-item,
+.skill-select {
+  font-size: 13px;
+}
+
+.field-label,
+.catalog-source-fields label,
+.spellbook-details summary {
+  font-size: 13px;
+}
+
+.field-label input,
+.field-label textarea,
+.currency-grid input,
+.character-switcher,
+.spellbook-search input,
+.catalog-source-fields input,
+.catalog-source-fields select {
+  font-size: 14px;
+}
+
+.empty-state p,
+.catalog-spell-detail p,
+.spellbook-details p {
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.spellbook-card-title h3 {
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.panel-heading h2 {
+  font-size: 20px;
+}
+
+@media (max-width: 640px) {
+  .primary-button,
+  .secondary-button,
+  .open-character,
+  .spellbook-filters button,
+  .spell-use-button,
+  .ui-select-trigger {
+    min-height: 42px;
+    font-size: 13px;
+  }
+
+  .spellbook-card-title h3 {
+    font-size: 16px;
+  }
+
+  .panel-heading h2 {
+    font-size: 18px;
+  }
+}

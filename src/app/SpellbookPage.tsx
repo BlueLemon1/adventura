@@ -136,8 +136,6 @@ export function SpellbookPage({
           <SpellbookList
             spells={knownSpells}
             character={character}
-            spellSlots={character.spellSlots ?? []}
-            pactMagic={character.pactMagic}
             onUse={(spellId) =>
               updateSpell(spellId, (spell) => ({
                 ...spell,

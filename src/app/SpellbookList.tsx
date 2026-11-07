@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2, Zap } from 'lucide-react'
+import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2 } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { normalizeKey } from '../domain/text'
