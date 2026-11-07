@@ -4,7 +4,7 @@ export interface ClassResourceDefinition {
   id: string
   label: string
   maximum: number
-  recovery: 'short' | 'long' | 'short-or-long'
+  recovery: 'short' | 'long' | 'short-or-long' | 'short-one-or-long'
 }
 export interface AutomaticClassFeature {
   id: string
@@ -30,7 +30,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
       'rage',
       'Kampfrausch',
       maximum,
-      ruleset === '2014' ? 'long' : 'short-or-long',
+      ruleset === '2014' ? 'long' : 'short-one-or-long',
     )
   }
   if (classId === 'bard') {
@@ -52,7 +52,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
     )
   }
   if (classId === 'druid' && level >= 2)
-    add('wild-shape', 'Tiergestalt', 2, 'short-or-long')
+    add('wild-shape', 'Tiergestalt', 2, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
   if (classId === 'fighter' && level >= 1)
     add(
       'second-wind',
@@ -309,6 +309,8 @@ const SUBCLASS_FEATURES: Record<string, Array<[number, string]>> = {
 }
 
 export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
+  // This initial catalogue is explicitly SRD 5.1 / 2014 data. Never show it for 2024 characters.
+  if (character.ruleset !== '2014') return []
   const result: AutomaticClassFeature[] = (CLASS_FEATURES[character.classId] ?? [])
     .filter(([level]) => level <= character.level)
     .map(([level, name], index) => ({

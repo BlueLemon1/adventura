@@ -3,6 +3,10 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'Eine Nutzung bei kurzer Rast, alle bei langer Rast': 'One use on a short rest, all uses on a long rest',
+  'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.': 'SRD 5.2.1 class features are being built separately. No 2014 features are shown or reused.',
+  'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.': 'Usage is saved. A short rest restores one or all uses depending on the resource; a long rest restores all uses.',
+
   'Merkmale & Ressourcen': 'Features & resources',
   'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.': 'Class and subclass abilities, automatically unlocked based on your level.',
   'Rast verwalten': 'Manage rests',

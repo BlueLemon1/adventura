@@ -25,8 +25,9 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
     onUpdate({
       classResources: resources.map((resource) => {
         const current = saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum
-        const recover = kind === 'long' || resource.recovery !== 'long'
-        return { id: resource.id, current: recover ? resource.maximum : Math.min(resource.maximum, current) }
+        const recoverAll = kind === 'long' || resource.recovery === 'short-or-long' || resource.recovery === 'short'
+        const next = recoverAll ? resource.maximum : kind === 'short' && resource.recovery === 'short-one-or-long' ? Math.min(resource.maximum, current + 1) : current
+        return { id: resource.id, current: next }
       }),
     })
   }
@@ -51,7 +52,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
               const current = Math.min(resource.maximum, Math.max(0, saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum))
               return (
                 <div className="class-resource-row" key={resource.id}>
-                  <div><strong>{t(resource.label)}</strong><small>{t(resource.recovery === 'long' ? 'Erholung bei langer Rast' : resource.recovery === 'short' ? 'Erholung bei kurzer Rast' : 'Erholung bei kurzer oder langer Rast')}</small></div>
+                  <div><strong>{t(resource.label)}</strong><small>{t(resource.recovery === 'long' ? 'Erholung bei langer Rast' : resource.recovery === 'short' ? 'Erholung bei kurzer Rast' : resource.recovery === 'short-one-or-long' ? 'Eine Nutzung bei kurzer Rast, alle bei langer Rast' : 'Erholung bei kurzer oder langer Rast')}</small></div>
                   <div className="resource-counter">
                     <button type="button" aria-label={t('Ressource verringern')} disabled={current <= 0} onClick={() => setResource(resource.id, current - 1)}>−</button>
                     <strong>{current} / {resource.maximum}</strong>
@@ -61,12 +62,14 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
               )
             })}
           </div>
-          <p className="muted-paragraph">{t('Der Verbrauch wird gespeichert. Rast-Aktionen stellen die Ressourcen gemäß ihrer Erholung wieder her.')}</p>
+          <p className="muted-paragraph">{t('Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.')}</p>
         </section>
       )}
       <section className="panel">
         <PanelHeader title={t('Automatische Klassenmerkmale')} meta={features.length + ' ' + t('FREIGESCHALTET')} />
-        {features.length > 0 ? (
+        {character.ruleset === '2024' ? (
+          <p className="muted-paragraph">{t('Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.')}</p>
+        ) : features.length > 0 ? (
           <div className="automatic-feature-list">
             {features.map((feature) => (
               <article className="automatic-feature-row" key={feature.id}>
