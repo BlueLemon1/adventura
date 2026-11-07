@@ -2,11 +2,7 @@ import { ChevronRight, Compass, Heart, Save, Shield } from 'lucide-react'
 import type { Ability, Character, ProficiencyLevel, SkillId } from '../domain/character'
 import { ABILITIES, SKILLS } from '../domain/character'
 import { RULESET_LABELS } from '../domain/rules'
-import {
-  CLASS_OPTIONS,
-  getClassLabel,
-  SUBCLASS_OPTIONS,
-} from '../domain/classes'
+import { CLASS_OPTIONS, getClassLabel, SUBCLASS_OPTIONS } from '../domain/classes'
 import {
   Select,
   SelectContent,

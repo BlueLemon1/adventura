@@ -25,8 +25,13 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
     onUpdate({
       classResources: resources.map((resource) => {
         const current = saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum
-        const recoverAll = kind === 'long' || resource.recovery === 'short-or-long' || resource.recovery === 'short'
-        const next = recoverAll ? resource.maximum : kind === 'short' && resource.recovery === 'short-one-or-long' ? Math.min(resource.maximum, current + 1) : current
+        const recoverAll =
+          kind === 'long' || resource.recovery === 'short-or-long' || resource.recovery === 'short'
+        const next = recoverAll
+          ? resource.maximum
+          : kind === 'short' && resource.recovery === 'short-one-or-long'
+            ? Math.min(resource.maximum, current + 1)
+            : current
         return { id: resource.id, current: next }
       }),
     })
@@ -37,51 +42,115 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       <PageIntro
         eyebrow={RULESET_LABELS[character.ruleset]}
         title={t('Merkmale & Ressourcen')}
-        description={t('Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.')}
+        description={t(
+          'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.',
+        )}
       />
       <div className="rest-actions">
         <span>{t('Rast verwalten')}</span>
-        <button type="button" className="secondary-button" onClick={() => takeRest('short')}>{t('Kurze Rast')}</button>
-        <button type="button" className="secondary-button" onClick={() => takeRest('long')}>{t('Lange Rast')}</button>
+        <button type="button" className="secondary-button" onClick={() => takeRest('short')}>
+          {t('Kurze Rast')}
+        </button>
+        <button type="button" className="secondary-button" onClick={() => takeRest('long')}>
+          {t('Lange Rast')}
+        </button>
       </div>
       {resources.length > 0 && (
         <section className="panel">
           <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
           <div className="class-resource-list">
             {resources.map((resource) => {
-              const current = Math.min(resource.maximum, Math.max(0, saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum))
+              const current = Math.min(
+                resource.maximum,
+                Math.max(
+                  0,
+                  saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum,
+                ),
+              )
               return (
                 <div className="class-resource-row" key={resource.id}>
-                  <div><strong>{t(resource.label)}</strong><small>{t(resource.recovery === 'long' ? 'Erholung bei langer Rast' : resource.recovery === 'short' ? 'Erholung bei kurzer Rast' : resource.recovery === 'short-one-or-long' ? 'Eine Nutzung bei kurzer Rast, alle bei langer Rast' : 'Erholung bei kurzer oder langer Rast')}</small></div>
+                  <div>
+                    <strong>{t(resource.label)}</strong>
+                    <small>
+                      {t(
+                        resource.recovery === 'long'
+                          ? 'Erholung bei langer Rast'
+                          : resource.recovery === 'short'
+                            ? 'Erholung bei kurzer Rast'
+                            : resource.recovery === 'short-one-or-long'
+                              ? 'Eine Nutzung bei kurzer Rast, alle bei langer Rast'
+                              : 'Erholung bei kurzer oder langer Rast',
+                      )}
+                    </small>
+                  </div>
                   <div className="resource-counter">
-                    <button type="button" aria-label={t('Ressource verringern')} disabled={current <= 0} onClick={() => setResource(resource.id, current - 1)}>−</button>
-                    <strong>{current} / {resource.maximum}</strong>
-                    <button type="button" aria-label={t('Ressource erhöhen')} disabled={current >= resource.maximum} onClick={() => setResource(resource.id, current + 1)}>+</button>
+                    <button
+                      type="button"
+                      aria-label={t('Ressource verringern')}
+                      disabled={current <= 0}
+                      onClick={() => setResource(resource.id, current - 1)}
+                    >
+                      −
+                    </button>
+                    <strong>
+                      {current} / {resource.maximum}
+                    </strong>
+                    <button
+                      type="button"
+                      aria-label={t('Ressource erhöhen')}
+                      disabled={current >= resource.maximum}
+                      onClick={() => setResource(resource.id, current + 1)}
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               )
             })}
           </div>
-          <p className="muted-paragraph">{t('Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.')}</p>
+          <p className="muted-paragraph">
+            {t(
+              'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.',
+            )}
+          </p>
         </section>
       )}
       <section className="panel">
-        <PanelHeader title={t('Automatische Klassenmerkmale')} meta={features.length + ' ' + t('FREIGESCHALTET')} />
+        <PanelHeader
+          title={t('Automatische Klassenmerkmale')}
+          meta={features.length + ' ' + t('FREIGESCHALTET')}
+        />
         {character.ruleset === '2024' ? (
-          <p className="muted-paragraph">{t('Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.')}</p>
+          <p className="muted-paragraph">
+            {t(
+              'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.',
+            )}
+          </p>
         ) : features.length > 0 ? (
           <div className="automatic-feature-list">
             {features.map((feature) => (
               <article className="automatic-feature-row" key={feature.id}>
-                <div><strong>{t(feature.name)}</strong><small>{t('Stufe')} {feature.level} · {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}</small></div>
+                <div>
+                  <strong>{t(feature.name)}</strong>
+                  <small>
+                    {t('Stufe')} {feature.level} ·{' '}
+                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
+                  </small>
+                </div>
                 <span className="automatic-feature-badge">{t('Automatisch')}</span>
               </article>
             ))}
           </div>
         ) : (
-          <p className="muted-paragraph">{t('Für diese Klasse und dieses Regelwerk sind noch keine Merkmalsdaten hinterlegt.')}</p>
+          <p className="muted-paragraph">
+            {t('Für diese Klasse und dieses Regelwerk sind noch keine Merkmalsdaten hinterlegt.')}
+          </p>
         )}
-        <p className="muted-paragraph">{t('Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.')}</p>
+        <p className="muted-paragraph">
+          {t(
+            'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.',
+          )}
+        </p>
       </section>
     </>
   )

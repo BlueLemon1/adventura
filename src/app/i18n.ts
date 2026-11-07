@@ -3,22 +3,29 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
-  'Eine Nutzung bei kurzer Rast, alle bei langer Rast': 'One use on a short rest, all uses on a long rest',
-  'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.': 'SRD 5.2.1 class features are being built separately. No 2014 features are shown or reused.',
-  'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.': 'Usage is saved. A short rest restores one or all uses depending on the resource; a long rest restores all uses.',
+  'Eine Nutzung bei kurzer Rast, alle bei langer Rast':
+    'One use on a short rest, all uses on a long rest',
+  'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.':
+    'SRD 5.2.1 class features are being built separately. No 2014 features are shown or reused.',
+  'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.':
+    'Usage is saved. A short rest restores one or all uses depending on the resource; a long rest restores all uses.',
 
   'Merkmale & Ressourcen': 'Features & resources',
-  'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.': 'Class and subclass abilities, automatically unlocked based on your level.',
+  'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.':
+    'Class and subclass abilities, automatically unlocked based on your level.',
   'Rast verwalten': 'Manage rests',
   'Kurze Rast': 'Short rest',
   'Lange Rast': 'Long rest',
   'Erholung bei langer Rast': 'Recharges on a long rest',
   'Erholung bei kurzer Rast': 'Recharges on a short rest',
   'Erholung bei kurzer oder langer Rast': 'Recharges on a short or long rest',
-  'Der Verbrauch wird gespeichert. Rast-Aktionen stellen die Ressourcen gemäß ihrer Erholung wieder her.': 'Usage is saved. Rest actions restore resources according to their recovery rules.',
-  'FREIGESCHALTET': 'UNLOCKED',
-  'Für diese Klasse und dieses Regelwerk sind noch keine Merkmalsdaten hinterlegt.': 'No feature data is available yet for this class and ruleset.',
-  'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.': 'Unlocks are based on class, subclass and level. Mechanical effects and full descriptions will be added incrementally.',
+  'Der Verbrauch wird gespeichert. Rast-Aktionen stellen die Ressourcen gemäß ihrer Erholung wieder her.':
+    'Usage is saved. Rest actions restore resources according to their recovery rules.',
+  FREIGESCHALTET: 'UNLOCKED',
+  'Für diese Klasse und dieses Regelwerk sind noch keine Merkmalsdaten hinterlegt.':
+    'No feature data is available yet for this class and ruleset.',
+  'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.':
+    'Unlocks are based on class, subclass and level. Mechanical effects and full descriptions will be added incrementally.',
 
   Klassenressourcen: 'Class resources',
   'AUTOMATISCH BERECHNET': 'CALCULATED AUTOMATICALLY',

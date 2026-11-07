@@ -20,18 +20,18 @@ function abilityModifier(score = 10) {
 export function getClassResources(character: Character): ClassResourceDefinition[] {
   const { classId, level, ruleset } = character
   const resources: ClassResourceDefinition[] = []
-  const add = (id: string, label: string, maximum: number, recovery: ClassResourceDefinition['recovery']) => {
+  const add = (
+    id: string,
+    label: string,
+    maximum: number,
+    recovery: ClassResourceDefinition['recovery'],
+  ) => {
     if (maximum > 0) resources.push({ id, label, maximum, recovery })
   }
   if (classId === 'barbarian') {
     const maximum =
       level >= 20 ? 99 : level >= 17 ? 6 : level >= 12 ? 5 : level >= 6 ? 4 : level >= 3 ? 3 : 2
-    add(
-      'rage',
-      'Kampfrausch',
-      maximum,
-      ruleset === '2014' ? 'long' : 'short-one-or-long',
-    )
+    add('rage', 'Kampfrausch', maximum, ruleset === '2014' ? 'long' : 'short-one-or-long')
   }
   if (classId === 'bard') {
     add(
@@ -44,12 +44,7 @@ export function getClassResources(character: Character): ClassResourceDefinition
   if (classId === 'cleric' && level >= 2) {
     const maximum =
       level >= 18 ? (ruleset === '2024' ? 4 : 3) : level >= 6 ? 2 : ruleset === '2024' ? 2 : 1
-    add(
-      'channel-divinity',
-      'Kanal göttlicher Energie',
-      maximum,
-      'short-or-long',
-    )
+    add('channel-divinity', 'Kanal göttlicher Energie', maximum, 'short-or-long')
   }
   if (classId === 'druid' && level >= 2)
     add('wild-shape', 'Tiergestalt', 2, ruleset === '2024' ? 'short-one-or-long' : 'short-or-long')
@@ -74,10 +69,8 @@ export function getClassResources(character: Character): ClassResourceDefinition
       level >= 11 ? 3 : 2,
       'short-or-long',
     )
-  if (classId === 'sorcerer' && level >= 2)
-    add('sorcery-points', 'Zauberpunkte', level, 'long')
-  if (classId === 'wizard' && level >= 1)
-    add('arcane-recovery', 'Arkane Erholung', 1, 'long')
+  if (classId === 'sorcerer' && level >= 2) add('sorcery-points', 'Zauberpunkte', level, 'long')
+  if (classId === 'wizard' && level >= 1) add('arcane-recovery', 'Arkane Erholung', 1, 'long')
   return resources
 }
 
