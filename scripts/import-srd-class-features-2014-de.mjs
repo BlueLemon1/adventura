@@ -9,6 +9,7 @@ const records = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
 const features = JSON.parse(fs.readFileSync(path.join(sourcePath, 'features.de.json'), 'utf8'))
 const classes = JSON.parse(fs.readFileSync(path.join(sourcePath, 'classes.de.json'), 'utf8'))
 const index = JSON.parse(fs.readFileSync(path.join(sourcePath, 'feature-index.json'), 'utf8'))
+const rageText = fs.readFileSync(path.join(sourcePath, 'rage.de.md'), 'utf8').trim()
 const subclassAliases = { openhand: 'open-hand' }
 const nameAliases = { 'Signature Spells': 'Signature Spell' }
 const normalize = (value) => String(value ?? '').toLowerCase().replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim()
@@ -16,6 +17,12 @@ const normalize = (value) => String(value ?? '').toLowerCase().replace(/\([^)]*\
 let imported = 0
 const missing = []
 for (const feature of records) {
+  if (feature.id === 'srd-2014-class-barbarian-core-1-rage') {
+    feature.names.de = 'Kampfrausch'
+    feature.descriptions.de = rageText
+    imported += 1
+    continue
+  }
   const subclassId = subclassAliases[feature.subclassId] ?? feature.subclassId
   const source = index.find((item) =>
     item.classId === feature.classId &&
@@ -30,8 +37,9 @@ for (const feature of records) {
     const description = features[source.slug + '.desc']
     if (name) feature.names.de = name
     if (description) feature.descriptions.de = description
+    if (name || description) imported += 1
     if (feature.names.en !== 'Spellcasting' && feature.names.en !== 'Pact Magic') {
-      imported += 1
+      if (!name && !description) missing.push(feature.id)
       continue
     }
   }

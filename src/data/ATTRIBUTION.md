@@ -48,6 +48,7 @@ German class and subclass feature names and descriptions are taken from the offi
 - Official source: https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf
 - Markdown conversion: https://github.com/netzrenner/dnd.srd.5.2.1-de
 - License: CC BY 4.0 (Wizards of the Coast LLC)
+- `data/sources/srd-5.1/rage.de.md` is transcribed directly from the official German PDF, class feature section, page 9.
 
 ## SRD 5.2.1 English class and subclass features
 
