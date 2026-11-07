@@ -23,8 +23,10 @@
       ],
       "castingTime": "Aktion",
       "range": "27 Meter",
-      "components": "V, G, M (ein zerstoßenes Rhabarberblatt)",
-      "duration": "Unmittelbar"
+      "components": "V, G, M (ein zerstoßenes Rhabarberblatt und der Magen einer Natter)",
+      "duration": "Unmittelbar",
+      "description": "Ein schimmernder grüner Pfeil schießt auf ein Ziel in Reichweite und explodiert in einem Sprühregen aus Säure. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel sofort 4W4 Säureschaden und 2W4 Säureschaden am Ende seines nächsten Zugs. Verfehlst du, spritzt genug Säure auf das Ziel, um die Hälfte des anfänglichen Schadens zu verursachen. Das Ziel erleidet am Ende seines nächsten Zugs keinen Schaden.",
+      "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden (sowohl der anfängliche als auch der spätere) für jeden Grad über dem 2. um 1W4."
     },
     "damage": [
       {
@@ -66,7 +68,8 @@
       "castingTime": "Aktion",
       "range": "18 Meter",
       "components": "V, G",
-      "duration": "Unmittelbar"
+      "duration": "Unmittelbar",
+      "description": "Du wirfst eine Säureblase. Wähle eine oder zwei Kreaturen in Reichweite, sofern sie nicht weiter als 1,5 Meter voneinander entfernt sind. Ziele müssen einen Geschicklichkeitsrettungswurf bestehen, oder sie erleiden 1W6 Säureschaden. Der Schaden des Zaubers steigt um je 1W6, wenn du die 5. Stufe (2W6), die 11. Stufe (3W6) und die 17. Stufe (4W6) erreichst."
     },
     "damage": [
       {

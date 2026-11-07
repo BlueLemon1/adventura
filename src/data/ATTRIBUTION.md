@@ -29,7 +29,7 @@ German spell names, descriptions, components, ranges and other localized fields 
 
 Dieses Werk enthält Material aus dem Systemreferenzdokument 5.1 („SRD 5.1“) von Wizards of the Coast LLC, das unter https://dnd.wizards.com/de/resources/systems-reference-document verfügbar ist. Das SRD 5.1 ist lizenziert gemäß der Lizenz Creative Commons Namensnennung 4.0 International, die unter https://creativecommons.org/licenses/by/4.0/legalcode.de verfügbar ist.
 
-The SRD 5.1 catalog's German metadata is currently matched against equivalent entries in the German SRD 5.2.1 dataset; its spell descriptions remain in the original 2014 source language until they can be matched against the German SRD 5.1 text without mixing editions.
+German SRD 5.1 spell descriptions are being added only from the official German SRD 5.1 document. No descriptions, rules text, class lists, or spell data are borrowed from SRD 5.2.1. Until an individual SRD 5.1 description has been verified and added, the German interface shows an explicit notice instead of silently falling back to English or to 2024 text.
 
 ## Required attribution for SRD 5.2.1
 

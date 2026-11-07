@@ -273,8 +273,9 @@ export function SpellCatalog({
       range: spell.localized.range,
       components: spell.localized.components,
       duration: spell.localized.duration,
-      description: spell.localized.description ?? spell.description,
-      higherLevel: spell.localized.higherLevel ?? spell.higherLevel,
+      material: '',
+      description: spell.localized.description ?? '',
+      higherLevel: spell.localized.higherLevel ?? '',
     }
   })
   const spellcasting = getSpellcastingProgression(character)
@@ -515,7 +516,13 @@ export function SpellCatalog({
                     )}
                   </div>
                 )}
-                <p>{spell.description}</p>
+                {spell.description ? (
+                  <p>{spell.description}</p>
+                ) : language === 'de' && character.ruleset === '2014' ? (
+                  <p className="muted-paragraph">
+                    {t('Die deutsche Beschreibung aus dem SRD 5.1 wird ergänzt. Es wird kein Text aus dem SRD 5.2.1 oder eine automatische Übersetzung verwendet.')}
+                  </p>
+                ) : null}
                 {spell.higherLevel && (
                   <p>
                     <strong>{t('Auf höheren Graden:')}</strong> {spell.higherLevel}

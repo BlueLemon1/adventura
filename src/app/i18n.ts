@@ -3,6 +3,7 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'Die deutsche Beschreibung aus dem SRD 5.1 wird ergänzt. Es wird kein Text aus dem SRD 5.2.1 oder eine automatische Übersetzung verwendet.': 'The German SRD 5.1 description is being added. No text from SRD 5.2.1 or machine translation is used.',
   'Installation: Öffne das Browsermenü. In Chrome oder Edge wählst du „App installieren“ oder „Seite als App installieren“. Auf iPhone/iPad: Teilen → Zum Home-Bildschirm.':
     'Install: Open your browser menu. In Chrome or Edge, choose “Install app” or “Install this site as an app”. On iPhone/iPad: Share → Add to Home Screen.',
   'Adventura als App installieren': 'Install Adventura as an app',
