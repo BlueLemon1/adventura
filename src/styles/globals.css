@@ -3436,13 +3436,64 @@ textarea {
   }
 }
 
-.class-feature-grid { align-items: start; }
-.class-resource-list, .automatic-feature-list { display: grid; gap: 9px; }
-.class-resource-row, .automatic-feature-row { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; border-bottom:1px solid var(--border); }
-.class-resource-row > div:first-child, .automatic-feature-row > div { display:grid; gap:3px; }
-.class-resource-row small, .automatic-feature-row small { color:var(--muted); font-size:11px; }
-.resource-counter { display:flex; align-items:center; gap:9px; white-space:nowrap; }
-.resource-counter button { width:28px; height:28px; border:1px solid var(--border); border-radius:7px; background:var(--surface-2); color:var(--text); font-size:18px; cursor:pointer; }
-.resource-counter button:disabled { opacity:.35; cursor:not-allowed; }
-.resource-counter strong { min-width:54px; text-align:center; font-variant-numeric:tabular-nums; }
-.automatic-feature-badge { padding:4px 7px; border:1px solid rgba(70,170,145,.28); border-radius:6px; color:var(--teal); font-size:10px; font-weight:700; white-space:nowrap; }
+.class-feature-grid {
+  align-items: start;
+}
+.class-resource-list,
+.automatic-feature-list {
+  display: grid;
+  gap: 9px;
+}
+.class-resource-row,
+.automatic-feature-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.class-resource-row > div:first-child,
+.automatic-feature-row > div {
+  display: grid;
+  gap: 3px;
+}
+.class-resource-row small,
+.automatic-feature-row small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.resource-counter {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  white-space: nowrap;
+}
+.resource-counter button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+}
+.resource-counter button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+.resource-counter strong {
+  min-width: 54px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.automatic-feature-badge {
+  padding: 4px 7px;
+  border: 1px solid rgba(70, 170, 145, 0.28);
+  border-radius: 6px;
+  color: var(--teal);
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
