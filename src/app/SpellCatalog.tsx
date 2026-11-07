@@ -500,10 +500,18 @@ export function SpellCatalog({
                   <div className="spell-damage-summary">
                     <strong>{spell.damage.map((part) => part.dice).join(' + ')}</strong>
                     <span>
-                      Ø {spell.damage.reduce((sum, part) => sum + part.average, 0).toLocaleString('de-DE', { maximumFractionDigits: 1 })} {t('Schaden')}
+                      Ø{' '}
+                      {spell.damage
+                        .reduce((sum, part) => sum + part.average, 0)
+                        .toLocaleString('de-DE', { maximumFractionDigits: 1 })}{' '}
+                      {t('Schaden')}
                     </span>
                     {spell.damage.some((part) => part.type) && (
-                      <small>{[...new Set(spell.damage.map((part) => part.type).filter(Boolean))].join(', ')}</small>
+                      <small>
+                        {[...new Set(spell.damage.map((part) => part.type).filter(Boolean))].join(
+                          ', ',
+                        )}
+                      </small>
                     )}
                   </div>
                 )}
