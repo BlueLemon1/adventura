@@ -134,7 +134,11 @@ function SpellCard({
       <div className="spellbook-card-top">
         <div className="spellbook-card-title">
           <span className="spell-level">
-            {isFeature ? translateText('AKTIVES MERKMAL') : level === 0 ? translateText('ZAUBERTRICK') : `${translateText('GRAD')} ${level}`}
+            {isFeature
+              ? translateText('AKTIVES MERKMAL')
+              : level === 0
+                ? translateText('ZAUBERTRICK')
+                : `${translateText('GRAD')} ${level}`}
           </span>
           <h3>{name}</h3>
         </div>
@@ -207,13 +211,19 @@ function SpellCard({
 
       <div className="spellbook-card-footer">
         <small>
-          {translateText(isFeature ? 'Freigeschaltet auf Stufe' : 'Gelernt auf Stufe')} {spell.learnedAtLevel}
+          {translateText(isFeature ? 'Freigeschaltet auf Stufe' : 'Gelernt auf Stufe')}{' '}
+          {spell.learnedAtLevel}
         </small>
         <div className="spell-card-controls">
           {isFeature ? (
             spell.resourceId && hasLimitedUses ? (
-              <span className="spell-uses"><Clock3 size={12} /> {remainingUses}/{spell.usageLimit} · {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}</span>
-            ) : <span className="spell-uses">{translateText('Keine begrenzten Nutzungen')}</span>
+              <span className="spell-uses">
+                <Clock3 size={12} /> {remainingUses}/{spell.usageLimit} ·{' '}
+                {translateText(RESET_LABELS[spell.usageReset ?? 'longRest'])}
+              </span>
+            ) : (
+              <span className="spell-uses">{translateText('Keine begrenzten Nutzungen')}</span>
+            )
           ) : hasLimitedUses ? (
             <span className="spell-uses">
               <Clock3 size={12} />
@@ -348,7 +358,13 @@ export function SpellbookList({
           {spellGroups.map(([level, group]) => (
             <section className="spellbook-level-group" key={level}>
               <div className="spellbook-level-heading">
-                <span>{level < 0 ? t('Aktive Klassen- und Unterklassenmerkmale') : level === 0 ? t('Zaubertricks') : `${t('Grad')} ${level}`}</span>
+                <span>
+                  {level < 0
+                    ? t('Aktive Klassen- und Unterklassenmerkmale')
+                    : level === 0
+                      ? t('Zaubertricks')
+                      : `${t('Grad')} ${level}`}
+                </span>
                 <small>
                   {group.length} {level < 0 ? t('Merkmale') : t('Zauber')}
                 </small>

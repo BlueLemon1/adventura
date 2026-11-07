@@ -46,21 +46,55 @@ export function SpellbookPage({
   const activeFeatures = getActiveClassFeatures(character)
   const classResources = getClassResources(character)
   const activeFeatureEntries: KnownSpell[] = activeFeatures.map((feature) => {
-    const resource = feature.resourceId ? classResources.find((entry) => entry.id === feature.resourceId) : undefined
-    const savedCurrent = feature.resourceId ? character.classResources?.find((entry) => entry.id === feature.resourceId)?.current : undefined
-    const current = resource ? Math.max(0, Math.min(resource.maximum, savedCurrent ?? resource.maximum)) : undefined
+    const resource = feature.resourceId
+      ? classResources.find((entry) => entry.id === feature.resourceId)
+      : undefined
+    const savedCurrent = feature.resourceId
+      ? character.classResources?.find((entry) => entry.id === feature.resourceId)?.current
+      : undefined
+    const current = resource
+      ? Math.max(0, Math.min(resource.maximum, savedCurrent ?? resource.maximum))
+      : undefined
     return {
-      entryType: 'feature', actionType: feature.activation, resourceId: feature.resourceId,
-      resourceCost: feature.resourceCost ?? 1, spellId: feature.id, name: feature.name,
-      learnedAtLevel: feature.level, prepared: true, alwaysPrepared: true, spellLevel: -1,
+      entryType: 'feature',
+      actionType: feature.activation,
+      resourceId: feature.resourceId,
+      resourceCost: feature.resourceCost ?? 1,
+      spellId: feature.id,
+      name: feature.name,
+      learnedAtLevel: feature.level,
+      prepared: true,
+      alwaysPrepared: true,
+      spellLevel: -1,
       school: feature.source === 'subclass' ? t('Unterklasse') : t('Klasse'),
-      castingTime: feature.activation === 'bonusAction' ? t('Bonusaktion') : feature.activation === 'reaction' ? t('Reaktion') : feature.activation === 'special' ? t('Spezial') : t('Aktion'),
-      range: t('Siehe Beschreibung'), duration: t('Siehe Beschreibung'), description: feature.description,
-      source: 'class', sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
-      ...(resource && current !== undefined ? {
-        usageLimit: resource.maximum, usageRemaining: current,
-        usageReset: resource.recovery === 'long' ? 'longRest' : resource.recovery === 'short' ? 'shortRest' : resource.recovery === 'short-one-or-long' || resource.recovery === 'short-or-long' ? 'shortRest' : 'none',
-      } : {}),
+      castingTime:
+        feature.activation === 'bonusAction'
+          ? t('Bonusaktion')
+          : feature.activation === 'reaction'
+            ? t('Reaktion')
+            : feature.activation === 'special'
+              ? t('Spezial')
+              : t('Aktion'),
+      range: t('Siehe Beschreibung'),
+      duration: t('Siehe Beschreibung'),
+      description: feature.description,
+      source: 'class',
+      sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
+      ...(resource && current !== undefined
+        ? {
+            usageLimit: resource.maximum,
+            usageRemaining: current,
+            usageReset:
+              resource.recovery === 'long'
+                ? 'longRest'
+                : resource.recovery === 'short'
+                  ? 'shortRest'
+                  : resource.recovery === 'short-one-or-long' ||
+                      resource.recovery === 'short-or-long'
+                    ? 'shortRest'
+                    : 'none',
+          }
+        : {}),
     }
   })
   const [spellName, setSpellName] = useState('')
@@ -159,14 +193,26 @@ export function SpellbookPage({
               if (feature?.resourceId) {
                 const resource = classResources.find((entry) => entry.id === feature.resourceId)
                 if (!resource) return
-                const current = character.classResources?.find((entry) => entry.id === feature.resourceId)?.current ?? resource.maximum
-                onUpdateCharacter({ classResources: [
-                  ...(character.classResources ?? []).filter((entry) => entry.id !== feature.resourceId),
-                  { id: feature.resourceId, current: Math.max(0, current - (feature.resourceCost ?? 1)) },
-                ] })
+                const current =
+                  character.classResources?.find((entry) => entry.id === feature.resourceId)
+                    ?.current ?? resource.maximum
+                onUpdateCharacter({
+                  classResources: [
+                    ...(character.classResources ?? []).filter(
+                      (entry) => entry.id !== feature.resourceId,
+                    ),
+                    {
+                      id: feature.resourceId,
+                      current: Math.max(0, current - (feature.resourceCost ?? 1)),
+                    },
+                  ],
+                })
                 return
               }
-              updateSpell(spellId, (spell) => ({ ...spell, usageRemaining: Math.max(0, (spell.usageRemaining ?? spell.usageLimit ?? 0) - 1) }))
+              updateSpell(spellId, (spell) => ({
+                ...spell,
+                usageRemaining: Math.max(0, (spell.usageRemaining ?? spell.usageLimit ?? 0) - 1),
+              }))
             }}
             onReset={(spellId) =>
               updateSpell(spellId, (spell) => ({

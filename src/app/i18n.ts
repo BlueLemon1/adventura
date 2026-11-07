@@ -633,47 +633,87 @@ Object.assign(en, {
     'You can overchannel a spell for maximum damage, risking a harmful backlash.',
 })
 
-
 Object.assign(en, {
-  'Bonusaktion': 'Bonus Action', Reaktion: 'Reaction', Aktion: 'Action', Spezial: 'Special',
-  'Siehe Beschreibung': 'See description', Unterklasse: 'Subclass', Klasse: 'Class',
-  Unterklassenmerkmal: 'Subclass feature', Klassenmerkmal: 'Class feature',
-  'AKTIVES MERKMAL': 'ACTIVE FEATURE', 'Aktive Merkmale': 'Active features',
+  Bonusaktion: 'Bonus Action',
+  Reaktion: 'Reaction',
+  Aktion: 'Action',
+  Spezial: 'Special',
+  'Siehe Beschreibung': 'See description',
+  Unterklasse: 'Subclass',
+  Klasse: 'Class',
+  Unterklassenmerkmal: 'Subclass feature',
+  Klassenmerkmal: 'Class feature',
+  'AKTIVES MERKMAL': 'ACTIVE FEATURE',
+  'Aktive Merkmale': 'Active features',
   'Aktive Klassen- und Unterklassenmerkmale': 'Active class and subclass features',
-  Merkmale: 'Features', 'aktive Merkmale': 'active features',
+  Merkmale: 'Features',
+  'aktive Merkmale': 'active features',
   'Freigeschaltet auf Stufe': 'Unlocked at level',
   'Keine begrenzten Nutzungen': 'No limited uses',
-  'Du verfällst in einen Kampfrausch. Er hält bis zu 10 Minuten an und endet vorzeitig unter den im Regelwerk genannten Bedingungen.': 'You enter a Rage. It lasts up to 10 minutes and ends early under the conditions described in the rules.',
-  'Eine Kreatur deiner Wahl in Reichweite erhält einen Inspirationswürfel, den sie innerhalb der nächsten 10 Minuten zu einem passenden W20-Wurf addieren kann.': 'A creature of your choice within range gains an Inspiration die it can add to an eligible d20 test within the next 10 minutes.',
-  'Wenn eine Kreatur in deiner Nähe einen Wurf ablegt, kannst du eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um das Ergebnis zu verringern.': 'When a nearby creature makes a roll, you can use your Reaction and expend Bardic Inspiration to reduce the result.',
-  'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.': 'You perform to bolster nearby allies against certain fear and charm effects.',
-  'Du setzt deine göttliche Energie frei und wählst einen verfügbaren Effekt deiner Klasse oder Unterklasse.': 'You channel divine energy and choose an available effect from your class or subclass.',
-  'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf; bei Misslingen werden sie vertrieben.': 'You present your holy symbol and force nearby Undead to make a Wisdom saving throw or be Turned.',
-  'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.': 'You expend Channel Divinity to distribute healing among nearby wounded creatures.',
-  'Du verwandelst dich in eine zulässige Tiergestalt. Die Verwandlung hält bis zu deiner Rückverwandlung oder bis zum Ablauf der Dauer an.': 'You transform into an eligible Beast form. The transformation lasts until you revert or its duration expires.',
-  'Du gibst eine Nutzung deiner Tiergestalt aus, um Vertrauten finden ohne Materialkomponenten zu wirken.': 'You expend a use of Wild Shape to cast Find Familiar without Material components.',
-  'Du gibst eine Nutzung deiner Tiergestalt aus, um einen Bereich mit nekrotischer Energie zu erfüllen und eine Kreatur zu heilen.': 'You expend a use of Wild Shape to fill an area with necrotic energy and heal a creature.',
-  'Du gewinnst Trefferpunkte zurück. Die Höhe richtet sich nach deiner Kämpferstufe.': 'You regain Hit Points. The amount is based on your Fighter level.',
-  'Du kannst in diesem Zug zusätzlich zu deiner normalen Aktion eine weitere Aktion ausführen.': 'You can take one additional action on this turn.',
-  'Wenn dir ein Rettungswurf misslingt, kannst du ihn wiederholen und musst das neue Ergebnis verwenden.': 'When you fail a saving throw, you can reroll it and must use the new result.',
-  'Du setzt Ki-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.': 'You expend Ki or Focus Points to use special Monk options such as Flurry of Blows, Patient Defense, or Step of the Wind.',
-  'Du setzt Fokus-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.': 'You expend Focus Points to use special Monk options such as Flurry of Blows, Patient Defense, or Step of the Wind.',
-  'Du berührst eine Kreatur und stellst Trefferpunkte aus deinem Heilungsvorrat wieder her oder neutralisierst eine Krankheit bzw. ein Gift, sofern die Regeln dies erlauben.': 'You touch a creature to restore Hit Points from your healing pool or neutralize a disease or poison when permitted by the rules.',
-  'Bis zum Ende deines nächsten Zuges nimmst du bestimmte himmlische, untote und dämonische Präsenzen in deiner Nähe wahr.': 'Until the end of your next turn, you sense certain Celestial, Undead, and Fiend presences nearby.',
-  'Du setzt Kanal göttlicher Energie ein, um eine gehaltene Waffe vorübergehend mit heiliger Macht zu erfüllen.': 'You expend Channel Divinity to temporarily imbue a weapon you hold with holy power.',
-  'Du entfesselst deine angeborene Magie für 1 Minute und erhältst die im Merkmal beschriebenen Vorteile.': 'You unleash your innate magic for 1 minute and gain the benefits described by the feature.',
-  'Du führst ein kurzes Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.': 'You perform a brief ritual to regain some expended Pact Magic spell slots.',
-  'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.': 'After a Short Rest, you recover expended spell slots up to your permitted combined levels.',
-  'Du erschreckst Kreaturen in deiner Nähe mit deiner bedrohlichen Präsenz; sie müssen einen Weisheitsrettungswurf bestehen.': 'You frighten nearby creatures with your menacing presence; they must succeed on a Wisdom saving throw.',
-  'Wenn dich eine Kreatur in deiner Nähe verletzt, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.': 'When a creature near you damages you, you can use your Reaction to make a melee attack against it.',
-  'Du kannst Schritt des Windes einsetzen, nachdem du in diesem Zug bereits eine andere Bonusaktion verwendet hast.': 'You can use Step of the Wind after already taking another Bonus Action on this turn.',
-  'Du setzt Fokus-Punkte ein, um einem getroffenen Ziel tödliche Schwingungen einzuprägen und diese später auszulösen.': 'You expend Focus Points to set lethal vibrations in a creature you hit and trigger them later.',
-  'Du kannst zu Beginn des ersten Kampfzugs unter den im Merkmal genannten Voraussetzungen einen zusätzlichen Zug erhalten.': 'You can take an additional turn at the start of the first combat round under the feature’s stated conditions.',
-  'Du kannst bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.': 'You can take certain object and skill actions as a Bonus Action.',
-  'Wenn dich ein sichtbarer Angreifer trifft, kannst du deine Reaktion einsetzen, um den Angriffsschaden zu halbieren.': 'When a visible attacker hits you, you can use your Reaction to halve the attack damage.',
-  'Du nutzt deine Schnelligkeit, um als Bonusaktion zu sprinten, dich zurückzuziehen oder dich zu verstecken.': 'You use your agility to Dash, Disengage, or Hide as a Bonus Action.',
-  'Du gibst deine Bewegung für diesen Zug auf, um bei deinem nächsten Angriff im selben Zug Vorteil zu erhalten.': 'You forgo your movement this turn to gain Advantage on your next attack roll this turn.',
-  'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.': 'You manifest draconic wings and gain a Fly Speed.',
-  'Wenn du eine Kreatur triffst, kannst du sie einmal pro Zug durch die Unteren Ebenen schleudern und ihr zusätzlichen Schaden zufügen.': 'When you hit a creature, you can send it through the Lower Planes once per turn and deal extra damage.',
-  'Du kannst einen Magierzauber verstärken, um maximalen Schaden zu verursachen; die Anwendung birgt das im Merkmal beschriebene Risiko.': 'You can empower a Wizard spell to deal maximum damage, with the risk described by the feature.',
-});
+  'Du verfällst in einen Kampfrausch. Er hält bis zu 10 Minuten an und endet vorzeitig unter den im Regelwerk genannten Bedingungen.':
+    'You enter a Rage. It lasts up to 10 minutes and ends early under the conditions described in the rules.',
+  'Eine Kreatur deiner Wahl in Reichweite erhält einen Inspirationswürfel, den sie innerhalb der nächsten 10 Minuten zu einem passenden W20-Wurf addieren kann.':
+    'A creature of your choice within range gains an Inspiration die it can add to an eligible d20 test within the next 10 minutes.',
+  'Wenn eine Kreatur in deiner Nähe einen Wurf ablegt, kannst du eine Reaktion und eine Nutzung deiner Bardeninspiration einsetzen, um das Ergebnis zu verringern.':
+    'When a nearby creature makes a roll, you can use your Reaction and expend Bardic Inspiration to reduce the result.',
+  'Du beginnst eine Aufführung, die Verbündete in deiner Nähe gegen bestimmte Furcht- und Bezauberungseffekte stärkt.':
+    'You perform to bolster nearby allies against certain fear and charm effects.',
+  'Du setzt deine göttliche Energie frei und wählst einen verfügbaren Effekt deiner Klasse oder Unterklasse.':
+    'You channel divine energy and choose an available effect from your class or subclass.',
+  'Du präsentierst dein heiliges Symbol und zwingst Untote in deiner Nähe zu einem Weisheitsrettungswurf; bei Misslingen werden sie vertrieben.':
+    'You present your holy symbol and force nearby Undead to make a Wisdom saving throw or be Turned.',
+  'Du setzt Kanal göttlicher Energie ein, um Trefferpunkte unter verwundeten Kreaturen in deiner Nähe zu verteilen.':
+    'You expend Channel Divinity to distribute healing among nearby wounded creatures.',
+  'Du verwandelst dich in eine zulässige Tiergestalt. Die Verwandlung hält bis zu deiner Rückverwandlung oder bis zum Ablauf der Dauer an.':
+    'You transform into an eligible Beast form. The transformation lasts until you revert or its duration expires.',
+  'Du gibst eine Nutzung deiner Tiergestalt aus, um Vertrauten finden ohne Materialkomponenten zu wirken.':
+    'You expend a use of Wild Shape to cast Find Familiar without Material components.',
+  'Du gibst eine Nutzung deiner Tiergestalt aus, um einen Bereich mit nekrotischer Energie zu erfüllen und eine Kreatur zu heilen.':
+    'You expend a use of Wild Shape to fill an area with necrotic energy and heal a creature.',
+  'Du gewinnst Trefferpunkte zurück. Die Höhe richtet sich nach deiner Kämpferstufe.':
+    'You regain Hit Points. The amount is based on your Fighter level.',
+  'Du kannst in diesem Zug zusätzlich zu deiner normalen Aktion eine weitere Aktion ausführen.':
+    'You can take one additional action on this turn.',
+  'Wenn dir ein Rettungswurf misslingt, kannst du ihn wiederholen und musst das neue Ergebnis verwenden.':
+    'When you fail a saving throw, you can reroll it and must use the new result.',
+  'Du setzt Ki-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.':
+    'You expend Ki or Focus Points to use special Monk options such as Flurry of Blows, Patient Defense, or Step of the Wind.',
+  'Du setzt Fokus-Punkte ein, um besondere Mönchsmanöver wie Hagel der Schläge, Geduldige Verteidigung oder Schritt des Windes auszuführen.':
+    'You expend Focus Points to use special Monk options such as Flurry of Blows, Patient Defense, or Step of the Wind.',
+  'Du berührst eine Kreatur und stellst Trefferpunkte aus deinem Heilungsvorrat wieder her oder neutralisierst eine Krankheit bzw. ein Gift, sofern die Regeln dies erlauben.':
+    'You touch a creature to restore Hit Points from your healing pool or neutralize a disease or poison when permitted by the rules.',
+  'Bis zum Ende deines nächsten Zuges nimmst du bestimmte himmlische, untote und dämonische Präsenzen in deiner Nähe wahr.':
+    'Until the end of your next turn, you sense certain Celestial, Undead, and Fiend presences nearby.',
+  'Du setzt Kanal göttlicher Energie ein, um eine gehaltene Waffe vorübergehend mit heiliger Macht zu erfüllen.':
+    'You expend Channel Divinity to temporarily imbue a weapon you hold with holy power.',
+  'Du entfesselst deine angeborene Magie für 1 Minute und erhältst die im Merkmal beschriebenen Vorteile.':
+    'You unleash your innate magic for 1 minute and gain the benefits described by the feature.',
+  'Du führst ein kurzes Ritual aus, um einen Teil deiner verbrauchten Paktmagie-Zauberplätze zurückzugewinnen.':
+    'You perform a brief ritual to regain some expended Pact Magic spell slots.',
+  'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.':
+    'After a Short Rest, you recover expended spell slots up to your permitted combined levels.',
+  'Du erschreckst Kreaturen in deiner Nähe mit deiner bedrohlichen Präsenz; sie müssen einen Weisheitsrettungswurf bestehen.':
+    'You frighten nearby creatures with your menacing presence; they must succeed on a Wisdom saving throw.',
+  'Wenn dich eine Kreatur in deiner Nähe verletzt, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.':
+    'When a creature near you damages you, you can use your Reaction to make a melee attack against it.',
+  'Du kannst Schritt des Windes einsetzen, nachdem du in diesem Zug bereits eine andere Bonusaktion verwendet hast.':
+    'You can use Step of the Wind after already taking another Bonus Action on this turn.',
+  'Du setzt Fokus-Punkte ein, um einem getroffenen Ziel tödliche Schwingungen einzuprägen und diese später auszulösen.':
+    'You expend Focus Points to set lethal vibrations in a creature you hit and trigger them later.',
+  'Du kannst zu Beginn des ersten Kampfzugs unter den im Merkmal genannten Voraussetzungen einen zusätzlichen Zug erhalten.':
+    'You can take an additional turn at the start of the first combat round under the feature’s stated conditions.',
+  'Du kannst bestimmte Gegenstands- und Fertigkeitsaktionen als Bonusaktion ausführen.':
+    'You can take certain object and skill actions as a Bonus Action.',
+  'Wenn dich ein sichtbarer Angreifer trifft, kannst du deine Reaktion einsetzen, um den Angriffsschaden zu halbieren.':
+    'When a visible attacker hits you, you can use your Reaction to halve the attack damage.',
+  'Du nutzt deine Schnelligkeit, um als Bonusaktion zu sprinten, dich zurückzuziehen oder dich zu verstecken.':
+    'You use your agility to Dash, Disengage, or Hide as a Bonus Action.',
+  'Du gibst deine Bewegung für diesen Zug auf, um bei deinem nächsten Angriff im selben Zug Vorteil zu erhalten.':
+    'You forgo your movement this turn to gain Advantage on your next attack roll this turn.',
+  'Du manifestierst drakonische Flügel und erhältst eine Flugbewegungsrate.':
+    'You manifest draconic wings and gain a Fly Speed.',
+  'Wenn du eine Kreatur triffst, kannst du sie einmal pro Zug durch die Unteren Ebenen schleudern und ihr zusätzlichen Schaden zufügen.':
+    'When you hit a creature, you can send it through the Lower Planes once per turn and deal extra damage.',
+  'Du kannst einen Magierzauber verstärken, um maximalen Schaden zu verursachen; die Anwendung birgt das im Merkmal beschriebene Risiko.':
+    'You can empower a Wizard spell to deal maximum damage, with the risk described by the feature.',
+})
