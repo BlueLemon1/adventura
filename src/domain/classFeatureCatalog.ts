@@ -1,7 +1,4 @@
-import type {
-  ContentLocale,
-  ContentProvenance,
-} from './contentSources'
+import type { ContentLocale, ContentProvenance } from './contentSources'
 import type { Dnd5eRuleset } from './rules'
 
 /**
@@ -24,11 +21,14 @@ export interface ClassFeatureRecord {
   grantedSpellIds?: string[]
 }
 
-/** A locale-aware text result that preserves missing translations as missing. */
+/** Text is resolved independently so a missing German field can use English. */
 export interface ResolvedClassFeatureText {
   name?: string
   description?: string
   locale: ContentLocale
+  nameIsFallback: boolean
+  descriptionIsFallback: boolean
+  usedFallback: boolean
   isComplete: boolean
 }
 
@@ -36,13 +36,22 @@ export function resolveClassFeatureText(
   feature: ClassFeatureRecord,
   locale: ContentLocale,
 ): ResolvedClassFeatureText {
-  const name = feature.names[locale]
-  const description = feature.descriptions[locale]
+  const localizedName = feature.names[locale]
+  const localizedDescription = feature.descriptions[locale]
+  const nameIsFallback = !localizedName && locale !== 'en' && Boolean(feature.names.en)
+  const descriptionIsFallback =
+    !localizedDescription && locale !== 'en' && Boolean(feature.descriptions.en)
+  const name = localizedName ?? (nameIsFallback ? feature.names.en : undefined)
+  const description =
+    localizedDescription ?? (descriptionIsFallback ? feature.descriptions.en : undefined)
 
   return {
     name,
     description,
     locale,
+    nameIsFallback,
+    descriptionIsFallback,
+    usedFallback: nameIsFallback || descriptionIsFallback,
     isComplete: Boolean(name && description),
   }
 }
