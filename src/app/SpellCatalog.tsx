@@ -267,15 +267,15 @@ export function SpellCatalog({
   const catalog = CATALOGS[character.ruleset].map((spell) => {
     if (language !== 'de') return spell
     const localized = spell.localized
-    const usedEnglishFallback = [
-      localized?.name,
-      localized?.school,
-      localized?.castingTime,
-      localized?.range,
-      localized?.components,
-      localized?.duration,
-      localized?.description,
-    ].some((value) => !value)
+    const usedEnglishFallback =
+      Boolean(spell.name && !localized?.name) ||
+      Boolean(spell.school && !localized?.school) ||
+      Boolean(spell.castingTime && !localized?.castingTime) ||
+      Boolean(spell.range && !localized?.range) ||
+      Boolean(spell.components && !localized?.components) ||
+      Boolean(spell.duration && !localized?.duration) ||
+      Boolean(spell.description && !localized?.description) ||
+      Boolean(spell.higherLevel && !localized?.higherLevel)
 
     return {
       ...spell,
