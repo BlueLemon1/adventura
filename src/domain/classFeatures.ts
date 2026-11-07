@@ -1344,7 +1344,6 @@ const SUBCLASS_FEATURES_2024: Record<string, Array<[number, string, string]>> = 
       'Wenn du andere mit einem Heilzauber heilst, erhältst du selbst zusätzliche Trefferpunkte zurück.',
     ],
     [8, 'Divine Strike', 'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.'],
-    [8, 'Divine Strike', 'Deine Waffenangriffe verursachen zusätzlichen gleißenden Schaden.'],
     [
       17,
       'Supreme Healing',
