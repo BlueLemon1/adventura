@@ -36,3 +36,7 @@ German SRD 5.1 spell descriptions are being added only from the official German 
 This work includes material from the System Reference Document 5.2.1 (“SRD 5.2.1”) by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2.1 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 Changes: Adventura uses the official German SRD fields, normalizes their structured data, and derives damage-dice and average-damage summaries. These additions are modifications of the source material.
+
+## SRD 5.2.1 English class and subclass features
+
+The English class and subclass feature text is sourced from the SRD 5.2.1 class section published by Wizards of the Coast LLC under CC BY 4.0. The source snapshot is a Markdown extraction from the public repository `downfallx/dnd-5e-srd-markdown`, file `classes.md` (upstream commit `c8c4a583afa446f38b5dc43548025bd4b37ce2da`): https://github.com/downfallx/dnd-5e-srd-markdown/blob/c8c4a583afa446f38b5dc43548025bd4b37ce2da/classes.md. The source repository identifies its content as the official SRD 5.2.1 and links the official document at https://www.dndbeyond.com/srd. Adventura retains this snapshot as an import source and normalizes the class/subclass feature headings, levels, and text. The snapshot is English only; the app uses the explicit English fallback label when a German field is unavailable.
