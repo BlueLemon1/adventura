@@ -160,6 +160,7 @@ const ACTIVE_FEATURES: Record<
     activation: 'special',
     description:
       'Nach einer kurzen Rast stellst du verbrauchte Zauberplätze bis zu deinem zulässigen Gesamtgrad wieder her.',
+    resourceId: 'natural-recovery',
   },
   'Einschüchternde Präsenz': {
     activation: 'action',
@@ -231,6 +232,7 @@ function abilityModifier(score = 10) {
 export function getClassResources(character: Character): ClassResourceDefinition[] {
   const { classId, level, ruleset } = character
   const resources: ClassResourceDefinition[] = []
+  const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
   const add = (
     id: string,
     label: string,
@@ -279,6 +281,12 @@ export function getClassResources(character: Character): ClassResourceDefinition
       ruleset === '2024' ? (level >= 17 ? 4 : level >= 6 ? 3 : 2) : 2,
       ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
     )
+  if (classId === 'druid' && subclass === 'land' && level >= 2)
+    add('natural-recovery', 'Natürliche Erholung', 1, 'long')
+  if (classId === 'cleric' && level >= 10)
+    add('divine-intervention', 'Göttliches Eingreifen', 1, 'long')
+  if (classId === 'warlock' && subclass === 'fiend' && level >= 6)
+    add('dark-ones-own-luck', 'Dunkler eigener Glücksfall', 1, 'short-or-long')
   if (classId === 'fighter' && level >= 1)
     add(
       'second-wind',
