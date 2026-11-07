@@ -2512,7 +2512,8 @@ export function getSpellbookFeatureSpells(
 ): AutomaticClassFeature[] {
   return getAutomaticClassFeatures(character, locale).flatMap((feature) => {
     if (!feature.unlocked) return []
-    const spellIds = feature.spellbookSpellIds ?? (feature.spellbookSpellId ? [feature.spellbookSpellId] : [])
+    const spellIds =
+      feature.spellbookSpellIds ?? (feature.spellbookSpellId ? [feature.spellbookSpellId] : [])
     return spellIds.map((spellbookSpellId) => ({
       ...feature,
       id: `${feature.id}-${spellbookSpellId}`,
