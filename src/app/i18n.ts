@@ -3,6 +3,14 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'Pfad des Berserkers': 'Path of the Berserker',
+  'Krieger der offenen Hand': 'Warrior of the Open Hand',
+  'Drakonische Magie': 'Draconic Sorcery',
+  Unholdpatron: 'Fiend Patron',
+  Hervorrufungsgelehrter: 'Evoker',
+  'Angeborene Magie': 'Innate Sorcery',
+  'Göttlicher Sinn': 'Divine Sense',
+
   'Eine Nutzung bei kurzer Rast, alle bei langer Rast':
     'One use on a short rest, all uses on a long rest',
   'Die Klassenmerkmale für SRD 5.2.1 werden separat aufgebaut. Es werden keine Merkmale aus 2014 angezeigt oder übernommen.':

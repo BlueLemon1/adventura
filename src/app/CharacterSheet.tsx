@@ -2,7 +2,7 @@ import { ChevronRight, Compass, Heart, Save, Shield } from 'lucide-react'
 import type { Ability, Character, ProficiencyLevel, SkillId } from '../domain/character'
 import { ABILITIES, SKILLS } from '../domain/character'
 import { RULESET_LABELS } from '../domain/rules'
-import { CLASS_OPTIONS, getClassLabel, SUBCLASS_OPTIONS } from '../domain/classes'
+import { CLASS_OPTIONS, getClassLabel, getSubclassOptions } from '../domain/classes'
 import {
   Select,
   SelectContent,
@@ -69,6 +69,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
   const t = (value: string) => translate(language, value)
   const currentAbilities = character.abilities ?? DEFAULT_ABILITIES
   const prof = getProficiencyBonus(character.level)
+  const subclassOptions = getSubclassOptions(character.classId, character.ruleset)
 
   return (
     <>
@@ -267,7 +268,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
             value={character.background ?? ''}
             onChange={(value) => onUpdate({ background: value })}
           />
-          {SUBCLASS_OPTIONS[character.classId] ? (
+          {subclassOptions.length > 0 ? (
             <label className="field-label">
               {t('Unterklasse')}
               <Select
@@ -279,7 +280,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="none">{t('Keine')}</SelectItem>
-                  {SUBCLASS_OPTIONS[character.classId].map((option) => (
+                  {subclassOptions.map((option) => (
                     <SelectItem key={option.value} value={option.value}>
                       {t(option.label)}
                     </SelectItem>
