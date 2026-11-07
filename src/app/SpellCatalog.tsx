@@ -33,6 +33,8 @@ interface CatalogSpell {
   classes: string[]
   description: string
   higherLevel?: string
+  localized?: { name: string; school: string; classes: string[]; castingTime: string; range: string; components: string; duration: string; description?: string; higherLevel?: string }
+  damage?: Array<{ dice: string; average: number; type?: string }>
 }
 
 type SpellSource = NonNullable<KnownSpell['source']>
@@ -124,7 +126,7 @@ function matchesSpell(
 ): boolean {
   const matchesSearch =
     !options.search ||
-    normalizeKey(`${spell.name} ${spell.school} ${spell.description}`).includes(options.search)
+    normalizeKey(`${spell.name} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`).includes(options.search)
   const matchesLevel = options.levelFilter === 'all' || spell.level === Number(options.levelFilter)
   const matchesClass =
     !options.eligibleOnly ||
@@ -248,7 +250,13 @@ export function SpellCatalog({
   const [usageLimit, setUsageLimit] = useState(0)
   const [usageReset, setUsageReset] = useState<UsageReset>('longRest')
 
-  const catalog = CATALOGS[character.ruleset]
+  const catalog = CATALOGS[character.ruleset].map((spell) => {
+    if (language !== 'de' || !spell.localized) return spell
+    return { ...spell, name: spell.localized.name, school: spell.localized.school, classes: spell.localized.classes,
+      castingTime: spell.localized.castingTime, range: spell.localized.range, components: spell.localized.components,
+      duration: spell.localized.duration, description: spell.localized.description ?? spell.description,
+      higherLevel: spell.localized.higherLevel ?? spell.higherLevel }
+  })
   const spellcasting = getSpellcastingProgression(character)
   const maxSpellLevel =
     spellcasting?.kind === 'warlock'
@@ -295,6 +303,7 @@ export function SpellCatalog({
       ritual: spell.ritual,
       description: spell.description,
       higherLevel: spell.higherLevel,
+      damage: spell.damage,
       source,
       sourceName: sourceName.trim() || undefined,
       ...(usageLimit > 0 ? { usageLimit, usageRemaining: usageLimit, usageReset } : {}),
@@ -374,8 +383,13 @@ export function SpellCatalog({
 
       <div className="catalog-count">
         {results.length} {t('Treffer')} ·{' '}
-        {character.ruleset === '2014' ? 'SRD 5.1' : 'SRD 5.2 (2024)'} ·{' '}
+        {character.ruleset === '2014' ? 'SRD 5.1' : 'SRD 5.2.1 (2024)'} ·{' '}
         {eligibleOnly ? t('Klassen-/Gradfilter aktiv') : t('vollständiger Katalog')}
+      </div>
+      <div className="spellcasting-explainer">
+        <strong>{t('Zauberwirker-Typ')}: </strong>
+        {spellcasting ? t(({ full: 'Vollzauberwirker', half: 'Halbzauberwirker', third: 'Drittelzauberwirker', warlock: 'Paktmagie (Hexenmeister)' } as Record<string, string>)[spellcasting.kind]) : t('Keine automatische Zauberprogression')}
+        <p>{t(({ full: 'Vollzauberwirker verwenden ihre gesamte Klassenstufe für Zauberplätze: Barde, Kleriker, Druide, Zauberer und Magier.', half: 'Halbzauberwirker erhalten Zauberplätze auf Basis der halben Klassenstufe, aufgerundet: Paladin und Waldläufer.', third: 'Drittelzauberwirker erhalten ab Unterklassenstufe 3 Zauberplätze auf Basis eines Drittels ihrer Klassenstufe, abgerundet: Arkaner Ritter und Arkaner Gauner.', warlock: 'Hexenmeister verwenden eigene Paktmagie-Zauberplätze statt der normalen Klassen-Tabelle.' } as Record<string, string>)[spellcasting?.kind ?? ''] ?? 'Für diese Klasse sind keine automatischen Zauberplätze hinterlegt.')}</p>
       </div>
 
       <div className="catalog-results">

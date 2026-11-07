@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { X } from 'lucide-react'
 import type { Dnd5eRuleset } from '../domain/rules'
+import { CLASS_OPTIONS } from '../domain/classes'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
 import {
@@ -29,7 +30,7 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const [name, setName] = useState('')
-  const [classId, setClassId] = useState('')
+  const [classId, setClassId] = useState('fighter')
   const [ruleset, setRuleset] = useState<Dnd5eRuleset>('2024')
   const [level, setLevel] = useState(1)
 
@@ -71,7 +72,15 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
 
         <form onSubmit={submit}>
           <TextInputField label="Charaktername" value={name} onChange={setName} required />
-          <TextInputField label="Klasse" value={classId} onChange={setClassId} required />
+          <label className="field-label">
+            {t('Klasse')}
+            <Select value={classId} onValueChange={setClassId}>
+              <SelectTrigger><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {CLASS_OPTIONS.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+              </SelectContent>
+            </Select>
+          </label>
 
           <div className="form-row">
             <label className="field-label">

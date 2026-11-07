@@ -19,3 +19,7 @@ Structured data source: 5e-bits/5e-database, `src/2024/en/5e-SRD-Spells.json`, h
 CC BY 4.0 permits sharing and adaptation, including commercial use, provided appropriate attribution is given, a link to the license is supplied, and changes are indicated. Adventura's spell catalogs are adapted and normalized from the sources above. No endorsement by Wizards of the Coast is implied.
 
 License text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+## German-language SRD 5.2.1 spell data
+
+German spell names, descriptions, components, ranges and other localized fields are sourced from the bilingual SRD 5.2.1 dataset in Lil-Dank/zauberkarten-werkstatt, file spells.js: https://github.com/Lil-Dank/zauberkarten-werkstatt. Its README identifies the German text as material from Wizards of the Coast LLC's German System Reference Document 5.2.1, published under CC BY 4.0: https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf. Adventura incorporates the German SRD fields and adds normalized spell metadata and derived damage summaries. The upstream dataset and its attribution are retained here as provenance; this does not imply endorsement by Wizards of the Coast.

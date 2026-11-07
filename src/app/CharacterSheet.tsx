@@ -2,6 +2,7 @@ import { ChevronRight, Compass, Heart, Save, Shield } from 'lucide-react'
 import type { Ability, Character, ProficiencyLevel, SkillId } from '../domain/character'
 import { ABILITIES, SKILLS } from '../domain/character'
 import { RULESET_LABELS } from '../domain/rules'
+import { CLASS_OPTIONS, getClassLabel, SPELLCASTING_SUBCLASSES } from '../domain/classes'
 import {
   Select,
   SelectContent,
@@ -76,7 +77,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
         title={character.name}
         description={
           <>
-            {character.classId} · Stufe {character.level} · Übungsbonus +{prof}
+            {t(getClassLabel(character.classId))} · Stufe {character.level} · Übungsbonus +{prof}
           </>
         }
         trailing={
@@ -238,6 +239,15 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
       <section className="panel">
         <PanelHeader title={t('Weitere Angaben')} />
         <div className="form-grid">
+          <label className="field-label">
+            {t('Klasse')}
+            <Select value={character.classId} onValueChange={(value) => onUpdate({ classId: value, subclassId: '' })}>
+              <SelectTrigger><SelectValue /></SelectTrigger>
+              <SelectContent>
+                {CLASS_OPTIONS.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+              </SelectContent>
+            </Select>
+          </label>
           <TextInputField
             label="Spezies"
             value={character.speciesId ?? ''}
@@ -248,11 +258,18 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
             value={character.background ?? ''}
             onChange={(value) => onUpdate({ background: value })}
           />
-          <TextInputField
-            label="Unterklasse"
-            value={character.subclassId ?? ''}
-            onChange={(value) => onUpdate({ subclassId: value })}
-          />
+          {SPELLCASTING_SUBCLASSES[character.classId] ? (
+            <label className="field-label">
+              {t('Unterklasse')}
+              <Select value={character.subclassId || 'none'} onValueChange={(value) => onUpdate({ subclassId: value === 'none' ? '' : value })}>
+                <SelectTrigger><SelectValue /></SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="none">{t('Keine')}</SelectItem>
+                  {SPELLCASTING_SUBCLASSES[character.classId].map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+                </SelectContent>
+              </Select>
+            </label>
+          ) : <TextInputField label="Unterklasse" value={character.subclassId ?? ''} onChange={(value) => onUpdate({ subclassId: value })} />}
           <TextInputField
             label="Gesinnung"
             value={character.alignment ?? ''}

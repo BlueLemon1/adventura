@@ -110,6 +110,8 @@ export interface CharacterInventory {
   currency?: { cp: number; sp: number; gp: number; ep: number; pp: number }
 }
 
+export interface SpellDamage { dice: string; average: number; type?: string }
+
 export interface KnownSpell {
   spellId: string
   learnedAtLevel: number
@@ -127,6 +129,7 @@ export interface KnownSpell {
   ritual?: boolean
   description?: string
   higherLevel?: string
+  damage?: SpellDamage[]
   source?: 'class' | 'story' | 'item' | 'feat' | 'other'
   sourceName?: string
   usageLimit?: number
