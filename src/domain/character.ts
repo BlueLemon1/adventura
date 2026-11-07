@@ -149,7 +149,7 @@ export interface KnownSpell {
   sourceName?: string
   usageLimit?: number
   usageRemaining?: number
-  usageReset?: 'shortRest' | 'longRest' | 'dawn' | 'none'
+  usageReset?: 'shortRest' | 'longRest' | 'dawn' | 'none' | 'shortOneOrLong' | 'shortOrLong'
 }
 
 export interface CharacterSpellbook {

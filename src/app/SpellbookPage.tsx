@@ -84,10 +84,11 @@ export function SpellbookPage({
                 ? 'longRest'
                 : resource.recovery === 'short'
                   ? 'shortRest'
-                  : resource.recovery === 'short-one-or-long' ||
-                      resource.recovery === 'short-or-long'
-                    ? 'shortRest'
-                    : 'none',
+                  : resource.recovery === 'short-one-or-long'
+                    ? 'shortOneOrLong'
+                    : resource.recovery === 'short-or-long'
+                      ? 'shortOrLong'
+                      : 'none',
           }
         : {}),
     }

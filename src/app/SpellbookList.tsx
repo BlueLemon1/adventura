@@ -32,6 +32,8 @@ const RESET_LABELS: Record<NonNullable<KnownSpell['usageReset']>, string> = {
   longRest: 'lange Rast',
   dawn: 'Morgengrauen',
   none: 'manuell',
+  shortOneOrLong: 'kurze Rast (+1) / lange Rast (alle)',
+  shortOrLong: 'kurze oder lange Rast',
 }
 
 const FILTER_LABELS: Record<SpellFilter, string> = {
