@@ -1,5 +1,6 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import {
+  Backpack,
   CircleDot,
   Coins,
   Crown,
@@ -152,7 +153,8 @@ function EquipmentLoadout({
   }
 
   return (
-    <div className="equipment-layout">
+    <>
+      <div className="equipment-layout">
       <div className="equipment-side equipment-side-left">
         {EQUIPMENT_SLOTS.slice(0, 6).map(renderSlot)}
       </div>
@@ -177,11 +179,12 @@ function EquipmentLoadout({
         {EQUIPMENT_SLOTS.slice(6).map(renderSlot)}
       </div>
     </div>
-    {inventoryItems.length === 0 && items.length === 0 && (
-      <p className="muted-paragraph equipment-empty">
-        {t('Füge zuerst Gegenstände zum persönlichen Inventar hinzu.')}
-      </p>
-    )}
+      {inventoryItems.length === 0 && items.length === 0 && (
+        <p className="muted-paragraph equipment-empty">
+          {t('Füge zuerst Gegenstände zum persönlichen Inventar hinzu.')}
+        </p>
+      )}
+    </>
   )
 }
 
