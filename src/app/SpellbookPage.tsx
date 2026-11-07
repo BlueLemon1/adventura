@@ -71,7 +71,7 @@ export function SpellbookPage({
   onUpdateSpells,
 }: SpellbookPageProps) {
   const t = (value: string) => translate(language, value)
-  const featureSpells = getSpellbookFeatureSpells(character)
+  const featureSpells = getSpellbookFeatureSpells(character, language)
   const classResources = getClassResources(character)
   const spellCatalog = (character.ruleset === '2014'
     ? spells2014
