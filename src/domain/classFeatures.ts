@@ -70,6 +70,10 @@ export function getClassResources(character: Character): ClassResourceDefinition
       ruleset === '2024' ? (level >= 10 ? 4 : level >= 4 ? 3 : 2) : 1,
       ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
     )
+  if (classId === 'fighter' && level >= 2) {
+    add('action-surge', 'Aktionsschub', level >= 17 ? 2 : 1, 'short-or-long')
+    add('indomitable', 'Unbeugsam', level >= 17 ? 3 : level >= 13 ? 2 : level >= 9 ? 1 : 0, 'long')
+  }
   if (classId === 'monk' && level >= 2)
     add(
       ruleset === '2024' ? 'focus-points' : 'ki-points',
