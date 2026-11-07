@@ -1070,14 +1070,24 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     )
   }
   return result.map((feature) => {
-    const active = feature.name === 'Raserei' && character.ruleset === '2024' ? undefined : ACTIVE_FEATURES[feature.name]
+    const active =
+      feature.name === 'Raserei' && character.ruleset === '2024'
+        ? undefined
+        : ACTIVE_FEATURES[feature.name]
     let resourceId = active?.resourceId
     if (feature.name === 'Kanal göttlicher Energie' && character.classId === 'paladin') {
       resourceId =
         character.ruleset === '2024' ? 'channel-divinity-paladin' : 'paladin-channel-divinity'
     }
-    if (feature.name === 'Handauflegen') return { ...feature, ...active, activation: character.ruleset === '2014' ? 'action' : 'bonusAction', resourceId }
-    if (feature.name === 'Ganzheit des Körpers' && character.ruleset === '2024') return { ...feature, ...active, activation: 'bonusAction', resourceId: 'focus-points' }
+    if (feature.name === 'Handauflegen')
+      return {
+        ...feature,
+        ...active,
+        activation: character.ruleset === '2014' ? 'action' : 'bonusAction',
+        resourceId,
+      }
+    if (feature.name === 'Ganzheit des Körpers' && character.ruleset === '2024')
+      return { ...feature, ...active, activation: 'bonusAction', resourceId: 'focus-points' }
     return active ? { ...feature, ...active, resourceId } : feature
   })
 }

@@ -144,7 +144,9 @@ function SpellCard({
         </div>
         <div className="spellbook-card-actions">
           <span className={`spell-source source-${source}`}>
-            {translateText(isFeature ? (spell.sourceName ?? 'Klassenmerkmal') : SOURCE_LABELS[source])}
+            {translateText(
+              isFeature ? (spell.sourceName ?? 'Klassenmerkmal') : SOURCE_LABELS[source],
+            )}
           </span>
           {!isFeature && spell.alwaysPrepared && (
             <span className="always-prepared">
