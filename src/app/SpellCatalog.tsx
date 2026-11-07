@@ -265,7 +265,7 @@ export function SpellCatalog({
   const [usageReset, setUsageReset] = useState<UsageReset>('longRest')
 
   const catalog = CATALOGS[character.ruleset].map((spell) => {
-    if (language !== 'de' || !spell.localized) return spell
+    if (language !== 'de') return spell
     const localized = spell.localized
     const usedEnglishFallback = [
       localized?.name,
