@@ -33,7 +33,17 @@ interface CatalogSpell {
   classes: string[]
   description: string
   higherLevel?: string
-  localized?: { name: string; school: string; classes: string[]; castingTime: string; range: string; components: string; duration: string; description?: string; higherLevel?: string }
+  localized?: {
+    name: string
+    school: string
+    classes: string[]
+    castingTime: string
+    range: string
+    components: string
+    duration: string
+    description?: string
+    higherLevel?: string
+  }
   damage?: Array<{ dice: string; average: number; type?: string }>
 }
 
@@ -126,7 +136,9 @@ function matchesSpell(
 ): boolean {
   const matchesSearch =
     !options.search ||
-    normalizeKey(`${spell.name} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`).includes(options.search)
+    normalizeKey(
+      `${spell.name} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`,
+    ).includes(options.search)
   const matchesLevel = options.levelFilter === 'all' || spell.level === Number(options.levelFilter)
   const matchesClass =
     !options.eligibleOnly ||
@@ -252,10 +264,18 @@ export function SpellCatalog({
 
   const catalog = CATALOGS[character.ruleset].map((spell) => {
     if (language !== 'de' || !spell.localized) return spell
-    return { ...spell, name: spell.localized.name, school: spell.localized.school, classes: spell.localized.classes,
-      castingTime: spell.localized.castingTime, range: spell.localized.range, components: spell.localized.components,
-      duration: spell.localized.duration, description: spell.localized.description ?? spell.description,
-      higherLevel: spell.localized.higherLevel ?? spell.higherLevel }
+    return {
+      ...spell,
+      name: spell.localized.name,
+      school: spell.localized.school,
+      classes: spell.localized.classes,
+      castingTime: spell.localized.castingTime,
+      range: spell.localized.range,
+      components: spell.localized.components,
+      duration: spell.localized.duration,
+      description: spell.localized.description ?? spell.description,
+      higherLevel: spell.localized.higherLevel ?? spell.higherLevel,
+    }
   })
   const spellcasting = getSpellcastingProgression(character)
   const maxSpellLevel =
@@ -388,8 +408,33 @@ export function SpellCatalog({
       </div>
       <div className="spellcasting-explainer">
         <strong>{t('Zauberwirker-Typ')}: </strong>
-        {spellcasting ? t(({ full: 'Vollzauberwirker', half: 'Halbzauberwirker', third: 'Drittelzauberwirker', warlock: 'Paktmagie (Hexenmeister)' } as Record<string, string>)[spellcasting.kind]) : t('Keine automatische Zauberprogression')}
-        <p>{t(({ full: 'Vollzauberwirker verwenden ihre gesamte Klassenstufe für Zauberplätze: Barde, Kleriker, Druide, Zauberer und Magier.', half: 'Halbzauberwirker erhalten Zauberplätze auf Basis der halben Klassenstufe, aufgerundet: Paladin und Waldläufer.', third: 'Drittelzauberwirker erhalten ab Unterklassenstufe 3 Zauberplätze auf Basis eines Drittels ihrer Klassenstufe, abgerundet: Arkaner Ritter und Arkaner Gauner.', warlock: 'Hexenmeister verwenden eigene Paktmagie-Zauberplätze statt der normalen Klassen-Tabelle.' } as Record<string, string>)[spellcasting?.kind ?? ''] ?? 'Für diese Klasse sind keine automatischen Zauberplätze hinterlegt.')}</p>
+        {spellcasting
+          ? t(
+              (
+                {
+                  full: 'Vollzauberwirker',
+                  half: 'Halbzauberwirker',
+                  third: 'Drittelzauberwirker',
+                  warlock: 'Paktmagie (Hexenmeister)',
+                } as Record<string, string>
+              )[spellcasting.kind],
+            )
+          : t('Keine automatische Zauberprogression')}
+        <p>
+          {t(
+            (
+              {
+                full: 'Vollzauberwirker verwenden ihre gesamte Klassenstufe für Zauberplätze: Barde, Kleriker, Druide, Zauberer und Magier.',
+                half: 'Halbzauberwirker erhalten Zauberplätze auf Basis der halben Klassenstufe, aufgerundet: Paladin und Waldläufer.',
+                third:
+                  'Drittelzauberwirker erhalten ab Unterklassenstufe 3 Zauberplätze auf Basis eines Drittels ihrer Klassenstufe, abgerundet: Arkaner Ritter und Arkaner Gauner.',
+                warlock:
+                  'Hexenmeister verwenden eigene Paktmagie-Zauberplätze statt der normalen Klassen-Tabelle.',
+              } as Record<string, string>
+            )[spellcasting?.kind ?? ''] ??
+              'Für diese Klasse sind keine automatischen Zauberplätze hinterlegt.',
+          )}
+        </p>
       </div>
 
       <div className="catalog-results">

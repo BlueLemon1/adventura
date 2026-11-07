@@ -241,10 +241,19 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
         <div className="form-grid">
           <label className="field-label">
             {t('Klasse')}
-            <Select value={character.classId} onValueChange={(value) => onUpdate({ classId: value, subclassId: '' })}>
-              <SelectTrigger><SelectValue /></SelectTrigger>
+            <Select
+              value={character.classId}
+              onValueChange={(value) => onUpdate({ classId: value, subclassId: '' })}
+            >
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
               <SelectContent>
-                {CLASS_OPTIONS.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+                {CLASS_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {t(option.label)}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </label>
@@ -261,15 +270,30 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
           {SPELLCASTING_SUBCLASSES[character.classId] ? (
             <label className="field-label">
               {t('Unterklasse')}
-              <Select value={character.subclassId || 'none'} onValueChange={(value) => onUpdate({ subclassId: value === 'none' ? '' : value })}>
-                <SelectTrigger><SelectValue /></SelectTrigger>
+              <Select
+                value={character.subclassId || 'none'}
+                onValueChange={(value) => onUpdate({ subclassId: value === 'none' ? '' : value })}
+              >
+                <SelectTrigger>
+                  <SelectValue />
+                </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="none">{t('Keine')}</SelectItem>
-                  {SPELLCASTING_SUBCLASSES[character.classId].map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+                  {SPELLCASTING_SUBCLASSES[character.classId].map((option) => (
+                    <SelectItem key={option.value} value={option.value}>
+                      {t(option.label)}
+                    </SelectItem>
+                  ))}
                 </SelectContent>
               </Select>
             </label>
-          ) : <TextInputField label="Unterklasse" value={character.subclassId ?? ''} onChange={(value) => onUpdate({ subclassId: value })} />}
+          ) : (
+            <TextInputField
+              label="Unterklasse"
+              value={character.subclassId ?? ''}
+              onChange={(value) => onUpdate({ subclassId: value })}
+            />
+          )}
           <TextInputField
             label="Gesinnung"
             value={character.alignment ?? ''}

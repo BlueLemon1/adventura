@@ -75,9 +75,15 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
           <label className="field-label">
             {t('Klasse')}
             <Select value={classId} onValueChange={setClassId}>
-              <SelectTrigger><SelectValue /></SelectTrigger>
+              <SelectTrigger>
+                <SelectValue />
+              </SelectTrigger>
               <SelectContent>
-                {CLASS_OPTIONS.map((option) => <SelectItem key={option.value} value={option.value}>{t(option.label)}</SelectItem>)}
+                {CLASS_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {t(option.label)}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </label>

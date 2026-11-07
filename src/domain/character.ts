@@ -110,7 +110,11 @@ export interface CharacterInventory {
   currency?: { cp: number; sp: number; gp: number; ep: number; pp: number }
 }
 
-export interface SpellDamage { dice: string; average: number; type?: string }
+export interface SpellDamage {
+  dice: string
+  average: number
+  type?: string
+}
 
 export interface KnownSpell {
   spellId: string

@@ -344,18 +344,37 @@ export const translate = (language: Language, value: string) =>
   language === 'de' ? value : (en[value] ?? value)
 
 Object.assign(en, {
-  Barbar: 'Barbarian', Barde: 'Bard', Kleriker: 'Cleric', Druide: 'Druid',
-  Kämpfer: 'Fighter', Mönch: 'Monk', Paladin: 'Paladin', Waldläufer: 'Ranger',
-  Schurke: 'Rogue', Zauberer: 'Sorcerer', Hexenmeister: 'Warlock', Magier: 'Wizard',
-  'Andere / eigene Klasse': 'Other / custom class', 'Arkaner Ritter': 'Eldritch Knight',
-  'Arkaner Gauner': 'Arcane Trickster', Keine: 'None', Schaden: 'damage',
-  'Zauberwirker-Typ': 'Spellcasting type', Vollzauberwirker: 'Full caster',
-  Halbzauberwirker: 'Half caster', Drittelzauberwirker: 'Third caster',
+  Barbar: 'Barbarian',
+  Barde: 'Bard',
+  Kleriker: 'Cleric',
+  Druide: 'Druid',
+  Kämpfer: 'Fighter',
+  Mönch: 'Monk',
+  Paladin: 'Paladin',
+  Waldläufer: 'Ranger',
+  Schurke: 'Rogue',
+  Zauberer: 'Sorcerer',
+  Hexenmeister: 'Warlock',
+  Magier: 'Wizard',
+  'Andere / eigene Klasse': 'Other / custom class',
+  'Arkaner Ritter': 'Eldritch Knight',
+  'Arkaner Gauner': 'Arcane Trickster',
+  Keine: 'None',
+  Schaden: 'damage',
+  'Zauberwirker-Typ': 'Spellcasting type',
+  Vollzauberwirker: 'Full caster',
+  Halbzauberwirker: 'Half caster',
+  Drittelzauberwirker: 'Third caster',
   'Paktmagie (Hexenmeister)': 'Pact Magic (Warlock)',
   'Keine automatische Zauberprogression': 'No automatic spell progression',
-  'Vollzauberwirker verwenden ihre gesamte Klassenstufe für Zauberplätze: Barde, Kleriker, Druide, Zauberer und Magier.': 'Full casters use their full class level for spell slots: bard, cleric, druid, sorcerer and wizard.',
-  'Halbzauberwirker erhalten Zauberplätze auf Basis der halben Klassenstufe, aufgerundet: Paladin und Waldläufer.': 'Half casters use half their class level, rounded up: paladin and ranger.',
-  'Drittelzauberwirker erhalten ab Unterklassenstufe 3 Zauberplätze auf Basis eines Drittels ihrer Klassenstufe, abgerundet: Arkaner Ritter und Arkaner Gauner.': 'Third casters gain spell slots at subclass level 3, using one third of their class level, rounded down: Eldritch Knight and Arcane Trickster.',
-  'Hexenmeister verwenden eigene Paktmagie-Zauberplätze statt der normalen Klassen-Tabelle.': 'Warlocks use their separate Pact Magic slots instead of the normal class table.',
-  'Für diese Klasse sind keine automatischen Zauberplätze hinterlegt.': 'No automatic spell slots are configured for this class.',
+  'Vollzauberwirker verwenden ihre gesamte Klassenstufe für Zauberplätze: Barde, Kleriker, Druide, Zauberer und Magier.':
+    'Full casters use their full class level for spell slots: bard, cleric, druid, sorcerer and wizard.',
+  'Halbzauberwirker erhalten Zauberplätze auf Basis der halben Klassenstufe, aufgerundet: Paladin und Waldläufer.':
+    'Half casters use half their class level, rounded up: paladin and ranger.',
+  'Drittelzauberwirker erhalten ab Unterklassenstufe 3 Zauberplätze auf Basis eines Drittels ihrer Klassenstufe, abgerundet: Arkaner Ritter und Arkaner Gauner.':
+    'Third casters gain spell slots at subclass level 3, using one third of their class level, rounded down: Eldritch Knight and Arcane Trickster.',
+  'Hexenmeister verwenden eigene Paktmagie-Zauberplätze statt der normalen Klassen-Tabelle.':
+    'Warlocks use their separate Pact Magic slots instead of the normal class table.',
+  'Für diese Klasse sind keine automatischen Zauberplätze hinterlegt.':
+    'No automatic spell slots are configured for this class.',
 })
