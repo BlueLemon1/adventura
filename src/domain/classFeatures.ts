@@ -2453,7 +2453,7 @@ export function getAutomaticClassFeatures(
   if (character.ruleset !== '2024') return getLegacyAutomaticClassFeatures(character)
 
   const selectedSubclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
-  const catalog = classFeatures2024 as ClassFeatureRecord[]
+  const catalog = classFeatures2024 as unknown as ClassFeatureRecord[]
   const legacyMetadata = getLegacyAutomaticClassFeatures(character)
 
   return catalog
