@@ -44,7 +44,7 @@ The System Reference Documents (SRDs) are the source of truth for all official r
 - Every ruleset is an independent dataset. SRD 5.1 (2014) and SRD 5.2.1 (2024) must never be merged implicitly.
 - Every content record has a stable English canonical ID and source provenance.
 - Localized names are aliases of the same canonical record, not separate spells or features.
-- English and German names and descriptions are imported from their respective SRD language editions. A missing translation stays explicitly unavailable; it must never silently fall back to a hand-written translation or to another ruleset.
+- English and German names and descriptions are imported from their respective SRD language editions. If a localized field is missing, the English source field is used as a fallback and the UI must mark it clearly (for example, `EN – englischer Ersatztext`). The fallback is presentation-only: it must not be stored or attributed as an official translation.
 - Display labels may be localized as application UI. Rules text and game data may not be authored in the UI translation dictionary.
 
 ### Data ingestion
