@@ -1,6 +1,6 @@
 import { useRef, useState, type ChangeEvent, type FormEvent } from 'react'
 import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, ChevronRight } from 'lucide-react'
-import type { Character, InventoryItem, KnownSpell } from '../domain/character'
+import type { Character, KnownSpell } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { RULESET_LABELS } from '../domain/rules'
@@ -13,14 +13,15 @@ import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/da
 import { downloadBackup, importBackup } from '../storage/backup'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
 import { IconButton } from '../components/ui/button'
+import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import { useAppPreferences } from './useAppPreferences'
 import { useCharacterCollection } from './useCharacterCollection'
 import { PanelHeader } from '../components/ui/panel-header'
 import { CharacterSheet } from './CharacterSheet'
+import { InventoryPage } from './InventoryPage'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
 const abilityDefaults = {str:10,dex:10,con:10,int:10,wis:10,cha:10}
-const currencyDefaults = {cp:0,sp:0,gp:0,ep:0,pp:0}
 const navItems = [{id:'overview' as const,label:'Übersicht',icon:Compass},{id:'sheet' as const,label:'Charakterbogen',icon:Shield},{id:'inventory' as const,label:'Inventar',icon:Boxes},{id:'spells' as const,label:'Zauberbuch',icon:BookOpen},{id:'levelup' as const,label:'Level-up',icon:WandSparkles}]
 const newId = () => crypto.randomUUID()
 
@@ -50,12 +51,6 @@ export default function App() {
   const [ruleset,setRuleset]=useState<Dnd5eRuleset>('2024')
   const [level,setLevel]=useState(1)
   const [busy,setBusy]=useState(false)
-  const [itemName,setItemName]=useState('')
-  const [itemQuantity,setItemQuantity]=useState(1)
-  const [itemValue,setItemValue]=useState(0)
-  const [itemWeight,setItemWeight]=useState('')
-  const [itemDescription,setItemDescription]=useState('')
-  const [itemGroup,setItemGroup]=useState<'personal'|'party'>('personal')
   const [spellName,setSpellName]=useState('')
   const [spellLevel,setSpellLevel]=useState(0)
   const [spellSchool,setSpellSchool]=useState('')
@@ -94,12 +89,6 @@ export default function App() {
     try{const imported=await importBackup(await file.text());setCharacters(imported);setPartyItems(await getPartyInventory());setSelectedId(null);setPage('overview')}
     catch(reason){setError(reason instanceof Error?reason.message:'Backup konnte nicht importiert werden.')}finally{setBusy(false)}
   }
-  function addItem(event:FormEvent<HTMLFormElement>){
-    event.preventDefault();if(!selected||!itemName.trim())return
-    const item:InventoryItem={id:newId(),name:itemName.trim(),quantity:itemQuantity,unitValueGp:itemValue,...(itemWeight?{weightLb:Number(itemWeight)}:{}),...(itemDescription?{description:itemDescription}:{})}
-    if(itemGroup==='party'){persistPartyItems([...partyItems,item])}else{updateInventory({personal:[...selected.inventory.personal,item]})}
-    setItemName('');setItemQuantity(1);setItemValue(0);setItemWeight('');setItemDescription('')
-  }
   function addSpell(event:FormEvent<HTMLFormElement>){
     event.preventDefault();if(!selected||!spellName.trim())return
     const spell:KnownSpell={spellId:newId(),name:spellName.trim(),learnedAtLevel:selected.character.level,prepared:false,spellLevel,school:spellSchool,castingTime:spellTime,range:spellRange,components:spellComponents,duration:spellDuration,concentration:spellConcentration,ritual:spellRitual,description:spellDescription,source:spellSource,sourceName:spellSourceName.trim()||undefined,...(spellUsageLimit>0?{usageLimit:spellUsageLimit,usageRemaining:spellUsageLimit,usageReset:spellUsageReset}:{})}
@@ -108,8 +97,6 @@ export default function App() {
   }
   const totalItems=characters.reduce((sum,entry)=>sum+entry.inventory.personal.length,0)+partyItems.length
   const totalSpells=characters.reduce((sum,entry)=>sum+entry.spellbook.knownSpells.length,0)
-  const currentAbilities=selected?.character.abilities??abilityDefaults
-  const prof=selected?proficiencyBonus(selected.character.level):2
   function changeLevel(nextLevel:number) {
     if(!selected)return
     const nextCharacter={...selected.character,level:nextLevel}
@@ -137,11 +124,7 @@ export default function App() {
           {loading?<section className="empty-state"><p>{t('Charaktere werden geladen …')}</p></section>:characters.length?<section className="character-grid">{characters.map(entry=><article className="character-card" key={entry.character.id}><div className="character-card-top"><div className="character-emblem"><Shield size={22}/></div><IconButton className="delete-button" onClick={()=>void removeCharacter(entry)} label="Charakter löschen"><Trash2 size={15}/></IconButton></div><h3>{entry.character.name}</h3><p>{entry.character.classId} · Level {entry.character.level}</p><span className="ruleset-pill">{RULESET_LABELS[entry.character.ruleset]}</span><button className="open-character" onClick={()=>{setSelectedId(entry.character.id);setPage('sheet')}}>{t('Charakter öffnen')} <ChevronRight size={14}/></button></article>)}</section>:<section className="empty-state"><div className="empty-art"><div className="art-ring"/><ScrollText size={42}/><Sparkles className="art-sparkle" size={17}/></div><h3>{t('Dein Charakter wartet auf seinen ersten Auftritt.')}</h3><p>{t('Erstelle deinen D&D-Charakter und verwalte Werte, Ausrüstung und Zauber an einem Ort.')}</p><button className="secondary-button" onClick={()=>setShowCreate(true)}><Shield size={16}/> {t('Ersten Charakter erstellen')}</button></section>}</>}
         {page!=='overview'&&!selected&&<section className="empty-state"><h3>{t('Wähle zuerst einen Charakter aus.')}</h3><button className="secondary-button" onClick={()=>setPage('overview')}>{t('Zur Übersicht')}</button></section>}
         {page==='sheet'&&selected&&<CharacterSheet character={selected.character} onUpdate={updateCharacter}/>}
-        {page==='inventory'&&selected&&<><section className="page-intro"><div><span className="eyebrow">{t('AUSRÜSTUNG')}</span><h1>{t('Inventar')}</h1><p className="intro">{t('Persönliche Gegenstände und gemeinsamer Gruppenbesitz.')}</p></div></section>
-          <section className="panel currency-panel"><PanelHeader title={t('Währungen')} meta="GELDBEUTEL" /><div className="currency-grid">{(['cp','sp','ep','gp','pp'] as const).map(coin=><label key={coin}><span>{coin.toUpperCase()}</span><input type="number" min="0" value={selected.inventory.currency?.[coin]??0} onChange={e=>updateInventory({currency:{...currencyDefaults,...selected.inventory.currency,[coin]:Math.max(0,Number(e.target.value)||0)}})}/></label>)}</div></section>
-          <section className="panel"><PanelHeader title={t('Gegenstand hinzufügen')} /><form onSubmit={addItem}><div className="form-grid item-form"><TextInputField label="Name" value={itemName} onChange={setItemName} required/><label className="field-label">Besitz<Select value={itemGroup} onValueChange={next=>setItemGroup(next as 'personal'|'party')}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent><SelectItem value="personal">Persönlich</SelectItem><SelectItem value="party">Gruppeninventar</SelectItem></SelectContent></Select></label><TextInputField label="Anzahl" type="number" value={String(itemQuantity)} onChange={v=>setItemQuantity(Math.max(1,Number(v)||1))}/><TextInputField label="Wert (GM)" type="number" value={String(itemValue)} onChange={v=>setItemValue(Math.max(0,Number(v)||0))}/><TextInputField label="Gewicht (Pfund)" type="number" value={itemWeight} onChange={setItemWeight}/><TextInputField label="Beschreibung" value={itemDescription} onChange={setItemDescription}/></div><button className="primary-button form-submit" type="submit"><Plus size={15}/> Gegenstand hinzufügen</button></form></section>
-          {(['personal','party'] as const).map(group=>{const items=group==='party'?partyItems:selected.inventory.personal;const updateItems=(next:InventoryItem[])=>{if(group==='party'){persistPartyItems(next)}else updateInventory({personal:next})};return <section className="panel" key={group}><PanelHeader title={group==='personal'?'Persönliches Inventar':'Gruppeninventar'} meta={`${items.length} GEGENSTÄNDE`} />{items.length===0?<p className="muted-paragraph">Noch keine Gegenstände vorhanden.</p>:<div className="inventory-list">{items.map(item=><div className="inventory-row" key={item.id}><div className="inventory-main"><strong>{item.name}</strong><small>{item.description||'Keine Beschreibung'}{item.weightLb!==undefined?' · '+item.weightLb+' Pfd.':''}</small></div><span>× {item.quantity}</span><span>{item.unitValueGp} GM</span><label className="equipped-toggle"><input type="checkbox" checked={item.equipped??false} onChange={e=>updateItems(items.map(entry=>entry.id===item.id?{...entry,equipped:e.target.checked}:entry))}/> Ausgerüstet</label><IconButton className="delete-button" label={item.name+' entfernen'} onClick={()=>updateItems(items.filter(entry=>entry.id!==item.id))}><Trash2 size={15}/></IconButton></div>)}</div>}</section>})}
-        </>}
+        {page==='inventory'&&selected&&<InventoryPage inventory={selected.inventory} partyItems={partyItems} onUpdateInventory={updateInventory} onSavePartyItems={persistPartyItems}/>}
         {page==='spells'&&selected&&<>
           <SpellSlotTracker character={selected.character} onUpdate={updateCharacter}/><section className="page-intro"><div><span className="eyebrow">{t('MAGIE & ZAUBER')}</span><h1>{t('Zauberbuch')}</h1><p className="intro">{t('Verwalte bekannte Zauber, Vorbereitung und ihre wichtigsten Details.')}</p></div></section>
           <SpellCatalog character={selected.character} knownSpells={selected.spellbook.knownSpells} language={language} onAdd={spell=>updateSpellbook([...selected.spellbook.knownSpells,spell])}/><section className="panel"><PanelHeader title={t('Eigene Zauber hinzufügen')} meta="MANUELLE ERFASSUNG" /><form onSubmit={addSpell}><div className="form-grid spell-form"><TextInputField label="Zaubername" value={spellName} onChange={setSpellName} required/><label className="field-label">Zaubergrad<Select value={String(spellLevel)} onValueChange={next=>setSpellLevel(Number(next))}><SelectTrigger><SelectValue /></SelectTrigger><SelectContent>{Array.from({length:10},(_,i)=><SelectItem key={i} value={String(i)}>{i===0?'Zaubertrick':'Grad '+i}</SelectItem>)}</SelectContent></Select></label><TextInputField label="Schule" value={spellSchool} onChange={setSpellSchool}/><TextInputField label="Zauberzeit" value={spellTime} onChange={setSpellTime}/><TextInputField label="Reichweite" value={spellRange} onChange={setSpellRange}/><TextInputField label="Komponenten (V/S/M)" value={spellComponents} onChange={setSpellComponents}/><TextInputField label="Wirkungsdauer" value={spellDuration} onChange={setSpellDuration}/></div><div className="form-grid spell-origin-form"><label className="field-label">Herkunft<Select value={spellSource??'other'} onValueChange={next=>setSpellSource(next as KnownSpell['source'])}><SelectTrigger><SelectValue/></SelectTrigger><SelectContent><SelectItem value="class">Klassenzauber</SelectItem><SelectItem value="story">Story / Belohnung</SelectItem><SelectItem value="item">Gegenstand</SelectItem><SelectItem value="feat">Talent / Fähigkeit</SelectItem><SelectItem value="other">Sonstiges</SelectItem></SelectContent></Select></label><TextInputField label="Quelle / Gegenstand / Notiz" value={spellSourceName} onChange={setSpellSourceName}/><TextInputField label="Nutzungen (0 = unbegrenzt)" type="number" value={String(spellUsageLimit)} onChange={value=>setSpellUsageLimit(Math.max(0,Math.min(1000,Number(value)||0)))}/>{spellUsageLimit>0&&<label className="field-label">Erneuerung<Select value={spellUsageReset} onValueChange={next=>setSpellUsageReset(next as NonNullable<KnownSpell['usageReset']>)}><SelectTrigger><SelectValue/></SelectTrigger><SelectContent><SelectItem value="shortRest">Kurze Rast</SelectItem><SelectItem value="longRest">Lange Rast</SelectItem><SelectItem value="dawn">Morgengrauen</SelectItem><SelectItem value="none">Manuell / nie</SelectItem></SelectContent></Select></label>}</div><div className="spell-flags"><label><input type="checkbox" checked={spellConcentration} onChange={e=>setSpellConcentration(e.target.checked)}/> Konzentration</label><label><input type="checkbox" checked={spellRitual} onChange={e=>setSpellRitual(e.target.checked)}/> Ritual</label></div><TextAreaField label="Beschreibung / Effekt" value={spellDescription} onChange={setSpellDescription}/><button className="primary-button form-submit" type="submit"><Plus size={15}/> Zauber hinzufügen</button></form></section>
