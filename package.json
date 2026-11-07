@@ -10,7 +10,8 @@
     "typecheck": "tsc -b --pretty",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
-    "import:srd:2024:features": "node scripts/import-srd-class-features.mjs"
+    "import:srd:2024:features": "node scripts/import-srd-class-features.mjs",
+    "import:srd:2014:features": "node scripts/import-srd-class-features-2014.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "latest",
