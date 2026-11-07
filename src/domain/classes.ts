@@ -26,11 +26,17 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
     bard: [{ value: 'lore', label: 'Barde der Kunde' }],
     cleric: [{ value: 'life', label: 'Domäne des Lebens' }],
     druid: [{ value: 'land', label: 'Zirkel des Landes' }],
-    fighter: [{ value: 'champion', label: 'Champion' }],
+    fighter: [
+      { value: 'champion', label: 'Champion' },
+      { value: 'eldritchknight', label: 'Arkaner Ritter' },
+    ],
     monk: [{ value: 'openhand', label: 'Weg der offenen Hand' }],
     paladin: [{ value: 'devotion', label: 'Schwur der Hingabe' }],
     ranger: [{ value: 'hunter', label: 'Jäger' }],
-    rogue: [{ value: 'thief', label: 'Dieb' }],
+    rogue: [
+      { value: 'thief', label: 'Dieb' },
+      { value: 'arcanetrickster', label: 'Arkaner Gauner' },
+    ],
     sorcerer: [
       { value: 'draconic', label: 'Drakonische Abstammung' },
       { value: 'shadowmagic', label: 'Schattenmagie' },
@@ -58,11 +64,6 @@ export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): Clas
   return SUBCLASS_OPTIONS_BY_RULESET[ruleset][classId] ?? []
 }
 
-export const SPELLCASTING_SUBCLASSES: Record<string, ClassOption[]> = {
-  fighter: [{ value: 'eldritchknight', label: 'Arkaner Ritter' }],
-  rogue: [{ value: 'arcanetrickster', label: 'Arkaner Gauner' }],
-  sorcerer: [{ value: 'shadowmagic', label: 'Schattenmagie' }],
-}
 export function getClassLabel(classId: string): string {
   return CLASS_OPTIONS.find((item) => item.value === classId)?.label ?? classId
 }
