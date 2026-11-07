@@ -1,6 +1,7 @@
 import type { Character } from './character'
 import classFeatures2024 from '../data/class-features-2024.json'
 import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
+import type { ContentLocale } from './contentSources'
 
 export interface ClassResourceDefinition {
   id: string
@@ -2445,7 +2446,10 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
     }))
 }
 
-export function getAutomaticClassFeatures(character: Character): AutomaticClassFeature[] {
+export function getAutomaticClassFeatures(
+  character: Character,
+  locale: ContentLocale = 'de',
+): AutomaticClassFeature[] {
   if (character.ruleset !== '2024') return getLegacyAutomaticClassFeatures(character)
 
   const selectedSubclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
@@ -2460,7 +2464,7 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
           (Boolean(selectedSubclass) && feature.subclassId === selectedSubclass)),
     )
     .map((feature): AutomaticClassFeature => {
-      const text = resolveClassFeatureText(feature, 'de')
+      const text = resolveClassFeatureText(feature, locale)
       const metadata = legacyMetadata.find(
         (entry) =>
           entry.name === feature.names.en &&
@@ -2489,8 +2493,11 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     .sort((left, right) => left.level - right.level || left.name.localeCompare(right.name))
 }
 
-export function getSpellbookFeatureSpells(character: Character): AutomaticClassFeature[] {
-  return getAutomaticClassFeatures(character).filter(
+export function getSpellbookFeatureSpells(
+  character: Character,
+  locale: ContentLocale = 'de',
+): AutomaticClassFeature[] {
+  return getAutomaticClassFeatures(character, locale).filter(
     (feature) => feature.unlocked && feature.spellbookSpellId,
   )
 }
