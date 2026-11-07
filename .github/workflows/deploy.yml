@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      # Keep formatting consistent before type-checking and bundling.
       - run: npm run format:check
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
