@@ -79,7 +79,9 @@ export function validateClassFeatureRecords(
       errors.push(`${location}: ruleset ${feature.ruleset} does not match ${ruleset}`)
     }
     if (feature.contentSourceId !== contentSourceId) {
-      errors.push(`${location}: source ${feature.contentSourceId} does not match ${contentSourceId}`)
+      errors.push(
+        `${location}: source ${feature.contentSourceId} does not match ${contentSourceId}`,
+      )
     }
     if (!feature.classId.trim()) errors.push(`${location}: missing class id`)
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
