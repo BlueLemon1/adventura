@@ -963,7 +963,7 @@
       {
         "dice": "10W12",
         "average": 65,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -1005,7 +1005,7 @@
       {
         "dice": "1W8",
         "average": 4.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -1159,7 +1159,7 @@
       {
         "dice": "8W8",
         "average": 36,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -1539,7 +1539,7 @@
       {
         "dice": "1W10",
         "average": 5.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -1620,7 +1620,7 @@
       {
         "dice": "8W8",
         "average": 36,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -2290,7 +2290,7 @@
       {
         "dice": "6W6",
         "average": 21,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -2330,7 +2330,7 @@
       {
         "dice": "11W8",
         "average": 49.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -3330,7 +3330,7 @@
       {
         "dice": "3W6",
         "average": 10.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -3665,7 +3665,7 @@
       {
         "dice": "3W6",
         "average": 10.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -5236,7 +5236,7 @@
       {
         "dice": "5W10",
         "average": 27.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -5836,7 +5836,7 @@
       {
         "dice": "14W6",
         "average": 49,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -6126,7 +6126,7 @@
       {
         "dice": "1W6",
         "average": 3.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -6628,7 +6628,7 @@
       {
         "dice": "2W10",
         "average": 11,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -7925,7 +7925,7 @@
       {
         "dice": "3W8",
         "average": 13.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -8361,7 +8361,7 @@
       {
         "dice": "2W8",
         "average": 9,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -8401,7 +8401,7 @@
       {
         "dice": "4W10",
         "average": 22,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -8741,7 +8741,7 @@
       {
         "dice": "12W12",
         "average": 78,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -10853,7 +10853,7 @@
       {
         "dice": "3W8",
         "average": 13.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -11295,7 +11295,7 @@
       {
         "dice": "10W10",
         "average": 55,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -11962,7 +11962,7 @@
       {
         "dice": "3W6",
         "average": 10.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
@@ -12000,7 +12000,7 @@
       {
         "dice": "1W6",
         "average": 3.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -12431,12 +12431,12 @@
       {
         "dice": "10W10",
         "average": 55,
-        "type": "psychischen"
+        "type": "Psychisch"
       },
       {
         "dice": "5W10",
         "average": 27.5,
-        "type": "psychischen"
+        "type": "Psychisch"
       }
     ]
   },
@@ -12548,7 +12548,7 @@
       {
         "dice": "1W10",
         "average": 5.5,
-        "type": "nekrotischen"
+        "type": "Nekrotisch"
       }
     ]
   },
