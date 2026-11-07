@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ChangeEvent, type FormEvent } from 'react'
+import { useRef, useState, type ChangeEvent, type FormEvent } from 'react'
 import { BookOpen, Boxes, Compass, Download, Moon, Sun, ScrollText, Shield, Sparkles, Trash2, Upload, WandSparkles, X, Plus, Heart, Save, ChevronRight } from 'lucide-react'
 import type { Ability, Character, InventoryItem, KnownSpell, ProficiencyLevel, SkillId } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
@@ -9,12 +9,14 @@ import { createPactMagic, createSpellSlots, updatePactMagic, updateSpellSlots } 
 import { SpellSlotTracker } from './SpellSlotTracker'
 import { SpellCatalog } from './SpellCatalog'
 import { SpellbookList } from './SpellbookList'
-import { LanguageContext, translate, type Language } from './i18n'
-import { deleteCharacter, getCharacters, getPartyInventory, saveCharacter, savePartyInventory } from '../storage/database'
+import { LanguageContext, translate } from './i18n'
+import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select'
 import { TextAreaField, TextInputField } from '../components/ui/form-field'
 import { IconButton } from '../components/ui/button'
+import { useAppPreferences } from './useAppPreferences'
+import { useCharacterCollection } from './useCharacterCollection'
 
 type Page = 'overview' | 'sheet' | 'inventory' | 'spells' | 'levelup'
 const abilityNames: Record<Ability,string> = {str:'Stärke',dex:'Geschicklichkeit',con:'Konstitution',int:'Intelligenz',wis:'Weisheit',cha:'Charisma'}
@@ -28,20 +30,30 @@ const proficiencyBonus = (level:number) => Math.ceil(level/4)+1
 const newId = () => crypto.randomUUID()
 
 export default function App() {
-  const [language,setLanguage]=useState<Language>(()=>localStorage.getItem('adventura-language')==='en'?'en':'de')
-  const [theme,setTheme]=useState<'dark'|'light'>(()=>localStorage.getItem('adventura-theme')==='light'?'light':'dark')
-  const t=(value:string)=>translate(language,value)
-  const [characters,setCharacters]=useState<StoredCharacter[]>([])
-  const [partyItems,setPartyItems]=useState<InventoryItem[]>([])
-  const [selectedId,setSelectedId]=useState<string|null>(null)
+  const { language, setLanguage, theme, setTheme } = useAppPreferences()
+  const t = (value: string) => translate(language, value)
+  const {
+    characters,
+    setCharacters,
+    partyItems,
+    setPartyItems,
+    selectedId,
+    setSelectedId,
+    selected,
+    loading,
+    error,
+    setError,
+    updateCharacter,
+    updateInventory,
+    updateSpellbook,
+    persistPartyItems,
+  } = useCharacterCollection()
   const [page,setPage]=useState<Page>('overview')
-  const [loading,setLoading]=useState(true)
   const [showCreate,setShowCreate]=useState(false)
   const [name,setName]=useState('')
   const [classId,setClassId]=useState('')
   const [ruleset,setRuleset]=useState<Dnd5eRuleset>('2024')
   const [level,setLevel]=useState(1)
-  const [error,setError]=useState('')
   const [busy,setBusy]=useState(false)
   const [itemName,setItemName]=useState('')
   const [itemQuantity,setItemQuantity]=useState(1)
@@ -64,19 +76,6 @@ export default function App() {
   const [spellUsageLimit,setSpellUsageLimit]=useState(0)
   const [spellUsageReset,setSpellUsageReset]=useState<NonNullable<KnownSpell['usageReset']>>('longRest')
   const fileInput=useRef<HTMLInputElement>(null)
-  const selected=characters.find(entry=>entry.character.id===selectedId)??null
-
-  useEffect(()=>{document.documentElement.lang=language;document.documentElement.dataset.theme=theme;localStorage.setItem('adventura-language',language);localStorage.setItem('adventura-theme',theme)},[language,theme])
-  useEffect(()=>{Promise.all([getCharacters(),getPartyInventory()]).then(([stored,party])=>{setCharacters(stored);setPartyItems(party)}).catch((reason:unknown)=>setError(reason instanceof Error?reason.message:'Daten konnten nicht geladen werden.')).finally(()=>setLoading(false))},[])
-  async function persist(next:StoredCharacter) {
-    const updated={...next,character:{...next.character,updatedAt:new Date().toISOString()}}
-    setCharacters(current=>current.map(entry=>entry.character.id===updated.character.id?updated:entry))
-    try {await saveCharacter(updated)} catch(reason) {setError(reason instanceof Error?reason.message:'Änderungen konnten nicht gespeichert werden.')}
-  }
-  function updateCharacter(patch:Partial<Character>) {if(selected)void persist({...selected,character:{...selected.character,...patch}})}
-  function updateInventory(patch:Partial<StoredCharacter['inventory']>) {if(selected)void persist({...selected,inventory:{...selected.inventory,...patch}})}
-  function updateSpellbook(knownSpells:KnownSpell[]) {if(selected)void persist({...selected,spellbook:{knownSpells}})}
-  function persistPartyItems(items:InventoryItem[]) {setPartyItems(items);void savePartyInventory(items).catch((reason:unknown)=>setError(reason instanceof Error?reason.message:'Gruppeninventar konnte nicht gespeichert werden.'))}
 
   async function createCharacter(event:FormEvent<HTMLFormElement>) {
     event.preventDefault();if(!name.trim()||!classId.trim())return
