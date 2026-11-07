@@ -35,6 +35,11 @@ The System Reference Documents (SRDs) are the source of truth for all official r
 
 ### Canonical data model
 
+- Official SRD content is the first and independently maintained content library. The initial scope is limited to the official SRD 5.1 and SRD 5.2.1.
+- Non-SRD supplements, homebrew, character-created content, and item-granted content are separate source categories. They are not inserted into or presented as SRD records.
+- Every content record references an explicit content source (for example, `srd-5.1` or `srd-5.2.1`). Never infer provenance from a class, subclass, spell name, or character ruleset.
+- A character may use content from multiple sources, but every selected feature or spell retains its own source and ruleset metadata.
+
 - Source code, identifiers, domain models, keys, and normalized data fields use English.
 - Every ruleset is an independent dataset. SRD 5.1 (2014) and SRD 5.2.1 (2024) must never be merged implicitly.
 - Every content record has a stable English canonical ID and source provenance.
@@ -43,6 +48,8 @@ The System Reference Documents (SRDs) are the source of truth for all official r
 - Display labels may be localized as application UI. Rules text and game data may not be authored in the UI translation dictionary.
 
 ### Data ingestion
+
+- The source registry and provenance types live in `src/domain/contentSources.ts`. It currently registers only the two official SRD releases; additional sources are added only after their provenance and usage rights have been checked.
 
 - Keep source snapshots separate from normalized application data.
 - Normalize source data through repeatable scripts; do not hand-edit generated SRD datasets.
