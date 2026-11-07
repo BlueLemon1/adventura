@@ -154,9 +154,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                       <span className="language-fallback">{t('EN – englischer Ersatztext')}</span>
                     )}
                   </small>
-                  {feature.description && (
-                    <p className="muted-paragraph">{feature.description}</p>
-                  )}
+                  {feature.description && <p className="muted-paragraph">{feature.description}</p>}
                 </div>
                 <span className={`automatic-feature-badge${feature.unlocked ? '' : ' is-locked'}`}>
                   {feature.unlocked ? t('Freigeschaltet') : `${t('Ab Stufe')} ${feature.level}`}
