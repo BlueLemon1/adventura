@@ -3,6 +3,7 @@ export type Language = 'de' | 'en'
 export const LanguageContext = createContext<Language>('de')
 export const useLanguage = () => useContext(LanguageContext)
 const en: Record<string, string> = {
+  'EN – englischer Ersatztext': 'EN – English fallback text',
   'Pfad des Berserkers': 'Path of the Berserker',
   'Krieger der offenen Hand': 'Warrior of the Open Hand',
   'Drakonische Magie': 'Draconic Sorcery',
