@@ -21,6 +21,7 @@ import spells2024 from '../data/spells-2024.json'
 interface CatalogSpell {
   id: string
   name: string
+  englishName?: string
   level: number
   school: string
   castingTime: string
@@ -137,7 +138,7 @@ function matchesSpell(
   const matchesSearch =
     !options.search ||
     normalizeKey(
-      `${spell.name} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`,
+      `${spell.name} ${spell.englishName ?? ''} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`,
     ).includes(options.search)
   const matchesLevel = options.levelFilter === 'all' || spell.level === Number(options.levelFilter)
   const matchesClass =
@@ -266,6 +267,7 @@ export function SpellCatalog({
     if (language !== 'de' || !spell.localized) return spell
     return {
       ...spell,
+      englishName: spell.name,
       name: spell.localized.name,
       school: spell.localized.school,
       classes: spell.localized.classes,

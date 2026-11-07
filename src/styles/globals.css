@@ -3515,3 +3515,13 @@ textarea {
   padding: 8px 12px;
   font-size: 11px;
 }
+
+
+/* Upcoming class features remain visible but visually subdued. */
+.automatic-feature-row.is-locked {
+  opacity: 0.62;
+}
+.automatic-feature-badge.is-locked {
+  border-color: var(--border);
+  color: var(--muted);
+}

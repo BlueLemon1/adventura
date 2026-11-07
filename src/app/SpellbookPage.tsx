@@ -61,7 +61,7 @@ export function SpellbookPage({
       resourceId: feature.resourceId,
       resourceCost: feature.resourceCost ?? 1,
       spellId: feature.id,
-      name: feature.name,
+      name: language === 'de' ? feature.localizedName ?? feature.name : feature.name,
       learnedAtLevel: feature.level,
       prepared: true,
       spellLevel: -1,
@@ -73,7 +73,11 @@ export function SpellbookPage({
             : feature.activation === 'special'
               ? t('Spezial')
               : t('Aktion'),
-      description: feature.description,
+      description: feature.description
+        ? language === 'en' && t(feature.description) === feature.description
+          ? t('Short rules summary available in German only for now.')
+          : t(feature.description)
+        : '',
       source: 'class',
       sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
       ...(resource && current !== undefined

@@ -15,6 +15,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
   const t = (value: string) => translate(language, value)
   const resources = getClassResources(character)
   const features = getAutomaticClassFeatures(character).filter((feature) => !feature.activation)
+  const unlockedCount = features.filter((feature) => feature.unlocked).length
   const saved = character.classResources ?? []
 
   function setResource(id: string, current: number) {
@@ -43,7 +44,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
         eyebrow={RULESET_LABELS[character.ruleset]}
         title={t('Merkmale & Ressourcen')}
         description={t(
-          'Passive Klassen- und Unterklassenmerkmale, automatisch nach deiner Stufe freigeschaltet.',
+          'Alle passiven Klassen- und Unterklassenmerkmale deines Regelwerks – inklusive kommender Freischaltungen.',
         )}
       />
       <div className="rest-actions">
@@ -118,23 +119,23 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       <section className="panel">
         <PanelHeader
           title={t('Passive Klassen- und Unterklassenmerkmale')}
-          meta={features.length + ' ' + t('FREIGESCHALTET')}
+          meta={`${unlockedCount} / ${features.length} ${t('FREIGESCHALTET')}`}
         />
         {features.length > 0 ? (
           <div className="automatic-feature-list">
             {features.map((feature) => (
-              <article className="automatic-feature-row" key={feature.id}>
+              <article className={`automatic-feature-row${feature.unlocked ? '' : ' is-locked'}`} key={feature.id}>
                 <div>
-                  <strong>{t(feature.name)}</strong>
+                  <strong>{language === 'de' ? feature.localizedName ?? feature.name : feature.name}</strong>
                   <small>
                     {t('Stufe')} {feature.level} ·{' '}
-                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')}
+                    {t(feature.source === 'subclass' ? 'Unterklasse' : 'Klasse')} · {t(feature.unlocked ? 'Freigeschaltet' : 'Noch nicht freigeschaltet')}
                   </small>
                   {feature.description && (
                     <p className="muted-paragraph">{t(feature.description)}</p>
                   )}
                 </div>
-                <span className="automatic-feature-badge">{t('Automatisch')}</span>
+                <span className={`automatic-feature-badge${feature.unlocked ? '' : ' is-locked'}`}>{feature.unlocked ? t('Freigeschaltet') : `${t('Ab Stufe')} ${feature.level}`}</span>
               </article>
             ))}
           </div>
@@ -145,7 +146,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
         )}
         <p className="muted-paragraph">
           {t(
-            'Die Freischaltung wird anhand von Klasse, Unterklasse und Stufe angezeigt. Mechanische Effekte und vollständige Beschreibungen werden schrittweise ergänzt.',
+            'Auch zukünftige Merkmale werden angezeigt. Gesperrte Merkmale werden erst auf der angegebenen Stufe freigeschaltet.',
           )}
         </p>
       </section>

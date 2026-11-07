@@ -1029,3 +1029,70 @@ Object.assign(en, {
 })
 
 Object.assign(en, { 'Zauberer-Inkarnation': 'Sorcery Incarnate' })
+
+
+Object.assign(en, {
+  'Noch nicht freigeschaltet': 'Not unlocked yet',
+  Freigeschaltet: 'Unlocked',
+  'Ab Stufe': 'At level',
+  'Alle passiven Klassen- und Unterklassenmerkmale deines Regelwerks – inklusive kommender Freischaltungen.':
+    'All passive class and subclass features for your ruleset, including upcoming unlocks.',
+  'Auch zukünftige Merkmale werden angezeigt. Gesperrte Merkmale werden erst auf der angegebenen Stufe freigeschaltet.':
+    'Future features are shown too. Locked features become available at the listed level.',
+  'Dieses Merkmal gewährt dir einen klassenabhängigen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.':
+    'This feature grants a class-specific benefit. Its full rules depend on the selected ruleset.',
+  'Dieses Unterklassenmerkmal gewährt dir einen zusätzlichen Vorteil. Die vollständigen Regeln richten sich nach dem gewählten Regelwerk.':
+    'This subclass feature grants an additional benefit. Its full rules depend on the selected ruleset.',
+})
+
+
+Object.assign(en, {
+  Geistesruhe: 'Stillness of Mind',
+  'Uraltes Bewusstsein': 'Primeval Awareness',
+})
+
+
+Object.assign(en, {
+  'Short rules summary available in German only for now.':
+    'Short rules summary available in German only for now.',
+})
+
+
+Object.assign(en, {
+  'Wenn du zu Beginn eines Kampfes keine Anwendungen deiner Bardeninspiration mehr hast, erhältst du eine Anwendung zurück.':
+    'If you have no uses of Bardic Inspiration when you roll Initiative, you regain one use.',
+  'Du kannst deine Aktion einsetzen, um einen Bezauberungs- oder Furchteffekt auf dir zu beenden.':
+    'You can take an action to end one effect on yourself that is causing you to be Charmed or Frightened.',
+  'Du verstehst alle gesprochenen Sprachen. Kreaturen, die mindestens eine Sprache verstehen, können auch dich verstehen.':
+    'You understand all spoken languages, and any creature that understands at least one language can understand you.',
+  'Du kannst einen Zauberplatz ausgeben, um bestimmte Kreaturenarten in deiner Nähe für kurze Zeit wahrzunehmen.':
+    'You can expend a spell slot to sense certain creature types in your vicinity for a short time.',
+  'Während deines Kampfrauschs kannst du nicht bezaubert oder verängstigt werden. Bestehende Effekte werden währenddessen unterdrückt.':
+    'While raging, you can’t be Charmed or Frightened. Any existing effect is suspended for the duration of your Rage.',
+  'Du erhältst Übung in drei Fertigkeiten deiner Wahl.':
+    'You gain proficiency in three skills of your choice.',
+  'Du lernst zwei zusätzliche Zauber von beliebigen Klassenlisten, die du wirken kannst.':
+    'You learn two additional spells from any class spell lists, provided you can cast them.',
+  'Du addierst einen Teil deines Übungsbonus auf bestimmte körperliche Attributswürfe und springst weiter.':
+    'You add part of your Proficiency Bonus to certain Strength, Dexterity, and Constitution checks, and you jump farther.',
+  'Du stehst dauerhaft unter dem Schutz des Zaubers Schutz vor Gut und Böse.':
+    'You are constantly protected by the Protection from Evil and Good spell.',
+  'Klettern kostet dich keine zusätzliche Bewegung. Außerdem erhöht sich deine Sprungweite um deinen Geschicklichkeitsmodifikator.':
+    'Climbing costs you no extra movement, and your jump distance increases by your Dexterity modifier.',
+  'Wenn du einen Hervorrufungszauber wirkst, kannst du geschützte Bereiche für Verbündete bestimmen, die dadurch keinen Schaden erleiden.':
+    'When you cast an Evocation spell, you can create pockets of safety that protect chosen allies from its effects.',
+  'Wenn eine Kreatur einen deiner Schadenszaubertricks mit einem erfolgreichen Rettungswurf abwehrt, erleidet sie trotzdem einen Teil des Schadens.':
+    'When a creature succeeds on a saving throw against one of your damaging cantrips, it still takes part of the damage.',
+})
+
+
+Object.assign(en, {
+  'Während deines Kampfrauschs kannst du Stärke statt eines anderen Attributs für bestimmte Fertigkeitswürfe verwenden.':
+    'While raging, you can use Strength instead of another ability for certain ability checks.',
+  'Wenn du deinen Kampfrausch als Bonusaktion beginnst, kannst du dich gleichzeitig bis zur Hälfte deiner Bewegungsrate bewegen.':
+    'When you enter your Rage as a Bonus Action, you can move up to half your Speed at the same time.',
+  'Deine Brutalen Schläge erhalten zusätzliche taktische Effekte, mit denen du Gegner weiter schwächen oder kontrollieren kannst.':
+    'Your Brutal Strikes gain additional tactical effects that let you further weaken or control your foes.',
+  'Du wählst eine weitere Metamagie-Option, mit der du die Wirkung deiner Zauber verändern kannst.':
+    'You choose one additional Metamagic option to alter the effects of your spells.',
+})
