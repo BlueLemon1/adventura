@@ -781,17 +781,22 @@ Object.assign(en, {
     'You expend Channel Divinity to distribute healing among nearby wounded creatures.',
 })
 
-
 Object.assign(en, {
   'Betäubender Schlag': 'Stunning Strike',
   'Geschosse abwehren': 'Deflect Missiles',
   'Angriffe abwehren': 'Deflect Attacks',
   'Langsamer Fall': 'Slow Fall',
   'Göttliches Niederstrecken': 'Divine Smite',
-  'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.': 'When you make your first attack on your turn, you can gain Advantage on Strength-based melee attacks; attack rolls against you also have Advantage until your next turn.',
-  'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.': 'When you hit with a melee attack, you can expend a Ki or Focus Point to force the target to make a Constitution saving throw or be Stunned.',
-  'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.': 'When a ranged weapon attack hits you, you can use your Reaction to reduce the damage and, in certain circumstances, catch and throw the projectile.',
-  'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.': 'When an attack hits you, you can use your Reaction to reduce the damage and potentially deflect the attack.',
-  'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.': 'When you fall, you can use your Reaction to reduce the falling damage you take.',
-  'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.': 'When you hit a creature with a melee weapon, you can expend a spell slot to deal extra Radiant damage.',
-});
+  'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.':
+    'When you make your first attack on your turn, you can gain Advantage on Strength-based melee attacks; attack rolls against you also have Advantage until your next turn.',
+  'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.':
+    'When you hit with a melee attack, you can expend a Ki or Focus Point to force the target to make a Constitution saving throw or be Stunned.',
+  'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.':
+    'When a ranged weapon attack hits you, you can use your Reaction to reduce the damage and, in certain circumstances, catch and throw the projectile.',
+  'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.':
+    'When an attack hits you, you can use your Reaction to reduce the damage and potentially deflect the attack.',
+  'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.':
+    'When you fall, you can use your Reaction to reduce the falling damage you take.',
+  'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.':
+    'When you hit a creature with a melee weapon, you can expend a spell slot to deal extra Radiant damage.',
+})
