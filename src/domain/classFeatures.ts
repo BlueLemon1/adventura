@@ -276,6 +276,31 @@ const ACTIVE_FEATURES: Record<
       'Wenn du einen Attributs- oder Rettungswurf ablegst, kannst du einen zusätzlichen W10 zum Ergebnis addieren.',
     resourceId: 'dark-ones-own-luck',
   },
+  'Rücksichtsloser Angriff': {
+    activation: 'special',
+    description: 'Du kannst bei deinem ersten Angriff in diesem Zug Vorteil auf Stärke-Nahkampfangriffe erhalten; bis zu deinem nächsten Zug haben Angriffe gegen dich ebenfalls Vorteil.',
+  },
+  'Betäubender Schlag': {
+    activation: 'special',
+    description: 'Wenn du mit einem Nahkampfangriff triffst, kannst du einen Ki- oder Fokus-Punkt ausgeben, um das Ziel zu einem Konstitutionsrettungswurf gegen Betäubung zu zwingen.',
+    resourceId: 'ki-points',
+  },
+  'Geschosse abwehren': {
+    activation: 'reaction',
+    description: 'Wenn dich ein Fernkampfangriff mit einer Waffe trifft, kannst du den Schaden mit deiner Reaktion reduzieren; unter bestimmten Bedingungen kannst du das Geschoss auffangen und zurückwerfen.',
+  },
+  'Angriffe abwehren': {
+    activation: 'reaction',
+    description: 'Wenn dich ein Angriff trifft, kannst du deine Reaktion einsetzen, um den erlittenen Schaden zu reduzieren und den Angriff möglicherweise zurückzulenken.',
+  },
+  'Langsamer Fall': {
+    activation: 'reaction',
+    description: 'Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden zu reduzieren.',
+  },
+  'Göttliches Niederstrecken': {
+    activation: 'special',
+    description: 'Wenn du eine Kreatur mit einer Nahkampfwaffe triffst, kannst du einen Zauberplatz ausgeben, um zusätzlichen gleißenden Schaden zu verursachen.',
+  },
 }
 
 function abilityModifier(score = 10) {
@@ -432,6 +457,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [2, 'Untote vertreiben'],
     [5, 'Untote zerstören'],
     [8, 'Göttlicher Schlag'],
+    [10, 'Göttliches Eingreifen'],
   ],
   druid: [
     [1, 'Druidisch'],
@@ -455,6 +481,7 @@ const CLASS_FEATURES: Record<string, Array<[number, string]>> = {
     [2, 'Ungepanzerte Bewegung'],
     [3, 'Geschosse abwehren'],
     [5, 'Zusätzlicher Angriff'],
+    [5, 'Betäubender Schlag'],
     [6, 'Ki-verbesserte Schläge'],
     [7, 'Entrinnen'],
     [10, 'Reinheit des Körpers'],
@@ -709,6 +736,7 @@ const CLASS_FEATURES_2024: Record<string, Array<[number, string]>> = {
     [4, 'Attributswerterhöhung'],
     [4, 'Langsamer Fall'],
     [5, 'Zusätzlicher Angriff'],
+    [5, 'Betäubender Schlag'],
     [6, 'Verbesserte fokussierte Schläge'],
     [7, 'Entrinnen'],
     [10, 'Selbstheilung'],
@@ -1150,6 +1178,10 @@ export function getAutomaticClassFeatures(character: Character): AutomaticClassF
     }
     if (feature.name === 'Heilige Waffe' && character.ruleset === '2014')
       resourceId = 'paladin-channel-divinity'
+    if (feature.name === 'Tiergestalt')
+      return { ...feature, ...active, activation: character.ruleset === '2014' ? 'action' : 'bonusAction', resourceId }
+    if (feature.name === 'Betäubender Schlag')
+      return { ...feature, ...active, resourceId: character.ruleset === '2024' ? 'focus-points' : 'ki-points' }
     if (feature.name === 'Handauflegen')
       return {
         ...feature,

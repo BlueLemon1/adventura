@@ -14,7 +14,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const resources = getClassResources(character)
-  const features = getAutomaticClassFeatures(character)
+  const features = getAutomaticClassFeatures(character).filter((feature) => !feature.activation)
   const saved = character.classResources ?? []
 
   function setResource(id: string, current: number) {
@@ -43,7 +43,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
         eyebrow={RULESET_LABELS[character.ruleset]}
         title={t('Merkmale & Ressourcen')}
         description={t(
-          'Klassen- und Unterklassenfähigkeiten, automatisch nach deiner Stufe freigeschaltet.',
+          'Passive Klassen- und Unterklassenmerkmale, automatisch nach deiner Stufe freigeschaltet.',
         )}
       />
       <div className="rest-actions">
@@ -117,7 +117,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       )}
       <section className="panel">
         <PanelHeader
-          title={t('Automatische Klassen- und Unterklassenmerkmale')}
+          title={t('Passive Klassen- und Unterklassenmerkmale')}
           meta={features.length + ' ' + t('FREIGESCHALTET')}
         />
         {features.length > 0 ? (
