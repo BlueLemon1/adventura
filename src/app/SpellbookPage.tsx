@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from 'react'
-import { Plus, WandSparkles } from 'lucide-react'
+import { Plus } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
