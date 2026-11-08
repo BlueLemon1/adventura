@@ -5128,5 +5128,61 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 167,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-ice-knife",
+    "name": "Ice Knife",
+    "level": 1,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M",
+    "material": "a drop of water or a piece of ice",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a shard of ice and hurl it at a creature. Make a ranged spell attack; on a hit, the target takes 1d10 piercing damage. Whether the attack hits or misses, the shard then explodes. The target and creatures within 5 feet make a Dexterity saving throw, taking 2d6 cold damage on a failure or half as much on a success.",
+    "higherLevel": "The cold damage increases by 1d6 for each spell slot level above 1.",
+    "localized": {
+      "name": "Eismesser",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G, M (ein Wassertropfen oder ein Stück Eis)",
+      "duration": "Unmittelbar",
+      "description": "Du erschaffst eine Eisscherbe und schleuderst sie auf eine Kreatur. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer erleidet das Ziel 1W10 Stichschaden. Unabhängig davon, ob der Angriff trifft, explodiert die Scherbe anschließend. Das Ziel und Kreaturen innerhalb von 1,5 Metern müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 2W6 Kälteschaden oder bei Erfolg halben Schaden.",
+      "higherLevel": "Der Kälteschaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d10",
+        "average": 5.5,
+        "type": "piercing"
+      },
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "cold"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 157,
+    "previousSource": "Elemental Evil Player's Companion, p. 15",
+    "descriptionKind": "original-summary"
   }
 ]
