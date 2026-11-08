@@ -42,7 +42,15 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
 
     if (feature.ruleset !== ruleset) errors.push(`${location}: wrong ruleset`)
     if (!sourceIds.has(feature.contentSourceId)) errors.push(`${location}: unknown source ${feature.contentSourceId}`)
-    if (sourceRulesets.get(feature.contentSourceId) && sourceRulesets.get(feature.contentSourceId) !== ruleset) {
+    const isLegacy2024CompatibilityFeature =
+      ruleset === '2024' &&
+      feature.id.startsWith('2024-legacy-') &&
+      sourceRulesets.get(feature.contentSourceId) === '2014'
+    if (
+      sourceRulesets.get(feature.contentSourceId) &&
+      sourceRulesets.get(feature.contentSourceId) !== ruleset &&
+      !isLegacy2024CompatibilityFeature
+    ) {
       errors.push(`${location}: source ${feature.contentSourceId} belongs to ${sourceRulesets.get(feature.contentSourceId)}`)
     }
     if (!feature.classId) errors.push(`${location}: missing classId`)
@@ -81,6 +89,23 @@ const sourceRulesets = new Map(
 const options = {
   '2014': extractSubclassOptions(classSource, '2014', '2024'),
   '2024': extractSubclassOptions(classSource, '2024'),
+}
+
+// Mirror getSubclassOptions(): older official subclasses remain available in
+// 2024 unless a 2024 PHB subclass replaces them (including renamed IDs).
+const replacedLegacySubclasses = {
+  barbarian: ['totemwarrior'],
+  monk: ['four_elements'],
+  sorcerer: ['aberrantmind'],
+  wizard: ['abjuration', 'divination', 'illusion'],
+}
+for (const [classId, legacyIds] of Object.entries(options['2014'])) {
+  const currentIds = options['2024'][classId] ?? []
+  const replacedIds = new Set(replacedLegacySubclasses[classId] ?? [])
+  const compatibleLegacyIds = legacyIds.filter(
+    (id) => !currentIds.includes(id) && !replacedIds.has(id),
+  )
+  options['2024'][classId] = [...currentIds, ...compatibleLegacyIds]
 }
 
 for (const ruleset of ['2014', '2024']) {
