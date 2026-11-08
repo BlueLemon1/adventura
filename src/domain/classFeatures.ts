@@ -1,6 +1,8 @@
 import type { Character } from './character'
 import classFeatures2014 from '../data/class-features-2014.json'
 import classFeatures2024 from '../data/class-features-2024.json'
+import supplementalClassFeatures2014 from '../data/class-features-supplemental-2014.json'
+import supplementalClassFeatures2024 from '../data/class-features-supplemental-2024.json'
 import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
 
@@ -2501,8 +2503,8 @@ export function getAutomaticClassFeatures(
   locale: ContentLocale = 'de',
 ): AutomaticClassFeature[] {
   const catalog = (character.ruleset === '2014'
-    ? classFeatures2014
-    : classFeatures2024) as unknown as ClassFeatureRecord[]
+    ? [...classFeatures2014, ...supplementalClassFeatures2014]
+    : [...classFeatures2024, ...supplementalClassFeatures2024]) as unknown as ClassFeatureRecord[]
   return getImportedClassFeatures(character, locale, catalog)
 }
 
