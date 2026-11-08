@@ -5434,7 +5434,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "Flames trail from your feet. Your speed increases by 20 feet, and your movement doesn't provoke opportunity attacks. A creature or unattended object you pass within 5 feet of for the first time on a turn takes 1d6 fire damage.",
+    "description": "Flames trail from your feet. Your speed increases by 20 feet, and your movement doesn't provoke opportunity attacks. A creature or unattended object you pass within 5 feet of for the first time on a turn takes 1d6 fire damage from the heat; a creature or object can take this damage only once per turn.",
     "higherLevel": "For each spell slot level above 3, your speed increases by an additional 5 feet and the fire damage increases by 1d6.",
     "localized": {
       "name": "Ashardalons Schritt",
@@ -5449,7 +5449,7 @@
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Flammen folgen deinen Füßen. Deine Bewegungsrate steigt um 6 Meter und deine Bewegung provoziert keine Gelegenheitsangriffe. Eine Kreatur oder ein ungetragener Gegenstand, an dem du dich während eines Zuges erstmals innerhalb von 1,5 Metern vorbeibewegst, erleidet 1W6 Feuerschaden.",
+      "description": "Flammen folgen deinen Füßen. Deine Bewegungsrate steigt um 6 Meter und deine Bewegung provoziert keine Gelegenheitsangriffe. Eine Kreatur oder ein ungetragener Gegenstand, an dem du dich während eines Zuges erstmals innerhalb von 1,5 Metern vorbeibewegst, erleidet 1W6 Feuerschaden durch die Hitze. Eine Kreatur oder ein Gegenstand kann diesen Schaden nur einmal pro Zug erleiden.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. steigt deine Bewegungsrate um weitere 1,5 Meter und der Feuerschaden um 1W6."
     },
     "damage": [
