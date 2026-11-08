@@ -207,7 +207,7 @@ for (const spell of additionalSpellRecords) {
       errors.push(`2024/${spell.id}: invalid PHB 2024 replacement metadata`)
     }
   }
-  if (appearsInPhb2024 && entry?.replacementSource !== 'phb-2024') {
+  if (sourceRulesets.get(spell.contentSourceId) === '2014' && appearsInPhb2024 && entry?.replacementSource !== 'phb-2024') {
     errors.push(`2024/${spell.id}: missing official PHB 2024 replacement source`)
   }
 }
