@@ -4221,3 +4221,108 @@ textarea {
     grid-column: 1 / -1;
   }
 }
+
+
+/* Character overview cards */
+.character-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+.character-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+.character-card-heading > div {
+  min-width: 0;
+}
+.character-card-heading h3 {
+  overflow-wrap: anywhere;
+  margin-top: 0;
+}
+.character-card-heading p {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.character-card-heading .ruleset-pill {
+  flex: 0 0 auto;
+  margin-top: 2px;
+}
+.character-card-combat {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 0.7fr));
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: rgba(8, 14, 10, 0.2);
+}
+.character-card-combat > div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+.character-card-combat > div > span,
+.character-card-hp > span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.character-card-combat strong {
+  color: var(--text);
+  font-size: 21px;
+  font-variant-numeric: tabular-nums;
+}
+.character-card-hp strong small {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+}
+.character-card-hp-track {
+  height: 4px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: var(--line);
+}
+.character-card-hp-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--teal);
+}
+.character-card-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.character-card-meta > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.character-card .open-character {
+  margin-top: auto;
+}
+@media (max-width: 420px) {
+  .character-card-combat {
+    gap: 7px;
+    padding: 10px 8px;
+  }
+  .character-card-combat strong {
+    font-size: 18px;
+  }
+  .character-card-combat > div > span,
+  .character-card-hp > span {
+    font-size: 8px;
+  }
+}
