@@ -3998,3 +3998,85 @@ textarea {
     padding: 14px;
   }
 }
+
+
+/* Features and resource management layout */
+.features-dashboard {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  align-items: start;
+  gap: 14px;
+  margin: 16px 0;
+}
+.features-dashboard > .panel {
+  min-width: 0;
+  margin: 0;
+  height: 100%;
+}
+.rest-management-panel .muted-paragraph {
+  margin: 0 0 14px;
+}
+.rest-management-panel .rest-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+}
+.rest-management-panel .rest-actions button {
+  min-height: 40px;
+  white-space: normal;
+}
+.class-resources-panel .class-resource-list {
+  gap: 0;
+}
+.class-resources-panel .class-resource-row {
+  padding: 13px 0;
+}
+.class-resources-panel .muted-paragraph {
+  margin: 12px 0 0;
+}
+.features-dashboard + .panel {
+  margin-top: 0;
+}
+.automatic-feature-row {
+  align-items: flex-start;
+  padding: 14px 0;
+}
+.automatic-feature-row > div {
+  min-width: 0;
+}
+.automatic-feature-row > div > strong {
+  line-height: 1.4;
+}
+.automatic-feature-row .muted-paragraph {
+  margin: 5px 0 0;
+  line-height: 1.55;
+}
+.automatic-feature-badge {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+@media (max-width: 760px) {
+  .features-dashboard {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .rest-management-panel .rest-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .automatic-feature-row {
+    gap: 8px;
+  }
+  .automatic-feature-badge {
+    white-space: normal;
+    text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .class-resource-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .resource-counter {
+    align-self: flex-end;
+  }
+}
