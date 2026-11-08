@@ -3196,7 +3196,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2014-command",
+      "srd-2014-identify",
+      "srd-2014-augury",
+      "srd-2014-suggestion",
+      "srd-2014-nondetection",
+      "srd-2014-speak-with-dead",
+      "srd-2014-arcane-eye",
+      "srd-2014-confusion",
+      "srd-2014-legend-lore",
+      "srd-2014-scrying"
+    ]
   },
   {
     "id": "2014-cleric-knowledge-channel-divinity-knowledge-of-the-ages",
@@ -3208,8 +3220,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: knowledge of the Ages",
-      "de": "Channel Divinity: knowledge of the Ages"
+      "en": "Channel Divinity: Knowledge of the Ages",
+      "de": "Channel Divinity: Knowledge of the Ages"
     },
     "descriptions": {
       "en": "You gain proficiency with a chosen skill or tool for a short time.",
@@ -3229,8 +3241,8 @@
     "featureType": "subclass",
     "level": 6,
     "names": {
-      "en": "Channel Divinity: read Thoughts",
-      "de": "Channel Divinity: read Thoughts"
+      "en": "Channel Divinity: Read Thoughts",
+      "de": "Channel Divinity: Read Thoughts"
     },
     "descriptions": {
       "en": "You read a creature's surface thoughts and can influence it with a suggestion.",
@@ -3343,7 +3355,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2014-burning-hands",
+      "srd-2014-faerie-fire",
+      "srd-2014-flaming-sphere",
+      "srd-2014-scorching-ray",
+      "srd-2014-daylight",
+      "srd-2014-fireball",
+      "srd-2014-guardian-of-faith",
+      "srd-2014-wall-of-fire",
+      "srd-2014-flame-strike",
+      "srd-2014-scrying"
+    ]
   },
   {
     "id": "2014-cleric-light-channel-divinity-radiance-of-the-dawn",
@@ -3355,8 +3379,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: radiance of the Dawn",
-      "de": "Channel Divinity: radiance of the Dawn"
+      "en": "Channel Divinity: Radiance of the Dawn",
+      "de": "Channel Divinity: Radiance of the Dawn"
     },
     "descriptions": {
       "en": "You dispel magical darkness and deal radiant damage to nearby hostile creatures.",
@@ -3502,8 +3526,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: charm Animals and Plants",
-      "de": "Channel Divinity: charm Animals and Plants"
+      "en": "Channel Divinity: Charm Animals and Plants",
+      "de": "Channel Divinity: Charm Animals and Plants"
     },
     "descriptions": {
       "en": "You can charm nearby beasts and plants.",
@@ -3649,8 +3673,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: destructive Wrath",
-      "de": "Channel Divinity: destructive Wrath"
+      "en": "Channel Divinity: Destructive Wrath",
+      "de": "Channel Divinity: Destructive Wrath"
     },
     "descriptions": {
       "en": "You can deal maximum damage instead of rolling for lightning or thunder damage.",
@@ -3775,8 +3799,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: invoke Duplicity",
-      "de": "Channel Divinity: invoke Duplicity"
+      "en": "Channel Divinity: Invoke Duplicity",
+      "de": "Channel Divinity: Invoke Duplicity"
     },
     "descriptions": {
       "en": "You create an illusory duplicate that can distract foes and serve as the origin of your spells.",
@@ -3796,8 +3820,8 @@
     "featureType": "subclass",
     "level": 6,
     "names": {
-      "en": "Channel Divinity: cloak of Shadows",
-      "de": "Channel Divinity: cloak of Shadows"
+      "en": "Channel Divinity: Cloak of Shadows",
+      "de": "Channel Divinity: Cloak of Shadows"
     },
     "descriptions": {
       "en": "You can become invisible until you attack or cast a spell.",
@@ -3922,8 +3946,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: guided Strike",
-      "de": "Channel Divinity: guided Strike"
+      "en": "Channel Divinity: Guided Strike",
+      "de": "Channel Divinity: Guided Strike"
     },
     "descriptions": {
       "en": "You can add a substantial bonus to an attack roll after seeing the roll.",
@@ -3943,8 +3967,8 @@
     "featureType": "subclass",
     "level": 6,
     "names": {
-      "en": "Channel Divinity: war God's Blessing",
-      "de": "Channel Divinity: war God's Blessing"
+      "en": "Channel Divinity: War God's Blessing",
+      "de": "Channel Divinity: War God's Blessing"
     },
     "descriptions": {
       "en": "You can use Guided Strike to improve an ally's attack roll.",
@@ -10348,8 +10372,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: arcane Abjuration",
-      "de": "Channel Divinity: arcane Abjuration"
+      "en": "Channel Divinity: Arcane Abjuration",
+      "de": "Channel Divinity: Arcane Abjuration"
     },
     "descriptions": {
       "en": "You can use divine power to turn certain extraplanar creatures.",
@@ -10474,8 +10498,8 @@
     "featureType": "subclass",
     "level": 2,
     "names": {
-      "en": "Channel Divinity: touch of Death",
-      "de": "Channel Divinity: touch of Death"
+      "en": "Channel Divinity: Touch of Death",
+      "de": "Channel Divinity: Touch of Death"
     },
     "descriptions": {
       "en": "You can channel destructive energy through a melee attack to deal extra necrotic damage.",
@@ -11146,8 +11170,8 @@
     "featureType": "subclass",
     "level": 3,
     "names": {
-      "en": "Channel Divinity: control Undead",
-      "de": "Channel Divinity: control Undead"
+      "en": "Channel Divinity: Control Undead",
+      "de": "Channel Divinity: Control Undead"
     },
     "descriptions": {
       "en": "You can use Channel Divinity to bring an undead creature under your control.",
@@ -11167,8 +11191,8 @@
     "featureType": "subclass",
     "level": 3,
     "names": {
-      "en": "Channel Divinity: dreadful Aspect",
-      "de": "Channel Divinity: dreadful Aspect"
+      "en": "Channel Divinity: Dreadful Aspect",
+      "de": "Channel Divinity: Dreadful Aspect"
     },
     "descriptions": {
       "en": "You can radiate a terrifying presence that frightens nearby creatures.",
