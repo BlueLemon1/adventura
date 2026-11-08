@@ -22,7 +22,6 @@ import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
 import { getSpellCatalog } from '../domain/spellCatalog'
 import { getDefaultSpellcastingAbility, getSpellcastingStats } from '../domain/spellcasting'
-import { ABILITIES } from '../domain/character'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
