@@ -179,6 +179,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'chronurgy', label: 'Chronurgie', source: 'EGW' },
       { value: 'graviturgy', label: 'Graviturgy', source: 'EGW' },
       { value: 'scribes', label: 'Ordnung der Schreiber', source: 'TCE' },
+      { value: 'war', label: 'Kampfmagie', source: 'XGE' },
     ],
   },
   '2024': {
