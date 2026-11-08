@@ -274,7 +274,7 @@ export function SpellbookPage({
                 </Select>
               </label>
               <div className="combat-card">
-                <span>{t('Zauberangriff')}</span>
+                <span>{t('Zauberangriffsbonus')}</span>
                 <strong className="combat-number">
                   {spellcastingStats
                     ? (spellcastingStats.attackBonus >= 0 ? '+' : '') +
