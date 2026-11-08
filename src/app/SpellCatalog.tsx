@@ -328,7 +328,9 @@ export function SpellCatalog({
   }
 
   function addSpell(spell: CatalogSpell) {
-    const components = spell.material ? `${spell.components} (${spell.material})` : spell.components
+    const components = spell.material
+      ? `${spell.components} (${spell.material})`
+      : spell.components
 
     onAdd({
       spellId: spell.id,
@@ -348,7 +350,14 @@ export function SpellCatalog({
       higherLevelLabel: spell.higherLevelLabel,
       damage: spell.damage,
       source,
-      sourceName: [spell.sourceBook, spell.sourcePage ? `S. ${spell.sourcePage}` : undefined, spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined, sourceName.trim() || undefined].filter(Boolean).join(' · ') || undefined,
+      sourceName: [
+        spell.sourceBook,
+        spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
+        spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
+        sourceName.trim() || undefined,
+      ]
+        .filter(Boolean)
+        .join(' · ') || undefined,
       ...(usageLimit > 0 ? { usageLimit, usageRemaining: usageLimit, usageReset } : {}),
     })
 
@@ -561,7 +570,9 @@ export function SpellCatalog({
                     {t('Quelle')}: {spell.sourceBook}
                     {spell.sourceAbbreviation ? ` (${spell.sourceAbbreviation})` : ''}
                     {spell.sourcePage ? ` · S. ${spell.sourcePage}` : ''}
-                    {spell.descriptionKind === 'original-summary' ? ` · ${t('Eigene Zusammenfassung')}` : ''}
+                    {spell.descriptionKind === 'original-summary'
+                      ? ` · ${t('Eigene Zusammenfassung')}`
+                      : ''}
                   </small>
                 )}
 
@@ -600,7 +611,8 @@ export function SpellCatalog({
       </div>
 
       <p className="catalog-attribution">
-        <BookOpen size={13} /> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0. Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
+        <BookOpen size={13} /> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0.
+        Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
         <a
           href="https://github.com/BlueLemon1/adventura/blob/main/src/data/ATTRIBUTION.md"
           target="_blank"
