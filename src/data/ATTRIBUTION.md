@@ -211,6 +211,14 @@ Included spell:
 
 Encode Thoughts is associated with the Dimir Operative background rather than a standard class spell list. Adventura displays it for spellcasting classes with an explicit background-access note.
 
+### Astral Adventurer's Guide (AAG)
+
+Included spells:
+- Air Bubble (p. 22)
+- Create Spelljamming Helm (p. 22)
+
+These spells are currently assigned to the 2014 ruleset.
+
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
 
 ### Sword Coast Adventurer's Guide (SCAG)
