@@ -110,7 +110,7 @@ const en: Record<string, string> = {
   'Zauberangriffe und Rettungswurf-SG': 'Spell attack bonus and save DC',
   Zauberattribut: 'Spellcasting ability',
   'Attribut wählen': 'Choose an ability',
-  Zauberangriff: 'Spell attack',
+  Zauberangriffsbonus: 'Spell attack bonus',
   'Rettungswurf-SG': 'Spell save DC',
   'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.':
     'Your class ability is used by default. You can change it here if you have multiple sources of spellcasting.',
