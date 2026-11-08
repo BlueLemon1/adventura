@@ -73,6 +73,10 @@ test('renamed 2014 SRD spells resolve to their 2024 SRD replacements', () => {
   const feeblemind = compatibilityById.get('srd-2014-feeblemind')
   assert.equal(branding?.replacementSpellId, 'srd-2024-shining-smite')
   assert.equal(feeblemind?.replacementSpellId, 'srd-2024-befuddlement')
+  assert.equal(branding?.replacementSource, 'phb-2024')
+  assert.equal(feeblemind?.replacementSource, 'phb-2024')
+  assert.equal(branding?.replacementCategory, 'renamed')
+  assert.equal(feeblemind?.replacementCategory, 'renamed')
   assert.match(catalogSource, /compatibility\.replacementSpellId/)
 })
 
