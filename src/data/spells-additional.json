@@ -2638,7 +2638,7 @@
     "range": "120 feet",
     "components": "V, S",
     "material": "",
-    "duration": "Concentration, up to 1 hour",
+    "duration": "1 hour",
     "concentration": false,
     "ritual": false,
     "classes": [
@@ -2659,7 +2659,7 @@
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
-      "duration": "Konzentration, bis zu 1 Stunde",
+      "duration": "1 Stunde",
       "description": "Sieben sternartige Lichtpunkte umkreisen deinen Kopf. Als Bonusaktion kannst du einen davon auf eine Kreatur oder einen Gegenstand in Reichweite schleudern. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer verursacht er 4W12 Strahlenschaden. Der Lichtpunkt verschwindet nach dem Angriff.",
       "higherLevel": "Die Anzahl der Lichtpunkte steigt für jeden Zauberplatzgrad über dem 7. um zwei."
     },
@@ -4720,7 +4720,7 @@
       ],
       "castingTime": "1 Minute",
       "range": "1,6 Kilometer",
-      "components": "V, G, M (ein Diamant im Wert von mindestens 500 GM)",
+      "components": "V, G, M (ein Diamant im Wert von mindestens 500 GM, den der Zauber verbraucht)",
       "duration": "Unmittelbar",
       "description": "Du beschwörst eine steinerne Festung auf einer freien quadratischen Bodenfläche in Reichweite. Sie umfasst vier Türme, verbindende Mauern, einen eingerichteten Bergfried, Nahrung für ein großes Bankett und eine Dienerschaft aus 100 unsichtbaren Dienern. Die Festung bleibt 7 Tage bestehen und zerfällt anschließend, bevor sie im Boden versinkt. Wenn du den Zauber ein Jahr lang alle 7 Tage am selben Ort wirkst, wird sie dauerhaft."
     },
@@ -5185,7 +5185,7 @@
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
     "sourcePage": 157,
-    "previousSource": "Elemental Evil Player's Companion, p. 15",
+    "previousSource": "Elemental Evil Player's Companion, p. 19",
     "descriptionKind": "original-summary"
   }
 ]
