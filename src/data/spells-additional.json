@@ -3048,5 +3048,453 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 155,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-guardian-of-nature",
+    "name": "Guardian of Nature",
+    "level": 4,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You call on nature's spirit to transform you. Choose a primal beast form, which improves your speed and attacks, or a great tree form, which strengthens your durability and spellcasting.",
+    "localized": {
+      "name": "Hüter der Natur",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du rufst den Geist der Natur an und verwandelst dich. Wähle die Gestalt eines urtümlichen Tieres, die deine Bewegungsrate und Angriffe verbessert, oder die eines großen Baumes, die deine Widerstandskraft und Zauberfähigkeiten stärkt."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 157,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-holy-weapon",
+    "name": "Holy Weapon",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "You imbue a weapon with radiant power. Its attacks deal an extra 2d8 radiant damage. As a bonus action, you can end the spell in a flash of light that damages nearby creatures and may blind them.",
+    "localized": {
+      "name": "Heilige Waffe",
+      "school": "Hervorrufung",
+      "classes": [
+        "cleric",
+        "paladin"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du erfüllst eine Waffe mit strahlender Macht. Ihre Angriffe verursachen zusätzlich 2W8 Strahlenschaden. Als Bonusaktion kannst du den Zauber mit einem Lichtblitz beenden, der Kreaturen in der Nähe verletzt und sie möglicherweise blendet."
+    },
+    "damage": [
+      {
+        "dice": "2d8",
+        "average": 9,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 157,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-life-transference",
+    "name": "Life Transference",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "wizard"
+    ],
+    "description": "You sacrifice some of your own vitality to heal another creature you can see within range. You take 4d8 necrotic damage, which cannot be reduced, and the target regains twice that many hit points.",
+    "higherLevel": "The necrotic damage increases by 1d8 for each spell slot level above 3.",
+    "localized": {
+      "name": "Lebensübertragung",
+      "school": "Nekromantie",
+      "classes": [
+        "cleric",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du opferst einen Teil deiner eigenen Lebenskraft, um eine andere Kreatur zu heilen, die du in Reichweite sehen kannst. Du erleidest 4W8 nekrotischen Schaden, der nicht reduziert werden kann, und das Ziel erhält doppelt so viele Trefferpunkte zurück.",
+      "higherLevel": "Der nekrotische Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "4d8",
+        "average": 18,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-maximilians-earthen-grasp",
+    "name": "Maximilian's Earthen Grasp",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M",
+    "material": "a miniature hand sculpted from clay",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "A hand made of earth rises beneath a creature you can see. The target makes a Strength saving throw or becomes restrained. You can use an action to crush it for bludgeoning damage, and it can attempt to escape at the end of its turns.",
+    "higherLevel": "The crushing damage increases by 1d6 for each spell slot level above 2.",
+    "localized": {
+      "name": "Maximilians Erdgriff",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G, M (eine aus Ton geformte Miniaturhand)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Eine Hand aus Erde erhebt sich unter einer Kreatur, die du sehen kannst. Das Ziel muss einen Stärkerettungswurf ablegen oder wird festgesetzt. Du kannst eine Aktion verwenden, um es mit Wuchtschaden zu quetschen; am Ende seiner Züge kann es versuchen, sich zu befreien.",
+      "higherLevel": "Der Schaden des Quetschens steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 161,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-melfs-minute-meteors",
+    "name": "Melf's Minute Meteors",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "niter, sulfur, and pine tar formed into a bead",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Six fiery meteors orbit you. As a bonus action, you can send one or two to points you choose within 120 feet; each explodes in a small radius, forcing creatures there to make Dexterity saves or take 2d6 fire damage.",
+    "higherLevel": "You create two additional meteors for each spell slot level above 3.",
+    "localized": {
+      "name": "Melfs Minutenmeteore",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G, M (Salpeter, Schwefel und Kiefernteer zu einer Kugel geformt)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Sechs feurige Meteore umkreisen dich. Als Bonusaktion kannst du einen oder zwei davon auf Punkte innerhalb von 36 Metern schleudern. Jeder explodiert in einem kleinen Bereich; Kreaturen darin müssen Geschicklichkeitsrettungswürfe ablegen oder erleiden 2W6 Feuerschaden.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. erschaffst du zwei zusätzliche Meteore."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 161,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-psychic-scream",
+    "name": "Psychic Scream",
+    "level": 9,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You unleash a psychic blast at up to ten creatures you can see. Each target makes an Intelligence saving throw, taking 14d6 psychic damage and becoming stunned on a failure, or taking half damage on a success. A creature reduced to 0 hit points by this spell has its head destroyed.",
+    "localized": {
+      "name": "Psychischer Schrei",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "G",
+      "duration": "Unmittelbar",
+      "description": "Du entfesselst eine psychische Explosion gegen bis zu zehn Kreaturen, die du sehen kannst. Jedes Ziel muss einen Intelligenzrettungswurf ablegen. Bei einem Misserfolg erleidet es 14W6 psychischen Schaden und ist betäubt; bei Erfolg erleidet es halben Schaden. Wird eine Kreatur durch diesen Zauber auf 0 Trefferpunkte reduziert, wird ihr Kopf zerstört."
+    },
+    "damage": [
+      {
+        "dice": "14d6",
+        "average": 49,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 163,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-pyrotechnics",
+    "name": "Pyrotechnics",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Choose a nonmagical flame within range and extinguish it, creating either a burst of dazzling fireworks that can blind creatures nearby or a thick cloud of smoke that heavily obscures an area.",
+    "localized": {
+      "name": "Pyrotechnik",
+      "school": "Verwandlung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Wähle eine nichtmagische Flamme in Reichweite und lösche sie. Dabei entsteht entweder ein blendender Feuerwerksblitz, der Kreaturen in der Nähe blenden kann, oder eine dichte Rauchwolke, die einen Bereich stark verschleiert."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-scatter",
+    "name": "Scatter",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You teleport up to five creatures you can see to unoccupied spaces of your choice within range. An unwilling creature can resist with a Charisma saving throw. You can also teleport objects that are not worn or carried.",
+    "localized": {
+      "name": "Versetzen",
+      "school": "Beschwörung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V",
+      "duration": "Unmittelbar",
+      "description": "Du teleportierst bis zu fünf Kreaturen, die du sehen kannst, an freie Orte deiner Wahl innerhalb der Reichweite. Eine unwillige Kreatur kann sich mit einem Charismarettungswurf widersetzen. Du kannst außerdem Gegenstände teleportieren, die weder getragen noch gehalten werden."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-skywrite",
+    "name": "Skywrite",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Sight",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": true,
+    "classes": [
+      "bard",
+      "druid",
+      "ranger",
+      "wizard"
+    ],
+    "description": "You cause up to ten words to appear in the clouds above you. The message can be visible from a great distance and lasts for the spell's duration; wind can disperse it.",
+    "localized": {
+      "name": "Himmelsschrift",
+      "school": "Verwandlung",
+      "classes": [
+        "bard",
+        "druid",
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Sicht",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du lässt bis zu zehn Wörter in den Wolken über dir erscheinen. Die Botschaft ist aus großer Entfernung sichtbar und bleibt für die Wirkungsdauer bestehen; Wind kann sie zerstreuen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 165,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-snare",
+    "name": "Snare",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "S, M",
+    "material": "25 feet of rope, which the spell consumes",
+    "duration": "Until dispelled or triggered",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "wizard"
+    ],
+    "description": "You create a magical trap on the ground using a length of rope. The first creature that enters the area triggers it and must make a Dexterity saving throw or be hoisted upside down and restrained. The trapped creature can attempt to escape.",
+    "localized": {
+      "name": "Schlinge",
+      "school": "Bannmagie",
+      "classes": [
+        "druid",
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "Berührung",
+      "components": "G, M (7,5 Meter Seil, das der Zauber verbraucht)",
+      "duration": "Bis gebannt oder ausgelöst",
+      "description": "Du erschaffst mit einem Seil eine magische Falle auf dem Boden. Die erste Kreatur, die den Bereich betritt, löst sie aus und muss einen Geschicklichkeitsrettungswurf ablegen oder kopfüber hochgezogen und festgesetzt werden. Die gefangene Kreatur kann versuchen, sich zu befreien."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 165,
+    "descriptionKind": "original-summary"
   }
 ]
