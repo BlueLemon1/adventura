@@ -77,6 +77,26 @@ export const CONTENT_SOURCES = {
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/tce',
     availableLocales: ['en', 'de'],
   },
+  scc2021: {
+    id: 'scc-2021',
+    name: 'Strixhaven: A Curriculum of Chaos',
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2021',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/scc',
+    availableLocales: ['en'],
+  },
+  ftd2021: {
+    id: 'ftd-2021',
+    name: "Fizban's Treasury of Dragons",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2021',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ftod',
+    availableLocales: ['en'],
+  },
 } as const satisfies Record<string, ContentSource>
 
 export type SrdContentSourceId = (typeof CONTENT_SOURCES)[keyof typeof CONTENT_SOURCES]['id']
