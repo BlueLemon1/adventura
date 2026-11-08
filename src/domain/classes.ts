@@ -108,7 +108,6 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'four_elements', label: 'Weg der vier Elemente', source: 'PHB' },
       { value: 'longdeath', label: 'Weg des langen Todes', source: 'SCAG' },
       { value: 'sun_soul', label: 'Weg der Sonnenseele', source: 'SCAG' },
-      { value: 'sun_soul', label: 'Weg der Sonnenseele', source: 'SCAG' },
       { value: 'drunkenmaster', label: 'Weg des betrunkenen Meisters', source: 'XGE' },
       { value: 'kensei', label: 'Weg des Kensei', source: 'XGE' },
       { value: 'mercy', label: 'Weg der Barmherzigkeit', source: 'TCE' },
