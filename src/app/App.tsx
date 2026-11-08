@@ -44,7 +44,6 @@ import { InstallAppButton } from './InstallAppButton'
 type Page = 'overview' | 'sheet' | 'features' | 'inventory' | 'spells' | 'levelup'
 type InventoryView = 'inventory' | 'equipped'
 type SpellbookView = 'character' | 'catalog'
-type ExpandedNav = 'inventory' | 'spells' | null
 const abilityDefaults = { str: 10, dex: 10, con: 10, int: 10, wis: 10, cha: 10 }
 const currencyDefaults = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
 const newId = () => crypto.randomUUID()
@@ -69,7 +68,6 @@ export default function App() {
     persistPartyItems,
   } = useCharacterCollection()
   const [page, setPage] = useState<Page>('overview')
-  const [expandedNav, setExpandedNav] = useState<ExpandedNav>(null)
   const [inventoryView, setInventoryView] = useState<InventoryView>('inventory')
   const [spellbookView, setSpellbookView] = useState<SpellbookView>('character')
   const [showCreate, setShowCreate] = useState(false)
@@ -217,6 +215,7 @@ export default function App() {
           </a>
           <div className="workspace-label">{t('CHARAKTERBOGEN')}</div>
           <nav className="nav-list" aria-label="Hauptnavigation">
+            <div className="nav-section-label">{t('CHARAKTER')}</div>
             <button
               className={page === 'overview' ? 'nav-link active' : 'nav-link'}
               onClick={() => setPage('overview')}
@@ -250,108 +249,33 @@ export default function App() {
               <Sparkles size={18} />
               <span>{t('Merkmale & Ressourcen')}</span>
             </button>
-            <div className="nav-group">
-              <button
-                className={
-                  page === 'inventory' ? 'nav-link nav-parent active' : 'nav-link nav-parent'
+            <div className="nav-section-label nav-section-spaced">{t('VERWALTUNG')}</div>
+            <button
+              className={page === 'inventory' ? 'nav-link active' : 'nav-link'}
+              onClick={() => {
+                if (!selected) {
+                  setError('Wähle zuerst einen Charakter aus.')
+                  return
                 }
-                aria-expanded={expandedNav === 'inventory'}
-                onClick={() => {
-                  if (!selected) {
-                    setError('Wähle zuerst einen Charakter aus.')
-                    return
-                  }
-                  setPage('inventory')
-                  setExpandedNav((current) => (current === 'inventory' ? null : 'inventory'))
-                }}
-              >
-                <Boxes size={18} />
-                <span>{t('Inventar')}</span>
-                <span className="nav-chevron">{expandedNav === 'inventory' ? '−' : '+'}</span>
-              </button>
-              {expandedNav === 'inventory' && (
-                <div className="nav-subitems">
-                  <button
-                    className={
-                      page === 'inventory' && inventoryView === 'inventory'
-                        ? 'nav-sublink active'
-                        : 'nav-sublink'
-                    }
-                    onClick={() => {
-                      setPage('inventory')
-                      setInventoryView('inventory')
-                    }}
-                  >
-                    <Backpack size={15} />
-                    <span>{t('Inventar')}</span>
-                  </button>
-                  <button
-                    className={
-                      page === 'inventory' && inventoryView === 'equipped'
-                        ? 'nav-sublink active'
-                        : 'nav-sublink'
-                    }
-                    onClick={() => {
-                      setPage('inventory')
-                      setInventoryView('equipped')
-                    }}
-                  >
-                    <ShieldCheck size={15} />
-                    <span>{t('Angelegt')}</span>
-                  </button>
-                </div>
-              )}
-            </div>
-            <div className="nav-group">
-              <button
-                className={page === 'spells' ? 'nav-link nav-parent active' : 'nav-link nav-parent'}
-                aria-expanded={expandedNav === 'spells'}
-                onClick={() => {
-                  if (!selected) {
-                    setError('Wähle zuerst einen Charakter aus.')
-                    return
-                  }
-                  setPage('spells')
-                  setExpandedNav((current) => (current === 'spells' ? null : 'spells'))
-                }}
-              >
-                <BookOpen size={18} />
-                <span>{t('Zauberbuch')}</span>
-                <span className="nav-chevron">{expandedNav === 'spells' ? '−' : '+'}</span>
-              </button>
-              {expandedNav === 'spells' && (
-                <div className="nav-subitems">
-                  <button
-                    className={
-                      page === 'spells' && spellbookView === 'character'
-                        ? 'nav-sublink active'
-                        : 'nav-sublink'
-                    }
-                    onClick={() => {
-                      setPage('spells')
-                      setSpellbookView('character')
-                    }}
-                  >
-                    <WandSparkles size={15} />
-                    <span>{t('Meine Zauber')}</span>
-                  </button>
-                  <button
-                    className={
-                      page === 'spells' && spellbookView === 'catalog'
-                        ? 'nav-sublink active'
-                        : 'nav-sublink'
-                    }
-                    onClick={() => {
-                      setPage('spells')
-                      setSpellbookView('catalog')
-                    }}
-                  >
-                    <Sparkles size={15} />
-                    <span>{t('Zauber finden')}</span>
-                  </button>
-                </div>
-              )}
-            </div>
+                setPage('inventory')
+              }}
+            >
+              <Boxes size={18} />
+              <span>{t('Inventar')}</span>
+            </button>
+            <button
+              className={page === 'spells' ? 'nav-link active' : 'nav-link'}
+              onClick={() => {
+                if (!selected) {
+                  setError('Wähle zuerst einen Charakter aus.')
+                  return
+                }
+                setPage('spells')
+              }}
+            >
+              <BookOpen size={18} />
+              <span>{t('Zauberbuch')}</span>
+            </button>
             <button
               className={page === 'levelup' ? 'nav-link active' : 'nav-link'}
               onClick={() => {
