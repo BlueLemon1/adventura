@@ -55,6 +55,7 @@ interface CatalogSpell {
   sourceAbbreviation?: string
   sourcePage?: number
   previousSource?: string
+  subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
   descriptionKind?: 'official' | 'original-summary'
 }
 
@@ -354,6 +355,7 @@ export function SpellCatalog({
           spell.sourceBook,
           spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
           spell.previousSource ? `ursprünglich ${spell.previousSource}` : undefined,
+          spell.subclassRestriction ? `Dunamancy: ${spell.subclassRestriction}` : undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
         ]
@@ -575,6 +577,18 @@ export function SpellCatalog({
                     {spell.descriptionKind === 'original-summary'
                       ? ` · ${t('Eigene Zusammenfassung')}`
                       : ''}
+                  </small>
+                )}
+                {spell.subclassRestriction && (
+                  <small className="catalog-spell-restriction">
+                    {t('Dunamancy-Zugang')}:{' '}
+                    {spell.subclassRestriction === 'chronurgy'
+                      ? 'Chronurgy Magic'
+                      : spell.subclassRestriction === 'graviturgy'
+                        ? 'Graviturgy Magic'
+                        : 'Chronurgy Magic / Graviturgy Magic'}
+                    {' · '}
+                    {t('Andere Klassen nur mit Zustimmung der Spielleitung')}
                   </small>
                 )}
 
