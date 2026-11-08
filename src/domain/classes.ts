@@ -258,7 +258,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
     wizard: [
       { value: 'abjurer', label: 'Bannwirker', source: 'PHB' },
       { value: 'diviner', label: 'Wahrsager', source: 'PHB' },
-      { value: 'evoker', label: 'Hervorrufungsgelehrter', source: 'PHB / SRD' },
+      { value: 'evocation', label: 'Hervorrufungsgelehrter', source: 'PHB / SRD' },
       { value: 'illusionist', label: 'Illusionist', source: 'PHB' },
     ],
   },
