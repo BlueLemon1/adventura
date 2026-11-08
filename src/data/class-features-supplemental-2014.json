@@ -9977,5 +9977,1958 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2014-barbarian-giant-giant-s-power",
+    "ruleset": "2014",
+    "contentSourceId": "bigby-2023",
+    "sourceReference": "barbarian/giant#giant-s-power",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You learn giant lore and gain benefits tied to giant kind and elemental might.",
+      "de": "Du erlernst Wissen über Riesen und erhältst Vorteile, die mit Riesentyp und Elementarmacht verbunden sind."
+    },
+    "descriptions": {
+      "en": "You learn giant lore and gain benefits tied to giant kind and elemental might.",
+      "de": "Du erlernst Wissen über Riesen und erhältst Vorteile, die mit Riesentyp und Elementarmacht verbunden sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-giant-giant-s-havoc",
+    "ruleset": "2014",
+    "contentSourceId": "bigby-2023",
+    "sourceReference": "barbarian/giant#giant-s-havoc",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Your rage increases your size and empowers your attacks with giant strength.",
+      "de": "Dein Kampfrausch vergrößert dich und verstärkt deine Angriffe mit Riesenkraft."
+    },
+    "descriptions": {
+      "en": "Your rage increases your size and empowers your attacks with giant strength.",
+      "de": "Dein Kampfrausch vergrößert dich und verstärkt deine Angriffe mit Riesenkraft."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-giant-elemental-cleaver",
+    "ruleset": "2014",
+    "contentSourceId": "bigby-2023",
+    "sourceReference": "barbarian/giant#elemental-cleaver",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You infuse a weapon with elemental energy, extending its reach and adding elemental damage.",
+      "de": "Du erfüllst eine Waffe mit Elementarenergie, vergrößerst ihre Reichweite und fügst Elementarschaden hinzu."
+    },
+    "descriptions": {
+      "en": "You infuse a weapon with elemental energy, extending its reach and adding elemental damage.",
+      "de": "Du erfüllst eine Waffe mit Elementarenergie, vergrößerst ihre Reichweite und fügst Elementarschaden hinzu."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-giant-mighty-impel",
+    "ruleset": "2014",
+    "contentSourceId": "bigby-2023",
+    "sourceReference": "barbarian/giant#mighty-impel",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can hurl a Large or smaller creature through the air.",
+      "de": "Du kannst eine große oder kleinere Kreatur durch die Luft schleudern."
+    },
+    "descriptions": {
+      "en": "You can hurl a Large or smaller creature through the air.",
+      "de": "Du kannst eine große oder kleinere Kreatur durch die Luft schleudern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-giant-demiurgic-colossus",
+    "ruleset": "2014",
+    "contentSourceId": "bigby-2023",
+    "sourceReference": "barbarian/giant#demiurgic-colossus",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Your giant form grows more powerful and your elemental weapon gains additional benefits.",
+      "de": "Deine Riesengestalt wird mächtiger und deine Elementarwaffe erhält zusätzliche Vorteile."
+    },
+    "descriptions": {
+      "en": "Your giant form grows more powerful and your elemental weapon gains additional benefits.",
+      "de": "Deine Riesengestalt wird mächtiger und deine Elementarwaffe erhält zusätzliche Vorteile."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-battlerager-bonus-proficiency",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "barbarian/battlerager#bonus-proficiency",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You gain proficiency with smith's tools.",
+      "de": "Du erhältst Übung mit Schmiedewerkzeug."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with smith's tools.",
+      "de": "Du erhältst Übung mit Schmiedewerkzeug."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-battlerager-battlerager-armor",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "barbarian/battlerager#battlerager-armor",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can wear spiked armor and use it as a weapon while raging.",
+      "de": "Du kannst Stachelrüstung tragen und sie während deines Kampfrauschs als Waffe einsetzen."
+    },
+    "descriptions": {
+      "en": "You can wear spiked armor and use it as a weapon while raging.",
+      "de": "Du kannst Stachelrüstung tragen und sie während deines Kampfrauschs als Waffe einsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-battlerager-reckless-abandon",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "barbarian/battlerager#reckless-abandon",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "When you use Reckless Attack while raging, you gain temporary hit points.",
+      "de": "Wenn du während deines Kampfrauschs Tollkühner Angriff einsetzt, erhältst du temporäre Trefferpunkte."
+    },
+    "descriptions": {
+      "en": "When you use Reckless Attack while raging, you gain temporary hit points.",
+      "de": "Wenn du während deines Kampfrauschs Tollkühner Angriff einsetzt, erhältst du temporäre Trefferpunkte."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-battlerager-battlerager-charge",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "barbarian/battlerager#battlerager-charge",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can take the Dash action as a bonus action while raging.",
+      "de": "Während deines Kampfrauschs kannst du die Sprintaktion als Bonusaktion ausführen."
+    },
+    "descriptions": {
+      "en": "You can take the Dash action as a bonus action while raging.",
+      "de": "Während deines Kampfrauschs kannst du die Sprintaktion als Bonusaktion ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-battlerager-spiked-retribution",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "barbarian/battlerager#spiked-retribution",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "A creature that damages you while you are raging can take piercing damage from your armor.",
+      "de": "Eine Kreatur, die dir während deines Kampfrauschs Schaden zufügt, kann durch deine Rüstung Stichschaden erleiden."
+    },
+    "descriptions": {
+      "en": "A creature that damages you while you are raging can take piercing damage from your armor.",
+      "de": "Eine Kreatur, die dir während deines Kampfrauschs Schaden zufügt, kann durch deine Rüstung Stichschaden erleiden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-spirits-guiding-whispers",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "bard/spirits#guiding-whispers",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You learn the Guidance cantrip and can communicate with spirits at a distance.",
+      "de": "Du erlernst den Zaubertrick Führung und kannst aus der Ferne mit Geistern kommunizieren."
+    },
+    "descriptions": {
+      "en": "You learn the Guidance cantrip and can communicate with spirits at a distance.",
+      "de": "Du erlernst den Zaubertrick Führung und kannst aus der Ferne mit Geistern kommunizieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-spirits-spiritual-focus",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "bard/spirits#spiritual-focus",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You use a special object as a focus, improving certain healing or damage spells.",
+      "de": "Du verwendest einen besonderen Gegenstand als Fokus, der bestimmte Heil- oder Schadenszauber verbessert."
+    },
+    "descriptions": {
+      "en": "You use a special object as a focus, improving certain healing or damage spells.",
+      "de": "Du verwendest einen besonderen Gegenstand als Fokus, der bestimmte Heil- oder Schadenszauber verbessert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-spirits-tales-from-beyond",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "bard/spirits#tales-from-beyond",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You draw a tale from the spirits and expend Bardic Inspiration to create a supernatural effect.",
+      "de": "Du entlockst den Geistern eine Geschichte und gibst Bardische Inspiration aus, um einen übernatürlichen Effekt hervorzurufen."
+    },
+    "descriptions": {
+      "en": "You draw a tale from the spirits and expend Bardic Inspiration to create a supernatural effect.",
+      "de": "Du entlockst den Geistern eine Geschichte und gibst Bardische Inspiration aus, um einen übernatürlichen Effekt hervorzurufen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-spirits-spirit-session",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "bard/spirits#spirit-session",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You conduct a séance to temporarily learn a spell from another class.",
+      "de": "Du führst eine Séance durch, um vorübergehend einen Zauber einer anderen Klasse zu erlernen."
+    },
+    "descriptions": {
+      "en": "You conduct a séance to temporarily learn a spell from another class.",
+      "de": "Du führst eine Séance durch, um vorübergehend einen Zauber einer anderen Klasse zu erlernen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-spirits-mystical-connection",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "bard/spirits#mystical-connection",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You gain greater control over the tales you draw from the spirits.",
+      "de": "Du erhältst größere Kontrolle über die Geschichten, die du den Geistern entlockst."
+    },
+    "descriptions": {
+      "en": "You gain greater control over the tales you draw from the spirits.",
+      "de": "Du erhältst größere Kontrolle über die Geschichten, die du den Geistern entlockst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-arcana-arcane-initiate",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "cleric/arcana#arcane-initiate",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn wizard cantrips and gain proficiency in Arcana.",
+      "de": "Du erlernst Magier-Zaubertricks und erhältst Übung in Arkane Kunde."
+    },
+    "descriptions": {
+      "en": "You learn wizard cantrips and gain proficiency in Arcana.",
+      "de": "Du erlernst Magier-Zaubertricks und erhältst Übung in Arkane Kunde."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-arcana-channel-divinity-arcane-abjuration",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "cleric/arcana#channel-divinity-arcane-abjuration",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can use divine power to turn certain extraplanar creatures.",
+      "de": "Du kannst göttliche Macht einsetzen, um bestimmte extraplanare Kreaturen zu vertreiben."
+    },
+    "descriptions": {
+      "en": "You can use divine power to turn certain extraplanar creatures.",
+      "de": "Du kannst göttliche Macht einsetzen, um bestimmte extraplanare Kreaturen zu vertreiben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-arcana-spell-breaker",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "cleric/arcana#spell-breaker",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "When you heal an ally, you can also end certain spell effects on it.",
+      "de": "Wenn du einen Verbündeten heilst, kannst du zugleich bestimmte Zaubereffekte auf ihm beenden."
+    },
+    "descriptions": {
+      "en": "When you heal an ally, you can also end certain spell effects on it.",
+      "de": "Wenn du einen Verbündeten heilst, kannst du zugleich bestimmte Zaubereffekte auf ihm beenden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-arcana-potent-spellcasting",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "cleric/arcana#potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "descriptions": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-arcana-arcane-mastery",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "cleric/arcana#arcane-mastery",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You gain access to powerful wizard spells from selected schools.",
+      "de": "Du erhältst Zugang zu mächtigen Magierzaubern aus ausgewählten Schulen."
+    },
+    "descriptions": {
+      "en": "You gain access to powerful wizard spells from selected schools.",
+      "de": "Du erhältst Zugang zu mächtigen Magierzaubern aus ausgewählten Schulen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-bonus-proficiency",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#bonus-proficiency",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You gain proficiency with martial weapons.",
+      "de": "Du erhältst Übung mit Kriegswaffen."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with martial weapons.",
+      "de": "Du erhältst Übung mit Kriegswaffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-reaper",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#reaper",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn a necromancy cantrip, and it can affect an additional nearby creature.",
+      "de": "Du erlernst einen Nekromantie-Zaubertrick, der eine zusätzliche nahe Kreatur betreffen kann."
+    },
+    "descriptions": {
+      "en": "You learn a necromancy cantrip, and it can affect an additional nearby creature.",
+      "de": "Du erlernst einen Nekromantie-Zaubertrick, der eine zusätzliche nahe Kreatur betreffen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-channel-divinity-touch-of-death",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#channel-divinity-touch-of-death",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can channel destructive energy through a melee attack to deal extra necrotic damage.",
+      "de": "Du kannst zerstörerische Energie durch einen Nahkampfangriff leiten und zusätzlichen nekrotischen Schaden verursachen."
+    },
+    "descriptions": {
+      "en": "You can channel destructive energy through a melee attack to deal extra necrotic damage.",
+      "de": "Du kannst zerstörerische Energie durch einen Nahkampfangriff leiten und zusätzlichen nekrotischen Schaden verursachen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-inescapable-destruction",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#inescapable-destruction",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Your necrotic damage ignores resistance to necrotic damage.",
+      "de": "Dein nekrotischer Schaden ignoriert Resistenz gegen nekrotischen Schaden."
+    },
+    "descriptions": {
+      "en": "Your necrotic damage ignores resistance to necrotic damage.",
+      "de": "Dein nekrotischer Schaden ignoriert Resistenz gegen nekrotischen Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#divine-strike",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Your weapon attacks deal additional necrotic damage once on each of your turns.",
+      "de": "Deine Waffenangriffe verursachen einmal pro Zug zusätzlichen nekrotischen Schaden."
+    },
+    "descriptions": {
+      "en": "Your weapon attacks deal additional necrotic damage once on each of your turns.",
+      "de": "Deine Waffenangriffe verursachen einmal pro Zug zusätzlichen nekrotischen Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-death-improved-reaper",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "cleric/death#improved-reaper",
+    "classId": "cleric",
+    "subclassId": "death",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Your Reaper feature can affect two creatures when you cast a necromancy spell of 1st through 5th level.",
+      "de": "Dein Merkmal Schnitter kann zwei Kreaturen betreffen, wenn du einen Nekromantiezauber des 1. bis 5. Grades wirkst."
+    },
+    "descriptions": {
+      "en": "Your Reaper feature can affect two creatures when you cast a necromancy spell of 1st through 5th level.",
+      "de": "Dein Merkmal Schnitter kann zwei Kreaturen betreffen, wenn du einen Nekromantiezauber des 1. bis 5. Grades wirkst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-purpledragonknight-rallying-cry",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "fighter/purpledragonknight#rallying-cry",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "When you use Second Wind, you can also restore hit points to nearby allies.",
+      "de": "Wenn du Zweites Aufatmen einsetzt, kannst du auch nahen Verbündeten Trefferpunkte zurückgeben."
+    },
+    "descriptions": {
+      "en": "When you use Second Wind, you can also restore hit points to nearby allies.",
+      "de": "Wenn du Zweites Aufatmen einsetzt, kannst du auch nahen Verbündeten Trefferpunkte zurückgeben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-purpledragonknight-royal-envoy",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "fighter/purpledragonknight#royal-envoy",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "You gain proficiency in Persuasion and can add a bonus to certain Charisma checks.",
+      "de": "Du erhältst Übung in Überzeugen und kannst auf bestimmte Charisma-Proben einen Bonus addieren."
+    },
+    "descriptions": {
+      "en": "You gain proficiency in Persuasion and can add a bonus to certain Charisma checks.",
+      "de": "Du erhältst Übung in Überzeugen und kannst auf bestimmte Charisma-Proben einen Bonus addieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-purpledragonknight-inspiring-surge",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "fighter/purpledragonknight#inspiring-surge",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "When you use Action Surge, an ally can make an attack as a reaction.",
+      "de": "Wenn du Aktionsschub einsetzt, kann ein Verbündeter als Reaktion einen Angriff ausführen."
+    },
+    "descriptions": {
+      "en": "When you use Action Surge, an ally can make an attack as a reaction.",
+      "de": "Wenn du Aktionsschub einsetzt, kann ein Verbündeter als Reaktion einen Angriff ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-purpledragonknight-bulwark",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "fighter/purpledragonknight#bulwark",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "When you use Indomitable, you can extend its benefit to an ally.",
+      "de": "Wenn du Unbeugsam einsetzt, kannst du dessen Vorteil auf einen Verbündeten ausweiten."
+    },
+    "descriptions": {
+      "en": "When you use Indomitable, you can extend its benefit to an ally.",
+      "de": "Wenn du Unbeugsam einsetzt, kannst du dessen Vorteil auf einen Verbündeten ausweiten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-manifest-echo",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#manifest-echo",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You summon a magical echo of yourself that can attack, move, and serve as the origin of your actions.",
+      "de": "Du beschwörst ein magisches Echo deiner selbst, das angreifen, sich bewegen und als Ursprung deiner Aktionen dienen kann."
+    },
+    "descriptions": {
+      "en": "You summon a magical echo of yourself that can attack, move, and serve as the origin of your actions.",
+      "de": "Du beschwörst ein magisches Echo deiner selbst, das angreifen, sich bewegen und als Ursprung deiner Aktionen dienen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-unleash-incarnation",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#unleash-incarnation",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can make an additional melee attack from your echo's position when you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du von der Position deines Echos aus einen zusätzlichen Nahkampfangriff ausführen."
+    },
+    "descriptions": {
+      "en": "You can make an additional melee attack from your echo's position when you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du von der Position deines Echos aus einen zusätzlichen Nahkampfangriff ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-echo-avatar",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#echo-avatar",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "You can transfer your senses to your echo and move it farther away.",
+      "de": "Du kannst deine Sinne auf dein Echo übertragen und es weiter entfernt bewegen."
+    },
+    "descriptions": {
+      "en": "You can transfer your senses to your echo and move it farther away.",
+      "de": "Du kannst deine Sinne auf dein Echo übertragen und es weiter entfernt bewegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-shadow-martyr",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#shadow-martyr",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can use your reaction to move your echo to protect an ally from an attack.",
+      "de": "Du kannst deine Reaktion einsetzen, um dein Echo zu bewegen und einen Verbündeten vor einem Angriff zu schützen."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to move your echo to protect an ally from an attack.",
+      "de": "Du kannst deine Reaktion einsetzen, um dein Echo zu bewegen und einen Verbündeten vor einem Angriff zu schützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-reclaim-potential",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#reclaim-potential",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "When your echo is destroyed, you can gain temporary hit points and regain uses of Unleash Incarnation.",
+      "de": "Wenn dein Echo zerstört wird, kannst du temporäre Trefferpunkte erhalten und Anwendungen von Entfesselte Inkarnation zurückgewinnen."
+    },
+    "descriptions": {
+      "en": "When your echo is destroyed, you can gain temporary hit points and regain uses of Unleash Incarnation.",
+      "de": "Wenn dein Echo zerstört wird, kannst du temporäre Trefferpunkte erhalten und Anwendungen von Entfesselte Inkarnation zurückgewinnen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-echo_knight-legion-of-one",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "fighter/echo_knight#legion-of-one",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "You can maintain two echoes and improve your ability to create them.",
+      "de": "Du kannst zwei Echos gleichzeitig aufrechterhalten und deine Fähigkeit verbessern, sie zu erschaffen."
+    },
+    "descriptions": {
+      "en": "You can maintain two echoes and improve your ability to create them.",
+      "de": "Du kannst zwei Echos gleichzeitig aufrechterhalten und deine Fähigkeit verbessern, sie zu erschaffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-longdeath-touch-of-death",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/longdeath#touch-of-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "When you reduce a creature to 0 hit points, you gain temporary hit points.",
+      "de": "Wenn du die Trefferpunkte einer Kreatur auf 0 reduzierst, erhältst du temporäre Trefferpunkte."
+    },
+    "descriptions": {
+      "en": "When you reduce a creature to 0 hit points, you gain temporary hit points.",
+      "de": "Wenn du die Trefferpunkte einer Kreatur auf 0 reduzierst, erhältst du temporäre Trefferpunkte."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-longdeath-hour-of-reaping",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/longdeath#hour-of-reaping",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can use an action to frighten creatures near you with a display of deathly power.",
+      "de": "Du kannst eine Aktion einsetzen, um Kreaturen in deiner Nähe durch eine Demonstration todesnaher Macht zu verängstigen."
+    },
+    "descriptions": {
+      "en": "You can use an action to frighten creatures near you with a display of deathly power.",
+      "de": "Du kannst eine Aktion einsetzen, um Kreaturen in deiner Nähe durch eine Demonstration todesnaher Macht zu verängstigen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-longdeath-mastery-of-death",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/longdeath#mastery-of-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "You can spend ki to remain at 1 hit point instead of falling to 0.",
+      "de": "Du kannst Ki ausgeben, um bei 1 Trefferpunkt zu bleiben, statt auf 0 zu fallen."
+    },
+    "descriptions": {
+      "en": "You can spend ki to remain at 1 hit point instead of falling to 0.",
+      "de": "Du kannst Ki ausgeben, um bei 1 Trefferpunkt zu bleiben, statt auf 0 zu fallen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-longdeath-touch-of-the-long-death",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/longdeath#touch-of-the-long-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You can spend ki to deal massive necrotic damage to a creature you touch.",
+      "de": "Du kannst Ki ausgeben, um einer berührten Kreatur massiven nekrotischen Schaden zuzufügen."
+    },
+    "descriptions": {
+      "en": "You can spend ki to deal massive necrotic damage to a creature you touch.",
+      "de": "Du kannst Ki ausgeben, um einer berührten Kreatur massiven nekrotischen Schaden zuzufügen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-sun_soul-radiant-sun-bolt",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/sun_soul#radiant-sun-bolt",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can make ranged spell attacks that deal radiant damage with your ki-infused strikes.",
+      "de": "Du kannst mit deinen Ki-erfüllten Schlägen Fernkampf-Zauberangriffe ausführen, die gleißenden Schaden verursachen."
+    },
+    "descriptions": {
+      "en": "You can make ranged spell attacks that deal radiant damage with your ki-infused strikes.",
+      "de": "Du kannst mit deinen Ki-erfüllten Schlägen Fernkampf-Zauberangriffe ausführen, die gleißenden Schaden verursachen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-sun_soul-searing-sunburst",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/sun_soul#searing-sunburst",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You unleash a burst of radiant energy that harms creatures in an area.",
+      "de": "Du entfesselst einen Ausbruch gleißender Energie, der Kreaturen in einem Bereich schädigt."
+    },
+    "descriptions": {
+      "en": "You unleash a burst of radiant energy that harms creatures in an area.",
+      "de": "Du entfesselst einen Ausbruch gleißender Energie, der Kreaturen in einem Bereich schädigt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-sun_soul-searing-sunburst-improvement",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/sun_soul#searing-sunburst-improvement",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Your radiant burst becomes more potent as your ki mastery grows.",
+      "de": "Dein gleißender Ausbruch wird mit wachsender Ki-Meisterschaft mächtiger."
+    },
+    "descriptions": {
+      "en": "Your radiant burst becomes more potent as your ki mastery grows.",
+      "de": "Dein gleißender Ausbruch wird mit wachsender Ki-Meisterschaft mächtiger."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-sun_soul-sun-shield",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "monk/sun_soul#sun-shield",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You are surrounded by radiant light that harms creatures striking you.",
+      "de": "Du bist von gleißendem Licht umgeben, das Kreaturen schädigt, die dich treffen."
+    },
+    "descriptions": {
+      "en": "You are surrounded by radiant light that harms creatures striking you.",
+      "de": "Du bist von gleißendem Licht umgeben, das Kreaturen schädigt, die dich treffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-ascendant_dragon-draconic-disciple",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "monk/ascendant_dragon#draconic-disciple",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You gain a draconic connection, including a breath weapon and the ability to alter damage types.",
+      "de": "Du erhältst eine drakonische Verbindung, darunter einen Odemangriff und die Fähigkeit, Schadensarten zu verändern."
+    },
+    "descriptions": {
+      "en": "You gain a draconic connection, including a breath weapon and the ability to alter damage types.",
+      "de": "Du erhältst eine drakonische Verbindung, darunter einen Odemangriff und die Fähigkeit, Schadensarten zu verändern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-ascendant_dragon-wings-unfurled",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "monk/ascendant_dragon#wings-unfurled",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can unfurl spectral dragon wings to fly when using Step of the Wind.",
+      "de": "Du kannst geisterhafte Drachenflügel entfalten, um beim Einsatz von Schritt des Windes zu fliegen."
+    },
+    "descriptions": {
+      "en": "You can unfurl spectral dragon wings to fly when using Step of the Wind.",
+      "de": "Du kannst geisterhafte Drachenflügel entfalten, um beim Einsatz von Schritt des Windes zu fliegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-ascendant_dragon-aspect-of-the-wyrm",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "monk/ascendant_dragon#aspect-of-the-wyrm",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "You project a draconic aura that can protect allies or frighten foes.",
+      "de": "Du strahlst eine drachische Aura aus, die Verbündete schützen oder Gegner verängstigen kann."
+    },
+    "descriptions": {
+      "en": "You project a draconic aura that can protect allies or frighten foes.",
+      "de": "Du strahlst eine drachische Aura aus, die Verbündete schützen oder Gegner verängstigen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-ascendant_dragon-ascendant-aspect",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "monk/ascendant_dragon#ascendant-aspect",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Your draconic power reaches its peak, improving your breath and aura.",
+      "de": "Deine drachische Macht erreicht ihren Höhepunkt und verbessert deinen Odem und deine Aura."
+    },
+    "descriptions": {
+      "en": "Your draconic power reaches its peak, improving your breath and aura.",
+      "de": "Deine drachische Macht erreicht ihren Höhepunkt und verbessert deinen Odem und deine Aura."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-crown-oath-spells",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "paladin/crown#oath-spells",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You always have the Oath of the Crown spells prepared.",
+      "de": "Du hast die Zauber des Schwurs der Krone stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Oath of the Crown spells prepared.",
+      "de": "Du hast die Zauber des Schwurs der Krone stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-crown-channel-divinity",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "paladin/crown#channel-divinity",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can use Champion Challenge to draw foes toward you or Turn the Tide to bolster allies.",
+      "de": "Du kannst mit Herausforderung des Champions Gegner zu dir ziehen oder mit Wende des Gefechts Verbündete stärken."
+    },
+    "descriptions": {
+      "en": "You can use Champion Challenge to draw foes toward you or Turn the Tide to bolster allies.",
+      "de": "Du kannst mit Herausforderung des Champions Gegner zu dir ziehen oder mit Wende des Gefechts Verbündete stärken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-crown-aura-of-the-guardian",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "paladin/crown#aura-of-the-guardian",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "You can take damage in place of a nearby creature.",
+      "de": "Du kannst anstelle einer nahen Kreatur Schaden erleiden."
+    },
+    "descriptions": {
+      "en": "You can take damage in place of a nearby creature.",
+      "de": "Du kannst anstelle einer nahen Kreatur Schaden erleiden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-crown-unyielding-spirit",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "paladin/crown#unyielding-spirit",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "You have advantage on saving throws against paralysis and stunning.",
+      "de": "Du hast Vorteil bei Rettungswürfen gegen Lähmung und Betäubung."
+    },
+    "descriptions": {
+      "en": "You have advantage on saving throws against paralysis and stunning.",
+      "de": "Du hast Vorteil bei Rettungswürfen gegen Lähmung und Betäubung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-crown-exalted-champion",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "paladin/crown#exalted-champion",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "featureType": "subclass",
+    "level": 20,
+    "names": {
+      "en": "You gain powerful defensive benefits and can protect allies from harm.",
+      "de": "Du erhältst mächtige Verteidigungsvorteile und kannst Verbündete vor Schaden schützen."
+    },
+    "descriptions": {
+      "en": "You gain powerful defensive benefits and can protect allies from harm.",
+      "de": "Du erhältst mächtige Verteidigungsvorteile und kannst Verbündete vor Schaden schützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-oath-spells",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#oath-spells",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You always have the Oathbreaker spells prepared.",
+      "de": "Du hast die Zauber des Schwurbrechers stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Oathbreaker spells prepared.",
+      "de": "Du hast die Zauber des Schwurbrechers stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-channel-divinity-control-undead",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#channel-divinity-control-undead",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can use Channel Divinity to bring an undead creature under your control.",
+      "de": "Du kannst Göttliche Macht einsetzen, um eine untote Kreatur unter deine Kontrolle zu bringen."
+    },
+    "descriptions": {
+      "en": "You can use Channel Divinity to bring an undead creature under your control.",
+      "de": "Du kannst Göttliche Macht einsetzen, um eine untote Kreatur unter deine Kontrolle zu bringen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-channel-divinity-dreadful-aspect",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#channel-divinity-dreadful-aspect",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You can radiate a terrifying presence that frightens nearby creatures.",
+      "de": "Du kannst eine furchterregende Präsenz ausstrahlen, die nahe Kreaturen verängstigt."
+    },
+    "descriptions": {
+      "en": "You can radiate a terrifying presence that frightens nearby creatures.",
+      "de": "Du kannst eine furchterregende Präsenz ausstrahlen, die nahe Kreaturen verängstigt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-aura-of-hate",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#aura-of-hate",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "You and nearby fiends and undead deal extra melee weapon damage.",
+      "de": "Du und nahe Unholde sowie Untote verursacht zusätzlichen Nahkampfwaffenschaden."
+    },
+    "descriptions": {
+      "en": "You and nearby fiends and undead deal extra melee weapon damage.",
+      "de": "Du und nahe Unholde sowie Untote verursacht zusätzlichen Nahkampfwaffenschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-supernatural-resistance",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#supernatural-resistance",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+      "de": "Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen."
+    },
+    "descriptions": {
+      "en": "You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+      "de": "Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-oathbreaker-dread-lord",
+    "ruleset": "2014",
+    "contentSourceId": "dmg-2014",
+    "sourceReference": "paladin/oathbreaker#dread-lord",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "featureType": "subclass",
+    "level": 20,
+    "names": {
+      "en": "You transform into a terrifying avatar of darkness with a damaging aura and enhanced attacks.",
+      "de": "Du verwandelst dich in einen furchterregenden Avatar der Dunkelheit mit Schadensaura und verbesserten Angriffen."
+    },
+    "descriptions": {
+      "en": "You transform into a terrifying avatar of darkness with a damaging aura and enhanced attacks.",
+      "de": "Du verwandelst dich in einen furchterregenden Avatar der Dunkelheit mit Schadensaura und verbesserten Angriffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-drakewarden-draconic-gift",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "ranger/drakewarden#draconic-gift",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You learn Draconic and can use a drake as a spellcasting focus.",
+      "de": "Du erlernst Drakonisch und kannst einen Drachen als Zauberfokus verwenden."
+    },
+    "descriptions": {
+      "en": "You learn Draconic and can use a drake as a spellcasting focus.",
+      "de": "Du erlernst Drakonisch und kannst einen Drachen als Zauberfokus verwenden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-drakewarden-drake-companion",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "ranger/drakewarden#drake-companion",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "You summon a drake that fights alongside you and grows with your ranger level.",
+      "de": "Du beschwörst einen Drachen, der an deiner Seite kämpft und mit deiner Waldläuferstufe wächst."
+    },
+    "descriptions": {
+      "en": "You summon a drake that fights alongside you and grows with your ranger level.",
+      "de": "Du beschwörst einen Drachen, der an deiner Seite kämpft und mit deiner Waldläuferstufe wächst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-drakewarden-bond-of-fang-and-scale",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "ranger/drakewarden#bond-of-fang-and-scale",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Your drake gains stronger attacks and you gain resistance while it is summoned.",
+      "de": "Dein Drache erhält stärkere Angriffe und du erhältst Resistenz, solange er beschworen ist."
+    },
+    "descriptions": {
+      "en": "Your drake gains stronger attacks and you gain resistance while it is summoned.",
+      "de": "Dein Drache erhält stärkere Angriffe und du erhältst Resistenz, solange er beschworen ist."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-drakewarden-drake-s-breath",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "ranger/drakewarden#drake-s-breath",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Your drake can exhale elemental energy in an area.",
+      "de": "Dein Drache kann Elementarenergie in einem Bereich ausatmen."
+    },
+    "descriptions": {
+      "en": "Your drake can exhale elemental energy in an area.",
+      "de": "Dein Drache kann Elementarenergie in einem Bereich ausatmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-drakewarden-perfected-bond",
+    "ruleset": "2014",
+    "contentSourceId": "ftd-2021",
+    "sourceReference": "ranger/drakewarden#perfected-bond",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Your bond improves your drake's combat abilities and grants you greater protection.",
+      "de": "Eure Verbindung verbessert die Kampffähigkeiten deines Drachen und gewährt dir stärkeren Schutz."
+    },
+    "descriptions": {
+      "en": "Your bond improves your drake's combat abilities and grants you greater protection.",
+      "de": "Eure Verbindung verbessert die Kampffähigkeiten deines Drachen und gewährt dir stärkeren Schutz."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-lunar-lunar-embodiment",
+    "ruleset": "2014",
+    "contentSourceId": "dsotdq-2022",
+    "sourceReference": "sorcerer/lunar#lunar-embodiment",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Your lunar magic grants access to spells associated with the phases of the moon.",
+      "de": "Deine Mondmagie gewährt dir Zugang zu Zaubern, die mit den Mondphasen verbunden sind."
+    },
+    "descriptions": {
+      "en": "Your lunar magic grants access to spells associated with the phases of the moon.",
+      "de": "Deine Mondmagie gewährt dir Zugang zu Zaubern, die mit den Mondphasen verbunden sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-lunar-lunar-boons",
+    "ruleset": "2014",
+    "contentSourceId": "dsotdq-2022",
+    "sourceReference": "sorcerer/lunar#lunar-boons",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Your current lunar phase grants a magical benefit and can be changed through your sorcery.",
+      "de": "Deine aktuelle Mondphase gewährt einen magischen Vorteil und kann durch deine Zauberei gewechselt werden."
+    },
+    "descriptions": {
+      "en": "Your current lunar phase grants a magical benefit and can be changed through your sorcery.",
+      "de": "Deine aktuelle Mondphase gewährt einen magischen Vorteil und kann durch deine Zauberei gewechselt werden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-lunar-waxing-and-waning",
+    "ruleset": "2014",
+    "contentSourceId": "dsotdq-2022",
+    "sourceReference": "sorcerer/lunar#waxing-and-waning",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can shift between lunar phases and adjust the spells associated with them.",
+      "de": "Du kannst zwischen Mondphasen wechseln und die damit verbundenen Zauber anpassen."
+    },
+    "descriptions": {
+      "en": "You can shift between lunar phases and adjust the spells associated with them.",
+      "de": "Du kannst zwischen Mondphasen wechseln und die damit verbundenen Zauber anpassen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-lunar-lunar-empowerment",
+    "ruleset": "2014",
+    "contentSourceId": "dsotdq-2022",
+    "sourceReference": "sorcerer/lunar#lunar-empowerment",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Your lunar phase improves your magical power and grants additional benefits.",
+      "de": "Deine Mondphase verstärkt deine magische Macht und gewährt zusätzliche Vorteile."
+    },
+    "descriptions": {
+      "en": "Your lunar phase improves your magical power and grants additional benefits.",
+      "de": "Deine Mondphase verstärkt deine magische Macht und gewährt zusätzliche Vorteile."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-lunar-lunar-phenomenon",
+    "ruleset": "2014",
+    "contentSourceId": "dsotdq-2022",
+    "sourceReference": "sorcerer/lunar#lunar-phenomenon",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "You can unleash a powerful lunar manifestation tied to your chosen phase.",
+      "de": "Du kannst eine mächtige, an deine gewählte Phase gebundene Monderscheinung entfesseln."
+    },
+    "descriptions": {
+      "en": "You can unleash a powerful lunar manifestation tied to your chosen phase.",
+      "de": "Du kannst eine mächtige, an deine gewählte Phase gebundene Monderscheinung entfesseln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undead-expanded-spell-list",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "warlock/undead#expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "The Undead grants additional spells that are available for you to learn.",
+      "de": "Der Untote erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "descriptions": {
+      "en": "The Undead grants additional spells that are available for you to learn.",
+      "de": "Der Untote erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undead-form-of-dread",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "warlock/undead#form-of-dread",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You transform into a terrifying form that grants temporary hit points and frightening attacks.",
+      "de": "Du verwandelst dich in eine furchterregende Gestalt, die temporäre Trefferpunkte und verängstigende Angriffe verleiht."
+    },
+    "descriptions": {
+      "en": "You transform into a terrifying form that grants temporary hit points and frightening attacks.",
+      "de": "Du verwandelst dich in eine furchterregende Gestalt, die temporäre Trefferpunkte und verängstigende Angriffe verleiht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undead-grave-touched",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "warlock/undead#grave-touched",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Your attacks can deal necrotic damage and you gain benefits against certain effects.",
+      "de": "Deine Angriffe können nekrotischen Schaden verursachen und du erhältst Vorteile gegen bestimmte Effekte."
+    },
+    "descriptions": {
+      "en": "Your attacks can deal necrotic damage and you gain benefits against certain effects.",
+      "de": "Deine Angriffe können nekrotischen Schaden verursachen und du erhältst Vorteile gegen bestimmte Effekte."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undead-necrotic-husk",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "warlock/undead#necrotic-husk",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You gain resistance to necrotic damage and can survive a devastating blow through your undead nature.",
+      "de": "Du erhältst Resistenz gegen nekrotischen Schaden und kannst dank deiner untoten Natur einen verheerenden Treffer überstehen."
+    },
+    "descriptions": {
+      "en": "You gain resistance to necrotic damage and can survive a devastating blow through your undead nature.",
+      "de": "Du erhältst Resistenz gegen nekrotischen Schaden und kannst dank deiner untoten Natur einen verheerenden Treffer überstehen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undead-spirit-projection",
+    "ruleset": "2014",
+    "contentSourceId": "vrgtr-2021",
+    "sourceReference": "warlock/undead#spirit-projection",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You project your spirit from your body, gaining unusual movement and combat benefits.",
+      "de": "Du projizierst deinen Geist aus deinem Körper und erhältst ungewöhnliche Bewegungs- und Kampfvorteile."
+    },
+    "descriptions": {
+      "en": "You project your spirit from your body, gaining unusual movement and combat benefits.",
+      "de": "Du projizierst deinen Geist aus deinem Körper und erhältst ungewöhnliche Bewegungs- und Kampfvorteile."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undying-expanded-spell-list",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "warlock/undying#expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "The Undying grants additional spells that are available for you to learn.",
+      "de": "Der Unsterbliche erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "descriptions": {
+      "en": "The Undying grants additional spells that are available for you to learn.",
+      "de": "Der Unsterbliche erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undying-among-the-dead",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "warlock/undying#among-the-dead",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn a necromancy cantrip and gain protection when undead attempt to attack you.",
+      "de": "Du erlernst einen Nekromantie-Zaubertrick und erhältst Schutz, wenn Untote versuchen, dich anzugreifen."
+    },
+    "descriptions": {
+      "en": "You learn a necromancy cantrip and gain protection when undead attempt to attack you.",
+      "de": "Du erlernst einen Nekromantie-Zaubertrick und erhältst Schutz, wenn Untote versuchen, dich anzugreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undying-defy-death",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "warlock/undying#defy-death",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can regain hit points when you succeed on a death saving throw or stabilize a creature.",
+      "de": "Du kannst Trefferpunkte zurückerhalten, wenn du einen Todesrettungswurf bestehst oder eine Kreatur stabilisierst."
+    },
+    "descriptions": {
+      "en": "You can regain hit points when you succeed on a death saving throw or stabilize a creature.",
+      "de": "Du kannst Trefferpunkte zurückerhalten, wenn du einen Todesrettungswurf bestehst oder eine Kreatur stabilisierst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undying-undying-nature",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "warlock/undying#undying-nature",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can hold your breath indefinitely and need less food, water, and sleep.",
+      "de": "Du kannst unbegrenzt den Atem anhalten und benötigst weniger Nahrung, Wasser und Schlaf."
+    },
+    "descriptions": {
+      "en": "You can hold your breath indefinitely and need less food, water, and sleep.",
+      "de": "Du kannst unbegrenzt den Atem anhalten und benötigst weniger Nahrung, Wasser und Schlaf."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-undying-indestructible-life",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "warlock/undying#indestructible-life",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You can regain hit points and reattach severed body parts.",
+      "de": "Du kannst Trefferpunkte zurückerhalten und abgetrennte Körperteile wieder anfügen."
+    },
+    "descriptions": {
+      "en": "You can regain hit points and reattach severed body parts.",
+      "de": "Du kannst Trefferpunkte zurückerhalten und abgetrennte Körperteile wieder anfügen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-bladesinging-training-in-war-and-song",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "wizard/bladesinging#training-in-war-and-song",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You gain proficiency with light armor and one chosen one-handed melee weapon.",
+      "de": "Du erhältst Übung mit leichter Rüstung und einer einhändigen Nahkampfwaffe deiner Wahl."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with light armor and one chosen one-handed melee weapon.",
+      "de": "Du erhältst Übung mit leichter Rüstung und einer einhändigen Nahkampfwaffe deiner Wahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-bladesinging-bladesong",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "wizard/bladesinging#bladesong",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You enter a magical stance that improves your defense, speed, and concentration.",
+      "de": "Du nimmst eine magische Kampfhaltung ein, die Verteidigung, Bewegungsrate und Konzentration verbessert."
+    },
+    "descriptions": {
+      "en": "You enter a magical stance that improves your defense, speed, and concentration.",
+      "de": "Du nimmst eine magische Kampfhaltung ein, die Verteidigung, Bewegungsrate und Konzentration verbessert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-bladesinging-extra-attack",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "wizard/bladesinging#extra-attack",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can attack twice when you take the Attack action, replacing one attack with a cantrip.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du zweimal angreifen und einen Angriff durch einen Zaubertrick ersetzen."
+    },
+    "descriptions": {
+      "en": "You can attack twice when you take the Attack action, replacing one attack with a cantrip.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du zweimal angreifen und einen Angriff durch einen Zaubertrick ersetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-bladesinging-song-of-defense",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "wizard/bladesinging#song-of-defense",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can expend a spell slot to reduce damage while your Bladesong is active.",
+      "de": "Du kannst einen Zauberplatz ausgeben, um Schaden zu reduzieren, solange dein Klingengesang aktiv ist."
+    },
+    "descriptions": {
+      "en": "You can expend a spell slot to reduce damage while your Bladesong is active.",
+      "de": "Du kannst einen Zauberplatz ausgeben, um Schaden zu reduzieren, solange dein Klingengesang aktiv ist."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-bladesinging-song-of-victory",
+    "ruleset": "2014",
+    "contentSourceId": "scag-2015",
+    "sourceReference": "wizard/bladesinging#song-of-victory",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You add your Intelligence modifier to the damage of your melee weapon attacks while Bladesong is active.",
+      "de": "Du addierst deinen Intelligenzmodifikator zum Schaden deiner Nahkampfwaffenangriffe, solange dein Klingengesang aktiv ist."
+    },
+    "descriptions": {
+      "en": "You add your Intelligence modifier to the damage of your melee weapon attacks while Bladesong is active.",
+      "de": "Du addierst deinen Intelligenzmodifikator zum Schaden deiner Nahkampfwaffenangriffe, solange dein Klingengesang aktiv ist."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-chronurgy-chronal-shift",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/chronurgy#chronal-shift",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can use your reaction to force a creature to reroll an attack roll, ability check, or saving throw.",
+      "de": "Du kannst deine Reaktion einsetzen, um eine Kreatur einen Angriffs-, Attributs- oder Rettungswurf wiederholen zu lassen."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to force a creature to reroll an attack roll, ability check, or saving throw.",
+      "de": "Du kannst deine Reaktion einsetzen, um eine Kreatur einen Angriffs-, Attributs- oder Rettungswurf wiederholen zu lassen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-chronurgy-temporal-awareness",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/chronurgy#temporal-awareness",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You add your Intelligence modifier to initiative rolls.",
+      "de": "Du addierst deinen Intelligenzmodifikator auf Initiativewürfe."
+    },
+    "descriptions": {
+      "en": "You add your Intelligence modifier to initiative rolls.",
+      "de": "Du addierst deinen Intelligenzmodifikator auf Initiativewürfe."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-chronurgy-momentary-stasis",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/chronurgy#momentary-stasis",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can briefly place a creature in a suspended moment of time.",
+      "de": "Du kannst eine Kreatur kurzzeitig in einem angehaltenen Zeitmoment festsetzen."
+    },
+    "descriptions": {
+      "en": "You can briefly place a creature in a suspended moment of time.",
+      "de": "Du kannst eine Kreatur kurzzeitig in einem angehaltenen Zeitmoment festsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-chronurgy-arcane-abeyance",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/chronurgy#arcane-abeyance",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can store a spell in a mote that another creature can release.",
+      "de": "Du kannst einen Zauber in einem Funken speichern, den eine andere Kreatur freisetzen kann."
+    },
+    "descriptions": {
+      "en": "You can store a spell in a mote that another creature can release.",
+      "de": "Du kannst einen Zauber in einem Funken speichern, den eine andere Kreatur freisetzen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-chronurgy-convergent-future",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/chronurgy#convergent-future",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You can decide whether a nearby creature succeeds or fails on a d20 test, at a personal cost.",
+      "de": "Du kannst bestimmen, ob eine nahe Kreatur einen W20-Wurf besteht oder nicht, zahlst dafür jedoch einen persönlichen Preis."
+    },
+    "descriptions": {
+      "en": "You can decide whether a nearby creature succeeds or fails on a d20 test, at a personal cost.",
+      "de": "Du kannst bestimmen, ob eine nahe Kreatur einen W20-Wurf besteht oder nicht, zahlst dafür jedoch einen persönlichen Preis."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-graviturgy-adjust-density",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/graviturgy#adjust-density",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can magically increase or decrease the weight of a creature or object.",
+      "de": "Du kannst das Gewicht einer Kreatur oder eines Gegenstands magisch erhöhen oder verringern."
+    },
+    "descriptions": {
+      "en": "You can magically increase or decrease the weight of a creature or object.",
+      "de": "Du kannst das Gewicht einer Kreatur oder eines Gegenstands magisch erhöhen oder verringern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-graviturgy-gravity-well",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/graviturgy#gravity-well",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "When you cast a spell on a creature, you can move it a short distance.",
+      "de": "Wenn du einen Zauber auf eine Kreatur wirkst, kannst du sie ein kurzes Stück bewegen."
+    },
+    "descriptions": {
+      "en": "When you cast a spell on a creature, you can move it a short distance.",
+      "de": "Wenn du einen Zauber auf eine Kreatur wirkst, kannst du sie ein kurzes Stück bewegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-graviturgy-violent-attraction",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/graviturgy#violent-attraction",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "You can use your reaction to increase the impact of a falling creature or object or reduce falling damage.",
+      "de": "Du kannst deine Reaktion einsetzen, um den Aufprall einer fallenden Kreatur oder eines Gegenstands zu verstärken oder Fallschaden zu verringern."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to increase the impact of a falling creature or object or reduce falling damage.",
+      "de": "Du kannst deine Reaktion einsetzen, um den Aufprall einer fallenden Kreatur oder eines Gegenstands zu verstärken oder Fallschaden zu verringern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-graviturgy-event-horizon",
+    "ruleset": "2014",
+    "contentSourceId": "egw-2020",
+    "sourceReference": "wizard/graviturgy#event-horizon",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "You create a gravitational field that damages and restrains nearby creatures.",
+      "de": "Du erschaffst ein Gravitationsfeld, das nahe Kreaturen schädigt und festsetzt."
+    },
+    "descriptions": {
+      "en": "You create a gravitational field that damages and restrains nearby creatures.",
+      "de": "Du erschaffst ein Gravitationsfeld, das nahe Kreaturen schädigt und festsetzt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
