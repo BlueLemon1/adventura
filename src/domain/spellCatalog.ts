@@ -62,10 +62,7 @@ function normalizeSpellName(spell: CatalogSpell): string {
  * Keep the first occurrence of a spell. The SRD array is deliberately passed
  * first, so an SRD record always wins over an identically named supplement.
  */
-function mergeSpellRecords(
-  base: CatalogSpell[],
-  supplements: CatalogSpell[],
-): CatalogSpell[] {
+function mergeSpellRecords(base: CatalogSpell[], supplements: CatalogSpell[]): CatalogSpell[] {
   const seen = new Set<string>()
   return [...base, ...supplements].filter((spell) => {
     const key = normalizeSpellName(spell)

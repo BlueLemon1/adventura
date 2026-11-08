@@ -115,7 +115,6 @@ export function validateClassFeatureRecords(
   return errors
 }
 
-
 /**
  * Merge SRD features before supplemental features and keep only the first
  * record for the same class/subclass feature at the same level. This makes
