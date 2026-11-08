@@ -15,6 +15,7 @@ import {
 } from '../components/ui/select'
 import type { Language } from './i18n'
 import { translate } from './i18n'
+import { SpellHigherLevel } from './SpellHigherLevel'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 
@@ -545,10 +546,7 @@ export function SpellCatalog({
                   </p>
                 ) : null}
                 {spell.higherLevel && (
-                  <div className="spell-higher-level">
-                    <strong>{t('Auf höheren Graden:')}</strong>
-                    <p>{spell.higherLevel}</p>
-                  </div>
+                  <SpellHigherLevel text={spell.higherLevel} label={t('Auf höheren Graden:')} />
                 )}
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
