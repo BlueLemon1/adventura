@@ -57,6 +57,8 @@ export interface Character {
   createdAt: string
   updatedAt: string
   abilities?: AbilityScores
+  /** Spellcasting ability; defaults from class when not explicitly selected. */
+  spellcastingAbility?: Ability
   savingThrowProficiencies?: Ability[]
   skillProficiencies?: Partial<Record<SkillId, ProficiencyLevel>>
   armorClass?: number
@@ -146,6 +148,7 @@ export interface KnownSpell {
   higherLevel?: string
   higherLevelLabel?: string
   damage?: SpellDamage[]
+  contentSourceId?: string
   source?: 'class' | 'story' | 'item' | 'feat' | 'other'
   sourceName?: string
   usageLimit?: number
