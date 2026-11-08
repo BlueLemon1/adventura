@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Plus, Sparkles } from 'lucide-react'
-import type { Character, KnownSpell } from '../domain/character'
+import type { Ability, Character, KnownSpell } from '../domain/character'
 import { getSpellbookFeatureSpells, getClassResources } from '../domain/classFeatures'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
@@ -19,41 +19,13 @@ import { SpellCatalog } from './SpellCatalog'
 import { getHigherLevelText } from './SpellHigherLevel'
 import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
-import spells2014 from '../data/spells-2014.json'
-import spells2024 from '../data/spells-2024.json'
-import additionalSpells from '../data/spells-additional.json'
+import { getSpellCatalog } from '../domain/spellCatalog'
+import { getDefaultSpellcastingAbility, getSpellcastingStats } from '../domain/spellcasting'
+import { ABILITIES } from '../domain/character'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
 type UsageReset = NonNullable<KnownSpell['usageReset']>
-
-interface FeatureSpellCatalogEntry {
-  id: string
-  name: string
-  level: number
-  school?: string
-  castingTime?: string
-  range?: string
-  components?: string
-  duration?: string
-  concentration?: boolean
-  ritual?: boolean
-  description?: string
-  higherLevel?: string
-  higherLevelLabel?: string
-  damage?: { dice: string; average: number; type?: string }[]
-  localized?: {
-    name?: string
-    school?: string
-    castingTime?: string
-    range?: string
-    components?: string
-    duration?: string
-    description?: string
-    higherLevel?: string
-    higherLevelLabel?: string
-  }
-}
 
 interface SpellbookPageProps {
   character: Character
@@ -77,14 +49,7 @@ export function SpellbookPage({
   const t = (value: string) => translate(language, value)
   const featureSpells = getSpellbookFeatureSpells(character, language)
   const classResources = getClassResources(character)
-  const spellCatalog = [
-    ...(character.ruleset === '2014' ? spells2014 : spells2024),
-    ...(additionalSpells as unknown as FeatureSpellCatalogEntry[]).filter((spell) =>
-      (spell as FeatureSpellCatalogEntry & { rulesets?: string[] }).rulesets?.includes(
-        character.ruleset,
-      ),
-    ),
-  ] as unknown as FeatureSpellCatalogEntry[]
+  const spellCatalog = getSpellCatalog(character.ruleset)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
     const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
     if (!spell) return knownSpell
@@ -94,6 +59,7 @@ export function SpellbookPage({
     return {
       ...knownSpell,
       name: language === 'de' ? (localized?.name ?? '') : spell.name,
+      contentSourceId: spell.contentSourceId,
       spellLevel: spell.level,
       school: language === 'de' ? (localized?.school ?? '') : spell.school,
       castingTime: language === 'de' ? (localized?.castingTime ?? '') : spell.castingTime,
@@ -105,6 +71,8 @@ export function SpellbookPage({
       higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
     }
   })
+  const spellcastingStats = getSpellcastingStats(character)
+  const selectedSpellcastingAbility = character.spellcastingAbility ?? getDefaultSpellcastingAbility(character) ?? 'int'
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
@@ -153,6 +121,7 @@ export function SpellbookPage({
       higherLevelLabel:
         language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
       damage: spell?.damage,
+      contentSourceId: spell?.contentSourceId,
       notes: featureName,
       source: 'class',
       sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
@@ -257,12 +226,40 @@ export function SpellbookPage({
             icon: <Plus size={15} />,
             count: knownSpells.length + featureSpellEntries.length,
           },
-          { value: 'catalog', label: t('SRD & hinzufügen'), icon: <Sparkles size={15} /> },
+          { value: 'catalog', label: t('Zauber finden'), icon: <Sparkles size={15} /> },
         ]}
       />
 
       {view === 'character' ? (
         <>
+          <section className="panel spellcasting-stats">
+            <PanelHeader title={t('Zauberwerte')} description={t('Zauberangriffe und Rettungswurf-SG')} />
+            <div className="form-grid">
+              <label className="field-label">
+                {t('Zauberattribut')}
+                <Select
+                  value={selectedSpellcastingAbility}
+                  onValueChange={(value) => onUpdateCharacter({ spellcastingAbility: value as Ability })}
+                >
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    {ABILITIES.map((ability) => (
+                      <SelectItem key={ability} value={ability}>{t(({str:'Stärke',dex:'Geschicklichkeit',con:'Konstitution',int:'Intelligenz',wis:'Weisheit',cha:'Charisma'} as Record<Ability,string>)[ability])}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </label>
+              <div className="combat-card">
+                <span>{t('Zauberangriff')}</span>
+                <strong className="combat-number">{spellcastingStats ? (spellcastingStats.attackBonus >= 0 ? '+' : '') + spellcastingStats.attackBonus : '—'}</strong>
+              </div>
+              <div className="combat-card">
+                <span>{t('Rettungswurf-SG')}</span>
+                <strong className="combat-number">{spellcastingStats?.saveDc ?? '—'}</strong>
+              </div>
+            </div>
+            <small>{t('Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.')}</small>
+          </section>
           <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
           <SpellbookList
             spells={[...localizedKnownSpells, ...featureSpellEntries]}
