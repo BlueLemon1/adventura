@@ -237,6 +237,8 @@ const en: Record<string, string> = {
   'Im Buch': 'In spellbook',
   Hinzufügen: 'Add',
   'Klassen:': 'Classes:',
+  'Dunamancy-Zugang': 'Dunamancy access',
+  'Andere Klassen nur mit Zustimmung der Spielleitung': 'Other classes require DM approval',
   'Quellen & Lizenz': 'Sources & license',
   'Keine passenden Zauber gefunden. Prüfe den Klassenfilter oder passe deine Suche an.':
     'No matching spells found. Check the class filter or adjust your search.',
