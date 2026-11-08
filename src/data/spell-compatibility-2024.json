@@ -43,7 +43,8 @@
       "spellId": "tce-2014-mind-sliver",
       "status": "replaced",
       "replacementName": "Mind Sliver",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-tashas-caustic-brew",
@@ -65,13 +66,15 @@
       "spellId": "tce-2014-summon-beast",
       "status": "replaced",
       "replacementName": "Summon Beast",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-fey",
       "status": "replaced",
       "replacementName": "Summon Fey",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-shadowspawn",
@@ -81,37 +84,43 @@
       "spellId": "tce-2014-summon-undead",
       "status": "replaced",
       "replacementName": "Summon Undead",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-aberration",
       "status": "replaced",
       "replacementName": "Summon Aberration",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-construct",
       "status": "replaced",
       "replacementName": "Summon Construct",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-elemental",
       "status": "replaced",
       "replacementName": "Summon Elemental",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-celestial",
       "status": "replaced",
       "replacementName": "Summon Celestial",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-summon-fiend",
       "status": "replaced",
       "replacementName": "Summon Fiend",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "tce-2014-tashas-otherworldly-guise",
@@ -132,7 +141,9 @@
     {
       "spellId": "xge-2014-charm-monster",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-charm-monster"
+      "replacementSpellId": "srd-2024-charm-monster",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-dawn",
@@ -149,7 +160,9 @@
     {
       "spellId": "xge-2014-mind-spike",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-mind-spike"
+      "replacementSpellId": "srd-2024-mind-spike",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-shadow-of-moil",
@@ -159,7 +172,8 @@
       "spellId": "xge-2014-steel-wind-strike",
       "status": "replaced",
       "replacementName": "Steel Wind Strike",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-thunder-step",
@@ -209,7 +223,8 @@
       "spellId": "xge-2014-thunderclap",
       "status": "replaced",
       "replacementName": "Thunderclap",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-erupting-earth",
@@ -250,7 +265,9 @@
     {
       "spellId": "xge-2014-vitriolic-sphere",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-vitriolic-sphere"
+      "replacementSpellId": "srd-2024-vitriolic-sphere",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-control-winds",
@@ -267,7 +284,9 @@
     {
       "spellId": "xge-2014-dragons-breath",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-dragons-breath"
+      "replacementSpellId": "srd-2024-dragons-breath",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-dust-devil",
@@ -465,7 +484,8 @@
       "spellId": "xge-2014-toll-the-dead",
       "status": "replaced",
       "replacementName": "Toll the Dead",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-warding-wind",
@@ -475,7 +495,8 @@
       "spellId": "xge-2014-word-of-radiance",
       "status": "replaced",
       "replacementName": "Word of Radiance",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-mental-prison",
@@ -485,12 +506,15 @@
       "spellId": "xge-2014-synaptic-static",
       "status": "replaced",
       "replacementName": "Synaptic Static",
-      "replacementSource": "phb-2024"
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "xge-2014-ice-knife",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-ice-knife"
+      "replacementSpellId": "srd-2024-ice-knife",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "new"
     },
     {
       "spellId": "scc-2021-borrowed-knowledge",
@@ -650,5 +674,26 @@
       "status": "replaced",
       "replacementSpellId": "srd-2024-befuddlement"
     }
+  ],
+  "phb2024SpellNames": [
+    "Mind Sliver",
+    "Summon Beast",
+    "Summon Fey",
+    "Summon Undead",
+    "Summon Aberration",
+    "Summon Construct",
+    "Summon Elemental",
+    "Summon Celestial",
+    "Summon Fiend",
+    "Charm Monster",
+    "Mind Spike",
+    "Steel Wind Strike",
+    "Thunderclap",
+    "Vitriolic Sphere",
+    "Dragon's Breath",
+    "Toll the Dead",
+    "Word of Radiance",
+    "Synaptic Static",
+    "Ice Knife"
   ]
 }
