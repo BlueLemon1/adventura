@@ -4755,5 +4755,104 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2024-cleric-life-domain-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "cleric/life#domain-spells",
+    "classId": "cleric",
+    "subclassId": "life",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Domain Spells",
+      "de": "Domänenzauber"
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with this domain prepared.",
+      "de": "Du hast die Zauber dieser Domäne stets vorbereitet."
+    },
+    "grantedSpellIds": [
+      "srd-2024-bless",
+      "srd-2024-cure-wounds",
+      "srd-2024-aid",
+      "srd-2024-lesser-restoration",
+      "srd-2024-mass-healing-word",
+      "srd-2024-revivify",
+      "srd-2024-death-ward",
+      "srd-2024-guardian-of-faith",
+      "srd-2024-mass-cure-wounds",
+      "srd-2024-raise-dead"
+    ],
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-paladin-devotion-oath-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "paladin/devotion#oath-spells",
+    "classId": "paladin",
+    "subclassId": "devotion",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Oath Spells",
+      "de": "Schwurzauber"
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with the Oath of Devotion prepared.",
+      "de": "Du hast die Zauber des Schwurs der Hingabe stets vorbereitet."
+    },
+    "grantedSpellIds": [
+      "srd-2024-protection-from-evil-and-good",
+      "srd-2024-sanctuary",
+      "srd-2024-lesser-restoration",
+      "srd-2024-zone-of-truth",
+      "srd-2024-beacon-of-hope",
+      "srd-2024-dispel-magic",
+      "srd-2024-freedom-of-movement",
+      "srd-2024-guardian-of-faith",
+      "srd-2024-commune",
+      "srd-2024-flame-strike"
+    ],
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-paladin-glory-oath-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "paladin/glory#oath-spells",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Oath Spells",
+      "de": "Schwurzauber"
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with the Oath of Glory prepared.",
+      "de": "Du hast die Zauber des Schwurs des Ruhms stets vorbereitet."
+    },
+    "grantedSpellIds": [
+      "srd-2024-guiding-bolt",
+      "srd-2024-heroism",
+      "srd-2024-enhance-ability",
+      "srd-2024-magic-weapon",
+      "srd-2024-haste",
+      "srd-2024-protection-from-energy",
+      "srd-2024-compulsion",
+      "srd-2024-freedom-of-movement",
+      "srd-2024-commune",
+      "srd-2024-flame-strike"
+    ],
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
