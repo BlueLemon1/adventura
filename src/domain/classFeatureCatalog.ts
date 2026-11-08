@@ -2,7 +2,7 @@ import type { ContentLocale, ContentProvenance } from './contentSources'
 import type { Dnd5eRuleset } from './rules'
 
 /**
- * A normalized, edition-specific class feature imported from an SRD source.
+ * A normalized, edition-specific class feature from an official or custom source.
  * The canonical ID is stable across locales; localized text is stored on the
  * same record so translations can never become duplicate features.
  */
