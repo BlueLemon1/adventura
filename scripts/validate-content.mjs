@@ -190,15 +190,15 @@ for (const entry of compatibilityEntries) {
     errors.push(`2024/${entry.spellId}: compatibility entry has no source spell`)
   }
 }
-const phb2024SpellNames = new Set(
-  spellCompatibilityManifest.phb2024SpellNames.map(normalizeContentName),
+const phb2024UpdatedSupplementSpellNames = new Set(
+  spellCompatibilityManifest.phb2024UpdatedSupplementSpellNames.map(normalizeContentName),
 )
 if (!spellCompatibilityManifest.sourceUrl?.includes('dndbeyond.com/posts/1810-')) {
   errors.push('2024 spell compatibility manifest must cite the official PHB 2024 update source')
 }
 for (const spell of additionalSpellRecords) {
   const entry = compatibilityBySpellId.get(spell.id)
-  const appearsInPhb2024 = phb2024SpellNames.has(normalizeContentName(spell.englishName ?? spell.name))
+  const appearsInPhb2024 = phb2024UpdatedSupplementSpellNames.has(normalizeContentName(spell.englishName ?? spell.name))
   if (appearsInPhb2024 && entry?.status !== 'replaced') {
     errors.push(`2024/${spell.id}: PHB 2024 spell must not be classified as Legacy or shared`)
   }
