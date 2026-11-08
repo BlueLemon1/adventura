@@ -23,12 +23,16 @@ const BASE_CLASSES: ClassOption[] = [
 
 export const CLASS_OPTIONS: ClassOption[] = [
   ...BASE_CLASSES,
-  { value: 'artificer', label: 'Artificer', source: 'ERLW / TCE / EFA' },
   { value: 'other', label: 'Andere / eigene Klasse' },
 ]
 
-export function getClassOptions(_ruleset: Dnd5eRuleset): ClassOption[] {
-  return CLASS_OPTIONS
+export function getClassOptions(ruleset: Dnd5eRuleset): ClassOption[] {
+  const artificerSource = ruleset === '2014' ? 'ERLW / TCE' : 'EFA'
+  return [
+    ...BASE_CLASSES,
+    { value: 'artificer', label: 'Erfinder', source: artificerSource },
+    { value: 'other', label: 'Andere / eigene Klasse' },
+  ]
 }
 
 const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOption[]>> = {
