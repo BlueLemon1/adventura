@@ -18,6 +18,7 @@ import { translate } from './i18n'
 import { getHigherLevelText, SpellHigherLevel } from './SpellHigherLevel'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
+import additionalSpells from '../data/spells-additional.json'
 
 interface CatalogSpell {
   id: string
@@ -49,14 +50,27 @@ interface CatalogSpell {
     higherLevelLabel?: string
   }
   damage?: Array<{ dice: string; average: number; type?: string }>
+  rulesets?: Array<'2014' | '2024'>
+  sourceBook?: string
+  sourceAbbreviation?: string
+  sourcePage?: number
+  descriptionKind?: 'official' | 'original-summary'
 }
 
 type SpellSource = NonNullable<KnownSpell['source']>
 type UsageReset = NonNullable<KnownSpell['usageReset']>
 
+const supplementalSpells = additionalSpells as CatalogSpell[]
+
 const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
-  '2014': spells2014 as CatalogSpell[],
-  '2024': spells2024 as CatalogSpell[],
+  '2014': [
+    ...(spells2014 as CatalogSpell[]),
+    ...supplementalSpells.filter((spell) => spell.rulesets?.includes('2014')),
+  ],
+  '2024': [
+    ...(spells2024 as CatalogSpell[]),
+    ...supplementalSpells.filter((spell) => spell.rulesets?.includes('2024')),
+  ],
 }
 
 const CLASS_ALIASES: Record<string, string> = {
@@ -334,7 +348,7 @@ export function SpellCatalog({
       higherLevelLabel: spell.higherLevelLabel,
       damage: spell.damage,
       source,
-      sourceName: sourceName.trim() || undefined,
+      sourceName: [spell.sourceBook, spell.sourcePage ? `S. ${spell.sourcePage}` : undefined, sourceName.trim() || undefined].filter(Boolean).join(' · ') || undefined,
       ...(usageLimit > 0 ? { usageLimit, usageRemaining: usageLimit, usageReset } : {}),
     })
 
@@ -369,8 +383,8 @@ export function SpellCatalog({
   return (
     <section className="panel spell-catalog">
       <PanelHeader
-        title={t('SRD-Zauberkatalog')}
-        description={t('Offizielle SRD-Zauber passend zu deinem Regelwerk.')}
+        title={t('Zauberkatalog')}
+        description={t('SRD- und Erweiterungszauber passend zu deinem Regelwerk.')}
         meta={`${catalog.length} ZAUBER`}
       />
 
@@ -542,6 +556,14 @@ export function SpellCatalog({
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
                 </small>
+                {spell.sourceBook && (
+                  <small className="catalog-spell-source">
+                    {t('Quelle')}: {spell.sourceBook}
+                    {spell.sourceAbbreviation ? ` (${spell.sourceAbbreviation})` : ''}
+                    {spell.sourcePage ? ` · S. ${spell.sourcePage}` : ''}
+                    {spell.descriptionKind === 'original-summary' ? ` · ${t('Eigene Zusammenfassung')}` : ''}
+                  </small>
+                )}
 
                 {!added && editorOpen && (
                   <SpellSourceEditor
@@ -578,7 +600,7 @@ export function SpellCatalog({
       </div>
 
       <p className="catalog-attribution">
-        <BookOpen size={13} /> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0.{' '}
+        <BookOpen size={13} /> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0. Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
         <a
           href="https://github.com/BlueLemon1/adventura/blob/main/src/data/ATTRIBUTION.md"
           target="_blank"
