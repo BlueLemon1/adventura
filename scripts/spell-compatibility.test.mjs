@@ -22,7 +22,7 @@ const legacySpells = additional.filter(
 const catalogSource = readText('../src/domain/spellCatalog.ts')
 
 test('every supplemental 2014 spell has an explicit 2024 compatibility decision', () => {
-  assert.equal(additional.length, 151)
+  assert.equal(additional.length, 171)
   assert.equal(manifest.entries.length, additional.length + 2)
   assert.ok(additional.every((spell) => compatibilityById.has(spell.id)))
   assert.equal(legacySpells.length, 118)
@@ -83,4 +83,16 @@ test('renamed 2014 SRD spells resolve to their 2024 SRD replacements', () => {
 test('legacy spell IDs from 2014 can resolve for 2024 characters', () => {
   assert.match(catalogSource, /sourceRuleset === '2014'/)
   assert.match(catalogSource, /ruleset === '2024' && sourceRuleset === '2014'/)
+})
+
+
+test('all missing PHB 2024 new spells are present as compact PHB records', () => {
+  const phbSpells = additional.filter((spell) => spell.contentSourceId === 'phb-2024')
+  assert.equal(phbSpells.length, 20)
+  assert.ok(phbSpells.every((spell) => spell.rulesets?.length === 1 && spell.rulesets[0] === '2024'))
+  assert.ok(phbSpells.every((spell) => spell.descriptionKind === 'original-summary'))
+  assert.ok(phbSpells.every((spell) => compatibilityById.get(spell.id)?.status === 'new'))
+  for (const spell of phbSpells) {
+    assert.ok(spell.localized?.name && spell.localized?.description, spell.id)
+  }
 })
