@@ -3971,5 +3971,3218 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2014-barbarian-ancestralguardian-ancestral-protectors",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/ancestralguardian#ancestral-protectors",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Ancestral Protectors",
+      "de": "Während deines Kampfrauschs wird die erste Kreatur, die du triffst, behindert, wenn sie jemand anderen als dich angreift."
+    },
+    "descriptions": {
+      "en": "While raging, the first creature you hit is hindered when attacking anyone other than you.",
+      "de": "Während deines Kampfrauschs wird die erste Kreatur, die du triffst, behindert, wenn sie jemand anderen als dich angreift."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-ancestralguardian-spirit-shield",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/ancestralguardian#spirit-shield",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Spirit Shield",
+      "de": "Du kannst deine Reaktion einsetzen, um den Schaden zu verringern, den eine nahe Kreatur erleidet."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to reduce damage dealt to a nearby creature.",
+      "de": "Du kannst deine Reaktion einsetzen, um den Schaden zu verringern, den eine nahe Kreatur erleidet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-ancestralguardian-consult-the-spirits",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/ancestralguardian#consult-the-spirits",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Consult the Spirits",
+      "de": "Du kannst durch die Befragung deiner Ahnengeister Vorahnung oder Ausspähung als Ritual wirken."
+    },
+    "descriptions": {
+      "en": "You can cast Augury or Clairvoyance as a ritual by consulting ancestral spirits.",
+      "de": "Du kannst durch die Befragung deiner Ahnengeister Vorahnung oder Ausspähung als Ritual wirken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-ancestralguardian-vengeful-ancestors",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/ancestralguardian#vengeful-ancestors",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Vengeful Ancestors",
+      "de": "Dein Geisterschild kann dem Angreifer mit der Macht deiner Ahnen Schaden zufügen."
+    },
+    "descriptions": {
+      "en": "Your Spirit Shield can damage the attacker with the force of your ancestors.",
+      "de": "Dein Geisterschild kann dem Angreifer mit der Macht deiner Ahnen Schaden zufügen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-stormherald-storm-aura",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/stormherald#storm-aura",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Storm Aura",
+      "de": "Dein Kampfrausch umgibt dich mit einer elementaren Aura aus Wüste, Meer oder Tundra."
+    },
+    "descriptions": {
+      "en": "Your rage surrounds you with an elemental aura chosen from desert, sea, or tundra.",
+      "de": "Dein Kampfrausch umgibt dich mit einer elementaren Aura aus Wüste, Meer oder Tundra."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-stormherald-storm-soul",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/stormherald#storm-soul",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Storm Soul",
+      "de": "Deine gewählte Umgebung verleiht dir Resistenz und einen passenden Erkundungsvorteil."
+    },
+    "descriptions": {
+      "en": "Your chosen environment grants resistance and a related exploration benefit.",
+      "de": "Deine gewählte Umgebung verleiht dir Resistenz und einen passenden Erkundungsvorteil."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-stormherald-shielding-storm",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/stormherald#shielding-storm",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Shielding Storm",
+      "de": "Deine Sturmhülle kann nahe Verbündete vor dem zugehörigen Schadensart schützen."
+    },
+    "descriptions": {
+      "en": "Your Storm Aura can protect nearby allies from its associated damage type.",
+      "de": "Deine Sturmhülle kann nahe Verbündete vor dem zugehörigen Schadensart schützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-stormherald-raging-storm",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/stormherald#raging-storm",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Raging Storm",
+      "de": "Deine Aura erhält einen stärkeren Effekt, der nahe Gegner bestraft oder behindert."
+    },
+    "descriptions": {
+      "en": "Your aura gains a stronger effect that punishes or hinders nearby foes.",
+      "de": "Deine Aura erhält einen stärkeren Effekt, der nahe Gegner bestraft oder behindert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-zealot-divine-fury",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/zealot#divine-fury",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Divine Fury",
+      "de": "Einmal pro Zug verursachst du während deines Kampfrauschs zusätzlichen, von göttlicher Macht erfüllten Schaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns while raging, you deal extra damage infused with divine power.",
+      "de": "Einmal pro Zug verursachst du während deines Kampfrauschs zusätzlichen, von göttlicher Macht erfüllten Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-zealot-warrior-of-the-gods",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/zealot#warrior-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Warrior of the Gods",
+      "de": "Magie, die dich ins Leben zurückbringt, benötigt keine Materialkomponenten."
+    },
+    "descriptions": {
+      "en": "Magic that restores you to life requires no material components.",
+      "de": "Magie, die dich ins Leben zurückbringt, benötigt keine Materialkomponenten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-zealot-fanatical-focus",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/zealot#fanatical-focus",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Fanatical Focus",
+      "de": "Wenn dir während deines Kampfrauschs ein Rettungswurf misslingt, kannst du ihn wiederholen."
+    },
+    "descriptions": {
+      "en": "When you fail a saving throw while raging, you can reroll it.",
+      "de": "Wenn dir während deines Kampfrauschs ein Rettungswurf misslingt, kannst du ihn wiederholen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-zealot-zealous-presence",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/zealot#zealous-presence",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Zealous Presence",
+      "de": "Du kannst nahe Verbündete inspirieren und ihnen Vorteil auf ausgewählte W20-Würfe verleihen."
+    },
+    "descriptions": {
+      "en": "You can inspire nearby allies, granting them advantage on selected d20 tests.",
+      "de": "Du kannst nahe Verbündete inspirieren und ihnen Vorteil auf ausgewählte W20-Würfe verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-barbarian-zealot-rage-beyond-death",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "barbarian/zealot#rage-beyond-death",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Rage Beyond Death",
+      "de": "Dein Kampfrausch kann dich trotz tödlicher Verletzungen weiterkämpfen lassen und schützt dich unter bestimmten Bedingungen vor dem Tod."
+    },
+    "descriptions": {
+      "en": "Your rage can keep you fighting despite fatal injuries, with special safeguards against death.",
+      "de": "Dein Kampfrausch kann dich trotz tödlicher Verletzungen weiterkämpfen lassen und schützt dich unter bestimmten Bedingungen vor dem Tod."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-glamour-mantle-of-inspiration",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/glamour#mantle-of-inspiration",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Mantle of Inspiration",
+      "de": "Du gibst Bardische Inspiration aus, um Verbündeten temporäre Trefferpunkte und eine Bewegung ohne Gelegenheitsangriffe zu ermöglichen."
+    },
+    "descriptions": {
+      "en": "You expend Bardic Inspiration to grant allies temporary hit points and let them move without provoking opportunity attacks.",
+      "de": "Du gibst Bardische Inspiration aus, um Verbündeten temporäre Trefferpunkte und eine Bewegung ohne Gelegenheitsangriffe zu ermöglichen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-glamour-enthralling-performance",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/glamour#enthralling-performance",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Enthralling Performance",
+      "de": "Nach einem Auftritt kannst du ein Publikum bezaubern, das dir zugehört hat."
+    },
+    "descriptions": {
+      "en": "After performing, you can charm an audience that listens to you.",
+      "de": "Nach einem Auftritt kannst du ein Publikum bezaubern, das dir zugehört hat."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-glamour-mantle-of-majesty",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/glamour#mantle-of-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Mantle of Majesty",
+      "de": "Du kannst für begrenzte Zeit Befehl als Bonusaktion wirken."
+    },
+    "descriptions": {
+      "en": "You can cast Command as a bonus action for a limited time.",
+      "de": "Du kannst für begrenzte Zeit Befehl als Bonusaktion wirken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-glamour-unbreakable-majesty",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/glamour#unbreakable-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Unbreakable Majesty",
+      "de": "Du umgibst dich mit betörender Magie, die es Gegnern erschwert, dich zu treffen."
+    },
+    "descriptions": {
+      "en": "You surround yourself with beguiling magic that makes foes struggle to hit you.",
+      "de": "Du umgibst dich mit betörender Magie, die es Gegnern erschwert, dich zu treffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-swords-bonus-proficiencies",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/swords#bonus-proficiencies",
+    "classId": "bard",
+    "subclassId": "swords",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Bonus Proficiencies",
+      "de": "Du erhältst Übung mit mittelschwerer Rüstung und einem Kampfstil deiner Wahl."
+    },
+    "descriptions": {
+      "en": "You gain medium armor proficiency and a chosen Fighting Style.",
+      "de": "Du erhältst Übung mit mittelschwerer Rüstung und einem Kampfstil deiner Wahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-swords-fighting-style",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/swords#fighting-style",
+    "classId": "bard",
+    "subclassId": "swords",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Fighting Style",
+      "de": "Du übernimmst einen spezialisierten Kampfstil für den Kampf mit Schwertern oder anderen Waffen."
+    },
+    "descriptions": {
+      "en": "You adopt a specialized style for fighting with a sword or other weapon.",
+      "de": "Du übernimmst einen spezialisierten Kampfstil für den Kampf mit Schwertern oder anderen Waffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-swords-blade-flourish",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/swords#blade-flourish",
+    "classId": "bard",
+    "subclassId": "swords",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Blade Flourish",
+      "de": "Deine Waffenangriffe ermöglichen Schwünge, die Schaden, Verteidigung oder Bewegung verbessern."
+    },
+    "descriptions": {
+      "en": "Your weapon attacks can fuel flourishes that improve damage, defense, or movement.",
+      "de": "Deine Waffenangriffe ermöglichen Schwünge, die Schaden, Verteidigung oder Bewegung verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-swords-extra-attack",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/swords#extra-attack",
+    "classId": "bard",
+    "subclassId": "swords",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Extra Attack",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du statt einmal zweimal angreifen."
+    },
+    "descriptions": {
+      "en": "You can attack twice, instead of once, when you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du statt einmal zweimal angreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-swords-master-s-flourish",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/swords#master-s-flourish",
+    "classId": "bard",
+    "subclassId": "swords",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Master's Flourish",
+      "de": "Du kannst einen verlässlichen, abgeschwächten Klingenschwung einsetzen, ohne Bardische Inspiration auszugeben."
+    },
+    "descriptions": {
+      "en": "You can use a reliable, smaller Blade Flourish without expending Bardic Inspiration.",
+      "de": "Du kannst einen verlässlichen, abgeschwächten Klingenschwung einsetzen, ohne Bardische Inspiration auszugeben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-whispers-psychic-blades",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/whispers#psychic-blades",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Psychic Blades",
+      "de": "Du kannst Bardische Inspiration ausgeben, um bei einem Treffer mit einer Waffe zusätzlichen psychischen Schaden zu verursachen."
+    },
+    "descriptions": {
+      "en": "You can expend Bardic Inspiration to deal extra psychic damage when you hit with a weapon.",
+      "de": "Du kannst Bardische Inspiration ausgeben, um bei einem Treffer mit einer Waffe zusätzlichen psychischen Schaden zu verursachen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-whispers-words-of-terror",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/whispers#words-of-terror",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Words of Terror",
+      "de": "Du kannst einem Humanoiden durch ein vertrauliches Gespräch Furcht einflößen."
+    },
+    "descriptions": {
+      "en": "You can instill fear in a humanoid through a private conversation.",
+      "de": "Du kannst einem Humanoiden durch ein vertrauliches Gespräch Furcht einflößen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-whispers-mantle-of-whispers",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/whispers#mantle-of-whispers",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Mantle of Whispers",
+      "de": "Du kannst den Schatten eines Humanoiden einfangen und damit sein Aussehen annehmen."
+    },
+    "descriptions": {
+      "en": "You can capture a humanoid's shadow and use it to assume its appearance.",
+      "de": "Du kannst den Schatten eines Humanoiden einfangen und damit sein Aussehen annehmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-bard-whispers-shadow-lore",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "bard/whispers#shadow-lore",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Shadow Lore",
+      "de": "Du kannst ein Geheimnis zuflüstern, das eine Kreatur magisch verängstigt und bezaubert."
+    },
+    "descriptions": {
+      "en": "You can whisper a secret that magically frightens and charms a creature.",
+      "de": "Du kannst ein Geheimnis zuflüstern, das eine Kreatur magisch verängstigt und bezaubert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-bonus-proficiencies",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Bonus Proficiencies",
+      "de": "Du erhältst Übung mit schwerer Rüstung und Schmiedewerkzeug."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with heavy armor and smith's tools.",
+      "de": "Du erhältst Übung mit schwerer Rüstung und Schmiedewerkzeug."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-blessing-of-the-forge",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#blessing-of-the-forge",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Blessing of the Forge",
+      "de": "Am Ende einer langen Rast kannst du eine nichtmagische Rüstung oder Waffe mit einem kleinen magischen Bonus versehen."
+    },
+    "descriptions": {
+      "en": "At the end of a Long Rest, you can imbue one nonmagical suit of armor or weapon with a small magical bonus.",
+      "de": "Am Ende einer langen Rast kannst du eine nichtmagische Rüstung oder Waffe mit einem kleinen magischen Bonus versehen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-channel-divinity-artisan-s-blessing",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#channel-divinity-artisan-s-blessing",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Channel Divinity: Artisan's Blessing",
+      "de": "Du führst ein Ritual durch, um einen nichtmagischen Gegenstand aus Metall herzustellen."
+    },
+    "descriptions": {
+      "en": "You conduct a ritual to create a nonmagical item from metal.",
+      "de": "Du führst ein Ritual durch, um einen nichtmagischen Gegenstand aus Metall herzustellen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-soul-of-the-forge",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#soul-of-the-forge",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Soul of the Forge",
+      "de": "Du erhältst Feuerresistenz und verbesserten Schutz, solange du schwere Rüstung trägst."
+    },
+    "descriptions": {
+      "en": "You gain fire resistance and improved protection while wearing heavy armor.",
+      "de": "Du erhältst Feuerresistenz und verbesserten Schutz, solange du schwere Rüstung trägst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#divine-strike",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Divine Strike",
+      "de": "Deine Waffenangriffe verursachen einmal pro Zug zusätzlichen Feuerschaden."
+    },
+    "descriptions": {
+      "en": "Your weapon attacks deal additional fire damage once on each of your turns.",
+      "de": "Deine Waffenangriffe verursachen einmal pro Zug zusätzlichen Feuerschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-forge-saint-of-forge-and-fire",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/forge#saint-of-forge-and-fire",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Saint of Forge and Fire",
+      "de": "Du erhältst in schwerer Rüstung außergewöhnlichen Schutz vor Feuer und nichtmagischen Angriffen."
+    },
+    "descriptions": {
+      "en": "You gain exceptional protection from fire and nonmagical attacks while wearing heavy armor.",
+      "de": "Du erhältst in schwerer Rüstung außergewöhnlichen Schutz vor Feuer und nichtmagischen Angriffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-circle-of-mortality",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#circle-of-mortality",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Circle of Mortality",
+      "de": "Du bist besonders gut darin, Sterbende zu stabilisieren, und deine Heilzauber wirken besonders effektiv bei Kreaturen mit 0 Trefferpunkten."
+    },
+    "descriptions": {
+      "en": "You excel at stabilizing the dying and your healing spells are especially effective on creatures at 0 hit points.",
+      "de": "Du bist besonders gut darin, Sterbende zu stabilisieren, und deine Heilzauber wirken besonders effektiv bei Kreaturen mit 0 Trefferpunkten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-eyes-of-the-grave",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#eyes-of-the-grave",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Eyes of the Grave",
+      "de": "Du kannst Untote in deiner Nähe wahrnehmen, sofern sie nicht vollständig abgeschirmt sind."
+    },
+    "descriptions": {
+      "en": "You can sense nearby undead that are not behind total cover.",
+      "de": "Du kannst Untote in deiner Nähe wahrnehmen, sofern sie nicht vollständig abgeschirmt sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-channel-divinity-path-to-the-grave",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#channel-divinity-path-to-the-grave",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Channel Divinity: Path to the Grave",
+      "de": "Du verfluchst eine Kreatur, sodass sie für den nächsten schadensverursachenden Treffer verwundbar wird."
+    },
+    "descriptions": {
+      "en": "You curse a creature so that it becomes vulnerable to the next damaging attack that hits it.",
+      "de": "Du verfluchst eine Kreatur, sodass sie für den nächsten schadensverursachenden Treffer verwundbar wird."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-sentinel-at-death-s-door",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#sentinel-at-death-s-door",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Sentinel at Death's Door",
+      "de": "Du kannst deine Reaktion einsetzen, um einen kritischen Treffer gegen eine nahe Kreatur in einen normalen Treffer umzuwandeln."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to turn a critical hit against a nearby creature into a normal hit.",
+      "de": "Du kannst deine Reaktion einsetzen, um einen kritischen Treffer gegen eine nahe Kreatur in einen normalen Treffer umzuwandeln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-potent-spellcasting",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Potent Spellcasting",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "descriptions": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-grave-keeper-of-souls",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "cleric/grave#keeper-of-souls",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Keeper of Souls",
+      "de": "Wenn eine Kreatur in deiner Nähe stirbt, kannst du ihre entweichende Lebenskraft nutzen, um Trefferpunkte wiederherzustellen."
+    },
+    "descriptions": {
+      "en": "When a nearby creature dies, you can draw on its departing life to restore hit points.",
+      "de": "Wenn eine Kreatur in deiner Nähe stirbt, kannst du ihre entweichende Lebenskraft nutzen, um Trefferpunkte wiederherzustellen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-dreams-balm-of-the-summer-court",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/dreams#balm-of-the-summer-court",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Balm of the Summer Court",
+      "de": "Du gibst einen Vorrat Feenenergie aus, um Kreaturen auf Entfernung zu heilen und ihnen temporäre Trefferpunkte zu verleihen."
+    },
+    "descriptions": {
+      "en": "You spend a pool of fey energy to heal creatures at range and grant temporary hit points.",
+      "de": "Du gibst einen Vorrat Feenenergie aus, um Kreaturen auf Entfernung zu heilen und ihnen temporäre Trefferpunkte zu verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-dreams-world-of-dreams",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/dreams#world-of-dreams",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "World of Dreams",
+      "de": "Du kannst durch Träume kommunizieren und erhältst Vorteile, wenn du in der Feenwildnis rastest."
+    },
+    "descriptions": {
+      "en": "You can communicate through dreams and gain benefits from resting in the Feywild.",
+      "de": "Du kannst durch Träume kommunizieren und erhältst Vorteile, wenn du in der Feenwildnis rastest."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-dreams-hearth-of-moonlight-and-shadow",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/dreams#hearth-of-moonlight-and-shadow",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Hearth of Moonlight and Shadow",
+      "de": "Während einer Rast erschaffst du ein schützendes Refugium, das deine Gruppe verbirgt und schützt."
+    },
+    "descriptions": {
+      "en": "You create a protective sanctuary during a rest that conceals and shields your group.",
+      "de": "Während einer Rast erschaffst du ein schützendes Refugium, das deine Gruppe verbirgt und schützt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-dreams-hidden-paths",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/dreams#hidden-paths",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Hidden Paths",
+      "de": "Du kannst dich oder eine willige Kreatur zwischen sichtbaren Orten teleportieren."
+    },
+    "descriptions": {
+      "en": "You can teleport yourself or a willing creature between visible spaces.",
+      "de": "Du kannst dich oder eine willige Kreatur zwischen sichtbaren Orten teleportieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-dreams-walker-in-dreams",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/dreams#walker-in-dreams",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Walker in Dreams",
+      "de": "Du kannst durch deine Verbindung zur Feenwildnis Traum, Ausspähung oder Teleportationskreis wirken."
+    },
+    "descriptions": {
+      "en": "You can cast Dream, Scrying, or Teleportation Circle through your connection to the Feywild.",
+      "de": "Du kannst durch deine Verbindung zur Feenwildnis Traum, Ausspähung oder Teleportationskreis wirken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-shepherd-speech-of-the-woods",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/shepherd#speech-of-the-woods",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Speech of the Woods",
+      "de": "Du erlernst Sylvanisch und kannst mit Tieren kommunizieren."
+    },
+    "descriptions": {
+      "en": "You learn Sylvan and can communicate with Beasts.",
+      "de": "Du erlernst Sylvanisch und kannst mit Tieren kommunizieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-shepherd-spirit-totem",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/shepherd#spirit-totem",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Spirit Totem",
+      "de": "Du beschwörst eine Geisteraura, die Verbündete unterstützt oder Gegner in ihrem Bereich behindert."
+    },
+    "descriptions": {
+      "en": "You summon a spirit aura that aids allies or hinders foes in its area.",
+      "de": "Du beschwörst eine Geisteraura, die Verbündete unterstützt oder Gegner in ihrem Bereich behindert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-shepherd-mighty-summoner",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/shepherd#mighty-summoner",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Mighty Summoner",
+      "de": "Von dir beschworene Tiere und Feenwesen werden widerstandsfähiger und ihre Angriffe gelten als magisch."
+    },
+    "descriptions": {
+      "en": "Beasts and Fey you summon gain extra durability and their attacks count as magical.",
+      "de": "Von dir beschworene Tiere und Feenwesen werden widerstandsfähiger und ihre Angriffe gelten als magisch."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-shepherd-guardian-spirit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/shepherd#guardian-spirit",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Guardian Spirit",
+      "de": "Deine beschworenen Kreaturen erhalten Trefferpunkte zurück, solange sie sich in deiner Geistertotem-Aura befinden."
+    },
+    "descriptions": {
+      "en": "Your summoned creatures recover hit points while within your Spirit Totem aura.",
+      "de": "Deine beschworenen Kreaturen erhalten Trefferpunkte zurück, solange sie sich in deiner Geistertotem-Aura befinden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-druid-shepherd-faithful-summons",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "druid/shepherd#faithful-summons",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Faithful Summons",
+      "de": "Wenn du in großer Gefahr bist, beschwören Naturgeister automatisch schützende Kreaturen."
+    },
+    "descriptions": {
+      "en": "When you are in grave danger, nature spirits automatically summon protective creatures.",
+      "de": "Wenn du in großer Gefahr bist, beschwören Naturgeister automatisch schützende Kreaturen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-arcanearcher-arcane-archer-lore",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/arcanearcher#arcane-archer-lore",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Arcane Archer Lore",
+      "de": "Du erlernst arkanes Wissen und erhältst Übung in einer passenden Fertigkeit oder einem Werkzeug."
+    },
+    "descriptions": {
+      "en": "You learn magical knowledge and gain proficiency in a relevant skill or tool.",
+      "de": "Du erlernst arkanes Wissen und erhältst Übung in einer passenden Fertigkeit oder einem Werkzeug."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-arcanearcher-arcane-shot",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/arcanearcher#arcane-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Arcane Shot",
+      "de": "Du erlernst magische Pfeiloptionen, die deinen Fernkampfangriffen besondere Effekte verleihen."
+    },
+    "descriptions": {
+      "en": "You learn magical arrow options that add special effects to your ranged attacks.",
+      "de": "Du erlernst magische Pfeiloptionen, die deinen Fernkampfangriffen besondere Effekte verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-arcanearcher-magic-arrow",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/arcanearcher#magic-arrow",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Magic Arrow",
+      "de": "Deine gewöhnlichen Pfeile werden magisch, wenn du sie mit einem Kurzbogen oder Langbogen verschießt."
+    },
+    "descriptions": {
+      "en": "Your ordinary arrows become magical when you fire them from a shortbow or longbow.",
+      "de": "Deine gewöhnlichen Pfeile werden magisch, wenn du sie mit einem Kurzbogen oder Langbogen verschießt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-arcanearcher-curving-shot",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/arcanearcher#curving-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Curving Shot",
+      "de": "Du kannst einen verfehlten magischen Pfeil auf ein anderes Ziel umlenken."
+    },
+    "descriptions": {
+      "en": "You can redirect a missed magical arrow toward another target.",
+      "de": "Du kannst einen verfehlten magischen Pfeil auf ein anderes Ziel umlenken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-arcanearcher-ever-ready-shot",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/arcanearcher#ever-ready-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Ever-Ready Shot",
+      "de": "Wenn du Initiative würfelst und keine Anwendungen von Arkaner Schuss mehr hast, erhältst du eine zurück."
+    },
+    "descriptions": {
+      "en": "When you roll initiative with no Arcane Shot uses remaining, you regain one use.",
+      "de": "Wenn du Initiative würfelst und keine Anwendungen von Arkaner Schuss mehr hast, erhältst du eine zurück."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-bonus-proficiency",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#bonus-proficiency",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Bonus Proficiency",
+      "de": "Du erhältst Übung in einer Fertigkeit oder einer Sprache deiner Wahl."
+    },
+    "descriptions": {
+      "en": "You gain proficiency in one skill or one language of your choice.",
+      "de": "Du erhältst Übung in einer Fertigkeit oder einer Sprache deiner Wahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-born-to-the-saddle",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#born-to-the-saddle",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Born to the Saddle",
+      "de": "Du hast Vorteile beim Reiten und kannst leichter auf- und absteigen."
+    },
+    "descriptions": {
+      "en": "You have advantages when mounted and can mount or dismount more easily.",
+      "de": "Du hast Vorteile beim Reiten und kannst leichter auf- und absteigen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-unwavering-mark",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#unwavering-mark",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Unwavering Mark",
+      "de": "Du kannst eine von dir getroffene Kreatur markieren, sodass Angriffe auf andere für sie riskanter werden."
+    },
+    "descriptions": {
+      "en": "You can mark a creature you hit, making it riskier for it to attack others.",
+      "de": "Du kannst eine von dir getroffene Kreatur markieren, sodass Angriffe auf andere für sie riskanter werden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-warding-maneuver",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#warding-maneuver",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Warding Maneuver",
+      "de": "Du kannst eine Reaktion einsetzen, um die Verteidigung von dir oder einer nahen Kreatur zu erhöhen."
+    },
+    "descriptions": {
+      "en": "You can use a reaction to increase the defense of yourself or a nearby creature.",
+      "de": "Du kannst eine Reaktion einsetzen, um die Verteidigung von dir oder einer nahen Kreatur zu erhöhen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-hold-the-line",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#hold-the-line",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Hold the Line",
+      "de": "Kreaturen provozieren Gelegenheitsangriffe von dir, wenn sie sich innerhalb deiner Reichweite bewegen."
+    },
+    "descriptions": {
+      "en": "Creatures provoke opportunity attacks from you when they move within your reach.",
+      "de": "Kreaturen provozieren Gelegenheitsangriffe von dir, wenn sie sich innerhalb deiner Reichweite bewegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-ferocious-charger",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#ferocious-charger",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Ferocious Charger",
+      "de": "Du kannst eine Kreatur zu Boden werfen, nachdem du dich ein kurzes Stück auf sie zubewegt hast."
+    },
+    "descriptions": {
+      "en": "You can knock a creature prone after moving a short distance toward it.",
+      "de": "Du kannst eine Kreatur zu Boden werfen, nachdem du dich ein kurzes Stück auf sie zubewegt hast."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-cavalier-vigilant-defender",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/cavalier#vigilant-defender",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "Vigilant Defender",
+      "de": "Du kannst während des Zuges jeder Kreatur besondere Gelegenheitsangriffe ausführen."
+    },
+    "descriptions": {
+      "en": "You can make special opportunity attacks during every creature's turn.",
+      "de": "Du kannst während des Zuges jeder Kreatur besondere Gelegenheitsangriffe ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-bonus-proficiency",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#bonus-proficiency",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Bonus Proficiency",
+      "de": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+    },
+    "descriptions": {
+      "en": "You gain proficiency in one skill of your choice.",
+      "de": "Du erhältst Übung in einer Fertigkeit deiner Wahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-fighting-spirit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#fighting-spirit",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Fighting Spirit",
+      "de": "Du kannst auf deine Entschlossenheit zurückgreifen, um Vorteil bei Angriffen und temporäre Trefferpunkte zu erhalten."
+    },
+    "descriptions": {
+      "en": "You can call on your resolve to gain advantage on attacks and temporary hit points.",
+      "de": "Du kannst auf deine Entschlossenheit zurückgreifen, um Vorteil bei Angriffen und temporäre Trefferpunkte zu erhalten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-elegant-courtier",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#elegant-courtier",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Elegant Courtier",
+      "de": "Deine Disziplin verbessert dein Gespür im Umgang mit anderen und deine geistige Verteidigung."
+    },
+    "descriptions": {
+      "en": "Your discipline improves your social insight and mental defenses.",
+      "de": "Deine Disziplin verbessert dein Gespür im Umgang mit anderen und deine geistige Verteidigung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-tireless-spirit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#tireless-spirit",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Tireless Spirit",
+      "de": "Wenn du Initiative würfelst und keine Anwendungen von Kampfgeist mehr hast, erhältst du eine zurück."
+    },
+    "descriptions": {
+      "en": "When you roll initiative with no uses of Fighting Spirit remaining, you regain one use.",
+      "de": "Wenn du Initiative würfelst und keine Anwendungen von Kampfgeist mehr hast, erhältst du eine zurück."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-rapid-strike",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#rapid-strike",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Rapid Strike",
+      "de": "Du kannst Vorteil bei einem Angriff gegen einen zusätzlichen Waffenangriff eintauschen."
+    },
+    "descriptions": {
+      "en": "You can trade advantage on an attack for an additional weapon attack.",
+      "de": "Du kannst Vorteil bei einem Angriff gegen einen zusätzlichen Waffenangriff eintauschen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-fighter-samurai-strength-before-death",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "fighter/samurai#strength-before-death",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "Strength Before Death",
+      "de": "Wenn deine Trefferpunkte auf 0 sinken, kannst du einen zusätzlichen Zug ausführen, bevor du bewusstlos wirst."
+    },
+    "descriptions": {
+      "en": "When you are reduced to 0 hit points, you can take an additional turn before falling unconscious.",
+      "de": "Wenn deine Trefferpunkte auf 0 sinken, kannst du einen zusätzlichen Zug ausführen, bevor du bewusstlos wirst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-drunkenmaster-bonus-proficiencies",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/drunkenmaster#bonus-proficiencies",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Bonus Proficiencies",
+      "de": "Du erhältst Übung in Auftreten und mit Brauereizubehör."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with the Performance skill and brewer's supplies.",
+      "de": "Du erhältst Übung in Auftreten und mit Brauereizubehör."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-drunkenmaster-drunken-technique",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/drunkenmaster#drunken-technique",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Drunken Technique",
+      "de": "Wenn du Hagel der Schläge einsetzt, erhältst du die Vorteile von Rückzug und zusätzliche Bewegung."
+    },
+    "descriptions": {
+      "en": "When you use Flurry of Blows, you gain the benefits of Disengage and extra movement.",
+      "de": "Wenn du Hagel der Schläge einsetzt, erhältst du die Vorteile von Rückzug und zusätzliche Bewegung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-drunkenmaster-tipsy-sway",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/drunkenmaster#tipsy-sway",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Tipsy Sway",
+      "de": "Du kannst einen Angriff, der dich verfehlt, umlenken und mit wenig Bewegung aufstehen."
+    },
+    "descriptions": {
+      "en": "You can redirect an attack that misses you and stand up with little movement.",
+      "de": "Du kannst einen Angriff, der dich verfehlt, umlenken und mit wenig Bewegung aufstehen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-drunkenmaster-drunkard-s-luck",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/drunkenmaster#drunkard-s-luck",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Drunkard's Luck",
+      "de": "Du kannst Ki ausgeben, um Nachteil bei einem Wurf in einen normalen Wurf umzuwandeln."
+    },
+    "descriptions": {
+      "en": "You can spend ki to turn disadvantage on a roll into a normal roll.",
+      "de": "Du kannst Ki ausgeben, um Nachteil bei einem Wurf in einen normalen Wurf umzuwandeln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-drunkenmaster-intoxicated-frenzy",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/drunkenmaster#intoxicated-frenzy",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Intoxicated Frenzy",
+      "de": "Dein Hagel der Schläge kann nach seinem Einsatz zusätzliche Kreaturen treffen."
+    },
+    "descriptions": {
+      "en": "Your Flurry of Blows can target additional creatures after you use it.",
+      "de": "Dein Hagel der Schläge kann nach seinem Einsatz zusätzliche Kreaturen treffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-kensei-path-of-the-kensei",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/kensei#path-of-the-kensei",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Path of the Kensei",
+      "de": "Du wählst besondere Kensei-Waffen und erhältst eine gezielte Ausbildung im Umgang mit ihnen."
+    },
+    "descriptions": {
+      "en": "You choose special kensei weapons and gain focused training with them.",
+      "de": "Du wählst besondere Kensei-Waffen und erhältst eine gezielte Ausbildung im Umgang mit ihnen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-kensei-agile-parry",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/kensei#agile-parry",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Agile Parry",
+      "de": "Du erhältst einen Verteidigungsvorteil, wenn du mit einer Kensei-Nahkampfwaffe einen waffenlosen Angriff ausführst."
+    },
+    "descriptions": {
+      "en": "You gain a defensive benefit when you make an unarmed strike while wielding a kensei melee weapon.",
+      "de": "Du erhältst einen Verteidigungsvorteil, wenn du mit einer Kensei-Nahkampfwaffe einen waffenlosen Angriff ausführst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-kensei-one-with-the-blade",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/kensei#one-with-the-blade",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "One with the Blade",
+      "de": "Deine Kensei-Waffen gelten als magisch und du kannst sie mit Ki verstärken."
+    },
+    "descriptions": {
+      "en": "Your kensei weapons count as magical and you can empower them with ki.",
+      "de": "Deine Kensei-Waffen gelten als magisch und du kannst sie mit Ki verstärken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-kensei-sharpen-the-blade",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/kensei#sharpen-the-blade",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Sharpen the Blade",
+      "de": "Du kannst Ki ausgeben, um einer Kensei-Waffe einen Bonus auf Angriffs- und Schadenswürfe zu verleihen."
+    },
+    "descriptions": {
+      "en": "You can spend ki to grant a kensei weapon a bonus to attack and damage rolls.",
+      "de": "Du kannst Ki ausgeben, um einer Kensei-Waffe einen Bonus auf Angriffs- und Schadenswürfe zu verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-monk-kensei-unerring-accuracy",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "monk/kensei#unerring-accuracy",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Unerring Accuracy",
+      "de": "Einmal pro Zug kannst du einen verfehlten Angriff mit einer Kensei-Waffe wiederholen."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns, you can reroll a missed attack with a kensei weapon.",
+      "de": "Einmal pro Zug kannst du einen verfehlten Angriff mit einer Kensei-Waffe wiederholen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-conquest-oath-spells",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/conquest#oath-spells",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Oath Spells",
+      "de": "Du hast die Zauber des Schwurs der Eroberung stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with the Oath of Conquest prepared.",
+      "de": "Du hast die Zauber des Schwurs der Eroberung stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-conquest-channel-divinity",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/conquest#channel-divinity",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Channel Divinity",
+      "de": "Du kannst mit Erobernde Präsenz Feinde verängstigen oder mit Geleiteter Schlag einen Angriff verbessern."
+    },
+    "descriptions": {
+      "en": "You can use Conquering Presence to frighten foes or Guided Strike to improve an attack.",
+      "de": "Du kannst mit Erobernde Präsenz Feinde verängstigen oder mit Geleiteter Schlag einen Angriff verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-conquest-aura-of-conquest",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/conquest#aura-of-conquest",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Aura of Conquest",
+      "de": "Verängstigte Kreaturen in deiner Nähe werden in ihrer Bewegung eingeschränkt und können psychischen Schaden erleiden."
+    },
+    "descriptions": {
+      "en": "Frightened creatures near you have their movement reduced and can take psychic damage.",
+      "de": "Verängstigte Kreaturen in deiner Nähe werden in ihrer Bewegung eingeschränkt und können psychischen Schaden erleiden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-conquest-scornful-rebuke",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/conquest#scornful-rebuke",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Scornful Rebuke",
+      "de": "Eine Kreatur, die dir Schaden zufügt, erleidet im Gegenzug psychischen Schaden."
+    },
+    "descriptions": {
+      "en": "A creature that damages you takes psychic damage in return.",
+      "de": "Eine Kreatur, die dir Schaden zufügt, erleidet im Gegenzug psychischen Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-conquest-invincible-conqueror",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/conquest#invincible-conqueror",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "featureType": "subclass",
+    "level": 20,
+    "names": {
+      "en": "Invincible Conqueror",
+      "de": "Du wirst zu einem furchterregenden Eroberer mit verbesserten Angriffen, Widerstandskraft und kritischem Potenzial."
+    },
+    "descriptions": {
+      "en": "You become a terrifying champion with improved attacks, resilience, and critical potential.",
+      "de": "Du wirst zu einem furchterregenden Eroberer mit verbesserten Angriffen, Widerstandskraft und kritischem Potenzial."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-redemption-oath-spells",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/redemption#oath-spells",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Oath Spells",
+      "de": "Du hast die Zauber des Schwurs der Erlösung stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with the Oath of Redemption prepared.",
+      "de": "Du hast die Zauber des Schwurs der Erlösung stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-redemption-channel-divinity",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/redemption#channel-divinity",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Channel Divinity",
+      "de": "Du kannst mit Friedensgesandter Überzeugen verbessern oder mit Gewalttat zurückweisen einen Angreifer bestrafen."
+    },
+    "descriptions": {
+      "en": "You can use Emissary of Peace to improve persuasion or Rebuke the Violent to punish an attacker.",
+      "de": "Du kannst mit Friedensgesandter Überzeugen verbessern oder mit Gewalttat zurückweisen einen Angreifer bestrafen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-redemption-aura-of-the-guardian",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/redemption#aura-of-the-guardian",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Aura of the Guardian",
+      "de": "Du kannst anstelle einer nahen Kreatur Schaden erleiden."
+    },
+    "descriptions": {
+      "en": "You can take damage in place of a nearby creature.",
+      "de": "Du kannst anstelle einer nahen Kreatur Schaden erleiden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-redemption-protective-spirit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/redemption#protective-spirit",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Protective Spirit",
+      "de": "Du erhältst Trefferpunkte zurück, wenn du deinen Zug mit wenigen Trefferpunkten beendest."
+    },
+    "descriptions": {
+      "en": "You regain hit points when you end your turn with low health.",
+      "de": "Du erhältst Trefferpunkte zurück, wenn du deinen Zug mit wenigen Trefferpunkten beendest."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-paladin-redemption-emissary-of-redemption",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "paladin/redemption#emissary-of-redemption",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "featureType": "subclass",
+    "level": 20,
+    "names": {
+      "en": "Emissary of Redemption",
+      "de": "Du erhältst mächtigen Schutz und spiegelst Schaden auf Kreaturen zurück, die dir Schaden zufügen."
+    },
+    "descriptions": {
+      "en": "You gain powerful protection and reflect harm against creatures that hurt you.",
+      "de": "Du erhältst mächtigen Schutz und spiegelst Schaden auf Kreaturen zurück, die dir Schaden zufügen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-gloomstalker-dread-ambusher",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/gloomstalker#dread-ambusher",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Dread Ambusher",
+      "de": "Du erhältst verbesserte Initiative, zusätzliche Bewegung zu Kampfbeginn und einen zusätzlichen Angriff mit Extraschaden."
+    },
+    "descriptions": {
+      "en": "You gain improved initiative, extra movement at the start of combat, and an additional attack with extra damage.",
+      "de": "Du erhältst verbesserte Initiative, zusätzliche Bewegung zu Kampfbeginn und einen zusätzlichen Angriff mit Extraschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-gloomstalker-umbral-sight",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/gloomstalker#umbral-sight",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Umbral Sight",
+      "de": "Du erhältst Dunkelsicht und bist in Dunkelheit für Kreaturen unsichtbar, die sich auf Dunkelsicht verlassen."
+    },
+    "descriptions": {
+      "en": "You gain darkvision and are invisible to creatures relying on darkvision while in darkness.",
+      "de": "Du erhältst Dunkelsicht und bist in Dunkelheit für Kreaturen unsichtbar, die sich auf Dunkelsicht verlassen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-gloomstalker-iron-mind",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/gloomstalker#iron-mind",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Iron Mind",
+      "de": "Du erhältst Übung in Weisheitsrettungswürfen."
+    },
+    "descriptions": {
+      "en": "You gain proficiency in Wisdom saving throws.",
+      "de": "Du erhältst Übung in Weisheitsrettungswürfen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-gloomstalker-stalker-s-flurry",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/gloomstalker#stalker-s-flurry",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Stalker's Flurry",
+      "de": "Wenn einer deiner Angriffe verfehlt, kannst du einen weiteren Waffenangriff ausführen."
+    },
+    "descriptions": {
+      "en": "You can make another weapon attack when one of your attacks misses.",
+      "de": "Wenn einer deiner Angriffe verfehlt, kannst du einen weiteren Waffenangriff ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-gloomstalker-shadowy-dodge",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/gloomstalker#shadowy-dodge",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Shadowy Dodge",
+      "de": "Du kannst als Reaktion einem Angriff Nachteil auferlegen, wenn du den Angreifer nicht sehen kannst."
+    },
+    "descriptions": {
+      "en": "You can use a reaction to impose disadvantage on an attack against you when you cannot see the attacker.",
+      "de": "Du kannst als Reaktion einem Angriff Nachteil auferlegen, wenn du den Angreifer nicht sehen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-horizon-walker-magic",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#horizon-walker-magic",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Horizon Walker Magic",
+      "de": "Du erlernst zusätzliche Zauber, die mit Ebenenreisen und Wahrnehmung verbunden sind."
+    },
+    "descriptions": {
+      "en": "You learn additional spells tied to planar travel and detection.",
+      "de": "Du erlernst zusätzliche Zauber, die mit Ebenenreisen und Wahrnehmung verbunden sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-detect-portal",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#detect-portal",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Detect Portal",
+      "de": "Du kannst die Anwesenheit eines nahen Ebenenportals spüren."
+    },
+    "descriptions": {
+      "en": "You can sense the presence of a nearby planar portal.",
+      "de": "Du kannst die Anwesenheit eines nahen Ebenenportals spüren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-planar-warrior",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#planar-warrior",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Planar Warrior",
+      "de": "Du markierst eine Kreatur mit Ebenenenergie und verursachst zusätzlichen Energieschaden an ihr."
+    },
+    "descriptions": {
+      "en": "You mark a creature with planar energy and deal additional force damage to it.",
+      "de": "Du markierst eine Kreatur mit Ebenenenergie und verursachst zusätzlichen Energieschaden an ihr."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-ethereal-step",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#ethereal-step",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Ethereal Step",
+      "de": "Du kannst als Bonusaktion kurzzeitig die Ätherebene betreten."
+    },
+    "descriptions": {
+      "en": "You can briefly enter the Ethereal Plane as a bonus action.",
+      "de": "Du kannst als Bonusaktion kurzzeitig die Ätherebene betreten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-distant-strike",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#distant-strike",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Distant Strike",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du dich zwischen Angriffen teleportieren und ein weiteres Ziel treffen."
+    },
+    "descriptions": {
+      "en": "When you take the Attack action, you can teleport between attacks and strike another target.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du dich zwischen Angriffen teleportieren und ein weiteres Ziel treffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-horizonwalker-spectral-defense",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/horizonwalker#spectral-defense",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Spectral Defense",
+      "de": "Du kannst deine Reaktion einsetzen, um Resistenz gegen den Schaden eines Angriffs zu erhalten."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to gain resistance to damage from an attack.",
+      "de": "Du kannst deine Reaktion einsetzen, um Resistenz gegen den Schaden eines Angriffs zu erhalten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-monster-slayer-magic",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#monster-slayer-magic",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Monster Slayer Magic",
+      "de": "Du erlernst zusätzliche Zauber, die bei der Jagd auf übernatürliche Bedrohungen helfen."
+    },
+    "descriptions": {
+      "en": "You learn additional spells useful for hunting supernatural threats.",
+      "de": "Du erlernst zusätzliche Zauber, die bei der Jagd auf übernatürliche Bedrohungen helfen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-hunter-s-sense",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#hunter-s-sense",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Hunter's Sense",
+      "de": "Du erfährst, ob eine Kreatur Schadensimmunitäten, Resistenzen oder Verwundbarkeiten besitzt."
+    },
+    "descriptions": {
+      "en": "You learn whether a creature has damage immunities, resistances, or vulnerabilities.",
+      "de": "Du erfährst, ob eine Kreatur Schadensimmunitäten, Resistenzen oder Verwundbarkeiten besitzt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-slayer-s-prey",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#slayer-s-prey",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Slayer's Prey",
+      "de": "Du markierst eine Kreatur und verursachst einmal pro Zug zusätzlichen Schaden an ihr."
+    },
+    "descriptions": {
+      "en": "You mark a creature and deal extra damage to it once on each of your turns.",
+      "de": "Du markierst eine Kreatur und verursachst einmal pro Zug zusätzlichen Schaden an ihr."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-supernatural-defense",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#supernatural-defense",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 7,
+    "names": {
+      "en": "Supernatural Defense",
+      "de": "Du erhältst einen Bonus auf Rettungswürfe oder Attributswürfe gegen die Effekte deiner Beute."
+    },
+    "descriptions": {
+      "en": "You add a bonus to saving throws or ability checks against your prey's effects.",
+      "de": "Du erhältst einen Bonus auf Rettungswürfe oder Attributswürfe gegen die Effekte deiner Beute."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-magic-user-s-nemesis",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#magic-user-s-nemesis",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 11,
+    "names": {
+      "en": "Magic-User's Nemesis",
+      "de": "Du kannst mit deiner Reaktion den Zauber oder die Teleportation einer Kreatur unterbrechen."
+    },
+    "descriptions": {
+      "en": "You can interrupt a creature's spell or teleportation with your reaction.",
+      "de": "Du kannst mit deiner Reaktion den Zauber oder die Teleportation einer Kreatur unterbrechen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-ranger-monster_slayer-slayer-s-counter",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "ranger/monster_slayer#slayer-s-counter",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": " Slayer's Counter",
+      "de": "Wenn deine Beute dich zu einem Rettungswurf zwingt, kannst du als Reaktion einen Angriff gegen sie ausführen."
+    },
+    "descriptions": {
+      "en": "When your prey forces you to make a saving throw, you can use your reaction to attack it.",
+      "de": "Wenn deine Beute dich zu einem Rettungswurf zwingt, kannst du als Reaktion einen Angriff gegen sie ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-ear-for-deceit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#ear-for-deceit",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Ear for Deceit",
+      "de": "Bei Würfen auf Motiv erkennen kannst du ein niedriges W20-Ergebnis als höheren Wert behandeln."
+    },
+    "descriptions": {
+      "en": "You can treat a low d20 roll on Insight checks as a higher result.",
+      "de": "Bei Würfen auf Motiv erkennen kannst du ein niedriges W20-Ergebnis als höheren Wert behandeln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-eye-for-detail",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#eye-for-detail",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Eye for Detail",
+      "de": "Du kannst eine Bonusaktion einsetzen, um eine sorgfältige Wahrnehmungs- oder Nachforschungsprobe abzulegen."
+    },
+    "descriptions": {
+      "en": "You can use a bonus action to make a careful Perception or Investigation check.",
+      "de": "Du kannst eine Bonusaktion einsetzen, um eine sorgfältige Wahrnehmungs- oder Nachforschungsprobe abzulegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-insightful-fighting",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#insightful-fighting",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Insightful Fighting",
+      "de": "Du kannst eine Kreatur studieren, sodass du gegen sie Hinterhältigen Angriff auch ohne Vorteil einsetzen kannst."
+    },
+    "descriptions": {
+      "en": "You can study a creature to make Sneak Attack possible against it without advantage.",
+      "de": "Du kannst eine Kreatur studieren, sodass du gegen sie Hinterhältigen Angriff auch ohne Vorteil einsetzen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-steady-eye",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#steady-eye",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Steady Eye",
+      "de": "Du erhältst Vorteil auf Wahrnehmungs- und Nachforschungsproben, wenn du dich langsam bewegst."
+    },
+    "descriptions": {
+      "en": "You gain advantage on Perception and Investigation checks when moving slowly.",
+      "de": "Du erhältst Vorteil auf Wahrnehmungs- und Nachforschungsproben, wenn du dich langsam bewegst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-unerring-eye",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#unerring-eye",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 13,
+    "names": {
+      "en": "Unerring Eye",
+      "de": "Du kannst magische Täuschungen und Illusionen in begrenzter Reichweite wahrnehmen."
+    },
+    "descriptions": {
+      "en": "You can sense magical deceptions and illusions within a limited range.",
+      "de": "Du kannst magische Täuschungen und Illusionen in begrenzter Reichweite wahrnehmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-inquisitive-eye-for-weakness",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/inquisitive#eye-for-weakness",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Eye for Weakness",
+      "de": "Dein Erkenntnisreicher Kampf offenbart eine Schwäche, die den Schaden deines Hinterhältigen Angriffs erhöht."
+    },
+    "descriptions": {
+      "en": "Your Insightful Fighting reveals a weakness that increases your Sneak Attack damage.",
+      "de": "Dein Erkenntnisreicher Kampf offenbart eine Schwäche, die den Schaden deines Hinterhältigen Angriffs erhöht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-mastermind-master-of-intrigue",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/mastermind#master-of-intrigue",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Master of Intrigue",
+      "de": "Du erhältst soziale Fertigkeits- und Werkzeugkenntnisse und kannst Sprache und Akzente nachahmen."
+    },
+    "descriptions": {
+      "en": "You gain social proficiencies and can mimic speech and accents.",
+      "de": "Du erhältst soziale Fertigkeits- und Werkzeugkenntnisse und kannst Sprache und Akzente nachahmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-mastermind-master-of-tactics",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/mastermind#master-of-tactics",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Master of Tactics",
+      "de": "Du kannst die Hilfeaktion als Bonusaktion einsetzen und Verbündete aus größerer Entfernung unterstützen."
+    },
+    "descriptions": {
+      "en": "You can use the Help action as a bonus action and assist allies from farther away.",
+      "de": "Du kannst die Hilfeaktion als Bonusaktion einsetzen und Verbündete aus größerer Entfernung unterstützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-mastermind-insightful-manipulator",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/mastermind#insightful-manipulator",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Insightful Manipulator",
+      "de": "Du kannst eine Kreatur einschätzen und erfahren, ob sie dir in bestimmten Eigenschaften überlegen, unterlegen oder ebenbürtig ist."
+    },
+    "descriptions": {
+      "en": "You can study a creature to learn whether it is superior, inferior, or equal in certain capabilities.",
+      "de": "Du kannst eine Kreatur einschätzen und erfahren, ob sie dir in bestimmten Eigenschaften überlegen, unterlegen oder ebenbürtig ist."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-mastermind-misdirection",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/mastermind#misdirection",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "featureType": "subclass",
+    "level": 13,
+    "names": {
+      "en": "Misdirection",
+      "de": "Du kannst eine nahe Kreatur als Deckung gegen einen Angriff nutzen, der dich zum Ziel hat."
+    },
+    "descriptions": {
+      "en": "You can use a nearby creature as cover against an attack targeting you.",
+      "de": "Du kannst eine nahe Kreatur als Deckung gegen einen Angriff nutzen, der dich zum Ziel hat."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-mastermind-soul-of-deceit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/mastermind#soul-of-deceit",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Soul of Deceit",
+      "de": "Deine Gedanken können nicht gelesen werden und magische Wahrheitserkennung kann deine Lügen nur schwer aufdecken."
+    },
+    "descriptions": {
+      "en": "Your thoughts cannot be read and magical truth detection has difficulty revealing your lies.",
+      "de": "Deine Gedanken können nicht gelesen werden und magische Wahrheitserkennung kann deine Lügen nur schwer aufdecken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-scout-skirmisher",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/scout#skirmisher",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Skirmisher",
+      "de": "Wenn ein Gegner seinen Zug in deiner Nähe beendet, kannst du dich als Reaktion ohne Gelegenheitsangriffe bewegen."
+    },
+    "descriptions": {
+      "en": "When an enemy ends its turn near you, you can move as a reaction without provoking opportunity attacks.",
+      "de": "Wenn ein Gegner seinen Zug in deiner Nähe beendet, kannst du dich als Reaktion ohne Gelegenheitsangriffe bewegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-scout-survivalist",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/scout#survivalist",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Survivalist",
+      "de": "Du erhältst Übung und Expertise in Naturkunde und Überlebenskunst."
+    },
+    "descriptions": {
+      "en": "You gain proficiency and expertise in Nature and Survival.",
+      "de": "Du erhältst Übung und Expertise in Naturkunde und Überlebenskunst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-scout-superior-mobility",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/scout#superior-mobility",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Superior Mobility",
+      "de": "Deine Gehbewegungsrate steigt."
+    },
+    "descriptions": {
+      "en": "Your walking speed increases.",
+      "de": "Deine Gehbewegungsrate steigt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-scout-ambush-master",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/scout#ambush-master",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "featureType": "subclass",
+    "level": 13,
+    "names": {
+      "en": "Ambush Master",
+      "de": "Du erhältst verbesserte Initiative und hilfst Verbündeten, eine von dir überfallene Kreatur anzugreifen."
+    },
+    "descriptions": {
+      "en": "You gain improved initiative and help allies attack a creature you ambush.",
+      "de": "Du erhältst verbesserte Initiative und hilfst Verbündeten, eine von dir überfallene Kreatur anzugreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-scout-sudden-strike",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/scout#sudden-strike",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Sudden Strike",
+      "de": "Du kannst in deinem Zug einen zusätzlichen Hinterhältigen Angriff gegen ein anderes Ziel ausführen."
+    },
+    "descriptions": {
+      "en": "You can make an additional Sneak Attack against a different target on your turn.",
+      "de": "Du kannst in deinem Zug einen zusätzlichen Hinterhältigen Angriff gegen ein anderes Ziel ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-swashbuckler-fancy-footwork",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/swashbuckler#fancy-footwork",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Fancy Footwork",
+      "de": "Eine Kreatur, die du im Nahkampf angreifst, kann für den Rest deines Zuges keine Gelegenheitsangriffe gegen dich ausführen."
+    },
+    "descriptions": {
+      "en": "A creature you make a melee attack against cannot make opportunity attacks against you for the rest of your turn.",
+      "de": "Eine Kreatur, die du im Nahkampf angreifst, kann für den Rest deines Zuges keine Gelegenheitsangriffe gegen dich ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-swashbuckler-rakish-audacity",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/swashbuckler#rakish-audacity",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Rakish Audacity",
+      "de": "Du addierst deinen Charismamodifikator zur Initiative und kannst unter bestimmten Duellbedingungen Hinterhältigen Angriff einsetzen."
+    },
+    "descriptions": {
+      "en": "You add your Charisma modifier to initiative and can Sneak Attack in certain one-on-one situations.",
+      "de": "Du addierst deinen Charismamodifikator zur Initiative und kannst unter bestimmten Duellbedingungen Hinterhältigen Angriff einsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-swashbuckler-panache",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/swashbuckler#panache",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Panache",
+      "de": "Du kannst eine Kreatur durch eine vergleichende soziale Probe bezaubern oder provozieren."
+    },
+    "descriptions": {
+      "en": "You can charm or goad a creature through a contested social check.",
+      "de": "Du kannst eine Kreatur durch eine vergleichende soziale Probe bezaubern oder provozieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-swashbuckler-elegant-maneuver",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/swashbuckler#elegant-maneuver",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "featureType": "subclass",
+    "level": 13,
+    "names": {
+      "en": "Elegant Maneuver",
+      "de": "Du kannst eine Bonusaktion einsetzen, um Vorteil auf deine nächste Akrobatik- oder Athletikprobe zu erhalten."
+    },
+    "descriptions": {
+      "en": "You can use a bonus action to gain advantage on the next Acrobatics or Athletics check.",
+      "de": "Du kannst eine Bonusaktion einsetzen, um Vorteil auf deine nächste Akrobatik- oder Athletikprobe zu erhalten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-rogue-swashbuckler-master-duelist",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "rogue/swashbuckler#master-duelist",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "Master Duelist",
+      "de": "Einmal pro kurzer Rast kannst du einen verfehlten Angriff in einen Treffer verwandeln."
+    },
+    "descriptions": {
+      "en": "Once per short rest, you can turn a missed attack into a hit.",
+      "de": "Einmal pro kurzer Rast kannst du einen verfehlten Angriff in einen Treffer verwandeln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-wind-speaker",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#wind-speaker",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Wind Speaker",
+      "de": "Du kannst Urzeitlich und seine Dialekte sprechen, lesen und schreiben."
+    },
+    "descriptions": {
+      "en": "You can speak, read, and write Primordial and its dialects.",
+      "de": "Du kannst Urzeitlich und seine Dialekte sprechen, lesen und schreiben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-tempestuous-magic",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#tempestuous-magic",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Tempestuous Magic",
+      "de": "Unmittelbar vor oder nach dem Wirken eines Zaubers des 1. oder höheren Grades kannst du ein kurzes Stück fliegen, ohne Gelegenheitsangriffe auszulösen."
+    },
+    "descriptions": {
+      "en": "Immediately before or after casting a spell of 1st level or higher, you can fly a short distance without provoking opportunity attacks.",
+      "de": "Unmittelbar vor oder nach dem Wirken eines Zaubers des 1. oder höheren Grades kannst du ein kurzes Stück fliegen, ohne Gelegenheitsangriffe auszulösen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-heart-of-the-storm",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#heart-of-the-storm",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Heart of the Storm",
+      "de": "Du erhältst Resistenz gegen Blitz- und Donnerschaden und schadest nahen Kreaturen, wenn du solche Zauber wirkst."
+    },
+    "descriptions": {
+      "en": "You gain resistance to lightning and thunder damage and harm nearby creatures when casting such spells.",
+      "de": "Du erhältst Resistenz gegen Blitz- und Donnerschaden und schadest nahen Kreaturen, wenn du solche Zauber wirkst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-storm-guide",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#storm-guide",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Storm Guide",
+      "de": "Du kannst kleinere Wettereffekte in deiner Umgebung kontrollieren."
+    },
+    "descriptions": {
+      "en": "You can control minor weather effects around you.",
+      "de": "Du kannst kleinere Wettereffekte in deiner Umgebung kontrollieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-storm-s-fury",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#storm-s-fury",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Storm's Fury",
+      "de": "Eine Kreatur, die dich im Nahkampf trifft, kann durch deine Sturmmagie Schaden erleiden und weggestoßen werden."
+    },
+    "descriptions": {
+      "en": "A creature that hits you in melee can be damaged and pushed away by your storm magic.",
+      "de": "Eine Kreatur, die dich im Nahkampf trifft, kann durch deine Sturmmagie Schaden erleiden und weggestoßen werden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-storm-wind-soul",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/storm#wind-soul",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "Wind Soul",
+      "de": "Du erhältst Immunität gegen Blitz- und Donnerschaden sowie mächtige Flugfähigkeiten."
+    },
+    "descriptions": {
+      "en": "You gain immunity to lightning and thunder damage and powerful flight capabilities.",
+      "de": "Du erhältst Immunität gegen Blitz- und Donnerschaden sowie mächtige Flugfähigkeiten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-shadowmagic-eyes-of-the-dark",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/shadowmagic#eyes-of-the-dark",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Eyes of the Dark",
+      "de": "Du erhältst Dunkelsicht und kannst Zaubereipunkte einsetzen, um Dunkelheit zu wirken und hindurchzusehen."
+    },
+    "descriptions": {
+      "en": "You gain darkvision and can use sorcery points to cast Darkness with special sight through it.",
+      "de": "Du erhältst Dunkelsicht und kannst Zaubereipunkte einsetzen, um Dunkelheit zu wirken und hindurchzusehen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-shadowmagic-strength-of-the-grave",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/shadowmagic#strength-of-the-grave",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Strength of the Grave",
+      "de": "Wenn Schaden deine Trefferpunkte auf 0 reduzieren würde, kannst du einen Rettungswurf ablegen, um bei 1 Trefferpunkt zu bleiben."
+    },
+    "descriptions": {
+      "en": "When damage would reduce you to 0 hit points, you can make a saving throw to remain at 1 hit point.",
+      "de": "Wenn Schaden deine Trefferpunkte auf 0 reduzieren würde, kannst du einen Rettungswurf ablegen, um bei 1 Trefferpunkt zu bleiben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-shadowmagic-hound-of-ill-omen",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/shadowmagic#hound-of-ill-omen",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Hound of Ill Omen",
+      "de": "Du kannst Zaubereipunkte ausgeben, um einen schattenhaften Hund zu beschwören, der ein Ziel jagt."
+    },
+    "descriptions": {
+      "en": "You can spend sorcery points to summon a shadowy hound that hunts a target.",
+      "de": "Du kannst Zaubereipunkte ausgeben, um einen schattenhaften Hund zu beschwören, der ein Ziel jagt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-shadowmagic-shadow-walk",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/shadowmagic#shadow-walk",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Shadow Walk",
+      "de": "Bei dämmrigem Licht oder Dunkelheit kannst du dich zwischen solchen Bereichen teleportieren."
+    },
+    "descriptions": {
+      "en": "While in dim light or darkness, you can teleport between areas of dim light or darkness.",
+      "de": "Bei dämmrigem Licht oder Dunkelheit kannst du dich zwischen solchen Bereichen teleportieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-sorcerer-shadowmagic-umbral-form",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "sorcerer/shadowmagic#umbral-form",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "featureType": "subclass",
+    "level": 18,
+    "names": {
+      "en": "Umbral Form",
+      "de": "Du kannst eine schattenhafte Gestalt annehmen, die Schaden widersteht und Hindernisse durchdringt."
+    },
+    "descriptions": {
+      "en": "You can become a shadowy form that resists damage and passes through obstacles.",
+      "de": "Du kannst eine schattenhafte Gestalt annehmen, die Schaden widersteht und Hindernisse durchdringt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-expanded-spell-list",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Expanded Spell List",
+      "de": "Der Himmlische erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "descriptions": {
+      "en": "The Celestial grants additional spells that are available for you to learn.",
+      "de": "Der Himmlische erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-bonus-cantrips",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#bonus-cantrips",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Bonus Cantrips",
+      "de": "Du erlernst die Zaubertricks Licht und Heilige Flamme."
+    },
+    "descriptions": {
+      "en": "You learn the Light and Sacred Flame cantrips.",
+      "de": "Du erlernst die Zaubertricks Licht und Heilige Flamme."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-healing-light",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#healing-light",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Healing Light",
+      "de": "Du erhältst einen Vorrat an Heilwürfeln, mit denen du Kreaturen auf Entfernung Trefferpunkte zurückgeben kannst."
+    },
+    "descriptions": {
+      "en": "You gain a pool of healing dice that can restore hit points to creatures at range.",
+      "de": "Du erhältst einen Vorrat an Heilwürfeln, mit denen du Kreaturen auf Entfernung Trefferpunkte zurückgeben kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-radiant-soul",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#radiant-soul",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Radiant Soul",
+      "de": "Du erhältst Resistenz gegen gleißenden Schaden und kannst bestimmte Zauber um gleißenden Schaden verstärken."
+    },
+    "descriptions": {
+      "en": "You gain resistance to radiant damage and can add radiant damage to certain spells.",
+      "de": "Du erhältst Resistenz gegen gleißenden Schaden und kannst bestimmte Zauber um gleißenden Schaden verstärken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-celestial-resilience",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#celestial-resilience",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Celestial Resilience",
+      "de": "Deine Magie verleiht dir und Verbündeten temporäre Trefferpunkte, wenn du eine Rast beendest."
+    },
+    "descriptions": {
+      "en": "Your magic grants temporary hit points to you and allies when you finish a rest.",
+      "de": "Deine Magie verleiht dir und Verbündeten temporäre Trefferpunkte, wenn du eine Rast beendest."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-celestial-searing-vengeance",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/celestial#searing-vengeance",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Searing Vengeance",
+      "de": "Wenn du oder ein Verbündeter zu fallen droht, kannst du gleißende Energie entfesseln, um euch zu stärken und Feinde zu bestrafen."
+    },
+    "descriptions": {
+      "en": "When you or an ally would fall, you can unleash radiant energy to recover and punish foes.",
+      "de": "Wenn du oder ein Verbündeter zu fallen droht, kannst du gleißende Energie entfesseln, um euch zu stärken und Feinde zu bestrafen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-expanded-spell-list",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Expanded Spell List",
+      "de": "Die Hexenklinge erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "descriptions": {
+      "en": "The Hexblade grants additional spells that are available for you to learn.",
+      "de": "Die Hexenklinge erweitert die Zauberauswahl, aus der du Zauber erlernen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-hexblade-s-curse",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#hexblade-s-curse",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Hexblade's Curse",
+      "de": "Du verfluchst ein Ziel, wodurch deine Angriffe gegen es stärker werden und du bei seinem Tod Lebenskraft zurückerhältst."
+    },
+    "descriptions": {
+      "en": "You curse a target, improving your attacks against it and restoring vitality if it dies.",
+      "de": "Du verfluchst ein Ziel, wodurch deine Angriffe gegen es stärker werden und du bei seinem Tod Lebenskraft zurückerhältst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-hex-warrior",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#hex-warrior",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "Hex Warrior",
+      "de": "Du erhältst Übung mit mittelschwerer Rüstung, Schilden und Kriegswaffen und kannst Charisma für eine gebundene Waffe verwenden."
+    },
+    "descriptions": {
+      "en": "You gain medium armor, shield, and martial weapon proficiency and can use Charisma for a bonded weapon.",
+      "de": "Du erhältst Übung mit mittelschwerer Rüstung, Schilden und Kriegswaffen und kannst Charisma für eine gebundene Waffe verwenden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-accursed-specter",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#accursed-specter",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Accursed Specter",
+      "de": "Du kannst den Geist eines von dir getöteten Humanoiden als vorübergehendes Gespenst erheben."
+    },
+    "descriptions": {
+      "en": "You can raise the spirit of a humanoid you slay as a temporary specter.",
+      "de": "Du kannst den Geist eines von dir getöteten Humanoiden als vorübergehendes Gespenst erheben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-armor-of-hexes",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#armor-of-hexes",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Armor of Hexes",
+      "de": "Dein Fluch kann bewirken, dass ein Angriff gegen dich verfehlt."
+    },
+    "descriptions": {
+      "en": "Your curse can cause an attack against you to miss.",
+      "de": "Dein Fluch kann bewirken, dass ein Angriff gegen dich verfehlt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-warlock-hexblade-master-of-hexes",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "warlock/hexblade#master-of-hexes",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Master of Hexes",
+      "de": "Wenn dein Ziel stirbt, kannst du den Fluch der Hexenklinge auf eine andere Kreatur übertragen."
+    },
+    "descriptions": {
+      "en": "You can move your Hexblade's Curse to another creature when the target dies.",
+      "de": "Wenn dein Ziel stirbt, kannst du den Fluch der Hexenklinge auf eine andere Kreatur übertragen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-war-savant",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#war-savant",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "War Savant",
+      "de": "Das Kopieren von Kampfmagiezaubern in dein Zauberbuch benötigt weniger Zeit und Geld."
+    },
+    "descriptions": {
+      "en": "Copying war magic spells into your spellbook takes less time and money.",
+      "de": "Das Kopieren von Kampfmagiezaubern in dein Zauberbuch benötigt weniger Zeit und Geld."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-arcane-deflection",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#arcane-deflection",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Arcane Deflection",
+      "de": "Wenn du getroffen wirst oder einen Rettungswurf nicht bestehst, kannst du deine Reaktion für einen magischen Verteidigungsschub einsetzen."
+    },
+    "descriptions": {
+      "en": "When hit or when failing a saving throw, you can use your reaction for a defensive magical boost.",
+      "de": "Wenn du getroffen wirst oder einen Rettungswurf nicht bestehst, kannst du deine Reaktion für einen magischen Verteidigungsschub einsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-tactical-wit",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#tactical-wit",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "Tactical Wit",
+      "de": "Du addierst deinen Intelligenzmodifikator auf Initiativewürfe."
+    },
+    "descriptions": {
+      "en": "You add your Intelligence modifier to initiative rolls.",
+      "de": "Du addierst deinen Intelligenzmodifikator auf Initiativewürfe."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-power-surge",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#power-surge",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Power Surge",
+      "de": "Du speicherst magische Energie und gibst sie aus, um mit einem Zauber zusätzlichen Energieschaden zu verursachen."
+    },
+    "descriptions": {
+      "en": "You store magical energy and expend it to deal extra force damage with a spell.",
+      "de": "Du speicherst magische Energie und gibst sie aus, um mit einem Zauber zusätzlichen Energieschaden zu verursachen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-durable-magic",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#durable-magic",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Durable Magic",
+      "de": "Während du dich auf einen Zauber konzentrierst, erhältst du verbesserte Verteidigung und Rettungswürfe."
+    },
+    "descriptions": {
+      "en": "While concentrating on a spell, you gain improved defense and saving throws.",
+      "de": "Während du dich auf einen Zauber konzentrierst, erhältst du verbesserte Verteidigung und Rettungswürfe."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-wizard-war-deflecting-shroud",
+    "ruleset": "2014",
+    "contentSourceId": "xge-2017",
+    "sourceReference": "wizard/war#deflecting-shroud",
+    "classId": "wizard",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Deflecting Shroud",
+      "de": "Deine Arkane Ablenkung kann nahe Kreaturen mit gespeicherter magischer Energie schädigen."
+    },
+    "descriptions": {
+      "en": "Your Arcane Deflection can damage nearby creatures with stored magical energy.",
+      "de": "Deine Arkane Ablenkung kann nahe Kreaturen mit gespeicherter magischer Energie schädigen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
