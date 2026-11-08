@@ -26,8 +26,12 @@ Adventura adapts the official SRD material into its own JSON structure. The rule
 
 The initial supplemental entries are based on spell rules and metadata from *Xanathar's Guide to Everything* (Wizards of the Coast, 2017). The book is a separately published copyrighted supplement and is not covered by the SRD CC BY 4.0 license. Adventura therefore stores factual game metadata and concise independently written descriptions, not the book's original descriptive text.
 
-Included starter entries: Absorb Elements (p. 150), Aganazzar's Scorcher (p. 150), Catapult (p. 150), Chaos Bolt (p. 151), and Shadow Blade (p. 164).
+Included entries: Absorb Elements (p. 150), Aganazzar's Scorcher (p. 150), Catapult (p. 150), Chaos Bolt (p. 151), and Shadow Blade (p. 164).
 
-Legacy supplement spells are marked usable with both rulesets where no distinct 2024 replacement entry is included. This is a compatibility choice for the catalogue, not a claim that the spell text was reprinted in the 2024 Player's Handbook.
+### Sword Coast Adventurer's Guide (SCAG)
+
+The catalogue also includes the four SCAG cantrips: Booming Blade (p. 142), Green-Flame Blade (p. 142), Lightning Lure (p. 143), and Sword Burst (p. 143). Their current entries are explicitly assigned to the 2014 ruleset. A separate 2024 entry will be added only after its revised wording and mechanics have been checked.
+
+XGE entries are marked usable with both rulesets where their mechanics are compatible with the 2024 rules. This is a catalogue compatibility choice, not a claim that the spell text was reprinted in the 2024 Player's Handbook.
 
 No endorsement by Wizards of the Coast is implied.
