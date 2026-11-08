@@ -23,6 +23,7 @@ const BASE_CLASSES: ClassOption[] = [
 
 export const CLASS_OPTIONS: ClassOption[] = [
   ...BASE_CLASSES,
+  { value: 'artificer', label: 'Erfinder' },
   { value: 'other', label: 'Andere / eigene Klasse' },
 ]
 
