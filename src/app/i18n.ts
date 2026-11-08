@@ -109,6 +109,7 @@ const en: Record<string, string> = {
   Zauberwerte: 'Spellcasting stats',
   'Zauberangriffe und Rettungswurf-SG': 'Spell attack bonus and save DC',
   Zauberattribut: 'Spellcasting ability',
+  'Attribut wählen': 'Choose an ability',
   Zauberangriff: 'Spell attack',
   'Rettungswurf-SG': 'Spell save DC',
   'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.':
