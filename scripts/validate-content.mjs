@@ -52,6 +52,9 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
     if (!feature.descriptions?.en?.trim() || !feature.descriptions?.de?.trim()) {
       errors.push(`${location}: missing English or German description`)
     }
+    if (feature.names?.en === feature.descriptions?.en || feature.names?.de === feature.descriptions?.de) {
+      errors.push(`${location}: feature name duplicates its description`)
+    }
     if (feature.translationStatus?.de !== 'unofficial') {
       errors.push(`${location}: German supplemental text must be labelled unofficial`)
     }
@@ -97,6 +100,17 @@ for (const ruleset of ['2014', '2024']) {
   for (const feature of allFeatures) {
     if (allIds.has(feature.id)) errors.push(`${ruleset}/${feature.id}: duplicate ID across SRD and supplemental data`)
     allIds.add(feature.id)
+  }
+
+  for (const feature of allFeatures) {
+    const selectableSubclasses = options[ruleset][feature.classId]
+    if (!selectableSubclasses) errors.push(`${ruleset}/${feature.id}: unknown class ${feature.classId}`)
+    if (feature.subclassId && !selectableSubclasses?.includes(feature.subclassId)) {
+      errors.push(`${ruleset}/${feature.id}: subclass ${feature.subclassId} is not selectable for ${feature.classId}`)
+    }
+    if (feature.featureType === 'subclass' && !feature.subclassId) {
+      errors.push(`${ruleset}/${feature.id}: subclass feature is missing subclassId`)
+    }
   }
 
   for (const [classId, subclassIds] of Object.entries(options[ruleset])) {
