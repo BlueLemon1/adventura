@@ -481,7 +481,8 @@ export function SpellCatalog({
                   <strong>{spell.name}</strong>
                   <small>
                     {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range} ·{' '}
-                    {spell.legacy ? `${t('Legacy')} · ` : ''}{getContentSourceAbbreviation(spell.contentSourceId)}
+                    {spell.legacy ? `${t('Legacy')} · ` : ''}
+                    {getContentSourceAbbreviation(spell.contentSourceId)}
                   </small>
                 </span>
                 <span className="catalog-spell-action">
@@ -549,7 +550,8 @@ export function SpellCatalog({
                 </small>
                 {spell.contentSourceId && (
                   <small className="catalog-spell-source">
-                    {t('Quelle')}: {spell.legacy ? `${t('Legacy')} · ` : ''}{getContentSourceAbbreviation(spell.contentSourceId)}
+                    {t('Quelle')}: {spell.legacy ? `${t('Legacy')} · ` : ''}
+                    {getContentSourceAbbreviation(spell.contentSourceId)}
                     {spell.sourcePage ? ` · S. ${spell.sourcePage}` : ''}
                     {spell.previousSource ? ` · ursprünglich: ${spell.previousSource}` : ''}
                     {spell.descriptionKind === 'original-summary'

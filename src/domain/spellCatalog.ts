@@ -128,9 +128,7 @@ export function findCatalogSpell(
 
   const original =
     supplementalSpells.find((spell) => spell.id === spellId) ??
-    (ruleset === '2024'
-      ? getSpellCatalog('2014').find((spell) => spell.id === spellId)
-      : undefined)
+    (ruleset === '2024' ? getSpellCatalog('2014').find((spell) => spell.id === spellId) : undefined)
   if (!original) return undefined
   const sourceRuleset = sourceRulesets.get(original.contentSourceId)
   const belongsToRuleset =
