@@ -16,6 +16,7 @@ import {
   SelectValue,
 } from '../components/ui/select'
 import { SpellCatalog } from './SpellCatalog'
+import { getHigherLevelText } from './SpellHigherLevel'
 import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
 import spells2014 from '../data/spells-2014.json'
