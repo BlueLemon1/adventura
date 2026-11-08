@@ -52,7 +52,7 @@ const sourceRulesets = new Map<string, Dnd5eRuleset>(
 )
 
 /** One canonical catalogue builder shared by selection and spellbook localization. */
-export function getSpellCatalog(ruleset: Character['ruleset']): CatalogSpell[] {
+export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
     .filter((spell) =>
