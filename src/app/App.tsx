@@ -1,6 +1,5 @@
 import { useRef, useState, type ChangeEvent } from 'react'
 import {
-  Backpack,
   BookOpen,
   Boxes,
   Compass,
@@ -9,7 +8,6 @@ import {
   Sun,
   ScrollText,
   Shield,
-  ShieldCheck,
   Sparkles,
   Upload,
   WandSparkles,
