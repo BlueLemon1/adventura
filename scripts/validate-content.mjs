@@ -395,6 +395,11 @@ for (const entry of compatibilityEntries) {
     if (!additionalSpell && !srdSpell) {
       errors.push(`2024/${entry.spellId}: replaced spell must exist in the 2014 dataset`)
     }
+    if (entry.spellId.startsWith('srd-2014-')) {
+      if (entry.replacementSource !== 'phb-2024' || entry.replacementCategory !== 'renamed') {
+        errors.push(`2024/${entry.spellId}: renamed SRD replacement must cite the 2024 PHB`)
+      }
+    }
   }
 }
 for (const spell of spells2014) {
