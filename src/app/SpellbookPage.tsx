@@ -110,7 +110,7 @@ export function SpellbookPage({
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
-    const englishHigherLevel = getEnglishHigherLevel(spell)
+    const englishHigherLevel = spell?.higherLevel
     const spellName = localizedSpell?.name ?? spell?.name ?? feature.name
     const featureName = language === 'de' ? (feature.localizedName ?? feature.name) : feature.name
     const resource = feature.resourceId
