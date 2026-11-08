@@ -4322,3 +4322,20 @@ textarea {
     font-size: 8px;
   }
 }
+
+
+/* Keep inventory actions aligned on narrow screens */
+@media (max-width: 640px) {
+  .inventory-items-panel .inventory-row {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    gap: 8px;
+  }
+  .inventory-items-panel .inventory-row .inventory-main {
+    grid-column: 1 / -1;
+  }
+  .inventory-items-panel .inventory-row .delete-button {
+    grid-column: 3;
+    grid-row: 2;
+    justify-self: end;
+  }
+}
