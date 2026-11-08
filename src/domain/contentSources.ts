@@ -94,6 +94,17 @@ export const CONTENT_SOURCES = {
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/xgte',
     availableLocales: ['en', 'de'],
   },
+  wgte2018: {
+    id: 'wgte-2018',
+    name: 'Wayfinder’s Guide to Eberron',
+    abbreviation: 'WGtE',
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2018',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/wgte',
+    availableLocales: ['en'],
+  },
   erlw2019: {
     id: 'erlw-2019',
     name: 'Eberron: Rising from the Last War',
