@@ -103,7 +103,7 @@ export function SpellbookPage({
       components: localized?.components ?? spell.components,
       duration: localized?.duration ?? spell.duration,
       description: localized?.description ?? spell.description,
-      higherLevel: localized?.higherLevel ?? englishHigherLevel,
+      higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
       languageFallback: usedEnglishFallback,
     }
   })
@@ -156,7 +156,7 @@ export function SpellbookPage({
           Boolean(spell?.duration && !localizedSpell?.duration) ||
           Boolean(spell?.description && !localizedSpell?.description) ||
           Boolean(englishHigherLevel && !localizedSpell?.higherLevel)),
-      higherLevel: localizedSpell?.higherLevel ?? englishHigherLevel,
+      higherLevel: getHigherLevelText(englishHigherLevel, localizedSpell?.higherLevel, language),
       damage: spell?.damage,
       notes: featureName,
       source: 'class',
