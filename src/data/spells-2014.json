@@ -62,7 +62,7 @@
     "description": "You hurl a bubble of acid. Choose one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a dexterity saving throw or take 1d6 acid damage. This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
     "localized": {
       "name": "Säurespritzer",
-      "school": "Hervorrufung",
+      "school": "Beschwörung",
       "classes": [
         "wizard",
         "sorcerer"
@@ -1092,7 +1092,7 @@
     "description": "You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a constitution saving throw. On a success, the spell ends.",
     "localized": {
       "name": "Blindheit/Taubheit",
-      "school": "Verwandlung",
+      "school": "Nekromantie",
       "classes": [
         "bard",
         "cleric",
@@ -1205,7 +1205,8 @@
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der zusätzliche Schaden für jeden Grad über dem 2. um 1W6.",
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
-      "duration": "Konzentration, bis zu 1 Minute"
+      "duration": "Konzentration, bis zu 1 Minute",
+      "school": "Hervorrufung"
     },
     "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
     "contentSourceId": "srd-5.1"
@@ -2180,7 +2181,7 @@
     "description": "Choose a spell of 5th level or lower that you can cast, that has a casting time of 1 action, and that can target you. You cast that spell--called the contingent spell--as part of casting contingency, expending spell slots for both, but the contingent spell doesn't come into effect. Instead, it takes effect when a certain circumstance occurs. You describe that circumstance when you cast the two spells. For example, a contingency cast with water breathing might stipulate that water breathing comes into effect when you are engulfed in water or a similar liquid. The contingent spell takes effect immediately after the circumstance is met for the first time, whether or not you want it to. and then contingency ends. The contingent spell takes effect only on you, even if it can normally target others. You can use only one contingency spell at a time. If you cast this spell again, the effect of another contingency spell on you ends. Also, contingency ends on you if its material component is ever not on your person.",
     "localized": {
       "name": "Notfall",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "wizard"
       ],
@@ -2503,7 +2504,7 @@
     "description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Wunden heilen",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "bard",
         "druid",
@@ -2542,7 +2543,7 @@
     "description": "You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius. As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.",
     "localized": {
       "name": "Tanzende Lichter",
-      "school": "Illusion",
+      "school": "Hervorrufung",
       "classes": [
         "bard",
         "wizard",
@@ -3162,7 +3163,7 @@
     "description": "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.",
     "localized": {
       "name": "Göttliche Gunst",
-      "school": "Verwandlung",
+      "school": "Hervorrufung",
       "classes": [
         "paladin"
       ],
@@ -3416,7 +3417,7 @@
     "description": "You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area. The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a constitution saving throw. On a failed save, the creature's concentration is broken. When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a dexterity saving throw. On a failed save, the creature is knocked prone. This spell can have additional effects depending on the terrain in the area, as determined by the GM. Fissures. Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the GM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens. A fissure that opens beneath a structure causes it to automatically collapse (see below). Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The GM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried.",
     "localized": {
       "name": "Erdbeben",
-      "school": "Verwandlung",
+      "school": "Hervorrufung",
       "classes": [
         "druid",
         "cleric",
@@ -3648,7 +3649,7 @@
     "description": "You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away. While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so. You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from. When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved. This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.",
     "localized": {
       "name": "Ätherische Gestalten",
-      "school": "Beschwörung",
+      "school": "Verwandlung",
       "classes": [
         "bard",
         "warlock",
@@ -3977,7 +3978,8 @@
       "description": "Du attackierst den Verstand einer Kreatur in Reichweite, die du sehen kannst, und versuchst, ihren Intellekt und ihre Persönlichkeit zu brechen. Das Ziel erleidet 4W6 psychischen Schaden und muss einen Intelligenzrettungswurf ausführen.\n\nScheitert der Wurf, fallen der Intelligenz- und der Charismawert der Kreatur auf 1. Die Kreatur kann keine Zauber wirken, keine magischen Gegenstände aktivieren, versteht keine Sprache und kann nicht verständlich kommunizieren. Sie kann jedoch ihre Freunde erkennen, ihnen folgen und sie sogar beschützen.\n\nNach jeweils 30 Tagen kann die Kreatur den Rettungswurf gegen den Zauber wiederholen. Ist der Rettungswurf erfolgreich, endet der Zauber.\n\nDer Zauber kann zudem durch Heilung, Vollständige Genesung oder Wunsch aufgehoben werden.",
       "castingTime": "1 Aktion",
       "range": "45 m",
-      "duration": "Unmittelbar"
+      "duration": "Unmittelbar",
+      "school": "Verzauberung"
     },
     "contentSourceId": "srd-5.1"
   },
@@ -4919,7 +4921,7 @@
     "description": "You transform up to ten centipedes, three spiders, five wasps, or one scorpion within range into giant versions of their natural forms for the duration. A centipede becomes a giant centipede, a spider becomes a giant spider, a wasp becomes a giant wasp, and a scorpion becomes a giant scorpion. Each creature obeys your verbal commands, and in combat, they act on your turn each round. The GM has the statistics for these creatures and resolves their actions and movement. A creature remains in its giant size for the duration, until it drops to 0 hit points, or until you use an action to dismiss the effect on it. The GM might allow you to choose different targets. For example, if you transform a bee, its giant version might have the same statistics as a giant wasp.",
     "localized": {
       "name": "Rieseninsekt",
-      "school": "Beschwörung",
+      "school": "Verwandlung",
       "classes": [
         "druid"
       ],
@@ -4951,7 +4953,7 @@
     "description": "Until the spell ends, when you make a Charisma check, you can replace the number you roll with a 15. Additionally, no matter what you say, magic that would determine if you are telling the truth indicates that you are being truthful.",
     "localized": {
       "name": "Redegewandtheit",
-      "school": "Verzauberung",
+      "school": "Verwandlung",
       "classes": [
         "bard",
         "warlock"
@@ -5056,7 +5058,7 @@
     "description": "Up to ten berries appear in your hand and are infused with magic for the duration. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for a day. The berries lose their potency if they have not been consumed within 24 hours of the casting of this spell.",
     "localized": {
       "name": "Gute Beeren",
-      "school": "Beschwörung",
+      "school": "Verwandlung",
       "classes": [
         "druid",
         "ranger"
@@ -5364,7 +5366,7 @@
     "description": "You touch a point and infuse an area around it with holy (or unholy) power. The area can have a radius up to 60 feet, and the spell fails if the radius includes an area already under the effect a hallow spell. The affected area is subject to the following effects. First, celestials, elementals, fey, fiends, and undead can't enter the area, nor can such creatures charm, frighten, or possess creatures within it. Any creature charmed, frightened, or possessed by such a creature is no longer charmed, frightened, or possessed upon entering the area. You can exclude one or more of those types of creatures from this effect. Second, you can bind an extra effect to the area. Choose the effect from the following list, or choose an effect offered by the GM. Some of these effects apply to creatures in the area; you can designate whether the effect applies to all creatures, creatures that follow a specific deity or leader, or creatures of a specific sort, such as ores or trolls. When a creature that would be affected enters the spell's area for the first time on a turn or starts its turn there, it can make a charisma saving throw. On a success, the creature ignores the extra effect until it leaves the area. ***Courage.*** Affected creatures can't be frightened while in the area. ***Darkness.*** Darkness fills the area. Normal light, as well as magical light created by spells of a lower level than the slot you used to cast this spell, can't illuminate the area. ***Daylight.*** Bright light fills the area. Magical darkness created by spells of a lower level than the slot you used to cast this spell can't extinguish the light. ***Energy Protection.*** Affected creatures in the area have resistance to one damage type of your choice, except for bludgeoning, piercing, or slashing. ***Energy Vulnerability.*** Affected creatures in the area have vulnerability to one damage type of your choice, except for bludgeoning, piercing, or slashing. ***Everlasting Rest.*** Dead bodies interred in the area can't be turned into undead. ***Extradimensional Interference.*** Affected creatures can't move or travel using teleportation or by extradimensional or interplanar means. ***Fear.*** Affected creatures are frightened while in the area. ***Silence.*** No sound can emanate from within the area, and no sound can reach into it. ***Tongues.*** Affected creatures can communicate with any other creature in the area, even if they don't share a common language.",
     "localized": {
       "name": "Weihen",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "cleric"
       ],
@@ -5503,7 +5505,7 @@
     "description": "Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points. This spell also ends blindness, deafness, and any diseases affecting the target. This spell has no effect on constructs or undead.",
     "localized": {
       "name": "Heilung",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "druid",
         "cleric"
@@ -5539,7 +5541,7 @@
     "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Heilendes Wort",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "bard",
         "druid",
@@ -7049,7 +7051,7 @@
     "description": "A wave of healing energy washes out from a point of your choice within range. Choose up to six creatures in a 30-foot-radius sphere centered on that point. Each target regains hit points equal to 3d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Massen-Wunden heilen",
-      "school": "Bannmagie",
+      "school": "Beschwörung",
       "classes": [
         "bard",
         "druid",
@@ -7084,7 +7086,7 @@
     "description": "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Massen-Heilung",
-      "school": "Bannmagie",
+      "school": "Beschwörung",
       "classes": [
         "cleric"
       ],
@@ -7115,7 +7117,7 @@
     "description": "As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Massen-Heilendes Wort",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "bard",
         "cleric"
@@ -8013,7 +8015,7 @@
     "description": "You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage. This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).",
     "localized": {
       "name": "Gift versprühen",
-      "school": "Nekromantie",
+      "school": "Beschwörung",
       "classes": [
         "druid",
         "warlock",
@@ -8164,7 +8166,7 @@
     "description": "Up to six creatures of your choice that you can see within range each regain hit points equal to 2d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
     "localized": {
       "name": "Gebet der Heilung",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "cleric",
         "paladin"
@@ -8780,7 +8782,7 @@
     "description": "You touch a dead humanoid or a piece of a dead humanoid. Provided that the creature has been dead no longer than 10 days, the spell forms a new adult body for it and then calls the soul to enter that body. If the target's soul isn't free or willing to do so, the spell fails. The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The GM rolls a d 100 and consults the following table to determine what form the creature takes when restored to life, or the GM chooses a form. | d100 | Race | |---|---| | 01-04 | Dragonborn | | 05-13 | Dwarf, hill | | 14-21 | Dwarf, mountain | | 22-25 | Elf, dark | | 26-34 | Elf, high | | 35-42 | Elf, wood | | 43-46 | Gnome, forest | | 47-52 | Gnome, rock | | 53-56 | Half-elf | | 57-60 | Half-orc | | 61-68 | Halfling, lightfoot | | 69-76 | Halfling, stout | | 77-96 | Human | | 97-00 | Tiefling | The reincarnated creature recalls its former life and experiences. It retains the capabilities it had in its original form, except it exchanges its original race for the new one and changes its racial traits accordingly.",
     "localized": {
       "name": "Wiedergeburt",
-      "school": "Nekromantie",
+      "school": "Verwandlung",
       "classes": [
         "druid"
       ],
@@ -8848,7 +8850,7 @@
     "description": "A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a dexterity saving throw. On a failed save, the creature is enclosed for the duration. Nothing--not physical objects, energy, or other spell effects--can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it. The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures. A disintegrate spell targeting the globe destroys it without harming anything inside it.",
     "localized": {
       "name": "Unverwüstliche Sphäre",
-      "school": "Bannmagie",
+      "school": "Hervorrufung",
       "classes": [
         "wizard"
       ],
@@ -8981,7 +8983,7 @@
     "description": "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.",
     "localized": {
       "name": "Wiederbeleben",
-      "school": "Nekromantie",
+      "school": "Beschwörung",
       "classes": [
         "druid",
         "cleric",
@@ -9297,7 +9299,7 @@
     "description": "You send a short message of twenty-five words or less to a creature with which you are familiar. The creature hears the message in its mind, recognizes you as the sender if it knows you, and can answer in a like manner immediately. The spell enables creatures with Intelligence scores of at least 1 to understand the meaning of your message. You can send the message across any distance and even to other planes of existence, but if the target is on a different plane than you, there is a 5 percent chance that the message doesn't arrive.",
     "localized": {
       "name": "Verständigung",
-      "school": "Erkenntnismagie",
+      "school": "Hervorrufung",
       "classes": [
         "bard",
         "cleric",
@@ -10142,7 +10144,7 @@
     "description": "This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.",
     "localized": {
       "name": "Steinhaut",
-      "school": "Verwandlung",
+      "school": "Bannmagie",
       "classes": [
         "druid",
         "wizard",
