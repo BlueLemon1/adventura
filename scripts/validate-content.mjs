@@ -68,15 +68,6 @@ function normalizeSpellName(spell) {
     .replace(/[^a-z0-9]/g, '')
 }
 
-function getCompatibleLegacySpells(spells2014, spells2024) {
-  const currentNames = new Set(spells2024.map(normalizeSpellName))
-  const replacedNames = new Set(['brandingsmite', 'feeblemind'])
-  return spells2014.filter((spell) => {
-    const name = normalizeSpellName(spell)
-    return !currentNames.has(name) && !replacedNames.has(name)
-  })
-}
-
 function validateSpellDataset(records, ruleset, sourceIds, sourceRulesets) {
   const ids = new Set()
 
@@ -176,6 +167,29 @@ const sourceIds = new Set([...sourceSource.matchAll(/id: '([^']+)'/g)].map((matc
 const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
+const additionalSpellRecords = readJson('src/data/spells-additional.json')
+const spellCompatibilityManifest = readJson('src/data/spell-compatibility-2024.json')
+const compatibilityEntries = spellCompatibilityManifest.entries
+const compatibilityBySpellId = new Map(
+  compatibilityEntries.map((entry) => [entry.spellId, entry]),
+)
+const additionalSpellsById = new Map(additionalSpellRecords.map((spell) => [spell.id, spell]))
+if (compatibilityBySpellId.size !== compatibilityEntries.length) {
+  errors.push('2024 spell compatibility manifest contains duplicate spell IDs')
+}
+for (const spell of additionalSpellRecords) {
+  if (!compatibilityBySpellId.has(spell.id)) {
+    errors.push(`2024 spell compatibility manifest is missing ${spell.id}`)
+  }
+}
+for (const entry of compatibilityEntries) {
+  if (!['legacy', 'shared', 'replaced'].includes(entry.status)) {
+    errors.push(`2024/${entry.spellId}: invalid compatibility status ${entry.status}`)
+  }
+  if (!additionalSpellsById.has(entry.spellId) && !entry.spellId.startsWith('srd-2014-')) {
+    errors.push(`2024/${entry.spellId}: compatibility entry has no source spell`)
+  }
+}
 const options = {
   '2014': extractSubclassOptions(classSource, '2014', '2024'),
   '2024': extractSubclassOptions(classSource, '2024'),
@@ -250,17 +264,7 @@ for (const ruleset of ['2014', '2024']) {
   validateSpellDataset(spells, ruleset, sourceIds, sourceRulesets)
   const legacySpellIds =
     ruleset === '2024'
-      ? getCompatibleLegacySpells(
-          [
-            ...readJson('src/data/spells-2014.json'),
-            ...readJson('src/data/spells-additional.json').filter((spell) =>
-              spell.rulesets
-                ? spell.rulesets.includes('2014')
-                : sourceRulesets.get(spell.contentSourceId) === '2014',
-            ),
-          ],
-          spells,
-        ).map((spell) => spell.id)
+      ? compatibilityEntries.filter((entry) => entry.status === 'legacy').map((entry) => entry.spellId)
       : []
   const spellIds = new Set([...spells.map((spell) => spell.id), ...legacySpellIds])
   const allFeatures = [...srd, ...supplemental]
@@ -321,28 +325,32 @@ for (const ruleset of ['2014', '2024']) {
   )
 }
 
+const spells2014Srd = readJson('src/data/spells-2014.json')
+const spells2024Srd = readJson('src/data/spells-2024.json')
 const spells2014 = [
-  ...readJson('src/data/spells-2014.json'),
-  ...readJson('src/data/spells-additional.json').filter((spell) =>
+  ...spells2014Srd,
+  ...additionalSpellRecords.filter((spell) =>
     spell.rulesets
       ? spell.rulesets.includes('2014')
       : sourceRulesets.get(spell.contentSourceId) === '2014',
   ),
 ]
 const spells2024 = [
-  ...readJson('src/data/spells-2024.json'),
-  ...readJson('src/data/spells-additional.json').filter((spell) =>
+  ...spells2024Srd,
+  ...additionalSpellRecords.filter((spell) =>
     spell.rulesets
       ? spell.rulesets.includes('2024')
       : sourceRulesets.get(spell.contentSourceId) === '2024',
   ),
 ]
-const legacySpells = getCompatibleLegacySpells(spells2014, spells2024)
+const legacySpells = additionalSpellRecords.filter(
+  (spell) => compatibilityBySpellId.get(spell.id)?.status === 'legacy',
+)
 const legacyIds = new Set(legacySpells.map((spell) => spell.id))
 const legacyNames = new Set(legacySpells.map(normalizeSpellName))
 for (const spell of legacySpells) {
-  if (sourceRulesets.get(spell.contentSourceId) !== '2014') {
-    errors.push(`2024/${spell.id}: compatible legacy spell must retain a 2014 source`)
+  if (sourceRulesets.get(spell.contentSourceId) !== '2014' || spell.rulesets?.includes('2024')) {
+    errors.push(`2024/${spell.id}: Legacy spell must be a 2014-only supplement`)
   }
 }
 for (const spell of spells2024) {
@@ -350,15 +358,39 @@ for (const spell of spells2024) {
     errors.push(`2024/${spell.id}: legacy spell duplicates a current 2024 spell`)
   }
 }
-for (const spell of spells2014) {
-  const name = normalizeSpellName(spell)
-  const replaced = name === 'brandingsmite' || name === 'feeblemind'
-  const updated = spells2024.some((current) => normalizeSpellName(current) === name)
-  if (!updated && !replaced && !legacyIds.has(spell.id)) {
-    errors.push(`2024: missing compatible legacy spell ${spell.id}`)
+for (const entry of compatibilityEntries) {
+  const additionalSpell = additionalSpellsById.get(entry.spellId)
+  const srdSpell = spells2014Srd.find((spell) => spell.id === entry.spellId)
+  if (entry.status === 'shared' && (!additionalSpell || !additionalSpell.rulesets?.includes('2024'))) {
+    errors.push(`2024/${entry.spellId}: shared spell must explicitly include ruleset 2024`)
+  }
+  if (entry.status === 'replaced') {
+    if (entry.replacementSpellId && !spells2024.some((spell) => spell.id === entry.replacementSpellId)) {
+      errors.push(`2024/${entry.spellId}: unknown replacement spell ${entry.replacementSpellId}`)
+    }
+    if (!entry.replacementSpellId && (!entry.replacementName || entry.replacementSource !== 'phb-2024')) {
+      errors.push(`2024/${entry.spellId}: replacement must identify its 2024 PHB successor`)
+    }
+    if (!additionalSpell && !srdSpell) {
+      errors.push(`2024/${entry.spellId}: replaced spell must exist in the 2014 dataset`)
+    }
   }
 }
-console.log(`2024: ${legacySpells.length} compatible legacy spells from 2014 available`)
+for (const spell of spells2014) {
+  const hasSameNameCurrentSpell = spells2024.some(
+    (current) => normalizeSpellName(current) === normalizeSpellName(spell),
+  )
+  const compatibility = compatibilityBySpellId.get(spell.id)
+  if (
+    !hasSameNameCurrentSpell &&
+    !['legacy', 'shared', 'replaced'].includes(compatibility?.status)
+  ) {
+    errors.push(`2024: missing compatibility decision for 2014 spell ${spell.id}`)
+  }
+}
+console.log(
+  `2024: ${legacySpells.length} explicitly reviewed Legacy spells from additional data available`,
+)
 
 const incomplete2014Translations = [
   ...readJson('src/data/class-features-2014.json'),
