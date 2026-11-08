@@ -60,6 +60,50 @@ function findPriorityCollisions(primary, supplemental, identity) {
     .filter((entry) => entry.preferred)
 }
 
+function validateSpellDataset(records, ruleset, sourceIds, sourceRulesets) {
+  const ids = new Set()
+
+  for (const spell of records) {
+    const location = `${ruleset}/${spell.id || 'missing id'}`
+
+    if (!spell.id?.trim()) errors.push(`${location}: missing spell id`)
+    if (ids.has(spell.id)) errors.push(`${location}: duplicate spell id`)
+    ids.add(spell.id)
+
+    if (!spell.name?.trim()) errors.push(`${location}: missing English spell name`)
+    if (!Number.isInteger(spell.level) || spell.level < 0 || spell.level > 9) {
+      errors.push(`${location}: spell level must be an integer from 0 to 9`)
+    }
+    if (!spell.contentSourceId || !sourceIds.has(spell.contentSourceId)) {
+      errors.push(`${location}: unknown or missing source ${spell.contentSourceId ?? '(missing)'}`)
+    }
+
+    const declaredRulesets = spell.rulesets
+    if (
+      declaredRulesets &&
+      (!Array.isArray(declaredRulesets) ||
+        declaredRulesets.length === 0 ||
+        declaredRulesets.some((value) => !['2014', '2024'].includes(value)))
+    ) {
+      errors.push(`${location}: invalid rulesets declaration`)
+    }
+    const sourceRuleset = sourceRulesets.get(spell.contentSourceId)
+    if (
+      sourceRuleset &&
+      sourceRuleset !== ruleset &&
+      !declaredRulesets?.includes(ruleset)
+    ) {
+      errors.push(`${location}: source belongs to ${sourceRuleset} but is not explicitly shared with ${ruleset}`)
+    }
+    if (declaredRulesets && !declaredRulesets.includes(ruleset)) {
+      errors.push(`${location}: spell is not declared for ruleset ${ruleset}`)
+    }
+    if (!spell.localized?.name?.trim() || !spell.localized?.description?.trim()) {
+      errors.push(`${location}: missing German spell name or description`)
+    }
+  }
+}
+
 function validateDataset(records, ruleset, sourceIds, spellIds) {
   const ids = new Set()
 
@@ -186,6 +230,7 @@ for (const ruleset of ['2014', '2024']) {
       : sourceRulesets.get(spell.contentSourceId) === ruleset,
   )
   const spells = [...srdSpells, ...supplementalSpells]
+  validateSpellDataset(spells, ruleset, sourceIds, sourceRulesets)
   const spellIds = new Set(spells.map((spell) => spell.id))
   const allFeatures = [...srd, ...supplemental]
   const allIds = new Set()
