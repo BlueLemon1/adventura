@@ -327,7 +327,7 @@ export function SpellbookPage({
                 )}
               </section>
             )}
-            </div>
+          </div>
           <SpellbookList
             spells={[...localizedKnownSpells, ...featureSpellEntries]}
             character={character}

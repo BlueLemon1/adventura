@@ -117,11 +117,9 @@ export function OverviewPage({
                     {entry.character.subclassId
                       ? ' · ' +
                         t(
-                          getSubclassOptions(
-                            entry.character.classId,
-                            entry.character.ruleset,
-                          ).find((option) => option.value === entry.character.subclassId)?.label ??
-                            entry.character.subclassId,
+                          getSubclassOptions(entry.character.classId, entry.character.ruleset).find(
+                            (option) => option.value === entry.character.subclassId,
+                          )?.label ?? entry.character.subclassId,
                         )
                       : ''}
                   </p>

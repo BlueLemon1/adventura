@@ -132,7 +132,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                 'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.',
               )}
             </p>
-            </section>
+          </section>
         )}
       </div>
       {selectedSubclass && !hasSubclassFeatures && (

@@ -369,7 +369,9 @@ export function InventoryPage({
             </article>
             <article className="inventory-stat">
               <span>{t('Gewicht (persönlich)')}</span>
-              <strong>{Number(personalWeight.toFixed(2))} <small>lb</small></strong>
+              <strong>
+                {Number(personalWeight.toFixed(2))} <small>lb</small>
+              </strong>
               <small>{t('Inklusive angelegter Ausrüstung')}</small>
             </article>
             <article className="inventory-stat">

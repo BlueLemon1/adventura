@@ -3663,7 +3663,6 @@ textarea {
   color: var(--danger, #d97757);
 }
 
-
 /* Navigation and responsive layout refinements */
 .nav-section-label {
   padding: 17px 12px 5px;
@@ -3808,7 +3807,6 @@ textarea {
   }
 }
 
-
 /* Character sheet hierarchy */
 .session-status-panel {
   margin-top: 0;
@@ -3841,7 +3839,9 @@ textarea {
   content: '−';
 }
 .character-details-summary span {
-  font: 20px Georgia, serif;
+  font:
+    20px Georgia,
+    serif;
 }
 .character-details-summary small {
   color: var(--muted);
@@ -3912,7 +3912,6 @@ textarea {
     font-size: 9px;
   }
 }
-
 
 /* Spellbook page hierarchy */
 .spellbook-dashboard {
@@ -3999,7 +3998,6 @@ textarea {
   }
 }
 
-
 /* Features and resource management layout */
 .features-dashboard {
   display: grid;
@@ -4080,7 +4078,6 @@ textarea {
     align-self: flex-end;
   }
 }
-
 
 /* Inventory overview and compact item entry */
 .inventory-overview {
@@ -4221,7 +4218,6 @@ textarea {
     grid-column: 1 / -1;
   }
 }
-
 
 /* Character overview cards */
 .character-card {
