@@ -67,6 +67,7 @@ type UsageReset = NonNullable<KnownSpell['usageReset']>
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
 
+// Keep class access aligned with the selected ruleset when supplement lists differ.
 function getSupplementalSpellsForRuleset(ruleset: Character['ruleset']) {
   return supplementalSpells
     .filter((spell) => spell.rulesets?.includes(ruleset))
