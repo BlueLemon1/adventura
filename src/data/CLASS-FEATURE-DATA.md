@@ -11,7 +11,7 @@ Only material licensed for redistribution should be stored verbatim. For non-SRD
 - 2014 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, and Battle Smith.
 - 2014 Player's Handbook: summarized subclass feature progressions for all non-SRD PHB subclasses, including the six additional Cleric domains, the remaining Wizard schools, and the other PHB archetypes.
 - 2024 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, Battle Smith, and Cartographer.
-- 2024 Player's Handbook: initial subclass feature summaries for Path of the World Tree, Path of the Zealot, Colleges of Dance, Glamour, and Valor, and Circles of the Moon, Sea, and Stars.
+- 2024 Player's Handbook: initial subclass feature summaries for Path of the World Tree and Zealot; Colleges of Dance, Glamour, and Valor; Circles of the Moon, Sea, and Stars; Battle Master, Eldritch Knight, Psi Warrior; and Warriors of Mercy, Shadow, and the Elements.
 - These summaries are independently written and are not transcriptions of the sourcebooks.
 - German text in these supplemental records is an unofficial translation and carries `translationStatus.de = "unofficial"`; the UI displays that status.
 
