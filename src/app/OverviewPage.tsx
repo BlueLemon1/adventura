@@ -112,9 +112,17 @@ export function OverviewPage({
                 <div>
                   <h3>{entry.character.name}</h3>
                   <p>
-                    {t(getClassLabel(entry.character.classId))} · {t('Stufe')} {entry.character.level}
+                    {t(getClassLabel(entry.character.classId))} · {t('Stufe')}{' '}
+                    {entry.character.level}
                     {entry.character.subclassId
-                      ? ' · ' + t(getSubclassOptions(entry.character.classId, entry.character.ruleset).find((option) => option.value === entry.character.subclassId)?.label ?? entry.character.subclassId)
+                      ? ' · ' +
+                        t(
+                          getSubclassOptions(
+                            entry.character.classId,
+                            entry.character.ruleset,
+                          ).find((option) => option.value === entry.character.subclassId)?.label ??
+                            entry.character.subclassId,
+                        )
                       : ''}
                   </p>
                 </div>
@@ -130,9 +138,18 @@ export function OverviewPage({
                   <div className="character-card-hp-track">
                     <span
                       style={{
-                        width: (entry.character.hitPointsMax
-                          ? Math.min(100, Math.max(0, (entry.character.hitPointsCurrent ?? 0) / entry.character.hitPointsMax * 100))
-                          : 0) + '%',
+                        width:
+                          (entry.character.hitPointsMax
+                            ? Math.min(
+                                100,
+                                Math.max(
+                                  0,
+                                  ((entry.character.hitPointsCurrent ?? 0) /
+                                    entry.character.hitPointsMax) *
+                                    100,
+                                ),
+                              )
+                            : 0) + '%',
                       }}
                     />
                   </div>
@@ -146,14 +163,15 @@ export function OverviewPage({
                   <strong>
                     {formatModifier(
                       entry.character.initiativeBonus ??
-                      Math.floor(((entry.character.abilities?.dex ?? 10) - 10) / 2),
+                        Math.floor(((entry.character.abilities?.dex ?? 10) - 10) / 2),
                     )}
                   </strong>
                 </div>
               </div>
               <div className="character-card-meta">
-                <span><BookOpen size={13} /> {entry.spellbook.knownSpells.length} {t('Zauber')}</span>
-                <span>{RULESET_LABELS[entry.character.ruleset]}</span>
+                <span>
+                  <BookOpen size={13} /> {entry.spellbook.knownSpells.length} {t('Zauber')}
+                </span>
               </div>
               <button
                 className="open-character"
