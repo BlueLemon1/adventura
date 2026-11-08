@@ -551,12 +551,10 @@ export function SpellCatalog({
                   </p>
                 ) : null}
                 {spell.higherLevel && (
-                  <>
-                    <p>
-                      <strong>{t('Auf höheren Graden:')}</strong>
-                    </p>
+                  <div className="spell-higher-level">
+                    <strong>{t('Auf höheren Graden:')}</strong>
                     <p>{spell.higherLevel}</p>
-                  </>
+                  </div>
                 )}
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
