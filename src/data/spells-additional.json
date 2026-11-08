@@ -5028,5 +5028,105 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 170,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-mental-prison",
+    "name": "Mental Prison",
+    "level": 6,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You trap one creature's mind in an illusory cell. It makes an Intelligence saving throw, taking 5d10 psychic damage on a failure and believing it is restrained in a dangerous enclosure. If it leaves the illusion or takes damage from another source, the illusion shatters and it takes additional psychic damage.",
+    "localized": {
+      "name": "Mentales Gefängnis",
+      "school": "Illusion",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du sperrst den Geist einer Kreatur in eine illusionäre Zelle. Sie muss einen Intelligenzrettungswurf ablegen und erleidet bei einem Misserfolg 5W10 psychischen Schaden; außerdem glaubt sie, in einem gefährlichen Gefängnis festzusitzen. Verlässt sie die Illusion oder erleidet sie Schaden aus einer anderen Quelle, zerbricht die Illusion und sie erleidet zusätzlichen psychischen Schaden."
+    },
+    "damage": [
+      {
+        "dice": "5d10",
+        "average": 27.5,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 161,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-synaptic-static",
+    "name": "Synaptic Static",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You detonate psychic energy in a 20-foot-radius sphere. Creatures in the area make an Intelligence saving throw, taking 8d6 psychic damage on a failure or half on a success. A creature that fails also suffers a lingering mental disruption that penalizes its attacks, ability checks, and concentration saves.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 5.",
+    "localized": {
+      "name": "Synaptische Statik",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du lässt psychische Energie in einer Sphäre mit 6 Metern Radius detonieren. Kreaturen im Bereich müssen einen Intelligenzrettungswurf ablegen und erleiden bei einem Misserfolg 8W6 psychischen Schaden oder bei Erfolg halben Schaden. Bei einem Misserfolg bleibt außerdem eine geistige Störung zurück, die Angriffe, Attributswürfe und Konstitutionsrettungswürfe zum Aufrechterhalten der Konzentration beeinträchtigt.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "8d6",
+        "average": 28,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 167,
+    "descriptionKind": "original-summary"
   }
 ]
