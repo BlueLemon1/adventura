@@ -1,4 +1,3 @@
-import type { Character } from './character'
 import type { Dnd5eRuleset } from './rules'
 import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
