@@ -9,6 +9,7 @@ import {
   type ClassFeatureRecord,
 } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
+import type { Dnd5eRuleset } from './rules'
 
 export interface ClassResourceDefinition {
   id: string
@@ -34,6 +35,17 @@ export interface AutomaticClassFeature {
   spellbookSpellId?: string
   spellbookSpellIds?: string[]
   unlocked: boolean
+}
+
+const CLASS_FEATURE_CATALOGS: Record<Dnd5eRuleset, ClassFeatureRecord[]> = {
+  '2014': mergeClassFeatureRecords(
+    classFeatures2014 as unknown as ClassFeatureRecord[],
+    supplementalClassFeatures2014 as unknown as ClassFeatureRecord[],
+  ),
+  '2024': mergeClassFeatureRecords(
+    classFeatures2024 as unknown as ClassFeatureRecord[],
+    supplementalClassFeatures2024 as unknown as ClassFeatureRecord[],
+  ),
 }
 
 const ACTIVE_FEATURES: Record<
@@ -2543,17 +2555,7 @@ export function getAutomaticClassFeatures(
   character: Character,
   locale: ContentLocale = 'de',
 ): AutomaticClassFeature[] {
-  const catalog =
-    character.ruleset === '2014'
-      ? mergeClassFeatureRecords(
-          classFeatures2014 as unknown as ClassFeatureRecord[],
-          supplementalClassFeatures2014 as unknown as ClassFeatureRecord[],
-        )
-      : mergeClassFeatureRecords(
-          classFeatures2024 as unknown as ClassFeatureRecord[],
-          supplementalClassFeatures2024 as unknown as ClassFeatureRecord[],
-        )
-  return getImportedClassFeatures(character, locale, catalog)
+  return getImportedClassFeatures(character, locale, CLASS_FEATURE_CATALOGS[character.ruleset])
 }
 
 export function getSpellbookFeatureSpells(

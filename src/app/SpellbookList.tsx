@@ -152,6 +152,9 @@ function SpellCard({
               isFeature ? (spell.sourceName ?? 'Klassenmerkmal') : SOURCE_LABELS[source],
             )}
           </span>
+          {spell.legacy && (
+            <span className="spell-source source-content">{translateText('Legacy')}</span>
+          )}
           {getContentSourceAbbreviation(spell.contentSourceId) && (
             <span className="spell-source source-content" title={spell.contentSourceId}>
               {getContentSourceAbbreviation(spell.contentSourceId)}

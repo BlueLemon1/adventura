@@ -3,6 +3,7 @@ import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 import additionalSpells from '../data/spells-additional.json'
+import spellCompatibility2024 from '../data/spell-compatibility-2024.json'
 
 export interface CatalogSpell {
   id: string
@@ -43,12 +44,28 @@ export interface CatalogSpell {
   rulesetClasses?: Partial<Record<Dnd5eRuleset, string[]>>
   availabilityNote?: string
   descriptionKind?: 'official' | 'original-summary'
+  /** 2014 spell retained for use with the 2024 rules because it has no 2024 revision. */
+  legacy?: boolean
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
+type SpellCompatibility = {
+  spellId: string
+  status: 'legacy' | 'shared' | 'replaced'
+  replacementSpellId?: string
+  replacementName?: string
+  replacementSource?: string
+}
+const compatibilityBySpellId = new Map<string, SpellCompatibility>(
+  (spellCompatibility2024.entries as SpellCompatibility[]).map(
+    (entry) => [entry.spellId, entry] as const,
+  ),
+)
 const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
+
+const spellCatalogCache = new Map<Dnd5eRuleset, CatalogSpell[]>()
 
 function normalizeSpellName(spell: CatalogSpell): string {
   return (spell.englishName ?? spell.name)
@@ -74,6 +91,9 @@ function mergeSpellRecords(base: CatalogSpell[], supplements: CatalogSpell[]): C
 
 /** One canonical catalogue builder shared by selection and spellbook localization. */
 export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
+  const cached = spellCatalogCache.get(ruleset)
+  if (cached) return cached
+
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
     .filter((spell) =>
@@ -85,7 +105,27 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
-  return mergeSpellRecords(base, supplements)
+  // Only explicitly reviewed 2014 supplements may enter the 2024 catalogue as Legacy.
+  // SRD records stay in their own files; shared and replaced spells are handled separately.
+  const legacySpells =
+    ruleset === '2024'
+      ? supplementalSpells
+          .filter((spell) => compatibilityBySpellId.get(spell.id)?.status === 'legacy')
+          .map((spell) => ({
+            ...spell,
+            classes: spell.rulesetClasses?.['2014'] ?? spell.classes,
+          }))
+          .filter(
+            (spell) =>
+              ![...base, ...supplements].some(
+                (current) => normalizeSpellName(current) === normalizeSpellName(spell),
+              ),
+          )
+          .map((spell) => ({ ...spell, legacy: true }))
+      : []
+  const catalog = mergeSpellRecords(base, [...supplements, ...legacySpells])
+  spellCatalogCache.set(ruleset, catalog)
+  return catalog
 }
 
 /**
@@ -102,12 +142,32 @@ export function findCatalogSpell(
   const directMatch = catalog.find((spell) => spell.id === spellId)
   if (directMatch) return directMatch
 
-  const original = supplementalSpells.find((spell) => spell.id === spellId)
+  const original =
+    supplementalSpells.find((spell) => spell.id === spellId) ??
+    (ruleset === '2024' ? getSpellCatalog('2014').find((spell) => spell.id === spellId) : undefined)
   if (!original) return undefined
-  const belongsToRuleset = original.rulesets
-    ? original.rulesets.includes(ruleset)
-    : sourceRulesets.get(original.contentSourceId) === ruleset
+  const sourceRuleset = sourceRulesets.get(original.contentSourceId)
+  const belongsToRuleset =
+    original.rulesets?.includes(ruleset) ||
+    sourceRuleset === ruleset ||
+    (ruleset === '2024' && sourceRuleset === '2014')
   if (!belongsToRuleset) return undefined
+
+  if (ruleset === '2024') {
+    const compatibility = compatibilityBySpellId.get(original.id)
+    if (compatibility?.status === 'replaced') {
+      return compatibility.replacementSpellId
+        ? catalog.find((spell) => spell.id === compatibility.replacementSpellId)
+        : undefined
+    }
+    if (compatibility?.status === 'shared') {
+      const key = normalizeSpellName(original)
+      return catalog.find((spell) => normalizeSpellName(spell) === key)
+    }
+    if (sourceRuleset === '2014' && !compatibility && original.contentSourceId !== 'srd-5.1') {
+      return undefined
+    }
+  }
 
   const key = normalizeSpellName(original)
   return catalog.find((spell) => normalizeSpellName(spell) === key)
