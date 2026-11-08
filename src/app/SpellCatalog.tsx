@@ -583,10 +583,10 @@ export function SpellCatalog({
                   <small className="catalog-spell-restriction">
                     {t('Dunamancy-Zugang')}:{' '}
                     {spell.subclassRestriction === 'chronurgy'
-                      ? 'Chronurgy Magic'
+                      ? language === 'de' ? 'Chronurgie-Magie' : 'Chronurgy Magic'
                       : spell.subclassRestriction === 'graviturgy'
-                        ? 'Graviturgy Magic'
-                        : 'Chronurgy Magic / Graviturgy Magic'}
+                        ? language === 'de' ? 'Graviturgie-Magie' : 'Graviturgy Magic'
+                        : language === 'de' ? 'Chronurgie- und Graviturgie-Magie' : 'Chronurgy Magic / Graviturgy Magic'}
                     {' · '}
                     {t('Andere Klassen nur mit Zustimmung der Spielleitung')}
                   </small>
