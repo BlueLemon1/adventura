@@ -66,3 +66,15 @@ German class and subclass feature text is sourced from the official German SRD 5
 ## SRD 5.1 English class and subclass features
 
 The English class and subclass feature text is sourced from the official SRD 5.1 (2014 rules), distributed by Wizards of the Coast LLC under CC BY 4.0. The source snapshot is a combined Markdown extraction from the public repository `your5e/5e-srd-markdown`, under `dnd/51/markdown/Classes/`. The upstream README states that the SRD text was reformatted into Markdown with conversion changes documented there, and provides the required Wizards of the Coast attribution. The exact upstream file revisions used by Adventura are: Barbarian `ba4bddcdf085b9a5839933ae23bbbafebaf0a02d`; Bard `3022c83b76ae05205361f1749174fd371cba5964`; Cleric `8e6824ab89ca005ffac370a39ea952f98e83351e`; Druid `fb597138c90449fc2e92cc36abb49067f915df64`; Fighter `5b8e18f69570b65921cb30f6ef53c7730e3395e6`; Monk `b451ab30292c868e4c594dc2227efd34f8f65ca9`; Paladin `0c325271c79bbc5143655e9eefb3b8f864d59785`; Ranger `51c1e71daa0398223874d5fd0c37a3c4c5cb03f2`; Rogue `c861c6ff9b0e879f30f69b47746a1211e100a052`; Sorcerer `9805eb7831a5a746339eb3bb7169ce831bf1e4f7`; Warlock `57577bfa8280e511434bc52f7ab4f21eacd6fbb8`; Wizard `4885e9b8249d7d328417fcd6d897948dd13d7e43`. Official SRD page: https://dnd.wizards.com/resources/systems-reference-document. Adventura normalizes class progression levels, feature headings, and subclass IDs; the English source text remains unchanged.
+
+
+## SRD 5.1 German spell data
+
+German names, full spell descriptions, higher-level text, casting times, ranges and durations for the 319 SRD 5.1 spells are taken from the official German SRD 5.1 translation published by Wizards of the Coast LLC under CC BY 4.0. The structured translation snapshot was imported from Heroquill's German SRD 5.1 spell dictionary, whose import script documents extraction and matching against the official German SRD PDF:
+
+- Official German SRD 5.1 PDF: https://media.dndbeyond.com/compendium-images/srd/5.1/SRD_CC_v5.1_DE.pdf
+- Structured translation snapshot: https://github.com/Mystikal91/heroquill/blob/main/locales/de/srd51/spells.json
+- Import method/provenance: https://github.com/Mystikal91/heroquill/blob/main/scripts/srd-translations/import_spells.py
+- License: CC BY 4.0 (Wizards of the Coast LLC)
+
+Adventura maps the German text to its canonical 2014 spell IDs. The 2014 spell records remain separate from the 2024 catalog; no 2024 spell text is used as a fallback for 2014.
