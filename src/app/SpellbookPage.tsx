@@ -20,6 +20,7 @@ import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
+import higherLevels2014English from '../data/spell-higher-level-2014.en.json'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
@@ -76,11 +77,17 @@ export function SpellbookPage({
   const spellCatalog = (character.ruleset === '2014'
     ? spells2014
     : spells2024) as unknown as FeatureSpellCatalogEntry[]
+  const getEnglishHigherLevel = (spell?: FeatureSpellCatalogEntry) =>
+    spell?.higherLevel ??
+    (character.ruleset === '2014' && spell
+      ? higherLevels2014English[spell.id as keyof typeof higherLevels2014English]
+      : undefined)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
     const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
     if (!spell) return knownSpell
 
     const localized = language === 'de' ? spell.localized : undefined
+    const englishHigherLevel = getEnglishHigherLevel(spell)
     const usedEnglishFallback =
       language === 'de' &&
       (Boolean(spell.name && !localized?.name) ||
@@ -90,7 +97,7 @@ export function SpellbookPage({
         Boolean(spell.components && !localized?.components) ||
         Boolean(spell.duration && !localized?.duration) ||
         Boolean(spell.description && !localized?.description) ||
-        Boolean(spell.higherLevel && !localized?.higherLevel))
+        Boolean(englishHigherLevel && !localized?.higherLevel))
 
     return {
       ...knownSpell,
@@ -102,13 +109,14 @@ export function SpellbookPage({
       components: localized?.components ?? spell.components,
       duration: localized?.duration ?? spell.duration,
       description: localized?.description ?? spell.description,
-      higherLevel: localized?.higherLevel ?? spell.higherLevel,
+      higherLevel: localized?.higherLevel ?? englishHigherLevel,
       languageFallback: usedEnglishFallback,
     }
   })
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
+    const englishHigherLevel = getEnglishHigherLevel(spell)
     const spellName = localizedSpell?.name ?? spell?.name ?? feature.name
     const featureName = language === 'de' ? (feature.localizedName ?? feature.name) : feature.name
     const resource = feature.resourceId
@@ -153,8 +161,8 @@ export function SpellbookPage({
           Boolean(spell?.components && !localizedSpell?.components) ||
           Boolean(spell?.duration && !localizedSpell?.duration) ||
           Boolean(spell?.description && !localizedSpell?.description) ||
-          Boolean(spell?.higherLevel && !localizedSpell?.higherLevel)),
-      higherLevel: localizedSpell?.higherLevel ?? spell?.higherLevel,
+          Boolean(englishHigherLevel && !localizedSpell?.higherLevel)),
+      higherLevel: localizedSpell?.higherLevel ?? englishHigherLevel,
       damage: spell?.damage,
       notes: featureName,
       source: 'class',
