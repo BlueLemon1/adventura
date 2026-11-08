@@ -1,4 +1,4 @@
-import type { Character } from './character'
+import type { Ability, Character } from './character'
 import { normalizeKey } from './text'
 
 export interface SpellSlot {
@@ -227,4 +227,52 @@ export function updatePactMagic(
 
 export function isWarlock(character: Pick<Character, 'classId'>): boolean {
   return ['warlock', 'hexenmeister'].includes(normalizeKey(character.classId))
+}
+
+const DEFAULT_SPELLCASTING_ABILITIES: Record<string, Ability> = {
+  artificer: 'int',
+  bard: 'cha',
+  cleric: 'wis',
+  druid: 'wis',
+  paladin: 'cha',
+  ranger: 'wis',
+  sorcerer: 'cha',
+  warlock: 'cha',
+  wizard: 'int',
+  fighter: 'int',
+  rogue: 'int',
+  kaempfer: 'int',
+  schurke: 'int',
+}
+
+export function getDefaultSpellcastingAbility(
+  character: Pick<Character, 'classId'>,
+): Ability | undefined {
+  return DEFAULT_SPELLCASTING_ABILITIES[normalizeKey(character.classId)]
+}
+
+export function getSpellcastingStats(
+  character: Pick<Character, 'classId' | 'level' | 'abilities' | 'spellcastingAbility'>,
+):
+  | {
+      ability: Ability
+      attackBonus: number
+      saveDc: number
+      abilityModifier: number
+      proficiencyBonus: number
+    }
+  | undefined {
+  const ability = character.spellcastingAbility ?? getDefaultSpellcastingAbility(character)
+  if (!ability) return undefined
+
+  const score = character.abilities?.[ability] ?? 10
+  const abilityModifier = Math.floor((score - 10) / 2)
+  const proficiencyBonus = Math.ceil(character.level / 4) + 1
+  return {
+    ability,
+    abilityModifier,
+    proficiencyBonus,
+    attackBonus: abilityModifier + proficiencyBonus,
+    saveDc: 8 + abilityModifier + proficiencyBonus,
+  }
 }
