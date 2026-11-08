@@ -214,13 +214,14 @@ function SpellCard({
         {spell.ritual && <span>{translateText('Ritual')}</span>}
       </div>
 
-      {(spell.description || spell.higherLevel) && (
+      {spell.description && (
         <details className="spellbook-details" open={isFeature}>
           <summary>{translateText('Zauberbeschreibung')}</summary>
-          {spell.description && <p>{spell.description}</p>}
-          <SpellHigherLevel text={spell.higherLevel} label={translateText('Auf höheren Graden:')} />
+          <p>{spell.description}</p>
         </details>
       )}
+
+      <SpellHigherLevel text={spell.higherLevel} label={translateText('Auf höheren Graden:')} />
 
       <div className="spellbook-card-footer">
         <small>
