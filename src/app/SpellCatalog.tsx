@@ -252,25 +252,29 @@ export function SpellCatalog({
   const [usageLimit, setUsageLimit] = useState(0)
   const [usageReset, setUsageReset] = useState<UsageReset>('longRest')
 
-  const catalog = getSpellCatalog(character.ruleset).map((spell) => {
-    if (language !== 'de') return spell
-    const localized = spell.localized
-    return {
-      ...spell,
-      englishName: spell.name,
-      name: localized?.name ?? '',
-      school: localized?.school ?? '',
-      classes: localized?.classes ?? [],
-      castingTime: localized?.castingTime ?? '',
-      range: localized?.range ?? '',
-      components: localized?.components ?? '',
-      duration: localized?.duration ?? '',
-      material: '',
-      description: localized?.description ?? '',
-      higherLevel: getHigherLevelText(spell.higherLevel, localized?.higherLevel, language),
-      higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
-    }
-  })
+  const catalog = useMemo(
+    () =>
+      getSpellCatalog(character.ruleset).map((spell) => {
+        if (language !== 'de') return spell
+        const localized = spell.localized
+        return {
+          ...spell,
+          englishName: spell.name,
+          name: localized?.name ?? '',
+          school: localized?.school ?? '',
+          classes: localized?.classes ?? [],
+          castingTime: localized?.castingTime ?? '',
+          range: localized?.range ?? '',
+          components: localized?.components ?? '',
+          duration: localized?.duration ?? '',
+          material: '',
+          description: localized?.description ?? '',
+          higherLevel: getHigherLevelText(spell.higherLevel, localized?.higherLevel, language),
+          higherLevelLabel: localized?.higherLevelLabel,
+        }
+      }),
+    [character.ruleset, language],
+  )
   const spellcasting = getSpellcastingProgression(character)
   const maxSpellLevel =
     spellcasting?.kind === 'warlock'
