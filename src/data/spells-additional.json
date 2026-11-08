@@ -4738,8 +4738,7 @@
     "classes": [
       "bard",
       "sorcerer",
-      "wizard",
-      "artificer"
+      "wizard"
     ],
     "description": "You touch a willing creature and grant it expertise in one skill in which it is proficient. Until the spell ends, it doubles its proficiency bonus on ability checks using that skill, provided it isn't already benefiting from a similar effect.",
     "localized": {
@@ -4748,8 +4747,7 @@
       "classes": [
         "bard",
         "sorcerer",
-        "wizard",
-        "artificer"
+        "wizard"
       ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
@@ -4925,13 +4923,7 @@
       "duration": "Unmittelbar",
       "description": "Du deutest auf eine Kreatur, die du in Reichweite sehen kannst. Sie muss einen Weisheitsrettungswurf ablegen und erleidet bei einem Misserfolg 1W8 nekrotischen Schaden oder 1W12, wenn ihr Trefferpunkte fehlen. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um einen Würfel."
     },
-    "damage": [
-      {
-        "dice": "1d8 / 1d12",
-        "average": 4.5,
-        "type": "necrotic"
-      }
-    ],
+    "damage": [],
     "contentSourceId": "xge-2017",
     "rulesets": [
       "2014"
