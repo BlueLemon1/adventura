@@ -2,7 +2,7 @@ import { ChevronRight, Compass, Heart, Save, Shield } from 'lucide-react'
 import type { Ability, Character, ProficiencyLevel, SkillId } from '../domain/character'
 import { ABILITIES, SKILLS } from '../domain/character'
 import { RULESET_LABELS } from '../domain/rules'
-import { CLASS_OPTIONS, getClassLabel, getSubclassOptions } from '../domain/classes'
+import { getClassOptions, getClassLabel, getSubclassOptions } from '../domain/classes'
 import {
   Select,
   SelectContent,
@@ -70,6 +70,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
   const currentAbilities = character.abilities ?? DEFAULT_ABILITIES
   const prof = getProficiencyBonus(character.level)
   const subclassOptions = getSubclassOptions(character.classId, character.ruleset)
+  const classOptions = getClassOptions(character.ruleset)
 
   return (
     <>
@@ -336,9 +337,9 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                {CLASS_OPTIONS.map((option) => (
+                {classOptions.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
-                    {t(option.label)}
+                    {t(option.label)}{option.source ? ` · ${option.source}` : ''}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -368,7 +369,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
                   <SelectItem value="none">{t('Keine')}</SelectItem>
                   {subclassOptions.map((option) => (
                     <SelectItem key={option.value} value={option.value}>
-                      {t(option.label)}
+                      {t(option.label)}{option.source ? ` · ${option.source}` : ''}
                     </SelectItem>
                   ))}
                 </SelectContent>
