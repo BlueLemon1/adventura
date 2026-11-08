@@ -1,6 +1,6 @@
 # SRD content — attribution and license
 
-Adventura includes adapted rules text and spell metadata from the System Reference Documents published by Wizards of the Coast LLC. The spell catalogues are maintained directly in `src/data/spells-2014.json` and `src/data/spells-2024.json`. Each spell record carries its own `contentSourceId`, identifying the exact SRD edition. English and German text are stored together on each canonical record. Supplemental spell records are maintained in `spells-additional.json`; each entry carries its source book, page, supported rulesets, and—where class lists differ by edition—ruleset-specific class access.
+Adventura includes adapted rules text and spell metadata from the System Reference Documents published by Wizards of the Coast LLC. The spell catalogues are maintained directly in `src/data/spells-2014.json` and `src/data/spells-2024.json`. Each spell record carries its own `contentSourceId`, identifying the exact SRD edition. English is stored in the canonical fields and German in the `localized` object on the same record. Supplemental spell records are maintained in `spells-additional.json`; each entry carries its source ID and page. The source registry provides the full book name, compact abbreviation, and default ruleset. `rulesets` is only stored when an entry explicitly differs from that source default (for example, when a 2014 supplement spell is also compatible with 2024). `rulesetClasses` is only stored when class access differs between editions.
 
 ## SRD 5.1 (2014 rules)
 
@@ -18,7 +18,7 @@ Official German SRD 5.2.1: https://media.dndbeyond.com/compendium-images/srd/5.2
 
 ## Data handling
 
-Adventura adapts the official SRD material into its own JSON structure. The rulesets remain separate, and edition-specific wording and higher-level text structure are preserved. Spells not included in an SRD are maintained separately in `spells-additional.json`. They are never presented as official SRD entries. Each supplemental spell records its source book, page, and applicable rulesets. Their descriptions are independently written summaries, not reproductions of the source books' wording.
+Adventura adapts the official SRD material into its own JSON structure. The 2014 and 2024 SRD catalogues remain separate because the same-named spells are not interchangeable: 317 names occur in both catalogues, and every one of those shared-name records differs in at least one mechanical or descriptive field. Edition-specific wording and higher-level text structure are therefore preserved without forcing a brittle override model. Spells not included in an SRD are maintained separately in `spells-additional.json`. They are never presented as official SRD entries. Source names and abbreviations are centralized in `src/domain/contentSources.ts`; omitted `rulesets` means the source registry's default ruleset, while explicit arrays mark cross-ruleset compatibility. `rulesetClasses` is limited to spells whose class access actually changes between editions. Empty optional `material` and `damage` fields are omitted. Their descriptions are independently written summaries, not reproductions of the source books' wording.
 
 ## Supplemental source catalogue
 
