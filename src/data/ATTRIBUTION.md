@@ -191,6 +191,26 @@ Included Dunamancy spells:
 
 These entries are marked as Dunamancy and show whether they are associated with Chronurgy Magic, Graviturgy Magic, or both. They are assigned to the Wizard class; access for other spellcasters requires the DM's approval. Dunamancy spells are not automatically treated as ordinary Wizard spells for every subclass.
 
+### Acquisitions Incorporated (AI)
+
+Included spells:
+- Distort Value (p. 75)
+- Fast Friends (p. 75)
+- Gift of Gab (p. 76)
+- Incite Greed (p. 76)
+- Jim's Glowing Coin (p. 76)
+- Jim's Magic Missile (p. 76)
+- Motivational Speech (p. 77)
+
+The special Royalty component used by some spells is recorded separately in the component/material display.
+
+### Guildmasters' Guide to Ravnica (GGR)
+
+Included spell:
+- Encode Thoughts (p. 47)
+
+Encode Thoughts is associated with the Dimir Operative background rather than a standard class spell list. Adventura displays it for spellcasting classes with an explicit background-access note.
+
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
 
 ### Sword Coast Adventurer's Guide (SCAG)
