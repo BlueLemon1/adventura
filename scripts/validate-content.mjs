@@ -248,7 +248,21 @@ for (const ruleset of ['2014', '2024']) {
   )
   const spells = [...srdSpells, ...supplementalSpells]
   validateSpellDataset(spells, ruleset, sourceIds, sourceRulesets)
-  const spellIds = new Set(spells.map((spell) => spell.id))
+  const legacySpellIds =
+    ruleset === '2024'
+      ? getCompatibleLegacySpells(
+          [
+            ...readJson('src/data/spells-2014.json'),
+            ...readJson('src/data/spells-additional.json').filter((spell) =>
+              spell.rulesets
+                ? spell.rulesets.includes('2014')
+                : sourceRulesets.get(spell.contentSourceId) === '2014',
+            ),
+          ],
+          spells,
+        ).map((spell) => spell.id)
+      : []
+  const spellIds = new Set([...spells.map((spell) => spell.id), ...legacySpellIds])
   const allFeatures = [...srd, ...supplemental]
   const allIds = new Set()
   const expectedSrdSource = ruleset === '2014' ? 'srd-5.1' : 'srd-5.2.1'
