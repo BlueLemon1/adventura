@@ -2,6 +2,7 @@ import type { Character } from '../domain/character'
 import { getAutomaticClassFeatures, getClassResources } from '../domain/classFeatures'
 import { getContentSourceAbbreviation } from '../domain/contentSources'
 import { RULESET_LABELS } from '../domain/rules'
+import { getSubclassOptions } from '../domain/classes'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
 import { translate, useLanguage } from './i18n'
@@ -17,6 +18,10 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
   const resources = getClassResources(character)
   const features = getAutomaticClassFeatures(character, language)
   const unlockedCount = features.filter((feature) => feature.unlocked).length
+  const selectedSubclass = getSubclassOptions(character.classId, character.ruleset).find(
+    (option) => option.value === character.subclassId,
+  )
+  const hasSubclassFeatures = features.some((feature) => feature.source === 'subclass')
   const saved = character.classResources ?? []
   const activationLabels = {
     action: 'Aktion',
@@ -63,6 +68,15 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
           {t('Lange Rast')}
         </button>
       </div>
+      {selectedSubclass && !hasSubclassFeatures && (
+        <section className="panel">
+          <p className="muted-paragraph">
+            {t('Für diese Unterklasse sind die Merkmale noch nicht vollständig hinterlegt.')}
+            {' '}
+            {t('Die Unterklasse ist auswählbar, aber ihre Feature-Daten werden noch ergänzt.')}
+          </p>
+        </section>
+      )}
       {resources.length > 0 && (
         <section className="panel">
           <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
