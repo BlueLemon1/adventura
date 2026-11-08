@@ -265,6 +265,7 @@ const en: Record<string, string> = {
   'Zauber filtern': 'Filter spells',
 }
 Object.assign(en, {
+  'Eigene Übersetzung': 'Unofficial translation',
   "Pfad des Totemkriegers": "Path of the Totem Warrior",
   "Pfad des Ahnenwächters": "Path of the Ancestral Guardian",
   "Pfad des Sturmherolds": "Path of the Storm Herald",
