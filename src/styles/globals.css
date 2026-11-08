@@ -4323,7 +4323,6 @@ textarea {
   }
 }
 
-
 /* Keep inventory actions aligned on narrow screens */
 @media (max-width: 640px) {
   .inventory-items-panel .inventory-row {
