@@ -50,6 +50,8 @@ const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
 
+const spellCatalogCache = new Map<Dnd5eRuleset, CatalogSpell[]>()
+
 function normalizeSpellName(spell: CatalogSpell): string {
   return (spell.englishName ?? spell.name)
     .normalize('NFKD')
@@ -74,6 +76,9 @@ function mergeSpellRecords(base: CatalogSpell[], supplements: CatalogSpell[]): C
 
 /** One canonical catalogue builder shared by selection and spellbook localization. */
 export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
+  const cached = spellCatalogCache.get(ruleset)
+  if (cached) return cached
+
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
     .filter((spell) =>
@@ -85,7 +90,9 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
-  return mergeSpellRecords(base, supplements)
+  const catalog = mergeSpellRecords(base, supplements)
+  spellCatalogCache.set(ruleset, catalog)
+  return catalog
 }
 
 /**
