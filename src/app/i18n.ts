@@ -238,6 +238,7 @@ const en: Record<string, string> = {
   Hinzufügen: 'Add',
   'Klassen:': 'Classes:',
   'Dunamancy-Zugang': 'Dunamancy access',
+  Verfügbarkeit: 'Availability',
   'Andere Klassen nur mit Zustimmung der Spielleitung': 'Other classes require DM approval',
   'Quellen & Lizenz': 'Sources & license',
   'Keine passenden Zauber gefunden. Prüfe den Klassenfilter oder passe deine Suche an.':
