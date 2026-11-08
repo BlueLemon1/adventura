@@ -3,7 +3,11 @@ import classFeatures2014 from '../data/class-features-2014.json'
 import classFeatures2024 from '../data/class-features-2024.json'
 import supplementalClassFeatures2014 from '../data/class-features-supplemental-2014.json'
 import supplementalClassFeatures2024 from '../data/class-features-supplemental-2024.json'
-import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
+import {
+  mergeClassFeatureRecords,
+  resolveClassFeatureText,
+  type ClassFeatureRecord,
+} from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
 
 export interface ClassResourceDefinition {
@@ -2539,9 +2543,16 @@ export function getAutomaticClassFeatures(
   character: Character,
   locale: ContentLocale = 'de',
 ): AutomaticClassFeature[] {
-  const catalog = (character.ruleset === '2014'
-    ? [...classFeatures2014, ...supplementalClassFeatures2014]
-    : [...classFeatures2024, ...supplementalClassFeatures2024]) as unknown as ClassFeatureRecord[]
+  const catalog =
+    character.ruleset === '2014'
+      ? mergeClassFeatureRecords(
+          classFeatures2014 as unknown as ClassFeatureRecord[],
+          supplementalClassFeatures2014 as unknown as ClassFeatureRecord[],
+        )
+      : mergeClassFeatureRecords(
+          classFeatures2024 as unknown as ClassFeatureRecord[],
+          supplementalClassFeatures2024 as unknown as ClassFeatureRecord[],
+        )
   return getImportedClassFeatures(character, locale, catalog)
 }
 

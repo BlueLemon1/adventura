@@ -20,7 +20,7 @@ import { SpellCatalog } from './SpellCatalog'
 import { getHigherLevelText } from './SpellHigherLevel'
 import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
-import { getSpellCatalog } from '../domain/spellCatalog'
+import { findCatalogSpell } from '../domain/spellCatalog'
 import { getDefaultSpellcastingAbility, getSpellcastingStats } from '../domain/spellcasting'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { translate } from './i18n'
@@ -51,9 +51,8 @@ export function SpellbookPage({
   const featureSpells = getSpellbookFeatureSpells(character, language)
   const classResources = getClassResources(character)
   const spellCapacity = getSpellCapacity(character, knownSpells)
-  const spellCatalog = getSpellCatalog(character.ruleset)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
-    const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
+    const spell = findCatalogSpell(knownSpell.spellId, character.ruleset)
     if (!spell) return knownSpell
 
     const localized = language === 'de' ? spell.localized : undefined
@@ -77,7 +76,7 @@ export function SpellbookPage({
   const selectedSpellcastingAbility =
     character.spellcastingAbility ?? getDefaultSpellcastingAbility(character)
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
-    const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
+    const spell = findCatalogSpell(feature.spellbookSpellId, character.ruleset)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
     const englishHigherLevel = spell?.higherLevel
     const spellName = localizedSpell?.name ?? spell?.name ?? feature.name

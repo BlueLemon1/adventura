@@ -31,6 +31,35 @@ function extractSubclassOptions(source, ruleset, nextRuleset) {
   return result
 }
 
+function normalizeContentName(value) {
+  return value
+    .normalize('NFKD')
+    .replace(/[\\u0300-\\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+}
+
+function spellIdentity(spell) {
+  return normalizeContentName(spell.englishName ?? spell.name)
+}
+
+function featureIdentity(feature) {
+  return [
+    feature.classId,
+    feature.subclassId ?? '',
+    feature.featureType,
+    feature.level,
+    normalizeContentName(feature.names?.en ?? feature.id),
+  ].join('|')
+}
+
+function findPriorityCollisions(primary, supplemental, identity) {
+  const primaryByKey = new Map(primary.map((record) => [identity(record), record]))
+  return supplemental
+    .map((record) => ({ record, preferred: primaryByKey.get(identity(record)) }))
+    .filter((entry) => entry.preferred)
+}
+
 function validateDataset(records, ruleset, sourceIds, spellIds) {
   const ids = new Set()
 
@@ -150,17 +179,34 @@ for (const subclass of retained2014PhbExceptions) {
 for (const ruleset of ['2014', '2024']) {
   const srd = readJson(`src/data/class-features-${ruleset}.json`)
   const supplemental = readJson(`src/data/class-features-supplemental-${ruleset}.json`)
-  const spells = [
-    ...readJson(`src/data/spells-${ruleset}.json`),
-    ...readJson('src/data/spells-additional.json').filter((spell) =>
-      spell.rulesets
-        ? spell.rulesets.includes(ruleset)
-        : sourceRulesets.get(spell.contentSourceId) === ruleset,
-    ),
-  ]
+  const srdSpells = readJson(`src/data/spells-${ruleset}.json`)
+  const supplementalSpells = readJson('src/data/spells-additional.json').filter((spell) =>
+    spell.rulesets
+      ? spell.rulesets.includes(ruleset)
+      : sourceRulesets.get(spell.contentSourceId) === ruleset,
+  )
+  const spells = [...srdSpells, ...supplementalSpells]
   const spellIds = new Set(spells.map((spell) => spell.id))
   const allFeatures = [...srd, ...supplemental]
   const allIds = new Set()
+  const expectedSrdSource = ruleset === '2014' ? 'srd-5.1' : 'srd-5.2.1'
+
+  for (const spell of srdSpells) {
+    if (spell.contentSourceId !== expectedSrdSource) {
+      errors.push(`${ruleset}/${spell.id}: SRD spell has unexpected source ${spell.contentSourceId}`)
+    }
+  }
+  for (const feature of srd) {
+    if (feature.contentSourceId !== expectedSrdSource) {
+      errors.push(`${ruleset}/${feature.id}: SRD feature has unexpected source ${feature.contentSourceId}`)
+    }
+  }
+
+  const duplicateSpells = findPriorityCollisions(srdSpells, supplementalSpells, spellIdentity)
+  const duplicateFeatures = findPriorityCollisions(srd, supplemental, featureIdentity)
+  console.log(
+    `${ruleset}: SRD priority protects ${duplicateSpells.length} duplicate spells and ${duplicateFeatures.length} duplicate features from supplemental overrides`,
+  )
 
   validateDataset(supplemental, ruleset, sourceIds, spellIds)
 

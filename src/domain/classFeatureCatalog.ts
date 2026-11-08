@@ -114,3 +114,32 @@ export function validateClassFeatureRecords(
 
   return errors
 }
+
+/**
+ * Merge SRD features before supplemental features and keep only the first
+ * record for the same class/subclass feature at the same level. This makes
+ * SRD text and provenance authoritative whenever a book repeats a feature.
+ */
+export function mergeClassFeatureRecords(
+  srdRecords: readonly ClassFeatureRecord[],
+  supplementalRecords: readonly ClassFeatureRecord[],
+): ClassFeatureRecord[] {
+  const seen = new Set<string>()
+  return [...srdRecords, ...supplementalRecords].filter((feature) => {
+    const normalizedName = (feature.names.en ?? feature.id)
+      .normalize('NFKD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, '')
+    const key = [
+      feature.classId,
+      feature.subclassId ?? '',
+      feature.featureType,
+      feature.level,
+      normalizedName,
+    ].join('|')
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
