@@ -1238,7 +1238,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You choose up to three willing creatures you can see within range. They fall unconscious for 10 minutes, during which they can be awakened normally. When the spell ends, each affected creature gains the benefit of a short rest. The spell has no effect on undead or constructs.",
+    "description": "You make a calming gesture, and up to three willing creatures you can see within range fall unconscious for the spell's duration. A target wakes early if it takes damage or someone uses an action to shake or slap it awake. A creature that remains unconscious for the full duration gains the benefit of a short rest and cannot be affected by this spell again until it finishes a long rest.",
     "localized": {
       "name": "Katzenschlaf",
       "school": "Verzauberung",
@@ -1251,7 +1251,8 @@
       "range": "9 Meter",
       "components": "G, M (eine Prise Sand)",
       "duration": "10 Minuten",
-      "description": "Du wählst bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst. Sie fallen für 10 Minuten in Schlaf und können währenddessen auf normale Weise geweckt werden. Wenn der Zauber endet, erhält jede betroffene Kreatur den Nutzen einer kurzen Rast. Auf Untote und Konstrukte hat der Zauber keine Wirkung."
+      "description": "Du machst eine beruhigende Geste und bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst, fallen für die Wirkungsdauer in Bewusstlosigkeit. Ein Ziel wacht vorzeitig auf, wenn es Schaden erleidet oder jemand eine Aktion verwendet, um es zu schütteln oder ihm eine Ohrfeige zu geben. Eine Kreatur, die die gesamte Wirkungsdauer bewusstlos bleibt, erhält den Nutzen einer kurzen Rast und kann erst wieder von diesem Zauber betroffen werden, wenn sie eine lange Rast beendet hat.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des 4. Grades oder höher wirkst, kannst du für jeden Zauberplatzgrad über dem 3. eine zusätzliche willige Kreatur als Ziel wählen."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -1261,7 +1262,8 @@
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
     "sourcePage": 151,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3."
   },
   {
     "id": "xge-2014-charm-monster",
@@ -1628,7 +1630,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 166,
+    "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
   {
@@ -2134,7 +2136,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 166,
+    "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
   {
@@ -2372,7 +2374,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 167,
+    "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
   {
@@ -2382,8 +2384,8 @@
     "school": "Transmutation",
     "castingTime": "1 minute",
     "range": "Touch",
-    "components": "V, S, M",
-    "material": "a tiny piece of cloth",
+    "components": "V, S",
+    "material": "",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -2400,7 +2402,7 @@
       ],
       "castingTime": "1 Minute",
       "range": "Berührung",
-      "components": "V, G, M (ein winziges Stück Stoff)",
+      "components": "V, G",
       "duration": "8 Stunden",
       "description": "Du berührst einen winzigen nichtmagischen Gegenstand und belebst ihn als kleinen Diener. Er befolgt deine verbalen Befehle und kann einfache Aufgaben erledigen, aber nicht angreifen. Bei 0 Trefferpunkten oder wenn der Zauber endet, wird er wieder zu einem Gegenstand.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du zwei zusätzliche Gegenstände beleben."
@@ -2637,7 +2639,7 @@
     "components": "V, S",
     "material": "",
     "duration": "Concentration, up to 1 hour",
-    "concentration": true,
+    "concentration": false,
     "ritual": false,
     "classes": [
       "sorcerer",
@@ -2684,8 +2686,8 @@
     "school": "Necromancy",
     "castingTime": "1 action",
     "range": "60 feet",
-    "components": "V, S, M",
-    "material": "a miniature sword worth 1 sp",
+    "components": "V, S",
+    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2705,7 +2707,7 @@
       ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
-      "components": "V, G, M (ein Miniaturschwert im Wert von 1 SM)",
+      "components": "V, G",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du belebst bis zu fünf Leichen in der Nähe als Skelette oder Zombies. Sie erhalten einen Bonus auf Angriffs- und Schadenswürfe und befolgen für die Wirkungsdauer deine verbalen Befehle."
     },
@@ -2886,7 +2888,7 @@
       "wizard"
     ],
     "description": "Choose a creature you can see within range. On a failed Strength saving throw, its flying speed becomes 0 and it descends up to 60 feet at the end of each of its turns until it reaches the ground or the spell ends.",
-    "higherLevel": "You can target one additional creature for each spell slot level above 2.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 2. The targets must be within 30 feet of one another.",
     "localized": {
       "name": "Erdgebunden",
       "school": "Verwandlung",
@@ -2901,7 +2903,7 @@
       "components": "V",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Wähle eine Kreatur, die du in Reichweite sehen kannst. Bei einem misslungenen Stärkerettungswurf sinkt ihre Flugbewegungsrate auf 0 und sie fällt am Ende jedes ihrer Züge bis zu 18 Meter, bis sie den Boden erreicht oder der Zauber endet.",
-      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen. Die Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -2910,7 +2912,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 155,
+    "sourcePage": 154,
     "descriptionKind": "original-summary"
   },
   {
@@ -3374,7 +3376,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 164,
+    "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
   {
@@ -3521,7 +3523,7 @@
       "druid",
       "ranger"
     ],
-    "description": "You establish a telepathic link with a willing beast you touch. While the beast is within 100 feet, you can communicate telepathically and perceive through its senses. It also gains advantage on attack rolls against a creature within 5 feet of you.",
+    "description": "You establish a telepathic link with one friendly or charmed beast you touch. The spell fails if the beast has Intelligence 4 or higher. While you and the beast can see each other, it understands your telepathic messages and can send simple emotions and concepts back to you. The beast also has advantage on attacks against creatures within 5 feet of you that you can see.",
     "localized": {
       "name": "Tierbund",
       "school": "Erkenntnis",
@@ -3533,7 +3535,7 @@
       "range": "Berührung",
       "components": "V, G, M (ein in Stoff gewickeltes Fellstück)",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Du stellst eine telepathische Verbindung zu einem willigen Tier her, das du berührst. Solange es sich innerhalb von 30 Metern befindet, könnt ihr telepathisch kommunizieren und du kannst seine Sinne wahrnehmen. Außerdem hat es Vorteil auf Angriffswürfe gegen Kreaturen innerhalb von 1,5 Metern von dir."
+      "description": "Du stellst eine telepathische Verbindung zu einem freundlichen oder von dir bezauberten Tier her, das du berührst. Der Zauber schlägt fehl, wenn das Tier einen Intelligenzwert von 4 oder höher hat. Solange ihr euch gegenseitig sehen könnt, versteht das Tier deine telepathischen Nachrichten und kann einfache Gefühle und Vorstellungen an dich übermitteln. Außerdem hat es Vorteil auf Angriffe gegen Kreaturen innerhalb von 1,5 Metern von dir, die du sehen kannst."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -3542,8 +3544,9 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "sourcePage": 150,
+    "descriptionKind": "original-summary",
+    "previousSource": "Elemental Evil Player's Companion, p. 15"
   },
   {
     "id": "xge-2014-cause-fear",
@@ -3901,7 +3904,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "You summon a group of lesser demons in unoccupied spaces within range. They are hostile to all creatures, including you, and act according to their chaotic nature. A protective circle can help keep them contained.",
+    "description": "You summon demons into unoccupied spaces within range. Choose to summon 2d6 demons of challenge rating 1/2 or lower, 1d6 demons of challenge rating 1 or lower, or one demon of challenge rating 2 or lower. They are hostile to all creatures, including you, and act according to their chaotic nature.",
     "higherLevel": "You summon two additional demons for each spell slot level above 3.",
     "localized": {
       "name": "Geringere Dämonen beschwören",
@@ -3914,7 +3917,7 @@
       "range": "18 Meter",
       "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du beschwörst eine Gruppe geringerer Dämonen an freien Orten in Reichweite. Sie sind allen Kreaturen gegenüber feindselig, auch dir, und handeln gemäß ihrer chaotischen Natur. Ein Schutzkreis kann helfen, sie einzudämmen.",
+      "description": "Du beschwörst Dämonen an freien Orten in Reichweite. Wähle 2W6 Dämonen mit Herausforderungsgrad 1/2 oder niedriger, 1W6 Dämonen mit Herausforderungsgrad 1 oder niedriger oder einen Dämon mit Herausforderungsgrad 2 oder niedriger. Sie sind allen Kreaturen gegenüber feindselig, auch dir, und handeln gemäß ihrer chaotischen Natur.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. beschwörst du zwei zusätzliche Dämonen."
     },
     "damage": [],
@@ -3924,7 +3927,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 166,
+    "sourcePage": 167,
     "descriptionKind": "original-summary"
   },
   {
@@ -4016,7 +4019,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 158,
+    "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
   {
@@ -4037,7 +4040,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "Flames surround you. You gain resistance to cold damage and immunity to fire damage, shed bright light, and can move through flammable objects without igniting them. You can also project a cone of fire that damages creatures in the area.",
+    "description": "Flames race across your body, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. You are immune to fire damage and have resistance to cold damage. A creature that moves within 5 feet of you for the first time on a turn or ends its turn there takes 1d10 fire damage. You can use your action to create a 15-foot-long, 5-foot-wide line of fire that deals 4d8 fire damage on a failed Dexterity save, or half as much on a success.",
     "localized": {
       "name": "Feuerinvestitur",
       "school": "Verwandlung",
@@ -4051,7 +4054,7 @@
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Flammen umgeben dich. Du erhältst Resistenz gegen Kälteschaden und Immunität gegen Feuerschaden, spendest helles Licht und kannst dich durch brennbare Gegenstände bewegen, ohne sie zu entzünden. Außerdem kannst du einen Feuerkegel ausstoßen, der Kreaturen im Bereich verletzt."
+      "description": "Flammen breiten sich über deinen Körper aus und spenden helles Licht in einem Radius von 9 Metern sowie dämmriges Licht weitere 9 Meter darüber hinaus. Du bist immun gegen Feuerschaden und besitzt Resistenz gegen Kälteschaden. Eine Kreatur, die sich während eines Zuges erstmals auf 1,5 Meter an dich heranbewegt oder ihren Zug dort beendet, erleidet 1W10 Feuerschaden. Als Aktion kannst du eine 4,5 Meter lange und 1,5 Meter breite Feuerlinie erschaffen, die bei einem misslungenen Geschicklichkeitsrettungswurf 4W8 Feuerschaden oder bei Erfolg halben Schaden verursacht."
     },
     "damage": [
       {
@@ -4087,7 +4090,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "Ice covers your body. You gain resistance to fire damage and immunity to cold damage, can move across icy surfaces without penalty, and can freeze water around you. You can also unleash a cone of freezing wind that deals cold damage and can reduce creatures' speed to 0.",
+    "description": "Ice rimes your body. You are immune to cold damage and have resistance to fire damage, can move across icy or snowy difficult terrain without extra movement, and create an icy 10-foot-radius area around yourself that is difficult terrain for other creatures. You can also create a 15-foot cone of freezing wind that deals 4d6 cold damage on a failed Constitution save, or half as much on a success; a creature that fails has its speed halved until your next turn.",
     "localized": {
       "name": "Eisinvestitur",
       "school": "Verwandlung",
@@ -4101,7 +4104,7 @@
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Eis bedeckt deinen Körper. Du erhältst Resistenz gegen Feuerschaden und Immunität gegen Kälteschaden, kannst dich ungehindert über Eis bewegen und Wasser in deiner Nähe gefrieren lassen. Außerdem kannst du einen Kegel eisigen Windes entfesseln, der Kälteschaden verursacht und die Bewegungsrate von Kreaturen auf 0 senken kann."
+      "description": "Eis überzieht deinen Körper. Du bist immun gegen Kälteschaden und besitzt Resistenz gegen Feuerschaden. Du kannst dich ohne zusätzliche Bewegung durch schwieriges Gelände aus Eis oder Schnee bewegen und erzeugst um dich herum einen eisigen Bereich mit 3 Metern Radius, der für andere Kreaturen schwieriges Gelände ist. Außerdem kannst du einen 4,5-Meter-Kegel eisigen Windes erzeugen, der bei einem misslungenen Konstitutionsrettungswurf 4W6 Kälteschaden oder bei Erfolg halben Schaden verursacht. Bei einem misslungenen Rettungswurf wird die Bewegungsrate der Kreatur bis zu deinem nächsten Zug halbiert."
     },
     "damage": [
       {
@@ -4137,7 +4140,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "Your skin becomes stone-like. You gain resistance to nonmagical bludgeoning, piercing, and slashing damage, gain tremorsense, and can move through nonmagical earth and stone.",
+    "description": "Bits of rock spread across your body. You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons. You can use an action to cause a small earthquake in a 15-foot radius around you, forcing other creatures on the ground to make a Dexterity save or fall prone. You can move through solid earth or stone as if it were air, but cannot end your movement there.",
     "localized": {
       "name": "Steininvestitur",
       "school": "Verwandlung",
@@ -4151,7 +4154,7 @@
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Deine Haut wird steinartig. Du erhältst Resistenz gegen nichtmagischen Wucht-, Stich- und Hiebschaden, erhältst Erschütterungssinn und kannst dich durch nichtmagische Erde und nichtmagischen Stein bewegen."
+      "description": "Gesteinsstücke breiten sich über deinen Körper aus. Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen. Als Aktion kannst du ein kleines Erdbeben in einem Radius von 4,5 Metern um dich herum auslösen, durch das andere Kreaturen auf dem Boden einen Geschicklichkeitsrettungswurf bestehen müssen oder zu Boden stürzen. Du kannst dich durch festen Boden und Stein bewegen, als wären sie Luft, darfst deine Bewegung jedoch nicht darin beenden."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -4181,7 +4184,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "Winds swirl around you. You gain a flying speed, resistance to lightning and thunder damage, and protection from ranged weapon attacks. You can also create a powerful gust that damages and pushes creatures away.",
+    "description": "Wind whirls around you. Ranged weapon attacks against you have disadvantage, and you gain a flying speed of 60 feet. You can use your action to create a 15-foot cube of swirling wind within 60 feet; creatures in it make a Constitution save, taking 2d10 bludgeoning damage on a failure or half on a success. Large or smaller creatures that fail are also pushed up to 10 feet away from the cube's center.",
     "localized": {
       "name": "Windinvestitur",
       "school": "Verwandlung",
@@ -4195,7 +4198,7 @@
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Winde wirbeln um dich. Du erhältst eine Flugbewegungsrate, Resistenz gegen Blitz- und Schallschaden sowie Schutz vor Fernkampfwaffenangriffen. Außerdem kannst du einen mächtigen Windstoß erzeugen, der Kreaturen verletzt und zurückstößt."
+      "description": "Wind wirbelt um dich. Fernkampfwaffenangriffe gegen dich haben Nachteil und du erhältst eine Flugbewegungsrate von 18 Metern. Als Aktion kannst du innerhalb von 18 Metern einen Würfel aus wirbelndem Wind mit 4,5 Metern Kantenlänge erschaffen. Kreaturen darin müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 2W10 Wuchtschaden oder bei Erfolg halben Schaden. Große oder kleinere Kreaturen, die den Rettungswurf nicht bestehen, werden zusätzlich bis zu 3 Meter vom Zentrum des Würfels weggestoßen."
     },
     "damage": [
       {
@@ -4210,7 +4213,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 159,
+    "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
   {
@@ -4482,7 +4485,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "You create a radiant wall of light. Creatures that pass through it or start their turn within it take radiant damage and may be blinded. You can also detach a beam from the wall and make a ranged spell attack with it.",
+    "description": "You create a radiant wall of light. When it appears, creatures in its area make a Constitution saving throw, taking 4d8 radiant damage on a failure or half as much on a success; a creature that fails is also blinded. A creature that ends its turn in the wall repeats the save. You can also use a bonus action to detach a beam and make a ranged spell attack that deals 4d8 radiant damage.",
     "higherLevel": "The damage of the beam increases by 1d8 for each spell slot level above 5.",
     "localized": {
       "name": "Lichtwand",
@@ -4496,7 +4499,7 @@
       "range": "36 Meter",
       "components": "V, G, M (ein Handspiegel)",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Du erschaffst eine strahlende Lichtwand. Kreaturen, die sie durchqueren oder ihren Zug in ihr beginnen, erleiden Strahlenschaden und können geblendet werden. Du kannst außerdem einen Lichtstrahl von der Wand lösen und damit einen Fernkampf-Zauberangriff ausführen.",
+      "description": "Du erschaffst eine strahlende Lichtwand. Wenn sie erscheint, müssen Kreaturen in ihrem Bereich einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 4W8 Strahlenschaden oder bei Erfolg halben Schaden; bei einem Misserfolg werden sie außerdem geblendet. Eine Kreatur, die ihren Zug in der Wand beendet, wiederholt den Rettungswurf. Als Bonusaktion kannst du außerdem einen Lichtstrahl ablösen und einen Fernkampf-Zauberangriff ausführen, der 4W8 Strahlenschaden verursacht.",
       "higherLevel": "Der Schaden des Lichtstrahls steigt für jeden Zauberplatzgrad über dem 5. um 1W8."
     },
     "damage": [
@@ -4531,7 +4534,7 @@
       "druid",
       "wizard"
     ],
-    "description": "You create a towering whirlwind that moves across the ground. Creatures caught in it make a Dexterity saving throw, taking bludgeoning damage and becoming restrained on a failure. A restrained creature can use an action to escape.",
+    "description": "A whirlwind forms as a 10-foot-radius, 30-foot-high cylinder at a point on the ground you can see. You can move it up to 30 feet along the ground as an action. A creature that enters it for the first time on a turn or whose space it enters makes a Dexterity saving throw, taking 10d6 bludgeoning damage on a failure or half on a success. A Large or smaller creature that fails must also succeed on a Strength save or become restrained inside it.",
     "higherLevel": "The damage increases by 1d6 for each spell slot level above 7.",
     "localized": {
       "name": "Wirbelwind",
@@ -4544,7 +4547,7 @@
       "range": "90 Meter",
       "components": "V, M (ein Stück Stroh)",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du erschaffst einen gewaltigen Wirbelwind, der sich über den Boden bewegt. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie Wuchtschaden und werden festgesetzt. Eine festgesetzte Kreatur kann eine Aktion verwenden, um sich zu befreien.",
+      "description": "Ein Wirbelwind entsteht als Zylinder mit 3 Metern Radius und 9 Metern Höhe an einem Punkt auf dem Boden, den du sehen kannst. Als Aktion kannst du ihn bis zu 9 Meter entlang des Bodens bewegen. Eine Kreatur, die ihn während eines Zuges erstmals betritt oder deren Feld er betritt, muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 10W6 Wuchtschaden oder bei Erfolg halben Schaden. Eine große oder kleinere Kreatur, die den Rettungswurf nicht besteht, muss außerdem einen Stärkerettungswurf bestehen oder wird im Wirbelwind festgesetzt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 7. um 1W6."
     },
     "damage": [
@@ -4560,7 +4563,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 170,
+    "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
   {
@@ -4701,14 +4704,14 @@
     "castingTime": "1 minute",
     "range": "1 mile",
     "components": "V, S, M",
-    "material": "a diamond worth at least 500 gp",
+    "material": "a diamond worth at least 500 gp, which the spell consumes",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
     "classes": [
       "wizard"
     ],
-    "description": "You conjure a fortified stronghold at a point you can see within range. The structure includes defensive walls, towers, gates, rooms, and furnishings, and remains until dispelled. Repeated castings at the same location over a year can make the fortress permanent.",
+    "description": "You conjure a stone fortress in an unoccupied square area of ground within range. It includes four towers, connecting walls, a furnished keep, food for a large banquet, and a staff of 100 invisible servants. The fortress lasts for 7 days, then crumbles and sinks into the ground. Casting the spell at the same location once every 7 days for a year makes it permanent.",
     "localized": {
       "name": "Mächtige Festung",
       "school": "Beschwörung",
@@ -4719,7 +4722,7 @@
       "range": "1,6 Kilometer",
       "components": "V, G, M (ein Diamant im Wert von mindestens 500 GM)",
       "duration": "Unmittelbar",
-      "description": "Du beschwörst an einem Punkt, den du innerhalb der Reichweite sehen kannst, eine befestigte Festung. Das Bauwerk umfasst Verteidigungsmauern, Türme, Tore, Räume und Einrichtung und bleibt bestehen, bis es gebannt wird. Wiederholtes Wirken am selben Ort über ein Jahr kann die Festung dauerhaft machen."
+      "description": "Du beschwörst eine steinerne Festung auf einer freien quadratischen Bodenfläche in Reichweite. Sie umfasst vier Türme, verbindende Mauern, einen eingerichteten Bergfried, Nahrung für ein großes Bankett und eine Dienerschaft aus 100 unsichtbaren Dienern. Die Festung bleibt 7 Tage bestehen und zerfällt anschließend, bevor sie im Boden versinkt. Wenn du den Zauber ein Jahr lang alle 7 Tage am selben Ort wirkst, wird sie dauerhaft."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -5026,7 +5029,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 170,
+    "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
   {
