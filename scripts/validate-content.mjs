@@ -71,7 +71,7 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
 
 const classSource = readText('src/domain/classes.ts')
 const sourceSource = readText('src/domain/contentSources.ts')
-const sourceIds = new Set([...sourceSource.matchAll(/id: '([^']+)'/g)].map((match) => match[1]))
+  [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
