@@ -20,7 +20,6 @@ import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
-import higherLevels2014English from '../data/spell-higher-level-2014.en.json'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
@@ -77,17 +76,12 @@ export function SpellbookPage({
   const spellCatalog = (character.ruleset === '2014'
     ? spells2014
     : spells2024) as unknown as FeatureSpellCatalogEntry[]
-  const getEnglishHigherLevel = (spell?: FeatureSpellCatalogEntry) =>
-    spell?.higherLevel ??
-    (character.ruleset === '2014' && spell
-      ? higherLevels2014English[spell.id as keyof typeof higherLevels2014English]
-      : undefined)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
     const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
     if (!spell) return knownSpell
 
     const localized = language === 'de' ? spell.localized : undefined
-    const englishHigherLevel = getEnglishHigherLevel(spell)
+    const englishHigherLevel = spell.higherLevel
     const usedEnglishFallback =
       language === 'de' &&
       (Boolean(spell.name && !localized?.name) ||
