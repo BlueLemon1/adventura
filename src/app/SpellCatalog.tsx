@@ -15,7 +15,7 @@ import {
 } from '../components/ui/select'
 import type { Language } from './i18n'
 import { translate } from './i18n'
-import { SpellHigherLevel } from './SpellHigherLevel'
+import { getHigherLevelText, SpellHigherLevel } from './SpellHigherLevel'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 
@@ -290,7 +290,7 @@ export function SpellCatalog({
       duration: localized?.duration ?? spell.duration,
       material: localized?.components ? '' : spell.material,
       description: localized?.description ?? spell.description,
-      higherLevel: localized?.higherLevel ?? spell.higherLevel,
+      higherLevel: getHigherLevelText(spell.higherLevel, localized?.higherLevel, language),
       usedEnglishFallback,
     }
   })
