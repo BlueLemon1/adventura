@@ -1,7 +1,7 @@
 export function getHigherLevelText(
   englishText: string | undefined,
   localizedText: string | undefined,
-  language: 'de' | 'en',
+  language?: 'de' | 'en',
 ): string | undefined {
   return language === 'de' ? localizedText?.trim() || englishText : englishText
 }
