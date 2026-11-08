@@ -127,6 +127,16 @@ export const CONTENT_SOURCES = {
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ggr',
     availableLocales: ['en'],
   },
+  aag2022: {
+    id: 'aag-2022',
+    name: "Astral Adventurer's Guide",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2022',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/aag',
+    availableLocales: ['en'],
+  },
 } as const satisfies Record<string, ContentSource>
 
 export type SrdContentSourceId = (typeof CONTENT_SOURCES)[keyof typeof CONTENT_SOURCES]['id']
