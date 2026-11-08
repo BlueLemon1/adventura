@@ -1,5 +1,6 @@
 import type { Character } from '../domain/character'
 import { getAutomaticClassFeatures, getClassResources } from '../domain/classFeatures'
+import { getContentSourceAbbreviation } from '../domain/contentSources'
 import { RULESET_LABELS } from '../domain/rules'
 import { PanelHeader } from '../components/ui/panel-header'
 import { PageIntro } from '../components/ui/page-intro'
@@ -145,6 +146,11 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                     <span>
                       {t('Stufe')} {feature.level}
                     </span>
+                    {feature.contentSourceId && (
+                      <span className="automatic-feature-source-book">
+                        {getContentSourceAbbreviation(feature.contentSourceId) ?? feature.contentSourceId}
+                      </span>
+                    )}
                     {feature.activation && (
                       <span className="automatic-feature-activation">
                         {t(activationLabels[feature.activation])}
