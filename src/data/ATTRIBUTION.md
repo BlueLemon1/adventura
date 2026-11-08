@@ -168,7 +168,7 @@ Included spells:
 - Rime's Binding Ice (p. 21)
 - Summon Draconic Spirit (p. 21)
 
-These three sourcebooks are currently represented as 2014-era supplements. Their entries will be made available under the 2024 ruleset only after compatibility is checked individually.
+Most entries from Strixhaven, Fizban, and Wildemount are limited to the 2014 ruleset. Kinetic Jaunt and Vortex Warp from Strixhaven, plus Ashardalon's Stride from Fizban, are also available to 2024 Artificers.
 
 ### Explorer's Guide to Wildemount (EGW)
 
@@ -189,7 +189,7 @@ Included Dunamancy spells:
 - Time Ravage (p. 189)
 - Wristpocket (p. 190)
 
-These entries are marked as Dunamancy and show whether they are associated with Chronurgy Magic, Graviturgy Magic, or both. They are assigned to the Wizard class; access for other spellcasters requires the DM's approval. Dunamancy spells are not automatically treated as ordinary Wizard spells for every subclass.
+These entries are marked as Dunamancy and show whether they are associated with Chronurgy Magic, Graviturgy Magic, or both. They are assigned to the Wizard class; access for other spellcasters requires the DM's approval. Dunamancy spells are not automatically treated as ordinary Wizard spells for every subclass and remain limited to the 2014 ruleset in Adventura.
 
 ### Acquisitions Incorporated (AI)
 
@@ -217,7 +217,7 @@ Included spells:
 - Air Bubble (p. 22)
 - Create Spelljamming Helm (p. 22)
 
-These spells are currently assigned to the 2014 ruleset.
+Both spells are available in the 2014 ruleset and to 2024 Artificers. The 2024 class list is explicitly restricted to Artificer.
 
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
 
