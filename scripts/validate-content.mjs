@@ -60,6 +60,23 @@ function findPriorityCollisions(primary, supplemental, identity) {
     .filter((entry) => entry.preferred)
 }
 
+function normalizeSpellName(spell) {
+  return (spell.englishName ?? spell.name)
+    .normalize('NFKD')
+    .replace(/[\\u0300-\\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+}
+
+function getCompatibleLegacySpells(spells2014, spells2024) {
+  const currentNames = new Set(spells2024.map(normalizeSpellName))
+  const replacedNames = new Set(['brandingsmite', 'feeblemind'])
+  return spells2014.filter((spell) => {
+    const name = normalizeSpellName(spell)
+    return !currentNames.has(name) && !replacedNames.has(name)
+  })
+}
+
 function validateSpellDataset(records, ruleset, sourceIds, sourceRulesets) {
   const ids = new Set()
 
@@ -287,6 +304,55 @@ for (const ruleset of ['2014', '2024']) {
   const optionCount = Object.values(options[ruleset]).reduce((sum, ids) => sum + ids.length, 0)
   console.log(
     `${ruleset}: ${optionCount} selectable subclasses, ${supplemental.length} supplemental feature records, ${supplemental.filter((feature) => feature.grantedSpellIds?.length).length} spell-grant features`,
+  )
+}
+
+const spells2014 = [
+  ...readJson('src/data/spells-2014.json'),
+  ...readJson('src/data/spells-additional.json').filter((spell) =>
+    spell.rulesets
+      ? spell.rulesets.includes('2014')
+      : sourceRulesets.get(spell.contentSourceId) === '2014',
+  ),
+]
+const spells2024 = [
+  ...readJson('src/data/spells-2024.json'),
+  ...readJson('src/data/spells-additional.json').filter((spell) =>
+    spell.rulesets
+      ? spell.rulesets.includes('2024')
+      : sourceRulesets.get(spell.contentSourceId) === '2024',
+  ),
+]
+const legacySpells = getCompatibleLegacySpells(spells2014, spells2024)
+const legacyIds = new Set(legacySpells.map((spell) => spell.id))
+const legacyNames = new Set(legacySpells.map(normalizeSpellName))
+for (const spell of legacySpells) {
+  if (sourceRulesets.get(spell.contentSourceId) !== '2014') {
+    errors.push(`2024/${spell.id}: compatible legacy spell must retain a 2014 source`)
+  }
+}
+for (const spell of spells2024) {
+  if (legacyNames.has(normalizeSpellName(spell))) {
+    errors.push(`2024/${spell.id}: legacy spell duplicates a current 2024 spell`)
+  }
+}
+for (const spell of spells2014) {
+  const name = normalizeSpellName(spell)
+  const replaced = name === 'brandingsmite' || name === 'feeblemind'
+  const updated = spells2024.some((current) => normalizeSpellName(current) === name)
+  if (!updated && !replaced && !legacyIds.has(spell.id)) {
+    errors.push(`2024: missing compatible legacy spell ${spell.id}`)
+  }
+}
+console.log(`2024: ${legacySpells.length} compatible legacy spells from 2014 available`)
+
+const incomplete2014Translations = [
+  ...readJson('src/data/class-features-2014.json'),
+  ...readJson('src/data/class-features-supplemental-2014.json'),
+].filter((feature) => !feature.names?.de?.trim() || !feature.descriptions?.de?.trim())
+if (incomplete2014Translations.length) {
+  console.warn(
+    `2014: ${incomplete2014Translations.length} features use English fallback for missing German text`,
   )
 }
 
