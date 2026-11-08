@@ -2484,7 +2484,7 @@ function getImportedClassFeatures(
   locale: ContentLocale,
   catalog: ClassFeatureRecord[],
 ): AutomaticClassFeature[] {
-  const selectedSubclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
+  const selectedSubclass = character.subclassId?.toLowerCase() ?? ''
   const legacyMetadata = getLegacyAutomaticClassFeatures(character)
   const normalizeName = (value: string) => value.toLowerCase().replace(/[^a-z0-9]/g, '')
 
