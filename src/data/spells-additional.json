@@ -5758,7 +5758,7 @@
       "wizard"
     ],
     "subclassRestriction": "graviturgy",
-    "description": "You create a 40-foot-radius sphere of magical darkness and crushing gravity. The area is difficult terrain, blocks sound, and cannot be seen through with darkvision. Creatures that enter the sphere for the first time on a turn or start their turn there make a Constitution saving throw, taking 8d10 force damage on a failure or half as much on a success.",
+    "description": "You create a 40-foot-radius sphere of magical darkness and crushing gravity. The area is difficult terrain, blocks sound, and cannot be seen through with darkvision. Creatures entirely inside are deafened, immune to thunder damage, and unable to cast spells with verbal components. Creatures that enter the sphere for the first time on a turn or start their turn there make a Constitution saving throw, taking 8d10 force damage on a failure or half as much on a success.",
     "localized": {
       "name": "Dunkler Stern",
       "school": "Hervorrufung",
@@ -5769,7 +5769,7 @@
       "range": "45 Meter",
       "components": "V, G, M (ein Onyxsplitter und ein Tropfen des Blutes des Zaubernden, beides wird verbraucht)",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du erschaffst eine Sphäre mit 12 Metern Radius aus magischer Dunkelheit und erdrückender Gravitation. Das Gebiet ist schwieriges Gelände, blockiert Geräusche und kann auch mit Dunkelsicht nicht durchdrungen werden. Kreaturen, die die Sphäre während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 8W10 Kraftschaden oder bei Erfolg halben Schaden."
+      "description": "Du erschaffst eine Sphäre mit 12 Metern Radius aus magischer Dunkelheit und erdrückender Gravitation. Das Gebiet ist schwieriges Gelände, blockiert Geräusche und kann auch mit Dunkelsicht nicht durchdrungen werden. Kreaturen, die sich vollständig darin befinden, sind taub, immun gegen Schallschaden und können keine Zauber mit verbalen Komponenten wirken. Kreaturen, die die Sphäre während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 8W10 Kraftschaden oder bei Erfolg halben Schaden."
     },
     "damage": [
       {
@@ -5977,7 +5977,7 @@
       "wizard"
     ],
     "subclassRestriction": "graviturgy",
-    "description": "You touch an object weighing no more than 10 pounds and magically fix it in place. It cannot be moved by ordinary force, though a creature can use an action to make a Strength check against your spell save DC to move it. The spell's power and duration improve when cast with higher-level slots.",
+    "description": "You touch an object weighing no more than 10 pounds and magically fix it in place. You and creatures you designate when casting can move it normally, and you can set a password that suppresses the spell for 1 minute when spoken within 5 feet. If fixed in the air, it can support up to 4,000 pounds; more weight makes it fall. Otherwise, a creature can use an action to make a Strength check against your spell save DC to move it up to 10 feet.",
     "higherLevel": "At 4th or 5th level, the DC to move the object increases by 5, it can support up to 8,000 pounds, and the duration becomes 24 hours. At 6th level or higher, the DC increases by 10, it can support up to 20,000 pounds, and the effect is permanent until dispelled.",
     "localized": {
       "name": "Unbeweglicher Gegenstand",
@@ -5989,7 +5989,7 @@
       "range": "Berührung",
       "components": "V, G, M (Goldstaub im Wert von mindestens 25 GM, den der Zauber verbraucht)",
       "duration": "1 Stunde",
-      "description": "Du berührst einen Gegenstand mit einem Gewicht von höchstens 5 kg und fixierst ihn magisch an seinem Ort. Er kann nicht durch gewöhnliche Kraft bewegt werden; eine Kreatur kann jedoch eine Aktion verwenden, um einen Stärkewurf gegen deinen Zauberrettungswurf-SG abzulegen und ihn zu bewegen. Die Stärke und Wirkungsdauer des Zaubers steigen bei Verwendung höherer Zauberplätze.",
+      "description": "Du berührst einen Gegenstand mit einem Gewicht von höchstens 4,5 kg und fixierst ihn magisch an seinem Ort. Du und Kreaturen, die du beim Wirken bestimmst, könnt ihn normal bewegen. Außerdem kannst du ein Passwort festlegen, das den Zauber für 1 Minute unterdrückt, wenn es innerhalb von 1,5 Metern ausgesprochen wird. In der Luft fixiert kann der Gegenstand bis zu 1.800 kg tragen; mehr Gewicht lässt ihn herabfallen. Andernfalls kann eine Kreatur eine Aktion verwenden und einen Stärkewurf gegen deinen Zauberrettungswurf-SG ablegen, um ihn bis zu 3 Meter zu bewegen.",
       "higherLevel": "Mit einem Zauberplatz des 4. oder 5. Grades steigt der SG zum Bewegen um 5, der Gegenstand kann bis zu 3.600 kg tragen und die Wirkungsdauer beträgt 24 Stunden. Ab dem 6. Grad steigt der SG um 10, der Gegenstand kann bis zu 9.000 kg tragen und der Effekt ist dauerhaft, bis er gebannt wird."
     },
     "damage": [],
@@ -6065,7 +6065,7 @@
       "wizard"
     ],
     "subclassRestriction": "both",
-    "description": "You release a wave of gravitational energy in a 30-foot cone. Each creature in the area makes a Constitution saving throw, taking 6d6 force damage on a failure or half as much on a success. You can choose to push or pull creatures that fail up to 15 feet.",
+    "description": "You release a wave of gravitational pressure in a 30-foot cone and choose whether it pushes or pulls. Each creature in the area makes a Constitution saving throw, taking 6d6 force damage on a failure or half as much on a success. Creatures that fail are pushed away from you or pulled toward you up to 15 feet. Unsecured objects entirely in the cone are moved the same distance.",
     "higherLevel": "The damage increases by 1d6 and the push or pull distance increases by 5 feet for each spell slot level above 3.",
     "localized": {
       "name": "Impulswelle",
@@ -6077,7 +6077,7 @@
       "range": "Selbst (9-Meter-Kegel)",
       "components": "V, G",
       "duration": "Unmittelbar",
-      "description": "Du setzt eine Welle gravitativer Energie in einem 9-Meter-Kegel frei. Jede Kreatur im Bereich muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 6W6 Kraftschaden oder bei Erfolg halben Schaden. Du kannst Kreaturen, die den Rettungswurf nicht bestehen, bis zu 4,5 Meter wegstoßen oder heranziehen.",
+      "description": "Du setzt eine Welle gravitativen Drucks in einem 9-Meter-Kegel frei und entscheidest, ob sie wegstößt oder heranzieht. Jede Kreatur im Bereich muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 6W6 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden bis zu 4,5 Meter von dir weggestoßen oder zu dir herangezogen. Unbefestigte Gegenstände vollständig im Kegel werden um dieselbe Distanz bewegt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W6 und die Stoß- oder Zugdistanz um 1,5 Meter."
     },
     "damage": [
@@ -6112,7 +6112,7 @@
       "wizard"
     ],
     "subclassRestriction": "graviturgy",
-    "description": "You create a 20-foot-radius sphere of crushing gravity. Creatures and objects in the area are pulled toward its center; creatures that enter the sphere or start their turn there take 5d10 force damage and are restrained. A creature can use an action to make a Strength check to escape, and objects are drawn toward the center.",
+    "description": "You create a 20-foot-radius sphere of destructive gravitational force. The sphere and the area within 100 feet of it become difficult terrain. Unsecured objects within 100 feet are pulled toward the center when the sphere appears and at the start of each of your turns. A creature that starts its turn within 100 feet makes a Strength saving throw or is pulled toward the center. A creature that enters the sphere or starts its turn there takes 5d10 force damage and is restrained; it can use an action to make a Strength check to free itself. A creature reduced to 0 hit points by the spell is annihilated.",
     "localized": {
       "name": "Gefräßige Leere",
       "school": "Hervorrufung",
@@ -6123,7 +6123,7 @@
       "range": "300 Meter",
       "components": "V, G, M (ein kleiner, neunzackiger Stern aus Eisen)",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du erschaffst eine Sphäre mit 6 Metern Radius aus erdrückender Gravitation. Kreaturen und Gegenstände im Bereich werden zu ihrem Zentrum gezogen. Kreaturen, die die Sphäre betreten oder ihren Zug darin beginnen, erleiden 5W10 Kraftschaden und werden festgesetzt. Eine Kreatur kann eine Aktion verwenden und einen Stärkewurf ablegen, um sich zu befreien; Gegenstände werden zum Zentrum gezogen."
+      "description": "Du erschaffst eine Sphäre mit 6 Metern Radius aus zerstörerischer Gravitationskraft. Die Sphäre und das Gebiet innerhalb von 30 Metern werden zu schwierigem Gelände. Unbefestigte Gegenstände innerhalb von 30 Metern werden beim Erscheinen der Sphäre und zu Beginn jedes deiner Züge zu ihrem Zentrum gezogen. Eine Kreatur, die ihren Zug innerhalb von 30 Metern beginnt, muss einen Stärkerettungswurf ablegen oder wird zum Zentrum gezogen. Eine Kreatur, die die Sphäre betritt oder ihren Zug darin beginnt, erleidet 5W10 Kraftschaden und wird festgesetzt; sie kann eine Aktion verwenden und einen Stärkewurf ablegen, um sich zu befreien. Eine Kreatur, die durch den Zauber auf 0 Trefferpunkte reduziert wird, wird ausgelöscht."
     },
     "damage": [
       {
@@ -6241,7 +6241,7 @@
       "wizard"
     ],
     "subclassRestriction": "chronurgy",
-    "description": "You target a creature in the instant before it completes an attack or spell. It makes a Wisdom saving throw; on a failure, it vanishes into a temporal eddy until the end of its next turn, causing the triggering attack to miss or the spell to be wasted.",
+    "description": "You target the creature that triggered the reaction. It makes a Wisdom saving throw; on a failure, it vanishes into a temporal eddy until the start of its next turn, causing the triggering attack to miss or the spell to be wasted. It then reappears where it was or in the closest unoccupied space. The target does not remember the spell or its effect.",
     "higherLevel": "You can target one additional creature for each spell slot level above 5. All targets must be within 30 feet of one another.",
     "localized": {
       "name": "Zeitversatz",
@@ -6253,7 +6253,7 @@
       "range": "36 Meter",
       "components": "V, G",
       "duration": "1 Runde",
-      "description": "Du zielst auf eine Kreatur im Augenblick, bevor sie einen Angriff oder Zauber vollendet. Sie muss einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg verschwindet sie bis zum Ende ihres nächsten Zuges in einer Zeitschleife; der auslösende Angriff verfehlt oder der Zauber wird vergeudet.",
+      "description": "Du zielst auf die Kreatur, die die Reaktion ausgelöst hat. Sie muss einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg verschwindet sie bis zum Beginn ihres nächsten Zuges in einer Zeitschleife; der auslösende Angriff verfehlt oder der Zauber wird vergeudet. Anschließend erscheint sie wieder an ihrem vorherigen Ort oder im nächstgelegenen freien Feld. Das Ziel erinnert sich weder an den Zauber noch an dessen Wirkung.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 5. kannst du eine zusätzliche Kreatur als Ziel wählen. Alle Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
     "damage": [],
@@ -6282,7 +6282,7 @@
       "wizard"
     ],
     "subclassRestriction": "both",
-    "description": "Choose two creatures you can see within range. Each makes a Constitution saving throw, with disadvantage if they are within 30 feet of one another. If both fail, they are linked for the duration: damage dealt to one is also dealt to the other, and hit points restored to one are restored to the other. If either reaches 0 hit points or the spell ends on one, it ends on both.",
+    "description": "Choose two creatures you can see within range. Each makes a Constitution saving throw, with disadvantage if they are within 30 feet of one another; either can willingly fail. If either save succeeds, the spell has no effect. If both fail, the creatures are linked for the duration: damage dealt to one is also dealt to the other, and hit points restored to one are restored to the other. If either reaches 0 hit points or the spell ends on one, it ends on both.",
     "localized": {
       "name": "Essenzfessel",
       "school": "Nekromantie",
@@ -6293,7 +6293,7 @@
       "range": "18 Meter",
       "components": "V, G, M (eine Spule Platindraht im Wert von mindestens 250 GM, die der Zauber verbraucht)",
       "duration": "Konzentration, bis zu 1 Stunde",
-      "description": "Wähle zwei Kreaturen, die du in Reichweite sehen kannst. Jede muss einen Konstitutionsrettungswurf ablegen; befinden sie sich höchstens 9 Meter voneinander entfernt, geschieht dies mit Nachteil. Misslingen beide Rettungswürfe, werden sie für die Wirkungsdauer miteinander verbunden: Schaden, der einer Kreatur zugefügt wird, wird auch der anderen zugefügt, und wiederhergestellte Trefferpunkte werden auf beide übertragen. Erreicht eine der Kreaturen 0 Trefferpunkte oder endet der Zauber bei einer von ihnen, endet er bei beiden."
+      "description": "Wähle zwei Kreaturen, die du in Reichweite sehen kannst. Jede muss einen Konstitutionsrettungswurf ablegen; befinden sie sich höchstens 9 Meter voneinander entfernt, geschieht dies mit Nachteil. Jede Kreatur kann freiwillig scheitern. Gelingt auch nur einer der Rettungswürfe, hat der Zauber keine Wirkung. Misslingen beide, werden die Kreaturen für die Wirkungsdauer miteinander verbunden: Schaden, der einer Kreatur zugefügt wird, wird auch der anderen zugefügt, und wiederhergestellte Trefferpunkte werden auf beide übertragen. Erreicht eine der Kreaturen 0 Trefferpunkte oder endet der Zauber bei einer von ihnen, endet er bei beiden."
     },
     "damage": [],
     "contentSourceId": "egw-2020",
