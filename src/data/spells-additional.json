@@ -1,0 +1,246 @@
+[
+  {
+    "id": "xge-2014-absorb-elements",
+    "name": "Absorb Elements",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 reaction, when you take acid, cold, fire, lightning, or thunder damage",
+    "range": "Self",
+    "components": "S",
+    "material": "",
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You briefly ward yourself against an incoming elemental attack. Until the start of your next turn, you have resistance to the triggering damage type. The first time you hit with a melee attack on your next turn, the target also takes 1d6 extra damage of that type.",
+    "higherLevel": "The extra damage increases by 1d6 for each spell slot level above 1.",
+    "localized": {
+      "name": "Elemente absorbieren",
+      "school": "Bannmagie",
+      "classes": [
+        "druid",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Reaktion, die du ausführst, wenn du Säure-, Kälte-, Feuer-, Blitz- oder Schallschaden erleidest",
+      "range": "Selbst",
+      "components": "G",
+      "duration": "1 Runde",
+      "description": "Du schützt dich kurzzeitig vor einem elementaren Angriff. Bis zum Beginn deines nächsten Zuges bist du gegen die auslösende Schadensart resistent. Wenn du in deinem nächsten Zug erstmals mit einem Nahkampfangriff triffst, verursacht das Ziel zusätzlich 1W6 Schaden dieser Schadensart.",
+      "higherLevel": "Der zusätzliche Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "variable"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 150,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-aganazzars-scorcher",
+    "name": "Aganazzar's Scorcher",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (30-foot line)",
+    "components": "V, S, M",
+    "material": "a red dragon's scale",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "A stream of flame races away from you in a straight line 30 feet long and 5 feet wide. Each creature in the line makes a Dexterity saving throw, taking 3d8 fire damage on a failure or half as much on a success.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 2.",
+    "localized": {
+      "name": "Aganazzars Sengstrahl",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (9-Meter-Linie)",
+      "components": "V, G, M (eine Drachenschuppe eines roten Drachen)",
+      "duration": "Unmittelbar",
+      "description": "Ein Feuerstrahl schießt in einer geraden Linie von dir fort. Die Linie ist 9 Meter lang und 1,5 Meter breit. Jede Kreatur darin muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 3W8 Feuerschaden, bei Erfolg die Hälfte.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "3d8",
+        "average": 13.5,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 150,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-catapult",
+    "name": "Catapult",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Choose an unattended object weighing 1 to 5 pounds within range. It flies in a straight line up to 90 feet in a direction you choose. A creature in its path must make a Dexterity saving throw; on a failure, the object strikes it and deals 3d8 bludgeoning damage. On a success, the object continues along its path.",
+    "higherLevel": "The maximum weight of the object increases by 5 pounds, and the damage increases by 1d8, for each spell slot level above 1.",
+    "localized": {
+      "name": "Katapult",
+      "school": "Verwandlung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G",
+      "duration": "Unmittelbar",
+      "description": "Wähle einen ungetragenen Gegenstand mit einem Gewicht von 0,5 bis 2,5 kg in Reichweite. Er fliegt bis zu 27 Meter weit in eine von dir gewählte gerade Richtung. Jede Kreatur auf seiner Flugbahn muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg trifft der Gegenstand sie und verursacht 3W8 Wuchtschaden; bei Erfolg fliegt er weiter.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 1. erhöht sich das Höchstgewicht des Gegenstands um 2,5 kg und der Schaden um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "3d8",
+        "average": 13.5,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 150,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-chaos-bolt",
+    "name": "Chaos Bolt",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer"
+    ],
+    "description": "Make a ranged spell attack against a creature. On a hit, the target takes 2d8 + 1d6 damage. The two d8s determine the damage type: acid, cold, fire, force, lightning, poison, psychic, or thunder. If both d8s show the same number, the bolt can leap to another creature within 30 feet of the first target, creating a new attack and damage roll.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 1.",
+    "localized": {
+      "name": "Chaosblitz",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Führe einen Fernkampf-Zauberangriff gegen eine Kreatur aus. Bei einem Treffer erleidet sie 2W8 + 1W6 Schaden. Die beiden W8 bestimmen die Schadensart: Säure, Kälte, Feuer, Kraft, Blitz, Gift, psychisch oder Schall. Zeigen beide W8 dieselbe Zahl, kann der Blitz auf eine andere Kreatur innerhalb von 9 Metern des ersten Ziels überspringen. Gegen dieses Ziel wird ein neuer Angriff mit einem neuen Schadenswurf ausgeführt.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "2d8 + 1d6",
+        "average": 12.5,
+        "type": "variable"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 151,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-shadow-blade",
+    "name": "Shadow Blade",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You form a weapon of solidified shadow in your hand. It is a finesse, light weapon that deals 2d8 psychic damage on a hit and can be thrown (range 20/60 feet). You have advantage on its attacks while in dim light or darkness. The weapon vanishes if it leaves your hand.",
+    "higherLevel": "The weapon's damage increases by 1d8 for every two slot levels above 2.",
+    "localized": {
+      "name": "Schattenklinge",
+      "school": "Illusion",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "In deiner Hand entsteht eine Waffe aus verdichteter Dunkelheit. Sie besitzt die Eigenschaften Finesse und leicht, verursacht bei einem Treffer 2W8 psychischen Schaden und kann geworfen werden (Reichweite 6/18 Meter). Bei dämmrigem Licht oder Dunkelheit hast du Vorteil auf ihre Angriffe. Verlässt die Waffe deine Hand, verschwindet sie.",
+      "higherLevel": "Der Schaden der Waffe steigt für je zwei Zauberplatzgrade über dem 2. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "2d8",
+        "average": 9,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  }
+]
