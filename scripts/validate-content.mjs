@@ -183,7 +183,7 @@ for (const spell of additionalSpellRecords) {
   }
 }
 for (const entry of compatibilityEntries) {
-  if (!['legacy', 'shared', 'replaced'].includes(entry.status)) {
+  if (!['legacy', 'shared', 'replaced', 'new'].includes(entry.status)) {
     errors.push(`2024/${entry.spellId}: invalid compatibility status ${entry.status}`)
   }
   if (!additionalSpellsById.has(entry.spellId) && !entry.spellId.startsWith('srd-2014-')) {
@@ -199,10 +199,10 @@ if (!spellCompatibilityManifest.sourceUrl?.includes('dndbeyond.com/posts/1810-')
 for (const spell of additionalSpellRecords) {
   const entry = compatibilityBySpellId.get(spell.id)
   const appearsInPhb2024 = phb2024UpdatedSupplementSpellNames.has(normalizeContentName(spell.englishName ?? spell.name))
-  if (appearsInPhb2024 && entry?.status !== 'replaced') {
+  if (sourceRulesets.get(spell.contentSourceId) === '2014' && appearsInPhb2024 && entry?.status !== 'replaced') {
     errors.push(`2024/${spell.id}: PHB 2024 spell must not be classified as Legacy or shared`)
   }
-  if (entry?.replacementSource === 'phb-2024') {
+  if (sourceRulesets.get(spell.contentSourceId) === '2014' && entry?.replacementSource === 'phb-2024') {
     if (!appearsInPhb2024 || entry.replacementCategory !== 'new') {
       errors.push(`2024/${spell.id}: invalid PHB 2024 replacement metadata`)
     }
