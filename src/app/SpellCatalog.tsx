@@ -17,6 +17,7 @@ import type { Language } from './i18n'
 import { translate } from './i18n'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
+import higherLevels2014English from '../data/spell-higher-level-2014.en.json'
 
 interface CatalogSpell {
   id: string
@@ -53,7 +54,12 @@ type SpellSource = NonNullable<KnownSpell['source']>
 type UsageReset = NonNullable<KnownSpell['usageReset']>
 
 const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
-  '2014': spells2014 as CatalogSpell[],
+  '2014': (spells2014 as CatalogSpell[]).map((spell) => ({
+    ...spell,
+    higherLevel:
+      spell.higherLevel ??
+      higherLevels2014English[spell.id as keyof typeof higherLevels2014English],
+  })),
   '2024': spells2024 as CatalogSpell[],
 }
 
@@ -139,7 +145,7 @@ function matchesSpell(
   const matchesSearch =
     !options.search ||
     normalizeKey(
-      `${spell.name} ${spell.englishName ?? ''} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''}`,
+      `${spell.name} ${spell.englishName ?? ''} ${spell.school} ${spell.description} ${spell.localized?.name ?? ''} ${spell.localized?.school ?? ''} ${spell.localized?.description ?? ''} ${spell.higherLevel ?? ''} ${spell.localized?.higherLevel ?? ''}`,
     ).includes(options.search)
   const matchesLevel = options.levelFilter === 'all' || spell.level === Number(options.levelFilter)
   const matchesClass =
