@@ -48,6 +48,7 @@ interface CatalogSpell {
     description?: string
     higherLevel?: string
     higherLevelLabel?: string
+    availabilityNote?: string
   }
   damage?: Array<{ dice: string; average: number; type?: string }>
   rulesets?: Array<'2014' | '2024'>
@@ -56,6 +57,7 @@ interface CatalogSpell {
   sourcePage?: number
   previousSource?: string
   subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
+  availabilityNote?: string
   descriptionKind?: 'official' | 'original-summary'
 }
 
@@ -381,6 +383,7 @@ export function SpellCatalog({
           spell.subclassRestriction
             ? `Dunamancy (${getDunamancyAccessLabel(spell.subclassRestriction, language)})`
             : undefined,
+          (language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote) || undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
         ]
@@ -610,6 +613,14 @@ export function SpellCatalog({
                     {getDunamancyAccessLabel(spell.subclassRestriction, language)}
                     {' · '}
                     {t('Andere Klassen nur mit Zustimmung der Spielleitung')}
+                  </small>
+                )}
+                {(language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote) && (
+                  <small className="catalog-spell-restriction">
+                    {t('Verfügbarkeit')}:{' '}
+                    {language === 'de'
+                      ? spell.localized?.availabilityNote
+                      : spell.availabilityNote}
                   </small>
                 )}
 
