@@ -43,6 +43,8 @@ export interface CatalogSpell {
   rulesetClasses?: Partial<Record<Dnd5eRuleset, string[]>>
   availabilityNote?: string
   descriptionKind?: 'official' | 'original-summary'
+  /** 2014 spell retained for use with the 2024 rules because it has no 2024 revision. */
+  legacy?: boolean
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
@@ -51,6 +53,9 @@ const sourceRulesets = new Map<string, Dnd5eRuleset>(
 )
 
 const spellCatalogCache = new Map<Dnd5eRuleset, CatalogSpell[]>()
+
+// These 2014 spells were explicitly archived and replaced under new names.
+const replacedLegacySpellNames = new Set(['brandingsmite', 'feeblemind'])
 
 function normalizeSpellName(spell: CatalogSpell): string {
   return (spell.englishName ?? spell.name)
@@ -90,7 +95,19 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
-  const catalog = mergeSpellRecords(base, supplements)
+  const legacySpells =
+    ruleset === '2024'
+      ? getSpellCatalog('2014')
+          .filter(
+            (spell) =>
+              !replacedLegacySpellNames.has(normalizeSpellName(spell)) &&
+              ![...base, ...supplements].some(
+                (current) => normalizeSpellName(current) === normalizeSpellName(spell),
+              ),
+          )
+          .map((spell) => ({ ...spell, legacy: true }))
+      : []
+  const catalog = mergeSpellRecords(base, [...supplements, ...legacySpells])
   spellCatalogCache.set(ruleset, catalog)
   return catalog
 }
@@ -109,11 +126,17 @@ export function findCatalogSpell(
   const directMatch = catalog.find((spell) => spell.id === spellId)
   if (directMatch) return directMatch
 
-  const original = supplementalSpells.find((spell) => spell.id === spellId)
+  const original =
+    supplementalSpells.find((spell) => spell.id === spellId) ??
+    (ruleset === '2024'
+      ? getSpellCatalog('2014').find((spell) => spell.id === spellId)
+      : undefined)
   if (!original) return undefined
-  const belongsToRuleset = original.rulesets
-    ? original.rulesets.includes(ruleset)
-    : sourceRulesets.get(original.contentSourceId) === ruleset
+  const sourceRuleset = sourceRulesets.get(original.contentSourceId)
+  const belongsToRuleset =
+    original.rulesets?.includes(ruleset) ||
+    sourceRuleset === ruleset ||
+    (ruleset === '2024' && sourceRuleset === '2014')
   if (!belongsToRuleset) return undefined
 
   const key = normalizeSpellName(original)
