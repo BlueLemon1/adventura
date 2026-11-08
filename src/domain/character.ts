@@ -149,6 +149,8 @@ export interface KnownSpell {
   higherLevelLabel?: string
   damage?: SpellDamage[]
   contentSourceId?: string
+  /** Marks a retained, unrevised 2014 spell used with the 2024 rules. */
+  legacy?: boolean
   source?: 'class' | 'story' | 'item' | 'feat' | 'other'
   sourceName?: string
   usageLimit?: number
