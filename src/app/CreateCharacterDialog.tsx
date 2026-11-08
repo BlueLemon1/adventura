@@ -31,8 +31,8 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
   const t = (value: string) => translate(language, value)
   const [name, setName] = useState('')
   const [classId, setClassId] = useState('fighter')
-  const classOptions = getClassOptions(ruleset)
   const [ruleset, setRuleset] = useState<Dnd5eRuleset>('2024')
+  const classOptions = getClassOptions(ruleset)
   const [level, setLevel] = useState(1)
 
   function submit(event: FormEvent<HTMLFormElement>) {
