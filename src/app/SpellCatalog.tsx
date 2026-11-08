@@ -411,8 +411,8 @@ export function SpellCatalog({
       </div>
 
       <div className="catalog-count">
-        {results.length} {t('Treffer')} ·{' '}
-        {t('Regelwerk')} {character.ruleset === '2014' ? '2014' : '2024'} ·{' '}
+        {results.length} {t('Treffer')} · {t('Regelwerk')}{' '}
+        {character.ruleset === '2014' ? '2014' : '2024'} ·{' '}
         {eligibleOnly ? t('Klassen-/Gradfilter aktiv') : t('vollständiger Katalog')}
       </div>
       <div className="spellcasting-explainer">
