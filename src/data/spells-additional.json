@@ -6234,7 +6234,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP"
   },
   {
     "id": "phb-2024-summon-fey",
@@ -6273,7 +6274,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a gilded flower worth 300+ GP"
   },
   {
     "id": "phb-2024-summon-undead",
@@ -6308,7 +6310,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a gilded skull worth 300+ GP"
   },
   {
     "id": "phb-2024-summon-aberration",
@@ -6343,7 +6346,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth 400+ GP"
   },
   {
     "id": "phb-2024-summon-construct",
@@ -6378,7 +6382,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a lockbox worth 400+ GP"
   },
   {
     "id": "phb-2024-summon-elemental",
@@ -6415,7 +6420,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "air, a pebble, ash, and water inside a gold-inlaid vial worth 400+ GP"
   },
   {
     "id": "phb-2024-steel-wind-strike",
@@ -6457,7 +6463,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a melee weapon worth 1+ SP"
   },
   {
     "id": "phb-2024-summon-celestial",
@@ -6492,7 +6499,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a reliquary worth 500+ GP"
   },
   {
     "id": "phb-2024-synaptic-static",
@@ -6573,7 +6581,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a bloody vial worth 600+ GP"
   },
   {
     "id": "phb-2024-arcane-vigor",
