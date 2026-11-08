@@ -388,7 +388,8 @@ export function SpellCatalog({
           spell.subclassRestriction
             ? `Dunamancy (${getDunamancyAccessLabel(spell.subclassRestriction, language)})`
             : undefined,
-          (language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote) || undefined,
+          (language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote) ||
+            undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
         ]
@@ -620,12 +621,12 @@ export function SpellCatalog({
                     {t('Andere Klassen nur mit Zustimmung der Spielleitung')}
                   </small>
                 )}
-                {(language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote) && (
+                {(language === 'de'
+                  ? spell.localized?.availabilityNote
+                  : spell.availabilityNote) && (
                   <small className="catalog-spell-restriction">
                     {t('Verfügbarkeit')}:{' '}
-                    {language === 'de'
-                      ? spell.localized?.availabilityNote
-                      : spell.availabilityNote}
+                    {language === 'de' ? spell.localized?.availabilityNote : spell.availabilityNote}
                   </small>
                 )}
 
