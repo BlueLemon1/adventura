@@ -42,6 +42,9 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
 
     if (feature.ruleset !== ruleset) errors.push(`${location}: wrong ruleset`)
     if (!sourceIds.has(feature.contentSourceId)) errors.push(`${location}: unknown source ${feature.contentSourceId}`)
+    if (sourceRulesets.get(feature.contentSourceId) && sourceRulesets.get(feature.contentSourceId) !== ruleset) {
+      errors.push(`${location}: source ${feature.contentSourceId} belongs to ${sourceRulesets.get(feature.contentSourceId)}`)
+    }
     if (!feature.classId) errors.push(`${location}: missing classId`)
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
       errors.push(`${location}: invalid feature level`)
