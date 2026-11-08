@@ -59,14 +59,81 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
           'Alle Klassen- und Unterklassenmerkmale deines Regelwerks – aktive, passive und zukünftige.',
         )}
       />
-      <div className="rest-actions">
-        <span>{t('Rast verwalten')}</span>
-        <button type="button" className="secondary-button" onClick={() => takeRest('short')}>
-          {t('Kurze Rast')}
-        </button>
-        <button type="button" className="secondary-button" onClick={() => takeRest('long')}>
-          {t('Lange Rast')}
-        </button>
+      <div className="features-dashboard">
+        <section className="panel rest-management-panel">
+          <PanelHeader title={t('Rast verwalten')} meta={t('ERHOLUNG')} />
+          <p className="muted-paragraph">
+            {t('Stelle verbrauchte Klassenressourcen nach einer Rast wieder her.')}
+          </p>
+          <div className="rest-actions">
+            <button type="button" className="secondary-button" onClick={() => takeRest('short')}>
+              {t('Kurze Rast')}
+            </button>
+            <button type="button" className="secondary-button" onClick={() => takeRest('long')}>
+              {t('Lange Rast')}
+            </button>
+          </div>
+        </section>
+        {resources.length > 0 && (
+          <section className="panel class-resources-panel">
+            <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
+            <div className="class-resource-list">
+              {resources.map((resource) => {
+                const current = Math.min(
+                  resource.maximum,
+                  Math.max(
+                    0,
+                    saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum,
+                  ),
+                )
+                return (
+                  <div className="class-resource-row" key={resource.id}>
+                    <div>
+                      <strong>{t(resource.label)}</strong>
+                      <small>
+                        {t(
+                          resource.recovery === 'long'
+                            ? 'Erholung bei langer Rast'
+                            : resource.recovery === 'short'
+                              ? 'Erholung bei kurzer Rast'
+                              : resource.recovery === 'short-one-or-long'
+                                ? 'Eine Nutzung bei kurzer Rast, alle bei langer Rast'
+                                : 'Erholung bei kurzer oder langer Rast',
+                        )}
+                      </small>
+                    </div>
+                    <div className="resource-counter">
+                      <button
+                        type="button"
+                        aria-label={t('Ressource verringern')}
+                        disabled={current <= 0}
+                        onClick={() => setResource(resource.id, current - 1)}
+                      >
+                        −
+                      </button>
+                      <strong>
+                        {current} / {resource.maximum}
+                      </strong>
+                      <button
+                        type="button"
+                        aria-label={t('Ressource erhöhen')}
+                        disabled={current >= resource.maximum}
+                        onClick={() => setResource(resource.id, current + 1)}
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+            <p className="muted-paragraph">
+              {t(
+                'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.',
+              )}
+            </p>
+          </section>
+        )}
       </div>
       {selectedSubclass && !hasSubclassFeatures && (
         <section className="panel">
@@ -76,66 +143,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
           </p>
         </section>
       )}
-      {resources.length > 0 && (
-        <section className="panel">
-          <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
-          <div className="class-resource-list">
-            {resources.map((resource) => {
-              const current = Math.min(
-                resource.maximum,
-                Math.max(
-                  0,
-                  saved.find((entry) => entry.id === resource.id)?.current ?? resource.maximum,
-                ),
-              )
-              return (
-                <div className="class-resource-row" key={resource.id}>
-                  <div>
-                    <strong>{t(resource.label)}</strong>
-                    <small>
-                      {t(
-                        resource.recovery === 'long'
-                          ? 'Erholung bei langer Rast'
-                          : resource.recovery === 'short'
-                            ? 'Erholung bei kurzer Rast'
-                            : resource.recovery === 'short-one-or-long'
-                              ? 'Eine Nutzung bei kurzer Rast, alle bei langer Rast'
-                              : 'Erholung bei kurzer oder langer Rast',
-                      )}
-                    </small>
-                  </div>
-                  <div className="resource-counter">
-                    <button
-                      type="button"
-                      aria-label={t('Ressource verringern')}
-                      disabled={current <= 0}
-                      onClick={() => setResource(resource.id, current - 1)}
-                    >
-                      −
-                    </button>
-                    <strong>
-                      {current} / {resource.maximum}
-                    </strong>
-                    <button
-                      type="button"
-                      aria-label={t('Ressource erhöhen')}
-                      disabled={current >= resource.maximum}
-                      onClick={() => setResource(resource.id, current + 1)}
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-          <p className="muted-paragraph">
-            {t(
-              'Der Verbrauch wird gespeichert. Eine kurze Rast stellt je nach Ressource eine oder alle Nutzungen wieder her; eine lange Rast stellt alle wieder her.',
-            )}
-          </p>
-        </section>
-      )}
+
       <section className="panel">
         <PanelHeader
           title={t('Alle Klassen- und Unterklassenmerkmale')}
