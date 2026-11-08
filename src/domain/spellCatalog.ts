@@ -95,9 +95,20 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
+  // Legacy compatibility applies only to supplemental 2014 spells.
+  // Keep the official 2014 SRD catalogue completely separate from this path.
   const legacySpells =
     ruleset === '2024'
-      ? getSpellCatalog('2014')
+      ? supplementalSpells
+          .filter((spell) =>
+            spell.rulesets
+              ? spell.rulesets.includes('2014')
+              : sourceRulesets.get(spell.contentSourceId) === '2014',
+          )
+          .map((spell) => ({
+            ...spell,
+            classes: spell.rulesetClasses?.['2014'] ?? spell.classes,
+          }))
           .filter(
             (spell) =>
               !replacedLegacySpellNames.has(normalizeSpellName(spell)) &&
