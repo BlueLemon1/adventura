@@ -6587,6 +6587,7 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "artificer",
       "sorcerer",
       "wizard"
     ],
@@ -6595,6 +6596,7 @@
       "name": "Arcane Vigor",
       "school": "Bannmagie",
       "classes": [
+        "artificer",
         "sorcerer",
         "wizard"
       ],
@@ -6677,7 +6679,7 @@
       ],
       "castingTime": "Aktion",
       "range": "120 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (eine Prise Phosphor)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Ein strahlender Gewittersturm blendet und betäubt Kreaturen und schädigt alle, die sich darin befinden."
     },
@@ -6697,7 +6699,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a pinch of phosphorus"
   },
   {
     "id": "phb-2024-yolandes-regal-presence",
@@ -6724,7 +6727,7 @@
       ],
       "castingTime": "Aktion",
       "range": "Selbst (10-foot Emanation)",
-      "components": "V, G, M",
+      "components": "V, G, M (eine Miniatur-Tiara)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Deine majestätische Aura schädigt Kreaturen in deiner Nähe, bringt sie zu Fall und stößt sie zurück."
     },
@@ -6739,7 +6742,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a miniature tiara"
   },
   {
     "id": "phb-2024-tashas-bubbling-cauldron",
@@ -6753,6 +6757,7 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "bard",
       "warlock",
       "wizard"
     ],
@@ -6761,12 +6766,13 @@
       "name": "Tasha's Bubbling Cauldron",
       "school": "Beschwörung",
       "classes": [
+        "bard",
         "warlock",
         "wizard"
       ],
       "castingTime": "Aktion",
       "range": "5 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (eine vergoldete Schöpfkelle im Wert von mindestens 500 GM)",
       "duration": "10 Minuten",
       "description": "Du beschwörst einen Kessel, der eine begrenzte Anzahl ausgewählter gewöhnlicher oder ungewöhnlicher Tränke hervorbringt."
     },
@@ -6774,7 +6780,8 @@
     "rulesets": [
       "2024"
     ],
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "material": "a gilded ladle worth 500+ GP"
   },
   {
     "id": "phb-2024-power-word-fortify",
