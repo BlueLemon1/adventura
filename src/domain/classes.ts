@@ -49,6 +49,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'ancestralguardian', label: 'Pfad des Ahnenwächters', source: 'XGE' },
       { value: 'stormherald', label: 'Pfad des Sturmherolds', source: 'XGE' },
       { value: 'zealot', label: 'Pfad des Zeloten', source: 'XGE' },
+      { value: 'giant', label: 'Pfad des Riesen', source: 'BPGG' },
       { value: 'beast', label: 'Pfad der Bestie', source: 'TCE' },
       { value: 'wildmagic', label: 'Pfad der wilden Magie', source: 'TCE' },
       { value: 'battlerager', label: 'Pfad des Kampfwüters', source: 'SCAG' },
@@ -106,6 +107,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'four_elements', label: 'Weg der vier Elemente', source: 'PHB' },
       { value: 'longdeath', label: 'Weg des langen Todes', source: 'SCAG' },
       { value: 'sun_soul', label: 'Weg der Sonnenseele', source: 'SCAG' },
+      { value: 'sun_soul', label: 'Weg der Sonnenseele', source: 'SCAG' },
       { value: 'drunkenmaster', label: 'Weg des betrunkenen Meisters', source: 'XGE' },
       { value: 'kensei', label: 'Weg des Kensei', source: 'XGE' },
       { value: 'mercy', label: 'Weg der Barmherzigkeit', source: 'TCE' },
@@ -120,6 +122,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'redemption', label: 'Schwur der Erlösung', source: 'XGE' },
       { value: 'glory', label: 'Schwur des Ruhms', source: 'MOoT / TCE' },
       { value: 'watchers', label: 'Schwur der Wächter', source: 'TCE' },
+      { value: 'oathbreaker', label: 'Schwurbrecher', source: 'DMG' },
     ],
     ranger: [
       { value: 'hunter', label: 'Jäger', source: 'PHB / SRD' },
@@ -129,6 +132,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'monster_slayer', label: 'Monsterjäger', source: 'XGE' },
       { value: 'feywanderer', label: 'Feenwanderer', source: 'TCE' },
       { value: 'swarmkeeper', label: 'Schwarmhüter', source: 'TCE' },
+      { value: 'drakewarden', label: 'Drachenhüter', source: 'FTD' },
     ],
     rogue: [
       { value: 'thief', label: 'Dieb', source: 'PHB / SRD' },
@@ -147,6 +151,7 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
       { value: 'storm', label: 'Sturmmagie', source: 'SCAG / XGE' },
       { value: 'aberrantmind', label: 'Aberrantes Gemüt', source: 'TCE' },
       { value: 'clockwork', label: 'Uhrwerkseele', source: 'TCE' },
+      { value: 'lunar', label: 'Mondmagie', source: 'DSotDQ' },
       { value: 'shadowmagic', label: 'Schattenmagie', source: 'XGE' },
     ],
     warlock: [
