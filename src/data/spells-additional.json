@@ -1230,7 +1230,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You choose up to three willing creatures you can see within range. They fall unconscious for the spell's duration, then gain the benefit of a short rest. The spell has no effect on a creature that cannot be charmed.",
+    "description": "You choose up to three willing creatures you can see within range. They fall unconscious for 10 minutes, during which they can be awakened normally. When the spell ends, each affected creature gains the benefit of a short rest. The spell has no effect on undead or constructs.",
     "localized": {
       "name": "Katzenschlaf",
       "school": "Verzauberung",
@@ -1243,7 +1243,7 @@
       "range": "9 Meter",
       "components": "G, M (eine Prise Sand)",
       "duration": "10 Minuten",
-      "description": "Du wählst bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst. Sie werden für die Wirkungsdauer bewusstlos und erhalten anschließend den Nutzen einer kurzen Rast. Auf Kreaturen, die nicht bezaubert werden können, hat der Zauber keine Wirkung."
+      "description": "Du wählst bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst. Sie fallen für 10 Minuten in Schlaf und können währenddessen auf normale Weise geweckt werden. Wenn der Zauber endet, erhält jede betroffene Kreatur den Nutzen einer kurzen Rast. Auf Untote und Konstrukte hat der Zauber keine Wirkung."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -1826,7 +1826,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You shape a brief gust of air. It can push a Small or smaller creature, move an unattended object, or create a harmless sensory effect such as rustling leaves or blowing dust.",
+    "description": "You shape a brief gust of air. It can push a Medium or smaller creature, move an unattended object weighing no more than 5 pounds, or create a harmless sensory effect such as rustling leaves or blowing dust.",
     "localized": {
       "name": "Windstoß",
       "school": "Verwandlung",
@@ -1839,7 +1839,7 @@
       "range": "9 Meter",
       "components": "V, G",
       "duration": "Unmittelbar",
-      "description": "Du formst einen kurzen Windstoß. Er kann eine kleine oder kleinere Kreatur wegdrücken, einen unbewachten Gegenstand bewegen oder einen harmlosen Sinneseffekt erzeugen, etwa raschelnde Blätter oder aufgewirbelten Staub."
+      "description": "Du formst einen kurzen Windstoß. Er kann eine mittelgroße oder kleinere Kreatur wegdrücken, einen unbewachten Gegenstand mit höchstens 2,5 kg Gewicht bewegen oder einen harmlosen Sinneseffekt erzeugen, etwa raschelnde Blätter oder aufgewirbelten Staub."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -2248,7 +2248,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "A sphere of sickly green light fills the area. A creature that enters it for the first time on a turn or starts its turn there must make a Constitution saving throw, taking 4d10 radiant damage on a failure and gaining one level of exhaustion. The light also prevents affected creatures from benefiting from invisibility.",
+    "description": "A sphere of sickly green light fills the area. A creature that enters it for the first time on a turn or starts its turn there must make a Constitution saving throw, taking 4d10 radiant damage on a failure or half as much on a success. A creature that fails also gains one level of exhaustion. The light prevents affected creatures from benefiting from invisibility.",
     "localized": {
       "name": "Krankmachendes Strahlen",
       "school": "Hervorrufung",
@@ -2261,7 +2261,7 @@
       "range": "36 Meter",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Eine Sphäre aus kränklichem grünem Licht erfüllt den Bereich. Kreaturen, die ihn während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W10 Strahlenschaden und erhalten eine Erschöpfungsstufe. Das Licht verhindert außerdem, dass betroffene Kreaturen von Unsichtbarkeit profitieren."
+      "description": "Eine Sphäre aus kränklichem grünem Licht erfüllt den Bereich. Kreaturen, die ihn während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W10 Strahlenschaden und erhalten eine Erschöpfungsstufe; bei Erfolg erleiden sie halben Schaden. Das Licht verhindert außerdem, dass betroffene Kreaturen von Unsichtbarkeit profitieren."
     },
     "damage": [
       {
@@ -2295,7 +2295,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You create a sphere of whirling air around a point. Creatures in it take bludgeoning damage, and the area is difficult terrain. As a bonus action, you can send a lightning bolt from the sphere toward a creature, making a ranged spell attack that deals lightning damage.",
+    "description": "You create a sphere of whirling air around a point. Creatures in it when it appears or that end their turn there must make a Strength saving throw, taking 2d6 bludgeoning damage on a failure. The area is difficult terrain. As a bonus action, you can send a lightning bolt from the sphere toward a creature within 60 feet of it, making a ranged spell attack that deals 4d6 lightning damage.",
     "localized": {
       "name": "Sturmsphäre",
       "school": "Hervorrufung",
@@ -2307,7 +2307,7 @@
       "range": "45 Meter",
       "components": "V, G",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du erschaffst um einen Punkt eine Sphäre aus wirbelnder Luft. Kreaturen darin erleiden Wuchtschaden und das Gebiet ist schwieriges Gelände. Als Bonusaktion kannst du einen Blitz aus der Sphäre auf eine Kreatur schleudern; dafür führst du einen Fernkampf-Zauberangriff aus, der Blitzschaden verursacht."
+      "description": "Du erschaffst um einen Punkt eine Sphäre aus wirbelnder Luft. Kreaturen darin, wenn sie erscheint, oder die ihren Zug darin beenden, müssen einen Stärkerettungswurf ablegen und erleiden bei einem Misserfolg 2W6 Wuchtschaden. Das Gebiet ist schwieriges Gelände. Als Bonusaktion kannst du einen Blitz aus der Sphäre auf eine Kreatur innerhalb von 18 Metern der Sphäre schleudern; dafür führst du einen Fernkampf-Zauberangriff aus, der 4W6 Blitzschaden verursacht."
     },
     "damage": [
       {
@@ -2385,8 +2385,8 @@
     "school": "Transmutation",
     "castingTime": "1 minute",
     "range": "Touch",
-    "components": "V, S",
-    "material": "",
+    "components": "V, S, M",
+    "material": "a tiny piece of cloth",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -2403,7 +2403,7 @@
       ],
       "castingTime": "1 Minute",
       "range": "Berührung",
-      "components": "V, G",
+      "components": "V, G, M (ein winziges Stück Stoff)",
       "duration": "8 Stunden",
       "description": "Du berührst einen winzigen nichtmagischen Gegenstand und belebst ihn als kleinen Diener. Er befolgt deine verbalen Befehle und kann einfache Aufgaben erledigen, aber nicht angreifen. Bei 0 Trefferpunkten oder wenn der Zauber endet, wird er wieder zu einem Gegenstand.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du zwei zusätzliche Gegenstände beleben."
@@ -2433,7 +2433,7 @@
     "classes": [
       "wizard"
     ],
-    "description": "You create a wall of swirling sand at a point within range. The wall is difficult terrain, heavily obscures creatures behind it, and hampers ranged attacks passing through it.",
+    "description": "You create a wall of swirling sand at a point within range. The wall heavily obscures creatures behind it and is difficult terrain; moving through it costs extra movement.",
     "localized": {
       "name": "Sandwall",
       "school": "Hervorrufung",
@@ -2444,7 +2444,7 @@
       "range": "27 Meter",
       "components": "V, G, M (eine Handvoll Sand)",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Du erschaffst an einem Punkt in Reichweite eine Wand aus wirbelndem Sand. Die Wand ist schwieriges Gelände, verschleiert Kreaturen dahinter stark und erschwert Fernkampfangriffe, die sie durchqueren."
+      "description": "Du erschaffst an einem Punkt in Reichweite eine Wand aus wirbelndem Sand. Die Wand verschleiert Kreaturen dahinter stark und ist schwieriges Gelände; wer sich durch sie bewegt, benötigt dafür zusätzliche Bewegung."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
