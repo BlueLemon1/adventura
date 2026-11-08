@@ -2128,5 +2128,464 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 166,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-erupting-earth",
+    "name": "Erupting Earth",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a piece of obsidian",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Choose a point on the ground within range. The earth erupts in a 20-foot cube, forcing creatures there to make a Dexterity saving throw or take 3d12 bludgeoning damage, half on a success. The area becomes difficult terrain until cleared.",
+    "higherLevel": "The damage increases by 1d12 for each spell slot level above 3.",
+    "localized": {
+      "name": "Erdeneruption",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (ein Stück Obsidian)",
+      "duration": "Unmittelbar",
+      "description": "Wähle einen Punkt auf dem Boden in Reichweite. Die Erde bricht in einem Würfel mit 6 Metern Kantenlänge hervor. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden 3W12 Wuchtschaden; bei Erfolg erleiden sie halben Schaden. Das Gebiet wird zu schwierigem Gelände, bis es geräumt wird.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W12."
+    },
+    "damage": [
+      {
+        "dice": "3d12",
+        "average": 19.5,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-flame-arrows",
+    "name": "Flame Arrows",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You touch a quiver containing arrows or bolts. Up to 12 pieces of ammunition glow with magic. When a piece hits, it deals an extra 1d6 fire damage and the magic on it ends.",
+    "higherLevel": "The number of pieces of ammunition affected increases by 2 for each spell slot level above 3.",
+    "localized": {
+      "name": "Flammenpfeile",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du berührst einen Köcher mit Pfeilen oder Bolzen. Bis zu 12 Geschosse werden magisch aufgeladen. Trifft ein solches Geschoss, verursacht es zusätzlich 1W6 Feuerschaden und verliert danach seine Magie.",
+      "higherLevel": "Die Anzahl der betroffenen Geschosse steigt für jeden Zauberplatzgrad über dem 3. um 2."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 156,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-sickening-radiance",
+    "name": "Sickening Radiance",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A sphere of sickly green light fills the area. A creature that enters it for the first time on a turn or starts its turn there must make a Constitution saving throw, taking 4d10 radiant damage on a failure and gaining one level of exhaustion. The light also prevents affected creatures from benefiting from invisibility.",
+    "localized": {
+      "name": "Krankmachendes Strahlen",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Eine Sphäre aus kränklichem grünem Licht erfüllt den Bereich. Kreaturen, die ihn während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W10 Strahlenschaden und erhalten eine Erschöpfungsstufe. Das Licht verhindert außerdem, dass betroffene Kreaturen von Unsichtbarkeit profitieren."
+    },
+    "damage": [
+      {
+        "dice": "4d10",
+        "average": 22,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-storm-sphere",
+    "name": "Storm Sphere",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a sphere of whirling air around a point. Creatures in it take bludgeoning damage, and the area is difficult terrain. As a bonus action, you can send a lightning bolt from the sphere toward a creature, making a ranged spell attack that deals lightning damage.",
+    "localized": {
+      "name": "Sturmsphäre",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "45 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst um einen Punkt eine Sphäre aus wirbelnder Luft. Kreaturen darin erleiden Wuchtschaden und das Gebiet ist schwieriges Gelände. Als Bonusaktion kannst du einen Blitz aus der Sphäre auf eine Kreatur schleudern; dafür führst du einen Fernkampf-Zauberangriff aus, der Blitzschaden verursacht."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "bludgeoning"
+      },
+      {
+        "dice": "4d6",
+        "average": 14,
+        "type": "lightning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-tidal-wave",
+    "name": "Tidal Wave",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a drop of water",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a wave of water that crashes down in a 30-foot-long, 10-foot-wide, 10-foot-high area. Creatures there make a Dexterity saving throw, taking 4d8 bludgeoning damage and falling prone on a failure, or taking half damage without falling prone on a success. The wave also extinguishes exposed flames.",
+    "localized": {
+      "name": "Flutwelle",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (ein Wassertropfen)",
+      "duration": "Unmittelbar",
+      "description": "Du erschaffst eine Wasserwelle, die in einem 9 Meter langen, 3 Meter breiten und 3 Meter hohen Bereich niedergeht. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W8 Wuchtschaden und werden zu Boden geworfen; bei Erfolg erleiden sie halben Schaden und bleiben stehen. Die Welle löscht außerdem ungeschützte Flammen."
+    },
+    "damage": [
+      {
+        "dice": "4d8",
+        "average": 18,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 167,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-tiny-servant",
+    "name": "Tiny Servant",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You touch a Tiny nonmagical object and animate it into a tiny servant. It follows your verbal commands and can perform simple tasks, but it cannot attack. It becomes an object again when reduced to 0 hit points or when the spell ends.",
+    "higherLevel": "You can animate two additional objects for each spell slot level above 3.",
+    "localized": {
+      "name": "Kleiner Diener",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "8 Stunden",
+      "description": "Du berührst einen winzigen nichtmagischen Gegenstand und belebst ihn als kleinen Diener. Er befolgt deine verbalen Befehle und kann einfache Aufgaben erledigen, aber nicht angreifen. Bei 0 Trefferpunkten oder wenn der Zauber endet, wird er wieder zu einem Gegenstand.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du zwei zusätzliche Gegenstände beleben."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 168,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-wall-of-sand",
+    "name": "Wall of Sand",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a handful of sand",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You create a wall of swirling sand at a point within range. The wall is difficult terrain, heavily obscures creatures behind it, and hampers ranged attacks passing through it.",
+    "localized": {
+      "name": "Sandwall",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M (eine Handvoll Sand)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du erschaffst an einem Punkt in Reichweite eine Wand aus wirbelndem Sand. Die Wand ist schwieriges Gelände, verschleiert Kreaturen dahinter stark und erschwert Fernkampfangriffe, die sie durchqueren."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-wall-of-water",
+    "name": "Wall of Water",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a drop of water",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a wall of water at a point within range. It is difficult terrain, imposes disadvantage on ranged weapon attacks passing through it, and reduces fire damage that passes through it.",
+    "localized": {
+      "name": "Wasserwand",
+      "school": "Hervorrufung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Wassertropfen)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du erschaffst an einem Punkt in Reichweite eine Wasserwand. Sie ist schwieriges Gelände, verursacht Nachteil auf Fernkampfwaffenangriffe, die sie durchqueren, und verringert Feuerschaden, der durch sie hindurchgeht."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-watery-sphere",
+    "name": "Watery Sphere",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a droplet of water",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a sphere of water that can engulf creatures. A creature caught in it must make a Strength saving throw or become restrained. You can move the sphere as a bonus action, carrying restrained creatures with it.",
+    "localized": {
+      "name": "Wassersphäre",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M (ein Wassertropfen)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst eine Wassersphäre, die Kreaturen einschließen kann. Eine Kreatur, die von ihr erfasst wird, muss einen Stärkerettungswurf ablegen oder wird festgesetzt. Als Bonusaktion kannst du die Sphäre bewegen und festgesetzte Kreaturen mitnehmen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-vitriolic-sphere",
+    "name": "Vitriolic Sphere",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M",
+    "material": "a drop of giant slug bile",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You hurl an acid-filled orb that bursts in a 20-foot-radius sphere. Creatures in the area make a Dexterity saving throw, taking 10d4 acid damage on a failure or half on a success. Failed targets also take 5d4 acid damage at the end of their next turn.",
+    "higherLevel": "For each spell slot level above 4, the initial damage increases by 2d4 and the later damage increases by 1d4.",
+    "localized": {
+      "name": "Vitriolsphäre",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "45 Meter",
+      "components": "V, G, M (ein Tropfen Riesenschneckengalle)",
+      "duration": "Unmittelbar",
+      "description": "Du schleuderst eine mit Säure gefüllte Kugel, die in einer Sphäre mit 6 Metern Radius zerplatzt. Kreaturen im Bereich müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 10W4 Säureschaden, bei Erfolg die Hälfte. Betroffene Kreaturen mit misslungenem Rettungswurf erleiden außerdem am Ende ihres nächsten Zuges 5W4 Säureschaden.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 4. steigt der anfängliche Schaden um 2W4 und der spätere Schaden um 1W4."
+    },
+    "damage": [
+      {
+        "dice": "10d4 + 5d4",
+        "average": 37.5,
+        "type": "acid"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
   }
 ]
