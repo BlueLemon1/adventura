@@ -190,6 +190,27 @@ for (const entry of compatibilityEntries) {
     errors.push(`2024/${entry.spellId}: compatibility entry has no source spell`)
   }
 }
+const phb2024SpellNames = new Set(
+  spellCompatibilityManifest.phb2024SpellNames.map(normalizeContentName),
+)
+if (!spellCompatibilityManifest.sourceUrl?.includes('dndbeyond.com/posts/1810-')) {
+  errors.push('2024 spell compatibility manifest must cite the official PHB 2024 update source')
+}
+for (const spell of additionalSpellRecords) {
+  const entry = compatibilityBySpellId.get(spell.id)
+  const appearsInPhb2024 = phb2024SpellNames.has(normalizeContentName(spell.englishName ?? spell.name))
+  if (appearsInPhb2024 && entry?.status !== 'replaced') {
+    errors.push(`2024/${spell.id}: PHB 2024 spell must not be classified as Legacy or shared`)
+  }
+  if (entry?.replacementSource === 'phb-2024') {
+    if (!appearsInPhb2024 || entry.replacementCategory !== 'new') {
+      errors.push(`2024/${spell.id}: invalid PHB 2024 replacement metadata`)
+    }
+  }
+  if (appearsInPhb2024 && entry?.replacementSource !== 'phb-2024') {
+    errors.push(`2024/${spell.id}: missing official PHB 2024 replacement source`)
+  }
+}
 const options = {
   '2014': extractSubclassOptions(classSource, '2014', '2024'),
   '2024': extractSubclassOptions(classSource, '2024'),
