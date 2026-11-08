@@ -51,6 +51,7 @@ Included entries:
 - Flame Arrows (p. 156)
 - Frostbite (p. 156)
 - Gust (p. 157)
+- Guardian of Nature (p. 157)
 - Healing Spirit (p. 157)
 - Holy Weapon (p. 157)
 - Infestation (p. 158)
