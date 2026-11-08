@@ -251,7 +251,7 @@ export function getDefaultSpellcastingAbility(
 }
 
 export function getSpellcastingStats(
-  character: Pick<Character, 'classId' | 'level' | 'abilities' | 'spellcastingAbility'>,
+  character: Pick<Character, 'classId' | 'subclassId' | 'level' | 'abilities' | 'spellcastingAbility'>,
 ):
   | {
       ability: Ability
