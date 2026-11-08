@@ -5275,12 +5275,24 @@
     ],
     "contentSourceId": "scc-2021",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
     "sourceBook": "Strixhaven: A Curriculum of Chaos",
     "sourceAbbreviation": "SCC",
     "sourcePage": 37,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
   },
   {
     "id": "scc-2021-silvery-barbs",
@@ -5359,12 +5371,22 @@
     "damage": [],
     "contentSourceId": "scc-2021",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
     "sourceBook": "Strixhaven: A Curriculum of Chaos",
     "sourceAbbreviation": "SCC",
     "sourcePage": 38,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesetClasses": {
+      "2014": [
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
   },
   {
     "id": "scc-2021-wither-and-bloom",
@@ -5461,12 +5483,24 @@
     ],
     "contentSourceId": "ftd-2021",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
     "sourceBook": "Fizban's Treasury of Dragons",
     "sourceAbbreviation": "FTD",
     "sourcePage": 19,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
   },
   {
     "id": "ftd-2021-draconic-transformation",
@@ -6787,12 +6821,25 @@
     "damage": [],
     "contentSourceId": "aag-2022",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
     "sourceBook": "Astral Adventurer's Guide",
     "sourceAbbreviation": "AAG",
     "sourcePage": 22,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "druid",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
   },
   {
     "id": "aag-2022-create-spelljamming-helm",
@@ -6827,11 +6874,21 @@
     "damage": [],
     "contentSourceId": "aag-2022",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
     "sourceBook": "Astral Adventurer's Guide",
     "sourceAbbreviation": "AAG",
     "sourcePage": 22,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
   }
 ]
