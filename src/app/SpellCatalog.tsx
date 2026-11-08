@@ -355,7 +355,13 @@ export function SpellCatalog({
           spell.sourceBook,
           spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
           spell.previousSource ? `ursprünglich ${spell.previousSource}` : undefined,
-          spell.subclassRestriction ? 'Dunamancy' : undefined,
+          spell.subclassRestriction
+            ? `Dunamancy (${spell.subclassRestriction === 'chronurgy'
+                ? language === 'de' ? 'Chronurgie-Magie' : 'Chronurgy Magic'
+                : spell.subclassRestriction === 'graviturgy'
+                  ? language === 'de' ? 'Graviturgie-Magie' : 'Graviturgy Magic'
+                  : language === 'de' ? 'Chronurgie- und Graviturgie-Magie' : 'Chronurgy Magic / Graviturgy Magic'})`
+            : undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
         ]
