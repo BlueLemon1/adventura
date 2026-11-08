@@ -73,7 +73,8 @@ export function SpellbookPage({
     }
   })
   const spellcastingStats = getSpellcastingStats(character)
-  const selectedSpellcastingAbility = character.spellcastingAbility ?? getDefaultSpellcastingAbility(character) ?? 'int'
+  const selectedSpellcastingAbility =
+    character.spellcastingAbility ?? getDefaultSpellcastingAbility(character) ?? 'int'
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
@@ -234,32 +235,61 @@ export function SpellbookPage({
       {view === 'character' ? (
         <>
           <section className="panel spellcasting-stats">
-            <PanelHeader title={t('Zauberwerte')} description={t('Zauberangriffe und Rettungswurf-SG')} />
+            <PanelHeader
+              title={t('Zauberwerte')}
+              description={t('Zauberangriffe und Rettungswurf-SG')}
+            />
             <div className="form-grid">
               <label className="field-label">
                 {t('Zauberattribut')}
                 <Select
                   value={selectedSpellcastingAbility}
-                  onValueChange={(value) => onUpdateCharacter({ spellcastingAbility: value as Ability })}
+                  onValueChange={(value) =>
+                    onUpdateCharacter({ spellcastingAbility: value as Ability })
+                  }
                 >
-                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
                   <SelectContent>
                     {ABILITIES.map((ability) => (
-                      <SelectItem key={ability} value={ability}>{t(({str:'Stärke',dex:'Geschicklichkeit',con:'Konstitution',int:'Intelligenz',wis:'Weisheit',cha:'Charisma'} as Record<Ability,string>)[ability])}</SelectItem>
+                      <SelectItem key={ability} value={ability}>
+                        {t(
+                          (
+                            {
+                              str: 'Stärke',
+                              dex: 'Geschicklichkeit',
+                              con: 'Konstitution',
+                              int: 'Intelligenz',
+                              wis: 'Weisheit',
+                              cha: 'Charisma',
+                            } as Record<Ability, string>
+                          )[ability],
+                        )}
+                      </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
               </label>
               <div className="combat-card">
                 <span>{t('Zauberangriff')}</span>
-                <strong className="combat-number">{spellcastingStats ? (spellcastingStats.attackBonus >= 0 ? '+' : '') + spellcastingStats.attackBonus : '—'}</strong>
+                <strong className="combat-number">
+                  {spellcastingStats
+                    ? (spellcastingStats.attackBonus >= 0 ? '+' : '') +
+                      spellcastingStats.attackBonus
+                    : '—'}
+                </strong>
               </div>
               <div className="combat-card">
                 <span>{t('Rettungswurf-SG')}</span>
                 <strong className="combat-number">{spellcastingStats?.saveDc ?? '—'}</strong>
               </div>
             </div>
-            <small>{t('Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.')}</small>
+            <small>
+              {t(
+                'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.',
+              )}
+            </small>
           </section>
           <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
           <SpellbookList

@@ -476,7 +476,8 @@ export function SpellCatalog({
                 <span className="catalog-spell-name">
                   <strong>{spell.name}</strong>
                   <small>
-                    {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range} · {getContentSourceAbbreviation(spell.contentSourceId)}
+                    {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range} ·{' '}
+                    {getContentSourceAbbreviation(spell.contentSourceId)}
                   </small>
                 </span>
                 <span className="catalog-spell-action">
@@ -604,7 +605,8 @@ export function SpellCatalog({
       </div>
 
       <p className="catalog-attribution">
-        <BookOpen size={13} /> SRD-Zauber (CC BY 4.0) und Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
+        <BookOpen size={13} /> SRD-Zauber (CC BY 4.0) und Erweiterungszauber mit Quellenangabe und
+        eigenen Zusammenfassungen.{' '}
         <a
           href="https://github.com/BlueLemon1/adventura/blob/main/src/data/ATTRIBUTION.md"
           target="_blank"

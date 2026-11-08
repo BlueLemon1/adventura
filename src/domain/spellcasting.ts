@@ -245,13 +245,24 @@ export function getDefaultSpellcastingAbility(
   character: Pick<Character, 'classId' | 'subclassId'>,
 ): Ability | undefined {
   const classId = normalizeKey(character.classId)
-  if (['fighter', 'kaempfer'].includes(classId) && normalizeKey(character.subclassId).includes('eldritchknight')) return 'int'
-  if (['rogue', 'schurke'].includes(classId) && normalizeKey(character.subclassId).includes('arcanetrickster')) return 'int'
+  if (
+    ['fighter', 'kaempfer'].includes(classId) &&
+    normalizeKey(character.subclassId).includes('eldritchknight')
+  )
+    return 'int'
+  if (
+    ['rogue', 'schurke'].includes(classId) &&
+    normalizeKey(character.subclassId).includes('arcanetrickster')
+  )
+    return 'int'
   return DEFAULT_SPELLCASTING_ABILITIES[classId]
 }
 
 export function getSpellcastingStats(
-  character: Pick<Character, 'classId' | 'subclassId' | 'level' | 'abilities' | 'spellcastingAbility'>,
+  character: Pick<
+    Character,
+    'classId' | 'subclassId' | 'level' | 'abilities' | 'spellcastingAbility'
+  >,
 ):
   | {
       ability: Ability

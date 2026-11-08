@@ -106,12 +106,13 @@ const en: Record<string, string> = {
   'Meine Zauber': 'My spells',
   'SRD & hinzufügen': 'SRD & add spells',
   'Zauber finden': 'Find spells',
-  'Zauberwerte': 'Spellcasting stats',
+  Zauberwerte: 'Spellcasting stats',
   'Zauberangriffe und Rettungswurf-SG': 'Spell attack bonus and save DC',
   Zauberattribut: 'Spellcasting ability',
   Zauberangriff: 'Spell attack',
   'Rettungswurf-SG': 'Spell save DC',
-  'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.': 'Your class ability is used by default. You can change it here if you have multiple sources of spellcasting.',
+  'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.':
+    'Your class ability is used by default. You can change it here if you have multiple sources of spellcasting.',
   'Tippe auf einen Edelstein, um einen Platz zu verbrauchen oder wiederherzustellen.':
     'Tap a gem to spend or restore a spell slot.',
   Paktmagie: 'Pact Magic',
