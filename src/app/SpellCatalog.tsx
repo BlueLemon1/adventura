@@ -57,6 +57,7 @@ interface CatalogSpell {
   sourcePage?: number
   previousSource?: string
   subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
+  rulesetClasses?: Partial<Record<'2014' | '2024', string[]>>
   availabilityNote?: string
   descriptionKind?: 'official' | 'original-summary'
 }
@@ -66,15 +67,18 @@ type UsageReset = NonNullable<KnownSpell['usageReset']>
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
 
+function getSupplementalSpellsForRuleset(ruleset: Character['ruleset']) {
+  return supplementalSpells
+    .filter((spell) => spell.rulesets?.includes(ruleset))
+    .map((spell) => ({
+      ...spell,
+      classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
+    }))
+}
+
 const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
-  '2014': [
-    ...(spells2014 as CatalogSpell[]),
-    ...supplementalSpells.filter((spell) => spell.rulesets?.includes('2014')),
-  ],
-  '2024': [
-    ...(spells2024 as CatalogSpell[]),
-    ...supplementalSpells.filter((spell) => spell.rulesets?.includes('2024')),
-  ],
+  '2014': [...(spells2014 as CatalogSpell[]), ...getSupplementalSpellsForRuleset('2014')],
+  '2024': [...(spells2024 as CatalogSpell[]), ...getSupplementalSpellsForRuleset('2024')],
 }
 
 const DUNAMANCY_LABELS: Record<
