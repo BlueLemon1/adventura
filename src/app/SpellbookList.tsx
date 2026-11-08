@@ -218,10 +218,7 @@ function SpellCard({
         <details className="spellbook-details" open={isFeature}>
           <summary>{translateText('Zauberbeschreibung')}</summary>
           {spell.description && <p>{spell.description}</p>}
-          <SpellHigherLevel
-            text={spell.higherLevel}
-            label={translateText('Auf höheren Graden:')}
-          />
+          <SpellHigherLevel text={spell.higherLevel} label={translateText('Auf höheren Graden:')} />
         </details>
       )}
 
