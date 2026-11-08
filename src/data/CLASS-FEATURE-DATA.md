@@ -9,7 +9,7 @@ Only material licensed for redistribution should be stored verbatim. For non-SRD
 ## Current supplemental coverage
 
 - 2014 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, and Battle Smith.
-- 2014 Player's Handbook: summarized subclass feature progressions for all non-SRD PHB subclasses, including the six additional Cleric domains, the remaining Wizard schools, and the other PHB archetypes.
+- 2014 subclass catalog: feature records are now present for all 117 selectable subclass options across the currently represented official sources, including PHB, XGE, TCE, SCAG, DMG, EGW, FTD, VRGtR, DSotDQ, and Bigby. Records are concise independent summaries, not full rulebook text.
 - 2024 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, Battle Smith, and Cartographer.
 - 2024 Player's Handbook: summarized feature progressions for all 48 PHB subclasses across the twelve classes; SRD subclasses remain in the SRD dataset and the remaining subclasses are in the 2024 supplemental dataset.
 - These summaries are independently written and are not transcriptions of the sourcebooks.
