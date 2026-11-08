@@ -1212,5 +1212,459 @@
     "sourceAbbreviation": "TCE",
     "sourcePage": 106,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-catnap",
+    "name": "Catnap",
+    "level": 3,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S, M",
+    "material": "a pinch of sand",
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You choose up to three willing creatures you can see within range. They fall unconscious for the spell's duration, then gain the benefit of a short rest. The spell has no effect on a creature that cannot be charmed.",
+    "localized": {
+      "name": "Katzenschlaf",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "G, M (eine Prise Sand)",
+      "duration": "10 Minuten",
+      "description": "Du wählst bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst. Sie werden für die Wirkungsdauer bewusstlos und erhalten anschließend den Nutzen einer kurzen Rast. Auf Kreaturen, die nicht bezaubert werden können, hat der Zauber keine Wirkung."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 151,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-charm-monster",
+    "name": "Charm Monster",
+    "level": 4,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You attempt to charm one creature you can see within range. The target makes a Wisdom saving throw, with advantage if you or your companions are fighting it. On a failure, it regards you as a friendly acquaintance for the duration; the effect ends early if you or your companions harm it.",
+    "localized": {
+      "name": "Monster bezaubern",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "druid",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G",
+      "duration": "1 Stunde",
+      "description": "Du versuchst, eine Kreatur in Reichweite zu bezaubern, die du sehen kannst. Das Ziel legt einen Weisheitsrettungswurf ab und hat Vorteil, wenn du oder deine Gefährten gerade gegen es kämpft. Bei einem Misserfolg betrachtet es dich für die Wirkungsdauer als freundliche Bekanntschaft. Der Effekt endet vorzeitig, wenn du oder deine Gefährten ihm Schaden zufügen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 151,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-dawn",
+    "name": "Dawn",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a sunburst pendant worth at least 100 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "A cylinder of sunlight appears at a point within range. Creatures in it take radiant damage when it appears and whenever they end a turn there, with a Constitution saving throw to halve the damage. You can move the cylinder as a bonus action.",
+    "localized": {
+      "name": "Morgendämmerung",
+      "school": "Hervorrufung",
+      "classes": [
+        "cleric",
+        "paladin",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Sonnenanhänger im Wert von mindestens 100 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "An einem Punkt in Reichweite erscheint ein Zylinder aus Sonnenlicht. Kreaturen darin erleiden beim Erscheinen und immer dann Strahlenschaden, wenn sie ihren Zug darin beenden. Ein Konstitutionsrettungswurf halbiert den Schaden. Als Bonusaktion kannst du den Zylinder verschieben."
+    },
+    "damage": [
+      {
+        "dice": "4d10",
+        "average": 22,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 153,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-far-step",
+    "name": "Far Step",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You teleport up to 60 feet to an unoccupied space you can see. Until the spell ends, you can repeat this teleportation as a bonus action on each of your turns.",
+    "localized": {
+      "name": "Fernschritt",
+      "school": "Beschwörung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du teleportierst dich bis zu 18 Meter weit an einen freien Ort, den du sehen kannst. Bis zum Ende des Zaubers kannst du diese Teleportation in jedem deiner Züge als Bonusaktion wiederholen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-healing-spirit",
+    "name": "Healing Spirit",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You call forth a spirit in an unoccupied space. When a creature you can see enters the spirit's space for the first time on a turn or starts its turn there, you can have the spirit restore hit points to it. The spirit can heal a limited number of times before vanishing.",
+    "higherLevel": "The spirit can restore an additional 1d6 hit points for each spell slot level above 2.",
+    "localized": {
+      "name": "Heilender Geist",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du rufst einen Geist an einem freien Ort herbei. Wenn eine Kreatur, die du sehen kannst, den Bereich des Geistes erstmals in einem Zug betritt oder ihren Zug dort beginnt, kannst du den Geist Trefferpunkte bei ihr wiederherstellen lassen. Der Geist kann dies nur begrenzt oft tun, bevor er verschwindet.",
+      "higherLevel": "Der Geist kann für jeden Zauberplatzgrad über dem 2. zusätzlich 1W6 Trefferpunkte wiederherstellen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 157,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-mind-spike",
+    "name": "Mind Spike",
+    "level": 2,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You pierce a creature's mind with psychic energy. It makes a Wisdom saving throw, taking psychic damage on a failure or half as much on a success. On a failed save, you also know the creature's location while it remains on the same plane, and you cannot lose track of it through invisibility.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 2.",
+    "localized": {
+      "name": "Gedankenspitze",
+      "school": "Erkenntnis",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du durchbohrst den Geist einer Kreatur mit psychischer Energie. Sie legt einen Weisheitsrettungswurf ab und erleidet bei einem Misserfolg psychischen Schaden oder bei Erfolg halb so viel. Bei einem misslungenen Rettungswurf kennst du außerdem ihren Aufenthaltsort, solange sie sich auf derselben Ebene befindet, und kannst sie auch durch Unsichtbarkeit hindurch verfolgen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "3d8",
+        "average": 13.5,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 162,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-shadow-of-moil",
+    "name": "Shadow of Moil",
+    "level": 4,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "an undead eyeball encased in a gem worth at least 150 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock"
+    ],
+    "description": "Flame-like shadows envelop you, heavily obscuring you from others. You gain protection from bright light, and creatures that hit you with an attack within 10 feet take necrotic damage. You also gain resistance to radiant damage.",
+    "localized": {
+      "name": "Schatten des Moil",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G, M (ein in einem Edelstein eingeschlossenes Auge eines Untoten im Wert von mindestens 150 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Flammenartige Schatten umhüllen dich und verschleiern dich für andere stark. Du bist vor hellem Licht geschützt, und Kreaturen, die dich innerhalb von 3 Metern mit einem Angriff treffen, erleiden nekrotischen Schaden. Außerdem erhältst du Resistenz gegen Strahlenschaden."
+    },
+    "damage": [
+      {
+        "dice": "2d8",
+        "average": 9,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-steel-wind-strike",
+    "name": "Steel Wind Strike",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S, M",
+    "material": "a melee weapon worth at least 1 sp",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "ranger",
+      "wizard"
+    ],
+    "description": "You vanish and strike up to five creatures you can see within range with melee spell attacks. Each hit deals force damage. After the attacks, you teleport to an unoccupied space you can see near one of the targets.",
+    "localized": {
+      "name": "Stahlwindschlag",
+      "school": "Beschwörung",
+      "classes": [
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
+      "duration": "Unmittelbar",
+      "description": "Du verschwindest und greifst bis zu fünf Kreaturen an, die du innerhalb der Reichweite sehen kannst. Für jedes Ziel führst du einen Nahkampf-Zauberangriff aus, der bei einem Treffer Kraftschaden verursacht. Anschließend teleportierst du dich an einen freien Ort, den du in der Nähe eines der Ziele sehen kannst."
+    },
+    "damage": [
+      {
+        "dice": "6d10",
+        "average": 33,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-thunder-step",
+    "name": "Thunder Step",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You teleport to an unoccupied space you can see within range. Immediately after you disappear, thunder erupts from your former space, damaging nearby creatures and objects; creatures can make a Constitution saving throw to take half damage. You can bring one willing creature within 5 feet of you.",
+    "higherLevel": "The thunder damage increases by 1d10 for each spell slot level above 3.",
+    "localized": {
+      "name": "Donnerschritt",
+      "school": "Beschwörung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V",
+      "duration": "Unmittelbar",
+      "description": "Du teleportierst dich an einen freien Ort, den du innerhalb der Reichweite sehen kannst. Unmittelbar nach deinem Verschwinden bricht an deinem vorherigen Standort ein Donnerschlag aus, der Kreaturen und Gegenstände in der Nähe beschädigt. Kreaturen können einen Konstitutionsrettungswurf ablegen, um nur halben Schaden zu erleiden. Du kannst eine willige Kreatur mitnehmen, die höchstens 1,5 Meter von dir entfernt ist.",
+      "higherLevel": "Der Schallschaden steigt für jeden Zauberplatzgrad über dem 3. um 1W10."
+    },
+    "damage": [
+      {
+        "dice": "3d10",
+        "average": 16.5,
+        "type": "thunder"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-zephyr-strike",
+    "name": "Zephyr Strike",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "ranger"
+    ],
+    "description": "You move with the speed of the wind, and your movement doesn't provoke opportunity attacks. Once before the spell ends, you can give yourself advantage on one weapon attack; a hit deals extra force damage and briefly increases your speed.",
+    "localized": {
+      "name": "Zephyrschlag",
+      "school": "Verwandlung",
+      "classes": [
+        "ranger"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du bewegst dich mit der Geschwindigkeit des Windes und provozierst durch deine Bewegung keine Gelegenheitsangriffe. Einmal vor Ende des Zaubers kannst du dir Vorteil auf einen Waffenangriff geben; bei einem Treffer verursacht dieser zusätzlichen Kraftschaden und deine Bewegungsrate erhöht sich kurzzeitig."
+    },
+    "damage": [
+      {
+        "dice": "1d8",
+        "average": 4.5,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 171,
+    "descriptionKind": "original-summary"
   }
 ]
