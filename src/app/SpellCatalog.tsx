@@ -16,71 +16,11 @@ import {
 import type { Language } from './i18n'
 import { translate } from './i18n'
 import { getHigherLevelText, SpellHigherLevel } from './SpellHigherLevel'
-import spells2014 from '../data/spells-2014.json'
-import spells2024 from '../data/spells-2024.json'
-import additionalSpells from '../data/spells-additional.json'
-
-interface CatalogSpell {
-  id: string
-  name: string
-  englishName?: string
-  level: number
-  school: string
-  castingTime: string
-  range: string
-  components: string
-  material: string
-  duration: string
-  concentration: boolean
-  ritual: boolean
-  classes: string[]
-  description: string
-  higherLevel?: string
-  higherLevelLabel?: string
-  localized?: {
-    name?: string
-    school?: string
-    classes?: string[]
-    castingTime?: string
-    range?: string
-    components?: string
-    duration?: string
-    description?: string
-    higherLevel?: string
-    higherLevelLabel?: string
-    availabilityNote?: string
-  }
-  damage?: Array<{ dice: string; average: number; type?: string }>
-  rulesets?: Array<'2014' | '2024'>
-  sourceBook?: string
-  sourceAbbreviation?: string
-  sourcePage?: number
-  previousSource?: string
-  subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
-  rulesetClasses?: Partial<Record<'2014' | '2024', string[]>>
-  availabilityNote?: string
-  descriptionKind?: 'official' | 'original-summary'
-}
+import { getSpellCatalog, type CatalogSpell } from '../domain/spellCatalog'
+import { getContentSourceAbbreviation } from '../domain/contentSources'
 
 type SpellSource = NonNullable<KnownSpell['source']>
 type UsageReset = NonNullable<KnownSpell['usageReset']>
-
-const supplementalSpells = additionalSpells as CatalogSpell[]
-
-// Keep class access aligned with the selected ruleset when supplement lists differ.
-function getSupplementalSpellsForRuleset(ruleset: Character['ruleset']) {
-  return supplementalSpells
-    .filter((spell) => spell.rulesets?.includes(ruleset))
-    .map((spell) => ({
-      ...spell,
-      classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
-    }))
-}
-
-const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
-  '2014': [...(spells2014 as CatalogSpell[]), ...getSupplementalSpellsForRuleset('2014')],
-  '2024': [...(spells2024 as CatalogSpell[]), ...getSupplementalSpellsForRuleset('2024')],
-}
 
 const DUNAMANCY_LABELS: Record<
   Language,
@@ -312,7 +252,7 @@ export function SpellCatalog({
   const [usageLimit, setUsageLimit] = useState(0)
   const [usageReset, setUsageReset] = useState<UsageReset>('longRest')
 
-  const catalog = CATALOGS[character.ruleset].map((spell) => {
+  const catalog = getSpellCatalog(character.ruleset).map((spell) => {
     if (language !== 'de') return spell
     const localized = spell.localized
     return {
@@ -379,10 +319,10 @@ export function SpellCatalog({
       higherLevel: spell.higherLevel,
       higherLevelLabel: spell.higherLevelLabel,
       damage: spell.damage,
+      contentSourceId: spell.contentSourceId,
       source,
       sourceName:
         [
-          spell.sourceBook,
           spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
           spell.previousSource ? `ursprünglich ${spell.previousSource}` : undefined,
           spell.subclassRestriction
@@ -430,7 +370,7 @@ export function SpellCatalog({
     <section className="panel spell-catalog">
       <PanelHeader
         title={t('Zauberkatalog')}
-        description={t('SRD- und Erweiterungszauber passend zu deinem Regelwerk.')}
+        description={t('Zauber aus SRD und Erweiterungsbüchern passend zu deinem Regelwerk.')}
         meta={`${catalog.length} ZAUBER`}
       />
 
@@ -536,7 +476,7 @@ export function SpellCatalog({
                 <span className="catalog-spell-name">
                   <strong>{spell.name}</strong>
                   <small>
-                    {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range}
+                    {getSchoolLabel(spell.school, language)} · {spell.castingTime} · {spell.range} · {getContentSourceAbbreviation(spell.contentSourceId)}
                   </small>
                 </span>
                 <span className="catalog-spell-action">
@@ -602,10 +542,9 @@ export function SpellCatalog({
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
                 </small>
-                {spell.sourceBook && (
+                {spell.contentSourceId && (
                   <small className="catalog-spell-source">
-                    {t('Quelle')}: {spell.sourceBook}
-                    {spell.sourceAbbreviation ? ` (${spell.sourceAbbreviation})` : ''}
+                    {t('Quelle')}: {getContentSourceAbbreviation(spell.contentSourceId)}
                     {spell.sourcePage ? ` · S. ${spell.sourcePage}` : ''}
                     {spell.previousSource ? ` · ursprünglich: ${spell.previousSource}` : ''}
                     {spell.descriptionKind === 'original-summary'
@@ -665,8 +604,7 @@ export function SpellCatalog({
       </div>
 
       <p className="catalog-attribution">
-        <BookOpen size={13} /> SRD 5.1 / SRD 5.2 von Wizards of the Coast LLC, CC BY 4.0.
-        Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
+        <BookOpen size={13} /> SRD-Zauber (CC BY 4.0) und Erweiterungszauber mit Quellenangabe und eigenen Zusammenfassungen.{' '}
         <a
           href="https://github.com/BlueLemon1/adventura/blob/main/src/data/ATTRIBUTION.md"
           target="_blank"
