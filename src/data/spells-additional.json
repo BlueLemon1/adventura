@@ -261,16 +261,17 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "artificer",
       "sorcerer",
       "warlock",
       "wizard"
     ],
-    "description": "You make a melee attack with the weapon used to cast the spell against a creature within 5 feet. On a hit, the target suffers the attack's normal effects and is sheathed in booming energy until the start of your next turn. If it willingly moves at least 5 feet before then, it takes 1d8 thunder damage. At higher character levels, the attack deals additional thunder damage on a hit and the movement damage increases.",
-    "higherLevel": "At 5th level, the melee attack deals an extra 1d8 thunder damage on a hit and the movement damage becomes 2d8. Both damage rolls increase by 1d8 at 11th level and again at 17th level.",
+    "description": "You brandish the weapon used in the spell's casting and make a melee attack with it against one creature within 5 feet. On a hit, the target suffers the attack's normal effects and is sheathed in booming energy until the start of your next turn. If it willingly moves at least 5 feet before then, it takes 1d8 thunder damage. The attack and movement damage increase at character levels 5, 11, and 17.",
     "localized": {
       "name": "Dröhnende Klinge",
       "school": "Hervorrufung",
       "classes": [
+        "artificer",
         "sorcerer",
         "warlock",
         "wizard"
@@ -278,8 +279,7 @@
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
-      "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs; zusätzlich wird das Ziel bis zum Beginn deines nächsten Zuges von dröhnender Energie umhüllt. Bewegt es sich vorher freiwillig mindestens 1,5 Meter, erleidet es 1W8 Schallschaden. Mit höheren Charakterstufen verursacht der Angriff zusätzlichen Schallschaden und auch der Bewegungsschaden steigt.",
-      "higherLevel": "Ab Stufe 5 verursacht der Nahkampfangriff bei einem Treffer zusätzlich 1W8 Schallschaden und der Bewegungsschaden steigt auf 2W8. Beide Schadenswürfe steigen auf Stufe 11 und erneut auf Stufe 17 jeweils um 1W8."
+      "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs; zusätzlich wird das Ziel bis zum Beginn deines nächsten Zuges von dröhnender Energie umhüllt. Bewegt es sich vorher freiwillig mindestens 1,5 Meter, erleidet es 1W8 Schallschaden. Der Angriff und der Bewegungsschaden steigen auf Charakterstufe 5, 11 und 17."
     },
     "damage": [
       {
@@ -288,14 +288,16 @@
         "type": "thunder"
       }
     ],
-    "contentSourceId": "scag-2015",
+    "contentSourceId": "tce-2020",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
-    "sourceBook": "Sword Coast Adventurer's Guide",
-    "sourceAbbreviation": "SCAG",
-    "sourcePage": 142,
-    "descriptionKind": "original-summary"
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 106,
+    "descriptionKind": "original-summary",
+    "previousSource": "Sword Coast Adventurer's Guide, p. 142"
   },
   {
     "id": "scag-2014-green-flame-blade",
@@ -310,16 +312,17 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "artificer",
       "sorcerer",
       "warlock",
       "wizard"
     ],
-    "description": "You make a melee attack with the weapon used to cast the spell against a creature within 5 feet. On a hit, the target suffers the attack's normal effects, and green fire can leap to another creature you can see within 5 feet of the target, dealing fire damage equal to your spellcasting ability modifier. The spell's damage increases at higher character levels.",
-    "higherLevel": "At 5th level, the melee attack deals an extra 1d8 fire damage on a hit and the second creature takes 1d8 plus your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and again at 17th level.",
+    "description": "You make a melee attack with the weapon used to cast the spell against one creature within 5 feet. On a hit, the target suffers the attack's normal effects, and green fire can leap to another creature you can see within 5 feet of the target, dealing fire damage equal to your spellcasting ability modifier. The attack and secondary damage increase at character levels 5, 11, and 17.",
     "localized": {
       "name": "Grünflammende Klinge",
       "school": "Hervorrufung",
       "classes": [
+        "artificer",
         "sorcerer",
         "warlock",
         "wizard"
@@ -328,8 +331,7 @@
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "duration": "Unmittelbar",
-      "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs. Du kannst außerdem grüne Flammen auf eine andere Kreatur überspringen lassen, die du innerhalb von 1,5 Metern des ersten Ziels sehen kannst. Diese zweite Kreatur erleidet Feuerschaden in Höhe deines Zauberattributmodifikators. Der Schaden steigt mit deiner Charakterstufe.",
-      "higherLevel": "Ab Stufe 5 verursacht der Nahkampfangriff bei einem Treffer zusätzlich 1W8 Feuerschaden und die zweite Kreatur erleidet 1W8 plus deinen Zauberattributmodifikator. Beide Schadenswürfe steigen auf Stufe 11 und erneut auf Stufe 17 jeweils um 1W8."
+      "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs. Du kannst außerdem grüne Flammen auf eine andere Kreatur überspringen lassen, die du innerhalb von 1,5 Metern des ersten Ziels sehen kannst. Diese zweite Kreatur erleidet Feuerschaden in Höhe deines Zauberattributmodifikators. Der Angriff und der zusätzliche Schaden steigen auf Charakterstufe 5, 11 und 17."
     },
     "damage": [
       {
@@ -338,14 +340,16 @@
         "type": "fire"
       }
     ],
-    "contentSourceId": "scag-2015",
+    "contentSourceId": "tce-2020",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
-    "sourceBook": "Sword Coast Adventurer's Guide",
-    "sourceAbbreviation": "SCAG",
-    "sourcePage": 142,
-    "descriptionKind": "original-summary"
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 107,
+    "descriptionKind": "original-summary",
+    "previousSource": "Sword Coast Adventurer's Guide, p. 143"
   },
   {
     "id": "scag-2014-lightning-lure",
@@ -360,16 +364,17 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "artificer",
       "sorcerer",
       "warlock",
       "wizard"
     ],
-    "description": "You create a lash of lightning that strikes one creature you can see within 15 feet. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you. If it ends this movement within 5 feet of you, it takes 1d8 lightning damage. The damage increases at higher character levels.",
-    "higherLevel": "The damage increases by 1d8 at 5th level (2d8), 11th level (3d8), and 17th level (4d8).",
+    "description": "You create a lash of lightning that strikes one creature you can see within 15 feet. The target makes a Strength saving throw or is pulled up to 10 feet toward you and takes 1d8 lightning damage if it ends within 5 feet of you. The damage increases at character levels 5, 11, and 17.",
     "localized": {
       "name": "Blitzköder",
       "school": "Hervorrufung",
       "classes": [
+        "artificer",
         "sorcerer",
         "warlock",
         "wizard"
@@ -378,8 +383,7 @@
       "range": "Selbst (4,5-Meter-Radius)",
       "components": "V",
       "duration": "Unmittelbar",
-      "description": "Du erschaffst eine Peitsche aus Blitzen, die eine Kreatur trifft, die du innerhalb von 4,5 Metern sehen kannst. Das Ziel muss einen Stärkerettungswurf bestehen oder wird bis zu 3 Meter in gerader Linie auf dich zugezogen. Endet diese Bewegung innerhalb von 1,5 Metern von dir, erleidet es 1W8 Blitzschaden. Der Schaden steigt mit deiner Charakterstufe.",
-      "higherLevel": "Der Schaden steigt auf Stufe 5 auf 2W8, auf Stufe 11 auf 3W8 und auf Stufe 17 auf 4W8."
+      "description": "Du erschaffst eine Peitsche aus Blitzen, die eine Kreatur trifft, die du innerhalb von 4,5 Metern sehen kannst. Das Ziel muss einen Stärkerettungswurf bestehen oder wird bis zu 3 Meter auf dich zugezogen und erleidet Blitzschaden, wenn es dadurch innerhalb von 1,5 Metern von dir endet. Der Schaden steigt auf Charakterstufe 5, 11 und 17."
     },
     "damage": [
       {
@@ -388,14 +392,16 @@
         "type": "lightning"
       }
     ],
-    "contentSourceId": "scag-2015",
+    "contentSourceId": "tce-2020",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
-    "sourceBook": "Sword Coast Adventurer's Guide",
-    "sourceAbbreviation": "SCAG",
-    "sourcePage": 143,
-    "descriptionKind": "original-summary"
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 107,
+    "descriptionKind": "original-summary",
+    "previousSource": "Sword Coast Adventurer's Guide, p. 143"
   },
   {
     "id": "scag-2014-sword-burst",
@@ -410,16 +416,17 @@
     "concentration": false,
     "ritual": false,
     "classes": [
+      "artificer",
       "sorcerer",
       "warlock",
       "wizard"
     ],
-    "description": "You create a momentary circle of spectral blades around yourself. Each other creature within 5 feet must make a Dexterity saving throw or take 1d6 force damage. The damage increases at higher character levels.",
-    "higherLevel": "The damage increases by 1d6 at 5th level (2d6), 11th level (3d6), and 17th level (4d6).",
+    "description": "You create a momentary circle of spectral blades around yourself. Each other creature within 5 feet must make a Dexterity saving throw or take 1d6 force damage. The damage increases at character levels 5, 11, and 17.",
     "localized": {
       "name": "Schwertstoß",
       "school": "Beschwörung",
       "classes": [
+        "artificer",
         "sorcerer",
         "warlock",
         "wizard"
@@ -428,8 +435,7 @@
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "V",
       "duration": "Unmittelbar",
-      "description": "Du erschaffst für einen Augenblick einen Kreis aus geisterhaften Klingen um dich herum. Jede andere Kreatur innerhalb von 1,5 Metern muss einen Geschicklichkeitsrettungswurf bestehen oder erleidet 1W6 Kraftschaden. Der Schaden steigt mit deiner Charakterstufe.",
-      "higherLevel": "Der Schaden steigt auf Stufe 5 auf 2W6, auf Stufe 11 auf 3W6 und auf Stufe 17 auf 4W6."
+      "description": "Du erschaffst für einen Augenblick einen Kreis aus geisterhaften Klingen um dich herum. Jede andere Kreatur innerhalb von 1,5 Metern muss einen Geschicklichkeitsrettungswurf bestehen oder erleidet 1W6 Kraftschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17."
     },
     "damage": [
       {
@@ -438,14 +444,16 @@
         "type": "force"
       }
     ],
-    "contentSourceId": "scag-2015",
+    "contentSourceId": "tce-2020",
     "rulesets": [
-      "2014"
+      "2014",
+      "2024"
     ],
-    "sourceBook": "Sword Coast Adventurer's Guide",
-    "sourceAbbreviation": "SCAG",
-    "sourcePage": 143,
-    "descriptionKind": "original-summary"
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 115,
+    "descriptionKind": "original-summary",
+    "previousSource": "Sword Coast Adventurer's Guide, p. 143"
   },
   {
     "id": "tce-2014-mind-sliver",
