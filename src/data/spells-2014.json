@@ -4049,7 +4049,7 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.",
+    "description": "You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried. This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).",
     "localized": {
       "name": "Feuerpfeil",
       "school": "Hervorrufung",
@@ -4061,8 +4061,7 @@
       "range": "36 m",
       "components": "V, G",
       "duration": "Unmittelbar",
-      "description": "Du schleuderst einen Funkenwirbel auf eine Kreatur oder einen Gegenstand in Reichweite. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W10 Feuerschaden. Der Zauber entzündet bei einem Treffer brennbare Gegenstände, die nicht getragen werden.",
-      "higherLevel": "Der Schaden dieses Zaubers wird jeweils um 1W10 erhöht, wenn du die 5. Stufe (2W10), die 11. Stufe (3W10) und die 17. Stufe (4W10) erreichst."
+      "description": "Du schleuderst einen Funkenwirbel auf eine Kreatur oder einen Gegenstand in Reichweite. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W10 Feuerschaden. Der Zauber entzündet bei einem Treffer brennbare Gegenstände, die nicht getragen werden.\n\nDer Schaden dieses Zaubers wird jeweils um 1W10 erhöht, wenn du die 5. Stufe (2W10), die 11. Stufe (3W10) und die 17. Stufe (4W10) erreichst."
     },
     "damage": [
       {
@@ -4070,8 +4069,7 @@
         "average": 5.5,
         "type": "fire"
       }
-    ],
-    "higherLevel": "This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
+    ]
   },
   {
     "id": "srd-2014-fire-shield",
