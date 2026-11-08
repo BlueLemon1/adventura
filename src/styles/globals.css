@@ -3592,3 +3592,74 @@ textarea {
 .spell-capacity-status.is-over-limit strong {
   color: var(--danger, #d97757);
 }
+
+
+.session-status-panel {
+  margin-top: 16px;
+}
+.session-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(120, 140, 125, 0.045);
+}
+.session-toggle input,
+.death-save-pips input {
+  accent-color: var(--gold);
+}
+.session-toggle span {
+  display: grid;
+  gap: 3px;
+}
+.session-toggle strong,
+.death-save-tracker > div:first-child strong {
+  color: var(--text);
+  font-size: 12px;
+}
+.session-toggle small,
+.death-save-tracker small {
+  color: var(--muted);
+  font-size: 10px;
+}
+.death-save-tracker {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.death-save-tracker > div:first-child {
+  display: grid;
+  gap: 4px;
+}
+.death-save-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+}
+.death-save-pips {
+  display: flex;
+  gap: 12px;
+}
+.death-save-pips label {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(120, 140, 125, 0.06);
+}
+.death-save-result {
+  color: var(--gold);
+  font-size: 12px;
+}
+.death-save-result.is-failed {
+  color: var(--danger, #d97757);
+}
