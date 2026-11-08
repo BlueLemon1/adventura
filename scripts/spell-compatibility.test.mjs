@@ -52,6 +52,22 @@ test('shared supplements stay current and PHB 2024 replacements never become Leg
   }
 })
 
+test('all supplemental spells listed as updated in the 2024 PHB are excluded from Legacy', () => {
+  const officialOverlap = new Set(manifest.phb2024UpdatedSupplementSpellNames.map((name) =>
+    name.normalize('NFKD').replace(/\\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]/g, ''),
+  ))
+  const matchingSupplements = additional.filter((spell) =>
+    officialOverlap.has(normalize(spell)),
+  )
+  assert.equal(matchingSupplements.length, officialOverlap.size)
+  for (const spell of matchingSupplements) {
+    const entry = compatibilityById.get(spell.id)
+    assert.equal(entry?.status, 'replaced', spell.id)
+    assert.equal(entry?.replacementSource, 'phb-2024', spell.id)
+    assert.equal(entry?.replacementCategory, 'new', spell.id)
+  }
+})
+
 test('renamed 2014 SRD spells resolve to their 2024 SRD replacements', () => {
   const branding = compatibilityById.get('srd-2014-branding-smite')
   const feeblemind = compatibilityById.get('srd-2014-feeblemind')
