@@ -441,7 +441,7 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
             onChange={(value) => onUpdate({ notes: value })}
           />
         </div>
-      </details>>
+      </details>
     </>
   )
 }
