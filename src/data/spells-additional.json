@@ -1666,5 +1666,467 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 171,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-control-flames",
+    "name": "Control Flames",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You manipulate a nonmagical flame that fits within a 5-foot cube. You can expand or dim it, change its color, or shape it into simple forms. The spell cannot create fire or directly harm a creature.",
+    "localized": {
+      "name": "Flammen kontrollieren",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G",
+      "duration": "Unmittelbar",
+      "description": "Du manipulierst eine nichtmagische Flamme, die in einen Würfel mit 1,5 Metern Kantenlänge passt. Du kannst sie vergrößern oder abschwächen, ihre Farbe ändern oder einfache Formen aus ihr bilden. Der Zauber erschafft kein Feuer und kann Kreaturen nicht direkt verletzen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-create-bonfire",
+    "name": "Create Bonfire",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You create a bonfire on ground you can see. Creatures in its space when it appears or that enter it for the first time on a turn must make a Dexterity saving throw or take 1d8 fire damage. The fire also ignites flammable objects that aren't being worn or carried. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Lagerfeuer erschaffen",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst ein Lagerfeuer auf einem Boden, den du sehen kannst. Kreaturen in seinem Feld, wenn es erscheint oder die es während eines Zuges erstmals betreten, müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden 1W8 Feuerschaden. Das Feuer entzündet außerdem brennbare Gegenstände, die weder getragen noch gehalten werden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "1d8",
+        "average": 4.5,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-frostbite",
+    "name": "Frostbite",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You numb one creature you can see within range with freezing cold. It must make a Constitution saving throw, taking 1d6 cold damage on a failure and having disadvantage on the next weapon attack roll it makes before the end of its next turn. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Frostbiss",
+      "school": "Hervorrufung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du betäubst eine Kreatur, die du in Reichweite sehen kannst, mit eisiger Kälte. Sie muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Kälteschaden und hat Nachteil auf den nächsten Waffenangriffswurf, den sie vor dem Ende ihres nächsten Zuges ausführt. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "cold"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 156,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-gust",
+    "name": "Gust",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You shape a brief gust of air. It can push a Small or smaller creature, move an unattended object, or create a harmless sensory effect such as rustling leaves or blowing dust.",
+    "localized": {
+      "name": "Windstoß",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du formst einen kurzen Windstoß. Er kann eine kleine oder kleinere Kreatur wegdrücken, einen unbewachten Gegenstand bewegen oder einen harmlosen Sinneseffekt erzeugen, etwa raschelnde Blätter oder aufgewirbelten Staub."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 157,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-infestation",
+    "name": "Infestation",
+    "level": 0,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M",
+    "material": "a living flea",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A cloud of mites, fleas, and other parasites appears on one creature you can see. It makes a Constitution saving throw, taking 1d6 poison damage on a failure and moving 5 feet in a random direction if it can move. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Ungezieferplage",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G, M (ein lebender Floh)",
+      "duration": "Unmittelbar",
+      "description": "Eine Wolke aus Milben, Flöhen und anderen Parasiten erscheint auf einer Kreatur, die du sehen kannst. Sie muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Giftschaden und bewegt sich, sofern sie dazu fähig ist, 1,5 Meter in eine zufällige Richtung. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "poison"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 158,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-magic-stone",
+    "name": "Magic Stone",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You imbue up to three pebbles with magic. A creature can make a ranged spell attack with one, using your spellcasting ability modifier; on a hit, it deals 1d6 plus that modifier in bludgeoning damage. The stones can also be thrown by another creature using your spell attack bonus.",
+    "localized": {
+      "name": "Magischer Stein",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "1 Minute",
+      "description": "Du erfüllst bis zu drei Kieselsteine mit Magie. Eine Kreatur kann mit einem davon einen Fernkampf-Zauberangriff ausführen und dabei deinen Zauberattributmodifikator verwenden. Bei einem Treffer verursacht der Stein 1W6 plus diesen Modifikator Wuchtschaden. Eine andere Kreatur kann den Stein ebenfalls werfen und dabei deinen Zauberangriffsbonus verwenden."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-mold-earth",
+    "name": "Mold Earth",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous or 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You manipulate loose earth in a 5-foot cube. You can excavate it, move it across the ground, or shape it into simple patterns. If you target ground, the changes last for 1 hour; the spell cannot directly damage a creature or move stone.",
+    "localized": {
+      "name": "Erde formen",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "G",
+      "duration": "Unmittelbar oder 1 Stunde",
+      "description": "Du manipulierst lockere Erde in einem Würfel mit 1,5 Metern Kantenlänge. Du kannst sie ausheben, über den Boden bewegen oder zu einfachen Formen gestalten. Veränderungen am Boden halten 1 Stunde an. Der Zauber kann keine Kreatur direkt verletzen und keinen Stein bewegen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 162,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-primal-savagery",
+    "name": "Primal Savagery",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "Your teeth or fingernails lengthen into natural weapons coated in acid. Make a melee spell attack against one creature within 5 feet; on a hit, it takes 1d10 acid damage. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Urtümliche Wildheit",
+      "school": "Verwandlung",
+      "classes": [
+        "druid"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "G",
+      "duration": "Unmittelbar",
+      "description": "Deine Zähne oder Fingernägel verlängern sich zu natürlichen Waffen, die mit Säure überzogen sind. Führe einen Nahkampf-Zauberangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer erleidet sie 1W10 Säureschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W10."
+    },
+    "damage": [
+      {
+        "dice": "1d10",
+        "average": 5.5,
+        "type": "acid"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 163,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-shape-water",
+    "name": "Shape Water",
+    "level": 0,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous or 1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You manipulate water in a 5-foot cube. You can move it, form simple shapes, change its color or opacity, or freeze it, provided no creature is in it. Changes last for 1 hour, but the spell cannot create water or directly harm a creature.",
+    "localized": {
+      "name": "Wasser formen",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "G",
+      "duration": "Unmittelbar oder 1 Stunde",
+      "description": "Du manipulierst Wasser in einem Würfel mit 1,5 Metern Kantenlänge. Du kannst es bewegen, einfache Formen bilden, Farbe oder Durchsichtigkeit verändern oder es gefrieren lassen, sofern sich keine Kreatur darin befindet. Veränderungen halten 1 Stunde an. Der Zauber erschafft kein Wasser und kann Kreaturen nicht direkt verletzen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 164,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-thunderclap",
+    "name": "Thunderclap",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": "S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You create a burst of thunderous sound audible up to 100 feet away. Each creature other than you within 5 feet must make a Constitution saving throw or take 1d6 thunder damage. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Donnerschlag",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (1,5-Meter-Radius)",
+      "components": "G",
+      "duration": "Unmittelbar",
+      "description": "Du erzeugst einen Donnerschlag, der bis zu 30 Meter weit zu hören ist. Jede Kreatur außer dir innerhalb von 1,5 Metern muss einen Konstitutionsrettungswurf ablegen oder erleidet 1W6 Schallschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "thunder"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
   }
 ]
