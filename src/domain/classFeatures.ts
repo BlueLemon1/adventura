@@ -21,6 +21,7 @@ export interface AutomaticClassFeature {
   description?: string
   nameIsFallback?: boolean
   descriptionIsFallback?: boolean
+  translationStatus?: 'official' | 'unofficial'
   usedFallback?: boolean
   contentSourceId?: string
   activation?: 'action' | 'bonusAction' | 'reaction' | 'special'
@@ -2483,6 +2484,7 @@ function getImportedClassFeatures(
         level: feature.level,
         source: feature.featureType,
         description: text.description,
+        translationStatus: feature.translationStatus?.[locale],
         nameIsFallback: text.nameIsFallback,
         descriptionIsFallback: text.descriptionIsFallback,
         usedFallback: text.usedFallback,
