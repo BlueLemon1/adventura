@@ -50,6 +50,31 @@ const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
 
+function normalizeSpellName(spell: CatalogSpell): string {
+  return (spell.englishName ?? spell.name)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, '')
+}
+
+/**
+ * Keep the first occurrence of a spell. The SRD array is deliberately passed
+ * first, so an SRD record always wins over an identically named supplement.
+ */
+function mergeSpellRecords(
+  base: CatalogSpell[],
+  supplements: CatalogSpell[],
+): CatalogSpell[] {
+  const seen = new Set<string>()
+  return [...base, ...supplements].filter((spell) => {
+    const key = normalizeSpellName(spell)
+    if (seen.has(key)) return false
+    seen.add(key)
+    return true
+  })
+}
+
 /** One canonical catalogue builder shared by selection and spellbook localization. */
 export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
@@ -63,5 +88,30 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
-  return [...base, ...supplements]
+  return mergeSpellRecords(base, supplements)
+}
+
+/**
+ * Resolve older saved IDs that now point to a lower-priority duplicate to the
+ * canonical SRD (or first supplemental) catalogue record without rewriting
+ * the character's stored data.
+ */
+export function findCatalogSpell(
+  spellId: string | undefined,
+  ruleset: Dnd5eRuleset,
+): CatalogSpell | undefined {
+  if (!spellId) return undefined
+  const catalog = getSpellCatalog(ruleset)
+  const directMatch = catalog.find((spell) => spell.id === spellId)
+  if (directMatch) return directMatch
+
+  const original = supplementalSpells.find((spell) => spell.id === spellId)
+  if (!original) return undefined
+  const belongsToRuleset = original.rulesets
+    ? original.rulesets.includes(ruleset)
+    : sourceRulesets.get(original.contentSourceId) === ruleset
+  if (!belongsToRuleset) return undefined
+
+  const key = normalizeSpellName(original)
+  return catalog.find((spell) => normalizeSpellName(spell) === key)
 }
