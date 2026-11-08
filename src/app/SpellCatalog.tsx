@@ -412,7 +412,7 @@ export function SpellCatalog({
 
       <div className="catalog-count">
         {results.length} {t('Treffer')} ·{' '}
-        {character.ruleset === '2014' ? 'SRD 5.1' : 'SRD 5.2.1 (2024)'} ·{' '}
+        {t('Regelwerk')} {character.ruleset === '2014' ? '2014' : '2024'} ·{' '}
         {eligibleOnly ? t('Klassen-/Gradfilter aktiv') : t('vollständiger Katalog')}
       </div>
       <div className="spellcasting-explainer">
