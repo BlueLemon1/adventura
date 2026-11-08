@@ -161,7 +161,8 @@ export function SpellbookPage({
           Boolean(spell?.description && !localizedSpell?.description) ||
           Boolean(englishHigherLevel && !localizedSpell?.higherLevel)),
       higherLevel: getHigherLevelText(englishHigherLevel, localizedSpell?.higherLevel, language),
-      higherLevelLabel: language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
+      higherLevelLabel:
+        language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
       damage: spell?.damage,
       notes: featureName,
       source: 'class',

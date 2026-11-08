@@ -550,7 +550,10 @@ export function SpellCatalog({
                   </p>
                 ) : null}
                 {spell.higherLevel && (
-                  <SpellHigherLevel text={spell.higherLevel} label={spell.higherLevelLabel ?? t('Auf höheren Graden:')} />
+                  <SpellHigherLevel
+                    text={spell.higherLevel}
+                    label={spell.higherLevelLabel ?? t('Auf höheren Graden:')}
+                  />
                 )}
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
