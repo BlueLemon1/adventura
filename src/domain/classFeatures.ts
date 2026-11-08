@@ -1,6 +1,8 @@
 import type { Character } from './character'
 import classFeatures2014 from '../data/class-features-2014.json'
 import classFeatures2024 from '../data/class-features-2024.json'
+import supplementalClassFeatures2014 from '../data/class-features-supplemental-2014.json'
+import supplementalClassFeatures2024 from '../data/class-features-supplemental-2024.json'
 import { resolveClassFeatureText, type ClassFeatureRecord } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
 
@@ -19,6 +21,7 @@ export interface AutomaticClassFeature {
   description?: string
   nameIsFallback?: boolean
   descriptionIsFallback?: boolean
+  translationStatus?: 'official' | 'unofficial'
   usedFallback?: boolean
   contentSourceId?: string
   activation?: 'action' | 'bonusAction' | 'reaction' | 'special'
@@ -2449,6 +2452,33 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
     }))
 }
 
+const FEATURE_GRANTED_SPELLS_BY_ID: Record<string, string[]> = {
+  'srd-2014-subclass-cleric-life-1-life-domain-spells': [
+    'srd-2014-bless',
+    'srd-2014-cure-wounds',
+    'srd-2014-lesser-restoration',
+    'srd-2014-spiritual-weapon',
+    'srd-2014-beacon-of-hope',
+    'srd-2014-revivify',
+    'srd-2014-death-ward',
+    'srd-2014-guardian-of-faith',
+    'srd-2014-mass-cure-wounds',
+    'srd-2014-raise-dead',
+  ],
+  'srd-2014-subclass-paladin-devotion-3-oath-spells': [
+    'srd-2014-protection-from-evil-and-good',
+    'srd-2014-sanctuary',
+    'srd-2014-lesser-restoration',
+    'srd-2014-zone-of-truth',
+    'srd-2014-beacon-of-hope',
+    'srd-2014-dispel-magic',
+    'srd-2014-freedom-of-movement',
+    'srd-2014-guardian-of-faith',
+    'srd-2014-commune',
+    'srd-2014-flame-strike',
+  ],
+}
+
 function getImportedClassFeatures(
   character: Character,
   locale: ContentLocale,
@@ -2474,6 +2504,14 @@ function getImportedClassFeatures(
           entry.source === feature.featureType,
       )
 
+      const spellbookSpellIds = [
+        ...new Set([
+          ...(feature.grantedSpellIds ?? []),
+          ...(FEATURE_GRANTED_SPELLS_BY_ID[feature.id] ?? []),
+          ...(metadata?.spellbookSpellIds ?? []),
+        ]),
+      ]
+
       return {
         id: feature.id,
         name: feature.names.en ?? feature.id,
@@ -2481,6 +2519,7 @@ function getImportedClassFeatures(
         level: feature.level,
         source: feature.featureType,
         description: text.description,
+        translationStatus: feature.translationStatus?.[locale],
         nameIsFallback: text.nameIsFallback,
         descriptionIsFallback: text.descriptionIsFallback,
         usedFallback: text.usedFallback,
@@ -2489,7 +2528,7 @@ function getImportedClassFeatures(
         resourceId: metadata?.resourceId,
         resourceCost: metadata?.resourceCost,
         spellbookSpellId: metadata?.spellbookSpellId,
-        spellbookSpellIds: metadata?.spellbookSpellIds,
+        spellbookSpellIds: spellbookSpellIds.length ? spellbookSpellIds : undefined,
         unlocked: feature.level <= character.level,
       }
     })
@@ -2501,8 +2540,8 @@ export function getAutomaticClassFeatures(
   locale: ContentLocale = 'de',
 ): AutomaticClassFeature[] {
   const catalog = (character.ruleset === '2014'
-    ? classFeatures2014
-    : classFeatures2024) as unknown as ClassFeatureRecord[]
+    ? [...classFeatures2014, ...supplementalClassFeatures2014]
+    : [...classFeatures2024, ...supplementalClassFeatures2024]) as unknown as ClassFeatureRecord[]
   return getImportedClassFeatures(character, locale, catalog)
 }
 

@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty",
     "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
-    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\""
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\"",
+    "validate:content": "node scripts/validate-content.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "latest",

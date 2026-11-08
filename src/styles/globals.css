@@ -3499,6 +3499,7 @@ textarea {
   gap: 6px;
 }
 .automatic-feature-source,
+.automatic-feature-source-book,
 .automatic-feature-activation {
   display: inline-flex;
   align-items: center;

@@ -2,7 +2,7 @@ import type { ContentLocale, ContentProvenance } from './contentSources'
 import type { Dnd5eRuleset } from './rules'
 
 /**
- * A normalized, edition-specific class feature imported from an SRD source.
+ * A normalized, edition-specific class feature from an official or custom source.
  * The canonical ID is stable across locales; localized text is stored on the
  * same record so translations can never become duplicate features.
  */
@@ -17,6 +17,8 @@ export interface ClassFeatureRecord {
   level: number
   names: Partial<Record<ContentLocale, string>>
   descriptions: Partial<Record<ContentLocale, string>>
+  /** Translation status for non-source locales; omitted means official/source-verified. */
+  translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
   /** Canonical spell IDs explicitly granted by this feature, if any. */
   grantedSpellIds?: string[]
 }
@@ -98,6 +100,12 @@ export function validateClassFeatureRecords(
     }
     if (!Object.values(feature.descriptions).some((value) => value?.trim())) {
       errors.push(`${location}: missing localized description`)
+    }
+    if (feature.grantedSpellIds?.some((spellId) => !spellId.trim())) {
+      errors.push(`${location}: granted spell IDs must be non-empty strings`)
+    }
+    if (feature.grantedSpellIds && new Set(feature.grantedSpellIds).size !== feature.grantedSpellIds.length) {
+      errors.push(`${location}: duplicate granted spell IDs`)
     }
   }
 

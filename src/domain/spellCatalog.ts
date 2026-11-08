@@ -1,4 +1,3 @@
-import type { Character } from './character'
 import type { Dnd5eRuleset } from './rules'
 import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
@@ -8,6 +7,7 @@ import additionalSpells from '../data/spells-additional.json'
 export interface CatalogSpell {
   id: string
   name: string
+  englishName?: string
   level: number
   school: string
   castingTime: string
@@ -46,12 +46,12 @@ export interface CatalogSpell {
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
-const sourceRulesets = new Map(
+const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
 
 /** One canonical catalogue builder shared by selection and spellbook localization. */
-export function getSpellCatalog(ruleset: Character['ruleset']): CatalogSpell[] {
+export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
     .filter((spell) =>
