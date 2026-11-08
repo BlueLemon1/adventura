@@ -1002,7 +1002,7 @@
     "level": 3,
     "names": {
       "en": "Vitality of the Tree",
-      "de": "Dein Kampfrausch verbindet dich mit dem Weltenbaum und verleiht dir und nahen Verbündeten vorübergehende Lebenskraft und Erholung."
+      "de": "Vitality of the Tree"
     },
     "descriptions": {
       "en": "Your Rage connects you to the World Tree, granting temporary vitality and restorative benefits to you and nearby allies.",
@@ -1023,7 +1023,7 @@
     "level": 6,
     "names": {
       "en": "Branches of the Tree",
-      "de": "Du kannst durch geisterhafte Äste Kreaturen versetzen und Gegner behindern."
+      "de": "Branches of the Tree"
     },
     "descriptions": {
       "en": "You can reach through spectral branches to reposition creatures and hinder enemies.",
@@ -1044,7 +1044,7 @@
     "level": 10,
     "names": {
       "en": "Battering Roots",
-      "de": "Deine Reichweite mit geeigneten Nahkampfwaffen steigt und deine Treffer können Gegner zurückstoßen."
+      "de": "Battering Roots"
     },
     "descriptions": {
       "en": "Your reach with qualifying melee weapons increases, and your strikes can knock foes back.",
@@ -1065,7 +1065,7 @@
     "level": 14,
     "names": {
       "en": "Travel Along the Tree",
-      "de": "Du kannst dich und Gefährten mithilfe der Magie des Weltenbaums teleportieren."
+      "de": "Travel Along the Tree"
     },
     "descriptions": {
       "en": "You can teleport yourself and companions through the World Tree's magic.",
@@ -1086,7 +1086,7 @@
     "level": 3,
     "names": {
       "en": "Divine Fury",
-      "de": "Einmal pro Zug verursachst du während deines Kampfrauschs zusätzlichen, von göttlicher Macht erfüllten Schaden."
+      "de": "Divine Fury"
     },
     "descriptions": {
       "en": "Once on each of your turns while raging, you deal extra damage infused with divine power.",
@@ -1107,7 +1107,7 @@
     "level": 3,
     "names": {
       "en": "Warrior of the Gods",
-      "de": "Du kannst göttliche Energie nutzen, um Trefferpunkte wiederherzustellen; mit steigender Stufe wird die Heilung stärker."
+      "de": "Warrior of the Gods"
     },
     "descriptions": {
       "en": "You can draw on divine energy to restore hit points, with greater recovery as you advance.",
@@ -1128,7 +1128,7 @@
     "level": 6,
     "names": {
       "en": "Fanatical Focus",
-      "de": "Wenn dir während deines Kampfrauschs ein Rettungswurf misslingt, kannst du ihn wiederholen."
+      "de": "Fanatical Focus"
     },
     "descriptions": {
       "en": "When you fail a saving throw while raging, you can reroll it.",
@@ -1149,7 +1149,7 @@
     "level": 10,
     "names": {
       "en": "Zealous Presence",
-      "de": "Du kannst nahe Verbündete inspirieren und ihnen Vorteil auf ausgewählte W20-Würfe verleihen."
+      "de": "Zealous Presence"
     },
     "descriptions": {
       "en": "You can inspire nearby allies, granting them advantage on selected d20 tests.",
@@ -1170,7 +1170,7 @@
     "level": 14,
     "names": {
       "en": "Rage of the Gods",
-      "de": "Dein Kampfrausch nimmt eine göttliche Gestalt an, stärkt deine Widerstandskraft und ermöglicht dir, Verbündete zu schützen."
+      "de": "Rage of the Gods"
     },
     "descriptions": {
       "en": "Your Rage takes on a divine form, improving your durability and allowing you to protect allies.",
@@ -1191,7 +1191,7 @@
     "level": 3,
     "names": {
       "en": "Dazzling Footwork",
-      "de": "Ohne Rüstung und Schild verbessert deine Beweglichkeit deine Verteidigung und lässt dich Bardische Inspiration in waffenlose Angriffe einfließen."
+      "de": "Dazzling Footwork"
     },
     "descriptions": {
       "en": "While unarmored and without a shield, your agility improves your defense and lets Bardic Inspiration flow into unarmed strikes.",
@@ -1212,7 +1212,7 @@
     "level": 6,
     "names": {
       "en": "Inspiring Movement",
-      "de": "Wenn ein naher Verbündeter angegriffen wird, kannst du dich als Reaktion bewegen und ihm beim Positionieren helfen."
+      "de": "Inspiring Movement"
     },
     "descriptions": {
       "en": "When an ally near you is attacked, you can move as a reaction and help that ally reposition.",
@@ -1233,7 +1233,7 @@
     "level": 6,
     "names": {
       "en": "Tandem Footwork",
-      "de": "Wenn du Bardische Inspiration einsetzt, können du und nahe Verbündete eure Initiative verbessern."
+      "de": "Tandem Footwork"
     },
     "descriptions": {
       "en": "When you use Bardic Inspiration, you and nearby allies can improve initiative.",
@@ -1254,7 +1254,7 @@
     "level": 14,
     "names": {
       "en": "Leading Evasion",
-      "de": "Deine Ausweichbewegungen schützen dich und nahe Verbündete vor Effekten, die einen Geschicklichkeitsrettungswurf erlauben."
+      "de": "Leading Evasion"
     },
     "descriptions": {
       "en": "Your evasive movement protects you and nearby allies from effects that allow an Agility save.",
@@ -1275,7 +1275,7 @@
     "level": 3,
     "names": {
       "en": "Beguiling Magic",
-      "de": "Deine Feenmagie kann eine Kreatur bezaubern oder verängstigen, wenn du einen Verzauberungs- oder Illusionszauber wirkst."
+      "de": "Beguiling Magic"
     },
     "descriptions": {
       "en": "Your fey magic can charm or frighten a creature when you cast an enchantment or illusion spell.",
@@ -1296,7 +1296,7 @@
     "level": 3,
     "names": {
       "en": "Mantle of Inspiration",
-      "de": "Du gibst Bardische Inspiration aus, um Verbündeten temporäre Trefferpunkte und eine Bewegung ohne Gelegenheitsangriffe zu ermöglichen."
+      "de": "Mantle of Inspiration"
     },
     "descriptions": {
       "en": "You expend Bardic Inspiration to grant allies temporary hit points and let them move without provoking opportunity attacks.",
@@ -1317,7 +1317,7 @@
     "level": 6,
     "names": {
       "en": "Mantle of Majesty",
-      "de": "Du kannst für begrenzte Zeit Befehl als Bonusaktion wirken und eine gebieterische Feenaura aufrechterhalten."
+      "de": "Mantle of Majesty"
     },
     "descriptions": {
       "en": "You can cast Command as a bonus action for a limited time, maintaining a commanding fey presence.",
@@ -1338,7 +1338,7 @@
     "level": 14,
     "names": {
       "en": "Unbreakable Majesty",
-      "de": "Du umgibst dich mit betörender Magie, die Gegnern Treffer erschwert und ihre Angriffe bestrafen kann."
+      "de": "Unbreakable Majesty"
     },
     "descriptions": {
       "en": "You surround yourself with beguiling magic that makes foes struggle to hit you and can punish their attacks.",
@@ -1359,7 +1359,7 @@
     "level": 3,
     "names": {
       "en": "Combat Inspiration",
-      "de": "Deine Bardische Inspiration kann Schaden oder Verteidigung stärken; außerdem erhältst du Kampfausbildung."
+      "de": "Combat Inspiration"
     },
     "descriptions": {
       "en": "Your Bardic Inspiration can bolster damage or defense, and you gain martial training.",
@@ -1380,7 +1380,7 @@
     "level": 6,
     "names": {
       "en": "Extra Attack",
-      "de": "Wenn du die Angriffsaktion ausführst, kannst du statt einmal zweimal angreifen."
+      "de": "Zusätzlicher Angriff"
     },
     "descriptions": {
       "en": "You can attack twice instead of once when you take the Attack action.",
@@ -1401,7 +1401,7 @@
     "level": 14,
     "names": {
       "en": "Battle Magic",
-      "de": "Nachdem du mit einer Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen."
+      "de": "Battle Magic"
     },
     "descriptions": {
       "en": "After casting a spell with an action, you can make one weapon attack as a bonus action.",
@@ -1422,7 +1422,7 @@
     "level": 3,
     "names": {
       "en": "Circle Forms",
-      "de": "Deine Tiergestalten erhalten verbesserte Kampffähigkeiten und du erhältst Zugang zu stärkeren Gestalten."
+      "de": "Circle Forms"
     },
     "descriptions": {
       "en": "Your Wild Shape forms gain improved combat capabilities and access to stronger forms.",
@@ -1443,7 +1443,7 @@
     "level": 6,
     "names": {
       "en": "Improved Circle Forms",
-      "de": "Deine Tiergestalten werden widerstandsfähiger und ihre Angriffe erhalten zusätzliche magische Kraft."
+      "de": "Improved Circle Forms"
     },
     "descriptions": {
       "en": "Your beast forms become more resilient and your attacks gain additional magical force.",
@@ -1464,7 +1464,7 @@
     "level": 10,
     "names": {
       "en": "Moonlight Step",
-      "de": "Du kannst dich im Mondlicht teleportieren und deinen nächsten Angriff verstärken."
+      "de": "Moonlight Step"
     },
     "descriptions": {
       "en": "You can teleport in moonlight and empower your next attack.",
@@ -1485,7 +1485,7 @@
     "level": 14,
     "names": {
       "en": "Lunar Form",
-      "de": "Deine Mondmacht verstärkt deine Angriffe und ermöglicht es dir, beim Teleportieren einen Verbündeten mitzunehmen."
+      "de": "Lunar Form"
     },
     "descriptions": {
       "en": "Your lunar power intensifies, improving your attacks and allowing you to bring an ally along when you teleport.",
@@ -1506,7 +1506,7 @@
     "level": 3,
     "names": {
       "en": "Circle of the Sea Spells",
-      "de": "Du hast die Zauber des Zirkels der See ab den angegebenen Druidenstufen stets vorbereitet."
+      "de": "Circle of the Sea Spells"
     },
     "descriptions": {
       "en": "You always have the Circle of the Sea spells prepared as you reach the listed druid levels.",
@@ -1527,7 +1527,7 @@
     "level": 3,
     "names": {
       "en": "Wrath of the Sea",
-      "de": "Du umgibst dich mit einer stürmischen Aura, die Kreaturen in deiner Nähe schädigt und zurückstößt."
+      "de": "Wrath of the Sea"
     },
     "descriptions": {
       "en": "You surround yourself with a stormy aura that damages and pushes creatures nearby.",
@@ -1548,7 +1548,7 @@
     "level": 6,
     "names": {
       "en": "Aquatic Affinity",
-      "de": "Du erhältst Vorteile für Bewegung und Atmung im Wasser und deine Meeresmagie wird stärker."
+      "de": "Aquatic Affinity"
     },
     "descriptions": {
       "en": "You gain aquatic movement and breathing benefits, and your sea magic becomes more potent.",
@@ -1569,7 +1569,7 @@
     "level": 10,
     "names": {
       "en": "Stormborn",
-      "de": "Du erhältst eine Flugbewegungsrate und verbesserst deine sturmbezogenen Fähigkeiten."
+      "de": "Stormborn"
     },
     "descriptions": {
       "en": "You gain a flying speed and improve your storm-related abilities.",
@@ -1590,7 +1590,7 @@
     "level": 14,
     "names": {
       "en": "Oceanic Gift",
-      "de": "Deine Meeres-Aura schützt stärker und kann Kreaturen behindern, die von ihr erfasst werden."
+      "de": "Oceanic Gift"
     },
     "descriptions": {
       "en": "Your sea aura becomes more protective and can hinder creatures caught within it.",
@@ -1611,7 +1611,7 @@
     "level": 3,
     "names": {
       "en": "Star Map",
-      "de": "Du erschaffst eine Sternenkarte, die als Zauberfokus dient und dir Zugang zu Lenkschuss gewährt."
+      "de": "Star Map"
     },
     "descriptions": {
       "en": "You create a star map that serves as a spellcasting focus and grants access to Guiding Bolt.",
@@ -1632,7 +1632,7 @@
     "level": 3,
     "names": {
       "en": "Starry Form",
-      "de": "Du verbrauchst Tiergestalt, um eine Sternbildgestalt mit besonderen Vorteilen für Heilung, Angriffe oder Konzentration anzunehmen."
+      "de": "Starry Form"
     },
     "descriptions": {
       "en": "You expend Wild Shape to assume a constellation form with distinct benefits for healing, attacks, or concentration.",
@@ -1653,7 +1653,7 @@
     "level": 6,
     "names": {
       "en": "Cosmic Omen",
-      "de": "Nach einer Rast erhältst du ein kosmisches Omen, mit dem du den Wurf einer nahen Kreatur beeinflussen kannst."
+      "de": "Cosmic Omen"
     },
     "descriptions": {
       "en": "After a rest, you gain a cosmic sign that can influence a nearby creature's roll.",
@@ -1674,7 +1674,7 @@
     "level": 10,
     "names": {
       "en": "Twinkling Constellations",
-      "de": "Deine Sternbildgestalt wird stärker und du kannst ihr Sternbild flexibler wechseln."
+      "de": "Twinkling Constellations"
     },
     "descriptions": {
       "en": "Your Starry Form improves, and you can change its constellation more flexibly.",
@@ -1695,7 +1695,7 @@
     "level": 14,
     "names": {
       "en": "Full of Stars",
-      "de": "Während deiner Sternbildgestalt erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden."
+      "de": "Full of Stars"
     },
     "descriptions": {
       "en": "While in Starry Form, you gain resistance to bludgeoning, piercing, and slashing damage.",
@@ -1716,7 +1716,7 @@
     "level": 3,
     "names": {
       "en": "Combat Superiority",
-      "de": "Du erlernst Manöver, die von Überlegenheitswürfeln gespeist werden und Angriffe sowie taktische Kontrolle verbessern."
+      "de": "Combat Superiority"
     },
     "descriptions": {
       "en": "You learn maneuvers fueled by superiority dice to control the battlefield and enhance attacks.",
@@ -1737,7 +1737,7 @@
     "level": 3,
     "names": {
       "en": "Student of War",
-      "de": "Du erhältst Übung mit einer Art von Handwerkszeug und zusätzliche taktische Ausbildung."
+      "de": "Student of War"
     },
     "descriptions": {
       "en": "You gain proficiency with one type of artisan's tools and additional tactical training.",
@@ -1758,7 +1758,7 @@
     "level": 7,
     "names": {
       "en": "Know Your Enemy",
-      "de": "Du kannst eine Kreatur einschätzen und erfahren, ob sie dir in bestimmten Eigenschaften überlegen, unterlegen oder ebenbürtig ist."
+      "de": "Know Your Enemy"
     },
     "descriptions": {
       "en": "You can study a creature to learn whether it is superior, inferior, or equal in certain capabilities.",
@@ -1779,7 +1779,7 @@
     "level": 10,
     "names": {
       "en": "Improved Combat Superiority",
-      "de": "Deine Überlegenheitswürfel werden größer."
+      "de": "Improved Combat Superiority"
     },
     "descriptions": {
       "en": "Your superiority dice become larger.",
@@ -1800,7 +1800,7 @@
     "level": 15,
     "names": {
       "en": "Relentless",
-      "de": "Wenn du keine Überlegenheitswürfel mehr hast und Initiative würfelst, erhältst du einen zurück."
+      "de": "Relentless"
     },
     "descriptions": {
       "en": "You regain a superiority die when you have none remaining and roll initiative.",
@@ -1821,7 +1821,7 @@
     "level": 18,
     "names": {
       "en": "Improved Combat Superiority",
-      "de": "Deine Überlegenheitswürfel werden erneut größer."
+      "de": "Improved Combat Superiority"
     },
     "descriptions": {
       "en": "Your superiority dice increase in size again.",
@@ -1842,7 +1842,7 @@
     "level": 3,
     "names": {
       "en": "Spellcasting",
-      "de": "Du erlernst Magierzauber, vor allem aus den Schulen der Bann- und Hervorrufungsmagie."
+      "de": "Zauberwirken"
     },
     "descriptions": {
       "en": "You learn wizard spells, primarily from the abjuration and evocation schools.",
@@ -1863,7 +1863,7 @@
     "level": 3,
     "names": {
       "en": "War Bond",
-      "de": "Du bindest Waffen an dich und kannst eine gebundene Waffe in deine Hand rufen."
+      "de": "War Bond"
     },
     "descriptions": {
       "en": "You bond with weapons and can summon a bonded weapon to your hand.",
@@ -1884,7 +1884,7 @@
     "level": 7,
     "names": {
       "en": "War Magic",
-      "de": "Nachdem du mit einer Aktion einen Zaubertrick gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen."
+      "de": "Kriegsmagie"
     },
     "descriptions": {
       "en": "After casting a cantrip with an action, you can make a weapon attack as a bonus action.",
@@ -1905,7 +1905,7 @@
     "level": 10,
     "names": {
       "en": "Eldritch Strike",
-      "de": "Eine von deiner Waffe getroffene Kreatur hat Nachteil beim nächsten Rettungswurf gegen einen deiner Zauber."
+      "de": "Eldritch Strike"
     },
     "descriptions": {
       "en": "A creature hit by your weapon has disadvantage on its next saving throw against one of your spells.",
@@ -1926,7 +1926,7 @@
     "level": 15,
     "names": {
       "en": "Arcane Charge",
-      "de": "Wenn du Aktionsschub einsetzt, kannst du dich vor oder nach der zusätzlichen Aktion teleportieren."
+      "de": "Arkane Aufladung"
     },
     "descriptions": {
       "en": "When you use Action Surge, you can teleport before or after the additional action.",
@@ -1947,7 +1947,7 @@
     "level": 18,
     "names": {
       "en": "Improved War Magic",
-      "de": "Nachdem du mit einer Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen."
+      "de": "Verbesserte Kriegsmagie"
     },
     "descriptions": {
       "en": "After casting a spell with an action, you can make a weapon attack as a bonus action.",
@@ -1968,7 +1968,7 @@
     "level": 3,
     "names": {
       "en": "Psionic Power",
-      "de": "Du nutzt psionische Energie, um dich zu schützen, Gegenstände zu bewegen und Angriffe zu verstärken."
+      "de": "Psionic Power"
     },
     "descriptions": {
       "en": "You wield psionic energy to protect yourself, move objects, and empower attacks.",
@@ -1989,7 +1989,7 @@
     "level": 7,
     "names": {
       "en": "Telekinetic Adept",
-      "de": "Deine psionischen Fähigkeiten verbessern sich und ermöglichen stärkere telekinetische Bewegungen und Schutzreaktionen."
+      "de": "Telekinetic Adept"
     },
     "descriptions": {
       "en": "Your psionic abilities improve, allowing stronger telekinetic movement and defensive reactions.",
@@ -2010,7 +2010,7 @@
     "level": 10,
     "names": {
       "en": "Guarded Mind",
-      "de": "Du erhältst Resistenz gegen psychischen Schaden und kannst bestimmte geistige Zustände mit psionischer Energie beenden."
+      "de": "Guarded Mind"
     },
     "descriptions": {
       "en": "You gain resistance to psychic damage and can end certain mental conditions with psionic energy.",
@@ -2031,7 +2031,7 @@
     "level": 15,
     "names": {
       "en": "Bulwark of Force",
-      "de": "Du kannst eine schützende Kraftbarriere um dich und Verbündete erschaffen."
+      "de": "Bulwark of Force"
     },
     "descriptions": {
       "en": "You can create protective force around yourself and allies.",
@@ -2052,7 +2052,7 @@
     "level": 18,
     "names": {
       "en": "Telekinetic Master",
-      "de": "Du kannst Telekinese ohne Komponenten wirken und den Zauber mit deiner psionischen Kraft verstärken."
+      "de": "Telekinetic Master"
     },
     "descriptions": {
       "en": "You can cast Telekinesis without components and augment it with your psionic power.",
@@ -2073,7 +2073,7 @@
     "level": 3,
     "names": {
       "en": "Implements of Mercy",
-      "de": "Du erhältst Übung in Motiv erkennen und Heilkunde sowie mit dem Kräuterkundler-Set und kannst eine Maske als Fokus verwenden."
+      "de": "Implements of Mercy"
     },
     "descriptions": {
       "en": "You gain proficiency with the Insight and Medicine skills and the herbalism kit, and can use a mask as a focus.",
@@ -2094,7 +2094,7 @@
     "level": 3,
     "names": {
       "en": "Hand of Healing",
-      "de": "Du kannst Ki einsetzen, um durch eine heilende Berührung Trefferpunkte wiederherzustellen."
+      "de": "Hand of Healing"
     },
     "descriptions": {
       "en": "You can use ki to restore hit points through a healing touch.",
@@ -2115,7 +2115,7 @@
     "level": 3,
     "names": {
       "en": "Hand of Harm",
-      "de": "Du kannst Ki ausgeben, um einer getroffenen Kreatur nekrotischen Schaden zuzufügen."
+      "de": "Hand of Harm"
     },
     "descriptions": {
       "en": "You can spend ki to inflict necrotic harm when you hit a creature.",
@@ -2136,7 +2136,7 @@
     "level": 6,
     "names": {
       "en": "Physician's Touch",
-      "de": "Deine Heilung kann bestimmte Zustände beenden und deine schädigende Berührung einen beeinträchtigenden Zustand verursachen."
+      "de": "Physician's Touch"
     },
     "descriptions": {
       "en": "Your healing can remove certain conditions, and your harmful touch can impose a debilitating condition.",
@@ -2157,7 +2157,7 @@
     "level": 11,
     "names": {
       "en": "Flurry of Healing and Harm",
-      "de": "Wenn du Hagel der Schläge einsetzt, kannst du Angriffe durch heilende oder schädigende Berührungen ersetzen."
+      "de": "Flurry of Healing and Harm"
     },
     "descriptions": {
       "en": "When you use Flurry of Blows, you can replace attacks with healing or harmful touches.",
@@ -2178,7 +2178,7 @@
     "level": 17,
     "names": {
       "en": "Hand of Ultimate Mercy",
-      "de": "Du kannst eine kürzlich verstorbene Kreatur durch Einsatz von Ki wiederbeleben."
+      "de": "Hand of Ultimate Mercy"
     },
     "descriptions": {
       "en": "You can restore a creature to life shortly after it has died by expending ki.",
@@ -2199,7 +2199,7 @@
     "level": 3,
     "names": {
       "en": "Shadow Arts",
-      "de": "Du nutzt Fokuspunkte, um schattenbezogene Zauber zu wirken und magische Dunkelheit zu erschaffen."
+      "de": "Shadow Arts"
     },
     "descriptions": {
       "en": "You use Focus Points to cast shadow-themed spells and create magical darkness.",
@@ -2220,7 +2220,7 @@
     "level": 6,
     "names": {
       "en": "Shadow Step",
-      "de": "Bei dämmrigem Licht oder Dunkelheit kannst du dich zwischen solchen Bereichen teleportieren und deinen nächsten Nahkampfangriff verstärken."
+      "de": "Shadow Step"
     },
     "descriptions": {
       "en": "While in dim light or darkness, you can teleport between such spaces and empower your next melee attack.",
@@ -2241,7 +2241,7 @@
     "level": 11,
     "names": {
       "en": "Improved Shadow Step",
-      "de": "Deine Schatten-Teleportation verbessert sich und lässt sich flexibler einsetzen."
+      "de": "Improved Shadow Step"
     },
     "descriptions": {
       "en": "Your shadow teleportation improves and can be used with greater flexibility.",
@@ -2262,7 +2262,7 @@
     "level": 17,
     "names": {
       "en": "Cloak of Shadows",
-      "de": "Du kannst dich in Schatten hüllen und erhältst starke Tarnungs- und Verteidigungsvorteile."
+      "de": "Cloak of Shadows"
     },
     "descriptions": {
       "en": "You can become shrouded in shadow, gaining powerful concealment and defensive benefits.",
@@ -2283,7 +2283,7 @@
     "level": 3,
     "names": {
       "en": "Elemental Attunement",
-      "de": "Du stimmst deine Kampfkunst auf Elementarkräfte ein, vergrößerst deine Reichweite und veränderst den Schaden deiner Schläge."
+      "de": "Elemental Attunement"
     },
     "descriptions": {
       "en": "You attune your martial arts to elemental power, extending your reach and changing the damage of your strikes.",
@@ -2304,7 +2304,7 @@
     "level": 3,
     "names": {
       "en": "Manipulate Elements",
-      "de": "Du kannst nahe Elementarkräfte formen und bewegen, um praktische und taktische Effekte zu erzielen."
+      "de": "Manipulate Elements"
     },
     "descriptions": {
       "en": "You can shape and move nearby elemental forces for practical and tactical effects.",
@@ -2325,7 +2325,7 @@
     "level": 6,
     "names": {
       "en": "Elemental Burst",
-      "de": "Du entfesselst einen Bereich elementarer Energie, der Kreaturen schädigt und behindern kann."
+      "de": "Elemental Burst"
     },
     "descriptions": {
       "en": "You unleash an area of elemental energy that damages and can hinder creatures.",
@@ -2346,7 +2346,7 @@
     "level": 11,
     "names": {
       "en": "Stride of the Elements",
-      "de": "Deine Elementarkraft verleiht dir verbesserte Bewegungsmöglichkeiten, auch durch die Luft und über Oberflächen."
+      "de": "Stride of the Elements"
     },
     "descriptions": {
       "en": "Your elemental power grants enhanced movement, including movement through the air and across surfaces.",
@@ -2367,7 +2367,7 @@
     "level": 17,
     "names": {
       "en": "Elemental Epitome",
-      "de": "Du wirst zur Verkörperung elementarer Macht und erhältst verbesserte Resistenzen und Angriffe."
+      "de": "Elemental Epitome"
     },
     "descriptions": {
       "en": "You become a manifestation of elemental power, gaining enhanced resistance and attacks.",
@@ -2388,7 +2388,7 @@
     "level": 3,
     "names": {
       "en": "Animal Speaker",
-      "de": "Du kannst einfache Gedanken mit Tieren austauschen und erlernst den Druidenzaubertrick Druidenkunst."
+      "de": "Animal Speaker"
     },
     "descriptions": {
       "en": "You can communicate simple ideas with Beasts and learn the Druidcraft cantrip.",
@@ -2409,7 +2409,7 @@
     "level": 3,
     "names": {
       "en": "Rage of the Wilds",
-      "de": "Wenn du in Kampfrausch verfällst, wählst du einen Tieraspekt und erhältst einen von diesem Tier inspirierten Vorteil."
+      "de": "Rage of the Wilds"
     },
     "descriptions": {
       "en": "Choose an animal aspect when you rage, gaining a benefit inspired by that creature.",
@@ -2430,7 +2430,7 @@
     "level": 6,
     "names": {
       "en": "Aspect of the Wilds",
-      "de": "Du erhältst einen weiteren tierinspirierten Vorteil, der Erkundung und Widerstandskraft verbessert."
+      "de": "Aspect of the Wilds"
     },
     "descriptions": {
       "en": "You gain an additional animal-inspired benefit that improves your exploration and resilience.",
@@ -2451,7 +2451,7 @@
     "level": 10,
     "names": {
       "en": "Nature Speaker",
-      "de": "Du kannst Naturmagie nutzen, um mit Pflanzen und Tieren zu kommunizieren und Wissen über die Umgebung zu erlangen."
+      "de": "Nature Speaker"
     },
     "descriptions": {
       "en": "You can draw on nature magic to communicate with plants and animals and seek knowledge of the land.",
@@ -2472,7 +2472,7 @@
     "level": 14,
     "names": {
       "en": "Power of the Wilds",
-      "de": "Deine Tieraspekte werden mächtiger und verleihen dir während des Kampfrauschs stärkere Vorteile."
+      "de": "Power of the Wilds"
     },
     "descriptions": {
       "en": "Your animal aspects become more potent, granting stronger benefits while raging.",
@@ -2493,7 +2493,7 @@
     "level": 3,
     "names": {
       "en": "Warding Flare",
-      "de": "Du kannst göttliches Licht einsetzen, um einem Angriff gegen dich Nachteil aufzuerlegen."
+      "de": "Warding Flare"
     },
     "descriptions": {
       "en": "You can use divine light to impose disadvantage on an attack against you.",
@@ -2514,7 +2514,7 @@
     "level": 3,
     "names": {
       "en": "Radiance of the Dawn",
-      "de": "Du entfesselst Sonnenlicht, das magische Dunkelheit bannt und nahen Feinden schadet."
+      "de": "Radiance of the Dawn"
     },
     "descriptions": {
       "en": "You unleash sunlight that dispels magical darkness and harms nearby enemies.",
@@ -2535,7 +2535,7 @@
     "level": 6,
     "names": {
       "en": "Improved Warding Flare",
-      "de": "Du kannst Schutzleuchten einsetzen, um einen Verbündeten in Reichweite zu schützen."
+      "de": "Improved Warding Flare"
     },
     "descriptions": {
       "en": "You can use Warding Flare to protect an ally within range.",
@@ -2556,7 +2556,7 @@
     "level": 17,
     "names": {
       "en": "Corona of Light",
-      "de": "Du strahlst Sonnenlicht aus, das Kreaturen anfälliger für deine gleißende und Feuer-Magie macht."
+      "de": "Corona of Light"
     },
     "descriptions": {
       "en": "You radiate sunlight that makes creatures more vulnerable to your radiant and fire magic.",
@@ -2577,7 +2577,7 @@
     "level": 3,
     "names": {
       "en": "Blessing of the Trickster",
-      "de": "Du kannst eine Kreatur segnen und dadurch ihre Fähigkeit verbessern, unbemerkt zu bleiben."
+      "de": "Blessing of the Trickster"
     },
     "descriptions": {
       "en": "You can grant a creature a blessing that improves its ability to move unseen.",
@@ -2598,7 +2598,7 @@
     "level": 3,
     "names": {
       "en": "Invoke Duplicity",
-      "de": "Du erschaffst ein Trugbild, das Gegner ablenkt und als Ursprung deiner Zauber dienen kann."
+      "de": "Invoke Duplicity"
     },
     "descriptions": {
       "en": "You create an illusory duplicate that distracts foes and can serve as the origin of your spells.",
@@ -2619,7 +2619,7 @@
     "level": 6,
     "names": {
       "en": "Trickster's Transposition",
-      "de": "Du kannst auf magische Weise mit deinem Trugbild den Platz tauschen."
+      "de": "Trickster's Transposition"
     },
     "descriptions": {
       "en": "You can magically exchange places with your illusory duplicate.",
@@ -2640,7 +2640,7 @@
     "level": 17,
     "names": {
       "en": "Improved Duplicity",
-      "de": "Dein Trugbild wird vielseitiger und kann zusätzliche Möglichkeiten für deine Magie schaffen."
+      "de": "Improved Duplicity"
     },
     "descriptions": {
       "en": "Your duplicate becomes more versatile and can create additional openings for your magic.",
@@ -2661,7 +2661,7 @@
     "level": 3,
     "names": {
       "en": "War Priest",
-      "de": "Du kannst eine begrenzte Anzahl von Malen als Bonusaktion einen zusätzlichen Waffenangriff ausführen."
+      "de": "War Priest"
     },
     "descriptions": {
       "en": "You can make an additional weapon attack as a Bonus Action a limited number of times.",
@@ -2682,7 +2682,7 @@
     "level": 3,
     "names": {
       "en": "Guided Strike",
-      "de": "Du kannst göttliche Macht bündeln, um einen Angriffswurf zu verbessern."
+      "de": "Guided Strike"
     },
     "descriptions": {
       "en": "You can channel divine power to improve an attack roll.",
@@ -2703,7 +2703,7 @@
     "level": 6,
     "names": {
       "en": "War God's Blessing",
-      "de": "Du kannst deine göttliche Führung einsetzen, um den Angriff eines Verbündeten zu verbessern."
+      "de": "War God's Blessing"
     },
     "descriptions": {
       "en": "You can use your divine guidance to improve an ally's attack.",
@@ -2724,7 +2724,7 @@
     "level": 17,
     "names": {
       "en": "Avatar of Battle",
-      "de": "Du erhältst Resistenz gegen Schaden durch nichtmagische Angriffe."
+      "de": "Avatar of Battle"
     },
     "descriptions": {
       "en": "You gain resistance to damage from nonmagical attacks.",
@@ -2745,7 +2745,7 @@
     "level": 3,
     "names": {
       "en": "Peerless Athlete",
-      "de": "Deine göttliche Lebenskraft verbessert deine athletischen Fähigkeiten und körperliche Stärke."
+      "de": "Peerless Athlete"
     },
     "descriptions": {
       "en": "Your divine vigor improves your athletic abilities and physical prowess.",
@@ -2766,7 +2766,7 @@
     "level": 3,
     "names": {
       "en": "Inspiring Smite",
-      "de": "Nachdem du Göttliches Niederstrecken eingesetzt hast, kannst du nahen Kreaturen temporäre Trefferpunkte verleihen."
+      "de": "Inspiring Smite"
     },
     "descriptions": {
       "en": "After using Divine Smite, you can grant temporary hit points to nearby creatures.",
@@ -2787,7 +2787,7 @@
     "level": 7,
     "names": {
       "en": "Aura of Alacrity",
-      "de": "Deine Bewegungsrate und die Bewegungsrate naher Verbündeter steigen."
+      "de": "Aura of Alacrity"
     },
     "descriptions": {
       "en": "Your speed and the speed of nearby allies increase.",
@@ -2808,7 +2808,7 @@
     "level": 15,
     "names": {
       "en": "Glorious Defense",
-      "de": "Du kannst einen erfolgreichen Angriff gegen dich oder einen Verbündeten abwenden und kontern."
+      "de": "Glorious Defense"
     },
     "descriptions": {
       "en": "You can turn a successful attack against you or an ally into a miss and counterattack.",
@@ -2829,7 +2829,7 @@
     "level": 20,
     "names": {
       "en": "Living Legend",
-      "de": "Du wirst zu einem inspirierenden Helden, dessen Präsenz Angriffe und Verteidigung verbessert."
+      "de": "Living Legend"
     },
     "descriptions": {
       "en": "You become an inspiring champion whose presence improves your attacks and defenses.",
@@ -2850,7 +2850,7 @@
     "level": 3,
     "names": {
       "en": "Nature's Wrath",
-      "de": "Du kannst Kreaturen in deiner Nähe mit geisterhaften Ranken festsetzen."
+      "de": "Nature's Wrath"
     },
     "descriptions": {
       "en": "You can restrain nearby creatures with spectral vines.",
@@ -2871,7 +2871,7 @@
     "level": 3,
     "names": {
       "en": "Oath Spells",
-      "de": "Du hast die Zauber des Schwurs der Uralten stets vorbereitet."
+      "de": "Schwurzauber"
     },
     "descriptions": {
       "en": "You always have the spells associated with the Oath of the Ancients prepared.",
@@ -2904,7 +2904,7 @@
     "level": 7,
     "names": {
       "en": "Aura of Warding",
-      "de": "Du und nahe Verbündete erhaltet Schutz vor Zauberschaden."
+      "de": "Aura of Warding"
     },
     "descriptions": {
       "en": "You and nearby allies gain protection against spell damage.",
@@ -2925,7 +2925,7 @@
     "level": 15,
     "names": {
       "en": "Undying Sentinel",
-      "de": "Du kannst dich ans Leben klammern, wenn deine Trefferpunkte auf 0 sinken, und bist von der Gebrechlichkeit des Alters unbeeinträchtigt."
+      "de": "Undying Sentinel"
     },
     "descriptions": {
       "en": "You can cling to life when reduced to 0 hit points and are unaffected by the frailty of old age.",
@@ -2946,7 +2946,7 @@
     "level": 20,
     "names": {
       "en": "Elder Champion",
-      "de": "Du nimmst eine uralte, naturmagische Gestalt an, die Heilung und Zauberwirken verbessert."
+      "de": "Elder Champion"
     },
     "descriptions": {
       "en": "You take on an ancient nature-powered form with enhanced healing and spellcasting.",
@@ -2967,7 +2967,7 @@
     "level": 3,
     "names": {
       "en": "Vow of Enmity",
-      "de": "Du erklärst einen Gegner zu deinem Erzfeind und erhältst Vorteile, wenn du ihn angreifst."
+      "de": "Vow of Enmity"
     },
     "descriptions": {
       "en": "You mark a foe as your sworn enemy, gaining an edge when you attack it.",
@@ -2988,7 +2988,7 @@
     "level": 3,
     "names": {
       "en": "Oath Spells",
-      "de": "Du hast die Zauber des Schwurs der Vergeltung stets vorbereitet."
+      "de": "Schwurzauber"
     },
     "descriptions": {
       "en": "You always have the spells associated with the Oath of Vengeance prepared.",
@@ -3021,7 +3021,7 @@
     "level": 7,
     "names": {
       "en": "Relentless Avenger",
-      "de": "Wenn du mit einem Gelegenheitsangriff triffst, kannst du dich im Rahmen derselben Reaktion bewegen."
+      "de": "Relentless Avenger"
     },
     "descriptions": {
       "en": "When you hit with an opportunity attack, you can move as part of the same reaction.",
@@ -3042,7 +3042,7 @@
     "level": 15,
     "names": {
       "en": "Soul of Vengeance",
-      "de": "Wenn dein Erzfeind angreift, kannst du deine Reaktion einsetzen, um ihn anzugreifen."
+      "de": "Soul of Vengeance"
     },
     "descriptions": {
       "en": "When your sworn enemy attacks, you can use your reaction to strike it.",
@@ -3063,7 +3063,7 @@
     "level": 20,
     "names": {
       "en": "Avenging Angel",
-      "de": "Du nimmst eine Engelsgestalt an, die dir Flugfähigkeit und eine Aura verleiht, die Feinde verängstigt."
+      "de": "Avenging Angel"
     },
     "descriptions": {
       "en": "You assume an angelic form that grants flight and an aura that frightens enemies.",
@@ -3084,7 +3084,7 @@
     "level": 3,
     "names": {
       "en": "Primal Companion",
-      "de": "Du verbindest dich mit einem Urgeist, der eine Tiergestalt annimmt und an deiner Seite kämpft."
+      "de": "Primal Companion"
     },
     "descriptions": {
       "en": "You bond with a primal spirit that takes an animal form and fights alongside you.",
@@ -3105,7 +3105,7 @@
     "level": 7,
     "names": {
       "en": "Exceptional Training",
-      "de": "Die Angriffe deines Gefährten gelten als magisch und er erhält verbesserte taktische Möglichkeiten."
+      "de": "Exceptional Training"
     },
     "descriptions": {
       "en": "Your companion's attacks become magical, and it gains improved tactical options.",
@@ -3126,7 +3126,7 @@
     "level": 11,
     "names": {
       "en": "Bestial Fury",
-      "de": "Dein Gefährte wird im Kampf effektiver und kann zusätzliche Angriffe entfesseln."
+      "de": "Bestial Fury"
     },
     "descriptions": {
       "en": "Your companion becomes more effective in combat and can unleash additional attacks.",
@@ -3147,7 +3147,7 @@
     "level": 15,
     "names": {
       "en": "Share Spells",
-      "de": "Zauber, die du auf dich selbst wirkst, können auch deinen nahen Gefährten betreffen."
+      "de": "Share Spells"
     },
     "descriptions": {
       "en": "Spells you cast on yourself can also affect your nearby companion.",
@@ -3168,7 +3168,7 @@
     "level": 3,
     "names": {
       "en": "Dreadful Strikes",
-      "de": "Deine Waffenangriffe können zusätzlichen psychischen Schaden verursachen, der zwischen Gegnern weiterwandern kann."
+      "de": "Dreadful Strikes"
     },
     "descriptions": {
       "en": "Your weapon strikes can deal additional psychic damage, with the effect moving between foes.",
@@ -3189,7 +3189,7 @@
     "level": 3,
     "names": {
       "en": "Fey Wanderer Spells",
-      "de": "Du hast die Zauber des Feenwanderers ab den entsprechenden Waldläuferstufen stets vorbereitet."
+      "de": "Fey Wanderer Spells"
     },
     "descriptions": {
       "en": "You always have the Fey Wanderer spells prepared at the appropriate Ranger levels.",
@@ -3210,7 +3210,7 @@
     "level": 3,
     "names": {
       "en": "Otherworldly Glamour",
-      "de": "Du erhältst einen Vorteil bei sozialen Proben und Übung in einer zusätzlichen Fertigkeit."
+      "de": "Otherworldly Glamour"
     },
     "descriptions": {
       "en": "You gain a benefit to social checks and an additional skill proficiency.",
@@ -3231,7 +3231,7 @@
     "level": 7,
     "names": {
       "en": "Beguiling Twist",
-      "de": "Du kannst bestimmte Bezauberungs- oder Furchteffekte nutzen, um eine andere Kreatur zu beeinflussen."
+      "de": "Beguiling Twist"
     },
     "descriptions": {
       "en": "You can turn certain charm or fear effects into an opportunity to affect another creature.",
@@ -3252,7 +3252,7 @@
     "level": 11,
     "names": {
       "en": "Fey Reinforcements",
-      "de": "Du kannst Feengeister herbeirufen, die dich im Kampf unterstützen."
+      "de": "Fey Reinforcements"
     },
     "descriptions": {
       "en": "You can call fey spirits to aid you in battle.",
@@ -3273,7 +3273,7 @@
     "level": 15,
     "names": {
       "en": "Misty Wanderer",
-      "de": "Du kannst Nebelschritt wirken und eine willige Kreatur mitnehmen."
+      "de": "Misty Wanderer"
     },
     "descriptions": {
       "en": "You can cast Misty Step and can bring a willing creature with you.",
@@ -3294,7 +3294,7 @@
     "level": 3,
     "names": {
       "en": "Dread Ambusher",
-      "de": "Du erhältst verbesserte Initiative, zusätzliche Bewegung zu Kampfbeginn und einen stärkeren Eröffnungsangriff."
+      "de": "Dread Ambusher"
     },
     "descriptions": {
       "en": "You gain improved initiative, extra movement at the start of combat, and a stronger opening attack.",
@@ -3315,7 +3315,7 @@
     "level": 3,
     "names": {
       "en": "Umbral Sight",
-      "de": "Du erhältst Dunkelsicht und bist für Kreaturen, die sich auf Dunkelsicht verlassen, schwer zu entdecken."
+      "de": "Umbral Sight"
     },
     "descriptions": {
       "en": "You gain darkvision and become difficult to detect by creatures relying on darkvision.",
@@ -3336,7 +3336,7 @@
     "level": 3,
     "names": {
       "en": "Gloom Stalker Spells",
-      "de": "Du hast die Zauber des Schreckenspirschers ab den entsprechenden Waldläuferstufen stets vorbereitet."
+      "de": "Gloom Stalker Spells"
     },
     "descriptions": {
       "en": "You always have the Gloom Stalker spells prepared at the appropriate Ranger levels.",
@@ -3357,7 +3357,7 @@
     "level": 7,
     "names": {
       "en": "Iron Mind",
-      "de": "Du erhältst Übung in einem Rettungswurf, der deine geistige Widerstandskraft stärkt."
+      "de": "Iron Mind"
     },
     "descriptions": {
       "en": "You gain proficiency in a saving throw that strengthens your mental defenses.",
@@ -3378,7 +3378,7 @@
     "level": 11,
     "names": {
       "en": "Stalker's Flurry",
-      "de": "Du kannst einen verfehlten Angriff in eine weitere Angriffsmöglichkeit umwandeln."
+      "de": "Stalker's Flurry"
     },
     "descriptions": {
       "en": "You can turn a missed attack into another attack opportunity.",
@@ -3399,7 +3399,7 @@
     "level": 15,
     "names": {
       "en": "Shadowy Dodge",
-      "de": "Du kannst als Reaktion einem Angriff gegen dich Nachteil auferlegen und ihm möglicherweise ausweichen."
+      "de": "Shadowy Dodge"
     },
     "descriptions": {
       "en": "You can use a reaction to impose disadvantage on an attack against you and potentially evade it.",
@@ -3420,7 +3420,7 @@
     "level": 3,
     "names": {
       "en": "Spellcasting",
-      "de": "Du erlernst Magierzauber, vor allem aus den Schulen der Verzauberung und Illusion."
+      "de": "Zauberwirken"
     },
     "descriptions": {
       "en": "You learn wizard spells, primarily from the enchantment and illusion schools.",
@@ -3441,7 +3441,7 @@
     "level": 3,
     "names": {
       "en": "Mage Hand Legerdemain",
-      "de": "Du kannst Magierhand für filigrane Aufgaben einsetzen, etwa zur Fernmanipulation von Gegenständen und zum Taschendiebstahl."
+      "de": "Magische Hand-Tricks"
     },
     "descriptions": {
       "en": "You can use Mage Hand for delicate tasks, including manipulating objects and picking pockets at range.",
@@ -3462,7 +3462,7 @@
     "level": 9,
     "names": {
       "en": "Magical Ambush",
-      "de": "Eine Kreatur hat Nachteil bei Rettungswürfen gegen deinen Zauber, wenn du ihn wirkst, während du vor ihr verborgen bist."
+      "de": "Magischer Hinterhalt"
     },
     "descriptions": {
       "en": "A creature has disadvantage on saves against your spell when you cast it while hidden from that creature.",
@@ -3483,7 +3483,7 @@
     "level": 13,
     "names": {
       "en": "Versatile Trickster",
-      "de": "Du kannst eine Kreatur mit Magierhand ablenken, um einen Vorteil gegen sie zu erhalten."
+      "de": "Vielseitiger Betrüger"
     },
     "descriptions": {
       "en": "You can distract a creature with Mage Hand to gain an advantage against it.",
@@ -3504,7 +3504,7 @@
     "level": 17,
     "names": {
       "en": "Spell Thief",
-      "de": "Du kannst als Reaktion einen Zauber stören, der dich als Ziel hat, und seine Magie vorübergehend übernehmen."
+      "de": "Zauberdieb"
     },
     "descriptions": {
       "en": "You can use your reaction to interfere with a spell targeting you and temporarily take its magic.",
@@ -3525,7 +3525,7 @@
     "level": 3,
     "names": {
       "en": "Bonus Proficiencies",
-      "de": "Du erhältst Übung mit dem Verkleidungsset und dem Giftmischerset."
+      "de": "Zusätzliche Fertigkeiten"
     },
     "descriptions": {
       "en": "You gain proficiency with the disguise kit and poisoner's kit.",
@@ -3546,7 +3546,7 @@
     "level": 3,
     "names": {
       "en": "Assassinate",
-      "de": "Du erhältst Vorteile beim Angriff auf Kreaturen, die noch nicht gehandelt haben, und kannst einen Treffer gegen eine überraschte Kreatur besonders tödlich machen."
+      "de": "Assassinate"
     },
     "descriptions": {
       "en": "You gain advantages when attacking creatures that have not yet acted, and can make a hit against a surprised creature especially deadly.",
@@ -3567,7 +3567,7 @@
     "level": 9,
     "names": {
       "en": "Infiltration Expertise",
-      "de": "Du kannst falsche Identitäten aufbauen und überzeugend als andere Person auftreten."
+      "de": "Infiltration Expertise"
     },
     "descriptions": {
       "en": "You can establish false identities and convincingly pass as another person.",
@@ -3588,7 +3588,7 @@
     "level": 13,
     "names": {
       "en": "Envenom Weapons",
-      "de": "Du kannst deine Waffen im Rahmen deiner Kampftechnik mit einem wirksamen Gift versehen."
+      "de": "Envenom Weapons"
     },
     "descriptions": {
       "en": "You can coat your weapons with a potent poison as part of your combat training.",
@@ -3609,7 +3609,7 @@
     "level": 17,
     "names": {
       "en": "Death Strike",
-      "de": "Eine von dir überraschte Kreatur wird bei einem Treffer mit einem verheerenden Effekt konfrontiert."
+      "de": "Death Strike"
     },
     "descriptions": {
       "en": "A creature surprised by you faces a devastating effect when you hit it.",
@@ -3630,7 +3630,7 @@
     "level": 3,
     "names": {
       "en": "Psionic Power",
-      "de": "Du erhältst psionische Würfel, mit denen du Telepathie, Fertigkeitsverbesserungen und weitere mentale Fähigkeiten einsetzt."
+      "de": "Psionic Power"
     },
     "descriptions": {
       "en": "You gain psionic dice that fuel telepathy, skill enhancement, and other psychic abilities.",
@@ -3651,7 +3651,7 @@
     "level": 3,
     "names": {
       "en": "Psychic Blades",
-      "de": "Du kannst psychische Klingen manifestieren und für schnelle Angriffe einsetzen."
+      "de": "Psychic Blades"
     },
     "descriptions": {
       "en": "You can manifest psychic blades and use them for swift attacks.",
@@ -3672,7 +3672,7 @@
     "level": 9,
     "names": {
       "en": "Soul Blades",
-      "de": "Deine psychischen Klingen werden präziser und können zur Teleportation eingesetzt werden."
+      "de": "Soul Blades"
     },
     "descriptions": {
       "en": "Your psychic blades gain improved accuracy and can be used for teleportation.",
@@ -3693,7 +3693,7 @@
     "level": 13,
     "names": {
       "en": "Psychic Veil",
-      "de": "Du kannst dich durch mentale Verschleierung unsichtbar machen."
+      "de": "Psychic Veil"
     },
     "descriptions": {
       "en": "You can become invisible through psychic concealment.",
@@ -3714,7 +3714,7 @@
     "level": 17,
     "names": {
       "en": "Rend Mind",
-      "de": "Du kannst psionische Kraft einsetzen, um eine Kreatur mit deinen psychischen Klingen zu betäuben."
+      "de": "Rend Mind"
     },
     "descriptions": {
       "en": "You can expend psionic power to stun a creature with your psychic blades.",
@@ -3735,7 +3735,7 @@
     "level": 3,
     "names": {
       "en": "Psionic Spells",
-      "de": "Du erlernst zusätzliche Zauber, die mit aberranter und mentaler Magie verbunden sind."
+      "de": "Psionic Spells"
     },
     "descriptions": {
       "en": "You learn additional spells associated with aberrant and psychic magic.",
@@ -3756,7 +3756,7 @@
     "level": 3,
     "names": {
       "en": "Telepathic Speech",
-      "de": "Du kannst eine telepathische Verbindung zu einer anderen Kreatur herstellen und mental kommunizieren."
+      "de": "Telepathic Speech"
     },
     "descriptions": {
       "en": "You can form a telepathic connection with another creature and communicate mentally.",
@@ -3777,7 +3777,7 @@
     "level": 6,
     "names": {
       "en": "Psionic Sorcery",
-      "de": "Du kannst bestimmte Zauber mit Zaubereipunkten und ohne ihre üblichen Komponenten wirken."
+      "de": "Psionic Sorcery"
     },
     "descriptions": {
       "en": "You can cast certain spells using sorcery points without their usual components.",
@@ -3798,7 +3798,7 @@
     "level": 6,
     "names": {
       "en": "Psychic Defenses",
-      "de": "Du erhältst Resistenz gegen psychischen Schaden und Schutz davor, bezaubert oder verängstigt zu werden."
+      "de": "Psychic Defenses"
     },
     "descriptions": {
       "en": "You gain resistance to psychic damage and protection against being charmed or frightened.",
@@ -3819,7 +3819,7 @@
     "level": 14,
     "names": {
       "en": "Revelation in Flesh",
-      "de": "Du verwandelst deinen Körper vorübergehend und erhältst ungewöhnliche Bewegungs- und Sinnesfähigkeiten."
+      "de": "Revelation in Flesh"
     },
     "descriptions": {
       "en": "You temporarily transform your body to gain unusual movement and sensory abilities.",
@@ -3840,7 +3840,7 @@
     "level": 18,
     "names": {
       "en": "Warping Implosion",
-      "de": "Du erzeugst eine räumliche Implosion, die nahe Kreaturen schädigt und versetzt."
+      "de": "Warping Implosion"
     },
     "descriptions": {
       "en": "You create a spatial implosion that damages and relocates nearby creatures.",
@@ -3861,7 +3861,7 @@
     "level": 3,
     "names": {
       "en": "Clockwork Spells",
-      "de": "Du erlernst zusätzliche Zauber, die mit Ordnung, Schutz und mechanischen Kräften verbunden sind."
+      "de": "Clockwork Spells"
     },
     "descriptions": {
       "en": "You learn additional spells tied to order, protection, and the forces of mechanism.",
@@ -3882,7 +3882,7 @@
     "level": 3,
     "names": {
       "en": "Restore Balance",
-      "de": "Du kannst deine Reaktion einsetzen, um Vorteil oder Nachteil auf den Wurf einer nahen Kreatur aufzuheben."
+      "de": "Restore Balance"
     },
     "descriptions": {
       "en": "You can use your reaction to neutralize advantage or disadvantage on a nearby creature's roll.",
@@ -3903,7 +3903,7 @@
     "level": 6,
     "names": {
       "en": "Bastion of Law",
-      "de": "Du gibst Zaubereipunkte aus, um ein Schutzfeld zu erschaffen, das erlittenen Schaden verringert."
+      "de": "Bastion of Law"
     },
     "descriptions": {
       "en": "You spend sorcery points to create a protective field that reduces incoming damage.",
@@ -3924,7 +3924,7 @@
     "level": 14,
     "names": {
       "en": "Trance of Order",
-      "de": "Du trittst in einen Zustand vollkommener Ordnung ein, der die Zuverlässigkeit deiner W20-Würfe verbessert."
+      "de": "Trance of Order"
     },
     "descriptions": {
       "en": "You enter a state of perfect order that improves the reliability of your d20 rolls.",
@@ -3945,7 +3945,7 @@
     "level": 18,
     "names": {
       "en": "Clockwork Cavalcade",
-      "de": "Du beschwörst Uhrwerkgeister, die Kreaturen und Gegenstände in deiner Umgebung wiederherstellen und reparieren."
+      "de": "Clockwork Cavalcade"
     },
     "descriptions": {
       "en": "You summon clockwork spirits that restore and repair creatures and objects around you.",
@@ -3966,7 +3966,7 @@
     "level": 3,
     "names": {
       "en": "Wild Magic Surge",
-      "de": "Beim Wirken deiner Zauber können unvorhersehbare magische Effekte ausgelöst werden."
+      "de": "Wild Magic Surge"
     },
     "descriptions": {
       "en": "Your spellcasting can trigger unpredictable magical effects.",
@@ -3987,7 +3987,7 @@
     "level": 3,
     "names": {
       "en": "Tides of Chaos",
-      "de": "Du kannst Vorteil auf einen W20-Wurf erhalten, riskierst danach jedoch einen Magieschub."
+      "de": "Tides of Chaos"
     },
     "descriptions": {
       "en": "You can gain advantage on a d20 test, with the possibility of triggering a surge afterward.",
@@ -4008,7 +4008,7 @@
     "level": 6,
     "names": {
       "en": "Bend Luck",
-      "de": "Du kannst Zaubereipunkte und deine Reaktion einsetzen, um den Wurf einer anderen Kreatur zu verändern."
+      "de": "Bend Luck"
     },
     "descriptions": {
       "en": "You can use sorcery points and your reaction to alter another creature's roll.",
@@ -4029,7 +4029,7 @@
     "level": 14,
     "names": {
       "en": "Controlled Chaos",
-      "de": "Wenn ein Magieschub auftritt, kannst du zweimal würfeln und den eintretenden Effekt auswählen."
+      "de": "Controlled Chaos"
     },
     "descriptions": {
       "en": "When a Wild Magic Surge occurs, you can roll twice and choose which effect happens.",
@@ -4050,7 +4050,7 @@
     "level": 18,
     "names": {
       "en": "Tamed Surge",
-      "de": "Du erhältst größere Kontrolle über die magischen Schübe, die deine Zauber auslösen."
+      "de": "Tamed Surge"
     },
     "descriptions": {
       "en": "You gain greater control over the magical surges caused by your spells.",
@@ -4071,7 +4071,7 @@
     "level": 3,
     "names": {
       "en": "Archfey Spells",
-      "de": "Du erlernst zusätzliche Zauber, die mit der Feenwildnis und dem Feenwesen verbunden sind."
+      "de": "Archfey Spells"
     },
     "descriptions": {
       "en": "You learn additional spells associated with the Feywild and the Archfey.",
@@ -4092,7 +4092,7 @@
     "level": 3,
     "names": {
       "en": "Steps of the Fey",
-      "de": "Du kannst Nebelschritt wirken und erhältst zusätzliche Vorteile beim Teleportieren."
+      "de": "Steps of the Fey"
     },
     "descriptions": {
       "en": "You can cast Misty Step and gain additional benefits when you teleport.",
@@ -4113,7 +4113,7 @@
     "level": 6,
     "names": {
       "en": "Misty Escape",
-      "de": "Wenn du Schaden erleidest, kannst du als Reaktion teleportieren und schwer wahrnehmbar werden."
+      "de": "Misty Escape"
     },
     "descriptions": {
       "en": "When you take damage, you can use your reaction to teleport and become difficult to perceive.",
@@ -4134,7 +4134,7 @@
     "level": 10,
     "names": {
       "en": "Beguiling Defenses",
-      "de": "Du bist gegen Bezauberung geschützt und kannst einen Bezauberungsversuch auf dessen Ursprung zurückwerfen."
+      "de": "Beguiling Defenses"
     },
     "descriptions": {
       "en": "You are protected against charm effects and can turn an attempted charm against its source.",
@@ -4155,7 +4155,7 @@
     "level": 14,
     "names": {
       "en": "Bewitching Magic",
-      "de": "Nachdem du einen Verzauberungs- oder Illusionszauber gewirkt hast, kannst du teleportieren und versuchen, eine Kreatur zu bezaubern oder zu verängstigen."
+      "de": "Bewitching Magic"
     },
     "descriptions": {
       "en": "After casting an Enchantment or Illusion spell, you can teleport and attempt to charm or frighten a creature.",
@@ -4176,7 +4176,7 @@
     "level": 3,
     "names": {
       "en": "Celestial Spells",
-      "de": "Du erlernst zusätzliche Zauber, die mit himmlischer Macht und Wiederherstellung verbunden sind."
+      "de": "Celestial Spells"
     },
     "descriptions": {
       "en": "You learn additional spells associated with celestial power and restoration.",
@@ -4197,7 +4197,7 @@
     "level": 3,
     "names": {
       "en": "Healing Light",
-      "de": "Du erhältst einen Vorrat heilender Energie, mit dem du Kreaturen auf Entfernung Trefferpunkte zurückgeben kannst."
+      "de": "Healing Light"
     },
     "descriptions": {
       "en": "You gain a pool of healing energy that can restore hit points to creatures at range.",
@@ -4218,7 +4218,7 @@
     "level": 6,
     "names": {
       "en": "Radiant Soul",
-      "de": "Du erhältst Resistenz gegen gleißenden Schaden und kannst bestimmte Zauber mit gleißender Macht verstärken."
+      "de": "Radiant Soul"
     },
     "descriptions": {
       "en": "You gain resistance to radiant damage and can add radiant power to certain spells.",
@@ -4239,7 +4239,7 @@
     "level": 10,
     "names": {
       "en": "Celestial Resilience",
-      "de": "Deine Magie verleiht dir und Verbündeten temporäre Trefferpunkte, wenn du bestimmte Klassenmerkmale einsetzt."
+      "de": "Celestial Resilience"
     },
     "descriptions": {
       "en": "Your magic grants temporary hit points to you and allies when you use certain class features.",
@@ -4260,7 +4260,7 @@
     "level": 14,
     "names": {
       "en": "Searing Vengeance",
-      "de": "Wenn du oder ein Verbündeter zu fallen droht, kannst du gleißende Energie entfesseln, um euch zu stärken und Feinde zu bestrafen."
+      "de": "Searing Vengeance"
     },
     "descriptions": {
       "en": "When you or an ally would fall, you can unleash radiant energy to recover and punish foes.",
@@ -4281,7 +4281,7 @@
     "level": 3,
     "names": {
       "en": "Awakened Mind",
-      "de": "Du kannst eine telepathische Verbindung herstellen und ohne gesprochene Worte kommunizieren."
+      "de": "Awakened Mind"
     },
     "descriptions": {
       "en": "You can establish a telepathic connection and communicate without spoken words.",
@@ -4302,7 +4302,7 @@
     "level": 3,
     "names": {
       "en": "Great Old One Spells",
-      "de": "Du erlernst zusätzliche Zauber, die mit fremdartigen Geistern und verbotenem Wissen verbunden sind."
+      "de": "Great Old One Spells"
     },
     "descriptions": {
       "en": "You learn additional spells associated with alien minds and forbidden knowledge.",
@@ -4323,7 +4323,7 @@
     "level": 6,
     "names": {
       "en": "Clairvoyant Combatant",
-      "de": "Du kannst durch die Sinne einer anderen Kreatur wahrnehmen und diese Erkenntnis im Kampf nutzen."
+      "de": "Clairvoyant Combatant"
     },
     "descriptions": {
       "en": "You can perceive through another creature's senses and use that insight in combat.",
@@ -4344,7 +4344,7 @@
     "level": 10,
     "names": {
       "en": "Eldritch Hex",
-      "de": "Du belegst eine Kreatur mit einem mentalen Fluch, schwächst sie und stärkst deine Angriffe gegen sie."
+      "de": "Eldritch Hex"
     },
     "descriptions": {
       "en": "You curse a creature with psychic power, weakening it and empowering your attacks against it.",
@@ -4365,7 +4365,7 @@
     "level": 14,
     "names": {
       "en": "Create Thrall",
-      "de": "Du kannst den Geist einer Kreatur mithilfe der fremdartigen Macht deines Patrons an dich binden."
+      "de": "Create Thrall"
     },
     "descriptions": {
       "en": "You can bind a creature's mind to your service through your patron's alien power.",
@@ -4386,7 +4386,7 @@
     "level": 3,
     "names": {
       "en": "Abjuration Savant",
-      "de": "Das Kopieren von Bannzaubern in dein Zauberbuch benötigt weniger Zeit und Geld."
+      "de": "Abjuration Savant"
     },
     "descriptions": {
       "en": "Copying abjuration spells into your spellbook takes less time and money.",
@@ -4407,7 +4407,7 @@
     "level": 3,
     "names": {
       "en": "Arcane Ward",
-      "de": "Du erschaffst einen magischen Schutzschild, der Schaden abfängt und durch Bannzauber wiederhergestellt werden kann."
+      "de": "Arcane Ward"
     },
     "descriptions": {
       "en": "You create a magical ward that absorbs damage and can be restored by casting abjuration spells.",
@@ -4428,7 +4428,7 @@
     "level": 6,
     "names": {
       "en": "Projected Ward",
-      "de": "Du kannst deinen Arkanen Schutzschild einsetzen, um eine andere Kreatur in deiner Nähe zu schützen."
+      "de": "Projected Ward"
     },
     "descriptions": {
       "en": "You can use your Arcane Ward to protect another creature nearby.",
@@ -4449,7 +4449,7 @@
     "level": 10,
     "names": {
       "en": "Improved Abjuration",
-      "de": "Deine Meisterschaft der Bannmagie verbessert deine Fähigkeit, magische Effekte zu kontern und zu überwinden."
+      "de": "Improved Abjuration"
     },
     "descriptions": {
       "en": "Your mastery of abjuration improves your ability to counter and overcome magical effects.",
@@ -4470,7 +4470,7 @@
     "level": 14,
     "names": {
       "en": "Spell Resistance",
-      "de": "Du hast Vorteil bei Rettungswürfen gegen Zauber und Resistenz gegen Schaden durch Zauber."
+      "de": "Spell Resistance"
     },
     "descriptions": {
       "en": "You gain advantage on saving throws against spells and resistance to damage from spells.",
@@ -4491,7 +4491,7 @@
     "level": 3,
     "names": {
       "en": "Divination Savant",
-      "de": "Das Kopieren von Erkenntniszaubern in dein Zauberbuch benötigt weniger Zeit und Geld."
+      "de": "Divination Savant"
     },
     "descriptions": {
       "en": "Copying divination spells into your spellbook takes less time and money.",
@@ -4512,7 +4512,7 @@
     "level": 3,
     "names": {
       "en": "Portent",
-      "de": "Nach einer langen Rast würfelst du Würfel, mit denen du bestimmte W20-Würfe von dir oder einer sichtbaren Kreatur ersetzen kannst."
+      "de": "Portent"
     },
     "descriptions": {
       "en": "After a Long Rest, roll dice that can replace certain d20 rolls made by you or a visible creature.",
@@ -4533,7 +4533,7 @@
     "level": 6,
     "names": {
       "en": "Expert Divination",
-      "de": "Wenn du einen Erkenntniszauber des 2. oder eines höheren Grades wirkst, erhältst du einen Zauberplatz niedrigeren Grades zurück."
+      "de": "Expert Divination"
     },
     "descriptions": {
       "en": "Casting a divination spell of level 2 or higher restores a lower-level spell slot.",
@@ -4554,7 +4554,7 @@
     "level": 10,
     "names": {
       "en": "The Third Eye",
-      "de": "Du erhältst für begrenzte Zeit einen besonderen Sinn oder Wahrnehmungsvorteil."
+      "de": "The Third Eye"
     },
     "descriptions": {
       "en": "You gain a special sense or perception benefit for a limited time.",
@@ -4575,7 +4575,7 @@
     "level": 14,
     "names": {
       "en": "Greater Portent",
-      "de": "Dein Merkmal Vorzeichen gewährt dir einen zusätzlichen Vorzeichenwürfel."
+      "de": "Greater Portent"
     },
     "descriptions": {
       "en": "Your Portent feature grants you an additional foretelling die.",
@@ -4596,7 +4596,7 @@
     "level": 3,
     "names": {
       "en": "Illusion Savant",
-      "de": "Das Kopieren von Illusionszaubern in dein Zauberbuch benötigt weniger Zeit und Geld."
+      "de": "Illusion Savant"
     },
     "descriptions": {
       "en": "Copying illusion spells into your spellbook takes less time and money.",
@@ -4617,7 +4617,7 @@
     "level": 3,
     "names": {
       "en": "Improved Minor Illusion",
-      "de": "Du erlernst Kleine Illusion und kannst damit zugleich ein Geräusch und ein Bild erzeugen."
+      "de": "Improved Minor Illusion"
     },
     "descriptions": {
       "en": "You learn Minor Illusion and can create both a sound and an image with it.",
@@ -4638,7 +4638,7 @@
     "level": 6,
     "names": {
       "en": "Malleable Illusions",
-      "de": "Du kannst die Beschaffenheit einer andauernden Illusion verändern, solange du sie sehen kannst."
+      "de": "Malleable Illusions"
     },
     "descriptions": {
       "en": "You can change the nature of an ongoing illusion when you can see it.",
@@ -4659,7 +4659,7 @@
     "level": 10,
     "names": {
       "en": "Illusory Self",
-      "de": "Du kannst ein Trugbild von dir erschaffen, damit ein Angriff gegen dich danebengeht."
+      "de": "Illusory Self"
     },
     "descriptions": {
       "en": "You can create an illusory duplicate to cause an attack against you to miss.",
@@ -4680,7 +4680,7 @@
     "level": 14,
     "names": {
       "en": "Illusory Reality",
-      "de": "Du kannst einen unbelebten Teil einer Illusion für kurze Zeit real werden lassen."
+      "de": "Illusory Reality"
     },
     "descriptions": {
       "en": "You can make an inanimate part of an illusion real for a short time.",
