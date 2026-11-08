@@ -446,5 +446,253 @@
     "sourceAbbreviation": "SCAG",
     "sourcePage": 143,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-mind-sliver",
+    "name": "Mind Sliver",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "material": "",
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You assault one creature's mind with disruptive psychic energy. The target makes an Intelligence saving throw; on a failure, it takes 1d6 psychic damage and subtracts 1d4 from the next saving throw it makes before the end of your next turn.",
+    "higherLevel": "The damage increases by 1d6 at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Gedankensplitter",
+      "school": "Verzauberung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V",
+      "duration": "1 Runde",
+      "description": "Du greifst den Geist einer Kreatur mit störender psychischer Energie an. Das Ziel führt einen Intelligenzrettungswurf aus. Bei einem Misserfolg erleidet es 1W6 psychischen Schaden und zieht 1W4 vom nächsten Rettungswurf ab, den es vor dem Ende deines nächsten Zuges ablegt.",
+      "higherLevel": "Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 108,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-tashas-caustic-brew",
+    "name": "Tasha's Caustic Brew",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (30-foot line)",
+    "components": "V, S, M",
+    "material": "a bit of rotten food",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You release a stream of acid in a 30-foot-long, 5-foot-wide line. Creatures in the area must succeed on a Dexterity saving throw or become coated in acid. A coated creature takes 2d4 acid damage at the start of each of its turns until the spell ends or the acid is removed with an action.",
+    "higherLevel": "The recurring acid damage increases by 2d4 for each spell slot level above 1.",
+    "localized": {
+      "name": "Tashas ätzender Sud",
+      "school": "Hervorrufung",
+      "classes": [
+        "artificer",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (9-Meter-Linie)",
+      "components": "V, G, M (etwas verdorbenes Essen)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du schleuderst einen Säurestrahl in einer 9 Meter langen und 1,5 Meter breiten Linie. Kreaturen im Bereich müssen einen Geschicklichkeitsrettungswurf bestehen oder werden von Säure bedeckt. Eine betroffene Kreatur erleidet zu Beginn jedes ihrer Züge 2W4 Säureschaden, bis der Zauber endet oder die Säure mit einer Aktion entfernt wird.",
+      "higherLevel": "Der wiederkehrende Säureschaden steigt für jeden Zauberplatzgrad über dem 1. um 2W4."
+    },
+    "damage": [
+      {
+        "dice": "2d4",
+        "average": 5,
+        "type": "acid"
+      }
+    ],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 115,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-tashas-mind-whip",
+    "name": "Tasha's Mind Whip",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V",
+    "material": "",
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You lash one creature's mind with psychic force. It makes an Intelligence saving throw, taking 3d6 psychic damage on a failure and losing its reaction until the end of its next turn. On that next turn, it can choose only one of movement, an action, or a bonus action. On a success, it takes half damage and suffers no other effect.",
+    "higherLevel": "For each spell slot level above 2, you can target one additional creature, provided all targets are within 30 feet of one another.",
+    "localized": {
+      "name": "Tashas Gedankenpeitsche",
+      "school": "Verzauberung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V",
+      "duration": "1 Runde",
+      "description": "Du triffst den Geist einer Kreatur mit psychischer Gewalt. Sie muss einen Intelligenzrettungswurf ablegen. Bei einem Misserfolg erleidet sie 3W6 psychischen Schaden und kann bis zum Ende ihres nächsten Zuges keine Reaktion ausführen. In diesem nächsten Zug kann sie sich nur für eine der folgenden Möglichkeiten entscheiden: Bewegung, Aktion oder Bonusaktion. Bei Erfolg erleidet sie halben Schaden und keine weiteren Auswirkungen.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen, sofern alle Ziele höchstens 9 Meter voneinander entfernt sind."
+    },
+    "damage": [
+      {
+        "dice": "3d6",
+        "average": 10.5,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 115,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-intellect-fortress",
+    "name": "Intellect Fortress",
+    "level": 3,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You fortify the mind of yourself or one willing creature you can see within range. The protected creature has resistance to psychic damage and advantage on Intelligence, Wisdom, and Charisma saving throws for the duration.",
+    "higherLevel": "For each spell slot level above 3, you can protect one additional creature. All chosen creatures must be within 30 feet of one another.",
+    "localized": {
+      "name": "Geistesfestung",
+      "school": "Bannmagie",
+      "classes": [
+        "artificer",
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du stärkst deinen Geist oder den Geist einer willigen Kreatur, die du innerhalb der Reichweite sehen kannst. Die geschützte Kreatur besitzt für die Wirkungsdauer Resistenz gegen psychischen Schaden und Vorteil auf Intelligenz-, Weisheits- und Charism Rettungswürfe.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du eine zusätzliche Kreatur schützen. Alle ausgewählten Kreaturen müssen höchstens 9 Meter voneinander entfernt sein."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 107,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-spirit-shroud",
+    "name": "Spirit Shroud",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Spirits surround you. Your attacks deal an extra 1d8 damage to creatures you hit within 10 feet; choose radiant, necrotic, or cold damage when you cast the spell. A creature damaged this way cannot regain hit points until the start of your next turn. You can also slow a visible creature of your choice that starts its turn within 10 feet of you by 10 feet until the start of its next turn.",
+    "higherLevel": "The extra damage increases by 1d8 for every two spell slot levels above 3.",
+    "localized": {
+      "name": "Geisterschleier",
+      "school": "Nekromantie",
+      "classes": [
+        "cleric",
+        "paladin",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Geister umgeben dich. Deine Angriffe verursachen bei Treffern gegen Kreaturen innerhalb von 3 Metern zusätzlich 1W8 Schaden. Beim Wirken wählst du Strahlen-, nekrotischen oder Kälteschaden. Eine dadurch getroffene Kreatur kann bis zum Beginn deines nächsten Zuges keine Trefferpunkte zurückerlangen. Außerdem kannst du eine sichtbare Kreatur deiner Wahl verlangsamen, die ihren Zug innerhalb von 3 Metern von dir beginnt: Ihre Bewegungsrate sinkt bis zum Beginn ihres nächsten Zuges um 3 Meter.",
+      "higherLevel": "Der zusätzliche Schaden steigt für je zwei Zauberplatzgrade über dem 3. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "1d8",
+        "average": 4.5,
+        "type": "variable"
+      }
+    ],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 108,
+    "descriptionKind": "original-summary"
   }
 ]
