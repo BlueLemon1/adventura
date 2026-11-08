@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { X } from 'lucide-react'
 import type { Dnd5eRuleset } from '../domain/rules'
-import { CLASS_OPTIONS } from '../domain/classes'
+import { getClassOptions } from '../domain/classes'
 import { Button, IconButton } from '../components/ui/button'
 import { TextInputField } from '../components/ui/form-field'
 import {
@@ -31,6 +31,7 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
   const t = (value: string) => translate(language, value)
   const [name, setName] = useState('')
   const [classId, setClassId] = useState('fighter')
+  const classOptions = getClassOptions(ruleset)
   const [ruleset, setRuleset] = useState<Dnd5eRuleset>('2024')
   const [level, setLevel] = useState(1)
 
@@ -79,9 +80,9 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
-                {CLASS_OPTIONS.map((option) => (
+                {classOptions.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
-                    {t(option.label)}
+                    {t(option.label)}{option.source ? ` · ${option.source}` : ''}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -91,7 +92,13 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
           <div className="form-row">
             <label className="field-label">
               {t('Regelwerk')}
-              <Select value={ruleset} onValueChange={(value) => setRuleset(value as Dnd5eRuleset)}>
+              <Select value={ruleset} onValueChange={(value) => {
+                  const nextRuleset = value as Dnd5eRuleset
+                  setRuleset(nextRuleset)
+                  if (!getClassOptions(nextRuleset).some((option) => option.value === classId)) {
+                    setClassId('fighter')
+                  }
+                }}>
                 <SelectTrigger>
                   <SelectValue />
                 </SelectTrigger>
