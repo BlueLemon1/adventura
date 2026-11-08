@@ -5741,5 +5741,652 @@
     "sourceAbbreviation": "FTD",
     "sourcePage": 21,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-dark-star",
+    "name": "Dark Star",
+    "level": 8,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M",
+    "material": "a shard of onyx and a drop of the caster's blood, both consumed by the spell",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "You create a 40-foot-radius sphere of magical darkness and crushing gravity. The area is difficult terrain, blocks sound, and cannot be seen through with darkvision. Creatures that enter the sphere for the first time on a turn or start their turn there make a Constitution saving throw, taking 8d10 force damage on a failure or half as much on a success.",
+    "localized": {
+      "name": "Dunkler Stern",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "45 Meter",
+      "components": "V, G, M (ein Onyxsplitter und ein Tropfen des Blutes des Zaubernden, beides wird verbraucht)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst eine Sphäre mit 12 Metern Radius aus magischer Dunkelheit und erdrückender Gravitation. Das Gebiet ist schwieriges Gelände, blockiert Geräusche und kann auch mit Dunkelsicht nicht durchdrungen werden. Kreaturen, die die Sphäre während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 8W10 Kraftschaden oder bei Erfolg halben Schaden."
+    },
+    "damage": [
+      {
+        "dice": "8d10",
+        "average": 44,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 186,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-fortunes-favor",
+    "name": "Fortune's Favor",
+    "level": 2,
+    "school": "Divination",
+    "castingTime": "1 minute",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a white pearl worth at least 100 gp, consumed by the spell",
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "both",
+    "description": "You imbue yourself or one willing creature you can see with latent luck. Before the spell ends, the target can dismiss it to roll an additional d20 for an attack roll, ability check, or saving throw and choose which die to use. It can also use the magic when an attack roll is made against it.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 2.",
+    "localized": {
+      "name": "Glück des Schicksals",
+      "school": "Erkenntnis",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "18 Meter",
+      "components": "V, G, M (eine weiße Perle im Wert von mindestens 100 GM, die der Zauber verbraucht)",
+      "duration": "1 Stunde",
+      "description": "Du erfüllst dich selbst oder eine willige Kreatur, die du sehen kannst, mit verborgenem Glück. Vor Ende des Zaubers kann das Ziel den Zauber auf sich beenden, um bei einem Angriffs-, Attributs- oder Rettungswurf einen zusätzlichen W20 zu werfen und einen der Würfe auszuwählen. Es kann die Magie auch einsetzen, wenn ein Angriffswurf gegen es ausgeführt wird.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 186,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-gift-of-alacrity",
+    "name": "Gift of Alacrity",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "chronurgy",
+    "description": "You touch a willing creature. For the duration, it adds 1d8 to its initiative rolls.",
+    "localized": {
+      "name": "Gabe der Schnelligkeit",
+      "school": "Erkenntnis",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "8 Stunden",
+      "description": "Du berührst eine willige Kreatur. Für die Wirkungsdauer addiert sie 1W8 zu ihren Initiativewürfen."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 186,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-gravity-fissure",
+    "name": "Gravity Fissure",
+    "level": 6,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (100-foot line)",
+    "components": "V, S, M",
+    "material": "a fistful of iron filings",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "You create a 100-foot-long, 5-foot-wide line of crushing gravitational force. Creatures in the line make a Dexterity saving throw, taking 8d8 force damage on a failure or half as much on a success. Creatures that fail are also pulled 10 feet toward the center of the line.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 6.",
+    "localized": {
+      "name": "Gravitationsspalte",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (30-Meter-Linie)",
+      "components": "V, G, M (eine Handvoll Eisenfeilspäne)",
+      "duration": "Unmittelbar",
+      "description": "Du erschaffst eine 30 Meter lange und 1,5 Meter breite Linie erdrückender Gravitationskraft. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 8W8 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden außerdem 3 Meter zur Mitte der Linie gezogen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 6. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "8d8",
+        "average": 36,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 187,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-gravity-sinkhole",
+    "name": "Gravity Sinkhole",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a black marble",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "A point within range collapses into a 20-foot-radius sphere of crushing gravity. Creatures in the area make a Strength saving throw, taking 5d10 force damage on a failure or half as much on a success. Creatures that fail are pulled 10 feet toward the center.",
+    "higherLevel": "The damage increases by 1d10 for each spell slot level above 4.",
+    "localized": {
+      "name": "Gravitationssenke",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (eine schwarze Murmel)",
+      "duration": "Unmittelbar",
+      "description": "Ein Punkt in Reichweite kollabiert zu einer Sphäre mit 6 Metern Radius aus erdrückender Gravitation. Kreaturen im Bereich müssen einen Stärkerettungswurf ablegen und erleiden bei einem Misserfolg 5W10 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden 3 Meter zum Zentrum gezogen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 4. um 1W10."
+    },
+    "damage": [
+      {
+        "dice": "5d10",
+        "average": 27.5,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 187,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-immovable-object",
+    "name": "Immovable Object",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "gold dust worth at least 25 gp, consumed by the spell",
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "You touch an object weighing no more than 10 pounds and magically fix it in place. It cannot be moved by ordinary force, though a creature can use an action to make a Strength check against your spell save DC to move it. The spell's power and duration improve when cast with higher-level slots.",
+    "higherLevel": "At 4th or 5th level, the DC to move the object increases by 5, it can support up to 8,000 pounds, and the duration becomes 24 hours. At 6th level or higher, the DC increases by 10, it can support up to 20,000 pounds, and the effect is permanent until dispelled.",
+    "localized": {
+      "name": "Unbeweglicher Gegenstand",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Berührung",
+      "components": "V, G, M (Goldstaub im Wert von mindestens 25 GM, den der Zauber verbraucht)",
+      "duration": "1 Stunde",
+      "description": "Du berührst einen Gegenstand mit einem Gewicht von höchstens 5 kg und fixierst ihn magisch an seinem Ort. Er kann nicht durch gewöhnliche Kraft bewegt werden; eine Kreatur kann jedoch eine Aktion verwenden, um einen Stärkewurf gegen deinen Zauberrettungswurf-SG abzulegen und ihn zu bewegen. Die Stärke und Wirkungsdauer des Zaubers steigen bei Verwendung höherer Zauberplätze.",
+      "higherLevel": "Mit einem Zauberplatz des 4. oder 5. Grades steigt der SG zum Bewegen um 5, der Gegenstand kann bis zu 3.600 kg tragen und die Wirkungsdauer beträgt 24 Stunden. Ab dem 6. Grad steigt der SG um 10, der Gegenstand kann bis zu 9.000 kg tragen und der Effekt ist dauerhaft, bis er gebannt wird."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 187,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-magnify-gravity",
+    "name": "Magnify Gravity",
+    "level": 1,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "Gravity intensifies in a 10-foot-radius sphere centered on a point within range. Creatures in the area make a Constitution saving throw, taking 2d8 force damage on a failure or half as much on a success. A creature that fails also has its speed halved until the end of its next turn.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 1.",
+    "localized": {
+      "name": "Gravitation verstärken",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "1 Runde",
+      "description": "Die Gravitation verstärkt sich in einer Sphäre mit 3 Metern Radius um einen Punkt in Reichweite. Kreaturen im Bereich müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 2W8 Kraftschaden oder bei Erfolg halben Schaden. Bei einem Misserfolg wird außerdem ihre Bewegungsrate bis zum Ende ihres nächsten Zuges halbiert.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "2d8",
+        "average": 9,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 188,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-pulse-wave",
+    "name": "Pulse Wave",
+    "level": 3,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "both",
+    "description": "You release a wave of gravitational energy in a 30-foot cone. Each creature in the area makes a Constitution saving throw, taking 6d6 force damage on a failure or half as much on a success. You can choose to push or pull creatures that fail up to 15 feet.",
+    "higherLevel": "The damage increases by 1d6 and the push or pull distance increases by 5 feet for each spell slot level above 3.",
+    "localized": {
+      "name": "Impulswelle",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (9-Meter-Kegel)",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du setzt eine Welle gravitativer Energie in einem 9-Meter-Kegel frei. Jede Kreatur im Bereich muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 6W6 Kraftschaden oder bei Erfolg halben Schaden. Du kannst Kreaturen, die den Rettungswurf nicht bestehen, bis zu 4,5 Meter wegstoßen oder heranziehen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W6 und die Stoß- oder Zugdistanz um 1,5 Meter."
+    },
+    "damage": [
+      {
+        "dice": "6d6",
+        "average": 21,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 188,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-ravenous-void",
+    "name": "Ravenous Void",
+    "level": 9,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "1,000 feet",
+    "components": "V, S, M",
+    "material": "a small, nine-pointed star made of iron",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "graviturgy",
+    "description": "You create a 20-foot-radius sphere of crushing gravity. Creatures and objects in the area are pulled toward its center; creatures that enter the sphere or start their turn there take 5d10 force damage and are restrained. A creature can use an action to make a Strength check to escape, and objects are drawn toward the center.",
+    "localized": {
+      "name": "Gefräßige Leere",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "300 Meter",
+      "components": "V, G, M (ein kleiner, neunzackiger Stern aus Eisen)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst eine Sphäre mit 6 Metern Radius aus erdrückender Gravitation. Kreaturen und Gegenstände im Bereich werden zu ihrem Zentrum gezogen. Kreaturen, die die Sphäre betreten oder ihren Zug darin beginnen, erleiden 5W10 Kraftschaden und werden festgesetzt. Eine Kreatur kann eine Aktion verwenden und einen Stärkewurf ablegen, um sich zu befreien; Gegenstände werden zum Zentrum gezogen."
+    },
+    "damage": [
+      {
+        "dice": "5d10",
+        "average": 27.5,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 188,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-reality-break",
+    "name": "Reality Break",
+    "level": 8,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a crystal prism",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "chronurgy",
+    "description": "You fracture reality around one creature. On a failed Wisdom saving throw, it cannot take reactions and rolls on a table at the start of each of its turns to determine a disruptive effect. The effects can deal psychic, force, or cold damage, stun, blind, or teleport the target. It can repeat the save at the end of each turn.",
+    "localized": {
+      "name": "Realitätsbruch",
+      "school": "Beschwörung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Kristallprisma)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du zerschmetterst die Grenzen der Realität um eine Kreatur. Bei einem misslungenen Weisheitsrettungswurf kann sie keine Reaktionen ausführen und würfelt zu Beginn jedes ihrer Züge auf einer Tabelle, die einen störenden Effekt bestimmt. Die Effekte können psychischen, Kraft- oder Kälteschaden verursachen, betäuben, blenden oder das Ziel teleportieren. Am Ende jedes Zuges kann es den Rettungswurf wiederholen."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 189,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-sapping-sting",
+    "name": "Sapping Sting",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "both",
+    "description": "You sap a creature's vitality with a necrotic sting. It makes a Constitution saving throw, taking 1d4 necrotic damage and falling prone on a failure. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Schwächender Stich",
+      "school": "Nekromantie",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du schwächst die Lebenskraft einer Kreatur mit einem nekrotischen Stich. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 1W4 nekrotischen Schaden und stürzt zu Boden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W4."
+    },
+    "damage": [
+      {
+        "dice": "1d4",
+        "average": 2.5,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 189,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-temporal-shunt",
+    "name": "Temporal Shunt",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "1 reaction, when a creature you can see makes an attack roll or starts to cast a spell",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "1 round",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "chronurgy",
+    "description": "You target a creature in the instant before it completes an attack or spell. It makes a Wisdom saving throw; on a failure, it vanishes into a temporal eddy until the end of its next turn, causing the triggering attack to miss or the spell to be wasted.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 5. All targets must be within 30 feet of one another.",
+    "localized": {
+      "name": "Zeitversatz",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Reaktion, wenn eine Kreatur, die du sehen kannst, einen Angriffswurf ausführt oder beginnt, einen Zauber zu wirken",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "1 Runde",
+      "description": "Du zielst auf eine Kreatur im Augenblick, bevor sie einen Angriff oder Zauber vollendet. Sie muss einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg verschwindet sie bis zum Ende ihres nächsten Zuges in einer Zeitschleife; der auslösende Angriff verfehlt oder der Zauber wird vergeudet.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 5. kannst du eine zusätzliche Kreatur als Ziel wählen. Alle Ziele müssen höchstens 9 Meter voneinander entfernt sein."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 189,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-tether-essence",
+    "name": "Tether Essence",
+    "level": 7,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a spool of platinum cord worth at least 250 gp, consumed by the spell",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "both",
+    "description": "Choose two creatures you can see within range. Each makes a Constitution saving throw, with disadvantage if they are within 30 feet of one another. If both fail, they are linked for the duration: damage dealt to one is also dealt to the other, and hit points restored to one are restored to the other. If either reaches 0 hit points or the spell ends on one, it ends on both.",
+    "localized": {
+      "name": "Essenzfessel",
+      "school": "Nekromantie",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (eine Spule Platindraht im Wert von mindestens 250 GM, die der Zauber verbraucht)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Wähle zwei Kreaturen, die du in Reichweite sehen kannst. Jede muss einen Konstitutionsrettungswurf ablegen; befinden sie sich höchstens 9 Meter voneinander entfernt, geschieht dies mit Nachteil. Misslingen beide Rettungswürfe, werden sie für die Wirkungsdauer miteinander verbunden: Schaden, der einer Kreatur zugefügt wird, wird auch der anderen zugefügt, und wiederhergestellte Trefferpunkte werden auf beide übertragen. Erreicht eine der Kreaturen 0 Trefferpunkte oder endet der Zauber bei einer von ihnen, endet er bei beiden."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 189,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-time-ravage",
+    "name": "Time Ravage",
+    "level": 9,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "an hourglass filled with diamond dust worth at least 5,000 gp, consumed by the spell",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "chronurgy",
+    "description": "You force one creature to experience devastating rapid aging. It makes a Constitution saving throw, taking 10d12 necrotic damage on a failure or half as much on a success. On a failure, it also ages until it has only 30 days left before dying of old age, suffers disadvantage on attacks, ability checks, and saving throws, and has its walking speed halved. Only Wish or 9th-level Greater Restoration can reverse the aging.",
+    "localized": {
+      "name": "Zeitverheerung",
+      "school": "Nekromantie",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M (eine mit Diamantstaub im Wert von mindestens 5.000 GM gefüllte Sanduhr, die der Zauber verbraucht)",
+      "duration": "Unmittelbar",
+      "description": "Du zwingst eine Kreatur, eine verheerende beschleunigte Alterung zu durchleben. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 10W12 nekrotischen Schaden oder bei Erfolg halben Schaden. Bei einem Misserfolg altert sie außerdem so weit, dass ihr nur noch 30 Tage bis zu ihrem Tod durch Altersschwäche bleiben. Sie hat Nachteil auf Angriffe, Attributs- und Rettungswürfe und ihre Gehbewegungsrate wird halbiert. Nur Wunsch oder Genesung des 9. Grades können die Alterung rückgängig machen."
+    },
+    "damage": [
+      {
+        "dice": "10d12",
+        "average": 65,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 189,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "egw-2020-wristpocket",
+    "name": "Wristpocket",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": true,
+    "classes": [
+      "wizard"
+    ],
+    "subclassRestriction": "both",
+    "description": "You create a tiny extradimensional space in your wrist. You can store one object that fits within a 6-inch cube and weighs no more than 5 pounds, then retrieve it as a bonus action. If the spell ends while the object is stored, it appears at your feet.",
+    "localized": {
+      "name": "Handgelenktasche",
+      "school": "Beschwörung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du erschaffst an deinem Handgelenk einen winzigen extradimensionalen Raum. Du kannst einen Gegenstand darin verstauen, der in einen Würfel mit 15 cm Kantenlänge passt und höchstens 2,5 kg wiegt, und ihn später als Bonusaktion zurückholen. Endet der Zauber, während sich der Gegenstand darin befindet, erscheint er zu deinen Füßen."
+    },
+    "damage": [],
+    "contentSourceId": "egw-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Explorer's Guide to Wildemount",
+    "sourceAbbreviation": "EGW",
+    "sourcePage": 190,
+    "descriptionKind": "original-summary"
   }
 ]
