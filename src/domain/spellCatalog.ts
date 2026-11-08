@@ -46,6 +46,9 @@ export interface CatalogSpell {
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
+const sourceRulesets = new Map(
+  Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
+)
 
 /** One canonical catalogue builder shared by selection and spellbook localization. */
 export function getSpellCatalog(ruleset: Character['ruleset']): CatalogSpell[] {
@@ -54,7 +57,7 @@ export function getSpellCatalog(ruleset: Character['ruleset']): CatalogSpell[] {
     .filter((spell) =>
       spell.rulesets
         ? spell.rulesets.includes(ruleset)
-        : CONTENT_SOURCES[Object.keys(CONTENT_SOURCES).find((key) => CONTENT_SOURCES[key as keyof typeof CONTENT_SOURCES].id === spell.contentSourceId) as keyof typeof CONTENT_SOURCES]?.ruleset === ruleset,
+        : sourceRulesets.get(spell.contentSourceId) === ruleset,
     )
     .map((spell) => ({
       ...spell,
