@@ -251,6 +251,12 @@ export function InventoryPage({
     [inventory.personal],
   )
 
+  const personalWeight = inventory.personal.reduce(
+    (total, item) => total + (item.weightLb ?? 0) * item.quantity,
+    0,
+  )
+  const carriedQuantity = carriedItems.reduce((total, item) => total + item.quantity, 0)
+
   function addItem(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     if (!itemName.trim()) return
@@ -355,6 +361,24 @@ export function InventoryPage({
         </section>
       ) : (
         <>
+          <section className="inventory-overview" aria-label={t('Inventarübersicht')}>
+            <article className="inventory-stat">
+              <span>{t('Getragen')}</span>
+              <strong>{carriedQuantity}</strong>
+              <small>{t('Gegenstände')}</small>
+            </article>
+            <article className="inventory-stat">
+              <span>{t('Gewicht (persönlich)')}</span>
+              <strong>{Number(personalWeight.toFixed(2))} <small>lb</small></strong>
+              <small>{t('Inklusive angelegter Ausrüstung')}</small>
+            </article>
+            <article className="inventory-stat">
+              <span>{t('Gruppenbesitz')}</span>
+              <strong>{partyItems.reduce((total, item) => total + item.quantity, 0)}</strong>
+              <small>{t('Gegenstände')}</small>
+            </article>
+          </section>
+
           <section className="panel currency-panel">
             <PanelHeader
               title={t('Währungen')}
@@ -387,8 +411,14 @@ export function InventoryPage({
             </div>
           </section>
 
-          <section className="panel">
-            <PanelHeader title={t('Gegenstand hinzufügen')} />
+          <details className="panel inventory-add-panel">
+            <summary>
+              <span>
+                <strong>{t('Gegenstand hinzufügen')}</strong>
+                <small>{t('Neuen Gegenstand oder Gruppenbesitz erfassen')}</small>
+              </span>
+              <Plus size={18} />
+            </summary>
             <form onSubmit={addItem}>
               <div className="form-grid item-form">
                 <TextInputField label="Name" value={itemName} onChange={setItemName} required />
@@ -435,9 +465,9 @@ export function InventoryPage({
                 <Plus size={15} /> {t('Gegenstand hinzufügen')}
               </Button>
             </form>
-          </section>
+          </details>
 
-          <section className="panel">
+          <section className="panel inventory-items-panel">
             <PanelHeader
               title={t('Persönliches Inventar')}
               meta={`${carriedItems.length} ${t('GEGENSTÄNDE')}`}
@@ -449,7 +479,7 @@ export function InventoryPage({
             />
           </section>
 
-          <section className="panel">
+          <section className="panel inventory-items-panel">
             <PanelHeader
               title={t('Gruppeninventar')}
               meta={`${partyItems.length} ${t('GEGENSTÄNDE')}`}
