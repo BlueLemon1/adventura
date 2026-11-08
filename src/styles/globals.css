@@ -1388,6 +1388,17 @@ h1 em {
   color: var(--text);
   font-size: 11px;
 }
+.spell-higher-level {
+  display: grid;
+  gap: 6px;
+  margin-top: 12px;
+}
+.spell-higher-level > strong {
+  display: block;
+}
+.spell-higher-level > p {
+  margin: 0;
+}
 .catalog-attribution {
   display: flex;
   align-items: center;
