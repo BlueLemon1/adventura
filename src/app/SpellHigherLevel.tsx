@@ -1,3 +1,11 @@
+export function getHigherLevelText(
+  englishText: string | undefined,
+  localizedText: string | undefined,
+  language: 'de' | 'en',
+): string | undefined {
+  return language === 'de' ? localizedText?.trim() || englishText : englishText
+}
+
 interface SpellHigherLevelProps {
   text?: string
   label: string
