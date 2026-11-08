@@ -3131,5 +3131,845 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2014-cleric-knowledge-blessings-of-knowledge",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#blessings-of-knowledge",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn two languages and gain expertise in two chosen knowledge skills.",
+      "de": "Du erlernst zwei Sprachen und erhältst Expertise in zwei ausgewählten Wissensfertigkeiten."
+    },
+    "descriptions": {
+      "en": "You learn two languages and gain expertise in two chosen knowledge skills.",
+      "de": "Du erlernst zwei Sprachen und erhältst Expertise in zwei ausgewählten Wissensfertigkeiten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-knowledge-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#domain-spells",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the Knowledge Domain spells prepared.",
+      "de": "Du hast die Zauber der Wissensdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Knowledge Domain spells prepared.",
+      "de": "Du hast die Zauber der Wissensdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-knowledge-channel-divinity-knowledge-of-the-ages",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#channel-divinity-knowledge-of-the-ages",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You gain proficiency with a chosen skill or tool for a short time.",
+      "de": "Du erhältst vorübergehend Übung mit einer ausgewählten Fertigkeit oder einem Werkzeug."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with a chosen skill or tool for a short time.",
+      "de": "Du erhältst vorübergehend Übung mit einer ausgewählten Fertigkeit oder einem Werkzeug."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-knowledge-channel-divinity-read-thoughts",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#channel-divinity-read-thoughts",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You read a creature's surface thoughts and can influence it with a suggestion.",
+      "de": "Du liest die oberflächlichen Gedanken einer Kreatur und kannst sie mit einem Vorschlag beeinflussen."
+    },
+    "descriptions": {
+      "en": "You read a creature's surface thoughts and can influence it with a suggestion.",
+      "de": "Du liest die oberflächlichen Gedanken einer Kreatur und kannst sie mit einem Vorschlag beeinflussen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-knowledge-potent-spellcasting",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "descriptions": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-knowledge-visions-of-the-past",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/knowledge#visions-of-the-past",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You can gain visions tied to an object or a location's history.",
+      "de": "Du kannst Visionen erhalten, die mit der Geschichte eines Gegenstands oder Ortes verbunden sind."
+    },
+    "descriptions": {
+      "en": "You can gain visions tied to an object or a location's history.",
+      "de": "Du kannst Visionen erhalten, die mit der Geschichte eines Gegenstands oder Ortes verbunden sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-bonus-cantrip",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#bonus-cantrip",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn the Light cantrip.",
+      "de": "Du erlernst den Zaubertrick Licht."
+    },
+    "descriptions": {
+      "en": "You learn the Light cantrip.",
+      "de": "Du erlernst den Zaubertrick Licht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-warding-flare",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#warding-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You can use light to impose disadvantage on an attack against you.",
+      "de": "Du kannst Licht einsetzen, um einem Angriff gegen dich Nachteil aufzuerlegen."
+    },
+    "descriptions": {
+      "en": "You can use light to impose disadvantage on an attack against you.",
+      "de": "Du kannst Licht einsetzen, um einem Angriff gegen dich Nachteil aufzuerlegen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#domain-spells",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the Light Domain spells prepared.",
+      "de": "Du hast die Zauber der Lichtdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Light Domain spells prepared.",
+      "de": "Du hast die Zauber der Lichtdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-channel-divinity-radiance-of-the-dawn",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#channel-divinity-radiance-of-the-dawn",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You dispel magical darkness and deal radiant damage to nearby hostile creatures.",
+      "de": "Du bannst magische Dunkelheit und fügst feindlichen Kreaturen in der Nähe gleißenden Schaden zu."
+    },
+    "descriptions": {
+      "en": "You dispel magical darkness and deal radiant damage to nearby hostile creatures.",
+      "de": "Du bannst magische Dunkelheit und fügst feindlichen Kreaturen in der Nähe gleißenden Schaden zu."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-improved-flare",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#improved-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can use Warding Flare to protect an ally within range.",
+      "de": "Du kannst Schutzleuchten einsetzen, um einen Verbündeten in Reichweite zu schützen."
+    },
+    "descriptions": {
+      "en": "You can use Warding Flare to protect an ally within range.",
+      "de": "Du kannst Schutzleuchten einsetzen, um einen Verbündeten in Reichweite zu schützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-potent-spellcasting",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "descriptions": {
+      "en": "You add your Wisdom modifier to the damage of your cleric cantrips.",
+      "de": "Du addierst deinen Weisheitsmodifikator zum Schaden deiner Kleriker-Zaubertricks."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-light-corona-of-light",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/light#corona-of-light",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You emit sunlight that makes enemies more vulnerable to your fire and radiant spells.",
+      "de": "Du strahlst Sonnenlicht aus, das Gegner anfälliger für deine Feuer- und gleißenden Zauber macht."
+    },
+    "descriptions": {
+      "en": "You emit sunlight that makes enemies more vulnerable to your fire and radiant spells.",
+      "de": "Du strahlst Sonnenlicht aus, das Gegner anfälliger für deine Feuer- und gleißenden Zauber macht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-acolyte-of-nature",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#acolyte-of-nature",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You learn a druid cantrip and gain proficiency in a nature-related skill.",
+      "de": "Du erlernst einen Druidenzaubertrick und erhältst Übung in einer naturbezogenen Fertigkeit."
+    },
+    "descriptions": {
+      "en": "You learn a druid cantrip and gain proficiency in a nature-related skill.",
+      "de": "Du erlernst einen Druidenzaubertrick und erhältst Übung in einer naturbezogenen Fertigkeit."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-bonus-proficiency",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#bonus-proficiency",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You gain proficiency with heavy armor.",
+      "de": "Du erhältst Übung mit schwerer Rüstung."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with heavy armor.",
+      "de": "Du erhältst Übung mit schwerer Rüstung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#domain-spells",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the Nature Domain spells prepared.",
+      "de": "Du hast die Zauber der Naturdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Nature Domain spells prepared.",
+      "de": "Du hast die Zauber der Naturdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-channel-divinity-charm-animals-and-plants",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#channel-divinity-charm-animals-and-plants",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can charm nearby beasts and plants.",
+      "de": "Du kannst Tiere und Pflanzen in deiner Nähe bezaubern."
+    },
+    "descriptions": {
+      "en": "You can charm nearby beasts and plants.",
+      "de": "Du kannst Tiere und Pflanzen in deiner Nähe bezaubern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-dampen-elements",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#dampen-elements",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You use your reaction to grant a creature resistance to elemental damage.",
+      "de": "Du setzt deine Reaktion ein, um einer Kreatur Resistenz gegen Elementarschaden zu verleihen."
+    },
+    "descriptions": {
+      "en": "You use your reaction to grant a creature resistance to elemental damage.",
+      "de": "Du setzt deine Reaktion ein, um einer Kreatur Resistenz gegen Elementarschaden zu verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#divine-strike",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Once on each of your turns, you deal extra poison damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Giftschaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns, you deal extra poison damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Giftschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-nature-master-of-nature",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/nature#master-of-nature",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You can command charmed animals and plants with a bonus action.",
+      "de": "Du kannst bezauberte Tiere und Pflanzen mit einer Bonusaktion befehligen."
+    },
+    "descriptions": {
+      "en": "You can command charmed animals and plants with a bonus action.",
+      "de": "Du kannst bezauberte Tiere und Pflanzen mit einer Bonusaktion befehligen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-bonus-proficiencies",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You gain proficiency with martial weapons and heavy armor.",
+      "de": "Du erhältst Übung mit Kriegswaffen und schwerer Rüstung."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with martial weapons and heavy armor.",
+      "de": "Du erhältst Übung mit Kriegswaffen und schwerer Rüstung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-wrath-of-the-storm",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#wrath-of-the-storm",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You can use your reaction to damage a creature that hits you.",
+      "de": "Du kannst deine Reaktion einsetzen, um einer Kreatur Schaden zuzufügen, die dich trifft."
+    },
+    "descriptions": {
+      "en": "You can use your reaction to damage a creature that hits you.",
+      "de": "Du kannst deine Reaktion einsetzen, um einer Kreatur Schaden zuzufügen, die dich trifft."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#domain-spells",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the Tempest Domain spells prepared.",
+      "de": "Du hast die Zauber der Sturmdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Tempest Domain spells prepared.",
+      "de": "Du hast die Zauber der Sturmdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-channel-divinity-destructive-wrath",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#channel-divinity-destructive-wrath",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can deal maximum damage instead of rolling for lightning or thunder damage.",
+      "de": "Du kannst bei Blitz- oder Donnerschaden den maximalen statt eines ausgewürfelten Schadens verursachen."
+    },
+    "descriptions": {
+      "en": "You can deal maximum damage instead of rolling for lightning or thunder damage.",
+      "de": "Du kannst bei Blitz- oder Donnerschaden den maximalen statt eines ausgewürfelten Schadens verursachen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-thunderbolt-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#thunderbolt-strike",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Lightning damage you deal can push a Large or smaller creature away.",
+      "de": "Von dir verursachter Blitzschaden kann eine große oder kleinere Kreatur wegstoßen."
+    },
+    "descriptions": {
+      "en": "Lightning damage you deal can push a Large or smaller creature away.",
+      "de": "Von dir verursachter Blitzschaden kann eine große oder kleinere Kreatur wegstoßen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#divine-strike",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Once on each of your turns, you deal extra thunder damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Donnerschaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns, you deal extra thunder damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Donnerschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-tempest-stormborn",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/tempest#stormborn",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You gain a flying speed while outdoors.",
+      "de": "Im Freien erhältst du eine Flugbewegungsrate."
+    },
+    "descriptions": {
+      "en": "You gain a flying speed while outdoors.",
+      "de": "Im Freien erhältst du eine Flugbewegungsrate."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-blessing-of-the-trickster",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#blessing-of-the-trickster",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You can grant a creature advantage on Dexterity (Stealth) checks.",
+      "de": "Du kannst einer Kreatur Vorteil auf Geschicklichkeitswürfe (Heimlichkeit) verleihen."
+    },
+    "descriptions": {
+      "en": "You can grant a creature advantage on Dexterity (Stealth) checks.",
+      "de": "Du kannst einer Kreatur Vorteil auf Geschicklichkeitswürfe (Heimlichkeit) verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#domain-spells",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the Trickery Domain spells prepared.",
+      "de": "Du hast die Zauber der Listdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Trickery Domain spells prepared.",
+      "de": "Du hast die Zauber der Listdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-channel-divinity-invoke-duplicity",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#channel-divinity-invoke-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You create an illusory duplicate that can distract foes and serve as the origin of your spells.",
+      "de": "Du erschaffst ein Trugbild, das Gegner ablenkt und als Ursprung deiner Zauber dienen kann."
+    },
+    "descriptions": {
+      "en": "You create an illusory duplicate that can distract foes and serve as the origin of your spells.",
+      "de": "Du erschaffst ein Trugbild, das Gegner ablenkt und als Ursprung deiner Zauber dienen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-channel-divinity-cloak-of-shadows",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#channel-divinity-cloak-of-shadows",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can become invisible until you attack or cast a spell.",
+      "de": "Du kannst unsichtbar werden, bis du angreifst oder einen Zauber wirkst."
+    },
+    "descriptions": {
+      "en": "You can become invisible until you attack or cast a spell.",
+      "de": "Du kannst unsichtbar werden, bis du angreifst oder einen Zauber wirkst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#divine-strike",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Once on each of your turns, you deal extra poison damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Giftschaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns, you deal extra poison damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Giftschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-trickery-improved-duplicity",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/trickery#improved-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You can create up to four duplicates with Invoke Duplicity.",
+      "de": "Du kannst mit Trugbild beschwören bis zu vier Doppelgänger erschaffen."
+    },
+    "descriptions": {
+      "en": "You can create up to four duplicates with Invoke Duplicity.",
+      "de": "Du kannst mit Trugbild beschwören bis zu vier Doppelgänger erschaffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-bonus-proficiencies",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You gain proficiency with martial weapons and heavy armor.",
+      "de": "Du erhältst Übung mit Kriegswaffen und schwerer Rüstung."
+    },
+    "descriptions": {
+      "en": "You gain proficiency with martial weapons and heavy armor.",
+      "de": "Du erhältst Übung mit Kriegswaffen und schwerer Rüstung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-war-priest",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#war-priest",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You can make a weapon attack as a bonus action a limited number of times.",
+      "de": "Du kannst eine begrenzte Anzahl von Malen als Bonusaktion einen Waffenangriff ausführen."
+    },
+    "descriptions": {
+      "en": "You can make a weapon attack as a bonus action a limited number of times.",
+      "de": "Du kannst eine begrenzte Anzahl von Malen als Bonusaktion einen Waffenangriff ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-domain-spells",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#domain-spells",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 1,
+    "names": {
+      "en": "You always have the War Domain spells prepared.",
+      "de": "Du hast die Zauber der Kriegsdomäne stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the War Domain spells prepared.",
+      "de": "Du hast die Zauber der Kriegsdomäne stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-channel-divinity-guided-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#channel-divinity-guided-strike",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 2,
+    "names": {
+      "en": "You can add a substantial bonus to an attack roll after seeing the roll.",
+      "de": "Nachdem du einen Angriffswurf gesehen hast, kannst du einen erheblichen Bonus darauf addieren."
+    },
+    "descriptions": {
+      "en": "You can add a substantial bonus to an attack roll after seeing the roll.",
+      "de": "Nachdem du einen Angriffswurf gesehen hast, kannst du einen erheblichen Bonus darauf addieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-channel-divinity-war-god-s-blessing",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#channel-divinity-war-god-s-blessing",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "You can use Guided Strike to improve an ally's attack roll.",
+      "de": "Du kannst Geleiteter Schlag einsetzen, um den Angriffswurf eines Verbündeten zu verbessern."
+    },
+    "descriptions": {
+      "en": "You can use Guided Strike to improve an ally's attack roll.",
+      "de": "Du kannst Geleiteter Schlag einsetzen, um den Angriffswurf eines Verbündeten zu verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-divine-strike",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#divine-strike",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 8,
+    "names": {
+      "en": "Once on each of your turns, you deal extra damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Schaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns, you deal extra damage with a weapon attack.",
+      "de": "Einmal pro Zug verursachst du mit einem Waffenangriff zusätzlichen Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-cleric-war-avatar-of-battle",
+    "ruleset": "2014",
+    "contentSourceId": "phb-2014",
+    "sourceReference": "cleric/war#avatar-of-battle",
+    "classId": "cleric",
+    "subclassId": "war",
+    "featureType": "subclass",
+    "level": 17,
+    "names": {
+      "en": "You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+      "de": "Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen."
+    },
+    "descriptions": {
+      "en": "You gain resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+      "de": "Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
