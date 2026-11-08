@@ -7,7 +7,6 @@
     "castingTime": "1 reaction, when you take acid, cold, fire, lightning, or thunder damage",
     "range": "Self",
     "components": "S",
-    "material": "",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -105,7 +104,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -152,7 +150,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -197,7 +194,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -345,7 +341,6 @@
     "castingTime": "1 action",
     "range": "Self (15-foot radius)",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -395,7 +390,6 @@
     "castingTime": "1 action",
     "range": "Self (5-foot radius)",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -445,7 +439,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V",
-    "material": "",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -479,9 +472,6 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 108,
     "descriptionKind": "original-summary"
   },
@@ -527,9 +517,6 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 115,
     "descriptionKind": "original-summary"
   },
@@ -541,7 +528,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "V",
-    "material": "",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -573,9 +559,6 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 115,
     "descriptionKind": "original-summary"
   },
@@ -587,7 +570,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -617,11 +599,7 @@
       "description": "Du stärkst deinen Geist oder den Geist einer willigen Kreatur, die du innerhalb der Reichweite sehen kannst. Die geschützte Kreatur besitzt für die Wirkungsdauer Resistenz gegen psychischen Schaden und Vorteil auf Intelligenz-, Weisheits- und Charisma-Rettungswürfe.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du eine zusätzliche Kreatur schützen. Alle ausgewählten Kreaturen müssen höchstens 9 Meter voneinander entfernt sein."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 107,
     "descriptionKind": "original-summary"
   },
@@ -633,7 +611,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -669,9 +646,6 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 108,
     "descriptionKind": "original-summary"
   },
@@ -707,11 +681,7 @@
       "description": "Du beschwörst einen tierischen Geist in einem freien Raum in Reichweite. Wähle Luft, Land oder Wasser; die Umgebung bestimmt seine Erscheinung und bestimmte Eigenschaften. Der Geist handelt direkt nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 109,
     "descriptionKind": "original-summary"
   },
@@ -751,11 +721,7 @@
       "description": "Du beschwörst einen Feengeist. Wähle eine Stimmung, die seine Erscheinung und besonderen Fähigkeiten beeinflusst. Er erscheint in einem freien Raum, handelt direkt nach dir und befolgt deine verbalen Befehle.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 112,
     "descriptionKind": "original-summary"
   },
@@ -791,11 +757,7 @@
       "description": "Du rufst einen Schattengeist herbei. Wähle Zorn, Verzweiflung oder Furcht; diese Emotion prägt seine Gestalt und besonderen Fähigkeiten. Der Geist kämpft an deiner Seite und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 113,
     "descriptionKind": "original-summary"
   },
@@ -831,11 +793,7 @@
       "description": "Du beschwörst einen untoten Geist in einer von drei Gestalten: geisterhaft, verwest oder skelettartig. Die Gestalt bestimmt seine besonderen Eigenschaften. Er handelt direkt nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 114,
     "descriptionKind": "original-summary"
   },
@@ -871,11 +829,7 @@
       "description": "Du beschwörst einen aberranten Geist. Wähle eine beholderartige, slaadartige oder sternengeborene Gestalt, die seine besonderen Fähigkeiten bestimmt. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 109,
     "descriptionKind": "original-summary"
   },
@@ -911,11 +865,7 @@
       "description": "Du rufst den Geist eines Konstrukts herbei. Wähle Lehm, Metall oder Stein; das Material bestimmt Gestalt und besondere Eigenschaften. Das Konstrukt erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 111,
     "descriptionKind": "original-summary"
   },
@@ -953,11 +903,7 @@
       "description": "Du rufst einen Elementargeist herbei. Wähle Luft, Erde, Feuer oder Wasser; das Element bestimmt seine Gestalt und besonderen Eigenschaften. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 111,
     "descriptionKind": "original-summary"
   },
@@ -993,11 +939,7 @@
       "description": "Du beschwörst einen himmlischen Geist als Rächer oder Beschützer. Deine Wahl bestimmt seine Angriffsweise. Er erscheint in einem freien Raum, handelt direkt nach dir und kämpft an deiner Seite.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 110,
     "descriptionKind": "original-summary"
   },
@@ -1033,11 +975,7 @@
       "description": "Du beschwörst einen Unholdgeist. Wähle Dämon, Teufel oder Yugoloth; die gewählte Form bestimmt seine besonderen Fähigkeiten. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz eines höheren Grades wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 112,
     "descriptionKind": "original-summary"
   },
@@ -1073,11 +1011,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du verwandelst dich mithilfe der Macht der Unteren oder Oberen Ebenen. Je nach Wahl erhältst du Immunität gegen zwei Schadensarten und einen Zustand, geisterhafte Flügel mit Flugbewegungsrate, eine erhöhte Rüstungsklasse sowie magische Waffenangriffe, bei denen du dein Zauberattribut verwendest. Außerdem kannst du bei der Angriffsaktion zweimal angreifen, sofern dir nicht bereits eine andere Fähigkeit zusätzliche Angriffe gewährt."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 116,
     "descriptionKind": "original-summary"
   },
@@ -1115,11 +1049,7 @@
       "duration": "6 Stunden",
       "description": "Du und bis zu acht willige Kreaturen fallen in Schlaf und erleben Visionen einer anderen Welt. Wird der Zauber vollständig gewirkt, werdet ihr dorthin transportiert. Zum Wirken musst du das Ziel kennen und entweder einen magischen Gegenstand aus dieser Welt besitzen oder eine teilnehmende Kreatur dorthin zurückführen, in deren Geburtswelt ihr reisen wollt. Schaden kann den Effekt vorzeitig beenden und den Transport verhindern."
     },
-    "damage": [],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 106,
     "descriptionKind": "original-summary"
   },
@@ -1131,7 +1061,6 @@
     "castingTime": "1 bonus action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1163,9 +1092,6 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 106,
     "descriptionKind": "original-summary"
   },
@@ -1202,11 +1128,7 @@
       "description": "Du machst eine beruhigende Geste und bis zu drei willige Kreaturen, die du innerhalb der Reichweite sehen kannst, fallen für die Wirkungsdauer in Bewusstlosigkeit. Ein Ziel wacht vorzeitig auf, wenn es Schaden erleidet oder jemand eine Aktion verwendet, um es zu schütteln oder ihm eine Ohrfeige zu geben. Eine Kreatur, die die gesamte Wirkungsdauer bewusstlos bleibt, erhält den Nutzen einer kurzen Rast und kann erst wieder von diesem Zauber betroffen werden, wenn sie eine lange Rast beendet hat.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des 4. Grades oder höher wirkst, kannst du für jeden Zauberplatzgrad über dem 3. eine zusätzliche willige Kreatur als Ziel wählen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 151,
     "descriptionKind": "original-summary",
     "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3."
@@ -1219,7 +1141,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V, S",
-    "material": "",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -1245,11 +1166,7 @@
       "duration": "1 Stunde",
       "description": "Du versuchst, eine Kreatur in Reichweite zu bezaubern, die du sehen kannst. Das Ziel legt einen Weisheitsrettungswurf ab und hat Vorteil, wenn du oder deine Gefährten gerade gegen es kämpft. Bei einem Misserfolg betrachtet es dich für die Wirkungsdauer als freundliche Bekanntschaft. Der Effekt endet vorzeitig, wenn du oder deine Gefährten ihm Schaden zufügen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 151,
     "descriptionKind": "original-summary"
   },
@@ -1295,9 +1212,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 153,
     "descriptionKind": "original-summary"
   },
@@ -1309,7 +1223,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1333,11 +1246,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du teleportierst dich bis zu 18 Meter weit an einen freien Ort, den du sehen kannst. Bis zum Ende des Zaubers kannst du diese Teleportation in jedem deiner Züge als Bonusaktion wiederholen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -1349,7 +1258,6 @@
     "castingTime": "1 bonus action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1373,11 +1281,7 @@
       "description": "Du rufst einen Geist an einem freien Ort herbei. Wenn eine Kreatur, die du sehen kannst, den Bereich des Geistes erstmals in einem Zug betritt oder ihren Zug dort beginnt, kannst du den Geist Trefferpunkte bei ihr wiederherstellen lassen. Der Geist kann dies nur begrenzt oft tun, bevor er verschwindet.",
       "higherLevel": "Der Geist kann für jeden Zauberplatzgrad über dem 2. zusätzlich 1W6 Trefferpunkte wiederherstellen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
@@ -1389,7 +1293,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -1423,9 +1326,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 162,
     "descriptionKind": "original-summary"
   },
@@ -1465,9 +1365,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 164,
     "descriptionKind": "original-summary"
   },
@@ -1509,9 +1406,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 166,
     "descriptionKind": "original-summary"
   },
@@ -1523,7 +1417,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1557,9 +1450,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
@@ -1571,7 +1461,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1599,9 +1488,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
@@ -1613,7 +1499,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1637,11 +1522,7 @@
       "duration": "Unmittelbar",
       "description": "Du manipulierst eine nichtmagische Flamme, die in einen Würfel mit 1,5 Metern Kantenlänge passt. Du kannst sie vergrößern oder abschwächen, ihre Farbe ändern oder einfache Formen aus ihr bilden. Der Zauber erschafft kein Feuer und kann Kreaturen nicht direkt verletzen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 152,
     "descriptionKind": "original-summary"
   },
@@ -1653,7 +1534,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -1687,9 +1567,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 152,
     "descriptionKind": "original-summary"
   },
@@ -1701,7 +1578,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1735,9 +1611,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 156,
     "descriptionKind": "original-summary"
   },
@@ -1749,7 +1622,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1773,11 +1645,7 @@
       "duration": "Unmittelbar",
       "description": "Du formst einen kurzen Windstoß. Er kann eine mittelgroße oder kleinere Kreatur wegdrücken, einen unbewachten Gegenstand mit höchstens 2,5 kg Gewicht bewegen oder einen harmlosen Sinneseffekt erzeugen, etwa raschelnde Blätter oder aufgewirbelten Staub."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
@@ -1823,9 +1691,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 158,
     "descriptionKind": "original-summary"
   },
@@ -1837,7 +1702,6 @@
     "castingTime": "1 bonus action",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "1 minute",
     "concentration": false,
     "ritual": false,
@@ -1869,9 +1733,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -1883,7 +1744,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous or 1 hour",
     "concentration": false,
     "ritual": false,
@@ -1907,11 +1767,7 @@
       "duration": "Unmittelbar oder 1 Stunde",
       "description": "Du manipulierst lockere Erde in einem Würfel mit 1,5 Metern Kantenlänge. Du kannst sie ausheben, über den Boden bewegen oder zu einfachen Formen gestalten. Veränderungen am Boden halten 1 Stunde an. Der Zauber kann keine Kreatur direkt verletzen und keinen Stein bewegen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 162,
     "descriptionKind": "original-summary"
   },
@@ -1923,7 +1779,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -1951,9 +1806,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -1965,7 +1817,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous or 1 hour",
     "concentration": false,
     "ritual": false,
@@ -1989,11 +1840,7 @@
       "duration": "Unmittelbar oder 1 Stunde",
       "description": "Du manipulierst Wasser in einem Würfel mit 1,5 Metern Kantenlänge. Du kannst es bewegen, einfache Formen bilden, Farbe oder Durchsichtigkeit verändern oder es gefrieren lassen, sofern sich keine Kreatur darin befindet. Veränderungen halten 1 Stunde an. Der Zauber erschafft kein Wasser und kann Kreaturen nicht direkt verletzen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 164,
     "descriptionKind": "original-summary"
   },
@@ -2005,7 +1852,6 @@
     "castingTime": "1 action",
     "range": "Self (5-foot radius)",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2041,9 +1887,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
@@ -2089,9 +1932,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -2103,7 +1943,6 @@
     "castingTime": "1 action",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2139,9 +1978,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 156,
     "descriptionKind": "original-summary"
   },
@@ -2153,7 +1989,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -2185,9 +2020,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 164,
     "descriptionKind": "original-summary"
   },
@@ -2199,7 +2031,6 @@
     "castingTime": "1 action",
     "range": "150 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2221,11 +2052,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst um einen Punkt eine Sphäre aus wirbelnder Luft. Kreaturen darin, wenn sie erscheint, oder die ihren Zug darin beenden, müssen einen Stärkerettungswurf ablegen und erleiden bei einem Misserfolg 2W6 Wuchtschaden. Das Gebiet ist schwieriges Gelände. Als Bonusaktion kannst du einen Blitz aus der Sphäre auf eine Kreatur innerhalb von 18 Metern der Sphäre schleudern; dafür führst du einen Fernkampf-Zauberangriff aus, der 4W6 Blitzschaden verursacht."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 166,
     "descriptionKind": "original-summary"
   },
@@ -2269,9 +2096,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
@@ -2283,7 +2107,6 @@
     "castingTime": "1 minute",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -2305,11 +2128,7 @@
       "description": "Du berührst einen winzigen nichtmagischen Gegenstand und belebst ihn als kleinen Diener. Er befolgt deine verbalen Befehle und kann einfache Aufgaben erledigen, aber nicht angreifen. Bei 0 Trefferpunkten oder wenn der Zauber endet, wird er wieder zu einem Gegenstand.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du zwei zusätzliche Gegenstände beleben."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 168,
     "descriptionKind": "original-summary"
   },
@@ -2341,11 +2160,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst an einem Punkt in Reichweite eine Wand aus wirbelndem Sand. Die Wand verschleiert Kreaturen dahinter stark und ist schwieriges Gelände; wer sich durch sie bewegt, benötigt dafür zusätzliche Bewegung."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -2381,11 +2196,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst an einem Punkt in Reichweite eine Wasserwand. Sie ist schwieriges Gelände, verursacht Nachteil auf Fernkampfwaffenangriffe, die sie durchqueren, und verringert Feuerschaden, der durch sie hindurchgeht."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -2421,11 +2232,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine Wassersphäre, die Kreaturen einschließen kann. Eine Kreatur, die von ihr erfasst wird, muss einen Stärkerettungswurf ablegen oder wird festgesetzt. Als Bonusaktion kannst du die Sphäre bewegen und festgesetzte Kreaturen mitnehmen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -2469,9 +2276,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -2483,7 +2287,6 @@
     "castingTime": "1 action",
     "range": "300 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2507,11 +2310,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du veränderst den Wind in einem großen Gebiet und wählst einen Effekt wie Abwind, Aufwind oder Windstille. Der Wind beeinflusst Bewegung und Fernkampfangriffe und kann fliegende Kreaturen behindern oder unterstützen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 152,
     "descriptionKind": "original-summary"
   },
@@ -2523,7 +2322,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -2557,9 +2355,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 152,
     "descriptionKind": "original-summary"
   },
@@ -2571,7 +2366,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -2595,11 +2389,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du belebst bis zu fünf Leichen in der Nähe als Skelette oder Zombies. Sie erhalten einen Bonus auf Angriffs- und Schadenswürfe und befolgen für die Wirkungsdauer deine verbalen Befehle."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 153,
     "descriptionKind": "original-summary"
   },
@@ -2643,9 +2433,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 154,
     "descriptionKind": "original-summary"
   },
@@ -2691,9 +2478,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 154,
     "descriptionKind": "original-summary"
   },
@@ -2705,7 +2489,6 @@
     "castingTime": "1 action",
     "range": "Self (10-foot radius)",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -2739,9 +2522,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -2753,7 +2533,6 @@
     "castingTime": "1 action",
     "range": "300 feet",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2781,11 +2560,7 @@
       "description": "Wähle eine Kreatur, die du in Reichweite sehen kannst. Bei einem misslungenen Stärkerettungswurf sinkt ihre Flugbewegungsrate auf 0 und sie fällt am Ende jedes ihrer Züge bis zu 18 Meter, bis sie den Boden erreicht oder der Zauber endet.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen. Die Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 154,
     "descriptionKind": "original-summary"
   },
@@ -2797,7 +2572,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2831,9 +2605,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -2845,7 +2616,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2871,11 +2641,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du verwirrst den Geist einer Kreatur, die du sehen kannst. Bei einem misslungenen Intelligenzrettungswurf kann sie Freund und Feind nicht mehr unterscheiden und betrachtet für die Wirkungsdauer alle sichtbaren Kreaturen als Gegner. Wenn sie Schaden erleidet, kann sie den Rettungswurf wiederholen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -2887,7 +2653,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2921,9 +2686,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 155,
     "descriptionKind": "original-summary"
   },
@@ -2935,7 +2697,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -2957,11 +2718,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du rufst den Geist der Natur an und verwandelst dich. Wähle die Gestalt eines urtümlichen Tieres, die deine Bewegungsrate und Angriffe verbessert, oder die eines großen Baumes, die deine Widerstandskraft und Zauberfähigkeiten stärkt."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
@@ -2973,7 +2730,6 @@
     "castingTime": "1 bonus action",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -3003,9 +2759,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
@@ -3017,7 +2770,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3049,9 +2801,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -3093,9 +2842,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 161,
     "descriptionKind": "original-summary"
   },
@@ -3139,9 +2885,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 161,
     "descriptionKind": "original-summary"
   },
@@ -3153,7 +2896,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3187,9 +2929,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -3201,7 +2940,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3225,11 +2963,7 @@
       "duration": "Unmittelbar",
       "description": "Wähle eine nichtmagische Flamme in Reichweite und lösche sie. Dabei entsteht entweder ein blendender Feuerwerksblitz, der Kreaturen in der Nähe blenden kann, oder eine dichte Rauchwolke, die einen Bereich stark verschleiert."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -3241,7 +2975,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3265,11 +2998,7 @@
       "duration": "Unmittelbar",
       "description": "Du teleportierst bis zu fünf Kreaturen, die du sehen kannst, an freie Orte deiner Wahl innerhalb der Reichweite. Eine unwillige Kreatur kann sich mit einem Charismarettungswurf widersetzen. Du kannst außerdem Gegenstände teleportieren, die weder getragen noch gehalten werden."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 164,
     "descriptionKind": "original-summary"
   },
@@ -3281,7 +3010,6 @@
     "castingTime": "1 action",
     "range": "Sight",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": true,
@@ -3307,11 +3035,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du lässt bis zu zehn Wörter in den Wolken über dir erscheinen. Die Botschaft ist aus großer Entfernung sichtbar und bleibt für die Wirkungsdauer bestehen; Wind kann sie zerstreuen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 165,
     "descriptionKind": "original-summary"
   },
@@ -3347,11 +3071,7 @@
       "duration": "8 Stunden",
       "description": "Du erschaffst mit einem Seil eine magische Falle auf dem Boden. Die erste Kreatur, die den Bereich betritt, löst sie aus und muss einen Geschicklichkeitsrettungswurf ablegen oder kopfüber hochgezogen und festgesetzt werden. Die gefangene Kreatur kann versuchen, sich zu befreien."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 165,
     "descriptionKind": "original-summary"
   },
@@ -3385,11 +3105,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du stellst eine telepathische Verbindung zu einem freundlichen oder von dir bezauberten Tier her, das du berührst. Der Zauber schlägt fehl, wenn das Tier einen Intelligenzwert von 4 oder höher hat. Solange ihr euch gegenseitig sehen könnt, versteht das Tier deine telepathischen Nachrichten und kann einfache Gefühle und Vorstellungen an dich übermitteln. Außerdem hat es Vorteil auf Angriffe gegen Kreaturen innerhalb von 1,5 Metern von dir, die du sehen kannst."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 150,
     "descriptionKind": "original-summary",
     "previousSource": "Elemental Evil Player's Companion, p. 15"
@@ -3402,7 +3118,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3426,11 +3141,7 @@
       "description": "Du weckst in einer Kreatur ein Gefühl der Sterblichkeit. Sie muss einen Weisheitsrettungswurf ablegen oder ist für die Wirkungsdauer verängstigt von dir. Konstrukte und Untote sind immun; das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 1. kannst du eine zusätzliche Kreatur als Ziel wählen. Die Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 151,
     "descriptionKind": "original-summary"
   },
@@ -3464,11 +3175,7 @@
       "duration": "Unmittelbar",
       "description": "Du führst eines von mehreren heiligen Ritualen durch, etwa Weihung von Wasser, Initiation, Hingabe, Bestattung, Hochzeit oder Sühne. Jedes Ritual besitzt einen eigenen magischen Effekt und kann bestimmte Teilnehmer oder Voraussetzungen erfordern."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 151,
     "descriptionKind": "original-summary"
   },
@@ -3480,7 +3187,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -3510,9 +3216,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
@@ -3552,9 +3255,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 152,
     "descriptionKind": "original-summary"
   },
@@ -3586,11 +3286,7 @@
       "duration": "24 Stunden",
       "description": "Du schützt ein Gebiet im Freien mit druidischer Magie und erschaffst Effekte wie bewachte Bäume, verborgene Pfade, packendes Unterholz und magische Schutzzauber. Die Merkmale des Hains können Eindringlinge behindern und dich auf ihre Anwesenheit aufmerksam machen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 154,
     "descriptionKind": "original-summary"
   },
@@ -3622,11 +3318,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du wirst bis zum Ende des Zaubers gegen jeglichen Schaden immun."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -3668,9 +3360,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -3712,9 +3401,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -3750,11 +3436,7 @@
       "description": "Du beschwörst Dämonen an freien Orten in Reichweite. Wähle 2W6 Dämonen mit Herausforderungsgrad 1/2 oder niedriger, 1W6 Dämonen mit Herausforderungsgrad 1 oder niedriger oder einen Dämon mit Herausforderungsgrad 2 oder niedriger. Sie sind allen Kreaturen gegenüber feindselig, auch dir, und handeln gemäß ihrer chaotischen Natur.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. beschwörst du zwei zusätzliche Dämonen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 167,
     "descriptionKind": "original-summary"
   },
@@ -3798,9 +3480,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
@@ -3812,7 +3491,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -3840,9 +3518,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "descriptionKind": "original-summary"
   },
@@ -3854,7 +3529,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -3888,9 +3562,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 159,
     "descriptionKind": "original-summary"
   },
@@ -3902,7 +3573,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -3936,9 +3606,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 159,
     "descriptionKind": "original-summary"
   },
@@ -3950,7 +3617,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -3976,11 +3642,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Gesteinsstücke breiten sich über deinen Körper aus. Du erhältst Resistenz gegen Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen. Als Aktion kannst du ein kleines Erdbeben in einem Radius von 4,5 Metern um dich herum auslösen, durch das andere Kreaturen auf dem Boden einen Geschicklichkeitsrettungswurf bestehen müssen oder zu Boden stürzen. Du kannst dich durch festen Boden und Stein bewegen, als wären sie Luft, darfst deine Bewegung jedoch nicht darin beenden."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 159,
     "descriptionKind": "original-summary"
   },
@@ -3992,7 +3654,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -4026,9 +3687,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -4064,11 +3722,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du verwandelst bis zu zehn Kreaturen, die du sehen kannst, in neue Gestalten deiner Wahl. Jedes Ziel kann mit einem Weisheitsrettungswurf widerstehen. Verwandelte Kreaturen verwenden die Spielwerte der gewählten Gestalt und bleiben verwandelt, bis der Zauber endet oder sie auf 0 Trefferpunkte reduziert werden."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 160,
     "descriptionKind": "original-summary"
   },
@@ -4112,9 +3766,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -4126,7 +3777,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4150,11 +3800,7 @@
       "duration": "Unmittelbar",
       "description": "Du sprichst ein Machtwort, das eine Kreatur mit höchstens 100 Trefferpunkten von lähmendem Schmerz überwältigt. Der Schmerz schränkt ihre Bewegung stark ein und verursacht Nachteil auf Angriffe, Attributswürfe und Konstitutionsrettungswürfe zum Aufrechterhalten der Konzentration."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -4166,7 +3812,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4186,11 +3831,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erhältst Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- und Schallschaden. Wenn du Schaden einer dieser Arten erleidest, kannst du deine Reaktion einsetzen, um gegen dieses Schadensereignis immun zu werden. Dadurch endet der Zauber."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 163,
     "descriptionKind": "original-summary"
   },
@@ -4226,11 +3867,7 @@
       "description": "Du beschwörst einen Dämon aus dem Abyss an einen freien Ort. Er ist allen Kreaturen gegenüber feindselig, auch dir, doch du kannst versuchen, ihn mit Befehlen zu kontrollieren. Die Macht des Dämons hängt vom verwendeten Zauberplatz ab; endet deine Konzentration, kann er sich deiner Kontrolle entziehen.",
       "higherLevel": "Der maximale Herausforderungsgrad des Dämons steigt für jeden Zauberplatzgrad über dem 4. um 1."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 166,
     "descriptionKind": "original-summary"
   },
@@ -4264,11 +3901,7 @@
       "duration": "Unmittelbar",
       "description": "Du veränderst einen großen Bereich nichtmagischen Gesteins und verwandelst ihn in Schlamm oder Schlamm in festen Stein. Schlamm kann Kreaturen verlangsamen und festsetzen, während erstarrtes Gestein Barrieren bilden oder Durchgänge verschließen kann."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 169,
     "descriptionKind": "original-summary"
   },
@@ -4314,9 +3947,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -4360,9 +3990,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
@@ -4374,7 +4001,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4396,11 +4022,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erweckst die Natur in einem großen Gebiet. Bäume, Wurzeln, Felsen und Gras behindern Gegner und greifen Kreaturen im Bereich an. Die konkreten Effekte hängen vom Gelände ab."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
@@ -4412,7 +4034,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4444,9 +4065,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 158,
     "descriptionKind": "original-summary"
   },
@@ -4482,11 +4100,7 @@
       "description": "Du beschwörst einen Teufel mit Herausforderungsgrad 6 oder niedriger aus den Neun Höllen an einen freien Ort. Der Teufel ist dir gegenüber unfreundlich und wird vom SL kontrolliert, doch du kannst versuchen, mit ihm zu verhandeln oder ihm Befehle zu erteilen. Er verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Der maximale Herausforderungsgrad des beschworenen Teufels steigt für jeden Zauberplatzgrad über dem 5. um 1."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 158,
     "descriptionKind": "original-summary"
   },
@@ -4518,11 +4132,7 @@
       "duration": "Unmittelbar",
       "description": "Du beschwörst eine steinerne Festung auf einer freien quadratischen Bodenfläche in Reichweite. Sie umfasst vier Türme, verbindende Mauern, einen eingerichteten Bergfried, Nahrung für ein großes Bankett und eine Dienerschaft aus 100 unsichtbaren Dienern. Die Festung bleibt 7 Tage bestehen und zerfällt anschließend, bevor sie im Boden versinkt. Wenn du den Zauber ein Jahr lang alle 7 Tage am selben Ort wirkst, wird sie dauerhaft."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 161,
     "descriptionKind": "original-summary"
   },
@@ -4534,7 +4144,6 @@
     "castingTime": "1 action",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -4558,11 +4167,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du berührst eine willige Kreatur und verleihst ihr Expertise in einer Fertigkeit, in der sie geübt ist. Bis zum Ende des Zaubers verdoppelt sie ihren Übungsbonus auf Attributswürfe mit dieser Fertigkeit, sofern sie nicht bereits von einem vergleichbaren Effekt profitiert."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 165,
     "descriptionKind": "original-summary"
   },
@@ -4596,11 +4201,7 @@
       "duration": "8 Stunden",
       "description": "Du fängst die Seele eines sterbenden Humanoiden in einem winzigen Silberkäfig ein. Du kannst die Seele bis zu sechsmal für Vorteile nutzen, etwa um dich zu heilen, ihr eine Frage zu stellen, Vorteil auf einen Wurf zu erhalten oder einen Ort zu beobachten, den sie zu Lebzeiten kannte. Solange sie gefangen ist, kann der Humanoide nicht wiederbelebt werden."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 165,
     "descriptionKind": "original-summary"
   },
@@ -4644,9 +4245,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 165,
     "descriptionKind": "original-summary"
   },
@@ -4678,11 +4276,7 @@
       "duration": "24 Stunden",
       "description": "Du lässt an einem Punkt in Reichweite einen Tempel erscheinen. Er ist einer Gottheit oder einem Pantheon deiner Wahl gewidmet und besitzt einen geschützten Innenraum, Einrichtung und magische Schutzmaßnahmen gegen bestimmte Kreaturen. Das Bauwerk verschwindet, wenn der Zauber endet."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 167,
     "descriptionKind": "original-summary"
   },
@@ -4694,7 +4288,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4718,11 +4311,7 @@
       "duration": "Unmittelbar",
       "description": "Du deutest auf eine Kreatur, die du in Reichweite sehen kannst. Sie muss einen Weisheitsrettungswurf ablegen und erleidet bei einem Misserfolg 1W8 nekrotischen Schaden oder 1W12, wenn ihr Trefferpunkte fehlen. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um einen Würfel."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 169,
     "descriptionKind": "original-summary"
   },
@@ -4734,7 +4323,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 10 minutes",
     "concentration": true,
     "ritual": false,
@@ -4760,11 +4348,7 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Ein starker Wind wirbelt in einem Radius von 3 Metern um dich. Er lässt Kreaturen im Bereich taub werden, löscht kleine Flammen, macht das Gebiet zu schwierigem Gelände, verursacht Nachteil auf Fernkampfwaffenangriffe, die hindurchgehen, und schützt dich vor Gasen und Dämpfen."
     },
-    "damage": [],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 170,
     "descriptionKind": "original-summary"
   },
@@ -4804,9 +4388,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 171,
     "descriptionKind": "original-summary"
   },
@@ -4818,7 +4399,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -4850,9 +4430,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 161,
     "descriptionKind": "original-summary"
   },
@@ -4864,7 +4441,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -4900,9 +4476,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 167,
     "descriptionKind": "original-summary"
   },
@@ -4953,9 +4526,6 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 157,
     "previousSource": "Elemental Evil Player's Companion, p. 19",
     "descriptionKind": "original-summary"
@@ -4994,11 +4564,7 @@
       "duration": "1 Stunde",
       "description": "Du greifst auf die Erinnerungen von Geistern aus der Vergangenheit zurück. Wähle eine Fertigkeit, in der du nicht geübt bist; für die Wirkungsdauer erhältst du Übung darin. Der Zauber endet vorzeitig, wenn du ihn erneut wirkst."
     },
-    "damage": [],
     "contentSourceId": "scc-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 37,
     "descriptionKind": "original-summary"
   },
@@ -5010,7 +4576,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -5070,7 +4635,6 @@
     "castingTime": "1 reaction, when a creature you can see within 60 feet succeeds on an attack roll, an ability check, or a saving throw",
     "range": "60 feet",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -5094,11 +4658,7 @@
       "duration": "Unmittelbar",
       "description": "Du lenkst eine Kreatur magisch ab, der gerade ein W20-Wurf gelungen ist, und zwingst sie, den Wurf zu wiederholen und das niedrigere Ergebnis zu verwenden. Anschließend kannst du eine andere Kreatur wählen, die du in Reichweite sehen kannst. Sie erhält innerhalb der nächsten Minute Vorteil auf ihren nächsten Angriffs-, Attributs- oder Rettungswurf."
     },
-    "damage": [],
     "contentSourceId": "scc-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 38,
     "descriptionKind": "original-summary"
   },
@@ -5110,7 +4670,6 @@
     "castingTime": "1 action",
     "range": "90 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -5134,7 +4693,6 @@
       "description": "Du verzerrst den Raum um eine Kreatur, die du in Reichweite sehen kannst. Ein unwilliges Ziel muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg oder wenn das Ziel willig ist, teleportiert es sich an einen freien Ort deiner Wahl innerhalb der Reichweite, den es sehen kann.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": [],
     "contentSourceId": "scc-2021",
     "rulesets": [
       "2014",
@@ -5194,9 +4752,6 @@
       }
     ],
     "contentSourceId": "scc-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 38,
     "descriptionKind": "original-summary"
   },
@@ -5208,7 +4763,6 @@
     "castingTime": "1 bonus action",
     "range": "Self",
     "components": "V, S",
-    "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
     "ritual": false,
@@ -5302,9 +4856,6 @@
       }
     ],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 19,
     "descriptionKind": "original-summary"
   },
@@ -5338,11 +4889,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du umgibst eine Kreatur, die du in Reichweite sehen kannst, mit einem Feld aus silbrigem Licht. Sie erhält halbe Deckung, Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- und Giftschaden sowie die Vorteile der Ausweichfähigkeit. In späteren Zügen kannst du das Feld als Bonusaktion auf eine andere Kreatur innerhalb von 18 Metern des Feldes verschieben."
     },
-    "damage": [],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 20,
     "descriptionKind": "original-summary"
   },
@@ -5378,11 +4925,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erfüllst einen Würfel mit 6 Metern Kantenlänge mit Feen- und Drachenmagie. Wirf auf einer Tabelle, um den Effekt zu bestimmen, und würfle zu Beginn jedes deiner Züge erneut. Vor jedem neuen Wurf kann sich der Würfel bis zu 3 Meter bewegen. Mögliche Effekte sind Bezauberung, Blindheit, unkontrollierbares Lachen oder schwieriges Gelände."
     },
-    "damage": [],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 20,
     "descriptionKind": "original-summary"
   },
@@ -5394,7 +4937,6 @@
     "castingTime": "1 action",
     "range": "120 feet",
     "components": "V",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -5430,9 +4972,6 @@
       }
     ],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 21,
     "descriptionKind": "original-summary"
   },
@@ -5476,9 +5015,6 @@
       }
     ],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 21,
     "descriptionKind": "original-summary"
   },
@@ -5516,11 +5052,7 @@
       "description": "Du beschwörst einen drachischen Geist an einen freien Ort. Wähle eine Drachenfamilie – chromatisch, Edelstein oder metallisch –, die Aspekte seiner Gestalt und Fähigkeiten bestimmt. Der Geist handelt unmittelbar nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
       "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des 6. Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des Geistes erscheint."
     },
-    "damage": [],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 21,
     "descriptionKind": "original-summary"
   },
@@ -5561,9 +5093,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 186,
     "descriptionKind": "original-summary"
   },
@@ -5598,11 +5127,7 @@
       "description": "Du erfüllst dich selbst oder eine willige Kreatur, die du sehen kannst, mit verborgenem Glück. Vor Ende des Zaubers kann das Ziel den Zauber auf sich beenden, um bei einem Angriffs-, Attributs- oder Rettungswurf einen zusätzlichen W20 zu werfen und einen der Würfe auszuwählen. Es kann die Magie auch einsetzen, wenn ein Angriffswurf gegen es ausgeführt wird.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 186,
     "descriptionKind": "original-summary"
   },
@@ -5614,7 +5139,6 @@
     "castingTime": "1 minute",
     "range": "Touch",
     "components": "V, S",
-    "material": "",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -5635,11 +5159,7 @@
       "duration": "8 Stunden",
       "description": "Du berührst eine willige Kreatur. Für die Wirkungsdauer addiert sie 1W8 zu ihren Initiativewürfen."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 186,
     "descriptionKind": "original-summary"
   },
@@ -5682,9 +5202,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 187,
     "descriptionKind": "original-summary"
   },
@@ -5727,9 +5244,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 187,
     "descriptionKind": "original-summary"
   },
@@ -5764,11 +5278,7 @@
       "description": "Du berührst einen Gegenstand mit einem Gewicht von höchstens 4,5 kg und fixierst ihn magisch an seinem Ort. Du und Kreaturen, die du beim Wirken bestimmst, könnt ihn normal bewegen. Außerdem kannst du ein Passwort festlegen, das den Zauber für 1 Minute unterdrückt, wenn es innerhalb von 1,5 Metern ausgesprochen wird. In der Luft fixiert kann der Gegenstand bis zu 1.800 kg tragen; mehr Gewicht lässt ihn herabfallen. Andernfalls kann eine Kreatur eine Aktion verwenden und einen Stärkewurf gegen deinen Zauberrettungswurf-SG ablegen, um ihn bis zu 3 Meter zu bewegen.",
       "higherLevel": "Mit einem Zauberplatz des 4. oder 5. Grades steigt der SG zum Bewegen um 5, der Gegenstand kann bis zu 3.600 kg tragen und die Wirkungsdauer beträgt 24 Stunden. Ab dem 6. Grad steigt der SG um 10, der Gegenstand kann bis zu 9.000 kg tragen und der Effekt ist dauerhaft, bis er gebannt wird."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 187,
     "descriptionKind": "original-summary"
   },
@@ -5780,7 +5290,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "V, S",
-    "material": "",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -5811,9 +5320,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 188,
     "descriptionKind": "original-summary"
   },
@@ -5825,7 +5331,6 @@
     "castingTime": "1 action",
     "range": "Self (30-foot cone)",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -5856,9 +5361,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 188,
     "descriptionKind": "original-summary"
   },
@@ -5899,9 +5401,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 188,
     "descriptionKind": "original-summary"
   },
@@ -5934,11 +5433,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du zerschmetterst die Grenzen der Realität um eine Kreatur. Bei einem misslungenen Weisheitsrettungswurf kann sie keine Reaktionen ausführen und würfelt zu Beginn jedes ihrer Züge auf einer Tabelle, die einen störenden Effekt bestimmt. Die Effekte können psychischen, Kraft- oder Kälteschaden verursachen, betäuben, blenden oder das Ziel teleportieren. Am Ende jedes Zuges kann es den Rettungswurf wiederholen."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 189,
     "descriptionKind": "original-summary"
   },
@@ -5950,7 +5445,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V, S",
-    "material": "",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
@@ -5979,9 +5473,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 189,
     "descriptionKind": "original-summary"
   },
@@ -5993,7 +5484,6 @@
     "castingTime": "1 reaction, when a creature you can see makes an attack roll or starts to cast a spell",
     "range": "120 feet",
     "components": "V, S",
-    "material": "",
     "duration": "1 round",
     "concentration": false,
     "ritual": false,
@@ -6016,11 +5506,7 @@
       "description": "Du zielst auf die Kreatur, die die Reaktion ausgelöst hat. Sie muss einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg verschwindet sie bis zum Beginn ihres nächsten Zuges in einer Zeitschleife; der auslösende Angriff verfehlt oder der Zauber wird vergeudet. Anschließend erscheint sie wieder an ihrem vorherigen Ort oder im nächstgelegenen freien Feld. Das Ziel erinnert sich weder an den Zauber noch an dessen Wirkung.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 5. kannst du eine zusätzliche Kreatur als Ziel wählen. Alle Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 189,
     "descriptionKind": "original-summary"
   },
@@ -6053,11 +5539,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Wähle zwei Kreaturen, die du in Reichweite sehen kannst. Jede muss einen Konstitutionsrettungswurf ablegen; befinden sie sich höchstens 9 Meter voneinander entfernt, geschieht dies mit Nachteil. Jede Kreatur kann freiwillig scheitern. Gelingt auch nur einer der Rettungswürfe, hat der Zauber keine Wirkung. Misslingen beide, werden die Kreaturen für die Wirkungsdauer miteinander verbunden: Schaden, der einer Kreatur zugefügt wird, wird auch der anderen zugefügt, und wiederhergestellte Trefferpunkte werden auf beide übertragen. Erreicht eine der Kreaturen 0 Trefferpunkte oder endet der Zauber bei einer von ihnen, endet er bei beiden."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 189,
     "descriptionKind": "original-summary"
   },
@@ -6098,9 +5580,6 @@
       }
     ],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 189,
     "descriptionKind": "original-summary"
   },
@@ -6112,7 +5591,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "S",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": true,
@@ -6133,11 +5611,7 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du erschaffst an deinem Handgelenk einen winzigen extradimensionalen Raum. Du kannst einen Gegenstand darin verstauen, der in einen Würfel mit 15 cm Kantenlänge passt und höchstens 2,5 kg wiegt, und ihn später als Bonusaktion zurückholen. Endet der Zauber, während sich der Gegenstand darin befindet, erscheint er zu deinen Füßen."
     },
-    "damage": [],
     "contentSourceId": "egw-2020",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 190,
     "descriptionKind": "original-summary"
   },
@@ -6149,7 +5623,6 @@
     "castingTime": "1 minute",
     "range": "Touch",
     "components": "V",
-    "material": "",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -6177,11 +5650,7 @@
       "description": "Du veränderst den scheinbaren Wert eines Gegenstands, der höchstens in einen Würfel mit 30 cm Kantenlänge passt. Durch illusionären Glanz, Verzierungen oder Schäden lässt du ihn wertvoller oder weniger wertvoll erscheinen. Eine Kreatur, die ihn untersucht, kann seinen tatsächlichen Wert mit einem erfolgreichen Intelligenz-(Nachforschungen-)Wurf gegen deinen Zauberrettungswurf-SG erkennen.",
       "higherLevel": "Die maximale Größe des Gegenstands steigt für jeden Zauberplatzgrad über dem 1. um 30 cm."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 75,
     "descriptionKind": "original-summary"
   },
@@ -6193,7 +5662,6 @@
     "castingTime": "1 action",
     "range": "30 feet",
     "components": "V",
-    "material": "",
     "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
@@ -6219,11 +5687,7 @@
       "description": "Du versuchst, eine Kreatur zu bezaubern und vorübergehend zu deiner Verbündeten zu machen. Bei einem misslungenen Weisheitsrettungswurf ist sie bezaubert und führt die von dir erbetenen Dienste oder Tätigkeiten so freundlich wie möglich aus. Würde eine Aufgabe ihr schaden oder ihren Wünschen widersprechen, kann sie den Rettungswurf wiederholen; eine Aufgabe, die ihren sicheren Tod bedeuten würde, beendet den Zauber.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 75,
     "descriptionKind": "original-summary"
   },
@@ -6258,11 +5722,7 @@
       "material": "eine verbrauchte Royalty-Komponente im Wert von 2 GM",
       "description": "Du veränderst die Erinnerungen der Zuhörer in deiner unmittelbaren Nähe. Jede Kreatur deiner Wahl innerhalb von 1,5 Metern vergisst alles, was du in den letzten 6 Sekunden gesagt hast, und erinnert sich stattdessen an die Worte, die du als verbale Komponente des Zaubers sprichst."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 76,
     "descriptionKind": "original-summary"
   },
@@ -6300,11 +5760,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du zeigst den als Materialkomponente verwendeten Edelstein und wählst Kreaturen in Reichweite, die dich sehen können. Jedes Ziel muss einen Weisheitsrettungswurf ablegen oder wird von dir bezaubert und verwendet seine Bewegung, um sich auf sichere Weise dir zu nähern. Innerhalb von 1,5 Metern bleibt es stehen und starrt gierig auf den Edelstein. Am Ende jedes seiner Züge kann es den Rettungswurf wiederholen."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 76,
     "descriptionKind": "original-summary"
   },
@@ -6337,11 +5793,7 @@
       "duration": "1 Minute",
       "description": "Du schleuderst die als Materialkomponente verwendete Münze an einen Punkt in Reichweite. Sie leuchtet wie durch den Zauber Licht. Jede Kreatur deiner Wahl, die du innerhalb von 9 Metern der Münze sehen kannst, muss einen Weisheitsrettungswurf ablegen oder wird abgelenkt. Währenddessen hat sie Nachteil auf Weisheits-(Wahrnehmung-)Würfe und Initiativewürfe."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 76,
     "descriptionKind": "original-summary"
   },
@@ -6384,9 +5836,6 @@
       }
     ],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 76,
     "descriptionKind": "original-summary"
   },
@@ -6398,7 +5847,6 @@
     "castingTime": "1 minute",
     "range": "60 feet",
     "components": "V",
-    "material": "",
     "duration": "1 hour",
     "concentration": false,
     "ritual": false,
@@ -6422,11 +5870,7 @@
       "description": "Du hältst eine Ansprache an bis zu fünf Kreaturen, die dich hören können. Jede erhält 5 temporäre Trefferpunkte und für die Wirkungsdauer Vorteil auf Weisheitsrettungswürfe. Wenn eine betroffene Kreatur erstmals von einem Angriff getroffen wird, hat sie Vorteil auf ihren nächsten Angriffswurf. Der Zauber endet für sie, sobald sie die durch ihn erhaltenen temporären Trefferpunkte verliert.",
       "higherLevel": "Die temporären Trefferpunkte steigen für jeden Zauberplatzgrad über dem 3. um 5."
     },
-    "damage": [],
     "contentSourceId": "ai-2019",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 77,
     "descriptionKind": "original-summary"
   },
@@ -6438,7 +5882,6 @@
     "castingTime": "1 action",
     "range": "Self",
     "components": "S",
-    "material": "",
     "duration": "8 hours",
     "concentration": false,
     "ritual": false,
@@ -6474,11 +5917,7 @@
       "availabilityNote": "Nur über den Hintergrund Dimir-Agent oder mit Zustimmung der Spielleitung; der Hintergrund fügt den Zauber deiner Klassenliste hinzu."
     },
     "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list.",
-    "damage": [],
     "contentSourceId": "ggr-2018",
-    "rulesets": [
-      "2014"
-    ],
     "sourcePage": 47,
     "descriptionKind": "original-summary"
   },
@@ -6490,7 +5929,6 @@
     "castingTime": "1 action",
     "range": "60 feet",
     "components": "S",
-    "material": "",
     "duration": "24 hours",
     "concentration": false,
     "ritual": false,
@@ -6520,7 +5958,6 @@
       "description": "Du erschaffst eine Kugel frischer Luft um den Kopf einer willigen Kreatur, die du in Reichweite sehen kannst. Die Luft bleibt für die Wirkungsdauer atembar und ermöglicht der Kreatur das Atmen in einer ansonsten luftleeren oder erstickenden Umgebung.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du zwei zusätzliche Luftkugeln erschaffen."
     },
-    "damage": [],
     "contentSourceId": "aag-2022",
     "rulesets": [
       "2014",
@@ -6571,7 +6008,6 @@
       "duration": "Unmittelbar",
       "description": "Während du den beim Wirken verwendeten Kristallstab hältst, berührst du einen unbesetzten Stuhl der Größenkategorie Groß oder kleiner. Der Stab verschwindet und der Stuhl verwandelt sich in einen Spelljamming-Steuerstuhl, der auf einem Schiff installiert werden kann."
     },
-    "damage": [],
     "contentSourceId": "aag-2022",
     "rulesets": [
       "2014",
