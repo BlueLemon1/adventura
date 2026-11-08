@@ -5187,5 +5187,559 @@
     "sourcePage": 157,
     "previousSource": "Elemental Evil Player's Companion, p. 19",
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "scc-2021-borrowed-knowledge",
+    "name": "Borrowed Knowledge",
+    "level": 2,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "a book worth at least 25 gp",
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You draw on the memories of spirits from the past. Choose one skill in which you lack proficiency; you gain proficiency in it for the duration. The spell ends early if you cast it again.",
+    "localized": {
+      "name": "Geliehenes Wissen",
+      "school": "Erkenntnis",
+      "classes": [
+        "bard",
+        "cleric",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G, M (ein Buch im Wert von mindestens 25 GM)",
+      "duration": "1 Stunde",
+      "description": "Du greifst auf die Erinnerungen von Geistern aus der Vergangenheit zurück. Wähle eine Fertigkeit, in der du nicht geübt bist; für die Wirkungsdauer erhältst du Übung darin. Der Zauber endet vorzeitig, wenn du ihn erneut wirkst."
+    },
+    "damage": [],
+    "contentSourceId": "scc-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Strixhaven: A Curriculum of Chaos",
+    "sourceAbbreviation": "SCC",
+    "sourcePage": 37,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "scc-2021-kinetic-jaunt",
+    "name": "Kinetic Jaunt",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You move with supernatural agility. Your walking speed increases by 10 feet, your movement doesn't provoke opportunity attacks, and you can pass through other creatures' spaces as if they were difficult terrain. If you end your turn in another creature's space, you are moved to the last unoccupied space and take force damage.",
+    "localized": {
+      "name": "Kinetischer Sprung",
+      "school": "Verwandlung",
+      "classes": [
+        "artificer",
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du bewegst dich mit übernatürlicher Gewandtheit. Deine Gehbewegungsrate steigt um 3 Meter, deine Bewegung provoziert keine Gelegenheitsangriffe und du kannst durch die Felder anderer Kreaturen gehen, als wären sie schwieriges Gelände. Beendest du deinen Zug im Feld einer anderen Kreatur, wirst du zum letzten freien Feld zurückversetzt und erleidest Kraftschaden."
+    },
+    "damage": [
+      {
+        "dice": "1d8",
+        "average": 4.5,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "scc-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Strixhaven: A Curriculum of Chaos",
+    "sourceAbbreviation": "SCC",
+    "sourcePage": 37,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "scc-2021-silvery-barbs",
+    "name": "Silvery Barbs",
+    "level": 1,
+    "school": "Enchantment",
+    "castingTime": "1 reaction, when a creature you can see within 60 feet succeeds on an attack roll, an ability check, or a saving throw",
+    "range": "60 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You magically distract a creature that just succeeded on a d20 test, forcing it to reroll and use the lower result. You can then choose a different creature you can see within range to gain advantage on its next attack roll, ability check, or saving throw within 1 minute.",
+    "localized": {
+      "name": "Silberne Widerhaken",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Reaktion, wenn eine Kreatur, die du innerhalb von 18 Metern sehen kannst, einen Angriffs-, Attributs- oder Rettungswurf besteht",
+      "range": "18 Meter",
+      "components": "V",
+      "duration": "Unmittelbar",
+      "description": "Du lenkst eine Kreatur magisch ab, der gerade ein W20-Wurf gelungen ist, und zwingst sie, den Wurf zu wiederholen und das niedrigere Ergebnis zu verwenden. Anschließend kannst du eine andere Kreatur wählen, die du in Reichweite sehen kannst. Sie erhält innerhalb der nächsten Minute Vorteil auf ihren nächsten Angriffs-, Attributs- oder Rettungswurf."
+    },
+    "damage": [],
+    "contentSourceId": "scc-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Strixhaven: A Curriculum of Chaos",
+    "sourceAbbreviation": "SCC",
+    "sourcePage": 38,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "scc-2021-vortex-warp",
+    "name": "Vortex Warp",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You magically twist space around one creature you can see within range. The target makes a Constitution saving throw if unwilling; on a failure, or if willing, it teleports to an unoccupied space you choose within range that it can see.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 2.",
+    "localized": {
+      "name": "Wirbelverzerrung",
+      "school": "Beschwörung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du verzerrst den Raum um eine Kreatur, die du in Reichweite sehen kannst. Ein unwilliges Ziel muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg oder wenn das Ziel willig ist, teleportiert es sich an einen freien Ort deiner Wahl innerhalb der Reichweite, den es sehen kann.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [],
+    "contentSourceId": "scc-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Strixhaven: A Curriculum of Chaos",
+    "sourceAbbreviation": "SCC",
+    "sourcePage": 38,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "scc-2021-wither-and-bloom",
+    "name": "Wither and Bloom",
+    "level": 2,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a withered vine twisted into a loop",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Necrotic energy withers creatures in a 10-foot-radius sphere. Each creature there makes a Constitution saving throw, taking 2d6 necrotic damage on a failure or half as much on a success. You can also choose one creature in the area to expend and roll one of its unspent Hit Dice, regaining hit points equal to the roll plus your spellcasting ability modifier.",
+    "higherLevel": "The necrotic damage increases by 1d6 for each spell slot level above 2.",
+    "localized": {
+      "name": "Welken und Erblühen",
+      "school": "Nekromantie",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (eine verwelkte, zu einer Schlaufe gedrehte Ranke)",
+      "duration": "Unmittelbar",
+      "description": "Nekrotische Energie lässt Kreaturen in einer Sphäre mit 3 Metern Radius welken. Jede Kreatur darin muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 2W6 nekrotischen Schaden oder bei Erfolg halben Schaden. Außerdem kannst du eine Kreatur im Bereich wählen, die einen ihrer nicht ausgegebenen Trefferwürfel verbraucht und würfelt. Sie erhält Trefferpunkte in Höhe des Ergebnisses plus deines Zauberattributmodifikators zurück.",
+      "higherLevel": "Der nekrotische Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "scc-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Strixhaven: A Curriculum of Chaos",
+    "sourceAbbreviation": "SCC",
+    "sourcePage": 38,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-ashardalons-stride",
+    "name": "Ashardalon's Stride",
+    "level": 3,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "Flames trail from your feet. Your speed increases by 20 feet, and your movement doesn't provoke opportunity attacks. A creature or unattended object you pass within 5 feet of for the first time on a turn takes 1d6 fire damage.",
+    "higherLevel": "For each spell slot level above 3, your speed increases by an additional 5 feet and the fire damage increases by 1d6.",
+    "localized": {
+      "name": "Ashardalons Schritt",
+      "school": "Verwandlung",
+      "classes": [
+        "artificer",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Flammen folgen deinen Füßen. Deine Bewegungsrate steigt um 6 Meter und deine Bewegung provoziert keine Gelegenheitsangriffe. Eine Kreatur oder ein ungetragener Gegenstand, an dem du dich während eines Zuges erstmals innerhalb von 1,5 Metern vorbeibewegst, erleidet 1W6 Feuerschaden.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. steigt deine Bewegungsrate um weitere 1,5 Meter und der Feuerschaden um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 19,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-draconic-transformation",
+    "name": "Draconic Transformation",
+    "level": 7,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "a statuette of a dragon worth at least 500 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You take on draconic features. You gain 30-foot blindsight, incorporeal wings that grant a flying speed of 60 feet, and a breath weapon you can use when casting the spell and as a bonus action on later turns. The breath weapon is a 60-foot cone that deals 6d8 force damage, half on a successful Dexterity save.",
+    "localized": {
+      "name": "Drachische Verwandlung",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G, M (eine Drachenstatuette im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du nimmst drakonische Merkmale an. Du erhältst Blindsicht mit 9 Metern Reichweite, körperlose Flügel mit einer Flugbewegungsrate von 18 Metern und einen Odem, den du beim Wirken des Zaubers und später als Bonusaktion einsetzen kannst. Der Odem ist ein 18-Meter-Kegel, der 6W8 Kraftschaden verursacht; ein erfolgreicher Geschicklichkeitsrettungswurf halbiert den Schaden."
+    },
+    "damage": [
+      {
+        "dice": "6d8",
+        "average": 27,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 19,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-fizbans-platinum-shield",
+    "name": "Fizban's Platinum Shield",
+    "level": 6,
+    "school": "Abjuration",
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a platinum-plated dragon scale worth at least 500 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You surround one creature you can see within range with a field of silvery light. It gains half cover, resistance to acid, cold, fire, lightning, and poison damage, and the benefits of Evasion. As a bonus action on later turns, you can move the field to another creature within 60 feet of it.",
+    "localized": {
+      "name": "Fizbans Platinschild",
+      "school": "Bannmagie",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "18 Meter",
+      "components": "V, G, M (eine platinbeschichtete Drachenschuppe im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du umgibst eine Kreatur, die du in Reichweite sehen kannst, mit einem Feld aus silbrigem Licht. Sie erhält halbe Deckung, Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- und Giftschaden sowie die Vorteile der Ausweichfähigkeit. In späteren Zügen kannst du das Feld als Bonusaktion auf eine andere Kreatur innerhalb von 18 Metern des Feldes verschieben."
+    },
+    "damage": [],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 20,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-nathairs-mischief",
+    "name": "Nathair's Mischief",
+    "level": 2,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M",
+    "material": "a piece of crust from an apple pie",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You fill a 20-foot cube with fey and draconic magic. Roll on a table to determine the effect, then roll again at the start of each of your turns; the cube can move up to 10 feet before each new roll. Effects include charm, blindness, uncontrollable laughter, or difficult terrain.",
+    "localized": {
+      "name": "Nathairs Schelmerei",
+      "school": "Illusion",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G, M (ein Stück Apfelkuchenkruste)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erfüllst einen Würfel mit 6 Metern Kantenlänge mit Feen- und Drachenmagie. Wirf auf einer Tabelle, um den Effekt zu bestimmen, und würfle zu Beginn jedes deiner Züge erneut. Vor jedem neuen Wurf kann sich der Würfel bis zu 3 Meter bewegen. Mögliche Effekte sind Bezauberung, Blindheit, unkontrollierbares Lachen oder schwieriges Gelände."
+    },
+    "damage": [],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 20,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-raulothims-psychic-lance",
+    "name": "Raulothim's Psychic Lance",
+    "level": 4,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You launch a lance of psychic power at a creature you can see, or speak a creature's name to target it without seeing it if it is within range. The target makes an Intelligence saving throw, taking 7d6 psychic damage and becoming incapacitated until the start of your next turn on a failure, or taking half damage on a success.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 4.",
+    "localized": {
+      "name": "Raulothims psychische Lanze",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V",
+      "duration": "Unmittelbar",
+      "description": "Du schleuderst eine Lanze psychischer Energie auf eine Kreatur, die du sehen kannst. Alternativ kannst du den Namen einer Kreatur aussprechen und sie ohne Sichtkontakt als Ziel wählen, sofern sie sich in Reichweite befindet. Das Ziel muss einen Intelligenzrettungswurf ablegen und erleidet bei einem Misserfolg 7W6 psychischen Schaden und ist bis zum Beginn deines nächsten Zuges kampfunfähig; bei Erfolg erleidet es halben Schaden.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 4. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "7d6",
+        "average": 24.5,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 21,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-rimes-binding-ice",
+    "name": "Rime's Binding Ice",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (30-foot cone)",
+    "components": "S, M",
+    "material": "a vial of meltwater",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "A burst of cold energy erupts in a 30-foot cone. Creatures in the area make a Constitution saving throw, taking 3d8 cold damage on a failure or half as much on a success. A creature that fails is also hindered by ice, reducing its speed to 0 until it or another creature uses an action to break the ice.",
+    "higherLevel": "The cold damage increases by 1d8 for each spell slot level above 2.",
+    "localized": {
+      "name": "Rimes bindendes Eis",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (9-Meter-Kegel)",
+      "components": "G, M (ein Fläschchen Schmelzwasser)",
+      "duration": "Unmittelbar",
+      "description": "Ein Schwall eisiger Energie bricht in einem 9-Meter-Kegel hervor. Kreaturen im Bereich müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 3W8 Kälteschaden oder bei Erfolg halben Schaden. Eine Kreatur, die den Rettungswurf nicht besteht, wird außerdem von Eis behindert und ihre Bewegungsrate sinkt auf 0, bis sie selbst oder eine andere Kreatur das Eis mit einer Aktion aufbricht.",
+      "higherLevel": "Der Kälteschaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "3d8",
+        "average": 13.5,
+        "type": "cold"
+      }
+    ],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 21,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ftd-2021-summon-draconic-spirit",
+    "name": "Summon Draconic Spirit",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "an object with the image of a dragon engraved on it, worth at least 500 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You summon a draconic spirit into an unoccupied space. Choose a dragon family—chromatic, gem, or metallic—which determines aspects of its form and abilities. The spirit acts immediately after you, follows your verbal commands, and disappears when reduced to 0 hit points or when the spell ends.",
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the spirit's stat block.",
+    "localized": {
+      "name": "Drachischen Geist beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein mit dem Bild eines Drachen gravierter Gegenstand im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen drachischen Geist an einen freien Ort. Wähle eine Drachenfamilie – chromatisch, Edelstein oder metallisch –, die Aspekte seiner Gestalt und Fähigkeiten bestimmt. Der Geist handelt unmittelbar nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des 6. Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "ftd-2021",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Fizban's Treasury of Dragons",
+    "sourceAbbreviation": "FTD",
+    "sourcePage": 21,
+    "descriptionKind": "original-summary"
   }
 ]
