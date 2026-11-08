@@ -9,8 +9,9 @@ Only material licensed for redistribution should be stored verbatim. For non-SRD
 ## Current supplemental coverage
 
 - 2014 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, and Battle Smith.
+- 2014 Player's Handbook: summarized subclass feature progressions for all non-SRD PHB subclasses, including the six additional Cleric domains, the remaining Wizard schools, and the other PHB archetypes.
 - 2024 Artificer: class progression plus summarized specialist features for Alchemist, Armorer, Artillerist, Battle Smith, and Cartographer.
 - These summaries are independently written and are not transcriptions of the sourcebooks.
 - German text in these supplemental records is an unofficial translation and carries `translationStatus.de = "unofficial"`; the UI displays that status.
 
-The selectable subclass inventory is intentionally broader than the currently populated feature records. A subclass appearing in the character selector does not yet mean its complete feature progression has been imported. Keep the PR in draft until each source/ruleset dataset has been audited and populated.
+The selectable subclass inventory remains broader than the feature records because supplemental subclasses outside the 2014 PHB and the 2024 PHB/EFA still need to be populated. A subclass appearing in the character selector does not yet mean its complete feature progression has been imported. Keep the PR in draft until each source/ruleset dataset has been audited and populated.
