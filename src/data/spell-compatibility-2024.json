@@ -44,7 +44,8 @@
       "status": "replaced",
       "replacementName": "Mind Sliver",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-mind-sliver"
     },
     {
       "spellId": "tce-2014-tashas-caustic-brew",
@@ -67,14 +68,16 @@
       "status": "replaced",
       "replacementName": "Summon Beast",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-beast"
     },
     {
       "spellId": "tce-2014-summon-fey",
       "status": "replaced",
       "replacementName": "Summon Fey",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-fey"
     },
     {
       "spellId": "tce-2014-summon-shadowspawn",
@@ -85,42 +88,48 @@
       "status": "replaced",
       "replacementName": "Summon Undead",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-undead"
     },
     {
       "spellId": "tce-2014-summon-aberration",
       "status": "replaced",
       "replacementName": "Summon Aberration",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-aberration"
     },
     {
       "spellId": "tce-2014-summon-construct",
       "status": "replaced",
       "replacementName": "Summon Construct",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-construct"
     },
     {
       "spellId": "tce-2014-summon-elemental",
       "status": "replaced",
       "replacementName": "Summon Elemental",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-elemental"
     },
     {
       "spellId": "tce-2014-summon-celestial",
       "status": "replaced",
       "replacementName": "Summon Celestial",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-celestial"
     },
     {
       "spellId": "tce-2014-summon-fiend",
       "status": "replaced",
       "replacementName": "Summon Fiend",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-summon-fiend"
     },
     {
       "spellId": "tce-2014-tashas-otherworldly-guise",
@@ -173,7 +182,8 @@
       "status": "replaced",
       "replacementName": "Steel Wind Strike",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-steel-wind-strike"
     },
     {
       "spellId": "xge-2014-thunder-step",
@@ -224,7 +234,8 @@
       "status": "replaced",
       "replacementName": "Thunderclap",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-thunderclap"
     },
     {
       "spellId": "xge-2014-erupting-earth",
@@ -485,7 +496,8 @@
       "status": "replaced",
       "replacementName": "Toll the Dead",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-toll-the-dead"
     },
     {
       "spellId": "xge-2014-warding-wind",
@@ -496,7 +508,8 @@
       "status": "replaced",
       "replacementName": "Word of Radiance",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-word-of-radiance"
     },
     {
       "spellId": "xge-2014-mental-prison",
@@ -507,7 +520,8 @@
       "status": "replaced",
       "replacementName": "Synaptic Static",
       "replacementSource": "phb-2024",
-      "replacementCategory": "new"
+      "replacementCategory": "new",
+      "replacementSpellId": "phb-2024-synaptic-static"
     },
     {
       "spellId": "xge-2014-ice-knife",
@@ -677,6 +691,86 @@
       "replacementSpellId": "srd-2024-befuddlement",
       "replacementSource": "phb-2024",
       "replacementCategory": "renamed"
+    },
+    {
+      "spellId": "phb-2024-mind-sliver",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-thunderclap",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-toll-the-dead",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-word-of-radiance",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-beast",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-fey",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-undead",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-aberration",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-construct",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-elemental",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-steel-wind-strike",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-celestial",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-synaptic-static",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-summon-fiend",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-arcane-vigor",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-fount-of-moonlight",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-jallarzis-storm-of-radiance",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-yolandes-regal-presence",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-tashas-bubbling-cauldron",
+      "status": "new"
+    },
+    {
+      "spellId": "phb-2024-power-word-fortify",
+      "status": "new"
     }
   ],
   "phb2024UpdatedSupplementSpellNames": [
