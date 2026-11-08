@@ -1264,7 +1264,7 @@
     }
   },
   {
-    "id": "2014-fighter-battlemaster-improved-combat-superiority",
+    "id": "2014-fighter-battlemaster-improved-combat-superiority-level-18",
     "ruleset": "2014",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#improved-combat-superiority",
@@ -1537,7 +1537,7 @@
     }
   },
   {
-    "id": "2014-monk-four_elements-elemental-disciplines",
+    "id": "2014-monk-four_elements-elemental-disciplines-level-11",
     "ruleset": "2014",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#elemental-disciplines",
@@ -1558,7 +1558,7 @@
     }
   },
   {
-    "id": "2014-monk-four_elements-elemental-disciplines",
+    "id": "2014-monk-four_elements-elemental-disciplines-level-17",
     "ruleset": "2014",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#elemental-disciplines",
