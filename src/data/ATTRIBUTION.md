@@ -170,6 +170,27 @@ Included spells:
 
 These two sourcebooks are currently represented as 2014-era supplements. Their entries will be made available under the 2024 ruleset only after compatibility is checked individually.
 
+### Explorer's Guide to Wildemount (EGW)
+
+Included Dunamancy spells:
+- Dark Star (p. 186)
+- Fortune's Favor (p. 186)
+- Gift of Alacrity (p. 186)
+- Gravity Fissure (p. 187)
+- Gravity Sinkhole (p. 187)
+- Immovable Object (p. 187)
+- Magnify Gravity (p. 188)
+- Pulse Wave (p. 188)
+- Ravenous Void (p. 188)
+- Reality Break (p. 189)
+- Sapping Sting (p. 189)
+- Temporal Shunt (p. 189)
+- Tether Essence (p. 189)
+- Time Ravage (p. 189)
+- Wristpocket (p. 190)
+
+These entries are marked as Dunamancy and show whether they are associated with Chronurgy Magic, Graviturgy Magic, or both. They are assigned to the Wizard class; access for other spellcasters requires the DM's approval. Dunamancy spells are not automatically treated as ordinary Wizard spells for every subclass.
+
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
 
 ### Sword Coast Adventurer's Guide (SCAG)
