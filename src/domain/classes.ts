@@ -266,7 +266,18 @@ const SUBCLASS_OPTIONS_BY_RULESET: Record<Dnd5eRuleset, Record<string, ClassOpti
 }
 
 export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): ClassOption[] {
-  return SUBCLASS_OPTIONS_BY_RULESET[ruleset][classId] ?? []
+  const currentOptions = SUBCLASS_OPTIONS_BY_RULESET[ruleset][classId] ?? []
+  if (ruleset === '2014') return currentOptions
+
+  // 2024 characters may use legacy official subclasses that were not reprinted
+  // for the 2024 rules. Keep the 2024 PHB/SRD options above authoritative and
+  // add only older options that do not already have a 2024 entry.
+  const currentValues = new Set(currentOptions.map((option) => option.value))
+  const legacyOptions = (SUBCLASS_OPTIONS_BY_RULESET['2014'][classId] ?? []).filter(
+    (option) => !currentValues.has(option.value),
+  )
+
+  return [...currentOptions, ...legacyOptions]
 }
 
 export function getClassLabel(classId: string): string {
