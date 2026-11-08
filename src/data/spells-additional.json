@@ -3918,5 +3918,681 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 166,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-abi-dalzims-horrid-wilting",
+    "name": "Abi-Dalzim's Horrid Wilting",
+    "level": 8,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, S, M",
+    "material": "a bit of sponge",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You draw moisture from creatures in a large area. Each creature in a 30-foot cube makes a Constitution saving throw, taking 12d8 necrotic damage on a failure or half as much on a success. Nonmagical plants in the area wither.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 8.",
+    "localized": {
+      "name": "Abi-Dalzims schreckliches Verdorren",
+      "school": "Nekromantie",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "45 Meter",
+      "components": "V, G, M (ein Stück Schwamm)",
+      "duration": "Unmittelbar",
+      "description": "Du entziehst Kreaturen in einem großen Gebiet Feuchtigkeit. Jede Kreatur in einem Würfel mit 9 Metern Kantenlänge muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 12W8 nekrotischen Schaden oder bei Erfolg halben Schaden. Nichtmagische Pflanzen im Bereich verdorren.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 8. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "12d8",
+        "average": 54,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 150,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-illusory-dragon",
+    "name": "Illusory Dragon",
+    "level": 8,
+    "school": "Illusion",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You create a huge illusory dragon that occupies space and can frighten creatures nearby. It can move and use a breath weapon that deals psychic damage; creatures can resist the fear and breath effects with saving throws.",
+    "localized": {
+      "name": "Illusorischer Drache",
+      "school": "Illusion",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst einen riesigen illusorischen Drachen, der Raum einnimmt und Kreaturen in seiner Nähe in Furcht versetzen kann. Er kann sich bewegen und einen Odem einsetzen, der psychischen Schaden verursacht. Kreaturen können den Furcht- und Odem-Effekten mit Rettungswürfen widerstehen."
+    },
+    "damage": [
+      {
+        "dice": "12d6",
+        "average": 42,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 158,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-investiture-of-flame",
+    "name": "Investiture of Flame",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Flames surround you. You gain resistance to cold damage and immunity to fire damage, shed bright light, and can move through flammable objects without igniting them. You can also project a cone of fire that damages creatures in the area.",
+    "localized": {
+      "name": "Feuerinvestitur",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Flammen umgeben dich. Du erhältst Resistenz gegen Kälteschaden und Immunität gegen Feuerschaden, spendest helles Licht und kannst dich durch brennbare Gegenstände bewegen, ohne sie zu entzünden. Außerdem kannst du einen Feuerkegel ausstoßen, der Kreaturen im Bereich verletzt."
+    },
+    "damage": [
+      {
+        "dice": "4d8",
+        "average": 18,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 159,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-investiture-of-ice",
+    "name": "Investiture of Ice",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Ice covers your body. You gain resistance to fire damage and immunity to cold damage, can move across icy surfaces without penalty, and can freeze water around you. You can also unleash a cone of freezing wind that deals cold damage and can reduce creatures' speed to 0.",
+    "localized": {
+      "name": "Eisinvestitur",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Eis bedeckt deinen Körper. Du erhältst Resistenz gegen Feuerschaden und Immunität gegen Kälteschaden, kannst dich ungehindert über Eis bewegen und Wasser in deiner Nähe gefrieren lassen. Außerdem kannst du einen Kegel eisigen Windes entfesseln, der Kälteschaden verursacht und die Bewegungsrate von Kreaturen auf 0 senken kann."
+    },
+    "damage": [
+      {
+        "dice": "4d6",
+        "average": 14,
+        "type": "cold"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 159,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-investiture-of-stone",
+    "name": "Investiture of Stone",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Your skin becomes stone-like. You gain resistance to nonmagical bludgeoning, piercing, and slashing damage, gain tremorsense, and can move through nonmagical earth and stone.",
+    "localized": {
+      "name": "Steininvestitur",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Deine Haut wird steinartig. Du erhältst Resistenz gegen nichtmagischen Wucht-, Stich- und Hiebschaden, erhältst Erschütterungssinn und kannst dich durch nichtmagische Erde und nichtmagischen Stein bewegen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 159,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-investiture-of-wind",
+    "name": "Investiture of Wind",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Winds swirl around you. You gain a flying speed, resistance to lightning and thunder damage, and protection from ranged weapon attacks. You can also create a powerful gust that damages and pushes creatures away.",
+    "localized": {
+      "name": "Windinvestitur",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Winde wirbeln um dich. Du erhältst eine Flugbewegungsrate, Resistenz gegen Blitz- und Schallschaden sowie Schutz vor Fernkampfwaffenangriffen. Außerdem kannst du einen mächtigen Windstoß erzeugen, der Kreaturen verletzt und zurückstößt."
+    },
+    "damage": [
+      {
+        "dice": "2d10",
+        "average": 11,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 159,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-mass-polymorph",
+    "name": "Mass Polymorph",
+    "level": 9,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a caterpillar cocoon",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You transform up to ten creatures you can see into new forms of your choice. Each target makes a Wisdom saving throw to resist; transformed creatures use the chosen form's statistics and remain transformed until the spell ends or they are reduced to 0 hit points.",
+    "localized": {
+      "name": "Massenverwandlung",
+      "school": "Verwandlung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (ein Raupenkokon)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du verwandelst bis zu zehn Kreaturen, die du sehen kannst, in neue Gestalten deiner Wahl. Jedes Ziel kann mit einem Weisheitsrettungswurf widerstehen. Verwandelte Kreaturen verwenden die Spielwerte der gewählten Gestalt und bleiben verwandelt, bis der Zauber endet oder sie auf 0 Trefferpunkte reduziert werden."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-negative-energy-flood",
+    "name": "Negative Energy Flood",
+    "level": 5,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, M",
+    "material": "a broken bone and a square of black silk",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You send negative energy into a creature. It makes a Constitution saving throw, taking 5d12 necrotic damage on a failure or half as much on a success. If this damage kills a humanoid, it rises as a zombie; an undead target instead gains temporary hit points.",
+    "higherLevel": "The damage increases by 1d12 for each spell slot level above 5.",
+    "localized": {
+      "name": "Flut negativer Energie",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, M (ein gebrochener Knochen und ein Stück schwarze Seide)",
+      "duration": "Unmittelbar",
+      "description": "Du sendest negative Energie in eine Kreatur. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 5W12 nekrotischen Schaden oder bei Erfolg halben Schaden. Tötet dieser Schaden einen Humanoiden, erhebt er sich als Zombie; ein untotes Ziel erhält stattdessen temporäre Trefferpunkte.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W12."
+    },
+    "damage": [
+      {
+        "dice": "5d12",
+        "average": 32.5,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 163,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-power-word-pain",
+    "name": "Power Word Pain",
+    "level": 7,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You speak a word of power that overwhelms one creature with crippling pain if it has 100 hit points or fewer. The pain severely limits its movement and imposes disadvantage on attacks, ability checks, and Constitution saving throws to maintain concentration.",
+    "localized": {
+      "name": "Machtwort Schmerz",
+      "school": "Verzauberung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V",
+      "duration": "Unmittelbar",
+      "description": "Du sprichst ein Machtwort, das eine Kreatur mit höchstens 100 Trefferpunkten von lähmendem Schmerz überwältigt. Der Schmerz schränkt ihre Bewegung stark ein und verursacht Nachteil auf Angriffe, Attributswürfe und Konstitutionsrettungswürfe zum Aufrechterhalten der Konzentration."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 163,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-primordial-ward",
+    "name": "Primordial Ward",
+    "level": 6,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "You gain resistance to acid, cold, fire, lightning, and thunder damage. When you take damage of one of those types, you can use your reaction to become immune to that instance of damage; doing so ends the spell.",
+    "localized": {
+      "name": "Urzeitlicher Schutz",
+      "school": "Bannmagie",
+      "classes": [
+        "druid"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erhältst Resistenz gegen Säure-, Kälte-, Feuer-, Blitz- und Schallschaden. Wenn du Schaden einer dieser Arten erleidest, kannst du deine Reaktion einsetzen, um gegen dieses Schadensereignis immun zu werden. Dadurch endet der Zauber."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 163,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-summon-greater-demon",
+    "name": "Summon Greater Demon",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a vial of blood from a humanoid killed within the past 24 hours",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a demon from the Abyss into an unoccupied space. It is hostile toward all creatures, including you, but you can attempt to control it with commands. The demon's power depends on the spell slot used, and it may break free if your concentration ends.",
+    "higherLevel": "The maximum challenge rating of the demon increases by 1 for each spell slot level above 4.",
+    "localized": {
+      "name": "Höheren Dämon beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Dämon aus dem Abyss an einen freien Ort. Er ist allen Kreaturen gegenüber feindselig, auch dir, doch du kannst versuchen, ihn mit Befehlen zu kontrollieren. Die Macht des Dämons hängt vom verwendeten Zauberplatz ab; endet deine Konzentration, kann er sich deiner Kontrolle entziehen.",
+      "higherLevel": "Der maximale Herausforderungsgrad des Dämons steigt für jeden Zauberplatzgrad über dem 4. um 1."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-transmute-rock",
+    "name": "Transmute Rock",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "clay and water",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "description": "You alter a large area of nonmagical rock, turning it into mud or turning mud into solid rock. Mud can slow and restrain creatures, while hardened rock can create barriers or seal passages.",
+    "localized": {
+      "name": "Gestein umwandeln",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (Ton und Wasser)",
+      "duration": "Unmittelbar",
+      "description": "Du veränderst einen großen Bereich nichtmagischen Gesteins und verwandelst ihn in Schlamm oder Schlamm in festen Stein. Schlamm kann Kreaturen verlangsamen und festsetzen, während erstarrtes Gestein Barrieren bilden oder Durchgänge verschließen kann."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 169,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-wall-of-light",
+    "name": "Wall of Light",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a hand mirror",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You create a radiant wall of light. Creatures that pass through it or start their turn within it take radiant damage and may be blinded. You can also detach a beam from the wall and make a ranged spell attack with it.",
+    "higherLevel": "The damage of the beam increases by 1d8 for each spell slot level above 5.",
+    "localized": {
+      "name": "Lichtwand",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (ein Handspiegel)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du erschaffst eine strahlende Lichtwand. Kreaturen, die sie durchqueren oder ihren Zug in ihr beginnen, erleiden Strahlenschaden und können geblendet werden. Du kannst außerdem einen Lichtstrahl von der Wand lösen und damit einen Fernkampf-Zauberangriff ausführen.",
+      "higherLevel": "Der Schaden des Lichtstrahls steigt für jeden Zauberplatzgrad über dem 5. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "4d8",
+        "average": 18,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-whirlwind",
+    "name": "Whirlwind",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, M",
+    "material": "a piece of straw",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "wizard"
+    ],
+    "description": "You create a towering whirlwind that moves across the ground. Creatures caught in it make a Dexterity saving throw, taking bludgeoning damage and becoming restrained on a failure. A restrained creature can use an action to escape.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 7.",
+    "localized": {
+      "name": "Wirbelwind",
+      "school": "Hervorrufung",
+      "classes": [
+        "druid",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "90 Meter",
+      "components": "V, M (ein Stück Stroh)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst einen gewaltigen Wirbelwind, der sich über den Boden bewegt. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie Wuchtschaden und werden festgesetzt. Eine festgesetzte Kreatur kann eine Aktion verwenden, um sich zu befreien.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 7. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "10d6",
+        "average": 35,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-wrath-of-nature",
+    "name": "Wrath of Nature",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You awaken the natural environment in a large area. Trees, roots, rocks, and grass hinder enemies and attack creatures in the area, creating several effects depending on the terrain.",
+    "localized": {
+      "name": "Zorn der Natur",
+      "school": "Hervorrufung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erweckst die Natur in einem großen Gebiet. Bäume, Wurzeln, Felsen und Gras behindern Gegner und greifen Kreaturen im Bereich an. Die konkreten Effekte hängen vom Gelände ab."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 171,
+    "descriptionKind": "original-summary"
   }
 ]
