@@ -92,10 +92,10 @@ export function getSpellCapacity(character: Character, spells: KnownSpell[]): Sp
     const table = knownTables[classId]
     if (table) {
       return {
-        mode: 'known',
+        mode: 'prepared',
         maximum: table[character.level] ?? 0,
-        current: known,
-        label: 'Bekannte Klassenzauber',
+        current: prepared,
+        label: 'Vorbereitete Klassenzauber',
         note: 'Zaubertricks werden nicht mitgezählt. Klassenmerkmale mit ausdrücklich zusätzlichen oder immer vorbereiteten Zaubern werden separat behandelt.',
       }
     }
@@ -112,6 +112,10 @@ export function getSpellCapacity(character: Character, spells: KnownSpell[]): Sp
       label: 'Vorbereitete Klassenzauber',
       note: 'Klassenlimit nach Stufe und Zauberattribut. Story-, Gegenstands- und Talentzauber werden separat gezählt.',
     }
+  }
+
+  if (['barbarian', 'monk'].includes(classId)) {
+    return { mode: 'none', current: 0, label: '', note: '' }
   }
 
   if (['fighter', 'rogue'].includes(classId)) {
