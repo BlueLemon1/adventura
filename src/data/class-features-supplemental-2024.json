@@ -2879,7 +2879,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2024-ensnaring-strike",
+      "srd-2024-speak-with-animals",
+      "srd-2024-misty-step",
+      "srd-2024-moonbeam",
+      "srd-2024-plant-growth",
+      "srd-2024-protection-from-energy",
+      "srd-2024-ice-storm",
+      "srd-2024-stoneskin",
+      "srd-2024-commune-with-nature",
+      "srd-2024-tree-stride"
+    ]
   },
   {
     "id": "2024-paladin-ancients-aura-of-warding",
@@ -2984,7 +2996,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2024-bane",
+      "srd-2024-hunters-mark",
+      "srd-2024-hold-person",
+      "srd-2024-misty-step",
+      "srd-2024-haste",
+      "srd-2024-protection-from-energy",
+      "srd-2024-banishment",
+      "srd-2024-dimension-door",
+      "srd-2024-hold-monster",
+      "srd-2024-scrying"
+    ]
   },
   {
     "id": "2024-paladin-vengeance-relentless-avenger",
@@ -4662,6 +4686,72 @@
       "en": "You can make an inanimate part of an illusion real for a short time.",
       "de": "Du kannst einen unbelebten Teil einer Illusion für kurze Zeit real werden lassen."
     },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-cleric-light-domain-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "cleric/light#domain-spells",
+    "classId": "cleric",
+    "subclassId": "light",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Domain Spells",
+      "de": "Domänenzauber"
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with this domain prepared.",
+      "de": "Du hast die Zauber dieser Domäne stets vorbereitet."
+    },
+    "grantedSpellIds": [
+      "srd-2024-burning-hands",
+      "srd-2024-faerie-fire",
+      "srd-2024-scorching-ray",
+      "srd-2024-see-invisibility",
+      "srd-2024-daylight",
+      "srd-2024-fireball",
+      "srd-2024-arcane-eye",
+      "srd-2024-wall-of-fire",
+      "srd-2024-flame-strike",
+      "srd-2024-scrying"
+    ],
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-cleric-trickery-domain-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "cleric/trickery#domain-spells",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Domain Spells",
+      "de": "Domänenzauber"
+    },
+    "descriptions": {
+      "en": "You always have the spells associated with this domain prepared.",
+      "de": "Du hast die Zauber dieser Domäne stets vorbereitet."
+    },
+    "grantedSpellIds": [
+      "srd-2024-charm-person",
+      "srd-2024-disguise-self",
+      "srd-2024-pass-without-trace",
+      "srd-2024-invisibility",
+      "srd-2024-blink",
+      "srd-2024-dispel-magic",
+      "srd-2024-dimension-door",
+      "srd-2024-polymorph",
+      "srd-2024-dominate-person",
+      "srd-2024-modify-memory"
+    ],
     "translationStatus": {
       "de": "unofficial"
     }
