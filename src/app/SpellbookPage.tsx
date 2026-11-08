@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { Plus, Sparkles } from 'lucide-react'
 import type { Ability, Character, KnownSpell } from '../domain/character'
+import { ABILITIES } from '../domain/character'
 import { getSpellbookFeatureSpells, getClassResources } from '../domain/classFeatures'
 import type { Language } from './i18n'
 import { Button } from '../components/ui/button'
