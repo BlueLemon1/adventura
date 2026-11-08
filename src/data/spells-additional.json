@@ -6024,5 +6024,791 @@
         "artificer"
       ]
     }
+  },
+  {
+    "id": "phb-2024-mind-sliver",
+    "name": "Mind Sliver",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A creature suffers psychic harm and a brief weakening of its next saving throw.",
+    "localized": {
+      "name": "Mind Sliver",
+      "school": "Verzauberung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V",
+      "duration": "Instantaneous",
+      "description": "Du fügst einer Kreatur psychischen Schaden zu und schwächst kurzzeitig ihren nächsten Rettungswurf."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-thunderclap",
+    "name": "Thunderclap",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self (5-foot Emanation)",
+    "components": "S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A thunderous burst harms creatures immediately around you.",
+    "localized": {
+      "name": "Thunderclap",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (5-foot Emanation)",
+      "components": "G",
+      "duration": "Instantaneous",
+      "description": "Ein Donnerschlag trifft Kreaturen unmittelbar in deiner Nähe."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Thunder"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-toll-the-dead",
+    "name": "Toll the Dead",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A spectral bell deals necrotic harm, especially to an already wounded creature.",
+    "localized": {
+      "name": "Toll the Dead",
+      "school": "Nekromantie",
+      "classes": [
+        "cleric",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Eine geisterhafte Glocke verursacht nekrotischen Schaden, besonders bei bereits verwundeten Kreaturen."
+    },
+    "damage": [
+      {
+        "dice": "1d8 / 1d12",
+        "average": 6.5,
+        "type": "Necrotic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-word-of-radiance",
+    "name": "Word of Radiance",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self (5-foot Emanation)",
+    "components": "V, M",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Radiance bursts from you and harms creatures you choose nearby.",
+    "localized": {
+      "name": "Word of Radiance",
+      "school": "Hervorrufung",
+      "classes": [
+        "cleric"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (5-foot Emanation)",
+      "components": "V, M",
+      "duration": "Instantaneous",
+      "description": "Strahlendes Licht bricht aus dir hervor und schädigt Kreaturen deiner Wahl in deiner Nähe."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Radiant"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-beast",
+    "name": "Summon Beast",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You summon a bestial spirit shaped by an air, land, or water environment.",
+    "localized": {
+      "name": "Summon Beast",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen tierischen Geist, dessen Gestalt von einer Umgebung aus Luft, Land oder Wasser geprägt ist."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-fey",
+    "name": "Summon Fey",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a fey spirit whose chosen mood shapes its abilities.",
+    "localized": {
+      "name": "Summon Fey",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Feengeist, dessen gewählte Stimmung seine Fähigkeiten prägt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-undead",
+    "name": "Summon Undead",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon an undead spirit in ghostly, putrid, or skeletal form.",
+    "localized": {
+      "name": "Summon Undead",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen untoten Geist in geisterhafter, fauliger oder skelettartiger Gestalt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-aberration",
+    "name": "Summon Aberration",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon an aberrant spirit in beholderkin, mind flayer, or slaad form.",
+    "localized": {
+      "name": "Summon Aberration",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen aberranten Geist in Gestalt eines Betrachterartigen, Gedankenschinders oder Slaads."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-construct",
+    "name": "Summon Construct",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "wizard"
+    ],
+    "description": "You summon a construct spirit shaped from clay, metal, or stone.",
+    "localized": {
+      "name": "Summon Construct",
+      "school": "Beschwörung",
+      "classes": [
+        "artificer",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Konstruktgeist aus Lehm, Metall oder Stein."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-elemental",
+    "name": "Summon Elemental",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "wizard"
+    ],
+    "description": "You summon an elemental spirit tied to air, earth, fire, or water.",
+    "localized": {
+      "name": "Summon Elemental",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Elementargeist, der an Luft, Erde, Feuer oder Wasser gebunden ist."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-steel-wind-strike",
+    "name": "Steel Wind Strike",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "30 feet",
+    "components": "S, M",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "ranger",
+      "wizard"
+    ],
+    "description": "You strike several foes in a supernatural flurry, then teleport beside one of them.",
+    "localized": {
+      "name": "Steel Wind Strike",
+      "school": "Beschwörung",
+      "classes": [
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "30 feet",
+      "components": "G, M",
+      "duration": "Instantaneous",
+      "description": "Du greifst mehrere Gegner in einem übernatürlichen Schlaghagel an und teleportierst dich anschließend zu einem von ihnen."
+    },
+    "damage": [
+      {
+        "dice": "6d10",
+        "average": 33,
+        "type": "Force"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-celestial",
+    "name": "Summon Celestial",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "You summon an angelic spirit in avenger or defender form.",
+    "localized": {
+      "name": "Summon Celestial",
+      "school": "Beschwörung",
+      "classes": [
+        "cleric",
+        "paladin"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen engelsgleichen Geist in der Gestalt eines Rächers oder Verteidigers."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-synaptic-static",
+    "name": "Synaptic Static",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A psychic burst damages creatures and disrupts their attacks, checks, and concentration.",
+    "localized": {
+      "name": "Synaptic Static",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "120 feet",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Eine psychische Entladung schädigt Kreaturen und stört ihre Angriffe, Attributswürfe und Konzentration."
+    },
+    "damage": [
+      {
+        "dice": "8d6",
+        "average": 28,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-fiend",
+    "name": "Summon Fiend",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a fiendish spirit in demon, devil, or yugoloth form.",
+    "localized": {
+      "name": "Summon Fiend",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Unholdgeist in Gestalt eines Dämons, Teufels oder Yugoloths."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-arcane-vigor",
+    "name": "Arcane Vigor",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "Bonus Action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You expend your own Hit Point Dice to restore your health.",
+    "localized": {
+      "name": "Arcane Vigor",
+      "school": "Bannmagie",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Du verbrauchst eigene Trefferwürfel, um deine Trefferpunkte wiederherzustellen."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-fount-of-moonlight",
+    "name": "Fount of Moonlight",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid"
+    ],
+    "description": "Moonlike radiance protects you, empowers melee attacks, and can blind an attacker.",
+    "localized": {
+      "name": "Fount of Moonlight",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Mondähnliches Licht schützt dich, verstärkt Nahkampfangriffe und kann einen Angreifer blenden."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "Radiant"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-jallarzis-storm-of-radiance",
+    "name": "Jallarzi's Storm of Radiance",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "A radiant thunderstorm blinds and deafens creatures while damaging those caught within it.",
+    "localized": {
+      "name": "Jallarzi's Storm of Radiance",
+      "school": "Hervorrufung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "120 feet",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Ein strahlender Gewittersturm blendet und betäubt Kreaturen und schädigt alle, die sich darin befinden."
+    },
+    "damage": [
+      {
+        "dice": "2d10",
+        "average": 11,
+        "type": "Radiant"
+      },
+      {
+        "dice": "2d10",
+        "average": 11,
+        "type": "Thunder"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-yolandes-regal-presence",
+    "name": "Yolande's Regal Presence",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "Self (10-foot Emanation)",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "wizard"
+    ],
+    "description": "Your regal aura damages, knocks down, and pushes away nearby creatures.",
+    "localized": {
+      "name": "Yolande's Regal Presence",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (10-foot Emanation)",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Deine majestätische Aura schädigt Kreaturen in deiner Nähe, bringt sie zu Fall und stößt sie zurück."
+    },
+    "damage": [
+      {
+        "dice": "4d6",
+        "average": 14,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-tashas-bubbling-cauldron",
+    "name": "Tasha's Bubbling Cauldron",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "5 feet",
+    "components": "V, S, M",
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You conjure a cauldron that produces a limited number of chosen common or uncommon potions.",
+    "localized": {
+      "name": "Tasha's Bubbling Cauldron",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "5 feet",
+      "components": "V, G, M",
+      "duration": "10 Minuten",
+      "description": "Du beschwörst einen Kessel, der eine begrenzte Anzahl ausgewählter gewöhnlicher oder ungewöhnlicher Tränke hervorbringt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-power-word-fortify",
+    "name": "Power Word Fortify",
+    "level": 7,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric"
+    ],
+    "description": "You distribute a large reserve of temporary hit points among several allies.",
+    "localized": {
+      "name": "Power Word Fortify",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "cleric"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V",
+      "duration": "Instantaneous",
+      "description": "Du verteilst einen großen Vorrat temporärer Trefferpunkte auf mehrere Verbündete."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": [
+      "2024"
+    ],
+    "descriptionKind": "original-summary"
   }
 ]
