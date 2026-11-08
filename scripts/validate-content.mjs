@@ -34,7 +34,7 @@ function extractSubclassOptions(source, ruleset, nextRuleset) {
 function normalizeContentName(value) {
   return value
     .normalize('NFKD')
-    .replace(/[\\u0300-\\u036f]/g, '')
+    .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '')
 }
@@ -63,7 +63,7 @@ function findPriorityCollisions(primary, supplemental, identity) {
 function normalizeSpellName(spell) {
   return (spell.englishName ?? spell.name)
     .normalize('NFKD')
-    .replace(/[\\u0300-\\u036f]/g, '')
+    .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '')
 }
