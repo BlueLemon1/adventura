@@ -265,7 +265,7 @@ const en: Record<string, string> = {
   'Zauber filtern': 'Filter spells',
 }
 Object.assign(en, {
-  "Artificer": "Artificer",
+  "Erfinder": "Artificer",
   "Konstrukteur": "Armorer",
   "Kampf-Schmied": "Battle Smith",
   "Kartograph": "Cartographer",
