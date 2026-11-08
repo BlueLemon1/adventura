@@ -6388,5 +6388,362 @@
     "sourceAbbreviation": "EGW",
     "sourcePage": 190,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-distort-value",
+    "name": "Distort Value",
+    "level": 1,
+    "school": "Illusion",
+    "castingTime": "1 minute",
+    "range": "Touch",
+    "components": "V",
+    "material": "",
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You alter the apparent value of an object no larger than a 1-foot cube, making it seem more or less valuable through illusory polish, decoration, or damage. A creature examining it can determine its true value with a successful Intelligence (Investigation) check against your spell save DC.",
+    "higherLevel": "The maximum size of the object increases by 1 foot for each spell slot level above 1.",
+    "localized": {
+      "name": "Wert verzerren",
+      "school": "Illusion",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "Berührung",
+      "components": "V",
+      "duration": "8 Stunden",
+      "description": "Du veränderst den scheinbaren Wert eines Gegenstands, der höchstens in einen Würfel mit 30 cm Kantenlänge passt. Durch illusionären Glanz, Verzierungen oder Schäden lässt du ihn wertvoller oder weniger wertvoll erscheinen. Eine Kreatur, die ihn untersucht, kann seinen tatsächlichen Wert mit einem erfolgreichen Intelligenz-(Nachforschungen-)Wurf gegen deinen Zauberrettungswurf-SG erkennen.",
+      "higherLevel": "Die maximale Größe des Gegenstands steigt für jeden Zauberplatzgrad über dem 1. um 30 cm."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 75,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-fast-friends",
+    "name": "Fast Friends",
+    "level": 3,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric",
+      "wizard"
+    ],
+    "description": "You try to charm one creature into becoming your temporary ally. On a failed Wisdom saving throw, it is charmed and undertakes services or activities you request in a friendly manner. If a task would harm it or conflicts with its desires, it can repeat the save; a task that would cause certain death ends the spell.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 3.",
+    "localized": {
+      "name": "Schnelle Freunde",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "cleric",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du versuchst, eine Kreatur zu bezaubern und vorübergehend zu deiner Verbündeten zu machen. Bei einem misslungenen Weisheitsrettungswurf ist sie bezaubert und führt die von dir erbetenen Dienste oder Tätigkeiten so freundlich wie möglich aus. Würde eine Aufgabe ihr schaden oder ihren Wünschen widersprechen, kann sie den Rettungswurf wiederholen; eine Aufgabe, die ihren sicheren Tod bedeuten würde, beendet den Zauber.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 75,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-gift-of-gab",
+    "name": "Gift of Gab",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 reaction, which you take when you speak to another creature",
+    "range": "Self",
+    "components": "V, S, R",
+    "material": "a royalty component worth 2 gp, consumed by the spell",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "wizard"
+    ],
+    "description": "You reshape the memories of listeners immediately around you. Each creature of your choice within 5 feet forgets everything you said in the last 6 seconds and instead remembers the words you speak as the spell's verbal component.",
+    "localized": {
+      "name": "Gabe der Redegewandtheit",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "wizard"
+      ],
+      "castingTime": "1 Reaktion, die du ausführst, wenn du mit einer anderen Kreatur sprichst",
+      "range": "Selbst",
+      "components": "V, G, R",
+      "duration": "Unmittelbar",
+      "material": "eine verbrauchte Royalty-Komponente im Wert von 2 GM",
+      "description": "Du veränderst die Erinnerungen der Zuhörer in deiner unmittelbaren Nähe. Jede Kreatur deiner Wahl innerhalb von 1,5 Metern vergisst alles, was du in den letzten 6 Sekunden gesagt hast, und erinnert sich stattdessen an die Worte, die du als verbale Komponente des Zaubers sprichst."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 76,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-incite-greed",
+    "name": "Incite Greed",
+    "level": 3,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "30 feet",
+    "components": "V, S, M",
+    "material": "a gem worth at least 50 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You display the gem used as the material component and choose creatures within range that can see you. Each target makes a Wisdom saving throw or becomes charmed by you and uses its movement to approach you safely. Once within 5 feet, it stops moving and stares greedily at the gem. It can repeat the save at the end of each turn.",
+    "localized": {
+      "name": "Habgier entfachen",
+      "school": "Verzauberung",
+      "classes": [
+        "cleric",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "9 Meter",
+      "components": "V, G, M (ein Edelstein im Wert von mindestens 50 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du zeigst den als Materialkomponente verwendeten Edelstein und wählst Kreaturen in Reichweite, die dich sehen können. Jedes Ziel muss einen Weisheitsrettungswurf ablegen oder wird von dir bezaubert und verwendet seine Bewegung, um sich auf sichere Weise dir zu nähern. Innerhalb von 1,5 Metern bleibt es stehen und starrt gierig auf den Edelstein. Am Ende jedes seiner Züge kann es den Rettungswurf wiederholen."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 76,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-jims-glowing-coin",
+    "name": "Jim's Glowing Coin",
+    "level": 2,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S, M, R",
+    "material": "a coin and a royalty component worth 2 gp, the royalty being consumed",
+    "duration": "1 minute",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You hurl the coin used as the material component to a point within range. It glows like a light spell. Each creature of your choice that you can see within 30 feet of the coin makes a Wisdom saving throw or becomes distracted, suffering disadvantage on Wisdom (Perception) checks and initiative rolls for the duration.",
+    "localized": {
+      "name": "Jims leuchtende Münze",
+      "school": "Verzauberung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G, M, R",
+      "material": "eine Münze und eine Royalty-Komponente im Wert von 2 GM; die Royalty-Komponente wird verbraucht",
+      "duration": "1 Minute",
+      "description": "Du schleuderst die als Materialkomponente verwendete Münze an einen Punkt in Reichweite. Sie leuchtet wie durch den Zauber Licht. Jede Kreatur deiner Wahl, die du innerhalb von 9 Metern der Münze sehen kannst, muss einen Weisheitsrettungswurf ablegen oder wird abgelenkt. Währenddessen hat sie Nachteil auf Weisheits-(Wahrnehmung-)Würfe und Initiativewürfe."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 76,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-jims-magic-missile",
+    "name": "Jim's Magic Missile",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, R",
+    "material": "a royalty component worth 1 gp, consumed by the spell",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You create three darts of magical force and make a ranged spell attack for each dart against a creature you can see within range. A hit deals 2d4 force damage. A critical hit deals 5d4 instead. If any attack roll is a natural 1, all darts miss and each deals 1 force damage to you.",
+    "higherLevel": "The spell creates one additional dart and its royalty component costs 1 gp more for each spell slot level above 1.",
+    "localized": {
+      "name": "Jims Magisches Geschoss",
+      "school": "Hervorrufung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, R",
+      "material": "eine verbrauchte Royalty-Komponente im Wert von 1 GM",
+      "duration": "Unmittelbar",
+      "description": "Du erschaffst drei Geschosse aus magischer Kraft und führst für jedes einen Fernkampf-Zauberangriff gegen eine Kreatur aus, die du in Reichweite sehen kannst. Ein Treffer verursacht 2W4 Kraftschaden. Ein kritischer Treffer verursacht stattdessen 5W4. Ist einer der Angriffswürfe eine natürliche 1, verfehlen alle Geschosse ihre Ziele und jedes verursacht dir 1 Kraftschaden.",
+      "higherLevel": "Der Zauber erschafft für jeden Zauberplatzgrad über dem 1. ein zusätzliches Geschoss; außerdem steigt die Royalty-Komponente um 1 GM pro Grad."
+    },
+    "damage": [
+      {
+        "dice": "2d4",
+        "average": 5,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 76,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ai-2019-motivational-speech",
+    "name": "Motivational Speech",
+    "level": 3,
+    "school": "Enchantment",
+    "castingTime": "1 minute",
+    "range": "60 feet",
+    "components": "V",
+    "material": "",
+    "duration": "1 hour",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric"
+    ],
+    "description": "You address up to five creatures that can hear you. Each gains 5 temporary hit points and advantage on Wisdom saving throws for the duration. The first time an affected creature is hit by an attack, it has advantage on its next attack roll. The spell ends for that creature when it loses the temporary hit points granted by it.",
+    "higherLevel": "The temporary hit points increase by 5 for each spell slot level above 3.",
+    "localized": {
+      "name": "Motivierende Ansprache",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "cleric"
+      ],
+      "castingTime": "1 Minute",
+      "range": "18 Meter",
+      "components": "V",
+      "duration": "1 Stunde",
+      "description": "Du hältst eine Ansprache an bis zu fünf Kreaturen, die dich hören können. Jede erhält 5 temporäre Trefferpunkte und für die Wirkungsdauer Vorteil auf Weisheitsrettungswürfe. Wenn eine betroffene Kreatur erstmals von einem Angriff getroffen wird, hat sie Vorteil auf ihren nächsten Angriffswurf. Der Zauber endet für sie, sobald sie die durch ihn erhaltenen temporären Trefferpunkte verliert.",
+      "higherLevel": "Die temporären Trefferpunkte steigen für jeden Zauberplatzgrad über dem 3. um 5."
+    },
+    "damage": [],
+    "contentSourceId": "ai-2019",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Acquisitions Incorporated",
+    "sourceAbbreviation": "AI",
+    "sourcePage": 77,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "ggr-2018-encode-thoughts",
+    "name": "Encode Thoughts",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "S",
+    "material": "",
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric",
+      "druid",
+      "paladin",
+      "ranger",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You extract a memory, idea, or message from your mind and form it into a tangible strand of glowing energy. The strand appears in an unoccupied space within 5 feet, can be carried like a ribbon, and lasts for the duration or until you cast the spell again. If you are concentrating on magic that reads or manipulates another creature's thoughts, you can encode those thoughts instead. Holding a thought strand lets you receive its contents.",
+    "localized": {
+      "name": "Gedanken kodieren",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "cleric",
+        "druid",
+        "paladin",
+        "ranger",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "G",
+      "duration": "8 Stunden",
+      "description": "Du löst eine Erinnerung, Idee oder Nachricht aus deinem Geist und formst sie zu einem greifbaren Faden aus leuchtender Energie. Der Faden erscheint an einem freien Ort innerhalb von 1,5 Metern, kann wie ein Band getragen werden und bleibt bis zum Ende der Wirkungsdauer oder bis du den Zauber erneut wirkst bestehen. Konzentrierst du dich auf Magie, die Gedanken anderer liest oder verändert, kannst du stattdessen diese Gedanken kodieren. Wenn du einen Gedankenfaden hältst, kannst du seinen Inhalt empfangen.",
+      "availabilityNote": "Nur über den Hintergrund Dimir-Agent oder mit Zustimmung der Spielleitung; der Hintergrund fügt den Zauber deiner Klassenliste hinzu."
+    },
+    "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list.",
+    "damage": [],
+    "contentSourceId": "ggr-2018",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Guildmasters' Guide to Ravnica",
+    "sourceAbbreviation": "GGR",
+    "sourcePage": 47,
+    "descriptionKind": "original-summary"
   }
 ]
