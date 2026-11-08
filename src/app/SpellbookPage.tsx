@@ -318,9 +318,7 @@ export function SpellbookPage({
                         ? t('Limit erreicht')
                         : `${spellCapacity.maximum - spellCapacity.current} ${t('Plätze verfügbar')}`}
                   </strong>
-                  <span>
-                    {t(spellCapacity.note)}
-                  </span>
+                  <span>{t(spellCapacity.note)}</span>
                 </div>
               )}
               {spellCapacity.maximum === undefined && (

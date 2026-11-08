@@ -101,10 +101,7 @@ export function getSpellCapacity(character: Character, spells: KnownSpell[]): Sp
     }
   }
 
-  if (
-    character.ruleset === '2024' &&
-    ['cleric', 'druid', 'wizard', 'paladin'].includes(classId)
-  ) {
+  if (character.ruleset === '2024' && ['cleric', 'druid', 'wizard', 'paladin'].includes(classId)) {
     return {
       mode: 'prepared',
       maximum: getPreparedSpellMaximum(character, classId),
