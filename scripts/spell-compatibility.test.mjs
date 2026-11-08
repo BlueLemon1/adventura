@@ -13,7 +13,10 @@ const normalize = (spell) =>
 
 const additional = readJson('../src/data/spells-additional.json')
 const spells2014 = readJson('../src/data/spells-2014.json')
-const spells2024 = readJson('../src/data/spells-2024.json')
+const spells2024 = [
+  ...readJson('../src/data/spells-2024.json'),
+  ...additional.filter((spell) => spell.rulesets?.includes('2024')),
+]
 const manifest = readJson('../src/data/spell-compatibility-2024.json')
 const compatibilityById = new Map(manifest.entries.map((entry) => [entry.spellId, entry]))
 const legacySpells = additional.filter(
@@ -56,8 +59,8 @@ test('all supplemental spells listed as updated in the 2024 PHB are excluded fro
   const officialOverlap = new Set(manifest.phb2024UpdatedSupplementSpellNames.map((name) =>
     name.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]/g, ''),
   ))
-  const matchingSupplements = additional.filter((spell) =>
-    officialOverlap.has(normalize(spell)),
+  const matchingSupplements = additional.filter(
+    (spell) => spell.contentSourceId !== 'phb-2024' && officialOverlap.has(normalize(spell)),
   )
   assert.equal(matchingSupplements.length, officialOverlap.size)
   for (const spell of matchingSupplements) {
