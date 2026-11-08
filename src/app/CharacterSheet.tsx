@@ -244,7 +244,10 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
         </div>
       </section>
       <section className="panel session-status-panel">
-        <PanelHeader title={t('Kampfstatus')} description={t('Schnellzugriff auf wichtige Werte während der Runde.')} />
+        <PanelHeader
+          title={t('Kampfstatus')}
+          description={t('Schnellzugriff auf wichtige Werte während der Runde.')}
+        />
         <div className="form-grid">
           <label className="field-label">
             {t('Temporäre Trefferpunkte')}
@@ -273,7 +276,9 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
           <div className="death-save-tracker">
             <div>
               <strong>{t('Todesrettungswürfe')}</strong>
-              <small>{t('Bei 3 Erfolgen bist du stabilisiert; bei 3 Fehlschlägen stirbst du.')}</small>
+              <small>
+                {t('Bei 3 Erfolgen bist du stabilisiert; bei 3 Fehlschlägen stirbst du.')}
+              </small>
             </div>
             {(
               [

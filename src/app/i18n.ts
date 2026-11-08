@@ -1489,16 +1489,17 @@ Object.assign(en, {
     'You always have Divine Smite prepared and can cast it once without expending a spell slot. You regain this ability after a Long Rest.',
 })
 
-
 Object.assign(en, {
-  'Kampfstatus': 'Combat status',
-  'Schnellzugriff auf wichtige Werte während der Runde.': 'Quick access to important values during play.',
+  Kampfstatus: 'Combat status',
+  'Schnellzugriff auf wichtige Werte während der Runde.':
+    'Quick access to important values during play.',
   'Temporäre Trefferpunkte': 'Temporary hit points',
   'Verfügbar – beim Einsatz deaktivieren.': 'Available — turn off when used.',
-  'Todesrettungswürfe': 'Death saving throws',
-  'Bei 3 Erfolgen bist du stabilisiert; bei 3 Fehlschlägen stirbst du.': 'You are stable after 3 successes; 3 failures mean death.',
-  'Erfolge': 'Successes',
-  'Fehlschläge': 'Failures',
-  'Stabilisiert': 'Stabilized',
+  Todesrettungswürfe: 'Death saving throws',
+  'Bei 3 Erfolgen bist du stabilisiert; bei 3 Fehlschlägen stirbst du.':
+    'You are stable after 3 successes; 3 failures mean death.',
+  Erfolge: 'Successes',
+  Fehlschläge: 'Failures',
+  Stabilisiert: 'Stabilized',
   'Tödliche Fehlschläge': 'Fatal failures',
 })
