@@ -14,7 +14,8 @@
     "import:srd:2014:features": "node scripts/import-srd-class-features-2014.mjs",
     "import:srd:2024:features:de": "node scripts/import-srd-class-features-2024-de.mjs",
     "import:srd:2014:features:de": "node scripts/import-srd-class-features-2014-de.mjs",
-    "import:srd:2014:spells:de": "node scripts/import-srd-spells-2014-de.mjs"
+    "import:srd:2014:spells:de": "node scripts/import-srd-spells-2014-de.mjs",
+    "import:srd:2014:spells:en": "node scripts/import-srd-spells-2014-en.mjs"
   },
   "dependencies": {
     "@tanstack/react-query": "latest",
