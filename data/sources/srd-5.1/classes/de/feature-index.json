@@ -1,0 +1,2532 @@
+[
+  {
+    "slug": "rage",
+    "classId": "barbarian",
+    "level": 1,
+    "name": "Rage"
+  },
+  {
+    "slug": "barbarian-unarmored-defense",
+    "classId": "barbarian",
+    "level": 1,
+    "name": "Unarmored Defense"
+  },
+  {
+    "slug": "reckless-attack",
+    "classId": "barbarian",
+    "level": 2,
+    "name": "Reckless Attack"
+  },
+  {
+    "slug": "danger-sense",
+    "classId": "barbarian",
+    "level": 2,
+    "name": "Danger Sense"
+  },
+  {
+    "slug": "primal-path",
+    "classId": "barbarian",
+    "level": 3,
+    "name": "Primal Path"
+  },
+  {
+    "slug": "frenzy",
+    "classId": "barbarian",
+    "level": 3,
+    "subclassId": "berserker",
+    "name": "Frenzy"
+  },
+  {
+    "slug": "barbarian-ability-score-improvement-1",
+    "classId": "barbarian",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "barbarian-extra-attack",
+    "classId": "barbarian",
+    "level": 5,
+    "name": "Extra Attack"
+  },
+  {
+    "slug": "fast-movement",
+    "classId": "barbarian",
+    "level": 5,
+    "name": "Fast Movement"
+  },
+  {
+    "slug": "mindless-rage",
+    "classId": "barbarian",
+    "level": 6,
+    "subclassId": "berserker",
+    "name": "Mindless Rage"
+  },
+  {
+    "slug": "primal-path-improvement-1",
+    "classId": "barbarian",
+    "level": 6,
+    "name": "Path feature"
+  },
+  {
+    "slug": "feral-instinct",
+    "classId": "barbarian",
+    "level": 7,
+    "name": "Feral Instinct"
+  },
+  {
+    "slug": "barbarian-ability-score-improvement-2",
+    "classId": "barbarian",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "brutal-critical-1-die",
+    "classId": "barbarian",
+    "level": 9,
+    "name": "Brutal Critical (1 die)"
+  },
+  {
+    "slug": "intimidating-presence",
+    "classId": "barbarian",
+    "level": 10,
+    "subclassId": "berserker",
+    "name": "Intimidating Presence"
+  },
+  {
+    "slug": "primal-path-improvement-2",
+    "classId": "barbarian",
+    "level": 10,
+    "name": "Path feature"
+  },
+  {
+    "slug": "relentless-rage",
+    "classId": "barbarian",
+    "level": 11,
+    "name": "Relentless Rage"
+  },
+  {
+    "slug": "barbarian-ability-score-improvement-3",
+    "classId": "barbarian",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "brutal-critical-2-dice",
+    "classId": "barbarian",
+    "level": 13,
+    "name": "Brutal Critical (2 dice)"
+  },
+  {
+    "slug": "retaliation",
+    "classId": "barbarian",
+    "level": 14,
+    "subclassId": "berserker",
+    "name": "Retaliation"
+  },
+  {
+    "slug": "primal-path-improvement-3",
+    "classId": "barbarian",
+    "level": 14,
+    "name": "Path feature"
+  },
+  {
+    "slug": "persistent-rage",
+    "classId": "barbarian",
+    "level": 15,
+    "name": "Persistent Rage"
+  },
+  {
+    "slug": "barbarian-ability-score-improvement-4",
+    "classId": "barbarian",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "brutal-critical-3-dice",
+    "classId": "barbarian",
+    "level": 17,
+    "name": "Brutal Critical (3 dice)"
+  },
+  {
+    "slug": "indomitable-might",
+    "classId": "barbarian",
+    "level": 18,
+    "name": "Indomitable Might"
+  },
+  {
+    "slug": "barbarian-ability-score-improvement-5",
+    "classId": "barbarian",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "primal-champion",
+    "classId": "barbarian",
+    "level": 20,
+    "name": "Primal Champion"
+  },
+  {
+    "slug": "spellcasting-bard",
+    "classId": "bard",
+    "level": 1,
+    "name": "Spellcasting: Bard"
+  },
+  {
+    "slug": "bardic-inspiration-d6",
+    "classId": "bard",
+    "level": 1,
+    "name": "Bardic Inspiration (d6)"
+  },
+  {
+    "slug": "jack-of-all-trades",
+    "classId": "bard",
+    "level": 2,
+    "name": "Jack of All Trades"
+  },
+  {
+    "slug": "song-of-rest-d6",
+    "classId": "bard",
+    "level": 2,
+    "name": "Song of Rest (d6)"
+  },
+  {
+    "slug": "bard-college",
+    "classId": "bard",
+    "level": 3,
+    "name": "Bard College"
+  },
+  {
+    "slug": "bonus-proficiencies",
+    "classId": "bard",
+    "level": 3,
+    "subclassId": "lore",
+    "name": "Bonus Proficiencies"
+  },
+  {
+    "slug": "cutting-words",
+    "classId": "bard",
+    "level": 3,
+    "subclassId": "lore",
+    "name": "Cutting Words"
+  },
+  {
+    "slug": "bard-expertise-1",
+    "classId": "bard",
+    "level": 3,
+    "name": "Expertise"
+  },
+  {
+    "slug": "bard-ability-score-improvement-1",
+    "classId": "bard",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "bardic-inspiration-d8",
+    "classId": "bard",
+    "level": 5,
+    "name": "Bardic Inspiration (d8)"
+  },
+  {
+    "slug": "font-of-inspiration",
+    "classId": "bard",
+    "level": 5,
+    "name": "Font of Inspiration"
+  },
+  {
+    "slug": "countercharm",
+    "classId": "bard",
+    "level": 6,
+    "name": "Countercharm"
+  },
+  {
+    "slug": "bard-college-improvement-1",
+    "classId": "bard",
+    "level": 6,
+    "name": "Bard College feature"
+  },
+  {
+    "slug": "additional-magical-secrets",
+    "classId": "bard",
+    "level": 6,
+    "subclassId": "lore",
+    "name": "Additional Magical Secrets"
+  },
+  {
+    "slug": "bard-ability-score-improvement-2",
+    "classId": "bard",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "song-of-rest-d8",
+    "classId": "bard",
+    "level": 9,
+    "name": "Song of Rest (d8)"
+  },
+  {
+    "slug": "bardic-inspiration-d10",
+    "classId": "bard",
+    "level": 10,
+    "name": "Bardic Inspiration (d10)"
+  },
+  {
+    "slug": "bard-expertise-2",
+    "classId": "bard",
+    "level": 10,
+    "name": "Expertise"
+  },
+  {
+    "slug": "magical-secrets-1",
+    "classId": "bard",
+    "level": 10,
+    "name": "Magical Secrets"
+  },
+  {
+    "slug": "bard-ability-score-improvement-3",
+    "classId": "bard",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "song-of-rest-d10",
+    "classId": "bard",
+    "level": 13,
+    "name": "Song of Rest (d10)"
+  },
+  {
+    "slug": "magical-secrets-2",
+    "classId": "bard",
+    "level": 14,
+    "name": "Magical Secrets"
+  },
+  {
+    "slug": "bard-college-improvement-2",
+    "classId": "bard",
+    "level": 14,
+    "name": "Bard College feature"
+  },
+  {
+    "slug": "peerless-skill",
+    "classId": "bard",
+    "level": 14,
+    "subclassId": "lore",
+    "name": "Peerless Skill"
+  },
+  {
+    "slug": "bardic-inspiration-d12",
+    "classId": "bard",
+    "level": 15,
+    "name": "Bardic Inspiration (d12)"
+  },
+  {
+    "slug": "bard-ability-score-improvement-4",
+    "classId": "bard",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "song-of-rest-d12",
+    "classId": "bard",
+    "level": 17,
+    "name": "Song of Rest (d12)"
+  },
+  {
+    "slug": "magical-secrets-3",
+    "classId": "bard",
+    "level": 18,
+    "name": "Magical Secrets"
+  },
+  {
+    "slug": "bard-ability-score-improvement-5",
+    "classId": "bard",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "superior-inspiration",
+    "classId": "bard",
+    "level": 20,
+    "name": "Superior Inspiration"
+  },
+  {
+    "slug": "spellcasting-cleric",
+    "classId": "cleric",
+    "level": 1,
+    "name": "Spellcasting: Cleric"
+  },
+  {
+    "slug": "divine-domain",
+    "classId": "cleric",
+    "level": 1,
+    "name": "Divine Domain"
+  },
+  {
+    "slug": "domain-spells-1",
+    "classId": "cleric",
+    "level": 1,
+    "name": "Domain Spells"
+  },
+  {
+    "slug": "bonus-proficiency",
+    "classId": "cleric",
+    "level": 1,
+    "subclassId": "life",
+    "name": "Bonus Proficiency"
+  },
+  {
+    "slug": "disciple-of-life",
+    "classId": "cleric",
+    "level": 1,
+    "subclassId": "life",
+    "name": "Disciple of Life"
+  },
+  {
+    "slug": "channel-divinity-1-rest",
+    "classId": "cleric",
+    "level": 2,
+    "name": "Channel Divinity (1/rest)"
+  },
+  {
+    "slug": "channel-divinity-turn-undead",
+    "classId": "cleric",
+    "level": 2,
+    "name": "Channel Divinity: Turn Undead"
+  },
+  {
+    "slug": "divine-domain-improvement-1",
+    "classId": "cleric",
+    "level": 2,
+    "name": "Divine Domain feature"
+  },
+  {
+    "slug": "channel-divinity-preserve-life",
+    "classId": "cleric",
+    "level": 2,
+    "subclassId": "life",
+    "name": "Channel Divinity: Preserve Life"
+  },
+  {
+    "slug": "domain-spells-2",
+    "classId": "cleric",
+    "level": 3,
+    "name": "Domain Spells"
+  },
+  {
+    "slug": "cleric-ability-score-improvement-1",
+    "classId": "cleric",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "domain-spells-3",
+    "classId": "cleric",
+    "level": 5,
+    "name": "Domain Spells"
+  },
+  {
+    "slug": "destroy-undead-cr-1-2-or-below",
+    "classId": "cleric",
+    "level": 5,
+    "name": "Destroy Undead (CR 1/2 or below)"
+  },
+  {
+    "slug": "channel-divinity-2-rest",
+    "classId": "cleric",
+    "level": 6,
+    "name": "Channel Divinity (2/rest)"
+  },
+  {
+    "slug": "divine-domain-improvement-2",
+    "classId": "cleric",
+    "level": 6,
+    "name": "Divine Domain feature"
+  },
+  {
+    "slug": "blessed-healer",
+    "classId": "cleric",
+    "level": 6,
+    "subclassId": "life",
+    "name": "Blessed Healer"
+  },
+  {
+    "slug": "domain-spells-4",
+    "classId": "cleric",
+    "level": 7,
+    "name": "Domain Spells"
+  },
+  {
+    "slug": "cleric-ability-score-improvement-2",
+    "classId": "cleric",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "destroy-undead-cr-1-or-below",
+    "classId": "cleric",
+    "level": 8,
+    "name": "Destroy Undead (CR 1 or below)"
+  },
+  {
+    "slug": "divine-domain-improvement-3",
+    "classId": "cleric",
+    "level": 8,
+    "name": "Divine Domain feature"
+  },
+  {
+    "slug": "divine-strike",
+    "classId": "cleric",
+    "level": 8,
+    "subclassId": "life",
+    "name": "Divine Strike"
+  },
+  {
+    "slug": "domain-spells-5",
+    "classId": "cleric",
+    "level": 9,
+    "name": "Domain Spells"
+  },
+  {
+    "slug": "divine-intervention",
+    "classId": "cleric",
+    "level": 10,
+    "name": "Divine Intervention"
+  },
+  {
+    "slug": "destroy-undead-cr-2-or-below",
+    "classId": "cleric",
+    "level": 11,
+    "name": "Destroy Undead (CR 2 or below)"
+  },
+  {
+    "slug": "cleric-ability-score-improvement-3",
+    "classId": "cleric",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "destroy-undead-cr-3-or-below",
+    "classId": "cleric",
+    "level": 14,
+    "name": "Destroy Undead (CR 3 or below)"
+  },
+  {
+    "slug": "cleric-ability-score-improvement-4",
+    "classId": "cleric",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "destroy-undead-cr-4-or-below",
+    "classId": "cleric",
+    "level": 17,
+    "name": "Destroy Undead (CR 4 or below)"
+  },
+  {
+    "slug": "divine-domain-improvement-4",
+    "classId": "cleric",
+    "level": 17,
+    "name": "Divine Domain feature"
+  },
+  {
+    "slug": "supreme-healing",
+    "classId": "cleric",
+    "level": 17,
+    "name": "Supreme Healing"
+  },
+  {
+    "slug": "channel-divinity-3-rest",
+    "classId": "cleric",
+    "level": 18,
+    "name": "Channel Divinity (3/rest)"
+  },
+  {
+    "slug": "cleric-ability-score-improvement-5",
+    "classId": "cleric",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "divine-intervention-improvement",
+    "classId": "cleric",
+    "level": 20,
+    "name": "Divine Intervention Improvement"
+  },
+  {
+    "slug": "spellcasting-druid",
+    "classId": "druid",
+    "level": 1,
+    "name": "Spellcasting: Druid"
+  },
+  {
+    "slug": "druidic",
+    "classId": "druid",
+    "level": 1,
+    "name": "Druidic"
+  },
+  {
+    "slug": "wild-shape-cr-1-4-or-below-no-flying-or-swim-speed",
+    "classId": "druid",
+    "level": 2,
+    "name": "Wild Shape (CR 1/4 or below, no flying or swim speed)"
+  },
+  {
+    "slug": "druid-circle",
+    "classId": "druid",
+    "level": 2,
+    "name": "Druid Circle"
+  },
+  {
+    "slug": "circle-of-the-land",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land"
+  },
+  {
+    "slug": "circle-of-the-land-arctic",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Arctic"
+  },
+  {
+    "slug": "circle-of-the-land-coast",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Coast"
+  },
+  {
+    "slug": "circle-of-the-land-desert",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Desert"
+  },
+  {
+    "slug": "circle-of-the-land-forest",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Forest"
+  },
+  {
+    "slug": "circle-of-the-land-grassland",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Grassland"
+  },
+  {
+    "slug": "circle-of-the-land-mountain",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Mountain"
+  },
+  {
+    "slug": "circle-of-the-land-swamp",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Circle of the Land: Swamp"
+  },
+  {
+    "slug": "bonus-cantrip",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Bonus Cantrip"
+  },
+  {
+    "slug": "natural-recovery",
+    "classId": "druid",
+    "level": 2,
+    "subclassId": "land",
+    "name": "Natural Recovery"
+  },
+  {
+    "slug": "circle-spells-1",
+    "classId": "druid",
+    "level": 3,
+    "subclassId": "land",
+    "name": "Circle Spells"
+  },
+  {
+    "slug": "wild-shape-cr-1-2-or-below-no-flying-speed",
+    "classId": "druid",
+    "level": 4,
+    "name": "Wild Shape (CR 1/2 or below, no flying speed)"
+  },
+  {
+    "slug": "druid-ability-score-improvement-1",
+    "classId": "druid",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "circle-spells-2",
+    "classId": "druid",
+    "level": 5,
+    "subclassId": "land",
+    "name": "Circle Spells"
+  },
+  {
+    "slug": "druid-circle-improvement-1",
+    "classId": "druid",
+    "level": 6,
+    "name": "Druid Circle feature"
+  },
+  {
+    "slug": "druid-lands-stride",
+    "classId": "druid",
+    "level": 6,
+    "subclassId": "land",
+    "name": "Land's Stride"
+  },
+  {
+    "slug": "circle-spells-3",
+    "classId": "druid",
+    "level": 7,
+    "subclassId": "land",
+    "name": "Circle Spells"
+  },
+  {
+    "slug": "wild-shape-cr-1-or-below",
+    "classId": "druid",
+    "level": 8,
+    "name": "Wild Shape (CR 1 or below)"
+  },
+  {
+    "slug": "druid-ability-score-improvement-2",
+    "classId": "druid",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "circle-spells-4",
+    "classId": "druid",
+    "level": 9,
+    "subclassId": "land",
+    "name": "Circle Spells"
+  },
+  {
+    "slug": "druid-circle-improvement-2",
+    "classId": "druid",
+    "level": 10,
+    "name": "Druid Circle feature"
+  },
+  {
+    "slug": "natures-ward",
+    "classId": "druid",
+    "level": 10,
+    "subclassId": "land",
+    "name": "Nature's Ward"
+  },
+  {
+    "slug": "druid-ability-score-improvement-3",
+    "classId": "druid",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "druid-circle-improvement-3",
+    "classId": "druid",
+    "level": 14,
+    "name": "Druid Circle feature"
+  },
+  {
+    "slug": "natures-sanctuary",
+    "classId": "druid",
+    "level": 14,
+    "subclassId": "land",
+    "name": "Nature's Sanctuary"
+  },
+  {
+    "slug": "druid-ability-score-improvement-4",
+    "classId": "druid",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "druid-timeless-body",
+    "classId": "druid",
+    "level": 18,
+    "name": "Timeless Body"
+  },
+  {
+    "slug": "beast-spells",
+    "classId": "druid",
+    "level": 18,
+    "name": "Beast Spells"
+  },
+  {
+    "slug": "druid-ability-score-improvement-5",
+    "classId": "druid",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "archdruid",
+    "classId": "druid",
+    "level": 20,
+    "name": "Archdruid"
+  },
+  {
+    "slug": "fighter-fighting-style",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style"
+  },
+  {
+    "slug": "fighter-fighting-style-archery",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Archery"
+  },
+  {
+    "slug": "fighter-fighting-style-defense",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Defense"
+  },
+  {
+    "slug": "fighter-fighting-style-dueling",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Dueling"
+  },
+  {
+    "slug": "fighter-fighting-style-great-weapon-fighting",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Great Weapon Fighting"
+  },
+  {
+    "slug": "fighter-fighting-style-protection",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Protection"
+  },
+  {
+    "slug": "fighter-fighting-style-two-weapon-fighting",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Fighting Style: Two-Weapon Fighting"
+  },
+  {
+    "slug": "second-wind",
+    "classId": "fighter",
+    "level": 1,
+    "name": "Second Wind"
+  },
+  {
+    "slug": "action-surge-1-use",
+    "classId": "fighter",
+    "level": 2,
+    "name": "Action Surge (1 use)"
+  },
+  {
+    "slug": "martial-archetype",
+    "classId": "fighter",
+    "level": 3,
+    "name": "Martial Archetype"
+  },
+  {
+    "slug": "improved-critical",
+    "classId": "fighter",
+    "level": 3,
+    "subclassId": "champion",
+    "name": "Improved Critical"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-1",
+    "classId": "fighter",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "extra-attack-1",
+    "classId": "fighter",
+    "level": 5,
+    "name": "Extra Attack"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-2",
+    "classId": "fighter",
+    "level": 6,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "remarkable-athlete",
+    "classId": "fighter",
+    "level": 7,
+    "subclassId": "champion",
+    "name": "Remarkable Athlete"
+  },
+  {
+    "slug": "martial-archetype-improvement-1",
+    "classId": "fighter",
+    "level": 7,
+    "name": "Martial Archetype feature"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-3",
+    "classId": "fighter",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "indomitable-1-use",
+    "classId": "fighter",
+    "level": 9,
+    "name": "Indomitable (1 use)"
+  },
+  {
+    "slug": "additional-fighting-style",
+    "classId": "fighter",
+    "level": 10,
+    "subclassId": "champion",
+    "name": "Additional Fighting Style"
+  },
+  {
+    "slug": "martial-archetype-improvement-2",
+    "classId": "fighter",
+    "level": 10,
+    "name": "Martial Archetype feature"
+  },
+  {
+    "slug": "extra-attack-2",
+    "classId": "fighter",
+    "level": 11,
+    "name": "Extra Attack (2)"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-4",
+    "classId": "fighter",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "indomitable-2-uses",
+    "classId": "fighter",
+    "level": 13,
+    "name": "Indomitable (2 uses)"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-5",
+    "classId": "fighter",
+    "level": 14,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "superior-critical",
+    "classId": "fighter",
+    "level": 15,
+    "subclassId": "champion",
+    "name": "Superior Critical"
+  },
+  {
+    "slug": "martial-archetype-improvement-3",
+    "classId": "fighter",
+    "level": 15,
+    "name": "Martial Archetype feature"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-6",
+    "classId": "fighter",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "action-surge-2-uses",
+    "classId": "fighter",
+    "level": 17,
+    "name": "Action Surge (2 uses)"
+  },
+  {
+    "slug": "indomitable-3-uses",
+    "classId": "fighter",
+    "level": 17,
+    "name": "Indomitable (3 uses)"
+  },
+  {
+    "slug": "martial-archetype-improvement-4",
+    "classId": "fighter",
+    "level": 18,
+    "name": "Martial Archetype feature"
+  },
+  {
+    "slug": "survivor",
+    "classId": "fighter",
+    "level": 18,
+    "subclassId": "champion",
+    "name": "Survivor"
+  },
+  {
+    "slug": "fighter-ability-score-improvement-7",
+    "classId": "fighter",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "extra-attack-3",
+    "classId": "fighter",
+    "level": 20,
+    "name": "Extra Attack (3)"
+  },
+  {
+    "slug": "monk-unarmored-defense",
+    "classId": "monk",
+    "level": 1,
+    "name": "Unarmored Defense"
+  },
+  {
+    "slug": "martial-arts",
+    "classId": "monk",
+    "level": 1,
+    "name": "Martial Arts"
+  },
+  {
+    "slug": "ki",
+    "classId": "monk",
+    "level": 2,
+    "name": "Ki"
+  },
+  {
+    "slug": "flurry-of-blows",
+    "classId": "monk",
+    "level": 2,
+    "name": "Flurry of Blows"
+  },
+  {
+    "slug": "patient-defense",
+    "classId": "monk",
+    "level": 2,
+    "name": "Patient Defense"
+  },
+  {
+    "slug": "step-of-the-wind",
+    "classId": "monk",
+    "level": 2,
+    "name": "Step of the Wind"
+  },
+  {
+    "slug": "unarmored-movement-1",
+    "classId": "monk",
+    "level": 2,
+    "name": "Unarmored Movement"
+  },
+  {
+    "slug": "monastic-tradition",
+    "classId": "monk",
+    "level": 3,
+    "name": "Monastic Tradition"
+  },
+  {
+    "slug": "deflect-missiles",
+    "classId": "monk",
+    "level": 3,
+    "name": "Deflect Missiles"
+  },
+  {
+    "slug": "open-hand-technique",
+    "classId": "monk",
+    "level": 3,
+    "subclassId": "open-hand",
+    "name": "Open Hand Technique"
+  },
+  {
+    "slug": "monk-ability-score-improvement-1",
+    "classId": "monk",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "slow-fall",
+    "classId": "monk",
+    "level": 4,
+    "name": "Slow Fall"
+  },
+  {
+    "slug": "monk-extra-attack",
+    "classId": "monk",
+    "level": 5,
+    "name": "Extra Attack"
+  },
+  {
+    "slug": "stunning-strike",
+    "classId": "monk",
+    "level": 5,
+    "name": "Stunning Strike"
+  },
+  {
+    "slug": "ki-empowered-strikes",
+    "classId": "monk",
+    "level": 6,
+    "name": "Ki Empowered Strikes"
+  },
+  {
+    "slug": "monastic-tradition-improvement-1",
+    "classId": "monk",
+    "level": 6,
+    "name": "Monastic Tradition feature"
+  },
+  {
+    "slug": "wholeness-of-body",
+    "classId": "monk",
+    "level": 6,
+    "subclassId": "open-hand",
+    "name": "Wholeness of Body"
+  },
+  {
+    "slug": "monk-evasion",
+    "classId": "monk",
+    "level": 7,
+    "name": "Evasion"
+  },
+  {
+    "slug": "stillness-of-mind",
+    "classId": "monk",
+    "level": 7,
+    "name": "Stillness of Mind"
+  },
+  {
+    "slug": "monk-ability-score-improvement-2",
+    "classId": "monk",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "unarmored-movement-2",
+    "classId": "monk",
+    "level": 9,
+    "name": "Unarmored Movement"
+  },
+  {
+    "slug": "purity-of-body",
+    "classId": "monk",
+    "level": 10,
+    "name": "Purity of Body"
+  },
+  {
+    "slug": "monastic-tradition-improvement-2",
+    "classId": "monk",
+    "level": 11,
+    "name": "Monastic Tradition feature"
+  },
+  {
+    "slug": "tranquility",
+    "classId": "monk",
+    "level": 11,
+    "subclassId": "open-hand",
+    "name": "Tranquility"
+  },
+  {
+    "slug": "monk-ability-score-improvement-3",
+    "classId": "monk",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "tongue-of-the-sun-and-moon",
+    "classId": "monk",
+    "level": 13,
+    "name": "Tongue of the Sun and Moon"
+  },
+  {
+    "slug": "diamond-soul",
+    "classId": "monk",
+    "level": 14,
+    "name": "Diamond Soul"
+  },
+  {
+    "slug": "monk-timeless-body",
+    "classId": "monk",
+    "level": 15,
+    "name": "Timeless Body"
+  },
+  {
+    "slug": "monk-ability-score-improvement-4",
+    "classId": "monk",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "monastic-tradition-improvement-3",
+    "classId": "monk",
+    "level": 17,
+    "name": "Monastic Tradition feature"
+  },
+  {
+    "slug": "quivering-palm",
+    "classId": "monk",
+    "level": 17,
+    "subclassId": "open-hand",
+    "name": "Quivering Palm"
+  },
+  {
+    "slug": "empty-body",
+    "classId": "monk",
+    "level": 18,
+    "name": "Empty Body"
+  },
+  {
+    "slug": "monk-ability-score-improvement-5",
+    "classId": "monk",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "perfect-self",
+    "classId": "monk",
+    "level": 20,
+    "name": "Perfect Self"
+  },
+  {
+    "slug": "divine-sense",
+    "classId": "paladin",
+    "level": 1,
+    "name": "Divine Sense"
+  },
+  {
+    "slug": "lay-on-hands",
+    "classId": "paladin",
+    "level": 1,
+    "name": "Lay on Hands"
+  },
+  {
+    "slug": "paladin-fighting-style",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Fighting Style"
+  },
+  {
+    "slug": "fighting-style-defense",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Fighting Style: Defense"
+  },
+  {
+    "slug": "fighting-style-dueling",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Fighting Style: Dueling"
+  },
+  {
+    "slug": "fighting-style-great-weapon-fighting",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Fighting Style: Great Weapon Fighting"
+  },
+  {
+    "slug": "fighting-style-protection",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Fighting Style: Protection"
+  },
+  {
+    "slug": "spellcasting-paladin",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Spellcasting: Paladin"
+  },
+  {
+    "slug": "divine-smite",
+    "classId": "paladin",
+    "level": 2,
+    "name": "Divine Smite"
+  },
+  {
+    "slug": "divine-health",
+    "classId": "paladin",
+    "level": 3,
+    "name": "Divine Health"
+  },
+  {
+    "slug": "sacred-oath",
+    "classId": "paladin",
+    "level": 3,
+    "name": "Sacred Oath"
+  },
+  {
+    "slug": "oath-spells",
+    "classId": "paladin",
+    "level": 3,
+    "name": "Oath Spells"
+  },
+  {
+    "slug": "channel-divinity",
+    "classId": "paladin",
+    "level": 3,
+    "name": "Channel Divinity"
+  },
+  {
+    "slug": "channel-divinity-sacred-weapon",
+    "classId": "paladin",
+    "level": 3,
+    "subclassId": "devotion",
+    "name": "Channel Divinity: Sacred Weapon"
+  },
+  {
+    "slug": "channel-divinity-turn-the-unholy",
+    "classId": "paladin",
+    "level": 3,
+    "subclassId": "devotion",
+    "name": "Channel Divinity: Turn the Unholy"
+  },
+  {
+    "slug": "paladin-ability-score-improvement-1",
+    "classId": "paladin",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "paladin-extra-attack",
+    "classId": "paladin",
+    "level": 5,
+    "name": "Extra Attack"
+  },
+  {
+    "slug": "aura-of-protection",
+    "classId": "paladin",
+    "level": 6,
+    "name": "Aura of Protection"
+  },
+  {
+    "slug": "sacred-oath-improvement-1",
+    "classId": "paladin",
+    "level": 7,
+    "name": "Sacred Oath feature"
+  },
+  {
+    "slug": "aura-of-devotion",
+    "classId": "paladin",
+    "level": 7,
+    "subclassId": "devotion",
+    "name": "Aura of Devotion"
+  },
+  {
+    "slug": "paladin-ability-score-improvement-2",
+    "classId": "paladin",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "aura-of-courage",
+    "classId": "paladin",
+    "level": 10,
+    "name": "Aura of Courage"
+  },
+  {
+    "slug": "improved-divine-smite",
+    "classId": "paladin",
+    "level": 11,
+    "name": "Improved Divine Smite"
+  },
+  {
+    "slug": "paladin-ability-score-improvement-3",
+    "classId": "paladin",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "cleansing-touch",
+    "classId": "paladin",
+    "level": 14,
+    "name": "Cleansing Touch"
+  },
+  {
+    "slug": "sacred-oath-improvement-2",
+    "classId": "paladin",
+    "level": 15,
+    "name": "Sacred Oath feature"
+  },
+  {
+    "slug": "purity-of-spirit",
+    "classId": "paladin",
+    "level": 15,
+    "subclassId": "devotion",
+    "name": "Purity of Spirit"
+  },
+  {
+    "slug": "paladin-ability-score-improvement-4",
+    "classId": "paladin",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "aura-improvements",
+    "classId": "paladin",
+    "level": 18,
+    "name": "Aura improvements"
+  },
+  {
+    "slug": "paladin-ability-score-improvement-5",
+    "classId": "paladin",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "sacred-oath-improvement-3",
+    "classId": "paladin",
+    "level": 20,
+    "name": "Sacred Oath feature"
+  },
+  {
+    "slug": "holy-nimbus",
+    "classId": "paladin",
+    "level": 20,
+    "subclassId": "devotion",
+    "name": "Holy Nimbus"
+  },
+  {
+    "slug": "favored-enemy-1-type",
+    "classId": "ranger",
+    "level": 1,
+    "name": "Favored Enemy (1 type)"
+  },
+  {
+    "slug": "natural-explorer-1-terrain-type",
+    "classId": "ranger",
+    "level": 1,
+    "name": "Natural Explorer (1 terrain type)"
+  },
+  {
+    "slug": "ranger-fighting-style",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Fighting Style"
+  },
+  {
+    "slug": "ranger-fighting-style-archery",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Fighting Style: Archery"
+  },
+  {
+    "slug": "ranger-fighting-style-defense",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Fighting Style: Defense"
+  },
+  {
+    "slug": "ranger-fighting-style-dueling",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Fighting Style: Dueling"
+  },
+  {
+    "slug": "ranger-fighting-style-two-weapon-fighting",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Fighting Style: Two-Weapon Fighting"
+  },
+  {
+    "slug": "spellcasting-ranger",
+    "classId": "ranger",
+    "level": 2,
+    "name": "Spellcasting: Ranger"
+  },
+  {
+    "slug": "ranger-archetype",
+    "classId": "ranger",
+    "level": 3,
+    "name": "Ranger Archetype"
+  },
+  {
+    "slug": "hunters-prey",
+    "classId": "ranger",
+    "level": 3,
+    "subclassId": "hunter",
+    "name": "Hunter's Prey"
+  },
+  {
+    "slug": "hunters-prey-colossus-slayer",
+    "classId": "ranger",
+    "level": 3,
+    "subclassId": "hunter",
+    "name": "Hunter's Prey: Colossus Slayer"
+  },
+  {
+    "slug": "hunters-prey-giant-killer",
+    "classId": "ranger",
+    "level": 3,
+    "subclassId": "hunter",
+    "name": "Hunter's Prey: Giant Killer"
+  },
+  {
+    "slug": "hunters-prey-horde-breaker",
+    "classId": "ranger",
+    "level": 3,
+    "subclassId": "hunter",
+    "name": "Hunter's Prey: Horde Breaker"
+  },
+  {
+    "slug": "primeval-awareness",
+    "classId": "ranger",
+    "level": 3,
+    "name": "Primeval Awareness"
+  },
+  {
+    "slug": "ranger-ability-score-improvement-1",
+    "classId": "ranger",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "ranger-extra-attack",
+    "classId": "ranger",
+    "level": 5,
+    "name": "Extra Attack"
+  },
+  {
+    "slug": "favored-enemy-2-types",
+    "classId": "ranger",
+    "level": 6,
+    "name": "Favored Enemy (2 types)"
+  },
+  {
+    "slug": "natural-explorer-2-terrain-types",
+    "classId": "ranger",
+    "level": 6,
+    "name": "Natural Explorer (2 terrain types)"
+  },
+  {
+    "slug": "ranger-archetype-improvement-1",
+    "classId": "ranger",
+    "level": 7,
+    "name": "Ranger Archetype feature"
+  },
+  {
+    "slug": "defensive-tactics",
+    "classId": "ranger",
+    "level": 7,
+    "subclassId": "hunter",
+    "name": "Defensive Tactics"
+  },
+  {
+    "slug": "defensive-tactics-escape-the-horde",
+    "classId": "ranger",
+    "level": 7,
+    "subclassId": "hunter",
+    "name": "Defensive Tactics: Escape the Horde"
+  },
+  {
+    "slug": "defensive-tactics-multiattack-defense",
+    "classId": "ranger",
+    "level": 7,
+    "subclassId": "hunter",
+    "name": "Defensive Tactics: Multiattack Defense"
+  },
+  {
+    "slug": "defensive-tactics-steel-will",
+    "classId": "ranger",
+    "level": 7,
+    "subclassId": "hunter",
+    "name": "Defensive Tactics: Steel Will"
+  },
+  {
+    "slug": "ranger-ability-score-improvement-2",
+    "classId": "ranger",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "ranger-lands-stride",
+    "classId": "ranger",
+    "level": 8,
+    "name": "Land's Stride"
+  },
+  {
+    "slug": "natural-explorer-3-terrain-types",
+    "classId": "ranger",
+    "level": 10,
+    "name": "Natural Explorer (3 terrain types)"
+  },
+  {
+    "slug": "hide-in-plain-sight",
+    "classId": "ranger",
+    "level": 10,
+    "name": "Hide in Plain Sight"
+  },
+  {
+    "slug": "ranger-archetype-improvement-2",
+    "classId": "ranger",
+    "level": 11,
+    "name": "Ranger Archetype feature"
+  },
+  {
+    "slug": "multiattack",
+    "classId": "ranger",
+    "level": 11,
+    "subclassId": "hunter",
+    "name": "Multiattack"
+  },
+  {
+    "slug": "multiattack-volley",
+    "classId": "ranger",
+    "level": 11,
+    "subclassId": "hunter",
+    "name": "Multiattack: Volley"
+  },
+  {
+    "slug": "multiattack-whirlwind-attack",
+    "classId": "ranger",
+    "level": 11,
+    "subclassId": "hunter",
+    "name": "Multiattack: Whirlwind Attack"
+  },
+  {
+    "slug": "ranger-ability-score-improvement-3",
+    "classId": "ranger",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "favored-enemy-3-enemies",
+    "classId": "ranger",
+    "level": 14,
+    "name": "Favored Enemy (3 enemies)"
+  },
+  {
+    "slug": "vanish",
+    "classId": "ranger",
+    "level": 14,
+    "name": "Vanish"
+  },
+  {
+    "slug": "ranger-archetype-improvement-3",
+    "classId": "ranger",
+    "level": 15,
+    "name": "Ranger Archetype feature"
+  },
+  {
+    "slug": "superior-hunters-defense",
+    "classId": "ranger",
+    "level": 15,
+    "subclassId": "hunter",
+    "name": "Superior Hunter's Defense"
+  },
+  {
+    "slug": "superior-hunters-defense-evasion",
+    "classId": "ranger",
+    "level": 15,
+    "subclassId": "hunter",
+    "name": "Superior Hunter's Defense: Evasion"
+  },
+  {
+    "slug": "superior-hunters-defense-stand-against-the-tide",
+    "classId": "ranger",
+    "level": 15,
+    "subclassId": "hunter",
+    "name": "Superior Hunter's Defense: Stand Against the Tide"
+  },
+  {
+    "slug": "superior-hunters-defense-uncanny-dodge",
+    "classId": "ranger",
+    "level": 15,
+    "subclassId": "hunter",
+    "name": "Superior Hunter's Defense: Uncanny Dodge"
+  },
+  {
+    "slug": "ranger-ability-score-improvement-4",
+    "classId": "ranger",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "feral-senses",
+    "classId": "ranger",
+    "level": 18,
+    "name": "Feral Senses"
+  },
+  {
+    "slug": "ranger-ability-score-improvement-5",
+    "classId": "ranger",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "foe-slayer",
+    "classId": "ranger",
+    "level": 20,
+    "name": "Foe Slayer"
+  },
+  {
+    "slug": "rogue-expertise-1",
+    "classId": "rogue",
+    "level": 1,
+    "name": "Expertise"
+  },
+  {
+    "slug": "sneak-attack",
+    "classId": "rogue",
+    "level": 1,
+    "name": "Sneak Attack"
+  },
+  {
+    "slug": "thieves-cant",
+    "classId": "rogue",
+    "level": 1,
+    "name": "Thieves' Cant"
+  },
+  {
+    "slug": "cunning-action",
+    "classId": "rogue",
+    "level": 2,
+    "name": "Cunning Action"
+  },
+  {
+    "slug": "roguish-archetype",
+    "classId": "rogue",
+    "level": 3,
+    "name": "Roguish Archetype"
+  },
+  {
+    "slug": "fast-hands",
+    "classId": "rogue",
+    "level": 3,
+    "subclassId": "thief",
+    "name": "Fast Hands"
+  },
+  {
+    "slug": "second-story-work",
+    "classId": "rogue",
+    "level": 3,
+    "subclassId": "thief",
+    "name": "Second-Story Work"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-1",
+    "classId": "rogue",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "uncanny-dodge",
+    "classId": "rogue",
+    "level": 5,
+    "name": "Uncanny Dodge"
+  },
+  {
+    "slug": "rogue-expertise-2",
+    "classId": "rogue",
+    "level": 6,
+    "name": "Expertise"
+  },
+  {
+    "slug": "rogue-evasion",
+    "classId": "rogue",
+    "level": 7,
+    "name": "Evasion"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-2",
+    "classId": "rogue",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "roguish-archetype-improvement-1",
+    "classId": "rogue",
+    "level": 9,
+    "name": "Roguish Archetype feature"
+  },
+  {
+    "slug": "supreme-sneak",
+    "classId": "rogue",
+    "level": 9,
+    "subclassId": "thief",
+    "name": "Supreme Sneak"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-3",
+    "classId": "rogue",
+    "level": 10,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "reliable-talent",
+    "classId": "rogue",
+    "level": 11,
+    "name": "Reliable Talent"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-4",
+    "classId": "rogue",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "roguish-archetype-improvement-2",
+    "classId": "rogue",
+    "level": 13,
+    "name": "Roguish Archetype feature"
+  },
+  {
+    "slug": "use-magic-device",
+    "classId": "rogue",
+    "level": 13,
+    "subclassId": "thief",
+    "name": "Use Magic Device"
+  },
+  {
+    "slug": "blindsense",
+    "classId": "rogue",
+    "level": 14,
+    "name": "Blindsense"
+  },
+  {
+    "slug": "slippery-mind",
+    "classId": "rogue",
+    "level": 15,
+    "name": "Slippery Mind"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-5",
+    "classId": "rogue",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "roguish-archetype-improvement-3",
+    "classId": "rogue",
+    "level": 17,
+    "name": "Roguish Archetype feature"
+  },
+  {
+    "slug": "thiefs-reflexes",
+    "classId": "rogue",
+    "level": 17,
+    "subclassId": "thief",
+    "name": "Thief's Reflexes"
+  },
+  {
+    "slug": "elusive",
+    "classId": "rogue",
+    "level": 18,
+    "name": "Elusive"
+  },
+  {
+    "slug": "rogue-ability-score-improvement-6",
+    "classId": "rogue",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "stroke-of-luck",
+    "classId": "rogue",
+    "level": 20,
+    "name": "Stroke of Luck"
+  },
+  {
+    "slug": "spellcasting-sorcerer",
+    "classId": "sorcerer",
+    "level": 1,
+    "name": "Spellcasting: Sorcerer"
+  },
+  {
+    "slug": "sorcerous-origin",
+    "classId": "sorcerer",
+    "level": 1,
+    "name": "Sorcerous Origin"
+  },
+  {
+    "slug": "dragon-ancestor",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor"
+  },
+  {
+    "slug": "dragon-ancestor-black---acid-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Black - Acid Damage"
+  },
+  {
+    "slug": "dragon-ancestor-blue---lightning-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Blue - Lightning Damage"
+  },
+  {
+    "slug": "dragon-ancestor-brass---fire-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Brass - Fire Damage"
+  },
+  {
+    "slug": "dragon-ancestor-bronze---lightning-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Bronze - Lightning Damage"
+  },
+  {
+    "slug": "dragon-ancestor-copper---acid-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Copper - Acid Damage"
+  },
+  {
+    "slug": "dragon-ancestor-gold---fire-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Gold - Fire Damage"
+  },
+  {
+    "slug": "dragon-ancestor-green---poison-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Green - Poison Damage"
+  },
+  {
+    "slug": "dragon-ancestor-red---fire-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Red - Fire Damage"
+  },
+  {
+    "slug": "dragon-ancestor-silver---cold-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: Silver - Cold Damage"
+  },
+  {
+    "slug": "dragon-ancestor-white---cold-damage",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Dragon Ancestor: White - Cold Damage"
+  },
+  {
+    "slug": "draconic-resilience",
+    "classId": "sorcerer",
+    "level": 1,
+    "subclassId": "draconic",
+    "name": "Draconic Resilience"
+  },
+  {
+    "slug": "font-of-magic",
+    "classId": "sorcerer",
+    "level": 2,
+    "name": "Font of Magic"
+  },
+  {
+    "slug": "flexible-casting-creating-spell-slots",
+    "classId": "sorcerer",
+    "level": 2,
+    "name": "Flexible Casting: Creating Spell Slots"
+  },
+  {
+    "slug": "flexible-casting-converting-spell-slot",
+    "classId": "sorcerer",
+    "level": 2,
+    "name": "Flexible Casting: Converting Spell Slot"
+  },
+  {
+    "slug": "metamagic-1",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic"
+  },
+  {
+    "slug": "metamagic-careful-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Careful Spell"
+  },
+  {
+    "slug": "metamagic-distant-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Distant Spell"
+  },
+  {
+    "slug": "metamagic-empowered-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Empowered Spell"
+  },
+  {
+    "slug": "metamagic-extended-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Extended Spell"
+  },
+  {
+    "slug": "metamagic-heightened-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Heightened Spell"
+  },
+  {
+    "slug": "metamagic-quickened-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Quickened Spell"
+  },
+  {
+    "slug": "metamagic-subtle-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Subtle Spell"
+  },
+  {
+    "slug": "metamagic-twinned-spell",
+    "classId": "sorcerer",
+    "level": 3,
+    "name": "Metamagic: Twinned Spell"
+  },
+  {
+    "slug": "sorcerer-ability-score-improvement-1",
+    "classId": "sorcerer",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "sorcerous-origin-improvement-1",
+    "classId": "sorcerer",
+    "level": 6,
+    "name": "Sorcerous Origin feature"
+  },
+  {
+    "slug": "elemental-affinity",
+    "classId": "sorcerer",
+    "level": 6,
+    "subclassId": "draconic",
+    "name": "Elemental Affinity"
+  },
+  {
+    "slug": "sorcerer-ability-score-improvement-2",
+    "classId": "sorcerer",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "metamagic-2",
+    "classId": "sorcerer",
+    "level": 10,
+    "name": "Metamagic"
+  },
+  {
+    "slug": "sorcerer-ability-score-improvement-3",
+    "classId": "sorcerer",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "sorcerous-origin-improvement-2",
+    "classId": "sorcerer",
+    "level": 14,
+    "name": "Sorcerous Origin feature"
+  },
+  {
+    "slug": "dragon-wings",
+    "classId": "sorcerer",
+    "level": 14,
+    "subclassId": "draconic",
+    "name": "Dragon Wings"
+  },
+  {
+    "slug": "sorcerer-ability-score-improvement-4",
+    "classId": "sorcerer",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "metamagic-3",
+    "classId": "sorcerer",
+    "level": 17,
+    "name": "Metamagic"
+  },
+  {
+    "slug": "sorcerous-origin-improvement-3",
+    "classId": "sorcerer",
+    "level": 18,
+    "name": "Sorcerous Origin feature"
+  },
+  {
+    "slug": "draconic-presence",
+    "classId": "sorcerer",
+    "level": 18,
+    "subclassId": "draconic",
+    "name": "Draconic Presence"
+  },
+  {
+    "slug": "sorcerer-ability-score-improvement-5",
+    "classId": "sorcerer",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "sorcerous-restoration",
+    "classId": "sorcerer",
+    "level": 20,
+    "name": "Sorcerous Restoration"
+  },
+  {
+    "slug": "otherworldly-patron",
+    "classId": "warlock",
+    "level": 1,
+    "name": "Otherworldly Patron"
+  },
+  {
+    "slug": "dark-ones-blessing",
+    "classId": "warlock",
+    "level": 1,
+    "subclassId": "fiend",
+    "name": "Dark One's Blessing"
+  },
+  {
+    "slug": "pact-magic",
+    "classId": "warlock",
+    "level": 1,
+    "name": "Pact Magic"
+  },
+  {
+    "slug": "eldritch-invocations",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocations"
+  },
+  {
+    "slug": "eldritch-invocation-agonizing-blast",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Agonizing Blast"
+  },
+  {
+    "slug": "eldritch-invocation-armor-of-shadows",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Armor of Shadows"
+  },
+  {
+    "slug": "eldritch-invocation-beast-speech",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Beast Speech"
+  },
+  {
+    "slug": "eldritch-invocation-beguiling-influence",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Beguiling Influence"
+  },
+  {
+    "slug": "eldritch-invocation-book-of-ancient-secrets",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Book of Ancient Secrets"
+  },
+  {
+    "slug": "eldritch-invocation-devils-sight",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Devil's Sight"
+  },
+  {
+    "slug": "eldritch-invocation-eldritch-sight",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Eldritch Sight"
+  },
+  {
+    "slug": "eldritch-invocation-eldritch-spear",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Eldritch Spear"
+  },
+  {
+    "slug": "eldritch-invocation-eyes-of-the-rune-keeper",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Eyes of the Rune Keeper"
+  },
+  {
+    "slug": "eldritch-invocation-fiendish-vigor",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Fiendish Vigor"
+  },
+  {
+    "slug": "eldritch-invocation-gaze-of-two-minds",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Gaze of Two Minds"
+  },
+  {
+    "slug": "eldritch-invocation-mask-of-many-faces",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Mask of Many Faces"
+  },
+  {
+    "slug": "eldritch-invocation-misty-visions",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Misty Visions"
+  },
+  {
+    "slug": "eldritch-invocation-repelling-blast",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Repelling Blast"
+  },
+  {
+    "slug": "eldritch-invocation-thief-of-five-fates",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Thief of Five Fates"
+  },
+  {
+    "slug": "eldritch-invocation-voice-of-the-chain-master",
+    "classId": "warlock",
+    "level": 2,
+    "name": "Eldritch Invocation: Voice of the Chain Master"
+  },
+  {
+    "slug": "eldritch-invocation-mire-the-mind",
+    "classId": "warlock",
+    "level": 5,
+    "name": "Eldritch Invocation: Mire the Mind"
+  },
+  {
+    "slug": "eldritch-invocation-one-with-shadows",
+    "classId": "warlock",
+    "level": 5,
+    "name": "Eldritch Invocation: One with Shadows"
+  },
+  {
+    "slug": "eldritch-invocation-sign-of-ill-omen",
+    "classId": "warlock",
+    "level": 5,
+    "name": "Eldritch Invocation: Sign of Ill Omen"
+  },
+  {
+    "slug": "eldritch-invocation-thirsting-blade",
+    "classId": "warlock",
+    "level": 5,
+    "name": "Eldritch Invocation: Thirsting Blade"
+  },
+  {
+    "slug": "otherworldly-patron-improvement-1",
+    "classId": "warlock",
+    "level": 6,
+    "name": "Otherworldly Patron feature"
+  },
+  {
+    "slug": "eldritch-invocation-bewitching-whispers",
+    "classId": "warlock",
+    "level": 7,
+    "name": "Eldritch Invocation: Bewitching Whispers"
+  },
+  {
+    "slug": "eldritch-invocation-dreadful-word",
+    "classId": "warlock",
+    "level": 7,
+    "name": "Eldritch Invocation: Dreadful Word"
+  },
+  {
+    "slug": "eldritch-invocation-sculptor-of-flesh",
+    "classId": "warlock",
+    "level": 7,
+    "name": "Eldritch Invocation: Sculptor of Flesh"
+  },
+  {
+    "slug": "eldritch-invocation-ascendant-step",
+    "classId": "warlock",
+    "level": 9,
+    "name": "Eldritch Invocation: Ascendant Step"
+  },
+  {
+    "slug": "eldritch-invocation-minions-of-chaos",
+    "classId": "warlock",
+    "level": 9,
+    "name": "Eldritch Invocation: Minions of Chaos"
+  },
+  {
+    "slug": "eldritch-invocation-otherworldly-leap",
+    "classId": "warlock",
+    "level": 9,
+    "name": "Eldritch Invocation: Otherworldly Leap"
+  },
+  {
+    "slug": "eldritch-invocation-whispers-of-the-grave",
+    "classId": "warlock",
+    "level": 9,
+    "name": "Eldritch Invocation: Whispers of the Grave"
+  },
+  {
+    "slug": "otherworldly-patron-improvement-2",
+    "classId": "warlock",
+    "level": 10,
+    "name": "Otherworldly Patron feature"
+  },
+  {
+    "slug": "eldritch-invocation-lifedrinker",
+    "classId": "warlock",
+    "level": 12,
+    "name": "Eldritch Invocation: Lifedrinker"
+  },
+  {
+    "slug": "otherworldly-patron-improvement-3",
+    "classId": "warlock",
+    "level": 14,
+    "name": "Otherworldly Patron feature"
+  },
+  {
+    "slug": "eldritch-invocation-chains-of-carceri",
+    "classId": "warlock",
+    "level": 15,
+    "name": "Eldritch Invocation: Chains of Carceri"
+  },
+  {
+    "slug": "eldritch-invocation-master-of-myriad-forms",
+    "classId": "warlock",
+    "level": 15,
+    "name": "Eldritch Invocation: Master of Myriad Forms"
+  },
+  {
+    "slug": "eldritch-invocation-visions-of-distant-realms",
+    "classId": "warlock",
+    "level": 15,
+    "name": "Eldritch Invocation: Visions of Distant Realms"
+  },
+  {
+    "slug": "eldritch-invocation-witch-sight",
+    "classId": "warlock",
+    "level": 15,
+    "name": "Eldritch Invocation: Witch Sight"
+  },
+  {
+    "slug": "pact-boon",
+    "classId": "warlock",
+    "level": 3,
+    "name": "Pact Boon"
+  },
+  {
+    "slug": "pact-of-the-chain",
+    "classId": "warlock",
+    "level": 3,
+    "name": "Pact of the Chain"
+  },
+  {
+    "slug": "pact-of-the-blade",
+    "classId": "warlock",
+    "level": 3,
+    "name": "Pact of the Blade"
+  },
+  {
+    "slug": "pact-of-the-tome",
+    "classId": "warlock",
+    "level": 3,
+    "name": "Pact of the Tome"
+  },
+  {
+    "slug": "warlock-ability-score-improvement-1",
+    "classId": "warlock",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "dark-ones-own-luck",
+    "classId": "warlock",
+    "level": 6,
+    "subclassId": "fiend",
+    "name": "Dark One's Own Luck"
+  },
+  {
+    "slug": "warlock-ability-score-improvement-2",
+    "classId": "warlock",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "fiendish-resilience",
+    "classId": "warlock",
+    "level": 10,
+    "subclassId": "fiend",
+    "name": "Fiendish Resilience"
+  },
+  {
+    "slug": "mystic-arcanum-6th-level",
+    "classId": "warlock",
+    "level": 11,
+    "name": "Mystic Arcanum (6th level)"
+  },
+  {
+    "slug": "warlock-ability-score-improvement-3",
+    "classId": "warlock",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "mystic-arcanum-7th-level",
+    "classId": "warlock",
+    "level": 13,
+    "name": "Mystic Arcanum (7th level)"
+  },
+  {
+    "slug": "hurl-through-hell",
+    "classId": "warlock",
+    "level": 14,
+    "subclassId": "fiend",
+    "name": "Hurl Through Hell"
+  },
+  {
+    "slug": "mystic-arcanum-8th-level",
+    "classId": "warlock",
+    "level": 15,
+    "name": "Mystic Arcanum (8th level)"
+  },
+  {
+    "slug": "warlock-ability-score-improvement-4",
+    "classId": "warlock",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "mystic-arcanum-9th-level",
+    "classId": "warlock",
+    "level": 17,
+    "name": "Mystic Arcanum (9th level)"
+  },
+  {
+    "slug": "warlock-ability-score-improvement-5",
+    "classId": "warlock",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "eldritch-master",
+    "classId": "warlock",
+    "level": 20,
+    "name": "Eldritch Master"
+  },
+  {
+    "slug": "spellcasting-wizard",
+    "classId": "wizard",
+    "level": 1,
+    "name": "Spellcasting: Wizard"
+  },
+  {
+    "slug": "arcane-recovery",
+    "classId": "wizard",
+    "level": 1,
+    "name": "Arcane Recovery"
+  },
+  {
+    "slug": "arcane-tradition",
+    "classId": "wizard",
+    "level": 2,
+    "name": "Arcane Tradition"
+  },
+  {
+    "slug": "evocation-savant",
+    "classId": "wizard",
+    "level": 2,
+    "subclassId": "evocation",
+    "name": "Evocation Savant"
+  },
+  {
+    "slug": "sculpt-spells",
+    "classId": "wizard",
+    "level": 2,
+    "subclassId": "evocation",
+    "name": "Sculpt Spells"
+  },
+  {
+    "slug": "wizard-ability-score-improvement-1",
+    "classId": "wizard",
+    "level": 4,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "arcane-tradition-improvement-1",
+    "classId": "wizard",
+    "level": 6,
+    "name": "Arcane Tradition feature"
+  },
+  {
+    "slug": "potent-cantrip",
+    "classId": "wizard",
+    "level": 6,
+    "subclassId": "evocation",
+    "name": "Potent Cantrip"
+  },
+  {
+    "slug": "wizard-ability-score-improvement-2",
+    "classId": "wizard",
+    "level": 8,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "arcane-tradition-improvement-2",
+    "classId": "wizard",
+    "level": 10,
+    "name": "Arcane Tradition feature"
+  },
+  {
+    "slug": "empowered-evocation",
+    "classId": "wizard",
+    "level": 10,
+    "subclassId": "evocation",
+    "name": "Empowered Evocation"
+  },
+  {
+    "slug": "wizard-ability-score-improvement-3",
+    "classId": "wizard",
+    "level": 12,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "arcane-tradition-improvement-3",
+    "classId": "wizard",
+    "level": 14,
+    "name": "Arcane Tradition feature"
+  },
+  {
+    "slug": "overchannel",
+    "classId": "wizard",
+    "level": 14,
+    "subclassId": "evocation",
+    "name": "Overchannel"
+  },
+  {
+    "slug": "wizard-ability-score-improvement-4",
+    "classId": "wizard",
+    "level": 16,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "spell-mastery",
+    "classId": "wizard",
+    "level": 18,
+    "name": "Spell Mastery"
+  },
+  {
+    "slug": "wizard-ability-score-improvement-5",
+    "classId": "wizard",
+    "level": 19,
+    "name": "Ability Score Improvement"
+  },
+  {
+    "slug": "signature-spell",
+    "classId": "wizard",
+    "level": 20,
+    "name": "Signature Spell"
+  }
+]
