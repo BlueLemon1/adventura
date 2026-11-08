@@ -6226,7 +6226,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (eine Feder, ein Fellbüschel und eine Fischflosse in einer vergoldeten Eichel im Wert von mindestens 200 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen tierischen Geist, dessen Gestalt von einer Umgebung aus Luft, Land oder Wasser geprägt ist."
     },
@@ -6266,7 +6266,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (eine vergoldete Blume im Wert von mindestens 300 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen Feengeist, dessen gewählte Stimmung seine Fähigkeiten prägt."
     },
@@ -6302,7 +6302,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (ein vergoldeter Schädel im Wert von mindestens 300 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen untoten Geist in geisterhafter, fauliger oder skelettartiger Gestalt."
     },
@@ -6338,7 +6338,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (ein eingelegter Tentakel und ein Augapfel in einem platinverzierten Fläschchen im Wert von mindestens 400 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen aberranten Geist in Gestalt eines Betrachterartigen, Gedankenschinders oder Slaads."
     },
@@ -6374,7 +6374,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (eine abschließbare Kassette im Wert von mindestens 400 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen Konstruktgeist aus Lehm, Metall oder Stein."
     },
@@ -6412,7 +6412,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (Luft, ein Kieselstein, Asche und Wasser in einem goldverzierten Fläschchen im Wert von mindestens 400 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen Elementargeist, der an Luft, Erde, Feuer oder Wasser gebunden ist."
     },
@@ -6448,7 +6448,7 @@
       ],
       "castingTime": "Aktion",
       "range": "30 feet",
-      "components": "G, M",
+      "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "duration": "Instantaneous",
       "description": "Du greifst mehrere Gegner in einem übernatürlichen Schlaghagel an und teleportierst dich anschließend zu einem von ihnen."
     },
@@ -6491,7 +6491,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (ein Reliquiar im Wert von mindestens 500 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen engelsgleichen Geist in der Gestalt eines Rächers oder Verteidigers."
     },
@@ -6573,7 +6573,7 @@
       ],
       "castingTime": "Aktion",
       "range": "90 feet",
-      "components": "V, G, M",
+      "components": "V, G, M (ein blutiges Fläschchen im Wert von mindestens 600 GM)",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst einen Unholdgeist in Gestalt eines Dämons, Teufels oder Yugoloths."
     },
