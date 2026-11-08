@@ -505,7 +505,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2014-magic-missile",
+      "srd-2014-thunderwave",
+      "srd-2014-mirror-image",
+      "srd-2014-shatter",
+      "srd-2014-hypnotic-pattern",
+      "srd-2014-lightning-bolt",
+      "srd-2014-fire-shield",
+      "srd-2014-greater-invisibility",
+      "srd-2014-passwall",
+      "srd-2014-wall-of-force"
+    ]
   },
   {
     "id": "2014-artificer-armorer-arcane-armor",
@@ -631,7 +643,19 @@
     },
     "translationStatus": {
       "de": "unofficial"
-    }
+    },
+    "grantedSpellIds": [
+      "srd-2014-shield",
+      "srd-2014-thunderwave",
+      "srd-2014-scorching-ray",
+      "srd-2014-shatter",
+      "srd-2014-fireball",
+      "srd-2014-wind-wall",
+      "srd-2014-ice-storm",
+      "srd-2014-wall-of-fire",
+      "srd-2014-cone-of-cold",
+      "srd-2014-wall-of-force"
+    ]
   },
   {
     "id": "2014-artificer-artillerist-eldritch-cannon",
