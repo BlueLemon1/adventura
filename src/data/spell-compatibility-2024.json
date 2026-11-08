@@ -667,12 +667,16 @@
     {
       "spellId": "srd-2014-branding-smite",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-shining-smite"
+      "replacementSpellId": "srd-2024-shining-smite",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "renamed"
     },
     {
       "spellId": "srd-2014-feeblemind",
       "status": "replaced",
-      "replacementSpellId": "srd-2024-befuddlement"
+      "replacementSpellId": "srd-2024-befuddlement",
+      "replacementSource": "phb-2024",
+      "replacementCategory": "renamed"
     }
   ],
   "phb2024UpdatedSupplementSpellNames": [
