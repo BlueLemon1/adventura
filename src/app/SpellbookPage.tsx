@@ -61,6 +61,7 @@ export function SpellbookPage({
       ...knownSpell,
       name: language === 'de' ? (localized?.name ?? '') : spell.name,
       contentSourceId: spell.contentSourceId,
+      legacy: spell.legacy,
       spellLevel: spell.level,
       school: language === 'de' ? (localized?.school ?? '') : spell.school,
       castingTime: language === 'de' ? (localized?.castingTime ?? '') : spell.castingTime,
