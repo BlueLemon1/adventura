@@ -146,6 +146,7 @@ export interface KnownSpell {
   /** True when displayed rules text uses English as a locale fallback. */
   languageFallback?: boolean
   higherLevel?: string
+  higherLevelLabel?: string
   damage?: SpellDamage[]
   source?: 'class' | 'story' | 'item' | 'feat' | 'other'
   sourceName?: string

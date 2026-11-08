@@ -221,7 +221,10 @@ function SpellCard({
         </details>
       )}
 
-      <SpellHigherLevel text={spell.higherLevel} label={translateText('Auf höheren Graden:')} />
+      <SpellHigherLevel
+        text={spell.higherLevel}
+        label={spell.higherLevelLabel ?? translateText('Auf höheren Graden:')}
+      />
 
       <div className="spellbook-card-footer">
         <small>

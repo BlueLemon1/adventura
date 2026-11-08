@@ -39,6 +39,7 @@ interface FeatureSpellCatalogEntry {
   ritual?: boolean
   description?: string
   higherLevel?: string
+  higherLevelLabel?: string
   damage?: { dice: string; average: number; type?: string }[]
   localized?: {
     name?: string
@@ -49,6 +50,7 @@ interface FeatureSpellCatalogEntry {
     duration?: string
     description?: string
     higherLevel?: string
+    higherLevelLabel?: string
   }
 }
 
@@ -105,6 +107,7 @@ export function SpellbookPage({
       duration: localized?.duration ?? spell.duration,
       description: localized?.description ?? spell.description,
       higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
+      higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
       languageFallback: usedEnglishFallback,
     }
   })
@@ -158,6 +161,7 @@ export function SpellbookPage({
           Boolean(spell?.description && !localizedSpell?.description) ||
           Boolean(englishHigherLevel && !localizedSpell?.higherLevel)),
       higherLevel: getHigherLevelText(englishHigherLevel, localizedSpell?.higherLevel, language),
+      higherLevelLabel: language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
       damage: spell?.damage,
       notes: featureName,
       source: 'class',

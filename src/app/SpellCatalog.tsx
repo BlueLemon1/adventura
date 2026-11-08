@@ -35,6 +35,7 @@ interface CatalogSpell {
   classes: string[]
   description: string
   higherLevel?: string
+  higherLevelLabel?: string
   localized?: {
     name?: string
     school?: string
@@ -45,6 +46,7 @@ interface CatalogSpell {
     duration?: string
     description?: string
     higherLevel?: string
+    higherLevelLabel?: string
   }
   usedEnglishFallback?: boolean
   damage?: Array<{ dice: string; average: number; type?: string }>
@@ -291,6 +293,7 @@ export function SpellCatalog({
       material: localized?.components ? '' : spell.material,
       description: localized?.description ?? spell.description,
       higherLevel: getHigherLevelText(spell.higherLevel, localized?.higherLevel, language),
+      higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
       usedEnglishFallback,
     }
   })
@@ -341,6 +344,7 @@ export function SpellCatalog({
       description: spell.description,
       languageFallback: spell.usedEnglishFallback,
       higherLevel: spell.higherLevel,
+      higherLevelLabel: spell.higherLevelLabel,
       damage: spell.damage,
       source,
       sourceName: sourceName.trim() || undefined,
@@ -546,7 +550,7 @@ export function SpellCatalog({
                   </p>
                 ) : null}
                 {spell.higherLevel && (
-                  <SpellHigherLevel text={spell.higherLevel} label={t('Auf höheren Graden:')} />
+                  <SpellHigherLevel text={spell.higherLevel} label={spell.higherLevelLabel ?? t('Auf höheren Graden:')} />
                 )}
                 <small>
                   {t('Klassen:')} {spell.classes.join(', ')}
