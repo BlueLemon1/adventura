@@ -3807,3 +3807,108 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Character sheet hierarchy */
+.session-status-panel {
+  margin-top: 0;
+}
+.character-details {
+  padding: 0;
+  overflow: hidden;
+}
+.character-details-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px 19px;
+  color: #e9eee9;
+  cursor: pointer;
+  list-style: none;
+}
+.character-details-summary::-webkit-details-marker {
+  display: none;
+}
+.character-details-summary::after {
+  content: '+';
+  margin-left: auto;
+  color: var(--gold);
+  font-size: 20px;
+  line-height: 1;
+}
+.character-details[open] .character-details-summary::after {
+  content: '−';
+}
+.character-details-summary span {
+  font: 20px Georgia, serif;
+}
+.character-details-summary small {
+  color: var(--muted);
+  font-size: 10px;
+  text-align: right;
+}
+.character-details[open] > .form-grid,
+.character-details[open] > .textareas {
+  padding-inline: 19px;
+}
+.character-details[open] > .form-grid:last-child {
+  padding-bottom: 8px;
+}
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .skill-row {
+    grid-template-columns: 30px minmax(0, 1fr) 38px 96px;
+  }
+}
+@media (max-width: 640px) {
+  .combat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .combat-card {
+    min-height: 125px;
+    padding: 12px 8px;
+  }
+  .combat-card > span {
+    font-size: 7px;
+    letter-spacing: 0.6px;
+  }
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .panel {
+    padding: 15px;
+  }
+  .character-details {
+    padding: 0;
+  }
+  .character-details-summary {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .character-details-summary span {
+    font-size: 18px;
+  }
+  .character-details-summary small {
+    flex-basis: calc(100% - 24px);
+    text-align: left;
+    order: 3;
+  }
+  .character-details[open] > .form-grid,
+  .character-details[open] > .textareas {
+    padding-inline: 15px;
+  }
+  .character-details .form-grid,
+  .character-details .textareas {
+    grid-template-columns: 1fr;
+  }
+  .skill-row {
+    grid-template-columns: 27px minmax(0, 1fr) 34px 88px;
+    gap: 6px;
+    font-size: 9px;
+  }
+}
