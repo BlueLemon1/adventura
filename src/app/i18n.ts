@@ -366,6 +366,7 @@ Object.assign(en, {
   "Chronurgie": "Chronurgy",
   "Graviturgy": "Graviturgy",
   "Ordnung der Schreiber": "Order of Scribes",
+  "Kampfmagie": "War Magic",
 
   "Erfinder": "Artificer",
   "Konstrukteur": "Armorer",
