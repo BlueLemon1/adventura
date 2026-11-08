@@ -2587,5 +2587,477 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 170,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-control-winds",
+    "name": "Control Winds",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You alter the wind in a large area, choosing an effect such as a downdraft, updraft, or area of calm. The chosen wind changes movement and ranged attacks and can hinder or assist flying creatures.",
+    "localized": {
+      "name": "Winde kontrollieren",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "90 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du veränderst den Wind in einem großen Gebiet und wählst einen Effekt wie Abwind, Aufwind oder Windstille. Der Wind beeinflusst Bewegung und Fernkampfangriffe und kann fliegende Kreaturen behindern oder unterstützen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-crown-of-stars",
+    "name": "Crown of Stars",
+    "level": 7,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Seven star-like motes orbit your head. As a bonus action, you can send one mote toward a creature or object within range; make a ranged spell attack, dealing 4d12 radiant damage on a hit. A mote vanishes after it is used.",
+    "higherLevel": "The number of motes increases by two for each spell slot level above 7.",
+    "localized": {
+      "name": "Sternenkrone",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Sieben sternartige Lichtpunkte umkreisen deinen Kopf. Als Bonusaktion kannst du einen davon auf eine Kreatur oder einen Gegenstand in Reichweite schleudern. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer verursacht er 4W12 Strahlenschaden. Der Lichtpunkt verschwindet nach dem Angriff.",
+      "higherLevel": "Die Anzahl der Lichtpunkte steigt für jeden Zauberplatzgrad über dem 7. um zwei."
+    },
+    "damage": [
+      {
+        "dice": "4d12",
+        "average": 26,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-danse-macabre",
+    "name": "Danse Macabre",
+    "level": 5,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a miniature sword worth 1 sp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You animate up to five nearby corpses as skeletons or zombies. They gain a bonus to their attack and damage rolls and follow your verbal commands for the duration.",
+    "localized": {
+      "name": "Totentanz",
+      "school": "Nekromantie",
+      "classes": [
+        "bard",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Miniaturschwert im Wert von 1 SM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du belebst bis zu fünf Leichen in der Nähe als Skelette oder Zombies. Sie erhalten einen Bonus auf Angriffs- und Schadenswürfe und befolgen für die Wirkungsdauer deine verbalen Befehle."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 153,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-dragons-breath",
+    "name": "Dragon's Breath",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "a hot pepper",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You grant a willing creature the ability to exhale destructive energy as an action in a 15-foot cone. Choose acid, cold, fire, lightning, or poison; creatures in the cone make a Dexterity saving throw, taking 3d6 damage of the chosen type on a failure or half on a success.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 2.",
+    "localized": {
+      "name": "Drachenodem",
+      "school": "Verwandlung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Berührung",
+      "components": "V, G, M (eine scharfe Chilischote)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du verleihst einer willigen Kreatur die Fähigkeit, als Aktion zerstörerische Energie in einem 4,5-Meter-Kegel auszustoßen. Wähle Säure, Kälte, Feuer, Blitz oder Gift. Kreaturen im Kegel müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 3W6 Schaden der gewählten Art oder bei Erfolg halben Schaden.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "3d6",
+        "average": 10.5,
+        "type": "variable"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 154,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-dust-devil",
+    "name": "Dust Devil",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a pinch of dust",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a dust devil in an unoccupied space. As a bonus action, you can move it up to 30 feet. A creature within 5 feet of it must make a Strength saving throw or take 1d8 bludgeoning damage and be pushed away.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 2.",
+    "localized": {
+      "name": "Staubteufel",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (eine Prise Staub)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst an einem freien Ort einen Staubteufel. Als Bonusaktion kannst du ihn bis zu 9 Meter bewegen. Eine Kreatur innerhalb von 1,5 Metern muss einen Stärkerettungswurf ablegen oder erleidet 1W8 Wuchtschaden und wird weggestoßen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "1d8",
+        "average": 4.5,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 154,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-earth-tremor",
+    "name": "Earth Tremor",
+    "level": 1,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (10-foot radius)",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You shake the ground around you. Each other creature in a 10-foot radius must make a Dexterity saving throw, taking 1d6 bludgeoning damage and falling prone on a failure. The area becomes difficult terrain.",
+    "localized": {
+      "name": "Erdbebenstoß",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (3-Meter-Radius)",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du erschütterst den Boden um dich herum. Jede andere Kreatur innerhalb von 3 Metern muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Wuchtschaden und wird zu Boden geworfen. Das Gebiet wird zu schwierigem Gelände."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-earthbind",
+    "name": "Earthbind",
+    "level": 2,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "300 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Choose a creature you can see within range. On a failed Strength saving throw, its flying speed becomes 0 and it descends up to 60 feet at the end of each of its turns until it reaches the ground or the spell ends.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 2.",
+    "localized": {
+      "name": "Erdgebunden",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "90 Meter",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Wähle eine Kreatur, die du in Reichweite sehen kannst. Bei einem misslungenen Stärkerettungswurf sinkt ihre Flugbewegungsrate auf 0 und sie fällt am Ende jedes ihrer Züge bis zu 18 Meter, bis sie den Boden erreicht oder der Zauber endet.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-elemental-bane",
+    "name": "Elemental Bane",
+    "level": 4,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Choose one creature and one damage type: acid, cold, fire, lightning, or thunder. The target loses resistance to that type. The first time each turn it takes damage of the chosen type, it takes an additional 2d6 damage.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 4.",
+    "localized": {
+      "name": "Elementarfluch",
+      "school": "Verwandlung",
+      "classes": [
+        "druid",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Wähle eine Kreatur und eine Schadensart: Säure, Kälte, Feuer, Blitz oder Schall. Das Ziel verliert Resistenz gegen diese Schadensart. Wenn es während eines Zuges erstmals Schaden der gewählten Art erleidet, erleidet es zusätzlich 2W6 Schaden.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 4. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "variable"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-enemies-abound",
+    "name": "Enemies Abound",
+    "level": 3,
+    "school": "Enchantment",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You unsettle the mind of one creature you can see. On a failed Intelligence saving throw, it loses the ability to distinguish friend from foe and treats all creatures it can see as enemies for the duration. It can repeat the save when it takes damage.",
+    "localized": {
+      "name": "Feinde überall",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du verwirrst den Geist einer Kreatur, die du sehen kannst. Bei einem misslungenen Intelligenzrettungswurf kann sie Freund und Feind nicht mehr unterscheiden und betrachtet für die Wirkungsdauer alle sichtbaren Kreaturen als Gegner. Wenn sie Schaden erleidet, kann sie den Rettungswurf wiederholen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-enervation",
+    "name": "Enervation",
+    "level": 5,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A tendril of darkness reaches toward one creature. Make a ranged spell attack; on a hit, the target takes 4d8 necrotic damage, and you regain hit points equal to half the damage dealt. On later turns, you can use your action to repeat the attack automatically while the spell remains in range.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 5.",
+    "localized": {
+      "name": "Auszehrung",
+      "school": "Nekromantie",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Ein dunkler Faden greift nach einer Kreatur. Führe einen Fernkampf-Zauberangriff aus. Bei einem Treffer erleidet das Ziel 4W8 nekrotischen Schaden und du erhältst Trefferpunkte in Höhe der Hälfte des verursachten Schadens zurück. In späteren Zügen kannst du deine Aktion verwenden, um den Angriff automatisch zu wiederholen, solange der Zauber in Reichweite bleibt.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W8."
+    },
+    "damage": [
+      {
+        "dice": "4d8",
+        "average": 18,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 155,
+    "descriptionKind": "original-summary"
   }
 ]
