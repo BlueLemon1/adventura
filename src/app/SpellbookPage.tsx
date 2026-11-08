@@ -235,6 +235,7 @@ export function SpellbookPage({
 
       {view === 'character' ? (
         <>
+          <div className="spellbook-dashboard">
           <section className="panel spellcasting-stats">
             <PanelHeader
               title={t('Zauberwerte')}
@@ -326,6 +327,7 @@ export function SpellbookPage({
               )}
             </section>
           )}
+          </div>
           <SpellbookList
             spells={[...localizedKnownSpells, ...featureSpellEntries]}
             character={character}
@@ -378,8 +380,14 @@ export function SpellbookPage({
             onAdd={(spell) => onUpdateSpells([...knownSpells, spell])}
           />
 
-          <section className="panel">
-            <PanelHeader title={t('Eigene Zauber hinzufügen')} meta={t('MANUELLE ERFASSUNG')} />
+          <details className="panel custom-spell-panel">
+            <summary>
+              <span>
+                <strong>{t('Eigene Zauber hinzufügen')}</strong>
+                <small>{t('Manuelle Erfassung für Zauber außerhalb des Katalogs')}</small>
+              </span>
+              <Plus size={18} />
+            </summary>
             <form onSubmit={addCustomSpell}>
               <div className="form-grid spell-form">
                 <TextInputField
@@ -502,7 +510,7 @@ export function SpellbookPage({
                 <Plus size={15} /> {t('Zauber hinzufügen')}
               </Button>
             </form>
-          </section>
+          </details>
         </>
       )}
     </>
