@@ -97,6 +97,16 @@ export const CONTENT_SOURCES = {
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ftod',
     availableLocales: ['en'],
   },
+  egw2020: {
+    id: 'egw-2020',
+    name: "Explorer's Guide to Wildemount",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2020',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/egw',
+    availableLocales: ['en'],
+  },
 } as const satisfies Record<string, ContentSource>
 
 export type SrdContentSourceId = (typeof CONTENT_SOURCES)[keyof typeof CONTENT_SOURCES]['id']
