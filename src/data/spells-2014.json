@@ -39,7 +39,8 @@
         "average": 5,
         "type": "acid"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-acid-splash",
@@ -113,7 +114,8 @@
       "description": "Dein Zauber verleiht deinen Mitstreitern mehr Widerstandsfähigkeit und Entschlossenheit. Wähle bis zu drei Kreaturen in Reichweite. Das Trefferpunktemaximum und die aktuellen Trefferpunkte jedes Ziels werden für die Wirkungsdauer um 5 erhöht.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, erhöhen sich die Trefferpunkte des Ziels für jeden Grad über dem 2. um 5 Punkte."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-alarm",
@@ -246,7 +248,8 @@
       "description": "Mit diesem Zauber kannst du ein Tier eine Nachricht überbringen lassen. Wähle ein winziges Tier in Reichweite, das du sehen kannst, beispielsweise ein Eichhörnchen, einen Blauhäher oder eine Fledermaus. Bestimme einen Ort, an dem du schon einmal warst, sowie einen Empfänger, der einer allgemeinen Beschreibung entspricht, etwa „ein Mann oder eine Frau in einer Stadtwachenuniform“ oder „ein rothaariger Zwerg mit einem spitzen Hut“. Dann sprichst du eine Botschaft mit bis zu 25 Wörtern. Das Tier reist für die Wirkungsdauer des Zaubers in Richtung Zielort. Ein fliegender Bote legt in 24 Stunden etwa 80 Kilometer zurück, andere Tiere etwa 40 Kilometer.\n\nAm Zielort übermittelt der Bote deine Botschaft an die von dir beschriebene Kreatur und ahmt dabei den Klang deiner Stimme nach. Der Bote spricht nur mit einer Kreatur, die deiner Beschreibung entspricht. Erreicht das Tier sein Ziel nicht vor dem Ende des Zaubers, geht die Botschaft verloren und das Tier kehrt an den Ort zurück, an dem du den Zauber gewirkt hast.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, erhöht sich die Wirkungsdauer für jeden Grad über dem 2. um 48 Stunden."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
   },
   {
     "id": "srd-2014-animal-shapes",
@@ -309,7 +312,8 @@
       "description": "Dieser Zauber erschafft einen untoten Diener. Wähle einen Knochenhaufen oder die Leiche eines kleinen oder mittelgroßen Humanoiden in Reichweite. Dein Zauber durchdringt das Ziel mit einer verdorbenen Nachahmung des Lebens und erweckt es zu einer untoten Kreatur. Das Ziel wird zu einem Skelett, wenn du Knochen wählst, oder zu einem Zombie, wenn du eine Leiche wählst (der SL hat die Spielwerte der Kreatur).\n\nDu kannst deine Bonusaktion in jedem deiner Züge verwenden, um jede Kreatur, die du mit diesem Zauber belebt hast und die sich im Abstand von bis zu 18 Metern von dir befindet, mental zu befehligen. Wenn du mehrere Kreaturen kontrollierst, kannst du gleichzeitig eine oder alle befehligen, wobei jeder derselbe Befehl erteilt wird. Du entscheidest über die Aktion der Kreatur und ihre Bewegung in ihrem nächsten Zug. Alternativ kannst du einen allgemeinen Befehl erteilen, etwa das Bewachen einer bestimmten Kammer oder eines Korridors. Erteilst du keine Befehle, verteidigt sich die Kreatur lediglich gegen feindlich gesinnte Kreaturen. Sobald die Kreatur einen Befehl erhalten hat, führt sie ihn aus, bis die Aufgabe abgeschlossen ist.\n\nDie Kreatur steht 24 Stunden lang unter deiner Kontrolle. Danach folgt sie keinem deiner Befehle mehr. Um weitere 24 Stunden die Kontrolle über die Kreatur zu behalten, musst du diesen Zauber vor dem Ablauf der ersten 24 Stunden erneut auf die Kreatur wirken. Setzt du den Zauber auf diese Weise ein, erlangst du die Kontrolle über bis zu vier Kreaturen, die du mit diesem Zauber belebt hast, anstatt einen neuen Diener zu erschaffen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, kannst du für jeden Grad über dem 3. Grad zwei zusätzliche untote Kreaturen beleben oder wieder unter deine Kontrolle bringen. Für jede Kreatur benötigst du eine separate Leiche oder einen separaten Knochenhaufen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
   },
   {
     "id": "srd-2014-animate-objects",
@@ -344,7 +348,8 @@
       "description": "Objekte erwachen auf deinen Befehl hin zum Leben. Wähle bis zu zehn nichtmagische Gegenstände in Reichweite, die nicht getragen oder gehalten werden. Mittelgroße Ziele zählen als zwei Gegenstände, große Ziele als vier und riesige Ziele als acht. Du kannst keine Gegenstände beleben, die größer als riesig sind. Jedes Ziel wird belebt und zu einer Kreatur unter deiner Kontrolle. Dies hält an, bis der Zauber endet oder die Treffpunkte des Ziels auf 0 sinken.\n\nAls Bonusaktion kannst du jede Kreatur, die du mit diesem Zauber belebt hast und die sich im Abstand von bis zu 150 Metern von dir befindet, mental befehligen. Wenn du mehrere Kreaturen kontrollierst, kannst du gleichzeitig eine oder alle befehligen, wobei jeder derselbe Befehl erteilt wird. Du entscheidest über die Aktion der Kreatur und ihre Bewegung in ihrem nächsten Zug. Alternativ kannst du einen allgemeinen Befehl erteilen, etwa das Bewachen einer bestimmten Kammer oder eines Korridors. Erteilst du keine Befehle, verteidigt sich die Kreatur lediglich gegen feindlich gesinnte Kreaturen. Sobald die Kreatur einen Befehl erhalten hat, führt sie ihn aus, bis die Aufgabe abgeschlossen ist. Spielwerte für belebte Gegenstände Größe TP RK Angriff Str Ges Winzig 20 18 +8 auf Treffer, 1W4+4 Schaden 4 18 Klein 25 16 +6 auf Treffer, 1W8+2 Schaden 6 14 Mittelgroß 40 13 +5 auf Treffer, 2W6+1 Schaden 10 12 Groß 50 10 +6 auf Treffer, 2W10+2 Schaden 14 10 Riesig 80 10 +8 auf Treffer, 2W12+4 Schaden 18 6\n\nEin animierter Gegenstand ist ein Konstrukt, dessen RK, Trefferpunkte, Angriffe, Stärke und Geschicklichkeit von seiner Größe festgelegt werden. Seine Konstitution beträgt 10, seine Intelligenz und Weisheit 3 und sein Charisma 1. Es verfügt über eine Bewegungsrate von neun Metern. Wenn der Gegenstand keine Beine oder ähnliches zur Fortbewegung besitzt, verfügt er stattdessen über eine Flugbewegungsrate von neun Metern und kann schweben. Ist der Gegenstand an einer Oberfläche oder einem größeren Gegenstand befestigt, etwa mit einer Kette an einer Wand, beträgt seine Bewegungsrate 0. Der belebte Gegenstand besitzt Blindsicht mit einem Radius von neun Metern. Über diese Entfernung hinaus ist er blind. Sinken die Trefferpunkte des animierten Gegenstands auf 0, nimmt er wieder seine unbelebte Form an. Verbleibender Schaden wird auf diese Form übertragen.\n\nWenn du einem Gegenstand befiehlst anzugreifen, führt er einen einzelnen Nahkampfangriff gegen eine Kreatur im Abstand von bis zu 1,5 Metern von ihm aus. Dabei handelt es sich um einen Hiebangriff, dessen Angriffsbonus und Wuchtschaden von der Größe des Gegenstands abhängen. Der SL kann bestimmen, dass ein bestimmter Gegenstand aufgrund seiner Form Hieb- oder Stichschaden verursacht.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, kannst du für jeden Grad über dem 5. zwei zusätzliche Gegenstände beleben."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
   },
   {
     "id": "srd-2014-antilife-shell",
@@ -508,7 +513,8 @@
         "average": 18,
         "type": "force"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th."
   },
   {
     "id": "srd-2014-arcane-lock",
@@ -738,7 +744,8 @@
       "description": "Bis zu drei Kreaturen deiner Wahl in Reichweite, die du sehen kannst, müssen Charismarettungswürfe ausführen. Wenn ein Ziel, das diesen Rettungswurf nicht besteht, während der Wirkungsdauer einen Angriffs- oder Rettungswurf ausführt, muss es einen W4 würfeln und das Würfelergebnis von seinem Angriffs- oder Rettungswurf abziehen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kannst du für jeden Grad über dem 1. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   },
   {
     "id": "srd-2014-banishment",
@@ -777,7 +784,8 @@
       "description": "Du versuchst, eine Kreatur in Reichweite, die du sehen kannst, auf eine andere Existenzebene zu verbannen. Das Ziel muss einen Charismarettungswurf bestehen, oder es wird verbannt.\n\nIst das Ziel auf der Existenzebene heimisch, auf der du dich befindest, verbannst du das Ziel auf eine harmlose Halbebene. Solange sich das Ziel dort befindet, ist es kampfunfähig. Das Ziel bleibt dort, bis der Zauber endet. Dann erscheint es wieder an der Stelle, von der es wegteleportiert wurde, oder an der nächstgelegenen freien Stelle.\n\nIst das Ziel auf einer anderen Existenzebene heimisch als der, auf der du dich befindest, verbannst du das Ziel mit einem leisen Knall und es kehrt auf seine Heimatebene zurück. Endet der Zauber, bevor eine Minute vergangen ist, erscheint das Ziel wieder an der Stelle, von der es wegteleportiert wurde, oder an der nächstgelegenen freien Stelle. Anderenfalls kehrt das Ziel nicht zurück.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, kannst du für jeden Grad über dem 4. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
   },
   {
     "id": "srd-2014-barkskin",
@@ -880,7 +888,8 @@
         "average": 4.5,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration."
   },
   {
     "id": "srd-2014-black-tentacles",
@@ -985,7 +994,8 @@
       "description": "Du segnest bis zu drei Kreaturen deiner Wahl in Reichweite. Wenn ein Ziel während der Wirkungsdauer einen Angriffs- oder Rettungswurf ausführt, darf es mit einem W4 würfeln und das Würfelergebnis zu seinem Angriffs- oder Rettungswurf addieren.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kannst du für jeden Grad über dem 1. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
   },
   {
     "id": "srd-2014-blight",
@@ -1028,7 +1038,8 @@
         "average": 36,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level of higher, the damage increases by 1d8 for each slot level above 4th."
   },
   {
     "id": "srd-2014-blindness-deafness",
@@ -1065,7 +1076,8 @@
       "description": "Du kannst einen Feind blind oder taub werden lassen. Wähle eine Kreatur in Reichweite, die du sehen kannst. Sie muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, ist das Ziel für die Wirkungsdauer entweder blind oder taub (du entscheidest). Am Ende jedes seiner Züge kann das Ziel einen Konstitutions- rettungswurf ausführen. Bei einem Erfolg endet der Zauber.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, kannst du für jeden Grad über dem 2. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   },
   {
     "id": "srd-2014-blink",
@@ -1161,7 +1173,8 @@
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "duration": "Konzentration, bis zu 1 Minute"
-    }
+    },
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-burning-hands",
@@ -1200,7 +1213,8 @@
         "average": 10.5,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   },
   {
     "id": "srd-2014-call-lightning",
@@ -1237,7 +1251,8 @@
         "average": 16.5,
         "type": "lightning"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-calm-emotions",
@@ -1308,7 +1323,8 @@
         "average": 45,
         "type": "lightning"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
   },
   {
     "id": "srd-2014-charm-person",
@@ -1347,7 +1363,8 @@
       "description": "Du versuchst, einen Humanoiden in Reichweite zu bezaubern, den du sehen kannst. Er muss einen Rettungswurf auf Weisheit ausführen. Dabei ist er im Vorteil, wenn du oder deine Begleiter gegen ihn kämpft. Scheitert der Wurf, ist der Humanoide von dir bezaubert, bis der Zauber endet oder du und deine Begleiter dem Humanoiden Schaden zufügt. Die bezauberte Kreatur betrachtet dich als freundlichen Bekannten. Nach Ende des Zaubers weiß die Kreatur, dass sie von dir bezaubert wurde.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kannst du für jeden Grad über dem 1. eine zusätzliche Kreatur als Ziel wählen. Die Kreaturen müssen sich im Abstand von bis zu neun Metern voneinander befinden, wenn du sie als Ziel wählst."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
   },
   {
     "id": "srd-2014-chill-touch",
@@ -1428,7 +1445,8 @@
         "average": 28,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
   },
   {
     "id": "srd-2014-clairvoyance",
@@ -1533,7 +1551,8 @@
         "average": 22.5,
         "type": "poison"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
   },
   {
     "id": "srd-2014-color-spray",
@@ -1567,7 +1586,8 @@
       "description": "Schillernde, bunte Lichter entspringen deiner Hand. Würfle 6W10. Die Summe gibt an, auf wie viele Trefferpunkte an Kreaturen dieser Zauber wirken kann. Kreaturen in einem von dir ausgehenden Kegel von 4,5 Metern sind in aufsteigender Reihenfolge ihrer aktuellen Trefferpunkte betroffen (bewusstlose Kreaturen und Kreaturen, die nicht sehen können, werden ignoriert).\n\nBeginnend mit der Kreatur mit den niedrigsten aktuellen Trefferpunkten wird jede Kreatur, auf die der Zauber wirkt, bis zum Ende der Wirkungsdauer blind. Subtrahiere die Trefferpunkte jeder Kreatur von der Summe, bevor du zur Kreatur mit den nächstniedrigsten Trefferpunkten übergehst. Die Trefferpunkte einer Kreatur müssen kleiner oder gleich der verbleibenden Summe sein, damit der Zauber auf die Kreatur wirkt.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, würfle für jeden Grad über dem 1. zusätzlich mit 2W10."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st."
   },
   {
     "id": "srd-2014-command",
@@ -1601,7 +1621,8 @@
       "description": "Du gibst einer Kreatur in Reichweite, die du sehen kannst, einen ein Wort langen Befehl. Das Ziel muss einen Weisheitsrettungswurf bestehen oder den Befehl im nächsten Zug ausführen. Der Zauber hat keine Wirkung, wenn das Ziel untot ist, deine Sprache nicht versteht oder dein Befehl ihm direkt Schaden zufügen würde.\n\nIm Folgenden sind einige typische Befehle und deren Effekte aufgelistet. Du kannst auch andere als die hier aufgelisteten Befehle aussprechen. In dem Fall bestimmt der SL, wie sich das Ziel verhält. Kann das Ziel deinen Befehl nicht ausführen, endet der Zauber.\n\nFlieh: Das Ziel nutzt seinen Zug, um sich so schnell wie möglich von dir wegzubewegen.\n\nHinlegen: Das Ziel legt sich hin und beendet seinen Zug.\n\nKomm: Das Ziel bewegt sich auf dem kürzesten Weg in deine Richtung und beendet seinen Zug, sobald es sich auf 1,5 Meter genähert hat.\n\nLoslassen: Das Ziel lässt fallen, was es gerade hält, und beendet seinen Zug.\n\nStopp: Das Ziel bewegt sich nicht und führt keinerlei Aktionen aus. Eine fliegende Kreatur bleibt in der Luft, sofern sie dies kann. Falls sie sich bewegen muss, um in der Luft zu bleiben, fliegt sie die dazu minimal notwendige Strecke.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kann für jeden Grad über dem 1. eine zusätzliche Kreatur betroffen sein. Die Kreaturen müssen sich im Abstand von bis zu neun Metern voneinander befinden, wenn du sie als Ziel wählst."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
   },
   {
     "id": "srd-2014-commune",
@@ -1769,7 +1790,8 @@
         "average": 36,
         "type": "cold"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
   },
   {
     "id": "srd-2014-confusion",
@@ -1806,7 +1828,8 @@
       "description": "Dieser Zauber attackiert und verdreht den Verstand von Kreaturen, was zu Wahnvorstellungen und unkontrollierten Handlungen führt. Wenn du diesen Zauber wirkst, muss jede Kreatur in einer Sphäre mit einem Radius von drei Metern, die auf einen Punkt deiner Wahl in Reichweite zentriert ist, einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, ist die Kreatur von dem Zauber betroffen.\n\nEin betroffenes Ziel kann nicht reagieren und muss zu Beginn jedes seiner Züge mit einem W10 würfeln, um sein Verhalten in diesem Zug zu bestimmen.\n\nW10 Verhalten 1 Die Kreatur verwendet ihre gesamte Bewegungsrate, um sich in eine zufällige Richtung zu bewegen. Würfle dazu mit einem W8 und weise jeder Augenzahl eine Richtung zu. Die Kreatur führt in diesem Zug keine Aktion aus. 2–6 Die Kreatur bewegt sich nicht und führt in diesem Zug keine Aktion aus. 7–8 Die Kreatur muss ihre Aktion verwenden, um einen Nahkampfangriff gegen eine zufällig ausgewählte Kreatur in Reichweite auszuführen. Ist keine Kreatur in Reichweite, so unternimmt die Kreatur in ihrem Zug nichts. 9–10 Die Kreatur kann normal agieren und sich bewegen.\n\nAm Ende jedes seiner Züge kann ein betroffenes Ziel einen Weisheitsrettungswurf ausführen. Bei einem Erfolg endet der Effekt für dieses Ziel.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, erhöht sich der Radius der Sphäre für jeden Grad über dem 4. um 1,5 Meter."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
   },
   {
     "id": "srd-2014-conjure-animals",
@@ -1839,7 +1862,8 @@
       "description": "Du beschwörst Feengeister in Form von Tieren, die in freien Bereichen in Reichweite erscheinen, die du sehen kannst. Wähle eine der folgenden Optionen aus: • Ein Tier mit Herausforderungsgrad 2 oder niedriger • Zwei Tiere mit Herausforderungsgrad 1 oder niedriger • Vier Tiere mit Herausforderungsgrad 1/2 oder niedriger • Acht Tiere mit Herausforderungsgrad 1/4 oder niedriger Jedes Tier ist gleichzeitig ein Feenwesen und verschwindet, wenn der Zauber endet oder seine Trefferpunkte auf 0 sinken.\n\nDie beschworenen Kreaturen sind dir und deinen Gefährten freundlich gesinnt. Würfle die Initiative für die beschworenen Kreaturen als Gruppe aus, die über ihren eigenen Zug verfügt. Sie gehorchen deinen mündlichen Befehlen (erfordert keine Aktion). Wenn du ihnen keine Befehle erteilst, verteidigen sie sich gegen feindlich gesinnte Kreaturen, führen aber anderenfalls keine Aktionen aus.\n\nDer SL hat die Werte der Kreaturen.",
       "higherLevel": "Wirkst du diesen Zauber mit bestimmten Zauberplätzen höheren Grades, erscheinen mehr Kreaturen, wenn du eine der oben genannten Optionen auswählst: doppelt so viele mit einem Zauberplatz des 5. Grades, dreimal so viele mit einem Zauberplatz des 7. Grades und viermal so viele mit einem Zauberplatz des 9. Grades."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level."
   },
   {
     "id": "srd-2014-conjure-celestial",
@@ -1870,7 +1894,8 @@
       "description": "Du beschwörst ein celestisches Wesen mit Herausforderungsgrad 4 oder niedriger, das in einem freien Bereich in Reichweite erscheint, den du sehen kannst. Das celestische Wesen verschwindet, wenn der Zauber endet oder seine Trefferpunkte auf 0 sinken.\n\nDas celestische Wesen ist dir und deinen Gefährten für die Wirkungsdauer freundlich gesinnt. Würfle die Initiative für das celestische Wesen aus, das über seinen eigenen Zug verfügt. Es gehorcht deinen mündlichen Befehlen (erfordert keine Aktion), solange sie nicht gegen seine Gesinnung verstoßen. Wenn du dem celestischen Wesen keine Befehle erteilst, verteidigt es sich gegen feindlich gesinnte Kreaturen, führt aber anderenfalls keine Aktionen aus.\n\nDer SL hat die Werte des celestischen Wesens.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 9. Grades nutzt, beschwörst du ein celestisches Wesen mit Herausforderungsgrad 5 oder niedriger."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower."
   },
   {
     "id": "srd-2014-conjure-elemental",
@@ -1903,7 +1928,8 @@
       "description": "Du rufst einen Elementardiener herbei. Wähle einen Bereich mit Erde, Feuer, Luft oder Wasser in Reichweite, der einen Würfel mit drei Metern Kantenlänge füllt. Ein Elementar mit Herausforderungsgrad 5 oder niedriger, der dem gewählten Bereich entspricht, erscheint an einer freien Stelle im Umkreis von drei Metern um diesen Bereich. Ein Feuerelementar tritt beispielsweise aus einem Lagerfeuer hervor und ein Erdelementar erhebt sich aus dem Boden. Der Elementar verschwindet, wenn der Zauber endet oder seine Trefferpunkte auf 0 sinken.\n\nDer Elementar ist dir und deinen Gefährten für die Wirkungsdauer freundlich gesinnt. Würfle die Initiative für den Elementar aus, der über seinen eigenen Zug verfügt. Er gehorcht deinen mündlichen Befehlen (erfordert keine Aktion). Wenn du dem Elementar keine Befehle erteilst, verteidigt er sich gegen feindlich gesinnte Kreaturen, führt aber anderenfalls keine Aktionen aus.\n\nWenn deine Konzentration unterbrochen wird, verschwindet der Elementar nicht. Stattdessen verlierst du die Kontrolle über den Elementar und er wird dir und deinen Gefährten gegenüber feindlich gesinnt und greift möglicherweise an. Ein unkontrollierter Elementar kann nicht von dir fortgeschickt werden und verschwindet eine Stunde nach seiner Beschwörung.\n\nDer SL hat die Werte des Elementars.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, erhöht sich der Herausforderungsgrad für jeden Grad über dem 5. um 1."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
   },
   {
     "id": "srd-2014-conjure-fey",
@@ -1935,7 +1961,8 @@
       "description": "Du beschwörst ein Feenwesen mit Herausforde- rungsgrad 6 oder niedriger, oder einen Feengeist, der die Form eines Tiers mit Herausforderungsgrad 6 oder niedriger annimmt. Es erscheint in einem freien Bereich in Reichweite, den du sehen kannst. Das Feenwesen verschwindet, wenn der Zauber endet oder seine Trefferpunkte auf 0 sinken.\n\nDas Feenwesen ist dir und deinen Gefährten für die Wirkungsdauer freundlich gesinnt. Würfle die Initiative für das Wesen aus, das über seinen eigenen Zug verfügt. Es gehorcht deinen mündlichen Befehlen (erfordert keine Aktion), solange sie nicht gegen seine Gesinnung verstoßen. Wenn du dem Feenwesen keine Befehle erteilst, verteidigt es sich gegen feindlich gesinnte Kreaturen, führt aber anderenfalls keine Aktionen aus.\n\nWenn deine Konzentration unterbrochen wird, verschwindet das Feenwesen nicht. Stattdessen verlierst du die Kontrolle über das Feenwesen und es wird dir und deinen Gefährten gegenüber feindlich gesinnt und greift möglicherweise an. Ein unkontrolliertes Feenwesen kann nicht von dir fortgeschickt werden und verschwindet eine Stunde nach seiner Beschwörung.\n\nDer SL hat die Werte des Feenwesens.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, erhöht sich der Herausforderungsgrad für jeden Grad über dem 6. um 1."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
   },
   {
     "id": "srd-2014-conjure-minor-elementals",
@@ -1968,7 +1995,8 @@
       "description": "Du beschwörst Elementare, die in freien Bereichen in Reichweite erscheinen, die du sehen kannst. Wähle eine der folgenden Optionen aus: • Ein Elementar mit Herausforderungsgrad 2 oder niedriger • Zwei Elementare mit Herausforderungsgrad 1 oder niedriger • Vier Elementare mit Herausforderungsgrad 1/2 oder niedriger • Acht Elementare mit Herausforderungsgrad 1/4 oder niedriger Ein auf diese Weise beschworener Elementar verschwindet, wenn der Zauber endet oder seine Trefferpunkte auf 0 sinken.\n\nDie beschworenen Kreaturen sind dir und deinen Gefährten freundlich gesinnt. Würfle die Initiative für die beschworenen Kreaturen als Gruppe aus, die über ihren eigenen Zug verfügt. Sie gehorchen deinen mündlichen Befehlen (erfordert keine Aktion). Wenn du ihnen keine Befehle erteilst, verteidigen sie sich gegen feindlich gesinnte Kreaturen, führen aber anderenfalls keine Aktionen aus.\n\nDer SL hat die Werte der Kreaturen.",
       "higherLevel": "Wirkst du diesen Zauber mit bestimmten Zauberplätzen höheren Grades, erscheinen mehr Kreaturen, wenn du eine der oben genannten Optionen auswählst: doppelt so viele mit einem Zauberplatz des 6. Grades und dreimal so viele mit einem Zauberplatz des 8. Grades."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
   },
   {
     "id": "srd-2014-conjure-woodland-beings",
@@ -2001,7 +2029,8 @@
       "description": "Du beschwörst Feenwesen, die in freien Bereichen in Reichweite erscheinen, die du sehen kannst. Wähle eine der folgenden Optionen aus: • Ein Feenwesen mit Herausforderungsgrad 2 oder niedriger • Zwei Feenwesen mit Herausforderungsgrad 1 oder niedriger • Vier Feenwesen mit Herausforderungsgrad 1/2 oder niedriger • Acht Feenwesen mit Herausforderungsgrad 1/4 oder niedriger Eine beschworene Kreatur verschwindet, wenn der Zauber endet oder ihre Trefferpunkte auf 0 sinken.\n\nDie beschworenen Kreaturen sind dir und deinen Gefährten freundlich gesinnt. Würfle die Initiative für die beschworenen Kreaturen als Gruppe aus, die über ihren eigenen Zug verfügt. Sie gehorchen deinen mündlichen Befehlen (erfordert keine Aktion). Wenn du ihnen keine Befehle erteilst, verteidigen sie sich gegen feindlich gesinnte Kreaturen, führen aber anderenfalls keine Aktionen aus.\n\nDer SL hat die Werte der Kreaturen.",
       "higherLevel": "Wirkst du diesen Zauber mit bestimmten Zauberplätzen höheren Grades, erscheinen mehr Kreaturen, wenn du eine der oben genannten Optionen auswählst: doppelt so viele mit einem Zauberplatz des 6. Grades und dreimal so viele mit einem Zauberplatz des 8. Grades."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
   },
   {
     "id": "srd-2014-contact-other-plane",
@@ -2243,7 +2272,8 @@
       "description": "Du versuchst, eine Kreatur beim Wirken eines Zaubers zu unterbrechen. Wirkt die Kreatur einen Zauber des 3. Grades oder niedriger, scheitert ihr Zauber und hat keinen Effekt. Wirkt sie einen Zauber des 4. Grades oder höher, führe einen Attributswurf mit deinem Attribut zum Zauberwirken aus. Der SG ist 10 + der Grad des Zaubers. Bei einem Erfolg schlägt der Zauber der Kreatur fehl und hat keinen Effekt.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, hat der unterbrochene Zauber keinen Effekt, wenn sein Grad niedriger als er Zauberplatz ist, den du zum Wirken verwendet hast, oder ihm entspricht."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
   },
   {
     "id": "srd-2014-create-food-and-water",
@@ -2311,7 +2341,8 @@
       "description": "Du kannst diesen Zauber nur nachts wirken. Wähle bis zu drei Leichen kleiner oder mittelgroßer Humanoiden in Reichweite. Jede Leiche wird zu einem Ghul unter deiner Kontrolle. (Der SL hat die Spielwerte für diese Kreaturen.)\n\nDu kannst als Bonusaktion in jedem deiner Züge jede Kreatur, die du mit diesem Zauber belebt hast und die sich im Abstand von bis zu 36 Metern von dir befindet, mental befehligen. Wenn du mehrere Kreaturen kontrollierst, kannst du gleichzeitig eine oder alle befehligen, wobei jeder derselbe Befehl erteilt wird. Du entscheidest über die Aktion der Kreatur und ihre Bewegung in ihrem nächsten Zug. Alternativ kannst du einen allgemeinen Befehl erteilen, etwa das Bewachen einer bestimmten Kammer oder eines Korridors. Erteilst du keine Befehle, verteidigt sich die Kreatur lediglich gegen feindlich gesinnte Kreaturen. Sobald die Kreatur einen Befehl erhalten hat, führt sie ihn aus, bis die Aufgabe abgeschlossen ist.\n\nDie Kreatur steht 24 Stunden lang unter deiner Kontrolle. Danach folgt sie keinem deiner Befehle mehr. Um weitere 24 Stunden die Kontrolle über die Kreatur zu behalten, musst du diesen Zauber vor dem Ablauf der ersten 24 Stunden erneut auf die Kreatur wirken. Setzt du den Zauber auf diese Weise ein, erlangst du die Kontrolle über bis zu drei Kreaturen, die du mit diesem Zauber belebt hast, anstatt eine neue zu beleben.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades nutzt, kannst du vier Ghule beleben oder wieder unter deine Kontrolle bringen. Wirkst du diesen Zauber, indem du einen Zauberplatz des 8. Grades nutzt, kannst du fünf Ghule oder zwei Grule oder zwei Gruftschrecken beleben oder wieder unter deine Kontrolle bringen. Wirkst du diesen Zauber, indem du einen Zauberplatz des 9. Grades nutzt, kannst du sechs Ghule oder drei Grule oder drei Gruftschrecken oder zwei Mumien beleben oder wieder unter deine Kontrolle bringen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
   },
   {
     "id": "srd-2014-create-or-destroy-water",
@@ -2344,7 +2375,8 @@
       "description": "Du erschaffst oder zerstörst Wasser.\n\nWasser erschaffen: Du erschaffst bis zu 40 Liter sauberes Wasser in einem offenen Behälter in Reichweite. Alternativ fällt das Wasser als Regen in einem Würfel mit neun Metern Kantenlänge in Reichweite und löscht offene Flammen in dem Bereich.\n\nWasser zerstören: Du zerstörst bis zu 40 Liter Wasser in einem offenen Behälter in Reichweite. Alternativ zerstörst du Nebel in einem Würfel mit neun Metern Kantenlänge in Reichweite.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kannst du für jeden Grad über dem 1. zusätzliche 40 Liter Wasser erschaffen oder zerstören, oder die Kantenlänge des Würfels um 1,5 Meter vergrößern."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
   },
   {
     "id": "srd-2014-creation",
@@ -2377,7 +2409,8 @@
       "description": "Du ziehst Fäden aus Schattenmaterial aus dem Schattenfell und erschaffst ein unbelebtes Objekt aus pflanzlichem Material in Reichweite: Textilien, Seil, Holz oder dergleichen. Du kannst mit dem Zauber auch Mineralien erschaffen, etwa Stein, Kristall oder Metall. Der erschaffene Gegenstand darf nicht größer als ein Würfel mit 1,5 Metern Kantenlänge sein und muss aus einem Material bestehen sowie eine Form besitzen, die du bereits gesehen hast.\n\nDie Wirkungsdauer hängt vom Material des Gegenstands ab. Besteht der Gegenstand aus mehreren Materialien, verwende die kürzeste Wirkungsdauer. Material Wirkungsdauer Pflanzliches Material 1 Tag Stein oder Kristall 12 Stunden Edelmetalle 1 Stunde Edelsteine 10 Minuten Adamant oder Mithral 1 Minute\n\nWird mit diesem Zauber erschaffenes Material als Materialkomponente für einen anderen Zauber verwendet, schlägt dieser Zauber fehl.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, erhöht sich die Kantenlänge des Würfels für jeden Grad über dem 5. um 1,5 Meter."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
   },
   {
     "id": "srd-2014-cure-wounds",
@@ -2416,7 +2449,8 @@
       "description": "Eine Kreatur, die du berührst, gewinnt Trefferpunkte in Höhe von 1W8 + deinem Attributsmodifikator im Zauberwirken zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 1. um 1W8."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
   },
   {
     "id": "srd-2014-dancing-lights",
@@ -2623,7 +2657,8 @@
       "description": "Ein gelber Lichtstrahl schießt aus deinem deutenden Finger, verdichtet sich an einem Punkt deiner Wahl in Reichweite zu einer leuchtenden Perle und verweilt dort für die Wirkungsdauer. Wenn der Zauber endet (entweder, weil deine Konzentration unterbrochen wird oder du ihn willentlich beendest), wird die Perle mit einem dumpfen Grollen zu einer lodernden Flammenexplosion, die sich um Ecken ausbreitet. Jede Kreatur in einer Sphäre mit einem Radius von sechs Metern um diesen Punkt muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur Feuerschaden in Höhe des gesamten angesammelten Schadens, anderenfalls die Hälfte.\n\nDer Grundschaden des Zaubers beträgt 12W6. Wenn die Perle am Ende deines Zugs noch nicht detoniert ist, erhöht sich der Schaden um 1W6.\n\nBerührt eine Kreatur die leuchtende Perle, bevor die Zeitspanne abgelaufen ist, muss die Kreatur einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, endet der Zauber sofort und die Perle explodiert. Bei einem erfolgreichen Rettungswurf kann die Kreatur die Perle bis zu zwölf Meter weit werfen. Trifft sie eine Kreatur oder einen soliden Gegenstand, endet der Zauber und die Perle explodiert.\n\nDas Feuer verursacht Schaden bei Objekten in der Umgebung und entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 8. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 7. um 1W6."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th."
   },
   {
     "id": "srd-2014-demiplane",
@@ -2910,7 +2945,8 @@
       "description": "Ein dünner grüner Strahl schießt von deinem ausgestreckten Finger auf ein Ziel in Reichweite, das du sehen kannst. Dabei kann es sich um eine Kreatur, einen Gegenstand oder ein Gebilde aus magischer Energie handeln, wie die Wand durch den Zauber Energiewand.\n\nEine Kreatur, die zum Ziel dieses Zaubers wird, muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 10W6+40 Energieschaden. Werden durch diesen Schaden die Trefferpunkte des Ziels auf 0 verringert, wird es aufgelöst.\n\nEine aufgelöste Kreatur und ihre gesamte Ausrüstung (mit Ausnahme von magischen Gegenständen) zerfällt zu feinem, grauen Staub. Sie kann nur durch die Zauber Wahre Auferstehung oder Wunsch wiedererweckt werden.\n\nEin maximal großer nichtmagischer Gegenstand oder ein Gebilde aus magischer Energie wird von diesem Zauber automatisch aufgelöst. Handelt es sich bei dem Ziel um einen mindestens riesigen Gegenstand oder ein Gebilde aus magischer Energie, löst dieser Zauber einen Würfel mit drei Metern Kantenlänge davon auf. Ein magischer Gegenstand ist von diesem Zauber nicht betroffen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 6. um 3W6."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th."
   },
   {
     "id": "srd-2014-dispel-evil-and-good",
@@ -2986,7 +3022,8 @@
       "description": "Wähle eine Kreatur, ein Objekt oder einen magischen Effekt in Reichweite. Jeder Zauber des 3. Grades oder niedriger, der auf dem Ziel liegt, endet. Führe für jeden Zauber des 4. Grades oder höher, der auf dem Ziel liegt, einen Attributswurf mit deinem Attribut zum Zauberwirken aus. Der SG ist gleich 10 + der Grad des Zaubers. Bei einem erfolgreichen Wurf endet der Zauber.",
       "higherLevel": "Wenn du diesen Zauber wirkst, indem du einen Zauberplatz des 4. Grades oder höher nutzt, beendest du automatisch die Effekte von Zaubern, die auf dem Ziel liegen und deren Grad gleich oder niedriger als der Grad des Zauberplatzes ist, den du gerade nutzt."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used."
   },
   {
     "id": "srd-2014-divination",
@@ -3118,7 +3155,8 @@
       "description": "Du versuchst, ein Tier in Reichweite zu betören, das du sehen kannst. Es muss einen Weisheitsret- tungswurf bestehen oder es wird für die Wirkungsdauer von dir bezaubert. Wenn du oder deine Verbündeten gegen das Tier kämpfen, ist es beim Rettungswurf im Vorteil.\n\nWährend das Tier bezaubert ist und ihr euch auf derselben Existenzebene aufhaltet, verfügst du über eine telepathische Verbindung zu ihm. Diese kannst du verwenden, um der Kreatur Befehle zu erteilen, solange du bei Bewusstsein bist (erfordert keine Aktion). Die Kreatur befolgt diese nach Kräften. Du kannst eine einfache, allgemeine Aktion angeben, wie „Greife diese Kreatur an“, „Lauf dorthin“ oder „Hole diesen Gegenstand“. Wenn die Kreatur den Befehl erfüllt hat und keine weiteren Anweisungen von dir erhält, verteidigt sie sich und versucht nach Kräften, am Leben zu bleiben.\n\nDu kannst eine Aktion verwenden, um vollständige und präzise Kontrolle über das Ziel zu erlangen. Bis zum Ende deines nächsten Zugs führt die Kreatur nur Aktionen deiner Wahl aus und tut nichts, was du ihr nicht erlaubst. Währenddessen kannst du die Kreatur auch reagieren lassen, allerdings musst du dafür deine eigene Reaktion verwenden.\n\nJedes Mal, wenn das Ziel Schaden erleidet, führt es einen neuen Weisheitsrettungswurf gegen den Zauber aus. Ist der Rettungswurf erfolgreich, endet der Zauber.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades nutzt, ändert sich die Wirkungsdauer zu: Konzentration, bis zu 10 Minuten. Bei einem Zauberplatz des 6. Grades beträgt die Wirkungsdauer: Konzentration, bis zu 1 Stunde. Bei einem Zauberplatz des 7. Grades beträgt die Wirkungsdauer: Konzentration, bis zu 8 Stunden."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell with a 9th level spell slot, the duration is concentration, up to 8 hours."
   },
   {
     "id": "srd-2014-dominate-monster",
@@ -3155,7 +3193,8 @@
       "description": "Du versuchst, eine Kreatur in Reichweite zu betören, die du sehen kannst. Sie muss einen Weisheitsrettungswurf bestehen oder sie wird für die Wirkungsdauer von dir bezaubert. Wenn du oder deine Verbündeten gegen die Kreatur kämpfen, ist sie beim Rettungswurf im Vorteil.\n\nWährend die Kreatur bezaubert ist und ihr euch auf derselben Existenzebene aufhaltet, verfügst du über eine telepathische Verbindung mit ihr. Diese kannst du verwenden, um der Kreatur Befehle zu erteilen, solange du bei Bewusstsein bist (erfordert keine Aktion). Die Kreatur befolgt diese nach Kräften. Du kannst eine einfache, allgemeine Aktion angeben, wie „Greife diese Kreatur an“, „Lauf dorthin“ oder „Hole diesen Gegenstand“. Wenn die Kreatur den Befehl erfüllt hat und keine weiteren Anweisungen von dir erhält, verteidigt sie sich und versucht nach Kräften, am Leben zu bleiben.\n\nDu kannst eine Aktion verwenden, um vollständige und präzise Kontrolle über das Ziel zu erlangen. Bis zum Ende deines nächsten Zugs führt die Kreatur nur Aktionen deiner Wahl aus und tut nichts, was du ihr nicht erlaubst. Währenddessen kannst du die Kreatur auch reagieren lassen, allerdings musst du dafür deine eigene Reaktion verwenden.\n\nJedes Mal, wenn das Ziel Schaden erleidet, führt es einen neuen Weisheitsrettungswurf gegen den Zauber aus. Ist der Rettungswurf erfolgreich, endet der Zauber.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 9. Grades nutzt, ändert sich die Wirkungsdauer zu: Konzentration, bis zu 8 Stunden."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours."
   },
   {
     "id": "srd-2014-dominate-person",
@@ -3190,7 +3229,8 @@
       "description": "Du versuchst, eine humanoide Kreatur in Reichweite zu betören, die du sehen kannst. Sie muss einen Weisheitsrettungswurf bestehen oder sie wird für die Wirkungsdauer von dir bezaubert. Wenn du oder deine Verbündeten gegen die Kreatur kämpfen, ist sie beim Rettungswurf im Vorteil.\n\nWährend das Ziel bezaubert ist und ihr euch auf derselben Existenzebene aufhaltet, verfügst du über eine telepathische Verbindung zu ihm. Diese kannst du verwenden, um der Kreatur Befehle zu erteilen, solange du bei Bewusstsein bist (erfordert keine Aktion). Die Kreatur befolgt diese nach Kräften. Du kannst eine einfache, allgemeine Aktion angeben, wie „Greife diese Kreatur an“, „Lauf dorthin“ oder „Hole diesen Gegenstand“. Wenn die Kreatur den Befehl erfüllt hat und keine weiteren Anweisungen von dir erhält, verteidigt sie sich und versucht nach Kräften, am Leben zu bleiben.\n\nDu kannst eine Aktion verwenden, um vollständige und präzise Kontrolle über das Ziel zu erlangen. Bis zum Ende deines nächsten Zugs führt die Kreatur nur Aktionen deiner Wahl aus und tut nichts, was du ihr nicht erlaubst. Währenddessen kannst du die Kreatur auch reagieren lassen, allerdings musst du dafür deine eigene Reaktion verwenden.\n\nJedes Mal, wenn das Ziel Schaden erleidet, führt es einen neuen Weisheitsrettungswurf gegen den Zauber aus. Ist der Rettungswurf erfolgreich, endet der Zauber.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades nutzt, ändert sich die Wirkungsdauer zu: Konzentration, bis zu 10 Minuten. Bei einem Zauberplatz des 7. Grades beträgt die Wirkungsdauer: Konzentration, bis zu 1 Stunde. Bei einem Zauberplatz des 8. Grades beträgt die Wirkungsdauer: Konzentration, bis zu 8 Stunden."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
   },
   {
     "id": "srd-2014-dream",
@@ -3375,7 +3415,8 @@
       "description": "Du berührst eine Kreatur und verleihst ihr eine magische Verbesserung. Wähle einen der folgenden Effekte aus. Das Ziel erhält diesen Effekt, bis der Zauber endet.\n\nAnmut der Katze: Das Ziel ist bei Geschicklich- keitswürfen im Vorteil. Es erleidet zudem keinen Schaden bei Stürzen aus maximal sechs Metern, solange es nicht kampfunfähig ist.\n\nAusdauer des Bären: Das Ziel ist bei Konstitutionswürfen im Vorteil. Es erhält zudem 2W6 temporäre Trefferpunkte, die verschwinden, wenn der Zauber endet.\n\nGerissenheit des Fuchses: Das Ziel ist bei Intelligenzwürfen im Vorteil.\n\nPracht des Adlers: Das Ziel ist bei Charismawürfen im Vorteil.\n\nStärke des Stiers: Das Ziel ist bei Stärkewürfen im Vorteil und seine Traglast verdoppelt sich.\n\nWeisheit der Eule: Das Ziel ist bei Weisheitswürfen im Vorteil.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, kannst du für jeden Grad über dem 2. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   },
   {
     "id": "srd-2014-enlarge-reduce",
@@ -3522,7 +3563,8 @@
       "description": "Du betrittst die Grenzregionen der Ätherebene − dort, wo sie sich mit deiner derzeitigen Ebene überschneidet. Du verbleibst während der Wirkungsdauer in der Äthergrenze, oder bis du den Zauber mit einer Aktion beendest. Währenddessen kannst du dich in jede Richtung bewegen. Wenn du dich nach oben oder unten bewegst, kostet jeder Meter einen zusätzlichen Meter an Bewegungsrate. Du kannst deine ursprüngliche Ebene sehen und hören. Sie ist jedoch monochrom und deine Sichtweite dort beträgt maximal 18 Meter.\n\nWährend du dich auf der Ätherebene befindest, kannst du nur Kreaturen beeinflussen oder von ihnen beeinflusst werden, die sich ebenfalls dort aufhalten. Kreaturen, die sich nicht auf der Ätherebene befinden, können dich nicht wahrnehmen oder mit dir interagieren, es sei denn, eine besondere Fähigkeit oder Magie erlaubt es ihnen.\n\nDu ignorierst alle Gegenstände und Effekte, die sich nicht auf der Ätherebene befinden, und kannst dich somit durch Gegenstände bewegen, die du auf deiner ursprünglichen Ebene wahrnimmst.\n\nWenn der Zauber endet, kehrst du sofort an der Stelle auf deine Ausgangsebene zurück, an der du dich gerade befindest. Befindest du dich am selben Ort wie ein solider Gegenstand oder eine Kreatur, wirst du augenblicklich zur nächsten freien Stelle bewegt und erleidest Energieschaden in Höhe der doppelten Anzahl an Metern, die du bewegt wurdest.\n\nDieser Zauber hat keinen Effekt, wenn du dich beim Wirken bereits auf der Ätherebene oder einer Ebene befindest, die nicht an sie angrenzt (beispielsweise auf den Äußeren Ebenen).",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 8. Grades oder höher nutzt, kannst du für jeden Grad über dem 7. bis zu drei bereitwillige Kreaturen (inklusive dir selbst) auswählen. Die Kreaturen müssen sich im Abstand von bis zu drei Metern von dir befinden, wenn du diesen Zauber wirkst."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
   },
   {
     "id": "srd-2014-expeditious-retreat",
@@ -3722,7 +3764,8 @@
       "description": "Du stärkst dich selbst mit einer nekromantischen Nachahmung des Lebens und erhältst für die Wirkungsdauer 1W4+4 temporäre Trefferpunkte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, erhältst du für jeden Grad über dem 1. zusätzliche 5 temporäre Trefferpunkte."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
   },
   {
     "id": "srd-2014-fear",
@@ -4137,7 +4180,8 @@
         "average": 28,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-flame-blade",
@@ -4175,7 +4219,8 @@
         "average": 10.5,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd."
   },
   {
     "id": "srd-2014-flame-strike",
@@ -4217,7 +4262,8 @@
         "average": 14,
         "type": "radiant"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
   },
   {
     "id": "srd-2014-flaming-sphere",
@@ -4257,7 +4303,8 @@
         "average": 7,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-flesh-to-stone",
@@ -4355,7 +4402,8 @@
       "description": "Du berührst eine bereitwillige Kreatur. Für die Wirkungsdauer erhält das Ziel eine Flugbewegungsrate von 18 Metern. Wenn der Zauber endet und das Ziel noch fliegt, fällt es herunter, sofern es den Sturz nicht verhindern kann.",
       "higherLevel": "Wenn du diesen Zauber wirkst, indem du einen Zauberplatz des 4. Grades oder höher nutzt, kannst du für jeden Grad über dem 3. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
   },
   {
     "id": "srd-2014-fog-cloud",
@@ -4392,7 +4440,8 @@
       "description": "Du erschaffst eine Sphäre aus Nebel mit einem Radius von sechs Metern an einem Ort in Reichweite. Die Sphäre breitet sich um Ecken aus und ihr Bereich ist komplett verschleiert. Sie bleibt für die Wirkungsdauer bestehen oder bis ein mäßiger oder stärkerer Wind (mindestens 16 Kilometer pro Stunde) den Nebel auflöst.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt der Radius des Nebels für jeden Grad über dem 1. um sechs Meter."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
   },
   {
     "id": "srd-2014-forbiddance",
@@ -4566,7 +4615,8 @@
         "average": 35,
         "type": "cold"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th."
   },
   {
     "id": "srd-2014-gaseous-form",
@@ -4680,7 +4730,8 @@
         "average": 27.5,
         "type": "psychic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
   },
   {
     "id": "srd-2014-gentle-repose",
@@ -4808,7 +4859,8 @@
       "description": "Eine unbewegliche, leicht schimmernde Barriere entsteht in einem Radius von drei Metern um dich herum und bleibt für die Wirkungsdauer bestehen.\n\nJeder Zauber des maximal 5. Grades, der außerhalb der Barriere gewirkt wird, hat keinen Effekt auf Kreaturen oder Gegenstände im Innern, selbst wenn der Zauber mit einem Zauberplatz eines höheren Grades gewirkt wird. Ein derartiger Zauber kann Kreaturen und Objekte innerhalb der Barriere zum Ziel haben, hat jedoch keinen Effekt auf sie. Gleichermaßen ist der Bereich innerhalb der Barriere von Flächeneffekten solcher Zauber ausgeschlossen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, blockiert die Barriere einen Grad höhere Zauber für jeden Zauberplatzgrad über dem 6. Grad."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th."
   },
   {
     "id": "srd-2014-glyph-of-warding",
@@ -4843,7 +4895,8 @@
       "description": "ausgelöst wird Wenn du diesen Zauber wirkst, zeichnest du eine Glyphe, die anderen Kreaturen Schaden zufügt. Dies geschieht entweder auf einer Oberfläche (wie einem Tisch, dem Fußboden oder einer Wand) oder in einem Gegenstand, der verschlossen werden kann (wie einem Buch, einer Schriftrolle oder einer Schatztruhe), um die Glyphe zu verbergen. Wählst du eine Oberfläche, kann die Glyphe einen Bereich mit einem Radius von maximal drei Metern abdecken. Wählst du einen Gegenstand, muss dieser an seinem Standort bleiben. Wird er mehr als drei Meter von dem Ort entfernt, an dem du den Zauber gewirkt hast, wird die Glyphe zerstört und der Zauber endet, ohne ausgelöst zu werden.\n\nDie Glyphe ist nahezu unsichtbar. Es ist ein erfolgreicher Intelligenzwurf (Nachforschungen) gegen deinen Zauberrettungswurf-SG nötig, um sie zu entdecken.\n\nWenn du den Zauber wirkst, entscheidest du, was die Glyphe auslöst. Glyphen auf Oberflächen werden meist dadurch ausgelöst, dass jemand sie berührt oder darauf steht, einen Gegenstand bewegt, der die Glyphe verdeckt, sich der Glyphe auf eine bestimmte Entfernung nähert oder mit dem Gegenstand interagiert, auf den die Glyphe geschrieben wurde. Glyphen auf Gegenständen werden meist dadurch ausgelöst, dass jemand den Gegenstand öffnet, sich ihm auf eine bestimmte Entfernung nähert oder die Glyphe sieht oder liest. Sobald die Glyphe ausgelöst wurde, endet der Zauber.\n\nDu kannst die Auslösebedingung des Zaubers weiter verfeinern, so dass der Zauber nur bei bestimmten Umständen oder körperlichen Eigenschaften (wie Größe oder Gewicht) sowie Kreaturentypen (etwa Aberrationen oder Drow) oder bei einer bestimmten Gesinnung ausgelöst wird. Du kannst auch Bedingungen für Kreaturen festlegen, die die Glyphe nicht auslösen, wenn sie beispielsweise ein bestimmtes Passwort aussprechen.\n\nBeim Zeichnen der Glyphe wählst du aus, ob es sich um explosive Runen oder eine Zauberglyphe handelt.\n\nExplosive Runen: Wird die Glyphe ausgelöst, explodiert ihre magische Energie in einer Sphäre mit einem Radius von sechs Metern mit der Glyphe im Zentrum. Die Sphäre breitet sich um Ecken aus. Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 5W8 Blitz-, Feuer-, Kälte-, Säure- oder Schallschaden (deine Wahl beim Wirken der Glyphe), anderenfalls die Hälfte.\n\nZauberglyphe: Du kannst einen vorbereiteten Zauber des maximal 3. Grades in der Glyphe speichern, den du beim Erschaffen der Glyphe wirkst. Der Zauber muss eine einzelne Kreatur oder einen Bereich zum Ziel haben. Wenn er auf diese Weise gewirkt wird, hat der gespeicherte Zauber keinen unmittelbaren Effekt. Erst wenn die Glyphe ausgelöst wird, wird der gespeicherte Zauber gewirkt. Ein gezielter Zauber hat die Kreatur zum Ziel, die die Glyphe auslöst. Wirkt der Zauber auf einen Bereich, ist dieser auf die Kreatur zentriert. Wenn der Zauber feindlich gesinnte Kreaturen beschwört oder schädliche Gegenstände oder Fallen erschafft, erscheinen sie so nahe wie möglich beim Eindringling und greifen ihn an. Erfordert der Zauber Konzentration, hält er bis zum Ende seiner Wirkungsdauer an.",
       "higherLevel": "Wenn du diesen Zauber wirkst, indem du einen Zauberplatz des 4. Grades oder höher nutzt, erhöht sich der Schaden der explosiven Runen für jeden Grad über dem 3. um 1W8. Wenn du eine Zauberglyphe erschaffst, kannst du Zauber bis zum selben Grad des Zauberplatzes speichern, den du für die Glyphe des Schutzes verwendet hast."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding."
   },
   {
     "id": "srd-2014-goodberry",
@@ -5107,7 +5160,8 @@
         "average": 14,
         "type": "radiant"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
   },
   {
     "id": "srd-2014-gust-of-wind",
@@ -5309,7 +5363,8 @@
       "description": "Wähle eine Kreatur in Reichweite, die du sehen kannst. Eine Welle positiver Energie durchströmt das Ziel und stellt 70 Trefferpunkte wieder her. Der Zauber beendet zudem die Zustände Blindheit und Taubheit, sowie alle Krankheiten, unter denen das Ziel leidet. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 6. um 10."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
   },
   {
     "id": "srd-2014-healing-word",
@@ -5344,7 +5399,8 @@
       "description": "Eine Kreatur deiner Wahl in Reichweite, die du sehen kannst, gewinnt Trefferpunkte in Höhe von 1W4 + deinem Zauberwirken-Attributsmodifikator zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 1. um 1W4."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
   },
   {
     "id": "srd-2014-heat-metal",
@@ -5383,7 +5439,8 @@
         "average": 9,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-hellish-rebuke",
@@ -5420,7 +5477,8 @@
         "average": 11,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
   },
   {
     "id": "srd-2014-heroes-feast",
@@ -5555,7 +5613,8 @@
       "description": "Wähle eine Kreatur in Reichweite, die du sehen kannst. Das Ziel muss einen Weisheitsrettungswurf ausführen oder es wird für die Wirkungsdauer gelähmt. Dieser Zauber wirkt nicht auf Untote. Am Ende jedes seiner Züge kann das Ziel einen weiteren Weisheitsrettungswurf ausführen. Bei einem Erfolg endet die Wirkung des Zaubers auf das Ziel.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, kannst du für jeden Grad über dem 5. eine zusätzliche Kreatur als Ziel wählen. Die Kreaturen müssen sich im Abstand von bis zu neun Metern voneinander befinden, wenn du sie als Ziel wählst."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a level 6 or higher location, you can target an additional creature for each level of location beyond the fifth. The creatures must be within 30 feet o f each other when you target them."
   },
   {
     "id": "srd-2014-hold-person",
@@ -5596,7 +5655,8 @@
       "description": "Wähle einen Humanoiden in Reichweite, den du sehen kannst. Das Ziel muss einen Weisheitsrettungswurf ausführen oder es wird für die Wirkungsdauer gelähmt. Am Ende jedes seiner Züge kann das Ziel einen weiteren Weisheitsrettungswurf ausführen. Bei einem Erfolg endet die Wirkung des Zaubers auf das Ziel.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, kannst du für jeden Grad über dem 2. einen zusätzlichen Humanoiden als Ziel wählen. Deine humanoiden Ziele, die du festhältst, dürfen nicht mehr als neun Meter voneinander entfernt sein."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
   },
   {
     "id": "srd-2014-holy-aura",
@@ -5662,7 +5722,8 @@
         "dice": "1W6",
         "average": 3.5
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
   },
   {
     "id": "srd-2014-hypnotic-pattern",
@@ -5744,7 +5805,8 @@
         "average": 14,
         "type": "cold"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th."
   },
   {
     "id": "srd-2014-identify",
@@ -5918,7 +5980,8 @@
         "average": 16.5,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
   },
   {
     "id": "srd-2014-insect-plague",
@@ -5959,7 +6022,8 @@
         "average": 22,
         "type": "piercing"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th."
   },
   {
     "id": "srd-2014-instant-summons",
@@ -6026,7 +6090,8 @@
       "description": "Eine Kreatur, die du berührst, wird unsichtbar, bis der Zauber endet. Alles, was das Ziel trägt, ist unsichtbar, solange es an der Person bleibt. Der Zauber endet, sobald das Ziel einen Angriff ausführt oder selbst einen Zauber wirkt.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, kannst du für jeden Grad über dem 2. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
   },
   {
     "id": "srd-2014-irresistible-dance",
@@ -6307,7 +6372,8 @@
         "average": 28,
         "type": "lightning"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-locate-animals-or-plants",
@@ -6458,7 +6524,8 @@
       "description": "Du berührst eine Kreatur. Während der Wirkungsdauer steigt die Bewegungsrate des Ziels um drei Meter.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, kannst du für jeden Grad über dem 1. eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each spell slot above 1st."
   },
   {
     "id": "srd-2014-mage-armor",
@@ -6563,7 +6630,8 @@
       "description": "Du erschaffst einen sechs Meter hohen Zylinder aus magischer Energie mit einem Radius von drei Metern, der in Reichweite auf einen Punkt auf dem Boden zentriert ist, den du sehen kannst. Leuchtende Runen erscheinen dort, wo der Zylinder den Boden oder eine andere Oberfläche überschneidet.\n\nWähle einen oder mehrere der folgenden Kreaturentypen: celestische Wesen, Elementare, Feenwesen, Unholde oder Untote. Der Kreis beeinflusst eine Kreatur des gewählten Typs auf die folgende Art: • Die Kreatur kann den Zylinder nicht freiwillig auf nichtmagische Weise betreten. Versucht die Kreatur, Teleportation oder Ebenenreisen zu verwenden, muss sie zuerst einen Charismarettungswurf bestehen. • Die Kreatur ist bei Angriffswürfen gegen Ziele innerhalb des Zylinders im Nachteil. • Ziele im Zylinder können nicht von der Kreatur besessen, bezaubert oder verängstigt werden.\n\nWenn du diesen Zauber wirkst, kannst du seine Wirkung umkehren, so dass Kreaturen des ausgewählten Typs den Zylinder nicht verlassen können und Ziele außerhalb des Zylinders geschützt sind.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt die Wirkungsdauer für jeden Grad über dem 3. um eine Stunde."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
   },
   {
     "id": "srd-2014-magic-jar",
@@ -6626,7 +6694,8 @@
       "description": "Du erschaffst drei leuchtende Wurfpfeile aus magischer Energie. Jeder Pfeil trifft eine Kreatur deiner Wahl in Reichweite, die du sehen kannst. Ein Pfeil fügt seinem Ziel 1W4+1 Energieschaden zu. Die Wurfpfeile treffen alle gleichzeitig und du kannst bestimmen, ob sie dieselbe oder verschiedene Kreaturen treffen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, wird pro Grad über dem 1. ein weiterer Pfeil erschaffen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
   },
   {
     "id": "srd-2014-magic-mouth",
@@ -6693,7 +6762,8 @@
       "description": "Du berührst eine nichtmagische Waffe. Während der Wirkungsdauer gilt diese Waffe als magisch mit einem Bonus von +1 bei Angriffs- und Schadenswürfen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Bonus auf +2. Mit einem Zauberplatz des 6. Grades oder höher steigt der Bonus auf +3."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
   },
   {
     "id": "srd-2014-magnificent-mansion",
@@ -6762,7 +6832,8 @@
       "description": "Du erschaffst ein Abbild eines Objekts, einer Kreatur oder eines anderen sichtbaren Phänomens, das nicht größer als ein Würfel mit sechs Metern Kantenlänge sein darf. Das Abbild erscheint an einem Punkt in Reichweite und bleibt während der Wirkungsdauer bestehen. Es ist von der Realität nicht zu unterscheiden und simuliert auch die dazu passenden Geräusche, Gerüche und Temperatur. Da die Hitze oder Kälte eine Illusion ist, verursacht sie keinen Schaden. Du kannst keine Geräusche erzeugen, die laut genug sind, um Schallschaden zu verursachen oder eine Kreatur zu betäuben, und keinen Geruch, der Übelkeit auslösen könnte − wie den Gestank eines Troglodyten.\n\nSolange du dich in der Reichweite der Illusion befindest, kannst du mit deiner Aktion das Abbild an einen anderen Ort deiner Wahl in Reichweite bewegen. Dabei kannst du das Bild so verändern, dass seine Bewegung natürlich erscheint. Beispiel: Wenn du das Abbild einer Kreatur erstellst und bewegst, kannst du es so verändern, dass es zu laufen scheint. Außerdem kann die Illusion verschiedene Geräusche machen oder sogar ein Gespräch führen.\n\nPhysische Interaktionen mit dem Abbild enttarnen es als Illusion, da Dinge es einfach durchdringen können. Eine Kreatur, die ihre Aktion verwendet, um das Abbild zu untersuchen, kann einen Intelligenzwurf (Nachforschungen) gegen deinen Zauberrettungswurf-SG ausführen. Bei einem Erfolg erkennt eine Kreatur das Abbild als Illusion und es wird für sie durchscheinend. Die anderen sensorischen Eigenschaften werden ebenfalls abgeschwächt.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, bleibt der Zauber bestehen, bis er gebannt wird und erfordert keine Konzentration deinerseits."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
   },
   {
     "id": "srd-2014-mass-cure-wounds",
@@ -6797,7 +6868,8 @@
       "description": "Eine Woge aus heilender Energie geht von einem Punkt deiner Wahl in Reichweite aus. Wähle bis zu sechs Kreaturen innerhalb einer Sphäre mit einem Radius von neun Metern aus, die um den Zielort zentriert ist. Jedes Ziel gewinnt Trefferpunkte in Höhe von 3W8 + deinem Zauberwirken-Attributsmodifikator zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 5. um 1W8."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th."
   },
   {
     "id": "srd-2014-mass-heal",
@@ -6859,7 +6931,8 @@
       "description": "Du sprichst magische Worte der Heilung und bis zu sechs Kreaturen deiner Wahl in Reichweite, die du sehen kannst, erhalten Trefferpunkte in Höhe von 1W4 + deinem Zauberwirken-Attributsmodifikator zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 3. um 1W4."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-mass-suggestion",
@@ -6895,7 +6968,8 @@
       "description": "Du schlägst eine Vorgehensweise vor (auf einen oder zwei Sätze beschränkt) und beeinflusst auf magische Weise bis zu zwölf Kreaturen deiner Wahl in Reichweite, die du sehen kannst und die dich hören und verstehen können. Kreaturen, die nicht bezaubert werden können, sind gegen diesen Effekt immun. Die Einflüsterung muss so formuliert sein, dass die vorgeschlagene Vorgehensweise angemessen erscheint. Aufforderungen, sich selbst zu erstechen, sich in einen Speer zu stürzen, sich anzuzünden oder auf andere Weise zu verletzen, heben die Wirkung des Zaubers auf.\n\nJedes Ziel muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, führt es die von dir beschriebene Vorgehensweise nach Kräften aus. Die vorgeschlagene Vorgehensweise kann während der gesamten Wirkungsdauer fortgesetzt werden. Wenn die vorgeschlagene Aktivität in kürzerer Zeit abgeschlossen werden kann, endet der Zauber, sobald das Ziel die Aktivität beendet hat.\n\nDu kannst auch Bedingungen festlegen, die während der Wirkungsdauer eine besondere Handlung auslösen. Beispielsweise könntest du vorschlagen, dass eine Gruppe Soldaten dem ersten Bettler, den sie treffen, all ihr Geld geben. Wird die Bedingung vor Ablauf der Wirkungsdauer nicht erfüllt, wird die Handlung nicht ausgeführt.\n\nFügt einer deiner Begleiter oder du einer Kreatur Schaden zu, die von diesem Zauber betroffen ist, endet der Zauber für diese Kreatur.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades nutzt, beträgt die Wirkungsdauer zehn Tage. Bei einem Zauberplatz des 8. Grades beträgt die Wirkungsdauer 30 Tage. Bei einem Zauberplatz des 9. Grades beträgt die Wirkungsdauer ein Jahr und einen Tag."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day."
   },
   {
     "id": "srd-2014-maze",
@@ -7316,7 +7390,8 @@
       "description": "Du versuchst, die Erinnerungen einer anderen Kreatur umzuformen. Eine Kreatur, die du sehen kannst, muss einen Weisheitsrettungswurf ausführen. Kämpfst du gegen die Kreatur, ist sie bei ihrem Rettungswurf im Vorteil. Scheitert der Wurf, ist das Ziel für die Wirkungsdauer von dir bezaubert. Das bezaubert Ziel ist kampfunfähig und sich seiner Umgebung nicht bewusst, es kann dich jedoch hören. Erleidet es Schaden oder wird es von einem anderen Zauber betroffen, endet dieser Zauber und die Erinnerungen des Ziels werden nicht verändert.\n\nWährend diese Bezauberung anhält, kannst du die Erinnerungen des Ziels an ein Ereignis der letzten 24 Stunden verändern, das maximal zehn Minuten andauerte. Du kannst dauerhaft sämtliche Erinnerungen an das Ereignis löschen, dem Ziel ermöglichen, sich mit absoluter Klarheit und Detailtreue an das Ereignis zu erinnern, seine Erinnerungen an die Details des Ereignisses verändern oder eine andere Erinnerung erschaffen.\n\nDu musst mit dem Ziel sprechen und beschreiben, wie seine Erinnerungen beeinflusst werden. Es muss deine Sprache sprechen, damit die veränderten Erinnerungen Fuß fassen können. Sein Verstand füllt etwaige Lücken in den von dir beschriebenen Details. Endet der Zauber, bevor du die veränderten Erinnerungen beschrieben hast, werden die Erinnerungen der Kreatur nicht modifiziert. Anderenfalls setzen sich die neuen Erinnerungen mit dem Ende des Zaubers fest.\n\nVeränderte Erinnerungen beeinflussen nicht unbedingt, wie sich eine Kreatur verhält − insbesondere, wenn die Erinnerungen den natürlichen Neigungen, der Gesinnung oder dem Glauben der Kreatur widersprechen. Eine unlogische veränderte Erinnerung, etwa daran, wie gerne die Kreatur in Säure gebadet hat, wird als Alptraum abgetan. Der SL kann eine veränderte Erinnerung als zu unsinnig erklären, um die Kreatur signifikant zu beeinflussen.\n\nDie Zauber Fluch brechen oder Vollständige Genesung stellen die wahren Erinnerungen der Kreatur wieder her.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, kannst du die Erinnerungen des Ziels an ein Ereignis verändern, das bis zu sieben Tage (6. Grad), 30 Tage (7. Grad) oder ein Jahr (8. Grad) zurückliegt oder an einem beliebigen Zeitpunkt in der Vergangenheit stattgefunden hat (9. Grad)."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "If you cast this spell using a spell slot of 6th level or higher, you can alter the target's memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time in the creature's past (9th level)."
   },
   {
     "id": "srd-2014-moonbeam",
@@ -7353,7 +7428,8 @@
         "average": 11,
         "type": "radiant"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1dl0 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-move-earth",
@@ -7521,7 +7597,8 @@
         "average": 22,
         "type": "psychic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
   },
   {
     "id": "srd-2014-phantom-steed",
@@ -7619,7 +7696,8 @@
       "description": "Mit diesem Zauber versuchst du, ein celestisches Wesen, einen Elementar, ein Feenwesen oder einen Unhold in deinen Dienst zu verpflichten. Die Kreatur muss sich für die gesamte Wirkungsdauer in Reichweite befinden. (Normalerweise wird die Kreatur zuerst in einen umgekehrten Schutzkreis beschworen, wo sie gefangen bleibt, während du den Zauber wirkst.) Nach Wirken des Zaubers muss das Ziel einen Charismarettungswurf ausführen. Scheitert der Wurf, muss es dir für die Wirkungsdauer dienen. Wurde die Kreatur durch einen anderen Zauber beschworen oder erschaffen, verlängert sich dessen Wirkungsdauer auf die Wirkungsdauer von Bindung der Ebenen.\n\nEine verpflichtete Kreatur muss deine Befehle nach Kräften befolgen. Du kannst der Kreatur befehlen, dich auf ein Abenteuer zu begleiten, einen Ort zu bewachen oder eine Botschaft zu übermitteln. Die Kreatur befolgt deine Anweisungen wortwörtlich. Ist sie dir jedoch feindlich gesinnt, versucht sie, deine Worte zu verdrehen, um ihre eigenen Ziele zu verfolgen. Führt die Kreatur deine Anweisungen vollständig aus, bevor der Zauber endet, kehrt sie zu dir zurück und erstattet dir Bericht, sofern du dich auf derselben Existenzebene befindest. Anderenfalls kehrt sie an den Ort zurück, an dem du sie verpflichtet hast, und verbleibt dort, bis der Zauber endet.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz eines höheren Grades verwendest, verlängert sich die Wirkungsdauer: zehn Tage bei einem Zauberplatz des 6. Grades, 30 Tage bei einem des 7. Grades, 180 Tage bei einem des 8. Grades und ein Jahr und einen Tag bei einem des 9. Grades."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
   },
   {
     "id": "srd-2014-plane-shift",
@@ -7873,7 +7951,8 @@
       "description": "Bis zu sechs Kreaturen deiner Wahl in Reichweite, die du sehen kannst, erhalten jeweils Trefferpunkte in Höhe von 2W8 + deinem Zauberwirken- Attributsmodifikator zurück. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt die Heilung für jeden Grad über dem 2. um 1W8."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
   },
   {
     "id": "srd-2014-prestidigitation",
@@ -8056,7 +8135,8 @@
       "description": "Du sicherst einen Bereich in Reichweite auf magische Weise. Dabei handelt es sich um einen Würfel mit einer Kantenlänge zwischen 1,5 und 30 Metern. Der Zauber bleibt für die Wirkungsdauer bestehen oder bis du ihn als Aktion beendest.\n\nBeim Wirken des Zaubers entscheidest du, welche Sicherheit er bietet. Du kannst beliebig viele der folgenden Eigenschaften auswählen: • Geräusche können die Barriere am Rand des geschützten Bereichs nicht durchdringen. • Die Barriere des geschützten Bereichs erscheint dunkel und neblig und verhindert jegliche Sicht (auch Dunkelsicht). • Sensoren, die von Erkenntniszaubern erschaffen werden, können nicht im geschützten Bereich erscheinen oder den Rand der Barriere durchdringen. • Kreaturen in dem Bereich können nicht das Ziel von Erkenntniszaubern sein. • Nichts kann in den bewachten Bereich hinein- oder aus ihm herausteleportieren. • Ebenenreisen werden innerhalb des geschützten Bereichs blockiert.\n\nWirkst du diesen Zauber ein Jahr lang jeden Tag am selben Ort, wird der Effekt dauerhaft.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, kannst du für jeden Grad über dem 4. die Größe des Würfels um 30 Meter erweitern. Somit könntest du mit einem Zauberplatz des 5. Grades einen Würfel mit 60 Metern Kantenlänge schützen."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level."
   },
   {
     "id": "srd-2014-produce-flame",
@@ -8802,7 +8882,8 @@
         "average": 7,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd."
   },
   {
     "id": "srd-2014-scrying",
@@ -9076,7 +9157,8 @@
         "average": 13.5,
         "type": "thunder"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a 3 or higher level spell slot, the damage of the spell increases by 1d8 for each level of higher spell slot 2."
   },
   {
     "id": "srd-2014-shield",
@@ -9341,7 +9423,8 @@
       "description": "Dieser Zauber versetzt Kreaturen in einen magischen Schlaf. Würfle mit fünf W8. Die Summe gibt an, auf wie viele Trefferpunkte an Kreaturen dieser Zauber wirken kann. Kreaturen im Abstand von bis zu sechs Metern um einen Punkt deiner Wahl in Reichweite sind in aufsteigender Reihenfolge ihrer aktuellen Trefferpunkte betroffen (bewusstlose Kreaturen werden ignoriert).\n\nBeginnend mit der Kreatur mit den niedrigsten aktuellen Trefferpunkten verliert jede Kreatur, auf die der Zauber wirkt, das Bewusstsein. Dieser Zustand hält an, bis die Wirkungsdauer endet, der Schlafende Schaden erleidet oder jemand den Schlafenden mit einer Aktion aufweckt. Subtrahiere die Trefferpunkte jeder Kreatur von der Summe, bevor du zur Kreatur mit den nächstniedrigsten Trefferpunkten übergehst. Die Trefferpunkte einer Kreatur müssen kleiner oder gleich der verbleibenden Summe sein, damit der Zauber auf die Kreatur wirkt.\n\nDer Zauber wirkt nicht auf Untote und Kreaturen, die nicht bezaubert werden können.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, würfle für jeden Grad über dem 1. zusätzlich mit zwei W8."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
   },
   {
     "id": "srd-2014-sleet-storm",
@@ -9655,7 +9738,8 @@
         "average": 13.5,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-spiritual-weapon",
@@ -9686,7 +9770,8 @@
       "description": "Du erzeugst eine schwebende Spektralwaffe in Reichweite, die während der Wirkungsdauer oder bis du diesen Zauber erneut wirkst bestehen bleibt. Wenn du den Zauber wirkst, kannst du einen Nahkampf-Zauberangriff gegen eine Kreatur im Abstand von bis zu 1,5 Metern von der Waffe ausführen. Bei einem Treffer erleidet das Ziel Energieschaden in Höhe von 1W8 + deinem Zauberwirken-Attributsmodifikator.\n\nAls Bonusaktion kannst du die Waffe in deinem Zug um bis zu sechs Meter bewegen und einen weiteren Angriff gegen eine Kreatur im Abstand von bis zu 1,5 Metern von ihr ausführen.\n\nDie Waffe kann eine Form deiner Wahl annehmen. Kleriker von Gottheiten, die mit einer bestimmten Waffe assoziiert sind − wie St. Cuthbert mit seinem Streitkolben und Thor mit seinem Hammer −, lassen den Effekt des Zaubers wie diese Waffe aussehen.",
       "higherLevel": "Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, erhöht sich der Schaden alle zwei Grade über dem 2. um 1W8."
     },
-    "damage": []
+    "damage": [],
+    "higherLevel": "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd."
   },
   {
     "id": "srd-2014-stinking-cloud",
@@ -10216,7 +10301,8 @@
         "average": 9,
         "type": "thunder"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
   },
   {
     "id": "srd-2014-time-stop",
@@ -10594,7 +10680,8 @@
         "average": 10.5,
         "type": "necrotic"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
   },
   {
     "id": "srd-2014-vicious-mockery",
@@ -10671,7 +10758,8 @@
         "average": 22.5,
         "type": "fire"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
   },
   {
     "id": "srd-2014-wall-of-force",
@@ -10743,7 +10831,8 @@
         "average": 17.5,
         "type": "cold"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th."
   },
   {
     "id": "srd-2014-wall-of-stone",
@@ -10819,7 +10908,8 @@
         "average": 31.5,
         "type": "slashing"
       }
-    ]
+    ],
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th."
   },
   {
     "id": "srd-2014-warding-bond",
