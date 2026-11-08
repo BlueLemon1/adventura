@@ -58,8 +58,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n  Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
-    "higherLevel": "",
+    "description": "You create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.",
+    "higherLevel": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "localized": {
       "name": "Säurespritzer",
       "school": "Hervorrufung",
@@ -1518,8 +1518,8 @@
       "warlock",
       "wizard"
     ],
-    "description": "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.\n  Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
-    "higherLevel": "",
+    "description": "Channeling the chill of the grave, make a melee spell attack against a target within reach. On a hit, the target takes 1d10 Necrotic damage, and it can't regain Hit Points until the end of your next turn.",
+    "higherLevel": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
     "localized": {
       "name": "Kalte Hand",
       "school": "Nekromantie",
@@ -2673,8 +2673,8 @@
       "paladin",
       "ranger"
     ],
-    "description": "A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier. Using a Higher-Level Spell Slot. The healing increases by 2d8 for each spell slot level above 1.",
-    "higherLevel": "",
+    "description": "A creature you touch regains a number of Hit Points equal to 2d8 plus your spellcasting ability modifier.",
+    "higherLevel": "The healing increases by 2d8 for each spell slot level above 1.",
     "localized": {
       "name": "Wunden heilen",
       "school": "Bannmagie",
@@ -3604,8 +3604,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one.   Using a Higher-Level Spell Slot. The damage increases by 1d6 for each spell slot level above 2.",
-    "higherLevel": "",
+    "description": "You touch one willing creature, and choose Acid, Cold, Fire, Lightning, or Poison. Until the spell ends, the target can take a Magic action to exhale a 15-foot Cone. Each creature in that area makes a Dexterity saving throw, taking 3d6 damage of the chosen type on a failed save or half as much damage on a successful one.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 2.",
     "localized": {
       "name": "Drachenodem",
       "school": "Verwandlung",
@@ -3758,8 +3758,8 @@
     "classes": [
       "warlock"
     ],
-    "description": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage.\n  Cantrip Upgrade. The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
-    "higherLevel": "",
+    "description": "You hurl a beam of crackling energy. Make a ranged spell attack against one creature or object in range. On a hit, the target takes 1d10 Force damage.",
+    "higherLevel": "The spell creates two beams at level 5, three beams at level 11, and four beams at level 17. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.",
     "localized": {
       "name": "Schauriger Strahl",
       "school": "Hervorrufung",
@@ -4562,8 +4562,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.\n  Cantrip Upgrade. The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
-    "higherLevel": "",
+    "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.",
+    "higherLevel": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
     "localized": {
       "name": "Feuerpfeil",
       "school": "Hervorrufung",
@@ -8603,8 +8603,8 @@
       "warlock",
       "wizard"
     ],
-    "description": "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.\n  Cantrip Upgrade. The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).",
-    "higherLevel": "",
+    "description": "You spray toxic mist at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d12 Poison damage.",
+    "higherLevel": "The damage increases by 1d12 when you reach levels 5 (2d12), 11 (3d12), and 17 (4d12).",
     "localized": {
       "name": "Gift versprühen",
       "school": "Nekromantie",
@@ -8799,8 +8799,8 @@
       "cleric",
       "paladin"
     ],
-    "description": "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain 2d8 Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest.   Using a Higher-Level Spell Slot. The healing increases by 1d8 for each spell slot level above 2.",
-    "higherLevel": "",
+    "description": "Up to five creatures of your choice who remain within range for the spell's entire casting gain the benefits of a Short Rest and also regain 2d8 Hit Points. A creature can't be affected by this spell again until that creature finishes a Long Rest.",
+    "higherLevel": "The healing increases by 1d8 for each spell slot level above 2.",
     "localized": {
       "name": "Gebet der Heilung",
       "school": "Bannmagie",
@@ -9024,8 +9024,8 @@
     "classes": [
       "druid"
     ],
-    "description": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.\n  Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.\n  Until the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Flammen erzeugen",
       "school": "Beschwörung",
@@ -9355,8 +9355,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 Cold damage, and its Speed is reduced by 10 feet until the start of your next turn.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Kältestrahl",
       "school": "Hervorrufung",
@@ -9431,8 +9431,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn. Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1.",
-    "higherLevel": "",
+    "description": "You shoot a greenish ray at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 2d8 Poison damage and has the Poisoned condition until the end of your next turn.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 1.",
     "localized": {
       "name": "Strahl der Übelkeit",
       "school": "Nekromantie",
@@ -9746,8 +9746,8 @@
     "classes": [
       "cleric"
     ],
-    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 Radiant damage. The target gains no benefit from Half Cover or Three-Quarters Cover for this save.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Heilige Flamme",
       "school": "Hervorrufung",
@@ -10142,8 +10142,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "A loud noise erupts from a point of your choice within range. Each creature in a 10-foot-radius Sphere centered there makes a Constitution saving throw, taking 3d8 Thunder damage on a failed save or half as much damage on a successful one. A Construct has Disadvantage on the save.\n  A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area. Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 2.",
-    "higherLevel": "",
+    "description": "A loud noise erupts from a point of your choice within range. Each creature in a 10-foot-radius Sphere centered there makes a Constitution saving throw, taking 3d8 Thunder damage on a failed save or half as much damage on a successful one. A Construct has Disadvantage on the save.\n  A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 2.",
     "localized": {
       "name": "Zerbersten",
       "school": "Hervorrufung",
@@ -10250,8 +10250,8 @@
     "classes": [
       "druid"
     ],
-    "description": "A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).\n  The spell ends early if you cast it again or if you let go of the weapon.\n  Cantrip Upgrade. The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).",
-    "higherLevel": "",
+    "description": "A Club or Quarterstaff you are holding is imbued with nature's power. For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon's damage die becomes a d8. If the attack deals damage, it can be Force damage or the weapon's normal damage type (your choice).\n  The spell ends early if you cast it again or if you let go of the weapon.",
+    "higherLevel": "The damage die changes when you reach levels 5 (d10), 11 (d12), and 17 (2d6).",
     "localized": {
       "name": "Shillelagh",
       "school": "Verwandlung",
@@ -10321,8 +10321,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "Lightning springs from you to a creature that you try to touch. Make a melee spell attack against the target. On a hit, the target takes 1d8 Lightning damage, and it can't make Opportunity Attacks until the start of its next turn.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Schockgriff",
       "school": "Hervorrufung",
@@ -10572,8 +10572,8 @@
     "classes": [
       "sorcerer"
     ],
-    "description": "You cast sorcerous energy at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.\n  If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "You cast sorcerous energy at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 damage of a type you choose: Acid, Cold, Fire, Lightning, Poison, Psychic, or Thunder.\n  If you roll an 8 on a d8 for this spell, you can roll another d8, and add it to the damage. When you cast this spell, the maximum number of these d8s you can add to the spell's damage equals your spellcasting ability modifier.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Explosion der Zauberei",
       "school": "Hervorrufung",
@@ -10610,8 +10610,8 @@
       "cleric",
       "druid"
     ],
-    "description": "Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.\n  Cantrip Upgrade. The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet).",
-    "higherLevel": "",
+    "description": "Choose a creature within range that has 0 Hit Points and isn't dead. The creature becomes Stable.",
+    "higherLevel": "The range doubles when you reach levels 5 (30 feet), 11 (60 feet), and 17 (120 feet).",
     "localized": {
       "name": "Verschonung der Sterbenden",
       "school": "Nekromantie",
@@ -10905,8 +10905,8 @@
       "bard",
       "druid"
     ],
-    "description": "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.\n  Cantrip Upgrade. The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
-    "higherLevel": "",
+    "description": "You launch a mote of light at one creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 Radiant damage, and until the end of your next turn, it emits Dim Light in a 10-foot radius and can't benefit from the Invisible condition.",
+    "higherLevel": "The damage increases by 1d8 when you reach levels 5 (2d8), 11 (3d8), and 17 (4d8).",
     "localized": {
       "name": "Sternenfunke",
       "school": "Hervorrufung",
@@ -11497,8 +11497,8 @@
       "sorcerer",
       "wizard"
     ],
-    "description": "You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.\n  In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.   Using a Higher-Level Spell Slot. The damage increases by 1d8 for each spell slot level above 1.",
-    "higherLevel": "",
+    "description": "You unleash a wave of thunderous energy. Each creature in a 15-foot Cube originating from you makes a Constitution saving throw. On a failed save, a creature takes 2d8 Thunder damage and is pushed 10 feet away from you. On a successful save, a creature takes half as much damage only.\n  In addition, unsecured objects that are entirely within the Cube are pushed 10 feet away from you, and a thunderous boom is audible within 300 feet.",
+    "higherLevel": "The damage increases by 1d8 for each spell slot level above 1.",
     "localized": {
       "name": "Donnerwoge",
       "school": "Hervorrufung",
@@ -11825,8 +11825,8 @@
       "warlock",
       "wizard"
     ],
-    "description": "Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).\n  Cantrip Upgrade. Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).",
-    "higherLevel": "",
+    "description": "Guided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice).",
+    "higherLevel": "Whether you deal Radiant damage or the weapon's normal damage type, the attack deals extra Radiant damage when you reach levels 5 (1d6), 11 (2d6), and 17 (3d6).",
     "localized": {
       "name": "Zielsicherer Schlag",
       "school": "Erkenntnismagie",
@@ -11981,8 +11981,8 @@
     "classes": [
       "bard"
     ],
-    "description": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.\n  Cantrip Upgrade. The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
-    "higherLevel": "",
+    "description": "You unleash a string of insults laced with subtle enchantments at one creature you can see or hear within range. The target must succeed on a Wisdom saving throw or take 1d6 Psychic damage and have Disadvantage on the next attack roll it makes before the end of its next turn.",
+    "higherLevel": "The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).",
     "localized": {
       "name": "Gehässiger Spott",
       "school": "Verzauberung",
