@@ -73,7 +73,7 @@ export function SpellbookPage({
   })
   const spellcastingStats = getSpellcastingStats(character)
   const selectedSpellcastingAbility =
-    character.spellcastingAbility ?? getDefaultSpellcastingAbility(character) ?? 'int'
+    character.spellcastingAbility ?? getDefaultSpellcastingAbility(character)
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
     const spell = spellCatalog.find((entry) => entry.id === feature.spellbookSpellId)
     const localizedSpell = language === 'de' ? spell?.localized : undefined
@@ -251,6 +251,9 @@ export function SpellbookPage({
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
+                    {!selectedSpellcastingAbility && (
+                      <SelectItem value="none">{t('Attribut wählen')}</SelectItem>
+                    )}
                     {ABILITIES.map((ability) => (
                       <SelectItem key={ability} value={ability}>
                         {t(
