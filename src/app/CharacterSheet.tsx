@@ -97,7 +97,13 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
               type="number"
               min="0"
               value={character.hitPointsCurrent ?? 0}
-              onChange={(e) => onUpdate({ hitPointsCurrent: Math.max(0, Number(e.target.value)) })}
+              onChange={(e) => {
+                const next = Math.max(0, Number(e.target.value))
+                onUpdate({
+                  hitPointsCurrent: next,
+                  ...(next > 0 ? { deathSaves: { successes: 0, failures: 0 } } : {}),
+                })
+              }}
             />
             <b>/</b>
             <input
@@ -236,6 +242,81 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
             )
           })}
         </div>
+      </section>
+      <section className="panel session-status-panel">
+        <PanelHeader title={t('Kampfstatus')} description={t('Schnellzugriff auf wichtige Werte während der Runde.')} />
+        <div className="form-grid">
+          <label className="field-label">
+            {t('Temporäre Trefferpunkte')}
+            <input
+              type="number"
+              min="0"
+              value={character.temporaryHitPoints ?? 0}
+              onChange={(event) =>
+                onUpdate({ temporaryHitPoints: Math.max(0, Number(event.target.value) || 0) })
+              }
+            />
+          </label>
+          <label className="session-toggle">
+            <input
+              type="checkbox"
+              checked={character.inspiration ?? false}
+              onChange={(event) => onUpdate({ inspiration: event.target.checked })}
+            />
+            <span>
+              <strong>{t('Inspiration')}</strong>
+              <small>{t('Verfügbar – beim Einsatz deaktivieren.')}</small>
+            </span>
+          </label>
+        </div>
+        {(character.hitPointsCurrent ?? 0) <= 0 && (
+          <div className="death-save-tracker">
+            <div>
+              <strong>{t('Todesrettungswürfe')}</strong>
+              <small>{t('Bei 3 Erfolgen bist du stabilisiert; bei 3 Fehlschlägen stirbst du.')}</small>
+            </div>
+            {(
+              [
+                { key: 'successes', label: 'Erfolge' },
+                { key: 'failures', label: 'Fehlschläge' },
+              ] as const
+            ).map(({ key, label }) => {
+              const deathSaves = character.deathSaves ?? { successes: 0, failures: 0 }
+              return (
+                <div className="death-save-row" key={key}>
+                  <span>{t(label)}</span>
+                  <div className="death-save-pips">
+                    {[0, 1, 2].map((index) => (
+                      <label key={index}>
+                        <input
+                          type="checkbox"
+                          checked={index < deathSaves[key]}
+                          aria-label={t(label) + ' ' + (index + 1)}
+                          onChange={(event) =>
+                            onUpdate({
+                              deathSaves: {
+                                ...deathSaves,
+                                [key]: event.target.checked
+                                  ? Math.max(deathSaves[key], index + 1)
+                                  : Math.min(deathSaves[key], index),
+                              },
+                            })
+                          }
+                        />
+                      </label>
+                    ))}
+                  </div>
+                </div>
+              )
+            })}
+            {(character.deathSaves?.successes ?? 0) >= 3 && (
+              <strong className="death-save-result">{t('Stabilisiert')}</strong>
+            )}
+            {(character.deathSaves?.failures ?? 0) >= 3 && (
+              <strong className="death-save-result is-failed">{t('Tödliche Fehlschläge')}</strong>
+            )}
+          </div>
+        )}
       </section>
       <section className="panel">
         <PanelHeader title={t('Weitere Angaben')} />
