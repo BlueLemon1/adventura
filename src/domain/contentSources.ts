@@ -92,7 +92,7 @@ export const CONTENT_SOURCES = {
     sourceVersion: '2021',
     publisher: 'Wizards of the Coast',
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/sacoc',
-    availableLocales: ['en'],
+    availableLocales: ['en', 'de'],
   },
   ftd2021: {
     id: 'ftd-2021',
