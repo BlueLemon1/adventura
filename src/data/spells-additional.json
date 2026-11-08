@@ -2635,7 +2635,7 @@
     "level": 7,
     "school": "Evocation",
     "castingTime": "1 action",
-    "range": "120 feet",
+    "range": "Self",
     "components": "V, S",
     "material": "",
     "duration": "1 hour",
@@ -2657,7 +2657,7 @@
         "wizard"
       ],
       "castingTime": "1 Aktion",
-      "range": "36 Meter",
+      "range": "Selbst",
       "components": "V, G",
       "duration": "1 Stunde",
       "description": "Sieben sternartige Lichtpunkte umkreisen deinen Kopf. Als Bonusaktion kannst du einen davon auf eine Kreatur oder einen Gegenstand in Reichweite schleudern. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer verursacht er 4W12 Strahlenschaden. Der Lichtpunkt verschwindet nach dem Angriff.",
@@ -3474,7 +3474,7 @@
     "range": "Touch",
     "components": "S, M",
     "material": "25 feet of rope, which the spell consumes",
-    "duration": "Until dispelled or triggered",
+    "duration": "8 hours",
     "concentration": false,
     "ritual": false,
     "classes": [
@@ -3494,7 +3494,7 @@
       "castingTime": "1 Minute",
       "range": "Berührung",
       "components": "G, M (7,5 Meter Seil, das der Zauber verbraucht)",
-      "duration": "Bis gebannt oder ausgelöst",
+      "duration": "8 Stunden",
       "description": "Du erschaffst mit einem Seil eine magische Falle auf dem Boden. Die erste Kreatur, die den Bereich betritt, löst sie aus und muss einen Geschicklichkeitsrettungswurf ablegen oder kopfüber hochgezogen und festgesetzt werden. Die gefangene Kreatur kann versuchen, sich zu befreien."
     },
     "damage": [],
@@ -3897,7 +3897,7 @@
     "range": "60 feet",
     "components": "V, S, M",
     "material": "a vial of blood from a humanoid killed within the past 24 hours",
-    "duration": "Concentration, up to 1 minute",
+    "duration": "Concentration, up to 1 hour",
     "concentration": true,
     "ritual": false,
     "classes": [
@@ -3916,7 +3916,7 @@
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
-      "duration": "Konzentration, bis zu 1 Minute",
+      "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst Dämonen an freien Orten in Reichweite. Wähle 2W6 Dämonen mit Herausforderungsgrad 1/2 oder niedriger, 1W6 Dämonen mit Herausforderungsgrad 1 oder niedriger oder einen Dämon mit Herausforderungsgrad 2 oder niedriger. Sie sind allen Kreaturen gegenüber feindselig, auch dir, und handeln gemäß ihrer chaotischen Natur.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. beschwörst du zwei zusätzliche Dämonen."
     },
