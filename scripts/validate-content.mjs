@@ -108,6 +108,45 @@ for (const [classId, legacyIds] of Object.entries(options['2014'])) {
   options['2024'][classId] = [...currentIds, ...compatibleLegacyIds]
 }
 
+const renamed2024Subclasses = {
+  barbarian: { totemwarrior: 'wildheart' },
+  monk: { four_elements: 'elements' },
+  sorcerer: { aberrantmind: 'aberrant' },
+  wizard: {
+    abjuration: 'abjurer',
+    divination: 'diviner',
+    illusion: 'illusionist',
+  },
+}
+for (const [classId, replacements] of Object.entries(renamed2024Subclasses)) {
+  const currentIds = options['2024'][classId] ?? []
+  const legacyIds = options['2014'][classId] ?? []
+  for (const [legacyId, currentId] of Object.entries(replacements)) {
+    if (!currentIds.includes(currentId)) {
+      errors.push(`2024/${classId}: missing replacement subclass ${currentId}`)
+    }
+    if (legacyIds.includes(legacyId) && currentIds.includes(legacyId)) {
+      errors.push(`2024/${classId}: replaced legacy subclass ${legacyId} must not be selectable`)
+    }
+  }
+}
+
+const retained2014PhbExceptions = [
+  'cleric/knowledge',
+  'cleric/nature',
+  'cleric/tempest',
+  'wizard/conjuration',
+  'wizard/enchantment',
+  'wizard/necromancy',
+  'wizard/transmutation',
+]
+for (const subclass of retained2014PhbExceptions) {
+  const [classId, subclassId] = subclass.split('/')
+  if (!(options['2024'][classId] ?? []).includes(subclassId)) {
+    errors.push(`2024/${subclass}: expected 2014 PHB exception is not selectable`)
+  }
+}
+
 for (const ruleset of ['2014', '2024']) {
   const srd = readJson(`src/data/class-features-${ruleset}.json`)
   const supplemental = readJson(`src/data/class-features-supplemental-${ruleset}.json`)
