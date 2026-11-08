@@ -1,6 +1,6 @@
 # SRD content — attribution and license
 
-Adventura includes adapted rules text and spell metadata from the System Reference Documents published by Wizards of the Coast LLC. The spell catalogues are maintained directly in `src/data/spells-2014.json` and `src/data/spells-2024.json`. Each spell record carries its own `contentSourceId`, identifying the exact SRD edition. English and German text are stored together on each canonical record.
+Adventura includes adapted rules text and spell metadata from the System Reference Documents published by Wizards of the Coast LLC. The spell catalogues are maintained directly in `src/data/spells-2014.json` and `src/data/spells-2024.json`. Each spell record carries its own `contentSourceId`, identifying the exact SRD edition. English and German text are stored together on each canonical record. Supplemental spell records are maintained in `spells-additional.json`; each entry carries its source book, page, supported rulesets, and—where class lists differ by edition—ruleset-specific class access.
 
 ## SRD 5.1 (2014 rules)
 
