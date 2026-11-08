@@ -1,3 +1,4 @@
+import { SpellHigherLevel } from './SpellHigherLevel'
 import { useMemo, useState } from 'react'
 import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2 } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
@@ -213,16 +214,14 @@ function SpellCard({
         {spell.ritual && <span>{translateText('Ritual')}</span>}
       </div>
 
-      {spell.description && (
+      {(spell.description || spell.higherLevel) && (
         <details className="spellbook-details" open={isFeature}>
           <summary>{translateText('Zauberbeschreibung')}</summary>
-          <p>{spell.description}</p>
-          {spell.higherLevel && (
-            <div className="spell-higher-level">
-              <strong>{translateText('Auf höheren Graden:')}</strong>
-              <p>{spell.higherLevel}</p>
-            </div>
-          )}
+          {spell.description && <p>{spell.description}</p>}
+          <SpellHigherLevel
+            text={spell.higherLevel}
+            label={translateText('Auf höheren Graden:')}
+          />
         </details>
       )}
 
