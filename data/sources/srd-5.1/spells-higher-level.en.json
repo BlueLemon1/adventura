@@ -1,0 +1,1458 @@
+[
+  {
+    "index": "acid-arrow",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage (both initial and later) increases by 1d4 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "acid-splash",
+    "higher_level": []
+  },
+  {
+    "index": "aid",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "alarm",
+    "higher_level": []
+  },
+  {
+    "index": "alter-self",
+    "higher_level": []
+  },
+  {
+    "index": "animal-friendship",
+    "higher_level": []
+  },
+  {
+    "index": "animal-messenger",
+    "higher_level": [
+      "If you cast this spell using a spell slot of 3nd level or higher, the duration of the spell increases by 48 hours for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "animal-shapes",
+    "higher_level": []
+  },
+  {
+    "index": "animate-dead",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones."
+    ]
+  },
+  {
+    "index": "animate-objects",
+    "higher_level": [
+      "If you cast this spell using a spell slot of 6th level or higher, you can animate two additional objects for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "antilife-shell",
+    "higher_level": []
+  },
+  {
+    "index": "antimagic-field",
+    "higher_level": []
+  },
+  {
+    "index": "antipathy-sympathy",
+    "higher_level": []
+  },
+  {
+    "index": "arcane-eye",
+    "higher_level": []
+  },
+  {
+    "index": "arcane-hand",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage from the clenched fist option increases by 2d8 and the damage from the grasping hand increases by 2d6 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "arcane-lock",
+    "higher_level": []
+  },
+  {
+    "index": "arcane-sword",
+    "higher_level": []
+  },
+  {
+    "index": "arcanists-magic-aura",
+    "higher_level": []
+  },
+  {
+    "index": "astral-projection",
+    "higher_level": []
+  },
+  {
+    "index": "augury",
+    "higher_level": []
+  },
+  {
+    "index": "awaken",
+    "higher_level": []
+  },
+  {
+    "index": "bane",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "banishment",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "barkskin",
+    "higher_level": []
+  },
+  {
+    "index": "beacon-of-hope",
+    "higher_level": []
+  },
+  {
+    "index": "bestow-curse",
+    "higher_level": [
+      "If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration."
+    ]
+  },
+  {
+    "index": "black-tentacles",
+    "higher_level": []
+  },
+  {
+    "index": "blade-barrier",
+    "higher_level": []
+  },
+  {
+    "index": "bless",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "blight",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "blindness-deafness",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "blink",
+    "higher_level": []
+  },
+  {
+    "index": "blur",
+    "higher_level": []
+  },
+  {
+    "index": "branding-smite",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "burning-hands",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "call-lightning",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th or higher level, the damage increases by 1d10 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "calm-emotions",
+    "higher_level": []
+  },
+  {
+    "index": "chain-lightning",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, one additional bolt leaps from the first target to another target for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "charm-person",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+    ]
+  },
+  {
+    "index": "chill-touch",
+    "higher_level": []
+  },
+  {
+    "index": "circle-of-death",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "clairvoyance",
+    "higher_level": []
+  },
+  {
+    "index": "clone",
+    "higher_level": []
+  },
+  {
+    "index": "cloudkill",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "color-spray",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "command",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
+    ]
+  },
+  {
+    "index": "commune",
+    "higher_level": []
+  },
+  {
+    "index": "commune-with-nature",
+    "higher_level": []
+  },
+  {
+    "index": "comprehend-languages",
+    "higher_level": []
+  },
+  {
+    "index": "compulsion",
+    "higher_level": []
+  },
+  {
+    "index": "cone-of-cold",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "confusion",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "conjure-animals",
+    "higher_level": [
+      "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 5th-level slot, three times as many with a 7th-level slot, and four times as many with a 9th-level slot."
+    ]
+  },
+  {
+    "index": "conjure-celestial",
+    "higher_level": [
+      "When you cast this spell using a 9th-level spell slot, you summon a celestial of challenge rating 5 or lower."
+    ]
+  },
+  {
+    "index": "conjure-elemental",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the challenge rating increases by 1 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "conjure-fey",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the challenge rating increases by 1 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "conjure-minor-elementals",
+    "higher_level": [
+      "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
+    ]
+  },
+  {
+    "index": "conjure-woodland-beings",
+    "higher_level": [
+      "When you cast this spell using certain higher-level spell slots, you choose one of the summoning options above, and more creatures appear: twice as many with a 6th-level slot and three times as many with an 8th-level slot."
+    ]
+  },
+  {
+    "index": "contact-other-plane",
+    "higher_level": []
+  },
+  {
+    "index": "contagion",
+    "higher_level": []
+  },
+  {
+    "index": "contingency",
+    "higher_level": []
+  },
+  {
+    "index": "continual-flame",
+    "higher_level": []
+  },
+  {
+    "index": "control-water",
+    "higher_level": []
+  },
+  {
+    "index": "control-weather",
+    "higher_level": []
+  },
+  {
+    "index": "counterspell",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used."
+    ]
+  },
+  {
+    "index": "create-food-and-water",
+    "higher_level": []
+  },
+  {
+    "index": "create-undead",
+    "higher_level": [
+      "When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies."
+    ]
+  },
+  {
+    "index": "create-or-destroy-water",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "creation",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the cube increases by 5 feet for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "cure-wounds",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "dancing-lights",
+    "higher_level": []
+  },
+  {
+    "index": "darkness",
+    "higher_level": []
+  },
+  {
+    "index": "darkvision",
+    "higher_level": []
+  },
+  {
+    "index": "daylight",
+    "higher_level": []
+  },
+  {
+    "index": "death-ward",
+    "higher_level": []
+  },
+  {
+    "index": "delayed-blast-fireball",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 8th level or higher, the base damage increases by 1d6 for each slot level above 7th."
+    ]
+  },
+  {
+    "index": "demiplane",
+    "higher_level": []
+  },
+  {
+    "index": "detect-evil-and-good",
+    "higher_level": []
+  },
+  {
+    "index": "detect-magic",
+    "higher_level": []
+  },
+  {
+    "index": "detect-poison-and-disease",
+    "higher_level": []
+  },
+  {
+    "index": "detect-thoughts",
+    "higher_level": []
+  },
+  {
+    "index": "dimension-door",
+    "higher_level": []
+  },
+  {
+    "index": "disguise-self",
+    "higher_level": []
+  },
+  {
+    "index": "disintegrate",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 3d6 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "dispel-evil-and-good",
+    "higher_level": []
+  },
+  {
+    "index": "dispel-magic",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used."
+    ]
+  },
+  {
+    "index": "divination",
+    "higher_level": []
+  },
+  {
+    "index": "divine-favor",
+    "higher_level": []
+  },
+  {
+    "index": "divine-word",
+    "higher_level": []
+  },
+  {
+    "index": "dominate-beast",
+    "higher_level": [
+      "When you cast this spell with a 9th level spell slot, the duration is concentration, up to 8 hours."
+    ]
+  },
+  {
+    "index": "dominate-monster",
+    "higher_level": [
+      "When you cast this spell with a 9th-level spell slot, the duration is concentration, up to 8 hours."
+    ]
+  },
+  {
+    "index": "dominate-person",
+    "higher_level": [
+      "When you cast this spell using a 6th-level spell slot, the duration is concentration, up to 10 minutes. When you use a 7th-level spell slot, the duration is concentration, up to 1 hour. When you use a spell slot of 8th level or higher, the duration is concentration, up to 8 hours."
+    ]
+  },
+  {
+    "index": "dream",
+    "higher_level": []
+  },
+  {
+    "index": "druidcraft",
+    "higher_level": []
+  },
+  {
+    "index": "earthquake",
+    "higher_level": []
+  },
+  {
+    "index": "eldritch-blast",
+    "higher_level": []
+  },
+  {
+    "index": "enhance-ability",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "enlarge-reduce",
+    "higher_level": []
+  },
+  {
+    "index": "entangle",
+    "higher_level": []
+  },
+  {
+    "index": "enthrall",
+    "higher_level": []
+  },
+  {
+    "index": "etherealness",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell."
+    ]
+  },
+  {
+    "index": "expeditious-retreat",
+    "higher_level": []
+  },
+  {
+    "index": "eyebite",
+    "higher_level": []
+  },
+  {
+    "index": "fabricate",
+    "higher_level": []
+  },
+  {
+    "index": "faerie-fire",
+    "higher_level": []
+  },
+  {
+    "index": "faithful-hound",
+    "higher_level": []
+  },
+  {
+    "index": "false-life",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "fear",
+    "higher_level": []
+  },
+  {
+    "index": "feather-fall",
+    "higher_level": []
+  },
+  {
+    "index": "feeblemind",
+    "higher_level": []
+  },
+  {
+    "index": "find-familiar",
+    "higher_level": []
+  },
+  {
+    "index": "find-steed",
+    "higher_level": []
+  },
+  {
+    "index": "find-traps",
+    "higher_level": []
+  },
+  {
+    "index": "find-the-path",
+    "higher_level": []
+  },
+  {
+    "index": "finger-of-death",
+    "higher_level": []
+  },
+  {
+    "index": "fire-bolt",
+    "higher_level": []
+  },
+  {
+    "index": "fire-shield",
+    "higher_level": []
+  },
+  {
+    "index": "fire-storm",
+    "higher_level": []
+  },
+  {
+    "index": "fireball",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "flame-blade",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for every two slot levels above 2nd."
+    ]
+  },
+  {
+    "index": "flame-strike",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "flaming-sphere",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "flesh-to-stone",
+    "higher_level": []
+  },
+  {
+    "index": "floating-disk",
+    "higher_level": []
+  },
+  {
+    "index": "fly",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "fog-cloud",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 20 feet for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "forbiddance",
+    "higher_level": []
+  },
+  {
+    "index": "forcecage",
+    "higher_level": []
+  },
+  {
+    "index": "foresight",
+    "higher_level": []
+  },
+  {
+    "index": "freedom-of-movement",
+    "higher_level": []
+  },
+  {
+    "index": "freezing-sphere",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "gaseous-form",
+    "higher_level": []
+  },
+  {
+    "index": "gate",
+    "higher_level": []
+  },
+  {
+    "index": "geas",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th or 8th level, the duration is 1 year. When you cast this spell using a spell slot of 9th level, the spell lasts until it is ended by one of the spells mentioned above."
+    ]
+  },
+  {
+    "index": "gentle-repose",
+    "higher_level": []
+  },
+  {
+    "index": "giant-insect",
+    "higher_level": []
+  },
+  {
+    "index": "glibness",
+    "higher_level": []
+  },
+  {
+    "index": "globe-of-invulnerability",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the barrier blocks spells of one level higher for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "glyph-of-warding",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage of an explosive runes glyph increases by 1d8 for each slot level above 3rd. If you create a spell glyph, you can store any spell of up to the same level as the slot you use for the glyph of warding."
+    ]
+  },
+  {
+    "index": "goodberry",
+    "higher_level": []
+  },
+  {
+    "index": "grease",
+    "higher_level": []
+  },
+  {
+    "index": "greater-invisibility",
+    "higher_level": []
+  },
+  {
+    "index": "greater-restoration",
+    "higher_level": []
+  },
+  {
+    "index": "guardian-of-faith",
+    "higher_level": []
+  },
+  {
+    "index": "guards-and-wards",
+    "higher_level": []
+  },
+  {
+    "index": "guidance",
+    "higher_level": []
+  },
+  {
+    "index": "guiding-bolt",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "gust-of-wind",
+    "higher_level": []
+  },
+  {
+    "index": "hallow",
+    "higher_level": []
+  },
+  {
+    "index": "hallucinatory-terrain",
+    "higher_level": []
+  },
+  {
+    "index": "harm",
+    "higher_level": []
+  },
+  {
+    "index": "haste",
+    "higher_level": []
+  },
+  {
+    "index": "heal",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "healing-word",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "heat-metal",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "hellish-rebuke",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "heroes-feast",
+    "higher_level": []
+  },
+  {
+    "index": "heroism",
+    "higher_level": []
+  },
+  {
+    "index": "hideous-laughter",
+    "higher_level": []
+  },
+  {
+    "index": "hold-monster",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them."
+    ]
+  },
+  {
+    "index": "hold-person",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+    ]
+  },
+  {
+    "index": "holy-aura",
+    "higher_level": []
+  },
+  {
+    "index": "hunters-mark",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours."
+    ]
+  },
+  {
+    "index": "hypnotic-pattern",
+    "higher_level": []
+  },
+  {
+    "index": "ice-storm",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "identify",
+    "higher_level": []
+  },
+  {
+    "index": "illusory-script",
+    "higher_level": []
+  },
+  {
+    "index": "imprisonment",
+    "higher_level": []
+  },
+  {
+    "index": "incendiary-cloud",
+    "higher_level": []
+  },
+  {
+    "index": "inflict-wounds",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "insect-plague",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "instant-summons",
+    "higher_level": []
+  },
+  {
+    "index": "invisibility",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "irresistible-dance",
+    "higher_level": []
+  },
+  {
+    "index": "jump",
+    "higher_level": []
+  },
+  {
+    "index": "knock",
+    "higher_level": []
+  },
+  {
+    "index": "legend-lore",
+    "higher_level": []
+  },
+  {
+    "index": "lesser-restoration",
+    "higher_level": []
+  },
+  {
+    "index": "levitate",
+    "higher_level": []
+  },
+  {
+    "index": "light",
+    "higher_level": []
+  },
+  {
+    "index": "lightning-bolt",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "locate-animals-or-plants",
+    "higher_level": []
+  },
+  {
+    "index": "locate-creature",
+    "higher_level": []
+  },
+  {
+    "index": "locate-object",
+    "higher_level": []
+  },
+  {
+    "index": "longstrider",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "mage-armor",
+    "higher_level": []
+  },
+  {
+    "index": "mage-hand",
+    "higher_level": []
+  },
+  {
+    "index": "magic-circle",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "magic-jar",
+    "higher_level": []
+  },
+  {
+    "index": "magic-missile",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "magic-mouth",
+    "higher_level": []
+  },
+  {
+    "index": "magic-weapon",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3."
+    ]
+  },
+  {
+    "index": "magnificent-mansion",
+    "higher_level": []
+  },
+  {
+    "index": "major-image",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the spell lasts until dispelled, without requiring your concentration."
+    ]
+  },
+  {
+    "index": "mass-cure-wounds",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 6th level or higher, the healing increases by 1d8 for each slot level above 5th."
+    ]
+  },
+  {
+    "index": "mass-heal",
+    "higher_level": []
+  },
+  {
+    "index": "mass-healing-word",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d4 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "mass-suggestion",
+    "higher_level": [
+      "When you cast this spell using a 7th-level spell slot, the duration is 10 days. When you use an 8th-level spell slot, the duration is 30 days. When you use a 9th-level spell slot, the duration is a year and a day."
+    ]
+  },
+  {
+    "index": "maze",
+    "higher_level": []
+  },
+  {
+    "index": "meld-into-stone",
+    "higher_level": []
+  },
+  {
+    "index": "mending",
+    "higher_level": []
+  },
+  {
+    "index": "message",
+    "higher_level": []
+  },
+  {
+    "index": "meteor-swarm",
+    "higher_level": []
+  },
+  {
+    "index": "mind-blank",
+    "higher_level": []
+  },
+  {
+    "index": "minor-illusion",
+    "higher_level": []
+  },
+  {
+    "index": "mirage-arcane",
+    "higher_level": []
+  },
+  {
+    "index": "mirror-image",
+    "higher_level": []
+  },
+  {
+    "index": "mislead",
+    "higher_level": []
+  },
+  {
+    "index": "misty-step",
+    "higher_level": []
+  },
+  {
+    "index": "modify-memory",
+    "higher_level": [
+      "If you cast this spell using a spell slot of 6th level or higher, you can alter the target's memories of an event that took place up to 7 days ago (6th level), 30 days ago (7th level), 1 year ago (8th level), or any time in the creature's past (9th level)."
+    ]
+  },
+  {
+    "index": "moonbeam",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "move-earth",
+    "higher_level": []
+  },
+  {
+    "index": "nondetection",
+    "higher_level": []
+  },
+  {
+    "index": "pass-without-trace",
+    "higher_level": []
+  },
+  {
+    "index": "passwall",
+    "higher_level": []
+  },
+  {
+    "index": "phantasmal-killer",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "phantom-steed",
+    "higher_level": []
+  },
+  {
+    "index": "planar-ally",
+    "higher_level": []
+  },
+  {
+    "index": "planar-binding",
+    "higher_level": [
+      "When you cast this spell using a spell slot of a higher level, the duration increases to 10 days with a 6th-level slot, to 30 days with a 7th-level slot, to 180 days with an 8th-level slot, and to a year and a day with a 9th-level spell slot."
+    ]
+  },
+  {
+    "index": "plane-shift",
+    "higher_level": []
+  },
+  {
+    "index": "plant-growth",
+    "higher_level": []
+  },
+  {
+    "index": "poison-spray",
+    "higher_level": []
+  },
+  {
+    "index": "polymorph",
+    "higher_level": []
+  },
+  {
+    "index": "power-word-kill",
+    "higher_level": []
+  },
+  {
+    "index": "power-word-stun",
+    "higher_level": []
+  },
+  {
+    "index": "prayer-of-healing",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "prestidigitation",
+    "higher_level": []
+  },
+  {
+    "index": "prismatic-spray",
+    "higher_level": []
+  },
+  {
+    "index": "prismatic-wall",
+    "higher_level": []
+  },
+  {
+    "index": "private-sanctum",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 4th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 5th level."
+    ]
+  },
+  {
+    "index": "produce-flame",
+    "higher_level": []
+  },
+  {
+    "index": "programmed-illusion",
+    "higher_level": []
+  },
+  {
+    "index": "project-image",
+    "higher_level": []
+  },
+  {
+    "index": "protection-from-energy",
+    "higher_level": []
+  },
+  {
+    "index": "protection-from-evil-and-good",
+    "higher_level": []
+  },
+  {
+    "index": "protection-from-poison",
+    "higher_level": []
+  },
+  {
+    "index": "purify-food-and-drink",
+    "higher_level": []
+  },
+  {
+    "index": "raise-dead",
+    "higher_level": []
+  },
+  {
+    "index": "ray-of-enfeeblement",
+    "higher_level": []
+  },
+  {
+    "index": "ray-of-frost",
+    "higher_level": []
+  },
+  {
+    "index": "regenerate",
+    "higher_level": []
+  },
+  {
+    "index": "reincarnate",
+    "higher_level": []
+  },
+  {
+    "index": "remove-curse",
+    "higher_level": []
+  },
+  {
+    "index": "resilient-sphere",
+    "higher_level": []
+  },
+  {
+    "index": "resistance",
+    "higher_level": []
+  },
+  {
+    "index": "resurrection",
+    "higher_level": []
+  },
+  {
+    "index": "reverse-gravity",
+    "higher_level": []
+  },
+  {
+    "index": "revivify",
+    "higher_level": []
+  },
+  {
+    "index": "rope-trick",
+    "higher_level": []
+  },
+  {
+    "index": "sacred-flame",
+    "higher_level": []
+  },
+  {
+    "index": "sanctuary",
+    "higher_level": []
+  },
+  {
+    "index": "scorching-ray",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "scrying",
+    "higher_level": []
+  },
+  {
+    "index": "secret-chest",
+    "higher_level": []
+  },
+  {
+    "index": "see-invisibility",
+    "higher_level": []
+  },
+  {
+    "index": "seeming",
+    "higher_level": []
+  },
+  {
+    "index": "sending",
+    "higher_level": []
+  },
+  {
+    "index": "sequester",
+    "higher_level": []
+  },
+  {
+    "index": "shapechange",
+    "higher_level": []
+  },
+  {
+    "index": "shatter",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage of the spell increases by 1d8 for each slot level above 2nd."
+    ]
+  },
+  {
+    "index": "shield",
+    "higher_level": []
+  },
+  {
+    "index": "shield-of-faith",
+    "higher_level": []
+  },
+  {
+    "index": "shillelagh",
+    "higher_level": []
+  },
+  {
+    "index": "shocking-grasp",
+    "higher_level": []
+  },
+  {
+    "index": "silence",
+    "higher_level": []
+  },
+  {
+    "index": "silent-image",
+    "higher_level": []
+  },
+  {
+    "index": "simulacrum",
+    "higher_level": []
+  },
+  {
+    "index": "sleep",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d8 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "sleet-storm",
+    "higher_level": []
+  },
+  {
+    "index": "slow",
+    "higher_level": []
+  },
+  {
+    "index": "spare-the-dying",
+    "higher_level": []
+  },
+  {
+    "index": "speak-with-animals",
+    "higher_level": []
+  },
+  {
+    "index": "speak-with-dead",
+    "higher_level": []
+  },
+  {
+    "index": "speak-with-plants",
+    "higher_level": []
+  },
+  {
+    "index": "spider-climb",
+    "higher_level": []
+  },
+  {
+    "index": "spike-growth",
+    "higher_level": []
+  },
+  {
+    "index": "spirit-guardians",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "spiritual-weapon",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd."
+    ]
+  },
+  {
+    "index": "stinking-cloud",
+    "higher_level": []
+  },
+  {
+    "index": "stone-shape",
+    "higher_level": []
+  },
+  {
+    "index": "stoneskin",
+    "higher_level": []
+  },
+  {
+    "index": "storm-of-vengeance",
+    "higher_level": []
+  },
+  {
+    "index": "suggestion",
+    "higher_level": []
+  },
+  {
+    "index": "sunbeam",
+    "higher_level": []
+  },
+  {
+    "index": "sunburst",
+    "higher_level": []
+  },
+  {
+    "index": "symbol",
+    "higher_level": []
+  },
+  {
+    "index": "telekinesis",
+    "higher_level": []
+  },
+  {
+    "index": "telepathic-bond",
+    "higher_level": []
+  },
+  {
+    "index": "teleport",
+    "higher_level": []
+  },
+  {
+    "index": "teleportation-circle",
+    "higher_level": []
+  },
+  {
+    "index": "thaumaturgy",
+    "higher_level": []
+  },
+  {
+    "index": "thunderwave",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+    ]
+  },
+  {
+    "index": "time-stop",
+    "higher_level": []
+  },
+  {
+    "index": "tiny-hut",
+    "higher_level": []
+  },
+  {
+    "index": "tongues",
+    "higher_level": []
+  },
+  {
+    "index": "transport-via-plants",
+    "higher_level": []
+  },
+  {
+    "index": "tree-stride",
+    "higher_level": []
+  },
+  {
+    "index": "true-polymorph",
+    "higher_level": []
+  },
+  {
+    "index": "true-resurrection",
+    "higher_level": []
+  },
+  {
+    "index": "true-seeing",
+    "higher_level": []
+  },
+  {
+    "index": "true-strike",
+    "higher_level": []
+  },
+  {
+    "index": "unseen-servant",
+    "higher_level": []
+  },
+  {
+    "index": "vampiric-touch",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+    ]
+  },
+  {
+    "index": "vicious-mockery",
+    "higher_level": []
+  },
+  {
+    "index": "wall-of-fire",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th."
+    ]
+  },
+  {
+    "index": "wall-of-force",
+    "higher_level": []
+  },
+  {
+    "index": "wall-of-ice",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, the damage the wall deals when it appears increases by 2d6, and the damage from passing through the sheet of frigid air increases by 1d6, for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "wall-of-stone",
+    "higher_level": []
+  },
+  {
+    "index": "wall-of-thorns",
+    "higher_level": [
+      "When you cast this spell using a spell slot of 7th level or higher, both types of damage increase by 1d8 for each slot level above 6th."
+    ]
+  },
+  {
+    "index": "warding-bond",
+    "higher_level": []
+  },
+  {
+    "index": "water-breathing",
+    "higher_level": []
+  },
+  {
+    "index": "water-walk",
+    "higher_level": []
+  },
+  {
+    "index": "web",
+    "higher_level": []
+  },
+  {
+    "index": "weird",
+    "higher_level": []
+  },
+  {
+    "index": "wind-walk",
+    "higher_level": []
+  },
+  {
+    "index": "wind-wall",
+    "higher_level": []
+  },
+  {
+    "index": "wish",
+    "higher_level": []
+  },
+  {
+    "index": "word-of-recall",
+    "higher_level": []
+  },
+  {
+    "index": "zone-of-truth",
+    "higher_level": []
+  }
+]
