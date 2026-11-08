@@ -1,5 +1,6 @@
 import type { Character } from './character'
 import type { Dnd5eRuleset } from './rules'
+import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 import additionalSpells from '../data/spells-additional.json'
@@ -12,7 +13,7 @@ export interface CatalogSpell {
   castingTime: string
   range: string
   components: string
-  material: string
+  material?: string
   duration: string
   concentration: boolean
   ritual: boolean
@@ -50,7 +51,11 @@ const supplementalSpells = additionalSpells as CatalogSpell[]
 export function getSpellCatalog(ruleset: Character['ruleset']): CatalogSpell[] {
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
-    .filter((spell) => spell.rulesets?.includes(ruleset))
+    .filter((spell) =>
+      spell.rulesets
+        ? spell.rulesets.includes(ruleset)
+        : CONTENT_SOURCES[Object.keys(CONTENT_SOURCES).find((key) => CONTENT_SOURCES[key as keyof typeof CONTENT_SOURCES].id === spell.contentSourceId) as keyof typeof CONTENT_SOURCES]?.ruleset === ruleset,
+    )
     .map((spell) => ({
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
