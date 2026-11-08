@@ -173,7 +173,7 @@ export const CONTENT_SOURCES = {
   },
   bigby2023: {
     id: 'bigby-2023',
-    name: "Bigby Presents: Glory of the Giants",
+    name: 'Bigby Presents: Glory of the Giants',
     abbreviation: 'BPGG',
     kind: 'supplement',
     ruleset: '2014',
@@ -184,7 +184,7 @@ export const CONTENT_SOURCES = {
   },
   dsotdq2022: {
     id: 'dsotdq-2022',
-    name: "Dragonlance: Shadow of the Dragon Queen",
+    name: 'Dragonlance: Shadow of the Dragon Queen',
     abbreviation: 'DSotDQ',
     kind: 'supplement',
     ruleset: '2014',

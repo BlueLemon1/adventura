@@ -339,7 +339,8 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
               <SelectContent>
                 {classOptions.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
-                    {t(option.label)}{option.source ? ` · ${option.source}` : ''}
+                    {t(option.label)}
+                    {option.source ? ` · ${option.source}` : ''}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -369,7 +370,8 @@ export function CharacterSheet({ character, onUpdate }: CharacterSheetProps) {
                   <SelectItem value="none">{t('Keine')}</SelectItem>
                   {subclassOptions.map((option) => (
                     <SelectItem key={option.value} value={option.value}>
-                      {t(option.label)}{option.source ? ` · ${option.source}` : ''}
+                      {t(option.label)}
+                      {option.source ? ` · ${option.source}` : ''}
                     </SelectItem>
                   ))}
                 </SelectContent>

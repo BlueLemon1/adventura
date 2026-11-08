@@ -71,8 +71,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
       {selectedSubclass && !hasSubclassFeatures && (
         <section className="panel">
           <p className="muted-paragraph">
-            {t('Für diese Unterklasse sind die Merkmale noch nicht vollständig hinterlegt.')}
-            {' '}
+            {t('Für diese Unterklasse sind die Merkmale noch nicht vollständig hinterlegt.')}{' '}
             {t('Die Unterklasse ist auswählbar, aber ihre Feature-Daten werden noch ergänzt.')}
           </p>
         </section>
@@ -162,7 +161,8 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                     </span>
                     {feature.contentSourceId && (
                       <span className="automatic-feature-source-book">
-                        {getContentSourceAbbreviation(feature.contentSourceId) ?? feature.contentSourceId}
+                        {getContentSourceAbbreviation(feature.contentSourceId) ??
+                          feature.contentSourceId}
                       </span>
                     )}
                     {feature.activation && (

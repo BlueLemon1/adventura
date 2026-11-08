@@ -82,7 +82,8 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
               <SelectContent>
                 {classOptions.map((option) => (
                   <SelectItem key={option.value} value={option.value}>
-                    {t(option.label)}{option.source ? ` · ${option.source}` : ''}
+                    {t(option.label)}
+                    {option.source ? ` · ${option.source}` : ''}
                   </SelectItem>
                 ))}
               </SelectContent>
@@ -92,13 +93,16 @@ export function CreateCharacterDialog({ busy, onClose, onCreate }: CreateCharact
           <div className="form-row">
             <label className="field-label">
               {t('Regelwerk')}
-              <Select value={ruleset} onValueChange={(value) => {
+              <Select
+                value={ruleset}
+                onValueChange={(value) => {
                   const nextRuleset = value as Dnd5eRuleset
                   setRuleset(nextRuleset)
                   if (!getClassOptions(nextRuleset).some((option) => option.value === classId)) {
                     setClassId('fighter')
                   }
-                }}>
+                }}
+              >
                 <SelectTrigger>
                   <SelectValue />
                 </SelectTrigger>
