@@ -13,6 +13,7 @@ const BARD_2014 = [0, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 15, 16, 18, 19, 19, 
 const SORCERER_2014 = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 12, 13, 13, 14, 14, 15, 15, 15, 15]
 const WARLOCK_2014 = [0, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15]
 const RANGER_2014 = [0, 0, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11]
+const RANGER_2024 = [0, 2, 3, 4, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13]
 
 const CLASS_ALIASES: Record<string, string> = {
   barde: 'bard',
@@ -81,9 +82,28 @@ export function getSpellCapacity(character: Character, spells: KnownSpell[]): Sp
     }
   }
 
+  if (character.ruleset === '2024') {
+    const knownTables: Record<string, number[]> = {
+      bard: BARD_2014,
+      sorcerer: SORCERER_2014,
+      warlock: WARLOCK_2014,
+      ranger: RANGER_2024,
+    }
+    const table = knownTables[classId]
+    if (table) {
+      return {
+        mode: 'known',
+        maximum: table[character.level] ?? 0,
+        current: known,
+        label: 'Bekannte Klassenzauber',
+        note: 'Zaubertricks werden nicht mitgezählt. Klassenmerkmale mit ausdrücklich zusätzlichen oder immer vorbereiteten Zaubern werden separat behandelt.',
+      }
+    }
+  }
+
   if (
     character.ruleset === '2024' &&
-    ['cleric', 'druid', 'wizard', 'paladin', 'ranger'].includes(classId)
+    ['cleric', 'druid', 'wizard', 'paladin'].includes(classId)
   ) {
     return {
       mode: 'prepared',
