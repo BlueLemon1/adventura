@@ -156,6 +156,9 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
                         {t(activationLabels[feature.activation])}
                       </span>
                     )}
+                    {feature.translationStatus === 'unofficial' && (
+                      <span className="language-fallback">{t('Eigene Übersetzung')}</span>
+                    )}
                     {feature.usedFallback && (
                       <span className="language-fallback">{t('EN – englischer Ersatztext')}</span>
                     )}
