@@ -273,8 +273,19 @@ export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): Clas
   // for the 2024 rules. Keep the 2024 PHB/SRD options above authoritative and
   // add only older options that do not already have a 2024 entry.
   const currentValues = new Set(currentOptions.map((option) => option.value))
+
+  // Some 2024 PHB subclasses use a different internal ID than their 2014
+  // predecessor. Treat those as replacements, not as additional choices.
+  const replacedLegacyValues: Record<string, string[]> = {
+    barbarian: ['totemwarrior'],
+    monk: ['four_elements'],
+    sorcerer: ['aberrantmind'],
+    wizard: ['abjuration', 'divination', 'illusion'],
+  }
+  const replacedValues = new Set(replacedLegacyValues[classId] ?? [])
+
   const legacyOptions = (SUBCLASS_OPTIONS_BY_RULESET['2014'][classId] ?? []).filter(
-    (option) => !currentValues.has(option.value),
+    (option) => !currentValues.has(option.value) && !replacedValues.has(option.value),
   )
 
   return [...currentOptions, ...legacyOptions]
