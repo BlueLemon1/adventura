@@ -2477,6 +2477,10 @@ function getImportedClassFeatures(
           entry.source === feature.featureType,
       )
 
+      const spellbookSpellIds = [
+        ...new Set([...(feature.grantedSpellIds ?? []), ...(metadata?.spellbookSpellIds ?? [])]),
+      ]
+
       return {
         id: feature.id,
         name: feature.names.en ?? feature.id,
@@ -2493,7 +2497,7 @@ function getImportedClassFeatures(
         resourceId: metadata?.resourceId,
         resourceCost: metadata?.resourceCost,
         spellbookSpellId: metadata?.spellbookSpellId,
-        spellbookSpellIds: metadata?.spellbookSpellIds,
+        spellbookSpellIds: spellbookSpellIds.length ? spellbookSpellIds : undefined,
         unlocked: feature.level <= character.level,
       }
     })
