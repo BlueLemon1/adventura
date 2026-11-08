@@ -16,7 +16,8 @@
     "import:srd:2014:features:de": "node scripts/import-srd-class-features-2014-de.mjs",
     "import:srd:2014:spells:de": "node scripts/import-srd-spells-2014-de.mjs",
     "import:srd:2014:spells:en": "node scripts/import-srd-spells-2014-en.mjs",
-    "import:srd:2024:spells": "node scripts/import-srd-spells-2024.mjs"
+    "import:srd:2024:spells": "node scripts/import-srd-spells-2024.mjs",
+    "import:srd:all": "npm run import:srd:2014:features && npm run import:srd:2014:features:de && npm run import:srd:2024:features && npm run import:srd:2024:features:de && npm run import:srd:2014:spells:en && npm run import:srd:2014:spells:de && npm run import:srd:2024:spells"
   },
   "dependencies": {
     "@tanstack/react-query": "latest",
