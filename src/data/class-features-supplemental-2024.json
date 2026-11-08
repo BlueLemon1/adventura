@@ -1,1 +1,322 @@
-[]
+[
+  {
+    "id": "2024-artificer-class-spellcasting",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#spellcasting",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 1,
+    "names": {
+      "en": "Spellcasting",
+      "de": "Zauberwirken"
+    },
+    "descriptions": {
+      "en": "You cast artificer spells and can adjust one of your cantrips after a Long Rest.",
+      "de": "Du wirkst Artificer-Zauber und passt einen deiner Zaubertricks nach einer langen Rast an deine Bedürfnisse an."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-tinkers-magic",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#tinkers-magic",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 1,
+    "names": {
+      "en": "Tinker's Magic",
+      "de": "Bastler-Magie"
+    },
+    "descriptions": {
+      "en": "You know the Mending cantrip and can use Tinker's Tools to create useful mundane adventuring gear.",
+      "de": "Du kennst den Zauber Mending und kannst mit Bastlerwerkzeug nützliche einfache Ausrüstung für den Abenteureralltag herstellen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-replicate-magic-item",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#replicate-magic-item",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 2,
+    "names": {
+      "en": "Replicate Magic Item",
+      "de": "Magischen Gegenstand nachbilden"
+    },
+    "descriptions": {
+      "en": "You learn plans that let you create selected magic items after a Long Rest.",
+      "de": "Du lernst Pläne, mit denen du nach einer langen Rast ausgewählte magische Gegenstände herstellen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-artificer-subclass",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#artificer-subclass",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 3,
+    "names": {
+      "en": "Artificer Subclass",
+      "de": "Artificer-Unterklasse"
+    },
+    "descriptions": {
+      "en": "You choose a specialization that grants additional features at levels 3, 5, 9, and 15.",
+      "de": "Du wählst eine Spezialisierung, die dir auf den Stufen 3, 5, 9 und 15 zusätzliche Merkmale verleiht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-ability-score-improvement-4",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#ability-score-improvement-4",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 4,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-magic-item-tinker",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#magic-item-tinker",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 6,
+    "names": {
+      "en": "Magic Item Tinker",
+      "de": "Magischer Gegenstandsbastler"
+    },
+    "descriptions": {
+      "en": "You can further manipulate replicated items, including changing their charges or replacing an item with another plan.",
+      "de": "Du kannst die von dir nachgebildeten Gegenstände weiter manipulieren, etwa ihre Ladungen verändern oder einen Gegenstand gegen einen anderen Plan tauschen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-flash-of-genius",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#flash-of-genius",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 7,
+    "names": {
+      "en": "Flash of Genius",
+      "de": "Geistesblitz"
+    },
+    "descriptions": {
+      "en": "When a nearby creature fails an ability check or saving throw, you can use your Reaction to improve the result.",
+      "de": "Wenn eine Kreatur in deiner Nähe einen Attributs- oder Rettungswurf nicht besteht, kannst du deine Reaktion nutzen, um das Ergebnis zu verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-ability-score-improvement-8",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#ability-score-improvement-8",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 8,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-magic-item-adept",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#magic-item-adept",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 10,
+    "names": {
+      "en": "Magic Item Adept",
+      "de": "Experte für magische Gegenstände"
+    },
+    "descriptions": {
+      "en": "You can attune to four magic items at once and benefit from improved crafting rules.",
+      "de": "Du kannst dich auf vier magische Gegenstände gleichzeitig einstimmen und profitierst von verbesserten Herstellungsregeln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-spell-storing-item",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#spell-storing-item",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 11,
+    "names": {
+      "en": "Spell-Storing Item",
+      "de": "Zauberspeichernder Gegenstand"
+    },
+    "descriptions": {
+      "en": "You store an eligible artificer spell of up to 3rd level in an item for later casting.",
+      "de": "Du speicherst einen geeigneten Artificer-Zauber bis zum 3. Grad in einem Gegenstand, aus dem er später gewirkt werden kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-ability-score-improvement-12",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#ability-score-improvement-12",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 12,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-advanced-artifice",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#advanced-artifice",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 14,
+    "names": {
+      "en": "Advanced Artifice",
+      "de": "Fortgeschrittene Kunstfertigkeit"
+    },
+    "descriptions": {
+      "en": "You gain additional ways to alter replicated items and recover a use of Flash of Genius on a Short Rest.",
+      "de": "Du erhältst zusätzliche Möglichkeiten, deine nachgebildeten Gegenstände zu verändern, und erholst einen Einsatz deines Geistesblitzes bei kurzer Rast."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-ability-score-improvement-16",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#ability-score-improvement-16",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 16,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-magic-item-master",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#magic-item-master",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 18,
+    "names": {
+      "en": "Magic Item Master",
+      "de": "Meister magischer Gegenstände"
+    },
+    "descriptions": {
+      "en": "You can attune to even more magic items at the same time.",
+      "de": "Du kannst dich auf noch mehr magische Gegenstände gleichzeitig einstimmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-epic-boon",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#epic-boon",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 19,
+    "names": {
+      "en": "Epic Boon",
+      "de": "Epischer Segen"
+    },
+    "descriptions": {
+      "en": "You gain an Epic Boon or another eligible feat of your choice.",
+      "de": "Du erhältst einen epischen Segen oder ein anderes zulässiges Talent deiner Wahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-artificer-class-soul-of-artifice",
+    "ruleset": "2024",
+    "contentSourceId": "efota-2025",
+    "sourceReference": "artificer/class-features#soul-of-artifice",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 20,
+    "names": {
+      "en": "Soul of Artifice",
+      "de": "Seele der Kunstfertigkeit"
+    },
+    "descriptions": {
+      "en": "Your bond with replicated items can save you from death and improves the recovery of Flash of Genius.",
+      "de": "Deine Verbindung zu nachgebildeten Gegenständen kann dich vor dem Tod bewahren und stärkt die Erholung deines Geistesblitzes."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  }
+]
