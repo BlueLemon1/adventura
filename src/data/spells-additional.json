@@ -3496,5 +3496,421 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 165,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-beast-bond",
+    "name": "Beast Bond",
+    "level": 1,
+    "school": "Divination",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "a bit of fur wrapped in cloth",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You establish a telepathic link with a willing beast you touch. While the beast is within 100 feet, you can communicate telepathically and perceive through its senses. It also gains advantage on attack rolls against a creature within 5 feet of you.",
+    "localized": {
+      "name": "Tierbund",
+      "school": "Erkenntnis",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Berührung",
+      "components": "V, G, M (ein in Stoff gewickeltes Fellstück)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du stellst eine telepathische Verbindung zu einem willigen Tier her, das du berührst. Solange es sich innerhalb von 30 Metern befindet, könnt ihr telepathisch kommunizieren und du kannst seine Sinne wahrnehmen. Außerdem hat es Vorteil auf Angriffswürfe gegen Kreaturen innerhalb von 1,5 Metern von dir."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-cause-fear",
+    "name": "Cause Fear",
+    "level": 1,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You awaken a sense of mortality in one creature you can see. It must make a Wisdom saving throw or become frightened of you for the duration. The target can repeat the save at the end of each of its turns.",
+    "higherLevel": "You can target one additional creature for each spell slot level above 1.",
+    "localized": {
+      "name": "Furcht hervorrufen",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du weckst in einer Kreatur, die du sehen kannst, ein Gefühl der Sterblichkeit. Sie muss einen Weisheitsrettungswurf ablegen oder ist für die Wirkungsdauer verängstigt von dir. Am Ende jedes ihrer Züge kann sie den Rettungswurf wiederholen.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 1. kannst du eine zusätzliche Kreatur als Ziel wählen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 151,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-ceremony",
+    "name": "Ceremony",
+    "level": 1,
+    "school": "Abjuration",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "25 gp worth of powdered silver, which the spell consumes",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": true,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "You perform one of several sacred rites, such as blessing water, coming of age, dedication, funeral, wedding, or atonement. Each rite has a distinct magical benefit and may require specific participants or circumstances.",
+    "localized": {
+      "name": "Zeremonie",
+      "school": "Bannmagie",
+      "classes": [
+        "cleric",
+        "paladin"
+      ],
+      "castingTime": "1 Stunde",
+      "range": "Berührung",
+      "components": "V, G, M (Silberpulver im Wert von 25 GM, das der Zauber verbraucht)",
+      "duration": "Unmittelbar",
+      "description": "Du führst eines von mehreren heiligen Ritualen durch, etwa Weihung von Wasser, Initiation, Hingabe, Bestattung, Hochzeit oder Sühne. Jedes Ritual besitzt einen eigenen magischen Effekt und kann bestimmte Teilnehmer oder Voraussetzungen erfordern."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 151,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-bones-of-the-earth",
+    "name": "Bones of the Earth",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "You cause up to six stone pillars to erupt from the ground at points you can see. Creatures beneath a pillar make a Dexterity saving throw or take bludgeoning damage and are lifted with it; the pillars can also provide elevation or barriers.",
+    "higherLevel": "You can create two additional pillars for each spell slot level above 6.",
+    "localized": {
+      "name": "Knochen der Erde",
+      "school": "Verwandlung",
+      "classes": [
+        "druid"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du lässt bis zu sechs Steinsäulen an Punkten hervorbrechen, die du sehen kannst. Kreaturen unter einer Säule müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden Wuchtschaden und werden mit ihr angehoben. Die Säulen können außerdem erhöhte Positionen oder Barrieren schaffen.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 6. kannst du zwei zusätzliche Säulen erschaffen."
+    },
+    "damage": [
+      {
+        "dice": "6d6",
+        "average": 21,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-create-homunculus",
+    "name": "Create Homunculus",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 hour",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "clay, ash, and mandrake root, all of which the spell consumes, plus a jewel worth at least 1,000 gp",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You create a homunculus from alchemical materials and a jewel. The creature becomes your loyal companion, shares a telepathic bond with you, and can act independently while following your commands.",
+    "localized": {
+      "name": "Homunkulus erschaffen",
+      "school": "Verwandlung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Stunde",
+      "range": "Berührung",
+      "components": "V, G, M (Ton, Asche und Alraunenwurzel, die der Zauber verbraucht, sowie ein Edelstein im Wert von mindestens 1.000 GM)",
+      "duration": "Unmittelbar",
+      "description": "Du erschaffst aus alchemistischen Materialien und einem Edelstein einen Homunkulus. Die Kreatur wird zu deinem loyalen Gefährten, teilt eine telepathische Verbindung mit dir und kann selbstständig handeln, während sie deinen Befehlen folgt."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 152,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-druid-grove",
+    "name": "Druid Grove",
+    "level": 6,
+    "school": "Abjuration",
+    "castingTime": "10 minutes",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "mistletoe harvested with a golden sickle under the light of a full moon",
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "You protect an outdoor area with druidic magic, creating effects such as guarded trees, hidden paths, grasping undergrowth, and magical warding. The grove's features can hinder intruders and alert you to their presence.",
+    "localized": {
+      "name": "Druidischer Hain",
+      "school": "Bannmagie",
+      "classes": [
+        "druid"
+      ],
+      "castingTime": "10 Minuten",
+      "range": "Berührung",
+      "components": "V, G, M (Mistelzweig, bei Vollmond mit einer goldenen Sichel geerntet)",
+      "duration": "24 Stunden",
+      "description": "Du schützt ein Gebiet im Freien mit druidischer Magie und erschaffst Effekte wie bewachte Bäume, verborgene Pfade, packendes Unterholz und magische Schutzzauber. Die Merkmale des Hains können Eindringlinge behindern und dich auf ihre Anwesenheit aufmerksam machen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 154,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-invulnerability",
+    "name": "Invulnerability",
+    "level": 9,
+    "school": "Abjuration",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "a small piece of adamantine worth at least 500 gp",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You become immune to all damage until the spell ends.",
+    "localized": {
+      "name": "Unverwundbarkeit",
+      "school": "Bannmagie",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V, G, M (ein kleines Stück Adamant im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du wirst bis zum Ende des Zaubers gegen jeglichen Schaden immun."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-maddening-darkness",
+    "name": "Maddening Darkness",
+    "level": 8,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "150 feet",
+    "components": "V, M",
+    "material": "a drop of pitch mixed with a drop of mercury",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You create a sphere of magical darkness filled with maddening whispers. Creatures that start their turn in the area take psychic damage and must make a Wisdom saving throw or suffer additional mental effects.",
+    "localized": {
+      "name": "Wahnsinnige Dunkelheit",
+      "school": "Hervorrufung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "45 Meter",
+      "components": "V, M (ein Tropfen Pech mit einem Tropfen Quecksilber vermischt)",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Du erschaffst eine Sphäre magischer Dunkelheit, die von wahnsinnigen Stimmen erfüllt ist. Kreaturen, die ihren Zug im Bereich beginnen, erleiden psychischen Schaden und müssen einen Weisheitsrettungswurf ablegen, um weiteren geistigen Auswirkungen zu widerstehen."
+    },
+    "damage": [
+      {
+        "dice": "8d8",
+        "average": 36,
+        "type": "psychic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-maelstrom",
+    "name": "Maelstrom",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "paper or a leaf in water",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid"
+    ],
+    "description": "You create a whirling sphere of water with a 30-foot radius. Creatures in the area make a Strength saving throw, taking bludgeoning damage on a failure and being pulled toward the center.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 5.",
+    "localized": {
+      "name": "Mahlstrom",
+      "school": "Hervorrufung",
+      "classes": [
+        "druid"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "36 Meter",
+      "components": "V, G, M (Papier oder ein Blatt in Wasser)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst eine wirbelnde Wassersphäre mit 9 Metern Radius. Kreaturen im Bereich müssen einen Stärkerettungswurf ablegen. Bei einem Misserfolg erleiden sie Wuchtschaden und werden zum Zentrum gezogen.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "6d6",
+        "average": 21,
+        "type": "bludgeoning"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 160,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-summon-lesser-demons",
+    "name": "Summon Lesser Demons",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a vial of blood from a humanoid killed within the past 24 hours",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a group of lesser demons in unoccupied spaces within range. They are hostile to all creatures, including you, and act according to their chaotic nature. A protective circle can help keep them contained.",
+    "higherLevel": "You summon two additional demons for each spell slot level above 3.",
+    "localized": {
+      "name": "Geringere Dämonen beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du beschwörst eine Gruppe geringerer Dämonen an freien Orten in Reichweite. Sie sind allen Kreaturen gegenüber feindselig, auch dir, und handeln gemäß ihrer chaotischen Natur. Ein Schutzkreis kann helfen, sie einzudämmen.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 3. beschwörst du zwei zusätzliche Dämonen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 166,
+    "descriptionKind": "original-summary"
   }
 ]
