@@ -10,9 +10,9 @@ English SRD 5.1 spell fields are imported from the 5e-bits/5e-database dataset, 
 
 The existing normalized damage summaries retain their earlier derivation from DnD-RSR, `pipeline/data/raw/spells-SRD14.js`, by A. Bruce Pilcher: https://github.com/BruceP42/DnD-RSR. Adventura keeps those derived summaries alongside the English spell fields imported from 5e-bits.
 
-## D&D SRD 5.2 (2024 rules)
+## D&D SRD 5.2.1 (2024 rules)
 
-Portions of this work include material from the System Reference Document 5.2 ("SRD 5.2") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
+Portions of this work include material from the System Reference Document 5.2.1 ("SRD 5.2.1") by Wizards of the Coast LLC, available at https://www.dndbeyond.com/srd. The SRD 5.2 is licensed under the Creative Commons Attribution 4.0 International License, available at https://creativecommons.org/licenses/by/4.0/legalcode.
 
 English structured data source: 5e-bits/5e-database, `src/2024/en/5e-SRD-Spells.json`, pinned at commit `b910e6981ce5de122738b331156954b6781b583e`: https://github.com/5e-bits/5e-database/blob/b910e6981ce5de122738b331156954b6781b583e/src/2024/en/5e-SRD-Spells.json. The complete English snapshot is retained at `data/sources/srd-5.2.1/spells/en.json`.
 
@@ -24,16 +24,11 @@ CC BY 4.0 permits sharing and adaptation, including commercial use, provided app
 
 License text: https://creativecommons.org/licenses/by/4.0/legalcode
 
-## German-language SRD 5.2.1 spell data
-
-German spell names, descriptions, components, ranges and other localized fields are sourced from the bilingual SRD 5.2.1 dataset in Lil-Dank/zauberkarten-werkstatt, file spells.js: https://github.com/Lil-Dank/zauberkarten-werkstatt. Its README identifies the German text as material from Wizards of the Coast LLC's German System Reference Document 5.2.1, published under CC BY 4.0: https://media.dndbeyond.com/compendium-images/srd/5.2/DE_SRD_CC_v5.2.1.pdf. Adventura incorporates the German SRD fields and adds normalized spell metadata and derived damage summaries. The upstream dataset and its attribution are retained here as provenance; this does not imply endorsement by Wizards of the Coast.
-
-
 ## Required attribution for the German SRD 5.1 text
 
 Dieses Werk enthält Material aus dem Systemreferenzdokument 5.1 („SRD 5.1“) von Wizards of the Coast LLC, das unter https://dnd.wizards.com/de/resources/systems-reference-document verfügbar ist. Das SRD 5.1 ist lizenziert gemäß der Lizenz Creative Commons Namensnennung 4.0 International, die unter https://creativecommons.org/licenses/by/4.0/legalcode.de verfügbar ist.
 
-German SRD 5.1 spell descriptions are being added only from the official German SRD 5.1 document. No descriptions, rules text, class lists, or spell data are borrowed from SRD 5.2.1. The structured German source snapshot is stored at `data/sources/srd-5.1/spells/de.json`. The German interface must never silently fall back to English or to 2024 text.
+German SRD 5.1 spell names, descriptions, higher-level text, components and other localized fields are imported from the official German SRD 5.1 translation. No descriptions, rules text, class lists, or spell data are borrowed from SRD 5.2.1. The structured German source snapshot is stored at `data/sources/srd-5.1/spells/de.json`. The German interface must never silently fall back to English or to 2024 text.
 
 ## Required attribution for SRD 5.2.1
 
