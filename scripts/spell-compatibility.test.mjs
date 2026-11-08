@@ -7,7 +7,7 @@ const readJson = (path) => JSON.parse(readText(path))
 const normalize = (spell) =>
   (spell.englishName ?? spell.name)
     .normalize('NFKD')
-    .replace(/[\\u0300-\\u036f]/g, '')
+    .replace(/\p{M}/gu, '')
     .toLowerCase()
     .replace(/[^a-z0-9]/g, '')
 
