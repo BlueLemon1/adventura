@@ -125,6 +125,7 @@ export function SpellbookPage({
         language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
       damage: spell?.damage,
       contentSourceId: spell?.contentSourceId,
+      legacy: spell?.legacy,
       notes: featureName,
       source: 'class',
       sourceName: feature.source === 'subclass' ? t('Unterklassenmerkmal') : t('Klassenmerkmal'),
