@@ -148,6 +148,28 @@ Included TCE spells:
 - Dream of the Blue Veil (p. 106)
 - Blade of Disaster (p. 106)
 
+### Strixhaven: A Curriculum of Chaos (SCC)
+
+Included spells:
+- Borrowed Knowledge (p. 37)
+- Kinetic Jaunt (p. 37)
+- Silvery Barbs (p. 38)
+- Vortex Warp (p. 38)
+- Wither and Bloom (p. 38)
+
+### Fizban's Treasury of Dragons (FTD)
+
+Included spells:
+- Ashardalon's Stride (p. 19)
+- Draconic Transformation (p. 19)
+- Fizban's Platinum Shield (p. 20)
+- Nathair's Mischief (p. 20)
+- Raulothim's Psychic Lance (p. 21)
+- Rime's Binding Ice (p. 21)
+- Summon Draconic Spirit (p. 21)
+
+These two sourcebooks are currently represented as 2014-era supplements. Their entries will be made available under the 2024 ruleset only after compatibility is checked individually.
+
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
 
 ### Sword Coast Adventurer's Guide (SCAG)
