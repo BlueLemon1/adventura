@@ -15,8 +15,11 @@ for (const spell of source) {
   }
 
   const sourceId = 'srd-2014-' + spell.index
-  const targetId =
-    sourceId === 'srd-2014-hunters-mark'\n      ? 'srd-2014-hunter-s-mark'\n      : sourceId === 'srd-2014-arcanists-magic-aura'\n        ? 'srd-2014-arcanist-s-magic-aura'\n        : sourceId
+  const idAliases = {
+    'srd-2014-hunters-mark': 'srd-2014-hunter-s-mark',
+    'srd-2014-arcanists-magic-aura': 'srd-2014-arcanist-s-magic-aura',
+  }
+  const targetId = idAliases[sourceId] ?? sourceId
   const target = spellsById.get(targetId)
   if (!target) throw new Error('Missing Adventura spell: ' + sourceId)
 
