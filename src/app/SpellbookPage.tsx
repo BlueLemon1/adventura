@@ -87,14 +87,14 @@ export function SpellbookPage({
     const englishHigherLevel = spell.higherLevel
     return {
       ...knownSpell,
-      name: language === 'de' ? localized?.name ?? '' : spell.name,
+      name: language === 'de' ? (localized?.name ?? '') : spell.name,
       spellLevel: spell.level,
-      school: language === 'de' ? localized?.school ?? '' : spell.school,
-      castingTime: language === 'de' ? localized?.castingTime ?? '' : spell.castingTime,
-      range: language === 'de' ? localized?.range ?? '' : spell.range,
-      components: language === 'de' ? localized?.components ?? '' : spell.components,
-      duration: language === 'de' ? localized?.duration ?? '' : spell.duration,
-      description: language === 'de' ? localized?.description ?? '' : spell.description,
+      school: language === 'de' ? (localized?.school ?? '') : spell.school,
+      castingTime: language === 'de' ? (localized?.castingTime ?? '') : spell.castingTime,
+      range: language === 'de' ? (localized?.range ?? '') : spell.range,
+      components: language === 'de' ? (localized?.components ?? '') : spell.components,
+      duration: language === 'de' ? (localized?.duration ?? '') : spell.duration,
+      description: language === 'de' ? (localized?.description ?? '') : spell.description,
       higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
       higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
     }
@@ -121,15 +121,15 @@ export function SpellbookPage({
       resourceId: feature.resourceId,
       resourceCost: feature.resourceCost ?? 1,
       spellId: feature.id,
-      name: language === 'de' ? localizedSpell?.name ?? feature.localizedName ?? '' : spellName,
+      name: language === 'de' ? (localizedSpell?.name ?? feature.localizedName ?? '') : spellName,
       learnedAtLevel: feature.level,
       prepared: true,
       spellLevel: spell?.level ?? 0,
       school: language === 'de' ? localizedSpell?.school : spell?.school,
       castingTime:
         language === 'de'
-          ? localizedSpell?.castingTime ?? ''
-          : spell?.castingTime ?? t('Aktion'),
+          ? (localizedSpell?.castingTime ?? '')
+          : (spell?.castingTime ?? t('Aktion')),
       range: language === 'de' ? localizedSpell?.range : spell?.range,
       components:
         feature.spellbookSpellId === 'srd-2024-find-familiar' ||
@@ -141,8 +141,8 @@ export function SpellbookPage({
       ritual: spell?.ritual,
       description:
         language === 'de'
-          ? localizedSpell?.description ?? ''
-          : spell?.description ?? feature.description ?? '',
+          ? (localizedSpell?.description ?? '')
+          : (spell?.description ?? feature.description ?? ''),
       higherLevel: getHigherLevelText(englishHigherLevel, localizedSpell?.higherLevel, language),
       higherLevelLabel:
         language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
