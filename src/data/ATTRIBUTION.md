@@ -61,6 +61,7 @@ Included entries:
 - Guardian of Nature (p. 157)
 - Healing Spirit (p. 157)
 - Holy Weapon (p. 157)
+- Ice Knife (p. 157; originally Elemental Evil Player's Companion p. 15)
 - Illusory Dragon (p. 158)
 - Immolation (p. 158)
 - Infernal Calling (p. 158)
@@ -122,7 +123,7 @@ Included entries:
 
 ### Tasha's Cauldron of Everything (TCE)
 
-Tasha's supplemental entries are factual spell metadata with independently written German and English summaries. They are currently assigned to the 2014 ruleset, because that is the rules context of the sourcebook; compatibility with the 2024 ruleset is assessed spell by spell rather than assumed.
+Tasha's supplemental entries are factual spell metadata with independently written German and English summaries. Most TCE entries are assigned to the 2014 ruleset, matching the sourcebook's rules context. The four revised cantrips reprinted from SCAG are also marked compatible with the 2024 ruleset; other spells are added to 2024 only after their compatibility is checked.
 
 Included TCE spells:
 - Booming Blade (p. 106; originally SCAG p. 142)
