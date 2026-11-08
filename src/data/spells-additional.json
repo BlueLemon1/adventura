@@ -4594,5 +4594,439 @@
     "sourceAbbreviation": "XGE",
     "sourcePage": 171,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-immolation",
+    "name": "Immolation",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You engulf one creature in flames. It makes a Dexterity saving throw, taking 8d6 fire damage on a failure or half as much on a success. A creature that fails continues burning, taking 4d6 fire damage at the end of each of its turns until the flames are extinguished or the spell ends.",
+    "higherLevel": "The initial damage increases by 1d6 for each spell slot level above 5.",
+    "localized": {
+      "name": "Verbrennen",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du hüllst eine Kreatur in Flammen. Sie muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 8W6 Feuerschaden oder bei Erfolg halben Schaden. Eine Kreatur, die den Rettungswurf nicht besteht, brennt weiter und erleidet am Ende jedes ihrer Züge 4W6 Feuerschaden, bis die Flammen gelöscht werden oder der Zauber endet.",
+      "higherLevel": "Der anfängliche Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "8d6",
+        "average": 28,
+        "type": "fire"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 158,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-infernal-calling",
+    "name": "Infernal Calling",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 minute",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a ruby worth at least 999 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a devil of challenge rating 6 or lower from the Nine Hells into an unoccupied space. The devil is unfriendly and acts under the DM's control, but you can attempt to bargain with it or issue commands. It disappears when reduced to 0 hit points or when the spell ends.",
+    "higherLevel": "The maximum challenge rating of the summoned devil increases by 1 for each spell slot level above 5.",
+    "localized": {
+      "name": "Infernalen Ruf",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "27 Meter",
+      "components": "V, G, M (ein Rubin im Wert von mindestens 999 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Teufel mit Herausforderungsgrad 6 oder niedriger aus den Neun Höllen an einen freien Ort. Der Teufel ist dir gegenüber unfreundlich und wird vom SL kontrolliert, doch du kannst versuchen, mit ihm zu verhandeln oder ihm Befehle zu erteilen. Er verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Der maximale Herausforderungsgrad des beschworenen Teufels steigt für jeden Zauberplatzgrad über dem 5. um 1."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 158,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-mighty-fortress",
+    "name": "Mighty Fortress",
+    "level": 8,
+    "school": "Conjuration",
+    "castingTime": "1 minute",
+    "range": "1 mile",
+    "components": "V, S, M",
+    "material": "a diamond worth at least 500 gp",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "wizard"
+    ],
+    "description": "You conjure a fortified stronghold at a point you can see within range. The structure includes defensive walls, towers, gates, rooms, and furnishings, and remains until dispelled. Repeated castings at the same location over a year can make the fortress permanent.",
+    "localized": {
+      "name": "Mächtige Festung",
+      "school": "Beschwörung",
+      "classes": [
+        "wizard"
+      ],
+      "castingTime": "1 Minute",
+      "range": "1,6 Kilometer",
+      "components": "V, G, M (ein Diamant im Wert von mindestens 500 GM)",
+      "duration": "Unmittelbar",
+      "description": "Du beschwörst an einem Punkt, den du innerhalb der Reichweite sehen kannst, eine befestigte Festung. Das Bauwerk umfasst Verteidigungsmauern, Türme, Tore, Räume und Einrichtung und bleibt bestehen, bis es gebannt wird. Wiederholtes Wirken am selben Ort über ein Jahr kann die Festung dauerhaft machen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 161,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-skill-empowerment",
+    "name": "Skill Empowerment",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "wizard",
+      "artificer"
+    ],
+    "description": "You touch a willing creature and grant it expertise in one skill in which it is proficient. Until the spell ends, it doubles its proficiency bonus on ability checks using that skill, provided it isn't already benefiting from a similar effect.",
+    "localized": {
+      "name": "Fertigkeitsstärkung",
+      "school": "Verwandlung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "wizard",
+        "artificer"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Berührung",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du berührst eine willige Kreatur und verleihst ihr Expertise in einer Fertigkeit, in der sie geübt ist. Bis zum Ende des Zaubers verdoppelt sie ihren Übungsbonus auf Attributswürfe mit dieser Fertigkeit, sofern sie nicht bereits von einem vergleichbaren Effekt profitiert."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 165,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-soul-cage",
+    "name": "Soul Cage",
+    "level": 6,
+    "school": "Necromancy",
+    "castingTime": "1 reaction, when a humanoid you can see within 60 feet dies",
+    "range": "60 feet",
+    "components": "V, S, M",
+    "material": "a tiny silver cage worth 100 gp",
+    "duration": "8 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You trap the soul of a humanoid as it dies inside a tiny silver cage. You can exploit the soul up to six times for benefits such as healing, asking it a question, gaining advantage on a roll, or observing a place it knew in life. The soul cannot be revived while trapped.",
+    "localized": {
+      "name": "Seelenkäfig",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Reaktion, wenn ein Humanoider, den du innerhalb von 18 Metern sehen kannst, stirbt",
+      "range": "18 Meter",
+      "components": "V, G, M (ein winziger Silberkäfig im Wert von 100 GM)",
+      "duration": "8 Stunden",
+      "description": "Du fängst die Seele eines sterbenden Humanoiden in einem winzigen Silberkäfig ein. Du kannst die Seele bis zu sechsmal für Vorteile nutzen, etwa um dich zu heilen, ihr eine Frage zu stellen, Vorteil auf einen Wurf zu erhalten oder einen Ort zu beobachten, den sie zu Lebzeiten kannte. Solange sie gefangen ist, kann der Humanoide nicht wiederbelebt werden."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 165,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-snillocs-snowball-swarm",
+    "name": "Snilloc's Snowball Swarm",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a piece of ice or a small white rock chip",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "A flurry of magical snowballs bursts at a point within range. Each creature in a 5-foot-radius sphere makes a Dexterity saving throw, taking 3d6 cold damage on a failure or half as much on a success.",
+    "higherLevel": "The damage increases by 1d6 for each spell slot level above 2.",
+    "localized": {
+      "name": "Snillocs Schneeballschwarm",
+      "school": "Hervorrufung",
+      "classes": [
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M (ein Stück Eis oder ein kleiner Splitter weißen Steins)",
+      "duration": "Unmittelbar",
+      "description": "Ein Schwarm magischer Schneebälle explodiert an einem Punkt in Reichweite. Jede Kreatur in einer Sphäre mit 1,5 Metern Radius muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 3W6 Kälteschaden oder bei Erfolg halben Schaden.",
+      "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "3d6",
+        "average": 10.5,
+        "type": "cold"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 165,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-temple-of-the-gods",
+    "name": "Temple of the Gods",
+    "level": 7,
+    "school": "Conjuration",
+    "castingTime": "1 hour",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "material": "a holy symbol worth at least 5 gp",
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "You cause a temple to appear at a point within range. It is dedicated to a deity or pantheon you name and contains a protected interior, furnishings, and magical wards against certain creatures. The structure vanishes when the spell ends.",
+    "localized": {
+      "name": "Tempel der Götter",
+      "school": "Beschwörung",
+      "classes": [
+        "cleric"
+      ],
+      "castingTime": "1 Stunde",
+      "range": "36 Meter",
+      "components": "V, G, M (ein heiliges Symbol im Wert von mindestens 5 GM)",
+      "duration": "24 Stunden",
+      "description": "Du lässt an einem Punkt in Reichweite einen Tempel erscheinen. Er ist einer Gottheit oder einem Pantheon deiner Wahl gewidmet und besitzt einen geschützten Innenraum, Einrichtung und magische Schutzmaßnahmen gegen bestimmte Kreaturen. Das Bauwerk verschwindet, wenn der Zauber endet."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 167,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-toll-the-dead",
+    "name": "Toll the Dead",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You point at one creature you can see within range. It must make a Wisdom saving throw, taking 1d8 necrotic damage on a failure, or 1d12 if it is missing any hit points. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Totenglocke",
+      "school": "Nekromantie",
+      "classes": [
+        "cleric",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Unmittelbar",
+      "description": "Du deutest auf eine Kreatur, die du in Reichweite sehen kannst. Sie muss einen Weisheitsrettungswurf ablegen und erleidet bei einem Misserfolg 1W8 nekrotischen Schaden oder 1W12, wenn ihr Trefferpunkte fehlen. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um einen Würfel."
+    },
+    "damage": [
+      {
+        "dice": "1d8 / 1d12",
+        "average": 4.5,
+        "type": "necrotic"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 169,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-warding-wind",
+    "name": "Warding Wind",
+    "level": 2,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self",
+    "components": "V",
+    "material": "",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "A strong wind swirls around you in a 10-foot radius. It deafens creatures in the area, extinguishes small flames, makes the area difficult terrain, imposes disadvantage on ranged weapon attacks passing through it, and protects you from gases and vapors.",
+    "localized": {
+      "name": "Schutzwind",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst",
+      "components": "V",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Ein starker Wind wirbelt in einem Radius von 3 Metern um dich. Er lässt Kreaturen im Bereich taub werden, löscht kleine Flammen, macht das Gebiet zu schwierigem Gelände, verursacht Nachteil auf Fernkampfwaffenangriffe, die hindurchgehen, und schützt dich vor Gasen und Dämpfen."
+    },
+    "damage": [],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "xge-2014-word-of-radiance",
+    "name": "Word of Radiance",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "1 action",
+    "range": "Self (5-foot radius)",
+    "components": "V, M",
+    "material": "a holy symbol",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "You utter a radiant word. Each creature of your choice within 5 feet must make a Constitution saving throw, taking 1d6 radiant damage on a failure. The damage increases at character levels 5, 11, and 17.",
+    "localized": {
+      "name": "Wort des Strahlens",
+      "school": "Hervorrufung",
+      "classes": [
+        "cleric"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Selbst (1,5-Meter-Radius)",
+      "components": "V, M (ein heiliges Symbol)",
+      "duration": "Unmittelbar",
+      "description": "Du sprichst ein strahlendes Wort. Jede Kreatur deiner Wahl innerhalb von 1,5 Metern muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 1W6 Strahlenschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "radiant"
+      }
+    ],
+    "contentSourceId": "xge-2017",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Xanathar's Guide to Everything",
+    "sourceAbbreviation": "XGE",
+    "sourcePage": 170,
+    "descriptionKind": "original-summary"
   }
 ]
