@@ -158,7 +158,10 @@ export function findCatalogSpell(
         ? catalog.find((spell) => spell.id === compatibility.replacementSpellId)
         : undefined
     }
-    if (compatibility?.status === 'shared') return undefined
+    if (compatibility?.status === 'shared') {
+      const key = normalizeSpellName(original)
+      return catalog.find((spell) => normalizeSpellName(spell) === key)
+    }
     if (sourceRuleset === '2014' && !compatibility && original.contentSourceId !== 'srd-5.1') {
       return undefined
     }
