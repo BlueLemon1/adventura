@@ -1078,5 +1078,139 @@
     "sourceAbbreviation": "TCE",
     "sourcePage": 112,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-tashas-otherworldly-guise",
+    "name": "Tasha's Otherworldly Guise",
+    "level": 6,
+    "school": "Transmutation",
+    "castingTime": "1 bonus action",
+    "range": "Self",
+    "components": "V, S, M",
+    "material": "an object engraved with a symbol of the Outer Planes, worth at least 500 gp",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You transform yourself by drawing on either the Lower or Upper Planes. Depending on your choice, you gain immunity to two damage types and one condition, spectral wings that grant a flying speed, increased Armor Class, and magical weapon attacks that use your spellcasting ability. You can also make two attacks when taking the Attack action, unless another feature already grants that benefit.",
+    "localized": {
+      "name": "Tashas jenseitige Gestalt",
+      "school": "Verwandlung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G, M (ein mit einem Symbol der Äußeren Ebenen gravierter Gegenstand im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du verwandelst dich mithilfe der Macht der Unteren oder Oberen Ebenen. Je nach Wahl erhältst du Immunität gegen zwei Schadensarten und einen Zustand, geisterhafte Flügel mit Flugbewegungsrate, eine erhöhte Rüstungsklasse sowie magische Waffenangriffe, bei denen du dein Zauberattribut verwendest. Außerdem kannst du bei der Angriffsaktion zweimal angreifen, sofern dir nicht bereits eine andere Fähigkeit zusätzliche Angriffe gewährt."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 116,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-dream-of-the-blue-veil",
+    "name": "Dream of the Blue Veil",
+    "level": 7,
+    "school": "Conjuration",
+    "castingTime": "10 minutes",
+    "range": "20 feet",
+    "components": "V, S, M",
+    "material": "a magic item or a willing creature from the destination world",
+    "duration": "6 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You and up to eight willing creatures fall unconscious and experience visions of another world. If the spell completes, you are transported there. Casting requires knowledge of the destination and either a magic item originating there or a participant born there. Damage can end the effect early and prevent transport.",
+    "localized": {
+      "name": "Traum des blauen Schleiers",
+      "school": "Beschwörung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "10 Minuten",
+      "range": "6 Meter",
+      "components": "V, G, M (ein magischer Gegenstand oder eine willige Kreatur aus der Zielwelt)",
+      "duration": "6 Stunden",
+      "description": "Du und bis zu acht willige Kreaturen fallen in Schlaf und erleben Visionen einer anderen Welt. Wird der Zauber vollständig gewirkt, werdet ihr dorthin transportiert. Zum Wirken musst du das Ziel kennen und entweder einen magischen Gegenstand aus dieser Welt besitzen oder eine teilnehmende Kreatur dorthin zurückführen, in deren Geburtswelt ihr reisen wollt. Schaden kann den Effekt vorzeitig beenden und den Transport verhindern."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 106,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-blade-of-disaster",
+    "name": "Blade of Disaster",
+    "level": 9,
+    "school": "Conjuration",
+    "castingTime": "1 bonus action",
+    "range": "60 feet",
+    "components": "V, S",
+    "material": "",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You create a small planar rift shaped like a blade in an unoccupied space. It can make two melee spell attacks against nearby targets, dealing 4d12 force damage on a hit and scoring critical hits on a d20 roll of 18–20; a critical hit deals additional force damage. As a bonus action, you can move the blade and attack again. It passes harmlessly through barriers.",
+    "localized": {
+      "name": "Katastrophenklinge",
+      "school": "Beschwörung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Bonusaktion",
+      "range": "18 Meter",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Du erschaffst in einem freien Raum einen kleinen, klingenförmigen Riss in der Ebene. Er kann zwei Nahkampf-Zauberangriffe gegen Ziele in seiner Nähe ausführen und verursacht bei einem Treffer 4W12 Kraftschaden. Bei einem W20-Ergebnis von 18 bis 20 ist der Treffer kritisch und verursacht zusätzlichen Kraftschaden. Als Bonusaktion kannst du die Klinge bewegen und erneut angreifen lassen. Sie durchdringt Hindernisse, ohne ihnen zu schaden."
+    },
+    "damage": [
+      {
+        "dice": "4d12",
+        "average": 26,
+        "type": "force"
+      }
+    ],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 106,
+    "descriptionKind": "original-summary"
   }
 ]
