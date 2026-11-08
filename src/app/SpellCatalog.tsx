@@ -75,6 +75,29 @@ const CATALOGS: Record<Character['ruleset'], CatalogSpell[]> = {
   ],
 }
 
+const DUNAMANCY_LABELS: Record<
+  Language,
+  Record<NonNullable<CatalogSpell['subclassRestriction']>, string>
+> = {
+  de: {
+    chronurgy: 'Chronurgie-Magie',
+    graviturgy: 'Graviturgie-Magie',
+    both: 'Chronurgie- und Graviturgie-Magie',
+  },
+  en: {
+    chronurgy: 'Chronurgy Magic',
+    graviturgy: 'Graviturgy Magic',
+    both: 'Chronurgy Magic / Graviturgy Magic',
+  },
+}
+
+function getDunamancyAccessLabel(
+  restriction: NonNullable<CatalogSpell['subclassRestriction']>,
+  language: Language,
+) {
+  return DUNAMANCY_LABELS[language][restriction]
+}
+
 const CLASS_ALIASES: Record<string, string> = {
   barde: 'bard',
   kleriker: 'cleric',
@@ -356,11 +379,7 @@ export function SpellCatalog({
           spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
           spell.previousSource ? `ursprünglich ${spell.previousSource}` : undefined,
           spell.subclassRestriction
-            ? `Dunamancy (${spell.subclassRestriction === 'chronurgy'
-                ? language === 'de' ? 'Chronurgie-Magie' : 'Chronurgy Magic'
-                : spell.subclassRestriction === 'graviturgy'
-                  ? language === 'de' ? 'Graviturgie-Magie' : 'Graviturgy Magic'
-                  : language === 'de' ? 'Chronurgie- und Graviturgie-Magie' : 'Chronurgy Magic / Graviturgy Magic'})`
+            ? `Dunamancy (${getDunamancyAccessLabel(spell.subclassRestriction, language)})`
             : undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
@@ -588,11 +607,7 @@ export function SpellCatalog({
                 {spell.subclassRestriction && (
                   <small className="catalog-spell-restriction">
                     {t('Dunamancy-Zugang')}:{' '}
-                    {spell.subclassRestriction === 'chronurgy'
-                      ? language === 'de' ? 'Chronurgie-Magie' : 'Chronurgy Magic'
-                      : spell.subclassRestriction === 'graviturgy'
-                        ? language === 'de' ? 'Graviturgie-Magie' : 'Graviturgy Magic'
-                        : language === 'de' ? 'Chronurgie- und Graviturgie-Magie' : 'Chronurgy Magic / Graviturgy Magic'}
+                    {getDunamancyAccessLabel(spell.subclassRestriction, language)}
                     {' · '}
                     {t('Andere Klassen nur mit Zustimmung der Spielleitung')}
                   </small>
