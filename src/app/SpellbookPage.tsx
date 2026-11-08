@@ -20,7 +20,7 @@ import { SpellCatalog } from './SpellCatalog'
 import { getHigherLevelText } from './SpellHigherLevel'
 import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
-import { findCatalogSpell, getSpellCatalog } from '../domain/spellCatalog'
+import { findCatalogSpell } from '../domain/spellCatalog'
 import { getDefaultSpellcastingAbility, getSpellcastingStats } from '../domain/spellcasting'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { translate } from './i18n'
@@ -51,7 +51,6 @@ export function SpellbookPage({
   const featureSpells = getSpellbookFeatureSpells(character, language)
   const classResources = getClassResources(character)
   const spellCapacity = getSpellCapacity(character, knownSpells)
-  const spellCatalog = getSpellCatalog(character.ruleset)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
     const spell = findCatalogSpell(knownSpell.spellId, character.ruleset)
     if (!spell) return knownSpell
