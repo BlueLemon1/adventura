@@ -2,6 +2,7 @@ import { SpellHigherLevel } from './SpellHigherLevel'
 import { useMemo, useState } from 'react'
 import { BookOpen, Check, Clock3, RotateCcw, Search, Sparkles, Trash2 } from 'lucide-react'
 import type { Character, KnownSpell } from '../domain/character'
+import { getContentSourceAbbreviation } from '../domain/contentSources'
 import { getSpellCapacity } from '../domain/spellLimits'
 import { normalizeKey } from '../domain/text'
 import { IconButton } from '../components/ui/button'
@@ -151,6 +152,11 @@ function SpellCard({
               isFeature ? (spell.sourceName ?? 'Klassenmerkmal') : SOURCE_LABELS[source],
             )}
           </span>
+          {getContentSourceAbbreviation(spell.contentSourceId) && (
+            <span className="spell-source source-content" title={spell.contentSourceId}>
+              {getContentSourceAbbreviation(spell.contentSourceId)}
+            </span>
+          )}
           {!isFeature && spell.alwaysPrepared && (
             <span className="always-prepared">
               <Check size={12} />
