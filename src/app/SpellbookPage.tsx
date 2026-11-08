@@ -80,7 +80,9 @@ export function SpellbookPage({
   const spellCatalog = [
     ...(character.ruleset === '2014' ? spells2014 : spells2024),
     ...(additionalSpells as unknown as FeatureSpellCatalogEntry[]).filter((spell) =>
-      (spell as FeatureSpellCatalogEntry & { rulesets?: string[] }).rulesets?.includes(character.ruleset),
+      (spell as FeatureSpellCatalogEntry & { rulesets?: string[] }).rulesets?.includes(
+        character.ruleset,
+      ),
     ),
   ] as unknown as FeatureSpellCatalogEntry[]
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
