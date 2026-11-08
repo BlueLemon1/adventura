@@ -1,1 +1,342 @@
-[]
+[
+  {
+    "id": "2014-artificer-class-magical-tinkering",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#magical-tinkering",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 1,
+    "names": {
+      "en": "Magical Tinkering",
+      "de": "Magische Bastelei"
+    },
+    "descriptions": {
+      "en": "You imbue a tiny object with a limited magical effect, such as light, a sound, or a brief recorded message.",
+      "de": "Du versiehst einen kleinen Gegenstand mit einem begrenzten magischen Effekt, etwa Licht, einem Geräusch oder einer kurzen Botschaft."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-spellcasting",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#spellcasting",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 1,
+    "names": {
+      "en": "Spellcasting",
+      "de": "Zauberwirken"
+    },
+    "descriptions": {
+      "en": "You use tools and an understanding of magical processes to cast spells from the artificer spell list.",
+      "de": "Du nutzt Werkzeuge und dein Verständnis magischer Prozesse, um Zauber aus der Artificer-Zauberliste zu wirken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-infuse-item",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#infuse-item",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 2,
+    "names": {
+      "en": "Infuse Item",
+      "de": "Gegenstand infundieren"
+    },
+    "descriptions": {
+      "en": "You imbue eligible objects with lasting magical enhancements and can maintain a limited number of your known infusions at once.",
+      "de": "Du prägst geeignete Gegenstände mit dauerhaften magischen Verbesserungen und kannst eine begrenzte Zahl deiner bekannten Infusionen gleichzeitig aktiv halten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-artificer-specialist",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#artificer-specialist",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 3,
+    "names": {
+      "en": "Artificer Specialist",
+      "de": "Artificer-Spezialisierung"
+    },
+    "descriptions": {
+      "en": "You choose a specialization that grants additional abilities as you gain levels.",
+      "de": "Du entscheidest dich für eine Spezialisierung, die zusätzliche Fähigkeiten auf höheren Stufen verleiht."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-right-tool-for-the-job",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#right-tool-for-the-job",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 3,
+    "names": {
+      "en": "The Right Tool for the Job",
+      "de": "Das richtige Werkzeug für den Job"
+    },
+    "descriptions": {
+      "en": "During a brief work session, you create a set of artisan's tools that you currently need.",
+      "de": "Mit einer kurzen Arbeitssitzung stellst du ein Set von Handwerkszeug her, das du gerade benötigst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-ability-score-improvement-4",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#ability-score-improvement-4",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 4,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat if feats are used in the campaign.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent, sofern die Kampagne Talente verwendet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-tool-expertise",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#tool-expertise",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 6,
+    "names": {
+      "en": "Tool Expertise",
+      "de": "Werkzeugexpertise"
+    },
+    "descriptions": {
+      "en": "Your proficiency bonus is doubled for ability checks that use a tool with which you are proficient.",
+      "de": "Dein Übungsbonus wird bei Attributswürfen verdoppelt, bei denen du ein Werkzeug verwendest, mit dem du geübt bist."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-flash-of-genius",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#flash-of-genius",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 7,
+    "names": {
+      "en": "Flash of Genius",
+      "de": "Geistesblitz"
+    },
+    "descriptions": {
+      "en": "You can use your quick insight to improve an ability check or saving throw made nearby.",
+      "de": "Du kannst deine schnelle Auffassungsgabe einsetzen, um einen Attributs- oder Rettungswurf in deiner Nähe zu verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-ability-score-improvement-8",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#ability-score-improvement-8",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 8,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat if feats are used in the campaign.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent, sofern die Kampagne Talente verwendet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-magic-item-adept",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#magic-item-adept",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 10,
+    "names": {
+      "en": "Magic Item Adept",
+      "de": "Experte für magische Gegenstände"
+    },
+    "descriptions": {
+      "en": "You can attune to more magic items at once and craft certain items more efficiently.",
+      "de": "Du kannst mehr magische Gegenstände gleichzeitig einstimmen und stellst bestimmte Gegenstände effizienter her."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-spell-storing-item",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#spell-storing-item",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 11,
+    "names": {
+      "en": "Spell-Storing Item",
+      "de": "Zauberspeichernder Gegenstand"
+    },
+    "descriptions": {
+      "en": "You store an artificer spell in an item so that you or another creature can cast it later.",
+      "de": "Du speicherst einen Artificer-Zauber in einem Gegenstand, damit du oder eine andere Kreatur ihn später daraus wirken könnt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-ability-score-improvement-12",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#ability-score-improvement-12",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 12,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat if feats are used in the campaign.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent, sofern die Kampagne Talente verwendet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-magic-item-savant",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#magic-item-savant",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 14,
+    "names": {
+      "en": "Magic Item Savant",
+      "de": "Kenner magischer Gegenstände"
+    },
+    "descriptions": {
+      "en": "Your experience lets you attune to additional magic items and ignore some attunement requirements.",
+      "de": "Deine Erfahrung erlaubt dir, weitere magische Gegenstände einzustimmen und manche Einstimmungsvoraussetzungen zu ignorieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-ability-score-improvement-16",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#ability-score-improvement-16",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 16,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat if feats are used in the campaign.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent, sofern die Kampagne Talente verwendet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-magic-item-master",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#magic-item-master",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 18,
+    "names": {
+      "en": "Magic Item Master",
+      "de": "Meister magischer Gegenstände"
+    },
+    "descriptions": {
+      "en": "You can attune to even more magic items at the same time.",
+      "de": "Du kannst dich auf noch mehr magische Gegenstände gleichzeitig einstimmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-ability-score-improvement-19",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#ability-score-improvement-19",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 19,
+    "names": {
+      "en": "Ability Score Improvement",
+      "de": "Attributswerterhöhung"
+    },
+    "descriptions": {
+      "en": "You increase your ability scores or choose a feat if feats are used in the campaign.",
+      "de": "Du verbesserst deine Attributswerte oder wählst ein Talent, sofern die Kampagne Talente verwendet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-class-soul-of-artifice",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/class-features#soul-of-artifice",
+    "classId": "artificer",
+    "featureType": "class",
+    "level": 20,
+    "names": {
+      "en": "Soul of Artifice",
+      "de": "Seele der Kunstfertigkeit"
+    },
+    "descriptions": {
+      "en": "Your bond with magic items becomes extraordinary and can help you survive otherwise fatal harm.",
+      "de": "Deine Verbindung zu magischen Gegenständen wird außergewöhnlich stark und kann dich vor dem Tod bewahren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  }
+]
