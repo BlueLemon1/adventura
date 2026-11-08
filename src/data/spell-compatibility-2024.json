@@ -1,0 +1,654 @@
+{
+  "version": 1,
+  "source": "D&D Beyond — Updates in the Player’s Handbook (2024)",
+  "sourceUrl": "https://www.dndbeyond.com/posts/1810-updates-in-the-players-handbook-2024",
+  "entries": [
+    {
+      "spellId": "xge-2014-absorb-elements",
+      "status": "shared"
+    },
+    {
+      "spellId": "xge-2014-aganazzars-scorcher",
+      "status": "shared"
+    },
+    {
+      "spellId": "xge-2014-catapult",
+      "status": "shared"
+    },
+    {
+      "spellId": "xge-2014-chaos-bolt",
+      "status": "shared"
+    },
+    {
+      "spellId": "xge-2014-shadow-blade",
+      "status": "shared"
+    },
+    {
+      "spellId": "scag-2014-booming-blade",
+      "status": "shared"
+    },
+    {
+      "spellId": "scag-2014-green-flame-blade",
+      "status": "shared"
+    },
+    {
+      "spellId": "scag-2014-lightning-lure",
+      "status": "shared"
+    },
+    {
+      "spellId": "scag-2014-sword-burst",
+      "status": "shared"
+    },
+    {
+      "spellId": "tce-2014-mind-sliver",
+      "status": "replaced",
+      "replacementName": "Mind Sliver",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-tashas-caustic-brew",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-tashas-mind-whip",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-intellect-fortress",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-spirit-shroud",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-summon-beast",
+      "status": "replaced",
+      "replacementName": "Summon Beast",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-fey",
+      "status": "replaced",
+      "replacementName": "Summon Fey",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-shadowspawn",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-summon-undead",
+      "status": "replaced",
+      "replacementName": "Summon Undead",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-aberration",
+      "status": "replaced",
+      "replacementName": "Summon Aberration",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-construct",
+      "status": "replaced",
+      "replacementName": "Summon Construct",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-elemental",
+      "status": "replaced",
+      "replacementName": "Summon Elemental",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-celestial",
+      "status": "replaced",
+      "replacementName": "Summon Celestial",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-summon-fiend",
+      "status": "replaced",
+      "replacementName": "Summon Fiend",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "tce-2014-tashas-otherworldly-guise",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-dream-of-the-blue-veil",
+      "status": "legacy"
+    },
+    {
+      "spellId": "tce-2014-blade-of-disaster",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-catnap",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-charm-monster",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-charm-monster"
+    },
+    {
+      "spellId": "xge-2014-dawn",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-far-step",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-healing-spirit",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-mind-spike",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-mind-spike"
+    },
+    {
+      "spellId": "xge-2014-shadow-of-moil",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-steel-wind-strike",
+      "status": "replaced",
+      "replacementName": "Steel Wind Strike",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "xge-2014-thunder-step",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-zephyr-strike",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-control-flames",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-create-bonfire",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-frostbite",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-gust",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-infestation",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-magic-stone",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-mold-earth",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-primal-savagery",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-shape-water",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-thunderclap",
+      "status": "replaced",
+      "replacementName": "Thunderclap",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "xge-2014-erupting-earth",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-flame-arrows",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-sickening-radiance",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-storm-sphere",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-tidal-wave",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-tiny-servant",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-wall-of-sand",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-wall-of-water",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-watery-sphere",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-vitriolic-sphere",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-vitriolic-sphere"
+    },
+    {
+      "spellId": "xge-2014-control-winds",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-crown-of-stars",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-danse-macabre",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-dragons-breath",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-dragons-breath"
+    },
+    {
+      "spellId": "xge-2014-dust-devil",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-earth-tremor",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-earthbind",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-elemental-bane",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-enemies-abound",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-enervation",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-guardian-of-nature",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-holy-weapon",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-life-transference",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-maximilians-earthen-grasp",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-melfs-minute-meteors",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-psychic-scream",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-pyrotechnics",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-scatter",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-skywrite",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-snare",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-beast-bond",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-cause-fear",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-ceremony",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-bones-of-the-earth",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-create-homunculus",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-druid-grove",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-invulnerability",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-maddening-darkness",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-maelstrom",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-summon-lesser-demons",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-abi-dalzims-horrid-wilting",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-illusory-dragon",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-investiture-of-flame",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-investiture-of-ice",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-investiture-of-stone",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-investiture-of-wind",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-mass-polymorph",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-negative-energy-flood",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-power-word-pain",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-primordial-ward",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-summon-greater-demon",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-transmute-rock",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-wall-of-light",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-whirlwind",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-wrath-of-nature",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-immolation",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-infernal-calling",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-mighty-fortress",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-skill-empowerment",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-soul-cage",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-snillocs-snowball-swarm",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-temple-of-the-gods",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-toll-the-dead",
+      "status": "replaced",
+      "replacementName": "Toll the Dead",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "xge-2014-warding-wind",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-word-of-radiance",
+      "status": "replaced",
+      "replacementName": "Word of Radiance",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "xge-2014-mental-prison",
+      "status": "legacy"
+    },
+    {
+      "spellId": "xge-2014-synaptic-static",
+      "status": "replaced",
+      "replacementName": "Synaptic Static",
+      "replacementSource": "phb-2024"
+    },
+    {
+      "spellId": "xge-2014-ice-knife",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-ice-knife"
+    },
+    {
+      "spellId": "scc-2021-borrowed-knowledge",
+      "status": "legacy"
+    },
+    {
+      "spellId": "scc-2021-kinetic-jaunt",
+      "status": "shared"
+    },
+    {
+      "spellId": "scc-2021-silvery-barbs",
+      "status": "legacy"
+    },
+    {
+      "spellId": "scc-2021-vortex-warp",
+      "status": "shared"
+    },
+    {
+      "spellId": "scc-2021-wither-and-bloom",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-ashardalons-stride",
+      "status": "shared"
+    },
+    {
+      "spellId": "ftd-2021-draconic-transformation",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-fizbans-platinum-shield",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-nathairs-mischief",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-raulothims-psychic-lance",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-rimes-binding-ice",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ftd-2021-summon-draconic-spirit",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-dark-star",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-fortunes-favor",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-gift-of-alacrity",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-gravity-fissure",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-gravity-sinkhole",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-immovable-object",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-magnify-gravity",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-pulse-wave",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-ravenous-void",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-reality-break",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-sapping-sting",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-temporal-shunt",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-tether-essence",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-time-ravage",
+      "status": "legacy"
+    },
+    {
+      "spellId": "egw-2020-wristpocket",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-distort-value",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-fast-friends",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-gift-of-gab",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-incite-greed",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-jims-glowing-coin",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-jims-magic-missile",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ai-2019-motivational-speech",
+      "status": "legacy"
+    },
+    {
+      "spellId": "ggr-2018-encode-thoughts",
+      "status": "legacy"
+    },
+    {
+      "spellId": "aag-2022-air-bubble",
+      "status": "shared"
+    },
+    {
+      "spellId": "aag-2022-create-spelljamming-helm",
+      "status": "shared"
+    },
+    {
+      "spellId": "srd-2014-branding-smite",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-shining-smite"
+    },
+    {
+      "spellId": "srd-2014-feeblemind",
+      "status": "replaced",
+      "replacementSpellId": "srd-2024-befuddlement"
+    }
+  ]
+}
