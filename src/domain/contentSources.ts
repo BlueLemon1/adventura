@@ -21,7 +21,8 @@ export interface ContentSource {
  * it must never be inferred from its name or from the character's ruleset.
  *
  * Supplement entries are added here only when their provenance and usage rights
- * have been verified. This registry currently contains SRD sources only.
+ * have been checked. Their source texts remain copyrighted; Adventura stores
+ * factual metadata and independently written summaries, not copied descriptions.
  */
 export const CONTENT_SOURCES = {
   srd51: {
@@ -44,6 +45,36 @@ export const CONTENT_SOURCES = {
     publisher: 'Wizards of the Coast',
     license: 'CC-BY-4.0',
     sourceUrl: 'https://www.dndbeyond.com/srd',
+    availableLocales: ['en', 'de'],
+  },
+  scag2015: {
+    id: 'scag-2015',
+    name: "Sword Coast Adventurer's Guide",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2015',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/scag',
+    availableLocales: ['en', 'de'],
+  },
+  xge2017: {
+    id: 'xge-2017',
+    name: "Xanathar's Guide to Everything",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2017',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/xgte',
+    availableLocales: ['en', 'de'],
+  },
+  tce2020: {
+    id: 'tce-2020',
+    name: "Tasha's Cauldron of Everything",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2020',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/tce',
     availableLocales: ['en', 'de'],
   },
 } as const satisfies Record<string, ContentSource>
