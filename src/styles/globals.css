@@ -1035,7 +1035,7 @@ h1 em {
 }
 .inventory-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 45px 65px 105px 32px;
+  grid-template-columns: minmax(0, 1fr) 45px 65px 32px;
   align-items: center;
   gap: 10px;
   padding: 11px 0;
@@ -2260,7 +2260,7 @@ body {
 }
 .inventory-row {
   font-size: 13px;
-  grid-template-columns: minmax(0, 1fr) 54px 72px 120px 36px;
+  grid-template-columns: minmax(0, 1fr) 54px 72px 36px;
 }
 .inventory-main strong {
   font-size: 13px;
@@ -2493,7 +2493,7 @@ body {
     padding: 36px 24px 24px;
   }
   .inventory-row {
-    grid-template-columns: minmax(0, 1fr) 48px 65px 110px 34px;
+    grid-template-columns: minmax(0, 1fr) 48px 65px 34px;
     gap: 8px;
   }
 }
