@@ -265,6 +265,8 @@ const en: Record<string, string> = {
   'Zauber filtern': 'Filter spells',
 }
 Object.assign(en, {
+  'Für diese Unterklasse sind die Merkmale noch nicht vollständig hinterlegt.': 'Features for this subclass have not been fully added yet.',
+  'Die Unterklasse ist auswählbar, aber ihre Feature-Daten werden noch ergänzt.': 'The subclass can be selected, but its feature data is still being added.',
   'Eigene Übersetzung': 'Unofficial translation',
   "Pfad des Totemkriegers": "Path of the Totem Warrior",
   "Pfad des Ahnenwächters": "Path of the Ancestral Guardian",
