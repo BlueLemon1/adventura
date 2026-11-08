@@ -24,9 +24,44 @@ Adventura adapts the official SRD material into its own JSON structure. The rule
 
 ### Xanathar's Guide to Everything (XGE)
 
-The initial supplemental entries are based on spell rules and metadata from *Xanathar's Guide to Everything* (Wizards of the Coast, 2017). The book is a separately published copyrighted supplement and is not covered by the SRD CC BY 4.0 license. Adventura therefore stores factual game metadata and concise independently written descriptions, not the book's original descriptive text.
+The supplemental entries are based on spell rules and metadata from *Xanathar's Guide to Everything* (Wizards of the Coast, 2017). The book is a separately published copyrighted supplement and is not covered by the SRD CC BY 4.0 license. Adventura therefore stores factual game metadata and concise independently written descriptions, not the book's original descriptive text.
 
-Included entries: Absorb Elements (p. 150), Aganazzar's Scorcher (p. 150), Catapult (p. 150), Chaos Bolt (p. 151), and Shadow Blade (p. 164).
+Included entries:
+- Absorb Elements (p. 150)
+- Aganazzar's Scorcher (p. 150)
+- Catapult (p. 150)
+- Chaos Bolt (p. 151)
+- Catnap (p. 151)
+- Charm Monster (p. 151)
+- Control Flames (p. 152)
+- Create Bonfire (p. 152)
+- Dawn (p. 153)
+- Erupting Earth (p. 155)
+- Far Step (p. 155)
+- Flame Arrows (p. 156)
+- Frostbite (p. 156)
+- Gust (p. 157)
+- Healing Spirit (p. 157)
+- Infestation (p. 158)
+- Magic Stone (p. 160)
+- Mold Earth (p. 162)
+- Mind Spike (p. 162)
+- Primal Savagery (p. 163)
+- Shape Water (p. 164)
+- Shadow of Moil (p. 164)
+- Shadow Blade (p. 164)
+- Sickening Radiance (p. 164)
+- Storm Sphere (p. 166)
+- Steel Wind Strike (p. 166)
+- Thunderclap (p. 166)
+- Thunder Step (p. 166)
+- Tidal Wave (p. 167)
+- Tiny Servant (p. 168)
+- Vitriolic Sphere (p. 170)
+- Wall of Sand (p. 170)
+- Wall of Water (p. 170)
+- Watery Sphere (p. 170)
+- Zephyr Strike (p. 171)
 
 ### Tasha's Cauldron of Everything (TCE)
 
@@ -52,6 +87,7 @@ Included TCE spells:
 - Blade of Disaster (p. 106)
 
 The spell catalogue may grow as additional sourcebooks are checked. A sourcebook's publication era does not automatically determine whether an entry is available under both rulesets.
+
 ### Sword Coast Adventurer's Guide (SCAG)
 
 The catalogue also includes the four SCAG cantrips: Booming Blade (p. 142), Green-Flame Blade (p. 142), Lightning Lure (p. 143), and Sword Burst (p. 143). Their current entries are explicitly assigned to the 2014 ruleset. A separate 2024 entry will be added only after its revised wording and mechanics have been checked.
