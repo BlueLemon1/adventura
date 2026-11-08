@@ -57,7 +57,9 @@ type SpellCompatibility = {
   replacementSource?: string
 }
 const compatibilityBySpellId = new Map<string, SpellCompatibility>(
-  (spellCompatibility2024.entries as SpellCompatibility[]).map((entry) => [entry.spellId, entry] as const),
+  (spellCompatibility2024.entries as SpellCompatibility[]).map(
+    (entry) => [entry.spellId, entry] as const,
+  ),
 )
 const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
@@ -142,7 +144,9 @@ export function findCatalogSpell(
 
   const original =
     supplementalSpells.find((spell) => spell.id === spellId) ??
-    (ruleset === '2024' ? getSpellCatalog('2014').find((spell) => spell.id === spellId) : undefined)
+    (ruleset === '2024'
+      ? getSpellCatalog('2014').find((spell) => spell.id === spellId)
+      : undefined)
   if (!original) return undefined
   const sourceRuleset = sourceRulesets.get(original.contentSourceId)
   const belongsToRuleset =
