@@ -69,7 +69,7 @@ The System Reference Documents (SRDs) are the source of truth for all official r
 | `import:srd:2014:spells:de` | Add German SRD 5.1 spell fields | `srd-5.1/spells/de.json` | `src/data/spells-2014.json` |
 | `import:srd:2024:spells` | Import English and German SRD 5.2.1 spell fields | `srd-5.2.1/spells/en.json`, `de-en.json` | `src/data/spells-2024.json` |
 
-All seven import commands are referenced by `package.json`. Each has a distinct role; there are no duplicate importers. The old extracted `spells-higher-level.en.json` file was removed because the complete English 2014 spell snapshot already contains that field.
+All seven import commands are referenced by `package.json`. Each has a distinct role; there are no duplicate importers. To intentionally rebuild all committed SRD catalogues in the correct order, run `npm run import:srd:all` once from the repository root. The old extracted `spells-higher-level.en.json` file was removed because the complete English 2014 spell snapshot already contains that field.
 
 The class Markdown files contain class rules, class progression and spell lists. A spell list only identifies which spells a class can access; it does **not** contain each spell's full description and metadata. That is why spell records have their own source snapshots. The source formats differ because they preserve the upstream format: Markdown for extracted rule documents and JSON for structured spell records or translation dictionaries. See [the source directory guide](data/sources/README.md) for the complete layout and provenance.
 
