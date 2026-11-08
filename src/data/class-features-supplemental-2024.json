@@ -5317,16 +5317,16 @@
       "de": "unofficial"
     },
     "grantedSpellIds": [
-      "srd-2014-command",
-      "srd-2014-identify",
-      "srd-2014-augury",
-      "srd-2014-suggestion",
-      "srd-2014-nondetection",
-      "srd-2014-speak-with-dead",
-      "srd-2014-arcane-eye",
-      "srd-2014-confusion",
-      "srd-2014-legend-lore",
-      "srd-2014-scrying"
+      "srd-2024-command",
+      "srd-2024-identify",
+      "srd-2024-augury",
+      "srd-2024-suggestion",
+      "srd-2024-nondetection",
+      "srd-2024-speak-with-dead",
+      "srd-2024-arcane-eye",
+      "srd-2024-confusion",
+      "srd-2024-legend-lore",
+      "srd-2024-scrying"
     ]
   },
   {
