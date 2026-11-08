@@ -168,7 +168,7 @@ Included spells:
 - Rime's Binding Ice (p. 21)
 - Summon Draconic Spirit (p. 21)
 
-These two sourcebooks are currently represented as 2014-era supplements. Their entries will be made available under the 2024 ruleset only after compatibility is checked individually.
+These three sourcebooks are currently represented as 2014-era supplements. Their entries will be made available under the 2024 ruleset only after compatibility is checked individually.
 
 ### Explorer's Guide to Wildemount (EGW)
 
