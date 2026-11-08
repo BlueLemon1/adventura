@@ -8,6 +8,7 @@ import additionalSpells from '../data/spells-additional.json'
 export interface CatalogSpell {
   id: string
   name: string
+  englishName?: string
   level: number
   school: string
   castingTime: string
