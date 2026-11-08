@@ -46,7 +46,7 @@ export interface CatalogSpell {
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
-const sourceRulesets = new Map(
+const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
 
