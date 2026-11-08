@@ -101,6 +101,12 @@ export function validateClassFeatureRecords(
     if (!Object.values(feature.descriptions).some((value) => value?.trim())) {
       errors.push(`${location}: missing localized description`)
     }
+    if (feature.grantedSpellIds?.some((spellId) => !spellId.trim())) {
+      errors.push(`${location}: granted spell IDs must be non-empty strings`)
+    }
+    if (feature.grantedSpellIds && new Set(feature.grantedSpellIds).size !== feature.grantedSpellIds.length) {
+      errors.push(`${location}: duplicate granted spell IDs`)
+    }
   }
 
   return errors
