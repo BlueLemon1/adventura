@@ -19,8 +19,8 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      # Keep formatting consistent before type-checking and bundling.
-      - run: npm run format:check
+      # Format in the deploy workspace so this job does not race the formatter workflow.
+      - run: npm run format
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
