@@ -10,13 +10,13 @@ const spells = JSON.parse(await readFile(targetPath, 'utf8'))
 const spellsById = new Map(spells.map((spell) => [spell.id, spell]))
 
 for (const spell of source) {
-  if (!spell.index || !Array.isArray(spell.desc) || !Array.isArray(spell.higher_level)) {
+  if (!spell.index || !Array.isArray(spell.desc) || (spell.higher_level !== undefined && !Array.isArray(spell.higher_level))) {
     throw new Error('Invalid English SRD 5.1 spell source entry.')
   }
 
   const sourceId = 'srd-2014-' + spell.index
   const targetId =
-    sourceId === 'srd-2014-hunters-mark' ? 'srd-2014-hunter-s-mark' : sourceId
+    sourceId === 'srd-2014-hunters-mark'\n      ? 'srd-2014-hunter-s-mark'\n      : sourceId === 'srd-2014-arcanists-magic-aura'\n        ? 'srd-2014-arcanist-s-magic-aura'\n        : sourceId
   const target = spellsById.get(targetId)
   if (!target) throw new Error('Missing Adventura spell: ' + sourceId)
 
@@ -33,7 +33,7 @@ for (const spell of source) {
   target.classes = (spell.classes ?? []).map((entry) => entry.index)
   target.description = spell.desc.filter(Boolean).join('\n\n')
 
-  const higherLevel = spell.higher_level.filter(Boolean).join('\n\n')
+  const higherLevel = (spell.higher_level ?? []).filter(Boolean).join('\n\n')
   if (higherLevel) target.higherLevel = higherLevel
   else delete target.higherLevel
 }
