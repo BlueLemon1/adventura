@@ -348,7 +348,7 @@ export function SpellCatalog({
       higherLevelLabel: spell.higherLevelLabel,
       damage: spell.damage,
       source,
-      sourceName: [spell.sourceBook, spell.sourcePage ? `S. ${spell.sourcePage}` : undefined, sourceName.trim() || undefined].filter(Boolean).join(' · ') || undefined,
+      sourceName: [spell.sourceBook, spell.sourcePage ? `S. ${spell.sourcePage}` : undefined, spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined, sourceName.trim() || undefined].filter(Boolean).join(' · ') || undefined,
       ...(usageLimit > 0 ? { usageLimit, usageRemaining: usageLimit, usageReset } : {}),
     })
 
