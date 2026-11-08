@@ -2452,6 +2452,33 @@ function getLegacyAutomaticClassFeatures(character: Character): AutomaticClassFe
     }))
 }
 
+const FEATURE_GRANTED_SPELLS_BY_ID: Record<string, string[]> = {
+  'srd-2014-subclass-cleric-life-1-life-domain-spells': [
+    'srd-2014-bless',
+    'srd-2014-cure-wounds',
+    'srd-2014-lesser-restoration',
+    'srd-2014-spiritual-weapon',
+    'srd-2014-beacon-of-hope',
+    'srd-2014-revivify',
+    'srd-2014-death-ward',
+    'srd-2014-guardian-of-faith',
+    'srd-2014-mass-cure-wounds',
+    'srd-2014-raise-dead',
+  ],
+  'srd-2014-subclass-paladin-devotion-3-oath-spells': [
+    'srd-2014-protection-from-evil-and-good',
+    'srd-2014-sanctuary',
+    'srd-2014-lesser-restoration',
+    'srd-2014-zone-of-truth',
+    'srd-2014-beacon-of-hope',
+    'srd-2014-dispel-magic',
+    'srd-2014-freedom-of-movement',
+    'srd-2014-guardian-of-faith',
+    'srd-2014-commune',
+    'srd-2014-flame-strike',
+  ],
+}
+
 function getImportedClassFeatures(
   character: Character,
   locale: ContentLocale,
@@ -2478,7 +2505,11 @@ function getImportedClassFeatures(
       )
 
       const spellbookSpellIds = [
-        ...new Set([...(feature.grantedSpellIds ?? []), ...(metadata?.spellbookSpellIds ?? [])]),
+        ...new Set([
+          ...(feature.grantedSpellIds ?? []),
+          ...(FEATURE_GRANTED_SPELLS_BY_ID[feature.id] ?? []),
+          ...(metadata?.spellbookSpellIds ?? []),
+        ]),
       ]
 
       return {
