@@ -3544,7 +3544,7 @@
     "school": "Necromancy",
     "castingTime": "1 action",
     "range": "60 feet",
-    "components": "V, S",
+    "components": "V",
     "material": "",
     "duration": "Concentration, up to 1 minute",
     "concentration": true,
@@ -3553,8 +3553,8 @@
       "warlock",
       "wizard"
     ],
-    "description": "You awaken a sense of mortality in one creature you can see. It must make a Wisdom saving throw or become frightened of you for the duration. The target can repeat the save at the end of each of its turns.",
-    "higherLevel": "You can target one additional creature for each spell slot level above 1.",
+    "description": "You awaken a creature's sense of mortality. It must make a Wisdom saving throw or become frightened of you for the duration. Constructs and undead are immune, and the target can repeat the save at the end of each of its turns.",
+    "higherLevel": "For each spell slot level above 1, you can target one additional creature. The targets must be within 30 feet of one another.",
     "localized": {
       "name": "Furcht hervorrufen",
       "school": "Nekromantie",
@@ -3564,10 +3564,10 @@
       ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
-      "components": "V, G",
+      "components": "V",
       "duration": "Konzentration, bis zu 1 Minute",
-      "description": "Du weckst in einer Kreatur, die du sehen kannst, ein Gefühl der Sterblichkeit. Sie muss einen Weisheitsrettungswurf ablegen oder ist für die Wirkungsdauer verängstigt von dir. Am Ende jedes ihrer Züge kann sie den Rettungswurf wiederholen.",
-      "higherLevel": "Für jeden Zauberplatzgrad über dem 1. kannst du eine zusätzliche Kreatur als Ziel wählen."
+      "description": "Du weckst in einer Kreatur ein Gefühl der Sterblichkeit. Sie muss einen Weisheitsrettungswurf ablegen oder ist für die Wirkungsdauer verängstigt von dir. Konstrukte und Untote sind immun; das Ziel kann den Rettungswurf am Ende jedes seiner Züge wiederholen.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 1. kannst du eine zusätzliche Kreatur als Ziel wählen. Die Ziele müssen höchstens 9 Meter voneinander entfernt sein."
     },
     "damage": [],
     "contentSourceId": "xge-2017",
@@ -3634,7 +3634,7 @@
     "classes": [
       "druid"
     ],
-    "description": "You cause up to six stone pillars to erupt from the ground at points you can see. Creatures beneath a pillar make a Dexterity saving throw or take bludgeoning damage and are lifted with it; the pillars can also provide elevation or barriers.",
+    "description": "You cause up to six stone pillars to erupt from visible points on the ground. Each pillar can lift a creature beneath it; if a pillar is blocked before reaching full height, a creature caught between it and the obstacle takes 6d6 bludgeoning damage and is restrained.",
     "higherLevel": "You can create two additional pillars for each spell slot level above 6.",
     "localized": {
       "name": "Knochen der Erde",
@@ -3646,7 +3646,7 @@
       "range": "36 Meter",
       "components": "V, G",
       "duration": "Unmittelbar",
-      "description": "Du lässt bis zu sechs Steinsäulen an Punkten hervorbrechen, die du sehen kannst. Kreaturen unter einer Säule müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden Wuchtschaden und werden mit ihr angehoben. Die Säulen können außerdem erhöhte Positionen oder Barrieren schaffen.",
+      "description": "Du lässt bis zu sechs Steinsäulen an sichtbaren Punkten aus dem Boden hervorbrechen. Jede Säule kann eine Kreatur unter sich anheben. Wird eine Säule durch ein Hindernis am vollständigen Aufragen gehindert, erleidet eine zwischen Säule und Hindernis eingeklemmte Kreatur 6W6 Wuchtschaden und wird festgesetzt.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 6. kannst du zwei zusätzliche Säulen erschaffen."
     },
     "damage": [
@@ -3662,7 +3662,7 @@
     ],
     "sourceBook": "Xanathar's Guide to Everything",
     "sourceAbbreviation": "XGE",
-    "sourcePage": 152,
+    "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
   {
@@ -3673,14 +3673,14 @@
     "castingTime": "1 hour",
     "range": "Touch",
     "components": "V, S, M",
-    "material": "clay, ash, and mandrake root, all of which the spell consumes, plus a jewel worth at least 1,000 gp",
+    "material": "clay, ash, and mandrake root, all of which the spell consumes, and a jewel-encrusted dagger worth at least 1,000 gp",
     "duration": "Instantaneous",
     "concentration": false,
     "ritual": false,
     "classes": [
       "wizard"
     ],
-    "description": "You create a homunculus from alchemical materials and a jewel. The creature becomes your loyal companion, shares a telepathic bond with you, and can act independently while following your commands.",
+    "description": "You cut yourself with a jewel-encrusted dagger, taking 2d4 piercing damage that cannot be reduced, then use your blood and the other components to create a homunculus. It becomes your faithful companion, shares a telepathic bond with you, and can be strengthened by expending your Hit Dice after a long rest.",
     "localized": {
       "name": "Homunkulus erschaffen",
       "school": "Verwandlung",
@@ -3689,11 +3689,17 @@
       ],
       "castingTime": "1 Stunde",
       "range": "Berührung",
-      "components": "V, G, M (Ton, Asche und Alraunenwurzel, die der Zauber verbraucht, sowie ein Edelstein im Wert von mindestens 1.000 GM)",
+      "components": "V, G, M (Ton, Asche und Alraunenwurzel, die der Zauber verbraucht, sowie ein juwelenbesetzter Dolch im Wert von mindestens 1.000 GM)",
       "duration": "Unmittelbar",
-      "description": "Du erschaffst aus alchemistischen Materialien und einem Edelstein einen Homunkulus. Die Kreatur wird zu deinem loyalen Gefährten, teilt eine telepathische Verbindung mit dir und kann selbstständig handeln, während sie deinen Befehlen folgt."
+      "description": "Du schneidest dich mit einem juwelenbesetzten Dolch und erleidest 2W4 Stichschaden, der nicht reduziert werden kann. Anschließend erschaffst du mit deinem Blut und den übrigen Materialien einen Homunkulus. Er wird zu deinem treuen Gefährten, teilt eine telepathische Verbindung mit dir und kann nach einer langen Rast durch den Einsatz deiner Trefferwürfel gestärkt werden."
     },
-    "damage": [],
+    "damage": [
+      {
+        "dice": "2d4",
+        "average": 5,
+        "type": "piercing"
+      }
+    ],
     "contentSourceId": "xge-2017",
     "rulesets": [
       "2014"
@@ -3795,7 +3801,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "You create a sphere of magical darkness filled with maddening whispers. Creatures that start their turn in the area take psychic damage and must make a Wisdom saving throw or suffer additional mental effects.",
+    "description": "Magical darkness spreads from a point within range to fill a 60-foot-radius sphere. Darkvision cannot see through it, and nonmagical light or light from spells of 8th level or lower cannot illuminate it. Unnerving shrieks and laughter echo within; each creature that starts its turn in the sphere makes a Wisdom saving throw, taking 8d8 psychic damage on a failure or half as much on a success.",
     "localized": {
       "name": "Wahnsinnige Dunkelheit",
       "school": "Hervorrufung",
@@ -3807,7 +3813,7 @@
       "range": "45 Meter",
       "components": "V, M (ein Tropfen Pech mit einem Tropfen Quecksilber vermischt)",
       "duration": "Konzentration, bis zu 10 Minuten",
-      "description": "Du erschaffst eine Sphäre magischer Dunkelheit, die von wahnsinnigen Stimmen erfüllt ist. Kreaturen, die ihren Zug im Bereich beginnen, erleiden psychischen Schaden und müssen einen Weisheitsrettungswurf ablegen, um weiteren geistigen Auswirkungen zu widerstehen."
+      "description": "Magische Dunkelheit breitet sich von einem Punkt in Reichweite aus und füllt eine Sphäre mit 18 Metern Radius. Dunkelsicht kann nicht hindurchsehen, und weder nichtmagisches Licht noch Licht von Zaubern des 8. Grades oder niedriger kann den Bereich erhellen. Unheimliche Schreie und Gelächter hallen darin wider. Jede Kreatur, die ihren Zug in der Sphäre beginnt, muss einen Weisheitsrettungswurf ablegen und erleidet bei einem Misserfolg 8W8 psychischen Schaden oder bei Erfolg halben Schaden."
     },
     "damage": [
       {
