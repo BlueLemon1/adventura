@@ -338,5 +338,530 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2014-artificer-alchemist-tools-of-trade",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Tools of the Trade",
+      "de": "Werkzeuge des Handwerks"
+    },
+    "descriptions": {
+      "en": "You gain alchemical tool training and can perform certain alchemical work more efficiently.",
+      "de": "Du erhältst alchemistische Werkzeugkenntnisse und kannst bestimmte alchemistische Arbeiten effizienter ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-alchemist-alchemist-spells",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#alchemist-spells",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Alchemist Spells",
+      "de": "Alchemistenzauber"
+    },
+    "descriptions": {
+      "en": "You always have additional themed spells prepared; they do not count against your normal preparation limit.",
+      "de": "Du hast zusätzliche thematisch passende Zauber stets vorbereitet; sie zählen nicht gegen deine normale Vorbereitungszahl."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-alchemist-experimental-elixir",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#experimental-elixir",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Experimental Elixir",
+      "de": "Experimentelles Elixier"
+    },
+    "descriptions": {
+      "en": "After a Long Rest, you create magical elixirs whose effects can support allies.",
+      "de": "Nach einer langen Rast stellst du magische Elixiere her, deren zufällige oder gewählte Wirkung Verbündete unterstützt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-alchemist-alchemical-savant",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#alchemical-savant",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 5,
+    "names": {
+      "en": "Alchemical Savant",
+      "de": "Alchemistische Meisterschaft"
+    },
+    "descriptions": {
+      "en": "You enhance certain healing and damage spells when you use alchemist's supplies as a focus.",
+      "de": "Du verstärkst bestimmte Heil- und Schadenszauber, wenn du dafür alchemistische Werkzeuge als Fokus verwendest."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-alchemist-restorative-reagents",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#restorative-reagents",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Restorative Reagents",
+      "de": "Wiederherstellende Reagenzien"
+    },
+    "descriptions": {
+      "en": "Your elixirs become more potent and can provide additional protective and restorative effects.",
+      "de": "Deine Elixiere werden wirkungsvoller und können zusätzliche Schutz- und Heilungseffekte verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-alchemist-chemical-mastery",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/alchemist#chemical-mastery",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Chemical Mastery",
+      "de": "Chemische Meisterschaft"
+    },
+    "descriptions": {
+      "en": "You gain powerful resistances and can use especially potent alchemical effects.",
+      "de": "Du erhältst starke Widerstandsfähigkeiten und kannst besonders mächtige alchemistische Effekte einsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-tools-of-trade",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Tools of the Trade",
+      "de": "Werkzeuge des Handwerks"
+    },
+    "descriptions": {
+      "en": "You gain additional armor and tool training, along with benefits when crafting armor.",
+      "de": "Du erhältst zusätzliche Rüstungs- und Werkzeugkenntnisse sowie Vorteile beim Herstellen von Rüstungen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-armorer-spells",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#armorer-spells",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Armorer Spells",
+      "de": "Rüstungszauber"
+    },
+    "descriptions": {
+      "en": "You always have additional spells prepared that complement your magical armor.",
+      "de": "Du hast zusätzliche Zauber stets vorbereitet, die zu deiner magischen Rüstung passen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-arcane-armor",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#arcane-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Arcane Armor",
+      "de": "Arkane Rüstung"
+    },
+    "descriptions": {
+      "en": "You turn a suit of armor into magical armor that can be customized to your needs.",
+      "de": "Du verwandelst eine Rüstung in eine magische Rüstung, die sich an deine Bedürfnisse anpassen lässt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-extra-attack",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#extra-attack",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 5,
+    "names": {
+      "en": "Extra Attack",
+      "de": "Zusätzlicher Angriff"
+    },
+    "descriptions": {
+      "en": "You can attack twice, instead of once, whenever you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du zweimal statt einmal angreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-armor-modifications",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#armor-modifications",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Armor Modifications",
+      "de": "Rüstungsmodifikationen"
+    },
+    "descriptions": {
+      "en": "You can split your arcane armor into more separate magical items and apply additional infusions to it.",
+      "de": "Du kannst deine arkane Rüstung in mehr getrennte magische Gegenstände aufteilen und zusätzliche Infusionen darauf anwenden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-armorer-perfected-armor",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/armorer#perfected-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Perfected Armor",
+      "de": "Perfektionierte Rüstung"
+    },
+    "descriptions": {
+      "en": "Your armor gains a powerful additional benefit based on your chosen armor model.",
+      "de": "Deine Rüstung erhält abhängig von deinem gewählten Rüstungsmodell eine mächtige zusätzliche Funktion."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-tools-of-trade",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Tools of the Trade",
+      "de": "Werkzeuge des Handwerks"
+    },
+    "descriptions": {
+      "en": "You gain proficiency with woodcarver's tools and can craft certain magic items more efficiently.",
+      "de": "Du erhältst Kenntnisse mit Holzschnitzerwerkzeug und kannst bestimmte magische Gegenstände effizienter herstellen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-artillerist-spells",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#artillerist-spells",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Artillerist Spells",
+      "de": "Artilleristenzauber"
+    },
+    "descriptions": {
+      "en": "You always have additional spells prepared that focus on ranged attacks and destructive magic.",
+      "de": "Du hast zusätzliche Zauber stets vorbereitet, die auf Fernkampf und zerstörerische Magie ausgerichtet sind."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-eldritch-cannon",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#eldritch-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Eldritch Cannon",
+      "de": "Arkanes Geschütz"
+    },
+    "descriptions": {
+      "en": "You create a magical cannon that attacks enemies or protects allies.",
+      "de": "Du erschaffst ein magisches Geschütz, das Gegner angreift oder Verbündete schützt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-arcane-firearm",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#arcane-firearm",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 5,
+    "names": {
+      "en": "Arcane Firearm",
+      "de": "Arkane Feuerwaffe"
+    },
+    "descriptions": {
+      "en": "You turn a wand, staff, or rod into a focus that enhances your artificer damage spells.",
+      "de": "Du verwandelst einen Zauberstab, Stab oder eine Rute in einen Fokus, der deine Artificer-Schadenszauber verstärkt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-explosive-cannon",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#explosive-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Explosive Cannon",
+      "de": "Explosives Geschütz"
+    },
+    "descriptions": {
+      "en": "Your cannon deals greater damage and can release its energy in an explosion.",
+      "de": "Dein Geschütz verursacht stärkeren Schaden und kann seine Energie in einer Explosion freisetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-artillerist-fortified-position",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/artillerist#fortified-position",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Fortified Position",
+      "de": "Befestigte Stellung"
+    },
+    "descriptions": {
+      "en": "Your cannons better protect you and your allies and can provide additional defense.",
+      "de": "Deine Geschütze schützen dich und deine Verbündeten besser und können zusätzliche Verteidigung bieten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-tools-of-trade",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Tools of the Trade",
+      "de": "Werkzeuge des Handwerks"
+    },
+    "descriptions": {
+      "en": "You gain proficiency with smith's tools and can craft certain magic weapons more efficiently.",
+      "de": "Du erhältst Kenntnisse mit Schmiedewerkzeug und kannst bestimmte magische Waffen effizienter herstellen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-battle-smith-spells",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#battle-smith-spells",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Battle Smith Spells",
+      "de": "Kampf-Schmied-Zauber"
+    },
+    "descriptions": {
+      "en": "You always have additional spells prepared that combine combat and support.",
+      "de": "Du hast zusätzliche Zauber stets vorbereitet, die Kampf und Unterstützung verbinden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-battle-ready",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#battle-ready",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Battle Ready",
+      "de": "Kampfbereit"
+    },
+    "descriptions": {
+      "en": "You can use Intelligence instead of Strength or Dexterity for attacks with magic weapons and gain weapon training.",
+      "de": "Du kannst Intelligenz statt Stärke oder Geschicklichkeit für Angriffe mit magischen Waffen einsetzen und erhältst Waffenkenntnisse."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-steel-defender",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#steel-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Steel Defender",
+      "de": "Stählerner Verteidiger"
+    },
+    "descriptions": {
+      "en": "You create a mechanical companion that supports you in combat and responds to your commands.",
+      "de": "Du erschaffst einen mechanischen Gefährten, der dich im Kampf unterstützt und auf deine Befehle reagiert."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-extra-attack",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#extra-attack",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 5,
+    "names": {
+      "en": "Extra Attack",
+      "de": "Zusätzlicher Angriff"
+    },
+    "descriptions": {
+      "en": "You can attack twice, instead of once, whenever you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du zweimal statt einmal angreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-arcane-jolt",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#arcane-jolt",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 9,
+    "names": {
+      "en": "Arcane Jolt",
+      "de": "Arkaner Impuls"
+    },
+    "descriptions": {
+      "en": "When you or your Steel Defender hits, you can release additional energy to deal damage or restore hit points.",
+      "de": "Wenn du oder dein Stählerner Verteidiger einen Treffer landet, kannst du zusätzliche Energie für Schaden oder Heilung freisetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2014-artificer-battlesmith-improved-defender",
+    "ruleset": "2014",
+    "contentSourceId": "tce-2020",
+    "sourceReference": "artificer/battlesmith#improved-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "featureType": "subclass",
+    "level": 15,
+    "names": {
+      "en": "Improved Defender",
+      "de": "Verbesserter Verteidiger"
+    },
+    "descriptions": {
+      "en": "Your Steel Defender becomes more resilient and can use its reactions more effectively for offense or defense.",
+      "de": "Dein Stählerner Verteidiger wird widerstandsfähiger und kann seine Reaktionen offensiver oder defensiver einsetzen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
