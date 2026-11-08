@@ -51,7 +51,7 @@ export interface CatalogSpell {
 const supplementalSpells = additionalSpells as CatalogSpell[]
 type SpellCompatibility = {
   spellId: string
-  status: 'legacy' | 'shared' | 'replaced'
+  status: 'legacy' | 'shared' | 'replaced' | 'new'
   replacementSpellId?: string
   replacementName?: string
   replacementSource?: string
