@@ -74,7 +74,7 @@ export const CONTENT_SOURCES = {
     ruleset: '2014',
     sourceVersion: '2020',
     publisher: 'Wizards of the Coast',
-    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/tce',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/tcoe',
     availableLocales: ['en', 'de'],
   },
   scc2021: {
@@ -84,7 +84,7 @@ export const CONTENT_SOURCES = {
     ruleset: '2014',
     sourceVersion: '2021',
     publisher: 'Wizards of the Coast',
-    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/scc',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/sacoc',
     availableLocales: ['en'],
   },
   ftd2021: {
@@ -104,7 +104,7 @@ export const CONTENT_SOURCES = {
     ruleset: '2014',
     sourceVersion: '2020',
     publisher: 'Wizards of the Coast',
-    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/egw',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/egtw',
     availableLocales: ['en'],
   },
   ai2019: {
@@ -124,7 +124,7 @@ export const CONTENT_SOURCES = {
     ruleset: '2014',
     sourceVersion: '2018',
     publisher: 'Wizards of the Coast',
-    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ggr',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ggtr',
     availableLocales: ['en'],
   },
   aag2022: {
@@ -134,7 +134,7 @@ export const CONTENT_SOURCES = {
     ruleset: '2014',
     sourceVersion: '2022',
     publisher: 'Wizards of the Coast',
-    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/aag',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/sais/aag',
     availableLocales: ['en'],
   },
 } as const satisfies Record<string, ContentSource>
