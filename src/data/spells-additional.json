@@ -2309,18 +2309,7 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst um einen Punkt eine Sphäre aus wirbelnder Luft. Kreaturen darin, wenn sie erscheint, oder die ihren Zug darin beenden, müssen einen Stärkerettungswurf ablegen und erleiden bei einem Misserfolg 2W6 Wuchtschaden. Das Gebiet ist schwieriges Gelände. Als Bonusaktion kannst du einen Blitz aus der Sphäre auf eine Kreatur innerhalb von 18 Metern der Sphäre schleudern; dafür führst du einen Fernkampf-Zauberangriff aus, der 4W6 Blitzschaden verursacht."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "bludgeoning"
-      },
-      {
-        "dice": "4d6",
-        "average": 14,
-        "type": "lightning"
-      }
-    ],
+    "damage": [],
     "contentSourceId": "xge-2017",
     "rulesets": [
       "2014"
