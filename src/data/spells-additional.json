@@ -694,5 +694,389 @@
     "sourceAbbreviation": "TCE",
     "sourcePage": 108,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-beast",
+    "name": "Summon Beast",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a feather, tuft of fur, and fish tail inside a gilded acorn worth at least 200 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "Du rufst einen tierischen Geist herbei, der in einem freien Raum erscheint. Wähle Luft, Land oder Wasser als Umgebung; sie bestimmt seine Gestalt und bestimmte Werte. Der Geist handelt direkt nach dir, folgt deinen verbalen Befehlen und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 3th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Bestie beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen tierischen Geist in einem freien Raum in Reichweite. Wähle Luft, Land oder Wasser; die Umgebung bestimmt seine Erscheinung und bestimmte Eigenschaften. Der Geist handelt direkt nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 109,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-fey",
+    "name": "Summon Fey",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a gilded flower worth at least 300 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "warlock",
+      "wizard"
+    ],
+    "description": "Du beschwörst einen Feengeist, dessen Gestalt und Fähigkeiten von einer gewählten Stimmung abhängen. Er erscheint in einem freien Raum, handelt direkt nach dir und befolgt deine verbalen Befehle.",
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Fee beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Feengeist. Wähle eine Stimmung, die seine Erscheinung und besonderen Fähigkeiten beeinflusst. Er erscheint in einem freien Raum, handelt direkt nach dir und befolgt deine verbalen Befehle.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 112,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-shadowspawn",
+    "name": "Summon Shadowspawn",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "tears inside a gem worth at least 300 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "Du rufst einen Schattengeist herbei. Wähle Zorn, Verzweiflung oder Furcht; diese Emotion prägt seine Gestalt und seine besonderen Fähigkeiten. Der Geist unterstützt dich im Kampf und verschwindet, wenn der Zauber endet oder er keine Trefferpunkte mehr hat.",
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Schattenbrut beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du rufst einen Schattengeist herbei. Wähle Zorn, Verzweiflung oder Furcht; diese Emotion prägt seine Gestalt und besonderen Fähigkeiten. Der Geist kämpft an deiner Seite und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 113,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-undead",
+    "name": "Summon Undead",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a gilded humanoid skull worth at least 300 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "Du beschwörst einen untoten Geist in einer gewählten Gestalt: geisterhaft, verwest oder skelettartig. Die Gestalt bestimmt seine besonderen Eigenschaften. Er handelt direkt nach dir, gehorcht deinen verbalen Befehlen und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Untote beschwören",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen untoten Geist in einer von drei Gestalten: geisterhaft, verwest oder skelettartig. Die Gestalt bestimmt seine besonderen Eigenschaften. Er handelt direkt nach dir, befolgt deine verbalen Befehle und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 114,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-aberration",
+    "name": "Summon Aberration",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth at least 400 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "Du rufst einen aberranten Geist herbei. Wähle eine beholderartige, slaadartige oder sternengeborene Gestalt; sie bestimmt seine besonderen Fähigkeiten. Der Geist erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Aberration beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen aberranten Geist. Wähle eine beholderartige, slaadartige oder sternengeborene Gestalt, die seine besonderen Fähigkeiten bestimmt. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 109,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-construct",
+    "name": "Summon Construct",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "an ornate stone and metal lockbox worth at least 400 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "wizard"
+    ],
+    "description": "Du beschwörst den Geist eines Konstrukts. Wähle Lehm, Metall oder Stein; das Material bestimmt seine Gestalt und bestimmte Fähigkeiten. Das Konstrukt erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Konstrukt beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "artificer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du rufst den Geist eines Konstrukts herbei. Wähle Lehm, Metall oder Stein; das Material bestimmt Gestalt und besondere Eigenschaften. Das Konstrukt erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 111,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-elemental",
+    "name": "Summon Elemental",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "air, a pebble, ash, and water inside a gold-inlaid vial worth at least 400 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "wizard"
+    ],
+    "description": "Du beschwörst einen Elementargeist. Wähle Luft, Erde, Feuer oder Wasser; das Element bestimmt seine Gestalt und besondere Fähigkeiten. Der Geist erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Elementar beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du rufst einen Elementargeist herbei. Wähle Luft, Erde, Feuer oder Wasser; das Element bestimmt seine Gestalt und besonderen Eigenschaften. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 111,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-celestial",
+    "name": "Summon Celestial",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "a golden reliquary worth at least 500 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "Du beschwörst einen himmlischen Geist in Gestalt eines Rächer- oder Beschützerwesens. Deine Wahl bestimmt seine Angriffsweise. Der Geist erscheint in einem freien Raum, handelt direkt nach dir und kämpft an deiner Seite.",
+    "higherLevel": "When you cast this spell using a spell slot of 6th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Himmlischen beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "cleric",
+        "paladin"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen himmlischen Geist als Rächer oder Beschützer. Deine Wahl bestimmt seine Angriffsweise. Er erscheint in einem freien Raum, handelt direkt nach dir und kämpft an deiner Seite.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 110,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "tce-2014-summon-fiend",
+    "name": "Summon Fiend",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "material": "blood, a vial of ink, and an obsidian statuette worth at least 600 gp",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "Du beschwörst einen Unholdgeist. Wähle Dämon, Teufel oder Yugoloth; diese Form legt seine besonderen Fähigkeiten fest. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+    "higherLevel": "When you cast this spell using a spell slot of 7th level or higher, use the higher level wherever the spell's level appears in the summoned spirit's stat block.",
+    "localized": {
+      "name": "Unhold beschwören",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "27 Meter",
+      "components": "V, G, M",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Unholdgeist. Wähle Dämon, Teufel oder Yugoloth; die gewählte Form bestimmt seine besonderen Fähigkeiten. Er erscheint in einem freien Raum, handelt direkt nach dir und verschwindet bei 0 Trefferpunkten oder wenn der Zauber endet.",
+      "higherLevel": "Wenn du diesen Zauber mit einem Zauberplatz des nächsthöheren Grades oder höher wirkst, verwendest du den höheren Grad überall dort, wo der Zaubergrad im Spielwerteblock des beschworenen Geistes erscheint."
+    },
+    "damage": [],
+    "contentSourceId": "tce-2020",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Tasha's Cauldron of Everything",
+    "sourceAbbreviation": "TCE",
+    "sourcePage": 112,
+    "descriptionKind": "original-summary"
   }
 ]
