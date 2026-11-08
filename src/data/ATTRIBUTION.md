@@ -18,6 +18,16 @@ Official German SRD 5.2.1: https://media.dndbeyond.com/compendium-images/srd/5.2
 
 ## Data handling
 
-Adventura adapts the official SRD material into its own JSON structure. The rulesets remain separate, and edition-specific wording and higher-level text structure are preserved. Spells not included in an SRD are not part of these catalogues. Non-SRD supplements, homebrew, and other additions must be represented as separate content sources, never as official SRD entries.
+Adventura adapts the official SRD material into its own JSON structure. The rulesets remain separate, and edition-specific wording and higher-level text structure are preserved. Spells not included in an SRD are maintained separately in `spells-additional.json`. They are never presented as official SRD entries. Each supplemental spell records its source book, page, and applicable rulesets. Their descriptions are independently written summaries, not reproductions of the source books' wording.
+
+## Supplemental source catalogue
+
+### Xanathar's Guide to Everything (XGE)
+
+The initial supplemental entries are based on spell rules and metadata from *Xanathar's Guide to Everything* (Wizards of the Coast, 2017). The book is a separately published copyrighted supplement and is not covered by the SRD CC BY 4.0 license. Adventura therefore stores factual game metadata and concise independently written descriptions, not the book's original descriptive text.
+
+Included starter entries: Absorb Elements (p. 150), Aganazzar's Scorcher (p. 150), Catapult (p. 150), Chaos Bolt (p. 151), and Shadow Blade (p. 164).
+
+Legacy supplement spells are marked usable with both rulesets where no distinct 2024 replacement entry is included. This is a compatibility choice for the catalogue, not a claim that the spell text was reprinted in the 2024 Player's Handbook.
 
 No endorsement by Wizards of the Coast is implied.
