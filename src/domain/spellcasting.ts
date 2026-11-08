@@ -239,16 +239,15 @@ const DEFAULT_SPELLCASTING_ABILITIES: Record<string, Ability> = {
   sorcerer: 'cha',
   warlock: 'cha',
   wizard: 'int',
-  fighter: 'int',
-  rogue: 'int',
-  kaempfer: 'int',
-  schurke: 'int',
 }
 
 export function getDefaultSpellcastingAbility(
-  character: Pick<Character, 'classId'>,
+  character: Pick<Character, 'classId' | 'subclassId'>,
 ): Ability | undefined {
-  return DEFAULT_SPELLCASTING_ABILITIES[normalizeKey(character.classId)]
+  const classId = normalizeKey(character.classId)
+  if (['fighter', 'kaempfer'].includes(classId) && normalizeKey(character.subclassId).includes('eldritchknight')) return 'int'
+  if (['rogue', 'schurke'].includes(classId) && normalizeKey(character.subclassId).includes('arcanetrickster')) return 'int'
+  return DEFAULT_SPELLCASTING_ABILITIES[classId]
 }
 
 export function getSpellcastingStats(
