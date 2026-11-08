@@ -6745,5 +6745,93 @@
     "sourceAbbreviation": "GGR",
     "sourcePage": 47,
     "descriptionKind": "original-summary"
+  },
+  {
+    "id": "aag-2022-air-bubble",
+    "name": "Air Bubble",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "1 action",
+    "range": "60 feet",
+    "components": "S",
+    "material": "",
+    "duration": "24 hours",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "druid",
+      "ranger",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You create a globe of fresh air around the head of a willing creature you can see within range. The air remains breathable for the duration, allowing the creature to breathe in an otherwise airless or suffocating environment.",
+    "higherLevel": "You can create two additional globes of fresh air for each spell slot level above 2.",
+    "localized": {
+      "name": "Luftblase",
+      "school": "Beschwörung",
+      "classes": [
+        "artificer",
+        "druid",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "18 Meter",
+      "components": "G",
+      "duration": "24 Stunden",
+      "description": "Du erschaffst eine Kugel frischer Luft um den Kopf einer willigen Kreatur, die du in Reichweite sehen kannst. Die Luft bleibt für die Wirkungsdauer atembar und ermöglicht der Kreatur das Atmen in einer ansonsten luftleeren oder erstickenden Umgebung.",
+      "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du zwei zusätzliche Luftkugeln erschaffen."
+    },
+    "damage": [],
+    "contentSourceId": "aag-2022",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Astral Adventurer's Guide",
+    "sourceAbbreviation": "AAG",
+    "sourcePage": 22,
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "aag-2022-create-spelljamming-helm",
+    "name": "Create Spelljamming Helm",
+    "level": 5,
+    "school": "Transmutation",
+    "castingTime": "1 action",
+    "range": "Touch",
+    "components": "V, S, M",
+    "material": "a crystal rod worth at least 5,000 gp, consumed by the spell",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "wizard"
+    ],
+    "description": "Holding the crystal rod used in the casting, you touch an unoccupied chair of Large size or smaller. The rod disappears, and the chair is transformed into a spelljamming helm that can be installed aboard a ship.",
+    "localized": {
+      "name": "Spelljamming-Steuerstuhl erschaffen",
+      "school": "Verwandlung",
+      "classes": [
+        "artificer",
+        "wizard"
+      ],
+      "castingTime": "1 Aktion",
+      "range": "Berührung",
+      "components": "V, G, M (ein Kristallstab im Wert von mindestens 5.000 GM, der vom Zauber verbraucht wird)",
+      "duration": "Unmittelbar",
+      "description": "Während du den beim Wirken verwendeten Kristallstab hältst, berührst du einen unbesetzten Stuhl der Größenkategorie Groß oder kleiner. Der Stab verschwindet und der Stuhl verwandelt sich in einen Spelljamming-Steuerstuhl, der auf einem Schiff installiert werden kann."
+    },
+    "damage": [],
+    "contentSourceId": "aag-2022",
+    "rulesets": [
+      "2014"
+    ],
+    "sourceBook": "Astral Adventurer's Guide",
+    "sourceAbbreviation": "AAG",
+    "sourcePage": 22,
+    "descriptionKind": "original-summary"
   }
 ]
