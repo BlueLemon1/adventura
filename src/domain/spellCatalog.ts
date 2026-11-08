@@ -57,10 +57,9 @@ type SpellCompatibility = {
   replacementSource?: string
 }
 const compatibilityBySpellId = new Map<string, SpellCompatibility>(
-  (spellCompatibility2024.entries as SpellCompatibility[]).map((entry) => [
-    entry.spellId,
-    entry,
-  ] as const),
+  (spellCompatibility2024.entries as SpellCompatibility[]).map(
+    (entry) => [entry.spellId, entry] as const,
+  ),
 )
 const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
