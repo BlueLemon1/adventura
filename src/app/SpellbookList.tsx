@@ -169,12 +169,6 @@ function SpellCard({
         </div>
       </div>
 
-      {spell.languageFallback && (
-        <p className="spell-origin-note language-fallback">
-          {translateText('EN – englischer Ersatztext')}
-        </p>
-      )}
-
       {spell.sourceName && !isFeature && (
         <p className="spell-origin-note">
           {translateText('Quelle')}: {spell.sourceName}

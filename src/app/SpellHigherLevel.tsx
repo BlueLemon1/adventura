@@ -3,7 +3,7 @@ export function getHigherLevelText(
   localizedText: string | undefined,
   language?: 'de' | 'en',
 ): string | undefined {
-  return language === 'de' ? localizedText?.trim() || englishText : englishText
+  return language === 'de' ? localizedText?.trim() || undefined : englishText
 }
 
 interface SpellHigherLevelProps {

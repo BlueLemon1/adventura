@@ -1184,7 +1184,8 @@
       "school": "Hervorrufung",
       "classes": [
         "paladin"
-      ]
+      ],
+      "components": "V"
     },
     "contentSourceId": "srd-5.1"
   },
@@ -3902,7 +3903,8 @@
         "druid",
         "warlock",
         "wizard"
-      ]
+      ],
+      "components": "V, G, M (eine Handvoll Kugeln aus Lehm, Kristall, Glas oder Mineralien)"
     },
     "contentSourceId": "srd-5.1"
   },

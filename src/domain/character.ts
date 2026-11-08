@@ -143,8 +143,6 @@ export interface KnownSpell {
   concentration?: boolean
   ritual?: boolean
   description?: string
-  /** True when displayed rules text uses English as a locale fallback. */
-  languageFallback?: boolean
   higherLevel?: string
   higherLevelLabel?: string
   damage?: SpellDamage[]

@@ -85,30 +85,18 @@ export function SpellbookPage({
 
     const localized = language === 'de' ? spell.localized : undefined
     const englishHigherLevel = spell.higherLevel
-    const usedEnglishFallback =
-      language === 'de' &&
-      (Boolean(spell.name && !localized?.name) ||
-        Boolean(spell.school && !localized?.school) ||
-        Boolean(spell.castingTime && !localized?.castingTime) ||
-        Boolean(spell.range && !localized?.range) ||
-        Boolean(spell.components && !localized?.components) ||
-        Boolean(spell.duration && !localized?.duration) ||
-        Boolean(spell.description && !localized?.description) ||
-        Boolean(englishHigherLevel && !localized?.higherLevel))
-
     return {
       ...knownSpell,
-      name: localized?.name ?? spell.name,
+      name: language === 'de' ? localized?.name ?? '' : spell.name,
       spellLevel: spell.level,
-      school: localized?.school ?? spell.school,
-      castingTime: localized?.castingTime ?? spell.castingTime,
-      range: localized?.range ?? spell.range,
-      components: localized?.components ?? spell.components,
-      duration: localized?.duration ?? spell.duration,
-      description: localized?.description ?? spell.description,
+      school: language === 'de' ? localized?.school ?? '' : spell.school,
+      castingTime: language === 'de' ? localized?.castingTime ?? '' : spell.castingTime,
+      range: language === 'de' ? localized?.range ?? '' : spell.range,
+      components: language === 'de' ? localized?.components ?? '' : spell.components,
+      duration: language === 'de' ? localized?.duration ?? '' : spell.duration,
+      description: language === 'de' ? localized?.description ?? '' : spell.description,
       higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
       higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
-      languageFallback: usedEnglishFallback,
     }
   })
   const featureSpellEntries: KnownSpell[] = featureSpells.map((feature): KnownSpell => {
@@ -126,40 +114,35 @@ export function SpellbookPage({
     const current = resource
       ? Math.max(0, Math.min(resource.maximum, savedCurrent ?? resource.maximum))
       : undefined
+    const sourceComponents = language === 'de' ? localizedSpell?.components : spell?.components
     return {
       entryType: 'feature',
       actionType: feature.activation,
       resourceId: feature.resourceId,
       resourceCost: feature.resourceCost ?? 1,
       spellId: feature.id,
-      name: spellName,
+      name: language === 'de' ? localizedSpell?.name ?? feature.localizedName ?? '' : spellName,
       learnedAtLevel: feature.level,
       prepared: true,
       spellLevel: spell?.level ?? 0,
-      school: localizedSpell?.school ?? spell?.school,
-      castingTime: localizedSpell?.castingTime ?? spell?.castingTime ?? t('Aktion'),
-      range: localizedSpell?.range ?? spell?.range,
+      school: language === 'de' ? localizedSpell?.school : spell?.school,
+      castingTime:
+        language === 'de'
+          ? localizedSpell?.castingTime ?? ''
+          : spell?.castingTime ?? t('Aktion'),
+      range: language === 'de' ? localizedSpell?.range : spell?.range,
       components:
         feature.spellbookSpellId === 'srd-2024-find-familiar' ||
         feature.spellbookSpellId === 'srd-2024-summon-dragon'
-          ? (localizedSpell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '') ??
-            spell?.components?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, ''))
-          : (localizedSpell?.components ?? spell?.components),
-      duration: localizedSpell?.duration ?? spell?.duration,
+          ? sourceComponents?.replace(/,?\s*M(?:\s*\([^)]*\))?/i, '')
+          : sourceComponents,
+      duration: language === 'de' ? localizedSpell?.duration : spell?.duration,
       concentration: spell?.concentration,
       ritual: spell?.ritual,
-      description: localizedSpell?.description ?? spell?.description ?? feature.description ?? '',
-      languageFallback:
-        language === 'de' &&
-        Boolean(spell) &&
-        (Boolean(spell?.name && !localizedSpell?.name) ||
-          Boolean(spell?.school && !localizedSpell?.school) ||
-          Boolean(spell?.castingTime && !localizedSpell?.castingTime) ||
-          Boolean(spell?.range && !localizedSpell?.range) ||
-          Boolean(spell?.components && !localizedSpell?.components) ||
-          Boolean(spell?.duration && !localizedSpell?.duration) ||
-          Boolean(spell?.description && !localizedSpell?.description) ||
-          Boolean(englishHigherLevel && !localizedSpell?.higherLevel)),
+      description:
+        language === 'de'
+          ? localizedSpell?.description ?? ''
+          : spell?.description ?? feature.description ?? '',
       higherLevel: getHigherLevelText(englishHigherLevel, localizedSpell?.higherLevel, language),
       higherLevelLabel:
         language === 'de' ? localizedSpell?.higherLevelLabel : spell?.higherLevelLabel,
