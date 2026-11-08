@@ -347,7 +347,7 @@ export default function App() {
                     }}
                   >
                     <Sparkles size={15} />
-                    <span>{t('SRD & hinzufügen')}</span>
+                    <span>{t('Zauber finden')}</span>
                   </button>
                 </div>
               )}
