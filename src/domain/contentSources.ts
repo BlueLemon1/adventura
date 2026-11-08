@@ -7,6 +7,7 @@ export type ContentLocale = 'en' | 'de'
 export interface ContentSource {
   id: string
   name: string
+  abbreviation: string
   kind: ContentSourceKind
   ruleset: Dnd5eRuleset
   sourceVersion: string
@@ -28,6 +29,7 @@ export const CONTENT_SOURCES = {
   srd51: {
     id: 'srd-5.1',
     name: 'System Reference Document 5.1',
+    abbreviation: 'SRD 5.1',
     kind: 'official-srd',
     ruleset: '2014',
     sourceVersion: '5.1',
@@ -39,6 +41,7 @@ export const CONTENT_SOURCES = {
   srd521: {
     id: 'srd-5.2.1',
     name: 'System Reference Document 5.2.1',
+    abbreviation: 'SRD 5.2.1',
     kind: 'official-srd',
     ruleset: '2024',
     sourceVersion: '5.2.1',
@@ -50,6 +53,7 @@ export const CONTENT_SOURCES = {
   scag2015: {
     id: 'scag-2015',
     name: "Sword Coast Adventurer's Guide",
+    abbreviation: 'SCAG',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2015',
@@ -60,6 +64,7 @@ export const CONTENT_SOURCES = {
   xge2017: {
     id: 'xge-2017',
     name: "Xanathar's Guide to Everything",
+    abbreviation: 'XGE',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2017',
@@ -70,6 +75,7 @@ export const CONTENT_SOURCES = {
   tce2020: {
     id: 'tce-2020',
     name: "Tasha's Cauldron of Everything",
+    abbreviation: 'TCE',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2020',
@@ -80,6 +86,7 @@ export const CONTENT_SOURCES = {
   scc2021: {
     id: 'scc-2021',
     name: 'Strixhaven: A Curriculum of Chaos',
+    abbreviation: 'SCC',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2021',
@@ -90,6 +97,7 @@ export const CONTENT_SOURCES = {
   ftd2021: {
     id: 'ftd-2021',
     name: "Fizban's Treasury of Dragons",
+    abbreviation: 'FTD',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2021',
@@ -100,6 +108,7 @@ export const CONTENT_SOURCES = {
   egw2020: {
     id: 'egw-2020',
     name: "Explorer's Guide to Wildemount",
+    abbreviation: 'EGW',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2020',
@@ -110,6 +119,7 @@ export const CONTENT_SOURCES = {
   ai2019: {
     id: 'ai-2019',
     name: 'Acquisitions Incorporated',
+    abbreviation: 'AI',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2019',
@@ -120,6 +130,7 @@ export const CONTENT_SOURCES = {
   ggr2018: {
     id: 'ggr-2018',
     name: "Guildmasters' Guide to Ravnica",
+    abbreviation: 'GGR',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2018',
@@ -130,6 +141,7 @@ export const CONTENT_SOURCES = {
   aag2022: {
     id: 'aag-2022',
     name: "Astral Adventurer's Guide",
+    abbreviation: 'AAG',
     kind: 'supplement',
     ruleset: '2014',
     sourceVersion: '2022',
@@ -168,4 +180,10 @@ export interface AdditionalContentSource {
   publisher?: string
   sourceUrl?: string
   license?: string
+}
+
+/** Short source label for compact spell lists and spellbook cards. */
+export function getContentSourceAbbreviation(sourceId?: string): string | undefined {
+  if (!sourceId) return undefined
+  return Object.values(CONTENT_SOURCES).find((source) => source.id === sourceId)?.abbreviation
 }
