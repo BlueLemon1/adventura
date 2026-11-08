@@ -107,6 +107,26 @@ export const CONTENT_SOURCES = {
     sourceUrl: 'https://www.dndbeyond.com/sources/dnd/egw',
     availableLocales: ['en'],
   },
+  ai2019: {
+    id: 'ai-2019',
+    name: 'Acquisitions Incorporated',
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2019',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ai',
+    availableLocales: ['en'],
+  },
+  ggr2018: {
+    id: 'ggr-2018',
+    name: "Guildmasters' Guide to Ravnica",
+    kind: 'supplement',
+    ruleset: '2014',
+    sourceVersion: '2018',
+    publisher: 'Wizards of the Coast',
+    sourceUrl: 'https://www.dndbeyond.com/sources/dnd/ggr',
+    availableLocales: ['en'],
+  },
 } as const satisfies Record<string, ContentSource>
 
 export type SrdContentSourceId = (typeof CONTENT_SOURCES)[keyof typeof CONTENT_SOURCES]['id']
