@@ -8,8 +8,8 @@ const errors = []
 function extractSubclassOptions(source, ruleset, nextRuleset) {
   const start = source.indexOf(`'${ruleset}': {`)
   const endMarker = nextRuleset
-    ? `\\n  },\\n  '${nextRuleset}':`
-    : '\\n  },\\n}'
+    ? `\n  },\n  '${nextRuleset}':`
+    : '\n  },\n}'
   const end = source.indexOf(endMarker, start)
   if (start < 0 || end < 0) {
     errors.push(`Could not locate ${ruleset} subclass options in src/domain/classes.ts`)
@@ -17,7 +17,7 @@ function extractSubclassOptions(source, ruleset, nextRuleset) {
   }
 
   const block = source.slice(start, end)
-  const matches = [...block.matchAll(/^\\s{4}([a-z_]+): \\[/gm)]
+  const matches = [...block.matchAll(/^\s{4}([a-z_]+): \[/gm)]
   const result = {}
 
   for (let index = 0; index < matches.length; index += 1) {
@@ -25,7 +25,7 @@ function extractSubclassOptions(source, ruleset, nextRuleset) {
     const sectionStart = matches[index].index
     const sectionEnd = matches[index + 1]?.index ?? block.length
     const section = block.slice(sectionStart, sectionEnd)
-    result[classId] = [...section.matchAll(/\\{ value: '([^']+)'/g)].map((match) => match[1])
+    result[classId] = [...section.matchAll(/\{ value: '([^']+)'/g)].map((match) => match[1])
   }
 
   return result
