@@ -11,6 +11,7 @@ import {
 import type { InventoryItem } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import { Button, IconButton } from '../components/ui/button'
+import { getClassLabel, getSubclassOptions } from '../domain/classes'
 import { RULESET_LABELS } from '../domain/rules'
 import { translate, useLanguage } from './i18n'
 
@@ -40,6 +41,7 @@ export function OverviewPage({
     (total, entry) => total + entry.spellbook.knownSpells.length,
     0,
   )
+  const formatModifier = (value: number) => `${value >= 0 ? '+' : '−'}${Math.abs(value)}`
 
   return (
     <>
@@ -106,11 +108,53 @@ export function OverviewPage({
                   <Trash2 size={15} />
                 </IconButton>
               </div>
-              <h3>{entry.character.name}</h3>
-              <p>
-                {entry.character.classId} · Level {entry.character.level}
-              </p>
-              <span className="ruleset-pill">{RULESET_LABELS[entry.character.ruleset]}</span>
+              <div className="character-card-heading">
+                <div>
+                  <h3>{entry.character.name}</h3>
+                  <p>
+                    {t(getClassLabel(entry.character.classId))} · {t('Stufe')} {entry.character.level}
+                    {entry.character.subclassId
+                      ? ' · ' + t(getSubclassOptions(entry.character.classId, entry.character.ruleset).find((option) => option.value === entry.character.subclassId)?.label ?? entry.character.subclassId)
+                      : ''}
+                  </p>
+                </div>
+                <span className="ruleset-pill">{RULESET_LABELS[entry.character.ruleset]}</span>
+              </div>
+              <div className="character-card-combat" aria-label={t('Kampfwerte')}>
+                <div className="character-card-hp">
+                  <span>{t('Trefferpunkte')}</span>
+                  <strong>
+                    {entry.character.hitPointsCurrent ?? 0}
+                    <small> / {entry.character.hitPointsMax ?? 0}</small>
+                  </strong>
+                  <div className="character-card-hp-track">
+                    <span
+                      style={{
+                        width: (entry.character.hitPointsMax
+                          ? Math.min(100, Math.max(0, (entry.character.hitPointsCurrent ?? 0) / entry.character.hitPointsMax * 100))
+                          : 0) + '%',
+                      }}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <span>{t('Rüstungsklasse')}</span>
+                  <strong>{entry.character.armorClass ?? 10}</strong>
+                </div>
+                <div>
+                  <span>{t('Initiative')}</span>
+                  <strong>
+                    {formatModifier(
+                      entry.character.initiativeBonus ??
+                      Math.floor(((entry.character.abilities?.dex ?? 10) - 10) / 2),
+                    )}
+                  </strong>
+                </div>
+              </div>
+              <div className="character-card-meta">
+                <span><BookOpen size={13} /> {entry.spellbook.knownSpells.length} {t('Zauber')}</span>
+                <span>{RULESET_LABELS[entry.character.ruleset]}</span>
+              </div>
               <button
                 className="open-character"
                 onClick={() => {
