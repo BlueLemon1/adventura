@@ -71,9 +71,9 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
 
 const classSource = readText('src/domain/classes.ts')
 const sourceSource = readText('src/domain/contentSources.ts')
-  [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
+const sourceIds = new Set([...sourceSource.matchAll(/id: '([^']+)'/g)].map((match) => match[1]))
 const sourceRulesets = new Map(
-  [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
+  [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const options = {
   '2014': extractSubclassOptions(classSource, '2014', '2024'),
