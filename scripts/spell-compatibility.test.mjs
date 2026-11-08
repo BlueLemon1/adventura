@@ -54,7 +54,7 @@ test('shared supplements stay current and PHB 2024 replacements never become Leg
 
 test('all supplemental spells listed as updated in the 2024 PHB are excluded from Legacy', () => {
   const officialOverlap = new Set(manifest.phb2024UpdatedSupplementSpellNames.map((name) =>
-    name.normalize('NFKD').replace(/\\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]/g, ''),
+    name.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]/g, ''),
   ))
   const matchingSupplements = additional.filter((spell) =>
     officialOverlap.has(normalize(spell)),
