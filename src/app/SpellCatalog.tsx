@@ -54,6 +54,7 @@ interface CatalogSpell {
   sourceBook?: string
   sourceAbbreviation?: string
   sourcePage?: number
+  previousSource?: string
   descriptionKind?: 'official' | 'original-summary'
 }
 
@@ -352,6 +353,7 @@ export function SpellCatalog({
         [
           spell.sourceBook,
           spell.sourcePage ? `S. ${spell.sourcePage}` : undefined,
+          spell.previousSource ? `ursprünglich ${spell.previousSource}` : undefined,
           spell.descriptionKind === 'original-summary' ? 'eigene Zusammenfassung' : undefined,
           sourceName.trim() || undefined,
         ]
@@ -569,6 +571,7 @@ export function SpellCatalog({
                     {t('Quelle')}: {spell.sourceBook}
                     {spell.sourceAbbreviation ? ` (${spell.sourceAbbreviation})` : ''}
                     {spell.sourcePage ? ` · S. ${spell.sourcePage}` : ''}
+                    {spell.previousSource ? ` · ursprünglich: ${spell.previousSource}` : ''}
                     {spell.descriptionKind === 'original-summary'
                       ? ` · ${t('Eigene Zusammenfassung')}`
                       : ''}
