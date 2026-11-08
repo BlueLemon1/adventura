@@ -218,9 +218,12 @@ function SpellCard({
           <summary>{translateText('Zauberbeschreibung')}</summary>
           <p>{spell.description}</p>
           {spell.higherLevel && (
-            <p>
-              <strong>{translateText('Auf höheren Graden:')}</strong> {spell.higherLevel}
-            </p>
+            <>
+              <p>
+                <strong>{translateText('Auf höheren Graden:')}</strong>
+              </p>
+              <p>{spell.higherLevel}</p>
+            </>
           )}
         </details>
       )}
