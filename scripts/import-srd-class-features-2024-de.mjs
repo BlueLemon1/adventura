@@ -3,7 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const source = fs.readFileSync(path.join(root, 'data/sources/srd-5.2.1/classes.de.md'), 'utf8')
+const source = fs.readFileSync(path.join(root, 'data/sources/srd-5.2.1/classes/de.md'), 'utf8')
 const dataPath = path.join(root, 'src/data/class-features-2024.json')
 const records = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
 const classIds = { Barbar:'barbarian', Barde:'bard', Druide:'druid', Hexenmeister:'warlock', Kleriker:'cleric', Kämpfer:'fighter', Magier:'wizard', Mönch:'monk', Paladin:'paladin', Schurke:'rogue', Waldläufer:'ranger', Zauberer:'sorcerer' }

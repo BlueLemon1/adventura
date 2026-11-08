@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 
-const source = readFileSync(new URL('../data/sources/srd-5.1/classes.en.md', import.meta.url), 'utf8')
+const source = readFileSync(new URL('../data/sources/srd-5.1/classes/en.md', import.meta.url), 'utf8')
 const sections = source.split(/^<!-- CLASS: (.+) -->$/m)
 const classes = sections.slice(1).reduce((result, value, index, all) => {
   if (index % 2 === 0) result.push({ name: value.trim(), content: all[index + 1] ?? '' })

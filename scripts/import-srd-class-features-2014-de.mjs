@@ -4,12 +4,12 @@ import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const dataPath = path.join(root, 'src/data/class-features-2014.json')
-const sourcePath = path.join(root, 'data/sources/srd-5.1')
+const sourcePath = path.join(root, 'data/sources/srd-5.1/classes/de')
 const records = JSON.parse(fs.readFileSync(dataPath, 'utf8'))
-const features = JSON.parse(fs.readFileSync(path.join(sourcePath, 'features.de.json'), 'utf8'))
-const classes = JSON.parse(fs.readFileSync(path.join(sourcePath, 'classes.de.json'), 'utf8'))
+const features = JSON.parse(fs.readFileSync(path.join(sourcePath, 'features.json'), 'utf8'))
+const classes = JSON.parse(fs.readFileSync(path.join(sourcePath, 'classes.json'), 'utf8'))
 const index = JSON.parse(fs.readFileSync(path.join(sourcePath, 'feature-index.json'), 'utf8'))
-const rageText = fs.readFileSync(path.join(sourcePath, 'rage.de.md'), 'utf8').trim()
+const rageText = fs.readFileSync(path.join(sourcePath, 'rage.md'), 'utf8').trim()
 const subclassAliases = { openhand: 'open-hand' }
 const nameAliases = { 'Signature Spells': 'Signature Spell' }
 const normalize = (value) => String(value ?? '').toLowerCase().replace(/\([^)]*\)/g, '').replace(/[^a-z0-9]+/g, ' ').trim()

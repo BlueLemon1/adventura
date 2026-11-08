@@ -3,7 +3,7 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const sourcePath = path.join(root, 'data/sources/srd-5.1/spells.de.json')
+const sourcePath = path.join(root, 'data/sources/srd-5.1/spells/de.json')
 const targetPath = path.join(root, 'src/data/spells-2014.json')
 const source = JSON.parse(await readFile(sourcePath, 'utf8'))
 const spells = JSON.parse(await readFile(targetPath, 'utf8'))

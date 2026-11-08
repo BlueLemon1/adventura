@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 
-const sourcePath = new URL('../data/sources/srd-5.2.1/classes.en.md', import.meta.url)
+const sourcePath = new URL('../data/sources/srd-5.2.1/classes/en.md', import.meta.url)
 const outputPath = new URL('../src/data/class-features-2024.json', import.meta.url)
 const source = readFileSync(sourcePath, 'utf8')
 const lines = source.split(/\r?\n/)
