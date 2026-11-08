@@ -990,5 +990,719 @@
     "translationStatus": {
       "de": "unofficial"
     }
+  },
+  {
+    "id": "2024-barbarian-worldtree-vitality-of-the-tree",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/worldtree#vitality-of-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Vitality of the Tree",
+      "de": "Dein Kampfrausch verbindet dich mit dem Weltenbaum und verleiht dir und nahen Verbündeten vorübergehende Lebenskraft und Erholung."
+    },
+    "descriptions": {
+      "en": "Your Rage connects you to the World Tree, granting temporary vitality and restorative benefits to you and nearby allies.",
+      "de": "Dein Kampfrausch verbindet dich mit dem Weltenbaum und verleiht dir und nahen Verbündeten vorübergehende Lebenskraft und Erholung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-worldtree-branches-of-the-tree",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/worldtree#branches-of-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Branches of the Tree",
+      "de": "Du kannst durch geisterhafte Äste Kreaturen versetzen und Gegner behindern."
+    },
+    "descriptions": {
+      "en": "You can reach through spectral branches to reposition creatures and hinder enemies.",
+      "de": "Du kannst durch geisterhafte Äste Kreaturen versetzen und Gegner behindern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-worldtree-battering-roots",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/worldtree#battering-roots",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Battering Roots",
+      "de": "Deine Reichweite mit geeigneten Nahkampfwaffen steigt und deine Treffer können Gegner zurückstoßen."
+    },
+    "descriptions": {
+      "en": "Your reach with qualifying melee weapons increases, and your strikes can knock foes back.",
+      "de": "Deine Reichweite mit geeigneten Nahkampfwaffen steigt und deine Treffer können Gegner zurückstoßen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-worldtree-travel-along-the-tree",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/worldtree#travel-along-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Travel Along the Tree",
+      "de": "Du kannst dich und Gefährten mithilfe der Magie des Weltenbaums teleportieren."
+    },
+    "descriptions": {
+      "en": "You can teleport yourself and companions through the World Tree's magic.",
+      "de": "Du kannst dich und Gefährten mithilfe der Magie des Weltenbaums teleportieren."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-zealot-divine-fury",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/zealot#divine-fury",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Divine Fury",
+      "de": "Einmal pro Zug verursachst du während deines Kampfrauschs zusätzlichen, von göttlicher Macht erfüllten Schaden."
+    },
+    "descriptions": {
+      "en": "Once on each of your turns while raging, you deal extra damage infused with divine power.",
+      "de": "Einmal pro Zug verursachst du während deines Kampfrauschs zusätzlichen, von göttlicher Macht erfüllten Schaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-zealot-warrior-of-the-gods",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/zealot#warrior-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Warrior of the Gods",
+      "de": "Du kannst göttliche Energie nutzen, um Trefferpunkte wiederherzustellen; mit steigender Stufe wird die Heilung stärker."
+    },
+    "descriptions": {
+      "en": "You can draw on divine energy to restore hit points, with greater recovery as you advance.",
+      "de": "Du kannst göttliche Energie nutzen, um Trefferpunkte wiederherzustellen; mit steigender Stufe wird die Heilung stärker."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-zealot-fanatical-focus",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/zealot#fanatical-focus",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Fanatical Focus",
+      "de": "Wenn dir während deines Kampfrauschs ein Rettungswurf misslingt, kannst du ihn wiederholen."
+    },
+    "descriptions": {
+      "en": "When you fail a saving throw while raging, you can reroll it.",
+      "de": "Wenn dir während deines Kampfrauschs ein Rettungswurf misslingt, kannst du ihn wiederholen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-zealot-zealous-presence",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/zealot#zealous-presence",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Zealous Presence",
+      "de": "Du kannst nahe Verbündete inspirieren und ihnen Vorteil auf ausgewählte W20-Würfe verleihen."
+    },
+    "descriptions": {
+      "en": "You can inspire nearby allies, granting them advantage on selected d20 tests.",
+      "de": "Du kannst nahe Verbündete inspirieren und ihnen Vorteil auf ausgewählte W20-Würfe verleihen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-barbarian-zealot-rage-of-the-gods",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "barbarian/zealot#rage-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Rage of the Gods",
+      "de": "Dein Kampfrausch nimmt eine göttliche Gestalt an, stärkt deine Widerstandskraft und ermöglicht dir, Verbündete zu schützen."
+    },
+    "descriptions": {
+      "en": "Your Rage takes on a divine form, improving your durability and allowing you to protect allies.",
+      "de": "Dein Kampfrausch nimmt eine göttliche Gestalt an, stärkt deine Widerstandskraft und ermöglicht dir, Verbündete zu schützen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-dance-dazzling-footwork",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/dance#dazzling-footwork",
+    "classId": "bard",
+    "subclassId": "dance",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Dazzling Footwork",
+      "de": "Ohne Rüstung und Schild verbessert deine Beweglichkeit deine Verteidigung und lässt dich Bardische Inspiration in waffenlose Angriffe einfließen."
+    },
+    "descriptions": {
+      "en": "While unarmored and without a shield, your agility improves your defense and lets Bardic Inspiration flow into unarmed strikes.",
+      "de": "Ohne Rüstung und Schild verbessert deine Beweglichkeit deine Verteidigung und lässt dich Bardische Inspiration in waffenlose Angriffe einfließen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-dance-inspiring-movement",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/dance#inspiring-movement",
+    "classId": "bard",
+    "subclassId": "dance",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Inspiring Movement",
+      "de": "Wenn ein naher Verbündeter angegriffen wird, kannst du dich als Reaktion bewegen und ihm beim Positionieren helfen."
+    },
+    "descriptions": {
+      "en": "When an ally near you is attacked, you can move as a reaction and help that ally reposition.",
+      "de": "Wenn ein naher Verbündeter angegriffen wird, kannst du dich als Reaktion bewegen und ihm beim Positionieren helfen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-dance-tandem-footwork",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/dance#tandem-footwork",
+    "classId": "bard",
+    "subclassId": "dance",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Tandem Footwork",
+      "de": "Wenn du Bardische Inspiration einsetzt, können du und nahe Verbündete eure Initiative verbessern."
+    },
+    "descriptions": {
+      "en": "When you use Bardic Inspiration, you and nearby allies can improve initiative.",
+      "de": "Wenn du Bardische Inspiration einsetzt, können du und nahe Verbündete eure Initiative verbessern."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-dance-leading-evasion",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/dance#leading-evasion",
+    "classId": "bard",
+    "subclassId": "dance",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Leading Evasion",
+      "de": "Deine Ausweichbewegungen schützen dich und nahe Verbündete vor Effekten, die einen Geschicklichkeitsrettungswurf erlauben."
+    },
+    "descriptions": {
+      "en": "Your evasive movement protects you and nearby allies from effects that allow an Agility save.",
+      "de": "Deine Ausweichbewegungen schützen dich und nahe Verbündete vor Effekten, die einen Geschicklichkeitsrettungswurf erlauben."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-glamour-beguiling-magic",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/glamour#beguiling-magic",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Beguiling Magic",
+      "de": "Deine Feenmagie kann eine Kreatur bezaubern oder verängstigen, wenn du einen Verzauberungs- oder Illusionszauber wirkst."
+    },
+    "descriptions": {
+      "en": "Your fey magic can charm or frighten a creature when you cast an enchantment or illusion spell.",
+      "de": "Deine Feenmagie kann eine Kreatur bezaubern oder verängstigen, wenn du einen Verzauberungs- oder Illusionszauber wirkst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-glamour-mantle-of-inspiration",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/glamour#mantle-of-inspiration",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Mantle of Inspiration",
+      "de": "Du gibst Bardische Inspiration aus, um Verbündeten temporäre Trefferpunkte und eine Bewegung ohne Gelegenheitsangriffe zu ermöglichen."
+    },
+    "descriptions": {
+      "en": "You expend Bardic Inspiration to grant allies temporary hit points and let them move without provoking opportunity attacks.",
+      "de": "Du gibst Bardische Inspiration aus, um Verbündeten temporäre Trefferpunkte und eine Bewegung ohne Gelegenheitsangriffe zu ermöglichen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-glamour-mantle-of-majesty",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/glamour#mantle-of-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Mantle of Majesty",
+      "de": "Du kannst für begrenzte Zeit Befehl als Bonusaktion wirken und eine gebieterische Feenaura aufrechterhalten."
+    },
+    "descriptions": {
+      "en": "You can cast Command as a bonus action for a limited time, maintaining a commanding fey presence.",
+      "de": "Du kannst für begrenzte Zeit Befehl als Bonusaktion wirken und eine gebieterische Feenaura aufrechterhalten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-glamour-unbreakable-majesty",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/glamour#unbreakable-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Unbreakable Majesty",
+      "de": "Du umgibst dich mit betörender Magie, die Gegnern Treffer erschwert und ihre Angriffe bestrafen kann."
+    },
+    "descriptions": {
+      "en": "You surround yourself with beguiling magic that makes foes struggle to hit you and can punish their attacks.",
+      "de": "Du umgibst dich mit betörender Magie, die Gegnern Treffer erschwert und ihre Angriffe bestrafen kann."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-valor-combat-inspiration",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/valor#combat-inspiration",
+    "classId": "bard",
+    "subclassId": "valor",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Combat Inspiration",
+      "de": "Deine Bardische Inspiration kann Schaden oder Verteidigung stärken; außerdem erhältst du Kampfausbildung."
+    },
+    "descriptions": {
+      "en": "Your Bardic Inspiration can bolster damage or defense, and you gain martial training.",
+      "de": "Deine Bardische Inspiration kann Schaden oder Verteidigung stärken; außerdem erhältst du Kampfausbildung."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-valor-extra-attack",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/valor#extra-attack",
+    "classId": "bard",
+    "subclassId": "valor",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Extra Attack",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du statt einmal zweimal angreifen."
+    },
+    "descriptions": {
+      "en": "You can attack twice instead of once when you take the Attack action.",
+      "de": "Wenn du die Angriffsaktion ausführst, kannst du statt einmal zweimal angreifen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-bard-valor-battle-magic",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "bard/valor#battle-magic",
+    "classId": "bard",
+    "subclassId": "valor",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Battle Magic",
+      "de": "Nachdem du mit einer Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen."
+    },
+    "descriptions": {
+      "en": "After casting a spell with an action, you can make one weapon attack as a bonus action.",
+      "de": "Nachdem du mit einer Aktion einen Zauber gewirkt hast, kannst du als Bonusaktion einen Waffenangriff ausführen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-moon-circle-forms",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/moon#circle-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Circle Forms",
+      "de": "Deine Tiergestalten erhalten verbesserte Kampffähigkeiten und du erhältst Zugang zu stärkeren Gestalten."
+    },
+    "descriptions": {
+      "en": "Your Wild Shape forms gain improved combat capabilities and access to stronger forms.",
+      "de": "Deine Tiergestalten erhalten verbesserte Kampffähigkeiten und du erhältst Zugang zu stärkeren Gestalten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-moon-improved-circle-forms",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/moon#improved-circle-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Improved Circle Forms",
+      "de": "Deine Tiergestalten werden widerstandsfähiger und ihre Angriffe erhalten zusätzliche magische Kraft."
+    },
+    "descriptions": {
+      "en": "Your beast forms become more resilient and your attacks gain additional magical force.",
+      "de": "Deine Tiergestalten werden widerstandsfähiger und ihre Angriffe erhalten zusätzliche magische Kraft."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-moon-moonlight-step",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/moon#moonlight-step",
+    "classId": "druid",
+    "subclassId": "moon",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Moonlight Step",
+      "de": "Du kannst dich im Mondlicht teleportieren und deinen nächsten Angriff verstärken."
+    },
+    "descriptions": {
+      "en": "You can teleport in moonlight and empower your next attack.",
+      "de": "Du kannst dich im Mondlicht teleportieren und deinen nächsten Angriff verstärken."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-moon-lunar-form",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/moon#lunar-form",
+    "classId": "druid",
+    "subclassId": "moon",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Lunar Form",
+      "de": "Deine Mondmacht verstärkt deine Angriffe und ermöglicht es dir, beim Teleportieren einen Verbündeten mitzunehmen."
+    },
+    "descriptions": {
+      "en": "Your lunar power intensifies, improving your attacks and allowing you to bring an ally along when you teleport.",
+      "de": "Deine Mondmacht verstärkt deine Angriffe und ermöglicht es dir, beim Teleportieren einen Verbündeten mitzunehmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-sea-circle-of-the-sea-spells",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/sea#circle-of-the-sea-spells",
+    "classId": "druid",
+    "subclassId": "sea",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Circle of the Sea Spells",
+      "de": "Du hast die Zauber des Zirkels der See ab den angegebenen Druidenstufen stets vorbereitet."
+    },
+    "descriptions": {
+      "en": "You always have the Circle of the Sea spells prepared as you reach the listed druid levels.",
+      "de": "Du hast die Zauber des Zirkels der See ab den angegebenen Druidenstufen stets vorbereitet."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-sea-wrath-of-the-sea",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/sea#wrath-of-the-sea",
+    "classId": "druid",
+    "subclassId": "sea",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Wrath of the Sea",
+      "de": "Du umgibst dich mit einer stürmischen Aura, die Kreaturen in deiner Nähe schädigt und zurückstößt."
+    },
+    "descriptions": {
+      "en": "You surround yourself with a stormy aura that damages and pushes creatures nearby.",
+      "de": "Du umgibst dich mit einer stürmischen Aura, die Kreaturen in deiner Nähe schädigt und zurückstößt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-sea-aquatic-affinity",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/sea#aquatic-affinity",
+    "classId": "druid",
+    "subclassId": "sea",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Aquatic Affinity",
+      "de": "Du erhältst Vorteile für Bewegung und Atmung im Wasser und deine Meeresmagie wird stärker."
+    },
+    "descriptions": {
+      "en": "You gain aquatic movement and breathing benefits, and your sea magic becomes more potent.",
+      "de": "Du erhältst Vorteile für Bewegung und Atmung im Wasser und deine Meeresmagie wird stärker."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-sea-stormborn",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/sea#stormborn",
+    "classId": "druid",
+    "subclassId": "sea",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Stormborn",
+      "de": "Du erhältst eine Flugbewegungsrate und verbesserst deine sturmbezogenen Fähigkeiten."
+    },
+    "descriptions": {
+      "en": "You gain a flying speed and improve your storm-related abilities.",
+      "de": "Du erhältst eine Flugbewegungsrate und verbesserst deine sturmbezogenen Fähigkeiten."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-sea-oceanic-gift",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/sea#oceanic-gift",
+    "classId": "druid",
+    "subclassId": "sea",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Oceanic Gift",
+      "de": "Deine Meeres-Aura schützt stärker und kann Kreaturen behindern, die von ihr erfasst werden."
+    },
+    "descriptions": {
+      "en": "Your sea aura becomes more protective and can hinder creatures caught within it.",
+      "de": "Deine Meeres-Aura schützt stärker und kann Kreaturen behindern, die von ihr erfasst werden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-stars-star-map",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/stars#star-map",
+    "classId": "druid",
+    "subclassId": "stars",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Star Map",
+      "de": "Du erschaffst eine Sternenkarte, die als Zauberfokus dient und dir Zugang zu Lenkschuss gewährt."
+    },
+    "descriptions": {
+      "en": "You create a star map that serves as a spellcasting focus and grants access to Guiding Bolt.",
+      "de": "Du erschaffst eine Sternenkarte, die als Zauberfokus dient und dir Zugang zu Lenkschuss gewährt."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-stars-starry-form",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/stars#starry-form",
+    "classId": "druid",
+    "subclassId": "stars",
+    "featureType": "subclass",
+    "level": 3,
+    "names": {
+      "en": "Starry Form",
+      "de": "Du verbrauchst Tiergestalt, um eine Sternbildgestalt mit besonderen Vorteilen für Heilung, Angriffe oder Konzentration anzunehmen."
+    },
+    "descriptions": {
+      "en": "You expend Wild Shape to assume a constellation form with distinct benefits for healing, attacks, or concentration.",
+      "de": "Du verbrauchst Tiergestalt, um eine Sternbildgestalt mit besonderen Vorteilen für Heilung, Angriffe oder Konzentration anzunehmen."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-stars-cosmic-omen",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/stars#cosmic-omen",
+    "classId": "druid",
+    "subclassId": "stars",
+    "featureType": "subclass",
+    "level": 6,
+    "names": {
+      "en": "Cosmic Omen",
+      "de": "Nach einer Rast erhältst du ein kosmisches Omen, mit dem du den Wurf einer nahen Kreatur beeinflussen kannst."
+    },
+    "descriptions": {
+      "en": "After a rest, you gain a cosmic sign that can influence a nearby creature's roll.",
+      "de": "Nach einer Rast erhältst du ein kosmisches Omen, mit dem du den Wurf einer nahen Kreatur beeinflussen kannst."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-stars-twinkling-constellations",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/stars#twinkling-constellations",
+    "classId": "druid",
+    "subclassId": "stars",
+    "featureType": "subclass",
+    "level": 10,
+    "names": {
+      "en": "Twinkling Constellations",
+      "de": "Deine Sternbildgestalt wird stärker und du kannst ihr Sternbild flexibler wechseln."
+    },
+    "descriptions": {
+      "en": "Your Starry Form improves, and you can change its constellation more flexibly.",
+      "de": "Deine Sternbildgestalt wird stärker und du kannst ihr Sternbild flexibler wechseln."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
+  },
+  {
+    "id": "2024-druid-stars-full-of-stars",
+    "ruleset": "2024",
+    "contentSourceId": "phb-2024",
+    "sourceReference": "druid/stars#full-of-stars",
+    "classId": "druid",
+    "subclassId": "stars",
+    "featureType": "subclass",
+    "level": 14,
+    "names": {
+      "en": "Full of Stars",
+      "de": "Während deiner Sternbildgestalt erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden."
+    },
+    "descriptions": {
+      "en": "While in Starry Form, you gain resistance to bludgeoning, piercing, and slashing damage.",
+      "de": "Während deiner Sternbildgestalt erhältst du Resistenz gegen Wucht-, Stich- und Hiebschaden."
+    },
+    "translationStatus": {
+      "de": "unofficial"
+    }
   }
 ]
