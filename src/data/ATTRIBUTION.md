@@ -125,6 +125,10 @@ Included entries:
 Tasha's supplemental entries are factual spell metadata with independently written German and English summaries. They are currently assigned to the 2014 ruleset, because that is the rules context of the sourcebook; compatibility with the 2024 ruleset is assessed spell by spell rather than assumed.
 
 Included TCE spells:
+- Booming Blade (p. 106; originally SCAG p. 142)
+- Green-Flame Blade (p. 107; originally SCAG p. 142)
+- Lightning Lure (p. 107; originally SCAG p. 143)
+- Sword Burst (p. 115; originally SCAG p. 143)
 - Mind Sliver (p. 108)
 - Intellect Fortress (p. 107)
 - Spirit Shroud (p. 108)
@@ -147,7 +151,7 @@ The spell catalogue may grow as additional sourcebooks are checked. A sourcebook
 
 ### Sword Coast Adventurer's Guide (SCAG)
 
-The catalogue also includes the four SCAG cantrips: Booming Blade (p. 142), Green-Flame Blade (p. 142), Lightning Lure (p. 143), and Sword Burst (p. 143). Their current entries are explicitly assigned to the 2014 ruleset. A separate 2024 entry will be added only after its revised wording and mechanics have been checked.
+Booming Blade, Green-Flame Blade, Lightning Lure, and Sword Burst first appeared in SCAG (pp. 142–143). Adventura uses their later revised Tasha's versions as the canonical entries and retains the original SCAG page references as provenance.
 
 XGE entries are marked usable with both rulesets where their mechanics are compatible with the 2024 rules. This is a catalogue compatibility choice, not a claim that the spell text was reprinted in the 2024 Player's Handbook.
 
