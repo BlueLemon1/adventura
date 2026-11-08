@@ -59,14 +59,22 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
           'Alle Klassen- und Unterklassenmerkmale deines Regelwerks – aktive, passive und zukünftige.',
         )}
       />
-      <div className="rest-actions">
-        <span>{t('Rast verwalten')}</span>
+      <div className="features-dashboard">
+      <section className="panel rest-management-panel">
+        <PanelHeader title={t('Rast verwalten')} meta={t('ERHOLUNG')} />
+        <p className="muted-paragraph">{t('Stelle verbrauchte Klassenressourcen nach einer Rast wieder her.')}</p>
+        <div className="rest-actions">
         <button type="button" className="secondary-button" onClick={() => takeRest('short')}>
           {t('Kurze Rast')}
         </button>
         <button type="button" className="secondary-button" onClick={() => takeRest('long')}>
           {t('Lange Rast')}
         </button>
+        </div>
+      </section>
+
+      {resources.length > 0 && (
+  
       </div>
       {selectedSubclass && !hasSubclassFeatures && (
         <section className="panel">
@@ -76,8 +84,7 @@ export function FeaturesPage({ character, onUpdate }: FeaturesPageProps) {
           </p>
         </section>
       )}
-      {resources.length > 0 && (
-        <section className="panel">
+      <section className="panel">
           <PanelHeader title={t('Klassenressourcen')} meta={t('AUTOMATISCH BERECHNET')} />
           <div className="class-resource-list">
             {resources.map((resource) => {
