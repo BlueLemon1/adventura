@@ -6714,7 +6714,7 @@
       "warlock",
       "wizard"
     ],
-    "description": "You extract a memory, idea, or message from your mind and form it into a tangible strand of glowing energy. The strand appears in an unoccupied space within 5 feet, can be carried like a ribbon, and lasts for the duration or until you cast the spell again. If you are concentrating on magic that reads or manipulates another creature's thoughts, you can encode those thoughts instead. Holding a thought strand lets you receive its contents.",
+    "description": "You extract a memory, idea, or message from your mind and form it into a tangible strand of glowing energy. The strand appears in an unoccupied space within 5 feet, can be carried like a ribbon, and lasts for the duration or until you cast the spell again. If you are concentrating on magic that reads another creature's thoughts, you can encode those thoughts instead. Holding a thought strand lets you receive its contents.",
     "localized": {
       "name": "Gedanken kodieren",
       "school": "Verzauberung",
@@ -6732,7 +6732,7 @@
       "range": "Selbst",
       "components": "G",
       "duration": "8 Stunden",
-      "description": "Du löst eine Erinnerung, Idee oder Nachricht aus deinem Geist und formst sie zu einem greifbaren Faden aus leuchtender Energie. Der Faden erscheint an einem freien Ort innerhalb von 1,5 Metern, kann wie ein Band getragen werden und bleibt bis zum Ende der Wirkungsdauer oder bis du den Zauber erneut wirkst bestehen. Konzentrierst du dich auf Magie, die Gedanken anderer liest oder verändert, kannst du stattdessen diese Gedanken kodieren. Wenn du einen Gedankenfaden hältst, kannst du seinen Inhalt empfangen.",
+      "description": "Du löst eine Erinnerung, Idee oder Nachricht aus deinem Geist und formst sie zu einem greifbaren Faden aus leuchtender Energie. Der Faden erscheint an einem freien Ort innerhalb von 1,5 Metern, kann wie ein Band getragen werden und bleibt bis zum Ende der Wirkungsdauer oder bis du den Zauber erneut wirkst bestehen. Konzentrierst du dich auf Magie, die Gedanken anderer liest, kannst du stattdessen diese Gedanken kodieren. Wenn du einen Gedankenfaden hältst, kannst du seinen Inhalt empfangen.",
       "availabilityNote": "Nur über den Hintergrund Dimir-Agent oder mit Zustimmung der Spielleitung; der Hintergrund fügt den Zauber deiner Klassenliste hinzu."
     },
     "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list.",
