@@ -236,98 +236,98 @@ export function SpellbookPage({
       {view === 'character' ? (
         <>
           <div className="spellbook-dashboard">
-          <section className="panel spellcasting-stats">
-            <PanelHeader
-              title={t('Zauberwerte')}
-              description={t('Zauberangriffe und Rettungswurf-SG')}
-            />
-            <div className="form-grid">
-              <label className="field-label">
-                {t('Zauberattribut')}
-                <Select
-                  value={selectedSpellcastingAbility}
-                  onValueChange={(value) =>
-                    onUpdateCharacter({ spellcastingAbility: value as Ability })
-                  }
-                >
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {!selectedSpellcastingAbility && (
-                      <SelectItem value="none">{t('Attribut wählen')}</SelectItem>
-                    )}
-                    {ABILITIES.map((ability) => (
-                      <SelectItem key={ability} value={ability}>
-                        {t(
-                          (
-                            {
-                              str: 'Stärke',
-                              dex: 'Geschicklichkeit',
-                              con: 'Konstitution',
-                              int: 'Intelligenz',
-                              wis: 'Weisheit',
-                              cha: 'Charisma',
-                            } as Record<Ability, string>
-                          )[ability],
-                        )}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </label>
-              <div className="combat-card">
-                <span>{t('Zauberangriffsbonus')}</span>
-                <strong className="combat-number">
-                  {spellcastingStats
-                    ? (spellcastingStats.attackBonus >= 0 ? '+' : '') +
-                      spellcastingStats.attackBonus
-                    : '—'}
-                </strong>
-              </div>
-              <div className="combat-card">
-                <span>{t('Rettungswurf-SG')}</span>
-                <strong className="combat-number">{spellcastingStats?.saveDc ?? '—'}</strong>
-              </div>
-            </div>
-            <small>
-              {t(
-                'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.',
-              )}
-            </small>
-          </section>
-          <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
-          {spellCapacity.mode !== 'none' && (
-            <section className="panel spell-capacity-panel">
+            <section className="panel spellcasting-stats">
               <PanelHeader
-                title={t(spellCapacity.label)}
-                meta={
-                  spellCapacity.maximum === undefined
-                    ? `${spellCapacity.current} ${t('erfasst')}`
-                    : `${spellCapacity.current} / ${spellCapacity.maximum}`
-                }
+                title={t('Zauberwerte')}
+                description={t('Zauberangriffe und Rettungswurf-SG')}
               />
-              {spellCapacity.maximum !== undefined && (
-                <div
-                  className={`spell-capacity-status${spellCapacity.current > spellCapacity.maximum ? ' is-over-limit' : ''}`}
-                  role="status"
-                >
-                  <strong>
-                    {spellCapacity.current > spellCapacity.maximum
-                      ? t('Limit überschritten')
-                      : spellCapacity.current === spellCapacity.maximum
-                        ? t('Limit erreicht')
-                        : `${spellCapacity.maximum - spellCapacity.current} ${t('Plätze verfügbar')}`}
+              <div className="form-grid">
+                <label className="field-label">
+                  {t('Zauberattribut')}
+                  <Select
+                    value={selectedSpellcastingAbility}
+                    onValueChange={(value) =>
+                      onUpdateCharacter({ spellcastingAbility: value as Ability })
+                    }
+                  >
+                    <SelectTrigger>
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {!selectedSpellcastingAbility && (
+                        <SelectItem value="none">{t('Attribut wählen')}</SelectItem>
+                      )}
+                      {ABILITIES.map((ability) => (
+                        <SelectItem key={ability} value={ability}>
+                          {t(
+                            (
+                              {
+                                str: 'Stärke',
+                                dex: 'Geschicklichkeit',
+                                con: 'Konstitution',
+                                int: 'Intelligenz',
+                                wis: 'Weisheit',
+                                cha: 'Charisma',
+                              } as Record<Ability, string>
+                            )[ability],
+                          )}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </label>
+                <div className="combat-card">
+                  <span>{t('Zauberangriffsbonus')}</span>
+                  <strong className="combat-number">
+                    {spellcastingStats
+                      ? (spellcastingStats.attackBonus >= 0 ? '+' : '') +
+                        spellcastingStats.attackBonus
+                      : '—'}
                   </strong>
-                  <span>{t(spellCapacity.note)}</span>
                 </div>
-              )}
-              {spellCapacity.maximum === undefined && (
-                <p className="muted-paragraph">{t(spellCapacity.note)}</p>
-              )}
+                <div className="combat-card">
+                  <span>{t('Rettungswurf-SG')}</span>
+                  <strong className="combat-number">{spellcastingStats?.saveDc ?? '—'}</strong>
+                </div>
+              </div>
+              <small>
+                {t(
+                  'Standardmäßig wird das Attribut deiner Klasse verwendet. Bei mehreren Zauberquellen kannst du es hier anpassen.',
+                )}
+              </small>
             </section>
-          )}
-          </div>
+            <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
+            {spellCapacity.mode !== 'none' && (
+              <section className="panel spell-capacity-panel">
+                <PanelHeader
+                  title={t(spellCapacity.label)}
+                  meta={
+                    spellCapacity.maximum === undefined
+                      ? `${spellCapacity.current} ${t('erfasst')}`
+                      : `${spellCapacity.current} / ${spellCapacity.maximum}`
+                  }
+                />
+                {spellCapacity.maximum !== undefined && (
+                  <div
+                    className={`spell-capacity-status${spellCapacity.current > spellCapacity.maximum ? ' is-over-limit' : ''}`}
+                    role="status"
+                  >
+                    <strong>
+                      {spellCapacity.current > spellCapacity.maximum
+                        ? t('Limit überschritten')
+                        : spellCapacity.current === spellCapacity.maximum
+                          ? t('Limit erreicht')
+                          : `${spellCapacity.maximum - spellCapacity.current} ${t('Plätze verfügbar')}`}
+                    </strong>
+                    <span>{t(spellCapacity.note)}</span>
+                  </div>
+                )}
+                {spellCapacity.maximum === undefined && (
+                  <p className="muted-paragraph">{t(spellCapacity.note)}</p>
+                )}
+              </section>
+            )}
+            </div>
           <SpellbookList
             spells={[...localizedKnownSpells, ...featureSpellEntries]}
             character={character}
