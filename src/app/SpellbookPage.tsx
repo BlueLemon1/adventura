@@ -22,6 +22,7 @@ import { SpellbookList } from './SpellbookList'
 import { SpellSlotTracker } from './SpellSlotTracker'
 import { getSpellCatalog } from '../domain/spellCatalog'
 import { getDefaultSpellcastingAbility, getSpellcastingStats } from '../domain/spellcasting'
+import { getSpellCapacity } from '../domain/spellLimits'
 import { translate } from './i18n'
 
 type SpellSource = KnownSpell['source']
@@ -49,6 +50,7 @@ export function SpellbookPage({
   const t = (value: string) => translate(language, value)
   const featureSpells = getSpellbookFeatureSpells(character, language)
   const classResources = getClassResources(character)
+  const spellCapacity = getSpellCapacity(character, knownSpells)
   const spellCatalog = getSpellCatalog(character.ruleset)
   const localizedKnownSpells = knownSpells.map((knownSpell) => {
     const spell = spellCatalog.find((entry) => entry.id === knownSpell.spellId)
@@ -294,6 +296,38 @@ export function SpellbookPage({
             </small>
           </section>
           <SpellSlotTracker character={character} onUpdate={onUpdateCharacter} />
+          {spellCapacity.mode !== 'none' && (
+            <section className="panel spell-capacity-panel">
+              <PanelHeader
+                title={t(spellCapacity.label)}
+                meta={
+                  spellCapacity.maximum === undefined
+                    ? `${spellCapacity.current} ${t('erfasst')}`
+                    : `${spellCapacity.current} / ${spellCapacity.maximum}`
+                }
+              />
+              {spellCapacity.maximum !== undefined && (
+                <div
+                  className={`spell-capacity-status${spellCapacity.current > spellCapacity.maximum ? ' is-over-limit' : ''}`}
+                  role="status"
+                >
+                  <strong>
+                    {spellCapacity.current > spellCapacity.maximum
+                      ? t('Limit überschritten')
+                      : spellCapacity.current === spellCapacity.maximum
+                        ? t('Limit erreicht')
+                        : `${spellCapacity.maximum - spellCapacity.current} ${t('Plätze verfügbar')}`}
+                  </strong>
+                  <span>
+                    {t(spellCapacity.note)}
+                  </span>
+                </div>
+              )}
+              {spellCapacity.maximum === undefined && (
+                <p className="muted-paragraph">{t(spellCapacity.note)}</p>
+              )}
+            </section>
+          )}
           <SpellbookList
             spells={[...localizedKnownSpells, ...featureSpellEntries]}
             character={character}

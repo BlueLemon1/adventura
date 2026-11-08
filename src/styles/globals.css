@@ -3573,3 +3573,22 @@ textarea {
   border-color: var(--border);
   color: var(--muted);
 }
+
+
+.spell-capacity-panel {
+  margin-top: 16px;
+}
+.spell-capacity-status {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.spell-capacity-status strong {
+  color: var(--gold);
+  font-size: 13px;
+}
+.spell-capacity-status.is-over-limit strong {
+  color: var(--danger, #d97757);
+}
