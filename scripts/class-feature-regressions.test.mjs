@@ -9,6 +9,11 @@ const featureSource = readText('../src/domain/classFeatures.ts')
 const classes = readJson('../src/data/classes-additional.json')
 const featureDefinitions = readJson('../src/data/features-additional.json')
 const progressions = readJson('../src/data/class-progressions.json')
+const featureMechanics = readJson('../src/data/feature-mechanics.json')
+const srdFeatures = [
+  ...readJson('../src/data/class-features-2014.json'),
+  ...readJson('../src/data/class-features-2024.json'),
+]
 const definitionsById = new Map(featureDefinitions.map((feature) => [feature.id, feature]))
 
 function featureRecords(ruleset) {
@@ -126,4 +131,15 @@ test('runtime feature lookup preserves underscore subclass IDs and only adds unl
   assert.match(featureSource, /feature\.subclassId === selectedSubclass/)
   assert.match(featureSource, /if \(!feature\.unlocked\) return \[\]/)
   assert.match(featureSource, /unlocked: feature\.level <= character\.level/)
+})
+
+test('feature mechanics reference stable IDs and spell grants are ruleset-specific', () => {
+  const ids = new Set([...featureDefinitions, ...srdFeatures].map((feature) => feature.id))
+  assert.ok(Object.keys(featureMechanics).every((id) => ids.has(id)))
+  for (const mechanics of Object.values(featureMechanics)) {
+    for (const [ruleset, spellIds] of Object.entries(mechanics.spellbookSpellIdsByRuleset ?? {})) {
+      assert.ok(['2014', '2024'].includes(ruleset))
+      assert.ok(Array.isArray(spellIds) && spellIds.length > 0)
+    }
+  }
 })
