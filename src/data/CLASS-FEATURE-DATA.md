@@ -2,7 +2,7 @@
 
 Class feature text and progression are separate concepts:
 
-- `class-features-2014.json` and `class-features-2024.json` contain only the official SRD datasets. Their contents are kept exactly as published in the project.
+- `srd/2014/class-features.json` and `srd/2024/class-features.json` contain only the official SRD datasets. Their contents are kept exactly as published in the project.
 - `features-additional.json` contains each supplemental feature definition once: canonical text, translation status, and the complete set of contributing source references. Shared mechanics such as Extra Attack or Potent Spellcasting are not copied for every class.
 - `class-progressions.json` assigns definitions to classes or subclasses and describes ruleset-specific availability, levels, source context, and optional class-specific display-name overrides. Multiple progression records may reference one definition; each occurrence has its own stable `progressionId`.
 - `classes-additional.json` is the shared class and subclass catalog. Legacy compatibility and replacement relationships belong to the class/subclass records, not to every feature beneath them.

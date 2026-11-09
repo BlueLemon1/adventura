@@ -125,6 +125,11 @@ export default function App() {
     }
 
     try {
+      const legacyPartyItems = await getPartyInventory()
+      if (legacyPartyItems.length) {
+        stored.inventory.party = [...stored.inventory.party, ...legacyPartyItems]
+        await clearPartyInventory()
+      }
       await saveCharacter(stored)
       setCharacters((current) => [...current, stored])
       setSelectedId(character.id)

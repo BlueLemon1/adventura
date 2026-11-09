@@ -122,6 +122,7 @@ function getCasterKind(character: CasterCharacter): SpellcastingProgression['kin
   const subclass = normalizeKey(character.subclassId)
 
   if (['warlock', 'hexenmeister'].includes(classId)) return 'warlock'
+  if (['artificer', 'erfinder'].includes(classId)) return 'half'
   if (
     [
       'bard',
@@ -167,7 +168,12 @@ export function getSpellcastingProgression(
     return { kind, slots: [], pactMagic: WARLOCK_PACT_MAGIC[character.level] }
   }
 
-  if (kind === 'half' && character.ruleset === '2014' && character.level < 2) {
+  if (
+    kind === 'half' &&
+    !['artificer', 'erfinder'].includes(normalizeKey(character.classId)) &&
+    character.ruleset === '2014' &&
+    character.level < 2
+  ) {
     return null
   }
 

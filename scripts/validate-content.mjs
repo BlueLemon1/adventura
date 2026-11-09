@@ -132,7 +132,7 @@ const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const additionalSpellRecords = readJson('src/data/spells/spells-additional.json')
-const srdSpellRecords = [readJson('src/data/spells/spells-2014.json'), readJson('src/data/spells/spells-2024.json')].flat()
+const srdSpellRecords = [readJson('src/data/srd/2014/spells.json'), readJson('src/data/srd/2024/spells.json')].flat()
 const spellMechanics = readJson('src/data/spells/spell-mechanics.json')
 const spellAvailability = readJson('src/data/spells/spell-availability.json')
 const additionalSpellIds = new Set(additionalSpellRecords.map((spell) => spell.id))
@@ -329,8 +329,8 @@ const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
 }))
 
 for (const ruleset of ['2014', '2024']) {
-  const srd = readJson(`src/data/class-features-${ruleset}.json`)
-  const srdSpells = readJson(`src/data/spells/spells-${ruleset}.json`)
+  const srd = readJson(`src/data/srd/${ruleset}/class-features.json`)
+  const srdSpells = readJson(`src/data/srd/${ruleset}/spells.json`)
   const supplemental = additionalClassFeatures.filter((feature) =>
     feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy',
   )
@@ -436,7 +436,7 @@ console.log(
 )
 
 const incomplete2014Translations = [
-  ...readJson('src/data/class-features-2014.json'),
+  ...readJson('src/data/srd/2014/class-features.json'),
   ...additionalClassFeatures.filter((feature) => feature.rulesets?.['2014'] === true),
 ].filter((feature) => !feature.names?.de?.trim() || !feature.descriptions?.de?.trim())
 if (incomplete2014Translations.length) {

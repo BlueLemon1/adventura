@@ -11,8 +11,8 @@ const featureDefinitions = readJson('../src/data/features-additional.json')
 const progressions = readJson('../src/data/class-progressions.json')
 const featureMechanics = readJson('../src/data/feature-mechanics.json')
 const srdFeatures = [
-  ...readJson('../src/data/class-features-2014.json'),
-  ...readJson('../src/data/class-features-2024.json'),
+  ...readJson('../src/data/srd/2014/class-features.json'),
+  ...readJson('../src/data/srd/2024/class-features.json'),
 ]
 const definitionsById = new Map(featureDefinitions.map((feature) => [feature.id, feature]))
 
@@ -72,7 +72,7 @@ test('Legacy feature definitions are reused with ruleset-specific progression le
 test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
-      ...readJson('../src/data/class-features-' + ruleset + '.json'),
+      ...readJson('../src/data/srd/' + ruleset + '/class-features.json'),
       ...featureRecords(ruleset),
     ]
     for (const subclass of subclassOptions(ruleset)) {

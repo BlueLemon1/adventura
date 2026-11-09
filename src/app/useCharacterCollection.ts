@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { Character, InventoryItem, KnownSpell } from '../domain/character'
+import type { Character, KnownSpell } from '../domain/character'
 import {
   getCharacters,
   getPartyInventory,

@@ -2,7 +2,7 @@
 
 All spell-specific datasets live in this directory. The SRD spell records remain source data; application-only mechanics and compatibility metadata are stored separately and joined by canonical spell ID.
 
-- `spells-2014.json`, `spells-2024.json`: SRD spell records, kept free of extracted application metadata.
+- `../srd/2014/spells.json`, `../srd/2024/spells.json`: SRD spell records, kept free of extracted application metadata.
 - `spells-additional.json`: supplemental spell records.
 - `spell-mechanics.json`: structured damage, damage modifiers, conditions, timing, and scaling keyed by spell ID.
 - `spell-availability.json`: ruleset and class availability exceptions keyed by spell ID.
