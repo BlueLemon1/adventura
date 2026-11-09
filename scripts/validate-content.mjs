@@ -196,9 +196,9 @@ for (const spell of additionalSpellRecords) {
   }
 }
 
-const additionalClassRecords = readJson('src/data/classes-additional.json')
-const additionalFeatureDefinitions = readJson('src/data/features-additional.json')
-const classProgressions = readJson('src/data/class-progressions.json')
+const additionalClassRecords = readJson('src/data/classes/catalog.json')
+const additionalFeatureDefinitions = readJson('src/data/classes/features.json')
+const classProgressions = readJson('src/data/classes/progressions.json')
 const featureDefinitionsById = new Map(additionalFeatureDefinitions.map((feature) => [feature.id, feature]))
 const additionalClassFeatures = classProgressions.flatMap((progression) => {
   const feature = featureDefinitionsById.get(progression.featureId)

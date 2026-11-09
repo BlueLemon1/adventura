@@ -1,8 +1,8 @@
 import type { Character } from './character'
 import classFeatures2014 from '../data/srd/2014/class-features.json'
 import classFeatures2024 from '../data/srd/2024/class-features.json'
-import additionalClassFeatureDefinitions from '../data/features-additional.json'
-import classProgressions from '../data/class-progressions.json'
+import additionalClassFeatureDefinitions from '../data/classes/features.json'
+import classProgressions from '../data/classes/progressions.json'
 import {
   buildClassFeatureRecords,
   mergeClassFeatureRecords,
@@ -13,7 +13,7 @@ import {
 } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
 import type { Dnd5eRuleset } from './rules'
-import featureMechanics from '../data/feature-mechanics.json'
+import featureMechanics from '../data/classes/feature-mechanics.json'
 
 export interface ClassResourceDefinition {
   id: string

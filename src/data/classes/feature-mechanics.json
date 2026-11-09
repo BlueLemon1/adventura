@@ -1,0 +1,77 @@
+{
+  "srd-2024-class-paladin-core-2-paladin-s-smite": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-divine-smite"
+      ]
+    }
+  },
+  "srd-2024-class-druid-core-2-wild-companion": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-find-familiar"
+      ]
+    }
+  },
+  "srd-2024-class-ranger-core-1-favored-enemy": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-hunters-mark"
+      ]
+    }
+  },
+  "srd-2024-subclass-sorcerer-draconic-18-dragon-companion": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-summon-dragon"
+      ]
+    }
+  },
+  "srd-2024-class-paladin-core-5-faithful-steed": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-find-steed"
+      ]
+    }
+  },
+  "srd-2024-class-bard-core-20-words-of-creation": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-power-word-heal",
+        "srd-2024-power-word-kill"
+      ]
+    }
+  },
+  "srd-2014-subclass-cleric-life-1-life-domain-spells": {
+    "spellbookSpellIdsByRuleset": {
+      "2014": [
+        "srd-2014-bless",
+        "srd-2014-cure-wounds",
+        "srd-2014-lesser-restoration",
+        "srd-2014-spiritual-weapon",
+        "srd-2014-beacon-of-hope",
+        "srd-2014-revivify",
+        "srd-2014-death-ward",
+        "srd-2014-guardian-of-faith",
+        "srd-2014-mass-cure-wounds",
+        "srd-2014-raise-dead"
+      ]
+    }
+  },
+  "srd-2014-subclass-paladin-devotion-3-oath-spells": {
+    "spellbookSpellIdsByRuleset": {
+      "2014": [
+        "srd-2014-protection-from-evil-and-good",
+        "srd-2014-sanctuary",
+        "srd-2014-lesser-restoration",
+        "srd-2014-zone-of-truth",
+        "srd-2014-beacon-of-hope",
+        "srd-2014-dispel-magic",
+        "srd-2014-freedom-of-movement",
+        "srd-2014-guardian-of-faith",
+        "srd-2014-commune",
+        "srd-2014-flame-strike"
+      ]
+    }
+  }
+}

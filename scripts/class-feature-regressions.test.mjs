@@ -6,10 +6,10 @@ const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 
 const featureSource = readText('../src/domain/classFeatures.ts')
-const classes = readJson('../src/data/classes-additional.json')
-const featureDefinitions = readJson('../src/data/features-additional.json')
-const progressions = readJson('../src/data/class-progressions.json')
-const featureMechanics = readJson('../src/data/feature-mechanics.json')
+const classes = readJson('../src/data/classes/catalog.json')
+const featureDefinitions = readJson('../src/data/classes/features.json')
+const progressions = readJson('../src/data/classes/progressions.json')
+const featureMechanics = readJson('../src/data/classes/feature-mechanics.json')
 const srdFeatures = [
   ...readJson('../src/data/srd/2014/class-features.json'),
   ...readJson('../src/data/srd/2024/class-features.json'),
