@@ -1,0 +1,930 @@
+{
+  "srd-2024-class-barbarian-core-1-rage": {
+    "name": "Kampfrausch",
+    "description": "Eine Urmacht namens Kampfrausch gewährt dir außergewöhnliche Macht und Zähigkeit. Du kannst dich als Bonusaktion in Kampfrausch versetzen, sofern du keine schwere Rüstung trägst.\n\nWie oft du dies tun kannst, ist in der Spalte „Kampfrausch“ der Tabelle „Barbarenmerkmale“ nach Barbarenstufe aufgeführt. Nach einer kurzen Rast erhältst du eine verbrauchte Anwendung zurück. Nach einer langen Rast erhältst du alle verbrauchten Anwendungen zurück.\n\nSolange dein Kampfrausch aktiv ist, gelten für ihn folgende Regeln:\n\n***Schadensresistenz.*** Du bist gegen Hieb-, Stich- und Wuchtschaden resistent.\n\n***Kampfrausch-Schaden.*** Wenn du einen Angriff ausführst, der Stärke erfordert – entweder mit einer Waffe oder als waffenlosen Angriff –, und dem Ziel Schaden zufügst, erhältst du einen Bonus auf den Schaden, der sich erhöht, wenn du Barbarenstufen hinzugewinnst. Dies ist in der Spalte „Kampfrausch-Schaden“ der Tabelle „Barbarenmerkmale“ aufgeführt.\n\n***Stärkevorteil.*** Du bist bei Stärkewürfen und Stärkerettungswürfen im Vorteil.\n\n***Keine Konzentration und keine Zauber.*** Du kannst keine Konzentration aufrechterhalten und keine Zauber wirken.\n\n***Wirkungsdauer.*** Der Kampfrausch währt bis zum Ende deines nächsten Zugs und endet vorzeitig, wenn du schwere Rüstung anlegst oder kampfunfähig wirst. Wenn dein Kampfrausch in deinem nächsten Zug noch aktiv ist, kannst du ihn um eine weitere Runde verlängern, indem du eine der folgenden Handlungen ausführst:\n\n- Führe einen Angriffswurf gegen einen Gegner aus.\n- Zwinge einen Gegner, einen Rettungswurf auszuführen.\n- Führe eine Bonusaktion aus, um deinen Kampfrausch zu verlängern.\n\nWann immer der Kampfrausch verlängert wird, währt er bis zum Ende deines nächsten Zugs. Du kannst einen Kampfrausch bis zu zehn Minuten lang aufrechterhalten."
+  },
+  "srd-2024-class-barbarian-core-1-unarmored-defense": {
+    "name": "Ungerüstete Verteidigung",
+    "description": "Wenn du keine Rüstung trägst, entspricht deine Basis-Rüstungsklasse 10 plus deinem Geschicklichkeitsmodifikator plus deinem Konstitutionsmodifikator. Von diesem Vorzug profitierst du auch, wenn du einen Schild verwendest."
+  },
+  "srd-2024-class-barbarian-core-1-weapon-mastery": {
+    "name": "Waffenbeherrschung",
+    "description": "Deine Vertrautheit mit Waffen gestattet dir, die Meisterschaftseigenschaften zweier Arten von einfachen Nahkampfwaffen oder Nahkampf-Kriegswaffen deiner Wahl wie Zweihandäxten und Beilen zu verwenden. Wann immer du eine lange Rast beendest, kannst du Waffenübungen ausführen und eine dieser Waffenentscheidungen ändern.\n\nWenn du bestimmte Barbarenstufen erreichst, erhältst du das Attribut zum Verwenden der Meisterschaftseigenschaften von mehr Waffenarten, wie in der Spalte „Waffenbeherrschung“ der Tabelle „Barbarenmerkmale“ dargestellt."
+  },
+  "srd-2024-class-barbarian-core-2-danger-sense": {
+    "name": "Gefahrengespür",
+    "description": "Du bekommst einen untrüglichen Sinn dafür, ob die Dinge so sind, wie sie sein sollten, sodass du Gefahren besser ausweichen kannst. Du bist bei Geschicklichkeitsrettungswürfen im Vorteil, sofern du nicht kampfunfähig bist."
+  },
+  "srd-2024-class-barbarian-core-2-reckless-attack": {
+    "name": "Rücksichtsloser Angriff",
+    "description": "Du kannst deine Verteidigung völlig außer Acht lassen und mit noch mehr Wildheit angreifen. Bei deinem ersten Angriffswurf in deinem Zug kannst du beschließen, einen Rücksichtslosen Angriff auszuführen. Damit sind deine Angriffswürfe, die Stärke erfordern, bis zum Beginn deines nächsten Zugs im Vorteil, doch Angriffswürfe gegen dich sind in dieser Zeit ebenfalls im Vorteil."
+  },
+  "srd-2024-class-barbarian-core-3-barbarian-subclass": {
+    "name": "Barbaren-Unterklasse",
+    "description": "Du erhältst eine Barbaren-Unterklasse deiner Wahl. Die Unterklasse Pfad des Berserkers wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Barbarenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Barbarenstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-barbarian-core-3-primal-knowledge": {
+    "name": "Urwissen",
+    "description": "Du erhältst Übung in einer weiteren Fertigkeit deiner Wahl aus der Liste von Fertigkeiten, die für Barbaren auf der 1. Stufe verfügbar sind.\n\nAußerdem kannst du während deines Kampfrauschs Urmacht kanalisieren, wenn du bestimmte Aufgaben auszuführen versuchst. Wann immer du einen Attributswurf unter Verwendung einer der folgenden Fertigkeiten ausführst, kannst du ihn auch dann als Stärkewurf ausführen, wenn er sonst ein anderes Attribut erfordert: Akrobatik, Einschüchtern, Heimlichkeit, Überlebenskunst oder Wahrnehmung. Wenn du dieses Attribut verwendest, repräsentiert deine Stärke die Urmacht, die in dir kreist, um deine Beweglichkeit, deine Haltung und deine Sinne zu optimieren."
+  },
+  "srd-2024-class-barbarian-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Barbarenstufe erneut."
+  },
+  "srd-2024-class-barbarian-core-5-extra-attack": {
+    "name": "Schnelle Bewegung",
+    "description": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du keine schwere Rüstung trägst."
+  },
+  "srd-2024-class-barbarian-core-5-fast-movement": {
+    "name": "Zusätzlicher Angriff",
+    "description": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-barbarian-core-7-feral-instinct": {
+    "name": "Instinktiver Sprung",
+    "description": "Als Teil der Bonusaktion, mit der du dich in Kampfrausch versetzt, kannst du bis zur Hälfte deiner Bewegungsrate zurücklegen."
+  },
+  "srd-2024-class-barbarian-core-7-instinctive-pounce": {
+    "name": "Wilder Instinkt",
+    "description": "Deine Instinkte sind derart geschärft, dass du bei Initiativewürfen im Vorteil bist."
+  },
+  "srd-2024-class-barbarian-core-9-brutal-strike": {
+    "name": "Brutaler Hieb",
+    "description": "Wenn du Rücksichtsloser Angriff einsetzt, kannst du in deinem Zug bei einem stärkebasierten Angriffswurf deiner Wahl auf den Vorteil verzichten. Der ausgewählte Angriffswurf darf nicht im Nachteil sein. Wenn der ausgewählte Angriffswurf trifft, erleidet das Ziel zusätzlich 1W10 Schaden des Typs, den auch die Waffe oder der waffenlose Angriff bewirkt, und du kannst einen Effekt des Brutalen Hiebs deiner Wahl bewirken. Folgende Effekte stehen zur Auswahl:\n\n***Kraftvoller Hieb.*** Das Ziel wird in gerader Linie 4,5 Meter weit von dir weggestoßen. Du kannst dich dann um bis zur Hälfte deiner Bewegungsrate in gerader Linie auf das Ziel zubewegen, ohne Gelegenheitsangriffe zu provozieren.\n\n***Schenkelhieb.*** Die Bewegungsrate des Ziels ist bis zum Beginn deines nächsten Zugs um 4,5 Meter verringert. Es kann immer nur ein Schenkelhieb wirken – jeweils der letzte."
+  },
+  "srd-2024-class-barbarian-core-11-relentless-rage": {
+    "name": "Unerbittlicher Kampfrausch",
+    "description": "Dein Kampfrausch versetzt dich in die Lage, trotz schwerer Verletzungen weiterzukämpfen. Wenn deine Trefferpunkte auf 0 sinken, während du im Kampfrausch bist, stirbst du nicht sofort, sondern führst einen SG-10-Konstitutionsrettungswurf aus. Bei einem Erfolg erhältst du Trefferpunkte in doppelter Höhe deiner Barbarenstufe.\n\nJedes Mal, wenn du dieses Merkmal nutzt, erhöht sich der SG um 5. Nach einer kurzen oder langen Rast sinkt der SG wieder auf 10."
+  },
+  "srd-2024-class-barbarian-core-13-improved-brutal-strike": {
+    "name": "Verbesserter Brutaler Hieb",
+    "description": "Du hast neue wilde Angriffsmethoden verfeinert. Nun stehen folgende Effekte des Brutalen Hiebs zur Auswahl:\n\n***Wankendmachender Hieb.*** Das Ziel ist bei seinem nächsten Rettungswurf im Nachteil und kann bis zum Beginn deines nächsten Zugs keine Gelegenheitsangriffe ausführen.\n\n***Entzweiender Hieb.*** Vor Beginn deines nächsten Zugs erhält der nächste Angriffswurf, den eine andere Kreatur gegen das Ziel ausführt, einen Bonus von +5. Ein Angriffswurf kann nur jeweils einen Bonus durch Entzweiender Hieb erhalten."
+  },
+  "srd-2024-class-barbarian-core-15-persistent-rage": {
+    "name": "Anhaltender Kampfrausch",
+    "description": "Wenn du die Initiative auswürfelst, kannst du alle verbrauchten Anwendungen von Kampfrausch zurückerhalten. Gelingt dies, so ist es erst nach einer langen Rast erneut möglich.\n\nAußerdem ist dein Kampfrausch so wild, dass er nun zehn Minuten lang erhalten bleibt, ohne dass du ihn zwischen den Runden verlängern musst. Deine Kampfrausch endet vorzeitig, wenn du bewusstlos (nicht nur kampfunfähig) wirst oder schwere Rüstung anlegst."
+  },
+  "srd-2024-class-barbarian-core-17-improved-brutal-strike": {
+    "name": "Verbesserter Brutaler Hieb",
+    "description": "Der zusätzliche Schaden deines Brutalen Hiebs wird auf 2W10 erhöht. Außerdem kannst du zwei verschiedene Effekte von Brutaler Hieb verwenden, wann immer du dieses Merkmal einsetzt."
+  },
+  "srd-2024-class-barbarian-core-18-indomitable-might": {
+    "name": "Unbändige Stärke",
+    "description": "Wenn das Gesamtergebnis deines Stärkewurfs oder Stärkerettungswurfs unter deinem Stärkewert liegt, kannst du diesen statt des Gesamtergebnisses verwenden."
+  },
+  "srd-2024-class-barbarian-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Unwiderstehlichen Angriffs wird empfohlen."
+  },
+  "srd-2024-class-barbarian-core-20-primal-champion": {
+    "name": "Meister der Wildnis",
+    "description": "Du verkörperst Urmacht. Deine Werte für Stärke und Konstitution werden um 4 erhöht (auf höchstens 25)."
+  },
+  "srd-2024-subclass-barbarian-berserker-3-frenzy": {
+    "name": "Raserei",
+    "description": "Wenn du im Kampfrausch deinen Rücksichtslosen Angriff einsetzt, fügst du dem ersten Ziel, das du in deinem Zug mit einem stärkebasierten Angriff triffst, zusätzlichen Schaden zu. Ermittle den zusätzlichen Schaden, indem du mit einer Anzahl von W6 in Höhe deines Kampfrausch-Schadensbonus würfelst und ihre Summe hinzufügst. Der Schaden ist vom selben Typ wie jener der Waffe oder des waffenlosen Angriffs, die für den Angriff verwendet wurden."
+  },
+  "srd-2024-subclass-barbarian-berserker-6-mindless-rage": {
+    "name": "Geistloser Kampfrausch",
+    "description": "Im Kampfrausch bist du gegen die Zustände Bezaubert und Verängstigt immun. Wenn du zu Beginn des Kampfrauschs bezaubert oder verängstigt bist, endet der Zustand."
+  },
+  "srd-2024-subclass-barbarian-berserker-10-retaliation": {
+    "name": "Vergeltung",
+    "description": "Wenn du Schaden durch eine Kreatur erleidest, die sich im Abstand von bis zu 1,5 Metern von dir befindet, kannst du als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen und dazu eine Waffe oder einen waffenlosen Angriff verwenden."
+  },
+  "srd-2024-subclass-barbarian-berserker-14-intimidating-presence": {
+    "name": "Einschüchternde Präsenz",
+    "description": "Als Bonusaktion kannst du andere mit deiner bedrohlichen Präsenz und deiner Urmacht in Panik versetzen.\n\nWenn du dies tust, muss jede Kreatur deiner Wahl in einer Ausströmung von neun Metern, die von dir ausgeht, einen Weisheitsrettungswurf (SG 8 plus dein Stärkemodifikator plus dein Übungsbonus) ausführen. Misslingt der Wurf, so ist die Kreatur eine Minute lang verängstigt. Die verängstigte Kreatur wiederholt den Rettungswurf am Ende jedes ihrer Züge. Bei einem Erfolg endet der Effekt.\n\nWenn du dieses Merkmal verwendet hast, kannst du dies erst nach einer langen Rast erneut tun, sofern du nicht eine Anwendung deines Kampfrauschs zum Wiederherstellen verbrauchst (keine Aktion erforderlich)."
+  },
+  "srd-2024-class-bard-core-1-bardic-inspiration": {
+    "name": "Bardische Inspiration",
+    "description": "Du kannst andere durch Worte, Musik oder Tänze übernatürlich stark inspirieren. Diese Inspiration wird durch einen Bardische-Inspiration-Würfel (W6) repräsentiert.\n\n***Bardische Inspiration verwenden.*** Du kannst als Bonusaktion eine andere Kreatur im Abstand von bis zu 18 Metern von dir inspirieren, die dich hören oder sehen kann. Diese Kreatur erhält einen deiner Bardische-Inspiration-Würfel. Eine Kreatur darf immer nur über einen Bardische-Inspiration-Würfel verfügen.\n\nEinmal innerhalb der nächsten Stunde gilt: Wenn die Kreatur bei einer W20-Prüfung scheitert, kann sie mit dem Bardische-Inspiration-Würfel würfeln, das Ergebnis der Prüfung hinzufügen und so aus dem Misserfolg möglicherweise einen Erfolg machen. Ein Bardische-Inspiration-Würfel wird verbraucht, wenn mit ihm gewürfelt wird.\n\n***Anzahl der Anwendungen.*** Die Anzahl der möglichen Anwendungen deines Bardische-Inspiration-Würfels entspricht deinem Charismamodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\n***Auf höheren Stufen.*** Dein Bardische-Inspiration-Würfel verändert sich, wenn du bestimmte Bardenstufen erreichst, wie in der Spalte „Bardenwürfel“ der Tabelle „Bardenmerkmale“ dargestellt. Der Würfel wird auf der 5. Stufe zu W8, auf der 10. Stufe zu W10 und auf der 15. Stufe zu W12."
+  },
+  "srd-2024-class-bard-core-1-spellcasting": {
+    "name": "Zauberwirken",
+    "description": "Du hast gelernt, durch deine bardischen Künste Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Bardenzaubern verwendest, die in der Zauberliste des Barden weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du beherrschst zwei Zaubertricks deiner Wahl aus der Zauberliste des Barden. Gehässiger Spott und Tanzende Lichter werden empfohlen.\n\nWann immer du eine Bardenstufe erhältst, kannst du einen deiner Zaubertricks mit einem anderen Zaubertrick deiner Wahl aus der Zauberliste des Barden ersetzen.\n\nWenn du die 4. und 10. Bardenstufe erreichst, erlernst du einen weiteren Zaubertrick deiner Wahl aus der Zauberliste des Barden, wie in der Spalte „Zaubertricks“ der Tabelle „Bardenmerkmale“ dargestellt.\n\n***Zauberplätze.*** Die Tabelle „Bardenmerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn vier Zauber des 1. Grades aus der Zauberliste des Barden aus. Dissonantes Flüstern, Heilendes Wort, Person bezaubern und Sprühende Farben werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Bardenstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Bardenmerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Zauber aus der Zauberliste des Barden aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl entspricht, die in der Tabelle aufgeführt ist. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Barde der 3. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Zauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Bardenmerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Bardenzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine Bardenstufe erhältst, kannst du einen der Zauber auf deiner Liste mit einem anderen Bardenzauber ersetzen, für den du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Bardenzauber ist Charisma.\n\n***Zauberfokus.*** Du kannst ein Musikinstrument als Zauberfokus für deine Bardenzauber verwenden."
+  },
+  "srd-2024-class-bard-core-2-expertise": {
+    "name": "Alleskönner",
+    "description": "Du kannst die Hälfte deines Übungsbonus (abgerundet) jedem Attributswurf hinzufügen, der eine Fertigkeit verwendet, in der du nicht geübt bist, und der folglich sonst nicht deinen Übungsbonus nutzen würde.\n\nBeispiel: Wenn du einen Stärkewurf (Athletik) ausführst und in Athletik nicht geübt bist, kannst du dem Ergebnis die Hälfte deines Übungsbonus hinzufügen."
+  },
+  "srd-2024-class-bard-core-2-jack-of-all-trades": {
+    "name": "Expertise",
+    "description": "Du erhältst Expertise (siehe [[08_Regelglossar/Rules_Glossary_Each/Expertise|Regelglossar]]) in zwei Fertigkeiten deiner Wahl, in denen du geübt bist. Auftreten und Überzeugen werden empfohlen, wenn du in ihnen geübt bist.\n\nAuf der 9. Stufe erhältst du Expertise in zwei weiteren Fertigkeiten deiner Wahl, in denen du geübt bist."
+  },
+  "srd-2024-class-bard-core-3-bard-subclass": {
+    "name": "Barden-Unterklasse",
+    "description": "Du erhältst eine Barden-Unterklasse deiner Wahl. Die Unterklasse Schule des Wissens wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Bardenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Bardenstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-bard-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Bardenstufe erneut."
+  },
+  "srd-2024-class-bard-core-5-font-of-inspiration": {
+    "name": "Quelle der Inspiration",
+    "description": "Du erhältst alle verbrauchten Anwendungen der Bardischen Inspiration nach einer kurzen oder langen Rast zurück.\n\nAußerdem kannst du einen Zauberplatz verbrauchen (keine Aktion erforderlich), um eine verbrauchte Anwendung von Bardische Inspiration zurückzuerhalten."
+  },
+  "srd-2024-class-bard-core-7-countercharm": {
+    "name": "Bannlied",
+    "description": "Du kannst Musiknoten oder Worte der Macht verwenden, um Effekte zu unterbrechen, die den Verstand beeinflussen. Wenn du oder eine Kreatur im Abstand von bis zu neun Metern von dir bei einem Rettungswurf gegen einen Effekt scheitert, der die Zustände Bezaubert oder Verängstigt bewirkt, kannst du eine Reaktion ausführen, um den Rettungswurf erneut auszuführen. Bei diesem neuen Rettungswurf bist du im Vorteil."
+  },
+  "srd-2024-class-bard-core-10-magical-secrets": {
+    "name": "Magische Geheimnisse",
+    "description": "Du hast die Geheimnisse verschiedener magischer Traditionen erfahren. Wann immer du eine Bardenstufe (einschließlich dieser Stufe) erreichst und sich die Anzahl vorbereiteter Zauber in der Tabelle „Bardenmerkmale“ erhöht, kannst du beliebige deiner vorbereiteten Zauber von den Zauberlisten des Barden, des Druiden, des Klerikers und des Magiers auswählen. Die ausgewählten Zauber zählen bei dir als Bardenzauber (die Zauberlisten findest du in den Abschnitten der Klassen).\n\nWann immer du außerdem einen für diese Klasse vorbereiteten Zauber ersetzt, kannst du ihn mit einem Zauber von diesen Listen ersetzen."
+  },
+  "srd-2024-class-bard-core-18-superior-inspiration": {
+    "name": "Überlegene Inspiration",
+    "description": "Wenn du die Initiative auswürfelst, erhältst du verbrauchte Anwendungen Bardischer Inspiration zurück, bis du zwei Anwendungen hast (sofern du weniger als zwei hast)."
+  },
+  "srd-2024-class-bard-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe der Zaubererinnerung wird empfohlen."
+  },
+  "srd-2024-class-bard-core-20-words-of-creation": {
+    "name": "Worte der Schöpfung",
+    "description": "Du hast zwei der Worte der Schöpfung gemeistert: die Worte von Leben und Tod. Daher hast du die Zauber Wort der Macht: Heilung und Wort der Macht: Tod stets vorbereitet. Wenn du einen der Zauber wirkst, kannst du damit auf eine zweite Kreatur zielen, wenn diese sich im Abstand von bis zu drei Metern vom ersten Ziel befindet."
+  },
+  "srd-2024-subclass-bard-lore-3-bonus-proficiencies": {
+    "name": "Zusätzliches Wissen",
+    "description": "Du erhältst Übung im Umgang mit drei Fertigkeiten deiner Wahl."
+  },
+  "srd-2024-subclass-bard-lore-3-cutting-words": {
+    "name": "Schneidende Worte",
+    "description": "Du lernst, mit Verstand und Schlagfertigkeit für übernatürliche Ablenkung und Verwirrung zu sorgen oder auf anderen Wegen Einfluss und Selbstsicherheit anderer zu schwächen. Wenn eine Kreatur im Abstand von bis zu 18 Metern von dir, die du sehen kannst, einen Schadenswurf ausführt oder einen Attributs- oder Angriffswurf besteht, kannst du eine Reaktion ausführen, um eine Anwendung deiner Bardischen Inspiration zu verbrauchen. Würfle mit deinem Bardische-Inspiration-Würfel und ziehe das Ergebnis von dem der Kreatur ab, um Schaden zu verringern oder den Erfolg möglicherweise in einen Misserfolg zu verwandeln."
+  },
+  "srd-2024-subclass-bard-lore-6-magical-discoveries": {
+    "name": "Magische Entdeckungen",
+    "description": "Du erlernst zwei Zauber deiner Wahl. Diese Zauber dürfen aus der Zauberliste des Druiden, des Klerikers und des Magiers oder einer Kombination daraus stammen (die Zauberlisten findest du in den Abschnitten der Klassen). Die ausgewählten Zauber müssen Zaubertricks oder Zauber sein, für die du Zauberplätze hast, wie in der Tabelle „Bardenmerkmale“ dargestellt.\n\nDu hast die ausgewählten Zauber stets vorbereitet. Wann immer du eine Bardenstufe erhältst, kannst du einen der Zauber mit einem anderen Zauber ersetzen, der diese Voraussetzungen erfüllt."
+  },
+  "srd-2024-subclass-bard-lore-14-peerless-skill": {
+    "name": "Grenzenlose Begabung",
+    "description": "Wenn du bei einem Attributs- oder Angriffswurf scheiterst, kannst du eine Anwendung von Bardische Inspiration verbrauchen, mit dem Bardische-Inspiration-Würfel würfeln, das Ergebnis dem W20 hinzufügen und so aus dem Misserfolg möglicherweise einen Erfolg machen. Misslingt der Wurf, so wird die Bardische Inspiration nicht verbraucht."
+  },
+  "srd-2024-class-cleric-core-1-spellcasting": {
+    "name": "Zauberwirken",
+    "description": "Du hast gelernt, durch Gebete und Meditation Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Klerikerzaubern verwendest, die in der Zauberliste des Klerikers weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du beherrschst drei Zaubertricks deiner Wahl aus der Zauberliste des Klerikers. Göttliche Führung, Heilige Flamme und Thaumaturgie werden empfohlen.\n\nWann immer du eine Klerikerstufe erhältst, kannst du einen deiner Zaubertricks mit einem anderen Zaubertrick deiner Wahl aus der Zauberliste des Klerikers ersetzen.\n\nWenn du die 4. und 10. Klerikerstufe erreichst, erlernst du einen weiteren Zaubertrick deiner Wahl aus der Zauberliste des Klerikers, wie in der Spalte „Zaubertricks“ der Tabelle „Klerikermerkmale“ dargestellt.\n\n***Zauberplätze.*** Die Tabelle „Klerikermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn vier Zauber des 1. Grades aus der Zauberliste des Klerikers aus. Lenkendes Geschoss, Schild des Glaubens, Segnen und Wunden heilen werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Klerikerstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Klerikermerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Zauber aus der Zauberliste des Klerikers aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl entspricht, die in der Tabelle aufgeführt ist. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Kleriker der 3. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Zauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Klerikermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Klerikerzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine lange Rast beendest, kannst du deine Liste vorbereiteter Zauber ändern und beliebige Zauber von der Liste mit anderen Klerikerzaubern ersetzen, für die du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Klerikerzauber ist Weisheit.\n\n***Zauberfokus.*** Du kannst ein heiliges Symbol als Zauberfokus für deine Klerikerzauber verwenden."
+  },
+  "srd-2024-class-cleric-core-1-divine-order": {
+    "name": "Göttliche Ordnung",
+    "description": "Du hast dich nach deiner Wahl einer der folgenden heiligen Rollen verschrieben.\n\n***Beschützer.*** Du wurdest für den Kampf ausgebildet, daher hast du Übung im Umgang mit Kriegswaffen und Vertrautheit mit schwerer Rüstung.\n\n***Thaumaturg.*** Du kennst einen zusätzlichen Zaubertrick aus der Zauberliste des Klerikers. Außerdem gibt dir deine mystische Verbindung mit dem Göttlichen einen Bonus auf deine Intelligenzwürfe (Arkane Kunde oder Religion). Dieser Bonus entspricht deinem Weisheitsmodifikator (mindestens +1)."
+  },
+  "srd-2024-class-cleric-core-2-channel-divinity": {
+    "name": "Göttliche Macht fokussieren",
+    "description": "Du kannst göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu wirken. Du beginnst mit zwei solchen Effekten: Göttlicher Funke und Untote vertreiben (beide unten beschrieben). Wann immer du Göttliche Macht fokussieren dieser Klasse einsetzt, wählst du aus, welchen Effekt von Göttliche Macht fokussieren dieser Klasse du bewirkst. Auf höheren Klerikerstufen erhältst du zusätzliche Optionen für Effekte.\n\nDu kannst Göttliche Macht fokussieren dieser Klasse zweimal anwenden. Wenn du eine kurze Rast beendest, erhältst du eine verbrauchte Anwendung zurück. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück. Wenn du bestimmte Klerikerstufen erreichst, erhältst du zusätzliche Anwendungen, wie in der Spalte „Göttliche Macht fokussieren“ der Tabelle „Klerikermerkmale“ dargestellt.\n\nWenn ein Effekt von Göttliche Macht fokussieren einen Rettungswurf erfordert, entspricht der SG dem Zauberrettungswurf-SG des Merkmals Zauberwirken dieser Klasse.\n\n***Göttlicher Funke.*** Als magische Aktion richtest du dein heiliges Symbol auf eine andere Kreatur im Abstand von bis zu neun Metern von dir, die du sehen kannst, und fokussierst göttliche Energie auf sie. Würfle mit 1W8 und füge deinen Weisheitsmodifikator hinzu. Nach deiner Wahl stellt die Kreatur entweder Trefferpunkte in Höhe des Gesamtergebnisses wieder her, oder sie ist zu einem Konstitutionsrettungswurf gezwungen. Misslingt der Wurf, so erleidet die Kreatur gleißenden oder nekrotischen Schaden (nach deiner Wahl) in Höhe des Gesamtergebnisses. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden (abgerundet).\n\nDu würfelst mit jeweils einem zusätzlichen W8, wenn du die 7. (2W8), die 13. (3W8) und die 18. (4W8) Klerikerstufe erreicht hast.\n\n***Untote vertreiben.*** Als magische Aktion präsentierst du dein heiliges Symbol und rügst untote Kreaturen. Jeder Untote deiner Wahl im Abstand von bis zu neun Metern von dir muss einen Weisheitsrettungswurf ausführen. Misslingt der Wurf, so ist die Kreatur eine Minute lang verängstigt und kampfunfähig. Während dieser Dauer versucht sie in ihren Zügen, sich so weit wie möglich von dir zu entfernen. Dieser Effekt endet vorzeitig, wenn die Kreatur Schaden erleidet, wenn du kampfunfähig wirst oder wenn du stirbst."
+  },
+  "srd-2024-class-cleric-core-3-cleric-subclass": {
+    "name": "Kleriker-Unterklasse",
+    "description": "Du erhältst eine Kleriker-Unterklasse deiner Wahl. Die Unterklasse Domäne des Lebens wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Klerikerstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Klerikerstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-cleric-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Klerikerstufe erneut."
+  },
+  "srd-2024-class-cleric-core-5-sear-undead": {
+    "name": "Untote versengen",
+    "description": "Wann immer du Untote vertreiben einsetzt, kannst du mit einer Anzahl von W8 in Höhe deines Weisheitsmodifikators (mindestens 1W8) würfeln. Jeder Untote, dessen Rettungswurf gegen diesen Einsatz von Untote vertreiben misslingt, erleidet gleißenden Schaden in Höhe des Gesamtergebnisses. Dieser Schaden beendet nicht den Effekt von Untote vertreiben."
+  },
+  "srd-2024-class-cleric-core-7-blessed-strikes": {
+    "name": "Gesegnete Schläge",
+    "description": "Göttliche Macht erfüllt dich im Kampf. Du erhältst eine der folgenden Optionen nach deiner Wahl (wenn du eine der Optionen von einer Kleriker-Unterklasse aus einem älteren Buch erhältst, verwende nur die Option, die du für dieses Merkmal auswählst).\n\n***Göttlicher Schlag.*** Einmal in jedem deiner Züge kannst du, wenn du eine Kreatur bei einem Angriffswurf mit einer Waffe triffst, dem Ziel zusätzlich 1W8 gleißenden oder nekrotischen Schaden (nach deiner Wahl) zufügen.\n\n***Verstärkte Zaubertricks.*** Füge dem Schaden, den du mit Klerikerzaubertricks bewirkst, deinen Weisheitsmodifikator hinzu."
+  },
+  "srd-2024-class-cleric-core-10-divine-intervention": {
+    "name": "Göttliche Intervention",
+    "description": "Du kannst deine Gottheit oder dein Pantheon anrufen, damit sie beziehungsweise es in deinem Sinne eingreift. Wähle als magische Aktion einen beliebigen Klerikerzauber des höchstens 5. Grades aus, den zu wirken keine Reaktion erfordert. Als Teil derselben Aktion wirkst du diesen Zauber, ohne einen Zauberplatz zu verbrauchen oder Materialkomponenten zu benötigen. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-class-cleric-core-14-improved-blessed-strikes": {
+    "name": "Verbesserte Gesegnete Schläge",
+    "description": "Die Option, die du für Gesegnete Schläge ausgewählt hast, wird mächtiger.\n\n***Göttlicher Schlag.*** Der zusätzliche Schaden deines Göttlichen Schlags ist auf 2W8 erhöht.\n\n***Verstärkte Zaubertricks.*** Wenn du einen Klerikerzaubertrick wirkst und einer Kreatur damit Schaden zufügst, kannst du dir selbst oder einer anderen Kreatur im Abstand von bis zu 18 Metern von dir Lebenskraft geben, die eine Anzahl von temporären Trefferpunkten in doppelter Höhe deines Weisheitsmodifikators gewährt."
+  },
+  "srd-2024-class-cleric-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Schicksals wird empfohlen."
+  },
+  "srd-2024-class-cleric-core-20-greater-divine-intervention": {
+    "name": "Mächtige Göttliche Intervention",
+    "description": "Du kannst um noch mächtigere göttliche Intervention bitten. Wenn du dein Merkmal Göttliche Intervention einsetzt, kannst du den Zauber Wunsch auswählen. In diesem Fall kannst du Göttliche Intervention erst nach 2W4 langen Rasten erneut einsetzen."
+  },
+  "srd-2024-subclass-cleric-life-3-disciple-of-life": {
+    "name": "Domänenzauber des Lebens",
+    "description": "Deine Verbindung mit dieser göttlichen Domäne sorgt dafür, dass du bestimmte Zauber stets bereithalten kannst. Wenn du eine Klerikerstufe erreichst, die in der Tabelle „Domänenzauber des Lebens“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\n**Domänenzauber des Lebens**\n\n| Klerikerstufe | Vorbereitete Zauber |\n| :-------------- | :---------------------- |\n| 3 | Beistand, Schwache Genesung, Segnen, Wunden heilen |\n| 5 | Massen-Heilendes Wort, Wiederbeleben |\n| 7 | Aura des Lebens, Todesschutz |\n| 9 | Massen-Wunden heilen, Vollständige Genesung |"
+  },
+  "srd-2024-subclass-cleric-life-3-life-domain-spells": {
+    "name": "Jünger des Lebens",
+    "description": "Wenn ein Zauber, den du mit einem Zauberplatz wirkst, Trefferpunkte bei einer Kreatur wiederherstellt, erhält diese Kreatur in dem Zug, in dem du den Zauber wirkst, zusätzliche Trefferpunkte zurück. Die zusätzlichen Trefferpunkte betragen 2 plus Zauberplatzgrad."
+  },
+  "srd-2024-subclass-cleric-life-3-preserve-life": {
+    "name": "Leben erhalten",
+    "description": "Als magische Aktion zeigst du dein heiliges Symbol und verbrauchst eine Anwendung von Göttliche Macht fokussieren, um heilende Energie zu beschwören, mit der sich eine Anzahl von Trefferpunkten in Höhe des Fünffachen deiner Klerikerstufe wiederherstellen lässt. Wähle Kreaturen im Abstand von bis zu neun Metern von dir aus, die blutig sind (auch du selbst kannst ein Ziel sein), und teile diese Trefferpunkte unter ihnen auf. Dieses Merkmal kann keine Trefferpunkte über die Hälfte des Trefferpunktemaximums hinaus wiederherstellen."
+  },
+  "srd-2024-subclass-cleric-life-6-blessed-healer": {
+    "name": "Gesegneter Heiler",
+    "description": "Die Heilzauber, die du auf andere wirkst, wirken auch auf dich. Sofort, nachdem du einen Zauber mit einem Zauberplatz gewirkt hast, der Trefferpunkte bei mindestens einer Kreatur außer dir selbst wiederherstellt, erhältst du Trefferpunkte in Höhe von 2 plus Zauberplatzgrad zurück."
+  },
+  "srd-2024-subclass-cleric-life-17-supreme-healing": {
+    "name": "Höchste Heilung",
+    "description": "Wenn du normalerweise mit mindestens einen Würfel würfeln würdest, um mit einem Zauber oder Göttliche Macht fokussieren Trefferpunkte einer Kreatur wiederherzustellen, so verwendest du stattdessen die höchstmöglichen Ergebnisse der Würfel. Anstatt beispielsweise mit einem Zauber 2W6 Trefferpunkte bei einer Kreatur wiederherzustellen, stellst du 12 Trefferpunkte wieder her."
+  },
+  "srd-2024-class-druid-core-1-spellcasting": {
+    "name": "Zauberwirken",
+    "description": "Du hast gelernt, Zauber zu wirken, indem du die mystischen Kräfte der Natur studiert hast. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Druidenzaubern verwendest, die in der Zauberliste des Druiden weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du beherrschst zwei Zaubertricks deiner Wahl aus der Zauberliste des Druiden. Druidenkunst und Flammen erzeugen werden empfohlen.\n\nWann immer du eine Druidenstufe erhältst, kannst du einen deiner Zaubertricks mit einem anderen Zaubertrick deiner Wahl aus der Zauberliste des Druiden ersetzen.\n\nWenn du die 4. und 10. Druidenstufe erreichst, erlernst du einen weiteren Zaubertrick deiner Wahl aus der Zauberliste des Druiden, wie in der Spalte „Zaubertricks“ der Tabelle „Druidenmerkmale“ dargestellt.\n\n***Zauberplätze.*** Die Tabelle „Druidenmerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn vier Zauber des 1. Grades aus der Zauberliste des Druiden aus. Donnerwoge, Feenfeuer, Tierfreundschaft und Wunden heilen werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Druidenstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Druidenmerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Zauber aus der Zauberliste des Druiden aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl entspricht, die in der Tabelle aufgeführt ist. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Druide der 3. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Zauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Druidenmerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Druidenzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine lange Rast beendest, kannst du deine Liste vorbereiteter Zauber ändern und beliebige Zauber von der Liste mit anderen Druidenzaubern ersetzen, für die du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Druidenzauber ist Weisheit.\n\n***Zauberfokus.*** Du kannst einen Druidischen Fokus als Zauberfokus für deine Druidenzauber verwenden."
+  },
+  "srd-2024-class-druid-core-1-druidic": {
+    "name": "Druidisch",
+    "description": "Du beherrschst Druidisch, die Geheimsprache der Druiden. Beim Erlernen dieser uralten Sprache hast du auch die Magie erlangt, mit Tieren zu kommunizieren. Daher hast du den Zauber Mit Tieren sprechen stets vorbereitet.\n\nDu kannst Druidisch verwenden, um verborgene Botschaften zu hinterlassen. Jeder, der dieser Sprache mächtig ist, findet eine solche Botschaft automatisch. Andere erkennen sie nur, wenn sie einen SG-15-Intelligenzwurf (Nachforschungen) bestehen, und können den Inhalt nicht ohne magische Hilfe entschlüsseln."
+  },
+  "srd-2024-class-druid-core-1-primal-order": {
+    "name": "Urtümliche Ordnung",
+    "description": "Du hast dich nach deiner Wahl einer der folgenden heiligen Rollen verschrieben.\n\n***Magier.*** Du kennst einen zusätzlichen Zaubertrick aus der Zauberliste des Druiden. Außerdem gibt dir deine mystische Verbindung mit der Natur einen Bonus auf deine Intelligenzwürfe (Arkane Kunde oder Naturkunde). Dieser Bonus entspricht deinem Weisheitsmodifikator (mindestens +1).\n\n***Wächter.*** Du wurdest für den Kampf ausgebildet, daher hast du Übung im Umgang mit Kriegswaffen und Vertrautheit mit mittelschwerer Rüstung."
+  },
+  "srd-2024-class-druid-core-2-wild-shape": {
+    "name": "Tiergestalt",
+    "description": "Die Mächte der Natur erlauben dir, die Gestalt eines Tieres anzunehmen. Als Bonusaktion nimmst du eine Tiergestalt an, die du für dieses Merkmal erlernt hast (siehe „Bekannte Gestalten“ unten). Du bleibst für eine Anzahl von Stunden in Höhe der Hälfte deiner Druidenstufe in dieser Gestalt, oder bis du Tiergestalt erneut wirkst, kampfunfähig wirst oder stirbst. Du kannst die Gestalt auch als Bonusaktion vorzeitig aufgeben.\n\n***Anzahl der Anwendungen.*** Du kannst Tiergestalt zweimal einsetzen. Nach einer kurzen Rast erhältst du eine verbrauchte Anwendung zurück. Nach einer langen Rast erhältst du alle verbrauchten Anwendungen zurück.\n\nDu erhältst zusätzliche Anwendungen, wenn du bestimmte Druidenstufen erreichst, wie in der Spalte „Tiergestalt“ der Tabelle „Druidenmerkmale“ dargestellt.\n\n***Bekannte Gestalten.*** Du kennst vier Tiergestalten für dieses Merkmal, ausgewählt aus Tieren, die höchstens einen Herausforderungsgrad von 1/4 und keine Flugbewegungsrate haben (Optionen siehe Wertekästen unter [[12_Tiere/Animals_All+H1|Tiere]] unter [[11_Monster/Monsters_Header|Monster]]). Ratte, Reitpferd, Spinne und Wolf werden empfohlen. Wann immer du eine lange Rast beendest, kannst du eine deiner bekannten Gestalten durch eine andere Gestalt ersetzen, welche die Bedingungen erfüllt.\n\nWenn du bestimmte Druidenstufen erreichst, werden die Anzahl deiner bekannten Gestalten sowie der maximale Herausforderungsgrad dieser Gestalten erhöht, wie in der Tabelle „Tiergestalten“ dargestellt. Außerdem kannst du ab 8. Stufe Gestalten mit Flugbewegungsrate annehmen.\n\nBeim Auswählen deiner bekannten Gestalten kannst du in anderen Quellen nach Tieren suchen, die in Frage kommen, wenn der Spielleiter dir dies gestattet.\n\n#### Tiergestalten\n\n| Druidenstufe | Bekannte Gestalten | Max. HG | Flugbewegungsrate |\n| :------------- | :--------------------- | :------- | :------------------- |\n| 2 | 4 | 1/4 | Nein |\n| 4 | 6 | 1/2 | Nein |\n| 8 | 8 | 1 | Ja |\n\n***Regeln bei verwandelter Gestalt.*** In verwandelter Gestalt behältst du deine Persönlichkeit, deine Erinnerungen und deine Sprechfähigkeit bei, und es gelten folgende Regeln:\n\n***Temporäre Trefferpunkte.*** Wenn du Tiergestalt annimmst, erhältst du eine Anzahl von temporären Trefferpunkten in Höhe deiner Druidenstufe.\n\n***Spielwerte.*** Deine Spielwerte werden durch den Wertekasten des Tieres ersetzt, aber du behältst deinen Kreaturentyp, deine Trefferpunkte, deine Trefferpunktewürfel, deine Werte für Intelligenz, Weisheit und Charisma, deine Klassenmerkmale, deine Sprachen und deine Talente bei. Außerdem behältst du Übung in Fertigkeiten und Rettungswürfen bei und wendest deinen entsprechenden Übungsbonus an. Übung der Kreatur kommen noch dazu. Wenn ein Fertigkeits- oder Rettungswurfmodifikator im Wertekasten des Tieres höher als deiner ist, verwendest du den im Wertekasten.\n\n***Kein Zauberwirken.*** Du kannst keine Zauber wirken, aber der Gestaltwandel unterbricht nicht deine Konzentration oder beeinträchtigt auf andere Weise einen Zauber, den du bereits gewirkt hast.\n\n***Gegenstände.*** Deine Fähigkeit, mit Gegenständen zu interagieren, wird von den Gliedmaßen der Tiergestalt bestimmt statt von deinen. Außerdem entscheidest du, ob deine Ausrüstung an Ort und Stelle zu Boden fällt, mit deiner neuen Gestalt verschmilzt oder von ihr getragen wird. Getragene Ausrüstung funktioniert wie gewohnt, aber der SL entscheidet je nach Größe und Gestalt der Kreatur, ob die Ausrüstung ihr etwas nutzt. Deine Ausrüstung verändert weder Größe noch Form, um sich an die neue Gestalt anzupassen. Jede Ausrüstung, die in der neuen Gestalt nicht getragen werden kann, muss entweder zu Boden fallen oder mit der Gestalt verschmelzen. Ausrüstung, die mit der Gestalt verschmilzt, hat keinen Effekt, solange du diese Gestalt beibehältst."
+  },
+  "srd-2024-class-druid-core-2-wild-companion": {
+    "name": "Wilder Gefährte",
+    "description": "Du kannst einen Naturgeist herbeirufen, der eine Tiergestalt annimmt und dich unterstützt. Als magische Aktion kannst du einen Zauberplatz oder eine Anwendung von Tiergestalt verbrauchen, um den Zauber Vertrauten finden ohne Materialkomponenten zu wirken.\n\nWenn du den Zauber auf diese Art wirkst, ist der Vertraute ein Feenwesen und verschwindet nach einer langen Rast."
+  },
+  "srd-2024-class-druid-core-3-druid-subclass": {
+    "name": "Druiden-Unterklasse",
+    "description": "Du erhältst eine Druiden-Unterklasse deiner Wahl. Die Unterklasse Zirkel des Landes wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Druidenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Druidenstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-druid-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Druidenstufe erneut."
+  },
+  "srd-2024-class-druid-core-5-wild-resurgence": {
+    "name": "Wilde Wiederkehr",
+    "description": "Einmal in jedem deiner Züge kannst du, wenn keine Anwendungen von Tiergestalt mehr übrig sind, eine Anwendung wiederherstellen, indem du einen Zauberplatz verbrauchst (keine Aktion erforderlich).\n\nAußerdem kannst du eine Anwendung von Tiergestalt verbrauchen (keine Aktion erforderlich), um dir einen Zauberplatz des 1. Grades zu geben. Dies kannst du erst nach einer langen Rast wiederholen."
+  },
+  "srd-2024-class-druid-core-7-elemental-fury": {
+    "name": "Elementare Wut",
+    "description": "Die Macht der Elemente durchfließt dich. Du erhältst eine der folgenden Optionen nach deiner Wahl.\n\n***Verstärkte Zaubertricks.*** Füge dem Schaden, den du mit Druidenzaubertricks bewirkst, deinen Weisheitsmodifikator hinzu.\n\n***Urschlag.*** Einmal in jedem deiner Züge kannst du, wenn du eine Kreatur mit einem Angriffswurf triffst, den du mit einer Waffe oder in Tiergestalt mit dem Angriff des Tieres ausführst, dem Ziel zusätzlich 1W8 Blitz-, Feuer-, Kälte- oder Schallschaden (nach deiner Wahl) zufügen."
+  },
+  "srd-2024-class-druid-core-15-improved-elemental-fury": {
+    "name": "Verbesserte Elementare Wut",
+    "description": "Die für Elementare Wut ausgewählte Option wird mächtiger, wie unten beschrieben.\n\n***Verstärkte Zaubertricks.*** Wenn du einen Druidenzaubertrick mit einer Reichweite von mindestens drei Metern wirkst, ist die Reichweite des Zaubers um 90 Meter erhöht.\n\n***Urschlag.*** Der zusätzliche Schaden deines Urschlags erhöht sich auf 2W8."
+  },
+  "srd-2024-class-druid-core-18-beast-spells": {
+    "name": "In Tiergestalt zaubern",
+    "description": "Wenn du Tiergestalt verwendest, kannst du in Tiergestalt Zauber wirken, sofern diese weder Materialkomponenten mit angegebenen Kosten erfordern noch Materialkomponenten verbrauchen."
+  },
+  "srd-2024-class-druid-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen."
+  },
+  "srd-2024-class-druid-core-20-archdruid": {
+    "name": "Erzdruide",
+    "description": "Die Lebenskraft der Natur gedeiht in dir und gewährt dir folgende Vorzüge:\n\n***Ausdauernde Tiergestalt.*** Wann immer du die Initiative auswürfelst und keine Anwendungen von Tiergestalt übrig hast, erhältst du eine verbrauchte Anwendung zurück.\n\n***Naturmagier.*** Du kannst Anwendungen von Tiergestalt in einen Zauberplatz umwandeln (keine Aktion erforderlich). Wähle eine Anzahl von unverbrauchten Anwendungen von Tiergestalt aus und wandle sie in einen einzigen Zauberplatz um, wobei jede Anwendung zwei Zauberplatzgrade beiträgt. Beispiel: Wenn du zwei Anwendungen von Tiergestalt umwandelst, erhältst du einen Zauberplatz des 4. Grades. Du kannst diesen Vorzug erst nach einer langen Rast erneut verwenden.\n\n***Langlebigkeit.*** Die Urmagie, die du wirkst, lässt dich langsamer altern. Wenn zehn Jahre vergehen, altert dein Körper nur um ein Jahr."
+  },
+  "srd-2024-subclass-druid-land-3-circle-of-the-land-spells": {
+    "name": "Zirkelzauber des Landes",
+    "description": "Wann immer du eine lange Rast beendest, wähle eine Art des Landes aus: gemäßigt, polar, trocken oder tropisch. Konsultiere die Tabelle des ausgewählten Typs unten. Die Zauber, die für deine Druidenstufe und darunter aufgeführt sind, hast du vorbereitet.\n\n**Gemäßigtes Land**\n\n| Druidenstufe | Zauber des Zirkels |\n| :-------------- | :---------------------- |\n| 3 | Nebelschritt, Schlaf, Schockgriff |\n| 5 | Blitz |\n| 7 | Bewegungsfreiheit |\n| 9 | Baumwandeln |\n\n**Polares Land**\n\n| Druidenstufe | Zauber des Zirkels |\n| :-------------- | :---------------------- |\n| 3 | Kältestrahl, Nebelwolke, Person festhalten |\n| 5 | Schneesturm |\n| 7 | Eissturm |\n| 9 | Kältekegel |\n\n**Trockenes Land**\n\n| Druidenstufe | Zauber des Zirkels |\n| :-------------- | :---------------------- |\n| 3 | Brennende Hände, Feuerpfeil, Verschwimmen |\n| 5 | Feuerball |\n| 7 | Dürre |\n| 9 | Steinwand |\n\n**Tropisches Land**\n\n| Druidenstufe | Zauber des Zirkels |\n| :-------------- | :---------------------- |\n| 3 | Netz, Säurespritzer, Strahl der Übelkeit |\n| 5 | Stinkende Wolke |\n| 7 | Verwandlung |\n| 9 | Insektenplage |"
+  },
+  "srd-2024-subclass-druid-land-3-land-s-aid": {
+    "name": "Beistand des Landes",
+    "description": "Als magische Aktion kannst du eine Anwendung von Tiergestalt verbrauchen und einen Punkt im Abstand von bis zu 18 Metern von dir auswählen. Um diesen Punkt erscheinen in einer Kugel mit einem Radius von drei Metern für kurze Zeit Blumen, die Lebenskraft spenden, sowie Dornen, die Lebenskraft entziehen. Jede Kreatur deiner Wahl in der Kugel muss einen Konstitutionsrettungswurf gegen deinen Zauberrettungswurf-SG ausführen. Misslingt der Wurf, so erleidet die Kreatur 2W6 nekrotischen Schaden, anderenfalls die Hälfte. Eine Kreatur deiner Wahl in diesem Bereich erhält 2W6 Trefferpunkte zurück.\n\nSchaden und Heilung werden um jeweils 1W6 erhöht, wenn du die 10. (3W6) und die 14. (4W6) Druidenstufe erreichst."
+  },
+  "srd-2024-subclass-druid-land-6-natural-recovery": {
+    "name": "Natürliche Erholung",
+    "description": "Du kannst einen deiner vorbereiteten Zauber ab dem 1. Grad deines Merkmals Zauber des Zirkels wirken, ohne einen Zauberplatz zu verbrauchen. Du musst eine lange Rast beenden, bevor du dies erneut tun kannst.\n\nAußerdem kannst du dir nach einer kurzen Rast verbrauchte Zauberplätze aussuchen, die du zurückerhältst. Die Zauberplätze dürfen zusammen nur eine Gradzahl besitzen, die höchstens der Hälfte deiner Druidenstufe entspricht (aufgerundet), und keiner von ihnen darf den 6. Grad oder höher aufweisen. Beispiel: Wenn du ein Druide der 6. Stufe bist, kannst du Zauberplätze zurückerhalten, deren Grade sich auf bis zu 3 addieren. Du kannst also entweder einen Zauberplatz des 3. Grades, zwei Zauberplätze des 1. und einen Zauberplatz des 2. Grades oder drei Zauberplätze des 1. Grades zurückerhalten. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-subclass-druid-land-10-nature-s-ward": {
+    "name": "Schutz der Natur",
+    "description": "Du bist gegen den Zustand Vergiftet immun und bist gegen eine Schadensart resistent, die mit deiner aktuellen Land-Entscheidung beim Merkmal Zauber des Zirkels assoziiert ist, wie in der Tabelle „Schutz der Natur“ dargestellt.\n\n**Schutz der Natur**\n\n| Land-Typ | Resistenz |\n| :--------- | :---------- |\n| Gemäßigt | Blitz |\n| Polar | Kälte |\n| Trocken | Feuer |\n| Tropisch | Gift |"
+  },
+  "srd-2024-subclass-druid-land-14-nature-s-sanctuary": {
+    "name": "Heiligtum der Natur",
+    "description": "Als magische Aktion kannst du eine Anwendung von Tiergestalt verbrauchen und in einem Würfel mit 4,5 Metern Kantenlänge auf dem Boden im Abstand von bis zu 36 Metern von dir geisterhafte Bäume und Ranken erscheinen lassen. Sie bleiben eine Minute lang bestehen, oder bis du kampfunfähig wirst oder stirbst. Du und deine Verbündeten habt in diesem Bereich Teildeckung, und deine Verbündeten erhalten die aktuelle Resistenz deines Schutzes der Natur, während sie sich dort befinden.\n\nAls Bonusaktion kannst du den Würfel um bis zu 18 Meter an einen Punkt auf dem Boden im Abstand von bis zu 36 Metern von dir verschieben."
+  },
+  "srd-2024-class-fighter-core-1-fighting-style": {
+    "name": "Kampfstil",
+    "description": "Du hast deine Kampfkünste verfeinert und erhältst ein Kampfstil-Talent deiner Wahl (siehe [[05_Talente/Feats_All+Header#Kampfstil-Talente|Talente]]). Verteidigung wird empfohlen.\n\nWann immer du eine Kämpferstufe erhältst, kannst du das ausgewählte Talent durch ein anderes Kampfstil-Talent ersetzen."
+  },
+  "srd-2024-class-fighter-core-1-second-wind": {
+    "name": "Durchschnaufen",
+    "description": "Du hast einen gewissen Vorrat an körperlicher und geistiger Ausdauer zur Verfügung. Als Bonusaktion kannst du Trefferpunkte in Höhe von 1W10 plus deiner Kämpferstufe zurückerhalten.\n\nDu kannst dieses Merkmal zweimal anwenden. Nach einer kurzen Rast erhältst du eine verbrauchte Anwendung zurück. Nach einer langen Rast erhältst du alle verbrauchten Anwendungen zurück.\n\nWenn du bestimmte Kämpferstufen erreichst, erhältst du mehr Anwendungen dieses Merkmals, wie in der Spalte „Durchschnaufen“ der Tabelle „Kämpfermerkmale“ dargestellt."
+  },
+  "srd-2024-class-fighter-core-1-weapon-mastery": {
+    "name": "Waffenbeherrschung",
+    "description": "Deine Vertrautheit mit Waffen gestattet dir, die Meisterschaftseigenschaften dreier Arten von einfachen Waffen oder Kriegswaffen deiner Wahl zu verwenden. Wann immer du eine lange Rast beendest, kannst du Waffenübungen ausführen und eine dieser Waffenentscheidungen ändern.\n\nWenn du bestimmte Kämpferstufen erreichst, erhältst du das Attribut zum Verwenden der Meisterschaftseigenschaften von mehr Waffenarten, wie in der Spalte „Waffenbeherrschung“ der Tabelle „Kämpfermerkmale“ dargestellt."
+  },
+  "srd-2024-class-fighter-core-2-action-surge": {
+    "name": "Taktisches Verständnis",
+    "description": "Du hast auf dem Schlachtfeld sowie anderswo einen ausgeprägten Sinn für Taktik. Wenn du bei einem Attributswurf scheiterst, kannst du eine Anwendung von Durchschnaufen verbrauchen, um einen Erfolg anzustreben. Anstatt Trefferpunkte zurückzuerhalten, würfelst du mit 1W10, fügst das Ergebnis dem Attributswurf hinzu und machst so aus dem Misserfolg möglicherweise einen Erfolg. Misslingt der Wurf dennoch, so wird diese Anwendung von Durchschnaufen nicht verbraucht."
+  },
+  "srd-2024-class-fighter-core-2-tactical-mind": {
+    "name": "Tatendrang",
+    "description": "Du kannst kurzzeitig deine normalen Grenzen überwinden. In deinem Zug kannst du eine zusätzliche Aktion (außer der magischen Aktion) ausführen.\n\nDu kannst dieses Merkmal erst nach einer kurzen oder langen Rast erneut verwenden. Ab 17. Stufe kannst du Tatendrang zweimal vor einer Rast, jedoch nur einmal pro Zug einsetzen."
+  },
+  "srd-2024-class-fighter-core-3-fighter-subclass": {
+    "name": "Kämpfer-Unterklasse",
+    "description": "Du erhältst eine Kämpfer-Unterklasse deiner Wahl. Die Unterklasse Champion wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Kämpferstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Kämpferstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-fighter-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 6., 8., 12., 14. und 16. Kämpferstufe erneut."
+  },
+  "srd-2024-class-fighter-core-5-extra-attack": {
+    "name": "Taktikwechsel",
+    "description": "Wann immer du Durchschnaufen mit einer Bonusaktion aktivierst, kannst du bis zur Hälfte deiner Bewegungsrate nutzen, ohne Gelegenheitsangriffe zu provozieren."
+  },
+  "srd-2024-class-fighter-core-5-tactical-shift": {
+    "name": "Zusätzlicher Angriff",
+    "description": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-fighter-core-9-indomitable": {
+    "name": "Taktischer Meister",
+    "description": "Wenn du mit einer Waffe angreifst, deren Meisterschaftseigenschaft du nutzen kannst, so kannst du die Eigenschaft bei diesem Angriff durch eine der Eigenschaften Auslaugen, Stoßen oder Verlangsamen ersetzen."
+  },
+  "srd-2024-class-fighter-core-9-tactical-master": {
+    "name": "Unbeugsamkeit",
+    "description": "Wenn du bei einem Rettungswurf scheiterst, kannst du ihn mit einem Bonus in Höhe deiner Kämpferstufe erneut ausführen. In diesem Fall musst du das neue Ergebnis verwenden und kannst das Merkmal erst nach einer langen Rast erneut verwenden.\n\nDu kannst dieses Merkmal ab der 13. Stufe zweimal vor einer langen Rast und ab der 17. Stufe dreimal vor einer langen Rast anwenden."
+  },
+  "srd-2024-class-fighter-core-11-two-extra-attacks": {
+    "name": "Zwei zusätzliche Angriffe",
+    "description": "Du kannst jetzt dreimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-fighter-core-13-studied-attacks": {
+    "name": "Angriffsstudien",
+    "description": "Du studierst deine Gegner und lernst aus jedem Angriff, den du ausführst. Wenn du bei einem Angriffswurf gegen eine Kreatur scheiterst, bist du bei deinem nächsten Angriffswurf gegen diese Kreatur vor Ende deines nächsten Zugs im Vorteil."
+  },
+  "srd-2024-class-fighter-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe der Kampffertigkeit wird empfohlen."
+  },
+  "srd-2024-class-fighter-core-20-three-extra-attacks": {
+    "name": "Drei zusätzliche Angriffe",
+    "description": "Du kannst jetzt viermal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-subclass-fighter-champion-3-improved-critical": {
+    "name": "Verbesserter kritischer Treffer",
+    "description": "Deine Angriffswürfe mit Waffen und deine waffenlosen Angriffe bewirken kritische Treffer, wenn du mit dem W20 eine 19 oder eine 20 würfelst."
+  },
+  "srd-2024-subclass-fighter-champion-3-remarkable-athlete": {
+    "name": "Bemerkenswerter Athlet",
+    "description": "Dank deiner hervorragenden Konstitution bist du bei Initiative- und Stärkewürfen (Athletik) im Vorteil.\n\nAußerdem kannst du sofort nach Erzielen eines kritischen Treffers bis zur Hälfte deiner Bewegungsrate zurücklegen, ohne Gelegenheitsangriffe zu provozieren."
+  },
+  "srd-2024-subclass-fighter-champion-7-additional-fighting-style": {
+    "name": "Weiterer Kampfstil",
+    "description": "Du erhältst ein weiteres Kampfstil-Talent deiner Wahl."
+  },
+  "srd-2024-subclass-fighter-champion-10-heroic-warrior": {
+    "name": "Heldenhafter Krieger",
+    "description": "Der Nervenkitzel der Schlacht treibt dich zum Sieg. Im Kampf kannst du dir selbst Heldische Inspiration geben, wann immer du deinen Zug ohne diese beginnst."
+  },
+  "srd-2024-subclass-fighter-champion-15-superior-critical": {
+    "name": "Überlegener kritischer Treffer",
+    "description": "Deine Angriffswürfe mit Waffen und deine waffenlosen Angriffe bewirken ab sofort kritische Treffer, wenn du mit dem W20 ein Ergebnis von 18–20 würfelst."
+  },
+  "srd-2024-subclass-fighter-champion-18-survivor": {
+    "name": "Der Überlebende",
+    "description": "Du erreichst den Gipfel der Zähigkeit im Kampf und erhältst folgende Vorzüge:\n\n***Dem Tode trotzen.*** Du bist bei Todesrettungswürfen im Vorteil. Außerdem erhältst du, wenn du bei einem Todesrettungswurf ein Ergebnis von 18–20 würfelst, den Vorzug wie bei einem Ergebnis von 20.\n\n***Heldischer Schlachtruf.*** Zu Beginn jedes deiner Züge erhältst du Trefferpunkte in Höhe von 5 plus deinem Konstitutionsmodifikator zurück, wenn du blutig bist und mindestens 1 Trefferpunkt hast."
+  },
+  "srd-2024-class-monk-core-1-martial-arts": {
+    "name": "Kampfkünste",
+    "description": "Deine Vertrautheit mit Kampfkünsten lässt dich folgende Kampfstile mit waffenlosen Angriffen sowie mit Mönchswaffen beherrschen:\n\n- Einfache Nahkampfwaffen\n- Nahkampf-Kriegswaffen mit der Eigenschaft Leicht\n\nDu erhältst folgende Vorzüge, wenn du unbewaffnet bist oder nur Mönchswaffen verwendest und weder Rüstung noch Schild trägst:\n\n***Waffenloser Bonusangriff.*** Du kannst als Bonusaktion einen waffenlosen Angriff ausführen.\n\n***Kampfkünste-Würfel.*** Bei waffenlosen Angriffen oder im Kampf mit Mönchswaffen kannst du mit 1W6 statt mit dem normalen Schadenswürfel würfeln. Dieser Würfel verändert sich auf höheren Mönchsstufen, wie in der Spalte „Kampfkünste“ der Tabelle „Mönchsmerkmale“ aufgeführt.\n\n***Geschickte Angriffe.*** Du kannst für deine Angriffs- und Schadenswürfe mit waffenlosen Angriffen oder Mönchswaffen deinen Geschicklichkeitsmodifikator statt des Stärkemodifikators verwenden. Außerdem kannst du, wenn du die Packen- oder die Stoßen-Option deines waffenlosen Angriffs verwendest, deinen Geschicklichkeitsmodifikator statt des Stärkemodifikators verwenden, um den Rettungswurf-SG zu bestimmen."
+  },
+  "srd-2024-class-monk-core-1-unarmored-defense": {
+    "name": "Ungerüstete Verteidigung",
+    "description": "Solange du weder Rüstung noch Schild trägst, entspricht deine Basis-Rüstungsklasse 10 plus deinem Geschicklichkeitsmodifikator plus deinem Weisheitsmodifikator."
+  },
+  "srd-2024-class-monk-core-2-monk-s-focus": {
+    "name": "Mönchsfokus",
+    "description": "Dein Fokus und deine Vertrautheit mit Kampfkünsten gestatten dir, eine Quelle außergewöhnlicher Energie in dir selbst zu nutzen. Diese Energie wird durch Fokuspunkte repräsentiert. Deine Mönchsstufe bestimmt die Anzahl deiner Punkte, die in der Spalte „Fokuspunkte“ der Tabelle „Mönchsmerkmale“ aufgeführt sind.\n\nDu kannst diese Punkte verbrauchen, um bestimmte Mönchsmerkmale einzusetzen oder zu verstärken. Zu Beginn kennst du drei solche Merkmale: Geduldige Verteidigung, Schlaghagel und Windschritt (jeweils unten beschrieben).\n\nWenn du einen Fokuspunkt verbrauchst, ist er nicht mehr verfügbar. Du erhältst verbrauchte Fokuspunkte nach einer kurzen oder langen Rast zurück.\n\nManche Merkmale, die Fokuspunkte verwenden, erfordern, dass das Ziel einen Rettungswurf ausführt. Der Rettungswurf-SG entspricht 8 plus deinem Weisheitsmodifikator plus deinem Übungsbonus.\n\n***Schlaghagel.*** Du kannst 1 Fokuspunkt verbrauchen, um zwei waffenlose Angriffe als Bonusaktion auszuführen.\n\n***Geduldige Verteidigung.*** Du kannst die Rückzug-Aktion als Bonusaktion ausführen. Alternativ kannst du 1 Fokuspunkt verbrauchen, um sowohl die Rückzug- als auch die Ausweichaktion als Bonusaktion auszuführen.\n\n***Windschritt.*** Du kannst die Spurt-Aktion als Bonusaktion ausführen. Alternativ kannst du 1 Fokuspunkt verbrauchen, um sowohl die Rückzug- als auch die Spurt-Aktion als Bonusaktion auszuführen, und deine Sprungdistanz ist in diesem Zug verdoppelt."
+  },
+  "srd-2024-class-monk-core-2-unarmored-movement": {
+    "name": "Ungerüstete Bewegung",
+    "description": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du weder Rüstung noch Schild trägst. Dieser Bonus erhöht sich, wenn du bestimmte Mönchsstufen erreichst, wie in der Tabelle „Mönchsmerkmale“ angegeben."
+  },
+  "srd-2024-class-monk-core-2-uncanny-metabolism": {
+    "name": "Unglaublicher Stoffwechsel",
+    "description": "Wenn du die Initiative auswürfelst, kannst du alle verbrauchten Fokuspunkte zurückerhalten. Würfle dazu mit deinem Kampfkünste-Würfel. Du erhältst eine Anzahl von Trefferpunkten in Höhe deiner Mönchsstufe plus des Ergebnisses zurück.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-class-monk-core-3-deflect-attacks": {
+    "name": "Angriffe umleiten",
+    "description": "Wenn ein Angriffswurf dich trifft und dir Hieb-, Stich- oder Wuchtschaden zufügt, kannst du eine Reaktion ausführen, um den Gesamtschaden des Angriffs zu verringern. Die Verringerung entspricht 1W10 plus deinem Geschicklichkeitsmodifikator plus deiner Mönchsstufe.\n\nWird der Schaden auf 0 verringert, so kannst du 1 Fokuspunkt verbrauchen, um einen Teil der Angriffsenergie umzuleiten. Wenn der Angriff ein Nahkampfangriff war, wähle dazu eine Kreatur im Abstand von bis zu 1,5 Metern von dir aus, die du sehen kannst. Wenn der Angriff ein Fernkampfangriff war, wähle eine Kreatur im Abstand von bis zu 18 Metern von dir aus, die du sehen kannst und die nicht über vollständige Deckung verfügt. Diese Kreatur muss einen Geschicklichkeitsrettungswurf bestehen, oder sie erleidet Schaden in Höhe von zwei Würfen mit deinem Kampfkünste-Würfel plus deinem Geschicklichkeitsmodifikator. Die Schadensart entspricht der des Angriffs."
+  },
+  "srd-2024-class-monk-core-3-monk-subclass": {
+    "name": "Mönch-Unterklasse",
+    "description": "Du erhältst eine Mönch-Unterklasse deiner Wahl. Die Unterklasse Krieger der Offenen Hand wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Mönchsstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Mönchsstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-monk-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Mönchsstufe erneut."
+  },
+  "srd-2024-class-monk-core-4-slow-fall": {
+    "name": "Sturz abfedern",
+    "description": "Wenn du stürzt, kannst du eine Reaktion ausführen, um den Sturzschaden um einen Betrag in Höhe des Fünffachen deiner Mönchsstufe zu verringern."
+  },
+  "srd-2024-class-monk-core-5-extra-attack": {
+    "name": "Betäubender Schlag",
+    "description": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einer Mönchswaffe oder einem waffenlosen Angriff triffst, 1 Fokuspunkt verbrauchen, um einen Betäubenden Schlag zu versuchen. Das Ziel muss einen Konstitutionsrettungswurf ausführen. Misslingt der Wurf, so ist das Ziel bis zum Beginn deines nächsten Zugs betäubt. Bei einem erfolgreichen Rettungswurf ist die Bewegungsrate des Ziels bis zum Beginn deines nächsten Zugs halbiert, und der nächste Angriffswurf gegen das Ziel während dieser Dauer ist im Vorteil."
+  },
+  "srd-2024-class-monk-core-5-stunning-strike": {
+    "name": "Zusätzlicher Angriff",
+    "description": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-monk-core-6-empowered-strikes": {
+    "name": "Mächtige Schläge",
+    "description": "Wann immer du mit deinem waffenlosen Angriff Schaden bewirkst, kannst du damit auch Energieschaden oder die normale Schadensart (nach deiner Wahl) bewirken."
+  },
+  "srd-2024-class-monk-core-7-evasion": {
+    "name": "Entrinnen",
+    "description": "Bist du einem Effekt ausgesetzt, der dir einen Geschicklichkeitsrettungswurf erlaubt, um den Schaden zu halbieren, so erleidest du stattdessen bei einem Erfolg gar keinen und bei einem Misserfolg den halben Schaden.\n\nDu erhältst den Vorzug dieses Merkmals nicht, wenn du kampfunfähig bist."
+  },
+  "srd-2024-class-monk-core-9-acrobatic-movement": {
+    "name": "Akrobatische Bewegung",
+    "description": "Sofern du weder Rüstung noch Schild trägst, erhältst du die Fähigkeit, dich in deinem Zug an vertikalen Oberflächen oder auf Flüssigkeiten zu bewegen, ohne zu stürzen."
+  },
+  "srd-2024-class-monk-core-10-heightened-focus": {
+    "name": "Erhöhter Fokus",
+    "description": "Geduldige Verteidigung, Schlaghagel und Windschritt erhalten folgende Vorzüge.\n\n***Schlaghagel.*** Du kannst 1 Fokuspunkt verbrauchen, um Schlaghagel einzusetzen und damit drei waffenlose Angriffe statt zwei auszuführen.\n\n***Geduldige Verteidigung.*** Wenn du einen Fokuspunkt verbrauchst, um Geduldige Verteidigung einzusetzen, erhältst du eine Anzahl von temporären Trefferpunkten in Höhe von zwei Würfen mit deinem Kampfkünste-Würfel.\n\n***Windschritt.*** Wenn du einen Fokuspunkt verbrauchst, um Windschritt einzusetzen, kannst du eine bereitwillige Kreatur im Abstand von bis zu 1,5 Metern von dir und von höchstens großer Größe auswählen. Diese Kreatur bewegt sich bis zum Ende deines Zugs mit dir. Die Bewegung der Kreatur provoziert keine Gelegenheitsangriffe."
+  },
+  "srd-2024-class-monk-core-10-self-restoration": {
+    "name": "Selbstwiederherstellung",
+    "description": "Durch schiere Willenskraft kannst du am Ende jedes deiner Züge einen der folgenden Zustände von dir selbst entfernen: Bezaubert, Verängstigt oder Vergiftet.\n\nAußerdem erhältst du keine Erschöpfungsstufen, wenn du keine Nahrung und keine Flüssigkeit zu dir nimmst."
+  },
+  "srd-2024-class-monk-core-13-deflect-energy": {
+    "name": "Energie umleiten",
+    "description": "Du kannst jetzt dein Merkmal Angriffe umleiten auch gegen Angriffe einsetzen, die eine beliebige andere Schadensart als Hieb-, Stich- oder Wuchtschaden bewirken."
+  },
+  "srd-2024-class-monk-core-14-disciplined-survivor": {
+    "name": "Der disziplinierte Überlebende",
+    "description": "Deine körperliche und mentale Disziplin gibt dir Übung in allen Rettungswürfen.\n\nAußerdem kannst du, wann immer du bei einem Rettungswurf scheiterst, 1 Fokuspunkt verbrauchen, um erneut zu würfeln. In diesem Fall musst du das neue Ergebnis verwenden."
+  },
+  "srd-2024-class-monk-core-15-perfect-focus": {
+    "name": "Perfekter Fokus",
+    "description": "Wenn du die Initiative auswürfelst und nicht Unglaublicher Stoffwechsel verwendest, erhältst du verbrauchte Fokuspunkte zurück, bis du 4 davon hast, sofern du höchstens 3 Punkte hast."
+  },
+  "srd-2024-class-monk-core-18-superior-defense": {
+    "name": "Überlegene Verteidigung",
+    "description": "Zu Beginn deines Zugs kannst du 3 Fokuspunkte verbrauchen, um dich eine Minute lang – oder bis du kampfunfähig wirst – vor Schaden zu schützen. In dieser Zeit bist du gegen alle Schadensarten außer Energieschaden resistent."
+  },
+  "srd-2024-class-monk-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Unwiderstehlichen Angriffs wird empfohlen."
+  },
+  "srd-2024-class-monk-core-20-body-and-mind": {
+    "name": "Körper und Geist",
+    "description": "Du hast Körper und Geist auf neue Höhen weiterentwickelt. Deine Werte für Geschicklichkeit und Weisheit werden um 4 erhöht (auf höchstens 25)."
+  },
+  "srd-2024-subclass-monk-openhand-3-open-hand-technique": {
+    "name": "Technik der Offenen Hand",
+    "description": "Jedes Mal, wenn du eine Kreatur mit einem durch Schlaghagel gewährten Angriff triffst, kannst du einen der folgenden Effekte auf das Ziel wirken:\n\n***Verdattern.*** Das Ziel kann bis zum Beginn seines nächsten Zugs keine Gelegenheitsangriffe ausführen.\n\n***Stoßen.*** Das Ziel muss einen Stärkerettungswurf bestehen, oder es wird bis zu 4,5 Meter weit von dir weggestoßen.\n\n***Umstoßen.*** Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es wird umgestoßen."
+  },
+  "srd-2024-subclass-monk-openhand-6-wholeness-of-body": {
+    "name": "Unversehrtheit des Körpers",
+    "description": "Du erhältst die Fähigkeit, dich selbst zu heilen. Als Bonusaktion kannst du mit deinem Kampfkünste-Würfel würfeln. Du erhältst eine Anzahl von Trefferpunkten in Höhe des Ergebnisses plus deines Weisheitsmodifikators zurück (mindestens 1 Trefferpunkt).\n\nDie Anzahl der möglichen Anwendungen dieses Merkmals entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück."
+  },
+  "srd-2024-subclass-monk-openhand-11-fleet-step": {
+    "name": "Flinker Schritt",
+    "description": "Wenn du eine andere Bonusaktion als Windschritt ausführst, kannst du Windschritt sofort nach der Bonusaktion ebenfalls ausführen."
+  },
+  "srd-2024-subclass-monk-openhand-17-quivering-palm": {
+    "name": "Vibrierende Handfläche",
+    "description": "Du erhältst die Fähigkeit, tödliche Vibrationen im Körper einer anderen Kreatur auszulösen. Wenn du eine Kreatur mit einem waffenlosen Angriff triffst, kannst du vier Fokuspunkte verbrauchen, um diese nicht spürbaren Vibrationen zu erzeugen. Sie dauern eine Anzahl von Tagen an, die deiner Mönchsstufe entspricht. Die Vibrationen sind harmlos, solange du keine Aktion ausführst, um sie zu beenden. Wenn du alternativ in deinem Zug die Angriffsaktion ausführst, kannst du auf einen der Angriffe verzichten, um die Vibrationen zu beenden. Dazu musst du dich auf derselben Existenzebene befinden wie das Ziel. Wenn du die Vibrationen beendest, muss das Ziel einen Konstitutionsrettungswurf ausführen. Misslingt der Wurf, so erleidet das Ziel 10W12 Energieschaden, anderenfalls die Hälfte.\n\nDu kannst dieses Merkmal immer nur auf jeweils eine Kreatur wirken. Du kannst die Vibrationen auch harmlos beenden (keine Aktion erforderlich)."
+  },
+  "srd-2024-class-paladin-core-1-lay-on-hands": {
+    "name": "Handauflegen",
+    "description": "Deine gesegnete Berührung kann Wunden heilen. Du hast einen Vorrat an Heilkraft, der nach einer langen Rast aufgefüllt wird. Mit diesem Vorrat kannst du das Fünffache deiner Paladinstufe an Trefferpunkten wiederherstellen.\n\nAls Bonusaktion kannst du eine Kreatur (auch dich selbst) berühren und Kraft aus deinem Vorrat an Heilkraft ziehen, um bei der Kreatur höchstens so viele Trefferpunkte wiederherzustellen, wie noch im Vorrat vorhanden sind.\n\nDu kannst auch 5 Trefferpunkte aus dem Vorrat an Heilkraft verbrauchen, um den Zustand Vergiftet von der Kreatur zu entfernen. Diese Punkte werden nicht als Trefferpunkte der Kreatur wiederhergestellt."
+  },
+  "srd-2024-class-paladin-core-1-spellcasting": {
+    "name": "Waffenbeherrschung",
+    "description": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast, beispielsweise Langschwerter und Wurfspeere.\n\nWann immer du eine lange Rast beendest, kannst du die Art der ausgewählten Waffen ändern. Beispiel: Du könntest beschließen, die Meisterschaftseigenschaft von Hellebarden und Flegeln zu verwenden."
+  },
+  "srd-2024-class-paladin-core-1-weapon-mastery": {
+    "name": "Zauberwirken",
+    "description": "Du hast gelernt, durch Gebete und Meditation Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Paladinzaubern verwendest, die in der Zauberliste des Paladins weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zauberplätze.*** Die Tabelle „Paladinmerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn zwei Paladinzauber des 1. Grades aus. Heldenmut und Sengendes Niederstrecken werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Paladinstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Paladinmerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Paladinzauber aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl in der Tabelle „Paladinmerkmale“ entspricht. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Paladin der 5. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Paladinzauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Paladinmerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Paladinzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine lange Rast beendest, kannst du einen der Zauber auf deiner Liste durch einen anderen Paladinzauber ersetzen, für den du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Paladinzauber ist Charisma.\n\n***Zauberfokus.*** Du kannst ein heiliges Symbol als Zauberfokus für deine Paladinzauber verwenden."
+  },
+  "srd-2024-class-paladin-core-2-fighting-style": {
+    "name": "Kampfstil",
+    "description": "Du erhältst ein Kampfstil-Talent deiner Wahl (Talente siehe [[05_Talente/Feats_All+Header#Kampfstil-Talente|Talente]]). Anstatt eins dieser Talente auszuwählen, kannst du dich auch für die Option unten entscheiden.\n\n***Gesegneter Krieger.*** Du erlernst zwei Klerikerzaubertricks deiner Wahl (eine Liste der Klerikerzauber findest du im Abschnitt zur Klerikerklasse). Göttliche Führung und Heilige Flamme werden empfohlen. Die ausgewählten Zaubertricks zählen für dich als Paladinzauber, und dein Attribut zum Wirken dieser Zauber ist Charisma. Wann immer du eine Paladinstufe erhältst, kannst du einen dieser Zaubertricks durch einen anderen Klerikerzaubertrick ersetzen."
+  },
+  "srd-2024-class-paladin-core-2-paladin-s-smite": {
+    "name": "Paladin-Niederstrecken",
+    "description": "Du hast den Zauber Göttliches Niederstrecken stets vorbereitet. Du kannst diesen Zauber wirken, ohne einen Zauberplatz zu verbrauchen, kannst ihn aber erst nach einer langen Rast erneut auf diese Art wirken."
+  },
+  "srd-2024-class-paladin-core-3-channel-divinity": {
+    "name": "Göttliche Macht fokussieren",
+    "description": "Du kannst göttliche Energie direkt von den Äußeren Ebenen kanalisieren, um magische Effekte zu wirken. Du beginnst mit einem solchen Effekt: Göttliches Gespür (unten beschrieben). Andere Paladinmerkmale verleihen dir zusätzliche Effektoptionen bei Göttliche Macht fokussieren. Wann immer du Göttliche Macht fokussieren dieser Klasse einsetzt, wählst du aus, welchen Effekt dieser Klasse du bewirkst.\n\nDu kannst Göttliche Macht fokussieren dieser Klasse zweimal anwenden. Wenn du eine kurze Rast beendest, erhältst du eine verbrauchte Anwendung zurück. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück. Du erhältst eine zusätzliche Anwendung, wenn du die 11. Paladinstufe erreichst.\n\nWenn ein Effekt von Göttliche Macht fokussieren einen Rettungswurf erfordert, entspricht der SG dem Zauberrettungswurf-SG des Merkmals Zauberwirken dieser Klasse.\n\n***Göttliches Gespür.*** Als Bonusaktion kannst du dein Bewusstsein öffnen, um celestische Wesen, Unholde und Untote zu erkennen. In den nächsten zehn Minuten – oder bis du kampfunfähig wirst – kennst du den Ort von jeder Kreatur dieser Typen im Abstand von bis zu 18 Metern von dir, und du erkennst den jeweiligen Kreaturentyp. Innerhalb der gleichen Reichweite erkennst du auch Orte und Gegenstände, die geweiht oder entweiht wurden, als würdest du den Zauber Weihen wirken."
+  },
+  "srd-2024-class-paladin-core-3-paladin-subclass": {
+    "name": "Paladin-Unterklasse",
+    "description": "Du erhältst eine Paladin-Unterklasse deiner Wahl. Die Unterklasse Schwur der Hingabe wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Paladinstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Paladinstufe oder den niedrigeren Stufen gehören.\n\n#### Deinen Schwur brechen\n\nPaladine versuchen, sich nach den höchsten Verhaltensstandards zu richten, doch selbst die Tugendhaftesten können scheitern. Manchmal werden Paladine ihren Schwüren nicht gerecht.\n\nWenn ein Paladin seinen Schwur gebrochen hat, ersucht er üblicherweise um Absolution, leistet als Zeichen der Buße eine Nachtwache oder legt eine Fastenzeit ein. Nach einem Vergebungsritual ist dem Paladin ein Neuanfang möglich.\n\nBricht dein Paladin seinen Schwur allerdings reuelos, so sprich mit deinem SL. Dein Paladin sollte wahrscheinlich eine geeignetere Unterklasse auswählen oder sogar seine Klasse wechseln."
+  },
+  "srd-2024-class-paladin-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Paladinstufe erneut."
+  },
+  "srd-2024-class-paladin-core-5-extra-attack": {
+    "name": "Zusätzlicher Angriff",
+    "description": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-paladin-core-5-faithful-steed": {
+    "name": "Treues Reittier",
+    "description": "Du kannst ein außerweltliches Reittier herbeirufen. Du hast den Zauber Reittier finden stets vorbereitet.\n\nDu kannst den Zauber auch einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück."
+  },
+  "srd-2024-class-paladin-core-6-aura-of-protection": {
+    "name": "Aura des Schutzes",
+    "description": "Du hast eine nicht sichtbare beschützende Aura in einer Ausströmung von drei Metern, die von dir ausgeht. Die Aura ist inaktiv, solange du kampfunfähig bist.\n\nDu und deine Verbündeten in der Aura erhaltet einen Bonus in Höhe deines Charismamodifikators (mindestens +1) auf Rettungswürfe.\n\nWenn ein anderer Paladin anwesend ist, kann eine Kreatur nur von jeweils einer Aura des Schutzes (nach ihrer Wahl) profitieren."
+  },
+  "srd-2024-class-paladin-core-9-abjure-foes": {
+    "name": "Gegner verdammen",
+    "description": "Als magische Aktion kannst du eine Anwendung von Göttliche Macht fokussieren dieser Klasse verbrauchen, um Gegnern gehörige Ehrfurcht einzuflößen. Wenn du dein heiliges Symbol oder deine heilige Waffe präsentierst, kannst du auf eine Anzahl von Kreaturen in Höhe deines Charismamodifikators (mindestens eine Kreatur) im Abstand von bis zu 18 Metern von dir zielen, die du sehen kannst. Jedes Ziel muss einen Weisheitsrettungswurf bestehen, oder es ist eine Minute lang – oder bis es Schaden erleidet – verängstigt. Solange es auf diese Art verängstigt ist, kann es in seinen Zügen nur eine der folgenden Handlungen ausführen: sich bewegen, eine Aktion ausführen, eine Bonusaktion ausführen."
+  },
+  "srd-2024-class-paladin-core-10-aura-of-courage": {
+    "name": "Aura der Tapferkeit",
+    "description": "Du und deine Verbündeten innerhalb deiner Aura des Schutzes seid gegen den Zustand Verängstigt immun. Wenn ein verängstigter Verbündeter die Aura betritt, hat der Zustand keine Wirkung auf ihn, solange er sich innerhalb der Aura aufhält."
+  },
+  "srd-2024-class-paladin-core-11-radiant-strikes": {
+    "name": "Gleißende Schläge",
+    "description": "Deine Schläge haben jetzt übernatürliche Macht. Wenn du ein Ziel mit einer Nahkampfwaffe oder einem waffenlosen Angriff triffst, erleidet es zusätzlich 1W8 gleißenden Schaden."
+  },
+  "srd-2024-class-paladin-core-14-restoring-touch": {
+    "name": "Erquickende Berührung",
+    "description": "Wenn du Handauflegen auf eine Kreatur wirkst, kannst du zusätzlich mindestens einen der folgenden Zustände von der Kreatur entfernen: Betäubt, Bezaubert, Blind, Gelähmt, Taub oder Verängstigt. Du musst für jeden dieser Zustände, den du entfernen willst, 5 Trefferpunkte aus dem Vorrat an Heilkraft von Handauflegen verbrauchen. Diese Punkte werden nicht als Trefferpunkte der Kreatur wiederhergestellt."
+  },
+  "srd-2024-class-paladin-core-18-aura-expansion": {
+    "name": "Aura-Ausdehnung",
+    "description": "Deine Aura des Schutzes ist nun eine Ausströmung von neun Metern."
+  },
+  "srd-2024-class-paladin-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Wahren Blicks wird empfohlen."
+  },
+  "srd-2024-subclass-paladin-devotion-3-oath-of-devotion-spells": {
+    "name": "Heilige Waffe",
+    "description": "Wenn du die Angriffsaktion ausführst, kannst du eine Anwendung von Göttliche Macht fokussieren verbrauchen, um eine Nahkampfwaffe, die du hältst, mit positiver Energie zu versehen. Deinen Angriffswürfen mit dieser Waffe fügst du zehn Minuten lang – oder bis du dieses Merkmal erneut einsetzt – deinen Charismamodifikator hinzu (mindestens +1), und bei jedem Treffer mit der Waffe bewirkst du ihre normale Schadensart oder gleißenden Schaden.\n\nAußerdem spendet die Waffe in einem Radius von sechs Metern helles Licht und in einem Radius von weiteren sechs Metern dämmriges Licht.\n\nDu kannst diesen Effekt vorzeitig beenden (keine Aktion erforderlich). Der Effekt endet auch, wenn du die Waffe nicht trägst."
+  },
+  "srd-2024-subclass-paladin-devotion-3-sacred-weapon": {
+    "name": "Schwurzauber der Hingabe",
+    "description": "Dank der Magie deines Schwurs hast du stets bestimmte Zauber vorbereitet. Wenn du die in der Tabelle „Schwurzauber der Hingabe“ angegebenen Paladinstufen erreichst, hast du fortan stets die aufgeführten Zauber vorbereitet.\n\n**Schwurzauber der Hingabe**\n\n| Paladinstufe | Zauber |\n| :--------------- | :------- |\n| 3 | Schild des Glaubens, Schutz vor Gut und Böse |\n| 5 | Beistand, Zone der Wahrheit |\n| 9 | Leuchtfeuer der Hoffnung, Magie bannen |\n| 13 | Bewegungsfreiheit, Hüter des Glaubens |\n| 17 | Flammenschlag, Heiliges Gespräch |"
+  },
+  "srd-2024-subclass-paladin-devotion-7-aura-of-devotion": {
+    "name": "Aura der Hingabe",
+    "description": "Du und deine Verbündeten innerhalb deiner Aura des Schutzes seid gegen den Zustand Bezaubert immun. Wenn ein bezauberter Verbündeter die Aura betritt, hat der Zustand keine Wirkung auf ihn, solange er sich innerhalb der Aura aufhält."
+  },
+  "srd-2024-subclass-paladin-devotion-15-smite-of-protection": {
+    "name": "Schützendes Niederstrecken",
+    "description": "Dein magisches Niederstrecken strahlt nun schützende Energie aus. Wann immer du Göttliches Niederstrecken wirkst, habt du und deine Verbündeten Teildeckung, solange sie sich in deiner Aura des Schutzes aufhalten. Die Aura behält diesen Vorzug bis zum Beginn deines nächsten Zugs bei."
+  },
+  "srd-2024-subclass-paladin-devotion-20-holy-nimbus": {
+    "name": "Heiliger Nimbus",
+    "description": "Als Bonusaktion kannst du deine Aura des Schutzes mit heiliger Macht versehen, welche zehn Minuten lang – oder bis du sie beendest (keine Aktion erforderlich) – die unten beschriebenen Vorzüge gewährt. Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden. Alternativ kannst du die Anwendung wiederherstellen, indem du einen Zauberplatz des 5. Grades verbrauchst (keine Aktion erforderlich).\n\n***Gleißender Schaden.*** Wann immer ein Gegner seinen Zug in der Aura beginnt, erleidet er gleißenden Schaden in Höhe deines Charismamodifikators plus deines Übungsbonus.\n\n***Heiliger Schutz.*** Du bist bei allen Rettungswürfen im Vorteil, zu denen Unholde oder Untote dich zwingen.\n\n***Sonnenlicht.*** Die Aura ist von hellem Licht erfüllt, bei dem es sich um Sonnenlicht handelt."
+  },
+  "srd-2024-class-ranger-core-1-spellcasting": {
+    "name": "Erzfeind",
+    "description": "Du hast den Zauber Zeichen des Jägers stets vorbereitet. Du kannst ihn zweimal wirken, ohne einen Zauberplatz zu verbrauchen. Du erhältst alle verbrauchten Anwendungen dieser Fähigkeit nach einer langen Rast zurück.\n\nDie Anzahl möglicher Anwendungen ohne Zauberplatz erhöht sich, wenn du bestimmte Waldläuferstufen erreichst, wie in der Spalte „Erzfeind“ der Tabelle „Waldläufermerkmale“ dargestellt."
+  },
+  "srd-2024-class-ranger-core-1-favored-enemy": {
+    "name": "Waffenbeherrschung",
+    "description": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast, beispielsweise Langbögen und Kurzschwerter.\n\nWann immer du eine lange Rast beendest, kannst du die Art der ausgewählten Waffen ändern. Beispiel: Du könntest beschließen, die Meisterschaftseigenschaft von Krummsäbeln und Langschwertern zu verwenden."
+  },
+  "srd-2024-class-ranger-core-1-weapon-mastery": {
+    "name": "Zauberwirken",
+    "description": "Du hast gelernt, die magische Essenz der Natur zu kanalisieren, um Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Waldläuferzaubern verwendest, die in der Zauberliste des Waldläufers weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zauberplätze.*** Die Tabelle „Waldläufermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn zwei Waldläuferzauber des 1. Grades aus. Fesselnder Schlag und Wunden heilen werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Waldläuferstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Waldläufermerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Waldläuferzauber aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl in der Tabelle „Waldläufermerkmale“ entspricht. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Waldläufer der 5. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Waldläuferzauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Waldläufermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Waldläuferzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine lange Rast beendest, kannst du einen der Zauber auf deiner Liste durch einen anderen Waldläuferzauber ersetzen, für den du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Waldläuferzauber ist Weisheit.\n\n***Zauberfokus.*** Du kannst einen Druidischen Fokus als Zauberfokus für deine Waldläuferzauber verwenden."
+  },
+  "srd-2024-class-ranger-core-2-deft-explorer": {
+    "name": "Geschickte Erkundung",
+    "description": "Dank deiner Reisen erhältst du die folgenden Vorzüge:\n\n***Expertise.*** Wähle eine deiner Fertigkeiten aus, in denen du geübt bist, aber keine Expertise hast. Du erhältst Expertise in dieser Fertigkeit.\n\n***Sprachen.*** Du kennst zwei Sprachen deiner Wahl aus den Sprachentabellen unter „Charaktererstellung“."
+  },
+  "srd-2024-class-ranger-core-2-fighting-style": {
+    "name": "Kampfstil",
+    "description": "Du erhältst ein Kampfstil-Talent deiner Wahl (siehe [[05_Talente/Feats_All+Header#Kampfstil-Talente|Talente]]). Anstatt eins dieser Talente auszuwählen, kannst du dich auch für die Option unten entscheiden.\n\n***Druidischer Krieger.*** Du erlernst zwei Druidenzaubertricks deiner Wahl (siehe Liste der Druidenzauber im Abschnitt zur [[03_Klassen/Character_Classes_Each/Druide#Zauberliste des Druiden|Druidenklasse]]). Göttliche Führung und Sternenfunke werden empfohlen. Die ausgewählten Zaubertricks zählen für dich als Waldläuferzauber, und dein Attribut zum Wirken dieser Zauber ist Weisheit. Wann immer du eine Waldläuferstufe erhältst, kannst du einen dieser Zaubertricks durch einen anderen Waldläuferzaubertrick ersetzen."
+  },
+  "srd-2024-class-ranger-core-3-ranger-subclass": {
+    "name": "Waldläufer-Unterklasse",
+    "description": "Du erhältst eine Waldläufer-Unterklasse deiner Wahl. Die Unterklasse Jäger wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Waldläuferstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Waldläuferstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-ranger-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Waldläuferstufe erneut."
+  },
+  "srd-2024-class-ranger-core-5-extra-attack": {
+    "name": "Zusätzlicher Angriff",
+    "description": "Du kannst jetzt zweimal angreifen, wenn du in deinem Zug eine Angriffsaktion ausführst."
+  },
+  "srd-2024-class-ranger-core-6-roving": {
+    "name": "Vagabund",
+    "description": "Deine Bewegungsrate erhöht sich um drei Meter, sofern du keine schwere Rüstung trägst. Außerdem hast du eine Kletterbewegungsrate und eine Schwimmbewegungsrate in Höhe deiner Bewegungsrate."
+  },
+  "srd-2024-class-ranger-core-9-expertise": {
+    "name": "Expertise",
+    "description": "Wähle zwei deiner Fertigkeiten aus, in denen du geübt bist, aber keine Expertise hast. Du erhältst Expertise in diesen Fertigkeiten."
+  },
+  "srd-2024-class-ranger-core-10-tireless": {
+    "name": "Unermüdlichkeit",
+    "description": "Nun helfen dir Urkräfte bei deinen Reisen und gewähren dir folgende Vorzüge:\n\n***Temporäre Trefferpunkte.*** Als magische Aktion kannst du dir eine Anzahl von temporären Trefferpunkten in Höhe von 1W8 plus deinem Weisheitsmodifikator verleihen (mindestens 1). Die Anzahl der möglichen Anwendungen dieser Aktion entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück.\n\n***Erschöpfung verringern.*** Wann immer du eine kurze Rast beendest, wird deine Erschöpfungsstufe (sofern vorhanden) um 1 verringert."
+  },
+  "srd-2024-class-ranger-core-13-relentless-hunter": {
+    "name": "Unermüdlicher Jäger",
+    "description": "Deine Konzentration auf den Zauber Zeichen des Jägers wird nicht unterbrochen, wenn du Schaden erleidest."
+  },
+  "srd-2024-class-ranger-core-14-nature-s-veil": {
+    "name": "Naturschleier",
+    "description": "Du beschwörst Geister der Natur, um dich auf magische Art zu verstecken. Als Bonusaktion kannst du dir bis zum Ende deines nächsten Zugs den Zustand Unsichtbar verleihen.\n\nDie Anzahl der möglichen Anwendungen dieses Merkmals entspricht deinem Weisheitsmodifikator (mindestens einmal). Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück."
+  },
+  "srd-2024-class-ranger-core-17-precise-hunter": {
+    "name": "Präziser Jäger",
+    "description": "Du bist bei Angriffswürfen gegen die Kreatur, die aktuell von deinem Zauber Zeichen des Jägers markiert ist, im Vorteil."
+  },
+  "srd-2024-class-ranger-core-18-feral-senses": {
+    "name": "Wildes Gespür",
+    "description": "Deine Verbindung mit den Kräften der Natur gewährt dir Blindsicht mit einer Reichweite von neun Metern."
+  },
+  "srd-2024-class-ranger-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen."
+  },
+  "srd-2024-class-ranger-core-20-foe-slayer": {
+    "name": "Feindestöter",
+    "description": "Der Schadenswürfel deines Zaubers Zeichen des Jägers ist jetzt ein W10 statt eines W6."
+  },
+  "srd-2024-subclass-ranger-hunter-3-hunter-s-lore": {
+    "name": "Beute des Jägers",
+    "description": "Du erhältst eine der folgenden Merkmal-Optionen nach deiner Wahl. Wann immer du eine kurze oder lange Rast beendest, kannst du die ausgewählte Option durch eine andere ersetzen.\n\n***Hordenbrecher.*** Einmal in jedem deiner Züge kannst du, wenn du einen Waffenangriff ausführst, einen weiteren Angriff auf eine andere Kreatur im Abstand von bis zu 1,5 Metern vom ursprünglichen Ziel sowie innerhalb der Waffenreichweite ausführen, sofern du die andere Kreatur in diesem Zug noch nicht angegriffen hast.\n\n***Kolossschlächter.*** Deine Hartnäckigkeit kann selbst die zähesten Gegner zermürben. Wenn du eine Kreatur mit einer Waffe triffst, bewirkt diese zusätzlich 1W8 Schaden, sofern das Ziel nicht mehr all seine Trefferpunkte hat. Du kannst diesen zusätzlichen Schaden nur einmal pro Zug bewirken."
+  },
+  "srd-2024-subclass-ranger-hunter-3-hunter-s-prey": {
+    "name": "Jägerkunde",
+    "description": "Du kannst die Kräfte der Natur beschwören, um bestimmte Stärken und Schwächen deiner Beute zu enthüllen. Wenn eine Kreatur mit deinem Zeichen des Jägers markiert ist, erkennst du, ob diese Kreatur Immunitäten, Resistenzen oder Anfälligkeiten hat, und wenn ja, welche."
+  },
+  "srd-2024-subclass-ranger-hunter-7-defensive-tactics": {
+    "name": "Defensive Taktiken",
+    "description": "Du erhältst eine der folgenden Merkmal-Optionen nach deiner Wahl. Wann immer du eine kurze oder lange Rast beendest, kannst du die ausgewählte Option durch eine andere ersetzen.\n\n***Der Horde entkommen.*** Gelegenheitsangriffe auf dich sind im Nachteil.\n\n***Verteidigung gegen Mehrfachangriffe.*** Wenn eine Kreatur dich mit einem Angriffswurf trifft, ist sie in diesem Zug bei allen anderen Angriffswürfen gegen dich im Nachteil."
+  },
+  "srd-2024-subclass-ranger-hunter-11-superior-hunter-s-prey": {
+    "name": "Beute des überlegenen Jägers",
+    "description": "Einmal pro Zug kannst du, wenn du einer mit deinem Zeichen des Jägers markierten Kreatur Schaden zufügst, den zusätzlichen Schaden des Zaubers noch einer weiteren Kreatur im Abstand von bis zu neun Metern vom ersten Ziel zufügen, die du sehen kannst."
+  },
+  "srd-2024-subclass-ranger-hunter-15-superior-hunter-s-defense": {
+    "name": "Verteidigung des überlegenen Jägers",
+    "description": "Wenn du Schaden erleidest, kannst du eine Reaktion ausführen, um dir bis zum Ende des aktuellen Zugs Resistenz gegen diesen Schaden und jeden anderen Schaden der gleichen Art zu verleihen."
+  },
+  "srd-2024-class-rogue-core-1-expertise": {
+    "name": "Diebessprache",
+    "description": "Du hast verschiedene Sprachen in den Gemeinschaften gelernt, in denen du dir deine Schurkentalente zugelegt hast. Du beherrschst die Diebessprache und eine andere Sprache deiner Wahl, die du aus den Sprachentabellen unter „Charaktererstellung“ auswählen kannst."
+  },
+  "srd-2024-class-rogue-core-1-sneak-attack": {
+    "name": "Expertise",
+    "description": "Du erhältst Expertise in zwei Fertigkeiten deiner Wahl, in denen du geübt bist. Fingerfertigkeit und Heimlichkeit werden empfohlen, wenn du in ihnen geübt bist.\n\nAuf der 6. Schurkenstufe erhältst du Expertise in zwei weiteren Fertigkeiten deiner Wahl, in denen du geübt bist."
+  },
+  "srd-2024-class-rogue-core-1-thieves-cant": {
+    "name": "Hinterhältiger Angriff",
+    "description": "Du weißt, wie man die Ablenkung eines Gegners ausnutzt und subtil zuschlägt. Einmal pro Zug kannst du einer Kreatur, die du mit einem Angriffswurf triffst, 1W6 zusätzlichen Schaden zufügen, sofern du beim Wurf im Vorteil bist und eine Finesse- oder Fernkampfwaffe einsetzt. Der zusätzliche Schaden ist von der gleichen Art wie der Schaden der Waffe.\n\nEs ist kein Vorteil beim Angriffswurf erforderlich, wenn mindestens einer deiner Verbündeten sich im Abstand von bis zu 1,5 Metern vom Ziel befindet, sofern der Verbündete nicht kampfunfähig ist und du beim Angriffswurf nicht im Nachteil bist.\n\nDer zusätzliche Schaden wird erhöht, wenn du weitere Schurkenstufen erhältst, wie in der Spalte „Hinterhältiger Angriff“ der Tabelle „Schurkenmerkmale“ dargestellt."
+  },
+  "srd-2024-class-rogue-core-1-weapon-mastery": {
+    "name": "Waffenbeherrschung",
+    "description": "Deine Vertrautheit mit Waffen erlaubt dir, die Meisterschaftseigenschaften zweier Waffenarten deiner Wahl zu verwenden, sofern du Übung im Umgang mit diesen hast, beispielsweise Dolche und Kurzbögen.\n\nWann immer du eine lange Rast beendest, kannst du die Art der ausgewählten Waffen ändern. Beispiel: Du könntest beschließen, die Meisterschaftseigenschaft von Krummsäbeln und Kurzschwertern zu verwenden."
+  },
+  "srd-2024-class-rogue-core-2-cunning-action": {
+    "name": "Raffinierte Aktion",
+    "description": "Dank deiner Auffassungsgabe und deiner Beweglichkeit kannst du dich besonders schnell bewegen und rasch handeln. In deinem Zug kannst du eine der folgenden Aktionen als Bonusaktion ausführen: Rückzug, Spurt oder Verstecken."
+  },
+  "srd-2024-class-rogue-core-3-rogue-subclass": {
+    "name": "Schurken-Unterklasse",
+    "description": "Du erhältst eine Schurken-Unterklasse deiner Wahl. Die Unterklasse Dieb wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Schurkenstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Schurkenstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-rogue-core-3-steady-aim": {
+    "name": "Zielsicher",
+    "description": "Als Bonusaktion bewirkst du, dass dein nächster Angriffswurf im aktuellen Zug im Vorteil ist. Du kannst dieses Merkmal nur anwenden, wenn du dich in diesem Zug noch nicht bewegt hast. Nach der Bonusaktion beträgt deine Bewegungsrate bis zum Ende des Zugs 0."
+  },
+  "srd-2024-class-rogue-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 10., 12. und 16. Schurkenstufe erneut."
+  },
+  "srd-2024-class-rogue-core-5-cunning-strike": {
+    "name": "Raffinierter Schlag",
+    "description": "Du hast raffinierte Methoden entwickelt, deinen Hinterhältigen Angriff einzusetzen. Wenn du mit diesem Schaden bewirkst, kannst du einen der folgenden Effekte von Raffinierter Schlag hinzufügen. Jeder Effekt hat Würfelkosten in Form der Schadenswürfel für Hinterhältiger Angriff, auf die du verzichten musst, um den Effekt hinzuzufügen. Du musst diese Würfel vor dem Wurf entfernen, und der Effekt tritt auf, sobald der Schaden des Angriffs bewirkt wurde. Beispiel: Wenn du den Gift-Effekt hinzufügst, entfernst du 1W6 von den Schadenswürfeln des Hinterhältigen Angriffs, bevor du würfelst.\n\nWenn ein Effekt von Raffinierter Schlag einen Rettungswurf erfordert, entspricht der SG 8 plus deinem Geschicklichkeitsmodifikator plus deinem Übungsbonus.\n\n***Gift (Kosten: 1W6).*** Du fügst deinem Schlag ein Toxin hinzu, welches das Ziel zu einem Konstitutionsrettungswurf zwingt. Misslingt der Wurf, so ist die Kreatur eine Minute lang vergiftet. Das vergiftete Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge. Bei einem Erfolg endet der Effekt.\n\nDu musst eine Giftmischerausrüstung bei dir haben, um diesen Effekt zu bewirken.\n\n***Fällen (Kosten: 1W6).*** Wenn das Ziel von höchstens großer Größe ist, muss es einen Geschicklichkeitsrettungswurf bestehen, oder es wird umgestoßen.\n\n***Zurückziehen (Kosten: 1W6).*** Sofort nach dem Angriff nutzt du bis zur Hälfte deiner Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren."
+  },
+  "srd-2024-class-rogue-core-5-uncanny-dodge": {
+    "name": "Unglaubliches Ausweichen",
+    "description": "Trifft dich ein Angreifer, den du sehen kannst, mit einem Angriffswurf, so kannst du eine Reaktion ausführen, um den Schaden des Angriffs zu halbieren (abgerundet)."
+  },
+  "srd-2024-class-rogue-core-7-evasion": {
+    "name": "Entrinnen",
+    "description": "Du kannst bestimmten Gefahren geschickt ausweichen. Bist du einem Effekt ausgesetzt, der dir einen Geschicklichkeitsrettungswurf erlaubt, um den Schaden zu halbieren, so erleidest du stattdessen bei einem Erfolg gar keinen und bei einem Misserfolg den halben Schaden. Du kannst dieses Merkmal nicht einsetzen, wenn du kampfunfähig bist."
+  },
+  "srd-2024-class-rogue-core-7-reliable-talent": {
+    "name": "Verlässliches Talent",
+    "description": "Wann immer du einen Attributswurf ausführst, der eine deiner Übungen in Fertigkeiten oder im Umgang mit Werkzeug nutzt, kannst du ein W20-Ergebnis von 9 oder darunter als 10 werten."
+  },
+  "srd-2024-class-rogue-core-11-improved-cunning-strike": {
+    "name": "Verbesserter Raffinierter Schlag",
+    "description": "Wenn du mit Hinterhältiger Angriff Schaden bewirkst, kannst du bis zu zwei der folgenden Effekte von Raffinierter Schlag hinzufügen, sofern du die jeweiligen Würfelkosten bezahlst."
+  },
+  "srd-2024-class-rogue-core-14-devious-strikes": {
+    "name": "Hinterhältige Schläge",
+    "description": "Du hast dich in neuen Methoden geübt, deinen Hinterhältigen Angriff auf besonders verschlagene Art auszuführen. Nun stehen folgende Effekte von Raffinierter Schlag zur Auswahl:\n\n***Irritieren (Kosten: 2W6).*** Das Ziel muss einen Konstitutionsrettungswurf bestehen, oder es kann in seinem nächsten Zug nur eine der folgenden Handlungen vollziehen: sich bewegen, eine Aktion ausführen oder eine Bonusaktion ausführen.\n\n***Lahmlegen (Kosten: 6W6).*** Das Ziel muss einen Konstitutionsrettungswurf bestehen, andernfalls ist es eine Minute lang – oder bis es Schaden erleidet – bewusstlos. Das bewusstlose Ziel wiederholt den Rettungswurf am Ende jedes seiner Züge. Bei einem Erfolg endet der Effekt.\n\n***Verdunkeln (Kosten: 3W6).*** Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es ist bis zum Ende seines nächsten Zugs blind."
+  },
+  "srd-2024-class-rogue-core-15-slippery-mind": {
+    "name": "Entschlüpfender Geist",
+    "description": "Dein raffinierter Verstand ist außergewöhnlich schwierig zu kontrollieren. Du erhältst Übung in Weisheits- und Charismarettungswürfen."
+  },
+  "srd-2024-class-rogue-core-18-elusive": {
+    "name": "Schwer zu fassen",
+    "description": "Du kannst derart gut ausweichen, dass Angreifer kaum noch die Oberhand gegen dich gewinnen. Kein Angriffswurf gegen dich kann im Vorteil sein, solange du nicht kampfunfähig bist."
+  },
+  "srd-2024-class-rogue-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Nachtgeists wird empfohlen."
+  },
+  "srd-2024-class-rogue-core-20-stroke-of-luck": {
+    "name": "Glückstreffer",
+    "description": "Du bist beneidenswert gut darin, Erfolg zu haben, wenn es darauf ankommt. Wenn du bei einer W20-Prüfung scheiterst, kannst du das Ergebnis in eine 20 verwandeln.\n\nDu kannst dieses Merkmal erst nach einer kurzen oder langen Rast erneut verwenden."
+  },
+  "srd-2024-subclass-rogue-thief-3-fast-hands": {
+    "name": "Flinke Finger",
+    "description": "Als Bonusaktion kannst du eine der folgenden Optionen ausführen:\n\n***Fingerfertigkeit.*** Führe einen Geschicklichkeitswurf (Fingerfertigkeit) aus, um mit Diebeswerkzeug ein Schloss zu knacken, eine Falle zu entschärfen oder um einen Taschendiebstahl auszuführen.\n\n***Einen Gegenstand verwenden.*** Führe die Verwenden-Aktion oder die magische Aktion aus, um einen magischen Gegenstand zu verwenden, der diese Aktion erfordert."
+  },
+  "srd-2024-subclass-rogue-thief-3-second-story-work": {
+    "name": "Kletteraffe",
+    "description": "Du bist darin ausgebildet, an besonders schwierig zu erreichende Orte zu gelangen, was dir diese Vorzüge gewährt:\n\n***Kletterer.*** Du erhältst eine Kletterbewegungsrate in Höhe deiner Bewegungsrate.\n\n***Springer.*** Du kannst deine Sprungdistanz anhand deiner Geschicklichkeit anstatt deiner Stärke bestimmen."
+  },
+  "srd-2024-subclass-rogue-thief-9-supreme-sneak": {
+    "name": "Außerordentliches Schleichen",
+    "description": "Du erhältst bei Raffinierter Schlag folgende Option:\n\n***Heimlicher Angriff (Kosten: 1W6).*** Wenn du aufgrund der Verstecken-Aktion unsichtbar bist, wird die Unsichtbarkeit nicht durch diesen Angriff beendet, sofern du den Zug hinter Dreivierteldeckung oder vollständiger Deckung beendest."
+  },
+  "srd-2024-subclass-rogue-thief-13-use-magic-device": {
+    "name": "Magischen Gegenstand verwenden",
+    "description": "Du hast gelernt, magische Gegenstände optimal zu nutzen, was dir folgende Vorzüge gewährt:\n\n***Einstimmung.*** Du kannst dich auf bis zu vier magische Gegenstände auf einmal einstimmen.\n\n***Ladungen.*** Wann immer du eine Eigenschaft eines magischen Gegenstands verwendest, die Ladungen verbraucht, würfle mit 1W6. Bei einem Ergebnis von 6 verwendest du die Eigenschaft, ohne eine Ladung zu verbrauchen.\n\n***Schriftrollen.*** Du kannst alle Zauberschriftrollen verwenden, und dein Attribut zum Wirken der Zauber ist Intelligenz. Zaubertricks und Zauber des 1. Grades kannst du zuverlässig wirken. Wenn die Schriftrolle einen Zauber höheren Grades enthält, musst du zunächst einen Intelligenzwurf (Arkane Kunde) bestehen (SG 10 plus Zaubergrad). Bei einem Erfolg wirkst du den Zauber von der Schriftrolle. Misslingt der Wurf, so löst die Schriftrolle sich auf."
+  },
+  "srd-2024-subclass-rogue-thief-17-thief-s-reflexes": {
+    "name": "Reflexe eines Diebes",
+    "description": "Du bist versiert darin, Hinterhalte zu legen und rasch aus Gefahren zu entkommen. In der ersten Runde jedes Kampfs kannst du zwei Züge ausführen. Du führst den ersten Zug mit deiner normalen Initiative und den zweiten Zug mit deiner Initiative minus 10 aus."
+  },
+  "srd-2024-class-sorcerer-core-1-spellcasting": {
+    "name": "Zauberwirken",
+    "description": "Mithilfe deiner intuitiven Magie kannst du Zauber wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Zaubererzaubern verwendest, die in der Zauberliste des Zauberers weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du kennst vier Zaubererzaubertricks deiner Wahl. Explosion der Zauberei, Licht, Schockgriff und Taschenspielerei werden empfohlen. Wann immer du eine Zaubererstufe erhältst, kannst du einen deiner Zaubertricks dieses Merkmals durch einen anderen Zaubererzaubertrick deiner Wahl ersetzen.\n\nAuf der 4. und 10. Zaubererstufe erlernst du jeweils einen weiteren Zaubererzaubertrick deiner Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Zauberermerkmale“ dargestellt.\n\n***Zauberplätze.*** Die Tabelle „Zauberermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn zwei Zaubererzauber des 1. Grades aus. Brennende Hände und Magie entdecken werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Zaubererstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Zauberermerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Zaubererzauber aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl in der Tabelle „Zauberermerkmale“ entspricht. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Zauberer der 3. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Zaubererzauber des 1. und 2. Grades in beliebiger Kombination enthalten.\n\nWenn ein anderes Zauberermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Zaubererzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine Zaubererstufe erhältst, kannst du einen der Zauber auf deiner Liste durch einen anderen Zaubererzauber ersetzen, für den du Zauberplätze hast.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Zaubererzauber ist Charisma.\n\n***Zauberfokus.*** Du kannst einen arkanen Fokus als Zauberfokus für deine Zaubererzauber verwenden."
+  },
+  "srd-2024-class-sorcerer-core-1-innate-sorcery": {
+    "name": "Intuitive Zauberei",
+    "description": "Ein Ereignis in deiner Vergangenheit hat sein unauslöschliches Zeichen hinterlassen und dich mit schwelender Magie erfüllt. Als Bonusaktion kannst du diese Magie eine Minute lang entfesseln. Während dieser Dauer erhältst du die folgenden Vorzüge:\n\n- Der Zauberrettungswurf-SG deiner Zaubererzauber wird um 1 erhöht.\n- Bei den Angriffswürfen der Zaubererzauber, die du wirkst, bist du im Vorteil.\n\nDu kannst dieses Merkmal zweimal anwenden und erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück."
+  },
+  "srd-2024-class-sorcerer-core-2-font-of-magic": {
+    "name": "Quelle der Magie",
+    "description": "Du kannst die Quelle der Magie nutzen, die du in dir trägst. Diese Quelle wird durch Zaubereipunkte repräsentiert, die eine Vielzahl magischer Effekte ermöglichen.\n\nDu besitzt 2 Zaubereipunkte und erhältst weitere auf höheren Stufen, wie in der Spalte „Zaubereipunkte“ der Tabelle „Zauberermerkmale“ angegeben. Du kannst nicht mehr Zaubereipunkte besitzen, als für deine Stufe in der Tabelle angegeben sind. Du erhältst alle verbrauchten Zaubereipunkte nach einer langen Rast zurück.\n\nDu kannst deine Zaubereipunkte verwenden, um die Optionen unten sowie andere Merkmale wie Metamagie einzusetzen, welche diese Punkte nutzen.\n\n***Zauberplätze in Zaubereipunkte umwandeln.*** Du kannst einen Zauberplatz verbrauchen, um eine Anzahl von Zaubereipunkten in Höhe des Zauberplatzgrades zu erhalten (keine Aktion erforderlich).\n\n***Zauberplätze erschaffen.*** Als Bonusaktion kannst du in deinem Zug unverbrauchte Zaubereipunkte in einen Zauberplatz umwandeln. In der Tabelle „Zauberplätze erschaffen“ sind die Kosten von Zauberplätzen bestimmter Grade sowie die zum Umwandeln erforderliche Zaubererstufe angegeben. Du kannst Zauberplätze des höchstens 5. Grades erzeugen. Alle mit diesem Merkmal erschaffenen Zauberplätze verschwinden nach einer langen Rast.\n\n#### Zauberplätze erschaffen\n\n| Zauberplatzgrad | Zaubereipunktekosten | Min. Zaubererstufe |\n| :------------------- | :------------------------ | :---------------------- |\n| 1 | 2 | 2 |\n| 2 | 3 | 3 |\n| 3 | 5 | 5 |\n| 4 | 6 | 7 |\n| 5 | 7 | 9 |"
+  },
+  "srd-2024-class-sorcerer-core-2-metamagic": {
+    "name": "Metamagie",
+    "description": "Deine Magie kommt aus deinem Inneren, daher kannst du deine Zauber nach deinen Wünschen ändern. Du erhältst zwei Metamagie-Optionen deiner Wahl unter „Metamagie-Optionen“ weiter hinten in der Beschreibung dieser Klasse. Die ausgewählten Optionen verwendest du, um Zauber, die du wirkst, vorübergehend zu ändern. Zum Verwenden einer Option musst du die jeweils angegebene Anzahl von Zaubereipunkten verbrauchen.\n\nDu kannst nur eine Metamagie-Option auf einen Zauber anwenden, den du wirkst, sofern bei der jeweiligen Option nicht anders angegeben.\n\nWann immer du eine Zaubererstufe erhältst, kannst du eine der Metamagie-Optionen durch eine ersetzen, die du noch nicht kennst. Auf der 10. und 17. Zaubererstufe erhältst du jeweils zwei weitere Optionen."
+  },
+  "srd-2024-class-sorcerer-core-3-sorcerer-subclass": {
+    "name": "Zauberer-Unterklasse",
+    "description": "Du erhältst eine Zauberer-Unterklasse deiner Wahl. Die Unterklasse Drakonische Zauberei wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Zaubererstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Zaubererstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-sorcerer-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Zaubererstufe erneut."
+  },
+  "srd-2024-class-sorcerer-core-5-sorcerous-restoration": {
+    "name": "Zaubereiauffrischung",
+    "description": "Verbrauchte Zaubereipunkte erhältst du nach einer kurzen Rast zurück, jedoch höchstens eine Anzahl in Höhe der Hälfte deiner Zaubererstufe (abgerundet). Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-class-sorcerer-core-7-sorcery-incarnate": {
+    "name": "Zauberei-Inkarnat",
+    "description": "Wenn keine Anwendungen von Intuitive Zauberei mehr übrig sind, kannst du diese dennoch einsetzen. Dazu musst du 2 Zaubereipunkte verbrauchen und zum Aktivieren die Bonusaktion ausführen.\n\nAußerdem kannst du, wenn dein Merkmal Intuitive Zauberei aktiv ist, bei jedem Zauber, den du wirkst, bis zu zwei deiner Metamagie-Optionen verwenden."
+  },
+  "srd-2024-class-sorcerer-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Dimensionsreisens wird empfohlen."
+  },
+  "srd-2024-class-sorcerer-core-20-arcane-apotheosis": {
+    "name": "Arkane Vergöttlichung",
+    "description": "Wenn dein Merkmal Intuitive Zauberei aktiv ist, kannst du in jedem deiner Züge eine Metamagie-Option verwenden, ohne Zaubereipunkte zu verbrauchen."
+  },
+  "srd-2024-subclass-sorcerer-draconic-3-draconic-resilience": {
+    "name": "Drakonische Widerstandskraft",
+    "description": "Die Magie in deinem Körper manifestiert physische Merkmale deiner drakonischen Gabe. Dein Trefferpunktemaximum wird um 3 Punkte und auf jeder höheren Zaubererstufe um 1 weiteren Punkt erhöht.\n\nAußerdem sind Teile deines Körpers drachenartig mit Schuppen bedeckt. Solange du keine Rüstung trägst, entspricht deine Basis-Rüstungsklasse 10 plus deinem Geschicklichkeits- plus deinem Charismamodifikator."
+  },
+  "srd-2024-subclass-sorcerer-draconic-3-draconic-spells": {
+    "name": "Drakonische Zauber",
+    "description": "Wenn du eine Zaubererstufe erreichst, die in der Tabelle „Drakonische Zauber“ aufgeführt ist, hast du die aufgeführten Zauber fortan stets vorbereitet.\n\n**Drakonische Zauber**\n\n| Zaubererstufe | Zauber |\n| :------------------ | :------- |\n| 3 | Befehl, Chromatische Kugel, Drachenodem, Gestalt verändern |\n| 5 | Fliegen, Furcht |\n| 7 | Arkanes Auge, Monster bezaubern |\n| 9 | Drachen herbeirufen, Sagenkunde |"
+  },
+  "srd-2024-subclass-sorcerer-draconic-6-elemental-affinity": {
+    "name": "Elementare Affinität",
+    "description": "Deine drakonische Magie hat eine Affinität mit der Schadensart, die mit Drachen assoziiert ist. Wähle eine der folgenden Arten aus: Blitz, Feuer, Gift, Kälte oder Säure.\n\nDu bist gegen diese Schadensart resistent, und wenn du einen Zauber wirkst, der Schaden dieser Art bewirkt, kannst du einem Schadenswurf dieses Zaubers deinen Charismamodifikator hinzufügen."
+  },
+  "srd-2024-subclass-sorcerer-draconic-14-dragon-wings": {
+    "name": "Drachenflügel",
+    "description": "Als Bonusaktion kannst du drakonische Flügel auf deinem Rücken erscheinen lassen. Sie bleiben eine Stunde lang bestehen, oder bis du sie verwirfst (keine Aktion erforderlich). Für die Wirkungsdauer hast du eine Flugbewegungsrate von 18 Metern.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst 3 Zaubereipunkte (keine Aktion erforderlich), um die Anwendung wiederherzustellen."
+  },
+  "srd-2024-subclass-sorcerer-draconic-18-dragon-companion": {
+    "name": "Drachengefährte",
+    "description": "Du kannst Drachen herbeirufen ohne Materialkomponente wirken. Du kannst den Zauber auch einmal wirken, ohne einen Zauberplatz zu verbrauchen. Diese Fähigkeit erhältst du nach einer langen Rast zurück.\n\nWann immer du beginnst, diesen Zauber zu wirken, kannst du ihn so verändern, dass er keine Konzentration erfordert. In diesem Fall beträgt die Wirkungsdauer des Zaubers eine Minute."
+  },
+  "srd-2024-class-warlock-core-1-eldritch-invocations": {
+    "name": "Paktmagie",
+    "description": "In einer okkulten Zeremonie hast du einen Pakt mit einer mysteriösen Wesenheit geschlossen, um magische Kräfte zu erhalten. Diese Wesenheit ist eine Stimme in den Schatten, ihre Identität ist unklar – doch ihre Gabe für dich ist konkret: die Fähigkeit, Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Hexenmeisterzaubern verwendest, die in der Zauberliste des Hexenmeisters weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du kennst zwei Hexenmeisterzaubertricks deiner Wahl. Schauriger Strahl und Taschenspielerei werden empfohlen. Wann immer du eine Hexenmeisterstufe erhältst, kannst du einen deiner Zaubertricks dieses Merkmals durch einen anderen Hexenmeisterzaubertrick deiner Wahl ersetzen.\n\nAuf der 4. und 10. Hexenmeisterstufe erlernst du jeweils einen weiteren Hexenmeisterzaubertrick deiner Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Hexenmeistermerkmale“ dargestellt.\n\n***Zauberplätze.*** Die Tabelle „Hexenmeistermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Hexenmeisterzauber des 1. bis 5. Grades zur Verfügung stehen. Sie zeigt außerdem die Grade der Zauberplätze. Du erhältst alle verbrauchten Paktmagie-Zauberplätze nach einer kurzen oder langen Rast zurück.\n\nBeispiel: Wenn du ein Hexenmeister der 5. Stufe bist, hast du zwei Zauberplätze des 3. Grades. Um den Zauber des 1. Grades Person bezaubern zu wirken, musst du einen dieser Zauberplätze verbrauchen, und du wirkst den Zauber als Zauber des 3. Grades.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle zu Beginn zwei Hexenmeisterzauber des 1. Grades aus. Person bezaubern und Verwünschen werden empfohlen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Hexenmeisterstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Hexenmeistermerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Hexenmeisterzauber aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl in der Tabelle entspricht. Der Grad der ausgewählten Zauber darf dabei den in der Tabelle angegebenen Grad für deine Stufe nicht überschreiten. Wenn du beispielsweise die 6. Stufe erreichst, erlernst du einen neuen Hexenmeisterzauber, der den 1. bis 3. Grad haben kann.\n\nWenn ein anderes Hexenmeistermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Hexenmeisterzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine Hexenmeisterstufe erhältst, kannst du einen Zauber auf deiner Liste durch einen anderen Hexenmeisterzauber ersetzen, der einen passenden Grad aufweist.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Hexenmeisterzauber ist Charisma.\n\n***Zauberfokus.*** Du kannst einen arkanen Fokus als Zauberfokus für deine Hexenmeisterzauber verwenden."
+  },
+  "srd-2024-class-warlock-core-1-pact-magic": {
+    "name": "Schauerliche Anrufungen",
+    "description": "Du bist auf Schauerliche Anrufungen gestoßen, auf verbotenes Wissen, das dich mit einem dauerhaften magischen Attribut oder anderen Lektionen versehen hat. Du erhältst eine Anrufung deiner Wahl, beispielsweise Pakt des Buches. Die Anrufungen sind im Abschnitt „Schauerliche-Anrufung-Optionen“ weiter hinten in dieser Klassenbeschreibung erläutert.\n\n***Voraussetzungen.*** Wenn eine Anrufung eine Voraussetzung hat, musst du diese erfüllen, um die Anrufung zu erlernen. Beispiel: Wenn eine Anrufung erfordert, dass du ein Hexenmeister ab der 5. Stufe bist, kannst du diese Anrufung erst auswählen, wenn du die 5. Hexenmeisterstufe erreicht hast.\n\n***Anrufungen erlangen und ersetzen.*** Wann immer du eine Hexenmeisterstufe erhältst, kannst du eine deiner Anrufungen durch eine andere ersetzen, für die du qualifiziert bist. Du kannst eine Anrufung nicht ersetzen, wenn sie die Voraussetzung für eine andere Anrufung ist, über die du verfügst.\n\nWenn du bestimmte Hexenmeisterstufen erreichst, erhältst du weitere Anrufungen deiner Wahl, wie in der Spalte „Schauerliche Anrufungen“ in der Tabelle „Hexenmeistermerkmale“ dargestellt.\n\nDu kannst eine Anrufung nicht mehrfach auswählen, sofern in ihrer Beschreibung nicht anders angegeben."
+  },
+  "srd-2024-class-warlock-core-2-magical-cunning": {
+    "name": "Magische Raffinesse",
+    "description": "Du kannst eine Minute lang einen esoterischen Ritus ausführen. Danach erhältst du verbrauchte Paktmagie-Zauberplätze zurück, jedoch höchstens eine Anzahl in Höhe der Hälfte deines Maximums (aufgerundet). Du kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-class-warlock-core-3-warlock-subclass": {
+    "name": "Hexenmeister-Unterklasse",
+    "description": "Du erhältst eine Hexenmeister-Unterklasse deiner Wahl. Die Unterklasse Unhold-Schutzherr wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Hexenmeisterstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Hexenmeisterstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-warlock-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Hexenmeisterstufe erneut."
+  },
+  "srd-2024-class-warlock-core-9-contact-patron": {
+    "name": "Schutzherrn kontaktieren",
+    "description": "Bisher hast du deinen Schutzherrn normalerweise durch Mittler angesprochen. Jetzt kannst du direkt mit ihm kommunizieren und hast den Zauber Kontakt zu anderen Ebenen stets vorbereitet. Mit diesem Merkmal kannst du zur Kontaktherstellung den Zauber wirken, ohne einen Zauberplatz zu verbrauchen, und bestehst den Rettungswurf des Zaubers automatisch.\n\nDu kannst den Zauber erst nach einer langen Rast erneut auf diese Art wirken."
+  },
+  "srd-2024-class-warlock-core-11-mystic-arcanum": {
+    "name": "Mystisches Arkanum",
+    "description": "Dein Schutzherr gewährt dir ein magisches Geheimnis, das Arkanum genannt wird. Wähle einen Hexenmeisterzauber des 6. Grades als dieses Arkanum aus.\n\nDu kannst diesen Arkanum-Zauber einmal wirken, ohne einen Zauberplatz zu verbrauchen, ihn dann aber erst nach einer langen Rast erneut auf diese Art wirken.\n\nWie in der Tabelle „Hexenmeistermerkmale“ dargestellt, erhältst du je einen weiteren Hexenmeisterzauber deiner Wahl, der auf diese Art gewirkt werden kann, wenn du die 13. (Zauber des 7. Grades), die 15. (Zauber des 8. Grades) und die 17. (Zauber des 9. Grades) Hexenmeisterstufe erreichst. Du erhältst alle verbrauchten Anwendungen von Mystisches Arkanum nach einer langen Rast zurück.\n\nWann immer du eine Hexenmeisterstufe erhältst, kannst du einen deiner Arkanum-Zauber durch einen anderen Hexenmeisterzauber des gleichen Grades ersetzen."
+  },
+  "srd-2024-class-warlock-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe des Schicksals wird empfohlen."
+  },
+  "srd-2024-class-warlock-core-20-eldritch-master": {
+    "name": "Mystischer Meister",
+    "description": "Wenn du Magische Raffinesse einsetzt, erhältst du alle verbrauchten Paktmagie-Zauberplätze zurück."
+  },
+  "srd-2024-subclass-warlock-fiend-3-dark-one-s-blessing": {
+    "name": "Segen des Dunklen Meisters",
+    "description": "Wenn du die Trefferpunkte eines Gegners auf 0 verringerst, erhältst du temporäre Trefferpunkte in Höhe deines Charismamodifikators plus deiner Hexenmeisterstufe (mindestens 1 temporärer Trefferpunkt). Du erhältst diesen Vorzug ebenfalls, wenn jemand anders die Trefferpunkte eines Gegners im Abstand von bis zu drei Metern von dir auf 0 verringert."
+  },
+  "srd-2024-subclass-warlock-fiend-3-fiend-spells": {
+    "name": "Unhold-Zauber",
+    "description": "Die Magie deines Schutzherrn sorgt dafür, dass du bestimmte Zauber stets verfügbar hast. Wenn du eine Hexenmeisterstufe erreichst, die in der Tabelle „Unhold-Zauber“ angegeben ist, hast du die aufgeführten Zauber stets vorbereitet.\n\n**Unhold-Zauber**\n\n| Hexenmeisterstufe | Zauber |\n| :--------------------- | :------- |\n| 3 | Befehl, Brennende Hände, Einflüsterung, Sengender Strahl |\n| 5 | Feuerball, Stinkende Wolke |\n| 7 | Feuerschild, Feuerwand |\n| 9 | Geas, Insektenplage |"
+  },
+  "srd-2024-subclass-warlock-fiend-6-dark-one-s-own-luck": {
+    "name": "Schicksal des Dunklen Meisters",
+    "description": "Du kannst deinen Unhold-Schutzherrn bitten, das Schicksal zu deinen Gunsten zu ändern. Wenn du einen Attributs- oder Rettungswurf ausführst, kannst du dieses Merkmal anwenden, um dem Wurf 1W10 hinzuzufügen. Dies kannst du tun, nachdem der Wurf ausgeführt wurde, aber bevor die Effekte des Wurfs auftreten.\n\nDie Anzahl der möglichen Anwendungen dieses Merkmals entspricht deinem Charismamodifikator (mindestens einmal), doch du kannst es nicht öfter als einmal pro Würfelwurf anwenden. Du erhältst alle verbrauchten Anwendungen nach einer langen Rast zurück."
+  },
+  "srd-2024-subclass-warlock-fiend-10-fiendish-resilience": {
+    "name": "Widerstandskraft des Unholds",
+    "description": "Wähle eine Schadensart außer Energie aus, wann immer du eine kurze oder lange Rast beendest. Du bist gegen diese Schadensart resistent, bis du mit diesem Merkmal eine andere auswählst."
+  },
+  "srd-2024-subclass-warlock-fiend-14-hurl-through-hell": {
+    "name": "Schlund des Wahnsinns",
+    "description": "Einmal pro Zug kannst du, wenn du eine Kreatur mit einem Angriffswurf triffst, versuchen, das Ziel sofort in die Unteren Ebenen zu schleudern. Das Ziel muss einen Charismarettungswurf gegen deinen Zauberrettungswurf-SG bestehen, oder es verschwindet und trudelt durch eine Albtraumlandschaft. Es erleidet 8W10 psychischen Schaden, sofern es kein Unhold ist, und ist bis zum Ende deines nächsten Zugs kampfunfähig. Dann kehrt es in den Bereich zurück, aus dem es verschwunden ist, oder gelangt in den nächstliegenden freien Bereich.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden, es sei denn, du verbrauchst einen Paktmagie-Zauberplatz (keine Aktion erforderlich), um die Anwendung wiederherzustellen."
+  },
+  "srd-2024-class-wizard-core-1-spellcasting": {
+    "name": "Zauberwirken",
+    "description": "Als Student arkaner Magie hast du gelernt, Zauber zu wirken. Die Regeln zum Zauberwirken findest du unter „Zauber“. Folgende Informationen erklären, wie du diese Regeln mit den Magierzaubern verwendest, die in der Zauberliste des Magiers weiter hinten in dieser Klassenbeschreibung aufgeführt sind.\n\n***Zaubertricks.*** Du kennst drei Magierzaubertricks deiner Wahl. Kältestrahl, Licht und Magierhand werden empfohlen. Wann immer du eine lange Rast beendest, kannst du einen deiner Zaubertricks dieses Merkmals durch einen anderen Magierzaubertrick deiner Wahl ersetzen.\n\nAuf der 4. und 10. Magierstufe erlernst du jeweils einen weiteren Magierzaubertrick deiner Wahl, wie in der Spalte „Zaubertricks“ der Tabelle „Magiermerkmale“ dargestellt.\n\n***Zauberbuch.*** Die Krönung deiner magischen Ausbildung bestand in der Erschaffung eines Buchs – deines Zauberbuchs. Dieses ist ein winziger Gegenstand, der 1,5 Kilogramm wiegt, 100 Seiten enthält und nur von dir oder jemandem, der den Zauber Identifizieren wirkt, gelesen werden kann. Du bestimmst Erscheinungsbild und Materialien des Buchs. Lege fest, ob es sich beispielsweise um einen Folianten mit Blattgold oder eine Sammlung von verzwirnten Pergamentseiten handelt.\n\nDas Buch enthält die Zauber ab dem 1. Grad, die du kennst. Es beginnt mit sechs Magierzaubern des 1. Grades nach deiner Wahl. Donnerwoge, Federfall, Magie entdecken, Magierrüstung, Magisches Geschoss und Schlaf werden empfohlen.\n\nWann immer du nach der 1. Magierstufe eine weitere erhältst, kannst du deinem Zauberbuch zwei neue Magierzauber nach deiner Wahl hinzufügen. Die Zauber müssen einen Grad aufweisen, für den du Zauberplätze entsprechend der Tabelle „Magiermerkmale“ verfügbar hast. Sie sind der Höhepunkt deiner regelmäßigen arkanen Forschungen.\n\n***Zauberplätze.*** Die Tabelle „Magiermerkmale“ zeigt, wie viele Zauberplätze dir zum Wirken deiner Zauber ab dem 1. Grad zur Verfügung stehen. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.\n\n***Vorbereitete Zauber ab dem 1. Grad.*** Du bereitest die Liste der Zauber ab dem 1. Grad vor, die dir mit diesem Merkmal zur Verfügung stehen. Wähle dazu vier Zauber aus deinem Zauberbuch aus. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen.\n\nDie Anzahl der Zauber auf deiner Liste erhöht sich, wenn du weitere Magierstufen erhältst, wie in der Spalte „Vorbereitete Zauber“ der Tabelle „Magiermerkmale“ dargestellt. Wann immer sich diese Anzahl erhöht, wählst du zusätzliche Magierzauber aus, bis die Anzahl von Zaubern auf deiner Liste der Anzahl in der Tabelle entspricht. Der Grad der ausgewählten Zauber muss dem der verfügbaren Zauberplätze entsprechen. Beispiel: Wenn du ein Magier der 3. Stufe bist, kann deine Liste vorbereiteter Zauber sechs Zauber des 1. und 2. Grades aus deinem Zauberbuch in beliebiger Kombination enthalten.\n\nWenn ein anderes Magiermerkmal dir Zauber gibt, die du stets vorbereitet hast, zählen diese Zauber nicht bei der Anzahl von Zaubern, die du mit diesem Merkmal vorbereiten kannst. Ansonsten zählen diese Zauber jedoch als Magierzauber für dich.\n\n***Deine vorbereiteten Zauber ändern.*** Wann immer du eine lange Rast beendest, kannst du deine Liste vorbereiteter Zauber ändern und beliebige Zauber von der Liste mit anderen Zaubern aus deinem Zauberbuch ersetzen.\n\n***Attribut zum Zauberwirken.*** Dein Attribut zum Wirken der Magierzauber ist Intelligenz.\n\n***Zauberfokus.*** Du kannst einen arkanen Fokus oder dein Zauberbuch als Zauberfokus für deine Magierzauber verwenden.\n\n#### Das Zauberbuch erweitern oder ersetzen\n\nDie Zauber, die du deinem Zauberbuch bei Stufenaufstiegen hinzufügst, spiegeln deine fortlaufenden magischen Forschungen wider. Du könntest im Verlauf deines Abenteuers aber noch andere Zauber finden, die du dem Buch hinzufügen kannst. Beispielsweise könntest du auf einer Zauberschriftrolle einen Magierzauber entdecken, den du in dein Zauberbuch kopierst.\n\n***Einen Zauber ins Buch kopieren.*** Wenn du einen Magierzauber ab dem 1. Grad findest, kannst du ihn in dein Zauberbuch kopieren, sofern er einen Grad aufweist, den du vorbereiten kannst, und du genügend Zeit zum Kopieren hast. Pro Zaubergrad dauert das Kopieren zwei Stunden und kostet 50 GM. Danach kannst du den Zauber wie alle anderen in deinem Zauberbuch vorbereiten.\n\n***Das Buch kopieren.*** Du kannst Zauber aus deinem Zauberbuch in ein anderes Buch kopieren. Dies funktioniert wie das Kopieren eines neuen Zaubers, jedoch schneller und einfacher, da du diese Zauber bereits kennst. Pro Zaubergrad dauert dieser Vorgang nur eine Stunde und kostet 10 GM.\n\nWenn du dein Zauberbuch verlierst, kannst du die vorbereiteten Magierzauber auf die gleiche Weise in ein neues Zauberbuch übertragen. Zum Ausfüllen des restlichen neuen Buchs musst du neue Zauber finden. Aus diesem Grund halten viele Magier ein Ersatzzauberbuch bereit.\n\nWann immer du eine lange Rast beendest, kannst du dein Zauberbuch studieren und einen dieser Zauber durch einen passenden Zauber des gleichen Grades aus dem Buch ersetzen."
+  },
+  "srd-2024-class-wizard-core-1-ritual-adept": {
+    "name": "Arkane Erholung",
+    "description": "Durch das Studium deines Zauberbuchs kannst du einen Teil deiner magischen Energie zurückerhalten. Nach einer kurzen Rast kannst du dir verbrauchte Zauberplätze aussuchen, die du zurückerhältst. Die Zauberplätze dürfen zusammen nur eine Gradzahl besitzen, die höchstens der Hälfte deiner Magierstufe entspricht (aufgerundet), und keiner der Zauberplätze darf den 6. Grad oder höher aufweisen. Beispiel: Wenn du ein Magier der 4. Stufe bist, kannst du Zauberplätze im Wert von zwei Graden zurückerhalten: entweder einen Zauberplatz des 2. oder zwei Zauberplätze des 1. Grades.\n\nDu kannst dieses Merkmal erst nach einer langen Rast erneut verwenden."
+  },
+  "srd-2024-class-wizard-core-1-arcane-recovery": {
+    "name": "Ritual-Adept",
+    "description": "Du kannst jeden Zauber als Ritual wirken, sofern er als Ritual gekennzeichnet und in deinem Zauberbuch enthalten ist. Ein solcher Zauber muss nicht vorbereitet sein, doch du musst ihn aus dem Buch lesen, um ihn auf diese Art zu wirken."
+  },
+  "srd-2024-class-wizard-core-2-scholar": {
+    "name": "Gelehrter",
+    "description": "Beim Studium der Magie hast du dich noch auf ein weiteres Fachgebiet spezialisiert. Wähle eine der folgenden Fertigkeiten aus, sofern du Übung darin hast: Arkane Kunde, Geschichte, Heilkunde, Nachforschungen, Naturkunde oder Religion. Du hast Expertise in der ausgewählten Fertigkeit."
+  },
+  "srd-2024-class-wizard-core-3-wizard-subclass": {
+    "name": "Magier-Unterklasse",
+    "description": "Du erhältst eine Magier-Unterklasse deiner Wahl. Die Unterklasse Hervorrufer wird nach der Beschreibung dieser Klasse erläutert. Unterklassen sind Spezialisierungen, die dir auf bestimmten Magierstufen Merkmale gewähren. Du erhältst für den Rest deiner Laufbahn alle Merkmale deiner Unterklasse, die zu deiner aktuellen Magierstufe oder den niedrigeren Stufen gehören."
+  },
+  "srd-2024-class-wizard-core-4-ability-score-improvement": {
+    "name": "Attributswerterhöhung",
+    "description": "Du erhältst das Talent Attributswerterhöhung (siehe [[05_Talente/Feats_Each/Attributswerterhöhung|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Du erhältst dieses Merkmal auf der 8., 12. und 16. Magierstufe erneut."
+  },
+  "srd-2024-class-wizard-core-5-memorize-spell": {
+    "name": "Zauber auswendig lernen",
+    "description": "Wann immer du eine kurze Rast beendest, kannst du dein Zauberbuch studieren und einen der Magierzauber ab dem 1. Grad, die du für dein Merkmal Zauberwirken vorbereitet hast, durch einen anderen Zauber ab dem 1. Grad aus dem Buch ersetzen."
+  },
+  "srd-2024-class-wizard-core-18-spell-mastery": {
+    "name": "Zaubermeisterschaft",
+    "description": "Du beherrschst bestimmte Zauber derart meisterhaft, dass du sie beliebig oft wirken kannst. Wähle einen Zauber des 1. und einen Zauber des 2. Grades aus deinem Zauberbuch aus, die den Zeitaufwand von einer Aktion haben. Du hast diese Zauber stets vorbereitet und kannst sie auf dem niedrigsten Grad wirken, ohne einen Zauberplatz zu verbrauchen. Um einen der Zauber auf einem höheren Grad zu wirken, musst du einen Zauberplatz verbrauchen."
+  },
+  "srd-2024-class-wizard-core-19-epic-boon": {
+    "name": "Epische Gabe",
+    "description": "Du erhältst ein Epische-Gabe-Talent (siehe [[05_Talente/Feats_All+Header#Epische-Gabe-Talente|Talente]]) oder ein anderes Talent deiner Wahl, für das du qualifiziert bist. Gabe der Zaubererinnerung wird empfohlen."
+  },
+  "srd-2024-class-wizard-core-20-signature-spells": {
+    "name": "Lieblingszauber",
+    "description": "Wähle zwei Zauber des 3. Grades aus deinem Zauberbuch als Lieblingszauber aus. Du hast diese Zauber stets vorbereitet und kannst sie jeweils einmal auf dem 3. Grad wirken, ohne einen Zauberplatz zu verbrauchen. Du kannst dies erst nach einer kurzen oder langen Rast erneut tun. Um einen der Zauber auf einem höheren Grad zu wirken, musst du einen Zauberplatz verbrauchen."
+  },
+  "srd-2024-subclass-wizard-evocation-3-evocation-savant": {
+    "name": "Gelehrter der Hervorrufungsmagie",
+    "description": "Wähle zwei Magierzauber der Schule der Hervorrufungsmagie des höchstens 2. Grades aus und füge sie gratis deinem Zauberbuch hinzu.\n\nWann immer außerdem ein neuer Zauberplatzgrad in dieser Klasse verfügbar wird, kannst du deinem Zauberbuch gratis einen Magierzauber der Schule der Hervorrufungsmagie hinzufügen. Der Grad des ausgewählten Zaubers muss dem der verfügbaren Zauberplätze entsprechen."
+  },
+  "srd-2024-subclass-wizard-evocation-3-potent-cantrip": {
+    "name": "Kraftvoller Zaubertrick",
+    "description": "Deine Schadenszaubertricks wirken auch auf Kreaturen, welche die volle Wucht deiner magischen Angriffe zu vermeiden versuchen. Wenn du einen Zaubertrick auf eine Kreatur wirkst und dein Angriffswurf misslingt, oder wenn das Ziel einen Rettungswurf gegen den Zaubertrick besteht, erleidet das Ziel dennoch die Hälfte des Schadens (sofern der Zaubertrick Schaden bewirkt), jedoch keine zusätzlichen Effekte."
+  },
+  "srd-2024-subclass-wizard-evocation-6-sculpt-spells": {
+    "name": "Zauber formen",
+    "description": "Du kannst innerhalb der Effekte deiner Hervorrufungszauber Bereiche von relativer Sicherheit erzeugen. Wenn du einen Hervorrufungszauber wirkst, der andere Kreaturen betrifft, die du sehen kannst, so kannst du eine Anzahl dieser Kreaturen in Höhe von 1 plus Zaubergrad auswählen. Die ausgewählten Kreaturen bestehen ihren Rettungswurf gegen deinen Zauber automatisch und erleiden keinen Schaden, wenn sie normalerweise die Hälfte des Schadens erleiden würden."
+  },
+  "srd-2024-subclass-wizard-evocation-10-empowered-evocation": {
+    "name": "Mächtige Hervorrufung",
+    "description": "Wann immer du einen Magierzauber von der Schule der Hervorrufungsmagie wirkst, kannst du dem Schadenswurf des Zaubers deinen Intelligenzmodifikator hinzufügen."
+  },
+  "srd-2024-subclass-wizard-evocation-14-overchannel": {
+    "name": "Überladen",
+    "description": "Du kannst die Macht deiner Zauber erhöhen. Wenn du einen Magierzauber mit einem Zauberplatz des 1. bis 5. Grades wirkst und der Zauber Schaden bewirkt, kannst du mit diesem Zauber in dem Zug, in dem du ihn wirkst, maximalen Schaden bewirken.\n\nBeim ersten Mal hat dies keine nachteiligen Effekte für dich. Wenn du dieses Merkmal jedoch vor Ende einer langen Rast erneut einsetzt, erleidest du sofort danach 2W12 nekrotischen Schaden pro Zauberplatzgrad. Dieser Schaden ignoriert Resistenzen und Immunitäten.\n\nWann immer du dieses Merkmal vor Ende einer langen Rast erneut verwendest, erhöht sich der nekrotische Schaden um weitere 1W12 pro Zaubergrad."
+  }
+}

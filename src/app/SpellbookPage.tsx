@@ -59,16 +59,16 @@ export function SpellbookPage({
     const englishHigherLevel = spell.higherLevel
     return {
       ...knownSpell,
-      name: language === 'de' ? (localized?.name ?? '') : spell.name,
+      name: language === 'de' ? (localized?.name ?? spell.name) : spell.name,
       contentSourceId: spell.contentSourceId,
       legacy: spell.legacy,
       spellLevel: spell.level,
-      school: language === 'de' ? (localized?.school ?? '') : spell.school,
-      castingTime: language === 'de' ? (localized?.castingTime ?? '') : spell.castingTime,
-      range: language === 'de' ? (localized?.range ?? '') : spell.range,
-      components: language === 'de' ? (localized?.components ?? '') : spell.components,
-      duration: language === 'de' ? (localized?.duration ?? '') : spell.duration,
-      description: language === 'de' ? (localized?.description ?? '') : spell.description,
+      school: language === 'de' ? (localized?.school ?? spell.school) : spell.school,
+      castingTime: language === 'de' ? (localized?.castingTime ?? spell.castingTime) : spell.castingTime,
+      range: language === 'de' ? (localized?.range ?? spell.range) : spell.range,
+      components: language === 'de' ? (localized?.components ?? spell.components) : spell.components,
+      duration: language === 'de' ? (localized?.duration ?? spell.duration) : spell.duration,
+      description: language === 'de' ? (localized?.description ?? spell.description) : spell.description,
       higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
       higherLevelLabel: language === 'de' ? localized?.higherLevelLabel : spell.higherLevelLabel,
     }

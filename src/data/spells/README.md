@@ -2,7 +2,7 @@
 
 Supplemental spell datasets live in this directory. The edition-specific SRD spell records are kept separately under `../srd/`; application-only mechanics and compatibility metadata are stored here and joined by canonical spell ID.
 
-- `../srd/2014/spells.json`, `../srd/2024/spells.json`: SRD spell records, kept free of extracted application metadata.
+- `../srd/2014/spells.json`, `../srd/2024/spells.json`: English SRD spell records, free of locale and application metadata. Official German SRD spell text is joined by ID from `../srd/<ruleset>/locales/de/spells.json`.
 - `spells-additional.json`: supplemental spell records.
 - `spell-mechanics.json`: structured damage, damage modifiers, conditions, timing, and scaling keyed by spell ID.
 - `spell-availability.json`: ruleset and class availability exceptions keyed by spell ID.

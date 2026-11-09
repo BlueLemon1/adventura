@@ -75,9 +75,6 @@ function validateSpellDataset(records, ruleset, sourceIds, sourceRulesets) {
     if (declaredRulesets && !declaredRulesets[ruleset]) {
       errors.push(`${location}: spell is not declared for ruleset ${ruleset}`)
     }
-    if (!spell.localized?.name?.trim() || !spell.localized?.description?.trim()) {
-      errors.push(`${location}: missing German spell name or description`)
-    }
   }
 }
 
@@ -332,6 +329,8 @@ const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
 for (const ruleset of ['2014', '2024']) {
   const srd = readJson(`src/data/srd/${ruleset}/class-features.json`)
   const srdSpells = readJson(`src/data/srd/${ruleset}/spells.json`)
+  const srdSpellTranslations = readJson(`src/data/srd/${ruleset}/locales/de/spells.json`)
+  const srdFeatureTranslations = readJson(`src/data/srd/${ruleset}/locales/de/class-features.json`)
   const supplemental = additionalClassFeatures.filter((feature) =>
     feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy',
   )
@@ -355,6 +354,41 @@ for (const ruleset of ['2014', '2024']) {
   }
   for (const feature of srd) {
     if (feature.contentSourceId !== expectedSrdSource) errors.push(`${ruleset}/${feature.id}: SRD feature has unexpected source ${feature.contentSourceId}`)
+  }
+
+  const validateLocaleReferences = (records, translations, kind) => {
+    const sourceIds = new Set(records.map((record) => record.id))
+    for (const [id, text] of Object.entries(translations)) {
+      if (!sourceIds.has(id)) errors.push(`${ruleset}/locales/de/${kind}/${id}: translation references unknown SRD ID`)
+      if (!text || typeof text !== 'object' || Array.isArray(text)) {
+        errors.push(`${ruleset}/locales/de/${kind}/${id}: translation must be an object`)
+      }
+    }
+  }
+  validateLocaleReferences(srdSpells, srdSpellTranslations, 'spells')
+  validateLocaleReferences(srd, srdFeatureTranslations, 'class-features')
+  for (const spell of srdSpells) {
+    const translation = srdSpellTranslations[spell.id]
+    if (!translation?.name?.trim() || !translation?.description?.trim()) {
+      errors.push(`${ruleset}/locales/de/spells/${spell.id}: missing official German name or description`)
+    }
+    if (translation && Object.keys(translation).some((key) => ![
+      'name', 'school', 'castingTime', 'range', 'components', 'duration', 'description',
+      'higherLevel', 'higherLevelLabel',
+    ].includes(key))) {
+      errors.push(`${ruleset}/locales/de/spells/${spell.id}: unknown localized spell field`)
+    }
+    if ('localized' in spell) errors.push(`${ruleset}/${spell.id}: locale data must live outside the SRD source record`)
+  }
+  for (const feature of srd) {
+    if (Object.keys(feature.names ?? {}).some((locale) => locale !== 'en') ||
+        Object.keys(feature.descriptions ?? {}).some((locale) => locale !== 'en')) {
+      errors.push(`${ruleset}/${feature.id}: SRD source feature records must contain English text only`)
+    }
+    const translation = srdFeatureTranslations[feature.id]
+    if (translation && Object.keys(translation).some((key) => !['name', 'description'].includes(key))) {
+      errors.push(`${ruleset}/locales/de/class-features/${feature.id}: unknown localized feature field`)
+    }
   }
 
   const duplicateSpells = findPriorityCollisions(srdSpells, supplementalSpells, spellIdentity)
@@ -437,9 +471,12 @@ console.log(
 )
 
 const incomplete2014Translations = [
-  ...readJson('src/data/srd/2014/class-features.json'),
-  ...additionalClassFeatures.filter((feature) => feature.rulesets?.['2014'] === true),
-].filter((feature) => !feature.names?.de?.trim() || !feature.descriptions?.de?.trim())
+  ...readJson('src/data/srd/2014/class-features.json').filter((feature) => {
+    const translation = readJson('src/data/srd/2014/locales/de/class-features.json')[feature.id]
+    return !translation?.name?.trim() || !translation?.description?.trim()
+  }),
+  ...additionalClassFeatures.filter((feature) => feature.rulesets?.['2014'] === true && (!feature.names?.de?.trim() || !feature.descriptions?.de?.trim())),
+]
 if (incomplete2014Translations.length) {
   console.warn(
     `2014: ${incomplete2014Translations.length} features use English fallback for missing German text`,

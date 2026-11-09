@@ -1,6 +1,8 @@
 import type { Character } from './character'
 import classFeatures2014 from '../data/srd/2014/class-features.json'
 import classFeatures2024 from '../data/srd/2024/class-features.json'
+import classFeatureTranslations2014 from '../data/srd/2014/locales/de/class-features.json'
+import classFeatureTranslations2024 from '../data/srd/2024/locales/de/class-features.json'
 import additionalClassFeatureDefinitions from '../data/classes/features.json'
 import classProgressions from '../data/classes/progressions.json'
 import {
@@ -57,13 +59,36 @@ const ADDITIONAL_CLASS_FEATURES = {
   ),
 }
 
+function attachOfficialTranslations(
+  records: ClassFeatureRecord[],
+  translations: Record<string, { name?: string; description?: string }>,
+): ClassFeatureRecord[] {
+  return records.map((feature) => {
+    const translation = translations[feature.id]
+    return {
+      ...feature,
+      names: { en: feature.names.en, ...(translation?.name ? { de: translation.name } : {}) },
+      descriptions: {
+        en: feature.descriptions.en,
+        ...(translation?.description ? { de: translation.description } : {}),
+      },
+    }
+  })
+}
+
 const CLASS_FEATURE_CATALOGS: Record<Dnd5eRuleset, ClassFeatureRecord[]> = {
   '2014': mergeClassFeatureRecords(
-    classFeatures2014 as unknown as ClassFeatureRecord[],
+    attachOfficialTranslations(
+      classFeatures2014 as unknown as ClassFeatureRecord[],
+      classFeatureTranslations2014 as Record<string, { name?: string; description?: string }>,
+    ),
     ADDITIONAL_CLASS_FEATURES['2014'],
   ),
   '2024': mergeClassFeatureRecords(
-    classFeatures2024 as unknown as ClassFeatureRecord[],
+    attachOfficialTranslations(
+      classFeatures2024 as unknown as ClassFeatureRecord[],
+      classFeatureTranslations2024 as Record<string, { name?: string; description?: string }>,
+    ),
     ADDITIONAL_CLASS_FEATURES['2024'],
   ),
 }
