@@ -37,7 +37,17 @@
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "bludgeoning"
+      "type": "bludgeoning",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 1,
+          "startLevel": 2,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "xge-2014-chaos-bolt": [
@@ -144,7 +154,27 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "psychic"
+      "type": "psychic",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d6"
+            },
+            {
+              "level": 11,
+              "dice": "1d6"
+            },
+            {
+              "level": 17,
+              "dice": "1d6"
+            }
+          ]
+        }
+      ]
     }
   ],
   "tce-2014-tashas-caustic-brew": [
@@ -265,6 +295,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -291,6 +322,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -317,6 +349,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -350,6 +383,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -376,6 +410,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -759,6 +794,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -810,7 +846,17 @@
     {
       "dice": "2d6",
       "average": 7,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 1,
+          "startLevel": 2,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "scc-2021-kinetic-jaunt": [
@@ -841,7 +887,17 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "fire"
+      "type": "fire",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "ftd-2021-draconic-transformation": [
@@ -947,7 +1003,17 @@
     {
       "dice": "6d6",
       "average": 21,
-      "type": "force"
+      "type": "force",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "egw-2020-ravenous-void": [
@@ -965,6 +1031,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1016,13 +1083,53 @@
       "dice": "1d8",
       "average": 4.5,
       "type": "necrotic",
-      "condition": "Target has all its hit points"
+      "condition": "Target has all its hit points",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     },
     {
       "dice": "1d12",
       "average": 6.5,
       "type": "necrotic",
-      "condition": "Target is missing any hit points"
+      "condition": "Target is missing any hit points",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d12"
+            },
+            {
+              "level": 11,
+              "dice": "1d12"
+            },
+            {
+              "level": 17,
+              "dice": "1d12"
+            }
+          ]
+        }
+      ]
     }
   ],
   "phb-2024-word-of-radiance": [
@@ -1259,6 +1366,12 @@
           "mode": "add-dice"
         }
       ]
+    },
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "lightning",
+      "condition": "Additional damage when cast outdoors in stormy conditions"
     }
   ],
   "srd-2014-chain-lightning": [
@@ -1286,6 +1399,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1458,6 +1572,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1658,7 +1773,17 @@
     {
       "dice": "2d8",
       "average": 9,
-      "type": "bludgeoning"
+      "type": "bludgeoning",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 5,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "4d6",
@@ -1747,7 +1872,17 @@
     {
       "dice": "2d10",
       "average": 11,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 2,
+          "startLevel": 3,
+          "interval": 1,
+          "dice": "1d10",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2014-phantasmal-killer": [
@@ -1775,6 +1910,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1855,6 +1991,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1881,6 +2018,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1907,6 +2045,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1946,7 +2085,17 @@
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "thunder"
+      "type": "thunder",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 2,
+          "startLevel": 3,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2014-shocking-grasp": [
@@ -1957,6 +2106,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -1986,12 +2136,32 @@
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "necrotic"
+      "type": "necrotic",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2014-storm-of-vengeance": [
@@ -2130,24 +2300,64 @@
     {
       "dice": "10d6",
       "average": 35,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "2d6",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "5d6",
       "average": 17.5,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2014-wall-of-thorns": [
     {
       "dice": "7d8",
       "average": 31.5,
-      "type": "piercing"
+      "type": "piercing",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "7d8",
       "average": 31.5,
-      "type": "slashing"
+      "type": "slashing",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2014-web": [
@@ -2214,7 +2424,27 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "acid"
+      "type": "acid",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d6"
+            },
+            {
+              "level": 11,
+              "dice": "1d6"
+            },
+            {
+              "level": 17,
+              "dice": "1d6"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-alter-self": [
@@ -2320,7 +2550,27 @@
     {
       "dice": "1d10",
       "average": 5.5,
-      "type": "necrotic"
+      "type": "necrotic",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d10"
+            },
+            {
+              "level": 11,
+              "dice": "1d10"
+            },
+            {
+              "level": 17,
+              "dice": "1d10"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-chromatic-orb": [
@@ -2427,11 +2677,31 @@
   "srd-2024-conjure-elemental": [
     {
       "dice": "8d8",
-      "average": 36
+      "average": 36,
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "4d8",
-      "average": 18
+      "average": 18,
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-conjure-minor-elementals": [
@@ -2626,7 +2896,27 @@
     {
       "dice": "1d10",
       "average": 5.5,
-      "type": "fire"
+      "type": "fire",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d10"
+            },
+            {
+              "level": 11,
+              "dice": "1d10"
+            },
+            {
+              "level": 17,
+              "dice": "1d10"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-fire-shield": [
@@ -2782,7 +3072,17 @@
     {
       "dice": "2d6",
       "average": 7,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 1,
+          "startLevel": 2,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-ice-storm": [
@@ -2936,7 +3236,27 @@
     {
       "dice": "1d12",
       "average": 6.5,
-      "type": "poison"
+      "type": "poison",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d12"
+            },
+            {
+              "level": 11,
+              "dice": "1d12"
+            },
+            {
+              "level": 17,
+              "dice": "1d12"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-power-word-kill": [
@@ -3004,14 +3324,54 @@
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "fire"
+      "type": "fire",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-ray-of-frost": [
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-ray-of-sickness": [
@@ -3035,7 +3395,27 @@
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-scorching-ray": [
@@ -3100,13 +3480,57 @@
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "lightning"
+      "type": "lightning",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-sorcerous-burst": [
     {
       "dice": "1d8",
-      "average": 4.5
+      "average": 4.5,
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ],
+      "diceRules": {
+        "explodeOn": 8,
+        "maxAdditionalDice": "spellcasting-ability"
+      }
     }
   ],
   "srd-2024-spike-growth": [
@@ -3120,19 +3544,59 @@
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "3d8",
       "average": 13.5,
-      "type": "necrotic"
+      "type": "necrotic",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-starry-wisp": [
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d8"
+            },
+            {
+              "level": 11,
+              "dice": "1d8"
+            },
+            {
+              "level": 17,
+              "dice": "1d8"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-storm-of-vengeance": [
@@ -3240,14 +3704,44 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "psychic"
+      "type": "psychic",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d6"
+            },
+            {
+              "level": 11,
+              "dice": "1d6"
+            },
+            {
+              "level": 17,
+              "dice": "1d6"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-vitriolic-sphere": [
     {
       "dice": "10d4",
       "average": 25,
-      "type": "acid"
+      "type": "acid",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 5,
+          "interval": 1,
+          "dice": "2d4",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "5d4",
@@ -3276,12 +3770,32 @@
     {
       "dice": "10d6",
       "average": 35,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "2d6",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "5d6",
       "average": 17.5,
-      "type": "cold"
+      "type": "cold",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-wall-of-thorns": [
@@ -3631,7 +4145,17 @@
       "average": 4.5,
       "type": "force",
       "flatBonus": "spellcasting-ability",
-      "condition": "On a hit"
+      "condition": "On a hit",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 2,
+          "startLevel": 3,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "xge-2014-storm-sphere": [
@@ -3657,6 +4181,7 @@
       "scaling": [
         {
           "kind": "character-level",
+          "mode": "add-dice",
           "thresholds": [
             {
               "level": 5,
@@ -3678,7 +4203,27 @@
       "dice": "1d12",
       "average": 6.5,
       "type": "necrotic",
-      "condition": "Target is missing any hit points"
+      "condition": "Target is missing any hit points",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d12"
+            },
+            {
+              "level": 11,
+              "dice": "1d12"
+            },
+            {
+              "level": 17,
+              "dice": "1d12"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
