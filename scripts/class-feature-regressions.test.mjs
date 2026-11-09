@@ -5,79 +5,42 @@ import { readFileSync } from 'node:fs'
 const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 
-function extractSubclassOptions(source, ruleset, nextRuleset) {
-  const start = source.indexOf("'" + ruleset + "': {")
-  const endMarker = nextRuleset ? "\n  },\n  '" + nextRuleset + "':" : '\n  },\n}'
-  const end = source.indexOf(endMarker, start)
-  assert.notEqual(start, -1, 'missing ' + ruleset + ' options block')
-  assert.notEqual(end, -1, 'unterminated ' + ruleset + ' options block')
-
-  const block = source.slice(start, end)
-  const matches = [...block.matchAll(/^\s{4}([a-z_]+): \[/gm)]
-  return Object.fromEntries(
-    matches.map((match, index) => {
-      const section = block.slice(match.index, matches[index + 1]?.index ?? block.length)
-      return [match[1], [...section.matchAll(/\{ value: '([^']+)'/g)].map((item) => item[1])]
-    }),
-  )
-}
-
-const classSource = readText('../src/domain/classes.ts')
 const featureSource = readText('../src/domain/classFeatures.ts')
-const options2014 = extractSubclassOptions(classSource, '2014', '2024')
-const options2024Native = extractSubclassOptions(classSource, '2024')
-const replacements = {
-  barbarian: ['totemwarrior'],
-  monk: ['four_elements'],
-  sorcerer: ['aberrantmind'],
-  wizard: ['abjuration', 'divination', 'illusion'],
-}
-const options2024 = Object.fromEntries(
-  Object.entries(options2024Native).map(([classId, current]) => {
-    const replaced = new Set(replacements[classId] ?? [])
-    const legacy = (options2014[classId] ?? []).filter(
-      (id) => !current.includes(id) && !replaced.has(id),
-    )
-    return [classId, [...current, ...legacy]]
-  }),
-)
+const classes = readJson('../src/data/classes-additional.json')
+const features = readJson('../src/data/class-features-additional.json')
 
-test('2014 and 2024 subclass catalogs stay distinct, with compatible legacy choices in 2024', () => {
-  assert.ok(options2014.sorcerer.includes('shadowmagic'))
-  assert.ok(options2024.sorcerer.includes('shadowmagic'))
-  assert.ok(options2014.sorcerer.includes('aberrantmind'))
-  assert.ok(!options2024.sorcerer.includes('aberrantmind'))
-  assert.ok(options2024.sorcerer.includes('aberrant'))
-  assert.ok(options2024.wizard.includes('conjuration'))
-  assert.ok(!options2024.wizard.includes('abjuration'))
-  assert.ok(options2014.wizard.includes('abjuration'))
+function subclassOptions(ruleset) {
+  return classes.filter((record) => record.type === 'subclass' &&
+    (record.rulesets?.[ruleset] === true || record.rulesets?.[ruleset] === 'legacy'))
+}
+
+test('class and subclass availability is declared in the shared catalog', () => {
+  assert.ok(classes.some((record) => record.type === 'class' && record.classId === 'artificer'))
+  assert.ok(subclassOptions('2014').some((record) => record.classId === 'sorcerer' && record.subclassId === 'shadowmagic'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'shadowmagic' && record.rulesets['2024'] === 'legacy'))
+  assert.ok(subclassOptions('2014').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrantmind'))
+  assert.ok(!subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrantmind'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrant'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'wizard' && record.subclassId === 'conjuration'))
+  assert.ok(!subclassOptions('2024').some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration'))
+  assert.ok(classes.some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration' && record.rulesets['2024'] === 'abjurer'))
 })
 
-test('all selectable subclasses have feature records in their own ruleset catalog', () => {
+test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...readJson('../src/data/class-features-supplemental-' + ruleset + '.json'),
+      ...features.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
     ]
-    for (const [classId, subclassIds] of Object.entries(
-      ruleset === '2014' ? options2014 : options2024,
-    )) {
-      for (const subclassId of subclassIds) {
-        assert.ok(
-          records.some(
-            (feature) => feature.classId === classId && feature.subclassId === subclassId,
-          ),
-          ruleset + ': missing feature data for ' + classId + '/' + subclassId,
-        )
-      }
+    for (const subclass of subclassOptions(ruleset)) {
+      assert.ok(records.some((feature) => feature.classId === subclass.classId && feature.subclassId === subclass.subclassId),
+        ruleset + ': missing feature data for ' + subclass.classId + '/' + subclass.subclassId)
     }
   }
 })
 
 test('2024 legacy feature copies keep their source and start no earlier than subclass level 3', () => {
-  const legacy = readJson('../src/data/class-features-supplemental-2024.json').filter((feature) =>
-    feature.id.startsWith('2024-legacy-'),
-  )
+  const legacy = features.filter((feature) => feature.rulesets?.['2024'] === 'legacy')
   assert.ok(legacy.length > 0)
   assert.ok(legacy.every((feature) => feature.level >= 3))
   assert.ok(legacy.every((feature) => feature.contentSourceId && feature.sourceReference))
