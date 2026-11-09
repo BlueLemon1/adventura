@@ -91,7 +91,6 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
     if (ids.has(feature.id)) errors.push(`${location}: duplicate feature ID`)
     ids.add(feature.id)
 
-    if (feature.ruleset !== ruleset) errors.push(`${location}: wrong ruleset`)
     if (feature.rulesets?.[ruleset] !== true && feature.rulesets?.[ruleset] !== 'legacy') {
       errors.push(`${location}: feature is not explicitly available for ${ruleset}`)
     }
