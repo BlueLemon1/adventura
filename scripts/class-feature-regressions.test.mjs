@@ -26,6 +26,14 @@ test('class and subclass availability is declared in the shared catalog', () => 
   assert.ok(classes.some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration' && record.rulesets['2024'] === 'abjurer'))
 })
 
+test('legacy and replaced subclasses propagate availability to their feature records', () => {
+  const feature = (id) => additionalFeatures.find((record) => record.id === id)
+  assert.equal(feature('2014-barbarian-ancestralguardian-ancestral-protectors')?.rulesets?.['2024'], 'legacy')
+  assert.equal(feature('2014-barbarian-totemwarrior-totem-spirit')?.rulesets?.['2024'], 'wildheart')
+  assert.equal(feature('2014-sorcerer-aberrantmind-psionic-spells')?.rulesets?.['2024'], 'aberrant')
+  assert.equal(feature('2014-wizard-abjuration-arcane-ward')?.rulesets?.['2024'], 'abjurer')
+})
+
 test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
