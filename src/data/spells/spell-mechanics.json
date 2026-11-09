@@ -2548,7 +2548,17 @@
     {
       "dice": "5d8",
       "average": 22.5,
-      "type": "force"
+      "type": "force",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "2d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "4d6",
@@ -2960,7 +2970,27 @@
     {
       "dice": "1d10",
       "average": 5.5,
-      "type": "force"
+      "type": "force",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "add-instance",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d10"
+            },
+            {
+              "level": 11,
+              "dice": "1d10"
+            },
+            {
+              "level": 17,
+              "dice": "1d10"
+            }
+          ]
+        }
+      ]
     }
   ],
   "srd-2024-enlarge-reduce": [
@@ -3578,7 +3608,17 @@
     {
       "dice": "2d6",
       "average": 7,
-      "type": "fire"
+      "type": "fire",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 2,
+          "startLevel": 3,
+          "interval": 1,
+          "dice": "2d6",
+          "mode": "add-instance"
+        }
+      ]
     }
   ],
   "srd-2024-searing-smite": [
@@ -4538,13 +4578,33 @@
         "base": 3,
         "spellSlotLevel": true
       },
-      "condition": "Poison Jab"
+      "condition": "Poison Jab",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 6,
+          "interval": 2,
+          "dice": "1d6",
+          "mode": "add-instance"
+        }
+      ]
     },
     {
       "dice": "1d4",
       "average": 2.5,
       "type": "poison",
-      "condition": "Poison Jab"
+      "condition": "Poison Jab",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 6,
+          "interval": 2,
+          "dice": "1d4",
+          "mode": "add-instance"
+        }
+      ]
     },
     {
       "dice": "1d10",
@@ -4554,7 +4614,17 @@
         "base": 3,
         "spellSlotLevel": true
       },
-      "condition": "Web Bolt; Spider form"
+      "condition": "Web Bolt; Spider form",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 6,
+          "interval": 2,
+          "dice": "1d10",
+          "mode": "add-instance"
+        }
+      ]
     }
   ],
   "srd-2024-summon-dragon": [
