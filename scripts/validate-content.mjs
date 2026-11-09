@@ -135,6 +135,7 @@ const additionalSpellRecords = readJson('src/data/spells-additional.json')
 const srdSpellRecords = [readJson('src/data/spells-2014.json'), readJson('src/data/spells-2024.json')].flat()
 const spellMechanics = readJson('src/data/spell-mechanics.json')
 const spellAvailability = readJson('src/data/spell-availability.json')
+const additionalSpellIds = new Set(additionalSpellRecords.map((spell) => spell.id))
 const knownSpellIds = new Set([...additionalSpellRecords, ...srdSpellRecords].map((spell) => spell.id))
 for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
   if (!knownSpellIds.has(spellId)) errors.push(`spell-mechanics/${spellId}: unknown spell ID`)
