@@ -87,23 +87,18 @@ function validateSpellDataset(records, ruleset, sourceIds, sourceRulesets) {
     }
 
     const declaredRulesets = spell.rulesets
-    if (
-      declaredRulesets &&
-      (!Array.isArray(declaredRulesets) ||
-        declaredRulesets.length === 0 ||
-        declaredRulesets.some((value) => !['2014', '2024'].includes(value)))
-    ) {
+    if (declaredRulesets && (typeof declaredRulesets !== 'object' || Array.isArray(declaredRulesets))) {
       errors.push(`${location}: invalid rulesets declaration`)
     }
     const sourceRuleset = sourceRulesets.get(spell.contentSourceId)
     if (
       sourceRuleset &&
       sourceRuleset !== ruleset &&
-      !declaredRulesets?.includes(ruleset)
+      !declaredRulesets?.[ruleset]
     ) {
       errors.push(`${location}: source belongs to ${sourceRuleset} but is not explicitly shared with ${ruleset}`)
     }
-    if (declaredRulesets && !declaredRulesets.includes(ruleset)) {
+    if (declaredRulesets && !declaredRulesets[ruleset]) {
       errors.push(`${location}: spell is not declared for ruleset ${ruleset}`)
     }
     if (!spell.localized?.name?.trim() || !spell.localized?.description?.trim()) {
@@ -168,47 +163,31 @@ const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const additionalSpellRecords = readJson('src/data/spells-additional.json')
-const spellCompatibilityManifest = readJson('src/data/spell-compatibility-2024.json')
-const compatibilityEntries = spellCompatibilityManifest.entries
-const compatibilityBySpellId = new Map(
-  compatibilityEntries.map((entry) => [entry.spellId, entry]),
-)
 const additionalSpellsById = new Map(additionalSpellRecords.map((spell) => [spell.id, spell]))
-if (compatibilityBySpellId.size !== compatibilityEntries.length) {
-  errors.push('2024 spell compatibility manifest contains duplicate spell IDs')
-}
 for (const spell of additionalSpellRecords) {
-  if (!compatibilityBySpellId.has(spell.id)) {
-    errors.push(`2024 spell compatibility manifest is missing ${spell.id}`)
+  if (!spell.rulesets || typeof spell.rulesets !== 'object' || Array.isArray(spell.rulesets)) {
+    errors.push(`2024/${spell.id}: rulesets must be an object keyed by ruleset`)
+    continue
   }
-}
-for (const entry of compatibilityEntries) {
-  if (!['legacy', 'shared', 'replaced', 'new'].includes(entry.status)) {
-    errors.push(`2024/${entry.spellId}: invalid compatibility status ${entry.status}`)
-  }
-  if (!additionalSpellsById.has(entry.spellId) && !entry.spellId.startsWith('srd-2014-')) {
-    errors.push(`2024/${entry.spellId}: compatibility entry has no source spell`)
-  }
-}
-const phb2024UpdatedSupplementSpellNames = new Set(
-  spellCompatibilityManifest.phb2024UpdatedSupplementSpellNames.map(normalizeContentName),
-)
-if (!spellCompatibilityManifest.sourceUrl?.includes('dndbeyond.com/posts/1810-')) {
-  errors.push('2024 spell compatibility manifest must cite the official PHB 2024 update source')
-}
-for (const spell of additionalSpellRecords) {
-  const entry = compatibilityBySpellId.get(spell.id)
-  const appearsInPhb2024 = phb2024UpdatedSupplementSpellNames.has(normalizeContentName(spell.englishName ?? spell.name))
-  if (sourceRulesets.get(spell.contentSourceId) === '2014' && appearsInPhb2024 && entry?.status !== 'replaced') {
-    errors.push(`2024/${spell.id}: PHB 2024 spell must not be classified as Legacy or shared`)
-  }
-  if (sourceRulesets.get(spell.contentSourceId) === '2014' && entry?.replacementSource === 'phb-2024') {
-    if (!appearsInPhb2024 || entry.replacementCategory !== 'new') {
-      errors.push(`2024/${spell.id}: invalid PHB 2024 replacement metadata`)
+  for (const [ruleset, availability] of Object.entries(spell.rulesets)) {
+    if (!['2014', '2024'].includes(ruleset)) {
+      errors.push(`2024/${spell.id}: unknown ruleset ${ruleset}`)
+    }
+    if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') {
+      errors.push(`2024/${spell.id}: invalid availability value for ${ruleset}`)
+    }
+    if (availability === 'legacy' && ruleset !== '2024') {
+      errors.push(`2024/${spell.id}: Legacy availability is only valid for 2024`)
+    }
+    if (typeof availability === 'string' && availability !== 'legacy' && ruleset !== '2024') {
+      errors.push(`2024/${spell.id}: replacement IDs are only valid for 2024`)
     }
   }
-  if (sourceRulesets.get(spell.contentSourceId) === '2014' && appearsInPhb2024 && entry?.replacementSource !== 'phb-2024') {
-    errors.push(`2024/${spell.id}: missing official PHB 2024 replacement source`)
+  if (!spell.rulesets['2014'] && sourceRulesets.get(spell.contentSourceId) === '2014') {
+    errors.push(`2024/${spell.id}: 2014 source spell must remain available in 2014`)
+  }
+  if (spell.rulesets['2024'] === 'legacy' && spell.rulesets['2014'] !== true) {
+    errors.push(`2024/${spell.id}: Legacy spell must also be available in 2014`)
   }
 }
 const options = {
@@ -278,14 +257,14 @@ for (const ruleset of ['2014', '2024']) {
   const srdSpells = readJson(`src/data/spells-${ruleset}.json`)
   const supplementalSpells = readJson('src/data/spells-additional.json').filter((spell) =>
     spell.rulesets
-      ? spell.rulesets.includes(ruleset)
+      ? spell.rulesets[ruleset] === true || spell.rulesets[ruleset] === 'legacy'
       : sourceRulesets.get(spell.contentSourceId) === ruleset,
   )
   const spells = [...srdSpells, ...supplementalSpells]
   validateSpellDataset(spells, ruleset, sourceIds, sourceRulesets)
   const legacySpellIds =
     ruleset === '2024'
-      ? compatibilityEntries.filter((entry) => entry.status === 'legacy').map((entry) => entry.spellId)
+      ? additionalSpellRecords.filter((spell) => spell.rulesets?.['2024'] === 'legacy').map((spell) => spell.id)
       : []
   const spellIds = new Set([...spells.map((spell) => spell.id), ...legacySpellIds])
   const allFeatures = [...srd, ...supplemental]
@@ -365,57 +344,27 @@ const spells2024 = [
   ),
 ]
 const legacySpells = additionalSpellRecords.filter(
-  (spell) => compatibilityBySpellId.get(spell.id)?.status === 'legacy',
+  (spell) => spell.rulesets?.['2024'] === 'legacy',
 )
-const legacyIds = new Set(legacySpells.map((spell) => spell.id))
 const legacyNames = new Set(legacySpells.map(normalizeSpellName))
-for (const spell of legacySpells) {
-  if (sourceRulesets.get(spell.contentSourceId) !== '2014' || spell.rulesets?.includes('2024')) {
-    errors.push(`2024/${spell.id}: Legacy spell must be a 2014-only supplement`)
-  }
-}
 for (const spell of spells2024) {
   if (legacyNames.has(normalizeSpellName(spell))) {
     errors.push(`2024/${spell.id}: legacy spell duplicates a current 2024 spell`)
   }
 }
-for (const entry of compatibilityEntries) {
-  const additionalSpell = additionalSpellsById.get(entry.spellId)
-  const srdSpell = spells2014Srd.find((spell) => spell.id === entry.spellId)
-  if (entry.status === 'shared' && (!additionalSpell || !additionalSpell.rulesets?.includes('2024'))) {
-    errors.push(`2024/${entry.spellId}: shared spell must explicitly include ruleset 2024`)
-  }
-  if (entry.status === 'replaced') {
-    if (entry.replacementSpellId && !spells2024.some((spell) => spell.id === entry.replacementSpellId)) {
-      errors.push(`2024/${entry.spellId}: unknown replacement spell ${entry.replacementSpellId}`)
+for (const spell of additionalSpellRecords) {
+  const replacement = spell.rulesets?.['2024']
+  if (typeof replacement === 'string' && replacement !== 'legacy') {
+    if (!spells2024.some((candidate) => candidate.id === replacement)) {
+      errors.push(`2024/${spell.id}: unknown replacement spell ${replacement}`)
     }
-    if (!entry.replacementSpellId && (!entry.replacementName || entry.replacementSource !== 'phb-2024')) {
-      errors.push(`2024/${entry.spellId}: replacement must identify its 2024 PHB successor`)
+    if (spell.rulesets?.['2014'] !== true) {
+      errors.push(`2024/${spell.id}: replaced spell must remain available in 2014`)
     }
-    if (!additionalSpell && !srdSpell) {
-      errors.push(`2024/${entry.spellId}: replaced spell must exist in the 2014 dataset`)
-    }
-    if (entry.spellId.startsWith('srd-2014-')) {
-      if (entry.replacementSource !== 'phb-2024' || entry.replacementCategory !== 'renamed') {
-        errors.push(`2024/${entry.spellId}: renamed SRD replacement must cite the 2024 PHB`)
-      }
-    }
-  }
-}
-for (const spell of spells2014) {
-  const hasSameNameCurrentSpell = spells2024.some(
-    (current) => normalizeSpellName(current) === normalizeSpellName(spell),
-  )
-  const compatibility = compatibilityBySpellId.get(spell.id)
-  if (
-    !hasSameNameCurrentSpell &&
-    !['legacy', 'shared', 'replaced'].includes(compatibility?.status)
-  ) {
-    errors.push(`2024: missing compatibility decision for 2014 spell ${spell.id}`)
   }
 }
 console.log(
-  `2024: ${legacySpells.length} explicitly reviewed Legacy spells from additional data available`,
+  `2024: ${legacySpells.length} explicitly marked Legacy spells from additional data available`,
 )
 
 const incomplete2014Translations = [
