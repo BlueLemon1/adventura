@@ -1386,7 +1386,6 @@
       "dice": "3d10",
       "average": 16.5,
       "type": "lightning",
-      "condition": "Add 1d10 when cast outdoors in stormy conditions",
       "scaling": [
         {
           "kind": "spell-slot",
@@ -1402,7 +1401,7 @@
       "dice": "1d10",
       "average": 5.5,
       "type": "lightning",
-      "condition": "Additional damage when cast outdoors in stormy conditions"
+      "condition": "Only when cast outdoors in stormy conditions"
     }
   ],
   "srd-2014-chain-lightning": [
@@ -2893,7 +2892,15 @@
   "srd-2024-enlarge-reduce": [
     {
       "dice": "1d4",
-      "average": 2.5
+      "average": 2.5,
+      "modifier": "extra",
+      "condition": "Enlarge: attacks with enlarged weapons or Unarmed Strikes"
+    },
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "modifier": "reduced",
+      "condition": "Reduce: attacks with reduced weapons or Unarmed Strikes"
     }
   ],
   "srd-2024-ensnaring-strike": [
