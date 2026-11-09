@@ -164,7 +164,9 @@ test('shared feature definitions are reused across classes while progression occ
       ['bard', 'valor'],
     ].sort(),
   )
-  assert.equal(new Set(progressions.map((record) => record.progressionId)).size, progressions.length)
+  const progressionIds = progressions.map((record) => record.progressionId ?? record.featureId)
+  assert.equal(new Set(progressionIds).size, progressions.length)
+  assert.ok(progressions.every((record) => !record.progressionId || record.progressionId !== record.featureId))
   assert.equal(featureDefinitions.filter((record) => record.id === extraAttackId).length, 1)
   assert.ok(extraAttackProgressions.every((record) => record.contentSourceId && record.sourceReference))
   assert.ok(definitionsById.get(extraAttackId).sources.length >= 2)
