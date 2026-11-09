@@ -191,6 +191,11 @@ const additionalClassFeatures = classProgressions.flatMap((progression) => {
     if (availability !== true && availability !== 'legacy') return []
     return [{
       ...feature,
+      id: progression.progressionId ?? progression.featureId,
+      definitionId: progression.featureId,
+      ...(progression.names ? { names: { ...feature.names, ...progression.names } } : {}),
+      ...(progression.contentSourceId ? { contentSourceId: progression.contentSourceId } : {}),
+      ...(progression.sourceReference ? { sourceReference: progression.sourceReference } : {}),
       classId: progression.classId,
       ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
       featureType: progression.subclassId ? 'subclass' : 'class',
@@ -246,11 +251,16 @@ for (const definition of additionalFeatureDefinitions) {
   if (!definition.names?.en?.trim() || !definition.descriptions?.en?.trim()) errors.push(`features/${definition.id}: missing English name or description`)
 }
 const progressionIds = new Set()
+const usedFeatureIds = new Set()
 for (const progression of classProgressions) {
-  const location = `progressions/${progression.featureId}`
+  const location = `progressions/${progression.progressionId ?? progression.featureId}`
   if (!definitionIds.has(progression.featureId)) errors.push(`${location}: unknown feature definition`)
-  if (progressionIds.has(progression.featureId)) errors.push(`${location}: duplicate progression record`)
-  progressionIds.add(progression.featureId)
+  if (!progression.progressionId?.trim()) errors.push(`${location}: missing progression ID`)
+  if (progressionIds.has(progression.progressionId)) errors.push(`${location}: duplicate progression ID`)
+  progressionIds.add(progression.progressionId)
+  usedFeatureIds.add(progression.featureId)
+  if (progression.contentSourceId && !sourceIds.has(progression.contentSourceId)) errors.push(`${location}: unknown progression source ${progression.contentSourceId}`)
+  if (progression.contentSourceId && sourceRulesets.get(progression.contentSourceId) && !progression.rulesets?.[sourceRulesets.get(progression.contentSourceId)]) errors.push(`${location}: source ${progression.contentSourceId} is not explicitly available for the progression ruleset`)
   if (!classIds.has(progression.classId)) errors.push(`${location}: unknown class ${progression.classId}`)
   if (progression.subclassId && !additionalClassRecords.some((record) => record.type === 'subclass' && record.classId === progression.classId && record.subclassId === progression.subclassId)) {
     errors.push(`${location}: unknown subclass ${progression.subclassId}`)
@@ -273,7 +283,7 @@ for (const progression of classProgressions) {
   }
 }
 for (const definition of additionalFeatureDefinitions) {
-  if (!progressionIds.has(definition.id)) errors.push(`features/${definition.id}: missing progression record`)
+  if (!usedFeatureIds.has(definition.id)) errors.push(`features/${definition.id}: missing progression record`)
 }
 
 const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
