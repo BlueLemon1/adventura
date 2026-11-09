@@ -393,8 +393,8 @@ for (const ruleset of ['2014', '2024']) {
   console.log(`${ruleset}: ${optionCount} selectable subclasses, ${supplemental.length} supplemental feature records, ${supplemental.filter((feature) => feature.grantedSpellIds?.length).length} spell-grant features`)
 }
 
-const spells2014Srd = readJson('src/data/spells/spells-2014.json')
-const spells2024Srd = readJson('src/data/spells/spells-2024.json')
+const spells2014Srd = readJson('src/data/srd/2014/spells.json')
+const spells2024Srd = readJson('src/data/srd/2024/spells.json')
 const spells2014 = [
   ...spells2014Srd,
   ...additionalSpellRecords.filter((spell) =>
