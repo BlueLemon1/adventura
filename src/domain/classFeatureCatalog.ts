@@ -23,7 +23,6 @@ export interface ClassFeatureRecord {
   grantedSpellIds?: string[]
 }
 
-
 export interface ClassFeatureDefinition {
   id: string
   contentSourceId: ContentProvenance['contentSourceId']
@@ -56,17 +55,21 @@ export function buildClassFeatureRecords(
     const definition = byId.get(progression.featureId)
     if ((availability !== true && availability !== 'legacy') || !definition || !level) return []
 
-    return [{
-      ...definition,
-      rulesets: { [ruleset]: availability },
-      classId: progression.classId,
-      ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
-      featureType: progression.subclassId ? 'subclass' as const : 'class' as const,
-      level,
-      ...(progression.grantedSpellIds?.[ruleset]?.length
-        ? { grantedSpellIds: progression.grantedSpellIds[ruleset] }
-        : {}),
-    }]
+    return [
+      {
+        ...definition,
+        rulesets: { [ruleset]: availability },
+        classId: progression.classId,
+        ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
+        featureType: progression.subclassId
+          ? ('subclass' as const)
+          : ('class' as const),
+        level,
+        ...(progression.grantedSpellIds?.[ruleset]?.length
+          ? { grantedSpellIds: progression.grantedSpellIds[ruleset] }
+          : {}),
+      },
+    ]
   })
 }
 
