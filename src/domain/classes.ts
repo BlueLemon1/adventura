@@ -12,7 +12,7 @@ interface AdditionalClassRecord {
   type: 'class' | 'subclass'
   classId: string
   subclassId?: string
-  names: Partial<Record<'de' | 'en', string>>
+  names: Partial<Record<Dnd5eRuleset, Partial<Record<'de' | 'en', string>>>>
   sources: Partial<Record<Dnd5eRuleset, string>>
   rulesets: Partial<Record<Dnd5eRuleset, true | 'legacy' | string>>
 }
@@ -29,7 +29,7 @@ export function getClassOptions(ruleset: Dnd5eRuleset): ClassOption[] {
     (record) => record.type === 'class' && isAvailable(record, ruleset),
   ).map((record) => ({
     value: record.classId,
-    label: record.names.de ?? record.names.en ?? record.classId,
+    label: record.names[ruleset]?.de ?? record.names[ruleset]?.en ?? record.classId,
     source: record.sources[ruleset],
   }))
 
@@ -44,7 +44,7 @@ export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): Clas
   )
     .map((record) => ({
       value: record.subclassId ?? record.id,
-      label: record.names.de ?? record.names.en ?? record.subclassId ?? record.id,
+      label: record.names[ruleset]?.de ?? record.names[ruleset]?.en ?? record.subclassId ?? record.id,
       source: record.sources[ruleset] ?? record.sources['2014'],
     }))
     .sort((left, right) => left.label.localeCompare(right.label, 'de'))
