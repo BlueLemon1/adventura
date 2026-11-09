@@ -162,6 +162,9 @@ for (const [spellId, metadata] of Object.entries(spellAvailability)) {
   }
 }
 for (const spell of additionalSpellRecords) {
+  if (!spell.localized?.name?.trim() || !spell.localized?.description?.trim()) {
+    errors.push(`spells/${spell.id}: missing German supplemental spell name or description`)
+  }
   if ('damage' in spell || 'rulesetClasses' in spell || 'subclassRestriction' in spell || 'availabilityNote' in spell) {
     errors.push(`spells/${spell.id}: app-specific metadata must live in ID-keyed metadata files`)
   }
