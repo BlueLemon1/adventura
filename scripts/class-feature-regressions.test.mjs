@@ -98,7 +98,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
       ...readJson('../src/data/spells-' + ruleset + '.json'),
       ...readJson('../src/data/spells-additional.json').filter((spell) =>
         spell.rulesets
-          ? spell.rulesets.includes(ruleset)
+          ? spell.rulesets[ruleset] === true || spell.rulesets[ruleset] === 'legacy'
           : sourceRulesets.get(spell.contentSourceId) === ruleset,
       ),
     ]
