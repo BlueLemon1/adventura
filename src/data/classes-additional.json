@@ -4,8 +4,14 @@
     "type": "class",
     "classId": "artificer",
     "names": {
-      "de": "Erfinder",
-      "en": "Artificer"
+      "2014": {
+        "de": "Erfinder",
+        "en": "Artificer"
+      },
+      "2024": {
+        "de": "Erfinder",
+        "en": "Artificer"
+      }
     },
     "sources": {
       "2014": "ERLW / TCE",
@@ -21,8 +27,14 @@
     "type": "class",
     "classId": "barbarian",
     "names": {
-      "de": "Barbar",
-      "en": "Barbarian"
+      "2014": {
+        "de": "Barbar",
+        "en": "Barbarian"
+      },
+      "2024": {
+        "de": "Barbar",
+        "en": "Barbarian"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -35,8 +47,14 @@
     "type": "class",
     "classId": "bard",
     "names": {
-      "de": "Barde",
-      "en": "Bard"
+      "2014": {
+        "de": "Barde",
+        "en": "Bard"
+      },
+      "2024": {
+        "de": "Barde",
+        "en": "Bard"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -49,8 +67,14 @@
     "type": "class",
     "classId": "cleric",
     "names": {
-      "de": "Kleriker",
-      "en": "Cleric"
+      "2014": {
+        "de": "Kleriker",
+        "en": "Cleric"
+      },
+      "2024": {
+        "de": "Kleriker",
+        "en": "Cleric"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -63,8 +87,14 @@
     "type": "class",
     "classId": "druid",
     "names": {
-      "de": "Druide",
-      "en": "Druid"
+      "2014": {
+        "de": "Druide",
+        "en": "Druid"
+      },
+      "2024": {
+        "de": "Druide",
+        "en": "Druid"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -77,8 +107,14 @@
     "type": "class",
     "classId": "fighter",
     "names": {
-      "de": "Kämpfer",
-      "en": "Fighter"
+      "2014": {
+        "de": "Kämpfer",
+        "en": "Fighter"
+      },
+      "2024": {
+        "de": "Kämpfer",
+        "en": "Fighter"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -91,8 +127,14 @@
     "type": "class",
     "classId": "monk",
     "names": {
-      "de": "Mönch",
-      "en": "Monk"
+      "2014": {
+        "de": "Mönch",
+        "en": "Monk"
+      },
+      "2024": {
+        "de": "Mönch",
+        "en": "Monk"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -105,8 +147,14 @@
     "type": "class",
     "classId": "paladin",
     "names": {
-      "de": "Paladin",
-      "en": "Paladin"
+      "2014": {
+        "de": "Paladin",
+        "en": "Paladin"
+      },
+      "2024": {
+        "de": "Paladin",
+        "en": "Paladin"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -119,8 +167,14 @@
     "type": "class",
     "classId": "ranger",
     "names": {
-      "de": "Waldläufer",
-      "en": "Ranger"
+      "2014": {
+        "de": "Waldläufer",
+        "en": "Ranger"
+      },
+      "2024": {
+        "de": "Waldläufer",
+        "en": "Ranger"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -133,8 +187,14 @@
     "type": "class",
     "classId": "rogue",
     "names": {
-      "de": "Schurke",
-      "en": "Rogue"
+      "2014": {
+        "de": "Schurke",
+        "en": "Rogue"
+      },
+      "2024": {
+        "de": "Schurke",
+        "en": "Rogue"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -147,8 +207,14 @@
     "type": "class",
     "classId": "sorcerer",
     "names": {
-      "de": "Zauberer",
-      "en": "Sorcerer"
+      "2014": {
+        "de": "Zauberer",
+        "en": "Sorcerer"
+      },
+      "2024": {
+        "de": "Zauberer",
+        "en": "Sorcerer"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -161,8 +227,14 @@
     "type": "class",
     "classId": "warlock",
     "names": {
-      "de": "Hexenmeister",
-      "en": "Warlock"
+      "2014": {
+        "de": "Hexenmeister",
+        "en": "Warlock"
+      },
+      "2024": {
+        "de": "Hexenmeister",
+        "en": "Warlock"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -175,8 +247,14 @@
     "type": "class",
     "classId": "wizard",
     "names": {
-      "de": "Magier",
-      "en": "Wizard"
+      "2014": {
+        "de": "Magier",
+        "en": "Wizard"
+      },
+      "2024": {
+        "de": "Magier",
+        "en": "Wizard"
+      }
     },
     "sources": {},
     "rulesets": {
@@ -190,7 +268,12 @@
     "classId": "artificer",
     "subclassId": "alchemist",
     "names": {
-      "de": "Alchemist"
+      "2014": {
+        "de": "Alchemist"
+      },
+      "2024": {
+        "de": "Alchemist"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -207,7 +290,12 @@
     "classId": "artificer",
     "subclassId": "armorer",
     "names": {
-      "de": "Konstrukteur"
+      "2014": {
+        "de": "Konstrukteur"
+      },
+      "2024": {
+        "de": "Konstrukteur"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -224,7 +312,12 @@
     "classId": "artificer",
     "subclassId": "artillerist",
     "names": {
-      "de": "Artillerist"
+      "2014": {
+        "de": "Artillerist"
+      },
+      "2024": {
+        "de": "Artillerist"
+      }
     },
     "sources": {
       "2014": "ERLW / TCE",
@@ -241,7 +334,12 @@
     "classId": "artificer",
     "subclassId": "battlesmith",
     "names": {
-      "de": "Kampf-Schmied"
+      "2014": {
+        "de": "Kampf-Schmied"
+      },
+      "2024": {
+        "de": "Kampf-Schmied"
+      }
     },
     "sources": {
       "2014": "ERLW / TCE",
@@ -258,7 +356,9 @@
     "classId": "artificer",
     "subclassId": "cartographer",
     "names": {
-      "de": "Kartograph"
+      "2024": {
+        "de": "Kartograph"
+      }
     },
     "sources": {
       "2024": "EFA"
@@ -273,7 +373,12 @@
     "classId": "barbarian",
     "subclassId": "ancestralguardian",
     "names": {
-      "de": "Pfad des Ahnenwächters"
+      "2014": {
+        "de": "Pfad des Ahnenwächters"
+      },
+      "2024": {
+        "de": "Pfad des Ahnenwächters"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -289,7 +394,12 @@
     "classId": "barbarian",
     "subclassId": "battlerager",
     "names": {
-      "de": "Pfad des Kampfwüters"
+      "2014": {
+        "de": "Pfad des Kampfwüters"
+      },
+      "2024": {
+        "de": "Pfad des Kampfwüters"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -305,7 +415,12 @@
     "classId": "barbarian",
     "subclassId": "beast",
     "names": {
-      "de": "Pfad der Bestie"
+      "2014": {
+        "de": "Pfad der Bestie"
+      },
+      "2024": {
+        "de": "Pfad der Bestie"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -321,7 +436,12 @@
     "classId": "barbarian",
     "subclassId": "berserker",
     "names": {
-      "de": "Pfad des Berserkers"
+      "2014": {
+        "de": "Pfad des Berserkers"
+      },
+      "2024": {
+        "de": "Pfad des Berserkers"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -338,7 +458,12 @@
     "classId": "barbarian",
     "subclassId": "giant",
     "names": {
-      "de": "Pfad des Riesen"
+      "2014": {
+        "de": "Pfad des Riesen"
+      },
+      "2024": {
+        "de": "Pfad des Riesen"
+      }
     },
     "sources": {
       "2014": "BPGG"
@@ -354,7 +479,12 @@
     "classId": "barbarian",
     "subclassId": "stormherald",
     "names": {
-      "de": "Pfad des Sturmherolds"
+      "2014": {
+        "de": "Pfad des Sturmherolds"
+      },
+      "2024": {
+        "de": "Pfad des Sturmherolds"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -370,7 +500,9 @@
     "classId": "barbarian",
     "subclassId": "totemwarrior",
     "names": {
-      "de": "Pfad des Totemkriegers"
+      "2014": {
+        "de": "Pfad des Totemkriegers"
+      }
     },
     "sources": {
       "2014": "PHB / SCAG"
@@ -386,7 +518,9 @@
     "classId": "barbarian",
     "subclassId": "wildheart",
     "names": {
-      "de": "Pfad des wilden Herzens"
+      "2024": {
+        "de": "Pfad des wilden Herzens"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -401,7 +535,12 @@
     "classId": "barbarian",
     "subclassId": "wildmagic",
     "names": {
-      "de": "Pfad der wilden Magie"
+      "2014": {
+        "de": "Pfad der wilden Magie"
+      },
+      "2024": {
+        "de": "Pfad der wilden Magie"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -417,7 +556,9 @@
     "classId": "barbarian",
     "subclassId": "worldtree",
     "names": {
-      "de": "Pfad des Weltenbaums"
+      "2024": {
+        "de": "Pfad des Weltenbaums"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -432,7 +573,12 @@
     "classId": "barbarian",
     "subclassId": "zealot",
     "names": {
-      "de": "Pfad des Zeloten"
+      "2014": {
+        "de": "Pfad des Zeloten"
+      },
+      "2024": {
+        "de": "Pfad des Zeloten"
+      }
     },
     "sources": {
       "2014": "XGE",
@@ -449,7 +595,12 @@
     "classId": "bard",
     "subclassId": "creation",
     "names": {
-      "de": "Barde der Schöpfung"
+      "2014": {
+        "de": "Barde der Schöpfung"
+      },
+      "2024": {
+        "de": "Barde der Schöpfung"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -465,7 +616,9 @@
     "classId": "bard",
     "subclassId": "dance",
     "names": {
-      "de": "Bardenkollegium des Tanzes"
+      "2024": {
+        "de": "Bardenkollegium des Tanzes"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -480,7 +633,12 @@
     "classId": "bard",
     "subclassId": "eloquence",
     "names": {
-      "de": "Barde der Beredsamkeit"
+      "2014": {
+        "de": "Barde der Beredsamkeit"
+      },
+      "2024": {
+        "de": "Barde der Beredsamkeit"
+      }
     },
     "sources": {
       "2014": "MOoT / TCE"
@@ -496,7 +654,12 @@
     "classId": "bard",
     "subclassId": "glamour",
     "names": {
-      "de": "Bardenkollegium des Glamours"
+      "2014": {
+        "de": "Barde des Glamours"
+      },
+      "2024": {
+        "de": "Bardenkollegium des Glamours"
+      }
     },
     "sources": {
       "2014": "XGE",
@@ -513,7 +676,12 @@
     "classId": "bard",
     "subclassId": "lore",
     "names": {
-      "de": "Bardenkollegium der Kunde"
+      "2014": {
+        "de": "Barde der Kunde"
+      },
+      "2024": {
+        "de": "Bardenkollegium der Kunde"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -530,7 +698,12 @@
     "classId": "bard",
     "subclassId": "spirits",
     "names": {
-      "de": "Barde der Geister"
+      "2014": {
+        "de": "Barde der Geister"
+      },
+      "2024": {
+        "de": "Barde der Geister"
+      }
     },
     "sources": {
       "2014": "VRGtR"
@@ -546,7 +719,12 @@
     "classId": "bard",
     "subclassId": "swords",
     "names": {
-      "de": "Barde der Schwerter"
+      "2014": {
+        "de": "Barde der Schwerter"
+      },
+      "2024": {
+        "de": "Barde der Schwerter"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -562,7 +740,12 @@
     "classId": "bard",
     "subclassId": "valor",
     "names": {
-      "de": "Bardenkollegium des Mutes"
+      "2014": {
+        "de": "Barde des Mutes"
+      },
+      "2024": {
+        "de": "Bardenkollegium des Mutes"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -579,7 +762,12 @@
     "classId": "bard",
     "subclassId": "whispers",
     "names": {
-      "de": "Barde des Flüsterns"
+      "2014": {
+        "de": "Barde des Flüsterns"
+      },
+      "2024": {
+        "de": "Barde des Flüsterns"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -595,7 +783,12 @@
     "classId": "cleric",
     "subclassId": "arcana",
     "names": {
-      "de": "Arkane Domäne"
+      "2014": {
+        "de": "Arkane Domäne"
+      },
+      "2024": {
+        "de": "Arkane Domäne"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -611,7 +804,12 @@
     "classId": "cleric",
     "subclassId": "death",
     "names": {
-      "de": "Domäne des Todes"
+      "2014": {
+        "de": "Domäne des Todes"
+      },
+      "2024": {
+        "de": "Domäne des Todes"
+      }
     },
     "sources": {
       "2014": "DMG"
@@ -627,7 +825,12 @@
     "classId": "cleric",
     "subclassId": "forge",
     "names": {
-      "de": "Schmiededomäne"
+      "2014": {
+        "de": "Schmiededomäne"
+      },
+      "2024": {
+        "de": "Schmiededomäne"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -643,7 +846,12 @@
     "classId": "cleric",
     "subclassId": "grave",
     "names": {
-      "de": "Domäne des Grabes"
+      "2014": {
+        "de": "Domäne des Grabes"
+      },
+      "2024": {
+        "de": "Domäne des Grabes"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -659,7 +867,12 @@
     "classId": "cleric",
     "subclassId": "knowledge",
     "names": {
-      "de": "Domäne des Wissens"
+      "2014": {
+        "de": "Domäne des Wissens"
+      },
+      "2024": {
+        "de": "Domäne des Wissens"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -675,7 +888,12 @@
     "classId": "cleric",
     "subclassId": "life",
     "names": {
-      "de": "Domäne des Lebens"
+      "2014": {
+        "de": "Domäne des Lebens"
+      },
+      "2024": {
+        "de": "Domäne des Lebens"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -692,7 +910,12 @@
     "classId": "cleric",
     "subclassId": "light",
     "names": {
-      "de": "Domäne des Lichts"
+      "2014": {
+        "de": "Domäne des Lichts"
+      },
+      "2024": {
+        "de": "Domäne des Lichts"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -709,7 +932,12 @@
     "classId": "cleric",
     "subclassId": "nature",
     "names": {
-      "de": "Domäne der Natur"
+      "2014": {
+        "de": "Domäne der Natur"
+      },
+      "2024": {
+        "de": "Domäne der Natur"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -725,7 +953,12 @@
     "classId": "cleric",
     "subclassId": "order",
     "names": {
-      "de": "Domäne der Ordnung"
+      "2014": {
+        "de": "Domäne der Ordnung"
+      },
+      "2024": {
+        "de": "Domäne der Ordnung"
+      }
     },
     "sources": {
       "2014": "GGR / TCE"
@@ -741,7 +974,12 @@
     "classId": "cleric",
     "subclassId": "peace",
     "names": {
-      "de": "Domäne des Friedens"
+      "2014": {
+        "de": "Domäne des Friedens"
+      },
+      "2024": {
+        "de": "Domäne des Friedens"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -757,7 +995,12 @@
     "classId": "cleric",
     "subclassId": "tempest",
     "names": {
-      "de": "Domäne des Sturms"
+      "2014": {
+        "de": "Domäne des Sturms"
+      },
+      "2024": {
+        "de": "Domäne des Sturms"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -773,7 +1016,12 @@
     "classId": "cleric",
     "subclassId": "trickery",
     "names": {
-      "de": "Domäne der List"
+      "2014": {
+        "de": "Domäne der List"
+      },
+      "2024": {
+        "de": "Domäne der List"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -790,7 +1038,12 @@
     "classId": "cleric",
     "subclassId": "twilight",
     "names": {
-      "de": "Domäne der Dämmerung"
+      "2014": {
+        "de": "Domäne der Dämmerung"
+      },
+      "2024": {
+        "de": "Domäne der Dämmerung"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -806,7 +1059,12 @@
     "classId": "cleric",
     "subclassId": "war",
     "names": {
-      "de": "Domäne des Krieges"
+      "2014": {
+        "de": "Domäne des Krieges"
+      },
+      "2024": {
+        "de": "Domäne des Krieges"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -823,7 +1081,12 @@
     "classId": "druid",
     "subclassId": "dreams",
     "names": {
-      "de": "Zirkel der Träume"
+      "2014": {
+        "de": "Zirkel der Träume"
+      },
+      "2024": {
+        "de": "Zirkel der Träume"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -839,7 +1102,12 @@
     "classId": "druid",
     "subclassId": "land",
     "names": {
-      "de": "Zirkel des Landes"
+      "2014": {
+        "de": "Zirkel des Landes"
+      },
+      "2024": {
+        "de": "Zirkel des Landes"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -856,7 +1124,12 @@
     "classId": "druid",
     "subclassId": "moon",
     "names": {
-      "de": "Zirkel des Mondes"
+      "2014": {
+        "de": "Zirkel des Mondes"
+      },
+      "2024": {
+        "de": "Zirkel des Mondes"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -873,7 +1146,9 @@
     "classId": "druid",
     "subclassId": "sea",
     "names": {
-      "de": "Zirkel der See"
+      "2024": {
+        "de": "Zirkel der See"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -888,7 +1163,12 @@
     "classId": "druid",
     "subclassId": "shepherd",
     "names": {
-      "de": "Zirkel des Hirten"
+      "2014": {
+        "de": "Zirkel des Hirten"
+      },
+      "2024": {
+        "de": "Zirkel des Hirten"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -904,7 +1184,12 @@
     "classId": "druid",
     "subclassId": "spores",
     "names": {
-      "de": "Zirkel der Sporen"
+      "2014": {
+        "de": "Zirkel der Sporen"
+      },
+      "2024": {
+        "de": "Zirkel der Sporen"
+      }
     },
     "sources": {
       "2014": "GGR / TCE"
@@ -920,7 +1205,12 @@
     "classId": "druid",
     "subclassId": "stars",
     "names": {
-      "de": "Zirkel der Sterne"
+      "2014": {
+        "de": "Zirkel der Sterne"
+      },
+      "2024": {
+        "de": "Zirkel der Sterne"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -937,7 +1227,12 @@
     "classId": "druid",
     "subclassId": "wildfire",
     "names": {
-      "de": "Zirkel des Wildfeuers"
+      "2014": {
+        "de": "Zirkel des Wildfeuers"
+      },
+      "2024": {
+        "de": "Zirkel des Wildfeuers"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -953,7 +1248,12 @@
     "classId": "fighter",
     "subclassId": "arcanearcher",
     "names": {
-      "de": "Arkaner Bogenschütze"
+      "2014": {
+        "de": "Arkaner Bogenschütze"
+      },
+      "2024": {
+        "de": "Arkaner Bogenschütze"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -969,7 +1269,12 @@
     "classId": "fighter",
     "subclassId": "battlemaster",
     "names": {
-      "de": "Kampfmeister"
+      "2014": {
+        "de": "Kampfmeister"
+      },
+      "2024": {
+        "de": "Kampfmeister"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -986,7 +1291,12 @@
     "classId": "fighter",
     "subclassId": "cavalier",
     "names": {
-      "de": "Kavalier"
+      "2014": {
+        "de": "Kavalier"
+      },
+      "2024": {
+        "de": "Kavalier"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1002,7 +1312,12 @@
     "classId": "fighter",
     "subclassId": "champion",
     "names": {
-      "de": "Champion"
+      "2014": {
+        "de": "Champion"
+      },
+      "2024": {
+        "de": "Champion"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1019,7 +1334,12 @@
     "classId": "fighter",
     "subclassId": "echo_knight",
     "names": {
-      "de": "Echoritter"
+      "2014": {
+        "de": "Echoritter"
+      },
+      "2024": {
+        "de": "Echoritter"
+      }
     },
     "sources": {
       "2014": "EGW"
@@ -1035,7 +1355,12 @@
     "classId": "fighter",
     "subclassId": "eldritchknight",
     "names": {
-      "de": "Arkaner Ritter"
+      "2014": {
+        "de": "Arkaner Ritter"
+      },
+      "2024": {
+        "de": "Arkaner Ritter"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1052,7 +1377,12 @@
     "classId": "fighter",
     "subclassId": "psiwarrior",
     "names": {
-      "de": "Psi-Krieger"
+      "2014": {
+        "de": "Psi-Krieger"
+      },
+      "2024": {
+        "de": "Psi-Krieger"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -1069,7 +1399,12 @@
     "classId": "fighter",
     "subclassId": "purpledragonknight",
     "names": {
-      "de": "Purpurdrache-Ritter"
+      "2014": {
+        "de": "Purpurdrache-Ritter"
+      },
+      "2024": {
+        "de": "Purpurdrache-Ritter"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -1085,7 +1420,12 @@
     "classId": "fighter",
     "subclassId": "runeknight",
     "names": {
-      "de": "Runenritter"
+      "2014": {
+        "de": "Runenritter"
+      },
+      "2024": {
+        "de": "Runenritter"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1101,7 +1441,12 @@
     "classId": "fighter",
     "subclassId": "samurai",
     "names": {
-      "de": "Samurai"
+      "2014": {
+        "de": "Samurai"
+      },
+      "2024": {
+        "de": "Samurai"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1117,7 +1462,12 @@
     "classId": "monk",
     "subclassId": "ascendant_dragon",
     "names": {
-      "de": "Weg des aufsteigenden Drachen"
+      "2014": {
+        "de": "Weg des aufsteigenden Drachen"
+      },
+      "2024": {
+        "de": "Weg des aufsteigenden Drachen"
+      }
     },
     "sources": {
       "2014": "FTD"
@@ -1133,7 +1483,12 @@
     "classId": "monk",
     "subclassId": "astral_self",
     "names": {
-      "de": "Weg des Astralkörpers"
+      "2014": {
+        "de": "Weg des Astralkörpers"
+      },
+      "2024": {
+        "de": "Weg des Astralkörpers"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1149,7 +1504,12 @@
     "classId": "monk",
     "subclassId": "drunkenmaster",
     "names": {
-      "de": "Weg des betrunkenen Meisters"
+      "2014": {
+        "de": "Weg des betrunkenen Meisters"
+      },
+      "2024": {
+        "de": "Weg des betrunkenen Meisters"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1165,7 +1525,9 @@
     "classId": "monk",
     "subclassId": "elements",
     "names": {
-      "de": "Krieger der Elemente"
+      "2024": {
+        "de": "Krieger der Elemente"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -1180,7 +1542,9 @@
     "classId": "monk",
     "subclassId": "four_elements",
     "names": {
-      "de": "Weg der vier Elemente"
+      "2014": {
+        "de": "Weg der vier Elemente"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -1196,7 +1560,12 @@
     "classId": "monk",
     "subclassId": "kensei",
     "names": {
-      "de": "Weg des Kensei"
+      "2014": {
+        "de": "Weg des Kensei"
+      },
+      "2024": {
+        "de": "Weg des Kensei"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1212,7 +1581,12 @@
     "classId": "monk",
     "subclassId": "longdeath",
     "names": {
-      "de": "Weg des langen Todes"
+      "2014": {
+        "de": "Weg des langen Todes"
+      },
+      "2024": {
+        "de": "Weg des langen Todes"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -1228,7 +1602,12 @@
     "classId": "monk",
     "subclassId": "mercy",
     "names": {
-      "de": "Krieger der Barmherzigkeit"
+      "2014": {
+        "de": "Weg der Barmherzigkeit"
+      },
+      "2024": {
+        "de": "Krieger der Barmherzigkeit"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -1245,7 +1624,12 @@
     "classId": "monk",
     "subclassId": "openhand",
     "names": {
-      "de": "Krieger der offenen Hand"
+      "2014": {
+        "de": "Weg der offenen Hand"
+      },
+      "2024": {
+        "de": "Krieger der offenen Hand"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1262,7 +1646,12 @@
     "classId": "monk",
     "subclassId": "shadow",
     "names": {
-      "de": "Krieger des Schattens"
+      "2014": {
+        "de": "Weg des Schattens"
+      },
+      "2024": {
+        "de": "Krieger des Schattens"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1279,7 +1668,12 @@
     "classId": "monk",
     "subclassId": "sun_soul",
     "names": {
-      "de": "Weg der Sonnenseele"
+      "2014": {
+        "de": "Weg der Sonnenseele"
+      },
+      "2024": {
+        "de": "Weg der Sonnenseele"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -1295,7 +1689,12 @@
     "classId": "paladin",
     "subclassId": "ancients",
     "names": {
-      "de": "Schwur der Uralten"
+      "2014": {
+        "de": "Schwur der Uralten"
+      },
+      "2024": {
+        "de": "Schwur der Uralten"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1312,7 +1711,12 @@
     "classId": "paladin",
     "subclassId": "conquest",
     "names": {
-      "de": "Schwur der Eroberung"
+      "2014": {
+        "de": "Schwur der Eroberung"
+      },
+      "2024": {
+        "de": "Schwur der Eroberung"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1328,7 +1732,12 @@
     "classId": "paladin",
     "subclassId": "crown",
     "names": {
-      "de": "Schwur der Krone"
+      "2014": {
+        "de": "Schwur der Krone"
+      },
+      "2024": {
+        "de": "Schwur der Krone"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -1344,7 +1753,12 @@
     "classId": "paladin",
     "subclassId": "devotion",
     "names": {
-      "de": "Schwur der Hingabe"
+      "2014": {
+        "de": "Schwur der Hingabe"
+      },
+      "2024": {
+        "de": "Schwur der Hingabe"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1361,7 +1775,12 @@
     "classId": "paladin",
     "subclassId": "glory",
     "names": {
-      "de": "Schwur des Ruhms"
+      "2014": {
+        "de": "Schwur des Ruhms"
+      },
+      "2024": {
+        "de": "Schwur des Ruhms"
+      }
     },
     "sources": {
       "2014": "MOoT / TCE",
@@ -1378,7 +1797,12 @@
     "classId": "paladin",
     "subclassId": "oathbreaker",
     "names": {
-      "de": "Schwurbrecher"
+      "2014": {
+        "de": "Schwurbrecher"
+      },
+      "2024": {
+        "de": "Schwurbrecher"
+      }
     },
     "sources": {
       "2014": "DMG"
@@ -1394,7 +1818,12 @@
     "classId": "paladin",
     "subclassId": "redemption",
     "names": {
-      "de": "Schwur der Erlösung"
+      "2014": {
+        "de": "Schwur der Erlösung"
+      },
+      "2024": {
+        "de": "Schwur der Erlösung"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1410,7 +1839,12 @@
     "classId": "paladin",
     "subclassId": "vengeance",
     "names": {
-      "de": "Schwur der Vergeltung"
+      "2014": {
+        "de": "Schwur der Vergeltung"
+      },
+      "2024": {
+        "de": "Schwur der Vergeltung"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1427,7 +1861,12 @@
     "classId": "paladin",
     "subclassId": "watchers",
     "names": {
-      "de": "Schwur der Wächter"
+      "2014": {
+        "de": "Schwur der Wächter"
+      },
+      "2024": {
+        "de": "Schwur der Wächter"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1443,7 +1882,12 @@
     "classId": "ranger",
     "subclassId": "beastmaster",
     "names": {
-      "de": "Tiermeister"
+      "2014": {
+        "de": "Tiermeister"
+      },
+      "2024": {
+        "de": "Tiermeister"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1460,7 +1904,12 @@
     "classId": "ranger",
     "subclassId": "drakewarden",
     "names": {
-      "de": "Drachenhüter"
+      "2014": {
+        "de": "Drachenhüter"
+      },
+      "2024": {
+        "de": "Drachenhüter"
+      }
     },
     "sources": {
       "2014": "FTD"
@@ -1476,7 +1925,12 @@
     "classId": "ranger",
     "subclassId": "feywanderer",
     "names": {
-      "de": "Feenwanderer"
+      "2014": {
+        "de": "Feenwanderer"
+      },
+      "2024": {
+        "de": "Feenwanderer"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -1493,7 +1947,12 @@
     "classId": "ranger",
     "subclassId": "gloomstalker",
     "names": {
-      "de": "Schreckenjäger"
+      "2014": {
+        "de": "Schreckenjäger"
+      },
+      "2024": {
+        "de": "Schreckenjäger"
+      }
     },
     "sources": {
       "2014": "XGE",
@@ -1510,7 +1969,12 @@
     "classId": "ranger",
     "subclassId": "horizonwalker",
     "names": {
-      "de": "Horizontläufer"
+      "2014": {
+        "de": "Horizontläufer"
+      },
+      "2024": {
+        "de": "Horizontläufer"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1526,7 +1990,12 @@
     "classId": "ranger",
     "subclassId": "hunter",
     "names": {
-      "de": "Jäger"
+      "2014": {
+        "de": "Jäger"
+      },
+      "2024": {
+        "de": "Jäger"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1543,7 +2012,12 @@
     "classId": "ranger",
     "subclassId": "monster_slayer",
     "names": {
-      "de": "Monsterjäger"
+      "2014": {
+        "de": "Monsterjäger"
+      },
+      "2024": {
+        "de": "Monsterjäger"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1559,7 +2033,12 @@
     "classId": "ranger",
     "subclassId": "swarmkeeper",
     "names": {
-      "de": "Schwarmhüter"
+      "2014": {
+        "de": "Schwarmhüter"
+      },
+      "2024": {
+        "de": "Schwarmhüter"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1575,7 +2054,12 @@
     "classId": "rogue",
     "subclassId": "arcanetrickster",
     "names": {
-      "de": "Arkaner Gauner"
+      "2014": {
+        "de": "Arkaner Gauner"
+      },
+      "2024": {
+        "de": "Arkaner Gauner"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1592,7 +2076,12 @@
     "classId": "rogue",
     "subclassId": "assassin",
     "names": {
-      "de": "Assassine"
+      "2014": {
+        "de": "Assassine"
+      },
+      "2024": {
+        "de": "Assassine"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1609,7 +2098,12 @@
     "classId": "rogue",
     "subclassId": "inquisitive",
     "names": {
-      "de": "Inquisitiv"
+      "2014": {
+        "de": "Inquisitiv"
+      },
+      "2024": {
+        "de": "Inquisitiv"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1625,7 +2119,12 @@
     "classId": "rogue",
     "subclassId": "mastermind",
     "names": {
-      "de": "Strippenzieher"
+      "2014": {
+        "de": "Strippenzieher"
+      },
+      "2024": {
+        "de": "Strippenzieher"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1641,7 +2140,12 @@
     "classId": "rogue",
     "subclassId": "phantom",
     "names": {
-      "de": "Phantom"
+      "2014": {
+        "de": "Phantom"
+      },
+      "2024": {
+        "de": "Phantom"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1657,7 +2161,12 @@
     "classId": "rogue",
     "subclassId": "scout",
     "names": {
-      "de": "Späher"
+      "2014": {
+        "de": "Späher"
+      },
+      "2024": {
+        "de": "Späher"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1673,7 +2182,12 @@
     "classId": "rogue",
     "subclassId": "soulknife",
     "names": {
-      "de": "Seelenmesser"
+      "2014": {
+        "de": "Seelenmesser"
+      },
+      "2024": {
+        "de": "Seelenmesser"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -1690,7 +2204,12 @@
     "classId": "rogue",
     "subclassId": "swashbuckler",
     "names": {
-      "de": "Haudegen"
+      "2014": {
+        "de": "Haudegen"
+      },
+      "2024": {
+        "de": "Haudegen"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1706,7 +2225,12 @@
     "classId": "rogue",
     "subclassId": "thief",
     "names": {
-      "de": "Dieb"
+      "2014": {
+        "de": "Dieb"
+      },
+      "2024": {
+        "de": "Dieb"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1723,7 +2247,9 @@
     "classId": "sorcerer",
     "subclassId": "aberrant",
     "names": {
-      "de": "Aberrante Magie"
+      "2024": {
+        "de": "Aberrante Magie"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -1738,7 +2264,9 @@
     "classId": "sorcerer",
     "subclassId": "aberrantmind",
     "names": {
-      "de": "Aberrantes Gemüt"
+      "2014": {
+        "de": "Aberrantes Gemüt"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1754,7 +2282,12 @@
     "classId": "sorcerer",
     "subclassId": "clockwork",
     "names": {
-      "de": "Uhrwerkmagie"
+      "2014": {
+        "de": "Uhrwerkseele"
+      },
+      "2024": {
+        "de": "Uhrwerkmagie"
+      }
     },
     "sources": {
       "2014": "TCE",
@@ -1771,7 +2304,12 @@
     "classId": "sorcerer",
     "subclassId": "draconic",
     "names": {
-      "de": "Drakonische Magie"
+      "2014": {
+        "de": "Drakonische Abstammung"
+      },
+      "2024": {
+        "de": "Drakonische Magie"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1788,7 +2326,12 @@
     "classId": "sorcerer",
     "subclassId": "lunar",
     "names": {
-      "de": "Mondmagie"
+      "2014": {
+        "de": "Mondmagie"
+      },
+      "2024": {
+        "de": "Mondmagie"
+      }
     },
     "sources": {
       "2014": "DSotDQ"
@@ -1804,7 +2347,12 @@
     "classId": "sorcerer",
     "subclassId": "shadowmagic",
     "names": {
-      "de": "Schattenmagie"
+      "2014": {
+        "de": "Schattenmagie"
+      },
+      "2024": {
+        "de": "Schattenmagie"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1820,7 +2368,12 @@
     "classId": "sorcerer",
     "subclassId": "storm",
     "names": {
-      "de": "Sturmmagie"
+      "2014": {
+        "de": "Sturmmagie"
+      },
+      "2024": {
+        "de": "Sturmmagie"
+      }
     },
     "sources": {
       "2014": "SCAG / XGE"
@@ -1836,7 +2389,12 @@
     "classId": "sorcerer",
     "subclassId": "wildmagic",
     "names": {
-      "de": "Wilde Magie"
+      "2014": {
+        "de": "Wilde Magie"
+      },
+      "2024": {
+        "de": "Wilde Magie"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1853,7 +2411,12 @@
     "classId": "warlock",
     "subclassId": "archfey",
     "names": {
-      "de": "Feenwesen-Patron"
+      "2014": {
+        "de": "Feenwesen"
+      },
+      "2024": {
+        "de": "Feenwesen-Patron"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1870,7 +2433,12 @@
     "classId": "warlock",
     "subclassId": "celestial",
     "names": {
-      "de": "Himmlischer Patron"
+      "2014": {
+        "de": "Himmlischer"
+      },
+      "2024": {
+        "de": "Himmlischer Patron"
+      }
     },
     "sources": {
       "2014": "XGE",
@@ -1887,7 +2455,12 @@
     "classId": "warlock",
     "subclassId": "fathomless",
     "names": {
-      "de": "Tiefsee"
+      "2014": {
+        "de": "Tiefsee"
+      },
+      "2024": {
+        "de": "Tiefsee"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1903,7 +2476,12 @@
     "classId": "warlock",
     "subclassId": "fiend",
     "names": {
-      "de": "Unholdpatron"
+      "2014": {
+        "de": "Unhold"
+      },
+      "2024": {
+        "de": "Unholdpatron"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -1920,7 +2498,12 @@
     "classId": "warlock",
     "subclassId": "genie",
     "names": {
-      "de": "Dschinn"
+      "2014": {
+        "de": "Dschinn"
+      },
+      "2024": {
+        "de": "Dschinn"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -1936,7 +2519,12 @@
     "classId": "warlock",
     "subclassId": "greatoldone",
     "names": {
-      "de": "Patron des Großen Alten"
+      "2014": {
+        "de": "Großer Alter"
+      },
+      "2024": {
+        "de": "Patron des Großen Alten"
+      }
     },
     "sources": {
       "2014": "PHB",
@@ -1953,7 +2541,12 @@
     "classId": "warlock",
     "subclassId": "hexblade",
     "names": {
-      "de": "Hexenklinge"
+      "2014": {
+        "de": "Hexenklinge"
+      },
+      "2024": {
+        "de": "Hexenklinge"
+      }
     },
     "sources": {
       "2014": "XGE"
@@ -1969,7 +2562,12 @@
     "classId": "warlock",
     "subclassId": "undead",
     "names": {
-      "de": "Untoter"
+      "2014": {
+        "de": "Untoter"
+      },
+      "2024": {
+        "de": "Untoter"
+      }
     },
     "sources": {
       "2014": "VRGtR"
@@ -1985,7 +2583,12 @@
     "classId": "warlock",
     "subclassId": "undying",
     "names": {
-      "de": "Unsterblicher"
+      "2014": {
+        "de": "Unsterblicher"
+      },
+      "2024": {
+        "de": "Unsterblicher"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -2001,7 +2604,9 @@
     "classId": "wizard",
     "subclassId": "abjuration",
     "names": {
-      "de": "Bannmagie"
+      "2014": {
+        "de": "Bannmagie"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2017,7 +2622,9 @@
     "classId": "wizard",
     "subclassId": "abjurer",
     "names": {
-      "de": "Bannwirker"
+      "2024": {
+        "de": "Bannwirker"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -2032,7 +2639,12 @@
     "classId": "wizard",
     "subclassId": "bladesinging",
     "names": {
-      "de": "Klingengesang"
+      "2014": {
+        "de": "Klingengesang"
+      },
+      "2024": {
+        "de": "Klingengesang"
+      }
     },
     "sources": {
       "2014": "SCAG"
@@ -2048,7 +2660,12 @@
     "classId": "wizard",
     "subclassId": "chronurgy",
     "names": {
-      "de": "Chronurgie"
+      "2014": {
+        "de": "Chronurgie"
+      },
+      "2024": {
+        "de": "Chronurgie"
+      }
     },
     "sources": {
       "2014": "EGW"
@@ -2064,7 +2681,12 @@
     "classId": "wizard",
     "subclassId": "conjuration",
     "names": {
-      "de": "Beschwörung"
+      "2014": {
+        "de": "Beschwörung"
+      },
+      "2024": {
+        "de": "Beschwörung"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2080,7 +2702,9 @@
     "classId": "wizard",
     "subclassId": "divination",
     "names": {
-      "de": "Erkenntnismagie"
+      "2014": {
+        "de": "Erkenntnismagie"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2096,7 +2720,9 @@
     "classId": "wizard",
     "subclassId": "diviner",
     "names": {
-      "de": "Wahrsager"
+      "2024": {
+        "de": "Wahrsager"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -2111,7 +2737,12 @@
     "classId": "wizard",
     "subclassId": "enchantment",
     "names": {
-      "de": "Verzauberung"
+      "2014": {
+        "de": "Verzauberung"
+      },
+      "2024": {
+        "de": "Verzauberung"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2127,7 +2758,12 @@
     "classId": "wizard",
     "subclassId": "evocation",
     "names": {
-      "de": "Hervorrufungsgelehrter"
+      "2014": {
+        "de": "Hervorrufung"
+      },
+      "2024": {
+        "de": "Hervorrufungsgelehrter"
+      }
     },
     "sources": {
       "2014": "PHB / SRD",
@@ -2144,7 +2780,12 @@
     "classId": "wizard",
     "subclassId": "graviturgy",
     "names": {
-      "de": "Graviturgy"
+      "2014": {
+        "de": "Graviturgy"
+      },
+      "2024": {
+        "de": "Graviturgy"
+      }
     },
     "sources": {
       "2014": "EGW"
@@ -2160,7 +2801,9 @@
     "classId": "wizard",
     "subclassId": "illusion",
     "names": {
-      "de": "Illusion"
+      "2014": {
+        "de": "Illusion"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2176,7 +2819,9 @@
     "classId": "wizard",
     "subclassId": "illusionist",
     "names": {
-      "de": "Illusionist"
+      "2024": {
+        "de": "Illusionist"
+      }
     },
     "sources": {
       "2024": "PHB"
@@ -2191,7 +2836,12 @@
     "classId": "wizard",
     "subclassId": "necromancy",
     "names": {
-      "de": "Nekromantie"
+      "2014": {
+        "de": "Nekromantie"
+      },
+      "2024": {
+        "de": "Nekromantie"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2207,7 +2857,12 @@
     "classId": "wizard",
     "subclassId": "scribes",
     "names": {
-      "de": "Ordnung der Schreiber"
+      "2014": {
+        "de": "Ordnung der Schreiber"
+      },
+      "2024": {
+        "de": "Ordnung der Schreiber"
+      }
     },
     "sources": {
       "2014": "TCE"
@@ -2223,7 +2878,12 @@
     "classId": "wizard",
     "subclassId": "transmutation",
     "names": {
-      "de": "Verwandlung"
+      "2014": {
+        "de": "Verwandlung"
+      },
+      "2024": {
+        "de": "Verwandlung"
+      }
     },
     "sources": {
       "2014": "PHB"
@@ -2239,7 +2899,12 @@
     "classId": "wizard",
     "subclassId": "war",
     "names": {
-      "de": "Kampfmagie"
+      "2014": {
+        "de": "Kampfmagie"
+      },
+      "2024": {
+        "de": "Kampfmagie"
+      }
     },
     "sources": {
       "2014": "XGE"
