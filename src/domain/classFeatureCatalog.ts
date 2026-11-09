@@ -8,7 +8,7 @@ import type { Dnd5eRuleset } from './rules'
  */
 export interface ClassFeatureRecord {
   id: string
-  rulesets?: Partial<Record<Dnd5eRuleset, true | 'legacy' | string>>
+  rulesets?: Partial<Record<Dnd5eRuleset, true | string>>
   contentSourceId: ContentProvenance['contentSourceId']
   sourceReference?: string
   classId: string
@@ -53,7 +53,7 @@ export function buildClassFeatureRecords(
     const availability = progression.rulesets[ruleset]
     const level = progression.levels[ruleset]
     const definition = byId.get(progression.featureId)
-    if ((availability !== true && availability !== 'legacy') || !definition || !level) return []
+    if (availability !== true || !definition || !level) return []
 
     return [
       {
