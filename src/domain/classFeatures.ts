@@ -191,6 +191,173 @@ function getImportedClassFeatures(
     .sort((left, right) => left.level - right.level || left.name.localeCompare(right.name))
 }
 
+function abilityModifier(score = 10) {
+  return Math.floor((score - 10) / 2)
+}
+
+export function getClassResources(character: Character): ClassResourceDefinition[] {
+  const { classId, level, ruleset } = character
+  const resources: ClassResourceDefinition[] = []
+  const subclass = character.subclassId?.toLowerCase().replace(/[^a-z]/g, '') ?? ''
+  const add = (
+    id: string,
+    label: string,
+    maximum: number,
+    recovery: ClassResourceDefinition['recovery'],
+  ) => {
+    if (maximum > 0) resources.push({ id, label, maximum, recovery })
+  }
+  if (classId === 'barbarian' && !(ruleset === '2014' && level >= 20)) {
+    const maximum =
+      ruleset === '2014'
+        ? level >= 12
+          ? 5
+          : level >= 6
+            ? 4
+            : level >= 3
+              ? 3
+              : 2
+        : level >= 17
+          ? 6
+          : level >= 12
+            ? 5
+            : level >= 6
+              ? 4
+              : level >= 3
+                ? 3
+                : 2
+    add('rage', 'Kampfrausch', maximum, ruleset === '2014' ? 'long' : 'short-one-or-long')
+  }
+  if (classId === 'bard') {
+    add(
+      'bardic-inspiration',
+      'Bardeninspiration',
+      Math.max(1, abilityModifier(character.abilities?.cha)),
+      level >= 5 ? 'short-or-long' : 'long',
+    )
+  }
+  if (classId === 'cleric' && level >= 2) {
+    const maximum =
+      ruleset === '2024'
+        ? level >= 18
+          ? 4
+          : level >= 6
+            ? 3
+            : 2
+        : level >= 18
+          ? 3
+          : level >= 6
+            ? 2
+            : 1
+    add(
+      'channel-divinity',
+      'Kanal göttlicher Energie',
+      maximum,
+      ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
+    )
+  }
+  if (classId === 'druid' && level >= 2)
+    add(
+      'wild-shape',
+      'Tiergestalt',
+      ruleset === '2024' ? (level >= 17 ? 4 : level >= 6 ? 3 : 2) : 2,
+      ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
+    )
+  if (classId === 'druid' && subclass === 'land' && level >= (ruleset === '2024' ? 6 : 2))
+    add('natural-recovery', 'Natürliche Erholung', 1, 'long')
+  if (classId === 'cleric' && level >= 10)
+    add('divine-intervention', 'Göttliches Eingreifen', 1, 'long')
+  if (classId === 'warlock' && subclass === 'fiend' && level >= 6)
+    add('dark-ones-own-luck', 'Dunkler eigener Glücksfall', 1, 'short-or-long')
+  if (classId === 'fighter' && level >= 1)
+    add(
+      'second-wind',
+      'Zweites Aufatmen',
+      ruleset === '2024' ? (level >= 10 ? 4 : level >= 4 ? 3 : 2) : 1,
+      ruleset === '2024' ? 'short-one-or-long' : 'short-or-long',
+    )
+  if (classId === 'fighter' && level >= 2) {
+    add('action-surge', 'Aktionsschub', level >= 17 ? 2 : 1, 'short-or-long')
+    add('indomitable', 'Unbeugsam', level >= 17 ? 3 : level >= 13 ? 2 : level >= 9 ? 1 : 0, 'long')
+  }
+  if (classId === 'monk' && level >= 2)
+    add(
+      ruleset === '2024' ? 'focus-points' : 'ki-points',
+      ruleset === '2024' ? 'Fokus-Punkte' : 'Ki-Punkte',
+      level,
+      'short-or-long',
+    )
+  if (classId === 'monk' && level >= 6 && subclass === 'openhand')
+    add(
+      'wholeness-of-body',
+      'Ganzheit des Körpers',
+      ruleset === '2024' ? Math.max(1, abilityModifier(character.abilities?.wis)) : 1,
+      'long',
+    )
+  if (classId === 'paladin') {
+    add('lay-on-hands', 'Handauflegen', 5 * level, 'long')
+    if (ruleset === '2014')
+      add(
+        'divine-sense',
+        'Göttlicher Sinn',
+        Math.max(1, abilityModifier(character.abilities?.cha) + 1),
+        'long',
+      )
+    if (ruleset === '2014' && level >= 3 && character.subclassId)
+      add('paladin-channel-divinity', 'Kanal göttlicher Energie', 1, 'short-or-long')
+  }
+  if (classId === 'paladin' && ruleset === '2024' && level >= 3)
+    add(
+      'channel-divinity-paladin',
+      'Kanal göttlicher Energie',
+      level >= 11 ? 3 : 2,
+      'short-one-or-long',
+    )
+  if (classId === 'paladin' && ruleset === '2024' && level >= 2)
+    add('paladin-smite', 'Paladins Niederstrecken', 1, 'long')
+  if (classId === 'paladin' && ruleset === '2024' && level >= 5)
+    add('faithful-steed', 'Treues Ross', 1, 'long')
+  if (classId === 'paladin' && subclass === 'devotion' && level >= 20)
+    add('holy-nimbus', 'Heiliger Nimbus', 1, 'long')
+  if (classId === 'warlock' && ruleset === '2024' && level >= 9)
+    add('contact-patron', 'Patron kontaktieren', 1, 'long')
+  if (classId === 'ranger' && ruleset === '2024')
+    add(
+      'favored-enemy',
+      'Bevorzugter Feind',
+      level >= 17 ? 6 : level >= 13 ? 5 : level >= 9 ? 4 : level >= 5 ? 3 : 2,
+      'long',
+    )
+  if (classId === 'warlock' && ruleset === '2024' && level >= 2)
+    add('magical-cunning', 'Magische List', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024')
+    add('innate-sorcery', 'Angeborene Magie', 2, 'long')
+  if (classId === 'sorcerer' && level >= 2) add('sorcery-points', 'Zauberpunkte', level, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && subclass === 'draconic' && level >= 18)
+    add('dragon-companion', 'Drachengefährte', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && subclass === 'draconic' && level >= 14)
+    add('dragon-wings', 'Drachenflügel', 1, 'long')
+  if (classId === 'sorcerer' && ruleset === '2024' && level >= 5)
+    add('sorcerous-restoration', 'Zauberhafte Erneuerung', 1, 'long')
+  if (classId === 'paladin' && ruleset === '2014' && level >= 14)
+    add(
+      'cleansing-touch',
+      'Reinigende Berührung',
+      Math.max(1, abilityModifier(character.abilities?.cha)),
+      'long',
+    )
+  if (classId === 'wizard' && level >= 1) add('arcane-recovery', 'Arkane Erholung', 1, 'long')
+  if (classId === 'rogue' && subclass === 'arcanetrickster' && level >= 17)
+    add('spell-thief', 'Zauberdieb', 1, 'long')
+  if (classId === 'rogue' && level >= 20) add('stroke-of-luck', 'Glückstreffer', 1, 'short-or-long')
+  if (classId === 'sorcerer' && subclass === 'shadowmagic' && level >= 1)
+    add('strength-of-grave', 'Stärke des Grabes', 1, 'long')
+  if (classId === 'warlock' && subclass === 'fiend' && level >= 14)
+    add('hurl-through-hell', 'Durch die Hölle schicken', 1, 'long')
+  if (classId === 'warlock' && level >= 20) add('eldritch-master', 'Mystischer Meister', 1, 'long')
+  return resources
+}
+
 export function getAutomaticClassFeatures(
   character: Character,
   locale: ContentLocale = 'de',
