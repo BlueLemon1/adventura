@@ -8,7 +8,7 @@ Class feature text and progression are separate concepts:
 - `classes-additional.json` is the shared class and subclass catalog. Legacy compatibility and replacement relationships belong to the class/subclass records, not to every feature beneath them.
 - `feature-mechanics.json` stores Adventura-specific activation, resource, and spellbook metadata by stable feature ID. It is not part of the SRD text.
 
-A 2014 feature used as a 2024 Legacy option is represented by one definition and one progression record. Its `rulesets` entry can be `{"2014": true, "2024": "legacy"}`, while `levels` records the edition-specific unlock level. For example, an old subclass feature can remain at level 2 in 2014 and move to level 3 in 2024 without duplicating its text.
+A 2014 feature used by a 2024 Legacy subclass is represented by one definition and one progression record. The subclass catalog carries `rulesets["2024"] = "legacy"`; the feature progression simply references the same definition in both rulesets and stores the edition-specific unlock level. For example, a feature can remain at level 2 in 2014 and move to level 3 in 2024 without duplicating its text or repeating the Legacy marker on every feature.
 
 If a feature itself is revised, the revised feature receives its own definition and ID. The 2024 progression points to that definition; the old feature's 2024 availability is omitted when the parent subclass is replaced. Replacement subclass IDs are never copied into individual feature records.
 
