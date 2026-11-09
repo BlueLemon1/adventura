@@ -12,7 +12,7 @@ All spell-specific datasets live in this directory. The SRD spell records remain
 Each spell ID maps to one or more damage components:
 
 - `dice` and `average`: the dice expression and its average; the average covers dice only.
-- `flatBonus`: an additional fixed number or the spellcasting ability modifier.
+- `flatBonus`: an additional fixed number, spellcasting ability modifier, spell-slot level, or a structured combination of these.
 - `type`: one damage type; `typeOptions`: mutually exclusive or selectable damage types.
 - `condition` and `timing`: when the component applies and when it is dealt.
 - `modifier`: an extra/reduced damage effect, a damage-roll penalty/reduction, or a weapon damage-die replacement.
