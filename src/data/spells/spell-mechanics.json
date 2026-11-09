@@ -3,7 +3,6 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "variable",
       "scaling": [
         {
           "kind": "spell-slot",
@@ -13,6 +12,13 @@
           "dice": "1d6",
           "mode": "add-dice"
         }
+      ],
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
       ]
     }
   ],
@@ -54,7 +60,6 @@
     {
       "dice": "2d8 + 1d6",
       "average": 12.5,
-      "type": "variable",
       "scaling": [
         {
           "kind": "spell-slot",
@@ -64,6 +69,16 @@
           "dice": "1d6",
           "mode": "add-dice"
         }
+      ],
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "force",
+        "lightning",
+        "poison",
+        "psychic",
+        "thunder"
       ]
     }
   ],
@@ -205,7 +220,6 @@
     {
       "dice": "1d8",
       "average": 4.5,
-      "type": "variable",
       "scaling": [
         {
           "kind": "spell-slot",
@@ -215,6 +229,11 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
+      ],
+      "typeOptions": [
+        "cold",
+        "necrotic",
+        "radiant"
       ]
     }
   ],
@@ -512,7 +531,6 @@
     {
       "dice": "3d6",
       "average": 10.5,
-      "type": "variable",
       "scaling": [
         {
           "kind": "spell-slot",
@@ -522,6 +540,13 @@
           "dice": "1d6",
           "mode": "add-dice"
         }
+      ],
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
       ]
     }
   ],
@@ -553,7 +578,13 @@
     {
       "dice": "2d6",
       "average": 7,
-      "type": "variable"
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ]
     }
   ],
   "xge-2014-enervation": [
@@ -3089,7 +3120,17 @@
     {
       "dice": "2d10",
       "average": 11,
-      "type": "bludgeoning"
+      "type": "bludgeoning",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 4,
+          "startLevel": 5,
+          "interval": 1,
+          "dice": "1d10",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "4d6",
@@ -3847,8 +3888,12 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "variable",
-      "condition": "Natural Weapons option; type depends on the chosen weapon"
+      "condition": "Natural Weapons option; type depends on the chosen weapon",
+      "typeOptions": [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ]
     }
   ],
   "srd-2014-animate-objects": [
@@ -3942,23 +3987,28 @@
     {
       "dice": "2d8",
       "average": 9,
-      "type": "variable",
-      "condition": "A creature within 5 feet hits you with a melee attack; fire or cold depends on the shield"
+      "condition": "A creature within 5 feet hits you with a melee attack; fire or cold depends on the shield",
+      "typeOptions": [
+        "cold",
+        "fire"
+      ]
     }
   ],
   "srd-2014-forbiddance": [
     {
       "dice": "5d10",
       "average": 27.5,
-      "type": "variable",
-      "condition": "Chosen creature enters the area for the first time on a turn or starts its turn there; radiant or necrotic"
+      "condition": "Chosen creature enters the area for the first time on a turn or starts its turn there; radiant or necrotic",
+      "typeOptions": [
+        "necrotic",
+        "radiant"
+      ]
     }
   ],
   "srd-2014-glyph-of-warding": [
     {
       "dice": "5d8",
       "average": 22.5,
-      "type": "variable",
       "condition": "Explosive Runes; choose acid, cold, fire, lightning, or thunder",
       "scaling": [
         {
@@ -3969,6 +4019,13 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
+      ],
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
       ]
     }
   ],
@@ -4102,16 +4159,25 @@
     {
       "dice": "5d10",
       "average": 27.5,
-      "type": "variable",
-      "condition": "Chosen creature enters the area for the first time on a turn or ends its turn there; radiant or necrotic"
+      "condition": "Chosen creature enters the area for the first time on a turn or ends its turn there; radiant or necrotic",
+      "typeOptions": [
+        "necrotic",
+        "radiant"
+      ]
     }
   ],
   "srd-2024-glyph-of-warding": [
     {
       "dice": "5d8",
       "average": 22.5,
-      "type": "variable",
-      "condition": "Explosive Rune; choose acid, cold, fire, lightning, or thunder"
+      "condition": "Explosive Rune; choose acid, cold, fire, lightning, or thunder",
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "thunder"
+      ]
     }
   ],
   "srd-2024-magic-missile": [
