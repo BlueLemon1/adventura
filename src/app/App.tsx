@@ -18,7 +18,12 @@ import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { createPactMagic, createSpellSlots } from '../domain/spellcasting'
 import { LanguageContext, translate } from './i18n'
-import { clearPartyInventory, deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
+import {
+  clearPartyInventory,
+  deleteCharacter,
+  getPartyInventory,
+  saveCharacter,
+} from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 import {
   Select,

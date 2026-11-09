@@ -32,7 +32,8 @@ export function OverviewPage({
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
   const totalItems = characters.reduce(
-    (total, entry) => total + entry.inventory.personal.length + (entry.inventory.party?.length ?? 0),
+    (total, entry) =>
+      total + entry.inventory.personal.length + (entry.inventory.party?.length ?? 0),
     0,
   )
   const totalSpells = characters.reduce(

@@ -173,7 +173,6 @@ export function savePartyInventory(items: InventoryItem[]): Promise<void> {
   })
 }
 
-
 /** Clears the deprecated global group inventory after its one-time migration. */
 export function clearPartyInventory(): Promise<void> {
   return runTransaction(PARTY_STORE, 'readwrite', (store, resolve, reject) => {

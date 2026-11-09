@@ -30,7 +30,10 @@ export function useCharacterCollection() {
             ...first,
             inventory: {
               ...first.inventory,
-              party: [...first.inventory.party, ...legacySharedItems.filter((item) => !existingIds.has(item.id))],
+              party: [
+                ...first.inventory.party,
+                ...legacySharedItems.filter((item) => !existingIds.has(item.id)),
+              ],
             },
           }
           await saveCharacter(migrated)
