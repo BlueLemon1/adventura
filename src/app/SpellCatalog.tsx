@@ -262,7 +262,7 @@ export function SpellCatalog({
           englishName: spell.name,
           name: localized?.name ?? '',
           school: localized?.school ?? '',
-          classes: localized?.classes ?? [],
+          classes: spell.classes,
           castingTime: localized?.castingTime ?? '',
           range: localized?.range ?? '',
           components: localized?.components ?? '',
