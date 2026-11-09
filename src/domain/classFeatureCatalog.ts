@@ -8,7 +8,6 @@ import type { Dnd5eRuleset } from './rules'
  */
 export interface ClassFeatureRecord {
   id: string
-  ruleset: Dnd5eRuleset
   rulesets?: Partial<Record<Dnd5eRuleset, true | 'legacy' | string>>
   contentSourceId: ContentProvenance['contentSourceId']
   sourceReference?: string
@@ -78,9 +77,6 @@ export function validateClassFeatureRecords(
     if (ids.has(feature.id)) errors.push(`${location}: duplicate canonical id`)
     ids.add(feature.id)
 
-    if (feature.ruleset !== ruleset) {
-      errors.push(`${location}: ruleset ${feature.ruleset} does not match ${ruleset}`)
-    }
     if (feature.contentSourceId !== contentSourceId) {
       errors.push(
         `${location}: source ${feature.contentSourceId} does not match ${contentSourceId}`,
