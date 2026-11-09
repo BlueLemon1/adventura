@@ -249,6 +249,14 @@ for (const definition of additionalFeatureDefinitions) {
   definitionIds.add(definition.id)
   if (!definition.contentSourceId || !sourceIds.has(definition.contentSourceId)) errors.push(`features/${definition.id}: unknown source ${definition.contentSourceId ?? '(missing)'}`)
   if (!definition.names?.en?.trim() || !definition.descriptions?.en?.trim()) errors.push(`features/${definition.id}: missing English name or description`)
+  if (!Array.isArray(definition.sources) || definition.sources.length === 0) errors.push(`features/${definition.id}: missing source references`)
+  for (const source of definition.sources ?? []) {
+    if (!source.contentSourceId || !sourceIds.has(source.contentSourceId)) errors.push(`features/${definition.id}: unknown source reference ${source.contentSourceId ?? '(missing)'}`)
+    if (!source.sourceReference?.trim()) errors.push(`features/${definition.id}: missing source reference path`)
+  }
+  if (!definition.sources?.some((source) => source.contentSourceId === definition.contentSourceId && source.sourceReference === definition.sourceReference)) {
+    errors.push(`features/${definition.id}: primary source is missing from sources`)
+  }
 }
 const progressionIds = new Set()
 const usedFeatureIds = new Set()
@@ -260,6 +268,11 @@ for (const progression of classProgressions) {
   progressionIds.add(progression.progressionId)
   usedFeatureIds.add(progression.featureId)
   if (progression.contentSourceId && !sourceIds.has(progression.contentSourceId)) errors.push(`${location}: unknown progression source ${progression.contentSourceId}`)
+  if (progression.names && Object.values(progression.names).some((name) => !name?.trim())) errors.push(`${location}: display-name overrides must be non-empty`)
+  const definition = featureDefinitionsById.get(progression.featureId)
+  if (progression.contentSourceId && !definition?.sources?.some((source) => source.contentSourceId === progression.contentSourceId && source.sourceReference === progression.sourceReference)) {
+    errors.push(`${location}: progression source reference is not recorded on its definition`)
+  }
   if (progression.contentSourceId && sourceRulesets.get(progression.contentSourceId) && !progression.rulesets?.[sourceRulesets.get(progression.contentSourceId)]) errors.push(`${location}: source ${progression.contentSourceId} is not explicitly available for the progression ruleset`)
   if (!classIds.has(progression.classId)) errors.push(`${location}: unknown class ${progression.classId}`)
   if (progression.subclassId && !additionalClassRecords.some((record) => record.type === 'subclass' && record.classId === progression.classId && record.subclassId === progression.subclassId)) {
