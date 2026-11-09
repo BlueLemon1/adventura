@@ -1,10 +1,14 @@
 import type { Character } from './character'
 import classFeatures2014 from '../data/class-features-2014.json'
 import classFeatures2024 from '../data/class-features-2024.json'
-import additionalClassFeatures from '../data/class-features-additional.json'
+import additionalClassFeatureDefinitions from '../data/features-additional.json'
+import classProgressions from '../data/class-progressions.json'
 import {
+  buildClassFeatureRecords,
   mergeClassFeatureRecords,
   resolveClassFeatureText,
+  type ClassFeatureDefinition,
+  type ClassFeatureProgression,
   type ClassFeatureRecord,
 } from './classFeatureCatalog'
 import type { ContentLocale } from './contentSources'
@@ -36,18 +40,27 @@ export interface AutomaticClassFeature {
   unlocked: boolean
 }
 
+const ADDITIONAL_CLASS_FEATURES = {
+  '2014': buildClassFeatureRecords(
+    additionalClassFeatureDefinitions as ClassFeatureDefinition[],
+    classProgressions as ClassFeatureProgression[],
+    '2014',
+  ),
+  '2024': buildClassFeatureRecords(
+    additionalClassFeatureDefinitions as ClassFeatureDefinition[],
+    classProgressions as ClassFeatureProgression[],
+    '2024',
+  ),
+}
+
 const CLASS_FEATURE_CATALOGS: Record<Dnd5eRuleset, ClassFeatureRecord[]> = {
   '2014': mergeClassFeatureRecords(
     classFeatures2014 as unknown as ClassFeatureRecord[],
-    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter(
-      (feature) => feature.rulesets?.['2014'] === true,
-    ),
+    ADDITIONAL_CLASS_FEATURES['2014'],
   ),
   '2024': mergeClassFeatureRecords(
     classFeatures2024 as unknown as ClassFeatureRecord[],
-    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter(
-      (feature) => feature.rulesets?.['2024'] === true || feature.rulesets?.['2024'] === 'legacy',
-    ),
+    ADDITIONAL_CLASS_FEATURES['2024'],
   ),
 }
 
