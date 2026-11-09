@@ -87,6 +87,7 @@ test('Legacy subclass features reuse one definition and inherit compatibility fr
   assert.equal(conjurationSavant?.levels?.['2014'], 2)
   assert.equal(conjurationSavant?.levels?.['2024'], 3)
   assert.equal(conjurationSavant?.rulesets?.['2024'], true)
+  assert.ok(progressions.every((record) => Object.values(record.rulesets ?? {}).every((value) => value !== 'legacy')))
   assert.equal(featureDefinitions.some((feature) => feature.id.startsWith('2024-legacy-')), false)
 })
 
