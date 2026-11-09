@@ -7,7 +7,9 @@ import type { Dnd5eRuleset } from './rules'
  * same record so translations can never become duplicate features.
  */
 export interface ClassFeatureRecord {
+  /** Unique class-progression occurrence ID (may differ from the shared definition ID). */
   id: string
+  definitionId?: string
   rulesets?: Partial<Record<Dnd5eRuleset, true | string>>
   contentSourceId: ContentProvenance['contentSourceId']
   sourceReference?: string
@@ -30,11 +32,18 @@ export interface ClassFeatureDefinition {
   names: Partial<Record<ContentLocale, string>>
   descriptions: Partial<Record<ContentLocale, string>>
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
+  /** Every source reference that contributes this shared definition. */
+  sources?: Array<{ contentSourceId: ContentProvenance['contentSourceId']; sourceReference?: string }>
 }
 
 /** A feature's placement in a class or subclass progression, independent of its text. */
 export interface ClassFeatureProgression {
+  /** Stable ID for this specific class/subclass occurrence. */
+  progressionId?: string
   featureId: string
+  contentSourceId?: ContentProvenance['contentSourceId']
+  sourceReference?: string
+  names?: Partial<Record<ContentLocale, string>>
   classId: string
   subclassId?: string
   rulesets: Partial<Record<Dnd5eRuleset, true | string>>
@@ -58,6 +67,11 @@ export function buildClassFeatureRecords(
     return [
       {
         ...definition,
+        id: progression.progressionId ?? definition.id,
+        definitionId: definition.id,
+        ...(progression.names ? { names: { ...definition.names, ...progression.names } } : {}),
+        ...(progression.contentSourceId ? { contentSourceId: progression.contentSourceId } : {}),
+        ...(progression.sourceReference ? { sourceReference: progression.sourceReference } : {}),
         rulesets: { [ruleset]: availability },
         classId: progression.classId,
         ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
