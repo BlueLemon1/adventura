@@ -132,11 +132,12 @@ const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const additionalSpellRecords = readJson('src/data/spells-additional.json')
+const srdSpellRecords = [readJson('src/data/spells-2014.json'), readJson('src/data/spells-2024.json')].flat()
 const spellMechanics = readJson('src/data/spell-mechanics.json')
 const spellAvailability = readJson('src/data/spell-availability.json')
-const additionalSpellIds = new Set(additionalSpellRecords.map((spell) => spell.id))
+const knownSpellIds = new Set([...additionalSpellRecords, ...srdSpellRecords].map((spell) => spell.id))
 for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
-  if (!additionalSpellIds.has(spellId)) errors.push(`spell-mechanics/${spellId}: unknown spell ID`)
+  if (!knownSpellIds.has(spellId)) errors.push(`spell-mechanics/${spellId}: unknown spell ID`)
   if (!Array.isArray(mechanics) || mechanics.some((entry) => !entry.dice || !Number.isFinite(entry.average))) {
     errors.push(`spell-mechanics/${spellId}: invalid damage metadata`)
   }
