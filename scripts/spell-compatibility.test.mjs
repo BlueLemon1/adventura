@@ -40,11 +40,11 @@ test('the new PHB 2024 records are represented as 2024-only additions', () => {
 test('renamed 2014 SRD spell IDs resolve to their 2024 counterparts without editing SRD data', () => {
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-branding-smite'))
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-feeblemind'))
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+
 })
 
 test('legacy records are explicitly marked when selected for 2024', () => {
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+
   assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
 })
 
