@@ -10,6 +10,17 @@ const availability = readJson('../src/data/spell-availability.json')
 const spells2014 = readJson('../src/data/spells-2014.json')
 const spells2024 = readJson('../src/data/spells-2024.json')
 const catalogSource = readText('../src/domain/spellCatalog.ts')
+const srdSpellsWithDamage = [...spells2014, ...spells2024].filter((spell) => spell.damage?.length)
+const damageTypeNames = {
+  Säure: 'acid', Wucht: 'bludgeoning', Kälte: 'cold', Feuer: 'fire', Energie: 'force',
+  Blitz: 'lightning', Nekrotisch: 'necrotic', Stich: 'piercing', Gift: 'poison',
+  Psychisch: 'psychic', Strahlend: 'radiant', Hieb: 'slashing', Schall: 'thunder',
+}
+const normalizeSrdDamage = (damage) => damage.map((part) => ({
+  dice: part.dice.replace(/(\\d)W(?=\\d)/gi, '$1d'),
+  average: part.average,
+  ...(part.type ? { type: damageTypeNames[part.type] ?? part.type.toLowerCase() } : {}),
+}))
 
 test('additional spells declare ruleset availability directly', () => {
   assert.equal(additional.length, 171)
@@ -50,9 +61,16 @@ test('legacy records are explicitly marked when selected for 2024', () => {
 
 test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
   const ids = new Set(additional.map((spell) => spell.id))
-  assert.equal(Object.keys(mechanics).length, 84)
+  assert.equal(Object.keys(mechanics).length, 254)
   assert.equal(Object.keys(availability).length, 21)
-  assert.ok(Object.keys(mechanics).every((id) => ids.has(id)))
+  const allSpellIds = new Set([...ids, ...spells2014, ...spells2024].map((spell) => spell.id))
+  assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
+  assert.equal(srdSpellsWithDamage.length, 170)
+  assert.ok(srdSpellsWithDamage.every((spell) => mechanics[spell.id]))
+  for (const spell of srdSpellsWithDamage) {
+    assert.deepEqual(mechanics[spell.id], normalizeSrdDamage(spell.damage), `${spell.id} damage metadata matches its SRD description data`)
+  }
+  assert.match(catalogSource, /damage: mechanicsBySpellId\\[spell\\.id\\] \\?\\? spell\\.damage/)
   assert.ok(Object.keys(availability).every((id) => ids.has(id)))
   assert.ok(additional.every((spell) => !('damage' in spell)))
   assert.ok(additional.every((spell) => !('rulesetClasses' in spell)))
