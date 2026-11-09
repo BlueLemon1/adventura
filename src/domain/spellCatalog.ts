@@ -1,10 +1,47 @@
 import type { Dnd5eRuleset } from './rules'
 import { CONTENT_SOURCES } from './contentSources'
-import spells2014 from '../data/spells-2014.json'
-import spells2024 from '../data/spells-2024.json'
-import additionalSpells from '../data/spells-additional.json'
-import spellMechanics from '../data/spell-mechanics.json'
-import spellAvailability from '../data/spell-availability.json'
+import spells2014 from '../data/spells/spells-2014.json'
+import spells2024 from '../data/spells/spells-2024.json'
+import additionalSpells from '../data/spells/spells-additional.json'
+import spellMechanics from '../data/spells/spell-mechanics.json'
+import spellAvailability from '../data/spells/spell-availability.json'
+
+export interface SpellDamageScaling {
+  kind: 'spell-slot' | 'character-level' | 'turn'
+  baseLevel?: number
+  startLevel?: number
+  interval?: number
+  dice?: string
+  mode?: 'add-dice' | 'add-instance' | 'set-dice'
+  timing?: string
+  condition?: string
+  thresholds?: Array<{ level: number; dice: string }>
+}
+
+export interface SpellDamageMechanic {
+  dice: string
+  average: number
+  type?: string
+  typeOptions?: string[]
+  activeFromLevel?: number
+  condition?: string
+  timing?: string
+  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction' | 'weapon-die'
+  flatBonus?:
+    | number
+    | 'spellcasting-ability'
+    | 'spell-slot-level'
+    | {
+        base?: number
+        spellcastingAbility?: boolean
+        spellSlotLevel?: boolean
+      }
+  scaling?: SpellDamageScaling[]
+  diceRules?: {
+    explodeOn: number
+    maxAdditionalDice: 'spellcasting-ability'
+  }
+}
 
 export interface CatalogSpell {
   id: string
@@ -35,7 +72,7 @@ export interface CatalogSpell {
     higherLevelLabel?: string
     availabilityNote?: string
   }
-  damage?: Array<{ dice: string; average: number; type?: string }>
+  damage?: SpellDamageMechanic[]
   contentSourceId: string
   rulesets?: Partial<Record<Dnd5eRuleset, boolean | string>>
   sourcePage?: number
@@ -54,10 +91,7 @@ interface SpellAvailabilityMetadata {
   availabilityNote?: string
 }
 
-const mechanicsBySpellId = spellMechanics as Record<
-  string,
-  Array<{ dice: string; average: number; type?: string }>
->
+const mechanicsBySpellId = spellMechanics as Record<string, SpellDamageMechanic[]>
 const availabilityBySpellId = spellAvailability as Record<string, SpellAvailabilityMetadata>
 
 const supplementalSpells = (additionalSpells as CatalogSpell[]).map((spell) => ({
