@@ -99,10 +99,7 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
     if (sourceRuleset && sourceRuleset !== ruleset && !feature.rulesets?.[ruleset]) {
       errors.push(`${location}: source ${feature.contentSourceId} belongs to ${sourceRuleset}`)
     }
-    if (feature.id.startsWith('2024-legacy-') && feature.rulesets?.['2024'] !== 'legacy') {
-      errors.push(`${location}: legacy feature copy must be marked legacy`)
-    }
-    if (!feature.classId) errors.push(`${location}: missing classId`)
+        if (!feature.classId) errors.push(`${location}: missing classId`)
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
       errors.push(`${location}: invalid feature level`)
     }
@@ -160,7 +157,26 @@ for (const spell of additionalSpellRecords) {
 }
 
 const additionalClassRecords = readJson('src/data/classes-additional.json')
-const additionalClassFeatures = readJson('src/data/class-features-additional.json')
+const additionalFeatureDefinitions = readJson('src/data/features-additional.json')
+const classProgressions = readJson('src/data/class-progressions.json')
+const featureDefinitionsById = new Map(additionalFeatureDefinitions.map((feature) => [feature.id, feature]))
+const additionalClassFeatures = classProgressions.flatMap((progression) => {
+  const feature = featureDefinitionsById.get(progression.featureId)
+  if (!feature) return []
+  return ['2014', '2024'].flatMap((ruleset) => {
+    const availability = progression.rulesets?.[ruleset]
+    if (availability !== true && availability !== 'legacy') return []
+    return [{
+      ...feature,
+      classId: progression.classId,
+      ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
+      featureType: progression.subclassId ? 'subclass' : 'class',
+      level: progression.levels?.[ruleset],
+      grantedSpellIds: progression.grantedSpellIds?.[ruleset],
+      rulesets: { [ruleset]: availability },
+    }]
+  })
+})
 const classIds = new Set([
   'barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk',
   'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard',
@@ -199,16 +215,39 @@ for (const record of additionalClassRecords.filter((item) => item.type === 'subc
     if (!target) errors.push(`2024/${record.classId}/${record.subclassId}: unknown replacement subclass ${replacement}`)
   }
 }
-for (const feature of additionalClassFeatures) {
-  const replacement = feature.rulesets?.['2024']
-  if (typeof replacement !== 'string' || replacement === 'legacy') continue
-  const target = additionalClassRecords.find(
-    (candidate) => candidate.type === 'subclass' && candidate.classId === feature.classId &&
-      candidate.subclassId === replacement && candidate.rulesets?.['2024'] === true,
-  )
-  if (!feature.subclassId || !target) {
-    errors.push(`2024/${feature.id}: unknown replacement subclass ${replacement}`)
+const definitionIds = new Set()
+for (const definition of additionalFeatureDefinitions) {
+  if (!definition.id?.trim() || definitionIds.has(definition.id)) errors.push(`features/${definition.id}: missing or duplicate definition id`)
+  definitionIds.add(definition.id)
+  if (!definition.contentSourceId || !sourceIds.has(definition.contentSourceId)) errors.push(`features/${definition.id}: unknown source ${definition.contentSourceId ?? '(missing)'}`)
+  if (!definition.names?.en?.trim() || !definition.descriptions?.en?.trim()) errors.push(`features/${definition.id}: missing English name or description`)
+}
+const progressionIds = new Set()
+for (const progression of classProgressions) {
+  const location = `progressions/${progression.featureId}`
+  if (!definitionIds.has(progression.featureId)) errors.push(`${location}: unknown feature definition`)
+  if (progressionIds.has(progression.featureId)) errors.push(`${location}: duplicate progression record`)
+  progressionIds.add(progression.featureId)
+  if (!classIds.has(progression.classId)) errors.push(`${location}: unknown class ${progression.classId}`)
+  if (progression.subclassId && !additionalClassRecords.some((record) => record.type === 'subclass' && record.classId === progression.classId && record.subclassId === progression.subclassId)) {
+    errors.push(`${location}: unknown subclass ${progression.subclassId}`)
   }
+  if (!progression.rulesets || !progression.levels) errors.push(`${location}: missing rulesets or levels`)
+  for (const [ruleset, availability] of Object.entries(progression.rulesets ?? {})) {
+    if (!['2014', '2024'].includes(ruleset)) errors.push(`${location}: unknown ruleset ${ruleset}`)
+    if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') errors.push(`${location}: invalid availability for ${ruleset}`)
+    if (availability === 'legacy' && ruleset !== '2024') errors.push(`${location}: Legacy availability is only valid for 2024`)
+    if (availability !== false && availability !== undefined && !Number.isInteger(progression.levels?.[ruleset])) {
+      errors.push(`${location}: missing integer level for ${ruleset}`)
+    }
+  }
+  for (const [ruleset, level] of Object.entries(progression.levels ?? {})) {
+    if (!Number.isInteger(level) || level < 1 || level > 20) errors.push(`${location}: invalid ${ruleset} level`)
+    if (!progression.rulesets?.[ruleset]) errors.push(`${location}: level declared without availability for ${ruleset}`)
+  }
+}
+for (const definition of additionalFeatureDefinitions) {
+  if (!progressionIds.has(definition.id)) errors.push(`features/${definition.id}: missing progression record`)
 }
 
 const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
@@ -332,7 +371,7 @@ console.log(
 
 const incomplete2014Translations = [
   ...readJson('src/data/class-features-2014.json'),
-  ...readJson('src/data/class-features-additional.json').filter((feature) => feature.rulesets?.['2014'] === true),
+  ...additionalClassFeatures.filter((feature) => feature.rulesets?.['2014'] === true),
 ].filter((feature) => !feature.names?.de?.trim() || !feature.descriptions?.de?.trim())
 if (incomplete2014Translations.length) {
   console.warn(
