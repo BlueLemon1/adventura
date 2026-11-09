@@ -148,7 +148,9 @@ for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
         !Number.isInteger(threshold.level) || !threshold.dice,
       ))),
     ))) ||
-    (entry.modifier && !['extra', 'reduced', 'damage-penalty', 'damage-reduction'].includes(entry.modifier))
+    (entry.modifier && !['extra', 'reduced', 'damage-penalty', 'damage-reduction'].includes(entry.modifier)) ||
+    (entry.typeOptions && (!Array.isArray(entry.typeOptions) || entry.typeOptions.some((type) => typeof type !== 'string' || type !== type.toLowerCase()))) ||
+    (entry.diceRules && (!Number.isInteger(entry.diceRules.explodeOn) || entry.diceRules.maxAdditionalDice !== 'spellcasting-ability'))
   )) {
     errors.push(`spell-mechanics/${spellId}: invalid damage metadata`)
   }
