@@ -23,7 +23,9 @@ export interface ClassResourceDefinition {
 }
 
 export interface AutomaticClassFeature {
+  /** Unique progression occurrence ID, suitable for UI keys and saved references. */
   id: string
+  definitionId?: string
   name: string
   localizedName?: string
   level: number
@@ -80,7 +82,7 @@ function getFeatureMechanics(
   character: Character,
 ): FeatureMechanicsRecord & { spellbookSpellIds?: string[] } {
   const name = feature.names.en ?? ''
-  const base = FEATURE_MECHANICS[feature.id] ?? {}
+  const base = FEATURE_MECHANICS[feature.definitionId ?? feature.id] ?? {}
   let activation = base.activation
   let resourceId = base.resourceId
   let resourceCost = base.resourceCost
@@ -171,6 +173,7 @@ function getImportedClassFeatures(
 
       return {
         id: feature.id,
+        definitionId: feature.definitionId ?? feature.id,
         name: feature.names.en ?? feature.id,
         localizedName: text.name,
         level: feature.level,
