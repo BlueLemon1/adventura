@@ -143,6 +143,7 @@ for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
     !entry.dice || !Number.isFinite(entry.average) ||
     (entry.scaling && (!Array.isArray(entry.scaling) || entry.scaling.some((scale) =>
       !['spell-slot', 'character-level', 'turn'].includes(scale.kind) ||
+      (scale.mode && !['add-dice', 'add-instance', 'set-dice'].includes(scale.mode)) ||
       (scale.kind === 'spell-slot' && (!Number.isInteger(scale.baseLevel) || !Number.isInteger(scale.interval) || !scale.dice)) ||
       (scale.kind === 'character-level' && (!Array.isArray(scale.thresholds) || scale.thresholds.some((threshold) =>
         !Number.isInteger(threshold.level) || !threshold.dice,
