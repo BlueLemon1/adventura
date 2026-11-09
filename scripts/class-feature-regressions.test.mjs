@@ -7,7 +7,7 @@ const readJson = (path) => JSON.parse(readText(path))
 
 const featureSource = readText('../src/domain/classFeatures.ts')
 const classes = readJson('../src/data/classes-additional.json')
-const features = readJson('../src/data/class-features-additional.json')
+const additionalFeatures = readJson('../src/data/class-features-additional.json')
 
 function subclassOptions(ruleset) {
   return classes.filter((record) => record.type === 'subclass' &&
@@ -30,7 +30,7 @@ test('all selectable subclasses have feature records in their ruleset catalog', 
   for (const ruleset of ['2014', '2024']) {
     const records = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...features.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
+      ...additionalFeatures.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
     ]
     for (const subclass of subclassOptions(ruleset)) {
       assert.ok(records.some((feature) => feature.classId === subclass.classId && feature.subclassId === subclass.subclassId),
@@ -40,7 +40,7 @@ test('all selectable subclasses have feature records in their ruleset catalog', 
 })
 
 test('2024 legacy feature copies keep their source and start no earlier than subclass level 3', () => {
-  const legacy = features.filter((feature) => feature.rulesets?.['2024'] === 'legacy')
+  const legacy = additionalFeatures.filter((feature) => feature.rulesets?.['2024'] === 'legacy')
   assert.ok(legacy.length > 0)
   assert.ok(legacy.every((feature) => feature.level >= 3))
   assert.ok(legacy.every((feature) => feature.contentSourceId && feature.sourceReference))
@@ -68,7 +68,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
     const spellIds = new Set(spells.map((spell) => spell.id))
     const features = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...features.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
+      ...additionalFeatures.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
     ]
     for (const feature of features) {
       for (const spellId of feature.grantedSpellIds ?? []) {
