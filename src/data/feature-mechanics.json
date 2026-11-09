@@ -1,0 +1,211 @@
+{
+  "srd-2014-class-barbarian-core-1-rage": {},
+  "srd-2024-class-barbarian-core-1-rage": {},
+  "srd-2014-class-bard-core-1-bardic-inspiration": {},
+  "srd-2014-class-bard-core-5-bardic-inspiration": {},
+  "srd-2014-class-bard-core-10-bardic-inspiration": {},
+  "srd-2014-class-bard-core-15-bardic-inspiration": {},
+  "srd-2024-class-bard-core-1-bardic-inspiration": {},
+  "srd-2014-subclass-bard-lore-3-cutting-words": {},
+  "srd-2024-subclass-bard-lore-3-cutting-words": {},
+  "srd-2024-class-paladin-core-2-paladin-s-smite": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-divine-smite"
+      ]
+    }
+  },
+  "srd-2014-class-bard-core-6-countercharm": {},
+  "srd-2024-class-bard-core-7-countercharm": {},
+  "2014-paladin-ancients-channel-divinity": {},
+  "2014-paladin-vengeance-channel-divinity": {},
+  "2014-paladin-conquest-channel-divinity": {},
+  "2014-paladin-redemption-channel-divinity": {},
+  "2014-paladin-glory-channel-divinity": {},
+  "2014-paladin-watchers-channel-divinity": {},
+  "2014-paladin-crown-channel-divinity": {},
+  "srd-2014-class-cleric-core-2-channel-divinity": {},
+  "srd-2014-class-cleric-core-6-channel-divinity": {},
+  "srd-2014-class-cleric-core-18-channel-divinity": {},
+  "srd-2014-subclass-paladin-devotion-3-channel-divinity": {},
+  "srd-2024-class-cleric-core-2-channel-divinity": {},
+  "srd-2024-class-paladin-core-3-channel-divinity": {},
+  "srd-2024-subclass-cleric-life-3-preserve-life": {},
+  "srd-2014-class-druid-core-2-wild-shape": {},
+  "srd-2024-class-druid-core-2-wild-shape": {},
+  "srd-2024-class-druid-core-2-wild-companion": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-find-familiar"
+      ]
+    }
+  },
+  "srd-2024-subclass-druid-land-3-land-s-aid": {},
+  "srd-2014-class-fighter-core-1-second-wind": {},
+  "srd-2024-class-fighter-core-1-second-wind": {},
+  "srd-2014-class-fighter-core-2-action-surge": {},
+  "srd-2014-class-fighter-core-17-action-surge": {},
+  "srd-2024-class-fighter-core-2-action-surge": {},
+  "srd-2014-class-fighter-core-9-indomitable": {},
+  "srd-2014-class-fighter-core-13-indomitable": {},
+  "srd-2014-class-fighter-core-17-indomitable": {},
+  "srd-2024-class-fighter-core-9-indomitable": {},
+  "srd-2014-class-monk-core-2-ki": {},
+  "srd-2014-class-paladin-core-1-lay-on-hands": {},
+  "srd-2014-class-paladin-core-1-divine-sense": {},
+  "srd-2024-subclass-paladin-devotion-3-sacred-weapon": {},
+  "srd-2024-class-sorcerer-core-1-innate-sorcery": {},
+  "srd-2024-class-warlock-core-2-magical-cunning": {},
+  "srd-2014-class-wizard-core-1-arcane-recovery": {},
+  "srd-2024-class-wizard-core-1-arcane-recovery": {},
+  "srd-2014-subclass-druid-land-2-natural-recovery": {},
+  "srd-2024-subclass-druid-land-6-natural-recovery": {},
+  "srd-2014-subclass-barbarian-berserker-10-intimidating-presence": {},
+  "srd-2024-subclass-barbarian-berserker-14-intimidating-presence": {},
+  "srd-2014-subclass-barbarian-berserker-14-retaliation": {},
+  "srd-2024-subclass-barbarian-berserker-10-retaliation": {},
+  "srd-2024-subclass-monk-openhand-11-fleet-step": {},
+  "srd-2014-subclass-monk-openhand-17-quivering-palm": {},
+  "srd-2024-subclass-monk-openhand-17-quivering-palm": {},
+  "srd-2014-subclass-rogue-thief-17-thiefs-reflexes": {},
+  "srd-2024-subclass-rogue-thief-17-thief-s-reflexes": {},
+  "srd-2014-subclass-rogue-thief-3-fast-hands": {},
+  "srd-2024-subclass-rogue-thief-3-fast-hands": {},
+  "srd-2014-class-rogue-core-5-uncanny-dodge": {},
+  "srd-2024-class-rogue-core-5-uncanny-dodge": {},
+  "srd-2014-class-rogue-core-2-cunning-action": {},
+  "srd-2024-class-rogue-core-2-cunning-action": {},
+  "srd-2014-subclass-sorcerer-draconic-14-dragon-wings": {},
+  "srd-2024-subclass-sorcerer-draconic-14-dragon-wings": {},
+  "srd-2014-subclass-warlock-fiend-14-hurl-through-hell": {},
+  "srd-2024-subclass-warlock-fiend-14-hurl-through-hell": {},
+  "srd-2014-subclass-wizard-evocation-14-overchannel": {},
+  "srd-2024-subclass-wizard-evocation-14-overchannel": {},
+  "srd-2014-subclass-barbarian-berserker-3-frenzy": {},
+  "srd-2024-subclass-barbarian-berserker-3-frenzy": {},
+  "srd-2014-subclass-monk-openhand-6-wholeness-of-body": {},
+  "srd-2024-subclass-monk-openhand-6-wholeness-of-body": {},
+  "2014-sorcerer-shadowmagic-hound-of-ill-omen": {},
+  "srd-2014-subclass-sorcerer-draconic-18-draconic-presence": {},
+  "2014-fighter-eldritchknight-weapon-bond": {},
+  "srd-2014-class-cleric-core-10-divine-intervention": {},
+  "srd-2014-class-cleric-core-20-divine-intervention": {},
+  "srd-2024-class-cleric-core-10-divine-intervention": {},
+  "srd-2014-class-ranger-core-1-favored-enemy": {},
+  "srd-2024-class-ranger-core-1-favored-enemy": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-hunters-mark"
+      ]
+    }
+  },
+  "srd-2014-subclass-warlock-fiend-6-dark-ones-own-luck": {},
+  "srd-2024-subclass-warlock-fiend-6-dark-one-s-own-luck": {},
+  "srd-2014-class-monk-core-18-empty-body": {},
+  "srd-2024-class-barbarian-core-9-brutal-strike": {},
+  "srd-2024-class-druid-core-5-wild-resurgence": {},
+  "srd-2024-class-paladin-core-14-restoring-touch": {},
+  "srd-2024-subclass-sorcerer-draconic-18-dragon-companion": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-summon-dragon"
+      ]
+    }
+  },
+  "srd-2014-class-paladin-core-14-cleansing-touch": {},
+  "srd-2014-class-sorcerer-core-20-sorcerous-restoration": {},
+  "srd-2024-class-sorcerer-core-5-sorcerous-restoration": {},
+  "srd-2024-class-rogue-core-5-cunning-strike": {},
+  "srd-2024-class-rogue-core-14-devious-strikes": {},
+  "srd-2014-class-barbarian-core-2-reckless-attack": {},
+  "srd-2024-class-barbarian-core-2-reckless-attack": {},
+  "srd-2014-class-monk-core-5-stunning-strike": {},
+  "srd-2024-class-monk-core-5-stunning-strike": {},
+  "srd-2014-class-monk-core-3-deflect-missiles": {},
+  "srd-2024-class-monk-core-3-deflect-attacks": {},
+  "srd-2014-class-monk-core-4-slow-fall": {},
+  "srd-2024-class-monk-core-4-slow-fall": {},
+  "srd-2014-class-paladin-core-2-divine-smite": {},
+  "srd-2014-class-sorcerer-core-2-font-of-magic": {},
+  "srd-2024-class-sorcerer-core-2-font-of-magic": {},
+  "srd-2024-class-paladin-core-9-abjure-foes": {},
+  "srd-2014-subclass-bard-lore-14-peerless-skill": {},
+  "srd-2024-subclass-bard-lore-14-peerless-skill": {},
+  "srd-2014-subclass-ranger-hunter-11-multiattack": {},
+  "2014-rogue-arcanetrickster-mage-hand-legerdemain": {},
+  "2024-rogue-arcanetrickster-mage-hand-legerdemain": {},
+  "2014-rogue-arcanetrickster-versatile-trickster": {},
+  "2024-rogue-arcanetrickster-versatile-trickster": {},
+  "2014-rogue-arcanetrickster-spell-thief": {},
+  "2024-rogue-arcanetrickster-spell-thief": {},
+  "2014-fighter-eldritchknight-war-magic": {},
+  "2024-fighter-eldritchknight-war-magic": {},
+  "2014-fighter-eldritchknight-improved-war-magic": {},
+  "2024-fighter-eldritchknight-improved-war-magic": {},
+  "2014-fighter-eldritchknight-arcane-charge": {},
+  "2024-fighter-eldritchknight-arcane-charge": {},
+  "2014-sorcerer-shadowmagic-eyes-of-the-dark": {},
+  "2014-sorcerer-shadowmagic-strength-of-the-grave": {},
+  "2014-sorcerer-shadowmagic-shadow-walk": {},
+  "2014-sorcerer-shadowmagic-umbral-form": {},
+  "srd-2024-class-paladin-core-5-faithful-steed": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-find-steed"
+      ]
+    }
+  },
+  "srd-2024-class-fighter-core-2-tactical-mind": {},
+  "srd-2024-class-monk-core-10-self-restoration": {},
+  "srd-2024-class-monk-core-13-deflect-energy": {},
+  "srd-2024-class-cleric-core-20-greater-divine-intervention": {},
+  "srd-2014-class-ranger-core-10-hide-in-plain-sight": {},
+  "srd-2014-class-ranger-core-14-vanish": {},
+  "srd-2014-subclass-paladin-devotion-20-holy-nimbus": {},
+  "srd-2024-subclass-paladin-devotion-20-holy-nimbus": {},
+  "srd-2014-class-warlock-core-20-eldritch-master": {},
+  "srd-2024-class-warlock-core-20-eldritch-master": {},
+  "srd-2024-class-warlock-core-9-contact-patron": {},
+  "srd-2014-class-rogue-core-20-stroke-of-luck": {},
+  "srd-2024-class-rogue-core-20-stroke-of-luck": {},
+  "srd-2024-class-bard-core-20-words-of-creation": {
+    "spellbookSpellIdsByRuleset": {
+      "2024": [
+        "srd-2024-power-word-heal",
+        "srd-2024-power-word-kill"
+      ]
+    }
+  },
+  "srd-2014-subclass-cleric-life-1-life-domain-spells": {
+    "spellbookSpellIdsByRuleset": {
+      "2014": [
+        "srd-2014-bless",
+        "srd-2014-cure-wounds",
+        "srd-2014-lesser-restoration",
+        "srd-2014-spiritual-weapon",
+        "srd-2014-beacon-of-hope",
+        "srd-2014-revivify",
+        "srd-2014-death-ward",
+        "srd-2014-guardian-of-faith",
+        "srd-2014-mass-cure-wounds",
+        "srd-2014-raise-dead"
+      ]
+    }
+  },
+  "srd-2014-subclass-paladin-devotion-3-oath-spells": {
+    "spellbookSpellIdsByRuleset": {
+      "2014": [
+        "srd-2014-protection-from-evil-and-good",
+        "srd-2014-sanctuary",
+        "srd-2014-lesser-restoration",
+        "srd-2014-zone-of-truth",
+        "srd-2014-beacon-of-hope",
+        "srd-2014-dispel-magic",
+        "srd-2014-freedom-of-movement",
+        "srd-2014-guardian-of-faith",
+        "srd-2014-commune",
+        "srd-2014-flame-strike"
+      ]
+    }
+  }
+}
