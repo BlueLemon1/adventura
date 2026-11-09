@@ -596,5 +596,1411 @@
       "average": 14,
       "type": "Psychic"
     }
+  ],
+  "srd-2014-acid-arrow": [
+    {
+      "dice": "4d4",
+      "average": 10,
+      "type": "acid"
+    },
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "acid"
+    }
+  ],
+  "srd-2014-acid-splash": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "acid"
+    }
+  ],
+  "srd-2014-arcane-hand": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "force"
+    }
+  ],
+  "srd-2014-arcane-sword": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "force"
+    }
+  ],
+  "srd-2014-bestow-curse": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-black-tentacles": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-blade-barrier": [
+    {
+      "dice": "6d10",
+      "average": 33,
+      "type": "slashing"
+    }
+  ],
+  "srd-2014-blight": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-branding-smite": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-burning-hands": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-call-lightning": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "lightning"
+    }
+  ],
+  "srd-2014-chain-lightning": [
+    {
+      "dice": "10d8",
+      "average": 45,
+      "type": "lightning"
+    }
+  ],
+  "srd-2014-chill-touch": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-circle-of-death": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-cloudkill": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "poison"
+    }
+  ],
+  "srd-2014-cone-of-cold": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-contact-other-plane": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-control-water": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-dimension-door": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "force"
+    }
+  ],
+  "srd-2014-divine-favor": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-dream": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-earthquake": [
+    {
+      "dice": "5d6",
+      "average": 17.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-eldritch-blast": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "force"
+    }
+  ],
+  "srd-2014-enlarge-reduce": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "extra"
+    },
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "less"
+    }
+  ],
+  "srd-2014-faithful-hound": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "piercing"
+    }
+  ],
+  "srd-2014-feeblemind": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-fire-bolt": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-fire-storm": [
+    {
+      "dice": "7d10",
+      "average": 38.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-fireball": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-flame-blade": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-flame-strike": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "fire"
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-flaming-sphere": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-freezing-sphere": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-geas": [
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-guiding-bolt": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-harm": [
+    {
+      "dice": "14d6",
+      "average": 49,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-heat-metal": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-hellish-rebuke": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-hunter-s-mark": [
+    {
+      "dice": "1d6",
+      "average": 3.5
+    }
+  ],
+  "srd-2014-ice-storm": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "bludgeoning"
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-incendiary-cloud": [
+    {
+      "dice": "10d8",
+      "average": 45,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-inflict-wounds": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-insect-plague": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "piercing"
+    }
+  ],
+  "srd-2014-lightning-bolt": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "lightning"
+    }
+  ],
+  "srd-2014-meld-into-stone": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-meteor-swarm": [
+    {
+      "dice": "20d6",
+      "average": 70,
+      "type": "fire"
+    },
+    {
+      "dice": "20d6",
+      "average": 70,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-moonbeam": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-phantasmal-killer": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-poison-spray": [
+    {
+      "dice": "1d12",
+      "average": 6.5,
+      "type": "poison"
+    }
+  ],
+  "srd-2014-prismatic-spray": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "fire"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "acid"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "lightning"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "poison"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-prismatic-wall": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "fire"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "acid"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "lightning"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "poison"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-produce-flame": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-ray-of-frost": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-sacred-flame": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-scorching-ray": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-shatter": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "thunder"
+    }
+  ],
+  "srd-2014-shocking-grasp": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "lightning"
+    }
+  ],
+  "srd-2014-spike-growth": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "piercing"
+    }
+  ],
+  "srd-2014-spirit-guardians": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "radiant"
+    },
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-storm-of-vengeance": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "thunder"
+    },
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "acid"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "lightning"
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "bludgeoning"
+    },
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-sunbeam": [
+    {
+      "dice": "6d8",
+      "average": 27,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-sunburst": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "radiant"
+    }
+  ],
+  "srd-2014-symbol": [
+    {
+      "dice": "10d10",
+      "average": 55,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-teleport": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "force"
+    }
+  ],
+  "srd-2014-thunderwave": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "thunder"
+    }
+  ],
+  "srd-2014-vampiric-touch": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2014-vicious-mockery": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-wall-of-fire": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-wall-of-ice": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    },
+    {
+      "dice": "5d6",
+      "average": 17.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2014-wall-of-thorns": [
+    {
+      "dice": "7d8",
+      "average": 31.5,
+      "type": "piercing"
+    },
+    {
+      "dice": "7d8",
+      "average": 31.5,
+      "type": "slashing"
+    }
+  ],
+  "srd-2014-web": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "fire"
+    }
+  ],
+  "srd-2014-weird": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "psychic"
+    }
+  ],
+  "srd-2014-wind-wall": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2014-wish": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-acid-arrow": [
+    {
+      "dice": "4d4",
+      "average": 10,
+      "type": "acid"
+    },
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "acid"
+    }
+  ],
+  "srd-2024-acid-splash": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "acid"
+    }
+  ],
+  "srd-2024-alter-self": [
+    {
+      "dice": "1d6",
+      "average": 3.5
+    }
+  ],
+  "srd-2024-arcane-hand": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "force"
+    }
+  ],
+  "srd-2024-befuddlement": [
+    {
+      "dice": "10d12",
+      "average": 65,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-bestow-curse": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-black-tentacles": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-blade-barrier": [
+    {
+      "dice": "6d10",
+      "average": 33,
+      "type": "force"
+    }
+  ],
+  "srd-2024-blight": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-burning-hands": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-call-lightning": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "lightning"
+    }
+  ],
+  "srd-2024-chain-lightning": [
+    {
+      "dice": "10d8",
+      "average": 45,
+      "type": "lightning"
+    }
+  ],
+  "srd-2024-chill-touch": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-chromatic-orb": [
+    {
+      "dice": "3d8",
+      "average": 13.5
+    }
+  ],
+  "srd-2024-circle-of-death": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-cloudkill": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "poison"
+    }
+  ],
+  "srd-2024-cone-of-cold": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-conjure-animals": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "slashing"
+    }
+  ],
+  "srd-2024-conjure-celestial": [
+    {
+      "dice": "6d12",
+      "average": 39,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-conjure-elemental": [
+    {
+      "dice": "8d8",
+      "average": 36
+    },
+    {
+      "dice": "4d8",
+      "average": 18
+    }
+  ],
+  "srd-2024-conjure-minor-elementals": [
+    {
+      "dice": "2d8",
+      "average": 9
+    }
+  ],
+  "srd-2024-conjure-woodland-beings": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "force"
+    }
+  ],
+  "srd-2024-contact-other-plane": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-contagion": [
+    {
+      "dice": "11d8",
+      "average": 49.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-control-water": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-dimension-door": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "force"
+    }
+  ],
+  "srd-2024-dissonant-whispers": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-divine-favor": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-divine-smite": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-dragons-breath": [
+    {
+      "dice": "3d6",
+      "average": 10.5
+    }
+  ],
+  "srd-2024-dream": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-earthquake": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-eldritch-blast": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "force"
+    }
+  ],
+  "srd-2024-enlarge-reduce": [
+    {
+      "dice": "1d4",
+      "average": 2.5
+    }
+  ],
+  "srd-2024-ensnaring-strike": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "piercing"
+    }
+  ],
+  "srd-2024-faithful-hound": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "force"
+    }
+  ],
+  "srd-2024-fireball": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-fire-bolt": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-fire-shield": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "fire"
+    },
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-fire-storm": [
+    {
+      "dice": "7d10",
+      "average": 38.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-flame-strike": [
+    {
+      "dice": "5d6",
+      "average": 17.5,
+      "type": "fire"
+    },
+    {
+      "dice": "5d6",
+      "average": 17.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-flaming-sphere": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-freezing-sphere": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-geas": [
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-guiding-bolt": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-harm": [
+    {
+      "dice": "14d6",
+      "average": 49,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-heat-metal": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-hellish-rebuke": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-hex": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-hunters-mark": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "force"
+    }
+  ],
+  "srd-2024-ice-knife": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "piercing"
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-ice-storm": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "bludgeoning"
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-incendiary-cloud": [
+    {
+      "dice": "10d8",
+      "average": 45,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-inflict-wounds": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-insect-plague": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "piercing"
+    }
+  ],
+  "srd-2024-lightning-bolt": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "lightning"
+    }
+  ],
+  "srd-2024-meld-into-stone": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "force"
+    }
+  ],
+  "srd-2024-meteor-swarm": [
+    {
+      "dice": "20d6",
+      "average": 70,
+      "type": "fire"
+    },
+    {
+      "dice": "20d6",
+      "average": 70,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-mind-spike": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-moonbeam": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-phantasmal-force": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-phantasmal-killer": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-poison-spray": [
+    {
+      "dice": "1d12",
+      "average": 6.5,
+      "type": "poison"
+    }
+  ],
+  "srd-2024-power-word-kill": [
+    {
+      "dice": "12d12",
+      "average": 78,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-prismatic-spray": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "fire"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "acid"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "lightning"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "poison"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-prismatic-wall": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "fire"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "acid"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "lightning"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "poison"
+    },
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-produce-flame": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-ray-of-frost": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-ray-of-sickness": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "poison"
+    }
+  ],
+  "srd-2024-sacred-flame": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-scorching-ray": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-searing-smite": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-shatter": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "thunder"
+    }
+  ],
+  "srd-2024-shining-smite": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-shocking-grasp": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "lightning"
+    }
+  ],
+  "srd-2024-sorcerous-burst": [
+    {
+      "dice": "1d8",
+      "average": 4.5
+    }
+  ],
+  "srd-2024-spike-growth": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "piercing"
+    }
+  ],
+  "srd-2024-spirit-guardians": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "radiant"
+    },
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-starry-wisp": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-storm-of-vengeance": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "thunder"
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "acid"
+    },
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "lightning"
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "bludgeoning"
+    },
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-sunbeam": [
+    {
+      "dice": "6d8",
+      "average": 27,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-sunburst": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "radiant"
+    }
+  ],
+  "srd-2024-symbol": [
+    {
+      "dice": "10d10",
+      "average": 55,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-teleport": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "force"
+    }
+  ],
+  "srd-2024-thunderwave": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "thunder"
+    }
+  ],
+  "srd-2024-tsunami": [
+    {
+      "dice": "6d10",
+      "average": 33,
+      "type": "bludgeoning"
+    },
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-vampiric-touch": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "necrotic"
+    }
+  ],
+  "srd-2024-vicious-mockery": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-vitriolic-sphere": [
+    {
+      "dice": "10d4",
+      "average": 25,
+      "type": "acid"
+    },
+    {
+      "dice": "5d4",
+      "average": 12.5,
+      "type": "acid"
+    }
+  ],
+  "srd-2024-wall-of-fire": [
+    {
+      "dice": "5d8",
+      "average": 22.5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-wall-of-ice": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "cold"
+    },
+    {
+      "dice": "5d6",
+      "average": 17.5,
+      "type": "cold"
+    }
+  ],
+  "srd-2024-wall-of-thorns": [
+    {
+      "dice": "7d8",
+      "average": 31.5,
+      "type": "piercing"
+    },
+    {
+      "dice": "7d8",
+      "average": 31.5,
+      "type": "slashing"
+    }
+  ],
+  "srd-2024-web": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "fire"
+    }
+  ],
+  "srd-2024-weird": [
+    {
+      "dice": "10d10",
+      "average": 55,
+      "type": "psychic"
+    },
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "psychic"
+    }
+  ],
+  "srd-2024-wind-wall": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "bludgeoning"
+    }
+  ],
+  "srd-2024-wish": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "necrotic"
+    }
   ]
 }
