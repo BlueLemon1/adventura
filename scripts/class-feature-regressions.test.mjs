@@ -68,7 +68,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
     const spellIds = new Set(spells.map((spell) => spell.id))
     const features = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...readJson('../src/data/class-features-supplemental-' + ruleset + '.json'),
+      ...features.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
     ]
     for (const feature of features) {
       for (const spellId of feature.grantedSpellIds ?? []) {
