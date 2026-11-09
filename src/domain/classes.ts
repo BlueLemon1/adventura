@@ -19,21 +19,6 @@ interface AdditionalClassRecord {
 
 const ADDITIONAL_CLASSES = additionalClasses as AdditionalClassRecord[]
 
-const BASE_CLASSES: ClassOption[] = [
-  { value: 'barbarian', label: 'Barbar' },
-  { value: 'bard', label: 'Barde' },
-  { value: 'cleric', label: 'Kleriker' },
-  { value: 'druid', label: 'Druide' },
-  { value: 'fighter', label: 'Kämpfer' },
-  { value: 'monk', label: 'Mönch' },
-  { value: 'paladin', label: 'Paladin' },
-  { value: 'ranger', label: 'Waldläufer' },
-  { value: 'rogue', label: 'Schurke' },
-  { value: 'sorcerer', label: 'Zauberer' },
-  { value: 'warlock', label: 'Hexenmeister' },
-  { value: 'wizard', label: 'Magier' },
-]
-
 function isAvailable(record: AdditionalClassRecord, ruleset: Dnd5eRuleset): boolean {
   const availability = record.rulesets[ruleset]
   return availability === true || availability === 'legacy'
@@ -48,7 +33,7 @@ export function getClassOptions(ruleset: Dnd5eRuleset): ClassOption[] {
     source: record.sources[ruleset],
   }))
 
-  return [...BASE_CLASSES, ...additional, { value: 'other', label: 'Andere / eigene Klasse' }]
+  return [...additional, { value: 'other', label: 'Andere / eigene Klasse' }]
 }
 
 export const CLASS_OPTIONS = getClassOptions('2024')
