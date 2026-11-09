@@ -12,7 +12,7 @@ export interface SpellDamageScaling {
   startLevel?: number
   interval?: number
   dice?: string
-  mode?: 'add-dice' | 'add-instance'
+  mode?: 'add-dice' | 'add-instance' | 'set-dice'
   timing?: string
   condition?: string
   thresholds?: Array<{ level: number; dice: string }>
@@ -23,10 +23,11 @@ export interface SpellDamageMechanic {
   average: number
   type?: string
   typeOptions?: string[]
+  activeFromLevel?: number
   condition?: string
   timing?: string
-  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction'
-  flatBonus?: number | 'spellcasting-ability'
+  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction' | 'weapon-die'
+  flatBonus?: number | 'spellcasting-ability' | 'spell-slot-level' | { base?: number; spellcastingAbility?: boolean; spellSlotLevel?: boolean }
   scaling?: SpellDamageScaling[]
   diceRules?: {
     explodeOn: number
