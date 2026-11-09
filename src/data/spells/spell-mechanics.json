@@ -1115,7 +1115,31 @@
     {
       "dice": "2d4",
       "average": 5,
-      "type": "force"
+      "type": "force",
+      "condition": "On a hit per dart",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 1,
+          "startLevel": 2,
+          "interval": 1,
+          "dice": "2d4",
+          "mode": "add-instance"
+        }
+      ]
+    },
+    {
+      "dice": "5d4",
+      "average": 12.5,
+      "type": "force",
+      "condition": "Critical hit per dart; replaces the normal 2d4 damage"
+    },
+    {
+      "dice": "0",
+      "average": 0,
+      "flatBonus": 1,
+      "type": "force",
+      "condition": "If any dart attack roll is a natural 1, each dart deals 1 Force damage to you"
     }
   ],
   "phb-2024-mind-sliver": [
