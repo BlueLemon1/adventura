@@ -50,13 +50,13 @@ test('legacy records are explicitly marked when selected for 2024', () => {
 
 test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
   const ids = new Set(additional.map((spell) => spell.id))
-  assert.equal(Object.keys(mechanics).length, 278)
+  assert.equal(Object.keys(mechanics).length, 284)
   assert.ok(Object.values(mechanics).flat().every((entry) => (!entry.type || entry.type === entry.type.toLowerCase()) && (!entry.typeOptions || entry.typeOptions.every((type) => type === type.toLowerCase()))))
   assert.equal(Object.keys(availability).length, 21)
   const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
   assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
   const srdMechanicIds = Object.keys(mechanics).filter((id) => srdSpellIds.has(id))
-  assert.equal(srdMechanicIds.length, 192)
+  assert.equal(srdMechanicIds.length, 198)
   assert.ok(srdMechanicIds.every((id) => mechanics[id]?.length > 0))
   assert.ok([...spells2014, ...spells2024].every((spell) => !('damage' in spell)))
   assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
@@ -97,4 +97,16 @@ test('damage averages represent dice only and conditional alternatives are expli
     entry.scaling?.[0]?.condition?.includes('choose'),
   ))
   assert.ok(mechanics['srd-2014-prismatic-spray'].every((entry) => entry.condition))
+})
+
+test('2024 stat-block and weapon damage mechanics are represented', () => {
+  assert.equal(mechanics['srd-2024-animate-objects'].length, 3)
+  assert.equal(mechanics['srd-2024-arcane-hand'][1].dice, '4d6')
+  assert.equal(mechanics['srd-2024-chain-lightning'][0].scaling[0].mode, 'add-instance')
+  assert.equal(mechanics['srd-2024-magic-missile'][0].scaling[0].mode, 'add-instance')
+  assert.equal(mechanics['srd-2024-true-strike'][0].activeFromLevel, 5)
+  assert.equal(mechanics['srd-2024-shillelagh'][0].modifier, 'weapon-die')
+  assert.equal(mechanics['srd-2024-summon-dragon'][0].flatBonus.spellSlotLevel, true)
+  assert.ok(mechanics['xge-2014-immolation'].some((entry) => entry.dice === '4d6'))
+  assert.equal(mechanics['xge-2014-wall-of-light'].length, 2)
 })
