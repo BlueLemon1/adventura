@@ -128,9 +128,9 @@ export default function App() {
       const legacyPartyItems = await getPartyInventory()
       if (legacyPartyItems.length) {
         stored.inventory.party = [...stored.inventory.party, ...legacyPartyItems]
-        await clearPartyInventory()
       }
       await saveCharacter(stored)
+      if (legacyPartyItems.length) await clearPartyInventory()
       setCharacters((current) => [...current, stored])
       setSelectedId(character.id)
       setPage('sheet')

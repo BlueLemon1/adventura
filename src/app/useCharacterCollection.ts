@@ -4,7 +4,7 @@ import {
   getCharacters,
   getPartyInventory,
   saveCharacter,
-  savePartyInventory,
+  clearPartyInventory,
 } from '../storage/database'
 import type { StoredCharacter } from '../storage/database'
 
@@ -14,7 +14,6 @@ function getErrorMessage(reason: unknown, fallback: string): string {
 
 export function useCharacterCollection() {
   const [characters, setCharacters] = useState<StoredCharacter[]>([])
-  const [partyItems, setPartyItems] = useState<InventoryItem[]>([])
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -22,9 +21,23 @@ export function useCharacterCollection() {
 
   useEffect(() => {
     Promise.all([getCharacters(), getPartyInventory()])
-      .then(([storedCharacters, sharedItems]) => {
+      .then(async ([loadedCharacters, legacySharedItems]) => {
+        let storedCharacters = loadedCharacters
+        if (legacySharedItems.length && storedCharacters.length) {
+          const first = storedCharacters[0]
+          const existingIds = new Set(first.inventory.party.map((item) => item.id))
+          const migrated = {
+            ...first,
+            inventory: {
+              ...first.inventory,
+              party: [...first.inventory.party, ...legacySharedItems.filter((item) => !existingIds.has(item.id))],
+            },
+          }
+          await saveCharacter(migrated)
+          storedCharacters = [migrated, ...storedCharacters.slice(1)]
+          await clearPartyInventory()
+        }
         setCharacters(storedCharacters)
-        setPartyItems(sharedItems)
       })
       .catch((reason: unknown) => {
         setError(getErrorMessage(reason, 'Daten konnten nicht geladen werden.'))
@@ -76,18 +89,11 @@ export function useCharacterCollection() {
     })
   }
 
-  function persistPartyItems(items: InventoryItem[]): void {
-    setPartyItems(items)
-    void savePartyInventory(items).catch((reason: unknown) => {
-      setError(getErrorMessage(reason, 'Gruppeninventar konnte nicht gespeichert werden.'))
-    })
-  }
+
 
   return {
     characters,
     setCharacters,
-    partyItems,
-    setPartyItems,
     selectedId,
     setSelectedId,
     selected,
@@ -98,6 +104,5 @@ export function useCharacterCollection() {
     updateCharacter,
     updateInventory,
     updateSpellbook,
-    persistPartyItems,
   }
 }
