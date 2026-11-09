@@ -10,17 +10,7 @@ const availability = readJson('../src/data/spell-availability.json')
 const spells2014 = readJson('../src/data/spells-2014.json')
 const spells2024 = readJson('../src/data/spells-2024.json')
 const catalogSource = readText('../src/domain/spellCatalog.ts')
-const srdSpellsWithDamage = [...spells2014, ...spells2024].filter((spell) => spell.damage?.length)
-const damageTypeNames = {
-  Säure: 'acid', Wucht: 'bludgeoning', Kälte: 'cold', Feuer: 'fire', Energie: 'force',
-  Blitz: 'lightning', Nekrotisch: 'necrotic', Stich: 'piercing', Gift: 'poison',
-  Psychisch: 'psychic', Strahlend: 'radiant', Hieb: 'slashing', Schall: 'thunder',
-}
-const normalizeSrdDamage = (damage) => damage.map((part) => ({
-  dice: part.dice.replace(/(\d)W(?=\d)/gi, '$1d'),
-  average: part.average,
-  ...(part.type ? { type: damageTypeNames[part.type] ?? part.type.toLowerCase() } : {}),
-}))
+const srdSpellIds = new Set([...spells2014, ...spells2024].map((spell) => spell.id))
 
 test('additional spells declare ruleset availability directly', () => {
   assert.equal(additional.length, 171)
@@ -50,13 +40,13 @@ test('the new PHB 2024 records are represented as 2024-only additions', () => {
 test('renamed 2014 SRD spell IDs resolve to their 2024 counterparts without editing SRD data', () => {
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-branding-smite'))
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-feeblemind'))
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id] ?? spell.damage'))
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id] ?? spell.damage'))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
 })
 
 test('legacy records are explicitly marked when selected for 2024', () => {
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id] ?? spell.damage'))
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id] ?? spell.damage'))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
 })
 
 test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
@@ -66,12 +56,11 @@ test('spell mechanics and availability exceptions are normalized into ID-keyed m
   assert.equal(Object.keys(availability).length, 21)
   const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
   assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
-  assert.equal(srdSpellsWithDamage.length, 170)
-  assert.ok(srdSpellsWithDamage.every((spell) => mechanics[spell.id]))
-  for (const spell of srdSpellsWithDamage) {
-    assert.deepEqual(mechanics[spell.id], normalizeSrdDamage(spell.damage), `${spell.id} damage metadata matches its SRD description data`)
-  }
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id] ?? spell.damage'))
+  const srdMechanicIds = Object.keys(mechanics).filter((id) => srdSpellIds.has(id))
+  assert.equal(srdMechanicIds.length, 170)
+  assert.ok(srdMechanicIds.every((id) => mechanics[id]?.length > 0))
+  assert.ok([...spells2014, ...spells2024].every((spell) => !('damage' in spell)))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
   assert.ok(Object.keys(availability).every((id) => ids.has(id)))
   assert.ok(additional.every((spell) => !('damage' in spell)))
   assert.ok(additional.every((spell) => !('rulesetClasses' in spell)))
