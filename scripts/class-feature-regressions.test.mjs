@@ -168,6 +168,11 @@ test('shared feature definitions are reused across classes while progression occ
   assert.equal(featureDefinitions.filter((record) => record.id === extraAttackId).length, 1)
   assert.ok(extraAttackProgressions.every((record) => record.contentSourceId && record.sourceReference))
   assert.ok(definitionsById.get(extraAttackId).sources.length >= 2)
+  for (const progression of extraAttackProgressions) {
+    assert.ok(definitionsById.get(extraAttackId).sources.some((source) =>
+      source.contentSourceId === progression.contentSourceId && source.sourceReference === progression.sourceReference,
+    ))
+  }
 })
 
 test('same mechanical feature may retain a class-specific display name', () => {
