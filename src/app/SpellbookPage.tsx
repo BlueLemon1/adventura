@@ -63,16 +63,13 @@ export function SpellbookPage({
       contentSourceId: spell.contentSourceId,
       legacy: spell.legacy,
       spellLevel: spell.level,
-      school:
-        language === 'de' ? (localized?.school ?? spell.school) : spell.school,
+      school: language === 'de' ? (localized?.school ?? spell.school) : spell.school,
       castingTime:
         language === 'de' ? (localized?.castingTime ?? spell.castingTime) : spell.castingTime,
-      range:
-        language === 'de' ? (localized?.range ?? spell.range) : spell.range,
+      range: language === 'de' ? (localized?.range ?? spell.range) : spell.range,
       components:
         language === 'de' ? (localized?.components ?? spell.components) : spell.components,
-      duration:
-        language === 'de' ? (localized?.duration ?? spell.duration) : spell.duration,
+      duration: language === 'de' ? (localized?.duration ?? spell.duration) : spell.duration,
       description:
         language === 'de' ? (localized?.description ?? spell.description) : spell.description,
       higherLevel: getHigherLevelText(englishHigherLevel, localized?.higherLevel, language),
