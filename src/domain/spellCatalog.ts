@@ -39,6 +39,7 @@ export interface CatalogSpell {
     dice: string
     average: number
     type?: string
+    typeOptions?: string[]
     condition?: string
     timing?: string
     modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction'
@@ -53,6 +54,7 @@ export interface CatalogSpell {
       timing?: string
       thresholds?: Array<{ level: number; dice: string }>
     }>
+    diceRules?: { explodeOn: number; maxAdditionalDice: 'spellcasting-ability' }
   }>
   contentSourceId: string
   rulesets?: Partial<Record<Dnd5eRuleset, boolean | string>>
