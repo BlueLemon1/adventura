@@ -22,7 +22,11 @@ function featureRecords(ruleset) {
     if (availability !== true && availability !== 'legacy') return []
     return [{
       ...definitionsById.get(progression.featureId),
-      id: progression.featureId,
+      id: progression.progressionId ?? progression.featureId,
+      definitionId: progression.featureId,
+      ...(progression.names ? { names: { ...definitionsById.get(progression.featureId).names, ...progression.names } } : {}),
+      ...(progression.contentSourceId ? { contentSourceId: progression.contentSourceId } : {}),
+      ...(progression.sourceReference ? { sourceReference: progression.sourceReference } : {}),
       classId: progression.classId,
       subclassId: progression.subclassId,
       featureType: progression.subclassId ? 'subclass' : 'class',
@@ -143,4 +147,33 @@ test('feature mechanics reference stable IDs and spell grants are ruleset-specif
       assert.ok(Array.isArray(spellIds) && spellIds.length > 0)
     }
   }
+})
+
+
+test('shared feature definitions are reused across classes while progression occurrences stay unique', () => {
+  const extraAttackId = '2014-artificer-armorer-extra-attack'
+  const extraAttackProgressions = progressions.filter((record) => record.featureId === extraAttackId)
+  assert.equal(definitionsById.has(extraAttackId), true)
+  assert.equal(extraAttackProgressions.length, 4)
+  assert.deepEqual(
+    extraAttackProgressions.map((record) => [record.classId, record.subclassId]).sort(),
+    [
+      ['artificer', 'armorer'],
+      ['artificer', 'battlesmith'],
+      ['bard', 'swords'],
+      ['bard', 'valor'],
+    ].sort(),
+  )
+  assert.equal(new Set(progressions.map((record) => record.progressionId)).size, progressions.length)
+  assert.equal(featureDefinitions.filter((record) => record.id === extraAttackId).length, 1)
+  assert.ok(extraAttackProgressions.every((record) => record.contentSourceId && record.sourceReference))
+  assert.ok(definitionsById.get(extraAttackId).sources.length >= 2)
+})
+
+test('same mechanical feature may retain a class-specific display name', () => {
+  const tacticalWit = progressions.find((record) => record.progressionId === '2014-wizard-war-tactical-wit')
+  const temporalAwareness = progressions.find((record) => record.progressionId === '2014-wizard-chronurgy-temporal-awareness')
+  assert.equal(tacticalWit?.featureId, temporalAwareness?.featureId)
+  assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
+  assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')
 })
