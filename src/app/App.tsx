@@ -188,7 +188,6 @@ export default function App() {
     try {
       const imported = await importBackup(await file.text())
       setCharacters(imported)
-      setPartyItems(await getPartyInventory())
       setSelectedId(null)
       setPage('overview')
     } catch (reason) {
