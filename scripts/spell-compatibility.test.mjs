@@ -5,6 +5,8 @@ import { readFileSync } from 'node:fs'
 const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 const additional = readJson('../src/data/spells-additional.json')
+const mechanics = readJson('../src/data/spell-mechanics.json')
+const availability = readJson('../src/data/spell-availability.json')
 const spells2014 = readJson('../src/data/spells-2014.json')
 const spells2024 = readJson('../src/data/spells-2024.json')
 const catalogSource = readText('../src/domain/spellCatalog.ts')
@@ -44,4 +46,17 @@ test('renamed 2014 SRD spell IDs resolve to their 2024 counterparts without edit
 test('legacy records are explicitly marked when selected for 2024', () => {
   assert.match(catalogSource, /spell\.rulesets\?\.\['2024'\] === 'legacy'/)
   assert.match(catalogSource, /legacy: true/)
+})
+
+test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
+  const ids = new Set(additional.map((spell) => spell.id))
+  assert.equal(Object.keys(mechanics).length, 84)
+  assert.equal(Object.keys(availability).length, 21)
+  assert.ok(Object.keys(mechanics).every((id) => ids.has(id)))
+  assert.ok(Object.keys(availability).every((id) => ids.has(id)))
+  assert.ok(additional.every((spell) => !('damage' in spell)))
+  assert.ok(additional.every((spell) => !('rulesetClasses' in spell)))
+  assert.ok(additional.every((spell) => !('subclassRestriction' in spell)))
+  assert.ok(additional.every((spell) => !('availabilityNote' in spell)))
+  assert.ok(additional.every((spell) => !('classes' in (spell.localized ?? {}))))
 })
