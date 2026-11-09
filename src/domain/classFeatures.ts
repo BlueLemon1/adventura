@@ -39,11 +39,16 @@ export interface AutomaticClassFeature {
 const CLASS_FEATURE_CATALOGS: Record<Dnd5eRuleset, ClassFeatureRecord[]> = {
   '2014': mergeClassFeatureRecords(
     classFeatures2014 as unknown as ClassFeatureRecord[],
-    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter((feature) => feature.rulesets?.['2014'] === true),
+    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter(
+      (feature) => feature.rulesets?.['2014'] === true,
+    ),
   ),
   '2024': mergeClassFeatureRecords(
     classFeatures2024 as unknown as ClassFeatureRecord[],
-    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter((feature) => feature.rulesets?.['2024'] === true || feature.rulesets?.['2024'] === 'legacy'),
+    (additionalClassFeatures as unknown as ClassFeatureRecord[]).filter(
+      (feature) =>
+        feature.rulesets?.['2024'] === true || feature.rulesets?.['2024'] === 'legacy',
+    ),
   ),
 }
 
