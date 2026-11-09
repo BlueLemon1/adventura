@@ -21,6 +21,7 @@ export interface ClassResourceDefinition {
   maximum: number
   recovery: 'short' | 'long' | 'short-or-long' | 'short-one-or-long'
 }
+
 export interface AutomaticClassFeature {
   id: string
   name: string
@@ -106,7 +107,11 @@ function getFeatureMechanics(
   if (name === 'Patient Defense' || name === 'Step of the Wind') {
     resourceId = character.ruleset === '2014' ? 'ki-points' : undefined
   }
-  if (name === 'Divine Sense' && character.classId === 'paladin' && character.ruleset === '2024') {
+  if (
+    name === 'Divine Sense' &&
+    character.classId === 'paladin' &&
+    character.ruleset === '2024'
+  ) {
     activation = 'bonusAction'
     resourceId = 'channel-divinity-paladin'
   }
