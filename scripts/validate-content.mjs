@@ -330,7 +330,7 @@ const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
 
 for (const ruleset of ['2014', '2024']) {
   const srd = readJson(`src/data/class-features-${ruleset}.json`)
-  const srdSpells = readJson(`src/data/spells-${ruleset}.json`)
+  const srdSpells = readJson(`src/data/spells/spells-${ruleset}.json`)
   const supplemental = additionalClassFeatures.filter((feature) =>
     feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy',
   )
