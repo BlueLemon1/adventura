@@ -5,32 +5,6 @@ const readJson = (path) => JSON.parse(readFileSync(resolve(path), 'utf8'))
 const readText = (path) => readFileSync(resolve(path), 'utf8')
 const errors = []
 
-function extractSubclassOptions(source, ruleset, nextRuleset) {
-  const start = source.indexOf(`'${ruleset}': {`)
-  const endMarker = nextRuleset
-    ? `\n  },\n  '${nextRuleset}':`
-    : '\n  },\n}'
-  const end = source.indexOf(endMarker, start)
-  if (start < 0 || end < 0) {
-    errors.push(`Could not locate ${ruleset} subclass options in src/domain/classes.ts`)
-    return {}
-  }
-
-  const block = source.slice(start, end)
-  const matches = [...block.matchAll(/^\s{4}([a-z_]+): \[/gm)]
-  const result = {}
-
-  for (let index = 0; index < matches.length; index += 1) {
-    const classId = matches[index][1]
-    const sectionStart = matches[index].index
-    const sectionEnd = matches[index + 1]?.index ?? block.length
-    const section = block.slice(sectionStart, sectionEnd)
-    result[classId] = [...section.matchAll(/\{ value: '([^']+)'/g)].map((match) => match[1])
-  }
-
-  return result
-}
-
 function normalizeContentName(value) {
   return value
     .normalize('NFKD')
@@ -113,21 +87,21 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
   for (const feature of records) {
     const location = `${ruleset}/${feature.id}`
 
+    if (!feature.id?.trim()) errors.push(`${location}: missing feature id`)
     if (ids.has(feature.id)) errors.push(`${location}: duplicate feature ID`)
     ids.add(feature.id)
 
     if (feature.ruleset !== ruleset) errors.push(`${location}: wrong ruleset`)
+    if (feature.rulesets?.[ruleset] !== true && feature.rulesets?.[ruleset] !== 'legacy') {
+      errors.push(`${location}: feature is not explicitly available for ${ruleset}`)
+    }
     if (!sourceIds.has(feature.contentSourceId)) errors.push(`${location}: unknown source ${feature.contentSourceId}`)
-    const isLegacy2024CompatibilityFeature =
-      ruleset === '2024' &&
-      feature.id.startsWith('2024-legacy-') &&
-      sourceRulesets.get(feature.contentSourceId) === '2014'
-    if (
-      sourceRulesets.get(feature.contentSourceId) &&
-      sourceRulesets.get(feature.contentSourceId) !== ruleset &&
-      !isLegacy2024CompatibilityFeature
-    ) {
-      errors.push(`${location}: source ${feature.contentSourceId} belongs to ${sourceRulesets.get(feature.contentSourceId)}`)
+    const sourceRuleset = sourceRulesets.get(feature.contentSourceId)
+    if (sourceRuleset && sourceRuleset !== ruleset && !feature.rulesets?.[ruleset]) {
+      errors.push(`${location}: source ${feature.contentSourceId} belongs to ${sourceRuleset}`)
+    }
+    if (feature.id.startsWith('2024-legacy-') && feature.rulesets?.['2024'] !== 'legacy') {
+      errors.push(`${location}: legacy feature copy must be marked legacy`)
     }
     if (!feature.classId) errors.push(`${location}: missing classId`)
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
@@ -156,11 +130,10 @@ function validateDataset(records, ruleset, sourceIds, spellIds) {
   }
 }
 
-const classSource = readText('src/domain/classes.ts')
 const sourceSource = readText('src/domain/contentSources.ts')
 const sourceIds = new Set([...sourceSource.matchAll(/id: '([^']+)'/g)].map((match) => match[1]))
 const sourceRulesets = new Map(
-  [...sourceSource.matchAll(/id: '([^']+)'[\s\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
+  [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const additionalSpellRecords = readJson('src/data/spells-additional.json')
 const additionalSpellsById = new Map(additionalSpellRecords.map((spell) => [spell.id, spell]))
@@ -170,15 +143,11 @@ for (const spell of additionalSpellRecords) {
     continue
   }
   for (const [ruleset, availability] of Object.entries(spell.rulesets)) {
-    if (!['2014', '2024'].includes(ruleset)) {
-      errors.push(`2024/${spell.id}: unknown ruleset ${ruleset}`)
-    }
+    if (!['2014', '2024'].includes(ruleset)) errors.push(`2024/${spell.id}: unknown ruleset ${ruleset}`)
     if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') {
       errors.push(`2024/${spell.id}: invalid availability value for ${ruleset}`)
     }
-    if (availability === 'legacy' && ruleset !== '2024') {
-      errors.push(`2024/${spell.id}: Legacy availability is only valid for 2024`)
-    }
+    if (availability === 'legacy' && ruleset !== '2024') errors.push(`2024/${spell.id}: Legacy availability is only valid for 2024`)
     if (typeof availability === 'string' && availability !== 'legacy' && ruleset !== '2024') {
       errors.push(`2024/${spell.id}: replacement IDs are only valid for 2024`)
     }
@@ -190,114 +159,101 @@ for (const spell of additionalSpellRecords) {
     errors.push(`2024/${spell.id}: Legacy spell must also be available in 2014`)
   }
 }
-const options = {
-  '2014': extractSubclassOptions(classSource, '2014', '2024'),
-  '2024': extractSubclassOptions(classSource, '2024'),
-}
 
-// Mirror getSubclassOptions(): older official subclasses remain available in
-// 2024 unless a 2024 PHB subclass replaces them (including renamed IDs).
-const replacedLegacySubclasses = {
-  barbarian: ['totemwarrior'],
-  monk: ['four_elements'],
-  sorcerer: ['aberrantmind'],
-  wizard: ['abjuration', 'divination', 'illusion'],
-}
-for (const [classId, legacyIds] of Object.entries(options['2014'])) {
-  const currentIds = options['2024'][classId] ?? []
-  const replacedIds = new Set(replacedLegacySubclasses[classId] ?? [])
-  const compatibleLegacyIds = legacyIds.filter(
-    (id) => !currentIds.includes(id) && !replacedIds.has(id),
-  )
-  options['2024'][classId] = [...currentIds, ...compatibleLegacyIds]
-}
-
-const renamed2024Subclasses = {
-  barbarian: { totemwarrior: 'wildheart' },
-  monk: { four_elements: 'elements' },
-  sorcerer: { aberrantmind: 'aberrant' },
-  wizard: {
-    abjuration: 'abjurer',
-    divination: 'diviner',
-    illusion: 'illusionist',
-  },
-}
-for (const [classId, replacements] of Object.entries(renamed2024Subclasses)) {
-  const currentIds = options['2024'][classId] ?? []
-  const legacyIds = options['2014'][classId] ?? []
-  for (const [legacyId, currentId] of Object.entries(replacements)) {
-    if (!currentIds.includes(currentId)) {
-      errors.push(`2024/${classId}: missing replacement subclass ${currentId}`)
+const additionalClassRecords = readJson('src/data/classes-additional.json')
+const additionalClassFeatures = readJson('src/data/class-features-additional.json')
+const classIds = new Set([
+  'barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk',
+  'paladin', 'ranger', 'rogue', 'sorcerer', 'warlock', 'wizard',
+])
+const classCatalogIds = new Set()
+for (const record of additionalClassRecords) {
+  const location = `classes/${record.id}`
+  if (!record.id?.trim() || classCatalogIds.has(record.id)) errors.push(`${location}: missing or duplicate id`)
+  classCatalogIds.add(record.id)
+  if (!['class', 'subclass'].includes(record.type)) errors.push(`${location}: invalid record type`)
+  if (!record.classId?.trim()) errors.push(`${location}: missing classId`)
+  if (record.type === 'subclass' && !record.subclassId?.trim()) errors.push(`${location}: missing subclassId`)
+  if (record.type === 'class') classIds.add(record.classId)
+  if (!record.rulesets || typeof record.rulesets !== 'object' || Array.isArray(record.rulesets)) {
+    errors.push(`${location}: rulesets must be an object`)
+    continue
+  }
+  for (const [ruleset, availability] of Object.entries(record.rulesets)) {
+    if (!['2014', '2024'].includes(ruleset)) errors.push(`${location}: unknown ruleset ${ruleset}`)
+    if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') {
+      errors.push(`${location}: invalid availability value for ${ruleset}`)
     }
-    if (legacyIds.includes(legacyId) && currentIds.includes(legacyId)) {
-      errors.push(`2024/${classId}: replaced legacy subclass ${legacyId} must not be selectable`)
+    if (availability === 'legacy' && ruleset !== '2024') errors.push(`${location}: Legacy availability is only valid for 2024`)
+    if (typeof availability === 'string' && availability !== 'legacy' && ruleset !== '2024') {
+      errors.push(`${location}: replacement IDs are only valid for 2024`)
     }
   }
 }
-
-const retained2014PhbExceptions = [
-  'cleric/knowledge',
-  'cleric/nature',
-  'cleric/tempest',
-  'wizard/conjuration',
-  'wizard/enchantment',
-  'wizard/necromancy',
-  'wizard/transmutation',
-]
-for (const subclass of retained2014PhbExceptions) {
-  const [classId, subclassId] = subclass.split('/')
-  if (!(options['2024'][classId] ?? []).includes(subclassId)) {
-    errors.push(`2024/${subclass}: expected 2014 PHB exception is not selectable`)
+for (const record of additionalClassRecords.filter((item) => item.type === 'subclass')) {
+  const replacement = record.rulesets?.['2024']
+  if (typeof replacement === 'string' && replacement !== 'legacy') {
+    const target = additionalClassRecords.find(
+      (candidate) => candidate.type === 'subclass' && candidate.classId === record.classId &&
+        candidate.subclassId === replacement && candidate.rulesets?.['2024'] === true,
+    )
+    if (!target) errors.push(`2024/${record.classId}/${record.subclassId}: unknown replacement subclass ${replacement}`)
   }
 }
+
+const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
+  const byClass = {}
+  for (const record of additionalClassRecords) {
+    if (record.type !== 'subclass') continue
+    const availability = record.rulesets?.[ruleset]
+    if (availability !== true && availability !== 'legacy') continue
+    if (!byClass[record.classId]) byClass[record.classId] = []
+    byClass[record.classId].push(record.subclassId)
+  }
+  return [ruleset, byClass]
+}))
 
 for (const ruleset of ['2014', '2024']) {
   const srd = readJson(`src/data/class-features-${ruleset}.json`)
-  const supplemental = readJson(`src/data/class-features-supplemental-${ruleset}.json`)
   const srdSpells = readJson(`src/data/spells-${ruleset}.json`)
-  const supplementalSpells = readJson('src/data/spells-additional.json').filter((spell) =>
+  const supplemental = additionalClassFeatures.filter((feature) =>
+    feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy',
+  )
+  const supplementalSpells = additionalSpellRecords.filter((spell) =>
     spell.rulesets
       ? spell.rulesets[ruleset] === true || spell.rulesets[ruleset] === 'legacy'
       : sourceRulesets.get(spell.contentSourceId) === ruleset,
   )
   const spells = [...srdSpells, ...supplementalSpells]
   validateSpellDataset(spells, ruleset, sourceIds, sourceRulesets)
-  const legacySpellIds =
-    ruleset === '2024'
-      ? additionalSpellRecords.filter((spell) => spell.rulesets?.['2024'] === 'legacy').map((spell) => spell.id)
-      : []
+  const legacySpellIds = ruleset === '2024'
+    ? additionalSpellRecords.filter((spell) => spell.rulesets?.['2024'] === 'legacy').map((spell) => spell.id)
+    : []
   const spellIds = new Set([...spells.map((spell) => spell.id), ...legacySpellIds])
   const allFeatures = [...srd, ...supplemental]
   const allIds = new Set()
   const expectedSrdSource = ruleset === '2014' ? 'srd-5.1' : 'srd-5.2.1'
 
   for (const spell of srdSpells) {
-    if (spell.contentSourceId !== expectedSrdSource) {
-      errors.push(`${ruleset}/${spell.id}: SRD spell has unexpected source ${spell.contentSourceId}`)
-    }
+    if (spell.contentSourceId !== expectedSrdSource) errors.push(`${ruleset}/${spell.id}: SRD spell has unexpected source ${spell.contentSourceId}`)
   }
   for (const feature of srd) {
-    if (feature.contentSourceId !== expectedSrdSource) {
-      errors.push(`${ruleset}/${feature.id}: SRD feature has unexpected source ${feature.contentSourceId}`)
-    }
+    if (feature.contentSourceId !== expectedSrdSource) errors.push(`${ruleset}/${feature.id}: SRD feature has unexpected source ${feature.contentSourceId}`)
   }
 
   const duplicateSpells = findPriorityCollisions(srdSpells, supplementalSpells, spellIdentity)
   const duplicateFeatures = findPriorityCollisions(srd, supplemental, featureIdentity)
-  console.log(
-    `${ruleset}: SRD priority protects ${duplicateSpells.length} duplicate spells and ${duplicateFeatures.length} duplicate features from supplemental overrides`,
-  )
+  console.log(`${ruleset}: SRD priority protects ${duplicateSpells.length} duplicate spells and ${duplicateFeatures.length} duplicate features from supplemental overrides`)
 
   validateDataset(supplemental, ruleset, sourceIds, spellIds)
-
   for (const feature of allFeatures) {
     if (allIds.has(feature.id)) errors.push(`${ruleset}/${feature.id}: duplicate ID across SRD and supplemental data`)
     allIds.add(feature.id)
   }
 
   for (const feature of allFeatures) {
+    if (!classIds.has(feature.classId)) errors.push(`${ruleset}/${feature.id}: unknown class ${feature.classId}`)
     const selectableSubclasses = options[ruleset][feature.classId]
-    if (!selectableSubclasses) errors.push(`${ruleset}/${feature.id}: unknown class ${feature.classId}`)
     if (feature.subclassId && !selectableSubclasses?.includes(feature.subclassId)) {
       errors.push(`${ruleset}/${feature.id}: subclass ${feature.subclassId} is not selectable for ${feature.classId}`)
     }
@@ -311,7 +267,6 @@ for (const ruleset of ['2014', '2024']) {
     if (!classFeatures.some((feature) => feature.featureType === 'class')) {
       errors.push(`${ruleset}/${classId}: no class progression records`)
     }
-
     for (const subclassId of subclassIds) {
       if (!allFeatures.some((feature) => feature.classId === classId && feature.subclassId === subclassId)) {
         errors.push(`${ruleset}/${classId}/${subclassId}: no subclass feature records`)
@@ -320,9 +275,7 @@ for (const ruleset of ['2014', '2024']) {
   }
 
   const optionCount = Object.values(options[ruleset]).reduce((sum, ids) => sum + ids.length, 0)
-  console.log(
-    `${ruleset}: ${optionCount} selectable subclasses, ${supplemental.length} supplemental feature records, ${supplemental.filter((feature) => feature.grantedSpellIds?.length).length} spell-grant features`,
-  )
+  console.log(`${ruleset}: ${optionCount} selectable subclasses, ${supplemental.length} supplemental feature records, ${supplemental.filter((feature) => feature.grantedSpellIds?.length).length} spell-grant features`)
 }
 
 const spells2014Srd = readJson('src/data/spells-2014.json')
@@ -369,7 +322,7 @@ console.log(
 
 const incomplete2014Translations = [
   ...readJson('src/data/class-features-2014.json'),
-  ...readJson('src/data/class-features-supplemental-2014.json'),
+  ...readJson('src/data/class-features-additional.json').filter((feature) => feature.rulesets?.['2014'] === true),
 ].filter((feature) => !feature.names?.de?.trim() || !feature.descriptions?.de?.trim())
 if (incomplete2014Translations.length) {
   console.warn(
