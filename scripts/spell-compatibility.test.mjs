@@ -83,3 +83,16 @@ test('spell mechanics model conditional, recurring, and scaled damage separately
   assert.equal(mechanics['srd-2024-sorcerous-burst'][0].diceRules.explodeOn, 8)
   assert.ok(Object.values(mechanics).flat().every((entry) => !['extra', 'less', 'variable'].includes(entry.type)))
 })
+
+test('damage averages represent dice only and conditional alternatives are explicit', () => {
+  const diceAverage = (dice) => [...dice.matchAll(/(\\d+)d(\\d+)/gi)]
+    .reduce((total, match) => total + Number(match[1]) * (Number(match[2]) + 1) / 2, 0)
+  for (const entries of Object.values(mechanics)) {
+    for (const entry of entries) assert.equal(entry.average, diceAverage(entry.dice))
+  }
+  assert.ok(mechanics['srd-2014-spirit-guardians'].every((entry) => entry.condition))
+  assert.ok(mechanics['srd-2014-flame-strike'].every((entry) =>
+    entry.scaling?.[0]?.condition?.includes('choose'),
+  ))
+  assert.ok(mechanics['srd-2014-prismatic-spray'].every((entry) => entry.condition))
+})
