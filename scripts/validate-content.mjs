@@ -199,6 +199,17 @@ for (const record of additionalClassRecords.filter((item) => item.type === 'subc
     if (!target) errors.push(`2024/${record.classId}/${record.subclassId}: unknown replacement subclass ${replacement}`)
   }
 }
+for (const feature of additionalClassFeatures) {
+  const replacement = feature.rulesets?.['2024']
+  if (typeof replacement !== 'string' || replacement === 'legacy') continue
+  const target = additionalClassRecords.find(
+    (candidate) => candidate.type === 'subclass' && candidate.classId === feature.classId &&
+      candidate.subclassId === replacement && candidate.rulesets?.['2024'] === true,
+  )
+  if (!feature.subclassId || !target) {
+    errors.push(`2024/${feature.id}: unknown replacement subclass ${replacement}`)
+  }
+}
 
 const options = Object.fromEntries(['2014', '2024'].map((ruleset) => {
   const byClass = {}
