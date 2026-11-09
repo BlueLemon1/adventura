@@ -52,6 +52,7 @@ export interface CatalogSpell {
       dice?: string
       mode?: 'add-dice' | 'add-instance'
       timing?: string
+      condition?: string
       thresholds?: Array<{ level: number; dice: string }>
     }>
     diceRules?: { explodeOn: number; maxAdditionalDice: 'spellcasting-ability' }
