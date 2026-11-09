@@ -9,6 +9,7 @@ import type { Dnd5eRuleset } from './rules'
 export interface ClassFeatureRecord {
   id: string
   ruleset: Dnd5eRuleset
+  rulesets?: Partial<Record<Dnd5eRuleset, true | 'legacy' | string>>
   contentSourceId: ContentProvenance['contentSourceId']
   sourceReference?: string
   classId: string
