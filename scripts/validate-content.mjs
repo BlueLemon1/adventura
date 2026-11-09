@@ -258,15 +258,18 @@ for (const progression of classProgressions) {
   if (!progression.rulesets || !progression.levels) errors.push(`${location}: missing rulesets or levels`)
   for (const [ruleset, availability] of Object.entries(progression.rulesets ?? {})) {
     if (!['2014', '2024'].includes(ruleset)) errors.push(`${location}: unknown ruleset ${ruleset}`)
-    if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') errors.push(`${location}: invalid availability for ${ruleset}`)
+    if (availability !== true && typeof availability !== 'string') errors.push(`${location}: invalid availability for ${ruleset}`)
     if (availability === 'legacy') errors.push(`${location}: Legacy availability belongs on the parent class/subclass, not on a feature progression`)
-    if (availability !== false && availability !== undefined && !Number.isInteger(progression.levels?.[ruleset])) {
+    if (typeof availability === 'string' && availability !== 'legacy' && !definitionIds.has(availability)) {
+      errors.push(`${location}: unknown replacement feature ${availability}`)
+    }
+    if (availability === true && !Number.isInteger(progression.levels?.[ruleset])) {
       errors.push(`${location}: missing integer level for ${ruleset}`)
     }
   }
   for (const [ruleset, level] of Object.entries(progression.levels ?? {})) {
     if (!Number.isInteger(level) || level < 1 || level > 20) errors.push(`${location}: invalid ${ruleset} level`)
-    if (!progression.rulesets?.[ruleset]) errors.push(`${location}: level declared without availability for ${ruleset}`)
+    if (progression.rulesets?.[ruleset] !== true) errors.push(`${location}: level declared without an active feature assignment for ${ruleset}`)
   }
 }
 for (const definition of additionalFeatureDefinitions) {
