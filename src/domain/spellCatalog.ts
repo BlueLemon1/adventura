@@ -27,7 +27,15 @@ export interface SpellDamageMechanic {
   condition?: string
   timing?: string
   modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction' | 'weapon-die'
-  flatBonus?: number | 'spellcasting-ability' | 'spell-slot-level' | { base?: number; spellcastingAbility?: boolean; spellSlotLevel?: boolean }
+  flatBonus?:
+    | number
+    | 'spellcasting-ability'
+    | 'spell-slot-level'
+    | {
+        base?: number
+        spellcastingAbility?: boolean
+        spellSlotLevel?: boolean
+      }
   scaling?: SpellDamageScaling[]
   diceRules?: {
     explodeOn: number
