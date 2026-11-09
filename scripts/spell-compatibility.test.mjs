@@ -62,6 +62,7 @@ test('legacy records are explicitly marked when selected for 2024', () => {
 test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
   const ids = new Set(additional.map((spell) => spell.id))
   assert.equal(Object.keys(mechanics).length, 254)
+  assert.ok(Object.values(mechanics).flat().every((entry) => !entry.type || entry.type === entry.type.toLowerCase()))
   assert.equal(Object.keys(availability).length, 21)
   const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
   assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
