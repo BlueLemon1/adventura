@@ -27,18 +27,6 @@
       "duration": "Unmittelbar",
       "description": "Ein schimmernder grüner Pfeil schießt auf ein Ziel in Reichweite und explodiert in einem Sprühregen aus Säure. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel sofort 4W4 Säureschaden und 2W4 Säureschaden am Ende seines nächsten Zugs. Verfehlst du, spritzt genug Säure auf das Ziel, um die Hälfte des anfänglichen Schadens zu verursachen. Das Ziel erleidet am Ende seines nächsten Zugs keinen Schaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden (sowohl der anfängliche als auch der spätere) für jeden Grad über dem 2. um 1W4."
     },
-    "damage": [
-      {
-        "dice": "4W4",
-        "average": 10,
-        "type": "acid"
-      },
-      {
-        "dice": "2W4",
-        "average": 5,
-        "type": "acid"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -70,13 +58,6 @@
       "duration": "Unmittelbar",
       "description": "Du wirfst eine Säureblase. Wähle eine oder zwei Kreaturen in Reichweite, sofern sie nicht weiter als 1,5 Meter voneinander entfernt sind. Ziele müssen einen Geschicklichkeitsrettungswurf bestehen, oder sie erleiden 1W6 Säureschaden.\n\nDer Schaden des Zaubers steigt um je 1W6, wenn du die 5. Stufe (2W6), die 11. Stufe (3W6) und die 17. Stufe (4W6) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W6",
-        "average": 3.5,
-        "type": "acid"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -493,13 +474,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine große Hand aus schimmernder, durchsichtiger Energie in einem freien Bereich in Reichweite, den du sehen kannst. Die Hand bleibt für die Wirkungsdauer des Zaubers bestehen. Sie bewegt sich auf deinen Befehl und ahmt die Bewegungen deiner eigenen Hand nach.\n\nDie Hand ist ein Gegenstand mit einer RK von 20. Ihre Trefferpunkte entsprechen deinem Trefferpunktemaximum. Wenn ihre Trefferpunkte auf 0 sinken, endet der Zauber. Sie besitzt eine Stärke von 26 (+8) und eine Geschicklichkeit von 10 (+0). Der Bereich der Hand gilt nicht als besetzt.\n\nNach dem Wirken des Zaubers und als Bonusaktion in deinen darauffolgenden Zügen kannst du die Hand bis zu 18 Meter weit bewegen und einen der folgenden Effekte auslösen.\n\nBlockierende Hand: Die Hand platziert sich zwischen dir und einer Kreatur deiner Wahl, bis du der Hand einen anderen Befehl erteilst. Die Hand bewegt sich, um diese Position beizubehalten, und gewährt dir Teildeckung gegen das Ziel. Das Ziel kann sich nicht durch den Bereich der Hand bewegen, wenn sein Stärkewert kleiner oder gleich dem Stärkewert der Hand ist. Ist sein Stärkewert größer als der Stärkewert der Hand, kann sich das Ziel durch den Bereich der Hand auf dich zubewegen. Der Bereich gilt jedoch für das Ziel als schwieriges Gelände.\n\nGeballte Faust: Die Hand schlägt eine Kreatur oder einen Gegenstand im Abstand von bis zu 1,5 Metern von ihr. Führe einen Nahkampf- Zauberangriff für die Hand mit deinen Spielwerten aus. Bei einem Treffer erleidet das Ziel 4W8 Energieschaden.\n\nGreifende Hand: Die Hand versucht, eine höchstens riesige Kreatur im Abstand von bis zu 1,5 Metern von ihr zu packen. Verwende den Stärkewert der Hand für den Ringenwurf. Ist das Ziel höchstens mittelgroß, bist du beim Wurf im Vorteil. Während die Hand das Ziel gepackt hat, kannst du eine Bonusaktion verwenden, damit die Hand es zerquetscht. Dabei erleidet das Ziel Wuchtschaden in Höhe von 2W6 + deinem Zauberwirken- Attributsmodifikator.\n\nKraftvolle Hand: Die Hand versucht, eine Kreatur in 1,5 Metern Entfernung in eine Richtung deiner Wahl zu schieben. Führe einen Stärkewurf für die Hand aus, der mit dem Stärkewurf (Athletik) des Ziels verglichen wird. Ist das Ziel höchstens mittelgroß, bist du beim Wurf im Vorteil. Bei einem Erfolg schiebt die Hand das Ziel bis zu 1,5 Meter + (1,5 Meter mal deinem Zauberwirken-Attributs- modifikator). Die Hand bewegt sich mit dem Ziel, um im Abstand von bis zu 1,5 Metern von ihm zu bleiben.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, erhöht sich für jeden Grad über dem 5. der Schaden der geballten Faust um 2W8 und der Schaden der greifenden Hand um 2W6."
     },
-    "damage": [
-      {
-        "dice": "4W8",
-        "average": 18,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -562,13 +536,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine schwertförmige Ebene aus Energie, die in Reichweite schwebt. Sie bleibt für die Wirkungsdauer bestehen.\n\nWenn das Schwert erscheint, kannst du einen Nahkampf-Zauberangriff gegen ein Ziel deiner Wahl im Abstand von bis zu 1,5 Metern vom Schwert ausführen. Bei einem Treffer erleidet das Ziel 3W10 Energieschaden. Bis der Zauber endet, kannst du in jedem deiner Züge eine Bonusaktion verwenden, um das Schwert bis zu sechs Meter zu einem Bereich zu bewegen, den du sehen kannst. Du kannst dann diesen Angriff gegen dasselbe oder ein anderes Ziel wiederholen."
     },
-    "damage": [
-      {
-        "dice": "3W10",
-        "average": 16.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -862,13 +829,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du berührst eine Kreatur, die einen Weisheitsrettungswurf ausführen muss oder für die Wirkungsdauer verflucht wird. Wähle beim Wirken des Zaubers die Art des Fluchs aus den folgenden Optionen aus: • Wähle einen Attributswert aus. Solange das Ziel verflucht ist, ist es bei allen Attributs- und Rettungswürfen mit diesem Attributswert im Nachteil. • Solange das Ziel verflucht ist, ist es bei Angriffswürfen gegen dich im Nachteil. • Solange das Ziel verflucht ist, muss es zu Beginn jedes seiner Züge einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, kann es in diesem Zug keine Aktion ausführen. • Solange das Ziel verflucht ist, fügen deine Angriffe und Zauber dem Ziel zusätzlich 1W8 nekrotischen Schaden zu. Der Zauber Fluch brechen beendet diesen Effekt. Der SL kann einen alternativen Effekt für den Fluch zulassen, der jedoch nicht mächtiger sein sollte als die beschriebenen Effekte. Der SL hat das letzte Wort, was den Effekt angeht.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, ändert sich die Wirkungsdauer zu: Konzentration, bis zu 10 Minuten. Bei einem Zauberplatz des 5. Grades oder höher beträgt die Wirkungsdauer 8 Stunden. Bei einem Zauberplatz des 7. Grades oder höher beträgt die Wirkungsdauer 24 Stunden. Bei einem Zauberplatz des 9. Grades hält der Zauber an, bis er gebannt wird. Bei einem Zauberplatz des 5. Grades oder höher wird keine Konzentration mehr benötigt."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -899,13 +859,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Zuckende tiefschwarze Tentakel füllen einen sechs Meter großen, würfelförmigen Bereich in Reichweite, den du sehen kannst. Während der Wirkungsdauer verwandeln diese Tentakel den Boden im Bereich in schwieriges Gelände.\n\nKreaturen, die in ihrem Zug in den betroffenen Bereich gelangen oder den Zug darin beginnen, müssen einen Geschicklichkeitsrettungswurf bestehen. Anderenfalls erleiden sie 3W6 Wuchtschaden und sind von den Tentakeln festgesetzt, bis der Zauber endet. Jede Kreatur, die ihren Zug im Bereich beginnt und bereits von den Tentakeln festgesetzt wurde, erleidet 3W6 Wuchtschaden.\n\nEine von den Tentakeln festgesetzte Kreatur kann als Aktion einen Stärke- oder Geschicklichkeitswurf (ihrer Wahl) gegen deinen Zauberrettungswurf-SG ausführen. Bei einem Erfolg befreit sie sich."
     },
-    "damage": [
-      {
-        "dice": "3W6",
-        "average": 10.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -935,13 +888,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst eine vertikale Wand wirbelnder, rasiermesserscharfer Klingen aus magischer Energie. Sie erscheint in Reichweite und bleibt für die Wirkungsdauer bestehen. Du kannst eine gerade Wand erschaffen, die bis zu 30 Meter lang ist, oder eine ringförmige Wand mit bis zu 18 Meter Durchmesser. In beiden Fällen ist die Wand sechs Meter hoch und 1,5 Meter dick. Die Wand bietet allen Kreaturen dahinter Dreivierteldeckung und stellt schwieriges Gelände dar.\n\nWenn eine Kreatur den Bereich der Wand in einem Zug erstmals betritt oder den Zug darin beginnt, muss sie einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 6W10 Hiebschaden. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden."
     },
-    "damage": [
-      {
-        "dice": "6W10",
-        "average": 33,
-        "type": "slashing"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1009,13 +955,6 @@
       "duration": "Unmittelbar",
       "description": "Nekromantische Energie trifft eine Kreatur deiner Wahl in Reichweite, die du sehen kannst, und entzieht ihr Feuchtigkeit und Vitalität. Das Ziel muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 8W8 nekrotischen Schaden, anderenfalls die Hälfte. Dieser Zauber wirkt nicht auf Untote oder Konstrukte.\n\nWenn du eine Pflanzenkreatur oder eine magische Pflanze als Ziel des Zaubers wählst, ist sie beim Rettungswurf im Nachteil und der Zauber fügt ihr maximalen Schaden zu.\n\nWenn du eine nichtmagische Pflanze als Ziel wählst, die keine Kreatur ist, etwa einen Baum oder Strauch, führt sie keinen Rettungswurf aus. Sie verdorrt einfach und stirbt.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 4. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "8W8",
-        "average": 36,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1130,13 +1069,6 @@
       "paladin"
     ],
     "description": "The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends.\n\nAt Higher Levels. When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by 1d6 for each slot level above 2nd.",
-    "damage": [
-      {
-        "dice": "2W6",
-        "average": 7,
-        "type": "radiant"
-      }
-    ],
     "localized": {
       "name": "Brandmarkendes Niederstrecken",
       "description": "Das nächste Mal, wenn du eine Kreatur mit einem Waffenangriff triffst, bevor der Zauber endet, umgibt die Waffe ein astrales Leuchten. Der Angriff fügt dem Ziel zusätzlich 2W6 gleißenden Schaden zu. Es wird sichtbar, falls es unsichtbar war, wirft dämmriges Licht in einem Umkreis von 1,5 Metern und kann nicht unsichtbar werden, bis der Zauber endet.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der zusätzliche Schaden für jeden Grad über dem 2. um 1W6.",
@@ -1180,13 +1112,6 @@
       "duration": "Unmittelbar",
       "description": "Du streckst deine Hände mit sich berührenden Daumen und gespreizten Fingern aus und eine dünne Flammenwand schießt aus deinen Fingerspitzen hervor. Kreaturen innerhalb eines Kegels von 4,5 Metern müssen einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleiden sie 3W6 Feuerschaden, anderenfalls die Hälfte.\n\nDas Feuer entzündet brennbare Gegenstände in der Umgebung, die nicht getragen werden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 1. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "3W6",
-        "average": 10.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1216,13 +1141,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Eine Sturmwolke in Form eines drei Meter hohen Zylinders mit einem Radius von 18 Metern erscheint zentriert auf einem Punkt 30 Meter direkt über dir, den du sehen kannst. Der Zauber schlägt fehlt, wenn du keinen Punkt in der Luft sehen kannst, an dem die Sturmwolke erscheinen kann (beispielsweise, wenn du dich in einem Raum befindest, der zu klein für die Wolke ist).\n\nWenn du diesen Zauber wirkst, wähle einen Punkt in Reichweite, den du sehen kannst. Ein Blitz schlägt von der Wolke in diesen Punkt ein. Jede Kreatur im Umkreis von 1,5 Metern um diesen Punkt muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 3W10 Blitzschaden, anderenfalls die Hälfte. Bis der Zauber endet, kannst du deine Aktion in jedem deiner Züge verwenden, um erneut einen Blitz einschlagen zu lassen. Dabei kannst du denselben Punkt oder einen anderen als Ziel auswählen.\n\nWenn du dich draußen aufhältst und ein Sturm herrscht, wenn du diesen Zauber wirkst, verleiht er dir Kontrolle über den bestehenden Sturm und erschafft keinen neuen. Unter diesen Umständen erhöht sich der Schaden des Zaubers um 1W10.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 3. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "3W10",
-        "average": 16.5,
-        "type": "lightning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1286,13 +1204,6 @@
       "duration": "Unmittelbar",
       "description": "Du erschaffst einen Blitz, der auf ein Ziel deiner Wahl in Reichweite zuschießt, das du sehen kannst. Drei Blitze springen dann von diesem Ziel auf bis zu drei weitere über, die sich im Abstand von bis zu neun Metern vom ersten Ziel befinden. Beim Ziel kann es sich um eine Kreatur oder einen Gegenstand handeln. Es kann nur von einem der Blitze getroffen werden.\n\nDas Ziel muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 10W8 Blitzschaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, springt für jeden Grad über dem 6. ein zusätzlicher Blitz vom ersten Ziel auf ein weiteres Ziel über."
     },
-    "damage": [
-      {
-        "dice": "10W8",
-        "average": 45,
-        "type": "lightning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1363,13 +1274,6 @@
       "duration": "1 Runde",
       "description": "Du erschaffst eine geisterhafte Skeletthand im Bereich einer Kreatur in Reichweite. Führe einen Fernkampf- Zauberangriff gegen die Kreatur aus, um sie die Kälte des Grabes spüren zu lassen. Bei einem Treffer erleidet das Ziel 1W8 nekrotischen Schaden und kann bis zum Beginn deines nächsten Zugs keine Trefferpunkte zurückerhalten. Bis dahin klammert sich die Hand an das Ziel.\n\nTriffst du ein untotes Ziel, so ist es außerdem bis zum Ende deines nächsten Zugs bei Angriffswürfen gegen dich im Nachteil.\n\nDer Schaden dieses Zaubers erhöht sich um je 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1404,13 +1308,6 @@
       "duration": "Unmittelbar",
       "description": "Negative Energie breitet sich von einem Punkt in Reichweite in einer Sphäre mit einem Radius von 18 Metern aus. Jede Kreatur in dem Bereich muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 8W6 nekrotischen Schaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 6. um 2W6."
     },
-    "damage": [
-      {
-        "dice": "8W6",
-        "average": 28,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1508,13 +1405,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst eine Sphäre aus giftigem, gelb-grünen Nebel mit einem Radius von sechs Metern an einem Ort deiner Wahl in Reichweite. Der Nebel breitet sich um Ecken aus. Die Sphäre bleibt für die Wirkungsdauer bestehen, oder bis starker Wind den Nebel zerstreut und den Zauber beendet. Ihr Bereich ist komplett verschleiert.\n\nWenn eine Kreatur den Bereich des Zaubers in einem Zug erstmals betritt oder ihren Zug darin beginnt, muss sie einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 5W8 Giftschaden, anderenfalls die Hälfte. Kreaturen sind auch dann betroffen, wenn sie den Atem anhalten oder nicht atmen müssen.\n\nZu Beginn jedes deiner Züge bewegt sich der Nebel drei Meter von dir weg und wabert über den Boden. Die Dämpfe sind schwerer als Luft und sinken daher bis in die unterste Ebene des Bodens und strömen sogar durch Öffnungen.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 5. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "5W8",
-        "average": 22.5,
-        "type": "poison"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1739,13 +1629,6 @@
       "duration": "Unmittelbar",
       "description": "Eiskalte Luft strömt aus deinen Händen. Jede Kreatur in einem Kegel von 18 Metern muss einen Konstitu- tionsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 8W8 Kälteschaden, anderenfalls die Hälfte.\n\nWird eine Kreatur durch diesen Zauber getötet, wird sie zu einer gefrorenen Statue, bis sie auftaut.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 5. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "8W8",
-        "average": 36,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -1998,13 +1881,6 @@
       "duration": "1 Minute",
       "description": "Du trittst mental mit einem Halbgott, dem Geist eines lang verstorbenen Weisen oder einem anderen geheimnisvollen Wesen von einer anderen Ebene in Kontakt. Dieser Kontakt kann deinen Verstand überfordern oder sogar brechen. Führe beim Wirken dieses Zaubers einen SG-15-Intelligenzrettungswurf aus. Scheitert der Wurf, erleidest du 6W6 psychischen Schaden und bist wahnsinnig, bis du eine lange Rast abschließt. Während du wahnsinnig bist, kannst du keine Aktionen ausführen, verstehst nicht, was andere Kreaturen sagen, kannst nicht lesen und dich nicht verständlich ausdrücken. Der Zauber Vollständige Genesung beendet diesen Effekt.\n\nIst der Rettungswurf erfolgreich, kannst du dem Wesen bis zu fünf Fragen stellen. Du musst deine Fragen stellen, bevor der Zauber endet. Der SL beantwortet jede Frage mit einem einzelnen Wort wie „ja“, „nein“, „vielleicht“, „niemals“, „irrelevant“ oder „unklar“ (wenn das Wesen die Antwort nicht kennt). Falls eine Antwort mit nur einem Wort irreführend wäre, kann der SL stattdessen einen kurzen Satz als Antwort geben."
     },
-    "damage": [
-      {
-        "dice": "6W6",
-        "average": 21,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -2133,13 +2009,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Bis der Zauber endet, kontrollierst du jedes offene Gewässer in einem Bereich deiner Wahl, der einem Würfel mit bis zu 30 Metern Kantenlänge entspricht. Wähle beim Wirken des Zaubers einen der folgenden Effekte aus. Als Aktion in deinem Zug kannst du denselben Effekt wiederholen oder einen anderen auswählen.\n\nFluss umlenken: Du bewirkst, dass sich fließendes Wasser im Bereich in eine Richtung deiner Wahl bewegt, selbst wenn es dafür über Hindernisse, Wände empor oder in andere unwahrscheinliche Richtungen strömen muss. Das Wasser im Bereich bewegt sich nach deinen Vorgaben. Sobald es jedoch den Bereich des Zaubers verlässt, fließt es wieder nach den Geländebedingungen. Das Wasser strömt in die Richtung deiner Wahl, bis der Zauber endet oder du einen anderen Effekt wählst.\n\nFlut: Du lässt den Wasserspiegel aller stehenden Gewässer im Bereich um bis zu sechs Meter ansteigen. Ist ein Ufer Teil des Bereichs, tritt das Wasser auf das Land über.\n\nWählst du einen Bereich in einem größeren Gewässer, erschaffst du stattdessen eine sechs Meter hohe Welle, die sich von einer Seite des Bereichs zum anderen bewegt und sich dann bricht. Alle maximal riesigen Fahrzeuge im Pfad der Welle werden mit ihr zur anderen Seite bewegt. Wird ein derartiges Fahrzeug von der Welle getroffen, besteht eine Chance von 25 Prozent, dass es kentert.\n\nDer Wasserspiegel bleibt erhöht, bis der Zauber endet oder du einen anderen Effekt auswählst. Erzeugt dieser Effekt eine Welle, wiederholt sich diese zu Beginn deines nächsten Zugs, solange die Flut anhält.\n\nWasserstrudel: Dieser Effekt benötigt ein Gewässer mit einer Fläche von mindestens 15 Metern mal 15 Metern und einer Tiefe von 7,5 Metern. Du erschaffst einen Wasserstrudel in der Mitte des Bereichs. Dieser Wirbel ist an der Basis 1,5 Meter breit, an der Spitze bis zu 15 Meter breit und 7,5 Meter hoch. Alle Kreaturen und Objekte, die sich im Wasser im Abstand von bis zu 7,5 Metern um den Wirbel befinden, werden drei Meter in seine Richtung gezogen. Eine Kreatur kann vom Wirbel wegschwimmen, indem sie einen Stärkewurf (Athletik) gegen deinen Zauberrettungswurf-SG ausführt.\n\nWasser teilen: Du bewegst Wasser in dem Bereich auseinander und erschaffst einen Graben, der sich durch den Wirkungsbereich zieht. Das Wasser ragt auf beiden Seiten wie eine Mauer auf. Der Graben bleibt bestehen, bis der Zauber endet, oder du einen anderen Effekt auswählst. Anschließend füllt das Wasser im Verlauf der nächsten Runde langsam den Graben, bis der normale Wasserspiegel wiederhergestellt ist.\n\nWenn eine Kreatur den Bereich des Wirbels in einem Zug erstmals betritt oder ihren Zug darin beginnt, muss sie einen Stärkerettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 2W8 Wuchtschaden und ist im Wirbel gefangen, bis der Zauber endet. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden und ist nicht im Wirbel gefangen. Eine Kreatur, die im Wirbel gefangen ist, kann ihre Aktion verwenden, um wie oben beschrieben wegzuschwimmen. Sie ist jedoch beim entsprechenden Stärkewurf (Athletik) im Nachteil.\n\nWird ein Gegenstand zum ersten Mal in einem Zug in den Wirbel gezogen, erleidet der Gegenstand 2W8 Wuchtschaden. Dieser Schaden wird jede Runde verursacht, die der Gegenstand im Strudel verbleibt."
     },
-    "damage": [
-      {
-        "dice": "2W8",
-        "average": 9,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -2788,13 +2657,6 @@
       "duration": "Unmittelbar",
       "description": "Du teleportierst dich von deiner aktuellen Position zu einem beliebigen anderen Ort in Reichweite. Dabei triffst du genau an dem gewünschten Punkt ein. Es kann sich um einen Ort handeln, den du sehen oder dir vorstellen kannst, oder den du beschreibst, indem du die Entfernung und Richtung angibst (beispielsweise „60 Meter direkt nach unten“ oder „90 Meter nordöstlich in einem 45-Grad-Winkel nach oben“).\n\nDu kannst Gegenstände mitnehmen, sofern ihr Gewicht deine Traglast nicht übersteigt. Du kannst auch eine bereitwillige Kreatur deiner Größe oder kleiner mit Ausrüstung bis zu ihrer Traglast mitnehmen. Die Kreatur muss sich im Abstand von bis zu 1,5 Metern von dir befinden, wenn du diesen Zauber wirkst.\n\nWürdest du an einem Ort ankommen, an dem sich bereits ein Gegenstand oder eine Kreatur befindet, erleidet du und dein Mitreisender jeweils 4W6 Energieschaden und werdet nicht teleportiert."
     },
-    "damage": [
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -2995,13 +2857,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Dein Gebet erfüllt dich mit göttlicher Macht. Bis der Zauber endet, verursachst du mit deinen Waffenangriffen bei jedem Treffer zusätzlich 1W4 gleißenden Schaden."
     },
-    "damage": [
-      {
-        "dice": "1W4",
-        "average": 2.5,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3165,13 +3020,6 @@
       "duration": "8 Stunden",
       "description": "Dieser Zauber formt die Träume einer Kreatur. Wähle als Ziel eine Kreatur, die du kennst. Sie muss sich auf derselben Existenzebene befinden wie du. Kreaturen, die nicht schlafen, wie beispielsweise Elfen, sind von diesem Zauber nicht betroffen. Der Zauber versetzt dich oder eine bereitwillige Kreatur, die du berührst, in Trance − als Boten. Während der Trance ist sich der Bote seiner Umgebung bewusst, kann jedoch keine Aktionen ausführen oder sich bewegen.\n\nWenn das Ziel schläft, erscheint der Bote in den Träumen des Ziels und kann mit ihm für die Wirkungsdauer des Zaubers sprechen, solange es schläft. Der Bote kann zudem die Umgebung des Traums gestalten und Landschaften, Gegenstände oder andere Bilder erschaffen. Der Bote kann die Trance jederzeit verlassen und den Zauber somit vorzeitig beenden. Das Ziel erinnert sich beim Aufwachen perfekt an den Traum. Ist das Ziel wach, wenn du den Zauber wirkst, weiß der Bote dies und kann die Trance (und den Zauber) entweder beenden oder warten, bis das Ziel einschläft und dann in dessen Träumen erscheinen.\n\nDu kannst den Boten für das Ziel monströs und furchteinflößend erscheinen lassen. In diesem Fall kann der Bote eine Nachricht von höchstens zehn Wörtern übermitteln. Dann muss das Ziel einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, erschaffen die Echos der trügerischen Monstrosität einen Alptraum, der anhält, solange das Ziel schläft und verhindert, dass es die Effekte der Rast erhält. Außerdem erleidet das Ziel beim Aufwachen 3W6 psychischen Schaden.\n\nBesitzt du eine Haarsträhne, einen Fingernagel oder dergleichen vom Körper des Ziels, ist es beim Rettungswurf im Nachteil."
     },
-    "damage": [
-      {
-        "dice": "3W6",
-        "average": 10.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3235,13 +3083,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine seismische Störung an einem Punkt auf dem Boden in Reichweite, den du sehen kannst. Für die Wirkungsdauer reißt ein gewaltiges Beben die Erde in einem Radius von 30 Metern um diesen Punkt auf und erschüttert Kreaturen und Strukturen auf dem Boden in diesem Bereich.\n\nDer Bereich wird zu schwierigem Gelände. Jede Kreatur auf dem Boden, die Konzentration aufrechterhält, muss einen Konstitutionsret- tungswurf ausführen. Scheitert der Wurf, wird die Konzentration der Kreatur unterbrochen.\n\nWenn du diesen Zauber wirkst, sowie am Ende jedes Zugs, in dem du dich darauf konzentrierst, muss jede Kreatur auf dem Boden in dem Bereich einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, wird die Kreatur umgestoßen.\n\nDieser Zauber kann nach Wahl des SL zusätzliche Auswirkungen abhängig vom Gelände haben.\n\nErdspalten: Erdspalten öffnen sich zu Beginn deines nächsten Zugs im Bereich des Zaubers. Insgesamt öffnen sich 1W6 Erdspalten an Orten, die der SL bestimmt. Jede ist 1W10 mal drei Meter tief, drei Meter breit und verläuft von einer Seite des Wirkungsbereichs zum anderen. Eine Kreatur, die dort steht, wo sich eine Erdspalte öffnet, muss einen Geschicklichkeitsrettungswurf bestehen, oder sie fällt hinein. Ist der Rettungswurf erfolgreich, bewegt sich die Kreatur mit dem Rand der Erdspalte, während sich diese öffnet.\n\nÖffnet sich eine Erdspalte unter einem Gebäude, stürzt dieses automatisch ein (siehe unten).\n\nGebäude: Wenn du den Zauber wirkst, sowie zu Beginn jedes deiner Züge, bis der Zauber endet, fügt das Beben allen Gebäuden, die den Boden im Wirkungsbereich berühren, 50 Wuchtschaden zu. Wird ein Gebäude auf 0 Trefferpunkte reduziert, stürzt es ein und fügt möglicherweise Kreaturen in der Nähe Schaden zu. Eine Kreatur innerhalb der halben Entfernung der Höhe des Gebäudes muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 5W6 Wuchtschaden, wird umgestoßen und ist in den Trümmern gefangen. Als Aktion muss sie einen SG-20-Stärkewurf (Athletik) bestehen, um sich zu befreien. Der SL kann den SG je nach Art der Trümmer erhöhen oder verringern. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden und wird nicht umgestoßen oder begraben."
     },
-    "damage": [
-      {
-        "dice": "5W6",
-        "average": 17.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3271,13 +3112,6 @@
       "duration": "Unmittelbar",
       "description": "Ein Strahl aus knisternder Energie schießt auf eine Kreatur in Reichweite zu. Führe einen Fernkampf- Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W10 Energieschaden.\n\nAuf höheren Stufen erschafft der Zauber mehr als einen Strahl: zwei Strahlen auf der 5. Stufe, drei Strahlen auf der 11. Stufe und vier Strahlen auf der 17. Stufe. Du kannst die Strahlen auf dasselbe oder auf unterschiedliche Ziele lenken. Führe für jeden Strahl einen eigenen Angriffswurf aus."
     },
-    "damage": [
-      {
-        "dice": "1W10",
-        "average": 5.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3350,18 +3184,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Für die Wirkungsdauer vergrößerst oder verkleinerst du eine Kreatur oder einen Gegenstand in Reichweite, die oder den du sehen kannst. Wähle eine Kreatur oder einen Gegenstand, die oder der nicht getragen wird. Ist das Ziel nicht bereitwillig, kann es einen Konstitutionsrettungswurf ausführen. Bei einem Erfolg hat der Zauber keine Wirkung.\n\nWenn das Ziel eine Kreatur ist, verändert ihre gesamte Ausrüstung ebenfalls die Größe. Wird ein Gegenstand von einer betroffenen Kreatur fallengelassen, kehrt er sofort zu seiner normalen Größe zurück.\n\nVergrößern: Die Größe des Ziels verdoppelt sich in alle Richtungen und sein Gewicht wird mit acht multipliziert. Dadurch steigt seine Größenkategorie um eins, beispielsweise von mittelgroß zu groß. Gibt es nicht genug Raum, um seine Größe zu verdoppelt, erreicht die Kreatur oder der Gegenstand die maximale Größe, die aufgrund der Gegebenheiten möglich ist. Bis der Zauber endet, ist das Ziel zudem bei Stärke- Attributs- und -rettungswürfen im Vorteil. Die Waffen des Ziels passen sich ebenfalls der neuen Größe an. Während sie vergrößert sind, fügen die Waffenangriffe des Ziels 1W4 zusätzlichen Schaden zu.\n\nVerkleinern: Die Größe des Ziels halbiert sich in alle Richtungen und sein Gewicht wird auf ein Achtel verringert. Dadurch verringert sich seine Größenkategorie um eins, beispielsweise von mittelgroß zu klein. Bis der Zauber endet, ist das Ziel zudem bei Stärke-Attributs- und -rettungswürfen im Nachteil. Die Waffen des Ziels passen sich ebenfalls der neuen Größe an. Während sie verkleinert sind, fügen die Waffenangriffe des Ziels 1W4 weniger Schaden zu (der Schaden kann allerdings nicht unter 1 sinken)."
     },
-    "damage": [
-      {
-        "dice": "1W4",
-        "average": 2.5,
-        "type": "extra"
-      },
-      {
-        "dice": "1W4",
-        "average": 2.5,
-        "type": "less"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3617,13 +3439,6 @@
       "duration": "8 Stunden",
       "description": "Du beschwörst einen geisterhaften Wachhund an einer freien Stelle in Reichweite, die du sehen kannst. Der Wachhund bleibt für die Wirkungsdauer bestehen, bis du ihn als Aktion fortschickst oder du dich mehr als 30 Meter von ihm entfernst.\n\nDer Hund ist für alle Kreaturen außer dir unsichtbar und kann nicht verletzt werden. Wenn sich ihm eine mindestens kleine Kreatur auf neun Meter nähert, ohne zuvor das Passwort zu sprechen, das du beim Wirken des Zaubers festlegst, bellt der Hund laut. Der Hund sieht unsichtbare Kreaturen und kann in die Ätherebene sehen. Er ignoriert Illusionen.\n\nZu Beginn jedes deiner Züge versucht der Hund, eine Kreatur im Abstand von bis zu 1,5 Metern von ihm zu beißen, die dir feindlich gesinnt ist. Der Angriffsbonus des Hunds entspricht deinem Zauberwirken-Attributsmodifikator + deinem Übungsbonus. Bei einem Treffer verursacht er 4W8 Stichschaden."
     },
-    "damage": [
-      {
-        "dice": "4W8",
-        "average": 18,
-        "type": "piercing"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -3747,13 +3562,6 @@
       "wizard"
     ],
     "description": "You blast the mind of a creature that you can see within range, attempting to shatter its intellect and personality. The target takes 4d6 psychic damage and must make an intelligence saving throw. On a failed save, the creature's Intelligence and Charisma scores become 1. The creature can't cast spells, activate magic items, understand language, or communicate in any intelligible way. The creature can, however, identify its friends, follow them, and even protect them. At the end of every 30 days, the creature can repeat its saving throw against this spell. If it succeeds on its saving throw, the spell ends. The spell can also be ended by greater restoration, heal, or wish.",
-    "damage": [
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "psychic"
-      }
-    ],
     "localized": {
       "name": "Schwachsinn",
       "description": "Du attackierst den Verstand einer Kreatur in Reichweite, die du sehen kannst, und versuchst, ihren Intellekt und ihre Persönlichkeit zu brechen. Das Ziel erleidet 4W6 psychischen Schaden und muss einen Intelligenzrettungswurf ausführen.\n\nScheitert der Wurf, fallen der Intelligenz- und der Charismawert der Kreatur auf 1. Die Kreatur kann keine Zauber wirken, keine magischen Gegenstände aktivieren, versteht keine Sprache und kann nicht verständlich kommunizieren. Sie kann jedoch ihre Freunde erkennen, ihnen folgen und sie sogar beschützen.\n\nNach jeweils 30 Tagen kann die Kreatur den Rettungswurf gegen den Zauber wiederholen. Ist der Rettungswurf erfolgreich, endet der Zauber.\n\nDer Zauber kann zudem durch Heilung, Vollständige Genesung oder Wunsch aufgehoben werden.",
@@ -3959,13 +3767,6 @@
       "duration": "Unmittelbar",
       "description": "Du schleuderst einen Funkenwirbel auf eine Kreatur oder einen Gegenstand in Reichweite. Führe einen Fernkampf-Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet das Ziel 1W10 Feuerschaden. Der Zauber entzündet bei einem Treffer brennbare Gegenstände, die nicht getragen werden.\n\nDer Schaden dieses Zaubers wird jeweils um 1W10 erhöht, wenn du die 5. Stufe (2W10), die 11. Stufe (3W10) und die 17. Stufe (4W10) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W10",
-        "average": 5.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4031,13 +3832,6 @@
       "duration": "Unmittelbar",
       "description": "Ein Sturm aus lodernden Flammen erscheint an einem Ort deiner Wahl in Reichweite. Der Bereich des Sturms besteht aus bis zu zehn Würfeln mit drei Metern Kantenlänge, die du beliebig anordnen kannst. Jeder Würfel muss mit mindestens einer Seite an die Seite eines anderen Würfelns angrenzen. Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 7W10 Feuerschaden, anderenfalls die Hälfte.\n\nDas Feuer verursacht Schaden bei Objekten in der Umgebung und entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden. Du kannst festlegen, dass Pflanzen in der Umgebung nicht von diesem Zauber betroffen sind."
     },
-    "damage": [
-      {
-        "dice": "7W10",
-        "average": 38.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4070,13 +3864,6 @@
       "duration": "Unmittelbar",
       "description": "Ein heller Lichtstrahl schießt aus deinem deutenden Finger auf einen Punkt deiner Wahl in Reichweite und explodiert dort mit einem dumpfen Grollen in lodernden Flammen. Jede Kreatur in einer Sphäre mit einem Radius von sechs Metern um diesen Punkt muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 8W6 Feuerschaden, anderenfalls die Hälfte.\n\nDas Feuer breitet sich um Ecken aus. Es entzündet brennbare Gegenstände in der Umgebung, die nicht getragen oder gehalten werden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 3. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "8W6",
-        "average": 28,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4108,13 +3895,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst eine feurige Klinge in deiner freien Hand. Die Klinge ähnelt einem Krummsäbel und bleibt für die Wirkungsdauer bestehen. Lässt du die Klinge los, verschwindet sie. Du kannst sie jedoch als Bonusaktion wieder beschwören.\n\nDu kannst eine Aktion verwenden, um einen Nahkampf-Zauberangriff mit der Flammenklinge auszuführen. Bei einem Treffer erleidet das Ziel 3W6 Feuerschaden.\n\nDie Flammenklinge erhellt einen Radius von drei Metern mit hellem Licht und weitere drei Meter mit dämmrigem Licht.\n\nAuf höheren Graden: Wenn du diesen Zauber wirkst, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden alle zwei Grade über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "3W6",
-        "average": 10.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4145,18 +3925,6 @@
       "duration": "Unmittelbar",
       "description": "Eine vertikale Säule aus göttlichem Feuer fährt an einem Ort deiner Wahl vom Himmel herab. Jede Kreatur in einem zwölf Meter hohen Zylinder mit einem Radius von drei Metern, der um einen Punkt in Reichweite zentriert ist, muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet eine Kreatur 4W6 Feuerschaden und 4W6 gleißenden Schaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, steigt der Feuerschaden oder der gleißende Schaden (deine Wahl) für jeden Grad über dem 5. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "fire"
-      },
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4190,13 +3958,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Eine flammende Sphäre mit 1,5 Metern Durchmesser erscheint an einer freien Stelle deiner Wahl in Reichweite und bleibt dort für die Wirkungsdauer bestehen. Jede Kreatur, die ihren Zug in einem Umkreis von 1,5 Metern um die Sphäre beendet, muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 2W6 Feuerschaden, anderenfalls die Hälfte.\n\nAls Bonusaktion kannst du die Sphäre um bis zu neun Meter bewegen. Wenn du die Sphäre in eine Kreatur rammst, muss die Kreatur einen Rettungswurf gegen den Schaden der Sphäre ausführen und die Sphäre beendet ihre Bewegung für diesen Zug.\n\nBewegst du die Sphäre, kannst du sie über bis zu 1,5 Meter hohe Hürden dirigieren und über bis zu drei Meter breite Gruben springen lassen. Die Sphäre entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden. Sie strahlt im Radius von sechs Metern helles Licht sowie im Radius von weiteren sechs Metern dämmriges Licht aus.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "2W6",
-        "average": 7,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4496,13 +4257,6 @@
       "duration": "Unmittelbar",
       "description": "Eine Kugel aus klirrender Kälte schießt aus deinen Fingerspitzen an einen Punkt deiner Wahl in Reichweite, wo sie als Sphäre mit einem Radius von 18 Metern explodiert. Jede Kreatur in dem Bereich muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, so erleidet die Kreatur 10W6 Kälteschaden. Bei einem erfolgreichen Rettungswurf erleidet sie halb so viel Schaden.\n\nTrifft die Kugel ein Gewässer oder eine Flüssigkeit, die größtenteils aus Wasser besteht (dazu gehören keine Wasserkreaturen), lässt sie die Flüssigkeit in einem würfelförmigen Bereich von neun Metern mal neun Metern mit 15 Zentimetern Tiefe gefrieren. Das Eis hält eine Minute lang an. Kreaturen, die auf der Oberfläche des gefrorenen Wassers schwimmen, werden im Eis gefangen. Eine gefangene Kreatur kann als Aktion einen Stärkewurf gegen deinen Zauberrettungswurf-SG ausführen, um sich zu befreien.\n\nDu musst die Kugel nach dem Wirken des Zaubers nicht sofort abfeuern. In diesem Fall erscheint eine kleine, kühle Kugel von der Größe eines Schleudersteins in deiner Hand. Du − oder eine Kreatur, der du die Kugel gibst − kannst sie jederzeit bis zu zwölf Meter weit werfen oder sie mit einer Schleuder in deren Reichweite verschießen. Die Kugel zerbricht beim Aufprall und bewirkt denselben Effekt wie das normale Wirken des Zaubers. Du kannst die Kugel auch ablegen, ohne sie zu zerbrechen. Ist sie nach einer Minute nicht zerbrochen, explodiert sie.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 6. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -4609,13 +4363,6 @@
       "duration": "30 Tage",
       "description": "Du platzierst einen magischen Befehl auf einer Kreatur in Reichweite, die du sehen kannst. Damit zwingst du sie, eine Aufgabe zu erfüllen oder eine bestimmte Handlung deiner Wahl zu vermeiden. Wenn die Kreatur dich verstehen kann, muss sie einen Weisheitsrettungswurf bestehen, oder sie wird für die Wirkungsdauer von dir bezaubert. Während die Kreatur von dir bezaubert ist, erleidet sie jedes Mal 5W10 psychischen Schaden, wenn sie direkt gegen deine Anweisungen handelt. Dies kann nur einmal pro Tag auftreten. Eine Kreatur, die dich nicht verstehen kann, ist von dem Zauber nicht betroffen.\n\nDu kannst einen beliebigen Befehl erteilen, außer Handlungen, die zum sicheren Tod führen würden. Erteilst du einen selbstmörderischen Befehl, endet der Zauber.\n\nDu kannst den Zauber als Aktion vorzeitig beenden. Die Zauber Fluch brechen, Vollständige Genesung oder Wunsch beenden den Zauber ebenfalls.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. oder 8. Grades nutzt, beträgt die Wirkungsdauer ein Jahr. Wirkst du diesen Zauber, indem du einen Zauberplatz des 9. Grades nutzt, hält er an, bis einer der zuvor genannten Zauber ihn bannt."
     },
-    "damage": [
-      {
-        "dice": "5W10",
-        "average": 27.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5028,13 +4775,6 @@
       "duration": "1 Runde",
       "description": "Ein Lichtblitz schießt auf eine Kreatur deiner Wahl in Reichweite zu. Führe einen Fernkampf- Zauberangriff gegen das Ziel aus. Bei einem Erfolg erleidet das Ziel 4W6 gleißenden Schaden. Dank des mystischen dämmrigen Lichts, das auf dem Ziel glitzert, ist der nächste Angriffswurf gegen das Ziel vor Ende deines nächsten Zugs im Vorteil.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 1. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5165,13 +4905,6 @@
       "duration": "Unmittelbar",
       "description": "Du entfesselst eine infektiöse Krankheit bei einer Kreatur in Reichweite, die du sehen kannst. Das Ziel muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 14W6 nekrotischen Schaden, anderenfalls die Hälfte. Der Schaden kann die Trefferpunkte des Ziels nicht unter 1 senken. Scheitert der Wurf, ist das Trefferpunktemaximum des Ziels eine Stunde lang um den Betrag des erlittenen nekrotischen Schadens verringert. Effekte, die Krankheiten heilen, stellen das Trefferpunktemaximum der Kreatur vor Ablauf dieser Zeit wieder her."
     },
-    "damage": [
-      {
-        "dice": "14W6",
-        "average": 49,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5300,13 +5033,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Wähle einen verarbeiteten Gegenstand aus Metall in Reichweite, den du sehen kannst − etwa eine metallene Waffe oder eine schwere oder mittelschwere Rüstung. Du lässt den Gegenstand glühend heiß werden. Wenn du den Zauber wirkst, erleiden alle Kreaturen in physischem Kontakt mit dem Gegenstand 2W8 Feuerschaden. Bis der Zauber endet, kannst du in jedem deiner darauffolgenden Züge eine Bonusaktion verwenden, um diesen Schaden erneut zu verursachen.\n\nTrägt eine Kreatur den Gegenstand oder hält sie ihn in der Hand, während sie den Schaden erleidet, muss sie einen Konstitutionsrettungswurf bestehen, um den Gegenstand falls möglich fallenzulassen. Falls sie den Gegenstand nicht fallenlässt, ist sie bis zum Beginn deines nächsten Zuges bei Angriffs- und Attributswürfen im Nachteil.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "2W8",
-        "average": 9,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5336,13 +5062,6 @@
       "duration": "Unmittelbar",
       "description": "Du deutest mit deinem Finger und die Kreatur, die dich verletzt hat, wird für einen kurzen Moment von höllischen Flammen eingehüllt. Sie muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 2W10 Feuerschaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 1. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "2W10",
-        "average": 11,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5575,12 +5294,6 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du wählst eine Kreatur in Reichweite, die du sehen kannst, und markierst sie auf mystische Weise als deine Beute. Bis der Zauber endet, fügst du dem Ziel bei jedem Treffer mit einem Waffenangriff zusätzliche 1W6 Schaden zu. Zudem bist du bei Weisheitswürfen (Wahrnehmung) oder Weisheitswürfen (Überlebenskunst), um das Ziel ausfindig zu machen, im Vorteil. Sinken die Trefferpunkte des Ziels auf 0, bevor der Zauber endet, kannst du in darauffolgenden Zügen eine Bonusaktion verwenden, um eine neue Kreatur zu markieren.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. oder 4. Grades nutzt, kannst du die Konzentration auf diesen Zauber bis zu acht Stunden aufrechterhalten. Bei einem Zauberplatz des 5. Grades oder höher kannst du die Konzentration auf diesen Zauber bis zu 24 Stunden aufrechterhalten."
     },
-    "damage": [
-      {
-        "dice": "1W6",
-        "average": 3.5
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5651,18 +5364,6 @@
       "duration": "Unmittelbar",
       "description": "Ein Hagel aus steinhartem Eis hämmert in einem zwölf Meter hohen Zylinder mit einem Radius von sechs Metern auf den Boden. Der Zylinder ist auf einen Punkt in Reichweite zentriert. Jede Kreatur im Zylinder muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 2W8 Wuchtschaden und 4W6 Kälteschaden, anderenfalls die Hälfte.\n\nHagelkörner verwandeln den Wirkungsbereich des Sturms bis zum Ende deines nächsten Zugs in schwieriges Gelände.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, steigt der Wuchtschaden für jeden Grad über dem 4. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "2W8",
-        "average": 9,
-        "type": "bludgeoning"
-      },
-      {
-        "dice": "4W6",
-        "average": 14,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5793,13 +5494,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Eine wirbelnde Rauchwolke, die von weißer Glut durchzogen ist, erscheint in einer Sphäre mit einem Radius von sechs Metern, die auf einem Punkt in Reichweite zentriert ist. Die Wolke breitet sich um Ecken aus und ist komplett verschleiert. Sie bleibt für die Wirkungsdauer bestehen oder bis ein mäßiger oder stärkerer Wind (mindestens 16 Kilometer pro Stunde) den Nebel auflöst.\n\nWenn die Wolke erscheint, muss jede Kreatur in diesem Bereich einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 10W8 Feuerschaden, anderenfalls die Hälfte. Wenn eine Kreatur den Bereich des Zaubers in einem Zug erstmals betritt oder ihren Zug darin beendet, muss sie diesen Rettungswurf ebenfalls ausführen.\n\nZu Beginn jedes deiner Züge bewegt sich die Wolke drei Meter in eine Richtung deiner Wahl direkt von dir weg."
     },
-    "damage": [
-      {
-        "dice": "10W8",
-        "average": 45,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5829,13 +5523,6 @@
       "duration": "Unmittelbar",
       "description": "Führe einen Nahkampf-Zauberangriff gegen eine Kreatur innerhalb deiner Reichweite aus. Bei einem Treffer erleidet das Ziel 3W10 nekrotischen Schaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 1. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "3W10",
-        "average": 16.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -5870,13 +5557,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Schwärmende, beißende Heuschrecken erscheinen in einer Sphäre mit einem Radius von sechs Metern, die um einen Punkt deiner Wahl in Reichweite zentriert ist. Die Sphäre breitet sich um Ecken aus. Die Sphäre bleibt für die Wirkungsdauer bestehen und ihr Bereich ist leicht verschleiert. Der Bereich der Sphäre ist schwieriges Gelände.\n\nWenn der Bereich erscheint, muss jede Kreatur darin einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 4W10 Stichschaden, anderenfalls die Hälfte. Wenn eine Kreatur den Bereich des Zaubers in einem Zug erstmals betritt oder ihren Zug darin beendet, muss sie diesen Rettungswurf ebenfalls ausführen.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 6. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 5. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "4W10",
-        "average": 22,
-        "type": "piercing"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -6214,13 +5894,6 @@
       "duration": "Unmittelbar",
       "description": "Du schleuderst einen Blitz von dir ausgehend in einer 30 Meter langen und 1,5 Meter breiten Linie in eine Richtung deiner Wahl. Alle Kreaturen innerhalb der Linie müssen einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet eine Kreatur 8W6 Blitzschaden, anderenfalls die Hälfte.\n\nDer Blitz entzündet brennbare Gegenstände im Wirkungsbereich, die nicht getragen werden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 3. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "8W6",
-        "average": 28,
-        "type": "lightning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -6855,13 +6528,6 @@
       "duration": "8 Stunden",
       "description": "Du betrittst einen steinernen Gegenstand oder eine Oberfläche, die groß genug ist, um deinen Körper aufzunehmen, und verschmilzt für die Wirkungsdauer mitsamt deiner gesamten Ausrüstung mit dem Stein. Du verwendest deine Bewegungsrate, um an einem Punkt, den du berühren kannst, in den Stein zu treten. Du bist nicht sichtbar und kannst nur auf magische Weise wahrgenommen werden.\n\nWährend du mit dem Stein verschmolzen bist, kannst du nicht sehen, was außerhalb vor sich geht. Du bist zudem bei Weisheitswürfen (Wahrnehmung), um Geräusche von außen zu hören, im Nachteil. Du bemerkst, wie die Zeit vergeht, und kannst Zauber auf dich selbst wirken. Zudem kannst du deine Bewegungsrate verwenden, um den Stein dort zu verlassen, wo du ihn betreten hast. Dadurch endet der Zauber. Anderenfalls kannst du dich nicht bewegen.\n\nGeringer physischer Schaden am Stein verletzt dich nicht. Wird er teilweise zerstört oder seine Form verändert, so dass du nicht mehr hineinpasst, wirst du ausgestoßen und erleidest 6W6 Wuchtschaden. Wird der Stein vollständig zerstört oder in eine andere Substanz verwandelt, wirst du ausgestoßen und erleidest 50 Wuchtschaden. Wenn du ausgestoßen wirst, fällst du auf eine freie Stelle, die deinem Eintrittsort am nächsten liegt."
     },
-    "damage": [
-      {
-        "dice": "6W6",
-        "average": 21,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -6966,18 +6632,6 @@
       "duration": "Unmittelbar",
       "description": "Lodernde Feuerkugeln stürzen an vier verschiedenen Punkten in Reichweite zu Boden, die du sehen kannst. Jede Kreatur in einer Sphäre mit einem Radius von zwölf Metern um jeden gewählten Punkt muss einen Geschicklichkeitsrettungswurf ausführen. Die Sphäre breitet sich um Ecken aus. Scheitert der Wurf, erleidet die Kreatur 20W6 Feuerschaden und 20W6 Wuchtschaden, anderenfalls die Hälfte. Kreaturen im Wirkungsbereich von mehr als einem feurigen Ausbruch sind nur einmal betroffen.\n\nDer Zauber verursacht Schaden bei Gegenständen in der Umgebung und entzündet brennbare Gegenstände, die nicht getragen oder gehalten werden."
     },
-    "damage": [
-      {
-        "dice": "20W6",
-        "average": 70,
-        "type": "fire"
-      },
-      {
-        "dice": "20W6",
-        "average": 70,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7238,13 +6892,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Ein silbriger Strahl fahlen Lichts scheint in einem zwölf Meter hohen Zylinder mit einem Radius von bis zu 1,5 Metern herab, der auf einem Punkt in Reichweite zentriert ist. Bis der Zauber endet, erfüllt dämmriges Licht den Zylinder.\n\nWenn eine Kreatur den Bereich des Zaubers in einem Zug erstmals betritt oder ihren Zug darin beginnt, wird sie von geisterhaften Flammen eingehüllt, die brennende Schmerzen verursachen. Sie muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 2W10 gleißenden Schaden, anderenfalls die Hälfte.\n\nEin Gestaltwandler ist bei diesem Rettungswurf im Nachteil. Scheitert der Wurf, nimmt der Gestaltwandler zudem sofort seine ursprüngliche Gestalt an und kann keine andere Gestalt annehmen, bis er das Licht des Zaubers verlässt.\n\nNachdem du den Zauber gewirkt hast, kannst du den Mondstrahl in jedem deiner Züge als Aktion 18 Meter in eine beliebige Richtung bewegen.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 2. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "2W10",
-        "average": 11,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7405,13 +7052,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du zapfst die Alpträume einer Kreatur in Reichweite an, die du sehen kannst, und erschaffst eine illusionäre Manifestation ihrer tiefsten Ängste, die nur für diese Kreatur sichtbar ist. Das Ziel muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, ist das Ziel für die Wirkungsdauer verängstigt. Bis der Zauber endet, muss das Ziel am Ende jedes seiner Züge einen Weisheitsrettungswurf bestehen, oder es erleidet 4W10 psychischen Schaden. Bei einem erfolgreichen Wurf endet der Zauber.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 4. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "4W10",
-        "average": 22,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7613,13 +7253,6 @@
       "duration": "Unmittelbar",
       "description": "Du streckst deine Hand in Richtung einer Kreatur in Reichweite aus, die du sehen kannst, und erzeugst eine Wolke giftigen Gases aus deiner Handfläche. Die Kreatur muss einen Konstitutionsrettungswurf bestehen, oder sie erleidet 1W12 Giftschaden.\n\nDer Schaden dieses Zaubers steigt um je 1W12, wenn du die 5. Stufe (2W12), die 11. Stufe (3W12) und die 17. Stufe (4W12) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W12",
-        "average": 6.5,
-        "type": "poison"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7823,33 +7456,6 @@
       "duration": "Unmittelbar",
       "description": "Acht bunte Lichtstrahlen schießen aus deiner Hand. Jeder Strahl leuchtet in einer anderen Farbe und besitzt eine andere Macht und einen anderen Zweck. Kreaturen innerhalb eines Kegels von 18 Metern müssen einen Geschicklichkeitsrettungswurf ausführen. Würfle für jedes Ziel mit einem W8, um die Farbe zu bestimmen, die es trifft.\n\n1. Rot: Scheitert der Wurf, erleidet das Ziel 10W6 Feuerschaden, anderenfalls die Hälfte.\n\n2. Orange: Scheitert der Wurf, erleidet das Ziel 10W6 Säureschaden, anderenfalls die Hälfte.\n\n3. Gelb: Scheitert der Wurf, erleidet das Ziel 10W6 Blitzschaden, anderenfalls die Hälfte.\n\n4. Grün: Scheitert der Wurf, erleidet das Ziel 10W6 Giftschaden, anderenfalls die Hälfte.\n\n5. Blau: Scheitert der Wurf, erleidet das Ziel 10W6 Kälteschaden, anderenfalls die Hälfte.\n\n6. Indigo: Scheitert der Wurf, ist das Ziel festgesetzt. Am Ende jedes seiner Züge muss es einen Konstitutionsrettungswurf ausführen. Bei drei erfolgreichen Rettungswürfen endet dieser Zauber. Scheitert der Wurf dreimal, wird es dauerhaft zu Stein und leidet unter dem Versteinert-Zustand. Die erfolgreichen und gescheiterten Würfe müssen nicht unmittelbar aufeinanderfolgen. Notiere dir einfach beide, bis das Ziel drei der gleichen hat.\n\n7. Violett: Scheitert der Wurf, ist das Ziel blind. Es muss zu Beginn deines nächsten Zugs einen Weisheitsrettungswurf ausführen. Bei einem erfolgreichen Rettungswurf endet die Blindheit. Scheitert der Wurf, wird die Kreatur auf eine andere Existenzebene nach Wahl des SL transportiert und ist nicht länger blind. (Normalerweise wird eine Kreatur, die sich nicht auf ihrer Heimatebene befindet, dorthin transportiert, während andere Kreaturen auf die Astral- oder Ätherebene transportiert werden.)\n\n8. Besonders: Das Ziel wird von zwei Strahlen getroffen. Würfle noch zweimal und wiederhole den Wurf, falls du eine 8 würfelst."
     },
-    "damage": [
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "fire"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "acid"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "lightning"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "poison"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7880,33 +7486,6 @@
       "duration": "10 Minuten",
       "description": "Schimmerndes, buntes Licht bildet eine vertikale, undurchsichtige Wand, die auf einen Punkt in Reichweite zentriert ist, den du sehen kannst. Die Wand ist bis zu 27 Meter lang, neun Meter hoch und 2,5 Zentimeter dick. Alternativ kannst du die Wand in eine Sphäre mit bis zu neun Metern Durchmesser formen, die auf einem Punkt deiner Wahl in Reichweite zentriert ist. Die Wand bleibt für die Wirkungsdauer bestehen. Platzierst du die Wand so, dass sie durch den von einer Kreatur besetzten Bereich verläuft, schlägt der Zauber fehl und deine Aktion und der Zauberplatz sind vergeudet.\n\nDie Wand verströmt helles Licht bis zu einer Reichweite von 30 Metern und dämmriges Licht für weitere 30 Meter. Du und Kreaturen, die du beim Wirken des Zaubers bestimmst, könnt die Wand durchqueren und sich in ihrer Nähe aufhalten, ohne Schaden zu erleiden. Wenn eine andere Kreatur, die die Wand sehen kann, sich ihr auf sechs Meter nähert oder ihren Zug dort beginnt, muss die Kreatur einen Konstitutionsrettungswurf bestehen, oder sie wird eine Minute lang blind.\n\nDie Wand besteht aus sieben Schichten, jede in einer anderen Farbe. Versucht eine Kreatur, durch die Wand zu greifen oder zu gehen, geschieht dies Schicht für Schicht für alle sieben Schichten der Wand. Für jede Schicht muss die Kreatur einen Geschicklichkeitsrettungswurf ausführen und wird von den unten beschriebenen Eigenschaften dieser Schicht betroffen.\n\nDie Wand kann auch Schicht für Schicht von Rot nach Violett zerstört werden, wobei die Art für jede Schicht anders ist. Sobald eine Schicht zerstört wurde, bleibt sie es für die Wirkungsdauer des Zaubers. Eine Rute des Abbruchs zerstört eine Regenbogenwand, ein antimagisches Feld hat jedoch keinen Effekt.\n\n1. Rot: Scheitert der Wurf, erleidet die Kreatur 10W6 Feuerschaden, anderenfalls die Hälfte. Solange diese Schicht existiert, können nichtmagische Fernkampfangriffe die Wand nicht durchdringen. Die Schicht kann zerstört werden, wenn ihr mindestens 25 Kälteschaden zugefügt wird.\n\n2. Orange: Scheitert der Wurf, erleidet die Kreatur 10W6 Säureschaden, anderenfalls die Hälfte. Solange diese Schicht existiert, können magische Fernkampfangriffe die Wand nicht durchdringen. Die Schicht wird durch einen starken Wind zerstört.\n\n3. Gelb: Scheitert der Wurf, erleidet die Kreatur 10W6 Blitzschaden, anderenfalls die Hälfte. Die Schicht kann zerstört werden, wenn ihr mindestens 60 Energieschaden zugefügt wird.\n\n4. Grün: Scheitert der Wurf, erleidet die Kreatur 10W6 Giftschaden, anderenfalls die Hälfte. Der Zauber Wände passieren oder ein Zauber desselben oder eines höheren Grades, der ein Portal auf einer festen Oberfläche öffnet, zerstört diese Schicht.\n\n5. Blau: Scheitert der Wurf, erleidet die Kreatur 10W6 Kälteschaden, anderenfalls die Hälfte. Die Schicht kann zerstört werden, wenn ihr mindestens 25 Feuerschaden zugefügt wird.\n\n6. Indigo: Scheitert der Wurf, ist die Kreatur festgesetzt. Am Ende jedes seiner Züge muss sie einen Konstitutionsrettungswurf ausführen. Bei drei erfolgreichen Rettungswürfen endet dieser Zauber. Scheitert der Wurf dreimal, wird sie dauerhaft zu Stein und leidet unter dem Versteinert-Zustand. Die erfolgreichen und gescheiterten Würfe müssen nicht unmittelbar aufeinanderfolgen. Notiere dir einfach beide, bis die Kreatur drei der gleichen hat.\n\nSolange diese Schicht existiert, können keine Zauber durch die Wand gewirkt werden. Die Schicht wird von hellem Licht des Zaubers Tageslicht oder eines Zaubers desselben oder eines höheren Grades zerstört.\n\n7. Violett: Scheitert der Wurf, wird die Kreatur blind. Sie muss zu Beginn deines nächsten Zugs einen Weisheitsrettungswurf ausführen. Bei einem erfolgreichen Rettungswurf endet die Blindheit. Scheitert der Wurf, wird die Kreatur auf eine andere Existenzebene nach Wahl des SL transportiert und ist nicht länger blind. (Normalerweise wird eine Kreatur, die sich nicht auf ihrer Heimatebene befindet, dorthin transportiert, während andere Kreaturen auf die Astral- oder Ätherebene transportiert werden.) Diese Schicht wird durch den Zauber Magie bannen oder einen Zauber desselben oder eines höheren Grades zerstört, der Zauber und magische Effekte bannt."
     },
-    "damage": [
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "fire"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "acid"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "lightning"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "poison"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -7966,13 +7545,6 @@
       "duration": "10 Minuten",
       "description": "Eine flackernde Flamme erscheint in deiner Hand. Sie bleibt für die Wirkungsdauer bestehen und schadet weder dir noch deiner Ausrüstung. Die Flamme spendet in einem Radius von drei Metern helles Licht und in einem Radius von weiteren drei Metern dämmriges Licht. Der Zauber endet, wenn du ihn als Aktion beendest oder ihn erneut wirkst.\n\nDu kannst auch mit der Flamme angreifen. Dies beendet jedoch den Zauber. Wenn du diesen Zauber wirkst oder ihn als Aktion in einem späteren Zug wirkst, kannst du die Flamme auf eine Kreatur im Abstand von bis zu neun Metern von dir schleudern. Führe einen Fernkampf-Zauberangriff aus. Bei einem Treffer erleidet das Ziel 1W8 Feuerschaden.\n\nDer Schaden dieses Zaubers erhöht sich um je 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -8275,13 +7847,6 @@
       "duration": "Unmittelbar",
       "description": "Ein eisiger Strahl blau-weißen Lichts schießt auf eine Kreatur in Reichweite. Führe einen Fernkampf- Zauberangriff gegen das Ziel aus. Bei einem Treffer erleidet es 1W8 Kälteschaden und seine Bewegungsrate ist bis zum Beginn deines nächsten Zugs um drei Meter verringert.\n\nDer Schaden des Zaubers steigt um je 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -8602,13 +8167,6 @@
       "duration": "Unmittelbar",
       "description": "Ein Strahl aus gleißenden Flammen schießt auf eine Kreatur in Reichweite herab, die du sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen, oder es erleidet 1W8 gleißenden Schaden. Deckung bietet dem Ziel bei diesem Rettungswurf keine Vorteile.\n\nDer Schaden des Zaubers steigt um je 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -8670,13 +8228,6 @@
       "duration": "Unmittelbar",
       "description": "Du erschaffst drei Feuerstrahlen und schleuderst sie auf ein oder mehrere Ziele in Reichweite.\n\nFühre für jeden Strahl einen Fernkampf- Zauberangriff aus. Bei einem Treffer erleidet das Ziel 2W6 Feuerschaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, erschaffst du für jeden Grad über dem 2. einen zusätzlichen Strahl."
     },
-    "damage": [
-      {
-        "dice": "2W6",
-        "average": 7,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -8943,13 +8494,6 @@
       "duration": "Unmittelbar",
       "description": "Von einem Punkt deiner Wahl in Reichweite geht ein schmerzhaft lautes Klingelgeräusch aus. Alle Kreaturen im Radius von drei Metern um diesen Punkt müssen einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleiden sie 3W8 Schallschaden, anderenfalls die Hälfte. Kreaturen aus anorganischem Material wie Stein, Kristall oder Metall sind beim Rettungswurf im Nachteil.\n\nNichtmagische Objekte, die nicht getragen werden, erleiden innerhalb des Bereichs den gleichen Schaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 3. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3W8",
-        "average": 13.5,
-        "type": "thunder"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9074,13 +8618,6 @@
       "duration": "Unmittelbar",
       "description": "Ein Blitz springt von deiner Hand auf eine Kreatur über, die du zu berühren versuchst, und versetzt ihr einen elektrischen Schlag. Führe einen Nahkampf- Zauberangriff gegen das Ziel aus. Du bist beim Angriffswurf im Vorteil, wenn das Ziel eine Rüstung aus Metall trägt. Bei einem Treffer erleidet das Ziel 1W8 Blitzschaden und kann erst zu Beginn seines nächsten Zugs Reaktionen ausführen.\n\nDer Schaden des Zaubers steigt um je 1W8, wenn du die 5. Stufe (2W8), die 11. Stufe (3W8) und die 17. Stufe (4W8) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W8",
-        "average": 4.5,
-        "type": "lightning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9475,13 +9012,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Der Boden in einem Radius von sechs Metern, der auf einen Punkt in Reichweite zentriert ist, wird von harten Stacheln und Dornen überwuchert. Der Bereich wird für die Wirkungsdauer zu schwierigem Gelände. Bewegt sich eine Kreatur in den Bereich oder innerhalb davon, erleidet sie pro zurückgelegten 1,5 Metern 2W4 Stichschaden.\n\nDie Verwandlung des Bodens ist getarnt und sieht natürlich aus. Jede Kreatur, die den Bereich nicht sehen kann, wenn der Zauber gewirkt wird, muss einen Weisheitswurf (Wahrnehmung) gegen deinen Zauberrettungswurf-SG ausführen. Bei einem Erfolg erkennt sie das Gelände vor dem Betreten als gefährlich."
     },
-    "damage": [
-      {
-        "dice": "2W4",
-        "average": 5,
-        "type": "piercing"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9512,18 +9042,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du rufst Geister herbei, die dich beschützen. Sie schwirren während der Wirkungsdauer in einer Entfernung von 4,5 Metern um dich herum. Wenn du gut oder neutral bist, erscheint ihre Spektralform engelsgleich oder feenhaft (deine Wahl). Wenn du böse bist, erscheinen sie teuflisch.\n\nWenn du diesen Zauber wirkst, kannst du eine beliebige Anzahl von Kreaturen bestimmen, die du sehen kannst. Sie werden von dem Zauber nicht betroffen. Die Bewegungsrate betroffener Kreaturen wird im Wirkungsbereich halbiert. Wenn eine Kreatur den Wirkungsbereich in einem Zug erstmals betritt oder ihren Zug darin beginnt, muss sie einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 3W8 gleißenden Schaden (wenn du gut oder neutral bist) oder 3W8 nekrotischen Schaden (wenn du böse bist). Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 3. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3W8",
-        "average": 13.5,
-        "type": "radiant"
-      },
-      {
-        "dice": "3W8",
-        "average": 13.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9686,33 +9204,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Eine brodelnde Sturmwolke bildet sich zentriert auf einen Punkt, den du sehen kannst, und breitet sich auf einen Radius von 110 Metern aus. Blitze zucken in dem Bereich herab, Donner grollt und starke Winde heulen. Jede Kreatur, die sich beim Erscheinen der Wolke maximal 1,5 Kilometer darunter befindet, muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 2W6 Schallschaden und ist fünf Minuten lang taub.\n\nIn jeder Runde, in der du dich auf diesen Zauber konzentrierst, erzeugt der Sturm in deinem Zug einen zusätzlichen Effekt.\n\nRunde 2: Säureregen regnet aus der Wolke. Jede Kreatur und jeder Gegenstand unter der Wolke erleidet 1W6 Säureschaden.\n\nRunde 3: Du rufst sechs Blitze aus der Wolke hervor, die sechs Kreaturen oder Gegenstände deiner Wahl unter der Wolke treffen. Jedes Ziel kann nur von maximal einem Blitz getroffen werden. Eine getroffene Kreatur muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 10W6 Blitzschaden, anderenfalls die Hälfte.\n\nRunde 4: Hagelkörner regnen aus der Wolke herab. Jede Kreatur unter der Wolke erleidet 2W6 Wuchtschaden.\n\nRunde 5–10: Windstöße und Eisregen fegen durch den Bereich unter der Wolke. Der Bereich wird zu schwierigem Gelände und ist komplett verschleiert. Jede Kreatur im Bereich erleidet 1W6 Kälteschaden. Fernkampfwaffenangriffe sind in diesem Bereich unmöglich. Wind und Regen stellen eine starke Ablenkung dar, wenn sich eine Kreatur auf einen Zauber konzentrieren will. Außerdem zerstreuen starke Winde (die zwischen 32 bis 80 Kilometer pro Stunde erreichen) automatisch Nebel, Dunst und ähnliche Effekte in dem Bereich, egal ob sie magischer Natur sind oder nicht."
     },
-    "damage": [
-      {
-        "dice": "2W6",
-        "average": 7,
-        "type": "thunder"
-      },
-      {
-        "dice": "1W6",
-        "average": 3.5,
-        "type": "acid"
-      },
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "lightning"
-      },
-      {
-        "dice": "2W6",
-        "average": 7,
-        "type": "bludgeoning"
-      },
-      {
-        "dice": "1W6",
-        "average": 3.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9784,13 +9275,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Ein heller Lichtstrahl schießt in einer 1,5 Meter breiten und 18 Meter langen Linie aus deiner Hand. Jede Kreatur in der Linie muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 6W8 gleißenden Schaden und ist bis zu deinem nächsten Zug blind. Bei einem erfolgreichen Rettungswurf erleidet sie halb so viel Schaden und wird nicht blind. Untote und Schlicke sind bei diesem Rettungswurf im Nachteil.\n\nAls Aktion kannst du in jedem deiner Züge eine neue Linie aus Licht erschaffen, bis der Zauber endet.\n\nFür die Wirkungsdauer erstrahlt ein heller Funke in deiner Hand. Er spendet in einem Radius von neun Metern helles Licht und von weiteren neun Metern dämmriges Licht. Beim Licht handelt es sich um Sonnenlicht."
     },
-    "damage": [
-      {
-        "dice": "6W8",
-        "average": 27,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9826,13 +9310,6 @@
       "duration": "Unmittelbar",
       "description": "Gleißendes Sonnenlicht erfüllt einen Radius von 18 Metern, der um einen Punkt deiner Wahl in Reichweite zentriert ist. Jede Kreatur in diesem Licht muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 12W6 gleißenden Schaden und ist eine Minute lang blind. Bei einem erfolgreichen Rettungswurf erleidet sie halb so viel Schaden und wird nicht blind. Untote und Schlicke sind bei diesem Rettungswurf im Nachteil.\n\nEine von diesem Zauber geblendete Kreatur führt am Ende jedes ihrer Züge einen weiteren Konstitutionsrettungswurf aus. Bei einem erfolgreichen Rettungswurf ist sie nicht mehr blind.\n\nDieser Zauber bannt jede Dunkelheit in der Umgebung, die von einem Zauber erschaffen wurde."
     },
-    "damage": [
-      {
-        "dice": "12W6",
-        "average": 42,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9868,13 +9345,6 @@
       "duration": "Bis der Zauber gebannt oder",
       "description": "ausgelöst wird Wenn du diesen Zauber wirkst, zeichnest du eine schädliche Glyphe auf eine Oberfläche (wie einem Tisch, dem Fußboden oder einer Wand) oder in einen Gegenstand, der verschlossen werden kann, um die Glyphe zu verbergen (wie ein Buch, eine Schriftrolle oder eine Schatztruhe). Wählst du eine Oberfläche, kann die Glyphe einen Bereich mit einem Radius von maximal drei Metern abdecken. Wählst du einen Gegenstand, muss dieser an seinem Standort bleiben. Wird er mehr als drei Meter von dem Ort entfernt, an dem du den Zauber gewirkt hast, wird die Glyphe zerstört und der Zauber endet, ohne ausgelöst zu werden.\n\nDie Glyphe ist nahezu unsichtbar. Es wird ein erfolgreicher Intelligenzwurf (Nachforschungen) gegen deinen Zauberrettungswurf-SG benötigt, um sie zu entdecken.\n\nWenn du den Zauber wirkst, entscheidest du, was die Glyphe auslöst. Glyphen auf Oberflächen werden meist dadurch ausgelöst, dass jemand sie berührt oder darauf steht, einen Gegenstand bewegt, der die Glyphe verdeckt, sich der Glyphe auf eine bestimmte Entfernung nähert oder mit dem Gegenstand interagiert, in den die Glyphe geschrieben wurde. Glyphen auf Gegenständen werden meist dadurch ausgelöst, dass jemand den Gegenstand öffnet, sich ihm auf eine bestimmte Entfernung nähert oder die Glyphe sieht oder liest.\n\nDu kannst die Auslösebedingung des Zaubers weiter verfeinern, so dass der Zauber nur bei bestimmten Umständen oder körperlichen Eigenschaften einer Kreatur (wie Größe oder Gewicht) oder bestimmten Typen ausgelöst wird. Der Zauber könnte beispielsweise nur Vetteln oder Gestaltwandler betreffen. Du kannst auch Kreaturen festlegen, die die Glyphe nicht auslösen, beispielsweise wenn sie ein bestimmtes Passwort aussprechen.\n\nWähle beim Schreiben der Glyphe eine der folgenden Optionen als Effekt. Sobald sie ausgelöst wurde, leuchtet die Glyphe und erfüllt eine Sphäre mit einem Radius von 18 Metern zehn Minuten lang mit dämmrigem Licht. Danach endet der Zauber. Jede Kreatur, die sich beim Aktivieren der Glyphe in der Sphäre befindet, diese das erste Mal in einem Zug betritt oder ihren Zug dort beendet, wird Ziel des vorher festgelegten Effekts.\n\nBetäubung: Jedes Ziel muss einen Weisheitsret- tungswurf ausführen. Scheitert der Wurf, wird es eine Minute lang betäubt.\n\nFurcht: Jedes Ziel muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, ist es eine Minute lang verängstigt. Während es verängstigt ist, lässt das Ziel fallen, was es gerade hält, und muss sich in jedem seiner Züge mindestens neun Meter von der Glyphe entfernen, sofern dies möglich ist.\n\nHoffnungslosigkeit: Jedes Ziel muss einen Charismarettungswurf ausführen. Scheitert der Wurf, wird das Ziel eine Minute lang von Verzweiflung überwältigt. Während dieser Zeit kann es weder angreifen noch Kreaturen als Ziel für schädigende Fähigkeiten, Zauber oder andere magische Effekte wählen.\n\nSchlaf: Jedes Ziel muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, wird es zehn Minuten lang bewusstlos. Eine Kreatur erwacht, wenn sie Schaden erleidet oder jemand eine Aktion verwendet, um sie zu schütteln oder zu ohrfeigen.\n\nSchmerz: Jedes Ziel muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, wird es eine Minute lang von schrecklichen Schmerzen geplagt und kampfunfähig.\n\nTod: Jedes Ziel muss einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet das Ziel 10W10 nekrotischen Schaden, anderenfalls die Hälfte.\n\nWahnsinn: Jedes Ziel muss einen Intelligenzrettungswurf ausführen. Scheitert der Wurf, verfällt das Ziel eine Minute lang dem Wahnsinn. Eine wahnsinnige Kreatur kann keine Aktionen ausführen, versteht nicht, was andere Kreaturen sagen, kann nicht lesen und sich nicht verständlich ausdrücken. Der SL kontrolliert ihre Bewegungen, die unberechenbar sind.\n\nZwietracht: Jedes Ziel muss einen Konstituti- onsrettungswurf ausführen. Scheitert der Wurf, streitet sich das Ziel eine Minute lang mit anderen Kreaturen. Während dieser Zeit ist es nicht zu sinnvollen Gesprächen in der Lange und ist bei Angriffs- und Attributswürfen im Nachteil."
     },
-    "damage": [
-      {
-        "dice": "10W10",
-        "average": 55,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -9970,13 +9440,6 @@
       "duration": "Unmittelbar",
       "description": "Dieser Zauber transportiert dich und bis zu acht bereitwillige Kreaturen deiner Wahl in Reichweite, die du sehen kannst, sofort zu einem von dir ausgewählten Ort. Du kannst auch einen einzelnen Gegenstand in Reichweite, den du sehen kannst, teleportieren. In diesem Fall muss der Gegenstand in einen Würfel mit drei Metern Kantenlänge passen und kann nicht von einer unwilligen Kreatur gehalten oder getragen werden.\n\nDer von dir ausgewählte Zielort muss dir bekannt sein und sich auf derselben Existenzebene wie du befinden. Deine Vertrautheit mit dem Zielort bestimmt, ob du dort erfolgreich eintriffst. Der SL würfelt anhand der folgenden Tabelle mit einem W100. Vertrautheit Unglück Ähnliches Gebiet Abseits des Zielorts Am Zielort Dauerhafter Kreis − − − 1–100 Zugehöriger Gegenstand − − − 1–100 Sehr vertraut 1–5 6–13 14–24 25-100 Beiläufig gesehen 1–33 34–43 44–53 54–100 Einmal gesehen 1–43 44–53 54–73 74–100 Beschreibung 1–43 44–53 54–73 74–100 Falscher Zielort 1–50 51–100 − −\n\nVertrautheit: Mit „dauerhafter Kreis“ ist ein dauerhafter Kreis der Teleportation gemeint, dessen Siegelsequenz dir bekannt ist. „Zugehöriger Gegenstand“ bedeutet, dass du einen Gegenstand besitzt, der innerhalb der letzten sechs Monate vom gewünschten Zielort entfernt wurde, etwa ein Buch aus dem Archiv eines Magiers, Bettlaken aus einer königlichen Kammer oder ein Stück Marmor aus der geheimen Gruft eines Lichs.\n\n„Sehr vertraut“ beschreibt einen Ort, an dem du oft gewesen bist, den du genau studiert hast oder den du beim Wirken des Zaubers sehen kannst. „Beiläufig gesehen“ beschreibt einen Ort, den du mehr als einmal gesehen hast, mit dem du jedoch nicht sehr vertraut bist. „Einmal gesehen“ beschreibt einen Ort, den du einmal gesehen hast, wahrscheinlich durch Magie. „Beschreibung“ bezieht sich auf einen Ort, dessen Position und Aussehen dir durch eine Beschreibung bekannt sind, etwa durch eine Karte.\n\n„Falscher Zielort“ bedeutet, dass ein Ort nicht existiert. Vielleicht hast du versucht, das Heiligtum eines Feindes magisch auszuspähen, konntest jedoch nur eine Illusion sehen. Oder du versuchst, dich an einen vertrauten Ort zu teleportieren, der nicht mehr existiert.\n\nAm Zielort: Du und deine Gruppe (oder der Zielgegenstand) erscheint dort, wo du willst.\n\nAbseits des Zielorts: Du und deine Gruppe (oder der Zielgegenstand) erscheint in einer zufälligen Entfernung und in einer zufälligen Richtung abseits des Zielorts. Die Entfernung vom Ziel beträgt 1W10 x 1W10 Prozent der Entfernung, die teleportiert werden sollte. Beispiel: Du versuchst, 190 Kilometer weit zu reisen und landest abseits des Zielorts. Du würfelst eine 5 und eine 3 mit den beiden W10. Daher befindest du dich 15 Prozent abseits des Ziels, also 28 Kilometer. Der SL bestimmt zufällig die Richtung, in der du vom Zielort entfernt landest, indem er einen W8 würfelt und 1 als Norden, 2 als Nordosten, 3 als Osten und so weiter bestimmt. Teleportierst du dich zu einer Küstenstadt und landest 28 Kilometer weit im Meer, könntest du in Schwierigkeiten sein.\n\nÄhnliches Gebiet: Du und deine Gruppe (oder der Zielgegenstand) erscheint in einem anderen Gebiet, das dem Zielort visuell oder thematisch ähnlich ist. Wolltest du dich beispielsweise in dein heimisches Labor teleportieren, landest du vielleicht im Labor eines anderen Magiers oder in einem Alchemieladen, der über viele ähnliche Geräte wie dein Labor verfügt. Grundsätzlich erscheinst du am nächstgelegenen ähnlichen Ort. Da der Zauber jedoch keine Reichwei- tenbegrenzung besitzt, kannst du theoretisch überall auf der Ebene landen.\n\nUnglück: Die unvorhersehbare Magie des Zaubers führt zu einer holprigen Reise. Jede teleportierte Kreatur (oder der Zielgegenstand) erleidet 3W10 Energieschaden. Zudem würfelt der SL anhand der Tabelle, um zu bestimmen, wo du landest. Es kann zu mehreren Unglücken kommen, die jedes Mal Schaden verursachen."
     },
-    "damage": [
-      {
-        "dice": "3W10",
-        "average": 16.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10076,13 +9539,6 @@
       "duration": "Unmittelbar",
       "description": "Eine Woge donnernder Energie bricht aus dir heraus. Alle Kreaturen in einem Würfel mit einer Kantenlänge von 4,5 Metern, der von dir ausgeht, müssen einen Konstitutionsrettungswurf ausführen. Scheitert der Wurf, erleidet eine Kreatur 2W8 Schallschaden und wird drei Meter von dir weggestoßen. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur halb so viel Schaden und wird nicht weggestoßen.\n\nAußerdem werden ungesicherte Objekte, die sich vollständig im Wirkungsbereich befinden, durch den Effekt des Zaubers automatisch drei Meter von dir weggestoßen. Der Zauber bewirkt einen donnernden Knall, der 90 Meter weit zu hören ist.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 2. Grades oder höher nutzt, erhöht sich der Schaden für jeden Grad über dem 1. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "2W8",
-        "average": 9,
-        "type": "thunder"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10449,13 +9905,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Die Berührung deiner in Schatten gehüllten Hand entzieht anderen Lebenskraft, um dich zu heilen. Führe einen Nahkampf-Zauberangriff gegen eine Kreatur innerhalb deiner Reichweite aus. Bei einem Treffer erleidet das Ziel 3W6 nekrotischen Schaden und du erhältst Trefferpunkte in Höhe der Hälfte des nekrotischen Schadens zurück. Bis der Zauber endet, kannst du in jedem deiner Züge den Angriff als Aktion wiederholen.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 4. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 3. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "3W6",
-        "average": 10.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10485,13 +9934,6 @@
       "duration": "Unmittelbar",
       "description": "Du entfesselst eine Reihe von Beleidigungen, die mit subtilen Verzauberungen durchsetzt und an eine Kreatur in Reichweite gerichtet sind, die du sehen kannst. Falls dich das Ziel hören kann − obwohl es dich nicht verstehen muss −, muss es einen Weisheitsrettungswurf bestehen, oder es erleidet 1W4 psychischen Schaden und ist beim nächsten Angriffswurf vor dem Ende seines nächsten Zugs im Nachteil.\n\nDer Schaden dieses Zaubers steigt um je 1W4, wenn du die 5. Stufe (2W4), die 11. Stufe (3W4) und die 17. Stufe (4W4) erreichst."
     },
-    "damage": [
-      {
-        "dice": "1W4",
-        "average": 2.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10526,13 +9968,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine Feuerwand auf einer festen Oberfläche in Reichweite. Du kannst eine gerade Wand erschaffen, die bis zu 18 Meter lang ist, oder eine ringförmige Wand mit bis zu sechs Metern Durchmesser. In beiden Fällen ist die Wand sechs Meter hoch und 0,3 Meter dick. Die Wand ist undurchsichtig und bleibt für die Wirkungsdauer bestehen.\n\nWenn die Wand erscheint, muss jede Kreatur in ihrem Bereich einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 5W8 Feuerschaden, anderenfalls die Hälfte.\n\nEine Seite der Wand, die du beim Wirken des Zaubers bestimmst, fügt jeder Kreatur 5W8 Feuerschaden zu, die ihren Zug im Abstand von bis zu drei Metern von dieser Seite oder in der Wand beendet. Eine Kreatur erleidet den Schaden ebenfalls, wenn sie die Wand in einem Zug erstmals betritt. Die andere Seite der Wand verursacht keinen Schaden.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 5. Grades oder höher nutzt, steigt der Schaden für jeden Grad über dem 4. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "5W8",
-        "average": 22.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10593,18 +10028,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst eine Eiswand auf einer festen Oberfläche in Reichweite. Du kannst sie zu einer halbrunden Kuppel oder einer Sphäre mit einem Radius von bis zu drei Metern formen, oder du kannst eine flache Oberfläche aus zehn Platten erschaffen, die jeweils drei Quadratmeter groß sind. Jede Platte muss an eine andere angrenzen. In jeder Form ist die Wand 30 Zentimeter dick und bleibt für die Wirkungsdauer bestehen.\n\nErschaffst du die Wand so, dass sie den Bereich einer Kreatur durchdringt, wird die Kreatur auf eine Seite der Wand gestoßen und muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 10W6 Kälteschaden, anderenfalls die Hälfte.\n\nDie Wand ist ein Objekt, das beschädigt und somit durchbrochen werden kann. Sie besitzt eine RK von 12, 30 Trefferpunkte pro Abschnitt von drei Metern und ist anfällig für Feuerschaden. Sinken die Trefferpunkte eines Abschnitts von drei Metern der Wand auf 0, wird dieser Abschnitt zerstört und hinterlässt in seinem Bereich eine eisige Luftschicht. Wenn eine Kreatur die eisige Luftschicht in einem Zug erstmals durchquert, muss sie einen Konstitutionsrettungs- wurf ausführen. Scheitert der Wurf, erleidet die Kreatur 5W6 Kälteschaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigt der Schaden, den die Wand beim Erscheinen verursacht, für jeden Grad über dem 6. um 2W6, und der Schaden für das Durchqueren der eisigen Luftschicht um 1W6."
     },
-    "damage": [
-      {
-        "dice": "10W6",
-        "average": 35,
-        "type": "cold"
-      },
-      {
-        "dice": "5W6",
-        "average": 17.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10669,18 +10092,6 @@
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Du erschaffst eine Wand aus zähem, biegsamem und verworrenem Gestrüpp mit nadelscharfen Dornen. Die Wand erscheint auf einer festen Oberfläche in Reichweite und bleibt für die Wirkungsdauer bestehen. Die Wand kann bis zu 18 Meter lang, drei Meter hoch und 1,5 Meter dick sein. Alternativ kannst du eine ringförmige Wand mit einem Durchmesser von sechs Metern erschaffen, die bis zu sechs Meter hoch und 1,5 Meter dick ist. Die Wand blockiert die Sichtlinie.\n\nWenn die Wand erscheint, muss jede Kreatur in ihrem Bereich einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 7W8 Stichschaden, anderenfalls die Hälfte.\n\nEine Kreatur kann die Dornenwand durchdringen, jedoch nur langsam und unter Schmerzen. Für jeden Meter, den sie sich durch die Wand bewegt, muss sie vier Meter ihrer Bewegungsrate verwenden. Zudem muss eine Kreatur, die die Wand in einem Zug erstmals betritt oder ihren Zug darin beendet, einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, erleidet sie 7W8 Hiebschaden, anderenfalls die Hälfte.\n\nAuf höheren Graden: Wirkst du diesen Zauber, indem du einen Zauberplatz des 7. Grades oder höher nutzt, steigen beide Schadensarten für jeden Grad über dem 6. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "7W8",
-        "average": 31.5,
-        "type": "piercing"
-      },
-      {
-        "dice": "7W8",
-        "average": 31.5,
-        "type": "slashing"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10816,13 +10227,6 @@
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du beschwörst eine Masse aus dichten, klebrigen Netzen an einem Ort deiner Wahl in Reichweite. Während der Wirkungsdauer füllen die Netze einen würfelförmigen Bereich mit sechs Metern Kantenlänge. Die Netze gelten als schwieriges Gelände und verschleiern den Bereich leicht.\n\nWenn sich die Spinnweben nicht zwischen zwei festen Gegenständen wie Mauern oder Bäumen befinden oder über einen Fußboden, eine Wand oder eine Decke gespannt sind, fällt das beschworene Netz in sich zusammen und der Zauber endet zu Beginn deines nächsten Zugs. Netze, die über eine flache Oberfläche ausgebreitet sind, besitzen eine Dicke von 1,5 Metern.\n\nJede Kreatur, die ihren Zug in den Netzen beginnt oder diese während ihres Zugs betritt, muss einen Geschicklichkeitsrettungswurf ausführen. Scheitert der Wurf, ist die Kreatur festgesetzt, solange sie sich in den Netzen befindet oder bis sie sich befreit.\n\nEine von den Netzen festgesetzte Kreatur kann als Aktion einen Stärkewurf gegen deinen Zauberrettungswurf-SG ausführen. Bei einem Erfolg ist sie nicht länger festgesetzt.\n\nDie Netze sind brennbar. Alle Netze innerhalb eines würfelförmigen Bereichs mit 1,5 Metern Kantenlänge verbrennen innerhalb von einer Runde, wenn sie mit Feuer in Kontakt kommen, und verursachen dabei bei allen Kreaturen, die ihren Zug im Feuer beginnen, 2W4 Feuerschaden."
     },
-    "damage": [
-      {
-        "dice": "2W4",
-        "average": 5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10853,13 +10257,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du schöpfst aus den tiefsten Ängsten einer Gruppe von Kreaturen und erschaffst illusionäre Monster in ihren Köpfen, die nur für sie sichtbar sind. Jede Kreatur in einer Sphäre mit einem Radius von neun Metern, die um einen Punkt deiner Wahl in Reichweite zentriert ist, muss einen Weisheitsrettungswurf ausführen. Scheitert der Wurf, ist die Kreatur für die Wirkungsdauer verängstigt. Die Illusion manifestiert die schlimmsten Albträume einer Kreatur als unerbittliche Bedrohung. Am Ende jedes ihrer Züge muss die verängstigte Kreatur einen Weisheitsrettungswurf bestehen, oder sie erleidet 4W10 psychischen Schaden. Bei einem Erfolg endet der Zauber für diese Kreatur."
     },
-    "damage": [
-      {
-        "dice": "4W10",
-        "average": 22,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10922,13 +10319,6 @@
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Eine Wand aus starkem Wind erscheint an einem Punkt deiner Wahl in Reichweite. Die Wand kann bis zu 15 Meter lang, 4,5 Meter hoch und 30 Zentimeter dick sein. Du kannst die Wand beliebig formen, solange sie einem ununterbrochenen Pfad auf dem Boden folgt. Sie bleibt für die Wirkungsdauer bestehen.\n\nWenn die Wand erscheint, muss jede Kreatur in ihrem Bereich einen Stärkerettungswurf ausführen. Scheitert der Wurf, erleidet die Kreatur 3W8 Wuchtschaden, anderenfalls die Hälfte.\n\nDer starke Wind hält Nebel, Rauch und andere Gase auf Abstand. Maximal kleine fliegende Kreaturen oder Gegenstände können die Wand nicht durchdringen. Lose, leichte Materialien, die in die Wand gebracht werden, fliegen nach oben. Pfeile, Bolzen und andere gewöhnliche Geschosse, die auf Ziele hinter der Wand geschossen werden, werden nach oben abgelenkt und verfehlen ihr Ziel automatisch. (Felsbrocken, die von Riesen oder Belagerungsmaschinen geschleudert werden, und ähnliche Geschosse sind hiervon nicht betroffen.) Kreaturen in gasförmiger Gestalt können die Wand nicht passieren."
     },
-    "damage": [
-      {
-        "dice": "3W8",
-        "average": 13.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
@@ -10960,13 +10350,6 @@
       "duration": "Unmittelbar",
       "description": "Wunsch ist der mächtigste Zauber, den eine sterbliche Kreatur wirken kann. Indem du deinen Willen laut aussprichst, kannst du das Fundament der Realität im Einklang mit deinen Wünschen verändern.\n\nAls grundlegende Verwendung dieses Zaubers kannst du einen beliebigen anderen Zauber des maximal 8. Grades kopieren. Du musst weder dessen Voraussetzungen erfüllen noch teure Materialkomponenten bezahlen. Der Zauber tritt einfach in Kraft.\n\nAlternativ kannst du einen der folgenden Effekte erzeugen: • Du erschaffst einen nichtmagischen Gegenstand im Wert von bis zu 25.000 GM. Dieser darf in keiner Abmessung größer als 90 Meter sein und erscheint an einer freien Stelle auf dem Boden, die du sehen kannst. • Bis zu zwanzig Kreaturen, die du sehen kannst, erhalten all ihre Trefferpunkte zurück. Du beendest zudem alle auf sie wirkenden Effekte, wie unter dem Zauber Vollständige Genesung beschrieben. • Du gewährst bis zu zehn Kreaturen, die du sehen kannst, Resistenz gegen eine Schadensart deiner Wahl. • Du verleihst bis zu zehn Kreaturen, die du sehen kannst, acht Stunden lang Immunität gegen einen einzelnen Zauber oder magischen Effekt. Beispielsweise könntest du dich und deine Gefährten gegen den Lebensentzug eines Lichs immun machen. • Du machst ein kurz zurückliegendes Ereignis ungeschehen, indem du eine Wiederholung eines beliebigen Wurfs in der letzten Runde erzwingst (einschließlich deines letzten Zugs). Die Realität verändert sich entsprechend des neuen Ergebnisses. Der Zauber Wunsch könnte beispielsweise den erfolgreichen Rettungswurf oder kritischen Treffer eines Gegners rückgängig machen, oder den gescheiterten Rettungswurf eines Gefährten. Du kannst einen Vorteil oder Nachteil beim neuen Wurf bestimmen und kannst zudem wählen, ob das ursprüngliche Ergebnis oder das wiederholte verwendet wird. Du kannst auch etwas erreichen, das über die oben genannten Beispiele hinausgeht. Beschreibe dem SL deinen Wunsch so genau wie möglich. Der SL hat einigen Spielraum bei der Entscheidung, was in einem solchen Fall geschieht. Je größer der Wunsch ist, desto wahrscheinlicher ist es, dass etwas schief geht. Der Zauber könnte einfach fehlschlagen, der gewünschte Effekt nur zum Teil erfüllt werden oder du selbst eine unvorhersehbare Nebenwirkung erleiden, die von deiner Formulierung des Wunsches abhängt. Wenn du dir beispielsweise wünschst, dass ein Bösewicht tot wäre, könntest du in eine Zukunft katapultiert werden, in der der Schurke nicht mehr am Leben ist − wodurch du praktisch aus dem Spiel entfernt wirst. Wünscht du dir einen legendären magischen Gegenstand oder ein Artefakt, könntest du zum aktuellen Besitzer des Gegenstands teleportiert werden.\n\nMit diesem Zauber einen anderen Effekt zu erzielen, als einen Zauber zu kopieren, belastet dich stark. Jedes Mal, wenn du nach dieser Belastung einen Zauber wirkst, erleidest du 1W10 nekrotischen Schaden pro Grad des Zaubers. Dieser Effekt verschwindet nach einer langen Rast. Dieser Schaden kann nicht verringert oder verhindert werden. Zudem fällt deine Stärke 2W4 Tage lang auf 3, wenn sie nicht bereits 3 oder weniger beträgt. Für jeden dieser Tage, an dem du dich nur ausruhst oder leichten Tätigkeiten nachgehst, verringerst du die übrige Erholungszeit um 2 Tage. Zuletzt besteht eine Chance von 33 Prozent, dass du Wunsch aufgrund dieser Belastung niemals erneut wirken kannst."
     },
-    "damage": [
-      {
-        "dice": "1W10",
-        "average": 5.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "srd-5.1"
   },
   {
