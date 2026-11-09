@@ -126,7 +126,8 @@ export function findCatalogSpell(
   const belongsToRuleset =
     original.rulesets?.[ruleset] === true ||
     original.rulesets?.[ruleset] === 'legacy' ||
-    sourceRuleset === ruleset
+    sourceRuleset === ruleset ||
+    (ruleset === '2024' && sourceRuleset === '2014')
   if (!belongsToRuleset) return undefined
 
   if (ruleset === '2024') {
