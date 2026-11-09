@@ -331,7 +331,7 @@ const spells2014 = [
   ...spells2014Srd,
   ...additionalSpellRecords.filter((spell) =>
     spell.rulesets
-      ? spell.rulesets.includes('2014')
+      ? spell.rulesets['2014'] === true
       : sourceRulesets.get(spell.contentSourceId) === '2014',
   ),
 ]
@@ -339,7 +339,7 @@ const spells2024 = [
   ...spells2024Srd,
   ...additionalSpellRecords.filter((spell) =>
     spell.rulesets
-      ? spell.rulesets.includes('2024')
+      ? spell.rulesets['2024'] === true || spell.rulesets['2024'] === 'legacy'
       : sourceRulesets.get(spell.contentSourceId) === '2024',
   ),
 ]
