@@ -15,8 +15,9 @@ Each spell ID maps to one or more damage components:
 - `flatBonus`: an additional fixed number or the spellcasting ability modifier.
 - `type`: one damage type; `typeOptions`: mutually exclusive or selectable damage types.
 - `condition` and `timing`: when the component applies and when it is dealt.
-- `modifier`: an extra/reduced damage effect or a damage-roll penalty/reduction rather than damage dealt.
-- `scaling`: one or more independent rules for spell-slot, character-level, or turn-based scaling. `add-instance` means another hit/dart/beam; `add-dice` increases the dice rolled.
+- `modifier`: an extra/reduced damage effect, a damage-roll penalty/reduction, or a weapon damage-die replacement.
+- `activeFromLevel`: the character level at which a conditional damage component first applies.
+- `scaling`: one or more independent rules for spell-slot, character-level, or turn-based scaling. `add-instance` means another hit/dart/beam; `add-dice` increases the dice rolled; `set-dice` replaces the dice expression at a threshold.
 - `diceRules`: special die behavior such as Sorcerous Burst's exploding d8s.
 
 The data describes mechanics; the original spell text remains the authoritative rules wording.
