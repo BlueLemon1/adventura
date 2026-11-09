@@ -1,6 +1,9 @@
 # SRD content — attribution and license
 
-Adventura includes adapted rules text and spell metadata from the System Reference Documents published by Wizards of the Coast LLC. The spell catalogues are maintained directly in `src/data/spells-2014.json` and `src/data/spells-2024.json`. Each spell record carries its own `contentSourceId`, identifying the exact SRD edition. English is stored in the canonical fields and German in the `localized` object on the same record. Supplemental spell records are maintained in `spells-additional.json`; each entry carries its source ID and page. The source registry provides the full book name, compact abbreviation, and default ruleset. `rulesets` is only stored when an entry explicitly differs from that source default (for example, when a 2014 supplement spell is also compatible with 2024). `rulesetClasses` is only stored when class access differs between editions.
+Adventura maintains the official 2014 and 2024 SRD spell and class-feature datasets separately in `src/data/spells-2014.json`, `src/data/spells-2024.json`, `src/data/class-features-2014.json`, and `src/data/class-features-2024.json`. These four files contain SRD material only and are not enriched with Adventura-specific compatibility or mechanics metadata.
+
+Supplemental spells are maintained in `spells-additional.json`; supplemental class-feature text is maintained once in `features-additional.json`, with ruleset-specific class/subclass placement in `class-progressions.json`. The source registry provides the full book name, compact abbreviation, and default ruleset. Cross-ruleset availability is explicit in `rulesets`. App-specific spell damage and availability exceptions are keyed by spell ID in `spell-mechanics.json` and `spell-availability.json`; feature activation, resource, and spellbook metadata is keyed by feature ID in `feature-mechanics.json`.
+
 
 ## SRD 5.1 (2014 rules)
 

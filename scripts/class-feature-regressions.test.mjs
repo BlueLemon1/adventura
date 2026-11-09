@@ -5,84 +5,100 @@ import { readFileSync } from 'node:fs'
 const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 
-function extractSubclassOptions(source, ruleset, nextRuleset) {
-  const start = source.indexOf("'" + ruleset + "': {")
-  const endMarker = nextRuleset ? "\n  },\n  '" + nextRuleset + "':" : '\n  },\n}'
-  const end = source.indexOf(endMarker, start)
-  assert.notEqual(start, -1, 'missing ' + ruleset + ' options block')
-  assert.notEqual(end, -1, 'unterminated ' + ruleset + ' options block')
-
-  const block = source.slice(start, end)
-  const matches = [...block.matchAll(/^\s{4}([a-z_]+): \[/gm)]
-  return Object.fromEntries(
-    matches.map((match, index) => {
-      const section = block.slice(match.index, matches[index + 1]?.index ?? block.length)
-      return [match[1], [...section.matchAll(/\{ value: '([^']+)'/g)].map((item) => item[1])]
-    }),
-  )
-}
-
-const classSource = readText('../src/domain/classes.ts')
 const featureSource = readText('../src/domain/classFeatures.ts')
-const options2014 = extractSubclassOptions(classSource, '2014', '2024')
-const options2024Native = extractSubclassOptions(classSource, '2024')
-const replacements = {
-  barbarian: ['totemwarrior'],
-  monk: ['four_elements'],
-  sorcerer: ['aberrantmind'],
-  wizard: ['abjuration', 'divination', 'illusion'],
-}
-const options2024 = Object.fromEntries(
-  Object.entries(options2024Native).map(([classId, current]) => {
-    const replaced = new Set(replacements[classId] ?? [])
-    const legacy = (options2014[classId] ?? []).filter(
-      (id) => !current.includes(id) && !replaced.has(id),
-    )
-    return [classId, [...current, ...legacy]]
-  }),
-)
+const classes = readJson('../src/data/classes-additional.json')
+const featureDefinitions = readJson('../src/data/features-additional.json')
+const progressions = readJson('../src/data/class-progressions.json')
+const featureMechanics = readJson('../src/data/feature-mechanics.json')
+const srdFeatures = [
+  ...readJson('../src/data/class-features-2014.json'),
+  ...readJson('../src/data/class-features-2024.json'),
+]
+const definitionsById = new Map(featureDefinitions.map((feature) => [feature.id, feature]))
 
-test('2014 and 2024 subclass catalogs stay distinct, with compatible legacy choices in 2024', () => {
-  assert.ok(options2014.sorcerer.includes('shadowmagic'))
-  assert.ok(options2024.sorcerer.includes('shadowmagic'))
-  assert.ok(options2014.sorcerer.includes('aberrantmind'))
-  assert.ok(!options2024.sorcerer.includes('aberrantmind'))
-  assert.ok(options2024.sorcerer.includes('aberrant'))
-  assert.ok(options2024.wizard.includes('conjuration'))
-  assert.ok(!options2024.wizard.includes('abjuration'))
-  assert.ok(options2014.wizard.includes('abjuration'))
+function featureRecords(ruleset) {
+  return progressions.flatMap((progression) => {
+    const availability = progression.rulesets?.[ruleset]
+    if (availability !== true && availability !== 'legacy') return []
+    return [{
+      ...definitionsById.get(progression.featureId),
+      id: progression.progressionId ?? progression.featureId,
+      definitionId: progression.featureId,
+      ...(progression.names ? { names: { ...definitionsById.get(progression.featureId).names, ...progression.names } } : {}),
+      ...(progression.contentSourceId ? { contentSourceId: progression.contentSourceId } : {}),
+      ...(progression.sourceReference ? { sourceReference: progression.sourceReference } : {}),
+      classId: progression.classId,
+      subclassId: progression.subclassId,
+      featureType: progression.subclassId ? 'subclass' : 'class',
+      level: progression.levels?.[ruleset],
+      grantedSpellIds: progression.grantedSpellIds?.[ruleset],
+      rulesets: { [ruleset]: availability },
+    }]
+  })
+}
+
+function subclassOptions(ruleset) {
+  return classes.filter((record) => record.type === 'subclass' &&
+    (record.rulesets?.[ruleset] === true || record.rulesets?.[ruleset] === 'legacy'))
+}
+
+test('class and subclass availability is declared in the shared catalog', () => {
+  assert.ok(classes.some((record) => record.type === 'class' && record.classId === 'artificer'))
+  assert.ok(subclassOptions('2014').some((record) => record.classId === 'sorcerer' && record.subclassId === 'shadowmagic'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'shadowmagic' && record.rulesets['2024'] === 'legacy'))
+  assert.ok(subclassOptions('2014').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrantmind'))
+  assert.ok(!subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrantmind'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'sorcerer' && record.subclassId === 'aberrant'))
+  assert.ok(subclassOptions('2024').some((record) => record.classId === 'wizard' && record.subclassId === 'conjuration'))
+  assert.ok(!subclassOptions('2024').some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration'))
+  assert.ok(classes.some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration' && record.rulesets['2024'] === 'abjurer'))
 })
 
-test('all selectable subclasses have feature records in their own ruleset catalog', () => {
+test('Legacy feature definitions are reused with ruleset-specific progression levels', () => {
+  const feature = (id) => progressions.find((record) => record.featureId === id)
+  const conjurationSavant = feature('2014-wizard-conjuration-conjuration-savant')
+  assert.equal(conjurationSavant?.rulesets?.['2014'], true)
+  assert.equal(conjurationSavant?.rulesets?.['2024'], true)
+  assert.equal(classes.find((record) => record.classId === 'wizard' && record.subclassId === 'conjuration')?.rulesets?.['2024'], 'legacy')
+  assert.equal(conjurationSavant?.levels?.['2014'], 2)
+  assert.equal(conjurationSavant?.levels?.['2024'], 3)
+  assert.equal(featureDefinitions.filter((record) => record.id === '2014-wizard-conjuration-conjuration-savant').length, 1)
+
+  const replaced = feature('2014-barbarian-totemwarrior-totem-spirit')
+  assert.equal(replaced?.rulesets?.['2024'], undefined)
+  assert.equal(classes.find((record) => record.classId === 'barbarian' && record.subclassId === 'totemwarrior')?.rulesets?.['2024'], 'wildheart')
+})
+
+test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...readJson('../src/data/class-features-supplemental-' + ruleset + '.json'),
+      ...featureRecords(ruleset),
     ]
-    for (const [classId, subclassIds] of Object.entries(
-      ruleset === '2014' ? options2014 : options2024,
-    )) {
-      for (const subclassId of subclassIds) {
-        assert.ok(
-          records.some(
-            (feature) => feature.classId === classId && feature.subclassId === subclassId,
-          ),
-          ruleset + ': missing feature data for ' + classId + '/' + subclassId,
-        )
-      }
+    for (const subclass of subclassOptions(ruleset)) {
+      assert.ok(records.some((feature) => feature.classId === subclass.classId && feature.subclassId === subclass.subclassId),
+        ruleset + ': missing feature data for ' + subclass.classId + '/' + subclass.subclassId)
     }
   }
 })
 
-test('2024 legacy feature copies keep their source and start no earlier than subclass level 3', () => {
-  const legacy = readJson('../src/data/class-features-supplemental-2024.json').filter((feature) =>
-    feature.id.startsWith('2024-legacy-'),
+test('Legacy subclass features reuse one definition and inherit compatibility from the subclass', () => {
+  const legacySubclasses = subclassOptions('2024').filter((record) => record.rulesets?.['2024'] === 'legacy')
+  const legacyFeatureProgressions = progressions.filter((record) =>
+    record.subclassId && legacySubclasses.some((subclass) =>
+      subclass.classId === record.classId && subclass.subclassId === record.subclassId &&
+      record.rulesets?.['2024'] === true,
+    ),
   )
-  assert.ok(legacy.length > 0)
-  assert.ok(legacy.every((feature) => feature.level >= 3))
-  assert.ok(legacy.every((feature) => feature.contentSourceId && feature.sourceReference))
-  assert.ok(legacy.every((feature) => feature.names?.en && feature.names?.de))
-  assert.ok(legacy.every((feature) => feature.descriptions?.en && feature.descriptions?.de))
+  const conjurationSavant = progressions.find((record) => record.featureId === '2014-wizard-conjuration-conjuration-savant')
+  assert.equal(legacyFeatureProgressions.length, 357)
+  assert.ok(legacyFeatureProgressions.every((record) => record.levels?.['2024'] >= 3))
+  assert.ok(legacyFeatureProgressions.every((record) => definitionsById.has(record.featureId)))
+  assert.equal(conjurationSavant?.levels?.['2014'], 2)
+  assert.equal(conjurationSavant?.levels?.['2024'], 3)
+  assert.equal(conjurationSavant?.rulesets?.['2024'], true)
+  assert.ok(progressions.every((record) => Object.values(record.rulesets ?? {}).every((value) => value !== 'legacy')))
+  assert.equal(featureDefinitions.some((feature) => feature.id.startsWith('2024-legacy-')), false)
 })
 
 test('every granted spell exists in the matching ruleset spell catalog', () => {
@@ -105,7 +121,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
     const spellIds = new Set(spells.map((spell) => spell.id))
     const features = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...readJson('../src/data/class-features-supplemental-' + ruleset + '.json'),
+      ...featureRecords(ruleset),
     ]
     for (const feature of features) {
       for (const spellId of feature.grantedSpellIds ?? []) {
@@ -120,4 +136,49 @@ test('runtime feature lookup preserves underscore subclass IDs and only adds unl
   assert.match(featureSource, /feature\.subclassId === selectedSubclass/)
   assert.match(featureSource, /if \(!feature\.unlocked\) return \[\]/)
   assert.match(featureSource, /unlocked: feature\.level <= character\.level/)
+})
+
+test('feature mechanics reference stable IDs and spell grants are ruleset-specific', () => {
+  const ids = new Set([...featureDefinitions, ...srdFeatures].map((feature) => feature.id))
+  assert.ok(Object.keys(featureMechanics).every((id) => ids.has(id)))
+  for (const mechanics of Object.values(featureMechanics)) {
+    for (const [ruleset, spellIds] of Object.entries(mechanics.spellbookSpellIdsByRuleset ?? {})) {
+      assert.ok(['2014', '2024'].includes(ruleset))
+      assert.ok(Array.isArray(spellIds) && spellIds.length > 0)
+    }
+  }
+})
+
+
+test('shared feature definitions are reused across classes while progression occurrences stay unique', () => {
+  const extraAttackId = '2014-artificer-armorer-extra-attack'
+  const extraAttackProgressions = progressions.filter((record) => record.featureId === extraAttackId)
+  assert.equal(definitionsById.has(extraAttackId), true)
+  assert.equal(extraAttackProgressions.length, 4)
+  assert.deepEqual(
+    extraAttackProgressions.map((record) => [record.classId, record.subclassId]).sort(),
+    [
+      ['artificer', 'armorer'],
+      ['artificer', 'battlesmith'],
+      ['bard', 'swords'],
+      ['bard', 'valor'],
+    ].sort(),
+  )
+  assert.equal(new Set(progressions.map((record) => record.progressionId)).size, progressions.length)
+  assert.equal(featureDefinitions.filter((record) => record.id === extraAttackId).length, 1)
+  assert.ok(extraAttackProgressions.every((record) => record.contentSourceId && record.sourceReference))
+  assert.ok(definitionsById.get(extraAttackId).sources.length >= 2)
+  for (const progression of extraAttackProgressions) {
+    assert.ok(definitionsById.get(extraAttackId).sources.some((source) =>
+      source.contentSourceId === progression.contentSourceId && source.sourceReference === progression.sourceReference,
+    ))
+  }
+})
+
+test('same mechanical feature may retain a class-specific display name', () => {
+  const tacticalWit = progressions.find((record) => record.progressionId === '2014-wizard-war-tactical-wit')
+  const temporalAwareness = progressions.find((record) => record.progressionId === '2014-wizard-chronurgy-temporal-awareness')
+  assert.equal(tacticalWit?.featureId, temporalAwareness?.featureId)
+  assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
+  assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')
 })

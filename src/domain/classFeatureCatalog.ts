@@ -6,9 +6,16 @@ import type { Dnd5eRuleset } from './rules'
  * The canonical ID is stable across locales; localized text is stored on the
  * same record so translations can never become duplicate features.
  */
+export interface ClassFeatureSource {
+  contentSourceId: ContentProvenance['contentSourceId']
+  sourceReference?: string
+}
+
 export interface ClassFeatureRecord {
+  /** Unique class-progression occurrence ID (may differ from the shared definition ID). */
   id: string
-  ruleset: Dnd5eRuleset
+  definitionId?: string
+  rulesets?: Partial<Record<Dnd5eRuleset, true | string>>
   contentSourceId: ContentProvenance['contentSourceId']
   sourceReference?: string
   classId: string
@@ -19,8 +26,76 @@ export interface ClassFeatureRecord {
   descriptions: Partial<Record<ContentLocale, string>>
   /** Translation status for non-source locales; omitted means official/source-verified. */
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
+  /** Complete provenance for this shared definition. */
+  sources?: ClassFeatureSource[]
   /** Canonical spell IDs explicitly granted by this feature, if any. */
   grantedSpellIds?: string[]
+}
+
+export interface ClassFeatureDefinition {
+  id: string
+  contentSourceId: ContentProvenance['contentSourceId']
+  sourceReference?: string
+  names: Partial<Record<ContentLocale, string>>
+  descriptions: Partial<Record<ContentLocale, string>>
+  translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
+  /** Every source reference that contributes this shared definition. */
+  sources?: ClassFeatureSource[]
+}
+
+/** A feature's placement in a class or subclass progression, independent of its text. */
+export interface ClassFeatureProgression {
+  /** Stable ID for this specific class/subclass occurrence. */
+  progressionId?: string
+  featureId: string
+  contentSourceId?: ContentProvenance['contentSourceId']
+  sourceReference?: string
+  names?: Partial<Record<ContentLocale, string>>
+  classId: string
+  subclassId?: string
+  rulesets: Partial<Record<Dnd5eRuleset, true | string>>
+  levels: Partial<Record<Dnd5eRuleset, number>>
+  grantedSpellIds?: Partial<Record<Dnd5eRuleset, string[]>>
+}
+
+export function buildClassFeatureRecords(
+  definitions: readonly ClassFeatureDefinition[],
+  progressions: readonly ClassFeatureProgression[],
+  ruleset: Dnd5eRuleset,
+): ClassFeatureRecord[] {
+  const byId = new Map(definitions.map((definition) => [definition.id, definition]))
+
+  return progressions.flatMap((progression) => {
+    const availability = progression.rulesets[ruleset]
+    const level = progression.levels[ruleset]
+    const definition = byId.get(progression.featureId)
+    if (availability !== true || !definition || !level) return []
+
+    const names = progression.names
+      ? { ...definition.names, ...progression.names }
+      : definition.names
+    const contentSourceId = progression.contentSourceId ?? definition.contentSourceId
+    const sourceReference = progression.sourceReference ?? definition.sourceReference
+
+    return [
+      {
+        ...definition,
+        id: progression.progressionId ?? definition.id,
+        definitionId: definition.id,
+        names,
+        contentSourceId,
+        ...(sourceReference ? { sourceReference } : {}),
+        rulesets: { [ruleset]: availability },
+        classId: progression.classId,
+        ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
+        featureType: progression.subclassId ? ('subclass' as const) : ('class' as const),
+        level,
+        ...(progression.grantedSpellIds?.[ruleset]?.length
+          ? { grantedSpellIds: progression.grantedSpellIds[ruleset] }
+          : {}),
+      },
+    ]
+  })
 }
 
 /** Text is resolved independently so a missing German field can use English. */
@@ -77,15 +152,15 @@ export function validateClassFeatureRecords(
     if (ids.has(feature.id)) errors.push(`${location}: duplicate canonical id`)
     ids.add(feature.id)
 
-    if (feature.ruleset !== ruleset) {
-      errors.push(`${location}: ruleset ${feature.ruleset} does not match ${ruleset}`)
-    }
     if (feature.contentSourceId !== contentSourceId) {
       errors.push(
         `${location}: source ${feature.contentSourceId} does not match ${contentSourceId}`,
       )
     }
     if (!feature.classId.trim()) errors.push(`${location}: missing class id`)
+    if (feature.rulesets?.[ruleset] !== true) {
+      errors.push(`${location}: feature is not assigned to ruleset ${ruleset}`)
+    }
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
       errors.push(`${location}: level must be an integer from 1 to 20`)
     }

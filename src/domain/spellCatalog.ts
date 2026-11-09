@@ -3,6 +3,8 @@ import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 import additionalSpells from '../data/spells-additional.json'
+import spellMechanics from '../data/spell-mechanics.json'
+import spellAvailability from '../data/spell-availability.json'
 
 export interface CatalogSpell {
   id: string
@@ -24,7 +26,6 @@ export interface CatalogSpell {
   localized?: {
     name?: string
     school?: string
-    classes?: string[]
     castingTime?: string
     range?: string
     components?: string
@@ -47,7 +48,23 @@ export interface CatalogSpell {
   legacy?: boolean
 }
 
-const supplementalSpells = additionalSpells as CatalogSpell[]
+interface SpellAvailabilityMetadata {
+  rulesetClasses?: Partial<Record<Dnd5eRuleset, string[]>>
+  subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
+  availabilityNote?: string
+}
+
+const mechanicsBySpellId = spellMechanics as Record<
+  string,
+  Array<{ dice: string; average: number; type?: string }>
+>
+const availabilityBySpellId = spellAvailability as Record<string, SpellAvailabilityMetadata>
+
+const supplementalSpells = (additionalSpells as CatalogSpell[]).map((spell) => ({
+  ...spell,
+  damage: mechanicsBySpellId[spell.id],
+  ...availabilityBySpellId[spell.id],
+}))
 const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
@@ -81,7 +98,10 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const cached = spellCatalogCache.get(ruleset)
   if (cached) return cached
 
-  const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
+  const base = ((ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]).map((spell) => ({
+    ...spell,
+    damage: mechanicsBySpellId[spell.id],
+  }))
   const supplements = supplementalSpells
     .filter((spell) => spell.rulesets?.[ruleset] === true)
     .map((spell) => ({

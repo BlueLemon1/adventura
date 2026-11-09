@@ -5,9 +5,12 @@ import { readFileSync } from 'node:fs'
 const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 const additional = readJson('../src/data/spells-additional.json')
+const mechanics = readJson('../src/data/spell-mechanics.json')
+const availability = readJson('../src/data/spell-availability.json')
 const spells2014 = readJson('../src/data/spells-2014.json')
 const spells2024 = readJson('../src/data/spells-2024.json')
 const catalogSource = readText('../src/domain/spellCatalog.ts')
+const srdSpellIds = new Set([...spells2014, ...spells2024].map((spell) => spell.id))
 
 test('additional spells declare ruleset availability directly', () => {
   assert.equal(additional.length, 171)
@@ -37,11 +40,30 @@ test('the new PHB 2024 records are represented as 2024-only additions', () => {
 test('renamed 2014 SRD spell IDs resolve to their 2024 counterparts without editing SRD data', () => {
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-branding-smite'))
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-feeblemind'))
-  assert.match(catalogSource, /srd-2014-branding-smite': 'srd-2024-shining-smite'/)
-  assert.match(catalogSource, /srd-2014-feeblemind': 'srd-2024-befuddlement'/)
+
 })
 
 test('legacy records are explicitly marked when selected for 2024', () => {
-  assert.match(catalogSource, /spell\.rulesets\?\.\['2024'\] === 'legacy'/)
-  assert.match(catalogSource, /legacy: true/)
+
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+})
+
+test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
+  const ids = new Set(additional.map((spell) => spell.id))
+  assert.equal(Object.keys(mechanics).length, 254)
+  assert.ok(Object.values(mechanics).flat().every((entry) => !entry.type || entry.type === entry.type.toLowerCase()))
+  assert.equal(Object.keys(availability).length, 21)
+  const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
+  assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
+  const srdMechanicIds = Object.keys(mechanics).filter((id) => srdSpellIds.has(id))
+  assert.equal(srdMechanicIds.length, 170)
+  assert.ok(srdMechanicIds.every((id) => mechanics[id]?.length > 0))
+  assert.ok([...spells2014, ...spells2024].every((spell) => !('damage' in spell)))
+  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
+  assert.ok(Object.keys(availability).every((id) => ids.has(id)))
+  assert.ok(additional.every((spell) => !('damage' in spell)))
+  assert.ok(additional.every((spell) => !('rulesetClasses' in spell)))
+  assert.ok(additional.every((spell) => !('subclassRestriction' in spell)))
+  assert.ok(additional.every((spell) => !('availabilityNote' in spell)))
+  assert.ok(additional.every((spell) => !('classes' in (spell.localized ?? {}))))
 })

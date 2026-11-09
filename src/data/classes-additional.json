@@ -1,0 +1,2917 @@
+[
+  {
+    "id": "artificer",
+    "type": "class",
+    "classId": "artificer",
+    "names": {
+      "2014": {
+        "de": "Erfinder",
+        "en": "Artificer"
+      },
+      "2024": {
+        "de": "Erfinder",
+        "en": "Artificer"
+      }
+    },
+    "sources": {
+      "2014": "ERLW / TCE",
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "barbarian",
+    "type": "class",
+    "classId": "barbarian",
+    "names": {
+      "2014": {
+        "de": "Barbar",
+        "en": "Barbarian"
+      },
+      "2024": {
+        "de": "Barbar",
+        "en": "Barbarian"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard",
+    "type": "class",
+    "classId": "bard",
+    "names": {
+      "2014": {
+        "de": "Barde",
+        "en": "Bard"
+      },
+      "2024": {
+        "de": "Barde",
+        "en": "Bard"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "cleric",
+    "type": "class",
+    "classId": "cleric",
+    "names": {
+      "2014": {
+        "de": "Kleriker",
+        "en": "Cleric"
+      },
+      "2024": {
+        "de": "Kleriker",
+        "en": "Cleric"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid",
+    "type": "class",
+    "classId": "druid",
+    "names": {
+      "2014": {
+        "de": "Druide",
+        "en": "Druid"
+      },
+      "2024": {
+        "de": "Druide",
+        "en": "Druid"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter",
+    "type": "class",
+    "classId": "fighter",
+    "names": {
+      "2014": {
+        "de": "Kämpfer",
+        "en": "Fighter"
+      },
+      "2024": {
+        "de": "Kämpfer",
+        "en": "Fighter"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "monk",
+    "type": "class",
+    "classId": "monk",
+    "names": {
+      "2014": {
+        "de": "Mönch",
+        "en": "Monk"
+      },
+      "2024": {
+        "de": "Mönch",
+        "en": "Monk"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin",
+    "type": "class",
+    "classId": "paladin",
+    "names": {
+      "2014": {
+        "de": "Paladin",
+        "en": "Paladin"
+      },
+      "2024": {
+        "de": "Paladin",
+        "en": "Paladin"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger",
+    "type": "class",
+    "classId": "ranger",
+    "names": {
+      "2014": {
+        "de": "Waldläufer",
+        "en": "Ranger"
+      },
+      "2024": {
+        "de": "Waldläufer",
+        "en": "Ranger"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "rogue",
+    "type": "class",
+    "classId": "rogue",
+    "names": {
+      "2014": {
+        "de": "Schurke",
+        "en": "Rogue"
+      },
+      "2024": {
+        "de": "Schurke",
+        "en": "Rogue"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer",
+    "type": "class",
+    "classId": "sorcerer",
+    "names": {
+      "2014": {
+        "de": "Zauberer",
+        "en": "Sorcerer"
+      },
+      "2024": {
+        "de": "Zauberer",
+        "en": "Sorcerer"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock",
+    "type": "class",
+    "classId": "warlock",
+    "names": {
+      "2014": {
+        "de": "Hexenmeister",
+        "en": "Warlock"
+      },
+      "2024": {
+        "de": "Hexenmeister",
+        "en": "Warlock"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard",
+    "type": "class",
+    "classId": "wizard",
+    "names": {
+      "2014": {
+        "de": "Magier",
+        "en": "Wizard"
+      },
+      "2024": {
+        "de": "Magier",
+        "en": "Wizard"
+      }
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "artificer-alchemist",
+    "type": "subclass",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "names": {
+      "2014": {
+        "de": "Alchemist"
+      },
+      "2024": {
+        "de": "Alchemist"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "artificer-armorer",
+    "type": "subclass",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "names": {
+      "2014": {
+        "de": "Konstrukteur"
+      },
+      "2024": {
+        "de": "Konstrukteur"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "artificer-artillerist",
+    "type": "subclass",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "names": {
+      "2014": {
+        "de": "Artillerist"
+      },
+      "2024": {
+        "de": "Artillerist"
+      }
+    },
+    "sources": {
+      "2014": "ERLW / TCE",
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "artificer-battlesmith",
+    "type": "subclass",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "names": {
+      "2014": {
+        "de": "Kampf-Schmied"
+      },
+      "2024": {
+        "de": "Kampf-Schmied"
+      }
+    },
+    "sources": {
+      "2014": "ERLW / TCE",
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "artificer-cartographer",
+    "type": "subclass",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "names": {
+      "2024": {
+        "de": "Kartograph"
+      }
+    },
+    "sources": {
+      "2024": "EFA"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "barbarian-ancestralguardian",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "names": {
+      "2014": {
+        "de": "Pfad des Ahnenwächters"
+      },
+      "2024": {
+        "de": "Pfad des Ahnenwächters"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-battlerager",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "names": {
+      "2014": {
+        "de": "Pfad des Kampfwüters"
+      },
+      "2024": {
+        "de": "Pfad des Kampfwüters"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-beast",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "beast",
+    "names": {
+      "2014": {
+        "de": "Pfad der Bestie"
+      },
+      "2024": {
+        "de": "Pfad der Bestie"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-berserker",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "berserker",
+    "names": {
+      "2014": {
+        "de": "Pfad des Berserkers"
+      },
+      "2024": {
+        "de": "Pfad des Berserkers"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "barbarian-giant",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "names": {
+      "2014": {
+        "de": "Pfad des Riesen"
+      },
+      "2024": {
+        "de": "Pfad des Riesen"
+      }
+    },
+    "sources": {
+      "2014": "BPGG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-stormherald",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "names": {
+      "2014": {
+        "de": "Pfad des Sturmherolds"
+      },
+      "2024": {
+        "de": "Pfad des Sturmherolds"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-totemwarrior",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "names": {
+      "2014": {
+        "de": "Pfad des Totemkriegers"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "wildheart"
+    }
+  },
+  {
+    "id": "barbarian-wildheart",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "names": {
+      "2024": {
+        "de": "Pfad des wilden Herzens"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "barbarian-wildmagic",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "names": {
+      "2014": {
+        "de": "Pfad der wilden Magie"
+      },
+      "2024": {
+        "de": "Pfad der wilden Magie"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "barbarian-worldtree",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "names": {
+      "2024": {
+        "de": "Pfad des Weltenbaums"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "barbarian-zealot",
+    "type": "subclass",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "names": {
+      "2014": {
+        "de": "Pfad des Zeloten"
+      },
+      "2024": {
+        "de": "Pfad des Zeloten"
+      }
+    },
+    "sources": {
+      "2014": "XGE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard-creation",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "creation",
+    "names": {
+      "2014": {
+        "de": "Barde der Schöpfung"
+      },
+      "2024": {
+        "de": "Barde der Schöpfung"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "bard-dance",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "dance",
+    "names": {
+      "2024": {
+        "de": "Bardenkollegium des Tanzes"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "bard-eloquence",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "names": {
+      "2014": {
+        "de": "Barde der Beredsamkeit"
+      },
+      "2024": {
+        "de": "Barde der Beredsamkeit"
+      }
+    },
+    "sources": {
+      "2014": "MOoT / TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "bard-glamour",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "names": {
+      "2014": {
+        "de": "Barde des Glamours"
+      },
+      "2024": {
+        "de": "Bardenkollegium des Glamours"
+      }
+    },
+    "sources": {
+      "2014": "XGE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard-lore",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "lore",
+    "names": {
+      "2014": {
+        "de": "Barde der Kunde"
+      },
+      "2024": {
+        "de": "Bardenkollegium der Kunde"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard-spirits",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "names": {
+      "2014": {
+        "de": "Barde der Geister"
+      },
+      "2024": {
+        "de": "Barde der Geister"
+      }
+    },
+    "sources": {
+      "2014": "VRGtR"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "bard-swords",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "swords",
+    "names": {
+      "2014": {
+        "de": "Barde der Schwerter"
+      },
+      "2024": {
+        "de": "Barde der Schwerter"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "bard-valor",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "valor",
+    "names": {
+      "2014": {
+        "de": "Barde des Mutes"
+      },
+      "2024": {
+        "de": "Bardenkollegium des Mutes"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard-whispers",
+    "type": "subclass",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "names": {
+      "2014": {
+        "de": "Barde des Flüsterns"
+      },
+      "2024": {
+        "de": "Barde des Flüsterns"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-arcana",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "names": {
+      "2014": {
+        "de": "Arkane Domäne"
+      },
+      "2024": {
+        "de": "Arkane Domäne"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-death",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "death",
+    "names": {
+      "2014": {
+        "de": "Domäne des Todes"
+      },
+      "2024": {
+        "de": "Domäne des Todes"
+      }
+    },
+    "sources": {
+      "2014": "DMG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-forge",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "names": {
+      "2014": {
+        "de": "Schmiededomäne"
+      },
+      "2024": {
+        "de": "Schmiededomäne"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-grave",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "names": {
+      "2014": {
+        "de": "Domäne des Grabes"
+      },
+      "2024": {
+        "de": "Domäne des Grabes"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-knowledge",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "names": {
+      "2014": {
+        "de": "Domäne des Wissens"
+      },
+      "2024": {
+        "de": "Domäne des Wissens"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-life",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "life",
+    "names": {
+      "2014": {
+        "de": "Domäne des Lebens"
+      },
+      "2024": {
+        "de": "Domäne des Lebens"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "cleric-light",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "light",
+    "names": {
+      "2014": {
+        "de": "Domäne des Lichts"
+      },
+      "2024": {
+        "de": "Domäne des Lichts"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "cleric-nature",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "names": {
+      "2014": {
+        "de": "Domäne der Natur"
+      },
+      "2024": {
+        "de": "Domäne der Natur"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-order",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "order",
+    "names": {
+      "2014": {
+        "de": "Domäne der Ordnung"
+      },
+      "2024": {
+        "de": "Domäne der Ordnung"
+      }
+    },
+    "sources": {
+      "2014": "GGR / TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-peace",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "names": {
+      "2014": {
+        "de": "Domäne des Friedens"
+      },
+      "2024": {
+        "de": "Domäne des Friedens"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-tempest",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "names": {
+      "2014": {
+        "de": "Domäne des Sturms"
+      },
+      "2024": {
+        "de": "Domäne des Sturms"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-trickery",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "names": {
+      "2014": {
+        "de": "Domäne der List"
+      },
+      "2024": {
+        "de": "Domäne der List"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "cleric-twilight",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "names": {
+      "2014": {
+        "de": "Domäne der Dämmerung"
+      },
+      "2024": {
+        "de": "Domäne der Dämmerung"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "cleric-war",
+    "type": "subclass",
+    "classId": "cleric",
+    "subclassId": "war",
+    "names": {
+      "2014": {
+        "de": "Domäne des Krieges"
+      },
+      "2024": {
+        "de": "Domäne des Krieges"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid-dreams",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "names": {
+      "2014": {
+        "de": "Zirkel der Träume"
+      },
+      "2024": {
+        "de": "Zirkel der Träume"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "druid-land",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "land",
+    "names": {
+      "2014": {
+        "de": "Zirkel des Landes"
+      },
+      "2024": {
+        "de": "Zirkel des Landes"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid-moon",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "moon",
+    "names": {
+      "2014": {
+        "de": "Zirkel des Mondes"
+      },
+      "2024": {
+        "de": "Zirkel des Mondes"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid-sea",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "sea",
+    "names": {
+      "2024": {
+        "de": "Zirkel der See"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "druid-shepherd",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "names": {
+      "2014": {
+        "de": "Zirkel des Hirten"
+      },
+      "2024": {
+        "de": "Zirkel des Hirten"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "druid-spores",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "spores",
+    "names": {
+      "2014": {
+        "de": "Zirkel der Sporen"
+      },
+      "2024": {
+        "de": "Zirkel der Sporen"
+      }
+    },
+    "sources": {
+      "2014": "GGR / TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "druid-stars",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "stars",
+    "names": {
+      "2014": {
+        "de": "Zirkel der Sterne"
+      },
+      "2024": {
+        "de": "Zirkel der Sterne"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid-wildfire",
+    "type": "subclass",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "names": {
+      "2014": {
+        "de": "Zirkel des Wildfeuers"
+      },
+      "2024": {
+        "de": "Zirkel des Wildfeuers"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-arcanearcher",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "names": {
+      "2014": {
+        "de": "Arkaner Bogenschütze"
+      },
+      "2024": {
+        "de": "Arkaner Bogenschütze"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-battlemaster",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "names": {
+      "2014": {
+        "de": "Kampfmeister"
+      },
+      "2024": {
+        "de": "Kampfmeister"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter-cavalier",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "names": {
+      "2014": {
+        "de": "Kavalier"
+      },
+      "2024": {
+        "de": "Kavalier"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-champion",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "champion",
+    "names": {
+      "2014": {
+        "de": "Champion"
+      },
+      "2024": {
+        "de": "Champion"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter-echo_knight",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "names": {
+      "2014": {
+        "de": "Echoritter"
+      },
+      "2024": {
+        "de": "Echoritter"
+      }
+    },
+    "sources": {
+      "2014": "EGW"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-eldritchknight",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "names": {
+      "2014": {
+        "de": "Arkaner Ritter"
+      },
+      "2024": {
+        "de": "Arkaner Ritter"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter-psiwarrior",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "names": {
+      "2014": {
+        "de": "Psi-Krieger"
+      },
+      "2024": {
+        "de": "Psi-Krieger"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter-purpledragonknight",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "names": {
+      "2014": {
+        "de": "Purpurdrache-Ritter"
+      },
+      "2024": {
+        "de": "Purpurdrache-Ritter"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-runeknight",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "names": {
+      "2014": {
+        "de": "Runenritter"
+      },
+      "2024": {
+        "de": "Runenritter"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "fighter-samurai",
+    "type": "subclass",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "names": {
+      "2014": {
+        "de": "Samurai"
+      },
+      "2024": {
+        "de": "Samurai"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-ascendant_dragon",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "names": {
+      "2014": {
+        "de": "Weg des aufsteigenden Drachen"
+      },
+      "2024": {
+        "de": "Weg des aufsteigenden Drachen"
+      }
+    },
+    "sources": {
+      "2014": "FTD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-astral_self",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "astral_self",
+    "names": {
+      "2014": {
+        "de": "Weg des Astralkörpers"
+      },
+      "2024": {
+        "de": "Weg des Astralkörpers"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-drunkenmaster",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "names": {
+      "2014": {
+        "de": "Weg des betrunkenen Meisters"
+      },
+      "2024": {
+        "de": "Weg des betrunkenen Meisters"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-elements",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "elements",
+    "names": {
+      "2024": {
+        "de": "Krieger der Elemente"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "monk-four_elements",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "four_elements",
+    "names": {
+      "2014": {
+        "de": "Weg der vier Elemente"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "elements"
+    }
+  },
+  {
+    "id": "monk-kensei",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "names": {
+      "2014": {
+        "de": "Weg des Kensei"
+      },
+      "2024": {
+        "de": "Weg des Kensei"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-longdeath",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "names": {
+      "2014": {
+        "de": "Weg des langen Todes"
+      },
+      "2024": {
+        "de": "Weg des langen Todes"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "monk-mercy",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "names": {
+      "2014": {
+        "de": "Weg der Barmherzigkeit"
+      },
+      "2024": {
+        "de": "Krieger der Barmherzigkeit"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "monk-openhand",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "openhand",
+    "names": {
+      "2014": {
+        "de": "Weg der offenen Hand"
+      },
+      "2024": {
+        "de": "Krieger der offenen Hand"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "monk-shadow",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "names": {
+      "2014": {
+        "de": "Weg des Schattens"
+      },
+      "2024": {
+        "de": "Krieger des Schattens"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "monk-sun_soul",
+    "type": "subclass",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "names": {
+      "2014": {
+        "de": "Weg der Sonnenseele"
+      },
+      "2024": {
+        "de": "Weg der Sonnenseele"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "paladin-ancients",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "names": {
+      "2014": {
+        "de": "Schwur der Uralten"
+      },
+      "2024": {
+        "de": "Schwur der Uralten"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin-conquest",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "names": {
+      "2014": {
+        "de": "Schwur der Eroberung"
+      },
+      "2024": {
+        "de": "Schwur der Eroberung"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "paladin-crown",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "names": {
+      "2014": {
+        "de": "Schwur der Krone"
+      },
+      "2024": {
+        "de": "Schwur der Krone"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "paladin-devotion",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "devotion",
+    "names": {
+      "2014": {
+        "de": "Schwur der Hingabe"
+      },
+      "2024": {
+        "de": "Schwur der Hingabe"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin-glory",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "names": {
+      "2014": {
+        "de": "Schwur des Ruhms"
+      },
+      "2024": {
+        "de": "Schwur des Ruhms"
+      }
+    },
+    "sources": {
+      "2014": "MOoT / TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin-oathbreaker",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "names": {
+      "2014": {
+        "de": "Schwurbrecher"
+      },
+      "2024": {
+        "de": "Schwurbrecher"
+      }
+    },
+    "sources": {
+      "2014": "DMG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "paladin-redemption",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "names": {
+      "2014": {
+        "de": "Schwur der Erlösung"
+      },
+      "2024": {
+        "de": "Schwur der Erlösung"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "paladin-vengeance",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "names": {
+      "2014": {
+        "de": "Schwur der Vergeltung"
+      },
+      "2024": {
+        "de": "Schwur der Vergeltung"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin-watchers",
+    "type": "subclass",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "names": {
+      "2014": {
+        "de": "Schwur der Wächter"
+      },
+      "2024": {
+        "de": "Schwur der Wächter"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "ranger-beastmaster",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "names": {
+      "2014": {
+        "de": "Tiermeister"
+      },
+      "2024": {
+        "de": "Tiermeister"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger-drakewarden",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "names": {
+      "2014": {
+        "de": "Drachenhüter"
+      },
+      "2024": {
+        "de": "Drachenhüter"
+      }
+    },
+    "sources": {
+      "2014": "FTD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "ranger-feywanderer",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "names": {
+      "2014": {
+        "de": "Feenwanderer"
+      },
+      "2024": {
+        "de": "Feenwanderer"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger-gloomstalker",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "names": {
+      "2014": {
+        "de": "Schreckenjäger"
+      },
+      "2024": {
+        "de": "Schreckenjäger"
+      }
+    },
+    "sources": {
+      "2014": "XGE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger-horizonwalker",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "names": {
+      "2014": {
+        "de": "Horizontläufer"
+      },
+      "2024": {
+        "de": "Horizontläufer"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "ranger-hunter",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "hunter",
+    "names": {
+      "2014": {
+        "de": "Jäger"
+      },
+      "2024": {
+        "de": "Jäger"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger-monster_slayer",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "names": {
+      "2014": {
+        "de": "Monsterjäger"
+      },
+      "2024": {
+        "de": "Monsterjäger"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "ranger-swarmkeeper",
+    "type": "subclass",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "names": {
+      "2014": {
+        "de": "Schwarmhüter"
+      },
+      "2024": {
+        "de": "Schwarmhüter"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-arcanetrickster",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "names": {
+      "2014": {
+        "de": "Arkaner Gauner"
+      },
+      "2024": {
+        "de": "Arkaner Gauner"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "rogue-assassin",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "names": {
+      "2014": {
+        "de": "Assassine"
+      },
+      "2024": {
+        "de": "Assassine"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "rogue-inquisitive",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "names": {
+      "2014": {
+        "de": "Inquisitiv"
+      },
+      "2024": {
+        "de": "Inquisitiv"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-mastermind",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "names": {
+      "2014": {
+        "de": "Strippenzieher"
+      },
+      "2024": {
+        "de": "Strippenzieher"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-phantom",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "names": {
+      "2014": {
+        "de": "Phantom"
+      },
+      "2024": {
+        "de": "Phantom"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-scout",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "names": {
+      "2014": {
+        "de": "Späher"
+      },
+      "2024": {
+        "de": "Späher"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-soulknife",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "names": {
+      "2014": {
+        "de": "Seelenmesser"
+      },
+      "2024": {
+        "de": "Seelenmesser"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "rogue-swashbuckler",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "names": {
+      "2014": {
+        "de": "Haudegen"
+      },
+      "2024": {
+        "de": "Haudegen"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "rogue-thief",
+    "type": "subclass",
+    "classId": "rogue",
+    "subclassId": "thief",
+    "names": {
+      "2014": {
+        "de": "Dieb"
+      },
+      "2024": {
+        "de": "Dieb"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer-aberrant",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "names": {
+      "2024": {
+        "de": "Aberrante Magie"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer-aberrantmind",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "names": {
+      "2014": {
+        "de": "Aberrantes Gemüt"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "aberrant"
+    }
+  },
+  {
+    "id": "sorcerer-clockwork",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "names": {
+      "2014": {
+        "de": "Uhrwerkseele"
+      },
+      "2024": {
+        "de": "Uhrwerkmagie"
+      }
+    },
+    "sources": {
+      "2014": "TCE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer-draconic",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "draconic",
+    "names": {
+      "2014": {
+        "de": "Drakonische Abstammung"
+      },
+      "2024": {
+        "de": "Drakonische Magie"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer-lunar",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "names": {
+      "2014": {
+        "de": "Mondmagie"
+      },
+      "2024": {
+        "de": "Mondmagie"
+      }
+    },
+    "sources": {
+      "2014": "DSotDQ"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "sorcerer-shadowmagic",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "names": {
+      "2014": {
+        "de": "Schattenmagie"
+      },
+      "2024": {
+        "de": "Schattenmagie"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "sorcerer-storm",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "names": {
+      "2014": {
+        "de": "Sturmmagie"
+      },
+      "2024": {
+        "de": "Sturmmagie"
+      }
+    },
+    "sources": {
+      "2014": "SCAG / XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "sorcerer-wildmagic",
+    "type": "subclass",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "names": {
+      "2014": {
+        "de": "Wilde Magie"
+      },
+      "2024": {
+        "de": "Wilde Magie"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock-archfey",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "names": {
+      "2014": {
+        "de": "Feenwesen"
+      },
+      "2024": {
+        "de": "Feenwesen-Patron"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock-celestial",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "names": {
+      "2014": {
+        "de": "Himmlischer"
+      },
+      "2024": {
+        "de": "Himmlischer Patron"
+      }
+    },
+    "sources": {
+      "2014": "XGE",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock-fathomless",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "names": {
+      "2014": {
+        "de": "Tiefsee"
+      },
+      "2024": {
+        "de": "Tiefsee"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "warlock-fiend",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "fiend",
+    "names": {
+      "2014": {
+        "de": "Unhold"
+      },
+      "2024": {
+        "de": "Unholdpatron"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock-genie",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "names": {
+      "2014": {
+        "de": "Dschinn"
+      },
+      "2024": {
+        "de": "Dschinn"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "warlock-greatoldone",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "names": {
+      "2014": {
+        "de": "Großer Alter"
+      },
+      "2024": {
+        "de": "Patron des Großen Alten"
+      }
+    },
+    "sources": {
+      "2014": "PHB",
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock-hexblade",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "names": {
+      "2014": {
+        "de": "Hexenklinge"
+      },
+      "2024": {
+        "de": "Hexenklinge"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "warlock-undead",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "names": {
+      "2014": {
+        "de": "Untoter"
+      },
+      "2024": {
+        "de": "Untoter"
+      }
+    },
+    "sources": {
+      "2014": "VRGtR"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "warlock-undying",
+    "type": "subclass",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "names": {
+      "2014": {
+        "de": "Unsterblicher"
+      },
+      "2024": {
+        "de": "Unsterblicher"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-abjuration",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "names": {
+      "2014": {
+        "de": "Bannmagie"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "abjurer"
+    }
+  },
+  {
+    "id": "wizard-abjurer",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "names": {
+      "2024": {
+        "de": "Bannwirker"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard-bladesinging",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "names": {
+      "2014": {
+        "de": "Klingengesang"
+      },
+      "2024": {
+        "de": "Klingengesang"
+      }
+    },
+    "sources": {
+      "2014": "SCAG"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-chronurgy",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "names": {
+      "2014": {
+        "de": "Chronurgie"
+      },
+      "2024": {
+        "de": "Chronurgie"
+      }
+    },
+    "sources": {
+      "2014": "EGW"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-conjuration",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "names": {
+      "2014": {
+        "de": "Beschwörung"
+      },
+      "2024": {
+        "de": "Beschwörung"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-divination",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "names": {
+      "2014": {
+        "de": "Erkenntnismagie"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "diviner"
+    }
+  },
+  {
+    "id": "wizard-diviner",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "names": {
+      "2024": {
+        "de": "Wahrsager"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard-enchantment",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "names": {
+      "2014": {
+        "de": "Verzauberung"
+      },
+      "2024": {
+        "de": "Verzauberung"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-evocation",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "evocation",
+    "names": {
+      "2014": {
+        "de": "Hervorrufung"
+      },
+      "2024": {
+        "de": "Hervorrufungsgelehrter"
+      }
+    },
+    "sources": {
+      "2014": "PHB / SRD",
+      "2024": "PHB / SRD"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard-graviturgy",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "names": {
+      "2014": {
+        "de": "Graviturgy"
+      },
+      "2024": {
+        "de": "Graviturgy"
+      }
+    },
+    "sources": {
+      "2014": "EGW"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-illusion",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "names": {
+      "2014": {
+        "de": "Illusion"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "illusionist"
+    }
+  },
+  {
+    "id": "wizard-illusionist",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "names": {
+      "2024": {
+        "de": "Illusionist"
+      }
+    },
+    "sources": {
+      "2024": "PHB"
+    },
+    "rulesets": {
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard-necromancy",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "names": {
+      "2014": {
+        "de": "Nekromantie"
+      },
+      "2024": {
+        "de": "Nekromantie"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-scribes",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "names": {
+      "2014": {
+        "de": "Ordnung der Schreiber"
+      },
+      "2024": {
+        "de": "Ordnung der Schreiber"
+      }
+    },
+    "sources": {
+      "2014": "TCE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-transmutation",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "names": {
+      "2014": {
+        "de": "Verwandlung"
+      },
+      "2024": {
+        "de": "Verwandlung"
+      }
+    },
+    "sources": {
+      "2014": "PHB"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  },
+  {
+    "id": "wizard-war",
+    "type": "subclass",
+    "classId": "wizard",
+    "subclassId": "war",
+    "names": {
+      "2014": {
+        "de": "Kampfmagie"
+      },
+      "2024": {
+        "de": "Kampfmagie"
+      }
+    },
+    "sources": {
+      "2014": "XGE"
+    },
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
+  }
+]

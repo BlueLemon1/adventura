@@ -1,0 +1,112 @@
+{
+  "scc-2021-kinetic-jaunt": {
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "bard",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
+  },
+  "scc-2021-vortex-warp": {
+    "rulesetClasses": {
+      "2014": [
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
+  },
+  "ftd-2021-ashardalons-stride": {
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
+  },
+  "egw-2020-dark-star": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-fortunes-favor": {
+    "subclassRestriction": "both"
+  },
+  "egw-2020-gift-of-alacrity": {
+    "subclassRestriction": "chronurgy"
+  },
+  "egw-2020-gravity-fissure": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-gravity-sinkhole": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-immovable-object": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-magnify-gravity": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-pulse-wave": {
+    "subclassRestriction": "both"
+  },
+  "egw-2020-ravenous-void": {
+    "subclassRestriction": "graviturgy"
+  },
+  "egw-2020-reality-break": {
+    "subclassRestriction": "chronurgy"
+  },
+  "egw-2020-sapping-sting": {
+    "subclassRestriction": "both"
+  },
+  "egw-2020-temporal-shunt": {
+    "subclassRestriction": "chronurgy"
+  },
+  "egw-2020-tether-essence": {
+    "subclassRestriction": "both"
+  },
+  "egw-2020-time-ravage": {
+    "subclassRestriction": "chronurgy"
+  },
+  "egw-2020-wristpocket": {
+    "subclassRestriction": "both"
+  },
+  "ggr-2018-encode-thoughts": {
+    "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list."
+  },
+  "aag-2022-air-bubble": {
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "druid",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
+  },
+  "aag-2022-create-spelljamming-helm": {
+    "rulesetClasses": {
+      "2014": [
+        "artificer",
+        "wizard"
+      ],
+      "2024": [
+        "artificer"
+      ]
+    }
+  }
+}

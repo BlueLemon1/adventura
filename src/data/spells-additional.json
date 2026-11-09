@@ -21,12 +21,6 @@
     "localized": {
       "name": "Elemente absorbieren",
       "school": "Bannmagie",
-      "classes": [
-        "druid",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Reaktion, die du ausführst, wenn du Säure-, Kälte-, Feuer-, Blitz- oder Schallschaden erleidest",
       "range": "Selbst",
       "components": "G",
@@ -34,13 +28,6 @@
       "description": "Du schützt dich kurzzeitig vor einem elementaren Angriff. Bis zum Beginn deines nächsten Zuges bist du gegen die auslösende Schadensart resistent. Wenn du in deinem nächsten Zug erstmals mit einem Nahkampfangriff triffst, verursacht das Ziel zusätzlich 1W6 Schaden dieser Schadensart.",
       "higherLevel": "Der zusätzliche Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "variable"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "rulesets": {
       "2014": true,
@@ -70,10 +57,6 @@
     "localized": {
       "name": "Aganazzars Sengstrahl",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (9-Meter-Linie)",
       "components": "V, G, M (eine Drachenschuppe eines roten Drachen)",
@@ -81,13 +64,6 @@
       "description": "Ein Feuerstrahl schießt in einer geraden Linie von dir fort. Die Linie ist 9 Meter lang und 1,5 Meter breit. Jede Kreatur darin muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 3W8 Feuerschaden, bei Erfolg die Hälfte.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3d8",
-        "average": 13.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "rulesets": {
       "2014": true,
@@ -116,10 +92,6 @@
     "localized": {
       "name": "Katapult",
       "school": "Verwandlung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G",
@@ -127,13 +99,6 @@
       "description": "Wähle einen ungetragenen Gegenstand mit einem Gewicht von 0,5 bis 2,5 kg in Reichweite. Er fliegt bis zu 27 Meter weit in eine von dir gewählte gerade Richtung. Jede Kreatur auf seiner Flugbahn muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg trifft der Gegenstand sie und verursacht 3W8 Wuchtschaden; bei Erfolg fliegt er weiter.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 1. erhöht sich das Höchstgewicht des Gegenstands um 2,5 kg und der Schaden um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3d8",
-        "average": 13.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "rulesets": {
       "2014": true,
@@ -161,9 +126,6 @@
     "localized": {
       "name": "Chaosblitz",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
@@ -171,13 +133,6 @@
       "description": "Führe einen Fernkampf-Zauberangriff gegen eine Kreatur aus. Bei einem Treffer erleidet sie 2W8 + 1W6 Schaden. Die beiden W8 bestimmen die Schadensart: Säure, Kälte, Feuer, Kraft, Blitz, Gift, psychisch oder Schall. Zeigen beide W8 dieselbe Zahl, kann der Blitz auf eine andere Kreatur innerhalb von 9 Metern des ersten Ziels überspringen. Gegen dieses Ziel wird ein neuer Angriff mit einem neuen Schadenswurf ausgeführt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "2d8 + 1d6",
-        "average": 12.5,
-        "type": "variable"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "rulesets": {
       "2014": true,
@@ -207,11 +162,6 @@
     "localized": {
       "name": "Schattenklinge",
       "school": "Illusion",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V, G",
@@ -219,13 +169,6 @@
       "description": "In deiner Hand entsteht eine Waffe aus verdichteter Dunkelheit. Sie besitzt die Eigenschaften Finesse und leicht, verursacht bei einem Treffer 2W8 psychischen Schaden und kann geworfen werden (Reichweite 6/18 Meter). Bei dämmrigem Licht oder Dunkelheit hast du Vorteil auf ihre Angriffe. Verlässt die Waffe deine Hand, verschwindet sie.",
       "higherLevel": "Der Schaden der Waffe steigt für je zwei Zauberplatzgrade über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "2d8",
-        "average": 9,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "rulesets": {
       "2014": true,
@@ -256,24 +199,11 @@
     "localized": {
       "name": "Dröhnende Klinge",
       "school": "Hervorrufung",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs; zusätzlich wird das Ziel bis zum Beginn deines nächsten Zuges von dröhnender Energie umhüllt. Bewegt es sich vorher freiwillig mindestens 1,5 Meter, erleidet es 1W8 Schallschaden. Ab Charakterstufe 5 verursacht der Angriff bei einem Treffer zusätzlich 1W8 Schallschaden und der Bewegungsschaden steigt auf 2W8. Beide Schadenswürfe steigen auf Stufe 11 und erneut auf Stufe 17 jeweils um 1W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "thunder"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "rulesets": {
       "2014": true,
@@ -305,25 +235,12 @@
     "localized": {
       "name": "Grünflammende Klinge",
       "school": "Hervorrufung",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "duration": "Unmittelbar",
       "description": "Du führst mit der zum Wirken verwendeten Waffe einen Nahkampfangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer gelten die normalen Auswirkungen des Angriffs. Du kannst außerdem grüne Flammen auf eine andere Kreatur überspringen lassen, die du innerhalb von 1,5 Metern des ersten Ziels sehen kannst. Diese zweite Kreatur erleidet Feuerschaden in Höhe deines Zauberattributmodifikators. Ab Charakterstufe 5 verursacht der Nahkampfangriff bei einem Treffer zusätzlich 1W8 Feuerschaden und die zweite Kreatur erleidet 1W8 plus deinen Zauberattributmodifikator. Beide Schadenswürfe steigen auf Stufe 11 und erneut auf Stufe 17 jeweils um 1W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "rulesets": {
       "2014": true,
@@ -354,25 +271,12 @@
     "localized": {
       "name": "Blitzköder",
       "school": "Hervorrufung",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (4,5-Meter-Radius)",
       "components": "V",
       "duration": "Unmittelbar",
       "description": "Du erschaffst eine Peitsche aus Blitzen, die eine Kreatur trifft, die du innerhalb von 4,5 Metern sehen kannst. Das Ziel muss einen Stärkerettungswurf bestehen oder wird bis zu 3 Meter auf dich zugezogen. Endet es innerhalb von 1,5 Metern von dir, erleidet es 1W8 Blitzschaden. Der Schaden steigt auf Charakterstufe 5 auf 2W8, auf Stufe 11 auf 3W8 und auf Stufe 17 auf 4W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "lightning"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "rulesets": {
       "2014": true,
@@ -403,25 +307,12 @@
     "localized": {
       "name": "Schwertstoß",
       "school": "Beschwörung",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "V",
       "duration": "Unmittelbar",
       "description": "Du erschaffst für einen Augenblick einen Kreis aus geisterhaften Klingen um dich herum. Jede andere Kreatur innerhalb von 1,5 Metern muss einen Geschicklichkeitsrettungswurf bestehen oder erleidet 1W6 Kraftschaden. Der Schaden steigt auf Charakterstufe 5 auf 2W6, auf Stufe 11 auf 3W6 und auf Stufe 17 auf 4W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "rulesets": {
       "2014": true,
@@ -452,11 +343,6 @@
     "localized": {
       "name": "Gedankensplitter",
       "school": "Verzauberung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V",
@@ -464,13 +350,6 @@
       "description": "Du greifst den Geist einer Kreatur mit störender psychischer Energie an. Das Ziel führt einen Intelligenzrettungswurf aus. Bei einem Misserfolg erleidet es 1W6 psychischen Schaden und zieht 1W4 vom nächsten Rettungswurf ab, den es vor dem Ende deines nächsten Zuges ablegt.",
       "higherLevel": "Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "sourcePage": 108,
     "descriptionKind": "original-summary",
@@ -501,11 +380,6 @@
     "localized": {
       "name": "Tashas ätzender Sud",
       "school": "Hervorrufung",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (9-Meter-Linie)",
       "components": "V, G, M (etwas verdorbenes Essen)",
@@ -513,13 +387,6 @@
       "description": "Du schleuderst einen Säurestrahl in einer 9 Meter langen und 1,5 Meter breiten Linie. Kreaturen im Bereich müssen einen Geschicklichkeitsrettungswurf bestehen oder werden von Säure bedeckt. Eine betroffene Kreatur erleidet zu Beginn jedes ihrer Züge 2W4 Säureschaden, bis der Zauber endet oder die Säure mit einer Aktion entfernt wird.",
       "higherLevel": "Der wiederkehrende Säureschaden steigt für jeden Zauberplatzgrad über dem 1. um 2W4."
     },
-    "damage": [
-      {
-        "dice": "2d4",
-        "average": 5,
-        "type": "acid"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "sourcePage": 115,
     "descriptionKind": "original-summary",
@@ -548,10 +415,6 @@
     "localized": {
       "name": "Tashas Gedankenpeitsche",
       "school": "Verzauberung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V",
@@ -559,13 +422,6 @@
       "description": "Du triffst den Geist einer Kreatur mit psychischer Gewalt. Sie muss einen Intelligenzrettungswurf ablegen. Bei einem Misserfolg erleidet sie 3W6 psychischen Schaden und kann bis zum Ende ihres nächsten Zuges keine Reaktion ausführen. In diesem nächsten Zug kann sie sich nur für eine der folgenden Möglichkeiten entscheiden: Bewegung, Aktion oder Bonusaktion. Bei Erfolg erleidet sie halben Schaden und keine weiteren Auswirkungen.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen, sofern alle Ziele höchstens 9 Meter voneinander entfernt sind."
     },
-    "damage": [
-      {
-        "dice": "3d6",
-        "average": 10.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "sourcePage": 115,
     "descriptionKind": "original-summary",
@@ -597,13 +453,6 @@
     "localized": {
       "name": "Geistesfestung",
       "school": "Bannmagie",
-      "classes": [
-        "artificer",
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V",
@@ -641,12 +490,6 @@
     "localized": {
       "name": "Geisterschleier",
       "school": "Nekromantie",
-      "classes": [
-        "cleric",
-        "paladin",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V, G",
@@ -654,13 +497,6 @@
       "description": "Geister umgeben dich. Deine Angriffe verursachen bei Treffern gegen Kreaturen innerhalb von 3 Metern zusätzlich 1W8 Schaden. Beim Wirken wählst du Strahlen-, nekrotischen oder Kälteschaden. Eine dadurch getroffene Kreatur kann bis zum Beginn deines nächsten Zuges keine Trefferpunkte zurückerlangen. Außerdem kannst du eine sichtbare Kreatur deiner Wahl verlangsamen, die ihren Zug innerhalb von 3 Metern von dir beginnt: Ihre Bewegungsrate sinkt bis zum Beginn ihres nächsten Zuges um 3 Meter.",
       "higherLevel": "Der zusätzliche Schaden steigt für je zwei Zauberplatzgrade über dem 3. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "variable"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "sourcePage": 108,
     "descriptionKind": "original-summary",
@@ -690,10 +526,6 @@
     "localized": {
       "name": "Bestie beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (eine Feder, ein Fellbüschel und eine Fischflosse in einer vergoldeten Eichel im Wert von mindestens 200 GM)",
@@ -732,12 +564,6 @@
     "localized": {
       "name": "Fee beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (eine vergoldete Blume im Wert von mindestens 300 GM)",
@@ -774,10 +600,6 @@
     "localized": {
       "name": "Schattenbrut beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (Tränen in einem Edelstein im Wert von mindestens 300 GM)",
@@ -814,10 +636,6 @@
     "localized": {
       "name": "Untote beschwören",
       "school": "Nekromantie",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (ein vergoldeter humanoider Schädel im Wert von mindestens 300 GM)",
@@ -854,10 +672,6 @@
     "localized": {
       "name": "Aberration beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (ein eingelegter Tentakel und ein Augapfel in einem platinverzierten Fläschchen im Wert von mindestens 400 GM)",
@@ -894,10 +708,6 @@
     "localized": {
       "name": "Konstrukt beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "artificer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (eine verzierte steinerne und metallene Schatulle im Wert von mindestens 400 GM)",
@@ -935,11 +745,6 @@
     "localized": {
       "name": "Elementar beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (Luft, ein Kieselstein, Asche und Wasser in einem goldverzierten Fläschchen im Wert von mindestens 400 GM)",
@@ -976,10 +781,6 @@
     "localized": {
       "name": "Himmlischen beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "cleric",
-        "paladin"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (ein goldenes Reliquiar im Wert von mindestens 500 GM)",
@@ -1016,10 +817,6 @@
     "localized": {
       "name": "Unhold beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (Blut, ein Tintenfläschchen und eine Obsidianstatuette im Wert von mindestens 600 GM)",
@@ -1056,11 +853,6 @@
     "localized": {
       "name": "Tashas jenseitige Gestalt",
       "school": "Verwandlung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V, G, M (ein mit einem Symbol der Äußeren Ebenen gravierter Gegenstand im Wert von mindestens 500 GM)",
@@ -1097,12 +889,6 @@
     "localized": {
       "name": "Traum des blauen Schleiers",
       "school": "Beschwörung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "10 Minuten",
       "range": "6 Meter",
       "components": "V, G, M (ein magischer Gegenstand oder eine willige Kreatur aus der Zielwelt)",
@@ -1137,24 +923,12 @@
     "localized": {
       "name": "Katastrophenklinge",
       "school": "Beschwörung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "18 Meter",
       "components": "V, G",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst in einem freien Raum einen kleinen, klingenförmigen Riss in der Ebene. Er kann zwei Nahkampf-Zauberangriffe gegen Ziele in seiner Nähe ausführen und verursacht bei einem Treffer 4W12 Kraftschaden. Bei einem W20-Ergebnis von 18 bis 20 ist der Treffer kritisch und verursacht zusätzlichen Kraftschaden. Als Bonusaktion kannst du die Klinge bewegen und erneut angreifen lassen. Sie durchdringt Hindernisse, ohne ihnen zu schaden."
     },
-    "damage": [
-      {
-        "dice": "4d12",
-        "average": 26,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "tce-2020",
     "sourcePage": 106,
     "descriptionKind": "original-summary",
@@ -1184,11 +958,6 @@
     "localized": {
       "name": "Katzenschlaf",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "G, M (eine Prise Sand)",
@@ -1226,12 +995,6 @@
     "localized": {
       "name": "Monster bezaubern",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "druid",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G",
@@ -1268,25 +1031,12 @@
     "localized": {
       "name": "Morgendämmerung",
       "school": "Hervorrufung",
-      "classes": [
-        "cleric",
-        "paladin",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Sonnenanhänger im Wert von mindestens 100 GM)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "An einem Punkt in Reichweite erscheint ein Zylinder aus Sonnenlicht. Kreaturen darin erleiden beim Erscheinen und immer dann Strahlenschaden, wenn sie ihren Zug darin beenden. Ein Konstitutionsrettungswurf halbiert den Schaden. Als Bonusaktion kannst du den Zylinder verschieben."
     },
-    "damage": [
-      {
-        "dice": "4d10",
-        "average": 22,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 153,
     "descriptionKind": "original-summary",
@@ -1315,11 +1065,6 @@
     "localized": {
       "name": "Fernschritt",
       "school": "Beschwörung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V",
@@ -1354,10 +1099,6 @@
     "localized": {
       "name": "Heilender Geist",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -1394,11 +1135,6 @@
     "localized": {
       "name": "Gedankenspitze",
       "school": "Erkenntnis",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G",
@@ -1406,13 +1142,6 @@
       "description": "Du durchbohrst den Geist einer Kreatur mit psychischer Energie. Sie legt einen Weisheitsrettungswurf ab und erleidet bei einem Misserfolg psychischen Schaden oder bei Erfolg halb so viel. Bei einem misslungenen Rettungswurf kennst du außerdem ihren Aufenthaltsort, solange sie sich auf derselben Ebene befindet, und kannst sie auch durch Unsichtbarkeit hindurch verfolgen.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3d8",
-        "average": 13.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 162,
     "descriptionKind": "original-summary",
@@ -1440,22 +1169,12 @@
     "localized": {
       "name": "Schatten des Moil",
       "school": "Nekromantie",
-      "classes": [
-        "warlock"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G, M (ein in einem Edelstein eingeschlossenes Auge eines Untoten im Wert von mindestens 150 GM)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Flammenartige Schatten umhüllen dich und verschleiern dich für andere stark. Du bist vor hellem Licht geschützt, und Kreaturen, die dich innerhalb von 3 Metern mit einem Angriff treffen, erleiden nekrotischen Schaden. Außerdem erhältst du Resistenz gegen Strahlenschaden."
     },
-    "damage": [
-      {
-        "dice": "2d8",
-        "average": 9,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
     "descriptionKind": "original-summary",
@@ -1484,23 +1203,12 @@
     "localized": {
       "name": "Stahlwindschlag",
       "school": "Beschwörung",
-      "classes": [
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "duration": "Unmittelbar",
       "description": "Du verschwindest und greifst bis zu fünf Kreaturen an, die du innerhalb der Reichweite sehen kannst. Für jedes Ziel führst du einen Nahkampf-Zauberangriff aus, der bei einem Treffer Kraftschaden verursacht. Anschließend teleportierst du dich an einen freien Ort, den du in der Nähe eines der Ziele sehen kannst."
     },
-    "damage": [
-      {
-        "dice": "6d10",
-        "average": 33,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 166,
     "descriptionKind": "original-summary",
@@ -1530,11 +1238,6 @@
     "localized": {
       "name": "Donnerschritt",
       "school": "Beschwörung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V",
@@ -1542,13 +1245,6 @@
       "description": "Du teleportierst dich an einen freien Ort, den du innerhalb der Reichweite sehen kannst. Unmittelbar nach deinem Verschwinden bricht an deinem vorherigen Standort ein Donnerschlag aus, der Kreaturen und Gegenstände in der Nähe beschädigt. Kreaturen können einen Konstitutionsrettungswurf ablegen, um nur halben Schaden zu erleiden. Du kannst eine willige Kreatur mitnehmen, die höchstens 1,5 Meter von dir entfernt ist.",
       "higherLevel": "Der Schallschaden steigt für jeden Zauberplatzgrad über dem 3. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "3d10",
-        "average": 16.5,
-        "type": "thunder"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
     "descriptionKind": "original-summary",
@@ -1575,22 +1271,12 @@
     "localized": {
       "name": "Zephyrschlag",
       "school": "Verwandlung",
-      "classes": [
-        "ranger"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du bewegst dich mit der Geschwindigkeit des Windes und provozierst durch deine Bewegung keine Gelegenheitsangriffe. Einmal vor Ende des Zaubers kannst du dir Vorteil auf einen Waffenangriff geben; bei einem Treffer verursacht dieser zusätzlichen Kraftschaden und deine Bewegungsrate erhöht sich kurzzeitig."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
     "descriptionKind": "original-summary",
@@ -1619,11 +1305,6 @@
     "localized": {
       "name": "Flammen kontrollieren",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G",
@@ -1659,25 +1340,12 @@
     "localized": {
       "name": "Lagerfeuer erschaffen",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst ein Lagerfeuer auf einem Boden, den du sehen kannst. Kreaturen in seinem Feld, wenn es erscheint oder die es während eines Zuges erstmals betreten, müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden 1W8 Feuerschaden. Das Feuer entzündet außerdem brennbare Gegenstände, die weder getragen noch gehalten werden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
     "descriptionKind": "original-summary",
@@ -1707,25 +1375,12 @@
     "localized": {
       "name": "Frostbiss",
       "school": "Hervorrufung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
       "duration": "Unmittelbar",
       "description": "Du betäubst eine Kreatur, die du in Reichweite sehen kannst, mit eisiger Kälte. Sie muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Kälteschaden und hat Nachteil auf den nächsten Waffenangriffswurf, den sie vor dem Ende ihres nächsten Zuges ausführt. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 156,
     "descriptionKind": "original-summary",
@@ -1754,11 +1409,6 @@
     "localized": {
       "name": "Windstoß",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G",
@@ -1795,25 +1445,12 @@
     "localized": {
       "name": "Ungezieferplage",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G, M (ein lebender Floh)",
       "duration": "Unmittelbar",
       "description": "Eine Wolke aus Milben, Flöhen und anderen Parasiten erscheint auf einer Kreatur, die du sehen kannst. Sie muss einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Giftschaden und bewegt sich, sofern sie dazu fähig ist, 1,5 Meter in eine zufällige Richtung. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "poison"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 158,
     "descriptionKind": "original-summary",
@@ -1842,24 +1479,12 @@
     "localized": {
       "name": "Magischer Stein",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Berührung",
       "components": "V, G",
       "duration": "1 Minute",
       "description": "Du erfüllst bis zu drei Kieselsteine mit Magie. Eine Kreatur kann mit einem davon einen Fernkampf-Zauberangriff ausführen und dabei deinen Zauberattributmodifikator verwenden. Bei einem Treffer verursacht der Stein 1W6 plus diesen Modifikator Wuchtschaden. Eine andere Kreatur kann den Stein ebenfalls werfen und dabei deinen Zauberangriffsbonus verwenden."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
     "descriptionKind": "original-summary",
@@ -1888,11 +1513,6 @@
     "localized": {
       "name": "Erde formen",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "G",
@@ -1925,22 +1545,12 @@
     "localized": {
       "name": "Urtümliche Wildheit",
       "school": "Verwandlung",
-      "classes": [
-        "druid"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "G",
       "duration": "Unmittelbar",
       "description": "Deine Zähne oder Fingernägel verlängern sich zu natürlichen Waffen, die mit Säure überzogen sind. Führe einen Nahkampf-Zauberangriff gegen eine Kreatur innerhalb von 1,5 Metern aus. Bei einem Treffer erleidet sie 1W10 Säureschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W10."
     },
-    "damage": [
-      {
-        "dice": "1d10",
-        "average": 5.5,
-        "type": "acid"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
     "descriptionKind": "original-summary",
@@ -1969,11 +1579,6 @@
     "localized": {
       "name": "Wasser formen",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "G",
@@ -2010,26 +1615,12 @@
     "localized": {
       "name": "Donnerschlag",
       "school": "Hervorrufung",
-      "classes": [
-        "bard",
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "G",
       "duration": "Unmittelbar",
       "description": "Du erzeugst einen Donnerschlag, der bis zu 30 Meter weit zu hören ist. Jede Kreatur außer dir innerhalb von 1,5 Metern muss einen Konstitutionsrettungswurf ablegen oder erleidet 1W6 Schallschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "thunder"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
     "descriptionKind": "original-summary",
@@ -2060,11 +1651,6 @@
     "localized": {
       "name": "Erdeneruption",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (ein Stück Obsidian)",
@@ -2072,13 +1658,6 @@
       "description": "Wähle einen Punkt auf dem Boden in Reichweite. Die Erde bricht in einem Würfel mit 6 Metern Kantenlänge hervor. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen oder erleiden 3W12 Wuchtschaden; bei Erfolg erleiden sie halben Schaden. Das Gebiet wird zu schwierigem Gelände, bis es geräumt wird.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W12."
     },
-    "damage": [
-      {
-        "dice": "3d12",
-        "average": 19.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
     "descriptionKind": "original-summary",
@@ -2109,12 +1688,6 @@
     "localized": {
       "name": "Flammenpfeile",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
       "components": "V, G",
@@ -2122,13 +1695,6 @@
       "description": "Du berührst einen Köcher mit Pfeilen oder Bolzen. Bis zu 12 Geschosse werden magisch aufgeladen. Trifft ein solches Geschoss, verursacht es zusätzlich 1W6 Feuerschaden und verliert danach seine Magie.",
       "higherLevel": "Die Anzahl der betroffenen Geschosse steigt für jeden Zauberplatzgrad über dem 3. um 2."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 156,
     "descriptionKind": "original-summary",
@@ -2157,24 +1723,12 @@
     "localized": {
       "name": "Krankmachendes Strahlen",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Eine Sphäre aus kränklichem grünem Licht erfüllt den Bereich. Kreaturen, die ihn während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W10 Strahlenschaden und erhalten eine Erschöpfungsstufe; bei Erfolg erleiden sie halben Schaden. Das Licht verhindert außerdem, dass betroffene Kreaturen von Unsichtbarkeit profitieren."
     },
-    "damage": [
-      {
-        "dice": "4d10",
-        "average": 22,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
     "descriptionKind": "original-summary",
@@ -2202,10 +1756,6 @@
     "localized": {
       "name": "Sturmsphäre",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "45 Meter",
       "components": "V, G",
@@ -2241,24 +1791,12 @@
     "localized": {
       "name": "Flutwelle",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (ein Wassertropfen)",
       "duration": "Unmittelbar",
       "description": "Du erschaffst eine Wasserwelle, die in einem 9 Meter langen, 3 Meter breiten und 3 Meter hohen Bereich niedergeht. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 4W8 Wuchtschaden und werden zu Boden geworfen; bei Erfolg erleiden sie halben Schaden und bleiben stehen. Die Welle löscht außerdem ungeschützte Flammen."
     },
-    "damage": [
-      {
-        "dice": "4d8",
-        "average": 18,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
     "descriptionKind": "original-summary",
@@ -2286,9 +1824,6 @@
     "localized": {
       "name": "Kleiner Diener",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "Berührung",
       "components": "V, G",
@@ -2323,9 +1858,6 @@
     "localized": {
       "name": "Sandwall",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (eine Handvoll Sand)",
@@ -2361,11 +1893,6 @@
     "localized": {
       "name": "Wasserwand",
       "school": "Hervorrufung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Wassertropfen)",
@@ -2401,11 +1928,6 @@
     "localized": {
       "name": "Wassersphäre",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (ein Wassertropfen)",
@@ -2441,10 +1963,6 @@
     "localized": {
       "name": "Vitriolsphäre",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "45 Meter",
       "components": "V, G, M (ein Tropfen Riesenschneckengalle)",
@@ -2452,13 +1970,6 @@
       "description": "Du schleuderst eine mit Säure gefüllte Kugel, die in einer Sphäre mit 6 Metern Radius zerplatzt. Kreaturen im Bereich müssen einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleiden sie 10W4 Säureschaden, bei Erfolg die Hälfte. Betroffene Kreaturen mit misslungenem Rettungswurf erleiden außerdem am Ende ihres nächsten Zuges 5W4 Säureschaden.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 4. steigt der anfängliche Schaden um 2W4 und der spätere Schaden um 1W4."
     },
-    "damage": [
-      {
-        "dice": "10d4 + 5d4",
-        "average": 37.5,
-        "type": "acid"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
     "descriptionKind": "original-summary",
@@ -2487,11 +1998,6 @@
     "localized": {
       "name": "Winde kontrollieren",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "90 Meter",
       "components": "V, G",
@@ -2527,11 +2033,6 @@
     "localized": {
       "name": "Sternenkrone",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
@@ -2539,13 +2040,6 @@
       "description": "Sieben sternartige Lichtpunkte umkreisen deinen Kopf. Als Bonusaktion kannst du einen davon auf eine Kreatur oder einen Gegenstand in Reichweite schleudern. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer verursacht er 4W12 Strahlenschaden. Der Lichtpunkt verschwindet nach dem Angriff.",
       "higherLevel": "Die Anzahl der Lichtpunkte steigt für jeden Zauberplatzgrad über dem 7. um zwei."
     },
-    "damage": [
-      {
-        "dice": "4d12",
-        "average": 26,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
     "descriptionKind": "original-summary",
@@ -2574,11 +2068,6 @@
     "localized": {
       "name": "Totentanz",
       "school": "Nekromantie",
-      "classes": [
-        "bard",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -2614,10 +2103,6 @@
     "localized": {
       "name": "Drachenodem",
       "school": "Verwandlung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Berührung",
       "components": "V, G, M (eine scharfe Chilischote)",
@@ -2625,13 +2110,6 @@
       "description": "Du verleihst einer willigen Kreatur die Fähigkeit, als Aktion zerstörerische Energie in einem 4,5-Meter-Kegel auszustoßen. Wähle Säure, Kälte, Feuer, Blitz oder Gift. Kreaturen im Kegel müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 3W6 Schaden der gewählten Art oder bei Erfolg halben Schaden.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "3d6",
-        "average": 10.5,
-        "type": "variable"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
     "descriptionKind": "original-summary",
@@ -2662,11 +2140,6 @@
     "localized": {
       "name": "Staubteufel",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (eine Prise Staub)",
@@ -2674,13 +2147,6 @@
       "description": "Du erschaffst an einem freien Ort einen Staubteufel. Als Bonusaktion kannst du ihn bis zu 9 Meter bewegen. Eine Kreatur innerhalb von 1,5 Metern muss einen Stärkerettungswurf ablegen oder erleidet 1W8 Wuchtschaden und wird weggestoßen.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
     "descriptionKind": "original-summary",
@@ -2710,25 +2176,12 @@
     "localized": {
       "name": "Erdbebenstoß",
       "school": "Hervorrufung",
-      "classes": [
-        "bard",
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (3-Meter-Radius)",
       "components": "V, G",
       "duration": "Unmittelbar",
       "description": "Du erschütterst den Boden um dich herum. Jede andere Kreatur innerhalb von 3 Metern muss einen Geschicklichkeitsrettungswurf ablegen. Bei einem Misserfolg erleidet sie 1W6 Wuchtschaden und wird zu Boden geworfen. Das Gebiet wird zu schwierigem Gelände."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
     "descriptionKind": "original-summary",
@@ -2759,12 +2212,6 @@
     "localized": {
       "name": "Erdgebunden",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "90 Meter",
       "components": "V",
@@ -2801,11 +2248,6 @@
     "localized": {
       "name": "Elementarfluch",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G",
@@ -2813,13 +2255,6 @@
       "description": "Wähle eine Kreatur und eine Schadensart: Säure, Kälte, Feuer, Blitz oder Schall. Das Ziel verliert Resistenz gegen diese Schadensart. Wenn es während eines Zuges erstmals Schaden der gewählten Art erleidet, erleidet es zusätzlich 2W6 Schaden.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 4. kannst du eine zusätzliche Kreatur als Ziel wählen."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "variable"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
     "descriptionKind": "original-summary",
@@ -2849,12 +2284,6 @@
     "localized": {
       "name": "Feinde überall",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
@@ -2890,11 +2319,6 @@
     "localized": {
       "name": "Auszehrung",
       "school": "Nekromantie",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -2902,13 +2326,6 @@
       "description": "Ein dunkler Faden greift nach einer Kreatur. Führe einen Fernkampf-Zauberangriff aus. Bei einem Treffer erleidet das Ziel 4W8 nekrotischen Schaden und du erhältst Trefferpunkte in Höhe der Hälfte des verursachten Schadens zurück. In späteren Zügen kannst du deine Aktion verwenden, um den Angriff automatisch zu wiederholen, solange der Zauber in Reichweite bleibt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "4d8",
-        "average": 18,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
     "descriptionKind": "original-summary",
@@ -2936,10 +2353,6 @@
     "localized": {
       "name": "Hüter der Natur",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V",
@@ -2973,23 +2386,12 @@
     "localized": {
       "name": "Heilige Waffe",
       "school": "Hervorrufung",
-      "classes": [
-        "cleric",
-        "paladin"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Berührung",
       "components": "V, G",
       "duration": "Konzentration, bis zu 1 Stunde",
       "description": "Du erfüllst eine Waffe mit strahlender Macht. Ihre Angriffe verursachen zusätzlich 2W8 Strahlenschaden. Als Bonusaktion kannst du den Zauber mit einem Lichtblitz beenden, der Kreaturen in der Nähe verletzt und sie möglicherweise blendet."
     },
-    "damage": [
-      {
-        "dice": "2d8",
-        "average": 9,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
     "descriptionKind": "original-summary",
@@ -3018,10 +2420,6 @@
     "localized": {
       "name": "Lebensübertragung",
       "school": "Nekromantie",
-      "classes": [
-        "cleric",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G",
@@ -3029,13 +2427,6 @@
       "description": "Du opferst einen Teil deiner eigenen Lebenskraft, um eine andere Kreatur zu heilen, die du in Reichweite sehen kannst. Du erleidest 4W8 nekrotischen Schaden, der nicht reduziert werden kann, und das Ziel erhält doppelt so viele Trefferpunkte zurück.",
       "higherLevel": "Der nekrotische Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "4d8",
-        "average": 18,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
     "descriptionKind": "original-summary",
@@ -3064,9 +2455,6 @@
     "localized": {
       "name": "Maximilians Erdgriff",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G, M (eine aus Ton geformte Miniaturhand)",
@@ -3074,13 +2462,6 @@
       "description": "Eine Hand aus Erde erhebt sich unter einer Kreatur, die du sehen kannst. Das Ziel muss einen Stärkerettungswurf ablegen oder wird festgesetzt. Du kannst eine Aktion verwenden, um es mit Wuchtschaden zu quetschen; am Ende seiner Züge kann es versuchen, sich zu befreien.",
       "higherLevel": "Der Schaden des Quetschens steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
     "descriptionKind": "original-summary",
@@ -3110,10 +2491,6 @@
     "localized": {
       "name": "Melfs Minutenmeteore",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G, M (Salpeter, Schwefel und Kiefernteer zu einer Kugel geformt)",
@@ -3121,13 +2498,6 @@
       "description": "Sechs feurige Meteore umkreisen dich. Als Bonusaktion kannst du einen oder zwei davon auf Punkte innerhalb von 36 Metern schleudern. Jeder explodiert in einem kleinen Bereich; Kreaturen darin müssen Geschicklichkeitsrettungswürfe ablegen oder erleiden 2W6 Feuerschaden.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. erschaffst du zwei zusätzliche Meteore."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
     "descriptionKind": "original-summary",
@@ -3157,25 +2527,12 @@
     "localized": {
       "name": "Psychischer Schrei",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "G",
       "duration": "Unmittelbar",
       "description": "Du entfesselst eine psychische Explosion gegen bis zu zehn Kreaturen, die du sehen kannst. Jedes Ziel muss einen Intelligenzrettungswurf ablegen. Bei einem Misserfolg erleidet es 14W6 psychischen Schaden und ist betäubt; bei Erfolg erleidet es halben Schaden. Wird eine Kreatur durch diesen Zauber auf 0 Trefferpunkte reduziert, wird ihr Kopf zerstört."
     },
-    "damage": [
-      {
-        "dice": "14d6",
-        "average": 49,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
     "descriptionKind": "original-summary",
@@ -3204,11 +2561,6 @@
     "localized": {
       "name": "Pyrotechnik",
       "school": "Verwandlung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -3243,11 +2595,6 @@
     "localized": {
       "name": "Versetzen",
       "school": "Beschwörung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V",
@@ -3283,12 +2630,6 @@
     "localized": {
       "name": "Himmelsschrift",
       "school": "Verwandlung",
-      "classes": [
-        "bard",
-        "druid",
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Sicht",
       "components": "V, G",
@@ -3324,11 +2665,6 @@
     "localized": {
       "name": "Schlinge",
       "school": "Bannmagie",
-      "classes": [
-        "druid",
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "Berührung",
       "components": "G, M (7,5 Meter Seil, das der Zauber verbraucht)",
@@ -3363,10 +2699,6 @@
     "localized": {
       "name": "Tierbund",
       "school": "Erkenntnis",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
       "components": "V, G, M (ein in Stoff gewickeltes Fellstück)",
@@ -3402,10 +2734,6 @@
     "localized": {
       "name": "Furcht hervorrufen",
       "school": "Nekromantie",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V",
@@ -3441,10 +2769,6 @@
     "localized": {
       "name": "Zeremonie",
       "school": "Bannmagie",
-      "classes": [
-        "cleric",
-        "paladin"
-      ],
       "castingTime": "1 Stunde",
       "range": "Berührung",
       "components": "V, G, M (Silberpulver im Wert von 25 GM, das der Zauber verbraucht)",
@@ -3478,9 +2802,6 @@
     "localized": {
       "name": "Knochen der Erde",
       "school": "Verwandlung",
-      "classes": [
-        "druid"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
@@ -3488,13 +2809,6 @@
       "description": "Du lässt bis zu sechs Steinsäulen an sichtbaren Punkten aus dem Boden hervorbrechen. Jede Säule kann eine Kreatur unter sich anheben. Wird eine Säule durch ein Hindernis am vollständigen Aufragen gehindert, erleidet eine zwischen Säule und Hindernis eingeklemmte Kreatur 6W6 Wuchtschaden und wird festgesetzt.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 6. kannst du zwei zusätzliche Säulen erschaffen."
     },
-    "damage": [
-      {
-        "dice": "6d6",
-        "average": 21,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 150,
     "descriptionKind": "original-summary",
@@ -3522,22 +2836,12 @@
     "localized": {
       "name": "Homunkulus erschaffen",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Stunde",
       "range": "Berührung",
       "components": "V, G, M (Ton, Asche und Alraunenwurzel, die der Zauber verbraucht, sowie ein juwelenbesetzter Dolch im Wert von mindestens 1.000 GM)",
       "duration": "Unmittelbar",
       "description": "Du schneidest dich mit einem juwelenbesetzten Dolch und erleidest 2W4 Stichschaden, der nicht reduziert werden kann. Anschließend erschaffst du mit deinem Blut und den übrigen Materialien einen Homunkulus. Er wird zu deinem treuen Gefährten, teilt eine telepathische Verbindung mit dir und kann nach einer langen Rast durch den Einsatz deiner Trefferwürfel gestärkt werden."
     },
-    "damage": [
-      {
-        "dice": "2d4",
-        "average": 5,
-        "type": "piercing"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
     "descriptionKind": "original-summary",
@@ -3565,9 +2869,6 @@
     "localized": {
       "name": "Druidischer Hain",
       "school": "Bannmagie",
-      "classes": [
-        "druid"
-      ],
       "castingTime": "10 Minuten",
       "range": "Berührung",
       "components": "V, G, M (Mistelzweig, bei Vollmond mit einer goldenen Sichel geerntet)",
@@ -3601,9 +2902,6 @@
     "localized": {
       "name": "Unverwundbarkeit",
       "school": "Bannmagie",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G, M (ein kleines Stück Adamant im Wert von mindestens 500 GM)",
@@ -3638,23 +2936,12 @@
     "localized": {
       "name": "Wahnsinnige Dunkelheit",
       "school": "Hervorrufung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "45 Meter",
       "components": "V, M (ein Tropfen Pech mit einem Tropfen Quecksilber vermischt)",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Magische Dunkelheit breitet sich von einem Punkt in Reichweite aus und füllt eine Sphäre mit 18 Metern Radius. Dunkelsicht kann nicht hindurchsehen, und weder nichtmagisches Licht noch Licht von Zaubern des 8. Grades oder niedriger kann den Bereich erhellen. Unheimliche Schreie und Gelächter hallen darin wider. Jede Kreatur, die ihren Zug in der Sphäre beginnt, muss einen Weisheitsrettungswurf ablegen und erleidet bei einem Misserfolg 8W8 psychischen Schaden oder bei Erfolg halben Schaden."
     },
-    "damage": [
-      {
-        "dice": "8d8",
-        "average": 36,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
     "descriptionKind": "original-summary",
@@ -3683,9 +2970,6 @@
     "localized": {
       "name": "Mahlstrom",
       "school": "Hervorrufung",
-      "classes": [
-        "druid"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (Papier oder ein Blatt in Wasser)",
@@ -3693,13 +2977,6 @@
       "description": "Du erschaffst eine wirbelnde Wassersphäre mit 9 Metern Radius. Kreaturen im Bereich müssen einen Stärkerettungswurf ablegen. Bei einem Misserfolg erleiden sie Wuchtschaden und werden zum Zentrum gezogen.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "6d6",
-        "average": 21,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
     "descriptionKind": "original-summary",
@@ -3729,10 +3006,6 @@
     "localized": {
       "name": "Geringere Dämonen beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
@@ -3769,10 +3042,6 @@
     "localized": {
       "name": "Abi-Dalzims schreckliches Verdorren",
       "school": "Nekromantie",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "45 Meter",
       "components": "V, G, M (ein Stück Schwamm)",
@@ -3780,13 +3049,6 @@
       "description": "Du entziehst Kreaturen in einem großen Gebiet Feuchtigkeit. Jede Kreatur in einem Würfel mit 9 Metern Kantenlänge muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 12W8 nekrotischen Schaden oder bei Erfolg halben Schaden. Nichtmagische Pflanzen im Bereich verdorren.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 8. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "12d8",
-        "average": 54,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 150,
     "descriptionKind": "original-summary",
@@ -3813,22 +3075,12 @@
     "localized": {
       "name": "Illusorischer Drache",
       "school": "Illusion",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "G",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst einen riesigen illusorischen Drachen, der Raum einnimmt und Kreaturen in seiner Nähe in Furcht versetzen kann. Er kann sich bewegen und einen Odem einsetzen, der psychischen Schaden verursacht. Kreaturen können den Furcht- und Odem-Effekten mit Rettungswürfen widerstehen."
     },
-    "damage": [
-      {
-        "dice": "12d6",
-        "average": 42,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
     "descriptionKind": "original-summary",
@@ -3858,25 +3110,12 @@
     "localized": {
       "name": "Feuerinvestitur",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Flammen breiten sich über deinen Körper aus und spenden helles Licht in einem Radius von 9 Metern sowie dämmriges Licht weitere 9 Meter darüber hinaus. Du bist immun gegen Feuerschaden und besitzt Resistenz gegen Kälteschaden. Eine Kreatur, die sich während eines Zuges erstmals auf 1,5 Meter an dich heranbewegt oder ihren Zug dort beendet, erleidet 1W10 Feuerschaden. Als Aktion kannst du eine 4,5 Meter lange und 1,5 Meter breite Feuerlinie erschaffen, die bei einem misslungenen Geschicklichkeitsrettungswurf 4W8 Feuerschaden oder bei Erfolg halben Schaden verursacht."
     },
-    "damage": [
-      {
-        "dice": "4d8",
-        "average": 18,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 159,
     "descriptionKind": "original-summary",
@@ -3906,25 +3145,12 @@
     "localized": {
       "name": "Eisinvestitur",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Eis überzieht deinen Körper. Du bist immun gegen Kälteschaden und besitzt Resistenz gegen Feuerschaden. Du kannst dich ohne zusätzliche Bewegung durch schwieriges Gelände aus Eis oder Schnee bewegen und erzeugst um dich herum einen eisigen Bereich mit 3 Metern Radius, der für andere Kreaturen schwieriges Gelände ist. Außerdem kannst du einen 4,5-Meter-Kegel eisigen Windes erzeugen, der bei einem misslungenen Konstitutionsrettungswurf 4W6 Kälteschaden oder bei Erfolg halben Schaden verursacht. Bei einem misslungenen Rettungswurf wird die Bewegungsrate der Kreatur bis zu deinem nächsten Zug halbiert."
     },
-    "damage": [
-      {
-        "dice": "4d6",
-        "average": 14,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 159,
     "descriptionKind": "original-summary",
@@ -3954,12 +3180,6 @@
     "localized": {
       "name": "Steininvestitur",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
@@ -3995,25 +3215,12 @@
     "localized": {
       "name": "Windinvestitur",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Wind wirbelt um dich. Fernkampfwaffenangriffe gegen dich haben Nachteil und du erhältst eine Flugbewegungsrate von 18 Metern. Als Aktion kannst du innerhalb von 18 Metern einen Würfel aus wirbelndem Wind mit 4,5 Metern Kantenlänge erschaffen. Kreaturen darin müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 2W10 Wuchtschaden oder bei Erfolg halben Schaden. Große oder kleinere Kreaturen, die den Rettungswurf nicht bestehen, werden zusätzlich bis zu 3 Meter vom Zentrum des Würfels weggestoßen."
     },
-    "damage": [
-      {
-        "dice": "2d10",
-        "average": 11,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
     "descriptionKind": "original-summary",
@@ -4043,11 +3250,6 @@
     "localized": {
       "name": "Massenverwandlung",
       "school": "Verwandlung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (ein Raupenkokon)",
@@ -4083,10 +3285,6 @@
     "localized": {
       "name": "Flut negativer Energie",
       "school": "Nekromantie",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, M (ein gebrochener Knochen und ein Stück schwarze Seide)",
@@ -4094,13 +3292,6 @@
       "description": "Du sendest negative Energie in eine Kreatur. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 5W12 nekrotischen Schaden oder bei Erfolg halben Schaden. Tötet dieser Schaden einen Humanoiden, erhebt er sich als Zombie; ein untotes Ziel erhält stattdessen temporäre Trefferpunkte.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W12."
     },
-    "damage": [
-      {
-        "dice": "5d12",
-        "average": 32.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
     "descriptionKind": "original-summary",
@@ -4129,11 +3320,6 @@
     "localized": {
       "name": "Machtwort Schmerz",
       "school": "Verzauberung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V",
@@ -4166,9 +3352,6 @@
     "localized": {
       "name": "Urzeitlicher Schutz",
       "school": "Bannmagie",
-      "classes": [
-        "druid"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G",
@@ -4204,10 +3387,6 @@
     "localized": {
       "name": "Höheren Dämon beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Fläschchen Blut eines Humanoiden, der innerhalb der letzten 24 Stunden gestorben ist)",
@@ -4243,10 +3422,6 @@
     "localized": {
       "name": "Gestein umwandeln",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (Ton und Wasser)",
@@ -4283,11 +3458,6 @@
     "localized": {
       "name": "Lichtwand",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (ein Handspiegel)",
@@ -4295,13 +3465,6 @@
       "description": "Du erschaffst eine strahlende Lichtwand. Wenn sie erscheint, müssen Kreaturen in ihrem Bereich einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 4W8 Strahlenschaden oder bei Erfolg halben Schaden; bei einem Misserfolg werden sie außerdem geblendet. Eine Kreatur, die ihren Zug in der Wand beendet, wiederholt den Rettungswurf. Als Bonusaktion kannst du außerdem einen Lichtstrahl ablösen und einen Fernkampf-Zauberangriff ausführen, der 4W8 Strahlenschaden verursacht.",
       "higherLevel": "Der Schaden des Lichtstrahls steigt für jeden Zauberplatzgrad über dem 5. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "4d8",
-        "average": 18,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
     "descriptionKind": "original-summary",
@@ -4331,10 +3494,6 @@
     "localized": {
       "name": "Wirbelwind",
       "school": "Hervorrufung",
-      "classes": [
-        "druid",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "90 Meter",
       "components": "V, M (ein Stück Stroh)",
@@ -4342,13 +3501,6 @@
       "description": "Ein Wirbelwind entsteht als Zylinder mit 3 Metern Radius und 9 Metern Höhe an einem Punkt auf dem Boden, den du sehen kannst. Als Aktion kannst du ihn bis zu 9 Meter entlang des Bodens bewegen. Eine Kreatur, die ihn während eines Zuges erstmals betritt oder deren Feld er betritt, muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 10W6 Wuchtschaden oder bei Erfolg halben Schaden. Eine große oder kleinere Kreatur, die den Rettungswurf nicht besteht, muss außerdem einen Stärkerettungswurf bestehen oder wird im Wirbelwind festgesetzt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 7. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "10d6",
-        "average": 35,
-        "type": "bludgeoning"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
     "descriptionKind": "original-summary",
@@ -4376,10 +3528,6 @@
     "localized": {
       "name": "Zorn der Natur",
       "school": "Hervorrufung",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
@@ -4414,10 +3562,6 @@
     "localized": {
       "name": "Verbrennen",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V",
@@ -4425,13 +3569,6 @@
       "description": "Du hüllst eine Kreatur in Flammen. Sie muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 8W6 Feuerschaden oder bei Erfolg halben Schaden. Eine Kreatur, die den Rettungswurf nicht besteht, brennt weiter und erleidet am Ende jedes ihrer Züge 4W6 Feuerschaden, bis die Flammen gelöscht werden oder der Zauber endet.",
       "higherLevel": "Der anfängliche Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "8d6",
-        "average": 28,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 158,
     "descriptionKind": "original-summary",
@@ -4461,10 +3598,6 @@
     "localized": {
       "name": "Infernalen Ruf",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "27 Meter",
       "components": "V, G, M (ein Rubin im Wert von mindestens 999 GM)",
@@ -4499,9 +3632,6 @@
     "localized": {
       "name": "Mächtige Festung",
       "school": "Beschwörung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "1,6 Kilometer",
       "components": "V, G, M (ein Diamant im Wert von mindestens 500 GM, den der Zauber verbraucht)",
@@ -4536,11 +3666,6 @@
     "localized": {
       "name": "Fertigkeitsstärkung",
       "school": "Verwandlung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
       "components": "V, G",
@@ -4575,10 +3700,6 @@
     "localized": {
       "name": "Seelenkäfig",
       "school": "Nekromantie",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Reaktion, wenn ein Humanoider, den du innerhalb von 18 Metern sehen kannst, stirbt",
       "range": "18 Meter",
       "components": "V, G, M (ein winziger Silberkäfig im Wert von 100 GM)",
@@ -4614,10 +3735,6 @@
     "localized": {
       "name": "Snillocs Schneeballschwarm",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (ein Stück Eis oder ein kleiner Splitter weißen Steins)",
@@ -4625,13 +3742,6 @@
       "description": "Ein Schwarm magischer Schneebälle explodiert an einem Punkt in Reichweite. Jede Kreatur in einer Sphäre mit 1,5 Metern Radius muss einen Geschicklichkeitsrettungswurf ablegen und erleidet bei einem Misserfolg 3W6 Kälteschaden oder bei Erfolg halben Schaden.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "3d6",
-        "average": 10.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
     "descriptionKind": "original-summary",
@@ -4659,9 +3769,6 @@
     "localized": {
       "name": "Tempel der Götter",
       "school": "Beschwörung",
-      "classes": [
-        "cleric"
-      ],
       "castingTime": "1 Stunde",
       "range": "36 Meter",
       "components": "V, G, M (ein heiliges Symbol im Wert von mindestens 5 GM)",
@@ -4696,11 +3803,6 @@
     "localized": {
       "name": "Totenglocke",
       "school": "Nekromantie",
-      "classes": [
-        "cleric",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -4736,12 +3838,6 @@
     "localized": {
       "name": "Schutzwind",
       "school": "Hervorrufung",
-      "classes": [
-        "bard",
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V",
@@ -4775,22 +3871,12 @@
     "localized": {
       "name": "Wort des Strahlens",
       "school": "Hervorrufung",
-      "classes": [
-        "cleric"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (1,5-Meter-Radius)",
       "components": "V, M (ein heiliges Symbol)",
       "duration": "Unmittelbar",
       "description": "Du sprichst ein strahlendes Wort. Jede Kreatur deiner Wahl innerhalb von 1,5 Metern muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 1W6 Strahlenschaden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "radiant"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
     "descriptionKind": "original-summary",
@@ -4819,24 +3905,12 @@
     "localized": {
       "name": "Mentales Gefängnis",
       "school": "Illusion",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du sperrst den Geist einer Kreatur in eine illusionäre Zelle. Sie muss einen Intelligenzrettungswurf ablegen und erleidet bei einem Misserfolg 5W10 psychischen Schaden; außerdem glaubt sie, in einem gefährlichen Gefängnis festzusitzen. Verlässt sie die Illusion oder erleidet sie Schaden aus einer anderen Quelle, zerbricht die Illusion und sie erleidet zusätzlichen psychischen Schaden."
     },
-    "damage": [
-      {
-        "dice": "5d10",
-        "average": 27.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
     "descriptionKind": "original-summary",
@@ -4867,12 +3941,6 @@
     "localized": {
       "name": "Synaptische Statik",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G",
@@ -4880,13 +3948,6 @@
       "description": "Du lässt psychische Energie in einer Sphäre mit 6 Metern Radius detonieren. Kreaturen im Bereich müssen einen Intelligenzrettungswurf ablegen und erleiden bei einem Misserfolg 8W6 psychischen Schaden oder bei Erfolg halben Schaden. Bei einem Misserfolg bleibt außerdem eine geistige Störung zurück, die Angriffe, Attributswürfe und Konstitutionsrettungswürfe zum Aufrechterhalten der Konzentration beeinträchtigt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 5. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "8d6",
-        "average": 28,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 167,
     "descriptionKind": "original-summary",
@@ -4917,11 +3978,6 @@
     "localized": {
       "name": "Eismesser",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G, M (ein Wassertropfen oder ein Stück Eis)",
@@ -4929,18 +3985,6 @@
       "description": "Du erschaffst eine Eisscherbe und schleuderst sie auf eine Kreatur. Führe einen Fernkampf-Zauberangriff aus; bei einem Treffer erleidet das Ziel 1W10 Stichschaden. Unabhängig davon, ob der Angriff trifft, explodiert die Scherbe anschließend. Das Ziel und Kreaturen innerhalb von 1,5 Metern müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 2W6 Kälteschaden oder bei Erfolg halben Schaden.",
       "higherLevel": "Der Kälteschaden steigt für jeden Zauberplatzgrad über dem 1. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d10",
-        "average": 5.5,
-        "type": "piercing"
-      },
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
     "previousSource": "Elemental Evil Player's Companion, p. 19",
@@ -4972,12 +4016,6 @@
     "localized": {
       "name": "Geliehenes Wissen",
       "school": "Erkenntnis",
-      "classes": [
-        "bard",
-        "cleric",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "V, G, M (ein Buch im Wert von mindestens 25 GM)",
@@ -5013,43 +4051,19 @@
     "localized": {
       "name": "Kinetischer Sprung",
       "school": "Verwandlung",
-      "classes": [
-        "artificer",
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "G",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du bewegst dich mit übernatürlicher Gewandtheit. Deine Gehbewegungsrate steigt um 3 Meter, deine Bewegung provoziert keine Gelegenheitsangriffe und du kannst durch die Felder anderer Kreaturen gehen, als wären sie schwieriges Gelände. Beendest du deinen Zug im Feld einer anderen Kreatur, wirst du zum letzten freien Feld zurückversetzt und erleidest Kraftschaden."
     },
-    "damage": [
-      {
-        "dice": "1d8",
-        "average": 4.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "scc-2021",
     "rulesets": {
       "2014": true,
       "2024": true
     },
     "sourcePage": 37,
-    "descriptionKind": "original-summary",
-    "rulesetClasses": {
-      "2014": [
-        "artificer",
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
-      "2024": [
-        "artificer"
-      ]
-    }
+    "descriptionKind": "original-summary"
   },
   {
     "id": "scc-2021-silvery-barbs",
@@ -5071,11 +4085,6 @@
     "localized": {
       "name": "Silberne Widerhaken",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Reaktion, wenn eine Kreatur, die du innerhalb von 18 Metern sehen kannst, einen Angriffs-, Attributs- oder Rettungswurf besteht",
       "range": "18 Meter",
       "components": "V",
@@ -5110,10 +4119,6 @@
     "localized": {
       "name": "Wirbelverzerrung",
       "school": "Beschwörung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G",
@@ -5127,16 +4132,7 @@
       "2024": true
     },
     "sourcePage": 38,
-    "descriptionKind": "original-summary",
-    "rulesetClasses": {
-      "2014": [
-        "sorcerer",
-        "wizard"
-      ],
-      "2024": [
-        "artificer"
-      ]
-    }
+    "descriptionKind": "original-summary"
   },
   {
     "id": "scc-2021-wither-and-bloom",
@@ -5160,11 +4156,6 @@
     "localized": {
       "name": "Welken und Erblühen",
       "school": "Nekromantie",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (eine verwelkte, zu einer Schlaufe gedrehte Ranke)",
@@ -5172,13 +4163,6 @@
       "description": "Nekrotische Energie lässt Kreaturen in einer Sphäre mit 3 Metern Radius welken. Jede Kreatur darin muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 2W6 nekrotischen Schaden oder bei Erfolg halben Schaden. Außerdem kannst du eine Kreatur im Bereich wählen, die einen ihrer nicht ausgegebenen Trefferwürfel verbraucht und würfelt. Sie erhält Trefferpunkte in Höhe des Ergebnisses plus deines Zauberattributmodifikators zurück.",
       "higherLevel": "Der nekrotische Schaden steigt für jeden Zauberplatzgrad über dem 2. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "scc-2021",
     "sourcePage": 38,
     "descriptionKind": "original-summary",
@@ -5209,12 +4193,6 @@
     "localized": {
       "name": "Ashardalons Schritt",
       "school": "Verwandlung",
-      "classes": [
-        "artificer",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V, G",
@@ -5222,31 +4200,13 @@
       "description": "Flammen folgen deinen Füßen. Deine Bewegungsrate steigt um 6 Meter und deine Bewegung provoziert keine Gelegenheitsangriffe. Eine Kreatur oder ein ungetragener Gegenstand, an dem du dich während eines Zuges erstmals innerhalb von 1,5 Metern vorbeibewegst, erleidet 1W6 Feuerschaden durch die Hitze. Eine Kreatur oder ein Gegenstand kann diesen Schaden nur einmal pro Zug erleiden.",
       "higherLevel": "Für jeden Zauberplatzgrad über dem 3. steigt deine Bewegungsrate um weitere 1,5 Meter und der Feuerschaden um 1W6."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "fire"
-      }
-    ],
     "contentSourceId": "ftd-2021",
     "rulesets": {
       "2014": true,
       "2024": true
     },
     "sourcePage": 19,
-    "descriptionKind": "original-summary",
-    "rulesetClasses": {
-      "2014": [
-        "artificer",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
-      "2024": [
-        "artificer"
-      ]
-    }
+    "descriptionKind": "original-summary"
   },
   {
     "id": "ftd-2021-draconic-transformation",
@@ -5269,24 +4229,12 @@
     "localized": {
       "name": "Drachische Verwandlung",
       "school": "Verwandlung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "Selbst",
       "components": "V, G, M (eine Drachenstatuette im Wert von mindestens 500 GM)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du nimmst drakonische Merkmale an. Du erhältst Blindsicht mit 9 Metern Reichweite, körperlose Flügel mit einer Flugbewegungsrate von 18 Metern und einen Odem, den du beim Wirken des Zaubers und später als Bonusaktion einsetzen kannst. Der Odem ist ein 18-Meter-Kegel, der 6W8 Kraftschaden verursacht; ein erfolgreicher Geschicklichkeitsrettungswurf halbiert den Schaden."
     },
-    "damage": [
-      {
-        "dice": "6d8",
-        "average": 27,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 19,
     "descriptionKind": "original-summary",
@@ -5315,10 +4263,6 @@
     "localized": {
       "name": "Fizbans Platinschild",
       "school": "Bannmagie",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Bonusaktion",
       "range": "18 Meter",
       "components": "V, G, M (eine platinbeschichtete Drachenschuppe im Wert von mindestens 500 GM)",
@@ -5354,11 +4298,6 @@
     "localized": {
       "name": "Nathairs Schelmerei",
       "school": "Illusion",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G, M (ein Stück Apfelkuchenkruste)",
@@ -5395,12 +4334,6 @@
     "localized": {
       "name": "Raulothims psychische Lanze",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V",
@@ -5408,13 +4341,6 @@
       "description": "Du schleuderst eine Lanze psychischer Energie auf eine Kreatur, die du sehen kannst. Alternativ kannst du den Namen einer Kreatur aussprechen und sie ohne Sichtkontakt als Ziel wählen, sofern sie sich in Reichweite befindet. Das Ziel muss einen Intelligenzrettungswurf ablegen und erleidet bei einem Misserfolg 7W6 psychischen Schaden und ist bis zum Beginn deines nächsten Zuges kampfunfähig; bei Erfolg erleidet es halben Schaden.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 4. um 1W6."
     },
-    "damage": [
-      {
-        "dice": "7d6",
-        "average": 24.5,
-        "type": "psychic"
-      }
-    ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 21,
     "descriptionKind": "original-summary",
@@ -5444,10 +4370,6 @@
     "localized": {
       "name": "Rimes bindendes Eis",
       "school": "Hervorrufung",
-      "classes": [
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (9-Meter-Kegel)",
       "components": "G, M (ein Fläschchen Schmelzwasser)",
@@ -5455,13 +4377,6 @@
       "description": "Ein Schwall eisiger Energie bricht in einem 9-Meter-Kegel hervor. Kreaturen im Bereich müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 3W8 Kälteschaden oder bei Erfolg halben Schaden. Eine Kreatur, die den Rettungswurf nicht besteht, wird außerdem von Eis behindert und ihre Bewegungsrate sinkt auf 0, bis sie selbst oder eine andere Kreatur das Eis mit einer Aktion aufbricht.",
       "higherLevel": "Der Kälteschaden steigt für jeden Zauberplatzgrad über dem 2. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "3d8",
-        "average": 13.5,
-        "type": "cold"
-      }
-    ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 21,
     "descriptionKind": "original-summary",
@@ -5492,11 +4407,6 @@
     "localized": {
       "name": "Drachischen Geist beschwören",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein mit dem Bild eines Drachen gravierter Gegenstand im Wert von mindestens 500 GM)",
@@ -5527,27 +4437,16 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "You create a 40-foot-radius sphere of magical darkness and crushing gravity. The area is difficult terrain, blocks sound, and cannot be seen through with darkvision. Creatures entirely inside are deafened, immune to thunder damage, and unable to cast spells with verbal components. Creatures that enter the sphere for the first time on a turn or start their turn there make a Constitution saving throw, taking 8d10 force damage on a failure or half as much on a success.",
     "localized": {
       "name": "Dunkler Stern",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "45 Meter",
       "components": "V, G, M (ein Onyxsplitter und ein Tropfen des Blutes des Zaubernden, beides wird verbraucht)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine Sphäre mit 12 Metern Radius aus magischer Dunkelheit und erdrückender Gravitation. Das Gebiet ist schwieriges Gelände, blockiert Geräusche und kann auch mit Dunkelsicht nicht durchdrungen werden. Kreaturen, die sich vollständig darin befinden, sind taub, immun gegen Schallschaden und können keine Zauber mit verbalen Komponenten wirken. Kreaturen, die die Sphäre während eines Zuges erstmals betreten oder ihren Zug darin beginnen, müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 8W10 Kraftschaden oder bei Erfolg halben Schaden."
     },
-    "damage": [
-      {
-        "dice": "8d10",
-        "average": 44,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 186,
     "descriptionKind": "original-summary",
@@ -5571,15 +4470,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "both",
     "description": "You imbue yourself or one willing creature you can see with latent luck. Before the spell ends, the target can dismiss it to roll an additional d20 for an attack roll, ability check, or saving throw and choose which die to use. It can also use the magic when an attack roll is made against it.",
     "higherLevel": "You can target one additional creature for each spell slot level above 2.",
     "localized": {
       "name": "Glück des Schicksals",
       "school": "Erkenntnis",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "18 Meter",
       "components": "V, G, M (eine weiße Perle im Wert von mindestens 100 GM, die der Zauber verbraucht)",
@@ -5609,14 +4504,10 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "chronurgy",
     "description": "You touch a willing creature. For the duration, it adds 1d8 to its initiative rolls.",
     "localized": {
       "name": "Gabe der Schnelligkeit",
       "school": "Erkenntnis",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "Berührung",
       "components": "V, G",
@@ -5646,15 +4537,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "You create a 100-foot-long, 5-foot-wide line of crushing gravitational force. Creatures in the line make a Dexterity saving throw, taking 8d8 force damage on a failure or half as much on a success. Creatures that fail are also pulled 10 feet toward the center of the line.",
     "higherLevel": "The damage increases by 1d8 for each spell slot level above 6.",
     "localized": {
       "name": "Gravitationsspalte",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (30-Meter-Linie)",
       "components": "V, G, M (eine Handvoll Eisenfeilspäne)",
@@ -5662,13 +4549,6 @@
       "description": "Du erschaffst eine 30 Meter lange und 1,5 Meter breite Linie erdrückender Gravitationskraft. Kreaturen darin müssen einen Geschicklichkeitsrettungswurf ablegen und erleiden bei einem Misserfolg 8W8 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden außerdem 3 Meter zur Mitte der Linie gezogen.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 6. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "8d8",
-        "average": 36,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 187,
     "descriptionKind": "original-summary",
@@ -5692,15 +4572,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "A point within range collapses into a 20-foot-radius sphere of crushing gravity. Creatures in the area make a Strength saving throw, taking 5d10 force damage on a failure or half as much on a success. Creatures that fail are pulled 10 feet toward the center.",
     "higherLevel": "The damage increases by 1d10 for each spell slot level above 4.",
     "localized": {
       "name": "Gravitationssenke",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, M (eine schwarze Murmel)",
@@ -5708,13 +4584,6 @@
       "description": "Ein Punkt in Reichweite kollabiert zu einer Sphäre mit 6 Metern Radius aus erdrückender Gravitation. Kreaturen im Bereich müssen einen Stärkerettungswurf ablegen und erleiden bei einem Misserfolg 5W10 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden 3 Meter zum Zentrum gezogen.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 4. um 1W10."
     },
-    "damage": [
-      {
-        "dice": "5d10",
-        "average": 27.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 187,
     "descriptionKind": "original-summary",
@@ -5738,15 +4607,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "You touch an object weighing no more than 10 pounds and magically fix it in place. You and creatures you designate when casting can move it normally, and you can set a password that suppresses the spell for 1 minute when spoken within 5 feet. If fixed in the air, it can support up to 4,000 pounds; more weight makes it fall. Otherwise, a creature can use an action to make a Strength check against your spell save DC to move it up to 10 feet.",
     "higherLevel": "At 4th or 5th level, the DC to move the object increases by 5, it can support up to 8,000 pounds, and the duration becomes 24 hours. At 6th level or higher, the DC increases by 10, it can support up to 20,000 pounds, and the effect is permanent until dispelled.",
     "localized": {
       "name": "Unbeweglicher Gegenstand",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
       "components": "V, G, M (Goldstaub im Wert von mindestens 25 GM, den der Zauber verbraucht)",
@@ -5776,15 +4641,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "Gravity intensifies in a 10-foot-radius sphere centered on a point within range. Creatures in the area make a Constitution saving throw, taking 2d8 force damage on a failure or half as much on a success. A creature that fails also has its speed halved until the end of its next turn.",
     "higherLevel": "The damage increases by 1d8 for each spell slot level above 1.",
     "localized": {
       "name": "Gravitation verstärken",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G",
@@ -5792,13 +4653,6 @@
       "description": "Die Gravitation verstärkt sich in einer Sphäre mit 3 Metern Radius um einen Punkt in Reichweite. Kreaturen im Bereich müssen einen Konstitutionsrettungswurf ablegen und erleiden bei einem Misserfolg 2W8 Kraftschaden oder bei Erfolg halben Schaden. Bei einem Misserfolg wird außerdem ihre Bewegungsrate bis zum Ende ihres nächsten Zuges halbiert.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 1. um 1W8."
     },
-    "damage": [
-      {
-        "dice": "2d8",
-        "average": 9,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
     "descriptionKind": "original-summary",
@@ -5821,15 +4675,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "both",
     "description": "You release a wave of gravitational pressure in a 30-foot cone and choose whether it pushes or pulls. Each creature in the area makes a Constitution saving throw, taking 6d6 force damage on a failure or half as much on a success. Creatures that fail are pushed away from you or pulled toward you up to 15 feet. Unsecured objects entirely in the cone are moved the same distance.",
     "higherLevel": "The damage increases by 1d6 and the push or pull distance increases by 5 feet for each spell slot level above 3.",
     "localized": {
       "name": "Impulswelle",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst (9-Meter-Kegel)",
       "components": "V, G",
@@ -5837,13 +4687,6 @@
       "description": "Du setzt eine Welle gravitativen Drucks in einem 9-Meter-Kegel frei und entscheidest, ob sie wegstößt oder heranzieht. Jede Kreatur im Bereich muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 6W6 Kraftschaden oder bei Erfolg halben Schaden. Kreaturen, die den Rettungswurf nicht bestehen, werden bis zu 4,5 Meter von dir weggestoßen oder zu dir herangezogen. Unbefestigte Gegenstände vollständig im Kegel werden um dieselbe Distanz bewegt.",
       "higherLevel": "Der Schaden steigt für jeden Zauberplatzgrad über dem 3. um 1W6 und die Stoß- oder Zugdistanz um 1,5 Meter."
     },
-    "damage": [
-      {
-        "dice": "6d6",
-        "average": 21,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
     "descriptionKind": "original-summary",
@@ -5867,27 +4710,16 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "graviturgy",
     "description": "You create a 20-foot-radius sphere of destructive gravitational force. The sphere and the area within 100 feet of it become difficult terrain. Unsecured objects within 100 feet are pulled toward the center when the sphere appears and at the start of each of your turns. A creature that starts its turn within 100 feet makes a Strength saving throw or is pulled toward the center. A creature that enters the sphere or starts its turn there takes 5d10 force damage and is restrained; it can use an action to make a Strength check to free itself. A creature reduced to 0 hit points by the spell is annihilated.",
     "localized": {
       "name": "Gefräßige Leere",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "300 Meter",
       "components": "V, G, M (ein kleiner, neunzackiger Stern aus Eisen)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Du erschaffst eine Sphäre mit 6 Metern Radius aus zerstörerischer Gravitationskraft. Die Sphäre und das Gebiet innerhalb von 30 Metern werden zu schwierigem Gelände. Unbefestigte Gegenstände innerhalb von 30 Metern werden beim Erscheinen der Sphäre und zu Beginn jedes deiner Züge zu ihrem Zentrum gezogen. Eine Kreatur, die ihren Zug innerhalb von 30 Metern beginnt, muss einen Stärkerettungswurf ablegen oder wird zum Zentrum gezogen. Eine Kreatur, die die Sphäre betritt oder ihren Zug darin beginnt, erleidet 5W10 Kraftschaden und wird festgesetzt; sie kann eine Aktion verwenden und einen Stärkewurf ablegen, um sich zu befreien. Eine Kreatur, die durch den Zauber auf 0 Trefferpunkte reduziert wird, wird ausgelöscht."
     },
-    "damage": [
-      {
-        "dice": "5d10",
-        "average": 27.5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
     "descriptionKind": "original-summary",
@@ -5911,14 +4743,10 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "chronurgy",
     "description": "You fracture reality around one creature. On a failed Wisdom saving throw, it cannot take reactions and rolls on a table at the start of each of its turns to determine a disruptive effect. The effects can deal psychic, force, or cold damage, stun, blind, or teleport the target. It can repeat the save at the end of each turn.",
     "localized": {
       "name": "Realitätsbruch",
       "school": "Beschwörung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (ein Kristallprisma)",
@@ -5947,27 +4775,16 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "both",
     "description": "You sap a creature's vitality with a necrotic sting. It makes a Constitution saving throw, taking 1d4 necrotic damage and falling prone on a failure. The damage increases at character levels 5, 11, and 17.",
     "localized": {
       "name": "Schwächender Stich",
       "school": "Nekromantie",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G",
       "duration": "Unmittelbar",
       "description": "Du schwächst die Lebenskraft einer Kreatur mit einem nekrotischen Stich. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 1W4 nekrotischen Schaden und stürzt zu Boden. Der Schaden steigt auf Charakterstufe 5, 11 und 17 jeweils um 1W4."
     },
-    "damage": [
-      {
-        "dice": "1d4",
-        "average": 2.5,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
     "descriptionKind": "original-summary",
@@ -5990,15 +4807,11 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "chronurgy",
     "description": "You target the creature that triggered the reaction. It makes a Wisdom saving throw; on a failure, it vanishes into a temporal eddy until the start of its next turn, causing the triggering attack to miss or the spell to be wasted. It then reappears where it was or in the closest unoccupied space. The target does not remember the spell or its effect.",
     "higherLevel": "You can target one additional creature for each spell slot level above 5. All targets must be within 30 feet of one another.",
     "localized": {
       "name": "Zeitversatz",
       "school": "Verwandlung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Reaktion, wenn eine Kreatur, die du sehen kannst, einen Angriffswurf ausführt oder beginnt, einen Zauber zu wirken",
       "range": "36 Meter",
       "components": "V, G",
@@ -6029,14 +4842,10 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "both",
     "description": "Choose two creatures you can see within range. Each makes a Constitution saving throw, with disadvantage if they are within 30 feet of one another; either can willingly fail. If either save succeeds, the spell has no effect. If both fail, the creatures are linked for the duration: damage dealt to one is also dealt to the other, and hit points restored to one are restored to the other. If either reaches 0 hit points or the spell ends on one, it ends on both.",
     "localized": {
       "name": "Essenzfessel",
       "school": "Nekromantie",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "V, G, M (eine Spule Platindraht im Wert von mindestens 250 GM, die der Zauber verbraucht)",
@@ -6066,27 +4875,16 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "chronurgy",
     "description": "You force one creature to experience devastating rapid aging. It makes a Constitution saving throw, taking 10d12 necrotic damage on a failure or half as much on a success. On a failure, it also ages until it has only 30 days left before dying of old age, suffers disadvantage on attacks, ability checks, and saving throws, and has its walking speed halved. Only Wish or 9th-level Greater Restoration can reverse the aging.",
     "localized": {
       "name": "Zeitverheerung",
       "school": "Nekromantie",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "27 Meter",
       "components": "V, G, M (eine mit Diamantstaub im Wert von mindestens 5.000 GM gefüllte Sanduhr, die der Zauber verbraucht)",
       "duration": "Unmittelbar",
       "description": "Du zwingst eine Kreatur, eine verheerende beschleunigte Alterung zu durchleben. Sie muss einen Konstitutionsrettungswurf ablegen und erleidet bei einem Misserfolg 10W12 nekrotischen Schaden oder bei Erfolg halben Schaden. Bei einem Misserfolg altert sie außerdem so weit, dass ihr nur noch 30 Tage bis zu ihrem Tod durch Altersschwäche bleiben. Sie hat Nachteil auf Angriffe, Attributs- und Rettungswürfe und ihre Gehbewegungsrate wird halbiert. Nur Wunsch oder Genesung des 9. Grades können die Alterung rückgängig machen."
     },
-    "damage": [
-      {
-        "dice": "10d12",
-        "average": 65,
-        "type": "necrotic"
-      }
-    ],
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
     "descriptionKind": "original-summary",
@@ -6109,14 +4907,10 @@
     "classes": [
       "wizard"
     ],
-    "subclassRestriction": "both",
     "description": "You create a tiny extradimensional space in your wrist. You can store one object that fits within a 6-inch cube and weighs no more than 5 pounds, then retrieve it as a bonus action. If the spell ends while the object is stored, it appears at your feet.",
     "localized": {
       "name": "Handgelenktasche",
       "school": "Beschwörung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "G",
@@ -6153,12 +4947,6 @@
     "localized": {
       "name": "Wert verzerren",
       "school": "Illusion",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Minute",
       "range": "Berührung",
       "components": "V",
@@ -6195,11 +4983,6 @@
     "localized": {
       "name": "Schnelle Freunde",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "cleric",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V",
@@ -6235,10 +5018,6 @@
     "localized": {
       "name": "Gabe der Redegewandtheit",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "wizard"
-      ],
       "castingTime": "1 Reaktion, die du ausführst, wenn du mit einer anderen Kreatur sprichst",
       "range": "Selbst",
       "components": "V, G, R",
@@ -6276,12 +5055,6 @@
     "localized": {
       "name": "Habgier entfachen",
       "school": "Verzauberung",
-      "classes": [
-        "cleric",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "9 Meter",
       "components": "V, G, M (ein Edelstein im Wert von mindestens 50 GM)",
@@ -6315,9 +5088,6 @@
     "localized": {
       "name": "Jims leuchtende Münze",
       "school": "Verzauberung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G, M, R",
@@ -6353,9 +5123,6 @@
     "localized": {
       "name": "Jims Magisches Geschoss",
       "school": "Hervorrufung",
-      "classes": [
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "36 Meter",
       "components": "V, G, R",
@@ -6364,13 +5131,6 @@
       "description": "Du erschaffst drei Geschosse aus magischer Kraft und führst für jedes einen Fernkampf-Zauberangriff gegen eine Kreatur aus, die du in Reichweite sehen kannst. Ein Treffer verursacht 2W4 Kraftschaden. Ein kritischer Treffer verursacht stattdessen 5W4. Ist einer der Angriffswürfe eine natürliche 1, verfehlen alle Geschosse ihre Ziele und jedes verursacht dir 1 Kraftschaden.",
       "higherLevel": "Der Zauber erschafft für jeden Zauberplatzgrad über dem 1. ein zusätzliches Geschoss; außerdem steigt die Royalty-Komponente um 1 GM pro Grad."
     },
-    "damage": [
-      {
-        "dice": "2d4",
-        "average": 5,
-        "type": "force"
-      }
-    ],
     "contentSourceId": "ai-2019",
     "sourcePage": 76,
     "descriptionKind": "original-summary",
@@ -6399,10 +5159,6 @@
     "localized": {
       "name": "Motivierende Ansprache",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "cleric"
-      ],
       "castingTime": "1 Minute",
       "range": "18 Meter",
       "components": "V",
@@ -6443,16 +5199,6 @@
     "localized": {
       "name": "Gedanken kodieren",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "cleric",
-        "druid",
-        "paladin",
-        "ranger",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Selbst",
       "components": "G",
@@ -6460,7 +5206,6 @@
       "description": "Du löst eine Erinnerung, Idee oder Nachricht aus deinem Geist und formst sie zu einem greifbaren Faden aus leuchtender Energie. Der Faden erscheint an einem freien Ort innerhalb von 1,5 Metern, kann wie ein Band getragen werden und bleibt bis zum Ende der Wirkungsdauer oder bis du den Zauber erneut wirkst bestehen. Konzentrierst du dich auf Magie, die Gedanken anderer liest, kannst du stattdessen diese Gedanken kodieren. Wenn du einen Gedankenfaden hältst, kannst du seinen Inhalt empfangen.",
       "availabilityNote": "Nur über den Hintergrund Dimir-Agent oder mit Zustimmung der Spielleitung; der Hintergrund fügt den Zauber deiner Klassenliste hinzu."
     },
-    "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list.",
     "contentSourceId": "ggr-2018",
     "sourcePage": 47,
     "descriptionKind": "original-summary",
@@ -6492,13 +5237,6 @@
     "localized": {
       "name": "Luftblase",
       "school": "Beschwörung",
-      "classes": [
-        "artificer",
-        "druid",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "18 Meter",
       "components": "G",
@@ -6512,19 +5250,7 @@
       "2024": true
     },
     "sourcePage": 22,
-    "descriptionKind": "original-summary",
-    "rulesetClasses": {
-      "2014": [
-        "artificer",
-        "druid",
-        "ranger",
-        "sorcerer",
-        "wizard"
-      ],
-      "2024": [
-        "artificer"
-      ]
-    }
+    "descriptionKind": "original-summary"
   },
   {
     "id": "aag-2022-create-spelljamming-helm",
@@ -6546,10 +5272,6 @@
     "localized": {
       "name": "Spelljamming-Steuerstuhl erschaffen",
       "school": "Verwandlung",
-      "classes": [
-        "artificer",
-        "wizard"
-      ],
       "castingTime": "1 Aktion",
       "range": "Berührung",
       "components": "V, G, M (ein Kristallstab im Wert von mindestens 5.000 GM, der vom Zauber verbraucht wird)",
@@ -6562,16 +5284,7 @@
       "2024": true
     },
     "sourcePage": 22,
-    "descriptionKind": "original-summary",
-    "rulesetClasses": {
-      "2014": [
-        "artificer",
-        "wizard"
-      ],
-      "2024": [
-        "artificer"
-      ]
-    }
+    "descriptionKind": "original-summary"
   },
   {
     "id": "phb-2024-mind-sliver",
@@ -6593,24 +5306,12 @@
     "localized": {
       "name": "Mind Sliver",
       "school": "Verzauberung",
-      "classes": [
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "60 feet",
       "components": "V",
       "duration": "Instantaneous",
       "description": "Du fügst einer Kreatur psychischen Schaden zu und schwächst kurzzeitig ihren nächsten Rettungswurf."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "Psychic"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -6639,26 +5340,12 @@
     "localized": {
       "name": "Thunderclap",
       "school": "Hervorrufung",
-      "classes": [
-        "bard",
-        "druid",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "Selbst (5-foot Emanation)",
       "components": "G",
       "duration": "Instantaneous",
       "description": "Ein Donnerschlag trifft Kreaturen unmittelbar in deiner Nähe."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "Thunder"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -6685,24 +5372,12 @@
     "localized": {
       "name": "Toll the Dead",
       "school": "Nekromantie",
-      "classes": [
-        "cleric",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "60 feet",
       "components": "V, G",
       "duration": "Instantaneous",
       "description": "Eine geisterhafte Glocke verursacht nekrotischen Schaden, besonders bei bereits verwundeten Kreaturen."
     },
-    "damage": [
-      {
-        "dice": "1d8 / 1d12",
-        "average": 6.5,
-        "type": "Necrotic"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -6727,22 +5402,12 @@
     "localized": {
       "name": "Word of Radiance",
       "school": "Hervorrufung",
-      "classes": [
-        "cleric"
-      ],
       "castingTime": "Aktion",
       "range": "Selbst (5-foot Emanation)",
       "components": "V, M",
       "duration": "Instantaneous",
       "description": "Strahlendes Licht bricht aus dir hervor und schädigt Kreaturen deiner Wahl in deiner Nähe."
     },
-    "damage": [
-      {
-        "dice": "1d6",
-        "average": 3.5,
-        "type": "Radiant"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -6768,10 +5433,6 @@
     "localized": {
       "name": "Summon Beast",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (eine Feder, ein Fellbüschel und eine Fischflosse in einer vergoldeten Eichel im Wert von mindestens 200 GM)",
@@ -6806,12 +5467,6 @@
     "localized": {
       "name": "Summon Fey",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (eine vergoldete Blume im Wert von mindestens 300 GM)",
@@ -6844,10 +5499,6 @@
     "localized": {
       "name": "Summon Undead",
       "school": "Nekromantie",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (ein vergoldeter Schädel im Wert von mindestens 300 GM)",
@@ -6880,10 +5531,6 @@
     "localized": {
       "name": "Summon Aberration",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (ein eingelegter Tentakel und ein Augapfel in einem platinverzierten Fläschchen im Wert von mindestens 400 GM)",
@@ -6916,10 +5563,6 @@
     "localized": {
       "name": "Summon Construct",
       "school": "Beschwörung",
-      "classes": [
-        "artificer",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (eine abschließbare Kassette im Wert von mindestens 400 GM)",
@@ -6953,11 +5596,6 @@
     "localized": {
       "name": "Summon Elemental",
       "school": "Beschwörung",
-      "classes": [
-        "druid",
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (Luft, ein Kieselstein, Asche und Wasser in einem goldverzierten Fläschchen im Wert von mindestens 400 GM)",
@@ -6990,23 +5628,12 @@
     "localized": {
       "name": "Steel Wind Strike",
       "school": "Beschwörung",
-      "classes": [
-        "ranger",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "30 feet",
       "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
       "duration": "Instantaneous",
       "description": "Du greifst mehrere Gegner in einem übernatürlichen Schlaghagel an und teleportierst dich anschließend zu einem von ihnen."
     },
-    "damage": [
-      {
-        "dice": "6d10",
-        "average": 33,
-        "type": "Force"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -7033,10 +5660,6 @@
     "localized": {
       "name": "Summon Celestial",
       "school": "Beschwörung",
-      "classes": [
-        "cleric",
-        "paladin"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (ein Reliquiar im Wert von mindestens 500 GM)",
@@ -7071,25 +5694,12 @@
     "localized": {
       "name": "Synaptic Static",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "sorcerer",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "120 feet",
       "components": "V, G",
       "duration": "Instantaneous",
       "description": "Eine psychische Entladung schädigt Kreaturen und stört ihre Angriffe, Attributswürfe und Konzentration."
     },
-    "damage": [
-      {
-        "dice": "8d6",
-        "average": 28,
-        "type": "Psychic"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -7115,10 +5725,6 @@
     "localized": {
       "name": "Summon Fiend",
       "school": "Beschwörung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "90 feet",
       "components": "V, G, M (ein blutiges Fläschchen im Wert von mindestens 600 GM)",
@@ -7152,11 +5758,6 @@
     "localized": {
       "name": "Arcane Vigor",
       "school": "Bannmagie",
-      "classes": [
-        "artificer",
-        "sorcerer",
-        "wizard"
-      ],
       "castingTime": "Bonusaktion",
       "range": "Selbst",
       "components": "V, G",
@@ -7188,23 +5789,12 @@
     "localized": {
       "name": "Fount of Moonlight",
       "school": "Hervorrufung",
-      "classes": [
-        "bard",
-        "druid"
-      ],
       "castingTime": "Aktion",
       "range": "Selbst",
       "components": "V, G",
       "duration": "Konzentration, bis zu 10 Minuten",
       "description": "Mondähnliches Licht schützt dich, verstärkt Nahkampfangriffe und kann einen Angreifer blenden."
     },
-    "damage": [
-      {
-        "dice": "2d6",
-        "average": 7,
-        "type": "Radiant"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -7230,28 +5820,12 @@
     "localized": {
       "name": "Jallarzi's Storm of Radiance",
       "school": "Hervorrufung",
-      "classes": [
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "120 feet",
       "components": "V, G, M (eine Prise Phosphor)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Ein strahlender Gewittersturm blendet und betäubt Kreaturen und schädigt alle, die sich darin befinden."
     },
-    "damage": [
-      {
-        "dice": "2d10",
-        "average": 11,
-        "type": "Radiant"
-      },
-      {
-        "dice": "2d10",
-        "average": 11,
-        "type": "Thunder"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -7278,23 +5852,12 @@
     "localized": {
       "name": "Yolande's Regal Presence",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "Selbst (10-foot Emanation)",
       "components": "V, G, M (eine Miniatur-Tiara)",
       "duration": "Konzentration, bis zu 1 Minute",
       "description": "Deine majestätische Aura schädigt Kreaturen in deiner Nähe, bringt sie zu Fall und stößt sie zurück."
     },
-    "damage": [
-      {
-        "dice": "4d6",
-        "average": 14,
-        "type": "Psychic"
-      }
-    ],
     "contentSourceId": "phb-2024",
     "rulesets": {
       "2024": true
@@ -7322,11 +5885,6 @@
     "localized": {
       "name": "Tasha's Bubbling Cauldron",
       "school": "Beschwörung",
-      "classes": [
-        "bard",
-        "warlock",
-        "wizard"
-      ],
       "castingTime": "Aktion",
       "range": "5 feet",
       "components": "V, G, M (eine vergoldete Schöpfkelle im Wert von mindestens 500 GM)",
@@ -7359,10 +5917,6 @@
     "localized": {
       "name": "Power Word Fortify",
       "school": "Verzauberung",
-      "classes": [
-        "bard",
-        "cleric"
-      ],
       "castingTime": "Aktion",
       "range": "60 feet",
       "components": "V",
