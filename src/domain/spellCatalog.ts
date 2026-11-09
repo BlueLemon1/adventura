@@ -6,6 +6,34 @@ import additionalSpells from '../data/spells/spells-additional.json'
 import spellMechanics from '../data/spells/spell-mechanics.json'
 import spellAvailability from '../data/spells/spell-availability.json'
 
+export interface SpellDamageScaling {
+  kind: 'spell-slot' | 'character-level' | 'turn'
+  baseLevel?: number
+  startLevel?: number
+  interval?: number
+  dice?: string
+  mode?: 'add-dice' | 'add-instance'
+  timing?: string
+  condition?: string
+  thresholds?: Array<{ level: number; dice: string }>
+}
+
+export interface SpellDamageMechanic {
+  dice: string
+  average: number
+  type?: string
+  typeOptions?: string[]
+  condition?: string
+  timing?: string
+  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction'
+  flatBonus?: number | 'spellcasting-ability'
+  scaling?: SpellDamageScaling[]
+  diceRules?: {
+    explodeOn: number
+    maxAdditionalDice: 'spellcasting-ability'
+  }
+}
+
 export interface CatalogSpell {
   id: string
   name: string
@@ -35,28 +63,7 @@ export interface CatalogSpell {
     higherLevelLabel?: string
     availabilityNote?: string
   }
-  damage?: Array<{
-    dice: string
-    average: number
-    type?: string
-    typeOptions?: string[]
-    condition?: string
-    timing?: string
-    modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction'
-    flatBonus?: number | 'spellcasting-ability'
-    scaling?: Array<{
-      kind: 'spell-slot' | 'character-level' | 'turn'
-      baseLevel?: number
-      startLevel?: number
-      interval?: number
-      dice?: string
-      mode?: 'add-dice' | 'add-instance'
-      timing?: string
-      condition?: string
-      thresholds?: Array<{ level: number; dice: string }>
-    }>
-    diceRules?: { explodeOn: number; maxAdditionalDice: 'spellcasting-ability' }
-  }>
+  damage?: SpellDamageMechanic[]
   contentSourceId: string
   rulesets?: Partial<Record<Dnd5eRuleset, boolean | string>>
   sourcePage?: number
@@ -77,7 +84,7 @@ interface SpellAvailabilityMetadata {
 
 const mechanicsBySpellId = spellMechanics as Record<
   string,
-  NonNullable<CatalogSpell['damage']>
+  SpellDamageMechanic[]
 >
 const availabilityBySpellId = spellAvailability as Record<string, SpellAvailabilityMetadata>
 
