@@ -41,7 +41,6 @@ test('renamed 2014 SRD spell IDs resolve to their 2024 counterparts without edit
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-branding-smite'))
   assert.ok(spells2014.some((spell) => spell.id === 'srd-2014-feeblemind'))
   assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
-  assert.ok(catalogSource.includes('damage: mechanicsBySpellId[spell.id]'))
 })
 
 test('legacy records are explicitly marked when selected for 2024', () => {
