@@ -132,6 +132,29 @@ const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
 const additionalSpellRecords = readJson('src/data/spells-additional.json')
+const spellMechanics = readJson('src/data/spell-mechanics.json')
+const spellAvailability = readJson('src/data/spell-availability.json')
+const additionalSpellIds = new Set(additionalSpellRecords.map((spell) => spell.id))
+for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
+  if (!additionalSpellIds.has(spellId)) errors.push(`spell-mechanics/${spellId}: unknown spell ID`)
+  if (!Array.isArray(mechanics) || mechanics.some((entry) => !entry.dice || !Number.isFinite(entry.average))) {
+    errors.push(`spell-mechanics/${spellId}: invalid damage metadata`)
+  }
+}
+for (const [spellId, metadata] of Object.entries(spellAvailability)) {
+  if (!additionalSpellIds.has(spellId)) errors.push(`spell-availability/${spellId}: unknown spell ID`)
+  if (metadata.rulesetClasses && Object.keys(metadata.rulesetClasses).some((ruleset) => !['2014', '2024'].includes(ruleset))) {
+    errors.push(`spell-availability/${spellId}: unknown ruleset in class restrictions`)
+  }
+}
+for (const spell of additionalSpellRecords) {
+  if ('damage' in spell || 'rulesetClasses' in spell || 'subclassRestriction' in spell || 'availabilityNote' in spell) {
+    errors.push(`spells/${spell.id}: app-specific metadata must live in ID-keyed metadata files`)
+  }
+  if (spell.localized && 'classes' in spell.localized) {
+    errors.push(`spells/${spell.id}: localized.classes duplicates the canonical class list`)
+  }
+}
 const additionalSpellsById = new Map(additionalSpellRecords.map((spell) => [spell.id, spell]))
 for (const spell of additionalSpellRecords) {
   if (!spell.rulesets || typeof spell.rulesets !== 'object' || Array.isArray(spell.rulesets)) {
