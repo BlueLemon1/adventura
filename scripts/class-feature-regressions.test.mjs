@@ -178,8 +178,8 @@ test('shared feature definitions are reused across classes while progression occ
 })
 
 test('same mechanical feature may retain a class-specific display name', () => {
-  const tacticalWit = progressions.find((record) => record.progressionId === '2014-wizard-war-tactical-wit')
-  const temporalAwareness = progressions.find((record) => record.progressionId === '2014-wizard-chronurgy-temporal-awareness')
+  const tacticalWit = progressions.find((record) => (record.progressionId ?? record.featureId) === '2014-wizard-war-tactical-wit')
+  const temporalAwareness = progressions.find((record) => (record.progressionId ?? record.featureId) === '2014-wizard-chronurgy-temporal-awareness')
   assert.equal(tacticalWit?.featureId, temporalAwareness?.featureId)
   assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
   assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')
