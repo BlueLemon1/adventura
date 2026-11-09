@@ -8,7 +8,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-artificer-class-magical-tinkering",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#magical-tinkering"
   },
@@ -21,7 +20,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-artificer-class-spellcasting",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#spellcasting"
   },
@@ -34,7 +32,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-artificer-class-infuse-item",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#infuse-item"
   },
@@ -47,7 +44,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-class-artificer-specialist",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#artificer-specialist"
   },
@@ -60,7 +56,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-class-right-tool-for-the-job",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#right-tool-for-the-job"
   },
@@ -73,7 +68,6 @@
     "levels": {
       "2014": 4
     },
-    "progressionId": "2014-artificer-class-ability-score-improvement-4",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#ability-score-improvement-4"
   },
@@ -86,7 +80,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-artificer-class-tool-expertise",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#tool-expertise"
   },
@@ -99,7 +92,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-artificer-class-flash-of-genius",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#flash-of-genius"
   },
@@ -112,9 +104,9 @@
     "levels": {
       "2014": 8
     },
-    "progressionId": "2014-artificer-class-ability-score-improvement-8",
     "contentSourceId": "tce-2020",
-    "sourceReference": "artificer/class-features#ability-score-improvement-8"
+    "sourceReference": "artificer/class-features#ability-score-improvement-8",
+    "progressionId": "2014-artificer-class-ability-score-improvement-8"
   },
   {
     "featureId": "2014-artificer-class-magic-item-adept",
@@ -125,7 +117,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-artificer-class-magic-item-adept",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#magic-item-adept"
   },
@@ -138,7 +129,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-artificer-class-spell-storing-item",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#spell-storing-item"
   },
@@ -151,9 +141,9 @@
     "levels": {
       "2014": 12
     },
-    "progressionId": "2014-artificer-class-ability-score-improvement-12",
     "contentSourceId": "tce-2020",
-    "sourceReference": "artificer/class-features#ability-score-improvement-12"
+    "sourceReference": "artificer/class-features#ability-score-improvement-12",
+    "progressionId": "2014-artificer-class-ability-score-improvement-12"
   },
   {
     "featureId": "2014-artificer-class-magic-item-savant",
@@ -164,7 +154,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-artificer-class-magic-item-savant",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#magic-item-savant"
   },
@@ -177,9 +166,9 @@
     "levels": {
       "2014": 16
     },
-    "progressionId": "2014-artificer-class-ability-score-improvement-16",
     "contentSourceId": "tce-2020",
-    "sourceReference": "artificer/class-features#ability-score-improvement-16"
+    "sourceReference": "artificer/class-features#ability-score-improvement-16",
+    "progressionId": "2014-artificer-class-ability-score-improvement-16"
   },
   {
     "featureId": "2014-artificer-class-magic-item-master",
@@ -190,7 +179,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-artificer-class-magic-item-master",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#magic-item-master"
   },
@@ -203,9 +191,9 @@
     "levels": {
       "2014": 19
     },
-    "progressionId": "2014-artificer-class-ability-score-improvement-19",
     "contentSourceId": "tce-2020",
-    "sourceReference": "artificer/class-features#ability-score-improvement-19"
+    "sourceReference": "artificer/class-features#ability-score-improvement-19",
+    "progressionId": "2014-artificer-class-ability-score-improvement-19"
   },
   {
     "featureId": "2014-artificer-class-soul-of-artifice",
@@ -216,7 +204,6 @@
     "levels": {
       "2014": 20
     },
-    "progressionId": "2014-artificer-class-soul-of-artifice",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/class-features#soul-of-artifice"
   },
@@ -230,7 +217,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-alchemist-tools-of-trade",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#tools-of-trade"
   },
@@ -244,7 +230,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-alchemist-alchemist-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#alchemist-spells"
   },
@@ -258,7 +243,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-alchemist-experimental-elixir",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#experimental-elixir"
   },
@@ -272,7 +256,6 @@
     "levels": {
       "2014": 5
     },
-    "progressionId": "2014-artificer-alchemist-alchemical-savant",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#alchemical-savant"
   },
@@ -286,7 +269,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-artificer-alchemist-restorative-reagents",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#restorative-reagents"
   },
@@ -300,7 +282,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-artificer-alchemist-chemical-mastery",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/alchemist#chemical-mastery"
   },
@@ -314,7 +295,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-armorer-tools-of-trade",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#tools-of-trade"
   },
@@ -342,7 +322,6 @@
         "srd-2014-wall-of-force"
       ]
     },
-    "progressionId": "2014-artificer-armorer-armorer-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#armorer-spells"
   },
@@ -356,7 +335,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-armorer-arcane-armor",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#arcane-armor"
   },
@@ -370,7 +348,6 @@
     "levels": {
       "2014": 5
     },
-    "progressionId": "2014-artificer-armorer-extra-attack",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#extra-attack"
   },
@@ -384,7 +361,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-artificer-armorer-armor-modifications",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#armor-modifications"
   },
@@ -398,7 +374,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-artificer-armorer-perfected-armor",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/armorer#perfected-armor"
   },
@@ -412,7 +387,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-artillerist-tools-of-trade",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#tools-of-trade"
   },
@@ -440,7 +414,6 @@
         "srd-2014-wall-of-force"
       ]
     },
-    "progressionId": "2014-artificer-artillerist-artillerist-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#artillerist-spells"
   },
@@ -454,7 +427,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-artillerist-eldritch-cannon",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#eldritch-cannon"
   },
@@ -468,7 +440,6 @@
     "levels": {
       "2014": 5
     },
-    "progressionId": "2014-artificer-artillerist-arcane-firearm",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#arcane-firearm"
   },
@@ -482,7 +453,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-artificer-artillerist-explosive-cannon",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#explosive-cannon"
   },
@@ -496,7 +466,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-artificer-artillerist-fortified-position",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/artillerist#fortified-position"
   },
@@ -510,7 +479,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-battlesmith-tools-of-trade",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#tools-of-trade"
   },
@@ -524,7 +492,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-battlesmith-battle-smith-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#battle-smith-spells"
   },
@@ -538,7 +505,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-battlesmith-battle-ready",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#battle-ready"
   },
@@ -552,7 +518,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-artificer-battlesmith-steel-defender",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#steel-defender"
   },
@@ -566,9 +531,9 @@
     "levels": {
       "2014": 5
     },
-    "progressionId": "2014-artificer-battlesmith-extra-attack",
     "contentSourceId": "tce-2020",
-    "sourceReference": "artificer/battlesmith#extra-attack"
+    "sourceReference": "artificer/battlesmith#extra-attack",
+    "progressionId": "2014-artificer-battlesmith-extra-attack"
   },
   {
     "featureId": "2014-artificer-battlesmith-arcane-jolt",
@@ -580,7 +545,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-artificer-battlesmith-arcane-jolt",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#arcane-jolt"
   },
@@ -594,7 +558,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-artificer-battlesmith-improved-defender",
     "contentSourceId": "tce-2020",
     "sourceReference": "artificer/battlesmith#improved-defender"
   },
@@ -608,7 +571,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-barbarian-totemwarrior-spirit-seeker",
     "contentSourceId": "phb-2014",
     "sourceReference": "barbarian/totemwarrior#spirit-seeker"
   },
@@ -622,7 +584,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-barbarian-totemwarrior-totem-spirit",
     "contentSourceId": "phb-2014",
     "sourceReference": "barbarian/totemwarrior#totem-spirit"
   },
@@ -636,7 +597,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-barbarian-totemwarrior-aspect-of-the-beast",
     "contentSourceId": "phb-2014",
     "sourceReference": "barbarian/totemwarrior#aspect-of-the-beast"
   },
@@ -650,7 +610,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-barbarian-totemwarrior-spirit-walker",
     "contentSourceId": "phb-2014",
     "sourceReference": "barbarian/totemwarrior#spirit-walker"
   },
@@ -664,7 +623,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-barbarian-totemwarrior-totemic-attunement",
     "contentSourceId": "phb-2014",
     "sourceReference": "barbarian/totemwarrior#totemic-attunement"
   },
@@ -678,7 +636,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-bard-valor-bonus-proficiencies",
     "contentSourceId": "phb-2014",
     "sourceReference": "bard/valor#bonus-proficiencies"
   },
@@ -692,7 +649,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-bard-valor-combat-inspiration",
     "contentSourceId": "phb-2014",
     "sourceReference": "bard/valor#combat-inspiration"
   },
@@ -706,9 +662,9 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-bard-valor-extra-attack",
     "contentSourceId": "phb-2014",
-    "sourceReference": "bard/valor#extra-attack"
+    "sourceReference": "bard/valor#extra-attack",
+    "progressionId": "2014-bard-valor-extra-attack"
   },
   {
     "featureId": "2014-bard-valor-battle-magic",
@@ -720,7 +676,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-bard-valor-battle-magic",
     "contentSourceId": "phb-2014",
     "sourceReference": "bard/valor#battle-magic"
   },
@@ -734,7 +689,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-druid-moon-combat-wild-shape",
     "contentSourceId": "phb-2014",
     "sourceReference": "druid/moon#combat-wild-shape"
   },
@@ -748,7 +702,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-druid-moon-circle-forms",
     "contentSourceId": "phb-2014",
     "sourceReference": "druid/moon#circle-forms"
   },
@@ -762,7 +715,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-druid-moon-primal-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "druid/moon#primal-strike"
   },
@@ -776,7 +728,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-druid-moon-elemental-wild-shape",
     "contentSourceId": "phb-2014",
     "sourceReference": "druid/moon#elemental-wild-shape"
   },
@@ -790,7 +741,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-druid-moon-thousand-forms",
     "contentSourceId": "phb-2014",
     "sourceReference": "druid/moon#thousand-forms"
   },
@@ -804,7 +754,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-fighter-battlemaster-combat-superiority",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#combat-superiority"
   },
@@ -818,7 +767,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-fighter-battlemaster-student-of-war",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#student-of-war"
   },
@@ -832,7 +780,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-fighter-battlemaster-know-your-enemy",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#know-your-enemy"
   },
@@ -846,7 +793,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-fighter-battlemaster-improved-combat-superiority",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#improved-combat-superiority"
   },
@@ -860,7 +806,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-fighter-battlemaster-relentless",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#relentless"
   },
@@ -874,7 +819,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-fighter-battlemaster-improved-combat-superiority-level-18",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/battlemaster#improved-combat-superiority"
   },
@@ -888,7 +832,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-fighter-eldritchknight-spellcasting",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#spellcasting"
   },
@@ -902,7 +845,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-fighter-eldritchknight-weapon-bond",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#weapon-bond"
   },
@@ -916,7 +858,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-fighter-eldritchknight-war-magic",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#war-magic"
   },
@@ -930,7 +871,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-fighter-eldritchknight-eldritch-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#eldritch-strike"
   },
@@ -944,7 +884,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-fighter-eldritchknight-arcane-charge",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#arcane-charge"
   },
@@ -958,7 +897,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-fighter-eldritchknight-improved-war-magic",
     "contentSourceId": "phb-2014",
     "sourceReference": "fighter/eldritchknight#improved-war-magic"
   },
@@ -972,7 +910,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-monk-shadow-shadow-arts",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/shadow#shadow-arts"
   },
@@ -986,7 +923,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-monk-shadow-shadow-step",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/shadow#shadow-step"
   },
@@ -1000,7 +936,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-monk-shadow-cloak-of-shadows",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/shadow#cloak-of-shadows"
   },
@@ -1014,7 +949,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-monk-shadow-opportunist",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/shadow#opportunist"
   },
@@ -1028,7 +962,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-monk-four_elements-disciple-of-the-elements",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#disciple-of-the-elements"
   },
@@ -1042,7 +975,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-monk-four_elements-elemental-disciplines",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#elemental-disciplines"
   },
@@ -1056,7 +988,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-monk-four_elements-elemental-disciplines-level-11",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#elemental-disciplines"
   },
@@ -1070,7 +1001,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-monk-four_elements-elemental-disciplines-level-17",
     "contentSourceId": "phb-2014",
     "sourceReference": "monk/four_elements#elemental-disciplines"
   },
@@ -1084,7 +1014,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-ancients-oath-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/ancients#oath-spells"
   },
@@ -1098,7 +1027,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-ancients-channel-divinity",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/ancients#channel-divinity"
   },
@@ -1112,7 +1040,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-paladin-ancients-aura-of-warding",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/ancients#aura-of-warding"
   },
@@ -1126,7 +1053,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-paladin-ancients-undying-sentinel",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/ancients#undying-sentinel"
   },
@@ -1140,7 +1066,6 @@
     "levels": {
       "2014": 20
     },
-    "progressionId": "2014-paladin-ancients-elder-champion",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/ancients#elder-champion"
   },
@@ -1154,7 +1079,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-vengeance-oath-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/vengeance#oath-spells"
   },
@@ -1168,7 +1092,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-vengeance-channel-divinity",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/vengeance#channel-divinity"
   },
@@ -1182,7 +1105,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-paladin-vengeance-relentless-avenger",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/vengeance#relentless-avenger"
   },
@@ -1196,7 +1118,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-paladin-vengeance-soul-of-vengeance",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/vengeance#soul-of-vengeance"
   },
@@ -1210,7 +1131,6 @@
     "levels": {
       "2014": 20
     },
-    "progressionId": "2014-paladin-vengeance-avenging-angel",
     "contentSourceId": "phb-2014",
     "sourceReference": "paladin/vengeance#avenging-angel"
   },
@@ -1224,7 +1144,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-ranger-beastmaster-ranger-s-companion",
     "contentSourceId": "phb-2014",
     "sourceReference": "ranger/beastmaster#ranger-s-companion"
   },
@@ -1238,7 +1157,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-ranger-beastmaster-exceptional-training",
     "contentSourceId": "phb-2014",
     "sourceReference": "ranger/beastmaster#exceptional-training"
   },
@@ -1252,7 +1170,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-ranger-beastmaster-bestial-fury",
     "contentSourceId": "phb-2014",
     "sourceReference": "ranger/beastmaster#bestial-fury"
   },
@@ -1266,7 +1183,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-ranger-beastmaster-share-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "ranger/beastmaster#share-spells"
   },
@@ -1280,7 +1196,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-assassin-bonus-proficiencies",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/assassin#bonus-proficiencies"
   },
@@ -1294,7 +1209,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-assassin-assassinate",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/assassin#assassinate"
   },
@@ -1308,7 +1222,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-rogue-assassin-infiltration-expertise",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/assassin#infiltration-expertise"
   },
@@ -1322,7 +1235,6 @@
     "levels": {
       "2014": 13
     },
-    "progressionId": "2014-rogue-assassin-impostor",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/assassin#impostor"
   },
@@ -1336,7 +1248,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-rogue-assassin-death-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/assassin#death-strike"
   },
@@ -1350,7 +1261,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-arcanetrickster-spellcasting",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/arcanetrickster#spellcasting"
   },
@@ -1364,7 +1274,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-arcanetrickster-mage-hand-legerdemain",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/arcanetrickster#mage-hand-legerdemain"
   },
@@ -1378,7 +1287,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-rogue-arcanetrickster-magical-ambush",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/arcanetrickster#magical-ambush"
   },
@@ -1392,7 +1300,6 @@
     "levels": {
       "2014": 13
     },
-    "progressionId": "2014-rogue-arcanetrickster-versatile-trickster",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/arcanetrickster#versatile-trickster"
   },
@@ -1406,7 +1313,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-rogue-arcanetrickster-spell-thief",
     "contentSourceId": "phb-2014",
     "sourceReference": "rogue/arcanetrickster#spell-thief"
   },
@@ -1420,7 +1326,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-wildmagic-wild-magic-surge",
     "contentSourceId": "phb-2014",
     "sourceReference": "sorcerer/wildmagic#wild-magic-surge"
   },
@@ -1434,7 +1339,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-wildmagic-tides-of-chaos",
     "contentSourceId": "phb-2014",
     "sourceReference": "sorcerer/wildmagic#tides-of-chaos"
   },
@@ -1448,7 +1352,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-sorcerer-wildmagic-bend-luck",
     "contentSourceId": "phb-2014",
     "sourceReference": "sorcerer/wildmagic#bend-luck"
   },
@@ -1462,7 +1365,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-sorcerer-wildmagic-controlled-chaos",
     "contentSourceId": "phb-2014",
     "sourceReference": "sorcerer/wildmagic#controlled-chaos"
   },
@@ -1476,7 +1378,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-sorcerer-wildmagic-spell-bombardment",
     "contentSourceId": "phb-2014",
     "sourceReference": "sorcerer/wildmagic#spell-bombardment"
   },
@@ -1490,7 +1391,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-archfey-expanded-spell-list",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/archfey#expanded-spell-list"
   },
@@ -1504,7 +1404,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-archfey-fey-presence",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/archfey#fey-presence"
   },
@@ -1518,7 +1417,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-warlock-archfey-misty-escape",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/archfey#misty-escape"
   },
@@ -1532,7 +1430,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-warlock-archfey-beguiling-defenses",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/archfey#beguiling-defenses"
   },
@@ -1546,7 +1443,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-warlock-archfey-dark-delirium",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/archfey#dark-delirium"
   },
@@ -1560,7 +1456,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-greatoldone-expanded-spell-list",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/greatoldone#expanded-spell-list"
   },
@@ -1574,7 +1469,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-greatoldone-awakened-mind",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/greatoldone#awakened-mind"
   },
@@ -1588,7 +1482,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-warlock-greatoldone-entropic-ward",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/greatoldone#entropic-ward"
   },
@@ -1602,7 +1495,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-warlock-greatoldone-thought-shield",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/greatoldone#thought-shield"
   },
@@ -1616,7 +1508,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-warlock-greatoldone-create-thrall",
     "contentSourceId": "phb-2014",
     "sourceReference": "warlock/greatoldone#create-thrall"
   },
@@ -1630,7 +1521,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-abjuration-abjuration-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/abjuration#abjuration-savant"
   },
@@ -1644,7 +1534,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-abjuration-arcane-ward",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/abjuration#arcane-ward"
   },
@@ -1658,7 +1547,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-wizard-abjuration-projected-ward",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/abjuration#projected-ward"
   },
@@ -1672,7 +1560,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-wizard-abjuration-improved-abjuration",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/abjuration#improved-abjuration"
   },
@@ -1686,7 +1573,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-wizard-abjuration-spell-resistance",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/abjuration#spell-resistance"
   },
@@ -1702,7 +1588,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-conjuration-conjuration-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/conjuration#conjuration-savant"
   },
@@ -1718,7 +1603,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-conjuration-minor-conjuration",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/conjuration#minor-conjuration"
   },
@@ -1734,7 +1618,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-conjuration-benign-transposition",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/conjuration#benign-transposition"
   },
@@ -1750,7 +1633,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-conjuration-focused-conjuration",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/conjuration#focused-conjuration"
   },
@@ -1766,7 +1648,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-conjuration-durable-summons",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/conjuration#durable-summons"
   },
@@ -1780,7 +1661,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-divination-divination-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/divination#divination-savant"
   },
@@ -1794,7 +1674,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-divination-portent",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/divination#portent"
   },
@@ -1808,7 +1687,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-wizard-divination-expert-divination",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/divination#expert-divination"
   },
@@ -1822,7 +1700,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-wizard-divination-the-third-eye",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/divination#the-third-eye"
   },
@@ -1836,7 +1713,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-wizard-divination-greater-portent",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/divination#greater-portent"
   },
@@ -1852,7 +1728,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-enchantment-enchantment-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/enchantment#enchantment-savant"
   },
@@ -1868,7 +1743,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-enchantment-hypnotic-gaze",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/enchantment#hypnotic-gaze"
   },
@@ -1884,7 +1758,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-enchantment-instinctive-charm",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/enchantment#instinctive-charm"
   },
@@ -1900,7 +1773,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-enchantment-split-enchantment",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/enchantment#split-enchantment"
   },
@@ -1916,7 +1788,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-enchantment-alter-memories",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/enchantment#alter-memories"
   },
@@ -1930,7 +1801,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-illusion-illusion-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/illusion#illusion-savant"
   },
@@ -1944,7 +1814,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-wizard-illusion-improved-minor-illusion",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/illusion#improved-minor-illusion"
   },
@@ -1958,7 +1827,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-wizard-illusion-malleable-illusions",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/illusion#malleable-illusions"
   },
@@ -1972,7 +1840,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-wizard-illusion-illusory-self",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/illusion#illusory-self"
   },
@@ -1986,7 +1853,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-wizard-illusion-illusory-reality",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/illusion#illusory-reality"
   },
@@ -2002,7 +1868,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-necromancy-necromancy-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/necromancy#necromancy-savant"
   },
@@ -2018,7 +1883,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-necromancy-grim-harvest",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/necromancy#grim-harvest"
   },
@@ -2034,7 +1898,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-necromancy-undead-thralls",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/necromancy#undead-thralls"
   },
@@ -2050,7 +1913,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-necromancy-inured-to-undeath",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/necromancy#inured-to-undeath"
   },
@@ -2066,7 +1928,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-necromancy-command-undead",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/necromancy#command-undead"
   },
@@ -2082,7 +1943,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-transmutation-transmutation-savant",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/transmutation#transmutation-savant"
   },
@@ -2098,7 +1958,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-transmutation-minor-alchemy",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/transmutation#minor-alchemy"
   },
@@ -2114,7 +1973,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-transmutation-transmuter-s-stone",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/transmutation#transmuter-s-stone"
   },
@@ -2130,7 +1988,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-transmutation-shapechanger",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/transmutation#shapechanger"
   },
@@ -2146,7 +2003,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-transmutation-master-transmuter",
     "contentSourceId": "phb-2014",
     "sourceReference": "wizard/transmutation#master-transmuter"
   },
@@ -2162,7 +2018,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-knowledge-blessings-of-knowledge",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#blessings-of-knowledge"
   },
@@ -2204,7 +2059,6 @@
         "srd-2024-scrying"
       ]
     },
-    "progressionId": "2014-cleric-knowledge-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#domain-spells"
   },
@@ -2220,7 +2074,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-knowledge-channel-divinity-knowledge-of-the-ages",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#channel-divinity-knowledge-of-the-ages"
   },
@@ -2236,7 +2089,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-knowledge-channel-divinity-read-thoughts",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#channel-divinity-read-thoughts"
   },
@@ -2252,7 +2104,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-knowledge-potent-spellcasting",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#potent-spellcasting"
   },
@@ -2268,7 +2119,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-knowledge-visions-of-the-past",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/knowledge#visions-of-the-past"
   },
@@ -2282,7 +2132,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-light-bonus-cantrip",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#bonus-cantrip"
   },
@@ -2296,7 +2145,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-light-warding-flare",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#warding-flare"
   },
@@ -2324,7 +2172,6 @@
         "srd-2014-scrying"
       ]
     },
-    "progressionId": "2014-cleric-light-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#domain-spells"
   },
@@ -2338,7 +2185,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-cleric-light-channel-divinity-radiance-of-the-dawn",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#channel-divinity-radiance-of-the-dawn"
   },
@@ -2352,7 +2198,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-cleric-light-improved-flare",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#improved-flare"
   },
@@ -2366,9 +2211,9 @@
     "levels": {
       "2014": 8
     },
-    "progressionId": "2014-cleric-light-potent-spellcasting",
     "contentSourceId": "phb-2014",
-    "sourceReference": "cleric/light#potent-spellcasting"
+    "sourceReference": "cleric/light#potent-spellcasting",
+    "progressionId": "2014-cleric-light-potent-spellcasting"
   },
   {
     "featureId": "2014-cleric-light-corona-of-light",
@@ -2380,7 +2225,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-cleric-light-corona-of-light",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/light#corona-of-light"
   },
@@ -2396,7 +2240,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-nature-acolyte-of-nature",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#acolyte-of-nature"
   },
@@ -2412,7 +2255,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-nature-bonus-proficiency",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#bonus-proficiency"
   },
@@ -2428,7 +2270,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-nature-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#domain-spells"
   },
@@ -2444,7 +2285,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-nature-channel-divinity-charm-animals-and-plants",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#channel-divinity-charm-animals-and-plants"
   },
@@ -2460,7 +2300,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-nature-dampen-elements",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#dampen-elements"
   },
@@ -2476,7 +2315,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-nature-divine-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#divine-strike"
   },
@@ -2492,7 +2330,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-nature-master-of-nature",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/nature#master-of-nature"
   },
@@ -2508,7 +2345,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-tempest-bonus-proficiencies",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#bonus-proficiencies"
   },
@@ -2524,7 +2360,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-tempest-wrath-of-the-storm",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#wrath-of-the-storm"
   },
@@ -2540,7 +2375,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-tempest-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#domain-spells"
   },
@@ -2556,7 +2390,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-tempest-channel-divinity-destructive-wrath",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#channel-divinity-destructive-wrath"
   },
@@ -2572,7 +2405,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-tempest-thunderbolt-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#thunderbolt-strike"
   },
@@ -2588,7 +2420,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-tempest-divine-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#divine-strike"
   },
@@ -2604,7 +2435,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-tempest-stormborn",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/tempest#stormborn"
   },
@@ -2618,7 +2448,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-trickery-blessing-of-the-trickster",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/trickery#blessing-of-the-trickster"
   },
@@ -2632,7 +2461,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-trickery-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/trickery#domain-spells"
   },
@@ -2646,7 +2474,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-cleric-trickery-channel-divinity-invoke-duplicity",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/trickery#channel-divinity-invoke-duplicity"
   },
@@ -2660,7 +2487,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-cleric-trickery-channel-divinity-cloak-of-shadows",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/trickery#channel-divinity-cloak-of-shadows"
   },
@@ -2674,9 +2500,9 @@
     "levels": {
       "2014": 8
     },
-    "progressionId": "2014-cleric-trickery-divine-strike",
     "contentSourceId": "phb-2014",
-    "sourceReference": "cleric/trickery#divine-strike"
+    "sourceReference": "cleric/trickery#divine-strike",
+    "progressionId": "2014-cleric-trickery-divine-strike"
   },
   {
     "featureId": "2014-cleric-trickery-improved-duplicity",
@@ -2688,7 +2514,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-cleric-trickery-improved-duplicity",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/trickery#improved-duplicity"
   },
@@ -2702,9 +2527,9 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-war-bonus-proficiencies",
     "contentSourceId": "phb-2014",
-    "sourceReference": "cleric/war#bonus-proficiencies"
+    "sourceReference": "cleric/war#bonus-proficiencies",
+    "progressionId": "2014-cleric-war-bonus-proficiencies"
   },
   {
     "featureId": "2014-cleric-war-war-priest",
@@ -2716,7 +2541,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-war-war-priest",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#war-priest"
   },
@@ -2730,7 +2554,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-cleric-war-domain-spells",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#domain-spells"
   },
@@ -2744,7 +2567,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-cleric-war-channel-divinity-guided-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#channel-divinity-guided-strike"
   },
@@ -2758,7 +2580,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-cleric-war-channel-divinity-war-god-s-blessing",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#channel-divinity-war-god-s-blessing"
   },
@@ -2772,7 +2593,6 @@
     "levels": {
       "2014": 8
     },
-    "progressionId": "2014-cleric-war-divine-strike",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#divine-strike"
   },
@@ -2786,7 +2606,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-cleric-war-avatar-of-battle",
     "contentSourceId": "phb-2014",
     "sourceReference": "cleric/war#avatar-of-battle"
   },
@@ -2802,7 +2621,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-ancestralguardian-ancestral-protectors",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/ancestralguardian#ancestral-protectors"
   },
@@ -2818,7 +2636,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-ancestralguardian-spirit-shield",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/ancestralguardian#spirit-shield"
   },
@@ -2834,7 +2651,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-ancestralguardian-consult-the-spirits",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/ancestralguardian#consult-the-spirits"
   },
@@ -2850,7 +2666,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-ancestralguardian-vengeful-ancestors",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/ancestralguardian#vengeful-ancestors"
   },
@@ -2866,7 +2681,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-stormherald-storm-aura",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/stormherald#storm-aura"
   },
@@ -2882,7 +2696,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-stormherald-storm-soul",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/stormherald#storm-soul"
   },
@@ -2898,7 +2711,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-stormherald-shielding-storm",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/stormherald#shielding-storm"
   },
@@ -2914,7 +2726,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-stormherald-raging-storm",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/stormherald#raging-storm"
   },
@@ -2928,7 +2739,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-barbarian-zealot-divine-fury",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/zealot#divine-fury"
   },
@@ -2942,7 +2752,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-barbarian-zealot-warrior-of-the-gods",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/zealot#warrior-of-the-gods"
   },
@@ -2956,7 +2765,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-barbarian-zealot-fanatical-focus",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/zealot#fanatical-focus"
   },
@@ -2970,7 +2778,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-barbarian-zealot-zealous-presence",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/zealot#zealous-presence"
   },
@@ -2984,7 +2791,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-barbarian-zealot-rage-beyond-death",
     "contentSourceId": "xge-2017",
     "sourceReference": "barbarian/zealot#rage-beyond-death"
   },
@@ -2998,7 +2804,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-bard-glamour-mantle-of-inspiration",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/glamour#mantle-of-inspiration"
   },
@@ -3012,7 +2817,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-bard-glamour-enthralling-performance",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/glamour#enthralling-performance"
   },
@@ -3026,7 +2830,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-bard-glamour-mantle-of-majesty",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/glamour#mantle-of-majesty"
   },
@@ -3040,7 +2843,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-bard-glamour-unbreakable-majesty",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/glamour#unbreakable-majesty"
   },
@@ -3056,7 +2858,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-swords-bonus-proficiencies",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/swords#bonus-proficiencies"
   },
@@ -3072,7 +2873,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-swords-fighting-style",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/swords#fighting-style"
   },
@@ -3088,7 +2888,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-swords-blade-flourish",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/swords#blade-flourish"
   },
@@ -3104,9 +2903,9 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-swords-extra-attack",
     "contentSourceId": "xge-2017",
-    "sourceReference": "bard/swords#extra-attack"
+    "sourceReference": "bard/swords#extra-attack",
+    "progressionId": "2014-bard-swords-extra-attack"
   },
   {
     "featureId": "2014-bard-swords-master-s-flourish",
@@ -3120,7 +2919,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-swords-master-s-flourish",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/swords#master-s-flourish"
   },
@@ -3136,7 +2934,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-whispers-psychic-blades",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/whispers#psychic-blades"
   },
@@ -3152,7 +2949,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-whispers-words-of-terror",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/whispers#words-of-terror"
   },
@@ -3168,7 +2964,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-whispers-mantle-of-whispers",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/whispers#mantle-of-whispers"
   },
@@ -3184,7 +2979,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-whispers-shadow-lore",
     "contentSourceId": "xge-2017",
     "sourceReference": "bard/whispers#shadow-lore"
   },
@@ -3200,7 +2994,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-forge-bonus-proficiencies",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#bonus-proficiencies"
   },
@@ -3216,7 +3009,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-forge-blessing-of-the-forge",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#blessing-of-the-forge"
   },
@@ -3232,7 +3024,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-forge-channel-divinity-artisan-s-blessing",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#channel-divinity-artisan-s-blessing"
   },
@@ -3248,7 +3039,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-forge-soul-of-the-forge",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#soul-of-the-forge"
   },
@@ -3264,7 +3054,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-forge-divine-strike",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#divine-strike"
   },
@@ -3280,7 +3069,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-forge-saint-of-forge-and-fire",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/forge#saint-of-forge-and-fire"
   },
@@ -3296,7 +3084,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-grave-circle-of-mortality",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/grave#circle-of-mortality"
   },
@@ -3312,7 +3099,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-grave-eyes-of-the-grave",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/grave#eyes-of-the-grave"
   },
@@ -3328,7 +3114,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-grave-channel-divinity-path-to-the-grave",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/grave#channel-divinity-path-to-the-grave"
   },
@@ -3344,7 +3129,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-grave-sentinel-at-death-s-door",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/grave#sentinel-at-death-s-door"
   },
@@ -3360,9 +3144,9 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-grave-potent-spellcasting",
     "contentSourceId": "xge-2017",
-    "sourceReference": "cleric/grave#potent-spellcasting"
+    "sourceReference": "cleric/grave#potent-spellcasting",
+    "progressionId": "2014-cleric-grave-potent-spellcasting"
   },
   {
     "featureId": "2014-cleric-grave-keeper-of-souls",
@@ -3376,7 +3160,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-grave-keeper-of-souls",
     "contentSourceId": "xge-2017",
     "sourceReference": "cleric/grave#keeper-of-souls"
   },
@@ -3392,7 +3175,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-dreams-balm-of-the-summer-court",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/dreams#balm-of-the-summer-court"
   },
@@ -3408,7 +3190,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-dreams-world-of-dreams",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/dreams#world-of-dreams"
   },
@@ -3424,7 +3205,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-druid-dreams-hearth-of-moonlight-and-shadow",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/dreams#hearth-of-moonlight-and-shadow"
   },
@@ -3440,7 +3220,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-druid-dreams-hidden-paths",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/dreams#hidden-paths"
   },
@@ -3456,7 +3235,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-druid-dreams-walker-in-dreams",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/dreams#walker-in-dreams"
   },
@@ -3472,7 +3250,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-shepherd-speech-of-the-woods",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/shepherd#speech-of-the-woods"
   },
@@ -3488,7 +3265,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-shepherd-spirit-totem",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/shepherd#spirit-totem"
   },
@@ -3504,7 +3280,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-druid-shepherd-mighty-summoner",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/shepherd#mighty-summoner"
   },
@@ -3520,7 +3295,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-druid-shepherd-guardian-spirit",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/shepherd#guardian-spirit"
   },
@@ -3536,7 +3310,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-druid-shepherd-faithful-summons",
     "contentSourceId": "xge-2017",
     "sourceReference": "druid/shepherd#faithful-summons"
   },
@@ -3552,7 +3325,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-arcanearcher-arcane-archer-lore",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/arcanearcher#arcane-archer-lore"
   },
@@ -3568,7 +3340,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-arcanearcher-arcane-shot",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/arcanearcher#arcane-shot"
   },
@@ -3584,7 +3355,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-arcanearcher-magic-arrow",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/arcanearcher#magic-arrow"
   },
@@ -3600,7 +3370,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-arcanearcher-curving-shot",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/arcanearcher#curving-shot"
   },
@@ -3616,7 +3385,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-arcanearcher-ever-ready-shot",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/arcanearcher#ever-ready-shot"
   },
@@ -3632,7 +3400,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-cavalier-bonus-proficiency",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#bonus-proficiency"
   },
@@ -3648,7 +3415,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-cavalier-born-to-the-saddle",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#born-to-the-saddle"
   },
@@ -3664,7 +3430,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-cavalier-unwavering-mark",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#unwavering-mark"
   },
@@ -3680,7 +3445,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-cavalier-warding-maneuver",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#warding-maneuver"
   },
@@ -3696,7 +3460,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-cavalier-hold-the-line",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#hold-the-line"
   },
@@ -3712,7 +3475,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-fighter-cavalier-ferocious-charger",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#ferocious-charger"
   },
@@ -3728,7 +3490,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-fighter-cavalier-vigilant-defender",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/cavalier#vigilant-defender"
   },
@@ -3744,7 +3505,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-samurai-bonus-proficiency",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#bonus-proficiency"
   },
@@ -3760,7 +3520,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-samurai-fighting-spirit",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#fighting-spirit"
   },
@@ -3776,7 +3535,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-samurai-elegant-courtier",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#elegant-courtier"
   },
@@ -3792,7 +3550,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-samurai-tireless-spirit",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#tireless-spirit"
   },
@@ -3808,7 +3565,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-fighter-samurai-rapid-strike",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#rapid-strike"
   },
@@ -3824,7 +3580,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-fighter-samurai-strength-before-death",
     "contentSourceId": "xge-2017",
     "sourceReference": "fighter/samurai#strength-before-death"
   },
@@ -3840,7 +3595,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-drunkenmaster-bonus-proficiencies",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/drunkenmaster#bonus-proficiencies"
   },
@@ -3856,7 +3610,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-drunkenmaster-drunken-technique",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/drunkenmaster#drunken-technique"
   },
@@ -3872,7 +3625,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-drunkenmaster-tipsy-sway",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/drunkenmaster#tipsy-sway"
   },
@@ -3888,7 +3640,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-drunkenmaster-drunkard-s-luck",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/drunkenmaster#drunkard-s-luck"
   },
@@ -3904,7 +3655,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-drunkenmaster-intoxicated-frenzy",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/drunkenmaster#intoxicated-frenzy"
   },
@@ -3920,7 +3670,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-kensei-path-of-the-kensei",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/kensei#path-of-the-kensei"
   },
@@ -3936,7 +3685,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-kensei-agile-parry",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/kensei#agile-parry"
   },
@@ -3952,7 +3700,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-kensei-one-with-the-blade",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/kensei#one-with-the-blade"
   },
@@ -3968,7 +3715,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-kensei-sharpen-the-blade",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/kensei#sharpen-the-blade"
   },
@@ -3984,7 +3730,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-kensei-unerring-accuracy",
     "contentSourceId": "xge-2017",
     "sourceReference": "monk/kensei#unerring-accuracy"
   },
@@ -4000,7 +3745,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-conquest-oath-spells",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/conquest#oath-spells"
   },
@@ -4016,7 +3760,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-conquest-channel-divinity",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/conquest#channel-divinity"
   },
@@ -4032,7 +3775,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-paladin-conquest-aura-of-conquest",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/conquest#aura-of-conquest"
   },
@@ -4048,7 +3790,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-paladin-conquest-scornful-rebuke",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/conquest#scornful-rebuke"
   },
@@ -4064,7 +3805,6 @@
       "2014": 20,
       "2024": 20
     },
-    "progressionId": "2014-paladin-conquest-invincible-conqueror",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/conquest#invincible-conqueror"
   },
@@ -4080,7 +3820,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-redemption-oath-spells",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/redemption#oath-spells"
   },
@@ -4096,7 +3835,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-redemption-channel-divinity",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/redemption#channel-divinity"
   },
@@ -4112,7 +3850,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-paladin-redemption-aura-of-the-guardian",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/redemption#aura-of-the-guardian"
   },
@@ -4128,7 +3865,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-paladin-redemption-protective-spirit",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/redemption#protective-spirit"
   },
@@ -4144,7 +3880,6 @@
       "2014": 20,
       "2024": 20
     },
-    "progressionId": "2014-paladin-redemption-emissary-of-redemption",
     "contentSourceId": "xge-2017",
     "sourceReference": "paladin/redemption#emissary-of-redemption"
   },
@@ -4158,7 +3893,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-ranger-gloomstalker-dread-ambusher",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/gloomstalker#dread-ambusher"
   },
@@ -4172,7 +3906,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-ranger-gloomstalker-umbral-sight",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/gloomstalker#umbral-sight"
   },
@@ -4186,7 +3919,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-ranger-gloomstalker-iron-mind",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/gloomstalker#iron-mind"
   },
@@ -4200,7 +3932,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-ranger-gloomstalker-stalker-s-flurry",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/gloomstalker#stalker-s-flurry"
   },
@@ -4214,7 +3945,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-ranger-gloomstalker-shadowy-dodge",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/gloomstalker#shadowy-dodge"
   },
@@ -4230,7 +3960,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-horizonwalker-horizon-walker-magic",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#horizon-walker-magic"
   },
@@ -4246,7 +3975,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-horizonwalker-detect-portal",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#detect-portal"
   },
@@ -4262,7 +3990,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-horizonwalker-planar-warrior",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#planar-warrior"
   },
@@ -4278,7 +4005,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-ranger-horizonwalker-ethereal-step",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#ethereal-step"
   },
@@ -4294,7 +4020,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-ranger-horizonwalker-distant-strike",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#distant-strike"
   },
@@ -4310,7 +4035,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-ranger-horizonwalker-spectral-defense",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/horizonwalker#spectral-defense"
   },
@@ -4326,7 +4050,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-monster_slayer-monster-slayer-magic",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#monster-slayer-magic"
   },
@@ -4342,7 +4065,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-monster_slayer-hunter-s-sense",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#hunter-s-sense"
   },
@@ -4358,7 +4080,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-monster_slayer-slayer-s-prey",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#slayer-s-prey"
   },
@@ -4374,7 +4095,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-ranger-monster_slayer-supernatural-defense",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#supernatural-defense"
   },
@@ -4390,7 +4110,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-ranger-monster_slayer-magic-user-s-nemesis",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#magic-user-s-nemesis"
   },
@@ -4406,7 +4125,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-ranger-monster_slayer-slayer-s-counter",
     "contentSourceId": "xge-2017",
     "sourceReference": "ranger/monster_slayer#slayer-s-counter"
   },
@@ -4422,7 +4140,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-inquisitive-ear-for-deceit",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#ear-for-deceit"
   },
@@ -4438,7 +4155,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-inquisitive-eye-for-detail",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#eye-for-detail"
   },
@@ -4454,7 +4170,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-inquisitive-insightful-fighting",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#insightful-fighting"
   },
@@ -4470,7 +4185,6 @@
       "2014": 9,
       "2024": 9
     },
-    "progressionId": "2014-rogue-inquisitive-steady-eye",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#steady-eye"
   },
@@ -4486,7 +4200,6 @@
       "2014": 13,
       "2024": 13
     },
-    "progressionId": "2014-rogue-inquisitive-unerring-eye",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#unerring-eye"
   },
@@ -4502,7 +4215,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-rogue-inquisitive-eye-for-weakness",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/inquisitive#eye-for-weakness"
   },
@@ -4518,7 +4230,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-mastermind-master-of-intrigue",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/mastermind#master-of-intrigue"
   },
@@ -4534,7 +4245,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-mastermind-master-of-tactics",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/mastermind#master-of-tactics"
   },
@@ -4550,7 +4260,6 @@
       "2014": 9,
       "2024": 9
     },
-    "progressionId": "2014-rogue-mastermind-insightful-manipulator",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/mastermind#insightful-manipulator"
   },
@@ -4566,7 +4275,6 @@
       "2014": 13,
       "2024": 13
     },
-    "progressionId": "2014-rogue-mastermind-misdirection",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/mastermind#misdirection"
   },
@@ -4582,7 +4290,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-rogue-mastermind-soul-of-deceit",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/mastermind#soul-of-deceit"
   },
@@ -4598,7 +4305,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-scout-skirmisher",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/scout#skirmisher"
   },
@@ -4614,7 +4320,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-scout-survivalist",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/scout#survivalist"
   },
@@ -4630,7 +4335,6 @@
       "2014": 9,
       "2024": 9
     },
-    "progressionId": "2014-rogue-scout-superior-mobility",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/scout#superior-mobility"
   },
@@ -4646,7 +4350,6 @@
       "2014": 13,
       "2024": 13
     },
-    "progressionId": "2014-rogue-scout-ambush-master",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/scout#ambush-master"
   },
@@ -4662,7 +4365,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-rogue-scout-sudden-strike",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/scout#sudden-strike"
   },
@@ -4678,7 +4380,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-swashbuckler-fancy-footwork",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/swashbuckler#fancy-footwork"
   },
@@ -4694,7 +4395,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-swashbuckler-rakish-audacity",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/swashbuckler#rakish-audacity"
   },
@@ -4710,7 +4410,6 @@
       "2014": 9,
       "2024": 9
     },
-    "progressionId": "2014-rogue-swashbuckler-panache",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/swashbuckler#panache"
   },
@@ -4726,7 +4425,6 @@
       "2014": 13,
       "2024": 13
     },
-    "progressionId": "2014-rogue-swashbuckler-elegant-maneuver",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/swashbuckler#elegant-maneuver"
   },
@@ -4742,7 +4440,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-rogue-swashbuckler-master-duelist",
     "contentSourceId": "xge-2017",
     "sourceReference": "rogue/swashbuckler#master-duelist"
   },
@@ -4758,7 +4455,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-sorcerer-storm-wind-speaker",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#wind-speaker"
   },
@@ -4774,7 +4470,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-sorcerer-storm-tempestuous-magic",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#tempestuous-magic"
   },
@@ -4790,7 +4485,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-sorcerer-storm-heart-of-the-storm",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#heart-of-the-storm"
   },
@@ -4806,7 +4500,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-sorcerer-storm-storm-guide",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#storm-guide"
   },
@@ -4822,7 +4515,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-sorcerer-storm-storm-s-fury",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#storm-s-fury"
   },
@@ -4838,7 +4530,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-sorcerer-storm-wind-soul",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/storm#wind-soul"
   },
@@ -4854,7 +4545,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-sorcerer-shadowmagic-eyes-of-the-dark",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/shadowmagic#eyes-of-the-dark"
   },
@@ -4870,7 +4560,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-sorcerer-shadowmagic-strength-of-the-grave",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/shadowmagic#strength-of-the-grave"
   },
@@ -4886,7 +4575,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-sorcerer-shadowmagic-hound-of-ill-omen",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/shadowmagic#hound-of-ill-omen"
   },
@@ -4902,7 +4590,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-sorcerer-shadowmagic-shadow-walk",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/shadowmagic#shadow-walk"
   },
@@ -4918,7 +4605,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-sorcerer-shadowmagic-umbral-form",
     "contentSourceId": "xge-2017",
     "sourceReference": "sorcerer/shadowmagic#umbral-form"
   },
@@ -4932,7 +4618,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-celestial-expanded-spell-list",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#expanded-spell-list"
   },
@@ -4946,7 +4631,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-celestial-bonus-cantrips",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#bonus-cantrips"
   },
@@ -4960,7 +4644,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-warlock-celestial-healing-light",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#healing-light"
   },
@@ -4974,7 +4657,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-warlock-celestial-radiant-soul",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#radiant-soul"
   },
@@ -4988,7 +4670,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-warlock-celestial-celestial-resilience",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#celestial-resilience"
   },
@@ -5002,7 +4683,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-warlock-celestial-searing-vengeance",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/celestial#searing-vengeance"
   },
@@ -5018,7 +4698,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-hexblade-expanded-spell-list",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#expanded-spell-list"
   },
@@ -5034,7 +4713,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-hexblade-hexblade-s-curse",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#hexblade-s-curse"
   },
@@ -5050,7 +4728,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-hexblade-hex-warrior",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#hex-warrior"
   },
@@ -5066,7 +4743,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-hexblade-accursed-specter",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#accursed-specter"
   },
@@ -5082,7 +4758,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-warlock-hexblade-armor-of-hexes",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#armor-of-hexes"
   },
@@ -5098,7 +4773,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-warlock-hexblade-master-of-hexes",
     "contentSourceId": "xge-2017",
     "sourceReference": "warlock/hexblade#master-of-hexes"
   },
@@ -5114,7 +4788,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-war-war-savant",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#war-savant"
   },
@@ -5130,7 +4803,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-war-arcane-deflection",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#arcane-deflection"
   },
@@ -5146,7 +4818,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-war-tactical-wit",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#tactical-wit"
   },
@@ -5162,7 +4833,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-war-power-surge",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#power-surge"
   },
@@ -5178,7 +4848,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-war-durable-magic",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#durable-magic"
   },
@@ -5194,7 +4863,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-war-deflecting-shroud",
     "contentSourceId": "xge-2017",
     "sourceReference": "wizard/war#deflecting-shroud"
   },
@@ -5210,7 +4878,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-beast-form-of-the-beast",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/beast#form-of-the-beast"
   },
@@ -5226,7 +4893,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-beast-bestial-soul",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/beast#bestial-soul"
   },
@@ -5242,7 +4908,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-beast-infectious-fury",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/beast#infectious-fury"
   },
@@ -5258,7 +4923,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-beast-call-the-hunt",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/beast#call-the-hunt"
   },
@@ -5274,7 +4938,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-wildmagic-magic-awareness",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/wildmagic#magic-awareness"
   },
@@ -5290,7 +4953,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-wildmagic-wild-surge",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/wildmagic#wild-surge"
   },
@@ -5306,7 +4968,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-wildmagic-bolstering-magic",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/wildmagic#bolstering-magic"
   },
@@ -5322,7 +4983,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-wildmagic-unstable-backlash",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/wildmagic#unstable-backlash"
   },
@@ -5338,7 +4998,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-wildmagic-controlled-surge",
     "contentSourceId": "tce-2020",
     "sourceReference": "barbarian/wildmagic#controlled-surge"
   },
@@ -5354,7 +5013,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-eloquence-silver-tongue",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/eloquence#silver-tongue"
   },
@@ -5370,7 +5028,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-eloquence-unsettling-words",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/eloquence#unsettling-words"
   },
@@ -5386,7 +5043,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-eloquence-unfailing-inspiration",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/eloquence#unfailing-inspiration"
   },
@@ -5402,7 +5058,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-eloquence-universal-speech",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/eloquence#universal-speech"
   },
@@ -5418,7 +5073,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-eloquence-infectious-inspiration",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/eloquence#infectious-inspiration"
   },
@@ -5434,7 +5088,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-creation-mote-of-potential",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/creation#mote-of-potential"
   },
@@ -5450,7 +5103,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-creation-performance-of-creation",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/creation#performance-of-creation"
   },
@@ -5466,7 +5118,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-creation-animating-performance",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/creation#animating-performance"
   },
@@ -5482,7 +5133,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-creation-creative-crescendo",
     "contentSourceId": "tce-2020",
     "sourceReference": "bard/creation#creative-crescendo"
   },
@@ -5498,7 +5148,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-order-voice-of-authority",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#voice-of-authority"
   },
@@ -5514,7 +5163,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-order-domain-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#domain-spells"
   },
@@ -5530,7 +5178,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-order-channel-divinity-order-s-demand",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#channel-divinity-order-s-demand"
   },
@@ -5546,7 +5193,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-order-embodiment-of-the-law",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#embodiment-of-the-law"
   },
@@ -5562,7 +5208,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-order-divine-strike",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#divine-strike"
   },
@@ -5578,7 +5223,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-order-order-s-wrath",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/order#order-s-wrath"
   },
@@ -5594,7 +5238,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-peace-implement-of-peace",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/peace#implement-of-peace"
   },
@@ -5610,7 +5253,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-peace-emboldening-bond",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/peace#emboldening-bond"
   },
@@ -5626,7 +5268,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-peace-channel-divinity-balm-of-peace",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/peace#channel-divinity-balm-of-peace"
   },
@@ -5642,7 +5283,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-peace-protective-bond",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/peace#protective-bond"
   },
@@ -5658,9 +5298,9 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-peace-potent-spellcasting",
     "contentSourceId": "tce-2020",
-    "sourceReference": "cleric/peace#potent-spellcasting"
+    "sourceReference": "cleric/peace#potent-spellcasting",
+    "progressionId": "2014-cleric-peace-potent-spellcasting"
   },
   {
     "featureId": "2014-cleric-peace-expansive-bond",
@@ -5674,7 +5314,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-peace-expansive-bond",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/peace#expansive-bond"
   },
@@ -5690,9 +5329,9 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-twilight-bonus-proficiencies",
     "contentSourceId": "tce-2020",
-    "sourceReference": "cleric/twilight#bonus-proficiencies"
+    "sourceReference": "cleric/twilight#bonus-proficiencies",
+    "progressionId": "2014-cleric-twilight-bonus-proficiencies"
   },
   {
     "featureId": "2014-cleric-twilight-eyes-of-night",
@@ -5706,7 +5345,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-twilight-eyes-of-night",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#eyes-of-night"
   },
@@ -5722,7 +5360,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-twilight-vigilant-blessing",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#vigilant-blessing"
   },
@@ -5738,7 +5375,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-twilight-channel-divinity-twilight-sanctuary",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#channel-divinity-twilight-sanctuary"
   },
@@ -5754,7 +5390,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-twilight-steps-of-night",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#steps-of-night"
   },
@@ -5770,7 +5405,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-twilight-divine-strike",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#divine-strike"
   },
@@ -5786,7 +5420,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-twilight-twilight-shroud",
     "contentSourceId": "tce-2020",
     "sourceReference": "cleric/twilight#twilight-shroud"
   },
@@ -5802,7 +5435,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-spores-circle-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#circle-spells"
   },
@@ -5818,7 +5450,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-spores-halo-of-spores",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#halo-of-spores"
   },
@@ -5834,7 +5465,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-spores-symbiotic-entity",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#symbiotic-entity"
   },
@@ -5850,7 +5480,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-druid-spores-fungal-infestation",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#fungal-infestation"
   },
@@ -5866,7 +5495,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-druid-spores-spreading-spores",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#spreading-spores"
   },
@@ -5882,7 +5510,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-druid-spores-fungal-body",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/spores#fungal-body"
   },
@@ -5896,7 +5523,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-druid-stars-star-map",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/stars#star-map"
   },
@@ -5910,7 +5536,6 @@
     "levels": {
       "2014": 2
     },
-    "progressionId": "2014-druid-stars-starry-form",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/stars#starry-form"
   },
@@ -5924,7 +5549,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-druid-stars-cosmic-omen",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/stars#cosmic-omen"
   },
@@ -5938,7 +5562,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-druid-stars-twinkling-constellations",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/stars#twinkling-constellations"
   },
@@ -5952,7 +5575,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-druid-stars-full-of-stars",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/stars#full-of-stars"
   },
@@ -5968,7 +5590,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-wildfire-circle-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/wildfire#circle-spells"
   },
@@ -5984,7 +5605,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-druid-wildfire-summon-wildfire-spirit",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/wildfire#summon-wildfire-spirit"
   },
@@ -6000,7 +5620,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-druid-wildfire-enhanced-bond",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/wildfire#enhanced-bond"
   },
@@ -6016,7 +5635,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-druid-wildfire-cauterizing-flames",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/wildfire#cauterizing-flames"
   },
@@ -6032,7 +5650,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-druid-wildfire-blazing-revival",
     "contentSourceId": "tce-2020",
     "sourceReference": "druid/wildfire#blazing-revival"
   },
@@ -6046,7 +5663,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-fighter-psiwarrior-psionic-power",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/psiwarrior#psionic-power"
   },
@@ -6060,7 +5676,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-fighter-psiwarrior-telekinetic-adept",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/psiwarrior#telekinetic-adept"
   },
@@ -6074,7 +5689,6 @@
     "levels": {
       "2014": 10
     },
-    "progressionId": "2014-fighter-psiwarrior-guarded-mind",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/psiwarrior#guarded-mind"
   },
@@ -6088,7 +5702,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-fighter-psiwarrior-bulwark-of-force",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/psiwarrior#bulwark-of-force"
   },
@@ -6102,7 +5715,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-fighter-psiwarrior-telekinetic-master",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/psiwarrior#telekinetic-master"
   },
@@ -6118,7 +5730,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-runeknight-bonus-proficiencies",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#bonus-proficiencies"
   },
@@ -6134,7 +5745,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-runeknight-rune-carver",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#rune-carver"
   },
@@ -6150,7 +5760,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-runeknight-giant-s-might",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#giant-s-might"
   },
@@ -6166,7 +5775,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-runeknight-runic-shield",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#runic-shield"
   },
@@ -6182,7 +5790,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-runeknight-great-stature",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#great-stature"
   },
@@ -6198,7 +5805,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-fighter-runeknight-master-of-runes",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#master-of-runes"
   },
@@ -6214,7 +5820,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-fighter-runeknight-runic-juggernaut",
     "contentSourceId": "tce-2020",
     "sourceReference": "fighter/runeknight#runic-juggernaut"
   },
@@ -6228,7 +5833,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-monk-mercy-implements-of-mercy",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#implements-of-mercy"
   },
@@ -6242,7 +5846,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-monk-mercy-hand-of-healing",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#hand-of-healing"
   },
@@ -6256,7 +5859,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-monk-mercy-hand-of-harm",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#hand-of-harm"
   },
@@ -6270,7 +5872,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-monk-mercy-physician-s-touch",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#physician-s-touch"
   },
@@ -6284,7 +5885,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-monk-mercy-flurry-of-healing-and-harm",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#flurry-of-healing-and-harm"
   },
@@ -6298,7 +5898,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-monk-mercy-hand-of-ultimate-mercy",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/mercy#hand-of-ultimate-mercy"
   },
@@ -6314,7 +5913,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-astral_self-arms-of-the-astral-self",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/astral_self#arms-of-the-astral-self"
   },
@@ -6330,7 +5928,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-astral_self-visage-of-the-astral-self",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/astral_self#visage-of-the-astral-self"
   },
@@ -6346,7 +5943,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-astral_self-body-of-the-astral-self",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/astral_self#body-of-the-astral-self"
   },
@@ -6362,7 +5958,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-astral_self-awakened-astral-self",
     "contentSourceId": "tce-2020",
     "sourceReference": "monk/astral_self#awakened-astral-self"
   },
@@ -6376,7 +5971,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-glory-oath-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/glory#oath-spells"
   },
@@ -6390,7 +5984,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-paladin-glory-channel-divinity",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/glory#channel-divinity"
   },
@@ -6404,7 +5997,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-paladin-glory-aura-of-alacrity",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/glory#aura-of-alacrity"
   },
@@ -6418,7 +6010,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-paladin-glory-glorious-defense",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/glory#glorious-defense"
   },
@@ -6432,7 +6023,6 @@
     "levels": {
       "2014": 20
     },
-    "progressionId": "2014-paladin-glory-living-legend",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/glory#living-legend"
   },
@@ -6448,7 +6038,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-watchers-oath-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/watchers#oath-spells"
   },
@@ -6464,7 +6053,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-watchers-channel-divinity",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/watchers#channel-divinity"
   },
@@ -6480,7 +6068,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-paladin-watchers-aura-of-the-sentinel",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/watchers#aura-of-the-sentinel"
   },
@@ -6496,7 +6083,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-paladin-watchers-vigilant-rebuke",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/watchers#vigilant-rebuke"
   },
@@ -6512,7 +6098,6 @@
       "2014": 20,
       "2024": 20
     },
-    "progressionId": "2014-paladin-watchers-mortal-bulwark",
     "contentSourceId": "tce-2020",
     "sourceReference": "paladin/watchers#mortal-bulwark"
   },
@@ -6526,7 +6111,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-ranger-feywanderer-dreadful-strikes",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/feywanderer#dreadful-strikes"
   },
@@ -6540,7 +6124,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-ranger-feywanderer-otherworldly-glamour",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/feywanderer#otherworldly-glamour"
   },
@@ -6554,7 +6137,6 @@
     "levels": {
       "2014": 7
     },
-    "progressionId": "2014-ranger-feywanderer-beguiling-twist",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/feywanderer#beguiling-twist"
   },
@@ -6568,7 +6150,6 @@
     "levels": {
       "2014": 11
     },
-    "progressionId": "2014-ranger-feywanderer-fey-reinforcements",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/feywanderer#fey-reinforcements"
   },
@@ -6582,7 +6163,6 @@
     "levels": {
       "2014": 15
     },
-    "progressionId": "2014-ranger-feywanderer-misty-wanderer",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/feywanderer#misty-wanderer"
   },
@@ -6598,7 +6178,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-swarmkeeper-gathered-swarm",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/swarmkeeper#gathered-swarm"
   },
@@ -6614,7 +6193,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-swarmkeeper-swarmkeeper-magic",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/swarmkeeper#swarmkeeper-magic"
   },
@@ -6630,7 +6208,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-ranger-swarmkeeper-writhing-tide",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/swarmkeeper#writhing-tide"
   },
@@ -6646,7 +6223,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-ranger-swarmkeeper-mighty-swarm",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/swarmkeeper#mighty-swarm"
   },
@@ -6662,7 +6238,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-ranger-swarmkeeper-swarming-dispersal",
     "contentSourceId": "tce-2020",
     "sourceReference": "ranger/swarmkeeper#swarming-dispersal"
   },
@@ -6678,7 +6253,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-phantom-whispers-of-the-dead",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/phantom#whispers-of-the-dead"
   },
@@ -6694,7 +6268,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-rogue-phantom-wails-from-the-grave",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/phantom#wails-from-the-grave"
   },
@@ -6710,7 +6283,6 @@
       "2014": 9,
       "2024": 9
     },
-    "progressionId": "2014-rogue-phantom-tokens-of-the-departed",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/phantom#tokens-of-the-departed"
   },
@@ -6726,7 +6298,6 @@
       "2014": 13,
       "2024": 13
     },
-    "progressionId": "2014-rogue-phantom-ghost-walk",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/phantom#ghost-walk"
   },
@@ -6742,7 +6313,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-rogue-phantom-death-s-friend",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/phantom#death-s-friend"
   },
@@ -6756,7 +6326,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-soulknife-psionic-power",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/soulknife#psionic-power"
   },
@@ -6770,7 +6339,6 @@
     "levels": {
       "2014": 3
     },
-    "progressionId": "2014-rogue-soulknife-psychic-blades",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/soulknife#psychic-blades"
   },
@@ -6784,7 +6352,6 @@
     "levels": {
       "2014": 9
     },
-    "progressionId": "2014-rogue-soulknife-soul-blades",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/soulknife#soul-blades"
   },
@@ -6798,7 +6365,6 @@
     "levels": {
       "2014": 13
     },
-    "progressionId": "2014-rogue-soulknife-psychic-veil",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/soulknife#psychic-veil"
   },
@@ -6812,7 +6378,6 @@
     "levels": {
       "2014": 17
     },
-    "progressionId": "2014-rogue-soulknife-rend-mind",
     "contentSourceId": "tce-2020",
     "sourceReference": "rogue/soulknife#rend-mind"
   },
@@ -6826,7 +6391,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-aberrantmind-psionic-spells",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#psionic-spells"
   },
@@ -6840,7 +6404,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-aberrantmind-telepathic-speech",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#telepathic-speech"
   },
@@ -6854,7 +6417,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-sorcerer-aberrantmind-psionic-sorcery",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#psionic-sorcery"
   },
@@ -6868,7 +6430,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-sorcerer-aberrantmind-psychic-defenses",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#psychic-defenses"
   },
@@ -6882,7 +6443,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-sorcerer-aberrantmind-revelation-in-flesh",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#revelation-in-flesh"
   },
@@ -6896,7 +6456,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-sorcerer-aberrantmind-warping-implosion",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/aberrantmind#warping-implosion"
   },
@@ -6910,7 +6469,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-clockwork-clockwork-magic",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/clockwork#clockwork-magic"
   },
@@ -6924,7 +6482,6 @@
     "levels": {
       "2014": 1
     },
-    "progressionId": "2014-sorcerer-clockwork-restore-balance",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/clockwork#restore-balance"
   },
@@ -6938,7 +6495,6 @@
     "levels": {
       "2014": 6
     },
-    "progressionId": "2014-sorcerer-clockwork-bastion-of-law",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/clockwork#bastion-of-law"
   },
@@ -6952,7 +6508,6 @@
     "levels": {
       "2014": 14
     },
-    "progressionId": "2014-sorcerer-clockwork-trance-of-order",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/clockwork#trance-of-order"
   },
@@ -6966,7 +6521,6 @@
     "levels": {
       "2014": 18
     },
-    "progressionId": "2014-sorcerer-clockwork-clockwork-cavalcade",
     "contentSourceId": "tce-2020",
     "sourceReference": "sorcerer/clockwork#clockwork-cavalcade"
   },
@@ -6982,7 +6536,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-fathomless-expanded-spell-list",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#expanded-spell-list"
   },
@@ -6998,7 +6551,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-fathomless-tentacle-of-the-deeps",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#tentacle-of-the-deeps"
   },
@@ -7014,7 +6566,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-fathomless-gift-of-the-sea",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#gift-of-the-sea"
   },
@@ -7030,7 +6581,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-fathomless-oceanic-soul",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#oceanic-soul"
   },
@@ -7046,7 +6596,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-fathomless-guardian-coil",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#guardian-coil"
   },
@@ -7062,7 +6611,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-warlock-fathomless-grasping-tentacles",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#grasping-tentacles"
   },
@@ -7078,7 +6626,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-warlock-fathomless-fathomless-plunge",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/fathomless#fathomless-plunge"
   },
@@ -7094,7 +6641,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-genie-expanded-spell-list",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/genie#expanded-spell-list"
   },
@@ -7110,7 +6656,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-genie-genie-s-vessel",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/genie#genie-s-vessel"
   },
@@ -7126,7 +6671,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-genie-elemental-gift",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/genie#elemental-gift"
   },
@@ -7142,7 +6686,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-warlock-genie-sanctuary-vessel",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/genie#sanctuary-vessel"
   },
@@ -7158,7 +6701,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-warlock-genie-limited-wish",
     "contentSourceId": "tce-2020",
     "sourceReference": "warlock/genie#limited-wish"
   },
@@ -7174,7 +6716,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-scribes-wizardly-quill",
     "contentSourceId": "tce-2020",
     "sourceReference": "wizard/scribes#wizardly-quill"
   },
@@ -7190,7 +6731,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-scribes-awakened-spellbook",
     "contentSourceId": "tce-2020",
     "sourceReference": "wizard/scribes#awakened-spellbook"
   },
@@ -7206,7 +6746,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-scribes-manifest-mind",
     "contentSourceId": "tce-2020",
     "sourceReference": "wizard/scribes#manifest-mind"
   },
@@ -7222,7 +6761,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-scribes-master-scrivener",
     "contentSourceId": "tce-2020",
     "sourceReference": "wizard/scribes#master-scrivener"
   },
@@ -7238,7 +6776,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-scribes-one-with-the-word",
     "contentSourceId": "tce-2020",
     "sourceReference": "wizard/scribes#one-with-the-word"
   },
@@ -7254,7 +6791,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-giant-giant-s-power",
     "contentSourceId": "bigby-2023",
     "sourceReference": "barbarian/giant#giant-s-power"
   },
@@ -7270,7 +6806,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-giant-giant-s-havoc",
     "contentSourceId": "bigby-2023",
     "sourceReference": "barbarian/giant#giant-s-havoc"
   },
@@ -7286,7 +6821,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-giant-elemental-cleaver",
     "contentSourceId": "bigby-2023",
     "sourceReference": "barbarian/giant#elemental-cleaver"
   },
@@ -7302,7 +6836,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-giant-mighty-impel",
     "contentSourceId": "bigby-2023",
     "sourceReference": "barbarian/giant#mighty-impel"
   },
@@ -7318,7 +6851,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-giant-demiurgic-colossus",
     "contentSourceId": "bigby-2023",
     "sourceReference": "barbarian/giant#demiurgic-colossus"
   },
@@ -7334,7 +6866,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-battlerager-bonus-proficiency",
     "contentSourceId": "scag-2015",
     "sourceReference": "barbarian/battlerager#bonus-proficiency"
   },
@@ -7350,7 +6881,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-barbarian-battlerager-battlerager-armor",
     "contentSourceId": "scag-2015",
     "sourceReference": "barbarian/battlerager#battlerager-armor"
   },
@@ -7366,7 +6896,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-barbarian-battlerager-reckless-abandon",
     "contentSourceId": "scag-2015",
     "sourceReference": "barbarian/battlerager#reckless-abandon"
   },
@@ -7382,7 +6911,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-barbarian-battlerager-battlerager-charge",
     "contentSourceId": "scag-2015",
     "sourceReference": "barbarian/battlerager#battlerager-charge"
   },
@@ -7398,7 +6926,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-barbarian-battlerager-spiked-retribution",
     "contentSourceId": "scag-2015",
     "sourceReference": "barbarian/battlerager#spiked-retribution"
   },
@@ -7414,7 +6941,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-spirits-guiding-whispers",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "bard/spirits#guiding-whispers"
   },
@@ -7430,7 +6956,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-bard-spirits-spiritual-focus",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "bard/spirits#spiritual-focus"
   },
@@ -7446,7 +6971,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-bard-spirits-tales-from-beyond",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "bard/spirits#tales-from-beyond"
   },
@@ -7462,7 +6986,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-spirits-spirit-session",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "bard/spirits#spirit-session"
   },
@@ -7478,7 +7001,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-bard-spirits-mystical-connection",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "bard/spirits#mystical-connection"
   },
@@ -7494,7 +7016,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-arcana-arcane-initiate",
     "contentSourceId": "scag-2015",
     "sourceReference": "cleric/arcana#arcane-initiate"
   },
@@ -7510,7 +7031,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-arcana-channel-divinity-arcane-abjuration",
     "contentSourceId": "scag-2015",
     "sourceReference": "cleric/arcana#channel-divinity-arcane-abjuration"
   },
@@ -7526,7 +7046,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-arcana-spell-breaker",
     "contentSourceId": "scag-2015",
     "sourceReference": "cleric/arcana#spell-breaker"
   },
@@ -7542,9 +7061,9 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-arcana-potent-spellcasting",
     "contentSourceId": "scag-2015",
-    "sourceReference": "cleric/arcana#potent-spellcasting"
+    "sourceReference": "cleric/arcana#potent-spellcasting",
+    "progressionId": "2014-cleric-arcana-potent-spellcasting"
   },
   {
     "featureId": "2014-cleric-arcana-arcane-mastery",
@@ -7558,7 +7077,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-arcana-arcane-mastery",
     "contentSourceId": "scag-2015",
     "sourceReference": "cleric/arcana#arcane-mastery"
   },
@@ -7574,7 +7092,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-death-bonus-proficiency",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#bonus-proficiency"
   },
@@ -7590,7 +7107,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-cleric-death-reaper",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#reaper"
   },
@@ -7606,7 +7122,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-cleric-death-channel-divinity-touch-of-death",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#channel-divinity-touch-of-death"
   },
@@ -7622,7 +7137,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-cleric-death-inescapable-destruction",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#inescapable-destruction"
   },
@@ -7638,7 +7152,6 @@
       "2014": 8,
       "2024": 8
     },
-    "progressionId": "2014-cleric-death-divine-strike",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#divine-strike"
   },
@@ -7654,7 +7167,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-cleric-death-improved-reaper",
     "contentSourceId": "dmg-2014",
     "sourceReference": "cleric/death#improved-reaper"
   },
@@ -7670,7 +7182,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-purpledragonknight-rallying-cry",
     "contentSourceId": "scag-2015",
     "sourceReference": "fighter/purpledragonknight#rallying-cry"
   },
@@ -7686,7 +7197,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-purpledragonknight-royal-envoy",
     "contentSourceId": "scag-2015",
     "sourceReference": "fighter/purpledragonknight#royal-envoy"
   },
@@ -7702,7 +7212,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-purpledragonknight-inspiring-surge",
     "contentSourceId": "scag-2015",
     "sourceReference": "fighter/purpledragonknight#inspiring-surge"
   },
@@ -7718,7 +7227,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-fighter-purpledragonknight-bulwark",
     "contentSourceId": "scag-2015",
     "sourceReference": "fighter/purpledragonknight#bulwark"
   },
@@ -7734,7 +7242,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-echo_knight-manifest-echo",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#manifest-echo"
   },
@@ -7750,7 +7257,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-fighter-echo_knight-unleash-incarnation",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#unleash-incarnation"
   },
@@ -7766,7 +7272,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-fighter-echo_knight-echo-avatar",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#echo-avatar"
   },
@@ -7782,7 +7287,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-fighter-echo_knight-shadow-martyr",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#shadow-martyr"
   },
@@ -7798,7 +7302,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-fighter-echo_knight-reclaim-potential",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#reclaim-potential"
   },
@@ -7814,7 +7317,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-fighter-echo_knight-legion-of-one",
     "contentSourceId": "egw-2020",
     "sourceReference": "fighter/echo_knight#legion-of-one"
   },
@@ -7830,7 +7332,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-longdeath-touch-of-death",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/longdeath#touch-of-death"
   },
@@ -7846,7 +7347,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-longdeath-hour-of-reaping",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/longdeath#hour-of-reaping"
   },
@@ -7862,7 +7362,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-longdeath-mastery-of-death",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/longdeath#mastery-of-death"
   },
@@ -7878,7 +7377,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-longdeath-touch-of-the-long-death",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/longdeath#touch-of-the-long-death"
   },
@@ -7894,7 +7392,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-sun_soul-radiant-sun-bolt",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/sun_soul#radiant-sun-bolt"
   },
@@ -7910,7 +7407,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-sun_soul-searing-sunburst",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/sun_soul#searing-sunburst"
   },
@@ -7926,7 +7422,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-sun_soul-searing-sunburst-improvement",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/sun_soul#searing-sunburst-improvement"
   },
@@ -7942,7 +7437,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-sun_soul-sun-shield",
     "contentSourceId": "scag-2015",
     "sourceReference": "monk/sun_soul#sun-shield"
   },
@@ -7958,7 +7452,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-monk-ascendant_dragon-draconic-disciple",
     "contentSourceId": "ftd-2021",
     "sourceReference": "monk/ascendant_dragon#draconic-disciple"
   },
@@ -7974,7 +7467,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-monk-ascendant_dragon-wings-unfurled",
     "contentSourceId": "ftd-2021",
     "sourceReference": "monk/ascendant_dragon#wings-unfurled"
   },
@@ -7990,7 +7482,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-monk-ascendant_dragon-aspect-of-the-wyrm",
     "contentSourceId": "ftd-2021",
     "sourceReference": "monk/ascendant_dragon#aspect-of-the-wyrm"
   },
@@ -8006,7 +7497,6 @@
       "2014": 17,
       "2024": 17
     },
-    "progressionId": "2014-monk-ascendant_dragon-ascendant-aspect",
     "contentSourceId": "ftd-2021",
     "sourceReference": "monk/ascendant_dragon#ascendant-aspect"
   },
@@ -8022,7 +7512,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-crown-oath-spells",
     "contentSourceId": "scag-2015",
     "sourceReference": "paladin/crown#oath-spells"
   },
@@ -8038,7 +7527,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-crown-channel-divinity",
     "contentSourceId": "scag-2015",
     "sourceReference": "paladin/crown#channel-divinity"
   },
@@ -8054,9 +7542,9 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-paladin-crown-aura-of-the-guardian",
     "contentSourceId": "scag-2015",
-    "sourceReference": "paladin/crown#aura-of-the-guardian"
+    "sourceReference": "paladin/crown#aura-of-the-guardian",
+    "progressionId": "2014-paladin-crown-aura-of-the-guardian"
   },
   {
     "featureId": "2014-paladin-crown-unyielding-spirit",
@@ -8070,7 +7558,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-paladin-crown-unyielding-spirit",
     "contentSourceId": "scag-2015",
     "sourceReference": "paladin/crown#unyielding-spirit"
   },
@@ -8086,7 +7573,6 @@
       "2014": 20,
       "2024": 20
     },
-    "progressionId": "2014-paladin-crown-exalted-champion",
     "contentSourceId": "scag-2015",
     "sourceReference": "paladin/crown#exalted-champion"
   },
@@ -8102,7 +7588,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-oathbreaker-oath-spells",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#oath-spells"
   },
@@ -8118,7 +7603,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-oathbreaker-channel-divinity-control-undead",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#channel-divinity-control-undead"
   },
@@ -8134,7 +7618,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-paladin-oathbreaker-channel-divinity-dreadful-aspect",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#channel-divinity-dreadful-aspect"
   },
@@ -8150,7 +7633,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-paladin-oathbreaker-aura-of-hate",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#aura-of-hate"
   },
@@ -8166,13 +7648,13 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-paladin-oathbreaker-supernatural-resistance",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#supernatural-resistance",
     "names": {
       "en": "Supernatural Resistance",
       "de": "Supernatural Resistance"
-    }
+    },
+    "progressionId": "2014-paladin-oathbreaker-supernatural-resistance"
   },
   {
     "featureId": "2014-paladin-oathbreaker-dread-lord",
@@ -8186,7 +7668,6 @@
       "2014": 20,
       "2024": 20
     },
-    "progressionId": "2014-paladin-oathbreaker-dread-lord",
     "contentSourceId": "dmg-2014",
     "sourceReference": "paladin/oathbreaker#dread-lord"
   },
@@ -8202,7 +7683,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-drakewarden-draconic-gift",
     "contentSourceId": "ftd-2021",
     "sourceReference": "ranger/drakewarden#draconic-gift"
   },
@@ -8218,7 +7698,6 @@
       "2014": 3,
       "2024": 3
     },
-    "progressionId": "2014-ranger-drakewarden-drake-companion",
     "contentSourceId": "ftd-2021",
     "sourceReference": "ranger/drakewarden#drake-companion"
   },
@@ -8234,7 +7713,6 @@
       "2014": 7,
       "2024": 7
     },
-    "progressionId": "2014-ranger-drakewarden-bond-of-fang-and-scale",
     "contentSourceId": "ftd-2021",
     "sourceReference": "ranger/drakewarden#bond-of-fang-and-scale"
   },
@@ -8250,7 +7728,6 @@
       "2014": 11,
       "2024": 11
     },
-    "progressionId": "2014-ranger-drakewarden-drake-s-breath",
     "contentSourceId": "ftd-2021",
     "sourceReference": "ranger/drakewarden#drake-s-breath"
   },
@@ -8266,7 +7743,6 @@
       "2014": 15,
       "2024": 15
     },
-    "progressionId": "2014-ranger-drakewarden-perfected-bond",
     "contentSourceId": "ftd-2021",
     "sourceReference": "ranger/drakewarden#perfected-bond"
   },
@@ -8282,7 +7758,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-sorcerer-lunar-lunar-embodiment",
     "contentSourceId": "dsotdq-2022",
     "sourceReference": "sorcerer/lunar#lunar-embodiment"
   },
@@ -8298,7 +7773,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-sorcerer-lunar-lunar-boons",
     "contentSourceId": "dsotdq-2022",
     "sourceReference": "sorcerer/lunar#lunar-boons"
   },
@@ -8314,7 +7788,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-sorcerer-lunar-waxing-and-waning",
     "contentSourceId": "dsotdq-2022",
     "sourceReference": "sorcerer/lunar#waxing-and-waning"
   },
@@ -8330,7 +7803,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-sorcerer-lunar-lunar-empowerment",
     "contentSourceId": "dsotdq-2022",
     "sourceReference": "sorcerer/lunar#lunar-empowerment"
   },
@@ -8346,7 +7818,6 @@
       "2014": 18,
       "2024": 18
     },
-    "progressionId": "2014-sorcerer-lunar-lunar-phenomenon",
     "contentSourceId": "dsotdq-2022",
     "sourceReference": "sorcerer/lunar#lunar-phenomenon"
   },
@@ -8362,7 +7833,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-undead-expanded-spell-list",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "warlock/undead#expanded-spell-list"
   },
@@ -8378,7 +7848,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-undead-form-of-dread",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "warlock/undead#form-of-dread"
   },
@@ -8394,7 +7863,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-undead-grave-touched",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "warlock/undead#grave-touched"
   },
@@ -8410,7 +7878,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-warlock-undead-necrotic-husk",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "warlock/undead#necrotic-husk"
   },
@@ -8426,7 +7893,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-warlock-undead-spirit-projection",
     "contentSourceId": "vrgtr-2021",
     "sourceReference": "warlock/undead#spirit-projection"
   },
@@ -8442,7 +7908,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-undying-expanded-spell-list",
     "contentSourceId": "scag-2015",
     "sourceReference": "warlock/undying#expanded-spell-list"
   },
@@ -8458,7 +7923,6 @@
       "2014": 1,
       "2024": 3
     },
-    "progressionId": "2014-warlock-undying-among-the-dead",
     "contentSourceId": "scag-2015",
     "sourceReference": "warlock/undying#among-the-dead"
   },
@@ -8474,7 +7938,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-warlock-undying-defy-death",
     "contentSourceId": "scag-2015",
     "sourceReference": "warlock/undying#defy-death"
   },
@@ -8490,7 +7953,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-warlock-undying-undying-nature",
     "contentSourceId": "scag-2015",
     "sourceReference": "warlock/undying#undying-nature"
   },
@@ -8506,7 +7968,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-warlock-undying-indestructible-life",
     "contentSourceId": "scag-2015",
     "sourceReference": "warlock/undying#indestructible-life"
   },
@@ -8522,7 +7983,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-bladesinging-training-in-war-and-song",
     "contentSourceId": "scag-2015",
     "sourceReference": "wizard/bladesinging#training-in-war-and-song"
   },
@@ -8538,7 +7998,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-bladesinging-bladesong",
     "contentSourceId": "scag-2015",
     "sourceReference": "wizard/bladesinging#bladesong"
   },
@@ -8554,7 +8013,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-bladesinging-extra-attack",
     "contentSourceId": "scag-2015",
     "sourceReference": "wizard/bladesinging#extra-attack"
   },
@@ -8570,7 +8028,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-bladesinging-song-of-defense",
     "contentSourceId": "scag-2015",
     "sourceReference": "wizard/bladesinging#song-of-defense"
   },
@@ -8586,7 +8043,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-bladesinging-song-of-victory",
     "contentSourceId": "scag-2015",
     "sourceReference": "wizard/bladesinging#song-of-victory"
   },
@@ -8602,7 +8058,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-chronurgy-chronal-shift",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/chronurgy#chronal-shift"
   },
@@ -8618,13 +8073,13 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-chronurgy-temporal-awareness",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/chronurgy#temporal-awareness",
     "names": {
       "en": "Temporal Awareness",
       "de": "Temporal Awareness"
-    }
+    },
+    "progressionId": "2014-wizard-chronurgy-temporal-awareness"
   },
   {
     "featureId": "2014-wizard-chronurgy-momentary-stasis",
@@ -8638,7 +8093,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-chronurgy-momentary-stasis",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/chronurgy#momentary-stasis"
   },
@@ -8654,7 +8108,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-chronurgy-arcane-abeyance",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/chronurgy#arcane-abeyance"
   },
@@ -8670,7 +8123,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-chronurgy-convergent-future",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/chronurgy#convergent-future"
   },
@@ -8686,7 +8138,6 @@
       "2014": 2,
       "2024": 3
     },
-    "progressionId": "2014-wizard-graviturgy-adjust-density",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/graviturgy#adjust-density"
   },
@@ -8702,7 +8153,6 @@
       "2014": 6,
       "2024": 6
     },
-    "progressionId": "2014-wizard-graviturgy-gravity-well",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/graviturgy#gravity-well"
   },
@@ -8718,7 +8168,6 @@
       "2014": 10,
       "2024": 10
     },
-    "progressionId": "2014-wizard-graviturgy-violent-attraction",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/graviturgy#violent-attraction"
   },
@@ -8734,7 +8183,6 @@
       "2014": 14,
       "2024": 14
     },
-    "progressionId": "2014-wizard-graviturgy-event-horizon",
     "contentSourceId": "egw-2020",
     "sourceReference": "wizard/graviturgy#event-horizon"
   },
@@ -8747,7 +8195,6 @@
     "levels": {
       "2024": 1
     },
-    "progressionId": "2024-artificer-class-spellcasting",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#spellcasting"
   },
@@ -8760,7 +8207,6 @@
     "levels": {
       "2024": 1
     },
-    "progressionId": "2024-artificer-class-tinkers-magic",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#tinkers-magic"
   },
@@ -8773,7 +8219,6 @@
     "levels": {
       "2024": 2
     },
-    "progressionId": "2024-artificer-class-replicate-magic-item",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#replicate-magic-item"
   },
@@ -8786,7 +8231,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-class-artificer-subclass",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#artificer-subclass"
   },
@@ -8799,7 +8243,6 @@
     "levels": {
       "2024": 4
     },
-    "progressionId": "2024-artificer-class-ability-score-improvement-4",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#ability-score-improvement-4"
   },
@@ -8812,7 +8255,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-artificer-class-magic-item-tinker",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#magic-item-tinker"
   },
@@ -8825,7 +8267,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-artificer-class-flash-of-genius",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#flash-of-genius"
   },
@@ -8838,9 +8279,9 @@
     "levels": {
       "2024": 8
     },
-    "progressionId": "2024-artificer-class-ability-score-improvement-8",
     "contentSourceId": "efota-2025",
-    "sourceReference": "artificer/class-features#ability-score-improvement-8"
+    "sourceReference": "artificer/class-features#ability-score-improvement-8",
+    "progressionId": "2024-artificer-class-ability-score-improvement-8"
   },
   {
     "featureId": "2024-artificer-class-magic-item-adept",
@@ -8851,7 +8292,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-artificer-class-magic-item-adept",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#magic-item-adept"
   },
@@ -8864,7 +8304,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-artificer-class-spell-storing-item",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#spell-storing-item"
   },
@@ -8877,9 +8316,9 @@
     "levels": {
       "2024": 12
     },
-    "progressionId": "2024-artificer-class-ability-score-improvement-12",
     "contentSourceId": "efota-2025",
-    "sourceReference": "artificer/class-features#ability-score-improvement-12"
+    "sourceReference": "artificer/class-features#ability-score-improvement-12",
+    "progressionId": "2024-artificer-class-ability-score-improvement-12"
   },
   {
     "featureId": "2024-artificer-class-advanced-artifice",
@@ -8890,7 +8329,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-artificer-class-advanced-artifice",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#advanced-artifice"
   },
@@ -8903,9 +8341,9 @@
     "levels": {
       "2024": 16
     },
-    "progressionId": "2024-artificer-class-ability-score-improvement-16",
     "contentSourceId": "efota-2025",
-    "sourceReference": "artificer/class-features#ability-score-improvement-16"
+    "sourceReference": "artificer/class-features#ability-score-improvement-16",
+    "progressionId": "2024-artificer-class-ability-score-improvement-16"
   },
   {
     "featureId": "2024-artificer-class-magic-item-master",
@@ -8916,7 +8354,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-artificer-class-magic-item-master",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#magic-item-master"
   },
@@ -8929,7 +8366,6 @@
     "levels": {
       "2024": 19
     },
-    "progressionId": "2024-artificer-class-epic-boon",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#epic-boon"
   },
@@ -8942,7 +8378,6 @@
     "levels": {
       "2024": 20
     },
-    "progressionId": "2024-artificer-class-soul-of-artifice",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/class-features#soul-of-artifice"
   },
@@ -8956,7 +8391,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-alchemist-tools-of-trade",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#tools-of-trade"
   },
@@ -8970,7 +8404,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-alchemist-alchemist-spells",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#alchemist-spells"
   },
@@ -8984,7 +8417,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-alchemist-experimental-elixir",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#experimental-elixir"
   },
@@ -8998,7 +8430,6 @@
     "levels": {
       "2024": 5
     },
-    "progressionId": "2024-artificer-alchemist-alchemical-savant",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#alchemical-savant"
   },
@@ -9012,7 +8443,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-artificer-alchemist-restorative-reagents",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#restorative-reagents"
   },
@@ -9026,7 +8456,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-artificer-alchemist-chemical-mastery",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/alchemist#chemical-mastery"
   },
@@ -9040,7 +8469,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-armorer-tools-of-trade",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#tools-of-trade"
   },
@@ -9054,7 +8482,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-armorer-armorer-spells",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#armorer-spells"
   },
@@ -9068,7 +8495,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-armorer-arcane-armor",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#arcane-armor"
   },
@@ -9082,7 +8508,6 @@
     "levels": {
       "2024": 5
     },
-    "progressionId": "2024-artificer-armorer-extra-attack",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#extra-attack"
   },
@@ -9096,7 +8521,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-artificer-armorer-improved-armorer",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#improved-armorer"
   },
@@ -9110,7 +8534,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-artificer-armorer-perfected-armor",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/armorer#perfected-armor"
   },
@@ -9124,7 +8547,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-artillerist-tools-of-trade",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#tools-of-trade"
   },
@@ -9138,7 +8560,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-artillerist-artillerist-spells",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#artillerist-spells"
   },
@@ -9152,7 +8573,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-artillerist-eldritch-cannon",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#eldritch-cannon"
   },
@@ -9166,7 +8586,6 @@
     "levels": {
       "2024": 5
     },
-    "progressionId": "2024-artificer-artillerist-arcane-firearm",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#arcane-firearm"
   },
@@ -9180,7 +8599,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-artificer-artillerist-explosive-cannon",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#explosive-cannon"
   },
@@ -9194,7 +8612,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-artificer-artillerist-fortified-position",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/artillerist#fortified-position"
   },
@@ -9208,7 +8625,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-battlesmith-tools-of-trade",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#tools-of-trade"
   },
@@ -9222,7 +8638,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-battlesmith-battle-smith-spells",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#battle-smith-spells"
   },
@@ -9236,7 +8651,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-battlesmith-battle-ready",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#battle-ready"
   },
@@ -9250,7 +8664,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-battlesmith-steel-defender",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#steel-defender"
   },
@@ -9264,9 +8677,9 @@
     "levels": {
       "2024": 5
     },
-    "progressionId": "2024-artificer-battlesmith-extra-attack",
     "contentSourceId": "efota-2025",
-    "sourceReference": "artificer/battlesmith#extra-attack"
+    "sourceReference": "artificer/battlesmith#extra-attack",
+    "progressionId": "2024-artificer-battlesmith-extra-attack"
   },
   {
     "featureId": "2024-artificer-battlesmith-arcane-jolt",
@@ -9278,7 +8691,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-artificer-battlesmith-arcane-jolt",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#arcane-jolt"
   },
@@ -9292,7 +8704,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-artificer-battlesmith-improved-defender",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/battlesmith#improved-defender"
   },
@@ -9306,7 +8717,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-cartographer-tools-of-trade",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#tools-of-trade"
   },
@@ -9320,7 +8730,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-cartographer-cartographer-spells",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#cartographer-spells"
   },
@@ -9334,7 +8743,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-cartographer-adventurers-atlas",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#adventurers-atlas"
   },
@@ -9348,7 +8756,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-artificer-cartographer-mapping-magic",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#mapping-magic"
   },
@@ -9362,7 +8769,6 @@
     "levels": {
       "2024": 5
     },
-    "progressionId": "2024-artificer-cartographer-guided-precision",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#guided-precision"
   },
@@ -9376,7 +8782,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-artificer-cartographer-ingenious-movement",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#ingenious-movement"
   },
@@ -9390,7 +8795,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-artificer-cartographer-superior-atlas",
     "contentSourceId": "efota-2025",
     "sourceReference": "artificer/cartographer#superior-atlas"
   },
@@ -9404,7 +8808,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-barbarian-worldtree-vitality-of-the-tree",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/worldtree#vitality-of-the-tree"
   },
@@ -9418,7 +8821,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-barbarian-worldtree-branches-of-the-tree",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/worldtree#branches-of-the-tree"
   },
@@ -9432,7 +8834,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-barbarian-worldtree-battering-roots",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/worldtree#battering-roots"
   },
@@ -9446,7 +8847,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-barbarian-worldtree-travel-along-the-tree",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/worldtree#travel-along-the-tree"
   },
@@ -9460,7 +8860,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-barbarian-zealot-divine-fury",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/zealot#divine-fury"
   },
@@ -9474,7 +8873,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-barbarian-zealot-warrior-of-the-gods",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/zealot#warrior-of-the-gods"
   },
@@ -9488,7 +8886,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-barbarian-zealot-fanatical-focus",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/zealot#fanatical-focus"
   },
@@ -9502,7 +8899,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-barbarian-zealot-zealous-presence",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/zealot#zealous-presence"
   },
@@ -9516,7 +8912,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-barbarian-zealot-rage-of-the-gods",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/zealot#rage-of-the-gods"
   },
@@ -9530,7 +8925,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-bard-dance-dazzling-footwork",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/dance#dazzling-footwork"
   },
@@ -9544,7 +8938,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-bard-dance-inspiring-movement",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/dance#inspiring-movement"
   },
@@ -9558,7 +8951,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-bard-dance-tandem-footwork",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/dance#tandem-footwork"
   },
@@ -9572,7 +8964,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-bard-dance-leading-evasion",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/dance#leading-evasion"
   },
@@ -9586,7 +8977,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-bard-glamour-beguiling-magic",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/glamour#beguiling-magic"
   },
@@ -9600,7 +8990,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-bard-glamour-mantle-of-inspiration",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/glamour#mantle-of-inspiration"
   },
@@ -9614,7 +9003,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-bard-glamour-mantle-of-majesty",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/glamour#mantle-of-majesty"
   },
@@ -9628,7 +9016,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-bard-glamour-unbreakable-majesty",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/glamour#unbreakable-majesty"
   },
@@ -9642,7 +9029,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-bard-valor-combat-inspiration",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/valor#combat-inspiration"
   },
@@ -9656,7 +9042,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-bard-valor-extra-attack",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/valor#extra-attack"
   },
@@ -9670,7 +9055,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-bard-valor-battle-magic",
     "contentSourceId": "phb-2024",
     "sourceReference": "bard/valor#battle-magic"
   },
@@ -9684,7 +9068,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-druid-moon-circle-forms",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/moon#circle-forms"
   },
@@ -9698,7 +9081,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-druid-moon-improved-circle-forms",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/moon#improved-circle-forms"
   },
@@ -9712,7 +9094,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-druid-moon-moonlight-step",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/moon#moonlight-step"
   },
@@ -9726,7 +9107,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-druid-moon-lunar-form",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/moon#lunar-form"
   },
@@ -9740,7 +9120,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-druid-sea-circle-of-the-sea-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/sea#circle-of-the-sea-spells"
   },
@@ -9754,7 +9133,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-druid-sea-wrath-of-the-sea",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/sea#wrath-of-the-sea"
   },
@@ -9768,7 +9146,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-druid-sea-aquatic-affinity",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/sea#aquatic-affinity"
   },
@@ -9782,7 +9159,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-druid-sea-stormborn",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/sea#stormborn"
   },
@@ -9796,7 +9172,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-druid-sea-oceanic-gift",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/sea#oceanic-gift"
   },
@@ -9810,7 +9185,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-druid-stars-star-map",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/stars#star-map"
   },
@@ -9824,7 +9198,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-druid-stars-starry-form",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/stars#starry-form"
   },
@@ -9838,7 +9211,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-druid-stars-cosmic-omen",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/stars#cosmic-omen"
   },
@@ -9852,7 +9224,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-druid-stars-twinkling-constellations",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/stars#twinkling-constellations"
   },
@@ -9866,7 +9237,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-druid-stars-full-of-stars",
     "contentSourceId": "phb-2024",
     "sourceReference": "druid/stars#full-of-stars"
   },
@@ -9880,7 +9250,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-fighter-battlemaster-combat-superiority",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#combat-superiority"
   },
@@ -9894,7 +9263,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-fighter-battlemaster-student-of-war",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#student-of-war"
   },
@@ -9908,7 +9276,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-fighter-battlemaster-know-your-enemy",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#know-your-enemy"
   },
@@ -9922,7 +9289,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-fighter-battlemaster-improved-combat-superiority",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#improved-combat-superiority"
   },
@@ -9936,7 +9302,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-fighter-battlemaster-relentless",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#relentless"
   },
@@ -9950,7 +9315,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-fighter-battlemaster-improved-combat-superiority-level-18",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/battlemaster#improved-combat-superiority"
   },
@@ -9964,7 +9328,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-fighter-eldritchknight-spellcasting",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#spellcasting"
   },
@@ -9978,7 +9341,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-fighter-eldritchknight-war-bond",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#war-bond"
   },
@@ -9992,7 +9354,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-fighter-eldritchknight-war-magic",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#war-magic"
   },
@@ -10006,7 +9367,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-fighter-eldritchknight-eldritch-strike",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#eldritch-strike"
   },
@@ -10020,7 +9380,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-fighter-eldritchknight-arcane-charge",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#arcane-charge"
   },
@@ -10034,7 +9393,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-fighter-eldritchknight-improved-war-magic",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/eldritchknight#improved-war-magic"
   },
@@ -10048,7 +9406,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-fighter-psiwarrior-psionic-power",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/psiwarrior#psionic-power"
   },
@@ -10062,7 +9419,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-fighter-psiwarrior-telekinetic-adept",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/psiwarrior#telekinetic-adept"
   },
@@ -10076,7 +9432,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-fighter-psiwarrior-guarded-mind",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/psiwarrior#guarded-mind"
   },
@@ -10090,7 +9445,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-fighter-psiwarrior-bulwark-of-force",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/psiwarrior#bulwark-of-force"
   },
@@ -10104,7 +9458,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-fighter-psiwarrior-telekinetic-master",
     "contentSourceId": "phb-2024",
     "sourceReference": "fighter/psiwarrior#telekinetic-master"
   },
@@ -10118,7 +9471,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-mercy-implements-of-mercy",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#implements-of-mercy"
   },
@@ -10132,7 +9484,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-mercy-hand-of-healing",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#hand-of-healing"
   },
@@ -10146,7 +9497,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-mercy-hand-of-harm",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#hand-of-harm"
   },
@@ -10160,7 +9510,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-monk-mercy-physician-s-touch",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#physician-s-touch"
   },
@@ -10174,7 +9523,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-monk-mercy-flurry-of-healing-and-harm",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#flurry-of-healing-and-harm"
   },
@@ -10188,7 +9536,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-monk-mercy-hand-of-ultimate-mercy",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/mercy#hand-of-ultimate-mercy"
   },
@@ -10202,7 +9549,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-shadow-shadow-arts",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/shadow#shadow-arts"
   },
@@ -10216,7 +9562,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-monk-shadow-shadow-step",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/shadow#shadow-step"
   },
@@ -10230,7 +9575,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-monk-shadow-improved-shadow-step",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/shadow#improved-shadow-step"
   },
@@ -10244,7 +9588,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-monk-shadow-cloak-of-shadows",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/shadow#cloak-of-shadows"
   },
@@ -10258,7 +9601,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-elements-elemental-attunement",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/elements#elemental-attunement"
   },
@@ -10272,7 +9614,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-monk-elements-manipulate-elements",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/elements#manipulate-elements"
   },
@@ -10286,7 +9627,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-monk-elements-elemental-burst",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/elements#elemental-burst"
   },
@@ -10300,7 +9640,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-monk-elements-stride-of-the-elements",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/elements#stride-of-the-elements"
   },
@@ -10314,7 +9653,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-monk-elements-elemental-epitome",
     "contentSourceId": "phb-2024",
     "sourceReference": "monk/elements#elemental-epitome"
   },
@@ -10328,7 +9666,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-barbarian-wildheart-animal-speaker",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/wildheart#animal-speaker"
   },
@@ -10342,7 +9679,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-barbarian-wildheart-rage-of-the-wilds",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/wildheart#rage-of-the-wilds"
   },
@@ -10356,7 +9692,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-barbarian-wildheart-aspect-of-the-wilds",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/wildheart#aspect-of-the-wilds"
   },
@@ -10370,7 +9705,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-barbarian-wildheart-nature-speaker",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/wildheart#nature-speaker"
   },
@@ -10384,7 +9718,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-barbarian-wildheart-power-of-the-wilds",
     "contentSourceId": "phb-2024",
     "sourceReference": "barbarian/wildheart#power-of-the-wilds"
   },
@@ -10398,7 +9731,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-light-warding-flare",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/light#warding-flare"
   },
@@ -10412,7 +9744,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-light-radiance-of-the-dawn",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/light#radiance-of-the-dawn"
   },
@@ -10426,7 +9757,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-cleric-light-improved-warding-flare",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/light#improved-warding-flare"
   },
@@ -10440,7 +9770,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-cleric-light-corona-of-light",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/light#corona-of-light"
   },
@@ -10454,7 +9783,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-trickery-blessing-of-the-trickster",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/trickery#blessing-of-the-trickster"
   },
@@ -10468,7 +9796,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-trickery-invoke-duplicity",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/trickery#invoke-duplicity"
   },
@@ -10482,7 +9809,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-cleric-trickery-trickster-s-transposition",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/trickery#trickster-s-transposition"
   },
@@ -10496,7 +9822,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-cleric-trickery-improved-duplicity",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/trickery#improved-duplicity"
   },
@@ -10510,7 +9835,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-war-war-priest",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/war#war-priest"
   },
@@ -10524,7 +9848,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-cleric-war-guided-strike",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/war#guided-strike"
   },
@@ -10538,7 +9861,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-cleric-war-war-god-s-blessing",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/war#war-god-s-blessing"
   },
@@ -10552,7 +9874,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-cleric-war-avatar-of-battle",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/war#avatar-of-battle"
   },
@@ -10566,7 +9887,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-paladin-glory-peerless-athlete",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#peerless-athlete"
   },
@@ -10580,7 +9900,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-paladin-glory-inspiring-smite",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#inspiring-smite"
   },
@@ -10594,7 +9913,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-paladin-glory-aura-of-alacrity",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#aura-of-alacrity"
   },
@@ -10608,7 +9926,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-paladin-glory-glorious-defense",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#glorious-defense"
   },
@@ -10622,7 +9939,6 @@
     "levels": {
       "2024": 20
     },
-    "progressionId": "2024-paladin-glory-living-legend",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#living-legend"
   },
@@ -10636,7 +9952,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-paladin-ancients-nature-s-wrath",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/ancients#nature-s-wrath"
   },
@@ -10664,7 +9979,6 @@
         "srd-2024-tree-stride"
       ]
     },
-    "progressionId": "2024-paladin-ancients-oath-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/ancients#oath-spells"
   },
@@ -10678,7 +9992,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-paladin-ancients-aura-of-warding",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/ancients#aura-of-warding"
   },
@@ -10692,7 +10005,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-paladin-ancients-undying-sentinel",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/ancients#undying-sentinel"
   },
@@ -10706,7 +10018,6 @@
     "levels": {
       "2024": 20
     },
-    "progressionId": "2024-paladin-ancients-elder-champion",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/ancients#elder-champion"
   },
@@ -10720,7 +10031,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-paladin-vengeance-vow-of-enmity",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/vengeance#vow-of-enmity"
   },
@@ -10748,7 +10058,6 @@
         "srd-2024-scrying"
       ]
     },
-    "progressionId": "2024-paladin-vengeance-oath-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/vengeance#oath-spells"
   },
@@ -10762,7 +10071,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-paladin-vengeance-relentless-avenger",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/vengeance#relentless-avenger"
   },
@@ -10776,7 +10084,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-paladin-vengeance-soul-of-vengeance",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/vengeance#soul-of-vengeance"
   },
@@ -10790,7 +10097,6 @@
     "levels": {
       "2024": 20
     },
-    "progressionId": "2024-paladin-vengeance-avenging-angel",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/vengeance#avenging-angel"
   },
@@ -10804,7 +10110,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-beastmaster-primal-companion",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/beastmaster#primal-companion"
   },
@@ -10818,7 +10123,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-ranger-beastmaster-exceptional-training",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/beastmaster#exceptional-training"
   },
@@ -10832,7 +10136,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-ranger-beastmaster-bestial-fury",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/beastmaster#bestial-fury"
   },
@@ -10846,7 +10149,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-ranger-beastmaster-share-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/beastmaster#share-spells"
   },
@@ -10860,7 +10162,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-feywanderer-dreadful-strikes",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#dreadful-strikes"
   },
@@ -10874,7 +10175,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-feywanderer-fey-wanderer-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#fey-wanderer-spells"
   },
@@ -10888,7 +10188,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-feywanderer-otherworldly-glamour",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#otherworldly-glamour"
   },
@@ -10902,7 +10201,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-ranger-feywanderer-beguiling-twist",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#beguiling-twist"
   },
@@ -10916,7 +10214,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-ranger-feywanderer-fey-reinforcements",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#fey-reinforcements"
   },
@@ -10930,7 +10227,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-ranger-feywanderer-misty-wanderer",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/feywanderer#misty-wanderer"
   },
@@ -10944,7 +10240,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-gloomstalker-dread-ambusher",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#dread-ambusher"
   },
@@ -10958,7 +10253,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-gloomstalker-umbral-sight",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#umbral-sight"
   },
@@ -10972,7 +10266,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-ranger-gloomstalker-gloom-stalker-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#gloom-stalker-spells"
   },
@@ -10986,7 +10279,6 @@
     "levels": {
       "2024": 7
     },
-    "progressionId": "2024-ranger-gloomstalker-iron-mind",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#iron-mind"
   },
@@ -11000,7 +10292,6 @@
     "levels": {
       "2024": 11
     },
-    "progressionId": "2024-ranger-gloomstalker-stalker-s-flurry",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#stalker-s-flurry"
   },
@@ -11014,7 +10305,6 @@
     "levels": {
       "2024": 15
     },
-    "progressionId": "2024-ranger-gloomstalker-shadowy-dodge",
     "contentSourceId": "phb-2024",
     "sourceReference": "ranger/gloomstalker#shadowy-dodge"
   },
@@ -11028,7 +10318,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-arcanetrickster-spellcasting",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/arcanetrickster#spellcasting"
   },
@@ -11042,7 +10331,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-arcanetrickster-mage-hand-legerdemain",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/arcanetrickster#mage-hand-legerdemain"
   },
@@ -11056,7 +10344,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-rogue-arcanetrickster-magical-ambush",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/arcanetrickster#magical-ambush"
   },
@@ -11070,7 +10357,6 @@
     "levels": {
       "2024": 13
     },
-    "progressionId": "2024-rogue-arcanetrickster-versatile-trickster",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/arcanetrickster#versatile-trickster"
   },
@@ -11084,7 +10370,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-rogue-arcanetrickster-spell-thief",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/arcanetrickster#spell-thief"
   },
@@ -11098,7 +10383,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-assassin-bonus-proficiencies",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/assassin#bonus-proficiencies"
   },
@@ -11112,7 +10396,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-assassin-assassinate",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/assassin#assassinate"
   },
@@ -11126,7 +10409,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-rogue-assassin-infiltration-expertise",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/assassin#infiltration-expertise"
   },
@@ -11140,7 +10422,6 @@
     "levels": {
       "2024": 13
     },
-    "progressionId": "2024-rogue-assassin-envenom-weapons",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/assassin#envenom-weapons"
   },
@@ -11154,7 +10435,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-rogue-assassin-death-strike",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/assassin#death-strike"
   },
@@ -11168,7 +10448,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-soulknife-psionic-power",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/soulknife#psionic-power"
   },
@@ -11182,7 +10461,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-rogue-soulknife-psychic-blades",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/soulknife#psychic-blades"
   },
@@ -11196,7 +10474,6 @@
     "levels": {
       "2024": 9
     },
-    "progressionId": "2024-rogue-soulknife-soul-blades",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/soulknife#soul-blades"
   },
@@ -11210,7 +10487,6 @@
     "levels": {
       "2024": 13
     },
-    "progressionId": "2024-rogue-soulknife-psychic-veil",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/soulknife#psychic-veil"
   },
@@ -11224,7 +10500,6 @@
     "levels": {
       "2024": 17
     },
-    "progressionId": "2024-rogue-soulknife-rend-mind",
     "contentSourceId": "phb-2024",
     "sourceReference": "rogue/soulknife#rend-mind"
   },
@@ -11238,7 +10513,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-aberrant-psionic-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#psionic-spells"
   },
@@ -11252,7 +10526,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-aberrant-telepathic-speech",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#telepathic-speech"
   },
@@ -11266,7 +10539,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-sorcerer-aberrant-psionic-sorcery",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#psionic-sorcery"
   },
@@ -11280,7 +10552,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-sorcerer-aberrant-psychic-defenses",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#psychic-defenses"
   },
@@ -11294,7 +10565,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-sorcerer-aberrant-revelation-in-flesh",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#revelation-in-flesh"
   },
@@ -11308,7 +10578,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-sorcerer-aberrant-warping-implosion",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/aberrant#warping-implosion"
   },
@@ -11322,7 +10591,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-clockwork-clockwork-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/clockwork#clockwork-spells"
   },
@@ -11336,7 +10604,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-clockwork-restore-balance",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/clockwork#restore-balance"
   },
@@ -11350,7 +10617,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-sorcerer-clockwork-bastion-of-law",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/clockwork#bastion-of-law"
   },
@@ -11364,7 +10630,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-sorcerer-clockwork-trance-of-order",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/clockwork#trance-of-order"
   },
@@ -11378,7 +10643,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-sorcerer-clockwork-clockwork-cavalcade",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/clockwork#clockwork-cavalcade"
   },
@@ -11392,7 +10656,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-wildmagic-wild-magic-surge",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/wildmagic#wild-magic-surge"
   },
@@ -11406,7 +10669,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-sorcerer-wildmagic-tides-of-chaos",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/wildmagic#tides-of-chaos"
   },
@@ -11420,7 +10682,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-sorcerer-wildmagic-bend-luck",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/wildmagic#bend-luck"
   },
@@ -11434,7 +10695,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-sorcerer-wildmagic-controlled-chaos",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/wildmagic#controlled-chaos"
   },
@@ -11448,7 +10708,6 @@
     "levels": {
       "2024": 18
     },
-    "progressionId": "2024-sorcerer-wildmagic-tamed-surge",
     "contentSourceId": "phb-2024",
     "sourceReference": "sorcerer/wildmagic#tamed-surge"
   },
@@ -11462,7 +10721,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-archfey-archfey-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/archfey#archfey-spells"
   },
@@ -11476,7 +10734,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-archfey-steps-of-the-fey",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/archfey#steps-of-the-fey"
   },
@@ -11490,7 +10747,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-warlock-archfey-misty-escape",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/archfey#misty-escape"
   },
@@ -11504,7 +10760,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-warlock-archfey-beguiling-defenses",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/archfey#beguiling-defenses"
   },
@@ -11518,7 +10773,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-warlock-archfey-bewitching-magic",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/archfey#bewitching-magic"
   },
@@ -11532,7 +10786,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-celestial-celestial-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/celestial#celestial-spells"
   },
@@ -11546,7 +10799,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-celestial-healing-light",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/celestial#healing-light"
   },
@@ -11560,7 +10812,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-warlock-celestial-radiant-soul",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/celestial#radiant-soul"
   },
@@ -11574,7 +10825,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-warlock-celestial-celestial-resilience",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/celestial#celestial-resilience"
   },
@@ -11588,7 +10838,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-warlock-celestial-searing-vengeance",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/celestial#searing-vengeance"
   },
@@ -11602,7 +10851,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-greatoldone-awakened-mind",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/greatoldone#awakened-mind"
   },
@@ -11616,7 +10864,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-warlock-greatoldone-great-old-one-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/greatoldone#great-old-one-spells"
   },
@@ -11630,7 +10877,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-warlock-greatoldone-clairvoyant-combatant",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/greatoldone#clairvoyant-combatant"
   },
@@ -11644,7 +10890,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-warlock-greatoldone-eldritch-hex",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/greatoldone#eldritch-hex"
   },
@@ -11658,7 +10903,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-warlock-greatoldone-create-thrall",
     "contentSourceId": "phb-2024",
     "sourceReference": "warlock/greatoldone#create-thrall"
   },
@@ -11672,7 +10916,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-abjurer-abjuration-savant",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/abjurer#abjuration-savant"
   },
@@ -11686,7 +10929,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-abjurer-arcane-ward",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/abjurer#arcane-ward"
   },
@@ -11700,7 +10942,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-wizard-abjurer-projected-ward",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/abjurer#projected-ward"
   },
@@ -11714,7 +10955,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-wizard-abjurer-improved-abjuration",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/abjurer#improved-abjuration"
   },
@@ -11728,7 +10968,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-wizard-abjurer-spell-resistance",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/abjurer#spell-resistance"
   },
@@ -11742,7 +10981,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-diviner-divination-savant",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/diviner#divination-savant"
   },
@@ -11756,7 +10994,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-diviner-portent",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/diviner#portent"
   },
@@ -11770,7 +11007,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-wizard-diviner-expert-divination",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/diviner#expert-divination"
   },
@@ -11784,7 +11020,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-wizard-diviner-the-third-eye",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/diviner#the-third-eye"
   },
@@ -11798,7 +11033,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-wizard-diviner-greater-portent",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/diviner#greater-portent"
   },
@@ -11812,7 +11046,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-illusionist-illusion-savant",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/illusionist#illusion-savant"
   },
@@ -11826,7 +11059,6 @@
     "levels": {
       "2024": 3
     },
-    "progressionId": "2024-wizard-illusionist-improved-minor-illusion",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/illusionist#improved-minor-illusion"
   },
@@ -11840,7 +11072,6 @@
     "levels": {
       "2024": 6
     },
-    "progressionId": "2024-wizard-illusionist-malleable-illusions",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/illusionist#malleable-illusions"
   },
@@ -11854,7 +11085,6 @@
     "levels": {
       "2024": 10
     },
-    "progressionId": "2024-wizard-illusionist-illusory-self",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/illusionist#illusory-self"
   },
@@ -11868,7 +11098,6 @@
     "levels": {
       "2024": 14
     },
-    "progressionId": "2024-wizard-illusionist-illusory-reality",
     "contentSourceId": "phb-2024",
     "sourceReference": "wizard/illusionist#illusory-reality"
   },
@@ -11896,7 +11125,6 @@
         "srd-2024-scrying"
       ]
     },
-    "progressionId": "2024-cleric-light-domain-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "cleric/light#domain-spells"
   },
@@ -11924,9 +11152,9 @@
         "srd-2024-modify-memory"
       ]
     },
-    "progressionId": "2024-cleric-trickery-domain-spells",
     "contentSourceId": "phb-2024",
-    "sourceReference": "cleric/trickery#domain-spells"
+    "sourceReference": "cleric/trickery#domain-spells",
+    "progressionId": "2024-cleric-trickery-domain-spells"
   },
   {
     "featureId": "2024-cleric-light-domain-spells",
@@ -11952,9 +11180,9 @@
         "srd-2024-raise-dead"
       ]
     },
-    "progressionId": "2024-cleric-life-domain-spells",
     "contentSourceId": "phb-2024",
-    "sourceReference": "cleric/life#domain-spells"
+    "sourceReference": "cleric/life#domain-spells",
+    "progressionId": "2024-cleric-life-domain-spells"
   },
   {
     "featureId": "2024-paladin-devotion-oath-spells",
@@ -11980,7 +11208,6 @@
         "srd-2024-flame-strike"
       ]
     },
-    "progressionId": "2024-paladin-devotion-oath-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/devotion#oath-spells"
   },
@@ -12008,7 +11235,6 @@
         "srd-2024-flame-strike"
       ]
     },
-    "progressionId": "2024-paladin-glory-oath-spells",
     "contentSourceId": "phb-2024",
     "sourceReference": "paladin/glory#oath-spells"
   }

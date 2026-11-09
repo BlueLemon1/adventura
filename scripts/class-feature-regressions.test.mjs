@@ -6,10 +6,10 @@ const readText = (path) => readFileSync(new URL(path, import.meta.url), 'utf8')
 const readJson = (path) => JSON.parse(readText(path))
 
 const featureSource = readText('../src/domain/classFeatures.ts')
-const classes = readJson('../src/data/classes-additional.json')
-const featureDefinitions = readJson('../src/data/features-additional.json')
-const progressions = readJson('../src/data/class-progressions.json')
-const featureMechanics = readJson('../src/data/feature-mechanics.json')
+const classes = readJson('../src/data/classes/catalog.json')
+const featureDefinitions = readJson('../src/data/classes/features.json')
+const progressions = readJson('../src/data/classes/progressions.json')
+const featureMechanics = readJson('../src/data/classes/feature-mechanics.json')
 const srdFeatures = [
   ...readJson('../src/data/srd/2014/class-features.json'),
   ...readJson('../src/data/srd/2024/class-features.json'),
@@ -164,7 +164,9 @@ test('shared feature definitions are reused across classes while progression occ
       ['bard', 'valor'],
     ].sort(),
   )
-  assert.equal(new Set(progressions.map((record) => record.progressionId)).size, progressions.length)
+  const progressionIds = progressions.map((record) => record.progressionId ?? record.featureId)
+  assert.equal(new Set(progressionIds).size, progressions.length)
+  assert.ok(progressions.every((record) => !record.progressionId || record.progressionId !== record.featureId))
   assert.equal(featureDefinitions.filter((record) => record.id === extraAttackId).length, 1)
   assert.ok(extraAttackProgressions.every((record) => record.contentSourceId && record.sourceReference))
   assert.ok(definitionsById.get(extraAttackId).sources.length >= 2)
@@ -176,8 +178,8 @@ test('shared feature definitions are reused across classes while progression occ
 })
 
 test('same mechanical feature may retain a class-specific display name', () => {
-  const tacticalWit = progressions.find((record) => record.progressionId === '2014-wizard-war-tactical-wit')
-  const temporalAwareness = progressions.find((record) => record.progressionId === '2014-wizard-chronurgy-temporal-awareness')
+  const tacticalWit = progressions.find((record) => (record.progressionId ?? record.featureId) === '2014-wizard-war-tactical-wit')
+  const temporalAwareness = progressions.find((record) => (record.progressionId ?? record.featureId) === '2014-wizard-chronurgy-temporal-awareness')
   assert.equal(tacticalWit?.featureId, temporalAwareness?.featureId)
   assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
   assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')

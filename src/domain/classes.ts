@@ -1,4 +1,4 @@
-import additionalClasses from '../data/classes-additional.json'
+import additionalClasses from '../data/classes/catalog.json'
 import type { Dnd5eRuleset } from './rules'
 
 export interface ClassOption {

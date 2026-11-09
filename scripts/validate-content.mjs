@@ -196,9 +196,9 @@ for (const spell of additionalSpellRecords) {
   }
 }
 
-const additionalClassRecords = readJson('src/data/classes-additional.json')
-const additionalFeatureDefinitions = readJson('src/data/features-additional.json')
-const classProgressions = readJson('src/data/class-progressions.json')
+const additionalClassRecords = readJson('src/data/classes/catalog.json')
+const additionalFeatureDefinitions = readJson('src/data/classes/features.json')
+const classProgressions = readJson('src/data/classes/progressions.json')
 const featureDefinitionsById = new Map(additionalFeatureDefinitions.map((feature) => [feature.id, feature]))
 const additionalClassFeatures = classProgressions.flatMap((progression) => {
   const feature = featureDefinitionsById.get(progression.featureId)
@@ -280,9 +280,10 @@ const usedFeatureIds = new Set()
 for (const progression of classProgressions) {
   const location = `progressions/${progression.progressionId ?? progression.featureId}`
   if (!definitionIds.has(progression.featureId)) errors.push(`${location}: unknown feature definition`)
-  if (!progression.progressionId?.trim()) errors.push(`${location}: missing progression ID`)
-  if (progressionIds.has(progression.progressionId)) errors.push(`${location}: duplicate progression ID`)
-  progressionIds.add(progression.progressionId)
+  const progressionId = progression.progressionId ?? progression.featureId
+  if (!progressionId?.trim()) errors.push(`${location}: missing progression ID`)
+  if (progressionIds.has(progressionId)) errors.push(`${location}: duplicate progression ID`)
+  progressionIds.add(progressionId)
   usedFeatureIds.add(progression.featureId)
   if (progression.contentSourceId && !sourceIds.has(progression.contentSourceId)) errors.push(`${location}: unknown progression source ${progression.contentSourceId}`)
   if (progression.names && Object.values(progression.names).some((name) => !name?.trim())) errors.push(`${location}: display-name overrides must be non-empty`)

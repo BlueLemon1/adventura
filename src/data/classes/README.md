@@ -2,10 +2,10 @@
 
 Class feature text and progression are separate concepts:
 
-- `srd/2014/class-features.json` and `srd/2024/class-features.json` contain only the official SRD datasets. Their contents are kept exactly as published in the project.
-- `features-additional.json` contains each supplemental feature definition once: canonical text, translation status, and the complete set of contributing source references. Shared mechanics such as Extra Attack or Potent Spellcasting are not copied for every class.
-- `class-progressions.json` assigns definitions to classes or subclasses and describes ruleset-specific availability, levels, source context, and optional class-specific display-name overrides. Multiple progression records may reference one definition; each occurrence has its own stable `progressionId`.
-- `classes-additional.json` is the shared class and subclass catalog. Legacy compatibility and replacement relationships belong to the class/subclass records, not to every feature beneath them.
+- `../srd/2014/class-features.json` and `../srd/2024/class-features.json` contain only the official SRD datasets. Their contents are kept exactly as published in the project.
+- `features.json` contains each supplemental feature definition once: canonical text, translation status, and the complete set of contributing source references. Shared mechanics such as Extra Attack or Potent Spellcasting are not copied for every class.
+- `progressions.json` assigns definitions to classes or subclasses and describes ruleset-specific availability, levels, source context, and optional class-specific display-name overrides. Multiple progression records may reference one definition; each occurrence has its own stable `progressionId`.
+- `catalog.json` is the shared class and subclass catalog. Legacy compatibility and replacement relationships belong to the class/subclass records, not to every feature beneath them.
 - `feature-mechanics.json` stores Adventura-specific activation, resource, and spellbook metadata by shared definition ID, not by class-specific occurrence. It is not part of the SRD text.
 
 A 2014 feature used by a 2024 Legacy subclass is represented by one definition and one progression record. The subclass catalog carries `rulesets["2024"] = "legacy"`; the feature progression simply references the same definition in both rulesets and stores the edition-specific unlock level. For example, a feature can remain at level 2 in 2014 and move to level 3 in 2024 without duplicating its text or repeating the Legacy marker on every feature.
