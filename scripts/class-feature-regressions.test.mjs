@@ -111,8 +111,8 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
   )
   for (const ruleset of ['2014', '2024']) {
     const spells = [
-      ...readJson('../src/data/spells-' + ruleset + '.json'),
-      ...readJson('../src/data/spells-additional.json').filter((spell) =>
+      ...readJson('../src/data/spells/spells-' + ruleset + '.json'),
+      ...readJson('../src/data/spells/spells-additional.json').filter((spell) =>
         spell.rulesets
           ? spell.rulesets[ruleset] === true || spell.rulesets[ruleset] === 'legacy'
           : sourceRulesets.get(spell.contentSourceId) === ruleset,
