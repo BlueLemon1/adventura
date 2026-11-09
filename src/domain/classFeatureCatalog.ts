@@ -22,10 +22,10 @@ export interface ClassFeatureRecord {
   /** Translation status for non-source locales; omitted means official/source-verified. */
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
   /** Complete provenance for this shared definition. */
-  sources?: Array<{
+  sources?: {
     contentSourceId: ContentProvenance['contentSourceId']
     sourceReference?: string
-  }>
+  }[]
   /** Canonical spell IDs explicitly granted by this feature, if any. */
   grantedSpellIds?: string[]
 }
@@ -74,9 +74,15 @@ export function buildClassFeatureRecords(
         ...definition,
         id: progression.progressionId ?? definition.id,
         definitionId: definition.id,
-        ...(progression.names ? { names: { ...definition.names, ...progression.names } } : {}),
-        ...(progression.contentSourceId ? { contentSourceId: progression.contentSourceId } : {}),
-        ...(progression.sourceReference ? { sourceReference: progression.sourceReference } : {}),
+        ...(progression.names
+          ? { names: { ...definition.names, ...progression.names } }
+          : {}),
+        ...(progression.contentSourceId
+          ? { contentSourceId: progression.contentSourceId }
+          : {}),
+        ...(progression.sourceReference
+          ? { sourceReference: progression.sourceReference }
+          : {}),
         rulesets: { [ruleset]: availability },
         classId: progression.classId,
         ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
