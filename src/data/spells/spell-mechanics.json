@@ -1675,7 +1675,8 @@
           "startLevel": 6,
           "interval": 1,
           "dice": "1d6",
-          "mode": "add-dice"
+          "mode": "add-dice",
+          "condition": "You choose to increase fire or radiant damage"
         }
       ]
     },
@@ -1690,7 +1691,8 @@
           "startLevel": 6,
           "interval": 1,
           "dice": "1d6",
-          "mode": "add-dice"
+          "mode": "add-dice",
+          "condition": "You choose to increase fire or radiant damage"
         }
       ]
     }
@@ -1964,54 +1966,64 @@
     {
       "dice": "10d6",
       "average": 35,
-      "type": "fire"
+      "type": "fire",
+      "condition": "Only if the corresponding color is rolled"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "acid"
+      "type": "acid",
+      "condition": "Only if the corresponding color is rolled"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "lightning"
+      "type": "lightning",
+      "condition": "Only if the corresponding color is rolled"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "poison"
+      "type": "poison",
+      "condition": "Only if the corresponding color is rolled"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "cold"
+      "type": "cold",
+      "condition": "Only if the corresponding color is rolled"
     }
   ],
   "srd-2014-prismatic-wall": [
     {
       "dice": "10d6",
       "average": 35,
-      "type": "fire"
+      "type": "fire",
+      "condition": "Only when a creature interacts with the corresponding wall layer"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "acid"
+      "type": "acid",
+      "condition": "Only when a creature interacts with the corresponding wall layer"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "lightning"
+      "type": "lightning",
+      "condition": "Only when a creature interacts with the corresponding wall layer"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "poison"
+      "type": "poison",
+      "condition": "Only when a creature interacts with the corresponding wall layer"
     },
     {
       "dice": "10d6",
       "average": 35,
-      "type": "cold"
+      "type": "cold",
+      "condition": "Only when a creature interacts with the corresponding wall layer"
     }
   ],
   "srd-2014-produce-flame": [
@@ -2177,7 +2189,8 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
-      ]
+      ],
+      "condition": "If you are good or neutral"
     },
     {
       "dice": "3d8",
@@ -2192,7 +2205,8 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
-      ]
+      ],
+      "condition": "If you are evil"
     }
   ],
   "srd-2014-storm-of-vengeance": [
@@ -3595,7 +3609,8 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
-      ]
+      ],
+      "condition": "If you are good or neutral"
     },
     {
       "dice": "3d8",
@@ -3610,7 +3625,8 @@
           "dice": "1d8",
           "mode": "add-dice"
         }
-      ]
+      ],
+      "condition": "If you are evil"
     }
   ],
   "srd-2024-starry-wisp": [
