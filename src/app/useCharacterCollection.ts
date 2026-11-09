@@ -89,8 +89,6 @@ export function useCharacterCollection() {
     })
   }
 
-
-
   return {
     characters,
     setCharacters,

@@ -201,10 +201,17 @@ export async function importBackup(json: string): Promise<StoredCharacter[]> {
     },
   }))
 
-  if (backup.partyInventory?.length && normalized.length && !normalized[0].inventory.party.length) {
+  if (backup.partyInventory?.length && normalized.length) {
+    const existingIds = new Set(normalized[0].inventory.party.map((item) => item.id))
     normalized[0] = {
       ...normalized[0],
-      inventory: { ...normalized[0].inventory, party: backup.partyInventory },
+      inventory: {
+        ...normalized[0].inventory,
+        party: [
+          ...normalized[0].inventory.party,
+          ...backup.partyInventory.filter((item) => !existingIds.has(item.id)),
+        ],
+      },
     }
   }
 

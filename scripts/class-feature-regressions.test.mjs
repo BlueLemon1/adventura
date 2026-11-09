@@ -182,3 +182,15 @@ test('same mechanical feature may retain a class-specific display name', () => {
   assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
   assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')
 })
+
+test('Artificer spellcasting progression is available in both rulesets at level 1', () => {
+  for (const ruleset of ['2014', '2024']) {
+    const spellcasting = progressions.find((record) =>
+      record.classId === 'artificer' && !record.subclassId &&
+      record.contentSourceId === (ruleset === '2014' ? 'tce-2020' : 'efota-2025') &&
+      record.featureId.endsWith('-artificer-class-spellcasting'),
+    )
+    assert.equal(spellcasting?.rulesets?.[ruleset], true)
+    assert.equal(spellcasting?.levels?.[ruleset], 1)
+  }
+})

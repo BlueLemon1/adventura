@@ -1,6 +1,6 @@
 # Spell data
 
-All spell-specific datasets live in this directory. The SRD spell records remain source data; application-only mechanics and compatibility metadata are stored separately and joined by canonical spell ID.
+Supplemental spell datasets live in this directory. The edition-specific SRD spell records are kept separately under `../srd/`; application-only mechanics and compatibility metadata are stored here and joined by canonical spell ID.
 
 - `../srd/2014/spells.json`, `../srd/2024/spells.json`: SRD spell records, kept free of extracted application metadata.
 - `spells-additional.json`: supplemental spell records.
