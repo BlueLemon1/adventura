@@ -79,13 +79,15 @@ test('spell mechanics model conditional, recurring, and scaled damage separately
   assert.equal(mechanics['srd-2014-magic-missile'][0].scaling[0].mode, 'add-instance')
   assert.equal(mechanics['srd-2014-eldritch-blast'][0].scaling[0].kind, 'character-level')
   assert.equal(mechanics['srd-2024-resistance'][0].modifier, 'damage-reduction')
+  assert.deepEqual(mechanics['srd-2024-enlarge-reduce'].map((entry) => entry.modifier), ['extra', 'reduced'])
+  assert.equal(mechanics['srd-2014-call-lightning'][0].condition, undefined)
   assert.deepEqual(mechanics['srd-2024-glyph-of-warding'][0].typeOptions, ['acid', 'cold', 'fire', 'lightning', 'thunder'])
   assert.equal(mechanics['srd-2024-sorcerous-burst'][0].diceRules.explodeOn, 8)
   assert.ok(Object.values(mechanics).flat().every((entry) => !['extra', 'less', 'variable'].includes(entry.type)))
 })
 
 test('damage averages represent dice only and conditional alternatives are explicit', () => {
-  const diceAverage = (dice) => [...dice.matchAll(/(\\d+)d(\\d+)/gi)]
+  const diceAverage = (dice) => [...dice.matchAll(/(\d+)d(\d+)/gi)]
     .reduce((total, match) => total + Number(match[1]) * (Number(match[2]) + 1) / 2, 0)
   for (const entries of Object.values(mechanics)) {
     for (const entry of entries) assert.equal(entry.average, diceAverage(entry.dice))
