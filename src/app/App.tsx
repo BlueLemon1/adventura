@@ -18,7 +18,7 @@ import type { StoredCharacter } from '../storage/database'
 import type { Dnd5eRuleset } from '../domain/rules'
 import { createPactMagic, createSpellSlots } from '../domain/spellcasting'
 import { LanguageContext, translate } from './i18n'
-import { deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
+import { clearPartyInventory, deleteCharacter, getPartyInventory, saveCharacter } from '../storage/database'
 import { downloadBackup, importBackup } from '../storage/backup'
 import {
   Select,
@@ -52,8 +52,6 @@ export default function App() {
   const {
     characters,
     setCharacters,
-    partyItems,
-    setPartyItems,
     selectedId,
     setSelectedId,
     selected,
@@ -63,7 +61,6 @@ export default function App() {
     updateCharacter,
     updateInventory,
     updateSpellbook,
-    persistPartyItems,
   } = useCharacterCollection()
   const [page, setPage] = useState<Page>('overview')
   const [inventoryView, setInventoryView] = useState<InventoryView>('inventory')
@@ -393,7 +390,6 @@ export default function App() {
             {page === 'overview' && (
               <OverviewPage
                 characters={characters}
-                partyItems={partyItems}
                 loading={loading}
                 onCreate={() => setShowCreate(true)}
                 onRemove={(entry) => void removeCharacter(entry)}
@@ -422,9 +418,9 @@ export default function App() {
                 inventory={selected.inventory}
                 view={inventoryView}
                 onViewChange={setInventoryView}
-                partyItems={partyItems}
+                partyItems={selected.inventory.party}
                 onUpdateInventory={updateInventory}
-                onSavePartyItems={persistPartyItems}
+                onSavePartyItems={(items) => updateInventory({ party: items })}
               />
             )}
             {page === 'spells' && selected && (
