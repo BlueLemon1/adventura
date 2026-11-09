@@ -41,13 +41,12 @@ export const CLASS_OPTIONS = getClassOptions('2024')
 export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): ClassOption[] {
   return ADDITIONAL_CLASSES.filter(
     (record) =>
-      record.type === 'subclass' &&
-      record.classId === classId &&
-      isAvailable(record, ruleset),
+      record.type === 'subclass' && record.classId === classId && isAvailable(record, ruleset),
   )
     .map((record) => ({
       value: record.subclassId ?? record.id,
-      label: record.names[ruleset]?.de ?? record.names[ruleset]?.en ?? record.subclassId ?? record.id,
+      label:
+        record.names[ruleset]?.de ?? record.names[ruleset]?.en ?? record.subclassId ?? record.id,
       source: record.sources[ruleset] ?? record.sources['2014'],
     }))
     .sort((left, right) => left.label.localeCompare(right.label, 'de'))
