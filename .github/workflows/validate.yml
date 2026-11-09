@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 22
       - run: npm install
-      - run: npm run format && cat src/domain/classFeatureCatalog.ts && printf '\n---CLASSFEATURES---\n' && cat src/domain/classFeatures.ts
+      - run: npm run format:check
       - run: npm run format:check
       - run: npm run build
       - run: npm test
