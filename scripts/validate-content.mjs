@@ -339,7 +339,7 @@ const spells2024 = [
   ...spells2024Srd,
   ...additionalSpellRecords.filter((spell) =>
     spell.rulesets
-      ? spell.rulesets['2024'] === true || spell.rulesets['2024'] === 'legacy'
+      ? spell.rulesets['2024'] === true
       : sourceRulesets.get(spell.contentSourceId) === '2024',
   ),
 ]
