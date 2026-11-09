@@ -763,7 +763,24 @@
     {
       "dice": "4d8",
       "average": 18,
-      "type": "radiant"
+      "type": "radiant",
+      "timing": "When the wall appears and when a creature ends its turn in the wall"
+    },
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "radiant",
+      "timing": "Bonus Action beam attack",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "xge-2014-whirlwind": [
@@ -798,6 +815,12 @@
           "mode": "add-dice"
         }
       ]
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "fire",
+      "timing": "End of each of the target's turns while it burns"
     }
   ],
   "xge-2014-snillocs-snowball-swarm": [
@@ -2502,6 +2525,23 @@
       "dice": "5d8",
       "average": 22.5,
       "type": "force"
+    },
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "bludgeoning",
+      "flatBonus": "spellcasting-ability",
+      "condition": "Grasping Hand; Bonus Action to crush the grappled target",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "2d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-befuddlement": [
@@ -2587,7 +2627,17 @@
     {
       "dice": "10d8",
       "average": 45,
-      "type": "lightning"
+      "type": "lightning",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "10d8",
+          "mode": "add-instance"
+        }
+      ]
     }
   ],
   "srd-2024-chill-touch": [
@@ -2994,12 +3044,32 @@
     {
       "dice": "5d6",
       "average": 17.5,
-      "type": "fire"
+      "type": "fire",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "5d6",
       "average": 17.5,
-      "type": "radiant"
+      "type": "radiant",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-flaming-sphere": [
@@ -3866,12 +3936,32 @@
     {
       "dice": "7d8",
       "average": 31.5,
-      "type": "piercing"
+      "type": "piercing",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     },
     {
       "dice": "7d8",
       "average": 31.5,
-      "type": "slashing"
+      "type": "slashing",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 6,
+          "startLevel": 7,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
+      ]
     }
   ],
   "srd-2024-web": [
@@ -4125,6 +4215,14 @@
       "timing": "When the bead explodes",
       "scaling": [
         {
+          "kind": "spell-slot",
+          "baseLevel": 7,
+          "startLevel": 8,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        },
+        {
           "kind": "turn",
           "dice": "1d6",
           "mode": "add-dice",
@@ -4200,6 +4298,16 @@
         "fire",
         "lightning",
         "thunder"
+      ],
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 3,
+          "startLevel": 4,
+          "interval": 1,
+          "dice": "1d8",
+          "mode": "add-dice"
+        }
       ]
     }
   ],
@@ -4209,7 +4317,17 @@
       "average": 2.5,
       "type": "force",
       "flatBonus": 1,
-      "condition": "Per dart"
+      "condition": "Per dart",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 1,
+          "startLevel": 2,
+          "interval": 1,
+          "dice": "1d4",
+          "mode": "add-instance"
+        }
+      ]
     }
   ],
   "srd-2024-ray-of-enfeeblement": [
@@ -4309,6 +4427,202 @@
             {
               "level": 17,
               "dice": "1d12"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "srd-2024-animate-objects": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "force",
+      "flatBonus": 3,
+      "condition": "Slam; Medium or smaller animated object",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d4",
+          "mode": "add-dice"
+        }
+      ]
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "force",
+      "flatBonus": {
+        "base": 3,
+        "spellcastingAbility": true
+      },
+      "condition": "Slam; Large animated object",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d6",
+          "mode": "add-dice"
+        }
+      ]
+    },
+    {
+      "dice": "2d12",
+      "average": 13,
+      "type": "force",
+      "flatBonus": {
+        "base": 3,
+        "spellcastingAbility": true
+      },
+      "condition": "Slam; Huge animated object",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 1,
+          "dice": "1d12",
+          "mode": "add-dice"
+        }
+      ]
+    }
+  ],
+  "srd-2024-find-steed": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "flatBonus": "spell-slot-level",
+      "typeOptions": [
+        "radiant",
+        "psychic",
+        "necrotic"
+      ],
+      "condition": "Otherworldly Slam; damage type depends on the steed's creature type"
+    }
+  ],
+  "srd-2024-giant-insect": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "piercing",
+      "flatBonus": {
+        "base": 3,
+        "spellSlotLevel": true
+      },
+      "condition": "Poison Jab"
+    },
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "poison",
+      "condition": "Poison Jab"
+    },
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "bludgeoning",
+      "flatBonus": {
+        "base": 3,
+        "spellSlotLevel": true
+      },
+      "condition": "Web Bolt; Spider form"
+    }
+  ],
+  "srd-2024-summon-dragon": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "piercing",
+      "flatBonus": {
+        "base": 4,
+        "spellSlotLevel": true
+      },
+      "condition": "Rend; number of attacks equals half the spell slot level rounded down",
+      "scaling": [
+        {
+          "kind": "spell-slot",
+          "baseLevel": 5,
+          "startLevel": 6,
+          "interval": 2,
+          "dice": "1d6",
+          "mode": "add-instance"
+        }
+      ]
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "typeOptions": [
+        "acid",
+        "cold",
+        "fire",
+        "lightning",
+        "poison"
+      ],
+      "condition": "Breath Weapon; damage type matches one of the spirit's resistances"
+    }
+  ],
+  "srd-2024-true-strike": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "radiant",
+      "modifier": "extra",
+      "activeFromLevel": 5,
+      "condition": "Extra Radiant damage on the weapon attack",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "set-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d6"
+            },
+            {
+              "level": 11,
+              "dice": "2d6"
+            },
+            {
+              "level": 17,
+              "dice": "3d6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "srd-2024-shillelagh": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "modifier": "weapon-die",
+      "typeOptions": [
+        "force",
+        "weapon's normal damage type"
+      ],
+      "condition": "Damage die for the imbued Club or Quarterstaff",
+      "scaling": [
+        {
+          "kind": "character-level",
+          "mode": "set-dice",
+          "thresholds": [
+            {
+              "level": 5,
+              "dice": "1d10"
+            },
+            {
+              "level": 11,
+              "dice": "1d12"
+            },
+            {
+              "level": 17,
+              "dice": "2d6"
             }
           ]
         }
