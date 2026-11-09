@@ -6,6 +6,11 @@ import type { Dnd5eRuleset } from './rules'
  * The canonical ID is stable across locales; localized text is stored on the
  * same record so translations can never become duplicate features.
  */
+export interface ClassFeatureSource {
+  contentSourceId: ContentProvenance['contentSourceId']
+  sourceReference?: string
+}
+
 export interface ClassFeatureRecord {
   /** Unique class-progression occurrence ID (may differ from the shared definition ID). */
   id: string
@@ -22,10 +27,7 @@ export interface ClassFeatureRecord {
   /** Translation status for non-source locales; omitted means official/source-verified. */
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
   /** Complete provenance for this shared definition. */
-  sources?: {
-    contentSourceId: ContentProvenance['contentSourceId']
-    sourceReference?: string
-  }[]
+  sources?: ClassFeatureSource[]
   /** Canonical spell IDs explicitly granted by this feature, if any. */
   grantedSpellIds?: string[]
 }
@@ -69,20 +71,20 @@ export function buildClassFeatureRecords(
     const definition = byId.get(progression.featureId)
     if (availability !== true || !definition || !level) return []
 
+    const names = progression.names
+      ? { ...definition.names, ...progression.names }
+      : definition.names
+    const contentSourceId = progression.contentSourceId ?? definition.contentSourceId
+    const sourceReference = progression.sourceReference ?? definition.sourceReference
+
     return [
       {
         ...definition,
         id: progression.progressionId ?? definition.id,
         definitionId: definition.id,
-        ...(progression.names
-          ? { names: { ...definition.names, ...progression.names } }
-          : {}),
-        ...(progression.contentSourceId
-          ? { contentSourceId: progression.contentSourceId }
-          : {}),
-        ...(progression.sourceReference
-          ? { sourceReference: progression.sourceReference }
-          : {}),
+        names,
+        contentSourceId,
+        ...(sourceReference ? { sourceReference } : {}),
         rulesets: { [ruleset]: availability },
         classId: progression.classId,
         ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
