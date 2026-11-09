@@ -131,15 +131,25 @@ const sourceIds = new Set([...sourceSource.matchAll(/id: '([^']+)'/g)].map((matc
 const sourceRulesets = new Map(
   [...sourceSource.matchAll(/id: '([^']+)'[\\s\\S]*?ruleset: '(2014|2024)'/g)].map((match) => [match[1], match[2]]),
 )
-const additionalSpellRecords = readJson('src/data/spells-additional.json')
-const srdSpellRecords = [readJson('src/data/spells-2014.json'), readJson('src/data/spells-2024.json')].flat()
-const spellMechanics = readJson('src/data/spell-mechanics.json')
-const spellAvailability = readJson('src/data/spell-availability.json')
+const additionalSpellRecords = readJson('src/data/spells/spells-additional.json')
+const srdSpellRecords = [readJson('src/data/spells/spells-2014.json'), readJson('src/data/spells/spells-2024.json')].flat()
+const spellMechanics = readJson('src/data/spells/spell-mechanics.json')
+const spellAvailability = readJson('src/data/spells/spell-availability.json')
 const additionalSpellIds = new Set(additionalSpellRecords.map((spell) => spell.id))
 const knownSpellIds = new Set([...additionalSpellRecords, ...srdSpellRecords].map((spell) => spell.id))
 for (const [spellId, mechanics] of Object.entries(spellMechanics)) {
   if (!knownSpellIds.has(spellId)) errors.push(`spell-mechanics/${spellId}: unknown spell ID`)
-  if (!Array.isArray(mechanics) || mechanics.some((entry) => !entry.dice || !Number.isFinite(entry.average))) {
+  if (!Array.isArray(mechanics) || mechanics.some((entry) =>
+    !entry.dice || !Number.isFinite(entry.average) ||
+    (entry.scaling && (!Array.isArray(entry.scaling) || entry.scaling.some((scale) =>
+      !['spell-slot', 'character-level', 'turn'].includes(scale.kind) ||
+      (scale.kind === 'spell-slot' && (!Number.isInteger(scale.baseLevel) || !Number.isInteger(scale.interval) || !scale.dice)) ||
+      (scale.kind === 'character-level' && (!Array.isArray(scale.thresholds) || scale.thresholds.some((threshold) =>
+        !Number.isInteger(threshold.level) || !threshold.dice,
+      ))),
+    ))) ||
+    (entry.modifier && !['extra', 'reduced', 'damage-penalty', 'damage-reduction'].includes(entry.modifier))
+  )) {
     errors.push(`spell-mechanics/${spellId}: invalid damage metadata`)
   }
 }
@@ -378,8 +388,8 @@ for (const ruleset of ['2014', '2024']) {
   console.log(`${ruleset}: ${optionCount} selectable subclasses, ${supplemental.length} supplemental feature records, ${supplemental.filter((feature) => feature.grantedSpellIds?.length).length} spell-grant features`)
 }
 
-const spells2014Srd = readJson('src/data/spells-2014.json')
-const spells2024Srd = readJson('src/data/spells-2024.json')
+const spells2014Srd = readJson('src/data/spells/spells-2014.json')
+const spells2024Srd = readJson('src/data/spells/spells-2024.json')
 const spells2014 = [
   ...spells2014Srd,
   ...additionalSpellRecords.filter((spell) =>
