@@ -1,0 +1,9616 @@
+[
+  {
+    "featureId": "2014-artificer-class-magical-tinkering",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-spellcasting",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-infuse-item",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-artificer-specialist",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-right-tool-for-the-job",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-ability-score-improvement-4",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 4
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-tool-expertise",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-flash-of-genius",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-ability-score-improvement-8",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 8
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-magic-item-adept",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-spell-storing-item",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-ability-score-improvement-12",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 12
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-magic-item-savant",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-ability-score-improvement-16",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 16
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-magic-item-master",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-ability-score-improvement-19",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 19
+    }
+  },
+  {
+    "featureId": "2014-artificer-class-soul-of-artifice",
+    "classId": "artificer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 20
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-alchemist-spells",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-experimental-elixir",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-alchemical-savant",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 5
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-restorative-reagents",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-artificer-alchemist-chemical-mastery",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-armorer-spells",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    },
+    "grantedSpellIds": {
+      "2014": [
+        "srd-2014-magic-missile",
+        "srd-2014-thunderwave",
+        "srd-2014-mirror-image",
+        "srd-2014-shatter",
+        "srd-2014-hypnotic-pattern",
+        "srd-2014-lightning-bolt",
+        "srd-2014-fire-shield",
+        "srd-2014-greater-invisibility",
+        "srd-2014-passwall",
+        "srd-2014-wall-of-force"
+      ]
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-arcane-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-extra-attack",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 5
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-armor-modifications",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-artificer-armorer-perfected-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-artillerist-spells",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    },
+    "grantedSpellIds": {
+      "2014": [
+        "srd-2014-shield",
+        "srd-2014-thunderwave",
+        "srd-2014-scorching-ray",
+        "srd-2014-shatter",
+        "srd-2014-fireball",
+        "srd-2014-wind-wall",
+        "srd-2014-ice-storm",
+        "srd-2014-wall-of-fire",
+        "srd-2014-cone-of-cold",
+        "srd-2014-wall-of-force"
+      ]
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-eldritch-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-arcane-firearm",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 5
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-explosive-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-artificer-artillerist-fortified-position",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-battle-smith-spells",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-battle-ready",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-steel-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-extra-attack",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 5
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-arcane-jolt",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-artificer-battlesmith-improved-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-barbarian-totemwarrior-spirit-seeker",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-totemwarrior-totem-spirit",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-totemwarrior-aspect-of-the-beast",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-totemwarrior-spirit-walker",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-totemwarrior-totemic-attunement",
+    "classId": "barbarian",
+    "subclassId": "totemwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-valor-bonus-proficiencies",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-valor-combat-inspiration",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-valor-extra-attack",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-valor-battle-magic",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-druid-moon-combat-wild-shape",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-druid-moon-circle-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-druid-moon-primal-strike",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-moon-elemental-wild-shape",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-moon-thousand-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-combat-superiority",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-student-of-war",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-know-your-enemy",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-improved-combat-superiority",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-relentless",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-battlemaster-improved-combat-superiority-level-18",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-spellcasting",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-weapon-bond",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-war-magic",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-eldritch-strike",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-arcane-charge",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-eldritchknight-improved-war-magic",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-monk-shadow-shadow-arts",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-shadow-shadow-step",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-shadow-cloak-of-shadows",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-shadow-opportunist",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-monk-four_elements-disciple-of-the-elements",
+    "classId": "monk",
+    "subclassId": "four_elements",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-four_elements-elemental-disciplines",
+    "classId": "monk",
+    "subclassId": "four_elements",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-four_elements-elemental-disciplines-level-11",
+    "classId": "monk",
+    "subclassId": "four_elements",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-four_elements-elemental-disciplines-level-17",
+    "classId": "monk",
+    "subclassId": "four_elements",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-paladin-ancients-oath-spells",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-ancients-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-ancients-aura-of-warding",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-ancients-undying-sentinel",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-ancients-elder-champion",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 20
+    }
+  },
+  {
+    "featureId": "2014-paladin-vengeance-oath-spells",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-vengeance-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-vengeance-relentless-avenger",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-vengeance-soul-of-vengeance",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-vengeance-avenging-angel",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 20
+    }
+  },
+  {
+    "featureId": "2014-ranger-beastmaster-ranger-s-companion",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-beastmaster-exceptional-training",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-beastmaster-bestial-fury",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-beastmaster-share-spells",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-rogue-assassin-bonus-proficiencies",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-assassin-assassinate",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-assassin-infiltration-expertise",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-assassin-impostor",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-assassin-death-strike",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-rogue-arcanetrickster-spellcasting",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-arcanetrickster-mage-hand-legerdemain",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-arcanetrickster-magical-ambush",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-arcanetrickster-versatile-trickster",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-arcanetrickster-spell-thief",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-wildmagic-wild-magic-surge",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-wildmagic-tides-of-chaos",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-wildmagic-bend-luck",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-wildmagic-controlled-chaos",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-wildmagic-spell-bombardment",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-warlock-archfey-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-archfey-fey-presence",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-archfey-misty-escape",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-archfey-beguiling-defenses",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-archfey-dark-delirium",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-warlock-greatoldone-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-greatoldone-awakened-mind",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-greatoldone-entropic-ward",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-greatoldone-thought-shield",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-greatoldone-create-thrall",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-abjuration-abjuration-savant",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-abjuration-arcane-ward",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-abjuration-projected-ward",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-abjuration-improved-abjuration",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-abjuration-spell-resistance",
+    "classId": "wizard",
+    "subclassId": "abjuration",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-conjuration-conjuration-savant",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-conjuration-minor-conjuration",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-conjuration-benign-transposition",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-conjuration-focused-conjuration",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-conjuration-durable-summons",
+    "classId": "wizard",
+    "subclassId": "conjuration",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-divination-divination-savant",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-divination-portent",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-divination-expert-divination",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-divination-the-third-eye",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-divination-greater-portent",
+    "classId": "wizard",
+    "subclassId": "divination",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-enchantment-enchantment-savant",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-enchantment-hypnotic-gaze",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-enchantment-instinctive-charm",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-enchantment-split-enchantment",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-enchantment-alter-memories",
+    "classId": "wizard",
+    "subclassId": "enchantment",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-illusion-illusion-savant",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-illusion-improved-minor-illusion",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-wizard-illusion-malleable-illusions",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-illusion-illusory-self",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-illusion-illusory-reality",
+    "classId": "wizard",
+    "subclassId": "illusion",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-necromancy-necromancy-savant",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-necromancy-grim-harvest",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-necromancy-undead-thralls",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-necromancy-inured-to-undeath",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-necromancy-command-undead",
+    "classId": "wizard",
+    "subclassId": "necromancy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-transmutation-transmutation-savant",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-transmutation-minor-alchemy",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-transmutation-transmuter-s-stone",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-transmutation-shapechanger",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-transmutation-master-transmuter",
+    "classId": "wizard",
+    "subclassId": "transmutation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-blessings-of-knowledge",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-domain-spells",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2014": [
+        "srd-2014-command",
+        "srd-2014-identify",
+        "srd-2014-augury",
+        "srd-2014-suggestion",
+        "srd-2014-nondetection",
+        "srd-2014-speak-with-dead",
+        "srd-2014-arcane-eye",
+        "srd-2014-confusion",
+        "srd-2014-legend-lore",
+        "srd-2014-scrying"
+      ],
+      "2024": [
+        "srd-2024-command",
+        "srd-2024-identify",
+        "srd-2024-augury",
+        "srd-2024-suggestion",
+        "srd-2024-nondetection",
+        "srd-2024-speak-with-dead",
+        "srd-2024-arcane-eye",
+        "srd-2024-confusion",
+        "srd-2024-legend-lore",
+        "srd-2024-scrying"
+      ]
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-channel-divinity-knowledge-of-the-ages",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-channel-divinity-read-thoughts",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-knowledge-visions-of-the-past",
+    "classId": "cleric",
+    "subclassId": "knowledge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-bonus-cantrip",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-warding-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-domain-spells",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    },
+    "grantedSpellIds": {
+      "2014": [
+        "srd-2014-burning-hands",
+        "srd-2014-faerie-fire",
+        "srd-2014-flaming-sphere",
+        "srd-2014-scorching-ray",
+        "srd-2014-daylight",
+        "srd-2014-fireball",
+        "srd-2014-guardian-of-faith",
+        "srd-2014-wall-of-fire",
+        "srd-2014-flame-strike",
+        "srd-2014-scrying"
+      ]
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-channel-divinity-radiance-of-the-dawn",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-improved-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-light-corona-of-light",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-acolyte-of-nature",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-bonus-proficiency",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-domain-spells",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-channel-divinity-charm-animals-and-plants",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-dampen-elements",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-divine-strike",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-nature-master-of-nature",
+    "classId": "cleric",
+    "subclassId": "nature",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-wrath-of-the-storm",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-domain-spells",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-channel-divinity-destructive-wrath",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-thunderbolt-strike",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-divine-strike",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-tempest-stormborn",
+    "classId": "cleric",
+    "subclassId": "tempest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-blessing-of-the-trickster",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-domain-spells",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-channel-divinity-invoke-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-channel-divinity-cloak-of-shadows",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-divine-strike",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-trickery-improved-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-war-priest",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-domain-spells",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-channel-divinity-guided-strike",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-channel-divinity-war-god-s-blessing",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-divine-strike",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-war-avatar-of-battle",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-barbarian-ancestralguardian-ancestral-protectors",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-ancestralguardian-spirit-shield",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-ancestralguardian-consult-the-spirits",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-ancestralguardian-vengeful-ancestors",
+    "classId": "barbarian",
+    "subclassId": "ancestralguardian",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-stormherald-storm-aura",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-stormherald-storm-soul",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-stormherald-shielding-storm",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-stormherald-raging-storm",
+    "classId": "barbarian",
+    "subclassId": "stormherald",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-zealot-divine-fury",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-zealot-warrior-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-zealot-fanatical-focus",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-zealot-zealous-presence",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-zealot-rage-beyond-death",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-glamour-mantle-of-inspiration",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-glamour-enthralling-performance",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-glamour-mantle-of-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-glamour-unbreakable-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-swords-bonus-proficiencies",
+    "classId": "bard",
+    "subclassId": "swords",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-swords-fighting-style",
+    "classId": "bard",
+    "subclassId": "swords",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-swords-blade-flourish",
+    "classId": "bard",
+    "subclassId": "swords",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-swords-extra-attack",
+    "classId": "bard",
+    "subclassId": "swords",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-swords-master-s-flourish",
+    "classId": "bard",
+    "subclassId": "swords",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-whispers-psychic-blades",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-whispers-words-of-terror",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-whispers-mantle-of-whispers",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-whispers-shadow-lore",
+    "classId": "bard",
+    "subclassId": "whispers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-blessing-of-the-forge",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-channel-divinity-artisan-s-blessing",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-soul-of-the-forge",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-divine-strike",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-forge-saint-of-forge-and-fire",
+    "classId": "cleric",
+    "subclassId": "forge",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-circle-of-mortality",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-eyes-of-the-grave",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-channel-divinity-path-to-the-grave",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-sentinel-at-death-s-door",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-grave-keeper-of-souls",
+    "classId": "cleric",
+    "subclassId": "grave",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-druid-dreams-balm-of-the-summer-court",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-dreams-world-of-dreams",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-dreams-hearth-of-moonlight-and-shadow",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-dreams-hidden-paths",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-dreams-walker-in-dreams",
+    "classId": "druid",
+    "subclassId": "dreams",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-druid-shepherd-speech-of-the-woods",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-shepherd-spirit-totem",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-shepherd-mighty-summoner",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-shepherd-guardian-spirit",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-shepherd-faithful-summons",
+    "classId": "druid",
+    "subclassId": "shepherd",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-fighter-arcanearcher-arcane-archer-lore",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-arcanearcher-arcane-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-arcanearcher-magic-arrow",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-arcanearcher-curving-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-arcanearcher-ever-ready-shot",
+    "classId": "fighter",
+    "subclassId": "arcanearcher",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-bonus-proficiency",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-born-to-the-saddle",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-unwavering-mark",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-warding-maneuver",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-hold-the-line",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-ferocious-charger",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-cavalier-vigilant-defender",
+    "classId": "fighter",
+    "subclassId": "cavalier",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-bonus-proficiency",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-fighting-spirit",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-elegant-courtier",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-tireless-spirit",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-rapid-strike",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-samurai-strength-before-death",
+    "classId": "fighter",
+    "subclassId": "samurai",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-monk-drunkenmaster-bonus-proficiencies",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-drunkenmaster-drunken-technique",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-drunkenmaster-tipsy-sway",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-drunkenmaster-drunkard-s-luck",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-drunkenmaster-intoxicated-frenzy",
+    "classId": "monk",
+    "subclassId": "drunkenmaster",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-monk-kensei-path-of-the-kensei",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-kensei-agile-parry",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-kensei-one-with-the-blade",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-kensei-sharpen-the-blade",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-kensei-unerring-accuracy",
+    "classId": "monk",
+    "subclassId": "kensei",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-paladin-conquest-oath-spells",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-conquest-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-conquest-aura-of-conquest",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-conquest-scornful-rebuke",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-conquest-invincible-conqueror",
+    "classId": "paladin",
+    "subclassId": "conquest",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 20,
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2014-paladin-redemption-oath-spells",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-redemption-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-redemption-aura-of-the-guardian",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-redemption-protective-spirit",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-redemption-emissary-of-redemption",
+    "classId": "paladin",
+    "subclassId": "redemption",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 20,
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2014-ranger-gloomstalker-dread-ambusher",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-gloomstalker-umbral-sight",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-gloomstalker-iron-mind",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-gloomstalker-stalker-s-flurry",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-gloomstalker-shadowy-dodge",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-horizon-walker-magic",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-detect-portal",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-planar-warrior",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-ethereal-step",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-distant-strike",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-horizonwalker-spectral-defense",
+    "classId": "ranger",
+    "subclassId": "horizonwalker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-monster-slayer-magic",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-hunter-s-sense",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-slayer-s-prey",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-supernatural-defense",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-magic-user-s-nemesis",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-monster_slayer-slayer-s-counter",
+    "classId": "ranger",
+    "subclassId": "monster_slayer",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-ear-for-deceit",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-eye-for-detail",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-insightful-fighting",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-steady-eye",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 9,
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-unerring-eye",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 13,
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-inquisitive-eye-for-weakness",
+    "classId": "rogue",
+    "subclassId": "inquisitive",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-rogue-mastermind-master-of-intrigue",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-mastermind-master-of-tactics",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-mastermind-insightful-manipulator",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 9,
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-mastermind-misdirection",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 13,
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-mastermind-soul-of-deceit",
+    "classId": "rogue",
+    "subclassId": "mastermind",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-rogue-scout-skirmisher",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-scout-survivalist",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-scout-superior-mobility",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 9,
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-scout-ambush-master",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 13,
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-scout-sudden-strike",
+    "classId": "rogue",
+    "subclassId": "scout",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-rogue-swashbuckler-fancy-footwork",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-swashbuckler-rakish-audacity",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-swashbuckler-panache",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 9,
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-swashbuckler-elegant-maneuver",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 13,
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-swashbuckler-master-duelist",
+    "classId": "rogue",
+    "subclassId": "swashbuckler",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-wind-speaker",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-tempestuous-magic",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-heart-of-the-storm",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-storm-guide",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-storm-s-fury",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-storm-wind-soul",
+    "classId": "sorcerer",
+    "subclassId": "storm",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-shadowmagic-eyes-of-the-dark",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-shadowmagic-strength-of-the-grave",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-shadowmagic-hound-of-ill-omen",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-shadowmagic-shadow-walk",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-shadowmagic-umbral-form",
+    "classId": "sorcerer",
+    "subclassId": "shadowmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-bonus-cantrips",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-healing-light",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-radiant-soul",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-celestial-resilience",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-celestial-searing-vengeance",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-hexblade-s-curse",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-hex-warrior",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-accursed-specter",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-armor-of-hexes",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-hexblade-master-of-hexes",
+    "classId": "warlock",
+    "subclassId": "hexblade",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-war-savant",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-arcane-deflection",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-tactical-wit",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-power-surge",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-durable-magic",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-war-deflecting-shroud",
+    "classId": "wizard",
+    "subclassId": "war",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-beast-form-of-the-beast",
+    "classId": "barbarian",
+    "subclassId": "beast",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-beast-bestial-soul",
+    "classId": "barbarian",
+    "subclassId": "beast",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-beast-infectious-fury",
+    "classId": "barbarian",
+    "subclassId": "beast",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-beast-call-the-hunt",
+    "classId": "barbarian",
+    "subclassId": "beast",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-wildmagic-magic-awareness",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-wildmagic-wild-surge",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-wildmagic-bolstering-magic",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-wildmagic-unstable-backlash",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-wildmagic-controlled-surge",
+    "classId": "barbarian",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-eloquence-silver-tongue",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-eloquence-unsettling-words",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-eloquence-unfailing-inspiration",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-eloquence-universal-speech",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-eloquence-infectious-inspiration",
+    "classId": "bard",
+    "subclassId": "eloquence",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-creation-mote-of-potential",
+    "classId": "bard",
+    "subclassId": "creation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-creation-performance-of-creation",
+    "classId": "bard",
+    "subclassId": "creation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-creation-animating-performance",
+    "classId": "bard",
+    "subclassId": "creation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-creation-creative-crescendo",
+    "classId": "bard",
+    "subclassId": "creation",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-voice-of-authority",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-domain-spells",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-channel-divinity-order-s-demand",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-embodiment-of-the-law",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-divine-strike",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-order-order-s-wrath",
+    "classId": "cleric",
+    "subclassId": "order",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-implement-of-peace",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-emboldening-bond",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-channel-divinity-balm-of-peace",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-protective-bond",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-peace-expansive-bond",
+    "classId": "cleric",
+    "subclassId": "peace",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-bonus-proficiencies",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-eyes-of-night",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-vigilant-blessing",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-channel-divinity-twilight-sanctuary",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-steps-of-night",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-divine-strike",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-twilight-twilight-shroud",
+    "classId": "cleric",
+    "subclassId": "twilight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-circle-spells",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-halo-of-spores",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-symbiotic-entity",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-fungal-infestation",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-spreading-spores",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-spores-fungal-body",
+    "classId": "druid",
+    "subclassId": "spores",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-druid-stars-star-map",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-druid-stars-starry-form",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 2
+    }
+  },
+  {
+    "featureId": "2014-druid-stars-cosmic-omen",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-stars-twinkling-constellations",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-stars-full-of-stars",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-druid-wildfire-circle-spells",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-wildfire-summon-wildfire-spirit",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-druid-wildfire-enhanced-bond",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-druid-wildfire-cauterizing-flames",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-druid-wildfire-blazing-revival",
+    "classId": "druid",
+    "subclassId": "wildfire",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-fighter-psiwarrior-psionic-power",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-psiwarrior-telekinetic-adept",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-psiwarrior-guarded-mind",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-psiwarrior-bulwark-of-force",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-psiwarrior-telekinetic-master",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-bonus-proficiencies",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-rune-carver",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-giant-s-might",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-runic-shield",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-great-stature",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-master-of-runes",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-runeknight-runic-juggernaut",
+    "classId": "fighter",
+    "subclassId": "runeknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-implements-of-mercy",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-hand-of-healing",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-hand-of-harm",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-physician-s-touch",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-flurry-of-healing-and-harm",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-mercy-hand-of-ultimate-mercy",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-monk-astral_self-arms-of-the-astral-self",
+    "classId": "monk",
+    "subclassId": "astral_self",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-astral_self-visage-of-the-astral-self",
+    "classId": "monk",
+    "subclassId": "astral_self",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-astral_self-body-of-the-astral-self",
+    "classId": "monk",
+    "subclassId": "astral_self",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-astral_self-awakened-astral-self",
+    "classId": "monk",
+    "subclassId": "astral_self",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-paladin-glory-oath-spells",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-glory-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-glory-aura-of-alacrity",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-glory-glorious-defense",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-glory-living-legend",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 20
+    }
+  },
+  {
+    "featureId": "2014-paladin-watchers-oath-spells",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-watchers-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-watchers-aura-of-the-sentinel",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-watchers-vigilant-rebuke",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-watchers-mortal-bulwark",
+    "classId": "paladin",
+    "subclassId": "watchers",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 20,
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2014-ranger-feywanderer-dreadful-strikes",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-feywanderer-otherworldly-glamour",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-feywanderer-beguiling-twist",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-feywanderer-fey-reinforcements",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-feywanderer-misty-wanderer",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 15
+    }
+  },
+  {
+    "featureId": "2014-ranger-swarmkeeper-gathered-swarm",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-swarmkeeper-swarmkeeper-magic",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-swarmkeeper-writhing-tide",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-swarmkeeper-mighty-swarm",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-swarmkeeper-swarming-dispersal",
+    "classId": "ranger",
+    "subclassId": "swarmkeeper",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-rogue-phantom-whispers-of-the-dead",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-phantom-wails-from-the-grave",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-phantom-tokens-of-the-departed",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 9,
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-phantom-ghost-walk",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 13,
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-phantom-death-s-friend",
+    "classId": "rogue",
+    "subclassId": "phantom",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-rogue-soulknife-psionic-power",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-soulknife-psychic-blades",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 3
+    }
+  },
+  {
+    "featureId": "2014-rogue-soulknife-soul-blades",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 9
+    }
+  },
+  {
+    "featureId": "2014-rogue-soulknife-psychic-veil",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 13
+    }
+  },
+  {
+    "featureId": "2014-rogue-soulknife-rend-mind",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 17
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-psionic-spells",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-telepathic-speech",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-psionic-sorcery",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-psychic-defenses",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-revelation-in-flesh",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-aberrantmind-warping-implosion",
+    "classId": "sorcerer",
+    "subclassId": "aberrantmind",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-clockwork-clockwork-magic",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-clockwork-restore-balance",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 1
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-clockwork-bastion-of-law",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-clockwork-trance-of-order",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-clockwork-clockwork-cavalcade",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2014": true
+    },
+    "levels": {
+      "2014": 18
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-tentacle-of-the-deeps",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-gift-of-the-sea",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-oceanic-soul",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-guardian-coil",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-grasping-tentacles",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-fathomless-fathomless-plunge",
+    "classId": "warlock",
+    "subclassId": "fathomless",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-warlock-genie-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-genie-genie-s-vessel",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-genie-elemental-gift",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-genie-sanctuary-vessel",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-genie-limited-wish",
+    "classId": "warlock",
+    "subclassId": "genie",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-scribes-wizardly-quill",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-scribes-awakened-spellbook",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-scribes-manifest-mind",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-scribes-master-scrivener",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-scribes-one-with-the-word",
+    "classId": "wizard",
+    "subclassId": "scribes",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-giant-giant-s-power",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-giant-giant-s-havoc",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-giant-elemental-cleaver",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-giant-mighty-impel",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-giant-demiurgic-colossus",
+    "classId": "barbarian",
+    "subclassId": "giant",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-barbarian-battlerager-bonus-proficiency",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-battlerager-battlerager-armor",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-barbarian-battlerager-reckless-abandon",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-barbarian-battlerager-battlerager-charge",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-barbarian-battlerager-spiked-retribution",
+    "classId": "barbarian",
+    "subclassId": "battlerager",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-spirits-guiding-whispers",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-spirits-spiritual-focus",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-bard-spirits-tales-from-beyond",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-bard-spirits-spirit-session",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-bard-spirits-mystical-connection",
+    "classId": "bard",
+    "subclassId": "spirits",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-cleric-arcana-arcane-initiate",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-arcana-channel-divinity-arcane-abjuration",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-arcana-spell-breaker",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-arcana-potent-spellcasting",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-arcana-arcane-mastery",
+    "classId": "cleric",
+    "subclassId": "arcana",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-bonus-proficiency",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-reaper",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-channel-divinity-touch-of-death",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-inescapable-destruction",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-divine-strike",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 8,
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2014-cleric-death-improved-reaper",
+    "classId": "cleric",
+    "subclassId": "death",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-fighter-purpledragonknight-rallying-cry",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-purpledragonknight-royal-envoy",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-purpledragonknight-inspiring-surge",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-purpledragonknight-bulwark",
+    "classId": "fighter",
+    "subclassId": "purpledragonknight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-manifest-echo",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-unleash-incarnation",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-echo-avatar",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-shadow-martyr",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-reclaim-potential",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-fighter-echo_knight-legion-of-one",
+    "classId": "fighter",
+    "subclassId": "echo_knight",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-monk-longdeath-touch-of-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-longdeath-hour-of-reaping",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-longdeath-mastery-of-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-longdeath-touch-of-the-long-death",
+    "classId": "monk",
+    "subclassId": "longdeath",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-monk-sun_soul-radiant-sun-bolt",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-sun_soul-searing-sunburst",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-sun_soul-searing-sunburst-improvement",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-sun_soul-sun-shield",
+    "classId": "monk",
+    "subclassId": "sun_soul",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-monk-ascendant_dragon-draconic-disciple",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-monk-ascendant_dragon-wings-unfurled",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-monk-ascendant_dragon-aspect-of-the-wyrm",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-monk-ascendant_dragon-ascendant-aspect",
+    "classId": "monk",
+    "subclassId": "ascendant_dragon",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 17,
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2014-paladin-crown-oath-spells",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-crown-channel-divinity",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-crown-aura-of-the-guardian",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-crown-unyielding-spirit",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-crown-exalted-champion",
+    "classId": "paladin",
+    "subclassId": "crown",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 20,
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-oath-spells",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-channel-divinity-control-undead",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-channel-divinity-dreadful-aspect",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-aura-of-hate",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-supernatural-resistance",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-paladin-oathbreaker-dread-lord",
+    "classId": "paladin",
+    "subclassId": "oathbreaker",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 20,
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2014-ranger-drakewarden-draconic-gift",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-drakewarden-drake-companion",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 3,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-ranger-drakewarden-bond-of-fang-and-scale",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 7,
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2014-ranger-drakewarden-drake-s-breath",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 11,
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2014-ranger-drakewarden-perfected-bond",
+    "classId": "ranger",
+    "subclassId": "drakewarden",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 15,
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-lunar-lunar-embodiment",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-lunar-lunar-boons",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-lunar-waxing-and-waning",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-lunar-lunar-empowerment",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-sorcerer-lunar-lunar-phenomenon",
+    "classId": "sorcerer",
+    "subclassId": "lunar",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 18,
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2014-warlock-undead-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-undead-form-of-dread",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-undead-grave-touched",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-undead-necrotic-husk",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-undead-spirit-projection",
+    "classId": "warlock",
+    "subclassId": "undead",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-warlock-undying-expanded-spell-list",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-undying-among-the-dead",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 1,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-warlock-undying-defy-death",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-warlock-undying-undying-nature",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-warlock-undying-indestructible-life",
+    "classId": "warlock",
+    "subclassId": "undying",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-bladesinging-training-in-war-and-song",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-bladesinging-bladesong",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-bladesinging-extra-attack",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-bladesinging-song-of-defense",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-bladesinging-song-of-victory",
+    "classId": "wizard",
+    "subclassId": "bladesinging",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-chronurgy-chronal-shift",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-chronurgy-temporal-awareness",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-chronurgy-momentary-stasis",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-chronurgy-arcane-abeyance",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-chronurgy-convergent-future",
+    "classId": "wizard",
+    "subclassId": "chronurgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2014-wizard-graviturgy-adjust-density",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 2,
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2014-wizard-graviturgy-gravity-well",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 6,
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2014-wizard-graviturgy-violent-attraction",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 10,
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2014-wizard-graviturgy-event-horizon",
+    "classId": "wizard",
+    "subclassId": "graviturgy",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    },
+    "levels": {
+      "2014": 14,
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-spellcasting",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 1
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-tinkers-magic",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 1
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-replicate-magic-item",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 2
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-artificer-subclass",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-ability-score-improvement-4",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 4
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-magic-item-tinker",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-flash-of-genius",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-ability-score-improvement-8",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 8
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-magic-item-adept",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-spell-storing-item",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-ability-score-improvement-12",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 12
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-advanced-artifice",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-ability-score-improvement-16",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 16
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-magic-item-master",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-epic-boon",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 19
+    }
+  },
+  {
+    "featureId": "2024-artificer-class-soul-of-artifice",
+    "classId": "artificer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-alchemist-spells",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-experimental-elixir",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-alchemical-savant",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 5
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-restorative-reagents",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-artificer-alchemist-chemical-mastery",
+    "classId": "artificer",
+    "subclassId": "alchemist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-armorer-spells",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-arcane-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-extra-attack",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 5
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-improved-armorer",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-artificer-armorer-perfected-armor",
+    "classId": "artificer",
+    "subclassId": "armorer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-artillerist-spells",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-eldritch-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-arcane-firearm",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 5
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-explosive-cannon",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-artificer-artillerist-fortified-position",
+    "classId": "artificer",
+    "subclassId": "artillerist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-battle-smith-spells",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-battle-ready",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-steel-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-extra-attack",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 5
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-arcane-jolt",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-artificer-battlesmith-improved-defender",
+    "classId": "artificer",
+    "subclassId": "battlesmith",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-tools-of-trade",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-cartographer-spells",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-adventurers-atlas",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-mapping-magic",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-guided-precision",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 5
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-ingenious-movement",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-artificer-cartographer-superior-atlas",
+    "classId": "artificer",
+    "subclassId": "cartographer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-barbarian-worldtree-vitality-of-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-barbarian-worldtree-branches-of-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-barbarian-worldtree-battering-roots",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-barbarian-worldtree-travel-along-the-tree",
+    "classId": "barbarian",
+    "subclassId": "worldtree",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-barbarian-zealot-divine-fury",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-barbarian-zealot-warrior-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-barbarian-zealot-fanatical-focus",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-barbarian-zealot-zealous-presence",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-barbarian-zealot-rage-of-the-gods",
+    "classId": "barbarian",
+    "subclassId": "zealot",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-bard-dance-dazzling-footwork",
+    "classId": "bard",
+    "subclassId": "dance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-bard-dance-inspiring-movement",
+    "classId": "bard",
+    "subclassId": "dance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-bard-dance-tandem-footwork",
+    "classId": "bard",
+    "subclassId": "dance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-bard-dance-leading-evasion",
+    "classId": "bard",
+    "subclassId": "dance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-bard-glamour-beguiling-magic",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-bard-glamour-mantle-of-inspiration",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-bard-glamour-mantle-of-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-bard-glamour-unbreakable-majesty",
+    "classId": "bard",
+    "subclassId": "glamour",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-bard-valor-combat-inspiration",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-bard-valor-extra-attack",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-bard-valor-battle-magic",
+    "classId": "bard",
+    "subclassId": "valor",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-druid-moon-circle-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-druid-moon-improved-circle-forms",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-druid-moon-moonlight-step",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-druid-moon-lunar-form",
+    "classId": "druid",
+    "subclassId": "moon",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-druid-sea-circle-of-the-sea-spells",
+    "classId": "druid",
+    "subclassId": "sea",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-druid-sea-wrath-of-the-sea",
+    "classId": "druid",
+    "subclassId": "sea",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-druid-sea-aquatic-affinity",
+    "classId": "druid",
+    "subclassId": "sea",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-druid-sea-stormborn",
+    "classId": "druid",
+    "subclassId": "sea",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-druid-sea-oceanic-gift",
+    "classId": "druid",
+    "subclassId": "sea",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-druid-stars-star-map",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-druid-stars-starry-form",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-druid-stars-cosmic-omen",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-druid-stars-twinkling-constellations",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-druid-stars-full-of-stars",
+    "classId": "druid",
+    "subclassId": "stars",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-combat-superiority",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-student-of-war",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-know-your-enemy",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-improved-combat-superiority",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-relentless",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-fighter-battlemaster-improved-combat-superiority-level-18",
+    "classId": "fighter",
+    "subclassId": "battlemaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-spellcasting",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-war-bond",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-war-magic",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-eldritch-strike",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-arcane-charge",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-fighter-eldritchknight-improved-war-magic",
+    "classId": "fighter",
+    "subclassId": "eldritchknight",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-fighter-psiwarrior-psionic-power",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-fighter-psiwarrior-telekinetic-adept",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-fighter-psiwarrior-guarded-mind",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-fighter-psiwarrior-bulwark-of-force",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-fighter-psiwarrior-telekinetic-master",
+    "classId": "fighter",
+    "subclassId": "psiwarrior",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-implements-of-mercy",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-hand-of-healing",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-hand-of-harm",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-physician-s-touch",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-flurry-of-healing-and-harm",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-monk-mercy-hand-of-ultimate-mercy",
+    "classId": "monk",
+    "subclassId": "mercy",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-monk-shadow-shadow-arts",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-shadow-shadow-step",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-monk-shadow-improved-shadow-step",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-monk-shadow-cloak-of-shadows",
+    "classId": "monk",
+    "subclassId": "shadow",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-monk-elements-elemental-attunement",
+    "classId": "monk",
+    "subclassId": "elements",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-elements-manipulate-elements",
+    "classId": "monk",
+    "subclassId": "elements",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-monk-elements-elemental-burst",
+    "classId": "monk",
+    "subclassId": "elements",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-monk-elements-stride-of-the-elements",
+    "classId": "monk",
+    "subclassId": "elements",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-monk-elements-elemental-epitome",
+    "classId": "monk",
+    "subclassId": "elements",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-barbarian-wildheart-animal-speaker",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-barbarian-wildheart-rage-of-the-wilds",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-barbarian-wildheart-aspect-of-the-wilds",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-barbarian-wildheart-nature-speaker",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-barbarian-wildheart-power-of-the-wilds",
+    "classId": "barbarian",
+    "subclassId": "wildheart",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-cleric-light-warding-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-light-radiance-of-the-dawn",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-light-improved-warding-flare",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-cleric-light-corona-of-light",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-cleric-trickery-blessing-of-the-trickster",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-trickery-invoke-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-trickery-trickster-s-transposition",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-cleric-trickery-improved-duplicity",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-cleric-war-war-priest",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-war-guided-strike",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-cleric-war-war-god-s-blessing",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-cleric-war-avatar-of-battle",
+    "classId": "cleric",
+    "subclassId": "war",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-peerless-athlete",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-inspiring-smite",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-aura-of-alacrity",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-glorious-defense",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-living-legend",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2024-paladin-ancients-nature-s-wrath",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-paladin-ancients-oath-spells",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-ensnaring-strike",
+        "srd-2024-speak-with-animals",
+        "srd-2024-misty-step",
+        "srd-2024-moonbeam",
+        "srd-2024-plant-growth",
+        "srd-2024-protection-from-energy",
+        "srd-2024-ice-storm",
+        "srd-2024-stoneskin",
+        "srd-2024-commune-with-nature",
+        "srd-2024-tree-stride"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-paladin-ancients-aura-of-warding",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-paladin-ancients-undying-sentinel",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-paladin-ancients-elder-champion",
+    "classId": "paladin",
+    "subclassId": "ancients",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2024-paladin-vengeance-vow-of-enmity",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-paladin-vengeance-oath-spells",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-bane",
+        "srd-2024-hunters-mark",
+        "srd-2024-hold-person",
+        "srd-2024-misty-step",
+        "srd-2024-haste",
+        "srd-2024-protection-from-energy",
+        "srd-2024-banishment",
+        "srd-2024-dimension-door",
+        "srd-2024-hold-monster",
+        "srd-2024-scrying"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-paladin-vengeance-relentless-avenger",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-paladin-vengeance-soul-of-vengeance",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-paladin-vengeance-avenging-angel",
+    "classId": "paladin",
+    "subclassId": "vengeance",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 20
+    }
+  },
+  {
+    "featureId": "2024-ranger-beastmaster-primal-companion",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-beastmaster-exceptional-training",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-ranger-beastmaster-bestial-fury",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-ranger-beastmaster-share-spells",
+    "classId": "ranger",
+    "subclassId": "beastmaster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-dreadful-strikes",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-fey-wanderer-spells",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-otherworldly-glamour",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-beguiling-twist",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-fey-reinforcements",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-ranger-feywanderer-misty-wanderer",
+    "classId": "ranger",
+    "subclassId": "feywanderer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-dread-ambusher",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-umbral-sight",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-gloom-stalker-spells",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-iron-mind",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 7
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-stalker-s-flurry",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 11
+    }
+  },
+  {
+    "featureId": "2024-ranger-gloomstalker-shadowy-dodge",
+    "classId": "ranger",
+    "subclassId": "gloomstalker",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 15
+    }
+  },
+  {
+    "featureId": "2024-rogue-arcanetrickster-spellcasting",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-arcanetrickster-mage-hand-legerdemain",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-arcanetrickster-magical-ambush",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-rogue-arcanetrickster-versatile-trickster",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2024-rogue-arcanetrickster-spell-thief",
+    "classId": "rogue",
+    "subclassId": "arcanetrickster",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-rogue-assassin-bonus-proficiencies",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-assassin-assassinate",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-assassin-infiltration-expertise",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-rogue-assassin-envenom-weapons",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2024-rogue-assassin-death-strike",
+    "classId": "rogue",
+    "subclassId": "assassin",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-rogue-soulknife-psionic-power",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-soulknife-psychic-blades",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-rogue-soulknife-soul-blades",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 9
+    }
+  },
+  {
+    "featureId": "2024-rogue-soulknife-psychic-veil",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 13
+    }
+  },
+  {
+    "featureId": "2024-rogue-soulknife-rend-mind",
+    "classId": "rogue",
+    "subclassId": "soulknife",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 17
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-psionic-spells",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-telepathic-speech",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-psionic-sorcery",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-psychic-defenses",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-revelation-in-flesh",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-aberrant-warping-implosion",
+    "classId": "sorcerer",
+    "subclassId": "aberrant",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-clockwork-clockwork-spells",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-clockwork-restore-balance",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-clockwork-bastion-of-law",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-clockwork-trance-of-order",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-clockwork-clockwork-cavalcade",
+    "classId": "sorcerer",
+    "subclassId": "clockwork",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-wildmagic-wild-magic-surge",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-wildmagic-tides-of-chaos",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-wildmagic-bend-luck",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-wildmagic-controlled-chaos",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-sorcerer-wildmagic-tamed-surge",
+    "classId": "sorcerer",
+    "subclassId": "wildmagic",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 18
+    }
+  },
+  {
+    "featureId": "2024-warlock-archfey-archfey-spells",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-archfey-steps-of-the-fey",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-archfey-misty-escape",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-warlock-archfey-beguiling-defenses",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-warlock-archfey-bewitching-magic",
+    "classId": "warlock",
+    "subclassId": "archfey",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-warlock-celestial-celestial-spells",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-celestial-healing-light",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-celestial-radiant-soul",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-warlock-celestial-celestial-resilience",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-warlock-celestial-searing-vengeance",
+    "classId": "warlock",
+    "subclassId": "celestial",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-warlock-greatoldone-awakened-mind",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-greatoldone-great-old-one-spells",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-warlock-greatoldone-clairvoyant-combatant",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-warlock-greatoldone-eldritch-hex",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-warlock-greatoldone-create-thrall",
+    "classId": "warlock",
+    "subclassId": "greatoldone",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-wizard-abjurer-abjuration-savant",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-abjurer-arcane-ward",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-abjurer-projected-ward",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-wizard-abjurer-improved-abjuration",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-wizard-abjurer-spell-resistance",
+    "classId": "wizard",
+    "subclassId": "abjurer",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-wizard-diviner-divination-savant",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-diviner-portent",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-diviner-expert-divination",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-wizard-diviner-the-third-eye",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-wizard-diviner-greater-portent",
+    "classId": "wizard",
+    "subclassId": "diviner",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-wizard-illusionist-illusion-savant",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-illusionist-improved-minor-illusion",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    }
+  },
+  {
+    "featureId": "2024-wizard-illusionist-malleable-illusions",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 6
+    }
+  },
+  {
+    "featureId": "2024-wizard-illusionist-illusory-self",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 10
+    }
+  },
+  {
+    "featureId": "2024-wizard-illusionist-illusory-reality",
+    "classId": "wizard",
+    "subclassId": "illusionist",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 14
+    }
+  },
+  {
+    "featureId": "2024-cleric-light-domain-spells",
+    "classId": "cleric",
+    "subclassId": "light",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-burning-hands",
+        "srd-2024-faerie-fire",
+        "srd-2024-scorching-ray",
+        "srd-2024-see-invisibility",
+        "srd-2024-daylight",
+        "srd-2024-fireball",
+        "srd-2024-arcane-eye",
+        "srd-2024-wall-of-fire",
+        "srd-2024-flame-strike",
+        "srd-2024-scrying"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-cleric-trickery-domain-spells",
+    "classId": "cleric",
+    "subclassId": "trickery",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-charm-person",
+        "srd-2024-disguise-self",
+        "srd-2024-pass-without-trace",
+        "srd-2024-invisibility",
+        "srd-2024-blink",
+        "srd-2024-dispel-magic",
+        "srd-2024-dimension-door",
+        "srd-2024-polymorph",
+        "srd-2024-dominate-person",
+        "srd-2024-modify-memory"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-cleric-life-domain-spells",
+    "classId": "cleric",
+    "subclassId": "life",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-bless",
+        "srd-2024-cure-wounds",
+        "srd-2024-aid",
+        "srd-2024-lesser-restoration",
+        "srd-2024-mass-healing-word",
+        "srd-2024-revivify",
+        "srd-2024-death-ward",
+        "srd-2024-guardian-of-faith",
+        "srd-2024-mass-cure-wounds",
+        "srd-2024-raise-dead"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-paladin-devotion-oath-spells",
+    "classId": "paladin",
+    "subclassId": "devotion",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-protection-from-evil-and-good",
+        "srd-2024-sanctuary",
+        "srd-2024-lesser-restoration",
+        "srd-2024-zone-of-truth",
+        "srd-2024-beacon-of-hope",
+        "srd-2024-dispel-magic",
+        "srd-2024-freedom-of-movement",
+        "srd-2024-guardian-of-faith",
+        "srd-2024-commune",
+        "srd-2024-flame-strike"
+      ]
+    }
+  },
+  {
+    "featureId": "2024-paladin-glory-oath-spells",
+    "classId": "paladin",
+    "subclassId": "glory",
+    "rulesets": {
+      "2024": true
+    },
+    "levels": {
+      "2024": 3
+    },
+    "grantedSpellIds": {
+      "2024": [
+        "srd-2024-guiding-bolt",
+        "srd-2024-heroism",
+        "srd-2024-enhance-ability",
+        "srd-2024-magic-weapon",
+        "srd-2024-haste",
+        "srd-2024-protection-from-energy",
+        "srd-2024-compulsion",
+        "srd-2024-freedom-of-movement",
+        "srd-2024-commune",
+        "srd-2024-flame-strike"
+      ]
+    }
+  }
+]
