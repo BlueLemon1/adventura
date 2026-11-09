@@ -100,7 +100,7 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
 
   const base = ((ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]).map((spell) => ({
     ...spell,
-    damage: mechanicsBySpellId[spell.id] ?? spell.damage,
+    damage: mechanicsBySpellId[spell.id],
   }))
   const supplements = supplementalSpells
     .filter((spell) => spell.rulesets?.[ruleset] === true)
