@@ -51,7 +51,7 @@ test('legacy records are explicitly marked when selected for 2024', () => {
 test('spell mechanics and availability exceptions are normalized into ID-keyed metadata', () => {
   const ids = new Set(additional.map((spell) => spell.id))
   assert.equal(Object.keys(mechanics).length, 278)
-  assert.ok(Object.values(mechanics).flat().every((entry) => !entry.type || entry.type === entry.type.toLowerCase()))
+  assert.ok(Object.values(mechanics).flat().every((entry) => (!entry.type || entry.type === entry.type.toLowerCase()) && (!entry.typeOptions || entry.typeOptions.every((type) => type === type.toLowerCase()))))
   assert.equal(Object.keys(availability).length, 21)
   const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
   assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
@@ -79,5 +79,7 @@ test('spell mechanics model conditional, recurring, and scaled damage separately
   assert.equal(mechanics['srd-2014-magic-missile'][0].scaling[0].mode, 'add-instance')
   assert.equal(mechanics['srd-2014-eldritch-blast'][0].scaling[0].kind, 'character-level')
   assert.equal(mechanics['srd-2024-resistance'][0].modifier, 'damage-reduction')
-  assert.ok(Object.values(mechanics).flat().every((entry) => !['extra', 'less'].includes(entry.type)))
+  assert.deepEqual(mechanics['srd-2024-glyph-of-warding'][0].typeOptions, ['acid', 'cold', 'fire', 'lightning', 'thunder'])
+  assert.equal(mechanics['srd-2024-sorcerous-burst'][0].diceRules.explodeOn, 8)
+  assert.ok(Object.values(mechanics).flat().every((entry) => !['extra', 'less', 'variable'].includes(entry.type)))
 })
