@@ -74,8 +74,10 @@ export function buildClassFeatureRecords(
     const names = progression.names
       ? { ...definition.names, ...progression.names }
       : definition.names
-    const contentSourceId = progression.contentSourceId ?? definition.contentSourceId
-    const sourceReference = progression.sourceReference ?? definition.sourceReference
+    const contentSourceId =
+      progression.contentSourceId ?? definition.contentSourceId
+    const sourceReference =
+      progression.sourceReference ?? definition.sourceReference
 
     return [
       {
