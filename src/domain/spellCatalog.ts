@@ -26,12 +26,7 @@ export interface SpellDamageMechanic {
   activeFromLevel?: number
   condition?: string
   timing?: string
-  modifier?:
-    | 'extra'
-    | 'reduced'
-    | 'damage-penalty'
-    | 'damage-reduction'
-    | 'weapon-die'
+  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction' | 'weapon-die'
   flatBonus?:
     | number
     | 'spellcasting-ability'
@@ -96,10 +91,7 @@ interface SpellAvailabilityMetadata {
   availabilityNote?: string
 }
 
-const mechanicsBySpellId = spellMechanics as Record<
-  string,
-  SpellDamageMechanic[]
->
+const mechanicsBySpellId = spellMechanics as Record<string, SpellDamageMechanic[]>
 const availabilityBySpellId = spellAvailability as Record<string, SpellAvailabilityMetadata>
 
 const supplementalSpells = (additionalSpells as CatalogSpell[]).map((spell) => ({
