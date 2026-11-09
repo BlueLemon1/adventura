@@ -1,0 +1,600 @@
+{
+  "xge-2014-absorb-elements": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "variable"
+    }
+  ],
+  "xge-2014-aganazzars-scorcher": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-catapult": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-chaos-bolt": [
+    {
+      "dice": "2d8 + 1d6",
+      "average": 12.5,
+      "type": "variable"
+    }
+  ],
+  "xge-2014-shadow-blade": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "psychic"
+    }
+  ],
+  "scag-2014-booming-blade": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "thunder"
+    }
+  ],
+  "scag-2014-green-flame-blade": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "fire"
+    }
+  ],
+  "scag-2014-lightning-lure": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "lightning"
+    }
+  ],
+  "scag-2014-sword-burst": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "force"
+    }
+  ],
+  "tce-2014-mind-sliver": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "psychic"
+    }
+  ],
+  "tce-2014-tashas-caustic-brew": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "acid"
+    }
+  ],
+  "tce-2014-tashas-mind-whip": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "psychic"
+    }
+  ],
+  "tce-2014-spirit-shroud": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "variable"
+    }
+  ],
+  "tce-2014-blade-of-disaster": [
+    {
+      "dice": "4d12",
+      "average": 26,
+      "type": "force"
+    }
+  ],
+  "xge-2014-dawn": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-mind-spike": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-shadow-of-moil": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "necrotic"
+    }
+  ],
+  "xge-2014-steel-wind-strike": [
+    {
+      "dice": "6d10",
+      "average": 33,
+      "type": "force"
+    }
+  ],
+  "xge-2014-thunder-step": [
+    {
+      "dice": "3d10",
+      "average": 16.5,
+      "type": "thunder"
+    }
+  ],
+  "xge-2014-zephyr-strike": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "force"
+    }
+  ],
+  "xge-2014-create-bonfire": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-frostbite": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "cold"
+    }
+  ],
+  "xge-2014-infestation": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "poison"
+    }
+  ],
+  "xge-2014-magic-stone": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-primal-savagery": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "acid"
+    }
+  ],
+  "xge-2014-thunderclap": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "thunder"
+    }
+  ],
+  "xge-2014-erupting-earth": [
+    {
+      "dice": "3d12",
+      "average": 19.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-flame-arrows": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-sickening-radiance": [
+    {
+      "dice": "4d10",
+      "average": 22,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-tidal-wave": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-vitriolic-sphere": [
+    {
+      "dice": "10d4 + 5d4",
+      "average": 37.5,
+      "type": "acid"
+    }
+  ],
+  "xge-2014-crown-of-stars": [
+    {
+      "dice": "4d12",
+      "average": 26,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-dragons-breath": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "variable"
+    }
+  ],
+  "xge-2014-dust-devil": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-earth-tremor": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-elemental-bane": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "variable"
+    }
+  ],
+  "xge-2014-enervation": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "necrotic"
+    }
+  ],
+  "xge-2014-holy-weapon": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-life-transference": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "necrotic"
+    }
+  ],
+  "xge-2014-maximilians-earthen-grasp": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-melfs-minute-meteors": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-psychic-scream": [
+    {
+      "dice": "14d6",
+      "average": 49,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-bones-of-the-earth": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-create-homunculus": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "piercing"
+    }
+  ],
+  "xge-2014-maddening-darkness": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-maelstrom": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-abi-dalzims-horrid-wilting": [
+    {
+      "dice": "12d8",
+      "average": 54,
+      "type": "necrotic"
+    }
+  ],
+  "xge-2014-illusory-dragon": [
+    {
+      "dice": "12d6",
+      "average": 42,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-investiture-of-flame": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-investiture-of-ice": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "cold"
+    }
+  ],
+  "xge-2014-investiture-of-wind": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-negative-energy-flood": [
+    {
+      "dice": "5d12",
+      "average": 32.5,
+      "type": "necrotic"
+    }
+  ],
+  "xge-2014-wall-of-light": [
+    {
+      "dice": "4d8",
+      "average": 18,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-whirlwind": [
+    {
+      "dice": "10d6",
+      "average": 35,
+      "type": "bludgeoning"
+    }
+  ],
+  "xge-2014-immolation": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "fire"
+    }
+  ],
+  "xge-2014-snillocs-snowball-swarm": [
+    {
+      "dice": "3d6",
+      "average": 10.5,
+      "type": "cold"
+    }
+  ],
+  "xge-2014-word-of-radiance": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "radiant"
+    }
+  ],
+  "xge-2014-mental-prison": [
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-synaptic-static": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "psychic"
+    }
+  ],
+  "xge-2014-ice-knife": [
+    {
+      "dice": "1d10",
+      "average": 5.5,
+      "type": "piercing"
+    },
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "cold"
+    }
+  ],
+  "scc-2021-kinetic-jaunt": [
+    {
+      "dice": "1d8",
+      "average": 4.5,
+      "type": "force"
+    }
+  ],
+  "scc-2021-wither-and-bloom": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "necrotic"
+    }
+  ],
+  "ftd-2021-ashardalons-stride": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "fire"
+    }
+  ],
+  "ftd-2021-draconic-transformation": [
+    {
+      "dice": "6d8",
+      "average": 27,
+      "type": "force"
+    }
+  ],
+  "ftd-2021-raulothims-psychic-lance": [
+    {
+      "dice": "7d6",
+      "average": 24.5,
+      "type": "psychic"
+    }
+  ],
+  "ftd-2021-rimes-binding-ice": [
+    {
+      "dice": "3d8",
+      "average": 13.5,
+      "type": "cold"
+    }
+  ],
+  "egw-2020-dark-star": [
+    {
+      "dice": "8d10",
+      "average": 44,
+      "type": "force"
+    }
+  ],
+  "egw-2020-gravity-fissure": [
+    {
+      "dice": "8d8",
+      "average": 36,
+      "type": "force"
+    }
+  ],
+  "egw-2020-gravity-sinkhole": [
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "force"
+    }
+  ],
+  "egw-2020-magnify-gravity": [
+    {
+      "dice": "2d8",
+      "average": 9,
+      "type": "force"
+    }
+  ],
+  "egw-2020-pulse-wave": [
+    {
+      "dice": "6d6",
+      "average": 21,
+      "type": "force"
+    }
+  ],
+  "egw-2020-ravenous-void": [
+    {
+      "dice": "5d10",
+      "average": 27.5,
+      "type": "force"
+    }
+  ],
+  "egw-2020-sapping-sting": [
+    {
+      "dice": "1d4",
+      "average": 2.5,
+      "type": "necrotic"
+    }
+  ],
+  "egw-2020-time-ravage": [
+    {
+      "dice": "10d12",
+      "average": 65,
+      "type": "necrotic"
+    }
+  ],
+  "ai-2019-jims-magic-missile": [
+    {
+      "dice": "2d4",
+      "average": 5,
+      "type": "force"
+    }
+  ],
+  "phb-2024-mind-sliver": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "Psychic"
+    }
+  ],
+  "phb-2024-thunderclap": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "Thunder"
+    }
+  ],
+  "phb-2024-toll-the-dead": [
+    {
+      "dice": "1d8 / 1d12",
+      "average": 6.5,
+      "type": "Necrotic"
+    }
+  ],
+  "phb-2024-word-of-radiance": [
+    {
+      "dice": "1d6",
+      "average": 3.5,
+      "type": "Radiant"
+    }
+  ],
+  "phb-2024-steel-wind-strike": [
+    {
+      "dice": "6d10",
+      "average": 33,
+      "type": "Force"
+    }
+  ],
+  "phb-2024-synaptic-static": [
+    {
+      "dice": "8d6",
+      "average": 28,
+      "type": "Psychic"
+    }
+  ],
+  "phb-2024-fount-of-moonlight": [
+    {
+      "dice": "2d6",
+      "average": 7,
+      "type": "Radiant"
+    }
+  ],
+  "phb-2024-jallarzis-storm-of-radiance": [
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "Radiant"
+    },
+    {
+      "dice": "2d10",
+      "average": 11,
+      "type": "Thunder"
+    }
+  ],
+  "phb-2024-yolandes-regal-presence": [
+    {
+      "dice": "4d6",
+      "average": 14,
+      "type": "Psychic"
+    }
+  ]
+}
