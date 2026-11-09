@@ -7,7 +7,26 @@ const readJson = (path) => JSON.parse(readText(path))
 
 const featureSource = readText('../src/domain/classFeatures.ts')
 const classes = readJson('../src/data/classes-additional.json')
-const additionalFeatures = readJson('../src/data/class-features-additional.json')
+const featureDefinitions = readJson('../src/data/features-additional.json')
+const progressions = readJson('../src/data/class-progressions.json')
+const definitionsById = new Map(featureDefinitions.map((feature) => [feature.id, feature]))
+
+function featureRecords(ruleset) {
+  return progressions.flatMap((progression) => {
+    const availability = progression.rulesets?.[ruleset]
+    if (availability !== true && availability !== 'legacy') return []
+    return [{
+      ...definitionsById.get(progression.featureId),
+      id: progression.featureId,
+      classId: progression.classId,
+      subclassId: progression.subclassId,
+      featureType: progression.subclassId ? 'subclass' : 'class',
+      level: progression.levels?.[ruleset],
+      grantedSpellIds: progression.grantedSpellIds?.[ruleset],
+      rulesets: { [ruleset]: availability },
+    }]
+  })
+}
 
 function subclassOptions(ruleset) {
   return classes.filter((record) => record.type === 'subclass' &&
@@ -26,19 +45,25 @@ test('class and subclass availability is declared in the shared catalog', () => 
   assert.ok(classes.some((record) => record.classId === 'wizard' && record.subclassId === 'abjuration' && record.rulesets['2024'] === 'abjurer'))
 })
 
-test('legacy and replaced subclasses propagate availability to their feature records', () => {
-  const feature = (id) => additionalFeatures.find((record) => record.id === id)
-  assert.equal(feature('2014-barbarian-ancestralguardian-ancestral-protectors')?.rulesets?.['2024'], 'legacy')
-  assert.equal(feature('2014-barbarian-totemwarrior-totem-spirit')?.rulesets?.['2024'], 'wildheart')
-  assert.equal(feature('2014-sorcerer-aberrantmind-psionic-spells')?.rulesets?.['2024'], 'aberrant')
-  assert.equal(feature('2014-wizard-abjuration-arcane-ward')?.rulesets?.['2024'], 'abjurer')
+test('Legacy feature definitions are reused with ruleset-specific progression levels', () => {
+  const feature = (id) => progressions.find((record) => record.featureId === id)
+  const conjurationSavant = feature('2014-wizard-conjuration-conjuration-savant')
+  assert.equal(conjurationSavant?.rulesets?.['2014'], true)
+  assert.equal(conjurationSavant?.rulesets?.['2024'], 'legacy')
+  assert.equal(conjurationSavant?.levels?.['2014'], 2)
+  assert.equal(conjurationSavant?.levels?.['2024'], 3)
+  assert.equal(featureDefinitions.filter((record) => record.id === '2014-wizard-conjuration-conjuration-savant').length, 1)
+
+  const replaced = feature('2014-barbarian-totemwarrior-totem-spirit')
+  assert.equal(replaced?.rulesets?.['2024'], undefined)
+  assert.equal(classes.find((record) => record.classId === 'barbarian' && record.subclassId === 'totemwarrior')?.rulesets?.['2024'], 'wildheart')
 })
 
 test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...additionalFeatures.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
+      ...featureRecords(ruleset),
     ]
     for (const subclass of subclassOptions(ruleset)) {
       assert.ok(records.some((feature) => feature.classId === subclass.classId && feature.subclassId === subclass.subclassId),
@@ -47,13 +72,12 @@ test('all selectable subclasses have feature records in their ruleset catalog', 
   }
 })
 
-test('2024 legacy feature copies keep their source and start no earlier than subclass level 3', () => {
-  const legacy = additionalFeatures.filter((feature) => feature.rulesets?.['2024'] === 'legacy')
-  assert.ok(legacy.length > 0)
-  assert.ok(legacy.every((feature) => feature.level >= 3))
-  assert.ok(legacy.every((feature) => feature.contentSourceId && feature.sourceReference))
-  assert.ok(legacy.every((feature) => feature.names?.en && feature.names?.de))
-  assert.ok(legacy.every((feature) => feature.descriptions?.en && feature.descriptions?.de))
+test('Legacy progression assignments reference original feature definitions without copies', () => {
+  const legacy = progressions.filter((record) => record.rulesets?.['2024'] === 'legacy')
+  assert.equal(legacy.length, 357)
+  assert.ok(legacy.every((record) => record.levels?.['2024'] >= 3))
+  assert.ok(legacy.every((record) => definitionsById.has(record.featureId)))
+  assert.equal(featureDefinitions.some((feature) => feature.id.startsWith('2024-legacy-')), false)
 })
 
 test('every granted spell exists in the matching ruleset spell catalog', () => {
@@ -76,7 +100,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
     const spellIds = new Set(spells.map((spell) => spell.id))
     const features = [
       ...readJson('../src/data/class-features-' + ruleset + '.json'),
-      ...additionalFeatures.filter((feature) => feature.rulesets?.[ruleset] === true || feature.rulesets?.[ruleset] === 'legacy'),
+      ...featureRecords(ruleset),
     ]
     for (const feature of features) {
       for (const spellId of feature.grantedSpellIds ?? []) {
