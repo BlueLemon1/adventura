@@ -2,7 +2,7 @@ import { z } from 'zod'
 import { ABILITIES } from '../domain/character'
 import { DND5E_RULESETS } from '../domain/rules'
 import type { StoredCharacter } from './database'
-import { getCharacters, getPartyInventory, replaceCharacters, savePartyInventory } from './database'
+import { getCharacters, replaceCharacters } from './database'
 
 const abilitySchema = z.object({
   str: z.number().int().min(1).max(30),
@@ -173,14 +173,13 @@ const DEFAULT_CURRENCY = { cp: 0, sp: 0, gp: 0, ep: 0, pp: 0 }
 export type AdventuraBackup = z.infer<typeof backupSchema>
 
 export async function createBackup(): Promise<AdventuraBackup> {
-  const [characters, partyInventory] = await Promise.all([getCharacters(), getPartyInventory()])
+  const characters = await getCharacters()
 
   return {
     app: 'adventura',
     formatVersion: 1,
     exportedAt: new Date().toISOString(),
     characters,
-    partyInventory,
   }
 }
 
@@ -202,8 +201,21 @@ export async function importBackup(json: string): Promise<StoredCharacter[]> {
     },
   }))
 
+  if (backup.partyInventory?.length && normalized.length) {
+    const existingIds = new Set(normalized[0].inventory.party.map((item) => item.id))
+    normalized[0] = {
+      ...normalized[0],
+      inventory: {
+        ...normalized[0].inventory,
+        party: [
+          ...normalized[0].inventory.party,
+          ...backup.partyInventory.filter((item) => !existingIds.has(item.id)),
+        ],
+      },
+    }
+  }
+
   await replaceCharacters(normalized)
-  await savePartyInventory(backup.partyInventory ?? [])
   return normalized
 }
 

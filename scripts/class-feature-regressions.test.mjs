@@ -11,8 +11,8 @@ const featureDefinitions = readJson('../src/data/features-additional.json')
 const progressions = readJson('../src/data/class-progressions.json')
 const featureMechanics = readJson('../src/data/feature-mechanics.json')
 const srdFeatures = [
-  ...readJson('../src/data/class-features-2014.json'),
-  ...readJson('../src/data/class-features-2024.json'),
+  ...readJson('../src/data/srd/2014/class-features.json'),
+  ...readJson('../src/data/srd/2024/class-features.json'),
 ]
 const definitionsById = new Map(featureDefinitions.map((feature) => [feature.id, feature]))
 
@@ -72,7 +72,7 @@ test('Legacy feature definitions are reused with ruleset-specific progression le
 test('all selectable subclasses have feature records in their ruleset catalog', () => {
   for (const ruleset of ['2014', '2024']) {
     const records = [
-      ...readJson('../src/data/class-features-' + ruleset + '.json'),
+      ...readJson('../src/data/srd/' + ruleset + '/class-features.json'),
       ...featureRecords(ruleset),
     ]
     for (const subclass of subclassOptions(ruleset)) {
@@ -111,7 +111,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
   )
   for (const ruleset of ['2014', '2024']) {
     const spells = [
-      ...readJson('../src/data/spells/spells-' + ruleset + '.json'),
+      ...readJson('../src/data/srd/' + ruleset + '/spells.json'),
       ...readJson('../src/data/spells/spells-additional.json').filter((spell) =>
         spell.rulesets
           ? spell.rulesets[ruleset] === true || spell.rulesets[ruleset] === 'legacy'
@@ -120,7 +120,7 @@ test('every granted spell exists in the matching ruleset spell catalog', () => {
     ]
     const spellIds = new Set(spells.map((spell) => spell.id))
     const features = [
-      ...readJson('../src/data/class-features-' + ruleset + '.json'),
+      ...readJson('../src/data/srd/' + ruleset + '/class-features.json'),
       ...featureRecords(ruleset),
     ]
     for (const feature of features) {
@@ -181,4 +181,16 @@ test('same mechanical feature may retain a class-specific display name', () => {
   assert.equal(tacticalWit?.featureId, temporalAwareness?.featureId)
   assert.equal(temporalAwareness?.names?.en, 'Temporal Awareness')
   assert.equal(definitionsById.get(tacticalWit.featureId).names.en, 'Tactical Wit')
+})
+
+test('Artificer spellcasting progression is available in both rulesets at level 1', () => {
+  for (const ruleset of ['2014', '2024']) {
+    const spellcasting = progressions.find((record) =>
+      record.classId === 'artificer' && !record.subclassId &&
+      record.contentSourceId === (ruleset === '2014' ? 'tce-2020' : 'efota-2025') &&
+      record.featureId.endsWith('-artificer-class-spellcasting'),
+    )
+    assert.equal(spellcasting?.rulesets?.[ruleset], true)
+    assert.equal(spellcasting?.levels?.[ruleset], 1)
+  }
 })

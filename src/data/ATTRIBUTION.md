@@ -1,6 +1,6 @@
 # SRD content — attribution and license
 
-Adventura maintains the official 2014 and 2024 SRD spell and class-feature datasets separately in `src/data/spells-2014.json`, `src/data/spells-2024.json`, `src/data/class-features-2014.json`, and `src/data/class-features-2024.json`. These four files contain SRD material only and are not enriched with Adventura-specific compatibility or mechanics metadata.
+Adventura maintains the official 2014 and 2024 SRD spell and class-feature datasets separately in `src/data/srd/2014/spells.json`, `src/data/srd/2024/spells.json`, `src/data/srd/2014/class-features.json`, and `src/data/srd/2024/class-features.json`. These four files contain SRD material only and are not enriched with Adventura-specific compatibility or mechanics metadata.
 
 Supplemental spells are maintained in `spells-additional.json`; supplemental class-feature text is maintained once in `features-additional.json`, with ruleset-specific class/subclass placement in `class-progressions.json`. The source registry provides the full book name, compact abbreviation, and default ruleset. Cross-ruleset availability is explicit in `rulesets`. App-specific spell damage and availability exceptions are keyed by spell ID in `spell-mechanics.json` and `spell-availability.json`; feature activation, resource, and spellbook metadata is keyed by feature ID in `feature-mechanics.json`.
 

@@ -8,7 +8,6 @@ import {
   Sparkles,
   Trash2,
 } from 'lucide-react'
-import type { InventoryItem } from '../domain/character'
 import type { StoredCharacter } from '../storage/database'
 import { Button, IconButton } from '../components/ui/button'
 import { getClassLabel, getSubclassOptions } from '../domain/classes'
@@ -17,7 +16,6 @@ import { translate, useLanguage } from './i18n'
 
 interface OverviewPageProps {
   characters: StoredCharacter[]
-  partyItems: InventoryItem[]
   loading: boolean
   onCreate: () => void
   onRemove: (character: StoredCharacter) => void
@@ -26,7 +24,6 @@ interface OverviewPageProps {
 
 export function OverviewPage({
   characters,
-  partyItems,
   loading,
   onCreate,
   onRemove,
@@ -34,9 +31,11 @@ export function OverviewPage({
 }: OverviewPageProps) {
   const language = useLanguage()
   const t = (value: string) => translate(language, value)
-  const totalItems =
-    characters.reduce((total, entry) => total + entry.inventory.personal.length, 0) +
-    partyItems.length
+  const totalItems = characters.reduce(
+    (total, entry) =>
+      total + entry.inventory.personal.length + (entry.inventory.party?.length ?? 0),
+    0,
+  )
   const totalSpells = characters.reduce(
     (total, entry) => total + entry.spellbook.knownSpells.length,
     0,

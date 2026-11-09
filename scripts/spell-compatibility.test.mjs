@@ -7,8 +7,8 @@ const readJson = (path) => JSON.parse(readText(path))
 const additional = readJson('../src/data/spells/spells-additional.json')
 const mechanics = readJson('../src/data/spells/spell-mechanics.json')
 const availability = readJson('../src/data/spells/spell-availability.json')
-const spells2014 = readJson('../src/data/spells/spells-2014.json')
-const spells2024 = readJson('../src/data/spells/spells-2024.json')
+const spells2014 = readJson('../src/data/srd/2014/spells.json')
+const spells2024 = readJson('../src/data/srd/2024/spells.json')
 const catalogSource = readText('../src/domain/spellCatalog.ts')
 const srdSpellIds = new Set([...spells2014, ...spells2024].map((spell) => spell.id))
 
@@ -109,4 +109,10 @@ test('2024 stat-block and weapon damage mechanics are represented', () => {
   assert.equal(mechanics['srd-2024-summon-dragon'][0].flatBonus.spellSlotLevel, true)
   assert.ok(mechanics['xge-2014-immolation'].some((entry) => entry.dice === '4d6'))
   assert.equal(mechanics['xge-2014-wall-of-light'].length, 2)
+})
+
+test('Artificer receives half-caster spell slots from level 1 in both rulesets', () => {
+  const source = readText('../src/domain/spellcasting.ts')
+  assert.match(source, /\['artificer', 'erfinder'\]\.includes\(classId\)\) return 'half'/)
+  assert.match(source, /!\['artificer', 'erfinder'\]\.includes\(normalizeKey\(character\.classId\)\)/)
 })
