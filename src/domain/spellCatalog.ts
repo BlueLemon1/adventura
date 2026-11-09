@@ -134,8 +134,9 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const cached = spellCatalogCache.get(ruleset)
   if (cached) return cached
 
-  const translations: Record<string, NonNullable<CatalogSpell['localized']>> =
+  const translations = (
     ruleset === '2014' ? spellTranslations2014 : spellTranslations2024
+  ) as Record<string, NonNullable<CatalogSpell['localized']>>
   const base = ((ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]).map((spell) => ({
     ...spell,
     localized: translations[spell.id],
