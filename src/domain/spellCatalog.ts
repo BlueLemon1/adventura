@@ -3,7 +3,6 @@ import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/spells-2014.json'
 import spells2024 from '../data/spells-2024.json'
 import additionalSpells from '../data/spells-additional.json'
-import spellCompatibility2024 from '../data/spell-compatibility-2024.json'
 
 export interface CatalogSpell {
   id: string
@@ -37,7 +36,7 @@ export interface CatalogSpell {
   }
   damage?: Array<{ dice: string; average: number; type?: string }>
   contentSourceId: string
-  rulesets?: Dnd5eRuleset[]
+  rulesets?: Partial<Record<Dnd5eRuleset, boolean | string>>
   sourcePage?: number
   previousSource?: string
   subclassRestriction?: 'chronurgy' | 'graviturgy' | 'both'
@@ -49,18 +48,6 @@ export interface CatalogSpell {
 }
 
 const supplementalSpells = additionalSpells as CatalogSpell[]
-type SpellCompatibility = {
-  spellId: string
-  status: 'legacy' | 'shared' | 'replaced'
-  replacementSpellId?: string
-  replacementName?: string
-  replacementSource?: string
-}
-const compatibilityBySpellId = new Map<string, SpellCompatibility>(
-  (spellCompatibility2024.entries as SpellCompatibility[]).map(
-    (entry) => [entry.spellId, entry] as const,
-  ),
-)
 const sourceRulesets = new Map<string, Dnd5eRuleset>(
   Object.values(CONTENT_SOURCES).map((source) => [source.id, source.ruleset]),
 )
@@ -96,32 +83,21 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
 
   const base = (ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]
   const supplements = supplementalSpells
-    .filter((spell) =>
-      spell.rulesets
-        ? spell.rulesets.includes(ruleset)
-        : sourceRulesets.get(spell.contentSourceId) === ruleset,
-    )
+    .filter((spell) => spell.rulesets?.[ruleset] === true)
     .map((spell) => ({
       ...spell,
       classes: spell.rulesetClasses?.[ruleset] ?? spell.classes,
     }))
-  // Only explicitly reviewed 2014 supplements may enter the 2024 catalogue as Legacy.
-  // SRD records stay in their own files; shared and replaced spells are handled separately.
+  // Legacy supplements are selectable in 2024, but remain explicitly marked.
   const legacySpells =
     ruleset === '2024'
       ? supplementalSpells
-          .filter((spell) => compatibilityBySpellId.get(spell.id)?.status === 'legacy')
+          .filter((spell) => spell.rulesets?.['2024'] === 'legacy')
           .map((spell) => ({
             ...spell,
             classes: spell.rulesetClasses?.['2014'] ?? spell.classes,
+            legacy: true,
           }))
-          .filter(
-            (spell) =>
-              ![...base, ...supplements].some(
-                (current) => normalizeSpellName(current) === normalizeSpellName(spell),
-              ),
-          )
-          .map((spell) => ({ ...spell, legacy: true }))
       : []
   const catalog = mergeSpellRecords(base, [...supplements, ...legacySpells])
   spellCatalogCache.set(ruleset, catalog)
@@ -148,23 +124,26 @@ export function findCatalogSpell(
   if (!original) return undefined
   const sourceRuleset = sourceRulesets.get(original.contentSourceId)
   const belongsToRuleset =
-    original.rulesets?.includes(ruleset) ||
+    original.rulesets?.[ruleset] === true ||
+    original.rulesets?.[ruleset] === 'legacy' ||
     sourceRuleset === ruleset ||
     (ruleset === '2024' && sourceRuleset === '2014')
   if (!belongsToRuleset) return undefined
 
   if (ruleset === '2024') {
-    const compatibility = compatibilityBySpellId.get(original.id)
-    if (compatibility?.status === 'replaced') {
-      return compatibility.replacementSpellId
-        ? catalog.find((spell) => spell.id === compatibility.replacementSpellId)
-        : undefined
+    const replacement = original.rulesets?.['2024']
+    if (typeof replacement === 'string' && replacement !== 'legacy') {
+      return catalog.find((spell) => spell.id === replacement)
     }
-    if (compatibility?.status === 'shared') {
-      const key = normalizeSpellName(original)
-      return catalog.find((spell) => normalizeSpellName(spell) === key)
+    // The two renamed 2014 SRD spells cannot carry metadata because SRD files
+    // are kept verbatim; retain only these ID migrations here.
+    const srdReplacements: Record<string, string> = {
+      'srd-2014-branding-smite': 'srd-2024-shining-smite',
+      'srd-2014-feeblemind': 'srd-2024-befuddlement',
     }
-    if (sourceRuleset === '2014' && !compatibility && original.contentSourceId !== 'srd-5.1') {
+    const srdReplacement = srdReplacements[original.id]
+    if (srdReplacement) return catalog.find((spell) => spell.id === srdReplacement)
+    if (sourceRuleset === '2014' && original.rulesets?.['2024'] !== 'legacy') {
       return undefined
     }
   }

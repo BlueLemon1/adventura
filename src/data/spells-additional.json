@@ -42,10 +42,10 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
@@ -89,10 +89,10 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
@@ -135,10 +135,10 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 150,
     "descriptionKind": "original-summary"
   },
@@ -179,10 +179,10 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 151,
     "descriptionKind": "original-summary"
   },
@@ -227,10 +227,10 @@
       }
     ],
     "contentSourceId": "xge-2017",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 164,
     "descriptionKind": "original-summary"
   },
@@ -275,10 +275,10 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 106,
     "descriptionKind": "original-summary",
     "previousSource": "Sword Coast Adventurer's Guide, p. 142"
@@ -325,10 +325,10 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 107,
     "descriptionKind": "original-summary",
     "previousSource": "Sword Coast Adventurer's Guide, p. 142"
@@ -374,10 +374,10 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 107,
     "descriptionKind": "original-summary",
     "previousSource": "Sword Coast Adventurer's Guide, p. 143"
@@ -423,10 +423,10 @@
       }
     ],
     "contentSourceId": "tce-2020",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 115,
     "descriptionKind": "original-summary",
     "previousSource": "Sword Coast Adventurer's Guide, p. 143"
@@ -473,7 +473,11 @@
     ],
     "contentSourceId": "tce-2020",
     "sourcePage": 108,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-mind-sliver"
+    }
   },
   {
     "id": "tce-2014-tashas-caustic-brew",
@@ -518,7 +522,11 @@
     ],
     "contentSourceId": "tce-2020",
     "sourcePage": 115,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-tashas-mind-whip",
@@ -560,7 +568,11 @@
     ],
     "contentSourceId": "tce-2020",
     "sourcePage": 115,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-intellect-fortress",
@@ -601,7 +613,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 107,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-spirit-shroud",
@@ -647,7 +663,11 @@
     ],
     "contentSourceId": "tce-2020",
     "sourcePage": 108,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-summon-beast",
@@ -683,7 +703,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 109,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-beast"
+    }
   },
   {
     "id": "tce-2014-summon-fey",
@@ -723,7 +747,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 112,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-fey"
+    }
   },
   {
     "id": "tce-2014-summon-shadowspawn",
@@ -759,7 +787,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 113,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-summon-undead",
@@ -795,7 +827,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 114,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-undead"
+    }
   },
   {
     "id": "tce-2014-summon-aberration",
@@ -831,7 +867,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 109,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-aberration"
+    }
   },
   {
     "id": "tce-2014-summon-construct",
@@ -867,7 +907,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 111,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-construct"
+    }
   },
   {
     "id": "tce-2014-summon-elemental",
@@ -905,7 +949,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 111,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-elemental"
+    }
   },
   {
     "id": "tce-2014-summon-celestial",
@@ -941,7 +989,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 110,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-celestial"
+    }
   },
   {
     "id": "tce-2014-summon-fiend",
@@ -977,7 +1029,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 112,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-summon-fiend"
+    }
   },
   {
     "id": "tce-2014-tashas-otherworldly-guise",
@@ -1013,7 +1069,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 116,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-dream-of-the-blue-veil",
@@ -1051,7 +1111,11 @@
     },
     "contentSourceId": "tce-2020",
     "sourcePage": 106,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "tce-2014-blade-of-disaster",
@@ -1093,7 +1157,11 @@
     ],
     "contentSourceId": "tce-2020",
     "sourcePage": 106,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-catnap",
@@ -1131,7 +1199,11 @@
     "contentSourceId": "xge-2017",
     "sourcePage": 151,
     "descriptionKind": "original-summary",
-    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3."
+    "higherLevel": "When you cast this spell using a spell slot of 4th level or higher, you can target one additional willing creature for each slot level above 3.",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-charm-monster",
@@ -1168,7 +1240,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 151,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "srd-2024-charm-monster"
+    }
   },
   {
     "id": "xge-2014-dawn",
@@ -1213,7 +1289,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 153,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-far-step",
@@ -1248,7 +1328,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-healing-spirit",
@@ -1283,7 +1367,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-mind-spike",
@@ -1327,7 +1415,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 162,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "srd-2024-mind-spike"
+    }
   },
   {
     "id": "xge-2014-shadow-of-moil",
@@ -1366,7 +1458,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-steel-wind-strike",
@@ -1407,7 +1503,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 166,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-steel-wind-strike"
+    }
   },
   {
     "id": "xge-2014-thunder-step",
@@ -1451,7 +1551,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-zephyr-strike",
@@ -1489,7 +1593,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-control-flames",
@@ -1524,7 +1632,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-create-bonfire",
@@ -1568,7 +1680,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-frostbite",
@@ -1612,7 +1728,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 156,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-gust",
@@ -1647,7 +1767,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-infestation",
@@ -1692,7 +1816,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 158,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-magic-stone",
@@ -1734,7 +1862,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-mold-earth",
@@ -1769,7 +1901,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 162,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-primal-savagery",
@@ -1807,7 +1943,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-shape-water",
@@ -1842,7 +1982,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-thunderclap",
@@ -1888,7 +2032,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-thunderclap"
+    }
   },
   {
     "id": "xge-2014-erupting-earth",
@@ -1933,7 +2081,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-flame-arrows",
@@ -1979,7 +2131,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 156,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-sickening-radiance",
@@ -2021,7 +2177,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-storm-sphere",
@@ -2054,7 +2214,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 166,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-tidal-wave",
@@ -2097,7 +2261,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-tiny-servant",
@@ -2130,7 +2298,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 168,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-wall-of-sand",
@@ -2162,7 +2334,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-wall-of-water",
@@ -2198,7 +2374,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-watery-sphere",
@@ -2234,7 +2414,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-vitriolic-sphere",
@@ -2277,7 +2461,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "srd-2024-vitriolic-sphere"
+    }
   },
   {
     "id": "xge-2014-control-winds",
@@ -2312,7 +2500,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-crown-of-stars",
@@ -2356,7 +2548,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-danse-macabre",
@@ -2391,7 +2587,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 153,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-dragons-breath",
@@ -2434,7 +2634,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "srd-2024-dragons-breath"
+    }
   },
   {
     "id": "xge-2014-dust-devil",
@@ -2479,7 +2683,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-earth-tremor",
@@ -2523,7 +2731,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-earthbind",
@@ -2562,7 +2774,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-elemental-bane",
@@ -2606,7 +2822,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-enemies-abound",
@@ -2643,7 +2863,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-enervation",
@@ -2687,7 +2911,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 155,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-guardian-of-nature",
@@ -2720,7 +2948,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-holy-weapon",
@@ -2760,7 +2992,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-life-transference",
@@ -2802,7 +3038,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-maximilians-earthen-grasp",
@@ -2843,7 +3083,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-melfs-minute-meteors",
@@ -2886,7 +3130,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-psychic-scream",
@@ -2930,7 +3178,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-pyrotechnics",
@@ -2965,7 +3217,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-scatter",
@@ -3000,7 +3256,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 164,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-skywrite",
@@ -3037,7 +3297,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-snare",
@@ -3073,7 +3337,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-beast-bond",
@@ -3108,7 +3376,11 @@
     "contentSourceId": "xge-2017",
     "sourcePage": 150,
     "descriptionKind": "original-summary",
-    "previousSource": "Elemental Evil Player's Companion, p. 15"
+    "previousSource": "Elemental Evil Player's Companion, p. 15",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-cause-fear",
@@ -3143,7 +3415,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 151,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-ceremony",
@@ -3177,7 +3453,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 151,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-bones-of-the-earth",
@@ -3217,7 +3497,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 150,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-create-homunculus",
@@ -3256,7 +3540,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 152,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-druid-grove",
@@ -3288,7 +3576,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 154,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-invulnerability",
@@ -3320,7 +3612,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-maddening-darkness",
@@ -3361,7 +3657,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-maelstrom",
@@ -3402,7 +3702,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-summon-lesser-demons",
@@ -3438,7 +3742,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 167,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-abi-dalzims-horrid-wilting",
@@ -3481,7 +3789,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 150,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-illusory-dragon",
@@ -3519,7 +3831,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-investiture-of-flame",
@@ -3563,7 +3879,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 159,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-investiture-of-ice",
@@ -3607,7 +3927,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 159,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-investiture-of-stone",
@@ -3644,7 +3968,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 159,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-investiture-of-wind",
@@ -3688,7 +4016,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-mass-polymorph",
@@ -3724,7 +4056,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 160,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-negative-energy-flood",
@@ -3767,7 +4103,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-power-word-pain",
@@ -3802,7 +4142,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-primordial-ward",
@@ -3833,7 +4177,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 163,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-summon-greater-demon",
@@ -3869,7 +4217,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 166,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-transmute-rock",
@@ -3903,7 +4255,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 169,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-wall-of-light",
@@ -3948,7 +4304,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-whirlwind",
@@ -3991,7 +4351,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-wrath-of-nature",
@@ -4024,7 +4388,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-immolation",
@@ -4066,7 +4434,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 158,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-infernal-calling",
@@ -4102,7 +4474,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 158,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-mighty-fortress",
@@ -4134,7 +4510,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-skill-empowerment",
@@ -4169,7 +4549,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-soul-cage",
@@ -4203,7 +4587,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-snillocs-snowball-swarm",
@@ -4246,7 +4634,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 165,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-temple-of-the-gods",
@@ -4278,7 +4670,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 167,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-toll-the-dead",
@@ -4313,7 +4709,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 169,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-toll-the-dead"
+    }
   },
   {
     "id": "xge-2014-warding-wind",
@@ -4350,7 +4750,11 @@
     },
     "contentSourceId": "xge-2017",
     "sourcePage": 170,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-word-of-radiance",
@@ -4389,7 +4793,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 171,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-word-of-radiance"
+    }
   },
   {
     "id": "xge-2014-mental-prison",
@@ -4431,7 +4839,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 161,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "xge-2014-synaptic-static",
@@ -4477,7 +4889,11 @@
     ],
     "contentSourceId": "xge-2017",
     "sourcePage": 167,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "phb-2024-synaptic-static"
+    }
   },
   {
     "id": "xge-2014-ice-knife",
@@ -4528,7 +4944,11 @@
     "contentSourceId": "xge-2017",
     "sourcePage": 157,
     "previousSource": "Elemental Evil Player's Companion, p. 19",
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "srd-2024-ice-knife"
+    }
   },
   {
     "id": "scc-2021-borrowed-knowledge",
@@ -4566,7 +4986,11 @@
     },
     "contentSourceId": "scc-2021",
     "sourcePage": 37,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "scc-2021-kinetic-jaunt",
@@ -4609,10 +5033,10 @@
       }
     ],
     "contentSourceId": "scc-2021",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 37,
     "descriptionKind": "original-summary",
     "rulesetClasses": {
@@ -4660,7 +5084,11 @@
     },
     "contentSourceId": "scc-2021",
     "sourcePage": 38,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "scc-2021-vortex-warp",
@@ -4694,10 +5122,10 @@
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du eine zusätzliche Kreatur als Ziel wählen."
     },
     "contentSourceId": "scc-2021",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 38,
     "descriptionKind": "original-summary",
     "rulesetClasses": {
@@ -4753,7 +5181,11 @@
     ],
     "contentSourceId": "scc-2021",
     "sourcePage": 38,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-ashardalons-stride",
@@ -4798,10 +5230,10 @@
       }
     ],
     "contentSourceId": "ftd-2021",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 19,
     "descriptionKind": "original-summary",
     "rulesetClasses": {
@@ -4857,7 +5289,11 @@
     ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 19,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-fizbans-platinum-shield",
@@ -4891,7 +5327,11 @@
     },
     "contentSourceId": "ftd-2021",
     "sourcePage": 20,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-nathairs-mischief",
@@ -4927,7 +5367,11 @@
     },
     "contentSourceId": "ftd-2021",
     "sourcePage": 20,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-raulothims-psychic-lance",
@@ -4973,7 +5417,11 @@
     ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 21,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-rimes-binding-ice",
@@ -5016,7 +5464,11 @@
     ],
     "contentSourceId": "ftd-2021",
     "sourcePage": 21,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ftd-2021-summon-draconic-spirit",
@@ -5054,7 +5506,11 @@
     },
     "contentSourceId": "ftd-2021",
     "sourcePage": 21,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-dark-star",
@@ -5094,7 +5550,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 186,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-fortunes-favor",
@@ -5129,7 +5589,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 186,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-gift-of-alacrity",
@@ -5161,7 +5625,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 186,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-gravity-fissure",
@@ -5203,7 +5671,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 187,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-gravity-sinkhole",
@@ -5245,7 +5717,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 187,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-immovable-object",
@@ -5280,7 +5756,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 187,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-magnify-gravity",
@@ -5321,7 +5801,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-pulse-wave",
@@ -5362,7 +5846,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-ravenous-void",
@@ -5402,7 +5890,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 188,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-reality-break",
@@ -5435,7 +5927,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-sapping-sting",
@@ -5474,7 +5970,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-temporal-shunt",
@@ -5508,7 +6008,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-tether-essence",
@@ -5541,7 +6045,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-time-ravage",
@@ -5581,7 +6089,11 @@
     ],
     "contentSourceId": "egw-2020",
     "sourcePage": 189,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "egw-2020-wristpocket",
@@ -5613,7 +6125,11 @@
     },
     "contentSourceId": "egw-2020",
     "sourcePage": 190,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-distort-value",
@@ -5652,7 +6168,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 75,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-fast-friends",
@@ -5689,7 +6209,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 75,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-gift-of-gab",
@@ -5724,7 +6248,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 76,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-incite-greed",
@@ -5762,7 +6290,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 76,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-jims-glowing-coin",
@@ -5795,7 +6327,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 76,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-jims-magic-missile",
@@ -5837,7 +6373,11 @@
     ],
     "contentSourceId": "ai-2019",
     "sourcePage": 76,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ai-2019-motivational-speech",
@@ -5872,7 +6412,11 @@
     },
     "contentSourceId": "ai-2019",
     "sourcePage": 77,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "ggr-2018-encode-thoughts",
@@ -5919,7 +6463,11 @@
     "availabilityNote": "Granted by the Dimir Operative background; otherwise requires DM approval. The background adds the spell to your class list.",
     "contentSourceId": "ggr-2018",
     "sourcePage": 47,
-    "descriptionKind": "original-summary"
+    "descriptionKind": "original-summary",
+    "rulesets": {
+      "2014": true,
+      "2024": "legacy"
+    }
   },
   {
     "id": "aag-2022-air-bubble",
@@ -5959,10 +6507,10 @@
       "higherLevel": "Für jeden Zauberplatzgrad über dem 2. kannst du zwei zusätzliche Luftkugeln erschaffen."
     },
     "contentSourceId": "aag-2022",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 22,
     "descriptionKind": "original-summary",
     "rulesetClasses": {
@@ -6009,10 +6557,10 @@
       "description": "Während du den beim Wirken verwendeten Kristallstab hältst, berührst du einen unbesetzten Stuhl der Größenkategorie Groß oder kleiner. Der Stab verschwindet und der Stuhl verwandelt sich in einen Spelljamming-Steuerstuhl, der auf einem Schiff installiert werden kann."
     },
     "contentSourceId": "aag-2022",
-    "rulesets": [
-      "2014",
-      "2024"
-    ],
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    },
     "sourcePage": 22,
     "descriptionKind": "original-summary",
     "rulesetClasses": {
@@ -6024,5 +6572,807 @@
         "artificer"
       ]
     }
+  },
+  {
+    "id": "phb-2024-mind-sliver",
+    "name": "Mind Sliver",
+    "level": 0,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A creature suffers psychic harm and a brief weakening of its next saving throw.",
+    "localized": {
+      "name": "Mind Sliver",
+      "school": "Verzauberung",
+      "classes": [
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V",
+      "duration": "Instantaneous",
+      "description": "Du fügst einer Kreatur psychischen Schaden zu und schwächst kurzzeitig ihren nächsten Rettungswurf."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-thunderclap",
+    "name": "Thunderclap",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self (5-foot Emanation)",
+    "components": "S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A thunderous burst harms creatures immediately around you.",
+    "localized": {
+      "name": "Thunderclap",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (5-foot Emanation)",
+      "components": "G",
+      "duration": "Instantaneous",
+      "description": "Ein Donnerschlag trifft Kreaturen unmittelbar in deiner Nähe."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Thunder"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-toll-the-dead",
+    "name": "Toll the Dead",
+    "level": 0,
+    "school": "Necromancy",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A spectral bell deals necrotic harm, especially to an already wounded creature.",
+    "localized": {
+      "name": "Toll the Dead",
+      "school": "Nekromantie",
+      "classes": [
+        "cleric",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Eine geisterhafte Glocke verursacht nekrotischen Schaden, besonders bei bereits verwundeten Kreaturen."
+    },
+    "damage": [
+      {
+        "dice": "1d8 / 1d12",
+        "average": 6.5,
+        "type": "Necrotic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-word-of-radiance",
+    "name": "Word of Radiance",
+    "level": 0,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self (5-foot Emanation)",
+    "components": "V, M",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "cleric"
+    ],
+    "description": "Radiance bursts from you and harms creatures you choose nearby.",
+    "localized": {
+      "name": "Word of Radiance",
+      "school": "Hervorrufung",
+      "classes": [
+        "cleric"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (5-foot Emanation)",
+      "components": "V, M",
+      "duration": "Instantaneous",
+      "description": "Strahlendes Licht bricht aus dir hervor und schädigt Kreaturen deiner Wahl in deiner Nähe."
+    },
+    "damage": [
+      {
+        "dice": "1d6",
+        "average": 3.5,
+        "type": "Radiant"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-beast",
+    "name": "Summon Beast",
+    "level": 2,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger"
+    ],
+    "description": "You summon a bestial spirit shaped by an air, land, or water environment.",
+    "localized": {
+      "name": "Summon Beast",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (eine Feder, ein Fellbüschel und eine Fischflosse in einer vergoldeten Eichel im Wert von mindestens 200 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen tierischen Geist, dessen Gestalt von einer Umgebung aus Luft, Land oder Wasser geprägt ist."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a feather, tuft of fur, and fish tail inside a gilded acorn worth 200+ GP"
+  },
+  {
+    "id": "phb-2024-summon-fey",
+    "name": "Summon Fey",
+    "level": 3,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a fey spirit whose chosen mood shapes its abilities.",
+    "localized": {
+      "name": "Summon Fey",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (eine vergoldete Blume im Wert von mindestens 300 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Feengeist, dessen gewählte Stimmung seine Fähigkeiten prägt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a gilded flower worth 300+ GP"
+  },
+  {
+    "id": "phb-2024-summon-undead",
+    "name": "Summon Undead",
+    "level": 3,
+    "school": "Necromancy",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon an undead spirit in ghostly, putrid, or skeletal form.",
+    "localized": {
+      "name": "Summon Undead",
+      "school": "Nekromantie",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (ein vergoldeter Schädel im Wert von mindestens 300 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen untoten Geist in geisterhafter, fauliger oder skelettartiger Gestalt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a gilded skull worth 300+ GP"
+  },
+  {
+    "id": "phb-2024-summon-aberration",
+    "name": "Summon Aberration",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon an aberrant spirit in beholderkin, mind flayer, or slaad form.",
+    "localized": {
+      "name": "Summon Aberration",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (ein eingelegter Tentakel und ein Augapfel in einem platinverzierten Fläschchen im Wert von mindestens 400 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen aberranten Geist in Gestalt eines Betrachterartigen, Gedankenschinders oder Slaads."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a pickled tentacle and an eyeball in a platinum-inlaid vial worth 400+ GP"
+  },
+  {
+    "id": "phb-2024-summon-construct",
+    "name": "Summon Construct",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "wizard"
+    ],
+    "description": "You summon a construct spirit shaped from clay, metal, or stone.",
+    "localized": {
+      "name": "Summon Construct",
+      "school": "Beschwörung",
+      "classes": [
+        "artificer",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (eine abschließbare Kassette im Wert von mindestens 400 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Konstruktgeist aus Lehm, Metall oder Stein."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a lockbox worth 400+ GP"
+  },
+  {
+    "id": "phb-2024-summon-elemental",
+    "name": "Summon Elemental",
+    "level": 4,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "druid",
+      "ranger",
+      "wizard"
+    ],
+    "description": "You summon an elemental spirit tied to air, earth, fire, or water.",
+    "localized": {
+      "name": "Summon Elemental",
+      "school": "Beschwörung",
+      "classes": [
+        "druid",
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (Luft, ein Kieselstein, Asche und Wasser in einem goldverzierten Fläschchen im Wert von mindestens 400 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Elementargeist, der an Luft, Erde, Feuer oder Wasser gebunden ist."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "air, a pebble, ash, and water inside a gold-inlaid vial worth 400+ GP"
+  },
+  {
+    "id": "phb-2024-steel-wind-strike",
+    "name": "Steel Wind Strike",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "30 feet",
+    "components": "S, M",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "ranger",
+      "wizard"
+    ],
+    "description": "You strike several foes in a supernatural flurry, then teleport beside one of them.",
+    "localized": {
+      "name": "Steel Wind Strike",
+      "school": "Beschwörung",
+      "classes": [
+        "ranger",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "30 feet",
+      "components": "G, M (eine Nahkampfwaffe im Wert von mindestens 1 SM)",
+      "duration": "Instantaneous",
+      "description": "Du greifst mehrere Gegner in einem übernatürlichen Schlaghagel an und teleportierst dich anschließend zu einem von ihnen."
+    },
+    "damage": [
+      {
+        "dice": "6d10",
+        "average": 33,
+        "type": "Force"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a melee weapon worth 1+ SP"
+  },
+  {
+    "id": "phb-2024-summon-celestial",
+    "name": "Summon Celestial",
+    "level": 5,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "cleric",
+      "paladin"
+    ],
+    "description": "You summon an angelic spirit in avenger or defender form.",
+    "localized": {
+      "name": "Summon Celestial",
+      "school": "Beschwörung",
+      "classes": [
+        "cleric",
+        "paladin"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (ein Reliquiar im Wert von mindestens 500 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen engelsgleichen Geist in der Gestalt eines Rächers oder Verteidigers."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a reliquary worth 500+ GP"
+  },
+  {
+    "id": "phb-2024-synaptic-static",
+    "name": "Synaptic Static",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "120 feet",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "sorcerer",
+      "warlock",
+      "wizard"
+    ],
+    "description": "A psychic burst damages creatures and disrupts their attacks, checks, and concentration.",
+    "localized": {
+      "name": "Synaptic Static",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "120 feet",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Eine psychische Entladung schädigt Kreaturen und stört ihre Angriffe, Attributswürfe und Konzentration."
+    },
+    "damage": [
+      {
+        "dice": "8d6",
+        "average": 28,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-summon-fiend",
+    "name": "Summon Fiend",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "90 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 hour",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "You summon a fiendish spirit in demon, devil, or yugoloth form.",
+    "localized": {
+      "name": "Summon Fiend",
+      "school": "Beschwörung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "90 feet",
+      "components": "V, G, M (ein blutiges Fläschchen im Wert von mindestens 600 GM)",
+      "duration": "Konzentration, bis zu 1 Stunde",
+      "description": "Du beschwörst einen Unholdgeist in Gestalt eines Dämons, Teufels oder Yugoloths."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a bloody vial worth 600+ GP"
+  },
+  {
+    "id": "phb-2024-arcane-vigor",
+    "name": "Arcane Vigor",
+    "level": 2,
+    "school": "Abjuration",
+    "castingTime": "Bonus Action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "artificer",
+      "sorcerer",
+      "wizard"
+    ],
+    "description": "You expend your own Hit Point Dice to restore your health.",
+    "localized": {
+      "name": "Arcane Vigor",
+      "school": "Bannmagie",
+      "classes": [
+        "artificer",
+        "sorcerer",
+        "wizard"
+      ],
+      "castingTime": "Bonusaktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Instantaneous",
+      "description": "Du verbrauchst eigene Trefferwürfel, um deine Trefferpunkte wiederherzustellen."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-fount-of-moonlight",
+    "name": "Fount of Moonlight",
+    "level": 4,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "Self",
+    "components": "V, S",
+    "duration": "Concentration, up to 10 minutes",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "druid"
+    ],
+    "description": "Moonlike radiance protects you, empowers melee attacks, and can blind an attacker.",
+    "localized": {
+      "name": "Fount of Moonlight",
+      "school": "Hervorrufung",
+      "classes": [
+        "bard",
+        "druid"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst",
+      "components": "V, G",
+      "duration": "Konzentration, bis zu 10 Minuten",
+      "description": "Mondähnliches Licht schützt dich, verstärkt Nahkampfangriffe und kann einen Angreifer blenden."
+    },
+    "damage": [
+      {
+        "dice": "2d6",
+        "average": 7,
+        "type": "Radiant"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
+  },
+  {
+    "id": "phb-2024-jallarzis-storm-of-radiance",
+    "name": "Jallarzi's Storm of Radiance",
+    "level": 5,
+    "school": "Evocation",
+    "castingTime": "Action",
+    "range": "120 feet",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "warlock",
+      "wizard"
+    ],
+    "description": "A radiant thunderstorm blinds and deafens creatures while damaging those caught within it.",
+    "localized": {
+      "name": "Jallarzi's Storm of Radiance",
+      "school": "Hervorrufung",
+      "classes": [
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "120 feet",
+      "components": "V, G, M (eine Prise Phosphor)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Ein strahlender Gewittersturm blendet und betäubt Kreaturen und schädigt alle, die sich darin befinden."
+    },
+    "damage": [
+      {
+        "dice": "2d10",
+        "average": 11,
+        "type": "Radiant"
+      },
+      {
+        "dice": "2d10",
+        "average": 11,
+        "type": "Thunder"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a pinch of phosphorus"
+  },
+  {
+    "id": "phb-2024-yolandes-regal-presence",
+    "name": "Yolande's Regal Presence",
+    "level": 5,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "Self (10-foot Emanation)",
+    "components": "V, S, M",
+    "duration": "Concentration, up to 1 minute",
+    "concentration": true,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "wizard"
+    ],
+    "description": "Your regal aura damages, knocks down, and pushes away nearby creatures.",
+    "localized": {
+      "name": "Yolande's Regal Presence",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "Selbst (10-foot Emanation)",
+      "components": "V, G, M (eine Miniatur-Tiara)",
+      "duration": "Konzentration, bis zu 1 Minute",
+      "description": "Deine majestätische Aura schädigt Kreaturen in deiner Nähe, bringt sie zu Fall und stößt sie zurück."
+    },
+    "damage": [
+      {
+        "dice": "4d6",
+        "average": 14,
+        "type": "Psychic"
+      }
+    ],
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a miniature tiara"
+  },
+  {
+    "id": "phb-2024-tashas-bubbling-cauldron",
+    "name": "Tasha's Bubbling Cauldron",
+    "level": 6,
+    "school": "Conjuration",
+    "castingTime": "Action",
+    "range": "5 feet",
+    "components": "V, S, M",
+    "duration": "10 minutes",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "warlock",
+      "wizard"
+    ],
+    "description": "You conjure a cauldron that produces a limited number of chosen common or uncommon potions.",
+    "localized": {
+      "name": "Tasha's Bubbling Cauldron",
+      "school": "Beschwörung",
+      "classes": [
+        "bard",
+        "warlock",
+        "wizard"
+      ],
+      "castingTime": "Aktion",
+      "range": "5 feet",
+      "components": "V, G, M (eine vergoldete Schöpfkelle im Wert von mindestens 500 GM)",
+      "duration": "10 Minuten",
+      "description": "Du beschwörst einen Kessel, der eine begrenzte Anzahl ausgewählter gewöhnlicher oder ungewöhnlicher Tränke hervorbringt."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary",
+    "material": "a gilded ladle worth 500+ GP"
+  },
+  {
+    "id": "phb-2024-power-word-fortify",
+    "name": "Power Word Fortify",
+    "level": 7,
+    "school": "Enchantment",
+    "castingTime": "Action",
+    "range": "60 feet",
+    "components": "V",
+    "duration": "Instantaneous",
+    "concentration": false,
+    "ritual": false,
+    "classes": [
+      "bard",
+      "cleric"
+    ],
+    "description": "You distribute a large reserve of temporary hit points among several allies.",
+    "localized": {
+      "name": "Power Word Fortify",
+      "school": "Verzauberung",
+      "classes": [
+        "bard",
+        "cleric"
+      ],
+      "castingTime": "Aktion",
+      "range": "60 feet",
+      "components": "V",
+      "duration": "Instantaneous",
+      "description": "Du verteilst einen großen Vorrat temporärer Trefferpunkte auf mehrere Verbündete."
+    },
+    "contentSourceId": "phb-2024",
+    "rulesets": {
+      "2024": true
+    },
+    "descriptionKind": "original-summary"
   }
 ]
