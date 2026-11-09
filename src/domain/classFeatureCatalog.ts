@@ -40,7 +40,7 @@ export interface ClassFeatureDefinition {
   descriptions: Partial<Record<ContentLocale, string>>
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
   /** Every source reference that contributes this shared definition. */
-  sources?: Array<{ contentSourceId: ContentProvenance['contentSourceId']; sourceReference?: string }>
+  sources?: ClassFeatureSource[]
 }
 
 /** A feature's placement in a class or subclass progression, independent of its text. */
