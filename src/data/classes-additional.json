@@ -17,6 +17,174 @@
     }
   },
   {
+    "id": "barbarian",
+    "type": "class",
+    "classId": "barbarian",
+    "names": {
+      "de": "Barbar",
+      "en": "Barbarian"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "bard",
+    "type": "class",
+    "classId": "bard",
+    "names": {
+      "de": "Barde",
+      "en": "Bard"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "cleric",
+    "type": "class",
+    "classId": "cleric",
+    "names": {
+      "de": "Kleriker",
+      "en": "Cleric"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "druid",
+    "type": "class",
+    "classId": "druid",
+    "names": {
+      "de": "Druide",
+      "en": "Druid"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "fighter",
+    "type": "class",
+    "classId": "fighter",
+    "names": {
+      "de": "Kämpfer",
+      "en": "Fighter"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "monk",
+    "type": "class",
+    "classId": "monk",
+    "names": {
+      "de": "Mönch",
+      "en": "Monk"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "paladin",
+    "type": "class",
+    "classId": "paladin",
+    "names": {
+      "de": "Paladin",
+      "en": "Paladin"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "ranger",
+    "type": "class",
+    "classId": "ranger",
+    "names": {
+      "de": "Waldläufer",
+      "en": "Ranger"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "rogue",
+    "type": "class",
+    "classId": "rogue",
+    "names": {
+      "de": "Schurke",
+      "en": "Rogue"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "sorcerer",
+    "type": "class",
+    "classId": "sorcerer",
+    "names": {
+      "de": "Zauberer",
+      "en": "Sorcerer"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "warlock",
+    "type": "class",
+    "classId": "warlock",
+    "names": {
+      "de": "Hexenmeister",
+      "en": "Warlock"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
+    "id": "wizard",
+    "type": "class",
+    "classId": "wizard",
+    "names": {
+      "de": "Magier",
+      "en": "Wizard"
+    },
+    "sources": {},
+    "rulesets": {
+      "2014": true,
+      "2024": true
+    }
+  },
+  {
     "id": "artificer-alchemist",
     "type": "subclass",
     "classId": "artificer",
