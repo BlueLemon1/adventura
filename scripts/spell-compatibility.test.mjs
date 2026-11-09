@@ -63,7 +63,7 @@ test('spell mechanics and availability exceptions are normalized into ID-keyed m
   const ids = new Set(additional.map((spell) => spell.id))
   assert.equal(Object.keys(mechanics).length, 254)
   assert.equal(Object.keys(availability).length, 21)
-  const allSpellIds = new Set([...ids, ...spells2014, ...spells2024].map((spell) => spell.id))
+  const allSpellIds = new Set([...ids, ...spells2014.map((spell) => spell.id), ...spells2024.map((spell) => spell.id)])
   assert.ok(Object.keys(mechanics).every((id) => allSpellIds.has(id)))
   assert.equal(srdSpellsWithDamage.length, 170)
   assert.ok(srdSpellsWithDamage.every((spell) => mechanics[spell.id]))
