@@ -23,6 +23,53 @@ export interface ClassFeatureRecord {
   grantedSpellIds?: string[]
 }
 
+
+export interface ClassFeatureDefinition {
+  id: string
+  contentSourceId: ContentProvenance['contentSourceId']
+  sourceReference?: string
+  names: Partial<Record<ContentLocale, string>>
+  descriptions: Partial<Record<ContentLocale, string>>
+  translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
+}
+
+/** A feature's placement in a class or subclass progression, independent of its text. */
+export interface ClassFeatureProgression {
+  featureId: string
+  classId: string
+  subclassId?: string
+  rulesets: Partial<Record<Dnd5eRuleset, true | 'legacy' | string>>
+  levels: Partial<Record<Dnd5eRuleset, number>>
+  grantedSpellIds?: Partial<Record<Dnd5eRuleset, string[]>>
+}
+
+export function buildClassFeatureRecords(
+  definitions: readonly ClassFeatureDefinition[],
+  progressions: readonly ClassFeatureProgression[],
+  ruleset: Dnd5eRuleset,
+): ClassFeatureRecord[] {
+  const byId = new Map(definitions.map((definition) => [definition.id, definition]))
+
+  return progressions.flatMap((progression) => {
+    const availability = progression.rulesets[ruleset]
+    const level = progression.levels[ruleset]
+    const definition = byId.get(progression.featureId)
+    if ((availability !== true && availability !== 'legacy') || !definition || !level) return []
+
+    return [{
+      ...definition,
+      rulesets: { [ruleset]: availability },
+      classId: progression.classId,
+      ...(progression.subclassId ? { subclassId: progression.subclassId } : {}),
+      featureType: progression.subclassId ? 'subclass' as const : 'class' as const,
+      level,
+      ...(progression.grantedSpellIds?.[ruleset]?.length
+        ? { grantedSpellIds: progression.grantedSpellIds[ruleset] }
+        : {}),
+    }]
+  })
+}
+
 /** Text is resolved independently so a missing German field can use English. */
 export interface ResolvedClassFeatureText {
   name?: string
