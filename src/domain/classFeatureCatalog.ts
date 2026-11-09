@@ -22,7 +22,10 @@ export interface ClassFeatureRecord {
   /** Translation status for non-source locales; omitted means official/source-verified. */
   translationStatus?: Partial<Record<ContentLocale, 'official' | 'unofficial'>>
   /** Complete provenance for this shared definition. */
-  sources?: Array<{ contentSourceId: ContentProvenance['contentSourceId']; sourceReference?: string }>
+  sources?: Array<{
+    contentSourceId: ContentProvenance['contentSourceId']
+    sourceReference?: string
+  }>
   /** Canonical spell IDs explicitly granted by this feature, if any. */
   grantedSpellIds?: string[]
 }
