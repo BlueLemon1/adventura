@@ -19,6 +19,10 @@ jobs:
         with:
           node-version: 22
       - run: npm install
+      - name: Diagnose Prettier output
+        run: |
+          npx prettier src/domain/spellCatalog.ts > /tmp/spellCatalog.ts
+          diff -u src/domain/spellCatalog.ts /tmp/spellCatalog.ts || true
       - run: npm run format:check
       - run: npm run build
       - run: npm test
