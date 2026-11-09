@@ -131,6 +131,9 @@ export function validateClassFeatureRecords(
       )
     }
     if (!feature.classId.trim()) errors.push(`${location}: missing class id`)
+    if (feature.rulesets?.[ruleset] !== true) {
+      errors.push(`${location}: feature is not assigned to ruleset ${ruleset}`)
+    }
     if (!Number.isInteger(feature.level) || feature.level < 1 || feature.level > 20) {
       errors.push(`${location}: level must be an integer from 1 to 20`)
     }
