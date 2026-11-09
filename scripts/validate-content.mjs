@@ -259,7 +259,7 @@ for (const progression of classProgressions) {
   for (const [ruleset, availability] of Object.entries(progression.rulesets ?? {})) {
     if (!['2014', '2024'].includes(ruleset)) errors.push(`${location}: unknown ruleset ${ruleset}`)
     if (availability !== true && availability !== 'legacy' && typeof availability !== 'string') errors.push(`${location}: invalid availability for ${ruleset}`)
-    if (availability === 'legacy' && ruleset !== '2024') errors.push(`${location}: Legacy availability is only valid for 2024`)
+    if (availability === 'legacy') errors.push(`${location}: Legacy availability belongs on the parent class/subclass, not on a feature progression`)
     if (availability !== false && availability !== undefined && !Number.isInteger(progression.levels?.[ruleset])) {
       errors.push(`${location}: missing integer level for ${ruleset}`)
     }
