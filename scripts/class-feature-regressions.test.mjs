@@ -72,11 +72,21 @@ test('all selectable subclasses have feature records in their ruleset catalog', 
   }
 })
 
-test('Legacy progression assignments reference original feature definitions without copies', () => {
-  const legacy = progressions.filter((record) => record.rulesets?.['2024'] === 'legacy')
-  assert.equal(legacy.length, 357)
-  assert.ok(legacy.every((record) => record.levels?.['2024'] >= 3))
-  assert.ok(legacy.every((record) => definitionsById.has(record.featureId)))
+test('Legacy subclass features reuse one definition and inherit compatibility from the subclass', () => {
+  const legacySubclasses = subclassOptions('2024').filter((record) => record.rulesets?.['2024'] === 'legacy')
+  const legacyFeatureProgressions = progressions.filter((record) =>
+    record.subclassId && legacySubclasses.some((subclass) =>
+      subclass.classId === record.classId && subclass.subclassId === record.subclassId &&
+      record.rulesets?.['2024'] === true,
+    ),
+  )
+  const conjurationSavant = progressions.find((record) => record.featureId === '2014-wizard-conjuration-conjuration-savant')
+  assert.equal(legacyFeatureProgressions.length, 357)
+  assert.ok(legacyFeatureProgressions.every((record) => record.levels?.['2024'] >= 3))
+  assert.ok(legacyFeatureProgressions.every((record) => definitionsById.has(record.featureId)))
+  assert.equal(conjurationSavant?.levels?.['2014'], 2)
+  assert.equal(conjurationSavant?.levels?.['2024'], 3)
+  assert.equal(conjurationSavant?.rulesets?.['2024'], true)
   assert.equal(featureDefinitions.some((feature) => feature.id.startsWith('2024-legacy-')), false)
 })
 
