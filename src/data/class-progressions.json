@@ -1336,7 +1336,7 @@
     "subclassId": "conjuration",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1349,7 +1349,7 @@
     "subclassId": "conjuration",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1362,7 +1362,7 @@
     "subclassId": "conjuration",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1375,7 +1375,7 @@
     "subclassId": "conjuration",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -1388,7 +1388,7 @@
     "subclassId": "conjuration",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -1456,7 +1456,7 @@
     "subclassId": "enchantment",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1469,7 +1469,7 @@
     "subclassId": "enchantment",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1482,7 +1482,7 @@
     "subclassId": "enchantment",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1495,7 +1495,7 @@
     "subclassId": "enchantment",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -1508,7 +1508,7 @@
     "subclassId": "enchantment",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -1576,7 +1576,7 @@
     "subclassId": "necromancy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1589,7 +1589,7 @@
     "subclassId": "necromancy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1602,7 +1602,7 @@
     "subclassId": "necromancy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1615,7 +1615,7 @@
     "subclassId": "necromancy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -1628,7 +1628,7 @@
     "subclassId": "necromancy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -1641,7 +1641,7 @@
     "subclassId": "transmutation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1654,7 +1654,7 @@
     "subclassId": "transmutation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1667,7 +1667,7 @@
     "subclassId": "transmutation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1680,7 +1680,7 @@
     "subclassId": "transmutation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -1693,7 +1693,7 @@
     "subclassId": "transmutation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -1706,7 +1706,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -1719,7 +1719,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -1758,7 +1758,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1771,7 +1771,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1784,7 +1784,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -1797,7 +1797,7 @@
     "subclassId": "knowledge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -1901,7 +1901,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -1914,7 +1914,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -1927,7 +1927,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -1940,7 +1940,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -1953,7 +1953,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -1966,7 +1966,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -1979,7 +1979,7 @@
     "subclassId": "nature",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -1992,7 +1992,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2005,7 +2005,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2018,7 +2018,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2031,7 +2031,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2044,7 +2044,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2057,7 +2057,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -2070,7 +2070,7 @@
     "subclassId": "tempest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -2226,7 +2226,7 @@
     "subclassId": "ancestralguardian",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2239,7 +2239,7 @@
     "subclassId": "ancestralguardian",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2252,7 +2252,7 @@
     "subclassId": "ancestralguardian",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2265,7 +2265,7 @@
     "subclassId": "ancestralguardian",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2278,7 +2278,7 @@
     "subclassId": "stormherald",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2291,7 +2291,7 @@
     "subclassId": "stormherald",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2304,7 +2304,7 @@
     "subclassId": "stormherald",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2317,7 +2317,7 @@
     "subclassId": "stormherald",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2429,7 +2429,7 @@
     "subclassId": "swords",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2442,7 +2442,7 @@
     "subclassId": "swords",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2455,7 +2455,7 @@
     "subclassId": "swords",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2468,7 +2468,7 @@
     "subclassId": "swords",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2481,7 +2481,7 @@
     "subclassId": "swords",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2494,7 +2494,7 @@
     "subclassId": "whispers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2507,7 +2507,7 @@
     "subclassId": "whispers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2520,7 +2520,7 @@
     "subclassId": "whispers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2533,7 +2533,7 @@
     "subclassId": "whispers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2546,7 +2546,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2559,7 +2559,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2572,7 +2572,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2585,7 +2585,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2598,7 +2598,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -2611,7 +2611,7 @@
     "subclassId": "forge",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -2624,7 +2624,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2637,7 +2637,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -2650,7 +2650,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2663,7 +2663,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2676,7 +2676,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -2689,7 +2689,7 @@
     "subclassId": "grave",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -2702,7 +2702,7 @@
     "subclassId": "dreams",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2715,7 +2715,7 @@
     "subclassId": "dreams",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2728,7 +2728,7 @@
     "subclassId": "dreams",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2741,7 +2741,7 @@
     "subclassId": "dreams",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2754,7 +2754,7 @@
     "subclassId": "dreams",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2767,7 +2767,7 @@
     "subclassId": "shepherd",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2780,7 +2780,7 @@
     "subclassId": "shepherd",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -2793,7 +2793,7 @@
     "subclassId": "shepherd",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -2806,7 +2806,7 @@
     "subclassId": "shepherd",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2819,7 +2819,7 @@
     "subclassId": "shepherd",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -2832,7 +2832,7 @@
     "subclassId": "arcanearcher",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2845,7 +2845,7 @@
     "subclassId": "arcanearcher",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2858,7 +2858,7 @@
     "subclassId": "arcanearcher",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -2871,7 +2871,7 @@
     "subclassId": "arcanearcher",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -2884,7 +2884,7 @@
     "subclassId": "arcanearcher",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2897,7 +2897,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2910,7 +2910,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2923,7 +2923,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -2936,7 +2936,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -2949,7 +2949,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -2962,7 +2962,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -2975,7 +2975,7 @@
     "subclassId": "cavalier",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -2988,7 +2988,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3001,7 +3001,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3014,7 +3014,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -3027,7 +3027,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -3040,7 +3040,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -3053,7 +3053,7 @@
     "subclassId": "samurai",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -3066,7 +3066,7 @@
     "subclassId": "drunkenmaster",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3079,7 +3079,7 @@
     "subclassId": "drunkenmaster",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3092,7 +3092,7 @@
     "subclassId": "drunkenmaster",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -3105,7 +3105,7 @@
     "subclassId": "drunkenmaster",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -3118,7 +3118,7 @@
     "subclassId": "drunkenmaster",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3131,7 +3131,7 @@
     "subclassId": "kensei",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3144,7 +3144,7 @@
     "subclassId": "kensei",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3157,7 +3157,7 @@
     "subclassId": "kensei",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -3170,7 +3170,7 @@
     "subclassId": "kensei",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -3183,7 +3183,7 @@
     "subclassId": "kensei",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3196,7 +3196,7 @@
     "subclassId": "conquest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3209,7 +3209,7 @@
     "subclassId": "conquest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3222,7 +3222,7 @@
     "subclassId": "conquest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -3235,7 +3235,7 @@
     "subclassId": "conquest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -3248,7 +3248,7 @@
     "subclassId": "conquest",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 20,
@@ -3261,7 +3261,7 @@
     "subclassId": "redemption",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3274,7 +3274,7 @@
     "subclassId": "redemption",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3287,7 +3287,7 @@
     "subclassId": "redemption",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -3300,7 +3300,7 @@
     "subclassId": "redemption",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -3313,7 +3313,7 @@
     "subclassId": "redemption",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 20,
@@ -3381,7 +3381,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3394,7 +3394,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3407,7 +3407,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3420,7 +3420,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -3433,7 +3433,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -3446,7 +3446,7 @@
     "subclassId": "horizonwalker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -3459,7 +3459,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3472,7 +3472,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3485,7 +3485,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3498,7 +3498,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -3511,7 +3511,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -3524,7 +3524,7 @@
     "subclassId": "monster_slayer",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -3537,7 +3537,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3550,7 +3550,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3563,7 +3563,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3576,7 +3576,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 9,
@@ -3589,7 +3589,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 13,
@@ -3602,7 +3602,7 @@
     "subclassId": "inquisitive",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3615,7 +3615,7 @@
     "subclassId": "mastermind",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3628,7 +3628,7 @@
     "subclassId": "mastermind",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3641,7 +3641,7 @@
     "subclassId": "mastermind",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 9,
@@ -3654,7 +3654,7 @@
     "subclassId": "mastermind",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 13,
@@ -3667,7 +3667,7 @@
     "subclassId": "mastermind",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3680,7 +3680,7 @@
     "subclassId": "scout",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3693,7 +3693,7 @@
     "subclassId": "scout",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3706,7 +3706,7 @@
     "subclassId": "scout",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 9,
@@ -3719,7 +3719,7 @@
     "subclassId": "scout",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 13,
@@ -3732,7 +3732,7 @@
     "subclassId": "scout",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3745,7 +3745,7 @@
     "subclassId": "swashbuckler",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3758,7 +3758,7 @@
     "subclassId": "swashbuckler",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -3771,7 +3771,7 @@
     "subclassId": "swashbuckler",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 9,
@@ -3784,7 +3784,7 @@
     "subclassId": "swashbuckler",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 13,
@@ -3797,7 +3797,7 @@
     "subclassId": "swashbuckler",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -3810,7 +3810,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -3823,7 +3823,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -3836,7 +3836,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -3849,7 +3849,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -3862,7 +3862,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -3875,7 +3875,7 @@
     "subclassId": "storm",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -3888,7 +3888,7 @@
     "subclassId": "shadowmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -3901,7 +3901,7 @@
     "subclassId": "shadowmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -3914,7 +3914,7 @@
     "subclassId": "shadowmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -3927,7 +3927,7 @@
     "subclassId": "shadowmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -3940,7 +3940,7 @@
     "subclassId": "shadowmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -4019,7 +4019,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4032,7 +4032,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4045,7 +4045,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4058,7 +4058,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4071,7 +4071,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4084,7 +4084,7 @@
     "subclassId": "hexblade",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4097,7 +4097,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4110,7 +4110,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4123,7 +4123,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4136,7 +4136,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4149,7 +4149,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4162,7 +4162,7 @@
     "subclassId": "war",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4175,7 +4175,7 @@
     "subclassId": "beast",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4188,7 +4188,7 @@
     "subclassId": "beast",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4201,7 +4201,7 @@
     "subclassId": "beast",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4214,7 +4214,7 @@
     "subclassId": "beast",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4227,7 +4227,7 @@
     "subclassId": "wildmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4240,7 +4240,7 @@
     "subclassId": "wildmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4253,7 +4253,7 @@
     "subclassId": "wildmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4266,7 +4266,7 @@
     "subclassId": "wildmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4279,7 +4279,7 @@
     "subclassId": "wildmagic",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4292,7 +4292,7 @@
     "subclassId": "eloquence",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4305,7 +4305,7 @@
     "subclassId": "eloquence",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4318,7 +4318,7 @@
     "subclassId": "eloquence",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4331,7 +4331,7 @@
     "subclassId": "eloquence",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4344,7 +4344,7 @@
     "subclassId": "eloquence",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4357,7 +4357,7 @@
     "subclassId": "creation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4370,7 +4370,7 @@
     "subclassId": "creation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4383,7 +4383,7 @@
     "subclassId": "creation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4396,7 +4396,7 @@
     "subclassId": "creation",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4409,7 +4409,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4422,7 +4422,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4435,7 +4435,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4448,7 +4448,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4461,7 +4461,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -4474,7 +4474,7 @@
     "subclassId": "order",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -4487,7 +4487,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4500,7 +4500,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4513,7 +4513,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4526,7 +4526,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4539,7 +4539,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -4552,7 +4552,7 @@
     "subclassId": "peace",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -4565,7 +4565,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4578,7 +4578,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4591,7 +4591,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -4604,7 +4604,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4617,7 +4617,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4630,7 +4630,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -4643,7 +4643,7 @@
     "subclassId": "twilight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -4656,7 +4656,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4669,7 +4669,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4682,7 +4682,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4695,7 +4695,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4708,7 +4708,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4721,7 +4721,7 @@
     "subclassId": "spores",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4789,7 +4789,7 @@
     "subclassId": "wildfire",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4802,7 +4802,7 @@
     "subclassId": "wildfire",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -4815,7 +4815,7 @@
     "subclassId": "wildfire",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -4828,7 +4828,7 @@
     "subclassId": "wildfire",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4841,7 +4841,7 @@
     "subclassId": "wildfire",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -4909,7 +4909,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4922,7 +4922,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4935,7 +4935,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -4948,7 +4948,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -4961,7 +4961,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -4974,7 +4974,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -4987,7 +4987,7 @@
     "subclassId": "runeknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -5066,7 +5066,7 @@
     "subclassId": "astral_self",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5079,7 +5079,7 @@
     "subclassId": "astral_self",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5092,7 +5092,7 @@
     "subclassId": "astral_self",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -5105,7 +5105,7 @@
     "subclassId": "astral_self",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -5173,7 +5173,7 @@
     "subclassId": "watchers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5186,7 +5186,7 @@
     "subclassId": "watchers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5199,7 +5199,7 @@
     "subclassId": "watchers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -5212,7 +5212,7 @@
     "subclassId": "watchers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -5225,7 +5225,7 @@
     "subclassId": "watchers",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 20,
@@ -5293,7 +5293,7 @@
     "subclassId": "swarmkeeper",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5306,7 +5306,7 @@
     "subclassId": "swarmkeeper",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5319,7 +5319,7 @@
     "subclassId": "swarmkeeper",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -5332,7 +5332,7 @@
     "subclassId": "swarmkeeper",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -5345,7 +5345,7 @@
     "subclassId": "swarmkeeper",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -5358,7 +5358,7 @@
     "subclassId": "phantom",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5371,7 +5371,7 @@
     "subclassId": "phantom",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5384,7 +5384,7 @@
     "subclassId": "phantom",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 9,
@@ -5397,7 +5397,7 @@
     "subclassId": "phantom",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 13,
@@ -5410,7 +5410,7 @@
     "subclassId": "phantom",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -5599,7 +5599,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -5612,7 +5612,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -5625,7 +5625,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -5638,7 +5638,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5651,7 +5651,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5664,7 +5664,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -5677,7 +5677,7 @@
     "subclassId": "fathomless",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -5690,7 +5690,7 @@
     "subclassId": "genie",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -5703,7 +5703,7 @@
     "subclassId": "genie",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -5716,7 +5716,7 @@
     "subclassId": "genie",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5729,7 +5729,7 @@
     "subclassId": "genie",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -5742,7 +5742,7 @@
     "subclassId": "genie",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -5755,7 +5755,7 @@
     "subclassId": "scribes",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -5768,7 +5768,7 @@
     "subclassId": "scribes",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -5781,7 +5781,7 @@
     "subclassId": "scribes",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5794,7 +5794,7 @@
     "subclassId": "scribes",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -5807,7 +5807,7 @@
     "subclassId": "scribes",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -5820,7 +5820,7 @@
     "subclassId": "giant",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5833,7 +5833,7 @@
     "subclassId": "giant",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5846,7 +5846,7 @@
     "subclassId": "giant",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5859,7 +5859,7 @@
     "subclassId": "giant",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -5872,7 +5872,7 @@
     "subclassId": "giant",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -5885,7 +5885,7 @@
     "subclassId": "battlerager",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5898,7 +5898,7 @@
     "subclassId": "battlerager",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5911,7 +5911,7 @@
     "subclassId": "battlerager",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5924,7 +5924,7 @@
     "subclassId": "battlerager",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -5937,7 +5937,7 @@
     "subclassId": "battlerager",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -5950,7 +5950,7 @@
     "subclassId": "spirits",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5963,7 +5963,7 @@
     "subclassId": "spirits",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -5976,7 +5976,7 @@
     "subclassId": "spirits",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -5989,7 +5989,7 @@
     "subclassId": "spirits",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6002,7 +6002,7 @@
     "subclassId": "spirits",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6015,7 +6015,7 @@
     "subclassId": "arcana",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6028,7 +6028,7 @@
     "subclassId": "arcana",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6041,7 +6041,7 @@
     "subclassId": "arcana",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6054,7 +6054,7 @@
     "subclassId": "arcana",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -6067,7 +6067,7 @@
     "subclassId": "arcana",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -6080,7 +6080,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6093,7 +6093,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6106,7 +6106,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6119,7 +6119,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6132,7 +6132,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 8,
@@ -6145,7 +6145,7 @@
     "subclassId": "death",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -6158,7 +6158,7 @@
     "subclassId": "purpledragonknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6171,7 +6171,7 @@
     "subclassId": "purpledragonknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -6184,7 +6184,7 @@
     "subclassId": "purpledragonknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6197,7 +6197,7 @@
     "subclassId": "purpledragonknight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -6210,7 +6210,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6223,7 +6223,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6236,7 +6236,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -6249,7 +6249,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6262,7 +6262,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -6275,7 +6275,7 @@
     "subclassId": "echo_knight",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -6288,7 +6288,7 @@
     "subclassId": "longdeath",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6301,7 +6301,7 @@
     "subclassId": "longdeath",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6314,7 +6314,7 @@
     "subclassId": "longdeath",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -6327,7 +6327,7 @@
     "subclassId": "longdeath",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -6340,7 +6340,7 @@
     "subclassId": "sun_soul",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6353,7 +6353,7 @@
     "subclassId": "sun_soul",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6366,7 +6366,7 @@
     "subclassId": "sun_soul",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -6379,7 +6379,7 @@
     "subclassId": "sun_soul",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -6392,7 +6392,7 @@
     "subclassId": "ascendant_dragon",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6405,7 +6405,7 @@
     "subclassId": "ascendant_dragon",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6418,7 +6418,7 @@
     "subclassId": "ascendant_dragon",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -6431,7 +6431,7 @@
     "subclassId": "ascendant_dragon",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 17,
@@ -6444,7 +6444,7 @@
     "subclassId": "crown",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6457,7 +6457,7 @@
     "subclassId": "crown",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6470,7 +6470,7 @@
     "subclassId": "crown",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -6483,7 +6483,7 @@
     "subclassId": "crown",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -6496,7 +6496,7 @@
     "subclassId": "crown",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 20,
@@ -6509,7 +6509,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6522,7 +6522,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6535,7 +6535,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6548,7 +6548,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -6561,7 +6561,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -6574,7 +6574,7 @@
     "subclassId": "oathbreaker",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 20,
@@ -6587,7 +6587,7 @@
     "subclassId": "drakewarden",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6600,7 +6600,7 @@
     "subclassId": "drakewarden",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 3,
@@ -6613,7 +6613,7 @@
     "subclassId": "drakewarden",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 7,
@@ -6626,7 +6626,7 @@
     "subclassId": "drakewarden",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 11,
@@ -6639,7 +6639,7 @@
     "subclassId": "drakewarden",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 15,
@@ -6652,7 +6652,7 @@
     "subclassId": "lunar",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6665,7 +6665,7 @@
     "subclassId": "lunar",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6678,7 +6678,7 @@
     "subclassId": "lunar",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6691,7 +6691,7 @@
     "subclassId": "lunar",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6704,7 +6704,7 @@
     "subclassId": "lunar",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 18,
@@ -6717,7 +6717,7 @@
     "subclassId": "undead",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6730,7 +6730,7 @@
     "subclassId": "undead",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6743,7 +6743,7 @@
     "subclassId": "undead",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6756,7 +6756,7 @@
     "subclassId": "undead",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6769,7 +6769,7 @@
     "subclassId": "undead",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6782,7 +6782,7 @@
     "subclassId": "undying",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6795,7 +6795,7 @@
     "subclassId": "undying",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 1,
@@ -6808,7 +6808,7 @@
     "subclassId": "undying",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6821,7 +6821,7 @@
     "subclassId": "undying",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6834,7 +6834,7 @@
     "subclassId": "undying",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6847,7 +6847,7 @@
     "subclassId": "bladesinging",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6860,7 +6860,7 @@
     "subclassId": "bladesinging",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6873,7 +6873,7 @@
     "subclassId": "bladesinging",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6886,7 +6886,7 @@
     "subclassId": "bladesinging",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6899,7 +6899,7 @@
     "subclassId": "bladesinging",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6912,7 +6912,7 @@
     "subclassId": "chronurgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6925,7 +6925,7 @@
     "subclassId": "chronurgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6938,7 +6938,7 @@
     "subclassId": "chronurgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -6951,7 +6951,7 @@
     "subclassId": "chronurgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -6964,7 +6964,7 @@
     "subclassId": "chronurgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
@@ -6977,7 +6977,7 @@
     "subclassId": "graviturgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 2,
@@ -6990,7 +6990,7 @@
     "subclassId": "graviturgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 6,
@@ -7003,7 +7003,7 @@
     "subclassId": "graviturgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 10,
@@ -7016,7 +7016,7 @@
     "subclassId": "graviturgy",
     "rulesets": {
       "2014": true,
-      "2024": "legacy"
+      "2024": true
     },
     "levels": {
       "2014": 14,
