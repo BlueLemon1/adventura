@@ -26,7 +26,12 @@ export interface SpellDamageMechanic {
   activeFromLevel?: number
   condition?: string
   timing?: string
-  modifier?: 'extra' | 'reduced' | 'damage-penalty' | 'damage-reduction' | 'weapon-die'
+  modifier?:
+    | 'extra'
+    | 'reduced'
+    | 'damage-penalty'
+    | 'damage-reduction'
+    | 'weapon-die'
   flatBonus?:
     | number
     | 'spellcasting-ability'
