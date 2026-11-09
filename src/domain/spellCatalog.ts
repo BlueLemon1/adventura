@@ -2,6 +2,8 @@ import type { Dnd5eRuleset } from './rules'
 import { CONTENT_SOURCES } from './contentSources'
 import spells2014 from '../data/srd/2014/spells.json'
 import spells2024 from '../data/srd/2024/spells.json'
+import spellTranslations2014 from '../data/srd/2014/locales/de/spells.json'
+import spellTranslations2024 from '../data/srd/2024/locales/de/spells.json'
 import additionalSpells from '../data/spells/spells-additional.json'
 import spellMechanics from '../data/spells/spell-mechanics.json'
 import spellAvailability from '../data/spells/spell-availability.json'
@@ -132,8 +134,12 @@ export function getSpellCatalog(ruleset: Dnd5eRuleset): CatalogSpell[] {
   const cached = spellCatalogCache.get(ruleset)
   if (cached) return cached
 
+  const translations = (
+    ruleset === '2014' ? spellTranslations2014 : spellTranslations2024
+  ) as Record<string, NonNullable<CatalogSpell['localized']>>
   const base = ((ruleset === '2014' ? spells2014 : spells2024) as CatalogSpell[]).map((spell) => ({
     ...spell,
+    localized: translations[spell.id],
     damage: mechanicsBySpellId[spell.id],
   }))
   const supplements = supplementalSpells
