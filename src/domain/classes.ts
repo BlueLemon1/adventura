@@ -40,7 +40,10 @@ export const CLASS_OPTIONS = getClassOptions('2024')
 
 export function getSubclassOptions(classId: string, ruleset: Dnd5eRuleset): ClassOption[] {
   return ADDITIONAL_CLASSES.filter(
-    (record) => record.type === 'subclass' && record.classId === classId && isAvailable(record, ruleset),
+    (record) =>
+      record.type === 'subclass' &&
+      record.classId === classId &&
+      isAvailable(record, ruleset),
   )
     .map((record) => ({
       value: record.subclassId ?? record.id,
