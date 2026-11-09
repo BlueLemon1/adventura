@@ -533,68 +533,68 @@
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "Psychic"
+      "type": "psychic"
     }
   ],
   "phb-2024-thunderclap": [
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "Thunder"
+      "type": "thunder"
     }
   ],
   "phb-2024-toll-the-dead": [
     {
       "dice": "1d8 / 1d12",
       "average": 6.5,
-      "type": "Necrotic"
+      "type": "necrotic"
     }
   ],
   "phb-2024-word-of-radiance": [
     {
       "dice": "1d6",
       "average": 3.5,
-      "type": "Radiant"
+      "type": "radiant"
     }
   ],
   "phb-2024-steel-wind-strike": [
     {
       "dice": "6d10",
       "average": 33,
-      "type": "Force"
+      "type": "force"
     }
   ],
   "phb-2024-synaptic-static": [
     {
       "dice": "8d6",
       "average": 28,
-      "type": "Psychic"
+      "type": "psychic"
     }
   ],
   "phb-2024-fount-of-moonlight": [
     {
       "dice": "2d6",
       "average": 7,
-      "type": "Radiant"
+      "type": "radiant"
     }
   ],
   "phb-2024-jallarzis-storm-of-radiance": [
     {
       "dice": "2d10",
       "average": 11,
-      "type": "Radiant"
+      "type": "radiant"
     },
     {
       "dice": "2d10",
       "average": 11,
-      "type": "Thunder"
+      "type": "thunder"
     }
   ],
   "phb-2024-yolandes-regal-presence": [
     {
       "dice": "4d6",
       "average": 14,
-      "type": "Psychic"
+      "type": "psychic"
     }
   ],
   "srd-2014-acid-arrow": [
